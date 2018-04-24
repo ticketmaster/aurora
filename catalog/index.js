@@ -2,21 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog, pageLoader } from "catalog";
 
-import Button from "../src/components/Button";
+import home from "./pages/home/index";
+import colors from "./pages/colors/index";
+import buttons from "./pages/buttons/index";
 
-const pages = [
-  {
-    path: "/",
-    title: "Welcome",
-    content: pageLoader(() => import("./pages/WELCOME.md"))
-  },
-  {
-    path: "/buttons",
-    title: "Buttons",
-    imports: { Button },
-    content: pageLoader(() => import("./pages/BUTTONS.md"))
-  }
-];
+const pages = [home, colors, buttons];
 
 ReactDOM.render(
   <Catalog title="Catalog" pages={pages} />,
