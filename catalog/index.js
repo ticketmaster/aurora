@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Catalog, pageLoader } from "catalog";
+import { Catalog } from "catalog";
 
 import home from "./pages/home/index";
 import colors from "./pages/colors/index";

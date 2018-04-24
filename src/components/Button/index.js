@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./index.styles";
 
@@ -9,6 +10,11 @@ const Button = ({ variant, children, ...rest }) => {
       {children}
     </Btn>
   );
+};
+
+Button.propTypes = {
+  variant: PropTypes.oneOf(["standard", "outline"]).isRequired,
+  children: PropTypes.element.isRequired
 };
 
 export default Button;

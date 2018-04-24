@@ -1,0 +1,11 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "env": { "jest": true },
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }]
+  },
+  "globals": {
+    "document": true
+  }
+}

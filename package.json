@@ -3,6 +3,7 @@
   "description": "",
   "dependencies": {
     "catalog": "^3.0.0-rc.4",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "styled-components": "^3.2.6"
@@ -10,6 +11,7 @@
   "scripts": {
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
+    "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
     "test": "jest",
     "test:watch": "jest --watch --no-cache --notify",
     "test:cover": "jest --coverage"
@@ -22,9 +24,16 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "jest": "^22.4.3",
     "jest-styled-components": "^5.0.1",
     "react-test-renderer": "^16.3.2"
