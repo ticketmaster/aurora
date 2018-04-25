@@ -1,0 +1,23 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js:
+  - '8'
+script:
+  - npm run lint
+  - npm run test:cover
+after_success:
+  - npx codecov
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
+branches:
+  only:
+    - master
+    - /^greenkeeper/.*$/

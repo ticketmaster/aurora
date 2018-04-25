@@ -1,6 +1,9 @@
 {
-  "name": "jubilant-pancake",
-  "description": "",
+  "name": "@ticketmaster/prism",
+  "version": "0.0.0-semantically-released",
+  "description": "Shared UI Library for Ticketmaster",
+  "main": "dist/index.js",
+  "license": "MIT",
   "scripts": {
     "build": "babel ./src --out-dir ./dist --ignore '__*__'",
     "catalog-start": "catalog start",
