@@ -14,7 +14,7 @@ const Button = ({ variant, children, ...rest }) => {
 
 Button.propTypes = {
   variant: PropTypes.oneOf(["standard", "outline"]).isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default Button;
