@@ -14,12 +14,19 @@ script:
   - npm run catalog-build
 after_success:
   - npx codecov
-  - npx gh-pages -d catalog/build
 deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npx semantic-release
+  - provider: script
+    skip_cleanup: true
+    script:
+      - npx semantic-release
+  - provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    local-dir: catalog/build
+    target-branch: gh-pages
+    on:
+      branch: master
 branches:
   only:
     - master
