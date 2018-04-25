@@ -7,7 +7,7 @@
   "scripts": {
     "build": "babel ./src --out-dir ./dist --ignore '__*__'",
     "catalog-start": "catalog start",
-    "catalog-build": "catalog build",
+    "catalog-build": "catalog build  -u \"/prism\"",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
     "precommit": "lint-staged",
     "test": "jest",
@@ -21,7 +21,7 @@
       "eslint",
       "jest --bail --findRelatedTests --no-cache"
     ],
-    "*.{json,md,html}": ["prettier --write", "git add"]
+    "*.{json,md}": ["prettier --write", "git add"]
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
