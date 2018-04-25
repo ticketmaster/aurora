@@ -1,13 +1,6 @@
 {
   "name": "jubilant-pancake",
   "description": "",
-  "dependencies": {
-    "catalog": "^3.0.0-rc.4",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "styled-components": "^3.2.6"
-  },
   "scripts": {
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
@@ -30,12 +23,19 @@
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
     "collectCoverageFrom": ["src/**/*.js"]
   },
-  "devDependencies": {
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15",
+    "styled-components": ">=3"
+  },
+  "dependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "catalog": "^3.5.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -47,6 +47,10 @@
     "jest-styled-components": "^5.0.1",
     "lint-staged": "^7.0.4",
     "prettier": "^1.12.1",
-    "react-test-renderer": "^16.3.2"
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-test-renderer": "^16.3.2",
+    "styled-components": "^3.2.6"
   }
 }
