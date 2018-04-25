@@ -12,15 +12,23 @@
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
+    "precommit": "lint-staged",
     "test": "jest",
     "test:watch": "jest --watch --no-cache --notify",
     "test:cover": "jest --coverage"
   },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "git add",
+      "eslint",
+      "jest --bail --findRelatedTests --no-cache"
+    ],
+    "*.{json,md,html}": ["prettier --write", "git add"]
+  },
   "jest": {
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
+    "collectCoverageFrom": ["src/**/*.js"]
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -34,8 +42,11 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-styled-components": "^5.0.1",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.12.1",
     "react-test-renderer": "^16.3.2"
   }
 }
