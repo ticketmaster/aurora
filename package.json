@@ -2,6 +2,7 @@
   "name": "jubilant-pancake",
   "description": "",
   "scripts": {
+    "build": "babel ./src --out-dir ./dist --ignore '__*__'",
     "catalog-start": "catalog start",
     "catalog-build": "catalog build",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
@@ -28,7 +29,8 @@
     "react": ">=15",
     "styled-components": ">=3"
   },
-  "dependencies": {
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^22.4.3",

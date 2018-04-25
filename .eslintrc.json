@@ -3,7 +3,11 @@
   "extends": ["airbnb", "prettier", "prettier/react"],
   "env": { "jest": true },
   "rules": {
-    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }]
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.spec.js", "catalog/**/*"] }
+    ]
   },
   "globals": {
     "document": true
