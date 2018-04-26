@@ -6,7 +6,7 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/*.spec.js", "catalog/**/*"] }
+      { "devDependencies": ["**/*.spec.js", "catalog/**/*", "config/**/*"] }
     ]
   },
   "globals": {

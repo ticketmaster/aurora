@@ -1,7 +1,6 @@
-.github
-catalog
-config
+catalog/build
+dist
 coverage
-other
+node_modules
 package-lock.json
 yarn.lock

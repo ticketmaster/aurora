@@ -2,10 +2,23 @@
   "name": "@ticketmaster/prism",
   "version": "0.0.0-semantically-released",
   "description": "Shared UI Library for Ticketmaster",
-  "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "styled-components",
+    "design-system",
+    "ui-library",
+    "ticketmaster"
+  ],
+  "main": "dist/index.cjs.js",
+  "jsnext:main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "files": ["dist"],
+  "engines": { "node": "> 8", "npm": "> 5" },
   "license": "MIT",
   "scripts": {
-    "build": "babel ./src --out-dir ./dist --ignore '__*__'",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "rollup -c config/rollup.dev.config.js",
+    "build:prod": "rollup -c config/rollup.prod.config.js",
     "catalog-start": "catalog start",
     "catalog-build": "catalog build  -u \"/prism\"",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
@@ -25,7 +38,15 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
-    "collectCoverageFrom": ["src/**/*.js"]
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   },
   "peerDependencies": {
     "prop-types": ">=15",
@@ -56,8 +77,14 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-test-renderer": "^16.3.2",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-strip-prop-types": "^1.0.2",
+    "rollup-plugin-uglify": "^3.0.0",
     "styled-components": "^3.2.6"
   },
+  "homepage": "https://code.ticketmaster.com/prism/",
   "repository": {
     "type": "git",
     "url": "https://github.com/Ticketmaster/prism.git"
