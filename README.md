@@ -14,6 +14,42 @@
 [![PRs Welcome][prs-badge]][prs]
 [![Code of Conduct][coc-badge]][coc]
 
+## How to get started
+
+Prism relies on the [react](https://www.npmjs.com/package/react),
+[prop-types](https://www.npmjs.com/package/prop-types),
+and [styled-components](https://www.npmjs.com/package/styled-components)
+peer-dependency packages to already be installed and set up in your project.
+
+Install prism from the npm registry by running the following command in your terminal:
+
+```bash
+npm install @ticketmaster/prism
+```
+
+Then import each component you want to use in your app:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { Button } from "@ticketmaster/prism";
+
+ReactDOM.render(
+  <Button variant="standard">Hello, world!</Button>,
+  document.getElementById("root")
+);
+```
+
+## How to use
+
+A documentation of each component and living styleguide is available at https://code.ticketmaster.com/prism/
+
+## Other docs
+
+* [Code of Conduct][coc]
+* [Contributing][contributing]
+* [Maintaining][maintaining]
+
 ## LICENSE
 
 MIT
@@ -31,3 +67,5 @@ MIT
 [prs]: http://makeapullrequest.com
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
 [coc]: https://github.com/ticketmaster/prism/blob/master/other/CODE_OF_CONDUCT.md
+[contributing]: https://github.com/ticketmaster/prism/blob/master/CONTRIBUTING.md
+[maintaining]: https://github.com/ticketmaster/prism/blob/master/other/MAINTAINING.md
