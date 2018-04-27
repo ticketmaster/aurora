@@ -13,7 +13,6 @@
   "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "files": ["dist"],
-  "engines": { "node": "> 8", "npm": "> 5" },
   "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
@@ -51,7 +50,7 @@
   "peerDependencies": {
     "prop-types": ">=15",
     "react": ">=15",
-    "styled-components": ">=3"
+    "styled-components": ">=2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
