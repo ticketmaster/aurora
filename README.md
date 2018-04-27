@@ -45,6 +45,8 @@ ReactDOM.render(
 );
 ```
 
+[![Edit mq3q2prnjy](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mq3q2prnjy?autoresize=1&hidenavigation=1)
+
 ## How to use
 
 A documentation of each component and living styleguide is available at https://code.ticketmaster.com/prism/
