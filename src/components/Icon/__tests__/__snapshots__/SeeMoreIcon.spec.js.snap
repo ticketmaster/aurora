@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SeeMoreIcon /> renders SeeMoreIcon correctly 1`] = `
+.c0 {
+  padding: 0 16px;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  className="c0"
+>
+  <svg
+    height="15px"
+    style={
+      Object {
+        "transform": "rotate(-90deg) ",
+      }
+    }
+    viewBox="0 0 1024 1024"
+    width="15px"
+  >
+    <path
+      d="M1012.48 247.808c-15.053-15.053-40.96-15.053-56.013 0l-444.467 444.416-444.928-444.416c-15.053-15.002-41.062-14.438-54.784-0.614-4.454 3.789-7.68 8.448-9.728 13.824-1.69 4.608-2.56 9.523-2.56 14.49s0.87 9.933 2.56 14.592c2.048 5.376 5.274 10.035 8.96 13.21l472.73 472.73c7.526 7.526 17.101 11.52 27.75 11.52s20.224-3.942 27.75-11.469l472.73-472.73c7.526-7.526 11.52-17.101 11.52-27.75s-3.994-20.122-11.52-27.648z"
+      fill="#b4b9bd"
+    />
+  </svg>
+</div>
+`;

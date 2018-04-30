@@ -1,9 +1,10 @@
 const colors = {
   black: "#000",
   white: "#fff",
+  heliotrope: "#c56bff",
   pacific: {
     base: "#009cde",
-    dark: "#0075a7",
+    dark: "#026cdf",
     light: "#80ceef",
     muted: "#bfe6f7",
     background: "#dff3fb"

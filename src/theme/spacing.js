@@ -3,10 +3,11 @@ const spacing = {
   cozy: "4px",
   compact: "6px",
   moderate: "9px",
-  normal: "14px",
-  expanded: "20px",
+  normal: "12px",
+  large: "16px",
+  expanded: "24px",
   spacious: "30px",
-  giant: "46px",
+  giant: "48px",
   colossal: "68px"
 };
 

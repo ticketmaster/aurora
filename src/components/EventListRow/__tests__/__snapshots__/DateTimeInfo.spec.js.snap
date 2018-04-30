@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DateTimeInfo /> renders DateTimeInfo correctly 1`] = `
+.c0 {
+  width: 110px;
+  padding-right: 9px;
+}
+
+.c1 {
+  color: #c56bff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c2 {
+  color: #69747c;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    font-size: 16px;
+    width: 124px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c2 {
+    font-size: 16px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    APR 23
+  </div>
+  <div
+    className="c2"
+  >
+    Thu, 8:00PM
+  </div>
+</div>
+`;

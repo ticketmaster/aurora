@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventInfo /> renders EventInfo correctly 1`] = `
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.c2 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #69747c;
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c1 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c2 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c2 {
+    color: #4e565c;
+    font-size: 14px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Hollywood Bowl
+  </div>
+  <div
+    className="c2"
+  >
+    Dave Mathews Band
+  </div>
+</div>
+`;
