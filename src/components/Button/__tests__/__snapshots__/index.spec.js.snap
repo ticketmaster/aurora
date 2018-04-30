@@ -2,28 +2,14 @@
 
 exports[`<Button /> renders link button correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 16px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
@@ -49,28 +35,14 @@ exports[`<Button /> renders link button correctly 1`] = `
 
 exports[`<Button /> renders outline button correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 16px;
   cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
@@ -93,28 +65,14 @@ exports[`<Button /> renders outline button correctly 1`] = `
 
 exports[`<Button /> renders outline disabled button correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 16px;
   cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
@@ -138,28 +96,14 @@ exports[`<Button /> renders outline disabled button correctly 1`] = `
 
 exports[`<Button /> renders standard button correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 16px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
@@ -182,28 +126,14 @@ exports[`<Button /> renders standard button correctly 1`] = `
 
 exports[`<Button /> renders standard disabled button correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 16px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);

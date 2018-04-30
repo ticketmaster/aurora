@@ -9,11 +9,12 @@ import buttons from "./pages/buttons/index";
 import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
 import imageCard from "./pages/image_card/index";
+import listRow from "./pages/listRow";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, typography, buttons, grid, icons, imageCard];
+const pages = [home, colors, typography, buttons, grid, icons, imageCard, listRow];
 
 const sizes = [
   { name: "mobile", width: 480 },
