@@ -9,6 +9,7 @@ const colors = {
   moonstone: "#D1D1D1",
   shale: "#E6E6E6",
   quartz: "#FAFAFA",
+  lightGray: "#E0E0E0",
   heliotrope: {
     base: "#C56BFF",
     dark: "#A145DC",
