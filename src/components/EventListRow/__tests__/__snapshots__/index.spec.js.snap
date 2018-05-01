@@ -1,0 +1,735 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> renders standard eventListRow correctly 1`] = `
+.c4 {
+  width: 110px;
+  padding-right: 9px;
+}
+
+.c5 {
+  color: #c56bff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c6 {
+  color: #69747c;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.c3 {
+  padding: 0 16px;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.c9 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #69747c;
+}
+
+.c11 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #009cde;
+  border: 1px solid #009cde;
+}
+
+.c11:disabled {
+  color: #fff;
+  background-color: #bfe6f7;
+  border: 1px solid #bfe6f7;
+  cursor: not-allowed;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #dfe4e7;
+  min-height: 66px;
+  padding: 16px 16px 16px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c10 {
+  display: none;
+}
+
+@media only screen and (min-width:480px) {
+  .c4 {
+    font-size: 16px;
+    width: 124px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c5 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c7 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c8 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c9 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c9 {
+    color: #4e565c;
+    font-size: 14px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    padding-right: 24px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c10 {
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    href=""
+    onClick={[Function]}
+  >
+    <a
+      className="c2"
+      href=""
+      onClick={[Function]}
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          height="15px"
+          style={Object {}}
+          viewBox="0 0 1024 1024"
+          width="15px"
+        >
+          <path
+            d="M1012.48 247.808c-15.053-15.053-40.96-15.053-56.013 0l-444.467 444.416-444.928-444.416c-15.053-15.002-41.062-14.438-54.784-0.614-4.454 3.789-7.68 8.448-9.728 13.824-1.69 4.608-2.56 9.523-2.56 14.49s0.87 9.933 2.56 14.592c2.048 5.376 5.274 10.035 8.96 13.21l472.73 472.73c7.526 7.526 17.101 11.52 27.75 11.52s20.224-3.942 27.75-11.469l472.73-472.73c7.526-7.526 11.52-17.101 11.52-27.75s-3.994-20.122-11.52-27.648z"
+            fill="#b4b9bd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          APR 23
+        </div>
+        <div
+          className="c6"
+        >
+          Thu, 8:00PM
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          Del Mar Fairgrounds
+        </div>
+        <div
+          className="c9"
+        >
+          KABOO 3-Day Pass
+        </div>
+      </div>
+    </a>
+    <div
+      className="c10"
+    >
+      <button
+        className="c11"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+      >
+        See Tickets
+      </button>
+    </div>
+    <div
+      className="c12"
+    >
+      <svg
+        height="15px"
+        style={
+          Object {
+            "transform": "rotate(-90deg) ",
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="15px"
+      >
+        <path
+          d="M82.33 635.904c-16.333-7.168-30.618-16.845-42.906-28.928s-21.914-26.317-28.928-42.598c-7.014-16.333-10.496-33.792-10.496-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.64-30.771 28.928-42.854s26.573-21.658 42.906-28.672c16.333-7.014 33.741-10.547 52.378-10.547s36.045 3.482 52.378 10.547c16.333 7.014 30.618 16.589 42.906 28.672s21.914 26.368 28.928 42.906c6.963 16.435 10.445 33.997 10.445 52.582s-3.482 36.045-10.547 52.378c-7.014 16.333-16.64 30.515-28.928 42.598s-26.573 21.76-42.906 28.928c-16.333 7.168-33.741 10.803-52.378 10.803s-35.994-3.584-52.326-10.803zM459.622 635.904c-16.333-7.168-30.618-16.845-42.906-28.928s-21.914-26.317-28.928-42.598c-7.014-16.333-10.496-33.792-10.496-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.64-30.771 28.928-42.854s26.573-21.658 42.906-28.672c16.282-7.066 33.741-10.547 52.326-10.547s36.045 3.482 52.378 10.547c16.333 7.014 30.618 16.589 42.906 28.672s21.914 26.368 28.928 42.906c7.014 16.486 10.547 33.997 10.547 52.634s-3.482 36.045-10.547 52.378c-7.014 16.333-16.64 30.515-28.928 42.598s-26.573 21.76-42.906 28.928c-16.333 7.168-33.741 10.803-52.378 10.803s-36.045-3.635-52.378-10.854zM836.659 635.904c-16.486-7.168-30.771-16.845-42.906-28.928s-21.658-26.317-28.672-42.598c-7.014-16.333-10.547-33.741-10.547-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.589-30.771 28.672-42.906 12.083-12.083 26.368-21.658 42.906-28.672 16.486-7.014 33.997-10.547 52.634-10.547 18.586 0 36.045 3.482 52.378 10.547 16.333 7.014 30.515 16.589 42.598 28.672s21.76 26.368 28.928 42.906c7.219 16.486 10.803 34.048 10.803 52.634s-3.584 36.045-10.803 52.378c-7.168 16.333-16.845 30.515-28.928 42.598s-26.317 21.76-42.598 28.928c-16.333 7.168-33.741 10.803-52.378 10.803-18.586 0-36.147-3.584-52.634-10.803z"
+          fill="#b4b9bd"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Button /> renders variant eventListRow correctly 1`] = `
+.c4 {
+  width: 110px;
+  padding-right: 9px;
+}
+
+.c5 {
+  color: #c56bff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.c6 {
+  color: #69747c;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.c3 {
+  padding: 0 16px;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.c9 {
+  color: #4e565c;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #69747c;
+}
+
+.c11 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #009cde;
+  border: 1px solid #009cde;
+}
+
+.c11:disabled {
+  color: #fff;
+  background-color: #bfe6f7;
+  border: 1px solid #bfe6f7;
+  cursor: not-allowed;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c14 {
+  color: #026cdf;
+  font-size: 14px;
+}
+
+.c15 {
+  font-size: 11px;
+  color: #999da0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom: 1px solid #dfe4e7;
+  min-height: 66px;
+  padding: 16px 16px 9px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c10 {
+  display: none;
+}
+
+@media only screen and (min-width:480px) {
+  .c4 {
+    font-size: 16px;
+    width: 124px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c5 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c7 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c8 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c9 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c9 {
+    color: #4e565c;
+    font-size: 14px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c13 {
+    margin-left: 48px;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    padding-right: 24px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .c10 {
+    display: block;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    href=""
+    onClick={[Function]}
+  >
+    <a
+      className="c2"
+      href=""
+      onClick={[Function]}
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          height="15px"
+          style={Object {}}
+          viewBox="0 0 1024 1024"
+          width="15px"
+        >
+          <path
+            d="M1012.48 247.808c-15.053-15.053-40.96-15.053-56.013 0l-444.467 444.416-444.928-444.416c-15.053-15.002-41.062-14.438-54.784-0.614-4.454 3.789-7.68 8.448-9.728 13.824-1.69 4.608-2.56 9.523-2.56 14.49s0.87 9.933 2.56 14.592c2.048 5.376 5.274 10.035 8.96 13.21l472.73 472.73c7.526 7.526 17.101 11.52 27.75 11.52s20.224-3.942 27.75-11.469l472.73-472.73c7.526-7.526 11.52-17.101 11.52-27.75s-3.994-20.122-11.52-27.648z"
+            fill="#b4b9bd"
+          />
+        </svg>
+      </div>
+      <div
+        className="c4"
+      >
+        <div
+          className="c5"
+        >
+          APR 23
+        </div>
+        <div
+          className="c6"
+        >
+          Thu, 8:00PM
+        </div>
+      </div>
+      <div
+        className="c7"
+      >
+        <div
+          className="c8"
+        >
+          Del Mar Fairgrounds
+        </div>
+        <div
+          className="c9"
+        >
+          KABOO 3-Day Pass
+        </div>
+      </div>
+    </a>
+    <div
+      className="c10"
+    >
+      <button
+        className="c11"
+        style={
+          Object {
+            "width": "100px",
+          }
+        }
+      >
+        See Tickets
+      </button>
+    </div>
+    <div
+      className="c12"
+    >
+      <svg
+        height="15px"
+        style={
+          Object {
+            "transform": "rotate(-90deg) ",
+          }
+        }
+        viewBox="0 0 1024 1024"
+        width="15px"
+      >
+        <path
+          d="M82.33 635.904c-16.333-7.168-30.618-16.845-42.906-28.928s-21.914-26.317-28.928-42.598c-7.014-16.333-10.496-33.792-10.496-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.64-30.771 28.928-42.854s26.573-21.658 42.906-28.672c16.333-7.014 33.741-10.547 52.378-10.547s36.045 3.482 52.378 10.547c16.333 7.014 30.618 16.589 42.906 28.672s21.914 26.368 28.928 42.906c6.963 16.435 10.445 33.997 10.445 52.582s-3.482 36.045-10.547 52.378c-7.014 16.333-16.64 30.515-28.928 42.598s-26.573 21.76-42.906 28.928c-16.333 7.168-33.741 10.803-52.378 10.803s-35.994-3.584-52.326-10.803zM459.622 635.904c-16.333-7.168-30.618-16.845-42.906-28.928s-21.914-26.317-28.928-42.598c-7.014-16.333-10.496-33.792-10.496-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.64-30.771 28.928-42.854s26.573-21.658 42.906-28.672c16.282-7.066 33.741-10.547 52.326-10.547s36.045 3.482 52.378 10.547c16.333 7.014 30.618 16.589 42.906 28.672s21.914 26.368 28.928 42.906c7.014 16.486 10.547 33.997 10.547 52.634s-3.482 36.045-10.547 52.378c-7.014 16.333-16.64 30.515-28.928 42.598s-26.573 21.76-42.906 28.928c-16.333 7.168-33.741 10.803-52.378 10.803s-36.045-3.635-52.378-10.854zM836.659 635.904c-16.486-7.168-30.771-16.845-42.906-28.928s-21.658-26.317-28.672-42.598c-7.014-16.333-10.547-33.741-10.547-52.378s3.482-36.147 10.547-52.634c7.014-16.486 16.589-30.771 28.672-42.906 12.083-12.083 26.368-21.658 42.906-28.672 16.486-7.014 33.997-10.547 52.634-10.547 18.586 0 36.045 3.482 52.378 10.547 16.333 7.014 30.515 16.589 42.598 28.672s21.76 26.368 28.928 42.906c7.219 16.486 10.803 34.048 10.803 52.634s-3.584 36.045-10.803 52.378c-7.168 16.333-16.845 30.515-28.928 42.598s-26.317 21.76-42.598 28.928c-16.333 7.168-33.741 10.803-52.378 10.803-18.586 0-36.147-3.584-52.634-10.803z"
+          fill="#b4b9bd"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="c13"
+  >
+    <a
+      className="c14"
+    >
+      Ticket Options Available
+    </a>
+    <div
+      className="c15"
+    >
+      on Partner Site
+    </div>
+  </div>
+</div>
+`;
