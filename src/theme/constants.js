@@ -1,16 +1,14 @@
 const constants = {
+  maxColumns: 12,
   borderRadius: {
     small: "2px",
     large: "4px"
   },
-  breakpoint: "735px",
-  pillBorderRadius: "18px",
-  thumbnailSize: "40px",
-  drawer: {
-    dismissAreaHeight: "60px",
-    lineUpAreaHeight: "55px",
-    desktopWidth: 26.05,
-    mobileWidth: 80
+  breakpoints: {
+    smallAndUp: "(min-width: 480px)",
+    mediumAndUp: "(min-width: 768px)",
+    largeAndUp: "(min-width: 1024px)",
+    xlAndUp: "(min-width: 1440px)"
   }
 };
 

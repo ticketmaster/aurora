@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders medium and up when medium size defined 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+
+.c0 > *,
+.c0 *:after,
+.c0 *:before {
+  box-sizing: border-box;
+}
+
+.c1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c1 [data-col]:last-of-type {
+  padding-right: 0;
+}
+
+.c1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c2 {
+  float: left;
+  padding-right: 0;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      data-col={true}
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid renders multiple sizes defined 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+
+.c0 > *,
+.c0 *:after,
+.c0 *:before {
+  box-sizing: border-box;
+}
+
+.c1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c1 [data-col]:last-of-type {
+  padding-right: 0;
+}
+
+.c1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c2 {
+  float: left;
+  padding-right: 0;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    width: 25%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c2 {
+    width: 8.333333333333332%;
+    padding-right: 24px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      data-col={true}
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid renders small size defined 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+
+.c0 > *,
+.c0 *:after,
+.c0 *:before {
+  box-sizing: border-box;
+}
+
+.c1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c1 [data-col]:last-of-type {
+  padding-right: 0;
+}
+
+.c1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c2 {
+  float: left;
+  padding-right: 16px;
+  width: 50%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c2 {
+    width: 50%;
+    padding-right: 24px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      data-col={true}
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Grid renders with defaults 1`] = `
+.c0 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
+
+.c0 > *,
+.c0 *:after,
+.c0 *:before {
+  box-sizing: border-box;
+}
+
+.c1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c1 [data-col]:last-of-type {
+  padding-right: 0;
+}
+
+.c1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.c2 {
+  float: left;
+  padding-right: 0;
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c2 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+      data-col={true}
+    >
+      Content
+    </div>
+  </div>
+</div>
+`;

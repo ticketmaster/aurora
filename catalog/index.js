@@ -5,13 +5,21 @@ import { Catalog } from "catalog";
 import home from "./pages/home/index";
 import colors from "./pages/colors/index";
 import buttons from "./pages/buttons/index";
+import grid from "./pages/grid/index";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, buttons];
+const pages = [home, colors, buttons, grid];
+
+const sizes = [
+  { name: "mobile", width: 480 },
+  { name: "tablet", width: 768 },
+  { name: "desktop", width: 1024 },
+  { name: "xLarge desktop", width: 1440 }
+];
 
 ReactDOM.render(
-  <Catalog title="Prism" theme={theme} pages={pages} />,
+  <Catalog title="Prism" theme={theme} pages={pages} responsiveSizes={sizes} />,
   document.getElementById("catalog")
 );
