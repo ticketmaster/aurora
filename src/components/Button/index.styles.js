@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { spacing, typography, colors, constants } from "../../theme";
+import { typography, colors, constants } from "../../theme";
 
 const HEIGHT = "36px";
 const VARIANTS = {
@@ -27,19 +27,14 @@ const VARIANTS = {
 };
 
 export const StyledButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.semiBold};
-  padding: 0 ${spacing.normal};
   height: ${HEIGHT};
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: ${constants.borderRadius.small};
-  margin-right: ${spacing.normal};
   cursor: pointer;
 
   color: ${({ variant }) => VARIANTS[variant].color};

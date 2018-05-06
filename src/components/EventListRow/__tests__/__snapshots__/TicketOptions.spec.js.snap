@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TicketOptions /> renders TicketOptions correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 {
+  color: #026cdf;
+  font-size: 14px;
+}
+
+.c2 {
+  font-size: 11px;
+  color: #999da0;
+}
+
+@media only screen and (min-width:480px) {
+  .c0 {
+    margin-left: 48px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <a
+    className="c1"
+  >
+    Ticket Options Available
+  </a>
+  <div
+    className="c2"
+  >
+    on Partner Site
+  </div>
+</div>
+`;
