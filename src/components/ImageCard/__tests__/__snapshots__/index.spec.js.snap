@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCard renders standard card 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: base:rgba(255,255,255,1);
+  light: rgba(255,255,255,0.7);
+  muted: rgba(255,255,255 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt=""
+      className="c2"
+      src="http://localhost/img.png"
+    />
+    <div
+      className="c3"
+    />
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders type = half 1`] = `
+.c1 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: base:rgba(255,255,255,1);
+  light: rgba(255,255,255,0.7);
+  muted: rgba(255,255,255 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  color: rgba(0,0,15,1);
+  padding-top: 0;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c5 {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt=""
+      className="c2"
+      src="http://localhost/img.png"
+    />
+    <div
+      className="c3"
+    />
+  </div>
+  <div
+    className="c4"
+    color="rgba(0, 0, 15, 1)"
+  >
+    <span
+      className="c5"
+    >
+      Title
+    </span>
+    <span
+      className="c6"
+    >
+      Sub Title
+    </span>
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders with custom image 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: base:rgba(255,255,255,1);
+  light: rgba(255,255,255,0.7);
+  muted: rgba(255,255,255 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c3 {
+  position: relative;
+  width: 100%;
+  color: rgba(255,255,255,1);
+  padding-top: 0;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c4 {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg />
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+        color="rgba(255, 255, 255, 1)"
+      >
+        <span
+          className="c4"
+        >
+          Title
+        </span>
+        <span
+          className="c5"
+        >
+          Sub Title
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Extra content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders with title & subtitle 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: base:rgba(255,255,255,1);
+  light: rgba(255,255,255,0.7);
+  muted: rgba(255,255,255 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  color: rgba(255,255,255,1);
+  padding-top: 0;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c5 {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt=""
+      className="c2"
+      src="http://localhost/img.png"
+    />
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        color="rgba(255, 255, 255, 1)"
+      >
+        <span
+          className="c5"
+        >
+          Title
+        </span>
+        <span
+          className="c6"
+        >
+          Sub Title
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders with title & subtitle, extra content 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: base:rgba(255,255,255,1);
+  light: rgba(255,255,255,0.7);
+  muted: rgba(255,255,255 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c4 {
+  position: relative;
+  width: 100%;
+  color: rgba(255,255,255,1);
+  padding-top: 0;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c5 {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt=""
+      className="c2"
+      src="http://localhost/img.png"
+    />
+    <div
+      className="c3"
+    >
+      <div
+        className="c4"
+        color="rgba(255, 255, 255, 1)"
+      >
+        <span
+          className="c5"
+        >
+          Title
+        </span>
+        <span
+          className="c6"
+        >
+          Sub Title
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      Extra content
+    </div>
+  </div>
+</div>
+`;

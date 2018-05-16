@@ -8,11 +8,12 @@ import typography from "./pages/typography/index";
 import buttons from "./pages/buttons/index";
 import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
+import imageCard from "./pages/image_card/index";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, typography, buttons, grid, icons];
+const pages = [home, colors, typography, buttons, grid, icons, imageCard];
 
 const sizes = [
   { name: "mobile", width: 480 },
