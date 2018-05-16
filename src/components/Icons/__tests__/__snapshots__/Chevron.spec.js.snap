@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChevronDownIcon ChevronLeftIcon renders chevronLeft icon correctly 1`] = `
+<svg
+  fill="#000"
+  height={13}
+  style={
+    Object {
+      "transform": "rotate(90deg)",
+    }
+  }
+  viewBox="0 0 15 7"
+  width={13}
+>
+  <path
+    d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+  />
+</svg>
+`;
+
+exports[`ChevronDownIcon ChevronRightIcon renders chevronRight icon correctly 1`] = `
+<svg
+  fill="#000"
+  height={13}
+  style={
+    Object {
+      "transform": "rotate(-90deg)",
+    }
+  }
+  viewBox="0 0 15 7"
+  width={13}
+>
+  <path
+    d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+  />
+</svg>
+`;
+
+exports[`ChevronDownIcon ChevronUpIcon renders chevronUp icon correctly 1`] = `
+<svg
+  fill="#000"
+  height={13}
+  style={
+    Object {
+      "transform": "rotate(-180deg)",
+    }
+  }
+  viewBox="0 0 15 7"
+  width={13}
+>
+  <path
+    d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+  />
+</svg>
+`;
+
+exports[`ChevronDownIcon renders default chevronDown icon correctly 1`] = `
+<svg
+  fill="#000"
+  height={13}
+  style={Object {}}
+  viewBox="0 0 15 7"
+  width={13}
+>
+  <path
+    d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+  />
+</svg>
+`;

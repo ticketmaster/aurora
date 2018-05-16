@@ -6,11 +6,12 @@ import home from "./pages/home/index";
 import colors from "./pages/colors/index";
 import buttons from "./pages/buttons/index";
 import grid from "./pages/grid/index";
+import icons from "./pages/icons/index";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, buttons, grid];
+const pages = [home, colors, buttons, grid, icons];
 
 const sizes = [
   { name: "mobile", width: 480 },

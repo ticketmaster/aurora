@@ -25,7 +25,8 @@
     "precommit": "lint-staged",
     "test": "jest",
     "test:watch": "jest --watch --no-cache --notify",
-    "test:cover": "jest --coverage"
+    "test:cover": "jest --coverage",
+    "add-icons": "pixo $* --out-dir src/components/Icons"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -86,7 +87,8 @@
     "stylelint": "9.1.3",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.3.1"
+    "stylelint-processor-styled-components": "^1.3.1",
+    "pixo": "^1.1.0"
   },
   "homepage": "https://code.ticketmaster.com/prism/",
   "repository": {
