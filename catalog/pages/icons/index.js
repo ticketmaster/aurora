@@ -9,7 +9,7 @@ import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
 
 const iconStyle = {
-  backgroundColor: colors.white,
+  backgroundColor: colors.white.base,
   padding: "20px",
   display: "flex",
   justifyContent: "center",

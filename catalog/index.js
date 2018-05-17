@@ -4,6 +4,7 @@ import { Catalog } from "catalog";
 
 import home from "./pages/home/index";
 import colors from "./pages/colors/index";
+import typography from "./pages/typography/index";
 import buttons from "./pages/buttons/index";
 import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
@@ -11,7 +12,7 @@ import icons from "./pages/icons/index";
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, buttons, grid, icons];
+const pages = [home, colors, typography, buttons, grid, icons];
 
 const sizes = [
   { name: "mobile", width: 480 },

@@ -1,59 +1,41 @@
-### Pacific
+### Heliotrope
 
 ```color-palette|horizontal
-colors: !import pacific
-```
-
-### Sierra
-
-```color-palette|horizontal
-colors: !import sierra
-```
-
-### Cascade
-
-```color-palette|horizontal
-colors: !import cascade
-```
-
-### Rocky
-
-```color-palette|horizontal
-colors: !import rocky
-```
-
-### Ridge
-
-```color-palette|horizontal
-colors: !import ridge
-```
-
-### Yosemite
-
-```color-palette|horizontal
-colors: !import yosemite
-```
-
-### Helen
-
-```color-palette|horizontal
-colors: !import helen
-```
-
-### Malibu
-
-```color-palette|horizontal
-colors: !import malibu
-```
-
-### Catalina
-
-```color-palette|horizontal
-colors: !import catalina
+colors: !import heliotrope
 ```
 
 ### Cruz
 
 ```color-palette|horizontal
 colors: !import cruz
+```
+
+### Alert
+
+```color-palette|horizontal
+colors: !import alert
+```
+
+### Caution
+
+```color-palette|horizontal
+colors: !import caution
+```
+
+### positive
+
+```color-palette|horizontal
+colors: !import positive
+```
+
+### Onyx
+
+```color-palette|horizontal
+colors: !import onyx
+```
+
+### White
+
+```color-palette|horizontal
+colors: !import white
 ```
