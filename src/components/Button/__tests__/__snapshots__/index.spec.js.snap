@@ -16,26 +16,26 @@ exports[`<Button /> renders link button correctly 1`] = `
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
-  color: #fff;
-  background-color: #009cde;
-  border: 1px solid #009cde;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .c0:disabled {
-  color: #fff;
-  background-color: #bfe6f7;
-  border: 1px solid #bfe6f7;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
@@ -63,24 +63,24 @@ exports[`<Button /> renders outline button correctly 1`] = `
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
-  color: #009cde;
-  background-color: #fff;
-  border: 1px solid #009cde;
+  color: rgba(2,108,223,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,1);
 }
 
 .c0:disabled {
-  color: #bfe6f7;
-  background-color: #fff;
-  border: 1px solid #bfe6f7;
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
@@ -107,24 +107,24 @@ exports[`<Button /> renders outline disabled button correctly 1`] = `
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
-  color: #009cde;
-  background-color: #fff;
-  border: 1px solid #009cde;
+  color: rgba(2,108,223,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,1);
 }
 
 .c0:disabled {
-  color: #bfe6f7;
-  background-color: #fff;
-  border: 1px solid #bfe6f7;
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
@@ -152,24 +152,24 @@ exports[`<Button /> renders standard button correctly 1`] = `
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
-  color: #fff;
-  background-color: #009cde;
-  border: 1px solid #009cde;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
 }
 
 .c0:disabled {
-  color: #fff;
-  background-color: #bfe6f7;
-  border: 1px solid #bfe6f7;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
@@ -196,24 +196,24 @@ exports[`<Button /> renders standard disabled button correctly 1`] = `
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  padding: 0 14px;
+  padding: 0 16px;
   height: 36px;
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
-  color: #fff;
-  background-color: #009cde;
-  border: 1px solid #009cde;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
 }
 
 .c0:disabled {
-  color: #fff;
-  background-color: #bfe6f7;
-  border: 1px solid #bfe6f7;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 

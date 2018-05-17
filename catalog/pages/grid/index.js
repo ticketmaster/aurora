@@ -4,7 +4,7 @@ import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
 
 const contentStyles = {
-  backgroundColor: colors.pacific.base,
+  backgroundColor: colors.azure.base,
   textAlign: "center"
 };
 

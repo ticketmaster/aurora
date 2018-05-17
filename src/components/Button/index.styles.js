@@ -5,24 +5,24 @@ import { spacing, typography, colors, constants } from "../../theme";
 const HEIGHT = "36px";
 const VARIANTS = {
   standard: {
-    color: colors.white,
-    backgroundColor: colors.pacific.base,
-    borderColor: colors.pacific.base
+    color: colors.white.base,
+    backgroundColor: colors.azure.base,
+    borderColor: colors.azure.base
   },
   standardDisabled: {
-    color: colors.white,
-    backgroundColor: colors.pacific.muted,
-    borderColor: colors.pacific.muted
+    color: colors.white.base,
+    backgroundColor: colors.azure.light,
+    borderColor: colors.azure.light
   },
   outline: {
-    color: colors.pacific.base,
-    backgroundColor: colors.white,
-    borderColor: colors.pacific.base
+    color: colors.azure.base,
+    backgroundColor: colors.white.base,
+    borderColor: colors.azure.base
   },
   outlineDisabled: {
-    color: colors.pacific.muted,
-    backgroundColor: colors.white,
-    borderColor: colors.pacific.muted
+    color: colors.azure.light,
+    backgroundColor: colors.white.base,
+    borderColor: colors.azure.light
   }
 };
 
@@ -32,14 +32,14 @@ export const StyledButton = styled.button`
   align-items: center;
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.semiBold};
-  padding: 0 ${spacing.normal};
+  padding: 0 ${spacing.moderate};
   height: ${HEIGHT};
   width: 100%;
   min-width: 100px;
   text-align: center;
   text-transform: capitalize;
   border-radius: ${constants.borderRadius.small};
-  margin-right: ${spacing.normal};
+  margin-right: ${spacing.moderate};
   cursor: pointer;
 
   color: ${({ variant }) => VARIANTS[variant].color};
