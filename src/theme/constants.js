@@ -5,10 +5,9 @@ const constants = {
     large: "4px"
   },
   breakpoints: {
-    smallAndUp: "(min-width: 480px)",
-    mediumAndUp: "(min-width: 768px)",
-    largeAndUp: "(min-width: 1024px)",
-    xlAndUp: "(min-width: 1440px)"
+    mediumAndUp: "(min-width: 481px)",
+    largeAndUp: "(min-width: 769px)",
+    xLargeAndUp: "(min-width: 1025px)"
   }
 };
 

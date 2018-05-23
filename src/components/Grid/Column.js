@@ -1,46 +1,60 @@
-import PropTypes from "prop-types";
 import styled from "styled-components";
-import constants from "../../theme/constants";
+import { mediumAndUp, largeAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
 
 const MAX_COLUMNS = 12;
 
 const getSize = val => val / MAX_COLUMNS * 100;
 
-const getPadding = size => props => {
-  if ((props[size] || props.large || props.medium || props.small) === 12)
-    return 0;
+const getFlexProps = val =>
+  val === 12
+    ? `
+      flex: 0 0 100%;
+    `
+    : `
+      flex: 0 0 ${getSize(val)}%;
+    `;
 
-  return `${spacing.gutters[size] || spacing.gutters.mediumAndUp}px`;
-};
+const Column = styled.div`
+  box-sizing: border-box;
+  padding-right: ${spacing.gutters.small / 2}px;
+  padding-left: ${spacing.gutters.small / 2}px;
+  max-width: ${props => getSize(props.small)}%;
+  ${props => getFlexProps(props.small)}
 
-const Column = styled.div.attrs({ "data-col": true })`
-  float: left;
-  padding-right: ${getPadding("small")};
-  width: ${props => getSize(props.small)}%;
+  ${mediumAndUp`
+    max-width: ${props => getSize(props.medium || props.small)}%;
+    padding-right: ${spacing.gutters.mediumAndUp / 2}px;
+    padding-left: ${spacing.gutters.mediumAndUp / 2}px;
+    ${props => getFlexProps(props.medium || props.small)}
+  `}
 
-  @media screen and ${constants.breakpoints.mediumAndUp} {
-    width: ${props => getSize(props.medium || props.small)}%;
-    padding-right: ${getPadding("medium")};
-  }
+  ${largeAndUp`
+    max-width: ${props => getSize(props.large || props.medium || props.small)}%;
+    ${props => getFlexProps(props.large || props.medium || props.small)}
+  `}
 
-  @media screen and ${constants.breakpoints.largeAndUp} {
-    width: ${props => getSize(props.large || props.medium || props.small)}%;
-    padding-right: ${getPadding("large")};
-  }
-
-  @media screen and ${constants.breakpoints.xlAndUp} {
-    width: ${props =>
-      getSize(props.xLarge || props.large || props.medium || props.small)}%;
-    padding-right: ${getPadding("xLarge")};
-  }
+  ${xLargeAndUp`
+     max-width: ${props =>
+       getSize(props.xLarge || props.large || props.medium || props.small)}%;
+    ${props =>
+      getFlexProps(props.xLarge || props.large || props.medium || props.small)}
+  `}
 `;
 
+const PropTypePositiveInt = (props, propName, componentName) => {
+  if (props[propName] >= 0) return null;
+
+  return new Error(
+    `Invalid value in ${propName} supplied to ${componentName} should be a positive integer`
+  );
+};
+
 Column.propTypes = {
-  small: PropTypes.number,
-  medium: PropTypes.number,
-  large: PropTypes.number,
-  xLarge: PropTypes.number
+  small: PropTypePositiveInt,
+  medium: PropTypePositiveInt,
+  large: PropTypePositiveInt,
+  xLarge: PropTypePositiveInt
 };
 
 Column.defaultProps = {

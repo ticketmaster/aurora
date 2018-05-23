@@ -4,61 +4,81 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 .c0 {
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - 32px);
-  box-sizing: border-box;
-}
-
-.c0 > *,
-.c0 *:after,
-.c0 *:before {
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 }
 
 .c1 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.c1 [data-col]:last-of-type {
-  padding-right: 0;
-}
-
-.c1:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0 1 auto;
+  -webkit-flex-grow: 0 1 auto;
+  -ms-flex-positive: 0 1 auto;
+  flex-grow: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 {
-  float: left;
-  padding-right: 0;
-  width: 100%;
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:481px) {
   .c0 {
-    width: calc(100% - 48px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    width: 50%;
+    padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .c2 {
-    width: 50%;
-    padding-right: 24px;
+@media screen and (min-width:481px) {
+  .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:481px) {
   .c2 {
-    width: 50%;
-    padding-right: 24px;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -70,7 +90,6 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   >
     <div
       className="c2"
-      data-col={true}
     >
       Content
     </div>
@@ -82,61 +101,81 @@ exports[`Grid renders multiple sizes defined 1`] = `
 .c0 {
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - 32px);
-  box-sizing: border-box;
-}
-
-.c0 > *,
-.c0 *:after,
-.c0 *:before {
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 }
 
 .c1 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.c1 [data-col]:last-of-type {
-  padding-right: 0;
-}
-
-.c1:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0 1 auto;
+  -webkit-flex-grow: 0 1 auto;
+  -ms-flex-positive: 0 1 auto;
+  flex-grow: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 {
-  float: left;
-  padding-right: 0;
-  width: 100%;
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:481px) {
   .c0 {
-    width: calc(100% - 48px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    width: 50%;
+    padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .c2 {
-    width: 25%;
-    padding-right: 24px;
+@media screen and (min-width:481px) {
+  .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:481px) {
   .c2 {
-    width: 8.333333333333332%;
-    padding-right: 24px;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c2 {
+    max-width: 8.333333333333332%;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
   }
 }
 
@@ -148,7 +187,6 @@ exports[`Grid renders multiple sizes defined 1`] = `
   >
     <div
       className="c2"
-      data-col={true}
     >
       Content
     </div>
@@ -160,61 +198,81 @@ exports[`Grid renders small size defined 1`] = `
 .c0 {
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - 32px);
-  box-sizing: border-box;
-}
-
-.c0 > *,
-.c0 *:after,
-.c0 *:before {
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 }
 
 .c1 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.c1 [data-col]:last-of-type {
-  padding-right: 0;
-}
-
-.c1:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0 1 auto;
+  -webkit-flex-grow: 0 1 auto;
+  -ms-flex-positive: 0 1 auto;
+  flex-grow: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 {
-  float: left;
-  padding-right: 16px;
-  width: 50%;
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 50%;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:481px) {
   .c0 {
-    width: calc(100% - 48px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    width: 50%;
+    padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .c2 {
-    width: 50%;
-    padding-right: 24px;
+@media screen and (min-width:481px) {
+  .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:481px) {
   .c2 {
-    width: 50%;
-    padding-right: 24px;
+    max-width: 50%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -226,7 +284,6 @@ exports[`Grid renders small size defined 1`] = `
   >
     <div
       className="c2"
-      data-col={true}
     >
       Content
     </div>
@@ -238,61 +295,81 @@ exports[`Grid renders with defaults 1`] = `
 .c0 {
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - 32px);
-  box-sizing: border-box;
-}
-
-.c0 > *,
-.c0 *:after,
-.c0 *:before {
+  padding-left: 16px;
+  padding-right: 16px;
   box-sizing: border-box;
 }
 
 .c1 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.c1 [data-col]:last-of-type {
-  padding-right: 0;
-}
-
-.c1:after {
-  content: "";
-  display: table;
-  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0 1 auto;
+  -webkit-flex-grow: 0 1 auto;
+  -ms-flex-positive: 0 1 auto;
+  flex-grow: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .c2 {
-  float: left;
-  padding-right: 0;
-  width: 100%;
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:481px) {
   .c0 {
-    width: calc(100% - 48px);
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
-@media screen and (min-width:768px) {
-  .c2 {
-    width: 100%;
-    padding-right: 0;
+@media screen and (min-width:481px) {
+  .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:481px) {
   .c2 {
-    width: 100%;
-    padding-right: 0;
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:769px) {
   .c2 {
-    width: 100%;
-    padding-right: 0;
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -304,7 +381,6 @@ exports[`Grid renders with defaults 1`] = `
   >
     <div
       className="c2"
-      data-col={true}
     >
       Content
     </div>
