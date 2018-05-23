@@ -1,20 +1,17 @@
 import styled from "styled-components";
-import constants from "../../theme/constants";
+import { mediumAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1440px;
-  width: calc(100% - ${spacing.gutters.small * 2}px);
+  padding-left: ${spacing.gutters.small}px;
+  padding-right: ${spacing.gutters.small}px;
   box-sizing: border-box;
-  & > *,
-  *:after,
-  *:before {
-    box-sizing: border-box;
-  }
-  @media screen and ${constants.breakpoints.mediumAndUp} {
-    width: calc(100% - ${spacing.gutters.mediumAndUp * 2}px);
-  }
+  ${mediumAndUp`
+    padding-left: ${spacing.gutters.mediumAndUp}px;
+    padding-right: ${spacing.gutters.mediumAndUp}px;
+  `};
 `;
 
 export default Container;

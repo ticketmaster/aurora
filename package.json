@@ -33,6 +33,7 @@
       "prettier --write",
       "git add",
       "eslint",
+      "stylelint \"{src,catalog}/**/*.{js,jsx}\"",
       "jest --bail --findRelatedTests --no-cache"
     ],
     "*.{json,md}": ["prettier --write", "git add"]
