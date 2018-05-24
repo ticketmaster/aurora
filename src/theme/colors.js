@@ -47,6 +47,7 @@ const colors = {
   },
   white: {
     base: "rgba(255, 255, 255, 1)",
+    lighter: "rgba(255, 255, 255, 0.2)",
     light: "rgba(255, 255, 255, 0.7)",
     muted: "rgba(255, 255, 255 0.5)"
   },
