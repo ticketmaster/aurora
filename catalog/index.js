@@ -10,17 +10,29 @@ import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
 import imageCard from "./pages/image_card/index";
 import listRow from "./pages/listRow";
+import header from "./pages/header/index";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
 };
-const pages = [home, colors, typography, buttons, grid, icons, imageCard, listRow];
+
+const pages = [
+  home,
+  colors,
+  typography,
+  buttons,
+  grid,
+  icons,
+  imageCard,
+  listRow,
+  header
+];
 
 const sizes = [
-  { name: "mobile", width: 480 },
-  { name: "tablet", width: 768 },
-  { name: "desktop", width: 1024 },
-  { name: "xLarge desktop", width: 1440 }
+  { name: "mobile", width: 375, height: 667 },
+  { name: "tablet", width: 768, height: 1024 },
+  { name: "desktop", width: 1024, height: 768 },
+  { name: "xLarge desktop", width: 1440, height: 1024 }
 ];
 
 ReactDOM.render(

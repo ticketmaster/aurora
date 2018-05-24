@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders with custom level 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  min-height: 122px;
+}
+
+.c5 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.c4 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    min-height: 140px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    min-height: 218px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c5 {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    font-size: 46px;
+  }
+}
+
+<section
+  className="c0"
+  from="#026cdf"
+  style={Object {}}
+  to="#3ac7ff"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h1
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          Generic
+        </span>
+         
+        <span
+          className="c5"
+        >
+          Header
+        </span>
+      </h1>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Header renders with default 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.c0 {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  min-height: 122px;
+}
+
+.c5 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.c4 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    min-height: 140px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    min-height: 218px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c5 {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    font-size: 46px;
+  }
+}
+
+<section
+  className="c0"
+  from="#026cdf"
+  style={Object {}}
+  to="#3ac7ff"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <h2
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          Generic
+        </span>
+         
+        <span
+          className="c5"
+        >
+          Header
+        </span>
+      </h2>
+    </div>
+  </div>
+</section>
+`;

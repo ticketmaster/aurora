@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithImage renders header with image 1`] = `
+.c2 {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c6 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 218px;
+  max-height: 278px;
+  z-index: 1;
+}
+
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
+.c3 {
+  z-index: 2;
+  position: relative;
+  min-height: 218px;
+  max-height: 278px;
+}
+
+.c5 {
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  height: 158px;
+  position: relative;
+}
+
+.c10 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.c9 {
+  color: rgba(255,255,255,1);
+  font-weight: 300;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.c8 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c7 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c11 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c12 {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c12 {
+    top: 30%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c12 {
+    top: 20%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c10 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c10 {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c9 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c9 {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c7 {
+    max-width: 66.66666666666666%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c7 {
+    max-width: 66.66666666666666%;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c7 {
+    max-width: 66.66666666666666%;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c11 {
+    max-width: 33.33333333333333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c11 {
+    max-width: 33.33333333333333%;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c11 {
+    max-width: 33.33333333333333%;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+}
+
+<section
+  className="c0"
+  style={undefined}
+>
+  <span
+    className="c1 c2"
+    from="#026cdf"
+    to="#3ac7ff"
+  />
+  <div
+    className="c3 c4"
+  >
+    <div
+      className="c5 row c6"
+    >
+      <div
+        className="c7"
+      >
+        <h1
+          className="c8"
+        >
+          <span
+            className="c9"
+          >
+            Generic
+          </span>
+           
+          <span
+            className="c10"
+          >
+            Header
+          </span>
+        </h1>
+      </div>
+      <div
+        className="c11"
+      >
+        <div
+          className="c12"
+        >
+          <img
+            alt="place holder"
+            src="https://placekitten.com/g/400/242"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

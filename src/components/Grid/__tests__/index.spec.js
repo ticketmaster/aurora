@@ -15,7 +15,6 @@ describe("Grid", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
-
   it("renders small size defined", () => {
     const component = renderer.create(
       <Container>
@@ -24,7 +23,6 @@ describe("Grid", () => {
         </Row>
       </Container>
     );
-
     expect(component.toJSON()).toMatchSnapshot();
   });
 
