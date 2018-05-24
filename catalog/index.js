@@ -11,6 +11,7 @@ import icons from "./pages/icons/index";
 import imageCard from "./pages/image_card/index";
 import listRow from "./pages/listRow";
 import header from "./pages/header/index";
+import inputs from "./pages/inputs/index";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -25,7 +26,8 @@ const pages = [
   icons,
   imageCard,
   listRow,
-  header
+  header,
+  inputs
 ];
 
 const sizes = [

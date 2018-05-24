@@ -62,6 +62,11 @@ rows:
     <div style={iconLabelStyle}>ChevronUp Icon</div>
   </Column>
 
+  <Column medium={3}>
+    <div style={iconStyle}><SearchIcon size={22} color="#000"/></div>
+    <div style={iconLabelStyle}>Search Icon</div>
+  </Column>
+
 </Row>
 </Container>
 ```

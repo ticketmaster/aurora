@@ -3,7 +3,8 @@ import { pageLoader } from "catalog";
 import {
   ChevronIcon,
   UserIcon,
-  OverflowIcon
+  OverflowIcon,
+  SearchIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -28,6 +29,7 @@ export default {
     ChevronIcon,
     UserIcon,
     OverflowIcon,
+    SearchIcon,
     Container,
     Row,
     Column,
