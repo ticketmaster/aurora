@@ -49,6 +49,10 @@ const colors = {
     base: "rgba(255, 255, 255, 1)",
     light: "rgba(255, 255, 255, 0.7)",
     muted: "rgba(255, 255, 255 0.5)"
+  },
+  defaultGradient: {
+    from: "#026cdf",
+    to: "#3ac7ff"
   }
 };
 

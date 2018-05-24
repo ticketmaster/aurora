@@ -5,7 +5,7 @@ import { mediumAndUp } from "../../theme/mediaQueries";
 
 const Row = styled.div`
   display: flex;
-  flex-grow: 0 1 auto;
+  flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
