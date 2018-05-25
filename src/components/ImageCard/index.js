@@ -19,11 +19,7 @@ const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    ${colors.blackPearl}
-  );
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
   display: flex;
   align-items: flex-end;
 `;

@@ -5,9 +5,7 @@ exports[`ImageCard renders standard card 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background-color: base:rgba(255,255,255,1);
-  light: rgba(255,255,255,0.7);
-  muted: rgba(255,255,255 0.5);
+  background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -22,7 +20,7 @@ exports[`ImageCard renders standard card 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,9 +65,7 @@ exports[`ImageCard renders type = half 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background-color: base:rgba(255,255,255,1);
-  light: rgba(255,255,255,0.7);
-  muted: rgba(255,255,255 0.5);
+  background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -84,7 +80,7 @@ exports[`ImageCard renders type = half 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -181,9 +177,7 @@ exports[`ImageCard renders with custom image 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background-color: base:rgba(255,255,255,1);
-  light: rgba(255,255,255,0.7);
-  muted: rgba(255,255,255 0.5);
+  background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -193,7 +187,7 @@ exports[`ImageCard renders with custom image 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -285,9 +279,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background-color: base:rgba(255,255,255,1);
-  light: rgba(255,255,255,0.7);
-  muted: rgba(255,255,255 0.5);
+  background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -302,7 +294,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -393,9 +385,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   position: relative;
   overflow: hidden;
   border-radius: 4px;
-  background-color: base:rgba(255,255,255,1);
-  light: rgba(255,255,255,0.7);
-  muted: rgba(255,255,255 0.5);
+  background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -410,7 +400,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient( to bottom, rgba(0,0,0,0), #1F262D );
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
