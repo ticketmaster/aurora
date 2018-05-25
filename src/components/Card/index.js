@@ -7,6 +7,6 @@ export default styled.div`
   position: relative;
   overflow: hidden;
   border-radius: ${constants.borderRadius.large};
-  background-color: ${colors.white};
+  background-color: ${colors.white.base};
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 `;
