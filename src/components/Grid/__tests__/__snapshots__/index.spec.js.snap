@@ -28,6 +28,14 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   margin-right: -8px;
 }
 
+.c1 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .c2 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -85,7 +93,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="row c1"
   >
     <div
       className="c2"
@@ -122,6 +130,14 @@ exports[`Grid renders multiple sizes defined 1`] = `
   box-sizing: border-box;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.c1 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .c2 {
@@ -181,7 +197,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="row c1"
   >
     <div
       className="c2"
@@ -218,6 +234,14 @@ exports[`Grid renders small size defined 1`] = `
   box-sizing: border-box;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.c1 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .c2 {
@@ -277,7 +301,7 @@ exports[`Grid renders small size defined 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="row c1"
   >
     <div
       className="c2"
@@ -314,6 +338,14 @@ exports[`Grid renders with defaults 1`] = `
   box-sizing: border-box;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.c1 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .c2 {
@@ -373,7 +405,7 @@ exports[`Grid renders with defaults 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="row c1"
   >
     <div
       className="c2"

@@ -20,6 +20,14 @@ exports[`Header renders with custom level 1`] = `
   margin-right: -8px;
 }
 
+.c2 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .c1 {
   margin: 0 auto;
   max-width: 1440px;
@@ -132,7 +140,7 @@ exports[`Header renders with custom level 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="row c2"
     >
       <h1
         className="c3"
@@ -174,6 +182,14 @@ exports[`Header renders with default 1`] = `
   margin-right: -8px;
 }
 
+.c2 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .c1 {
   margin: 0 auto;
   max-width: 1440px;
@@ -286,7 +302,7 @@ exports[`Header renders with default 1`] = `
     className="c1"
   >
     <div
-      className="c2"
+      className="row c2"
     >
       <h2
         className="c3"
