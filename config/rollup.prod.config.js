@@ -29,7 +29,11 @@ export default {
     resolve(),
     babel({
       presets: [["env", { modules: false }], "react"],
-      plugins: ["transform-object-rest-spread"],
+      plugins: [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "external-helpers"
+      ],
       babelrc: false
     }),
     stripPropTypes({ sourceMap: false }),
