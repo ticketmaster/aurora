@@ -6,10 +6,9 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0 1 auto;
-  -webkit-flex-grow: 0 1 auto;
-  -ms-flex-positive: 0 1 auto;
-  flex-grow: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -19,6 +18,14 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   box-sizing: border-box;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.c3 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .c4 {
@@ -593,7 +600,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
     onClick={[Function]}
   >
     <div
-      className="c2 c3"
+      className="c2 row c3"
     >
       <div
         className="c4"
@@ -690,7 +697,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
     </div>
   </button>
   <div
-    className="c3"
+    className="row c3"
   >
     <div
       className="c19"
@@ -721,10 +728,9 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0 1 auto;
-  -webkit-flex-grow: 0 1 auto;
-  -ms-flex-positive: 0 1 auto;
-  flex-grow: 0 1 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -734,6 +740,14 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   box-sizing: border-box;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.c3 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .c4 {
@@ -1218,7 +1232,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
     onClick={[Function]}
   >
     <div
-      className="c2 c3"
+      className="c2 row c3"
     >
       <div
         className="c4"
