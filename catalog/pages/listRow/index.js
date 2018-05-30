@@ -1,6 +1,6 @@
 import { pageLoader } from "catalog";
 
-import ListRow from "../../../src/components/ListRow";
+import ListRow from "../../../src/components/List/Row";
 import { Container, Row, Column } from "../../../src/components/Grid";
 
 export default {
