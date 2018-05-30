@@ -11,6 +11,13 @@ describe("ImageCard", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+  it("renders card without overlay", () => {
+    const component = renderer.create(
+      <ImageCard src="http://localhost/img.png" withOverlay={false} />
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 
   it("renders with title & subtitle", () => {
     const component = renderer.create(

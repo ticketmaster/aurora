@@ -1,5 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ImageCard renders card without overlay 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt=""
+      className="c2"
+      src="http://localhost/img.png"
+    />
+    <div
+      className="c3"
+    />
+  </div>
+</div>
+`;
+
 exports[`ImageCard renders standard card 1`] = `
 .c0 {
   position: relative;

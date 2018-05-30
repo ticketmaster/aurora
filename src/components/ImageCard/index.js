@@ -19,7 +19,10 @@ const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  background-image: ${props =>
+    props.withOverlay
+      ? "linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)"
+      : "transparent"};
   display: flex;
   align-items: flex-end;
 `;
@@ -63,16 +66,15 @@ const RowContainer = Container.extend`
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, children, type, ...props }) => {
+const ImageCard = ({ src, alt, children, type, withOverlay, ...props }) => {
   const [title, subTitle, ...rest] = Children.toArray(children || []);
   const img = props.image || <Image src={src} alt={alt} />;
-
   if (type === "half") {
     return (
       <RowContainer>
         <Card>
           {img}
-          <Overlay />
+          <Overlay withOverlay={withOverlay} />
         </Card>
         <CaptionContainer color={colors.onyx.base}>
           {title}
@@ -86,7 +88,7 @@ const ImageCard = ({ src, alt, children, type, ...props }) => {
     <Card>
       <Container>
         {img}
-        <Overlay>
+        <Overlay withOverlay={withOverlay}>
           {(title || subTitle) && (
             <CaptionContainer color={colors.white.base}>
               {title}
@@ -105,7 +107,8 @@ ImageCard.propTypes = {
   src: PropTypes.string,
   alt: PropTypes.string,
   children: PropTypes.node,
-  image: PropTypes.element
+  image: PropTypes.element,
+  withOverlay: PropTypes.bool
 };
 
 ImageCard.defaultProps = {
@@ -113,7 +116,8 @@ ImageCard.defaultProps = {
   alt: "",
   src: "",
   children: null,
-  image: null
+  image: null,
+  withOverlay: true
 };
 
 ImageCard.Title = Title;
