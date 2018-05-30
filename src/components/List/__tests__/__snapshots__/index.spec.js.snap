@@ -1,5 +1,747 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<ListRow /> renders eventListRow with container 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c4 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c5 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 25%;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+
+.c9 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 66.66666666666666%;
+  -webkit-flex: 0 0 66.66666666666666%;
+  -ms-flex: 0 0 66.66666666666666%;
+  flex: 0 0 66.66666666666666%;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c12 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c17 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 8.333333333333332%;
+  -webkit-flex: 0 0 8.333333333333332%;
+  -ms-flex: 0 0 8.333333333333332%;
+  flex: 0 0 8.333333333333332%;
+}
+
+.c21 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 75%;
+  -webkit-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+}
+
+.c23 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 25%;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+
+.c11 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,1);
+}
+
+.c7 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,0.6);
+}
+
+.c6 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,1);
+  font-weight: 600;
+}
+
+.c22 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  padding: 16px 0 8px 12px;
+  background-color: rgba(255,255,255,1);
+}
+
+.c1:not(:last-of-type) {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c13 {
+  display: none;
+}
+
+.c15 {
+  display: none;
+}
+
+.c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.c20 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+
+.c18 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c18:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c0 {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    max-width: 15%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 15%;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c5 {
+    max-width: 10.833333333333334%;
+    -webkit-flex: 0 0 10.833333333333334%;
+    -ms-flex: 0 0 10.833333333333334%;
+    flex: 0 0 10.833333333333334%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c5 {
+    max-width: 8.333333333333332%;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c9 {
+    max-width: 66.66666666666666%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c9 {
+    max-width: 66.66666666666666%;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c9 {
+    max-width: 66.66666666666666%;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c10 {
+    max-width: 33.33333333333333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c10 {
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c10 {
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c12 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c12 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c12 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c14 {
+    max-width: 66.66666666666666%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 66.66666666666666%;
+    -ms-flex: 0 0 66.66666666666666%;
+    flex: 0 0 66.66666666666666%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c14 {
+    max-width: 37.5%;
+    -webkit-flex: 0 0 37.5%;
+    -ms-flex: 0 0 37.5%;
+    flex: 0 0 37.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c14 {
+    max-width: 40.833333333333336%;
+    -webkit-flex: 0 0 40.833333333333336%;
+    -ms-flex: 0 0 40.833333333333336%;
+    flex: 0 0 40.833333333333336%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c16 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c16 {
+    max-width: 37.5%;
+    -webkit-flex: 0 0 37.5%;
+    -ms-flex: 0 0 37.5%;
+    flex: 0 0 37.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c16 {
+    max-width: 40.833333333333336%;
+    -webkit-flex: 0 0 40.833333333333336%;
+    -ms-flex: 0 0 40.833333333333336%;
+    flex: 0 0 40.833333333333336%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c17 {
+    max-width: 16.666666666666664%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 16.666666666666664%;
+    -ms-flex: 0 0 16.666666666666664%;
+    flex: 0 0 16.666666666666664%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c17 {
+    max-width: 13.333333333333334%;
+    -webkit-flex: 0 0 13.333333333333334%;
+    -ms-flex: 0 0 13.333333333333334%;
+    flex: 0 0 13.333333333333334%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c17 {
+    max-width: 9.166666666666668%;
+    -webkit-flex: 0 0 9.166666666666668%;
+    -ms-flex: 0 0 9.166666666666668%;
+    flex: 0 0 9.166666666666668%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c19 {
+    max-width: 8.333333333333332%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c19 {
+    max-width: 8.333333333333332%;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c19 {
+    max-width: 8.333333333333332%;
+    -webkit-flex: 0 0 8.333333333333332%;
+    -ms-flex: 0 0 8.333333333333332%;
+    flex: 0 0 8.333333333333332%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c21 {
+    max-width: 83.33333333333334%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c21 {
+    max-width: 87.5%;
+    -webkit-flex: 0 0 87.5%;
+    -ms-flex: 0 0 87.5%;
+    flex: 0 0 87.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c21 {
+    max-width: 90%;
+    -webkit-flex: 0 0 90%;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c23 {
+    max-width: 16.666666666666664%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 16.666666666666664%;
+    -ms-flex: 0 0 16.666666666666664%;
+    flex: 0 0 16.666666666666664%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c23 {
+    max-width: 12.5%;
+    -webkit-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c23 {
+    max-width: 10%;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+  }
+}
+
+@media only screen and {
+  .c11 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    padding: 18px 0 8px 12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c13 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c8 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <a
+      className="c2"
+      href="http://localhost/new/"
+      onClick={[Function]}
+    >
+      <div
+        className="c3 row c4"
+      >
+        <div
+          className="c5"
+        >
+          <div
+            className="c6"
+            color={null}
+            style={
+              Object {
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="c7"
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="c8 c9"
+        >
+          <div
+            className="c10"
+          >
+            <div
+              className="c11"
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="c12"
+          >
+            <div
+              className="c7"
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+        <div
+          className="c13 c14"
+        >
+          <div
+            className="c11"
+          >
+            Del Mar Fairgrounds
+          </div>
+        </div>
+        <div
+          className="c15 c16"
+        >
+          <div
+            className="c11"
+          >
+            KABOO 3-Day Pass
+          </div>
+        </div>
+        <div
+          className="c13 c17"
+        >
+          <span
+            aria-label="See Tickets"
+            className="c18"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+        <div
+          className="c8 c19"
+        >
+          <span
+            className="c20"
+            onClick={[Function]}
+          >
+            <svg
+              fill="rgba(0, 0, 15, 0.6)"
+              height={22}
+              onClick={[Function]}
+              viewBox="0 0 5 21"
+              width={22}
+            >
+              <path
+                d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </a>
+    <div
+      className="row c4"
+    >
+      <div
+        className="c21"
+      >
+        <a
+          className="c22"
+          href=""
+        >
+          Ticket Options Available
+        </a>
+      </div>
+      <div
+        className="c23"
+      >
+        <div
+          className="c7"
+        >
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 .c3 {
   display: -webkit-box;
@@ -108,7 +850,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   flex: 0 0 8.333333333333332%;
 }
 
-.c19 {
+.c20 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -118,7 +860,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   flex: 0 0 75%;
 }
 
-.c21 {
+.c22 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -159,7 +901,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   font-weight: 600;
 }
 
-.c20 {
+.c21 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -174,8 +916,9 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 .c0 {
   padding: 16px 0 8px 12px;
   background-color: rgba(255,255,255,1);
-  border-left: 1px solid #E0E0E0;
-  border-right: 1px solid #E0E0E0;
+}
+
+.c0:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -195,6 +938,13 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 .c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.c19 {
   background: none;
   border: none;
   padding: 0;
@@ -477,7 +1227,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c19 {
+  .c20 {
     max-width: 83.33333333333334%;
     padding-right: 12px;
     padding-left: 12px;
@@ -488,7 +1238,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c19 {
+  .c20 {
     max-width: 87.5%;
     -webkit-flex: 0 0 87.5%;
     -ms-flex: 0 0 87.5%;
@@ -497,7 +1247,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c19 {
+  .c20 {
     max-width: 90%;
     -webkit-flex: 0 0 90%;
     -ms-flex: 0 0 90%;
@@ -506,7 +1256,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c21 {
+  .c22 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -517,7 +1267,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c21 {
+  .c22 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -526,7 +1276,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c21 {
+  .c22 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -595,8 +1345,9 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
 <div
   className="c0"
 >
-  <button
+  <a
     className="c1"
+    href="http://localhost/new/"
     onClick={[Function]}
   >
     <div
@@ -677,8 +1428,8 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
       <div
         className="c7 c18"
       >
-        <button
-          className="c1"
+        <span
+          className="c19"
           onClick={[Function]}
         >
           <svg
@@ -692,25 +1443,25 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
             />
           </svg>
-        </button>
+        </span>
       </div>
     </div>
-  </button>
+  </a>
   <div
     className="row c3"
   >
     <div
-      className="c19"
+      className="c20"
     >
       <a
-        className="c20"
+        className="c21"
         href=""
       >
         Ticket Options Available
       </a>
     </div>
     <div
-      className="c21"
+      className="c22"
     >
       <div
         className="c6"
@@ -864,8 +1615,9 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 .c0 {
   padding: 16px 0 12px 12px;
   background-color: rgba(255,255,255,1);
-  border-left: 1px solid #E0E0E0;
-  border-right: 1px solid #E0E0E0;
+}
+
+.c0:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -885,6 +1637,13 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 .c1 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.c19 {
   background: none;
   border: none;
   padding: 0;
@@ -1227,8 +1986,9 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 <div
   className="c0"
 >
-  <button
+  <a
     className="c1"
+    href="http://localhost/new/"
     onClick={[Function]}
   >
     <div
@@ -1309,8 +2069,8 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
       <div
         className="c7 c18"
       >
-        <button
-          className="c1"
+        <span
+          className="c19"
           onClick={[Function]}
         >
           <svg
@@ -1324,9 +2084,9 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
             />
           </svg>
-        </button>
+        </span>
       </div>
     </div>
-  </button>
+  </a>
 </div>
 `;
