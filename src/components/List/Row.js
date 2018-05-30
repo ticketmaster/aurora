@@ -17,15 +17,15 @@ const ListContainer = styled.div`
   padding: ${spacing.moderate} 0
     ${props => (props.variant === "withLink" ? spacing.cozy : "12px")} 12px;
   background-color: ${colors.white.base};
-  border-left: 1px solid ${colors.lightGray};
-  border-right: 1px solid ${colors.lightGray};
-  border-bottom: ${props =>
-    !props.isLast ? `1px solid ${colors.lightGray}` : 0};
   ${mediumAndUp`
     padding: 18px 0
       ${props => (props.variant === "withLink" ? spacing.cozy : "18px")}
       12px;
   `};
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid ${colors.lightGray};
+  }
 `;
 
 const ListRow = styled(Row)`
@@ -56,7 +56,13 @@ const SubTitleColumn = styled(Column)`
   `};
 `;
 
-const ClickableButton = styled.button`
+const LinkWrapper = styled.a`
+  text-decoration: none;
+  display: block;
+  width: 100%;
+`;
+
+const ClickableButton = styled.span`
   background: none;
   border: none;
   padding: 0;
@@ -69,7 +75,6 @@ const ListRowButton = StyledButton.withComponent("span").extend`
   display: flex;
   justify-content: center;
   align-items: center;
-
 `;
 
 const ListItem = ({
@@ -78,6 +83,7 @@ const ListItem = ({
   dateTitle,
   dateSubTitle,
   buttonText,
+  href,
   variant,
   linkTitle,
   linkUrl,
@@ -88,7 +94,7 @@ const ListItem = ({
   isLast
 }) => (
   <ListContainer isLast={isLast} variant={variant} onExpand={onClick}>
-    <ClickableButton onClick={onClick}>
+    <LinkWrapper onClick={onClick} href={href}>
       <ListRow>
         <Column small={3} medium={1.8} large={1.3} xLarge={1}>
           <BoldText
@@ -137,7 +143,7 @@ const ListItem = ({
           </ClickableButton>
         </MobileOnlyColumn>
       </ListRow>
-    </ClickableButton>
+    </LinkWrapper>
     {variant === "withLink" ? (
       <Row>
         <Column small={9} medium={10} large={10.5} xLarge={10.8}>
@@ -163,6 +169,7 @@ ListItem.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   dateTitle: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
   dateSubTitle: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(variants).isRequired,
