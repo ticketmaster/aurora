@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import ListRow from "../";
+import ListRow from "../Row";
 
 describe("<ListRow />", () => {
   it("renders standard eventListRow correctly", () => {
