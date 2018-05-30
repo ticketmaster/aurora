@@ -1,0 +1,903 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar renders fixed 1`] = `
+.c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  max-height: 60px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+  -webkit-transition-property: background-color,color,font-weight;
+  transition-property: background-color,color,font-weight;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.c0 .linkItem:visited {
+  color: rgba(255,255,255,1);
+}
+
+.c0.inverted {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+}
+
+.c0.inverted .linkItem:visited {
+  color: rgba(0,0,15,1);
+}
+
+.c1 {
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c9 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 16px;
+  padding-bottom: 21px;
+  padding-left: 12px;
+}
+
+.c4 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 12px;
+}
+
+.c3 {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.c2 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+}
+
+.c5 {
+  display: none;
+  height: 60px;
+  width: 100%;
+}
+
+.c8 {
+  display: none;
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c7 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 19px 16px 19px 16px;
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c9 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 24px;
+    padding-bottom: 21px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c3 {
+    padding-left: 24px !important;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c5 {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c6 {
+    position: relative;
+  }
+
+  .c6:hover .linkList {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 41px;
+  }
+
+  .c6:hover .linkList .linkItem {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c7:hover {
+    background-color: rgba(38,38,38,0.1);
+  }
+
+  .inverted .c7:hover {
+    background-color: #E6E6E6;
+  }
+}
+
+<header
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+    >
+      <svg
+        fill="rgba(255, 255, 255, 1)"
+        height={17}
+        viewBox="0 0 20 17"
+        width={17}
+      >
+        <path
+          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
+        />
+      </svg>
+    </button>
+    Content
+    <a
+      className="c3 c4"
+      href="http://localhost/new/"
+    />
+    <nav
+      className="c5"
+    >
+      <span
+        className="linkContainer c6"
+      >
+        <a
+          className="linkItem c7"
+        >
+          Link 1
+        </a>
+      </span>
+      <span
+        className="linkContainer c6"
+      >
+        <a
+          className="linkItem c7"
+        >
+          Link 2
+        </a>
+      </span>
+      <span
+        className="linkContainer c6"
+      >
+        <a
+          className="linkItem c7"
+        >
+          Link 3
+        </a>
+      </span>
+      <span
+        className="linkContainer c6"
+      >
+        <a
+          className="linkItem c7"
+        >
+          Link 4
+        </a>
+        <nav
+          className="linkList c8"
+          style={
+            Object {
+              "minWidth": "258px",
+            }
+          }
+        >
+          <span
+            className="linkContainer c6"
+          >
+            <a
+              className="linkItem c7"
+            >
+              Link 5
+            </a>
+          </span>
+          <span
+            className="linkContainer c6"
+          >
+            <a
+              className="linkItem c7"
+            >
+              Link 6
+            </a>
+          </span>
+          <span
+            className="linkContainer c6"
+          >
+            <a
+              className="linkItem c7"
+            >
+              Link 7 With Really Long Content 
+            </a>
+          </span>
+        </nav>
+      </span>
+    </nav>
+    <button
+      className="c9"
+      type="button"
+    >
+      Random Button!
+    </button>
+  </div>
+</header>
+`;
+
+exports[`NavBar renders inverted 1`] = `
+.c0 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  max-height: 60px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+  -webkit-transition-property: background-color,color,font-weight;
+  transition-property: background-color,color,font-weight;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.c0 .linkItem:visited {
+  color: rgba(255,255,255,1);
+}
+
+.c0.inverted {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+}
+
+.c0.inverted .linkItem:visited {
+  color: rgba(0,0,15,1);
+}
+
+.c1 {
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c3 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 12px;
+}
+
+.c5 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 12px;
+}
+
+.c6 {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.c4 {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.c2 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+}
+
+.c7 {
+  display: none;
+  height: 60px;
+  width: 100%;
+}
+
+.c10 {
+  display: none;
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c9 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 19px 16px 19px 16px;
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    display: none;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    padding-left: 24px !important;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c7 {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c8 {
+    position: relative;
+  }
+
+  .c8:hover .linkList {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 41px;
+  }
+
+  .c8:hover .linkList .linkItem {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c9:hover {
+    background-color: rgba(38,38,38,0.1);
+  }
+
+  .inverted .c9:hover {
+    background-color: #E6E6E6;
+  }
+}
+
+<header
+  className="inverted c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+    >
+      <svg
+        fill="rgba(2, 108, 223, 1)"
+        height={17}
+        viewBox="0 0 20 17"
+        width={17}
+      >
+        <path
+          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
+        />
+      </svg>
+    </button>
+    <button
+      className="c3"
+      type="button"
+    >
+      Random Button!
+    </button>
+    <a
+      className="c4 c5"
+      href="http://localhost/new/"
+    >
+      <h1
+        className="c6"
+      >
+        Logo!
+      </h1>
+    </a>
+    <nav
+      className="c7"
+    >
+      <span
+        className="linkContainer c8"
+      >
+        <a
+          className="linkItem c9"
+        >
+          Link 1
+        </a>
+      </span>
+      <span
+        className="linkContainer c8"
+      >
+        <a
+          className="linkItem c9"
+        >
+          Link 2
+        </a>
+      </span>
+      <span
+        className="linkContainer c8"
+      >
+        <a
+          className="linkItem c9"
+        >
+          Link 3
+        </a>
+      </span>
+      <span
+        className="linkContainer c8"
+      >
+        <a
+          className="linkItem c9"
+        >
+          Link 4
+        </a>
+        <nav
+          className="linkList c10"
+          style={
+            Object {
+              "minWidth": "258px",
+            }
+          }
+        >
+          <span
+            className="linkContainer c8"
+          >
+            <a
+              className="linkItem c9"
+            >
+              Link 5
+            </a>
+          </span>
+          <span
+            className="linkContainer c8"
+          >
+            <a
+              className="linkItem c9"
+            >
+              Link 6
+            </a>
+          </span>
+          <span
+            className="linkContainer c8"
+          >
+            <a
+              className="linkItem c9"
+            >
+              Link 7 With Really Long Content 
+            </a>
+          </span>
+        </nav>
+      </span>
+    </nav>
+  </div>
+</header>
+`;
+
+exports[`NavBar renders with defaults 1`] = `
+.c0 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  max-height: 60px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+  -webkit-transition-property: background-color,color,font-weight;
+  transition-property: background-color,color,font-weight;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.c0 .linkItem:visited {
+  color: rgba(255,255,255,1);
+}
+
+.c0.inverted {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+}
+
+.c0.inverted .linkItem:visited {
+  color: rgba(0,0,15,1);
+}
+
+.c1 {
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.c2 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+}
+
+.c3 {
+  display: none;
+  height: 60px;
+  width: 100%;
+}
+
+.c6 {
+  display: none;
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,15,1);
+  font-weight: 400;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 19px 16px 19px 16px;
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    display: block;
+    padding-top: 22px;
+    padding-right: 12px;
+    padding-bottom: 21px;
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c3 {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    position: relative;
+  }
+
+  .c4:hover .linkList {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 41px;
+  }
+
+  .c4:hover .linkList .linkItem {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5:hover {
+    background-color: rgba(38,38,38,0.1);
+  }
+
+  .inverted .c5:hover {
+    background-color: #E6E6E6;
+  }
+}
+
+<header
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+    >
+      <svg
+        fill="rgba(255, 255, 255, 1)"
+        height={17}
+        viewBox="0 0 20 17"
+        width={17}
+      >
+        <path
+          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
+        />
+      </svg>
+    </button>
+    Content
+    <nav
+      className="c3"
+    >
+      <span
+        className="linkContainer c4"
+      >
+        <a
+          className="linkItem c5"
+        >
+          Link 1
+        </a>
+      </span>
+      <span
+        className="linkContainer c4"
+      >
+        <a
+          className="linkItem c5"
+        >
+          Link 2
+        </a>
+      </span>
+      <span
+        className="linkContainer c4"
+      >
+        <a
+          className="linkItem c5"
+        >
+          Link 3
+        </a>
+      </span>
+      <span
+        className="linkContainer c4"
+      >
+        <a
+          className="linkItem c5"
+        >
+          Link 4
+        </a>
+        <nav
+          className="linkList c6"
+          style={
+            Object {
+              "minWidth": "258px",
+            }
+          }
+        >
+          <span
+            className="linkContainer c4"
+          >
+            <a
+              className="linkItem c5"
+            >
+              Link 5
+            </a>
+          </span>
+          <span
+            className="linkContainer c4"
+          >
+            <a
+              className="linkItem c5"
+            >
+              Link 6
+            </a>
+          </span>
+          <span
+            className="linkContainer c4"
+          >
+            <a
+              className="linkItem c5"
+            >
+              Link 7 With Really Long Content 
+            </a>
+          </span>
+        </nav>
+      </span>
+    </nav>
+  </div>
+</header>
+`;
