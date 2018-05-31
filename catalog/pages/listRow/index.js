@@ -1,7 +1,8 @@
 import { pageLoader } from "catalog";
 
 import ListRow from "../../../src/components/List/Row";
-import { Container, Row, Column } from "../../../src/components/Grid";
+import Container from "../../../src/components/List/Container";
+import { Row, Column } from "../../../src/components/Grid";
 
 export default {
   path: "/listRow",
