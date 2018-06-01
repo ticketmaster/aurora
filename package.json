@@ -12,7 +12,9 @@
   "main": "dist/index.cjs.js",
   "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
@@ -36,11 +38,16 @@
       "stylelint \"{src,catalog}/**/*.{js,jsx}\"",
       "jest --bail --findRelatedTests --no-cache"
     ],
-    "*.{json,md}": ["prettier --write", "git add"]
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
-    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 80,
@@ -65,6 +72,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "catalog": "^3.5.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
