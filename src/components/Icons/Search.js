@@ -10,12 +10,13 @@ const SearchIcon = ({ size, color, children, ...props }) => (
 
 SearchIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   children: PropTypes.node
 };
 
 SearchIcon.defaultProps = {
-  children: null
+  children: null,
+  color: "currentcolor"
 };
 
 export default SearchIcon;

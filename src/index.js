@@ -21,7 +21,7 @@ export {
   UserIcon,
   StarIcon
 } from "./components/Icons";
-
+export { default as Visibility } from "./components/Visibility";
 export { default as colors } from "./theme/colors";
 export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";

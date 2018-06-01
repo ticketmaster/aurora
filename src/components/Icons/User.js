@@ -25,12 +25,13 @@ UserIcon.displayName = "UserIcon";
 
 UserIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   children: PropTypes.node
 };
 
 UserIcon.defaultProps = {
-  children: null
+  children: null,
+  color: "currentcolor"
 };
 
 export default UserIcon;

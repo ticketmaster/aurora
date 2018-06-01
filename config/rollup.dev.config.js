@@ -12,7 +12,8 @@ export default {
       globals: {
         react: "React",
         "prop-types": "PropTypes",
-        "styled-components": "styled"
+        "styled-components": "styled",
+        classnames: "classNames"
       }
     },
     {
@@ -38,5 +39,5 @@ export default {
       babelrc: false
     })
   ],
-  external: ["react", "prop-types", "styled-components"]
+  external: ["react", "prop-types", "styled-components", "classnames"]
 };
