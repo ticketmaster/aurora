@@ -5,17 +5,31 @@ import { colors } from "../../theme";
 import StyledText from "./StyledText";
 
 const LinkTitle = StyledText.withComponent(`a`).extend`
-  color: ${colors.azure.base};
+  color: ${({ color }) => color || colors.azure.base};
   text-decoration: none;
 `;
 
-const Link = ({ href, children }) => (
-  <LinkTitle href={href}>{children}</LinkTitle>
-);
+const Link = ({ href, children, ...props }) => {
+  const { target } = props;
+  const rel = (target === "_blank" && "noopener") || undefined;
+
+  return (
+    <LinkTitle href={href} rel={rel} {...props}>
+      {children}
+    </LinkTitle>
+  );
+};
 
 Link.propTypes = {
   children: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired
+  href: PropTypes.string.isRequired,
+  target: PropTypes.string,
+  color: PropTypes.string
+};
+
+Link.defaultProps = {
+  target: "",
+  color: ""
 };
 
 export default Link;

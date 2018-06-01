@@ -96,8 +96,11 @@ const Anchor = Btn.withComponent("a");
 const Button = ({ children, invert, href, ...props }) => {
   const color = invert ? colors.azure.base : colors.white.base;
   if (href) {
+    const { target } = props;
+    const rel = (target === "_blank" && "noopener") || undefined;
+
     return (
-      <Anchor href={href} {...props}>
+      <Anchor href={href} rel={rel} {...props}>
         {children && children({ color })}
       </Anchor>
     );
@@ -115,7 +118,8 @@ Button.propTypes = {
   href: PropTypes.string,
   invert: PropTypes.bool,
   isFirst: PropTypes.bool,
-  isLast: PropTypes.bool
+  isLast: PropTypes.bool,
+  target: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -123,7 +127,8 @@ Button.defaultProps = {
   href: null,
   invert: false,
   isFirst: false,
-  isLast: false
+  isLast: false,
+  target: ""
 };
 
 const H = styled.h1`
