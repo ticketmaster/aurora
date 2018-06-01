@@ -1,20 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-import { StyledButton, StyledButtonLink } from "./index.styles";
-
-const Button = ({ variant, children, ...rest }) => {
-  const Btn = rest.href ? StyledButtonLink : StyledButton;
-  return (
-    <Btn variant={variant} {...rest}>
-      {children}
-    </Btn>
-  );
-};
-
-Button.propTypes = {
-  variant: PropTypes.oneOf(["standard", "outline"]).isRequired,
-  children: PropTypes.node.isRequired
-};
-
-export default Button;
+export { default as Button } from "./Button";
+export { StyledButton, StyledButtonLink } from "./Button.styles";
+export { default as Badge } from "./Badge";
+export { default as StyledBadge } from "./Badge.styles";
+export { default as RatingBadge } from "./RatingBadge";
