@@ -47,6 +47,17 @@ responsive: true
 ---
 <HeaderWithImage>
   <Column medium={8}>
+    <Row>
+    <BreadcrumbList delimiter=" / " style={breadcrumbListStyles}>
+      <BreadcrumbItem position="1" href="/home" style={breadcrumbListStyles}>Home</BreadcrumbItem>
+      <BreadcrumbItem position="2" href="/concerts" style={breadcrumbListStyles}>Concert Tickets</BreadcrumbItem>
+      <BreadcrumbItem position="3" href="/concerts/rock" style={breadcrumbListStyles}>Rock</BreadcrumbItem>
+    </BreadcrumbList>
+    <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
+        <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
+        4.8
+    </RatingBadge>
+    </Row>
     <Heading level={1}>
         <Heading.Strong>Generic</Heading.Strong>
         {" "}
@@ -54,9 +65,9 @@ responsive: true
     </Heading>
   </Column>
   <Column medium={4}>
-    <ImageHeader.ImageWrapper>
+    <HeaderWithImage.ImageWrapper>
       <ImageCard src="https://placekitten.com/g/400/242" />
-    </ImageHeader.ImageWrapper>
+    </HeaderWithImage.ImageWrapper>
   </Column>
 </HeaderWithImage>
 ```
