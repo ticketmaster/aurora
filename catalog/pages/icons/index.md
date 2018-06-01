@@ -5,7 +5,7 @@ Different icons which are generated as react components from the svg icons using
 [Pixo](https://github.com/c8r/pixo/blob/master/README.md)
 
 ```hint
-To add icons to the projet, use the command `npm run add-icons svgFilePath`.
+To add icons to the project, use the command `npm run add-icons svgFilePath`.
 ```
 
 ### Props
@@ -15,11 +15,11 @@ span: 6
 rows:
   - Prop: size
     Type: number
-    Component: OverflowIcon, UserIcon, ChevronIcon
+    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: OverflowIcon, UserIcon, ChevronIcon
+    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon
     Notes: Required
   - Prop: direction
     Type: string
@@ -65,6 +65,11 @@ rows:
   <Column medium={3}>
     <div style={iconStyle}><SearchIcon size={22} color="#000"/></div>
     <div style={iconLabelStyle}>Search Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><StarIcon size={22} color="#000"/></div>
+    <div style={iconLabelStyle}>Star Icon</div>
   </Column>
 
 </Row>

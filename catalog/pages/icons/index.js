@@ -4,7 +4,8 @@ import {
   ChevronIcon,
   UserIcon,
   OverflowIcon,
-  SearchIcon
+  SearchIcon,
+  StarIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -30,6 +31,7 @@ export default {
     UserIcon,
     OverflowIcon,
     SearchIcon,
+    StarIcon,
     Container,
     Row,
     Column,
