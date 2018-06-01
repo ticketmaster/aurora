@@ -19,9 +19,10 @@ const Overlay = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+  opacity: 0.8;
   background-image: ${props =>
     props.withOverlay
-      ? "linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000)"
+      ? "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02) 9%, rgba(0, 0, 0, 0.06) 19%, rgba(0, 0, 0, 0.12) 28%, rgba(0, 0, 0, 0.2) 38%, rgba(0, 0, 0, 0.29) 48%, rgba(0, 0, 0, 0.39) 57%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.61) 74%, rgba(0, 0, 0, 0.71) 81%, rgba(0, 0, 0, 0.8) 88%, rgba(0, 0, 0, 0.88) 93%, rgba(0, 0, 0, 0.95) 97%, rgba(0, 0, 0, 0.98) 99%, #000000);"
       : "transparent"};
   display: flex;
   align-items: flex-end;
