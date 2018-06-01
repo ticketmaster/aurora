@@ -224,6 +224,9 @@ exports[`NavBar renders fixed 1`] = `
         viewBox="0 0 20 17"
         width={17}
       >
+        <title>
+          Menu Icon
+        </title>
         <path
           d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
         />
@@ -233,6 +236,8 @@ exports[`NavBar renders fixed 1`] = `
     <a
       className="c3 c4"
       href="http://localhost/new/"
+      rel={undefined}
+      target=""
     />
     <nav
       className="c5"
@@ -312,6 +317,7 @@ exports[`NavBar renders fixed 1`] = `
     </nav>
     <button
       className="c9"
+      target=""
       type="button"
     >
       Random Button!
@@ -550,6 +556,9 @@ exports[`NavBar renders inverted 1`] = `
         viewBox="0 0 20 17"
         width={17}
       >
+        <title>
+          Menu Icon
+        </title>
         <path
           d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
         />
@@ -557,6 +566,7 @@ exports[`NavBar renders inverted 1`] = `
     </button>
     <button
       className="c3"
+      target=""
       type="button"
     >
       Random Button!
@@ -564,6 +574,8 @@ exports[`NavBar renders inverted 1`] = `
     <a
       className="c4 c5"
       href="http://localhost/new/"
+      rel={undefined}
+      target=""
     >
       <h1
         className="c6"
@@ -816,6 +828,9 @@ exports[`NavBar renders with defaults 1`] = `
         viewBox="0 0 20 17"
         width={17}
       >
+        <title>
+          Menu Icon
+        </title>
         <path
           d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
         />
