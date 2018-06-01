@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge /> renders link Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  href="/"
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders outline Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders outline disabled Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders standard Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders standard disabled Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders transparent Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+>
+  Badge
+</button>
+`;
+
+exports[`Badge /> renders transparent disabled Badge correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  font-size: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 45px;
+  min-width: 45px;
+  height: 20px;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Badge
+</button>
+`;
