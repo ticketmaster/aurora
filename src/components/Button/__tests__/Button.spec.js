@@ -1,7 +1,8 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { shallow } from "enzyme";
 
-import Button from "../";
+import { Button } from "../";
 
 describe("<Button />", () => {
   it("renders standard button correctly", () => {
@@ -40,6 +41,24 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders transparent button correctly", () => {
+    const component = renderer.create(
+      <Button variant="transparent">Dummy Label</Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders transparent disabled button correctly", () => {
+    const component = renderer.create(
+      <Button variant="transparent" disabled>
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders link button correctly", () => {
     const component = renderer.create(
       <Button href="/" variant="standard">
@@ -48,5 +67,17 @@ describe("<Button />", () => {
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  it("should invoke an onClick handler when passed", () => {
+    const onClick = jest.fn();
+    const component = shallow(
+      <Button variant="standard" onClick={onClick}>
+        Dummy Label
+      </Button>
+    );
+
+    component.simulate("click");
+    expect(onClick).toHaveBeenCalled();
   });
 });

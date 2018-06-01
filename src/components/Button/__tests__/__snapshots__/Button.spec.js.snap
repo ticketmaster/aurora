@@ -28,6 +28,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 <a
   className="c0"
   href="/"
+  rel={undefined}
 >
   Dummy Label
 </a>
@@ -144,6 +145,67 @@ exports[`<Button /> renders standard disabled button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders transparent button correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+.c0:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders transparent disabled button correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+}
+
+.c0:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
