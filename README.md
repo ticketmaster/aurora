@@ -18,7 +18,6 @@
 [![gzip size][gzip-badge]][unpkg-dist]
 [![module formats: cjs][module-formats-badge]][unpkg-dist]
 
-
 ## How to get started
 
 Prism relies on the [react](https://www.npmjs.com/package/react),
@@ -47,15 +46,23 @@ ReactDOM.render(
 
 [![Edit mq3q2prnjy](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mq3q2prnjy?autoresize=1&hidenavigation=1)
 
+## Running the catalog locally
+
+In order to run the [catalog](https://code.ticketmaster.com/prism/) locally, complete the following steps:
+
+1.  Execute `yarn install` at this directory's root
+2.  Execute `yarn catalog-start` at this directory's root
+3.  Navigate to `http://localhost:4000/` or your host alias's port 4000.
+
 ## How to use
 
 A documentation of each component and living styleguide is available at https://code.ticketmaster.com/prism/
 
 ## Other docs
 
-* [Code of Conduct][coc]
-* [Contributing][contributing]
-* [Maintaining][maintaining]
+- [Code of Conduct][coc]
+- [Contributing][contributing]
+- [Maintaining][maintaining]
 
 ## LICENSE
 
