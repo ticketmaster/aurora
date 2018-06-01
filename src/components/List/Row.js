@@ -5,7 +5,7 @@ import styled from "styled-components";
 import spacing from "../../theme/spacing";
 import colors from "../../theme/colors";
 
-import { StyledButton } from "../Button/index.styles";
+import { StyledButton } from "../Button";
 import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import { OverflowIcon } from "../Icons";

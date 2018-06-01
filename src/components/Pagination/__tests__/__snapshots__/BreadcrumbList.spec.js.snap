@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BreadcrumbList /> renders correctly 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+
+<ol
+  className="c0"
+  itemScope={true}
+  itemType="http://schema.org/BreadcrumbList"
+>
+  Breadcrumb
+   / 
+  List
+</ol>
+`;
