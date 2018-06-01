@@ -44,11 +44,13 @@ const Input = styled.input.attrs({
 
 const Container = styled.div`
   position: relative;
+  width: 100%;
+  height: ${props => (props.slim ? "36px" : "auto")};
   border-radius: ${props =>
     props.slim ? constants.borderRadius.large : constants.borderRadius.small};
   overflow: hidden;
   outline: 0;
-  border: 0;
+  border: ${props => (props.invert ? `1px solid ${colors.onyx.base}` : "0")};
   background-color: ${props =>
     props.invert ? colors.white.base : colors.white.lighter};
 `;

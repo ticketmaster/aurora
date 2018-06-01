@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link> closes <LinkList> on mouse leave 1`] = `
+<span
+  class="list-container list-container--closed"
+  role="none"
+>
+  <a
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+   
+  <div
+    class="sc-bwzfXH links links__list gKFYzM"
+    role="menu"
+  >
+    <span
+      class="list-container list-container--closed"
+      role="none"
+    >
+      <a
+        class="sc-htpNat link eCxJEw"
+        href="/page/"
+        role="link"
+        target="_self"
+      >
+        Sub Content
+      </a>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`<Link> closes <LinkList> on touch start 1`] = `
+<span
+  class="list-container list-container--closed"
+  role="none"
+>
+  <a
+    aria-expanded="false"
+    aria-haspopup="true"
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+   
+  <div
+    class="sc-bwzfXH links links__list gKFYzM"
+    role="menu"
+  >
+    <span
+      class="list-container list-container--closed"
+      role="none"
+    >
+      <a
+        class="sc-htpNat link eCxJEw"
+        href="/page/"
+        role="link"
+        target="_self"
+      >
+        Sub Content
+      </a>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`<Link> does not close when link has no content 1`] = `
+<span
+  class="list-container list-container--closed"
+  role="none"
+>
+  <a
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+</span>
+`;
+
+exports[`<Link> does not open when link has no content 1`] = `
+<span
+  class="list-container list-container--closed"
+  role="none"
+>
+  <a
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+</span>
+`;
+
+exports[`<Link> opens <LinkList> on mouse enter 1`] = `
+<span
+  class="list-container list-container--open"
+  role="none"
+>
+  <a
+    aria-expanded="true"
+    aria-haspopup="true"
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+   
+  <div
+    class="sc-bwzfXH links links__list gKFYzM"
+    role="menu"
+  >
+    <span
+      class="list-container list-container--closed"
+      role="none"
+    >
+      <a
+        class="sc-htpNat link eCxJEw"
+        href="/page/"
+        role="link"
+        target="_self"
+      >
+        Sub Content
+      </a>
+    </span>
+  </div>
+</span>
+`;
+
+exports[`<Link> opens <LinkList> on touch start 1`] = `
+<span
+  class="list-container list-container--open"
+  role="none"
+>
+  <a
+    aria-expanded="true"
+    aria-haspopup="true"
+    class="sc-htpNat link eCxJEw"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+   
+  <div
+    class="sc-bwzfXH links links__list gKFYzM"
+    role="menu"
+  >
+    <span
+      class="list-container list-container--closed"
+      role="none"
+    >
+      <a
+        class="sc-htpNat link eCxJEw"
+        href="/page/"
+        role="link"
+        target="_self"
+      >
+        Sub Content
+      </a>
+    </span>
+  </div>
+</span>
+`;

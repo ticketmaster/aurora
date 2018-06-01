@@ -24,6 +24,9 @@ describe("NavBar", () => {
                 </NavBar.LinkList>
               </NavBar.Link>
             </NavBar.LinkRow>
+            <NavBar.SearchButton />
+            <NavBar.UserButton />
+            <NavBar.TextButton isLast>Text Button!</NavBar.TextButton>
           </NavBar>
         )
         .toJSON()
@@ -36,9 +39,11 @@ describe("NavBar", () => {
           <NavBar fixed>
             <NavBar.MenuButton isFirst />
             Content
-            <NavBar.LogoContainer href="http://localhost/new/" />
+            <NavBar.LogoContainer href="http://localhost/new/">
+              Logo
+            </NavBar.LogoContainer>
             <NavBar.LinkRow>
-              <NavBar.Link>Link 1</NavBar.Link>
+              <NavBar.Link href="/">Link 1</NavBar.Link>
               <NavBar.Link>Link 2</NavBar.Link>
               <NavBar.Link>Link 3</NavBar.Link>
               <NavBar.Link>
@@ -50,7 +55,6 @@ describe("NavBar", () => {
                 </NavBar.LinkList>
               </NavBar.Link>
             </NavBar.LinkRow>
-            <NavBar.Button isLast>{() => `Random Button!`}</NavBar.Button>
           </NavBar>
         )
         .toJSON()
@@ -62,11 +66,8 @@ describe("NavBar", () => {
         .create(
           <NavBar invert>
             <NavBar.MenuButton isFirst invert />
-            <NavBar.Button invert isSmallOnly>
-              {() => `Random Button!`}
-            </NavBar.Button>
-            <NavBar.LogoContainer isHeading href="http://localhost/new/">
-              {() => `Logo!`}
+            <NavBar.LogoContainer href="http://localhost/new/">
+              Logo
             </NavBar.LogoContainer>
             <NavBar.LinkRow>
               <NavBar.Link>Link 1</NavBar.Link>
