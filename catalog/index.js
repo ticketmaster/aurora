@@ -13,7 +13,7 @@ import listRow from "./pages/listRow";
 import header from "./pages/header/index";
 import inputs from "./pages/inputs/index";
 import navBar from "./pages/nav_bar/index";
-import pagination from "./pages/pagination";
+import breadcrumbs from "./pages/breadcrumbs";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -31,7 +31,7 @@ const pages = [
   header,
   inputs,
   navBar,
-  pagination
+  breadcrumbs
 ];
 
 const sizes = [

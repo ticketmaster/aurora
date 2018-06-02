@@ -53,6 +53,6 @@ rows:
 ```react
 <BreadcrumbList delimiter=" / " style={breadcrumbListStyles}>
     <BreadcrumbItem position="1" href="/" style={breadcrumbListStyles}>Home</BreadcrumbItem>
-    <BreadcrumbItem position="2" href="/#/pagination" style={breadcrumbListStyles}>Pagination</BreadcrumbItem>
+    <BreadcrumbItem position="2" href="/#/breadcrumbs" style={breadcrumbListStyles}>Breadcrumbs</BreadcrumbItem>
 </BreadcrumbList>
 ```
