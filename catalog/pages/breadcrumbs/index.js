@@ -3,7 +3,7 @@ import { pageLoader } from "catalog";
 import {
   BreadcrumbList,
   BreadcrumbItem
-} from "../../../src/components/Pagination";
+} from "../../../src/components/Breadcrumbs";
 import colors from "../../../src/theme/colors";
 
 const breadcrumbListStyles = {
@@ -11,8 +11,8 @@ const breadcrumbListStyles = {
 };
 
 export default {
-  path: "/pagination",
-  title: "Pagination",
+  path: "/breadcrumbs",
+  title: "Breadcrumbs",
   imports: {
     BreadcrumbList,
     BreadcrumbItem,

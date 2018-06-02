@@ -10,7 +10,7 @@ import { StarIcon } from "../../../src/components/Icons";
 import {
   BreadcrumbList,
   BreadcrumbItem
-} from "../../../src/components/Pagination";
+} from "../../../src/components/Breadcrumbs";
 import colors from "../../../src/theme/colors";
 
 const breadcrumbListStyles = { color: colors.white.base };
