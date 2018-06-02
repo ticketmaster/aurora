@@ -1,6 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
+import { render, Simulate } from "react-testing-library";
 
 import { Badge } from "../";
 
@@ -67,13 +67,13 @@ describe("Badge />", () => {
 
   it("should invoke an onClick handler when passed", () => {
     const onClick = jest.fn();
-    const component = shallow(
+    const { getByText } = render(
       <Badge variant="standard" onClick={onClick}>
-        Dummy Label
+        Badge
       </Badge>
     );
 
-    component.simulate("click");
+    Simulate.click(getByText("Badge"));
     expect(onClick).toHaveBeenCalled();
   });
 });
