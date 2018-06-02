@@ -1,6 +1,6 @@
-### BreadcrumbList
+### Breadcrumb
 
-BreadcrumbList Component to assist the user in visualizing site navigation hierarchically. BreadcrumbList contains relevant metadata to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) for more details.
+Breadcrumb Component to assist the user in visualizing site navigation hierarchically. Breadcrumb contains relevant metadata to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) for more details.
 
 ### Props
 
@@ -14,7 +14,7 @@ rows:
   - Prop: children
     Type: node
     Default:
-    Notes: Render as the BreadcrumbList's children
+    Notes: Render as the Breadcrumb's children
   - Prop: ...props
     Type: any
     Default:
@@ -23,7 +23,7 @@ rows:
 
 ### BreadcrumbItem
 
-BreadcrumbItem Component to serve as children of the BreadcrumbList. BreadcrumbItem contains relevant metadata as props to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) and view the required props below for more details.
+BreadcrumbItem Component to serve as children of the Breadcrumb. BreadcrumbItem contains relevant metadata as props to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) and view the required props below for more details.
 
 ### Props
 
@@ -33,7 +33,7 @@ rows:
   - Prop: position
     Type: string
     Default:
-    Notes: Used to reconstruct the order of the items in a BreadcrumbList
+    Notes: Used to reconstruct the order of the items in a Breadcrumb
   - Prop: href
     Type: string
     Default:
@@ -41,18 +41,18 @@ rows:
   - Prop: children
     Type: node
     Default:
-    Notes: Render as the BreadcrumbList's children
+    Notes: Render as the Breadcrumb's children
   - Prop: ...props
     Type: any
     Default:
     Notes: Passes through any other props to underlying anchor element
 ```
 
-### BreadcrumbList with BreadcrumbItems
+### Breadcrumb with BreadcrumbItems
 
 ```react
-<BreadcrumbList delimiter=" / " style={breadcrumbListStyles}>
-    <BreadcrumbItem position="1" href="/" style={breadcrumbListStyles}>Home</BreadcrumbItem>
-    <BreadcrumbItem position="2" href="/#/breadcrumbs" style={breadcrumbListStyles}>Breadcrumbs</BreadcrumbItem>
-</BreadcrumbList>
+<Breadcrumb delimiter=" / " style={breadcrumbStyles}>
+    <BreadcrumbItem position="1" href="/" style={breadcrumbStyles}>Home</BreadcrumbItem>
+    <BreadcrumbItem position="2" href="/#/breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</BreadcrumbItem>
+</Breadcrumb>
 ```

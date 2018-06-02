@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BreadcrumbList /> renders correctly 1`] = `
+exports[`<Breadcrumb /> renders correctly 1`] = `
 .c0 {
   list-style-type: none;
   margin: 0;
@@ -19,7 +19,7 @@ exports[`<BreadcrumbList /> renders correctly 1`] = `
 <ol
   className="c0"
   itemScope={true}
-  itemType="http://schema.org/BreadcrumbList"
+  itemType="http://schema.org/Breadcrumb"
 >
   Breadcrumb
    / 
