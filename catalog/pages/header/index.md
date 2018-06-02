@@ -48,11 +48,11 @@ responsive: true
 <HeaderWithImage>
   <Column medium={8}>
     <Row>
-    <BreadcrumbList delimiter=" / " style={breadcrumbListStyles}>
-      <BreadcrumbItem position="1" href="/home" style={breadcrumbListStyles}>Home</BreadcrumbItem>
-      <BreadcrumbItem position="2" href="/concerts" style={breadcrumbListStyles}>Concert Tickets</BreadcrumbItem>
-      <BreadcrumbItem position="3" href="/concerts/rock" style={breadcrumbListStyles}>Rock</BreadcrumbItem>
-    </BreadcrumbList>
+    <Breadcrumb delimiter=" / " style={breadcrumbStyles}>
+      <BreadcrumbItem position="1" href="/home" style={breadcrumbStyles}>Home</BreadcrumbItem>
+      <BreadcrumbItem position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</BreadcrumbItem>
+      <BreadcrumbItem position="3" href="/concerts/rock" style={breadcrumbStyles}>Rock</BreadcrumbItem>
+    </Breadcrumb>
     <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
         <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
         4.8

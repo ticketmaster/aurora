@@ -8,12 +8,12 @@ import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
 import {
-  BreadcrumbList,
+  Breadcrumb,
   BreadcrumbItem
 } from "../../../src/components/Breadcrumbs";
 import colors from "../../../src/theme/colors";
 
-const breadcrumbListStyles = { color: colors.white.base };
+const breadcrumbStyles = { color: colors.white.base };
 const starIconStyles = { marginRight: "2px" };
 const ratingBadgeStyles = { marginLeft: "12px" };
 
@@ -29,10 +29,10 @@ export default {
     ImageCard,
     RatingBadge,
     StarIcon,
-    BreadcrumbList,
+    Breadcrumb,
     BreadcrumbItem,
     colors,
-    breadcrumbListStyles,
+    breadcrumbStyles,
     starIconStyles,
     ratingBadgeStyles
   },

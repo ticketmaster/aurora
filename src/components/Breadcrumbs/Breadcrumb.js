@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import StyledBreadcrumbList from "./BreadcrumbList.styles";
+import StyledBreadcrumb from "./Breadcrumb.styles";
 
-const BreadcrumbList = ({ delimiter, children, ...props }) => {
+const Breadcrumb = ({ delimiter, children, ...props }) => {
   const childrenLen = children.length;
   return (
-    <StyledBreadcrumbList
+    <StyledBreadcrumb
       itemScope
-      itemType="http://schema.org/BreadcrumbList"
+      itemType="http://schema.org/Breadcrumb"
       {...props}
     >
       {children.reduce((memo, child, i) => {
@@ -20,13 +20,13 @@ const BreadcrumbList = ({ delimiter, children, ...props }) => {
 
         return memo;
       }, [])}
-    </StyledBreadcrumbList>
+    </StyledBreadcrumb>
   );
 };
 
-BreadcrumbList.propTypes = {
+Breadcrumb.propTypes = {
   children: PropTypes.node.isRequired,
   delimiter: PropTypes.node.isRequired
 };
 
-export default BreadcrumbList;
+export default Breadcrumb;

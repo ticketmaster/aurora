@@ -1,12 +1,12 @@
 import { pageLoader } from "catalog";
 
 import {
-  BreadcrumbList,
+  Breadcrumb,
   BreadcrumbItem
 } from "../../../src/components/Breadcrumbs";
 import colors from "../../../src/theme/colors";
 
-const breadcrumbListStyles = {
+const breadcrumbStyles = {
   color: colors.azure.base
 };
 
@@ -14,9 +14,9 @@ export default {
   path: "/breadcrumbs",
   title: "Breadcrumbs",
   imports: {
-    BreadcrumbList,
+    Breadcrumb,
     BreadcrumbItem,
-    breadcrumbListStyles
+    breadcrumbStyles
   },
   content: pageLoader(() => import("./index.md"))
 };

@@ -1,16 +1,16 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { BreadcrumbList } from "../";
+import { Breadcrumb } from "../";
 
-describe("<BreadcrumbList />", () => {
+describe("<Breadcrumb />", () => {
   const PROPS = {
     delimiter: " / ",
     children: ["Breadcrumb", "List"]
   };
 
   it("renders correctly", () => {
-    const component = renderer.create(<BreadcrumbList {...PROPS} />);
+    const component = renderer.create(<Breadcrumb {...PROPS} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
