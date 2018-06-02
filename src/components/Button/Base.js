@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledButton, StyledButtonLink } from "./Button.styles";
+import { StyledButton, StyledButtonLink } from "./Base.styles";
 import BUTTON_VARIANTS from "./constants";
 
 const Button = ({ variant, children, ...rest }) => {
