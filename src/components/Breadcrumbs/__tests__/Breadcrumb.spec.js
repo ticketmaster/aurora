@@ -5,7 +5,6 @@ import Breadcrumb from "../";
 
 describe("<Breadcrumb />", () => {
   const PROPS = {
-    delimiter: " / ",
     children: ["Breadcrumb", "List"]
   };
 

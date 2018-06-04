@@ -7,10 +7,6 @@ Breadcrumb Component to assist the user in visualizing site navigation hierarchi
 ```table
 span: 6
 rows:
-  - Prop: delimiter
-    Type: node
-    Default:
-    Notes: Delimiter to serve as an interstitial between child elements
   - Prop: children
     Type: node
     Default:
@@ -51,7 +47,7 @@ rows:
 ### Breadcrumb with Breadcrumb.Items
 
 ```react
-<Breadcrumb delimiter=" / " style={breadcrumbStyles}>
+<Breadcrumb style={breadcrumbStyles}>
     <Breadcrumb.Item position="1" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
     <Breadcrumb.Item position="2" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
 </Breadcrumb>

@@ -48,7 +48,7 @@ responsive: true
 <HeaderWithImage>
   <Column medium={8}>
     <Row>
-    <Breadcrumb delimiter=" / " style={breadcrumbStyles}>
+    <Breadcrumb style={breadcrumbStyles}>
       <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
       <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
       <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>

@@ -16,13 +16,17 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   flex-flow: row;
 }
 
+.c0 li:not(:last-of-type):after {
+  padding: 0 4px;
+  content: "/";
+}
+
 <ol
   className="c0"
   itemScope={true}
   itemType="http://schema.org/Breadcrumb"
 >
   Breadcrumb
-   / 
   List
 </ol>
 `;
