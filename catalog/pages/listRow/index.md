@@ -47,7 +47,6 @@ rows:
 ```react
 responsive: true
 ---
-
  <ListRow
       title="Del Mar Fairgrounds"
       subTitle="KABOO 3-Day Pass"
@@ -60,12 +59,12 @@ responsive: true
     />
 ```
 
-### Standard List Row last item
+### Multiple List Row with the Container
 
 ```react
 responsive: true
 ---
-
+<Container>
  <ListRow
       title="Del Mar Fairgrounds"
       subTitle="KABOO 3-Day Pass"
@@ -75,8 +74,28 @@ responsive: true
       variant="standard"
       onClick={()=>{}}
       onOverflowClick={()=>{}}
-      isLast={true}
     />
+     <ListRow
+      title="Inglewood, CA - The Forum"
+      subTitle="The Weezer Tour"
+      dateTitle="apr 26"
+      dateSubTitle="Sun, 8:00 PM"
+      buttonText="See Tickets"
+      variant="standard"
+      onClick={()=>{}}
+      onOverflowClick={()=>{}}
+    />
+      <ListRow
+      title="Inglewood, CA - The Forum"
+      subTitle="The Weezer Tour"
+      dateTitle="apr 27"
+      dateSubTitle="Thu, 8:00 PM"
+      buttonText="See Tickets"
+      variant="standard"
+      onClick={()=>{}}
+      onOverflowClick={()=>{}}
+    />
+</Container>
 ```
 
 ### List Row with Link
