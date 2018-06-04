@@ -51,7 +51,7 @@ responsive: true
     <Breadcrumb delimiter=" / " style={breadcrumbStyles}>
       <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
       <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
-      <Breadcrumb.Item position="3" href="/concerts/rock" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
+      <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
     </Breadcrumb>
     <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
         <StarIcon size={12} color={colors.white.base} style={starIconStyles} />

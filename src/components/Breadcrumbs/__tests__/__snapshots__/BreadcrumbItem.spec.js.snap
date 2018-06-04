@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Breadcrumb.Item /> renders correctly 1`] = `
+exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 .c0 {
   padding: 0 4px;
 }
@@ -41,6 +41,52 @@ exports[`<Breadcrumb.Item /> renders correctly 1`] = `
   >
     Home
   </a>
+  <meta
+    content="Home"
+    itemProp="name"
+  />
+  <meta
+    content="1"
+    itemProp="position"
+  />
+</li>
+`;
+
+exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
+.c0 {
+  padding: 0 4px;
+}
+
+.c0:first-of-type {
+  padding-left: 0;
+}
+
+.c0:last-of-type {
+  padding-right: 0;
+}
+
+.c1 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<li
+  className="c0"
+  itemProp="itemListElement"
+  itemScope={true}
+  itemType="http://schema.org/ListItem"
+>
+  <div
+    className="c1"
+    href=""
+    itemProp="item"
+  >
+    Home
+  </div>
   <meta
     content="Home"
     itemProp="name"
