@@ -1,2 +1,6 @@
-export { default as Breadcrumb } from "./Breadcrumb";
-export { default as BreadcrumbItem } from "./BreadcrumbItem";
+import BreadcrumbItem from "./BreadcrumbItem";
+import Breadcrumb from "./Breadcrumb";
+
+Breadcrumb.Item = BreadcrumbItem;
+
+export default Breadcrumb;

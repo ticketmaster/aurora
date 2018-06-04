@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { Breadcrumb } from "../";
+import Breadcrumb from "../";
 
 describe("<Breadcrumb />", () => {
   const PROPS = {

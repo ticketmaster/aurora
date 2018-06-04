@@ -4,13 +4,10 @@ import Header from "../../../src/components/Header";
 import Heading from "../../../src/components/Header/Heading";
 import HeaderWithImage from "../../../src/components/Header/WithImage";
 import ImageCard from "../../../src/components/ImageCard";
+import Breadcrumb from "../../../src/components/Breadcrumbs";
 import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
-import {
-  Breadcrumb,
-  BreadcrumbItem
-} from "../../../src/components/Breadcrumbs";
 import colors from "../../../src/theme/colors";
 
 const breadcrumbStyles = { color: colors.white.base };
@@ -30,7 +27,6 @@ export default {
     RatingBadge,
     StarIcon,
     Breadcrumb,
-    BreadcrumbItem,
     colors,
     breadcrumbStyles,
     starIconStyles,

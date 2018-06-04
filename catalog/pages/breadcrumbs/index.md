@@ -21,9 +21,9 @@ rows:
     Notes: Passes through any other props to underlying button, or in the case of an href prop being passed, anchor, element
 ```
 
-### BreadcrumbItem
+### Breadcrumb.Item
 
-BreadcrumbItem Component to serve as children of the Breadcrumb. BreadcrumbItem contains relevant metadata as props to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) and view the required props below for more details.
+Breadcrumb.Item Component to serve as children of the Breadcrumb. Breadcrumb.Item contains relevant metadata as props to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) and view the required props below for more details.
 
 ### Props
 
@@ -48,11 +48,11 @@ rows:
     Notes: Passes through any other props to underlying anchor element
 ```
 
-### Breadcrumb with BreadcrumbItems
+### Breadcrumb with Breadcrumb.Items
 
 ```react
 <Breadcrumb delimiter=" / " style={breadcrumbStyles}>
-    <BreadcrumbItem position="1" href="/" style={breadcrumbStyles}>Home</BreadcrumbItem>
-    <BreadcrumbItem position="2" href="/#/breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</BreadcrumbItem>
+    <Breadcrumb.Item position="1" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
+    <Breadcrumb.Item position="2" href="/#/breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
 </Breadcrumb>
 ```
