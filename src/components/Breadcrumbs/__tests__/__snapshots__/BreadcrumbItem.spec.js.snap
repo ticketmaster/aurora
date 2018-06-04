@@ -2,18 +2,6 @@
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 .c0 {
-  padding: 0 4px;
-}
-
-.c0:first-of-type {
-  padding-left: 0;
-}
-
-.c0:last-of-type {
-  padding-right: 0;
-}
-
-.c1 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -26,13 +14,12 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 }
 
 <li
-  className="c0"
   itemProp="itemListElement"
   itemScope={true}
   itemType="http://schema.org/ListItem"
 >
   <a
-    className="c1"
+    className="c0"
     color=""
     href="/"
     itemProp="item"
@@ -54,18 +41,6 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 .c0 {
-  padding: 0 4px;
-}
-
-.c0:first-of-type {
-  padding-left: 0;
-}
-
-.c0:last-of-type {
-  padding-right: 0;
-}
-
-.c1 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -75,13 +50,12 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
 }
 
 <li
-  className="c0"
   itemProp="itemListElement"
   itemScope={true}
   itemType="http://schema.org/ListItem"
 >
   <div
-    className="c1"
+    className="c0"
     href=""
     itemProp="item"
   >

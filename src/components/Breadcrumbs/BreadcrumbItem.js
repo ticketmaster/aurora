@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import StyledBreadcrumbItem from "./BreadcrumbItem.styles";
 import { Link, StyledText } from "../Text";
 
 const BreadcrumbItem = ({ position, children, ...props }) => {
@@ -9,7 +8,7 @@ const BreadcrumbItem = ({ position, children, ...props }) => {
   const Tag = href ? Link : StyledText;
 
   return (
-    <StyledBreadcrumbItem
+    <li
       itemProp="itemListElement"
       itemScope
       itemType="http://schema.org/ListItem"
@@ -19,7 +18,7 @@ const BreadcrumbItem = ({ position, children, ...props }) => {
       </Tag>
       {children && <meta itemProp="name" content={children} />}
       {position && <meta itemProp="position" content={position} />}
-    </StyledBreadcrumbItem>
+    </li>
   );
 };
 
