@@ -747,7 +747,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
           className="c22"
           color=""
           href=""
-          rel={undefined}
+          rel="_self"
           target=""
         >
           Ticket Options Available
@@ -1605,7 +1605,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
         className="c21"
         color=""
         href=""
-        rel={undefined}
+        rel="_self"
         target=""
       >
         Ticket Options Available

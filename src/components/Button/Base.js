@@ -3,15 +3,17 @@ import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./Base.styles";
 import BUTTON_VARIANTS from "./constants";
+import getRelByTarget from "../../utils/link";
 
 const Button = ({ variant, children, ...rest }) => {
-  const { href, target } = rest;
+  const { href } = rest;
 
   if (href) {
-    const rel = (target === "_blank" && "noopener") || undefined;
+    const { rel, target } = rest;
+    const validatedRel = getRelByTarget(target, rel);
 
     return (
-      <StyledButtonLink variant={variant} rel={rel} {...rest}>
+      <StyledButtonLink variant={variant} rel={validatedRel} {...rest}>
         {children}
       </StyledButtonLink>
     );

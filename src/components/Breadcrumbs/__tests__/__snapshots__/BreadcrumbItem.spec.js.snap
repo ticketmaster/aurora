@@ -36,7 +36,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
     color=""
     href="/"
     itemProp="item"
-    rel={undefined}
+    rel="_self"
     target=""
   >
     Home
