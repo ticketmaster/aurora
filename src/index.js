@@ -13,7 +13,7 @@ export { default as Row } from "./components/Grid/Row";
 export { default as SearchInput } from "./components/Input/Search";
 export { default as SectionHeading } from "./components/Text/SectionHeading";
 export { default as Spacing } from "./components/Spacing";
-export { Breadcrumb, BreadcrumbItem } from "./components/Breadcrumbs";
+export { default as Breadcrumb } from "./components/Breadcrumbs";
 export {
   ChevronIcon,
   OverflowIcon,

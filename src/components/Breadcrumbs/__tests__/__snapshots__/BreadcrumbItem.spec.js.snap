@@ -1,18 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BreadcrumbItem /> renders correctly 1`] = `
-.c1 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
+exports[`<Breadcrumb.Item /> renders correctly 1`] = `
 .c0 {
   padding: 0 4px;
 }
@@ -23,6 +11,18 @@ exports[`<BreadcrumbItem /> renders correctly 1`] = `
 
 .c0:last-of-type {
   padding-right: 0;
+}
+
+.c1 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <li

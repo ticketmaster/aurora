@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { BreadcrumbItem } from "../";
+import Breadcrumb from "../";
 
-describe("<BreadcrumbItem />", () => {
+describe("<Breadcrumb.Item />", () => {
   const PROPS = {
     position: "1",
     href: "/",
@@ -11,7 +11,7 @@ describe("<BreadcrumbItem />", () => {
   };
 
   it("renders correctly", () => {
-    const component = renderer.create(<BreadcrumbItem {...PROPS} />);
+    const component = renderer.create(<Breadcrumb.Item {...PROPS} />);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
