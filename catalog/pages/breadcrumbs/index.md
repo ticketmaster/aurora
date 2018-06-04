@@ -36,7 +36,7 @@ rows:
     Notes: Used to reconstruct the order of the items in a Breadcrumb
   - Prop: href
     Type: string
-    Default:
+    Default: ""
     Notes: URL to pass to underlying anchor element
   - Prop: children
     Type: node
@@ -45,7 +45,7 @@ rows:
   - Prop: ...props
     Type: any
     Default:
-    Notes: Passes through any other props to underlying anchor element
+    Notes: Passes through any other props to underlying div, or in the case of an href prop being passed, anchor, element
 ```
 
 ### Breadcrumb with Breadcrumb.Items
@@ -53,6 +53,6 @@ rows:
 ```react
 <Breadcrumb delimiter=" / " style={breadcrumbStyles}>
     <Breadcrumb.Item position="1" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-    <Breadcrumb.Item position="2" href="/#/breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
+    <Breadcrumb.Item position="2" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
 </Breadcrumb>
 ```
