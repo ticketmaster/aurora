@@ -233,7 +233,7 @@ exports[`NavBar renders fixed 1`] = `
     <a
       className="c3 c4"
       href="http://localhost/new/"
-      rel={undefined}
+      rel="_self"
       target=""
     />
     <nav
@@ -314,6 +314,7 @@ exports[`NavBar renders fixed 1`] = `
     </nav>
     <button
       className="c9"
+      rel="_self"
       target=""
       type="button"
     >
@@ -560,6 +561,7 @@ exports[`NavBar renders inverted 1`] = `
     </button>
     <button
       className="c3"
+      rel="_self"
       target=""
       type="button"
     >
@@ -568,7 +570,7 @@ exports[`NavBar renders inverted 1`] = `
     <a
       className="c4 c5"
       href="http://localhost/new/"
-      rel={undefined}
+      rel="_self"
       target=""
     >
       <h1

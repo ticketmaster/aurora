@@ -7,6 +7,7 @@ import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import typography from "../../theme/typography";
 import constants from "../../theme/constants";
+import getRelByTarget from "../../utils/link";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 const Nav = styled.header.attrs({
@@ -96,11 +97,11 @@ const Anchor = Btn.withComponent("a");
 const Button = ({ children, invert, href, ...props }) => {
   const color = invert ? colors.azure.base : colors.white.base;
   if (href) {
-    const { target } = props;
-    const rel = (target === "_blank" && "noopener") || undefined;
+    const { rel, target } = props;
+    const validatedRel = getRelByTarget(target, rel);
 
     return (
-      <Anchor href={href} rel={rel} {...props}>
+      <Anchor href={href} rel={validatedRel} {...props}>
         {children && children({ color })}
       </Anchor>
     );
@@ -119,7 +120,8 @@ Button.propTypes = {
   invert: PropTypes.bool,
   isFirst: PropTypes.bool,
   isLast: PropTypes.bool,
-  target: PropTypes.string
+  target: PropTypes.string,
+  rel: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -128,7 +130,8 @@ Button.defaultProps = {
   invert: false,
   isFirst: false,
   isLast: false,
-  target: ""
+  target: "",
+  rel: "_self"
 };
 
 const H = styled.h1`

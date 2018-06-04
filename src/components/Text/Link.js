@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 import { colors } from "../../theme";
 import StyledText from "./StyledText";
+import getRelByTarget from "../../utils/link";
 
 const LinkTitle = StyledText.withComponent(`a`).extend`
   color: ${({ color }) => color || colors.azure.base};
@@ -10,11 +11,11 @@ const LinkTitle = StyledText.withComponent(`a`).extend`
 `;
 
 const Link = ({ href, children, ...props }) => {
-  const { target } = props;
-  const rel = (target === "_blank" && "noopener") || undefined;
+  const { target, rel } = props;
+  const validatedRel = getRelByTarget(target, rel);
 
   return (
-    <LinkTitle href={href} rel={rel} {...props}>
+    <LinkTitle href={href} rel={validatedRel} {...props}>
       {children}
     </LinkTitle>
   );
@@ -23,13 +24,15 @@ const Link = ({ href, children, ...props }) => {
 Link.propTypes = {
   children: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
+  color: PropTypes.string,
   target: PropTypes.string,
-  color: PropTypes.string
+  rel: PropTypes.string
 };
 
 Link.defaultProps = {
+  color: "",
   target: "",
-  color: ""
+  rel: "_self"
 };
 
 export default Link;
