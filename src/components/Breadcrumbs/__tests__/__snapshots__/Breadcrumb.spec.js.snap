@@ -21,12 +21,14 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   content: "/";
 }
 
-<ol
-  className="c0"
-  itemScope={true}
-  itemType="http://schema.org/Breadcrumb"
->
-  Breadcrumb
-  List
-</ol>
+<nav>
+  <ol
+    className="c0"
+    itemScope={true}
+    itemType="http://schema.org/Breadcrumb"
+  >
+    Breadcrumb
+    List
+  </ol>
+</nav>
 `;
