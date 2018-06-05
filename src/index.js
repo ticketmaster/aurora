@@ -21,7 +21,12 @@ export {
   UserIcon,
   StarIcon
 } from "./components/Icons";
-export { default as Visibility } from "./components/Visibility";
+export {
+  default as DeviceSizeProvider
+} from "./components/DeviceSize/Provider";
+export {
+  Consumer as DeviceSizeConsumer
+} from "./components/DeviceSize/Context";
 export { default as colors } from "./theme/colors";
 export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";
