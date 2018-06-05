@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayFor cssOnly renders custom display prop 1`] = `
+<div
+  class="sc-bdVaJa fgvBx"
+  display="flex"
+>
+  Content
+</div>
+`;
+
+exports[`DisplayFor cssOnly renders nothing when value is null 1`] = `
+<div
+  class="sc-bdVaJa gPRijU"
+  display="block"
+>
+  Content
+</div>
+`;
