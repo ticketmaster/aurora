@@ -15,13 +15,17 @@ const HeaderGradient = Gradient.extend`
   `} ${largeAndUp`
     min-height: 218px;
   `};
-`.withComponent("section");
+`.withComponent("header");
+
+const HeaderContainer = Container.extend`
+  padding-top: 60px;
+`;
 
 const Header = ({ deg, from, to, children, style }) => (
   <HeaderGradient deg={deg} from={from} to={to} style={style}>
-    <Container>
+    <HeaderContainer>
       <Row>{children}</Row>
-    </Container>
+    </HeaderContainer>
   </HeaderGradient>
 );
 

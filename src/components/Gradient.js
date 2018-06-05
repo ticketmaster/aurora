@@ -14,6 +14,23 @@ const Gradient = styled.span`
     background-image: ${props =>
       `linear-gradient(${props.deg.large}, ${props.from}, ${props.to})`};
   `};
+
+  &.gradient--overlay:after {
+    content: "";
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: linear-gradient(77deg, rgba(0, 0, 0, 0), #000000);
+    ${mediumAndUp`
+        background-image: linear-gradient(82deg, rgba(0, 0, 0, 0), #000000);
+      `};
+
+    ${largeAndUp`
+      background-image: linear-gradient(86deg, rgba(0, 0, 0, 0), #000000);
+      `};
+  }
 `;
 
 Gradient.propTypes = {

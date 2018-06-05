@@ -15,6 +15,10 @@ rows:
     Type: string
     Default:
     Notes: Ending gradient color
+  - Prop: backgroundImage
+    Type: string
+    Default:
+    Notes: Uses an image as background instead of a gradient.
 ```
 
 ### Heading Props
@@ -45,29 +49,71 @@ responsive: true
 ```react
 responsive: true
 ---
-<HeaderWithImage>
-  <Column medium={8}>
-    <Row>
-    <Breadcrumb style={breadcrumbStyles}>
-      <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-      <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
-      <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
-    </Breadcrumb>
-    <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
-        <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
-        4.8
-    </RatingBadge>
-    </Row>
-    <Heading level={1}>
-        <Heading.Strong>Generic</Heading.Strong>
-        {" "}
-        <Heading.Span>Header</Heading.Span>
-    </Heading>
-  </Column>
-  <Column medium={4}>
-    <HeaderWithImage.ImageWrapper>
-      <ImageCard src="https://placekitten.com/g/400/242" />
-    </HeaderWithImage.ImageWrapper>
-  </Column>
-</HeaderWithImage>
+<React.Fragment>
+  <HeaderWithImage>
+    <Column medium={7} large={8}>
+      <Row>
+        <Breadcrumb style={breadcrumbStyles}>
+          <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
+          <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
+        </Breadcrumb>
+        <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
+            4.8
+        </RatingBadge>
+      </Row>
+      <Heading level={1}>
+          <Heading.Strong>Generic</Heading.Strong>
+          {" "}
+          <Heading.Span>Header</Heading.Span>
+      </Heading>
+    </Column>
+    <Column medium={5} large={4}>
+      <HeaderWithImage.ImageWrapper>
+        <ImageCard src="https://placekitten.com/g/400/242" />
+      </HeaderWithImage.ImageWrapper>
+    </Column>
+  </HeaderWithImage>
+  <div>Some other content</div>
+</React.Fragment>
+```
+
+### Image Header with Image Background
+
+```react
+responsive: true
+---
+<React.Fragment>
+  <HeaderWithImage
+    withOverlay
+    backgroundImage="https://www.ticketmaster.com/new/compressedimages/dam/a/03e/154a8956-41a7-4508-a320-95f43764a03e_690051_TABLET_LANDSCAPE_16_9.jpg?width=2&height=1&fit=crop"
+  >
+    <Column medium={7} large={8}>
+      <Row>
+        <Breadcrumb style={breadcrumbStyles}>
+          <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
+          <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
+        </Breadcrumb>
+        <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
+            4.8
+        </RatingBadge>
+      </Row>
+      <Heading level={1}>
+          <Heading.Strong>Generic</Heading.Strong>
+          {" "}
+          <Heading.Span>Header</Heading.Span>
+      </Heading>
+    </Column>
+    <Column medium={5} large={4}>
+      <HeaderWithImage.ImageWrapper>
+        <ImageCard
+          src="https://www.ticketmaster.com/new/compressedimages/dam/a/03e/154a8956-41a7-4508-a320-95f43764a03e_690051_TABLET_LANDSCAPE_16_9.jpg?width=448&height=252&fit=crop"
+          withOverlay={false}
+        />
+      </HeaderWithImage.ImageWrapper>
+    </Column>
+  </HeaderWithImage>
+  <div>Some other content</div>
+</React.Fragment>
 ```

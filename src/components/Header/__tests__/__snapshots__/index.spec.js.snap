@@ -28,16 +28,8 @@ exports[`Header renders with custom level 1`] = `
   margin-right: 0;
 }
 
-.c1 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
 .c0 {
+  z-index: 1;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
   display: -webkit-box;
   display: -webkit-flex;
@@ -50,35 +42,50 @@ exports[`Header renders with custom level 1`] = `
   min-height: 122px;
 }
 
+.c0.gradient--overlay:after {
+  z-index: 2;
+  height: 100%;
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 1248px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
 .c5 {
-  color: rgba(255,255,255,1);
   font-weight: 300;
-  font-size: 24px;
 }
 
 .c4 {
-  color: rgba(255,255,255,1);
   font-weight: 300;
-  font-size: 24px;
   font-weight: 800;
 }
 
 .c3 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 8px;
+  line-height: 1.25;
+  color: blue;
+  font-size: 24px;
 }
 
 @media screen and (min-width:481px) {
   .c2 {
     margin-left: -12px;
     margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c1 {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 
@@ -95,6 +102,18 @@ exports[`Header renders with custom level 1`] = `
 }
 
 @media screen and (min-width:481px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
   .c0 {
     min-height: 140px;
   }
@@ -107,30 +126,25 @@ exports[`Header renders with custom level 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c5 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c5 {
-    font-size: 46px;
+  .c1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c4 {
+  .c3 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c4 {
+  .c3 {
     font-size: 46px;
   }
 }
 
-<section
+<header
   className="c0"
   from="#026cdf"
   style={Object {}}
@@ -144,6 +158,7 @@ exports[`Header renders with custom level 1`] = `
     >
       <h1
         className="c3"
+        color="blue"
       >
         <span
           className="c4"
@@ -159,7 +174,7 @@ exports[`Header renders with custom level 1`] = `
       </h1>
     </div>
   </div>
-</section>
+</header>
 `;
 
 exports[`Header renders with default 1`] = `
@@ -190,16 +205,8 @@ exports[`Header renders with default 1`] = `
   margin-right: 0;
 }
 
-.c1 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
 .c0 {
+  z-index: 1;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
   display: -webkit-box;
   display: -webkit-flex;
@@ -212,35 +219,50 @@ exports[`Header renders with default 1`] = `
   min-height: 122px;
 }
 
+.c0.gradient--overlay:after {
+  z-index: 2;
+  height: 100%;
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 1248px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
 .c5 {
-  color: rgba(255,255,255,1);
   font-weight: 300;
-  font-size: 24px;
 }
 
 .c4 {
-  color: rgba(255,255,255,1);
   font-weight: 300;
-  font-size: 24px;
   font-weight: 800;
 }
 
 .c3 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 8px;
+  line-height: 1.25;
+  color: rgba(255,255,255,1);
+  font-size: 24px;
 }
 
 @media screen and (min-width:481px) {
   .c2 {
     margin-left: -12px;
     margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c1 {
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 
@@ -257,6 +279,18 @@ exports[`Header renders with default 1`] = `
 }
 
 @media screen and (min-width:481px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
   .c0 {
     min-height: 140px;
   }
@@ -269,30 +303,25 @@ exports[`Header renders with default 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c5 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c5 {
-    font-size: 46px;
+  .c1 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c4 {
+  .c3 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c4 {
+  .c3 {
     font-size: 46px;
   }
 }
 
-<section
+<header
   className="c0"
   from="#026cdf"
   style={Object {}}
@@ -321,5 +350,5 @@ exports[`Header renders with default 1`] = `
       </h2>
     </div>
   </div>
-</section>
+</header>
 `;

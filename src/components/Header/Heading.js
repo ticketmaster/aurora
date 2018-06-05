@@ -4,10 +4,22 @@ import styled from "styled-components";
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import spacing from "../../theme/spacing";
 
 const Span = styled.span`
-  color: ${colors.white.base};
   font-weight: ${typography.weight.light};
+`;
+
+const Strong = Span.extend`
+  font-weight: ${typography.weight.extraBold};
+`;
+
+const margins = styled.span`
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: ${spacing.cozy};
+  line-height: 1.25;
+  color: ${p => (p.color ? p.color : colors.white.base)};
   font-size: ${typography.size.tera};
 
   ${mediumAndUp`
@@ -19,15 +31,6 @@ const Span = styled.span`
   `};
 `;
 
-const Strong = Span.extend`
-  font-weight: ${typography.weight.extraBold};
-`;
-
-const margins = styled.span`
-  margin-top: 0;
-  margin-bottom: 0;
-`;
-
 const levels = [
   margins.withComponent("h1"),
   margins.withComponent("h2"),
@@ -36,9 +39,9 @@ const levels = [
   margins.withComponent("h5")
 ];
 
-const Heading = ({ level, children }) => {
+const Heading = ({ level, children, ...props }) => {
   const H = levels[level - 1];
-  return <H>{children}</H>;
+  return <H {...props}>{children}</H>;
 };
 
 Heading.propTypes = {
