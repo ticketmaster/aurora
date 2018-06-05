@@ -1,52 +1,74 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
+import classNames from "classnames";
 
 import Gradient from "../Gradient";
 import Container from "../Grid/Container";
 import Row from "../Grid/Row";
-import { mediumAndUp, largeAndUp, xLargeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp } from "../../theme/mediaQueries";
 
-const Background = styled(Gradient)`
+const GradientBackground = styled(Gradient)`
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  min-height: 218px;
-  max-height: 278px;
   z-index: 1;
+  min-height: 218px;
+  max-height: 218px;
 `;
 
-const Wrapper = styled.section`
-  position: relative;
+const ImageBackground = styled(GradientBackground)`
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
+
+const Wrapper = styled.header`
   width: 100%;
+  position: relative;
 `;
 
 const ContainerWrapper = styled(Container)`
+  padding-top: 60px;
   z-index: 2;
-  position: relative;
-  min-height: 218px;
-  max-height: 278px;
 `;
 
 const ContainerRow = styled(Row)`
-  align-items: flex-end;
-  height: 158px;
+  align-items: center;
   position: relative;
+  z-index: 2;
 `;
 
 const ImageWrapper = styled.div`
   ${mediumAndUp`
-    position: absolute;
-    top: 50%;
-  `};
-
-  ${largeAndUp`top: 30%;`};
-  ${xLargeAndUp`top: 20%;`};
+      padding-top: 60px;
+    `};
 `;
 
-const ImageHeader = ({ children, from, to, deg, style }) => (
-  <Wrapper style={style}>
-    <Background from={from} to={to} deg={deg} />
+const ImageHeader = ({
+  children,
+  from,
+  to,
+  deg,
+  backgroundImage,
+  withOverlay,
+  ...props
+}) => (
+  <Wrapper {...props}>
+    {backgroundImage ? (
+      <ImageBackground
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+        className={classNames({ "gradient--overlay": withOverlay })}
+        aria-hidden
+      />
+    ) : (
+      <GradientBackground
+        from={from}
+        to={to}
+        deg={deg}
+        className={classNames({ "gradient--overlay": withOverlay })}
+      />
+    )}
     <ContainerWrapper>
       <ContainerRow>{children}</ContainerRow>
     </ContainerWrapper>
@@ -54,7 +76,14 @@ const ImageHeader = ({ children, from, to, deg, style }) => (
 );
 
 ImageHeader.propTypes = {
-  ...Gradient.propTypes
+  ...Gradient.propTypes,
+  backgroundImage: PropTypes.string,
+  withOverlay: PropTypes.bool
+};
+
+ImageHeader.defaultProps = {
+  backgroundImage: null,
+  withOverlay: false
 };
 
 ImageHeader.ImageWrapper = ImageWrapper;

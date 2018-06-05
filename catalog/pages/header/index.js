@@ -5,6 +5,7 @@ import Heading from "../../../src/components/Header/Heading";
 import HeaderWithImage from "../../../src/components/Header/WithImage";
 import ImageCard from "../../../src/components/ImageCard";
 import Breadcrumb from "../../../src/components/Breadcrumbs";
+import Spacing from "../../../src/components/Spacing";
 import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
@@ -24,6 +25,7 @@ export default {
     Column,
     Row,
     ImageCard,
+    Spacing,
     RatingBadge,
     StarIcon,
     Breadcrumb,

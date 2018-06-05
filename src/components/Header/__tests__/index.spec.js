@@ -21,7 +21,7 @@ describe("Header", () => {
   it("renders with custom level", () => {
     const component = renderer.create(
       <Header>
-        <Heading level={1}>
+        <Heading level={1} color="blue">
           <Heading.Strong>Generic</Heading.Strong>{" "}
           <Heading.Span>Header</Heading.Span>
         </Heading>
