@@ -1,4 +1,4 @@
-import { StyledButton } from "./";
+import { StyledButton } from "./Base.styles";
 import { typography } from "../../theme";
 
 const StyledBadge = StyledButton.extend`

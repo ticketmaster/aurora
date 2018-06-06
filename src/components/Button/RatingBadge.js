@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledBadge } from "./";
+import StyledBadge from "./Badge.styles";
 import BUTTON_VARIANTS from "./constants";
 
 const RatingBadge = ({
