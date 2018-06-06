@@ -1,5 +1,5 @@
 const constants = {
-  maxColumns: 12,
+  MAX_COLUMNS: 12,
   borderRadius: {
     small: "2px",
     large: "4px"

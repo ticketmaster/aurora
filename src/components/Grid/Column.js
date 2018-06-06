@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { mediumAndUp, largeAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
+import constants from "../../theme/constants";
 
-const MAX_COLUMNS = 12;
-
-const getSize = val => val / MAX_COLUMNS * 100;
+const getSize = val => val / constants.MAX_COLUMNS * 100;
 
 const getFlexProps = val =>
   val === 12

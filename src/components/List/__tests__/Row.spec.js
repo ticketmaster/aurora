@@ -2,64 +2,61 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 import ListRow from "../Row";
-import ListContainer from "../Container";
+import ListRowContainer from "../Container";
+import { listItems } from "../../../../catalog/pages/list_row/mock";
+import { colors } from "../../../theme";
+
+const onOverflowButtonClick = ({ scope, index }) => ({ event }) => ev => {}; // eslint-disable-line
 
 describe("<ListRow />", () => {
-  it("renders standard eventListRow correctly", () => {
+  const modalRoot = global.document.createElement("div");
+  modalRoot.setAttribute("id", "modal-root");
+  const body = global.document.querySelector("body");
+  body.appendChild(modalRoot);
+
+  it("renders standard List Row correctly", () => {
     const component = renderer.create(
-      <ListRow
-        title="Del Mar Fairgrounds"
-        subTitle="KABOO 3-Day Pass"
-        dateTitle="apr 23"
-        dateSubTitle="Thu, 8:00 PM"
-        buttonText="See Tickets"
-        variant="standard"
-        href="http://localhost/new/"
-        onClick={() => {}}
-        onOverflowClick={() => {}}
-      />
+      <ListRowContainer>
+        <ListRow rowItem={listItems[0]} index={0} onOverflowClick={jest.fn()} />
+      </ListRowContainer>
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders eventListRow with link correctly", () => {
+  it("renders List Row with link correctly", () => {
     const component = renderer.create(
-      <ListRow
-        title="Del Mar Fairgrounds"
-        subTitle="KABOO 3-Day Pass"
-        dateTitle="apr 23"
-        dateSubTitle="Thu, 8:00 PM"
-        buttonText="See Tickets"
-        href="http://localhost/new/"
-        variant="withLink"
-        linkTitle="Ticket Options Available"
-        linkUrl=""
-        onClick={() => {}}
-        onOverflowClick={() => {}}
-      />
-    );
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it("renders eventListRow with container", () => {
-    const component = renderer.create(
-      <ListContainer>
+      <ListRowContainer>
         <ListRow
-          title="Del Mar Fairgrounds"
-          subTitle="KABOO 3-Day Pass"
-          dateTitle="apr 23"
-          dateSubTitle="Thu, 8:00 PM"
-          buttonText="See Tickets"
-          variant="withLink"
-          href="http://localhost/new/"
-          linkTitle="Ticket Options Available"
-          linkUrl=""
-          onClick={() => {}}
-          onOverflowClick={() => {}}
+          rowItem={{
+            ...listItems[0],
+            variant: "withLink",
+            linkTitle: "Ticket Options Available",
+            linkUrl: "",
+            linkSubTitle: "on Partner Site"
+          }}
+          index={0}
+          onOverflowClick={jest.fn()}
         />
-      </ListContainer>
+      </ListRowContainer>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders List Row with colored date correctly", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          rowItem={{
+            ...listItems[0],
+            variant: "standard",
+            dateColor: colors.heliotrope.bases
+          }}
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

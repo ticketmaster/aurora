@@ -23,7 +23,7 @@ const Link = ({ href, children, ...props }) => {
 
 Link.propTypes = {
   children: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
+  href: PropTypes.string,
   color: PropTypes.string,
   target: PropTypes.string,
   rel: PropTypes.string
@@ -32,7 +32,8 @@ Link.propTypes = {
 Link.defaultProps = {
   color: "",
   target: "",
-  rel: "_self"
+  rel: "_self",
+  href: "/"
 };
 
 export default Link;

@@ -12,6 +12,8 @@ export default {
       name: "TicketmasterPrism",
       globals: {
         react: "React",
+        "react-dom": "ReactDOM",
+        "react-addons-css-transition-group": "ReactCSSTransitionGroup",
         "prop-types": "PropTypes",
         "styled-components": "styled",
         classnames: "classNames"
@@ -40,5 +42,12 @@ export default {
     stripPropTypes({ sourceMap: false }),
     uglify()
   ],
-  external: ["react", "prop-types", "styled-components", "classnames"]
+  external: [
+    "react",
+    "react-dom",
+    "react-addons-css-transition-group",
+    "prop-types",
+    "styled-components",
+    "classnames"
+  ]
 };

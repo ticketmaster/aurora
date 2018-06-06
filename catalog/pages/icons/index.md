@@ -15,15 +15,15 @@ span: 6
 rows:
   - Prop: size
     Type: number
-    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon
+    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon, TicketIcon, VenueIcon, VipIcon, CrossIcon, ParkingIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon
+    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon, TicketIcon, VenueIcon, VipIcon, CrossIcon, ParkingIcon
     Notes: Required
   - Prop: children
     Type: node
-    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon
+    Component: OverflowIcon, UserIcon, ChevronIcon, StarIcon, TicketIcon, VenueIcon, VipIcon, CrossIcon, ParkingIcon
     Notes: Optional
   - Prop: direction
     Type: string
@@ -77,6 +77,36 @@ rows:
     <div style={iconLabelStyle}>Star Icon</div>
   </Column>
 
+</Row>
+
+<Row>
+  <Column medium={3}>
+    <div style={iconStyle}><TicketIcon size={26} color="#262626"><title>Ticket Icon</title></TicketIcon></div>
+    <div style={iconLabelStyle}>Ticket Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><VenueIcon size={26} color="#262626"><title>Venue Icon</title></VenueIcon></div>
+    <div style={iconLabelStyle}>Venue Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><VipIcon size={26} color="#262626"><title>Vip Icon</title></VipIcon></div>
+    <div style={iconLabelStyle}>Vip Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><CrossIcon size={20} color="#262626"><title>Cross Icon</title></CrossIcon></div>
+    <div style={iconLabelStyle}>Cross Icon</div>
+  </Column>
+
+</Row>
+
+<Row>
+  <Column medium={3}>
+    <div style={iconStyle}><ParkingIcon size={26} color="#000"><title>Parking Icon</title></ParkingIcon></div>
+    <div style={iconLabelStyle}>Parking Icon</div>
+  </Column>
 </Row>
 </Container>
 ```

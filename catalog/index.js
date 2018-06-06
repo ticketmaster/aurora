@@ -2,18 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog } from "catalog";
 
-import home from "./pages/home/index";
-import colors from "./pages/colors/index";
-import typography from "./pages/typography/index";
-import buttons from "./pages/buttons/index";
+import home from "./pages/home";
+import colors from "./pages/colors";
+import typography from "./pages/typography";
+import buttons from "./pages/buttons";
 import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
+import imageCard from "./pages/image_card";
+import listRow from "./pages/list_row";
+import header from "./pages/header";
+import inputs from "./pages/inputs";
+import navBar from "./pages/nav_bar";
+import bottomSheet from "./pages/bottom_sheet";
+import image from "./pages/image";
 import images from "./pages/images";
-import imageCard from "./pages/image_card/index";
-import listRow from "./pages/listRow";
-import header from "./pages/header/index";
-import inputs from "./pages/inputs/index";
-import navBar from "./pages/nav_bar/index";
 import breadcrumbs from "./pages/breadcrumbs";
 
 const theme = {
@@ -29,11 +31,13 @@ const pages = [
   icons,
   images,
   imageCard,
+  image,
   listRow,
   header,
   inputs,
   navBar,
-  breadcrumbs
+  breadcrumbs,
+  bottomSheet
 ];
 
 const sizes = [

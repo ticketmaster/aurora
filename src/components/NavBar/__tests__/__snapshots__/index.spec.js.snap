@@ -1006,7 +1006,7 @@ exports[`NavBar renders with defaults 1`] = `
 .c8 {
   width: 24px;
   height: 24px;
-  border: solid 0.5px currentcolor;
+  border: solid 0.5px currentColor;
   border-radius: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1422,11 +1422,11 @@ exports[`NavBar renders with defaults 1`] = `
     >
       <div
         className="c8"
-        color="currentcolor"
+        color="currentColor"
         size={24}
       >
         <svg
-          fill="currentcolor"
+          fill="currentColor"
           height={24}
           viewBox="0 0 24 24"
           width={24}
