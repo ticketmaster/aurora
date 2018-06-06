@@ -12,9 +12,7 @@
   "main": "dist/index.cjs.js",
   "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
@@ -38,18 +36,13 @@
       "stylelint \"{src,catalog}/**/*.{js,jsx}\"",
       "jest --bail --findRelatedTests --no-cache"
     ],
-    "*.{json,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{json,md}": ["prettier --write", "git add"]
   },
   "jest": {
     "testURL": "http://localhost/",
     "testEnvironment": "jsdom",
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
+    "collectCoverageFrom": ["src/**/*.js"],
     "coverageThreshold": {
       "global": {
         "branches": 80,
@@ -94,6 +87,7 @@
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.0",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-test-renderer": "^16.3.2",
     "react-testing-library": "^3.1.3",
     "rollup": "^0.59.0",
