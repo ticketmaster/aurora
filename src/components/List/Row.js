@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import spacing from "../../theme/spacing";
@@ -8,12 +7,19 @@ import colors from "../../theme/colors";
 import { StyledButton } from "../Button";
 import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
-import { OverflowIcon } from "../Icons";
+import OverflowIcon from "../Icons/Overflow";
+import ChevronIcon from "../Icons/Chevron";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import ExpandedRow from "./ExpandedRow";
+import { rowDataShape } from "./shape";
+import BottomSheetContainer from "../BottomSheet/Container";
+import ExpandedRowContext from "./ExpandedRowContext";
+import BottomSheetContext from "./BottomSheetContext";
 
-const variants = ["standard", "withLink"];
+const ExpandedRowConsumer = ExpandedRowContext.Consumer;
+const BottomSheetConsumer = BottomSheetContext.Consumer;
 
-const RowContainer = styled.div`
+const RowWrapper = styled.div`
   background-color: ${colors.white.base};
 
   &:not(:last-of-type) {
@@ -21,8 +27,9 @@ const RowContainer = styled.div`
   }
 `;
 
-const ListRow = styled(Row)`
-  align-items: center;
+const ListRowContainer = styled(Row)`
+  align-items: stretch;
+  display: flex;
 `;
 
 const DesktopOnlyColumn = styled(Column)`
@@ -56,24 +63,32 @@ const LinkWrapper = styled.a`
   cursor: pointer;
   padding-top: ${spacing.cozy};
   padding-bottom: ${spacing.cozy};
+
   margin: 12px 0
     ${props => (props.variant === "withLink" ? spacing.cozy : "12px")} 0;
   ${mediumAndUp`
     margin: 18px 0
       ${props => (props.variant === "withLink" ? spacing.cozy : "18px")}
       0;
-  `};
-  &:hover {
-    background: ${colors.azure.muted};
+    &:hover {
+    background-color: ${colors.azure.light};
   }
+  `};
 `;
 
-const ClickableButton = styled.button`
+const UnStyledButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  display: block;
-  text-align: start;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+const ClickableButton = UnStyledButton.extend.attrs({
+  className: "moreInfo"
+})`
   padding: 14px 0
     ${props => (props.variant === "withLink" ? spacing.cozy : "14px")} 0;
 `;
@@ -94,115 +109,168 @@ const LinkRow = styled(Row)`
   `};
 `;
 
-const ListItem = ({
+const ExpandedRowWrapper = styled(Column)`
+  ${mediumAndUp`
+  border-top: 1px solid ${colors.lightGray};
+  `};
+`;
+
+const IconWrapper = UnStyledButton.extend.attrs({
+  className: "expandOrCollapse"
+})`
+  display: none;
+  ${mediumAndUp`
+    display: flex;
+    padding-left: 30px;
+  `};
+`;
+
+const OverflowColumn = styled(Column)`
+  display: flex;
+  align-items: stretch;
+  ${mediumAndUp`
+      display: none;
+  `};
+`;
+
+const ListRow = ({
+  rowId,
   title,
   subTitle,
   dateTitle,
   dateSubTitle,
   buttonText,
-  href,
   variant,
   linkTitle,
   linkUrl,
   linkSubTitle,
   coloredDate,
   onClick,
-  onOverflowClick
+  onOverflowClick,
+  expandedSections,
+  onExpandOrCollapseClick
 }) => (
-  <RowContainer variant={variant} onExpand={onClick}>
-    <ListRow>
-      <Column small={10.6} medium={9.8} large={10.2} xLarge={10.8}>
-        <LinkWrapper onClick={onClick} href={href}>
-          <Row>
-            <Column small={3.8} medium={2.1} large={1.5} xLarge={1}>
-              <BoldText
-                style={{ textTransform: "uppercase" }}
-                color={coloredDate ? colors.heliotrope.base : null}
-              >
-                {dateTitle}
-              </BoldText>
-              <SecondaryText>{dateSubTitle}</SecondaryText>
+  <ExpandedRowConsumer>
+    {expandedRowId => (
+      <RowWrapper variant={variant} onExpand={onClick}>
+        <ListRowContainer>
+          <IconWrapper
+            role="button"
+            aria-label={expandedRowId === rowId ? "Collapse Row" : "Expand Row"}
+            aria-expanded={expandedRowId === rowId}
+            onClick={() => onExpandOrCollapseClick(rowId)}
+          >
+            <ChevronIcon
+              size={15}
+              color="#000"
+              direction={expandedRowId === rowId ? "up" : "down"}
+            />
+          </IconWrapper>
+          <Column small={10.6} medium={9} large={9.8} xLarge={10.4}>
+            <LinkWrapper
+              role="link"
+              aria-label="See Tickets"
+              onClick={onClick}
+              href="/"
+            >
+              <Row>
+                <Column small={3.8} medium={2.3} large={1.6} xLarge={1.2}>
+                  <BoldText
+                    style={{ textTransform: "uppercase" }}
+                    color={coloredDate ? colors.heliotrope.base : null}
+                  >
+                    {dateTitle}
+                  </BoldText>
+                  <SecondaryText>{dateSubTitle}</SecondaryText>
+                </Column>
+
+                <MobileOnlyColumn small={6.9}>
+                  <Column medium={4} large={3}>
+                    <PrimaryText>{title}</PrimaryText>
+                  </Column>
+                  <Column>
+                    <SecondaryText>{subTitle}</SecondaryText>
+                  </Column>
+                </MobileOnlyColumn>
+
+                <DesktopOnlyColumn medium={9.7} large={5.2} xLarge={5.4}>
+                  <PrimaryText>{title}</PrimaryText>
+                </DesktopOnlyColumn>
+                <SubTitleColumn large={5.2} xLarge={5.4}>
+                  <PrimaryText>{subTitle}</PrimaryText>
+                </SubTitleColumn>
+              </Row>
+            </LinkWrapper>
+          </Column>
+
+          <DesktopOnlyColumn medium={2} large={1.5} xLarge={1.1}>
+            <ListRowButton
+              aria-label={buttonText}
+              role="button"
+              width="102px"
+              variant="standard"
+            >
+              {buttonText}
+            </ListRowButton>
+          </DesktopOnlyColumn>
+
+          <OverflowColumn small={1.4}>
+            <ClickableButton
+              onClick={() => onOverflowClick(rowId)}
+              aria-label="More Info"
+              role="button"
+            >
+              <OverflowIcon size={22} color={colors.onyx.light} />
+            </ClickableButton>
+          </OverflowColumn>
+        </ListRowContainer>
+        {variant === "withLink" ? (
+          <LinkRow>
+            <Column small={9} medium={10} large={10.5} xLarge={10.8}>
+              <Link href={linkUrl}>{linkTitle}</Link>
             </Column>
+            <Column small={3} medium={2} large={1.5} xLarge={1.2}>
+              <SecondaryText>{linkSubTitle}</SecondaryText>
+            </Column>
+          </LinkRow>
+        ) : null}
 
-            <MobileOnlyColumn small={7}>
-              <Column medium={4} large={3}>
-                <PrimaryText>{title}</PrimaryText>
-              </Column>
-              <Column>
-                <SecondaryText>{subTitle}</SecondaryText>
-              </Column>
-            </MobileOnlyColumn>
-
-            <DesktopOnlyColumn medium={8} large={4.5} xLarge={4.9}>
-              <PrimaryText>{title}</PrimaryText>
-            </DesktopOnlyColumn>
-            <SubTitleColumn large={4.5} xLarge={4.9}>
-              <PrimaryText>{subTitle}</PrimaryText>
-            </SubTitleColumn>
+        {expandedRowId === rowId ? (
+          <Row>
+            <ExpandedRowWrapper>
+              <ExpandedRow
+                sections={expandedSections}
+                buttonText={buttonText}
+              />
+            </ExpandedRowWrapper>
           </Row>
-        </LinkWrapper>
-      </Column>
+        ) : null}
 
-      <DesktopOnlyColumn medium={2} large={1.6} xLarge={1.1}>
-        <ListRowButton
-          aria-label={buttonText}
-          role="button"
-          width="102px"
-          variant="standard"
-        >
-          {buttonText}
-        </ListRowButton>
-      </DesktopOnlyColumn>
-
-      <MobileOnlyColumn small={1.4}>
-        <ClickableButton
-          onClick={onOverflowClick}
-          aria-label="More Info"
-          role="button"
-        >
-          <OverflowIcon
-            size={22}
-            // style={{ paddingTop: "5px", paddingBottom: "5px" }}
-            color={colors.onyx.light}
-            onClick={onOverflowClick}
-          />
-        </ClickableButton>
-      </MobileOnlyColumn>
-    </ListRow>
-    {variant === "withLink" ? (
-      <LinkRow>
-        <Column small={9} medium={10} large={10.5} xLarge={10.8}>
-          <Link href={linkUrl}>{linkTitle}</Link>
-        </Column>
-        <Column small={3} medium={2} large={1.5} xLarge={1.2}>
-          <SecondaryText>{linkSubTitle}</SecondaryText>
-        </Column>
-      </LinkRow>
-    ) : null}
-  </RowContainer>
+        <BottomSheetConsumer>
+          {bottomSheetId =>
+            bottomSheetId && bottomSheetId === rowId ? (
+              <BottomSheetContainer onClose={() => onOverflowClick(null)}>
+                <ExpandedRow
+                  sections={expandedSections}
+                  buttonText="See Tickets"
+                />
+              </BottomSheetContainer>
+            ) : null
+          }
+        </BottomSheetConsumer>
+      </RowWrapper>
+    )}
+  </ExpandedRowConsumer>
 );
 
-ListItem.defaultProps = {
+ListRow.defaultProps = {
+  href: "",
   linkTitle: "",
   linkUrl: "",
   linkSubTitle: "",
   coloredDate: false
 };
 
-ListItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  dateTitle: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  dateSubTitle: PropTypes.string.isRequired,
-  buttonText: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(variants).isRequired,
-  linkTitle: PropTypes.string,
-  linkUrl: PropTypes.string,
-  linkSubTitle: PropTypes.string,
-  coloredDate: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
-  onOverflowClick: PropTypes.func.isRequired
-};
+ListRow.propTypes = rowDataShape;
 
-export default ListItem;
+export default ListRow;

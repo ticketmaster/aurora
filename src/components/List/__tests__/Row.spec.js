@@ -2,21 +2,23 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 import ListRow from "../Row";
-import ListContainer from "../Container";
+import { sections } from "../../../../catalog/pages/expandedRow/mock";
 
 describe("<ListRow />", () => {
-  it("renders standard eventListRow correctly", () => {
+  it("renders standard List Row correctly", () => {
     const component = renderer.create(
       <ListRow
+        rowId="567"
         title="Del Mar Fairgrounds"
-        subTitle="KABOO 3-Day Pass"
+        subTitle="Del Mar Fairgrounds"
         dateTitle="apr 23"
         dateSubTitle="Thu, 8:00 PM"
         buttonText="See Tickets"
         variant="standard"
-        href="http://localhost/new/"
         onClick={() => {}}
         onOverflowClick={() => {}}
+        expandedSections={sections}
+        onExpandOrCollapseClick={() => {}}
       />
     );
     const tree = component.toJSON();
@@ -26,40 +28,42 @@ describe("<ListRow />", () => {
   it("renders eventListRow with link correctly", () => {
     const component = renderer.create(
       <ListRow
+        rowId="567"
         title="Del Mar Fairgrounds"
-        subTitle="KABOO 3-Day Pass"
+        subTitle="Del Mar Fairgrounds"
         dateTitle="apr 23"
         dateSubTitle="Thu, 8:00 PM"
         buttonText="See Tickets"
-        href="http://localhost/new/"
         variant="withLink"
         linkTitle="Ticket Options Available"
         linkUrl=""
+        linkSubTitle="on Partner Site"
         onClick={() => {}}
         onOverflowClick={() => {}}
+        expandedSections={sections}
+        onExpandOrCollapseClick={() => {}}
       />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders eventListRow with container", () => {
+  it("renders eventListRow with colored date correctly", () => {
     const component = renderer.create(
-      <ListContainer>
-        <ListRow
-          title="Del Mar Fairgrounds"
-          subTitle="KABOO 3-Day Pass"
-          dateTitle="apr 23"
-          dateSubTitle="Thu, 8:00 PM"
-          buttonText="See Tickets"
-          variant="withLink"
-          href="http://localhost/new/"
-          linkTitle="Ticket Options Available"
-          linkUrl=""
-          onClick={() => {}}
-          onOverflowClick={() => {}}
-        />
-      </ListContainer>
+      <ListRow
+        rowId="567"
+        title="Del Mar Fairgrounds"
+        subTitle="KABOO 3-Day Pass"
+        dateTitle="apr 23"
+        dateSubTitle="Thu, 8:00 PM"
+        buttonText="See Tickets"
+        variant="standard"
+        coloredDate
+        onClick={() => {}}
+        onOverflowClick={() => {}}
+        expandedSections={sections}
+        onExpandOrCollapseClick={() => {}}
+      />
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

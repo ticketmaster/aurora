@@ -40,6 +40,9 @@ rows:
   - Prop: onOverflowClick
     Type: func
     Notes: Required
+  - Prop: expandedSections
+    Type: Array of object with item attribute where each item is a node
+    Notes: Required
 ```
 
 ### Standard List Row
@@ -47,15 +50,19 @@ rows:
 ```react
 responsive: true
 ---
+
  <ListRow
-      title="Del Mar Fairgrounds"
-      subTitle="KABOO 3-Day Pass"
-      dateTitle="apr 23"
-      dateSubTitle="Thu, 8:00 PM"
-      buttonText="See Tickets"
-      variant="standard"
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
+    rowId="567"
+    title="Del Mar Fairgrounds"
+    subTitle="Del Mar Fairgrounds"
+    dateTitle="apr 23"
+    dateSubTitle="Thu, 8:00 PM"
+    buttonText="See Tickets"
+    variant="standard"
+    onClick={() => {}}
+    onOverflowClick={() => {}}
+    expandedSections={sections}
+    onExpandOrCollapseClick={() => {}}
     />
 ```
 
@@ -64,38 +71,29 @@ responsive: true
 ```react
 responsive: true
 ---
-<Container>
- <ListRow
-      title="Del Mar Fairgrounds"
-      subTitle="KABOO 3-Day Pass"
-      dateTitle="apr 23"
-      dateSubTitle="Thu, 8:00 PM"
-      buttonText="See Tickets"
-      variant="standard"
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
+
+<ListContainer listItems={listItems} />;
+```
+
+### Standard expanded List Row
+
+```react
+responsive: true
+---
+
+<ListRow
+    rowId="567"
+    title="Del Mar Fairgrounds"
+    subTitle="Del Mar Fairgrounds"
+    dateTitle="apr 23"
+    dateSubTitle="Thu, 8:00 PM"
+    buttonText="See Tickets"
+    variant="standard"
+    onClick={() => {}}
+    onOverflowClick={() => {}}
+    expandedSections={sections}
+    onExpandOrCollapseClick={() => {}}
     />
-     <ListRow
-      title="Inglewood, CA - The Forum"
-      subTitle="The Weezer Tour"
-      dateTitle="apr 26"
-      dateSubTitle="Sun, 8:00 PM"
-      buttonText="See Tickets"
-      variant="standard"
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
-    />
-      <ListRow
-      title="Inglewood, CA - The Forum"
-      subTitle="The Weezer Tour"
-      dateTitle="apr 27"
-      dateSubTitle="Thu, 8:00 PM"
-      buttonText="See Tickets"
-      variant="standard"
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
-    />
-</Container>
 ```
 
 ### List Row with Link
@@ -105,17 +103,20 @@ responsive: true
 ---
 
 <ListRow
-      dateTitle="apr 23"
-      dateSubTitle="Thu, 8:00 PM"
-      title="Del Mar Fairgrounds"
-      subTitle="KABOO 3-Day Pass"
-      buttonText="See Tickets"
-      variant="withLink"
-      linkTitle="Ticket Options Available"
-      linkUrl=""
-      linkSubTitle="on Partner Site"
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
+    rowId="567"
+    title="Del Mar Fairgrounds"
+    subTitle="Del Mar Fairgrounds"
+    dateTitle="apr 23"
+    dateSubTitle="Thu, 8:00 PM"
+    buttonText="See Tickets"
+    variant="withLink"
+    linkTitle="Ticket Options Available"
+    linkUrl=""
+    linkSubTitle="on Partner Site"
+    onClick={() => {}}
+    onOverflowClick={() => {}}
+    expandedSections={sections}
+    onExpandOrCollapseClick={() => {}}
     />
 ```
 
@@ -126,16 +127,17 @@ responsive: true
 ---
 
 <ListRow
-      dateTitle="apr 23"
-      dateSubTitle="Thu, 8:00 PM"List
-      title="Del Mar Fairgrounds"
-      subTitle="KABOO 3-Day Pass"
-      buttonText="See Tickets"
-      variant="withLink"
-      linkTitle="Ticket Options Available"
-      linkUrl=""
-      coloredDate
-      onClick={()=>{}}
-      onOverflowClick={()=>{}}
+    rowId="567"
+    title="Del Mar Fairgrounds"
+    subTitle="Del Mar Fairgrounds"
+    dateTitle="apr 23"
+    dateSubTitle="Thu, 8:00 PM"
+    buttonText="See Tickets"
+    variant="standard"
+    coloredDate
+    onClick={() => {}}
+    onOverflowClick={() => {}}
+    expandedSections={sections}
+    onExpandOrCollapseClick={() => {}}
     />
 ```
