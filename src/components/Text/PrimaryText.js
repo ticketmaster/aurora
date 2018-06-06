@@ -13,8 +13,8 @@ const PrimaryStyledText = StyledText.extend`
   }
 `;
 
-const PrimaryText = ({ children }) => (
-  <PrimaryStyledText>{children}</PrimaryStyledText>
+const PrimaryText = ({ children, ...props }) => (
+  <PrimaryStyledText {...props}>{children}</PrimaryStyledText>
 );
 
 PrimaryText.propTypes = {

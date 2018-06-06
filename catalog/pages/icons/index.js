@@ -5,6 +5,11 @@ import {
   UserIcon,
   OverflowIcon,
   SearchIcon,
+  ParkingIcon,
+  TicketIcon,
+  VenueIcon,
+  VipIcon,
+  CrossIcon,
   StarIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
@@ -31,6 +36,11 @@ export default {
     UserIcon,
     OverflowIcon,
     SearchIcon,
+    ParkingIcon,
+    TicketIcon,
+    VenueIcon,
+    VipIcon,
+    CrossIcon,
     StarIcon,
     Container,
     Row,

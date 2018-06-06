@@ -3,11 +3,13 @@
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 .c0 {
   font-size: 12px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -48,11 +50,13 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 .c0 {
   font-size: 12px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 <li

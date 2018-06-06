@@ -31,7 +31,7 @@ UserIcon.propTypes = {
 
 UserIcon.defaultProps = {
   children: null,
-  color: "currentcolor"
+  color: "currentColor"
 };
 
 export default UserIcon;

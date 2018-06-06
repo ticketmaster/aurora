@@ -1,8 +1,7 @@
 const colors = {
   azure: {
     base: "rgba(2, 108, 223, 1)",
-    light: "rgba(2, 108, 223, 0.2)",
-    muted: "rgba(2, 108, 223, 0.1)"
+    light: "rgba(2, 108, 223, 0.2)"
   },
   summerSky: "#3AC7FF",
   blackPearl: "#1F262D",

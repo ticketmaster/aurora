@@ -12,12 +12,13 @@ OverflowIcon.displayName = "OverflowIcon";
 
 OverflowIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   children: PropTypes.node
 };
 
 OverflowIcon.defaultProps = {
-  children: null
+  children: null,
+  color: "currentColor"
 };
 
 export default OverflowIcon;
