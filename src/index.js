@@ -27,8 +27,15 @@ export {
 export {
   Consumer as DeviceSizeConsumer
 } from "./components/DeviceSize/Context";
+export {
+  default as ScrollObserverProvider
+} from "./components/ScrollObserver/Provider";
+export {
+  default as ScrollObserverConsumer
+} from "./components/ScrollObserver/Consumer";
 export { default as colors } from "./theme/colors";
 export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";
 export { default as typography } from "./theme/typography";
 export { default as zIndex } from "./theme/zIndex";
+export { largeAndUp, mediumAndUp, xLargeAndUp } from "./theme/mediaQueries";
