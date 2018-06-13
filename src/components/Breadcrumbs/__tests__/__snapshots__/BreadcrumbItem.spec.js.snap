@@ -2,7 +2,7 @@
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 .c0 {
-  font-size: 14px;
+  font-size: 12px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -21,6 +21,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   <a
     className="c0"
     color=""
+    fontSize="12px"
     href="/"
     itemProp="item"
     rel="_self"
@@ -41,7 +42,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 .c0 {
-  font-size: 14px;
+  font-size: 12px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -54,13 +55,14 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   itemScope={true}
   itemType="http://schema.org/ListItem"
 >
-  <div
+  <span
     className="c0"
+    fontSize="12px"
     href=""
     itemProp="item"
   >
     Home
-  </div>
+  </span>
   <meta
     content="Home"
     itemProp="name"

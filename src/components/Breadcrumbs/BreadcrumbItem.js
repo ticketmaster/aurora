@@ -1,11 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import typography from "../../theme/typography";
 import { Link, StyledText } from "../Text";
+
+const Text = StyledText.withComponent("span");
 
 const BreadcrumbItem = ({ position, children, ...props }) => {
   const { href } = props;
-  const Tag = href ? Link : StyledText;
+  const Tag = href ? Link : Text;
 
   return (
     <li
@@ -13,7 +16,7 @@ const BreadcrumbItem = ({ position, children, ...props }) => {
       itemScope
       itemType="http://schema.org/ListItem"
     >
-      <Tag itemProp="item" {...props}>
+      <Tag itemProp="item" {...props} fontSize={typography.size.uno}>
         {children}
       </Tag>
       {children && <meta itemProp="name" content={children} />}
