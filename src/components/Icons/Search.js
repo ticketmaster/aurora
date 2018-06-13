@@ -16,7 +16,7 @@ SearchIcon.propTypes = {
 
 SearchIcon.defaultProps = {
   children: null,
-  color: "currentcolor"
+  color: "currentColor"
 };
 
 export default SearchIcon;
