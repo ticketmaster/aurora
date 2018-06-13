@@ -1351,7 +1351,7 @@ exports[`NavBar renders with defaults 1`] = `
       type="button"
     >
       <svg
-        fill="currentcolor"
+        fill="currentColor"
         height={21}
         viewBox="0 0 16 16"
         width={21}

@@ -1,14 +1,12 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import {
-  findRenderedDOMComponentWithTag,
-  Simulate,
-  renderIntoDocument
-} from "react-dom/test-utils";
+import { renderIntoDocument, fireEvent, cleanup } from "react-testing-library";
 
 import SearchInput from "../Search";
 
 describe("SearchInput", () => {
+  afterEach(cleanup);
+
   it("renders default input", () => {
     expect(renderComponent()).toMatchSnapshot();
   });
@@ -27,30 +25,22 @@ describe("SearchInput", () => {
 
   it("it calls componsed onFocus from props", () => {
     const onFocus = jest.fn();
-    const tree = renderIntoDocument(<SearchInput onFocus={onFocus} />);
-    const input = findRenderedDOMComponentWithTag(tree, "input");
+    const { getByPlaceholderText } = renderIntoDocument(
+      <SearchInput placeholder="search" onFocus={onFocus} />
+    );
 
-    Simulate.focus(input);
+    fireEvent.focus(getByPlaceholderText("search"));
 
     expect(onFocus).toHaveBeenCalled();
   });
 
   it("it calls componsed onBlur from props", () => {
     const onBlur = jest.fn();
-    const tree = renderIntoDocument(<SearchInput onBlur={onBlur} />);
-    const input = findRenderedDOMComponentWithTag(tree, "input");
+    const { getByPlaceholderText } = renderIntoDocument(
+      <SearchInput placeholder="search" onBlur={onBlur} />
+    );
 
-    Simulate.blur(input);
-
-    expect(onBlur).toHaveBeenCalled();
-  });
-
-  it("it calls inverted onBlur from props", () => {
-    const onBlur = jest.fn();
-    const tree = renderIntoDocument(<SearchInput invert onBlur={onBlur} />);
-    const input = findRenderedDOMComponentWithTag(tree, "input");
-
-    Simulate.blur(input);
+    fireEvent.blur(getByPlaceholderText("search"));
 
     expect(onBlur).toHaveBeenCalled();
   });

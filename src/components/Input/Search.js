@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 import SearchIcon from "../Icons/Search";
 import colors from "../../theme/colors";
@@ -18,20 +19,19 @@ const Input = styled.input.attrs({
       : "14px 16px 14px calc(16px + 16px + 8px)"};
   background-color: transparent;
   border: 0;
-  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
   font-size: ${props =>
     props.slim ? typography.size.hecto : typography.size.kilo};
-  /* stylelint-disable */
   &:focus {
     background-color: ${colors.white.base};
     color: ${colors.onyx.base};
     &::placeholder {
-      color: ${colors.onyx.base};
+      color: #26262699;
     }
     outline: 0;
   }
+  /* stylelint-disable */
   &::placeholder {
-    color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
+    color: ${props => (props.invert ? "#26262699" : colors.white.base)};
   }
   &::ms-clear {
     display: none;
@@ -50,7 +50,8 @@ const Container = styled.div`
     props.slim ? constants.borderRadius.large : constants.borderRadius.small};
   overflow: hidden;
   outline: 0;
-  border: ${props => (props.invert ? `1px solid ${colors.onyx.base}` : "0")};
+  border: ${props => (props.invert ? `1px solid #bfbfbf` : "0")};
+  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
   background-color: ${props =>
     props.invert ? colors.white.base : colors.white.lighter};
 `;
@@ -62,6 +63,11 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: ${props => (props.slim ? "12px" : "16px")};
+  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
+
+  .search--focus & {
+    color: ${colors.onyx.base};
+  }
 `;
 
 const composeHandler = (...args) => e => {
@@ -73,34 +79,43 @@ export default class SearchInput extends React.Component {
     onBlur: PropTypes.func,
     onFocus: PropTypes.func,
     slim: PropTypes.bool,
-    invert: PropTypes.bool
+    invert: PropTypes.bool,
+    className: PropTypes.string
   };
 
   static defaultProps = {
     onBlur: null,
     onFocus: null,
     slim: false,
-    invert: false
+    invert: false,
+    className: null
   };
 
-  state = { color: this.props.invert ? colors.onyx.base : colors.white.base };
+  state = { isFocused: false };
 
   onBlur = () =>
-    this.setState((_, props) => ({
-      color: props.invert ? colors.onyx.base : colors.white.base
+    this.setState(() => ({
+      isFocused: false
     }));
 
   onFocus = () =>
     this.setState(() => ({
-      color: colors.onyx.base
+      isFocused: true
     }));
 
   render() {
-    const { slim, invert, ...props } = this.props;
+    const { slim, invert, className, ...props } = this.props;
     return (
-      <Container slim={slim} invert={invert}>
-        <IconContainer slim={slim}>
-          <SearchIcon color={this.state.color} size={16} />
+      <Container
+        slim={slim}
+        invert={invert}
+        className={classNames(
+          { "search--focus": this.state.isFocused },
+          className
+        )}
+      >
+        <IconContainer slim={slim} invert={invert}>
+          <SearchIcon size={16} />
         </IconContainer>
         <Input
           {...{
