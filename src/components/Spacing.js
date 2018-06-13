@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import spacing from "../theme/spacing";
 import { mediumAndUp, largeAndUp, xLargeAndUp } from "../theme/mediaQueries";
 
-const getSpacing = val => spacing[val] || 0;
+const getSpacing = val => spacing[val] || val || 0;
 
 const Spacing = styled.div`
   width: 100%;
@@ -43,17 +43,11 @@ const Spacing = styled.div`
   `};
 `;
 
-const allowedSpacing = PropTypes.oneOf(
-  Object.keys(spacing)
-    .filter(k => k !== "gutters")
-    .concat("none")
-);
-
 const spacingShape = PropTypes.shape({
-  small: allowedSpacing,
-  medium: allowedSpacing,
-  large: allowedSpacing,
-  xLarge: allowedSpacing
+  small: PropTypes.string,
+  medium: PropTypes.string,
+  large: PropTypes.string,
+  xLarge: PropTypes.string
 });
 
 Spacing.propTypes = {
