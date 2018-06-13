@@ -15,12 +15,13 @@ StarIcon.displayName = "StarIcon";
 
 StarIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string.isRequired,
+  color: PropTypes.string,
   children: PropTypes.node
 };
 
 StarIcon.defaultProps = {
-  children: null
+  children: null,
+  color: "currentColor"
 };
 
 export default StarIcon;

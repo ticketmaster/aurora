@@ -177,7 +177,6 @@ rows:
 
 ```react
 <RatingBadge variant="standard" ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```
@@ -186,7 +185,6 @@ rows:
 
 ```react
 <RatingBadge variant="standard" disabled ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```
@@ -195,7 +193,6 @@ rows:
 
 ```react
 <RatingBadge variant="outline" ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.azure.base} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```
@@ -204,7 +201,6 @@ rows:
 
 ```react
 <RatingBadge variant="outline" disabled ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.azure.light} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```
@@ -213,7 +209,6 @@ rows:
 
 ```react
 <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.white.base} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```
@@ -222,7 +217,6 @@ rows:
 
 ```react
 <RatingBadge variant="transparent" disabled ratingValue="4.8" bestRating="5" ratingCount="20">
-    <StarIcon size={12} color={colors.white.light} style={starIconStyles} />
     4.8
 </RatingBadge>
 ```

@@ -42,6 +42,10 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   href="/"
@@ -49,7 +53,22 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -107,13 +126,32 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -171,6 +209,10 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   disabled={true}
@@ -178,7 +220,22 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -236,13 +293,32 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -300,6 +376,10 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   disabled={true}
@@ -307,7 +387,22 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -365,13 +460,32 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
@@ -429,6 +543,10 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   cursor: not-allowed;
 }
 
+.c1 {
+  padding-left: 2px;
+}
+
 <button
   className="c0"
   disabled={true}
@@ -436,7 +554,22 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
 >
-  RatingBadge
+  <svg
+    fill="currentColor"
+    height={12}
+    viewBox="0 0 11 10"
+    width={12}
+  >
+    <path
+      d="M5.5 7.7L2.267 9.95l1.14-3.77L.27 3.8l3.938-.08L5.5 0l1.293 3.72 3.938.08-3.139 2.38 1.14 3.77z"
+      fillRule="evenodd"
+    />
+  </svg>
+  <span
+    className="c1"
+  >
+    RatingBadge
+  </span>
   <meta
     content="4.8"
     itemProp="ratingValue"
