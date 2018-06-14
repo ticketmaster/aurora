@@ -5,6 +5,7 @@ import colors from "../theme/colors";
 import { mediumAndUp, largeAndUp } from "../theme/mediaQueries";
 
 const Gradient = styled.span`
+  z-index: 1;
   background-image: ${props =>
     `linear-gradient(${props.deg.small}, ${props.from}, ${props.to})`};
   ${mediumAndUp`
@@ -16,6 +17,8 @@ const Gradient = styled.span`
   `};
 
   &.gradient--overlay:after {
+    z-index: 2;
+    height: 100%;
     content: "";
     opacity: 0.4;
     top: 0;
