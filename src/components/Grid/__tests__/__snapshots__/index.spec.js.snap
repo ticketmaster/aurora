@@ -3,7 +3,7 @@
 exports[`Grid renders medium and up when medium size defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1248px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -108,7 +108,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 exports[`Grid renders multiple sizes defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1248px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -213,7 +213,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
 exports[`Grid renders small size defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1248px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -318,7 +318,7 @@ exports[`Grid renders small size defined 1`] = `
 exports[`Grid renders with defaults 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1248px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
