@@ -20,8 +20,6 @@ exports[`ImageCard renders card without overlay 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: transparent;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,8 +79,6 @@ exports[`ImageCard renders standard card 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.02) 9%,rgba(0,0,0,0.06) 19%,rgba(0,0,0,0.12) 28%,rgba(0,0,0,0.2) 38%,rgba(0,0,0,0.29) 48%,rgba(0,0,0,0.39) 57%,rgba(0,0,0,0.5) 66%,rgba(0,0,0,0.61) 74%,rgba(0,0,0,0.71) 81%,rgba(0,0,0,0.8) 88%,rgba(0,0,0,0.88) 93%,rgba(0,0,0,0.95) 97%,rgba(0,0,0,0.98) 99%,#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,41 +133,23 @@ exports[`ImageCard renders type = half 1`] = `
 }
 
 .c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.02) 9%,rgba(0,0,0,0.06) 19%,rgba(0,0,0,0.12) 28%,rgba(0,0,0,0.2) 38%,rgba(0,0,0,0.29) 48%,rgba(0,0,0,0.39) 57%,rgba(0,0,0,0.5) 66%,rgba(0,0,0,0.61) 74%,rgba(0,0,0,0.71) 81%,rgba(0,0,0,0.8) 88%,rgba(0,0,0,0.88) 93%,rgba(0,0,0,0.95) 97%,rgba(0,0,0,0.98) 99%,#000000);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
+  position: relative;
+  color: rgba(255,255,255,1);
+  background-color: rgba(31,38,45,0.8);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .c4 {
-  position: relative;
-  width: 100%;
-  color: rgba(0,0,15,1);
-  padding-top: 0;
-  padding-bottom: 9px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.c5 {
   display: block;
   width: 100%;
   font-size: 16px;
   font-weight: 600;
 }
 
-.c6 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
 }
@@ -194,14 +172,6 @@ exports[`ImageCard renders type = half 1`] = `
   align-items: center;
 }
 
-@media screen and (min-width:481px) {
-  .c4 {
-    padding-bottom: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
 <div
   className="c0"
 >
@@ -213,21 +183,17 @@ exports[`ImageCard renders type = half 1`] = `
       className="c2"
       src="http://localhost/img.png"
     />
-    <div
-      className="c3"
-    />
   </div>
   <div
-    className="c4"
-    color="rgba(0, 0, 15, 1)"
+    className="c3"
   >
     <span
-      className="c5"
+      className="c4"
     >
       Title
     </span>
     <span
-      className="c6"
+      className="c5"
     >
       Sub Title
     </span>
@@ -250,8 +216,6 @@ exports[`ImageCard renders with custom image 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.02) 9%,rgba(0,0,0,0.06) 19%,rgba(0,0,0,0.12) 28%,rgba(0,0,0,0.2) 38%,rgba(0,0,0,0.29) 48%,rgba(0,0,0,0.39) 57%,rgba(0,0,0,0.5) 66%,rgba(0,0,0,0.61) 74%,rgba(0,0,0,0.71) 81%,rgba(0,0,0,0.8) 88%,rgba(0,0,0,0.88) 93%,rgba(0,0,0,0.95) 97%,rgba(0,0,0,0.98) 99%,#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -264,12 +228,12 @@ exports[`ImageCard renders with custom image 1`] = `
 
 .c3 {
   position: relative;
-  width: 100%;
   color: rgba(255,255,255,1);
-  padding-top: 0;
-  padding-bottom: 9px;
-  padding-left: 16px;
-  padding-right: 16px;
+  background-color: rgba(31,38,45,0.8);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .c4 {
@@ -295,14 +259,6 @@ exports[`ImageCard renders with custom image 1`] = `
   position: relative;
 }
 
-@media screen and (min-width:481px) {
-  .c3 {
-    padding-bottom: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
 <div
   className="c0"
 >
@@ -315,7 +271,6 @@ exports[`ImageCard renders with custom image 1`] = `
     >
       <div
         className="c3"
-        color="rgba(255, 255, 255, 1)"
       >
         <span
           className="c4"
@@ -358,8 +313,6 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.02) 9%,rgba(0,0,0,0.06) 19%,rgba(0,0,0,0.12) 28%,rgba(0,0,0,0.2) 38%,rgba(0,0,0,0.29) 48%,rgba(0,0,0,0.39) 57%,rgba(0,0,0,0.5) 66%,rgba(0,0,0,0.61) 74%,rgba(0,0,0,0.71) 81%,rgba(0,0,0,0.8) 88%,rgba(0,0,0,0.88) 93%,rgba(0,0,0,0.95) 97%,rgba(0,0,0,0.98) 99%,#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -372,12 +325,12 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 
 .c4 {
   position: relative;
-  width: 100%;
   color: rgba(255,255,255,1);
-  padding-top: 0;
-  padding-bottom: 9px;
-  padding-left: 16px;
-  padding-right: 16px;
+  background-color: rgba(31,38,45,0.8);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .c5 {
@@ -403,14 +356,6 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   position: relative;
 }
 
-@media screen and (min-width:481px) {
-  .c4 {
-    padding-bottom: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
 <div
   className="c0"
 >
@@ -427,7 +372,6 @@ exports[`ImageCard renders with title & subtitle 1`] = `
     >
       <div
         className="c4"
-        color="rgba(255, 255, 255, 1)"
       >
         <span
           className="c5"
@@ -465,8 +409,6 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.02) 9%,rgba(0,0,0,0.06) 19%,rgba(0,0,0,0.12) 28%,rgba(0,0,0,0.2) 38%,rgba(0,0,0,0.29) 48%,rgba(0,0,0,0.39) 57%,rgba(0,0,0,0.5) 66%,rgba(0,0,0,0.61) 74%,rgba(0,0,0,0.71) 81%,rgba(0,0,0,0.8) 88%,rgba(0,0,0,0.88) 93%,rgba(0,0,0,0.95) 97%,rgba(0,0,0,0.98) 99%,#000000);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -479,12 +421,12 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 
 .c4 {
   position: relative;
-  width: 100%;
   color: rgba(255,255,255,1);
-  padding-top: 0;
-  padding-bottom: 9px;
-  padding-left: 16px;
-  padding-right: 16px;
+  background-color: rgba(31,38,45,0.8);
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .c5 {
@@ -510,14 +452,6 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   position: relative;
 }
 
-@media screen and (min-width:481px) {
-  .c4 {
-    padding-bottom: 9px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
 <div
   className="c0"
 >
@@ -534,7 +468,6 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
     >
       <div
         className="c4"
-        color="rgba(255, 255, 255, 1)"
       >
         <span
           className="c5"

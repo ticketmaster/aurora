@@ -13,35 +13,25 @@ const Image = styled.img`
   max-width: 100%;
 `;
 
+//  come back
 const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
-  background-image: ${props =>
-    props.withOverlay
-      ? "linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02) 9%, rgba(0, 0, 0, 0.06) 19%, rgba(0, 0, 0, 0.12) 28%, rgba(0, 0, 0, 0.2) 38%, rgba(0, 0, 0, 0.29) 48%, rgba(0, 0, 0, 0.39) 57%, rgba(0, 0, 0, 0.5) 66%, rgba(0, 0, 0, 0.61) 74%, rgba(0, 0, 0, 0.71) 81%, rgba(0, 0, 0, 0.8) 88%, rgba(0, 0, 0, 0.88) 93%, rgba(0, 0, 0, 0.95) 97%, rgba(0, 0, 0, 0.98) 99%, #000000);"
-      : "transparent"};
   display: flex;
   align-items: flex-end;
 `;
 
 const CaptionContainer = styled.div`
   position: relative;
-  width: 100%;
-  color: ${props => props.color};
-  padding-top: 0;
-  padding-bottom: 9px;
-  padding-left: ${spacing.gutters.small}px;
-  padding-right: ${spacing.gutters.small}px;
-
-  @media screen and ${constants.breakpoints.mediumAndUp} {
-    padding-bottom: 9px;
-    padding-left: ${spacing.gutters.mediumAndUp / 2}px;
-    padding-right: ${spacing.gutters.mediumAndUp / 2}px;
-  }
+  color: ${colors.white.base};
+  background-color: rgba(31, 38, 45, 0.8);
+  border-radius: ${constants.borderRadius.large};
+  padding: ${spacing.slim} ${spacing.cozy};
+  margin-left: ${spacing.cozy};
+  margin-bottom: ${spacing.cozy};
 `;
 
 const Title = styled.span`
@@ -67,17 +57,14 @@ const RowContainer = Container.extend`
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, children, type, withOverlay, ...props }) => {
+const ImageCard = ({ src, alt, children, type, ...props }) => {
   const [title, subTitle, ...rest] = Children.toArray(children || []);
   const img = props.image || <Image src={src} alt={alt} />;
   if (type === "half") {
     return (
       <RowContainer>
-        <Card>
-          {img}
-          <Overlay withOverlay={withOverlay} />
-        </Card>
-        <CaptionContainer color={colors.onyx.base}>
+        <Card>{img}</Card>
+        <CaptionContainer>
           {title}
           {subTitle}
         </CaptionContainer>
@@ -89,9 +76,9 @@ const ImageCard = ({ src, alt, children, type, withOverlay, ...props }) => {
     <Card>
       <Container>
         {img}
-        <Overlay withOverlay={withOverlay}>
+        <Overlay>
           {(title || subTitle) && (
-            <CaptionContainer color={colors.white.base}>
+            <CaptionContainer>
               {title}
               {subTitle}
             </CaptionContainer>
@@ -108,8 +95,7 @@ ImageCard.propTypes = {
   src: PropTypes.string,
   alt: PropTypes.string,
   children: PropTypes.node,
-  image: PropTypes.element,
-  withOverlay: PropTypes.bool
+  image: PropTypes.element
 };
 
 ImageCard.defaultProps = {
@@ -117,8 +103,7 @@ ImageCard.defaultProps = {
   alt: "",
   src: "",
   children: null,
-  image: null,
-  withOverlay: true
+  image: null
 };
 
 ImageCard.Title = Title;
