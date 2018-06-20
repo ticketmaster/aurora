@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ListRow /> renders eventListRow with container 1`] = `
-.c3 {
+exports[`<ListRow /> renders eventListRow with colored date correctly 1`] = `
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,7 +20,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   margin-right: -8px;
 }
 
-.c3 .row {
+.c2 .row {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -52,10 +52,10 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
-  max-width: 58.333333333333336%;
-  -webkit-flex: 0 0 58.333333333333336%;
-  -ms-flex: 0 0 58.333333333333336%;
-  flex: 0 0 58.333333333333336%;
+  max-width: 57.50000000000001%;
+  -webkit-flex: 0 0 57.50000000000001%;
+  -ms-flex: 0 0 57.50000000000001%;
+  flex: 0 0 57.50000000000001%;
 }
 
 .c11 {
@@ -108,7 +108,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   flex: 0 0 100%;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -116,26 +116,6 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   -webkit-flex: 0 0 11.666666666666666%;
   -ms-flex: 0 0 11.666666666666666%;
   flex: 0 0 11.666666666666666%;
-}
-
-.c23 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 75%;
-  -webkit-flex: 0 0 75%;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-}
-
-.c25 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
 }
 
 .c12 {
@@ -165,35 +145,27 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: rgba(0,0,15,1);
+  color: #C56BFF;
   font-weight: 600;
 }
 
-.c24 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c1 {
+.c0 {
   background-color: rgba(255,255,255,1);
 }
 
-.c1:not(:last-of-type) {
+.c0:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.c1 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c14 {
@@ -215,17 +187,15 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   margin: 12px 0 12px 0;
 }
 
-.c5:hover {
-  background: rgba(2,108,223,0.1);
-}
-
-.c21 {
+.c22 {
   background: none;
   border: none;
   cursor: pointer;
-  display: block;
-  text-align: start;
   padding: 14px 0 14px 0;
+}
+
+.c22:focus {
+  outline: none;
 }
 
 .c19 {
@@ -263,19 +233,30 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   cursor: not-allowed;
 }
 
-.c22 {
-  padding-left: 8px;
+.c3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
-.c0 {
-  width: 100%;
-  border: 1px solid #E0E0E0;
-  border-radius: 4px;
-  overflow: hidden;
+.c3:focus {
+  outline: none;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 @media screen and (min-width:481px) {
-  .c3 {
+  .c2 {
     margin-left: -12px;
     margin-right: -12px;
   }
@@ -283,88 +264,88 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 
 @media screen and (min-width:481px) {
   .c4 {
-    max-width: 81.66666666666667%;
+    max-width: 75%;
     padding-right: 12px;
     padding-left: 12px;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    max-width: 81.66666666666667%;
     -webkit-flex: 0 0 81.66666666666667%;
     -ms-flex: 0 0 81.66666666666667%;
     flex: 0 0 81.66666666666667%;
   }
 }
 
-@media screen and (min-width:769px) {
-  .c4 {
-    max-width: 85%;
-    -webkit-flex: 0 0 85%;
-    -ms-flex: 0 0 85%;
-    flex: 0 0 85%;
-  }
-}
-
 @media screen and (min-width:1025px) {
   .c4 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
+    max-width: 86.66666666666667%;
+    -webkit-flex: 0 0 86.66666666666667%;
+    -ms-flex: 0 0 86.66666666666667%;
+    flex: 0 0 86.66666666666667%;
   }
 }
 
 @media screen and (min-width:481px) {
   .c6 {
-    max-width: 17.5%;
+    max-width: 19.166666666666664%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 17.5%;
-    -ms-flex: 0 0 17.5%;
-    flex: 0 0 17.5%;
+    -webkit-flex: 0 0 19.166666666666664%;
+    -ms-flex: 0 0 19.166666666666664%;
+    flex: 0 0 19.166666666666664%;
   }
 }
 
 @media screen and (min-width:769px) {
   .c6 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
+    max-width: 13.333333333333334%;
+    -webkit-flex: 0 0 13.333333333333334%;
+    -ms-flex: 0 0 13.333333333333334%;
+    flex: 0 0 13.333333333333334%;
   }
 }
 
 @media screen and (min-width:1025px) {
   .c6 {
-    max-width: 8.333333333333332%;
-    -webkit-flex: 0 0 8.333333333333332%;
-    -ms-flex: 0 0 8.333333333333332%;
-    flex: 0 0 8.333333333333332%;
+    max-width: 10%;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
   }
 }
 
 @media screen and (min-width:481px) {
   .c10 {
-    max-width: 58.333333333333336%;
+    max-width: 57.50000000000001%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
   }
 }
 
 @media screen and (min-width:769px) {
   .c10 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
   }
 }
 
 @media screen and (min-width:1025px) {
   .c10 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
   }
 }
 
@@ -428,30 +409,30 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 
 @media screen and (min-width:481px) {
   .c15 {
-    max-width: 66.66666666666666%;
+    max-width: 80.83333333333333%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 66.66666666666666%;
-    -ms-flex: 0 0 66.66666666666666%;
-    flex: 0 0 66.66666666666666%;
+    -webkit-flex: 0 0 80.83333333333333%;
+    -ms-flex: 0 0 80.83333333333333%;
+    flex: 0 0 80.83333333333333%;
   }
 }
 
 @media screen and (min-width:769px) {
   .c15 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
   }
 }
 
 @media screen and (min-width:1025px) {
   .c15 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
   }
 }
 
@@ -468,19 +449,19 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 
 @media screen and (min-width:769px) {
   .c17 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
   }
 }
 
 @media screen and (min-width:1025px) {
   .c17 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
   }
 }
 
@@ -497,10 +478,10 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 
 @media screen and (min-width:769px) {
   .c18 {
-    max-width: 13.333333333333334%;
-    -webkit-flex: 0 0 13.333333333333334%;
-    -ms-flex: 0 0 13.333333333333334%;
-    flex: 0 0 13.333333333333334%;
+    max-width: 12.5%;
+    -webkit-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
   }
 }
 
@@ -514,7 +495,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c20 {
+  .c21 {
     max-width: 11.666666666666666%;
     padding-right: 12px;
     padding-left: 12px;
@@ -525,7 +506,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c20 {
+  .c21 {
     max-width: 11.666666666666666%;
     -webkit-flex: 0 0 11.666666666666666%;
     -ms-flex: 0 0 11.666666666666666%;
@@ -534,7 +515,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c20 {
+  .c21 {
     max-width: 11.666666666666666%;
     -webkit-flex: 0 0 11.666666666666666%;
     -ms-flex: 0 0 11.666666666666666%;
@@ -542,37 +523,725 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   }
 }
 
+@media only screen and {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
 @media screen and (min-width:481px) {
-  .c23 {
-    max-width: 83.33333333333334%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 83.33333333333334%;
-    -ms-flex: 0 0 83.33333333333334%;
-    flex: 0 0 83.33333333333334%;
+  .c14 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c9 {
+    display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c23 {
-    max-width: 87.5%;
-    -webkit-flex: 0 0 87.5%;
-    -ms-flex: 0 0 87.5%;
-    flex: 0 0 87.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c23 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c25 {
+  .c5 {
+    margin: 18px 0 18px 0;
+  }
+
+  .c5:hover {
+    background-color: rgba(2,108,223,0.2);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c20 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1 row c2"
+  >
+    <button
+      aria-expanded={false}
+      aria-label="Expand Row"
+      className="expandOrCollapse c3"
+      onClick={[Function]}
+      role="button"
+    >
+      <svg
+        fill="#000"
+        height={15}
+        style={Object {}}
+        viewBox="0 0 15 7"
+        width={15}
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </button>
+    <div
+      className="c4"
+    >
+      <a
+        aria-label="See Tickets"
+        className="c5"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="row c2"
+        >
+          <div
+            className="c6"
+          >
+            <div
+              className="c7"
+              color="#C56BFF"
+              style={
+                Object {
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              apr 23
+            </div>
+            <div
+              className="c8"
+            >
+              Thu, 8:00 PM
+            </div>
+          </div>
+          <div
+            className="c9 c10"
+          >
+            <div
+              className="c11"
+            >
+              <div
+                className="c12"
+              >
+                Del Mar Fairgrounds
+              </div>
+            </div>
+            <div
+              className="c13"
+            >
+              <div
+                className="c8"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+          </div>
+          <div
+            className="c14 c15"
+          >
+            <div
+              className="c12"
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="c16 c17"
+          >
+            <div
+              className="c12"
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      className="c14 c18"
+    >
+      <span
+        aria-label="See Tickets"
+        className="c19"
+        role="button"
+        width="102px"
+      >
+        See Tickets
+      </span>
+    </div>
+    <div
+      className="c20 c21"
+    >
+      <button
+        aria-label="More Info"
+        className="moreInfo c22"
+        onClick={[Function]}
+        role="button"
+      >
+        <svg
+          fill="rgba(0, 0, 15, 0.6)"
+          height={22}
+          viewBox="0 0 5 21"
+          width={22}
+        >
+          <path
+            d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c4 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 88.33333333333333%;
+  -webkit-flex: 0 0 88.33333333333333%;
+  -ms-flex: 0 0 88.33333333333333%;
+  flex: 0 0 88.33333333333333%;
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 31.666666666666664%;
+  -webkit-flex: 0 0 31.666666666666664%;
+  -ms-flex: 0 0 31.666666666666664%;
+  flex: 0 0 31.666666666666664%;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 57.50000000000001%;
+  -webkit-flex: 0 0 57.50000000000001%;
+  -ms-flex: 0 0 57.50000000000001%;
+  flex: 0 0 57.50000000000001%;
+}
+
+.c11 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c15 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c17 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c18 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c21 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 11.666666666666666%;
+  -webkit-flex: 0 0 11.666666666666666%;
+  -ms-flex: 0 0 11.666666666666666%;
+  flex: 0 0 11.666666666666666%;
+}
+
+.c24 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 75%;
+  -webkit-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+}
+
+.c26 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 25%;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+
+.c12 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,1);
+}
+
+.c8 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,0.6);
+}
+
+.c7 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0,0,15,1);
+  font-weight: 600;
+}
+
+.c25 {
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c0:not(:last-of-type) {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c1 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c14 {
+  display: none;
+}
+
+.c16 {
+  display: none;
+}
+
+.c5 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 12px 0 12px 0;
+}
+
+.c22 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 0 14px 0;
+}
+
+.c22:focus {
+  outline: none;
+}
+
+.c19 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 18px 0 18px 0;
+}
+
+.c19:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c23 {
+  padding-left: 8px;
+}
+
+.c3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c4 {
+    max-width: 75%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    max-width: 81.66666666666667%;
+    -webkit-flex: 0 0 81.66666666666667%;
+    -ms-flex: 0 0 81.66666666666667%;
+    flex: 0 0 81.66666666666667%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c4 {
+    max-width: 86.66666666666667%;
+    -webkit-flex: 0 0 86.66666666666667%;
+    -ms-flex: 0 0 86.66666666666667%;
+    flex: 0 0 86.66666666666667%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
+    max-width: 19.166666666666664%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 19.166666666666664%;
+    -ms-flex: 0 0 19.166666666666664%;
+    flex: 0 0 19.166666666666664%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c6 {
+    max-width: 13.333333333333334%;
+    -webkit-flex: 0 0 13.333333333333334%;
+    -ms-flex: 0 0 13.333333333333334%;
+    flex: 0 0 13.333333333333334%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c6 {
+    max-width: 10%;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c10 {
+    max-width: 57.50000000000001%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c10 {
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c10 {
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c11 {
+    max-width: 33.33333333333333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 33.33333333333333%;
+    -ms-flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c11 {
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c11 {
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c13 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c13 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c13 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c15 {
+    max-width: 80.83333333333333%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 80.83333333333333%;
+    -ms-flex: 0 0 80.83333333333333%;
+    flex: 0 0 80.83333333333333%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c15 {
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c15 {
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c17 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c17 {
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c17 {
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c18 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -583,7 +1252,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c25 {
+  .c18 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -592,7 +1261,94 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c25 {
+  .c18 {
+    max-width: 9.166666666666668%;
+    -webkit-flex: 0 0 9.166666666666668%;
+    -ms-flex: 0 0 9.166666666666668%;
+    flex: 0 0 9.166666666666668%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c21 {
+    max-width: 11.666666666666666%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 11.666666666666666%;
+    -ms-flex: 0 0 11.666666666666666%;
+    flex: 0 0 11.666666666666666%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c21 {
+    max-width: 11.666666666666666%;
+    -webkit-flex: 0 0 11.666666666666666%;
+    -ms-flex: 0 0 11.666666666666666%;
+    flex: 0 0 11.666666666666666%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c21 {
+    max-width: 11.666666666666666%;
+    -webkit-flex: 0 0 11.666666666666666%;
+    -ms-flex: 0 0 11.666666666666666%;
+    flex: 0 0 11.666666666666666%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c24 {
+    max-width: 83.33333333333334%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c24 {
+    max-width: 87.5%;
+    -webkit-flex: 0 0 87.5%;
+    -ms-flex: 0 0 87.5%;
+    flex: 0 0 87.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c24 {
+    max-width: 90%;
+    -webkit-flex: 0 0 90%;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c26 {
+    max-width: 16.666666666666664%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 16.666666666666664%;
+    -ms-flex: 0 0 16.666666666666664%;
+    flex: 0 0 16.666666666666664%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c26 {
+    max-width: 12.5%;
+    -webkit-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c26 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -656,816 +1412,31 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
   .c5 {
     margin: 18px 0 18px 0;
   }
-}
 
-@media screen and (min-width:481px) {
-  .c22 {
-    padding-left: 12px;
+  .c5:hover {
+    background-color: rgba(2,108,223,0.2);
   }
 }
 
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <div
-      className="c2 row c3"
-    >
-      <div
-        className="c4"
-      >
-        <a
-          className="c5"
-          href="http://localhost/new/"
-          onClick={[Function]}
-        >
-          <div
-            className="row c3"
-          >
-            <div
-              className="c6"
-            >
-              <div
-                className="c7"
-                color={null}
-                style={
-                  Object {
-                    "textTransform": "uppercase",
-                  }
-                }
-              >
-                apr 23
-              </div>
-              <div
-                className="c8"
-              >
-                Thu, 8:00 PM
-              </div>
-            </div>
-            <div
-              className="c9 c10"
-            >
-              <div
-                className="c11"
-              >
-                <div
-                  className="c12"
-                >
-                  Del Mar Fairgrounds
-                </div>
-              </div>
-              <div
-                className="c13"
-              >
-                <div
-                  className="c8"
-                >
-                  KABOO 3-Day Pass
-                </div>
-              </div>
-            </div>
-            <div
-              className="c14 c15"
-            >
-              <div
-                className="c12"
-              >
-                Del Mar Fairgrounds
-              </div>
-            </div>
-            <div
-              className="c16 c17"
-            >
-              <div
-                className="c12"
-              >
-                KABOO 3-Day Pass
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        className="c14 c18"
-      >
-        <span
-          aria-label="See Tickets"
-          className="c19"
-          role="button"
-          width="102px"
-        >
-          See Tickets
-        </span>
-      </div>
-      <div
-        className="c9 c20"
-      >
-        <button
-          aria-label="More Info"
-          className="c21"
-          onClick={[Function]}
-          role="button"
-        >
-          <svg
-            fill="rgba(0, 0, 15, 0.6)"
-            height={22}
-            onClick={[Function]}
-            viewBox="0 0 5 21"
-            width={22}
-          >
-            <path
-              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div
-      className="c22 row c3"
-    >
-      <div
-        className="c23"
-      >
-        <a
-          className="c24"
-          color=""
-          href=""
-          rel="_self"
-          target=""
-        >
-          Ticket Options Available
-        </a>
-      </div>
-      <div
-        className="c25"
-      >
-        <div
-          className="c8"
-        >
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c2 .row {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c3 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 88.33333333333333%;
-  -webkit-flex: 0 0 88.33333333333333%;
-  -ms-flex: 0 0 88.33333333333333%;
-  flex: 0 0 88.33333333333333%;
-}
-
-.c5 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 31.666666666666664%;
-  -webkit-flex: 0 0 31.666666666666664%;
-  -ms-flex: 0 0 31.666666666666664%;
-  flex: 0 0 31.666666666666664%;
-}
-
-.c9 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 58.333333333333336%;
-  -webkit-flex: 0 0 58.333333333333336%;
-  -ms-flex: 0 0 58.333333333333336%;
-  flex: 0 0 58.333333333333336%;
-}
-
-.c10 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c12 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c14 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c16 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c19 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 11.666666666666666%;
-  -webkit-flex: 0 0 11.666666666666666%;
-  -ms-flex: 0 0 11.666666666666666%;
-  flex: 0 0 11.666666666666666%;
-}
-
-.c22 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 75%;
-  -webkit-flex: 0 0 75%;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-}
-
-.c24 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-}
-
-.c11 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(0,0,15,1);
-}
-
-.c7 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(0,0,15,0.6);
-}
-
-.c6 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(0,0,15,1);
-  font-weight: 600;
-}
-
-.c23 {
-  font-size: 14px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c0:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c13 {
-  display: none;
-}
-
-.c15 {
-  display: none;
-}
-
-.c4 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  cursor: pointer;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin: 12px 0 12px 0;
-}
-
-.c4:hover {
-  background: rgba(2,108,223,0.1);
-}
-
-.c20 {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: block;
-  text-align: start;
-  padding: 14px 0 14px 0;
-}
-
-.c18 {
-  font-size: 14px;
-  font-weight: 600;
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 18px 0 18px 0;
-}
-
-.c18:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c21 {
-  padding-left: 8px;
-}
-
 @media screen and (min-width:481px) {
-  .c2 {
-    margin-left: -12px;
-    margin-right: -12px;
+  .c23 {
+    padding-left: 12px;
   }
 }
 
 @media screen and (min-width:481px) {
   .c3 {
-    max-width: 81.66666666666667%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 81.66666666666667%;
-    -ms-flex: 0 0 81.66666666666667%;
-    flex: 0 0 81.66666666666667%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c3 {
-    max-width: 85%;
-    -webkit-flex: 0 0 85%;
-    -ms-flex: 0 0 85%;
-    flex: 0 0 85%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c3 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c5 {
-    max-width: 17.5%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 17.5%;
-    -ms-flex: 0 0 17.5%;
-    flex: 0 0 17.5%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c5 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c5 {
-    max-width: 8.333333333333332%;
-    -webkit-flex: 0 0 8.333333333333332%;
-    -ms-flex: 0 0 8.333333333333332%;
-    flex: 0 0 8.333333333333332%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c10 {
-    max-width: 33.33333333333333%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 33.33333333333333%;
-    -ms-flex: 0 0 33.33333333333333%;
-    flex: 0 0 33.33333333333333%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c10 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c10 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c12 {
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c12 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c12 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c14 {
-    max-width: 66.66666666666666%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 66.66666666666666%;
-    -ms-flex: 0 0 66.66666666666666%;
-    flex: 0 0 66.66666666666666%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c14 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c14 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c16 {
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c16 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c16 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c17 {
-    max-width: 16.666666666666664%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 16.666666666666664%;
-    -ms-flex: 0 0 16.666666666666664%;
-    flex: 0 0 16.666666666666664%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c17 {
-    max-width: 13.333333333333334%;
-    -webkit-flex: 0 0 13.333333333333334%;
-    -ms-flex: 0 0 13.333333333333334%;
-    flex: 0 0 13.333333333333334%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c17 {
-    max-width: 9.166666666666668%;
-    -webkit-flex: 0 0 9.166666666666668%;
-    -ms-flex: 0 0 9.166666666666668%;
-    flex: 0 0 9.166666666666668%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c19 {
-    max-width: 11.666666666666666%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 11.666666666666666%;
-    -ms-flex: 0 0 11.666666666666666%;
-    flex: 0 0 11.666666666666666%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c19 {
-    max-width: 11.666666666666666%;
-    -webkit-flex: 0 0 11.666666666666666%;
-    -ms-flex: 0 0 11.666666666666666%;
-    flex: 0 0 11.666666666666666%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c19 {
-    max-width: 11.666666666666666%;
-    -webkit-flex: 0 0 11.666666666666666%;
-    -ms-flex: 0 0 11.666666666666666%;
-    flex: 0 0 11.666666666666666%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c22 {
-    max-width: 83.33333333333334%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 83.33333333333334%;
-    -ms-flex: 0 0 83.33333333333334%;
-    flex: 0 0 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c22 {
-    max-width: 87.5%;
-    -webkit-flex: 0 0 87.5%;
-    -ms-flex: 0 0 87.5%;
-    flex: 0 0 87.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c22 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c24 {
-    max-width: 16.666666666666664%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 16.666666666666664%;
-    -ms-flex: 0 0 16.666666666666664%;
-    flex: 0 0 16.666666666666664%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c24 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c24 {
-    max-width: 10%;
-    -webkit-flex: 0 0 10%;
-    -ms-flex: 0 0 10%;
-    flex: 0 0 10%;
-  }
-}
-
-@media only screen and {
-  .c11 {
-    font-size: 16px;
-  }
-}
-
-@media only screen and {
-  .c6 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c13 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding-left: 30px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c8 {
+  .c20 {
     display: none;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c15 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c4 {
-    margin: 18px 0 18px 0;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c21 {
-    padding-left: 12px;
   }
 }
 
@@ -1475,22 +1446,43 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
   <div
     className="c1 row c2"
   >
+    <button
+      aria-expanded={false}
+      aria-label="Expand Row"
+      className="expandOrCollapse c3"
+      onClick={[Function]}
+      role="button"
+    >
+      <svg
+        fill="#000"
+        height={15}
+        style={Object {}}
+        viewBox="0 0 15 7"
+        width={15}
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </button>
     <div
-      className="c3"
+      className="c4"
     >
       <a
-        className="c4"
-        href="http://localhost/new/"
+        aria-label="See Tickets"
+        className="c5"
+        href="/"
         onClick={[Function]}
+        role="link"
       >
         <div
           className="row c2"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
               color={null}
               style={
                 Object {
@@ -1501,60 +1493,60 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
               apr 23
             </div>
             <div
-              className="c7"
+              className="c8"
             >
               Thu, 8:00 PM
             </div>
           </div>
           <div
-            className="c8 c9"
+            className="c9 c10"
           >
             <div
-              className="c10"
+              className="c11"
             >
               <div
-                className="c11"
+                className="c12"
               >
                 Del Mar Fairgrounds
               </div>
             </div>
             <div
-              className="c12"
+              className="c13"
             >
               <div
-                className="c7"
+                className="c8"
               >
-                KABOO 3-Day Pass
+                Del Mar Fairgrounds
               </div>
             </div>
           </div>
           <div
-            className="c13 c14"
+            className="c14 c15"
           >
             <div
-              className="c11"
+              className="c12"
             >
               Del Mar Fairgrounds
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="c11"
+              className="c12"
             >
-              KABOO 3-Day Pass
+              Del Mar Fairgrounds
             </div>
           </div>
         </div>
       </a>
     </div>
     <div
-      className="c13 c17"
+      className="c14 c18"
     >
       <span
         aria-label="See Tickets"
-        className="c18"
+        className="c19"
         role="button"
         width="102px"
       >
@@ -1562,18 +1554,17 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
       </span>
     </div>
     <div
-      className="c8 c19"
+      className="c20 c21"
     >
       <button
         aria-label="More Info"
-        className="c20"
+        className="moreInfo c22"
         onClick={[Function]}
         role="button"
       >
         <svg
           fill="rgba(0, 0, 15, 0.6)"
           height={22}
-          onClick={[Function]}
           viewBox="0 0 5 21"
           width={22}
         >
@@ -1585,13 +1576,13 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
     </div>
   </div>
   <div
-    className="c21 row c2"
+    className="c23 row c2"
   >
     <div
-      className="c22"
+      className="c24"
     >
       <a
-        className="c23"
+        className="c25"
         color=""
         href=""
         rel="_self"
@@ -1601,19 +1592,19 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
       </a>
     </div>
     <div
-      className="c24"
+      className="c26"
     >
       <div
-        className="c7"
+        className="c8"
       >
-        
+        on Partner Site
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
+exports[`<ListRow /> renders standard List Row correctly 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1641,7 +1632,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   margin-right: 0;
 }
 
-.c3 {
+.c4 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1651,7 +1642,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 88.33333333333333%;
 }
 
-.c5 {
+.c6 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1661,27 +1652,17 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 31.666666666666664%;
 }
 
-.c9 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 58.333333333333336%;
-  -webkit-flex: 0 0 58.333333333333336%;
-  -ms-flex: 0 0 58.333333333333336%;
-  flex: 0 0 58.333333333333336%;
-}
-
 .c10 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
-  max-width: 100%;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+  max-width: 57.50000000000001%;
+  -webkit-flex: 0 0 57.50000000000001%;
+  -ms-flex: 0 0 57.50000000000001%;
+  flex: 0 0 57.50000000000001%;
 }
 
-.c12 {
+.c11 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1691,7 +1672,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c14 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1701,7 +1682,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c15 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1721,7 +1702,17 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c19 {
+.c18 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c21 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1731,7 +1722,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   flex: 0 0 11.666666666666666%;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1741,7 +1732,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   color: rgba(0,0,15,1);
 }
 
-.c7 {
+.c8 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1751,7 +1742,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   color: rgba(0,0,15,0.6);
 }
 
-.c6 {
+.c7 {
   font-size: 14px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1771,21 +1762,25 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 .c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.c13 {
+.c14 {
   display: none;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c4 {
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;
@@ -1796,20 +1791,18 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   margin: 12px 0 12px 0;
 }
 
-.c4:hover {
-  background: rgba(2,108,223,0.1);
-}
-
-.c20 {
+.c22 {
   background: none;
   border: none;
   cursor: pointer;
-  display: block;
-  text-align: start;
   padding: 14px 0 14px 0;
 }
 
-.c18 {
+.c22:focus {
+  outline: none;
+}
+
+.c19 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -1837,11 +1830,33 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   padding: 18px 0 18px 0;
 }
 
-.c18:disabled {
+.c19:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
+}
+
+.c3 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 @media screen and (min-width:481px) {
@@ -1852,94 +1867,94 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c3 {
-    max-width: 81.66666666666667%;
+  .c4 {
+    max-width: 75%;
     padding-right: 12px;
     padding-left: 12px;
+    -webkit-flex: 0 0 75%;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c4 {
+    max-width: 81.66666666666667%;
     -webkit-flex: 0 0 81.66666666666667%;
     -ms-flex: 0 0 81.66666666666667%;
     flex: 0 0 81.66666666666667%;
   }
 }
 
-@media screen and (min-width:769px) {
-  .c3 {
-    max-width: 85%;
-    -webkit-flex: 0 0 85%;
-    -ms-flex: 0 0 85%;
-    flex: 0 0 85%;
-  }
-}
-
 @media screen and (min-width:1025px) {
-  .c3 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
+  .c4 {
+    max-width: 86.66666666666667%;
+    -webkit-flex: 0 0 86.66666666666667%;
+    -ms-flex: 0 0 86.66666666666667%;
+    flex: 0 0 86.66666666666667%;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c5 {
-    max-width: 17.5%;
+  .c6 {
+    max-width: 19.166666666666664%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 17.5%;
-    -ms-flex: 0 0 17.5%;
-    flex: 0 0 17.5%;
+    -webkit-flex: 0 0 19.166666666666664%;
+    -ms-flex: 0 0 19.166666666666664%;
+    flex: 0 0 19.166666666666664%;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c5 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
+  .c6 {
+    max-width: 13.333333333333334%;
+    -webkit-flex: 0 0 13.333333333333334%;
+    -ms-flex: 0 0 13.333333333333334%;
+    flex: 0 0 13.333333333333334%;
   }
 }
 
 @media screen and (min-width:1025px) {
-  .c5 {
-    max-width: 8.333333333333332%;
-    -webkit-flex: 0 0 8.333333333333332%;
-    -ms-flex: 0 0 8.333333333333332%;
-    flex: 0 0 8.333333333333332%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c9 {
-    max-width: 58.333333333333336%;
-    -webkit-flex: 0 0 58.333333333333336%;
-    -ms-flex: 0 0 58.333333333333336%;
-    flex: 0 0 58.333333333333336%;
+  .c6 {
+    max-width: 10%;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
   }
 }
 
 @media screen and (min-width:481px) {
   .c10 {
+    max-width: 57.50000000000001%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c10 {
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c10 {
+    max-width: 57.50000000000001%;
+    -webkit-flex: 0 0 57.50000000000001%;
+    -ms-flex: 0 0 57.50000000000001%;
+    flex: 0 0 57.50000000000001%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c11 {
     max-width: 33.33333333333333%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1950,7 +1965,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c10 {
+  .c11 {
     max-width: 25%;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -1959,7 +1974,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c10 {
+  .c11 {
     max-width: 25%;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -1968,7 +1983,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1979,7 +1994,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1988,7 +2003,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1997,65 +2012,65 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c14 {
-    max-width: 66.66666666666666%;
+  .c15 {
+    max-width: 80.83333333333333%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 66.66666666666666%;
-    -ms-flex: 0 0 66.66666666666666%;
-    flex: 0 0 66.66666666666666%;
+    -webkit-flex: 0 0 80.83333333333333%;
+    -ms-flex: 0 0 80.83333333333333%;
+    flex: 0 0 80.83333333333333%;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c14 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
+  .c15 {
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
   }
 }
 
 @media screen and (min-width:1025px) {
-  .c14 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c16 {
-    max-width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c16 {
-    max-width: 37.5%;
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
-  }
-}
-
-@media screen and (min-width:1025px) {
-  .c16 {
-    max-width: 40.833333333333336%;
-    -webkit-flex: 0 0 40.833333333333336%;
-    -ms-flex: 0 0 40.833333333333336%;
-    flex: 0 0 40.833333333333336%;
+  .c15 {
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
   }
 }
 
 @media screen and (min-width:481px) {
   .c17 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c17 {
+    max-width: 43.333333333333336%;
+    -webkit-flex: 0 0 43.333333333333336%;
+    -ms-flex: 0 0 43.333333333333336%;
+    flex: 0 0 43.333333333333336%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c17 {
+    max-width: 45%;
+    -webkit-flex: 0 0 45%;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c18 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2066,16 +2081,16 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c17 {
-    max-width: 13.333333333333334%;
-    -webkit-flex: 0 0 13.333333333333334%;
-    -ms-flex: 0 0 13.333333333333334%;
-    flex: 0 0 13.333333333333334%;
+  .c18 {
+    max-width: 12.5%;
+    -webkit-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
   }
 }
 
 @media screen and (min-width:1025px) {
-  .c17 {
+  .c18 {
     max-width: 9.166666666666668%;
     -webkit-flex: 0 0 9.166666666666668%;
     -ms-flex: 0 0 9.166666666666668%;
@@ -2084,7 +2099,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c19 {
+  .c21 {
     max-width: 11.666666666666666%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2095,7 +2110,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c19 {
+  .c21 {
     max-width: 11.666666666666666%;
     -webkit-flex: 0 0 11.666666666666666%;
     -ms-flex: 0 0 11.666666666666666%;
@@ -2104,7 +2119,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c19 {
+  .c21 {
     max-width: 11.666666666666666%;
     -webkit-flex: 0 0 11.666666666666666%;
     -ms-flex: 0 0 11.666666666666666%;
@@ -2113,19 +2128,19 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media only screen and {
-  .c11 {
+  .c12 {
     font-size: 16px;
   }
 }
 
 @media only screen and {
-  .c6 {
+  .c7 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c13 {
+  .c14 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2142,13 +2157,13 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c8 {
+  .c9 {
     display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c15 {
+  .c16 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2165,8 +2180,28 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c4 {
+  .c5 {
     margin: 18px 0 18px 0;
+  }
+
+  .c5:hover {
+    background-color: rgba(2,108,223,0.2);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c20 {
+    display: none;
   }
 }
 
@@ -2176,22 +2211,43 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
   <div
     className="c1 row c2"
   >
+    <button
+      aria-expanded={false}
+      aria-label="Expand Row"
+      className="expandOrCollapse c3"
+      onClick={[Function]}
+      role="button"
+    >
+      <svg
+        fill="#000"
+        height={15}
+        style={Object {}}
+        viewBox="0 0 15 7"
+        width={15}
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </button>
     <div
-      className="c3"
+      className="c4"
     >
       <a
-        className="c4"
-        href="http://localhost/new/"
+        aria-label="See Tickets"
+        className="c5"
+        href="/"
         onClick={[Function]}
+        role="link"
       >
         <div
           className="row c2"
         >
           <div
-            className="c5"
+            className="c6"
           >
             <div
-              className="c6"
+              className="c7"
               color={null}
               style={
                 Object {
@@ -2202,60 +2258,60 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
               apr 23
             </div>
             <div
-              className="c7"
+              className="c8"
             >
               Thu, 8:00 PM
             </div>
           </div>
           <div
-            className="c8 c9"
+            className="c9 c10"
           >
             <div
-              className="c10"
+              className="c11"
             >
               <div
-                className="c11"
+                className="c12"
               >
                 Del Mar Fairgrounds
               </div>
             </div>
             <div
-              className="c12"
+              className="c13"
             >
               <div
-                className="c7"
+                className="c8"
               >
-                KABOO 3-Day Pass
+                Del Mar Fairgrounds
               </div>
             </div>
           </div>
           <div
-            className="c13 c14"
+            className="c14 c15"
           >
             <div
-              className="c11"
+              className="c12"
             >
               Del Mar Fairgrounds
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="c11"
+              className="c12"
             >
-              KABOO 3-Day Pass
+              Del Mar Fairgrounds
             </div>
           </div>
         </div>
       </a>
     </div>
     <div
-      className="c13 c17"
+      className="c14 c18"
     >
       <span
         aria-label="See Tickets"
-        className="c18"
+        className="c19"
         role="button"
         width="102px"
       >
@@ -2263,18 +2319,17 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
       </span>
     </div>
     <div
-      className="c8 c19"
+      className="c20 c21"
     >
       <button
         aria-label="More Info"
-        className="c20"
+        className="moreInfo c22"
         onClick={[Function]}
         role="button"
       >
         <svg
           fill="rgba(0, 0, 15, 0.6)"
           height={22}
-          onClick={[Function]}
           viewBox="0 0 5 21"
           width={22}
         >

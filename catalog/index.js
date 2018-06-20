@@ -13,6 +13,9 @@ import listRow from "./pages/listRow";
 import header from "./pages/header/index";
 import inputs from "./pages/inputs/index";
 import navBar from "./pages/nav_bar/index";
+import bottomSheet from "./pages/bottomSheet";
+import expandedRow from "./pages/expandedRow";
+import image from "./pages/image";
 import breadcrumbs from "./pages/breadcrumbs";
 
 const theme = {
@@ -27,11 +30,14 @@ const pages = [
   grid,
   icons,
   imageCard,
+  image,
   listRow,
+  expandedRow,
   header,
   inputs,
   navBar,
-  breadcrumbs
+  breadcrumbs,
+  bottomSheet
 ];
 
 const sizes = [

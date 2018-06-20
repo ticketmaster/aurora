@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CircleImage /> renders circle image correctly 1`] = `
+.c0 {
+  border: solid 1px #E0E0E0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+<img
+  alt="circleImage"
+  className="c0"
+  size={40}
+  src="https://placekitten.com/g/512/288"
+/>
+`;
