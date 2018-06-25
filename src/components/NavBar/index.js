@@ -102,6 +102,19 @@ const Right = styled.div`
   ${largeAndUp`width: 18%;`};
 `;
 
+const RightWrapper = ({ children, style }) => (
+  <Right style={style}>{children}</Right>
+);
+
+RightWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  style: PropTypes.objectOf(PropTypes.string)
+};
+
+RightWrapper.defaultProps = {
+  style: {}
+};
+
 const Left = styled.div`
   flex: 0 1 auto;
   width: 310px;
@@ -113,6 +126,19 @@ const Left = styled.div`
   padding-left: ${parseInt(spacing.normal, 10) / 2}px;
   ${largeAndUp`width: 50%;`};
 `;
+
+const LeftWrapper = ({ children, style }) => (
+  <Left style={style}>{children}</Left>
+);
+
+LeftWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+  style: PropTypes.objectOf(PropTypes.string)
+};
+
+LeftWrapper.defaultProps = {
+  style: {}
+};
 
 const MessageContainer = GridContainer.extend`
   background-color: rgba(0, 0, 0, 0.2);
@@ -182,8 +208,8 @@ NavBar.TextButton = Buttons.TextButton;
 NavBar.LinkRow = Links.LinkRow;
 NavBar.LinkList = Links.LinkList;
 NavBar.Link = Links.Link;
-NavBar.Right = Right;
-NavBar.Left = Left;
+NavBar.Right = RightWrapper;
+NavBar.Left = LeftWrapper;
 NavBar.LogoContainer = Buttons.LogoContainer;
 
 export default NavBar;

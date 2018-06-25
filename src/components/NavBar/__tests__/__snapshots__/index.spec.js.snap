@@ -1394,3 +1394,81 @@ exports[`NavBar renders with defaults 1`] = `
   </div>
 </nav>
 `;
+
+exports[`NavBar.Left renders correctly with valid style and children props pased 1`] = `
+.c0 {
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 310px;
+  min-width: 310px;
+  max-width: 310px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 12px;
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  Contents
+</div>
+`;
+
+exports[`NavBar.Right renders correctly with valid style and children props pased 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    width: 18%;
+  }
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  Contents
+</div>
+`;
