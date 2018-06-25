@@ -224,7 +224,6 @@ exports[`NavBar renders fixed 1`] = `
 
 .c1 {
   width: 100%;
-  max-width: 1440px;
   height: 60px;
   position: relative;
   display: -webkit-box;
@@ -283,6 +282,12 @@ exports[`NavBar renders fixed 1`] = `
 @media screen and (min-width:769px) {
   .c1 {
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    padding: 0 44px;
   }
 }
 
@@ -656,7 +661,6 @@ exports[`NavBar renders inverted 1`] = `
 
 .c1 {
   width: 100%;
-  max-width: 1440px;
   height: 60px;
   position: relative;
   display: -webkit-box;
@@ -715,6 +719,12 @@ exports[`NavBar renders inverted 1`] = `
 @media screen and (min-width:769px) {
   .c1 {
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    padding: 0 44px;
   }
 }
 
@@ -1133,7 +1143,6 @@ exports[`NavBar renders with defaults 1`] = `
 
 .c1 {
   width: 100%;
-  max-width: 1440px;
   height: 60px;
   position: relative;
   display: -webkit-box;
@@ -1193,6 +1202,12 @@ exports[`NavBar renders with defaults 1`] = `
 @media screen and (min-width:769px) {
   .c1 {
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    padding: 0 44px;
   }
 }
 

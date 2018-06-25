@@ -5,6 +5,7 @@ import classNames from "classnames";
 
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
+import constants from "../../theme/constants";
 import typography from "../../theme/typography";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
@@ -79,7 +80,6 @@ const Nav = styled.nav.attrs({
 
 const Container = styled.div`
   width: 100%;
-  max-width: 1440px;
   height: 60px;
   position: relative;
   display: flex;
@@ -91,6 +91,10 @@ const Container = styled.div`
   ${largeAndUp`
     margin: 0 auto;
   `};
+
+  @media ${constants.breakpoints.xLarge} {
+    padding: 0 44px;
+  }
 `;
 
 const Right = styled.div`
