@@ -87,3 +87,25 @@ describe("NavBar", () => {
         .toJSON()
     ).toMatchSnapshot());
 });
+
+describe("NavBar.Right", () => {
+  it("renders correctly with valid style and children props pased", () => {
+    expect(
+      renderer
+        .create(
+          <NavBar.Right style={{ display: "flex" }}>Contents</NavBar.Right>
+        )
+        .toJSON()
+    ).toMatchSnapshot();
+  });
+});
+
+describe("NavBar.Left", () => {
+  it("renders correctly with valid style and children props pased", () => {
+    expect(
+      renderer
+        .create(<NavBar.Left style={{ display: "flex" }}>Contents</NavBar.Left>)
+        .toJSON()
+    ).toMatchSnapshot();
+  });
+});
