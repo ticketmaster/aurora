@@ -30,10 +30,12 @@ export default class DeviceSizeProvider extends React.Component {
       return;
     }
 
+    this.xSmallMedia = window.matchMedia(constants.breakpoints.xSmall);
     this.smallMedia = window.matchMedia(constants.breakpoints.small);
     this.mediumMedia = window.matchMedia(constants.breakpoints.medium);
     this.largeMedia = window.matchMedia(constants.breakpoints.large);
     this.xLargeMedia = window.matchMedia(constants.breakpoints.xLarge);
+    this.xSmallMedia.addListener(this.setSize);
     this.smallMedia.addListener(this.setSize);
     this.mediumMedia.addListener(this.setSize);
     this.largeMedia.addListener(this.setSize);
@@ -58,6 +60,7 @@ export default class DeviceSizeProvider extends React.Component {
     }
 
     this.setState(() => ({
+      isXSmall: this.xSmallMedia.matches && !this.smallMedia.matches,
       isSmall: this.smallMedia.matches,
       isMedium: this.mediumMedia.matches && !this.largeMedia.matches,
       isLarge: this.largeMedia.matches && !this.xLargeMedia.matches,
@@ -67,6 +70,7 @@ export default class DeviceSizeProvider extends React.Component {
   };
 
   unsubscribe = () => {
+    if (this.xSmallMedia) this.xSmallMedia.removeListener(this.setSize);
     if (this.smallMedia) this.smallMedia.removeListener(this.setSize);
     if (this.mediumMedia) this.mediumMedia.removeListener(this.setSize);
     if (this.largeMedia) this.largeMedia.removeListener(this.setSize);
