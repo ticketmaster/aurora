@@ -61,7 +61,7 @@ export default class DeviceSizeProvider extends React.Component {
 
     this.setState(() => ({
       isXSmall: this.xSmallMedia.matches && !this.smallMedia.matches,
-      isSmall: this.smallMedia.matches,
+      isSmall: this.smallMedia.matches && !this.mediumMedia.matches,
       isMedium: this.mediumMedia.matches && !this.largeMedia.matches,
       isLarge: this.largeMedia.matches && !this.xLargeMedia.matches,
       isXLarge: this.xLargeMedia.matches,
