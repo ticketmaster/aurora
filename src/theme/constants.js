@@ -5,8 +5,8 @@ const constants = {
     large: "4px"
   },
   breakpoints: {
-    xSmall: "(max-width: 321px)",
-    small: "(max-width: 767px)",
+    xSmall: "(min-width: 1px)",
+    small: "(min-width: 321px)",
     medium: "(min-width: 768px)",
     large: "(min-width: 1024px)",
     xLarge: "(min-width: 1440px)",
