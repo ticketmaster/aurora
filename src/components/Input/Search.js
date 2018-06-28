@@ -7,6 +7,7 @@ import SearchIcon from "../Icons/Search";
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
 import constants from "../../theme/constants";
+import composeEventHandlers from "../../utils/composeEventHandlers";
 
 const Input = styled.input.attrs({
   type: "search"
@@ -70,10 +71,6 @@ const IconContainer = styled.div`
   }
 `;
 
-const composeHandler = (...args) => e => {
-  args.forEach(fn => fn && fn(e));
-};
-
 export default class SearchInput extends React.Component {
   static propTypes = {
     onBlur: PropTypes.func,
@@ -120,8 +117,8 @@ export default class SearchInput extends React.Component {
         <Input
           {...{
             ...props,
-            onBlur: composeHandler(this.onBlur, props.onBlur),
-            onFocus: composeHandler(this.onFocus, props.onFocus),
+            onBlur: composeEventHandlers(this.onBlur, props.onBlur),
+            onFocus: composeEventHandlers(this.onFocus, props.onFocus),
             slim,
             invert
           }}
