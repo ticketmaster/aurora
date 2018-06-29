@@ -13,14 +13,14 @@ export default class ScrollObserverProvider extends React.Component {
 
   state = { scrollY: 0 }; // eslint-disable-line
 
-  componentWillMount() {
-    this.isUnmounting = true;
-    this.unsubscribe();
-  }
-
   componentDidMount() {
     this.isUnmounting = false;
     this.subscribe();
+  }
+
+  componentWillUnmount() {
+    this.isUnmounting = true;
+    this.unsubscribe();
   }
 
   onScroll = /* istanbul ignore next */ () => {
