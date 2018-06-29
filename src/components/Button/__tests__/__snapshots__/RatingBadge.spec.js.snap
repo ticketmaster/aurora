@@ -42,8 +42,15 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -54,6 +61,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -65,7 +73,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -126,8 +134,15 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -137,6 +152,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -148,7 +164,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -209,8 +225,15 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -221,6 +244,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -232,7 +256,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -293,8 +317,15 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -304,6 +335,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -315,7 +347,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -376,8 +408,15 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -388,6 +427,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -399,7 +439,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -460,8 +500,15 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -471,6 +518,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -482,7 +530,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
@@ -543,8 +591,15 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   cursor: not-allowed;
 }
 
-.c1 {
+.c2 {
   padding-left: 2px;
+}
+
+.c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  line-height: 1;
 }
 
 <button
@@ -555,6 +610,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   itemType="https://schema.org/AggregateRating"
 >
   <svg
+    className="c1"
     fill="currentColor"
     height={12}
     viewBox="0 0 11 10"
@@ -566,7 +622,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
     />
   </svg>
   <span
-    className="c1"
+    className="c2"
   >
     RatingBadge
   </span>
