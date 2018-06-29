@@ -10,6 +10,11 @@ const Container = styled.span`
   padding-left: 2px;
 `;
 
+const StyledStarIcon = styled(StarIcon)`
+  flex: 0 0 auto;
+  line-height: 1;
+`;
+
 const RatingBadge = ({
   variant,
   children,
@@ -25,7 +30,7 @@ const RatingBadge = ({
     variant={variant}
     {...props}
   >
-    <StarIcon size={12} />
+    <StyledStarIcon size={12} />
     <Container>{children}</Container>
     {ratingValue && <meta itemProp="ratingValue" content={ratingValue} />}
     {bestRating && <meta itemProp="bestRating" content={bestRating} />}
