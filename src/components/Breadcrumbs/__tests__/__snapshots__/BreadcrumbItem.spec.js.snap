@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
-.c0 {
+.c1 {
   font-size: 12px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -13,13 +13,18 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   text-decoration: none;
 }
 
+.c0 {
+  white-space: nowrap;
+}
+
 <li
+  className="c0"
   itemProp="itemListElement"
   itemScope={true}
   itemType="http://schema.org/ListItem"
 >
   <a
-    className="c0"
+    className="c1"
     color=""
     fontSize="12px"
     href="/"
@@ -42,6 +47,10 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 .c0 {
+  white-space: nowrap;
+}
+
+.c1 {
   font-size: 12px;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -51,14 +60,15 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
 }
 
 <li
+  className="c0"
   itemProp="itemListElement"
   itemScope={true}
   itemType="http://schema.org/ListItem"
 >
   <span
-    className="c0"
+    className="c1"
     fontSize="12px"
-    href=""
+    href={null}
     itemProp="item"
   >
     Home
