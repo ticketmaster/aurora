@@ -6,8 +6,19 @@ const StyledBreadcrumb = ListUnstyled.extend`
   font-weight: ${typography.weight.semiBold};
   display: flex;
   flex-flow: row;
-  align-items: center;
-  color: ${props => props.color || "inherit"};
+  color: ${({ color }) => color || "inherit"};
+  ${({ childrenLen }) =>
+    childrenLen &&
+    `
+    flex: 0 1 ${Math.floor(100 / childrenLen)}%;
+  `} align-items: center;
+
+  li:last-of-type {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
   li:not(:last-of-type):after {
     padding: 0 ${spacing.slim};

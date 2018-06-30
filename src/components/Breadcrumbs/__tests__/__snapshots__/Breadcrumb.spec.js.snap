@@ -13,11 +13,21 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
+  color: inherit;
+  -webkit-flex: 0 1 50%;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: inherit;
+}
+
+.c0 li:last-of-type {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c0 li:not(:last-of-type):after {

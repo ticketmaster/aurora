@@ -8,6 +8,7 @@ const Breadcrumb = ({ children, ...props }) => (
     <StyledBreadcrumb
       itemScope
       itemType="http://schema.org/Breadcrumb"
+      childrenLen={children && Array.from(children).length}
       {...props}
     >
       {children}

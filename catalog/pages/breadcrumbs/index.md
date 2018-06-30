@@ -48,7 +48,19 @@ rows:
 
 ```react
 <Breadcrumb style={breadcrumbStyles}>
-    <Breadcrumb.Item position="1" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-    <Breadcrumb.Item position="2" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
+    <Breadcrumb.Item position="1" role="link" ariaLabel="Home" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
+    <Breadcrumb.Item position="2" ariaLabel="Breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
+</Breadcrumb>
+```
+
+### Breadcrumb with Truncated Breadcrumb.Items
+
+```react
+<Breadcrumb style={breadcrumbStyles}>
+    <Breadcrumb.Item position="1" ariaLabel="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style={breadcrumbStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Breadcrumb.Item>
+    <Breadcrumb.Item position="2" ariaLabel="Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor." style={breadcrumbStyles}>Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor.
+</Breadcrumb.Item>
+    <Breadcrumb.Item position="3" ariaLabel="Cras vulputate nibh in lectus mollis, vel posuere est tincidunt." style={breadcrumbStyles}>Cras vulputate nibh in lectus mollis, vel posuere est tincidunt.
+</Breadcrumb.Item>
 </Breadcrumb>
 ```
