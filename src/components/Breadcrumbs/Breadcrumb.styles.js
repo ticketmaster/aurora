@@ -15,7 +15,6 @@ const StyledBreadcrumb = ListUnstyled.extend`
 
   li:last-of-type {
     min-width: 0;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
