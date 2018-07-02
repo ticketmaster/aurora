@@ -35,10 +35,11 @@ const pages = [
 ];
 
 const sizes = [
-  { name: "mobile", width: 375, height: 667 },
+  { name: "xs mobile", width: 320, height: 568 },
+  { name: "mobile", width: 414, height: 736 },
   { name: "tablet", width: 768, height: 1024 },
   { name: "desktop", width: 1024, height: 768 },
-  { name: "xLarge desktop", width: 1440, height: 1024 }
+  { name: "xl desktop", width: 1440, height: 1024 }
 ];
 
 ReactDOM.render(
