@@ -4,8 +4,6 @@ const LinkRow = styled.div.attrs({
   className: "links links__row",
   role: "menubar"
 })`
-  width: 100%;
-
   .list-container {
     position: relative;
   }
