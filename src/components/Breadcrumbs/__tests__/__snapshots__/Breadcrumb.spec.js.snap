@@ -35,7 +35,13 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   font-size: 12px;
 }
 
-<nav>
+<nav
+  style={
+    Object {
+      "overflow": "hidden",
+    }
+  }
+>
   <ol
     className="c0"
     itemScope={true}
