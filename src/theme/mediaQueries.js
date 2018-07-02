@@ -2,6 +2,12 @@ import { css } from "styled-components";
 
 import constants from "./constants";
 
+export const xSmallAndDown = (...args) => css`
+  @media screen and ${constants.breakpoints.xSmallAndDown} {
+    ${css(...args)};
+  }
+`;
+
 export const mediumAndUp = (...args) => css`
   @media screen and ${constants.breakpoints.mediumAndUp} {
     ${css(...args)};
