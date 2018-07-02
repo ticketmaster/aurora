@@ -268,7 +268,7 @@ exports[`NavBar renders fixed 1`] = `
   }
 }
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
   .c3 {
     padding-left: 0;
     padding-right: 0;
@@ -719,7 +719,7 @@ exports[`NavBar renders inverted 1`] = `
   }
 }
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
   .c3 {
     padding-left: 0;
     padding-right: 0;
