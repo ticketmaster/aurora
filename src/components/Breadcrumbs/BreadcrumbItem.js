@@ -1,12 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 import typography from "../../theme/typography";
 import { Link, StyledText } from "../Text";
-
-const InlineLi = styled.li`
-  white-space: nowrap;
-`;
 
 const Text = StyledText.withComponent("span");
 
@@ -14,10 +9,11 @@ const BreadcrumbItem = ({ position, children, href, ...props }) => {
   const Tag = href ? Link : Text;
 
   return (
-    <InlineLi
+    <li
       itemProp="itemListElement"
       itemScope
       itemType="http://schema.org/ListItem"
+      style={{ whiteSpace: "nowrap" }}
     >
       <Tag
         itemProp="item"
@@ -29,7 +25,7 @@ const BreadcrumbItem = ({ position, children, href, ...props }) => {
       </Tag>
       {children && <meta itemProp="name" content={children} />}
       {position && <meta itemProp="position" content={position} />}
-    </InlineLi>
+    </li>
   );
 };
 

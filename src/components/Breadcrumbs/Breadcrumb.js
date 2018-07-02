@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import StyledBreadcrumb from "./Breadcrumb.styles";
 
 const Breadcrumb = ({ children, ...props }) => (
-  <nav>
+  <nav style={{ overflow: "hidden" }}>
     <StyledBreadcrumb
       itemScope
       itemType="http://schema.org/Breadcrumb"
