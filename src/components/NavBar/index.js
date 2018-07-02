@@ -13,7 +13,6 @@ import Links from "./Links";
 import Buttons from "./Buttons";
 import Row from "../Grid/Row";
 import Column from "../Grid/Column";
-import GridContainer from "../Grid/Container";
 
 const Nav = styled.nav.attrs({
   role: "navigation"
@@ -118,7 +117,7 @@ const Left = styled.div`
   ${largeAndUp`width: 50%;`};
 `;
 
-const MessageContainer = GridContainer.extend`
+const MessageContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   font-size: ${typography.size.uno};
