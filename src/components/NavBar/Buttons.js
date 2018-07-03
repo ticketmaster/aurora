@@ -8,11 +8,7 @@ import User from "../Icons/User";
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import typography from "../../theme/typography";
-import {
-  mediumAndUp,
-  largeAndUp,
-  xSmallAndDown
-} from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import getRelByTarget from "../../utils/link";
 
 const BaseButton = styled.button`
@@ -26,9 +22,9 @@ const BaseButton = styled.button`
   outline: 0;
   appearance: none;
   padding-right: ${({ isLast }) =>
-    isLast ? spacing.gutters.small : parseInt(spacing.normal, 10) / 2}px;
+    isLast ? spacing.gutters.small : spacing.gutters.small / 2}px;
   padding-left: ${({ isFirst }) =>
-    isFirst ? spacing.gutters.small : parseInt(spacing.normal, 10) / 2}px;
+    isFirst ? spacing.gutters.small : spacing.gutters.small / 2}px;
   color: ${colors.white.base};
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
@@ -91,9 +87,12 @@ Button.defaultProps = {
 };
 
 const LogoBtn = styled(Button)`
-  ${xSmallAndDown`
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: ${spacing.gutters.small / 2}px;
+  padding-right: ${spacing.gutters.small / 2}px;
+
+  ${mediumAndUp`
+    padding-left: ${spacing.gutters.mediumAndUp / 2}px;
+    padding-right: ${spacing.gutters.mediumAndUp / 2}px;
   `} ${largeAndUp`
     padding-left: ${spacing.gutters.mediumAndUp}px;
   `};

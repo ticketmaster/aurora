@@ -82,7 +82,6 @@ const Container = styled.div`
   height: 60px;
   position: relative;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   align-content: center;
@@ -101,8 +100,6 @@ const Right = styled.div`
   flex: 1 0 auto;
   justify-content: flex-end;
   height: 60px;
-  ${mediumAndUp`width: 23%;`};
-  ${largeAndUp`width: 18%;`};
 `;
 
 const Left = styled.div`
