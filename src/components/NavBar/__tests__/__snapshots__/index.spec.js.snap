@@ -123,7 +123,7 @@ exports[`NavBar renders fixed 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
+  padding-right: 8px;
   padding-left: 16px;
   color: rgba(255,255,255,1);
   font-size: 16px;
@@ -156,8 +156,8 @@ exports[`NavBar renders fixed 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 8px;
+  padding-left: 8px;
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
@@ -166,6 +166,11 @@ exports[`NavBar renders fixed 1`] = `
 .nav--inverted .c4 {
   color: rgba(0,0,15,1);
   font-weight: 400;
+}
+
+.c3 {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c0 {
@@ -237,10 +242,6 @@ exports[`NavBar renders fixed 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -268,10 +269,10 @@ exports[`NavBar renders fixed 1`] = `
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:481px) {
   .c3 {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -574,7 +575,7 @@ exports[`NavBar renders inverted 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
+  padding-right: 8px;
   padding-left: 16px;
   color: rgba(255,255,255,1);
   font-size: 16px;
@@ -607,8 +608,8 @@ exports[`NavBar renders inverted 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 8px;
+  padding-left: 8px;
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
@@ -617,6 +618,11 @@ exports[`NavBar renders inverted 1`] = `
 .nav--inverted .c4 {
   color: rgba(0,0,15,1);
   font-weight: 400;
+}
+
+.c3 {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .c0 {
@@ -688,10 +694,6 @@ exports[`NavBar renders inverted 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -719,10 +721,10 @@ exports[`NavBar renders inverted 1`] = `
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:481px) {
   .c3 {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -1041,7 +1043,7 @@ exports[`NavBar renders with defaults 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
+  padding-right: 8px;
   padding-left: 16px;
   color: rgba(255,255,255,1);
   font-size: 16px;
@@ -1074,8 +1076,8 @@ exports[`NavBar renders with defaults 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 8px;
+  padding-left: 8px;
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
@@ -1108,7 +1110,7 @@ exports[`NavBar renders with defaults 1`] = `
   -moz-appearance: none;
   appearance: none;
   padding-right: 16px;
-  padding-left: 12px;
+  padding-left: 8px;
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
@@ -1188,10 +1190,6 @@ exports[`NavBar renders with defaults 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
