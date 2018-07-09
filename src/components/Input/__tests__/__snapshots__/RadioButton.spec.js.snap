@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup renders default input 1`] = `
+<div
+  role="radiogroup"
+/>
+`;
+
+exports[`RadioGroup renders large input 1`] = `
+<div
+  role="radiogroup"
+/>
+`;
+
+exports[`RadioGroup renders small input 1`] = `
+<div
+  role="radiogroup"
+/>
+`;
