@@ -55,6 +55,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -147,6 +148,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -238,6 +240,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -330,6 +333,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -421,6 +425,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -513,6 +518,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -604,6 +610,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}

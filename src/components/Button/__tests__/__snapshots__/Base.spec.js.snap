@@ -27,6 +27,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 
 <a
   className="c0"
+  data-tid={undefined}
   href="/"
   rel={undefined}
 >
@@ -59,6 +60,7 @@ exports[`<Button /> renders outline button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
 >
   Dummy Label
 </button>
@@ -89,6 +91,7 @@ exports[`<Button /> renders outline disabled button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
 >
   Dummy Label
@@ -120,6 +123,7 @@ exports[`<Button /> renders standard button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
 >
   Dummy Label
 </button>
@@ -150,6 +154,7 @@ exports[`<Button /> renders standard disabled button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
 >
   Dummy Label
@@ -181,6 +186,7 @@ exports[`<Button /> renders transparent button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
 >
   Dummy Label
 </button>
@@ -211,6 +217,7 @@ exports[`<Button /> renders transparent disabled button correctly 1`] = `
 
 <button
   className="c0"
+  data-tid={undefined}
   disabled={true}
 >
   Dummy Label

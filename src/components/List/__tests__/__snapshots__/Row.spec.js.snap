@@ -753,6 +753,7 @@ exports[`<ListRow /> renders eventListRow with container 1`] = `
         <span
           aria-label="See Tickets"
           className="c19"
+          data-tid={undefined}
           role="button"
           width="102px"
         >
@@ -1555,6 +1556,7 @@ exports[`<ListRow /> renders eventListRow with link correctly 1`] = `
       <span
         aria-label="See Tickets"
         className="c18"
+        data-tid={undefined}
         role="button"
         width="102px"
       >
@@ -2256,6 +2258,7 @@ exports[`<ListRow /> renders standard eventListRow correctly 1`] = `
       <span
         aria-label="See Tickets"
         className="c18"
+        data-tid={undefined}
         role="button"
         width="102px"
       >
