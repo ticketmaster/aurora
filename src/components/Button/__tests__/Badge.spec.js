@@ -76,4 +76,14 @@ describe("Badge />", () => {
     Simulate.click(getByText("Badge"));
     expect(onClick).toHaveBeenCalled();
   });
+
+  it("renders with a dataTid prop when passed", () => {
+    const component = renderer.create(
+      <Badge variant="standard" dataTid="badge">
+        Badge
+      </Badge>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

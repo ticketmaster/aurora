@@ -30,4 +30,17 @@ describe("Header", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it("renders with a dataTid prop when passed", () => {
+    const component = renderer.create(
+      <Header>
+        <Heading dataTid="genericHeader">
+          <Heading.Strong>Generic</Heading.Strong>{" "}
+          <Heading.Span>Header</Heading.Span>
+        </Heading>
+      </Header>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

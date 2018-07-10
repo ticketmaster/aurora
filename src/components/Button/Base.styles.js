@@ -36,7 +36,9 @@ const VARIANTS = {
   }
 };
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button.attrs({
+  "data-tid": ({ dataTid }) => dataTid
+})`
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.semiBold};
   height: ${HEIGHT};

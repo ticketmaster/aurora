@@ -14,7 +14,9 @@ const Strong = Span.extend`
   font-weight: ${typography.weight.extraBold};
 `;
 
-const margins = styled.span`
+const margins = styled.span.attrs({
+  "data-tid": ({ dataTid }) => dataTid
+})`
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: ${spacing.cozy};
