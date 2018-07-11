@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -57,17 +57,19 @@ const RowContainer = Container.extend`
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, children, type, ...props }) => {
-  const [title, subTitle, ...rest] = Children.toArray(children || []);
+const ImageCard = ({ src, alt, title, subTitle, children, type, ...props }) => {
   const img = props.image || <Image src={src} alt={alt} />;
   if (type === "half") {
     return (
       <RowContainer>
         <Card>{img}</Card>
-        <CaptionContainer>
-          {title}
-          {subTitle}
-        </CaptionContainer>
+        {(title || subTitle) && (
+          <CaptionContainer>
+            {title}
+            {subTitle}
+          </CaptionContainer>
+        )}
+        {children}
       </RowContainer>
     );
   }
@@ -76,16 +78,16 @@ const ImageCard = ({ src, alt, children, type, ...props }) => {
     <Card>
       <Container>
         {img}
-        <Overlay>
-          {(title || subTitle) && (
+        {(title || subTitle) && (
+          <Overlay>
             <CaptionContainer>
               {title}
               {subTitle}
             </CaptionContainer>
-          )}
-        </Overlay>
+          </Overlay>
+        )}
       </Container>
-      {(rest && rest.length && <div>{rest}</div>) || null}
+      {children}
     </Card>
   );
 };
@@ -94,6 +96,8 @@ ImageCard.propTypes = {
   type: PropTypes.oneOf(["full", "half"]),
   src: PropTypes.string,
   alt: PropTypes.string,
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
   children: PropTypes.node,
   image: PropTypes.element
 };
@@ -102,6 +106,8 @@ ImageCard.defaultProps = {
   type: "full",
   alt: "",
   src: "",
+  title: "",
+  subTitle: "",
   children: null,
   image: null
 };

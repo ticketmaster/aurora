@@ -19,11 +19,18 @@ rows:
     Type: string
     Default:
     Notes: Alt text for image
-  - Prop: children
-    Type: ImageCard.Title, ImageCard.SubTitle, ReactElement
+  - Prop: title
+    Type: string
     Default:
-    Notes: In order the first two children are wrapped in a caption,
-           the remaining elements are added as additional content under the image
+    Notes: Caption title
+  - Prop: subTitle
+    Type: string
+    Default:
+    Notes: Caption subTitle
+  - Prop: children
+    Type: Node (e.g. ImageCard.Title, ImageCard.SubTitle, ReactElement, string, null)
+    Default:
+    Notes: Rendered as content under the image
 ```
 
 ```react
@@ -34,31 +41,37 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
     <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
         <Row>
             <Column medium={4} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+                <ImageCard
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                />
             </Column>
             <Column small={6} medium={4} style={{marginTop: spacing.gutters.small}}>
                 <ImageCard src="https://placekitten.com/g/512/288" />
             </Column>
             <Column small={6} medium={4} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+                <ImageCard
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                />
             </Column>
             <Column medium={6} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                <ImageCard
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                >
                     <div style={styles}>Additional Content</div>
                 </ImageCard>
             </Column>
             <Column medium={6} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                <ImageCard
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                >
                     <div style={styles}>Additional Content</div>
                 </ImageCard>
             </Column>
@@ -79,16 +92,20 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
     <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
         <Row>
             <Column medium={6} large={3} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard type="half" src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+                <ImageCard
+                    type="half"
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                />
             </Column>
             <Column medium={6} large={3} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard type="half" src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+                <ImageCard
+                    type="half"
+                    src="https://placekitten.com/g/512/288"
+                    title={<ImageCard.Title>Title</ImageCard.Title>}
+                    subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                />
             </Column>
         </Row>
     </Container>

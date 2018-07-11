@@ -11,20 +11,14 @@ describe("ImageCard", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
-  it("renders card without overlay", () => {
-    const component = renderer.create(
-      <ImageCard src="http://localhost/img.png" withOverlay={false} />
-    );
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
 
   it("renders with title & subtitle", () => {
     const component = renderer.create(
-      <ImageCard src="http://localhost/img.png">
-        <ImageCard.Title>Title</ImageCard.Title>
-        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-      </ImageCard>
+      <ImageCard
+        src="http://localhost/img.png"
+        title={<ImageCard.Title>Title</ImageCard.Title>}
+        subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+      />
     );
 
     expect(component.toJSON()).toMatchSnapshot();
@@ -32,9 +26,11 @@ describe("ImageCard", () => {
 
   it("renders with title & subtitle, extra content", () => {
     const component = renderer.create(
-      <ImageCard src="http://localhost/img.png">
-        <ImageCard.Title>Title</ImageCard.Title>
-        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+      <ImageCard
+        src="http://localhost/img.png"
+        title={<ImageCard.Title>Title</ImageCard.Title>}
+        subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+      >
         <div>Extra content</div>
       </ImageCard>
     );
@@ -45,9 +41,11 @@ describe("ImageCard", () => {
   it("renders with custom image", () => {
     const image = <svg />;
     const component = renderer.create(
-      <ImageCard image={image}>
-        <ImageCard.Title>Title</ImageCard.Title>
-        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+      <ImageCard
+        image={image}
+        title={<ImageCard.Title>Title</ImageCard.Title>}
+        subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+      >
         <div>Extra content</div>
       </ImageCard>
     );
@@ -56,10 +54,12 @@ describe("ImageCard", () => {
 
   it("renders type = half", () => {
     const component = renderer.create(
-      <ImageCard type="half" src="http://localhost/img.png">
-        <ImageCard.Title>Title</ImageCard.Title>
-        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-      </ImageCard>
+      <ImageCard
+        type="half"
+        src="http://localhost/img.png"
+        title={<ImageCard.Title>Title</ImageCard.Title>}
+        subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+      />
     );
 
     expect(component.toJSON()).toMatchSnapshot();
