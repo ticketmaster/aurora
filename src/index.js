@@ -11,7 +11,6 @@ export { default as ListRow } from "./components/List/Row";
 export { default as NavBar } from "./components/NavBar";
 export { default as Row } from "./components/Grid/Row";
 export { default as SearchInput } from "./components/Input/Search";
-export { default as SectionHeading } from "./components/Text/SectionHeading";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export {
@@ -21,6 +20,14 @@ export {
   UserIcon,
   StarIcon
 } from "./components/Icons";
+export {
+  PrimaryText,
+  SecondaryText,
+  BoldText,
+  Link,
+  SectionHeading,
+  StyledText
+} from "./components/Text";
 export {
   default as DeviceSizeProvider
 } from "./components/DeviceSize/Provider";
