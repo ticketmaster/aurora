@@ -1,92 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageCard renders card without overlay 1`] = `
-.c0 {
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
-}
-
-.c2 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <img
-      alt=""
-      className="c2"
-      src="http://localhost/img.png"
-    />
-    <div
-      className="c3"
-    />
-  </div>
-</div>
-`;
-
 exports[`ImageCard renders standard card 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .c2 {
   width: 100%;
   max-width: 100%;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
 }
 
 .c1 {
@@ -101,19 +26,57 @@ exports[`ImageCard renders standard card 1`] = `
 }
 
 <div
-  className="c0"
+  className="card card--standard c0"
 >
   <div
-    className="c1"
+    className="image-card--container c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image-card__image c2"
       src="http://localhost/img.png"
     />
-    <div
-      className="c3"
+    
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders transparent card 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+<div
+  className="card card--transparent c0"
+>
+  <div
+    className="image-card--container c1"
+  >
+    <img
+      alt=""
+      className="image-card__image c2"
+      src="http://localhost/img.png"
     />
+    
   </div>
 </div>
 `;
@@ -124,7 +87,7 @@ exports[`ImageCard renders type = half 1`] = `
   overflow: hidden;
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .c2 {
@@ -173,27 +136,27 @@ exports[`ImageCard renders type = half 1`] = `
 }
 
 <div
-  className="c0"
+  className="image-card--container c0"
 >
   <div
-    className="c1"
+    className="card card--standard c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image-card__image c2"
       src="http://localhost/img.png"
     />
   </div>
   <div
-    className="c3"
+    className="image-card__caption-container c3"
   >
     <span
-      className="c4"
+      className="image-card__title c4"
     >
       Title
     </span>
     <span
-      className="c5"
+      className="image-card__subtitle c5"
     >
       Sub Title
     </span>
@@ -207,7 +170,7 @@ exports[`ImageCard renders with custom image 1`] = `
   overflow: hidden;
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .c2 {
@@ -260,25 +223,25 @@ exports[`ImageCard renders with custom image 1`] = `
 }
 
 <div
-  className="c0"
+  className="card card--standard c0"
 >
   <div
-    className="c1"
+    className="image-card--container c1"
   >
     <svg />
     <div
-      className="c2"
+      className="image-card__overlay c2"
     >
       <div
-        className="c3"
+        className="image-card__caption-container c3"
       >
         <span
-          className="c4"
+          className="image-card__title c4"
         >
           Title
         </span>
         <span
-          className="c5"
+          className="image-card__subtitle c5"
         >
           Sub Title
         </span>
@@ -286,9 +249,7 @@ exports[`ImageCard renders with custom image 1`] = `
     </div>
   </div>
   <div>
-    <div>
-      Extra content
-    </div>
+    Extra content
   </div>
 </div>
 `;
@@ -299,7 +260,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   overflow: hidden;
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .c2 {
@@ -357,29 +318,29 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 }
 
 <div
-  className="c0"
+  className="card card--standard c0"
 >
   <div
-    className="c1"
+    className="image-card--container c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image-card__image c2"
       src="http://localhost/img.png"
     />
     <div
-      className="c3"
+      className="image-card__overlay c3"
     >
       <div
-        className="c4"
+        className="image-card__caption-container c4"
       >
         <span
-          className="c5"
+          className="image-card__title c5"
         >
           Title
         </span>
         <span
-          className="c6"
+          className="image-card__subtitle c6"
         >
           Sub Title
         </span>
@@ -395,7 +356,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   overflow: hidden;
   border-radius: 4px;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .c2 {
@@ -453,29 +414,29 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 }
 
 <div
-  className="c0"
+  className="card card--standard c0"
 >
   <div
-    className="c1"
+    className="image-card--container c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image-card__image c2"
       src="http://localhost/img.png"
     />
     <div
-      className="c3"
+      className="image-card__overlay c3"
     >
       <div
-        className="c4"
+        className="image-card__caption-container c4"
       >
         <span
-          className="c5"
+          className="image-card__title c5"
         >
           Title
         </span>
         <span
-          className="c6"
+          className="image-card__subtitle c6"
         >
           Sub Title
         </span>
@@ -483,9 +444,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
     </div>
   </div>
   <div>
-    <div>
-      Extra content
-    </div>
+    Extra content
   </div>
 </div>
 `;

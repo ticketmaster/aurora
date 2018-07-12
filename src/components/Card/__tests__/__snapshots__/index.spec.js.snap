@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders standard card 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: '0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 0 4px 0 rgba(0, 0, 0, 0.16);
+}
+
+<div
+  className="card card--standard c0"
+/>
+`;
+
+exports[`Card renders transparent card 1`] = `
+.c0 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+<div
+  className="card card--transparent c0"
+/>
+`;
