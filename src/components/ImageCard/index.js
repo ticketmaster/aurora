@@ -8,13 +8,17 @@ import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 import typography from "../../theme/typography";
 
-const Image = styled.img`
+const Image = styled.img.attrs({
+  className: "image-card__image"
+})`
   width: 100%;
   max-width: 100%;
 `;
 
 //  come back
-const Overlay = styled.div`
+const Overlay = styled.div.attrs({
+  className: "image-card__overlay"
+})`
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +28,9 @@ const Overlay = styled.div`
   align-items: flex-end;
 `;
 
-const CaptionContainer = styled.div`
+const CaptionContainer = styled.div.attrs({
+  className: "image-card__caption-container"
+})`
   position: relative;
   color: ${colors.white.base};
   background-color: rgba(31, 38, 45, 0.8);
@@ -34,19 +40,25 @@ const CaptionContainer = styled.div`
   margin-bottom: ${spacing.cozy};
 `;
 
-const Title = styled.span`
+const Title = styled.span.attrs({
+  className: "image-card__title"
+})`
   display: block;
   width: 100%;
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
 `;
 
-const SubTitle = styled.span`
+const SubTitle = styled.span.attrs({
+  className: "image-card__subtitle"
+})`
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.regular};
 `;
 
-const Container = styled.div`
+const Container = styled.div.attrs({
+  className: "image-card--container"
+})`
   display: flex;
   flex-direction: column;
   position: relative;
@@ -57,12 +69,21 @@ const RowContainer = Container.extend`
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, title, subTitle, children, type, ...props }) => {
+const ImageCard = ({
+  src,
+  alt,
+  title,
+  subTitle,
+  children,
+  type,
+  variant,
+  ...props
+}) => {
   const img = props.image || <Image src={src} alt={alt} />;
   if (type === "half") {
     return (
       <RowContainer>
-        <Card>{img}</Card>
+        <Card variant={variant}>{img}</Card>
         {(title || subTitle) && (
           <CaptionContainer>
             {title}
@@ -75,7 +96,7 @@ const ImageCard = ({ src, alt, title, subTitle, children, type, ...props }) => {
   }
 
   return (
-    <Card>
+    <Card variant={variant}>
       <Container>
         {img}
         {(title || subTitle) && (
@@ -96,8 +117,9 @@ ImageCard.propTypes = {
   type: PropTypes.oneOf(["full", "half"]),
   src: PropTypes.string,
   alt: PropTypes.string,
-  title: PropTypes.string,
-  subTitle: PropTypes.string,
+  title: PropTypes.node,
+  subTitle: PropTypes.node,
+  variant: PropTypes.oneOf(["standard", "transparent"]),
   children: PropTypes.node,
   image: PropTypes.element
 };
@@ -108,6 +130,7 @@ ImageCard.defaultProps = {
   src: "",
   title: "",
   subTitle: "",
+  variant: "standard",
   children: null,
   image: null
 };

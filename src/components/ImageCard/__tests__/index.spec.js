@@ -12,6 +12,14 @@ describe("ImageCard", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders transparent card", () => {
+    const component = renderer.create(
+      <ImageCard variant="transparent" src="http://localhost/img.png" />
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders with title & subtitle", () => {
     const component = renderer.create(
       <ImageCard

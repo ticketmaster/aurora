@@ -20,15 +20,19 @@ rows:
     Default:
     Notes: Alt text for image
   - Prop: title
-    Type: string
+    Type: Node (e.g. ImageCard.Title, ImageCard.SubTitle, ReactElement, string, null)
     Default:
     Notes: Caption title
   - Prop: subTitle
-    Type: string
+    Type: Node (e.g. ImageCard.Title, ImageCard.SubTitle, ReactElement, string, null)
     Default:
     Notes: Caption subTitle
+  - Prop: variant
+    Type: string
+    Default: standard
+    Notes: Determines style variant (one of "standard"; "transparent")
   - Prop: children
-    Type: Node (e.g. ImageCard.Title, ImageCard.SubTitle, ReactElement, string, null)
+    Type: Node (e.g. ReactElement, string, null)
     Default:
     Notes: Rendered as content under the image
 ```
@@ -36,7 +40,6 @@ rows:
 ```react
 responsive: true
 ---
-const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center" };
 <div>
     <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
         <Row>
@@ -55,6 +58,7 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
                     src="https://placekitten.com/g/512/288"
                     title={<ImageCard.Title>Title</ImageCard.Title>}
                     subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                    variant="transparent"
                 />
             </Column>
             <Column medium={6} style={{marginTop: spacing.gutters.small}}>
@@ -63,7 +67,7 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
                     title={<ImageCard.Title>Title</ImageCard.Title>}
                     subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
                 >
-                    <div style={styles}>Additional Content</div>
+                    <div style={additionalContentStyles}>Additional Content</div>
                 </ImageCard>
             </Column>
             <Column medium={6} style={{marginTop: spacing.gutters.small}}>
@@ -71,8 +75,9 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
                     src="https://placekitten.com/g/512/288"
                     title={<ImageCard.Title>Title</ImageCard.Title>}
                     subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                    variant="transparent"
                 >
-                    <div style={styles}>Additional Content</div>
+                    <div style={additionalContentTransparentStyles}>Additional Content</div>
                 </ImageCard>
             </Column>
         </Row>
@@ -87,7 +92,6 @@ Displays an image card in "half" mode. This mode does not support additional con
 ```react
 responsive: true
 ---
-const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center" };
 <div>
     <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
         <Row>
@@ -105,6 +109,7 @@ const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center
                     src="https://placekitten.com/g/512/288"
                     title={<ImageCard.Title>Title</ImageCard.Title>}
                     subTitle={<ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>}
+                    variant="transparent"
                 />
             </Column>
         </Row>
