@@ -3,15 +3,11 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import Card from "../Card";
+import Image from "../Image";
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 import typography from "../../theme/typography";
-
-const Image = styled.img`
-  width: 100%;
-  max-width: 100%;
-`;
 
 //  come back
 const Overlay = styled.div`
@@ -59,7 +55,7 @@ const RowContainer = Container.extend`
 
 const ImageCard = ({ src, alt, children, type, ...props }) => {
   const [title, subTitle, ...rest] = Children.toArray(children || []);
-  const img = props.image || <Image src={src} alt={alt} />;
+  const img = props.image || <Image.FullBleed src={src} alt={alt} />;
   if (type === "half") {
     return (
       <RowContainer>
