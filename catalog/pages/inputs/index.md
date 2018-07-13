@@ -89,7 +89,11 @@ rows:
   - Prop: "value"
     Type: string
     Default: N/A
-    Notes: Is Requried
+    Notes: Is required
+  - Prop: index
+    Type: number
+    Default: N/A
+    Notes: Is required for keyboard accessibility
 ```
 
 ```react
@@ -99,30 +103,28 @@ span: 6
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup>
-                <RadioButton size="large" name="Option1" value="1" >
+                <RadioButton size="large" name="Option1" value="FirstButton" index={0}>
                     Testing One
                 </RadioButton>
-
-                <RadioButton size="large" name="Option2" value="2">
+                <RadioButton size="large" name="Option2" value="SecondButton" index={1}>
                     Testing Two
                 </RadioButton>
-
-                <RadioButton size="large" name="Option3" value="3">
+                <RadioButton size="large" name="Option3" value="ThirdButton" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
         </Column>
-          <Column medium={6} style={{ padding: "16px 0" }}>
+        <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup>
-                <RadioButton size="small" name="OptionSmall1" value="1" >
+                <RadioButton size="small" name="OptionSmall1" value="1" index={0}>
                     Testing One
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall2" value="2">
+                <RadioButton size="small" name="OptionSmall2" value="2" index={1}>
                     Testing Two
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall3" value="3">
+                <RadioButton size="small" name="OptionSmall3" value="3" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
@@ -167,6 +169,10 @@ rows:
     Type: string
     Default: "true"
     Notes: Will disable checkbox input
+  - Prop: index
+    Type: number
+    Default: N/A
+    Notes: Is required for keyboard accessibility
 ```
 
 ```react
@@ -176,26 +182,26 @@ span: 6
     <Row>
         <Column medium={6}  style={{ padding: "16px 0" }}>
             <CheckBoxGroup value={["1","2","3"]}>
-                <CheckBoxButton size="large" name="Testing One"  value="1">
+                <CheckBoxButton size="large" name="Testing One"  value="1" index={0}>
                     Testing One
                 </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Two" value="2">
+                <CheckBoxButton size="large" name="Testing Two" value="2" index={1}>
                     Testing Two
                 </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Three" value="3">
+                <CheckBoxButton size="large" name="Testing Three" value="3" index={2}>
                     Testing Three
                 </CheckBoxButton>
             </CheckBoxGroup>
         </Column>
         <Column medium={6} style={{ padding: "16px 0" }}>
             <CheckBoxGroup >
-                <CheckBoxButton size="small" name="Testing One"  value="1">
+                <CheckBoxButton size="small" name="Testing One"  value="1" index={0}>
                     Testing One
                 </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Two" value="2">
+                <CheckBoxButton size="small" name="Testing Two" value="2" index={1}>
                     Testing Two
                 </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Three" value="3">
+                <CheckBoxButton size="small" name="Testing Three" value="3" index={2}>
                     Testing Three
                 </CheckBoxButton>
             </CheckBoxGroup>
@@ -216,20 +222,20 @@ rows:
   - Prop: placeholder
     Type: string
     Default: N/A
-    Notes: Is not requried
+    Notes: Is not required
   - Prop: name
     Type: string
     Default: N/A
-    Notes: Is Required
+    Notes: Is required
   - Prop: label
     Type: string
     Default: N/A
-    Notes: Is Required
+    Notes: Is required
   - Prop: errorMessage
     Type: string
     Default: N/A
     Notes: Will present a different style when a prop is supplied
-  - Prop: disbaled
+  - Prop: disabled
     Type: boolean
     Default: "false"
     Notes: Will disable text input

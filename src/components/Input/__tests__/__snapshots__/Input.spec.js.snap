@@ -88,6 +88,7 @@ exports[`Input renders bottom label 1`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {
@@ -237,6 +238,7 @@ exports[`Input renders bottom label 2`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {
@@ -386,6 +388,7 @@ exports[`Input renders default input 1`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {
@@ -535,6 +538,7 @@ exports[`Input renders error top label 1`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {
@@ -721,6 +725,7 @@ exports[`Input renders error top label 2`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {
@@ -907,6 +912,7 @@ exports[`Input renders top label 1`] = `
 
 .c0.text--input-disabled {
   pointer-events: none;
+  opacity: 0.35;
 }
 
 .c1 {

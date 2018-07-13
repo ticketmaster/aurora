@@ -59,6 +59,7 @@ const FieldInputWrapper = styled.div`
   }
   &.text--input-disabled {
     pointer-events: none;
+    opacity: 0.35;
   }
 `;
 
