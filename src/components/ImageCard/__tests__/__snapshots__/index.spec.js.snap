@@ -4,8 +4,8 @@ exports[`ImageCard renders card without overlay 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -42,14 +42,14 @@ exports[`ImageCard renders card without overlay 1`] = `
 }
 
 <div
-  className="c0"
+  className="container-block c0"
 >
   <div
     className="c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image image--full-bleed c2"
       src="http://localhost/img.png"
     />
     <div
@@ -63,8 +63,8 @@ exports[`ImageCard renders standard card 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -101,14 +101,14 @@ exports[`ImageCard renders standard card 1`] = `
 }
 
 <div
-  className="c0"
+  className="container-block c0"
 >
   <div
     className="c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image image--full-bleed c2"
       src="http://localhost/img.png"
     />
     <div
@@ -122,8 +122,8 @@ exports[`ImageCard renders type = half 1`] = `
 .c1 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -176,11 +176,11 @@ exports[`ImageCard renders type = half 1`] = `
   className="c0"
 >
   <div
-    className="c1"
+    className="container-block c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image image--full-bleed c2"
       src="http://localhost/img.png"
     />
   </div>
@@ -205,8 +205,8 @@ exports[`ImageCard renders with custom image 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -260,7 +260,7 @@ exports[`ImageCard renders with custom image 1`] = `
 }
 
 <div
-  className="c0"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -297,8 +297,8 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -357,14 +357,14 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 }
 
 <div
-  className="c0"
+  className="container-block c0"
 >
   <div
     className="c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image image--full-bleed c2"
       src="http://localhost/img.png"
     />
     <div
@@ -393,8 +393,8 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 .c0 {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
   background-color: rgba(255,255,255,1);
+  border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
 }
 
@@ -453,14 +453,14 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 }
 
 <div
-  className="c0"
+  className="container-block c0"
 >
   <div
     className="c1"
   >
     <img
       alt=""
-      className="c2"
+      className="image image--full-bleed c2"
       src="http://localhost/img.png"
     />
     <div
