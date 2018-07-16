@@ -1,6 +1,6 @@
-### Image
+### Responsive and Static Images
 
-Image component with a customizable, responsive aspect ratio and internal img tag for SEO purposes.
+Image components with customizable, responsive aspect ratio or static sizing.
 
 ### Props
 
@@ -22,11 +22,11 @@ rows:
   - Prop: height
     Type: number
     Default: 1
-    Notes: Not measured in pixels. Used with width to calculate aspect ratio
+    Notes: Measured in pixels
   - Prop: width
     Type: number
     Default: 1
-    Notes: Not measured in pixels. Used with height to calculate aspect ratio
+    Notes: Measured in pixels
 ```
 
 ### Image with loader prop
@@ -34,33 +34,61 @@ rows:
 ```react
 responsive: true
 ---
-<Image loader={<Loader />} />
+<ResponsiveImage loader={"Loading..."} />
 ```
 
-### Wide Image (16:9)
+### Responsive Image (16:9)
 
 ```react
 responsive: true
 ---
-<Image
+<ResponsiveImage
     src="http://placekitten.com/g/826/465"
     alt="Test Kitten"
-    height={9}
-    width={16}
+    height={465}
+    width={826}
     loader={null}
 />
 ```
 
-### Square Image (1:1)
+### Responsive Image (1:1)
 
 ```react
 responsive: true
 ---
-<Image
+<ResponsiveImage
     src="http://placekitten.com/g/400/400"
     alt="Test Kitten"
-    height={1}
-    width={1}
+    height={400}
+    width={400}
+    loader={null}
+/>
+```
+
+### Static Image (16:9)
+
+```react
+responsive: true
+---
+<StaticImage
+    src="http://placekitten.com/g/826/465"
+    alt="Test Kitten"
+    height={465}
+    width={826}
+    loader={null}
+/>
+```
+
+### Static Image (1:1)
+
+```react
+responsive: true
+---
+<StaticImage
+    src="http://placekitten.com/g/400/400"
+    alt="Test Kitten"
+    height={400}
+    width={400}
     loader={null}
 />
 ```
