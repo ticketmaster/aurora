@@ -7,7 +7,7 @@ exports[`ResponsiveImage should render correctly 1`] = `
   position: relative;
   height: 0;
   width: 100%;
-  padding-top: 177.77777777777777%;
+  padding-top: 56.25%;
   background-image: url(http://placekitten.com/g/826/465);
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,8 +24,8 @@ exports[`ResponsiveImage should render correctly 1`] = `
 
 <div
   className="image image--responsive c0"
-  height={16}
-  width={9}
+  height={9}
+  width={16}
 >
   <img
     alt="Test Kitten"

@@ -8,7 +8,7 @@ Image components with customizable, responsive aspect ratio or static sizing.
 span: 6
 rows:
   - Prop: loader
-    Type: boolean
+    Type: node
     Default: null
     Notes: Loader UI to display a skeletal state for the image
   - Prop: src
