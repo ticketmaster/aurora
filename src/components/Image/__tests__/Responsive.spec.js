@@ -7,8 +7,8 @@ describe("ResponsiveImage", () => {
   const PROPS = {
     src: "http://placekitten.com/g/826/465",
     alt: "Test Kitten",
-    height: 16,
-    width: 9,
+    height: 9,
+    width: 16,
     loader: null
   };
 
