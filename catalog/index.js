@@ -8,6 +8,7 @@ import typography from "./pages/typography/index";
 import buttons from "./pages/buttons/index";
 import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
+import images from "./pages/images";
 import imageCard from "./pages/image_card/index";
 import listRow from "./pages/listRow";
 import header from "./pages/header/index";
@@ -26,6 +27,7 @@ const pages = [
   buttons,
   grid,
   icons,
+  images,
   imageCard,
   listRow,
   header,
