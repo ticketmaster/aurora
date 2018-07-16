@@ -15,7 +15,7 @@ export { default as SectionHeading } from "./components/Text/SectionHeading";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export { default as ContainerBlock } from "./components/Container/Block.styles";
-export { default as Image } from "./components/Image";
+export { ResponsiveImage, StaticImage } from "./components/Image";
 export {
   ChevronIcon,
   OverflowIcon,

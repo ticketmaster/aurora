@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image should render a lazy loading UI when a valid loader prop is passed 1`] = `"Loading..."`;
+exports[`ResponsiveImage should render a lazy loading UI when a valid loader prop is passed 1`] = `"Loading..."`;
 
-exports[`Image should render correctly 1`] = `
+exports[`ResponsiveImage should render correctly 1`] = `
 .c0 {
   position: relative;
   height: 0;
@@ -23,9 +23,8 @@ exports[`Image should render correctly 1`] = `
 }
 
 <div
-  className="image c0"
+  className="image image--responsive c0"
   height={16}
-  src="http://placekitten.com/g/826/465"
   width={9}
 >
   <img
