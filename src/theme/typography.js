@@ -5,6 +5,10 @@ const typography = {
     semiBold: 600,
     extraBold: 800
   },
+  lineHeight: {
+    body: "1.5",
+    header: "1.25"
+  },
   size: {
     uno: "12px",
     hecto: "14px",

@@ -21,6 +21,7 @@ export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export { default as ContainerBlock } from "./components/Container/Block.styles";
 export { ResponsiveImage, StaticImage } from "./components/Image";
+export { Text } from "./components/Text";
 export {
   ChevronIcon,
   OverflowIcon,

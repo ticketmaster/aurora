@@ -1,6 +1,7 @@
 import { pageLoader } from "catalog";
 
 import { colors, typography } from "../../../src/theme";
+import { Text } from "../../../src/components/Text";
 import { Container, Row, Column } from "../../../src/components/Grid";
 
 const textStyle = {
@@ -23,6 +24,13 @@ const fontSizeRowStyle = {
   alignItems: "center"
 };
 
+const fontSizeRowStyleDark = {
+  padding: "20px",
+  display: "flex",
+  alignItems: "center",
+  backgroundColor: colors.blackPearl
+};
+
 const getFontWeightTextStyle = props => ({
   ...textStyle,
   ...props
@@ -37,9 +45,11 @@ export default {
     Container,
     Row,
     Column,
+    Text,
     getFontWeightTextStyle,
     fontWeightLabelStyle,
-    fontSizeRowStyle
+    fontSizeRowStyle,
+    fontSizeRowStyleDark
   },
   content: pageLoader(() => import("./index.md"))
 };
