@@ -8,13 +8,32 @@ import constants from "../../theme/constants";
 export default class DeviceSizeProvider extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
+    // https://github.com/yannickcr/eslint-plugin-react/issues/1751
+    // eslint-disable-next-line
     fallbackDetection: PropTypes.func,
     cssOnly: PropTypes.bool
   };
 
   static defaultProps = { fallbackDetection: null, cssOnly: false };
 
-  initialState = { isSmall: true }; // eslint-disable-line
+  initialState = { isInitialized: false, isSmall: true }; // eslint-disable-line
+
+  static getDerivedStateFromProps(props, state) {
+    if (!state.isInitialized && typeof props.fallbackDetection === "function") {
+      const fallbackDetectionResult = props.fallbackDetection();
+
+      if (
+        typeof fallbackDetectionResult === "object" &&
+        fallbackDetectionResult !== null
+      ) {
+        return {
+          ...fallbackDetectionResult
+        };
+      }
+    }
+
+    return null;
+  }
 
   state = this.initialState;
 
@@ -58,6 +77,7 @@ export default class DeviceSizeProvider extends React.Component {
     }
 
     this.setState(() => ({
+      isInitialized: true,
       isSmall: this.smallMedia.matches && !this.mediumMedia.matches,
       isMedium: this.mediumMedia.matches && !this.largeMedia.matches,
       isLarge: this.largeMedia.matches && !this.xLargeMedia.matches,
@@ -74,12 +94,6 @@ export default class DeviceSizeProvider extends React.Component {
   };
 
   render() {
-    const { fallbackDetection } = this.props;
-    const val = fallbackDetection ? fallbackDetection() : this.state;
-    return (
-      <Provider value={val || this.initialState}>
-        {this.props.children}
-      </Provider>
-    );
+    return <Provider value={this.state}>{this.props.children}</Provider>;
   }
 }
