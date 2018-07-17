@@ -76,4 +76,25 @@ describe("DeviceSize", () => {
       expect(removeListener).toHaveBeenCalled();
     });
   });
+
+  describe("getDerivedStateFromProps()", () => {
+    it("should use fallbackDetection data to populate derived state", () => {
+      const fallbackDevices = { isSmall: false, isLarge: true };
+      const fallbackDetection = jest
+        .fn()
+        .mockImplementation(() => fallbackDevices);
+
+      const derivedState = Provider.getDerivedStateFromProps(
+        {
+          fallbackDetection
+        },
+        {
+          isInitialized: false
+        }
+      );
+
+      expect(fallbackDetection).toHaveBeenCalled();
+      expect(derivedState).toEqual(fallbackDevices);
+    });
+  });
 });
