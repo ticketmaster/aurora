@@ -7,7 +7,7 @@ import StyledImageSeo from "./Seo.styles";
 const ResponsiveImage = ({ loader, src, alt, height, width, ...props }) =>
   loader || (
     <StyledResponsiveImage image={src} height={height} width={width} {...props}>
-      <StyledImageSeo src={src} alt={alt} />
+      <StyledImageSeo src={src} alt={alt} height={height} width={width} />
     </StyledResponsiveImage>
   );
 
