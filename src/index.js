@@ -38,6 +38,7 @@ export {
 export {
   Consumer as DeviceSizeConsumer
 } from "./components/DeviceSize/Context";
+export { default as DisplayFor } from "./components/DeviceSize";
 export {
   default as ScrollObserverProvider
 } from "./components/ScrollObserver/Provider";

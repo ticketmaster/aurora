@@ -18,6 +18,7 @@ const BottomSheetContent = styled.div`
   border-top-right-radius: ${constants.borderRadius.large};
   position: fixed;
   overflow-y: scroll;
+  overflow-x: hidden;
   bottom: 0;
   left: 0;
 
