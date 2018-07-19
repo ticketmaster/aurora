@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseText should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+<div
+  className="text text--accent text--azure text--disabled c0"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,0.4);
+}
+
+<div
+  className="text text--dark text--disabled c0"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255,255,255 0.5);
+}
+
+<div
+  className="text text--light text--disabled c0"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #00FFFF;
+}
+
+<div
+  className="text text--accent text--aquamarine c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(2,108,223,1);
+}
+
+<div
+  className="text text--accent text--azure c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,1);
+}
+
+<div
+  className="text text--dark text--primary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,1);
+}
+
+<div
+  className="text text--dark text--primary text--custom c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255,255,255,1);
+}
+
+<div
+  className="text text--light text--primary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,1);
+}
+
+<div
+  className="text text--dark text--primary c0"
+  disabled={false}
+  size="giga"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: rgba(0,0,15,1);
+}
+
+<div
+  className="text text--dark text--primary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render primary text with a tag prop in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,1);
+}
+
+<span
+  className="text text--dark text--primary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</span>
+`;
+
+exports[`BaseText should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(2,108,223,0.2);
+}
+
+<div
+  className="text text--accent text--azure text--secondary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0,0,15,0.6);
+}
+
+<div
+  className="text text--dark text--secondary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.7);
+}
+
+<div
+  className="text text--light text--secondary c0"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;

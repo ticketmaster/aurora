@@ -10,6 +10,8 @@ const colors = {
   shale: "#E6E6E6",
   quartz: "#FAFAFA",
   lightGray: "#E0E0E0",
+  aquamarine: "#00FFFF",
+  turquoise: "#31CCAA",
   heliotrope: {
     base: "#C56BFF",
     dark: "#A145DC",
