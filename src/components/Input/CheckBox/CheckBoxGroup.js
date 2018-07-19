@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Provider from "./Provider";
+import Provider from "../../SelectionProvider/Provider";
+import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 
 const CheckBoxGroup = ({ onChange, children, value }) => (
   <Provider onChange={onChange} value={value} isMultiSelect>
-    <div>{children}</div>
+    <KeyBoardProvider role="checkbox">{children}</KeyBoardProvider>
   </Provider>
 );
 

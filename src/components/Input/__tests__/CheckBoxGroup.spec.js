@@ -2,8 +2,8 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
 
-import CheckBoxGroup from "../CheckBoxGroup";
-import CheckBox from "../CheckBox";
+import CheckBoxGroup from "../CheckBox/CheckBoxGroup";
+import CheckBox from "../CheckBox/CheckBox";
 
 describe("CheckBoxGroup", () => {
   afterEach(cleanup);
@@ -20,7 +20,7 @@ describe("CheckBoxGroup", () => {
     expect(renderGroupComponent({ size: "large" })).toMatchSnapshot();
   });
 
-  it("onChange recives current value", () => {
+  it("onChange receives current value", () => {
     const onChange = jest.fn();
 
     const { getByTestId } = renderIntoDocument(
@@ -30,6 +30,7 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox"
           value="else"
           size="small"
+          index={0}
         />
       </CheckBoxGroup>
     );
@@ -49,6 +50,7 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox"
           value="else"
           size="small"
+          index={0}
         />
       </CheckBoxGroup>
     );
@@ -69,12 +71,14 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox"
           value="1"
           size="small"
+          index={0}
         />
         <CheckBox
           name="something"
           data-testid="test-checkbox2"
           value="2"
           size="large"
+          index={1}
         />
       </CheckBoxGroup>
     );
@@ -86,7 +90,18 @@ describe("CheckBoxGroup", () => {
   });
 
   function renderGroupComponent(props = {}) {
-    return renderer.create(<CheckBoxGroup {...props} />);
+    return renderer.create(
+      <CheckBoxGroup {...props}>
+        {" "}
+        <CheckBox
+          name="something"
+          data-testid="test-checkbox2"
+          value="2"
+          size="large"
+          index={1}
+        />
+      </CheckBoxGroup>
+    );
   }
 
   it("passing multiple values", () => {
@@ -99,12 +114,14 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox"
           value="1"
           size="small"
+          index={0}
         />
         <CheckBox
           name="something"
           data-testid="test-checkbox2"
           value="2"
           size="large"
+          index={1}
         />
 
         <CheckBox
@@ -112,6 +129,7 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox3"
           value="2"
           size="large"
+          index={2}
         />
       </CheckBoxGroup>
     );
@@ -131,18 +149,21 @@ describe("CheckBoxGroup", () => {
           data-testid="test-checkbox"
           value="1"
           size="small"
+          index={0}
         />
         <CheckBox
           name="something"
           data-testid="test-checkbox2"
           value="2"
           size="large"
+          index={1}
         />
         <CheckBox
           name="somethingelse"
           data-testid="test-checkbox3"
           value="3"
           size="large"
+          index={2}
         />
       </CheckBoxGroup>
     );

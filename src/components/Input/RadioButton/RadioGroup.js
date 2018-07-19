@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Provider from "./Provider";
+import Provider from "../../SelectionProvider/Provider";
+import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 
 const RadioGroup = ({ onChange, children, value }) => (
   <Provider onChange={onChange} isMultiSelect={false} value={value}>
-    <div role="radiogroup">{children}</div>
+    <KeyBoardProvider role="radiogroup">{children}</KeyBoardProvider>
   </Provider>
 );
 
