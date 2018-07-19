@@ -21,6 +21,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <svg
           fill="#1F262D"
           height="15"
+          style="transform: rotate(-180deg);"
           viewBox="0 0 15 7"
           width="15"
         >
@@ -1333,6 +1334,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on ov
         <svg
           fill="#1F262D"
           height="15"
+          style="transform: rotate(-180deg);"
           viewBox="0 0 15 7"
           width="15"
         >
@@ -2645,6 +2647,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <svg
           fill="#1F262D"
           height="15"
+          style=""
           viewBox="0 0 15 7"
           width="15"
         >
@@ -3957,6 +3960,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <svg
           fill="#1F262D"
           height="15"
+          style="transform: rotate(-180deg);"
           viewBox="0 0 15 7"
           width="15"
         >
@@ -5269,6 +5273,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         <svg
           fill="#1F262D"
           height="15"
+          style="transform: rotate(-180deg);"
           viewBox="0 0 15 7"
           width="15"
         >
