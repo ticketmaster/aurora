@@ -51,6 +51,7 @@ TextBase.propTypes = {
   tag: PropTypes.oneOf(["div", "span", "p"]),
   variant: PropTypes.oneOf(["accent", "dark", "light"]),
   accent: PropTypes.oneOf([
+    "",
     "aquamarine",
     "azure",
     "alert",
