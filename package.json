@@ -61,8 +61,8 @@
     "classnames": ">=2",
     "prop-types": ">=15",
     "react": ">=15",
-    "react-dom": ">=15",
     "react-addons-css-transition-group": ">=15",
+    "react-dom": ">=15",
     "styled-components": ">=2"
   },
   "devDependencies": {
@@ -74,7 +74,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "catalog": "3.5.5",
+    "catalog": "https://github.com/nyonchev/catalog",
     "classnames": "^2.2.5",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^16.1.0",
