@@ -2,10 +2,16 @@
 
 ```react
 responsive: true
-state: {visible:  true}
 ---
 
-<Backdrop>
+<ReactCSSTransitionGroup
+    transitionName="bottom-sheet"
+    component={Backdrop}
+    transitionAppear
+    transitionAppearTimeout={300}
+    transitionEnterTimeout={300}
+    transitionLeaveTimeout={300}
+              >
     <BottomSheet>
      <ListRowOverflow>
       {sections.map(section =>
@@ -17,5 +23,5 @@ state: {visible:  true}
     </ListRowOverflow>
 
   </BottomSheet>
-</Backdrop>
+</ReactCSSTransitionGroup>
 ```

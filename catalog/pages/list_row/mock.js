@@ -81,7 +81,8 @@ export const sections = [
     key: "123",
     items: [
       {
-        title: "The Roots",
+        title:
+          "The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
         icon: (
           <ThumbnailCircleImage
             size={40}

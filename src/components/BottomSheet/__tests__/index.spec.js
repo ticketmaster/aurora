@@ -5,14 +5,13 @@ import BottomSheet from "../";
 
 describe("<BottomSheet />", () => {
   it("renders BottomSheet Container correctly", () => {
-    const { container, unmount } = render(
+    const { container } = render(
       <BottomSheet>
         <div>Europe</div>
         <div>Africa</div>
         <div>Asias</div>
       </BottomSheet>
     );
-    unmount();
     expect(container.innerHTML).toMatchSnapshot();
   });
 

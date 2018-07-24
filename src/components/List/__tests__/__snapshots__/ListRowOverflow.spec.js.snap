@@ -61,13 +61,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 .c6 {
   font-size: 14px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   color: rgba(0,0,15,1);
   font-weight: 600;
 }
@@ -89,25 +82,11 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 .c11 {
   font-size: 14px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   color: rgba(0,0,15,0.6);
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -132,27 +111,36 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-bottom: 16px;
 }
 
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: default;
-}
-
-.c10:not(:last-of-type) {
-  margin-bottom: 16px;
-}
-
 .c8 {
   padding-right: 8px;
+}
+
+.c9 {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 2.4em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.c9:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c9:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
 }
 
 @media screen and (min-width:481px) {
@@ -230,7 +218,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c7"
+      className="section-item c7"
       onClick={[Function]}
       role="link"
     >
@@ -263,7 +251,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <a
-          className="c9"
+          className="c9 c10"
           color=""
           href="/"
           rel="_self"
@@ -275,8 +263,8 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c10"
-      onClick={undefined}
+      className="section-item c7"
+      onClick={[Function]}
       role="link"
     >
       <div
@@ -330,7 +318,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c7"
+      className="section-item c7"
       onClick={[Function]}
       role="link"
     >
@@ -363,7 +351,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <a
-          className="c9"
+          className="c9 c10"
           color=""
           href="/"
           rel="_self"
@@ -394,7 +382,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c7"
+      className="section-item c7"
       onClick={[Function]}
       role="link"
     >
@@ -414,19 +402,19 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <a
-          className="c9"
+          className="c9 c10"
           color=""
           href="/"
           rel="_self"
           target=""
         >
-          The Roots hfkjsdhfjkhjdsffisfiojkedewjdkwek
+          The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj
         </a>
       </div>
     </div>
     <div
       aria-label="Section Item"
-      className="c7"
+      className="section-item c7"
       onClick={[Function]}
       role="link"
     >
@@ -446,7 +434,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <a
-          className="c9"
+          className="c9 c10"
           color=""
           href="/"
           rel="_self"
@@ -472,7 +460,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c7"
+      className="section-item c7"
       onClick={[Function]}
       role="link"
     >
@@ -505,7 +493,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <a
-          className="c9"
+          className="c9 c10"
           color=""
           href="/"
           rel="_self"

@@ -1,4 +1,5 @@
 import { pageLoader } from "catalog";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 import BottomSheet from "../../../src/components/BottomSheet";
 import Backdrop from "../../../src/components/Backdrop/index";
@@ -17,7 +18,8 @@ export default {
     Section,
     SectionItem,
     sections,
-    ListRowOverflow
+    ListRowOverflow,
+    ReactCSSTransitionGroup
   },
   content: pageLoader(() => import("./index.md"))
 };

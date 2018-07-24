@@ -17,6 +17,7 @@ import bottomSheet from "./pages/bottom_sheet";
 import image from "./pages/image";
 import images from "./pages/images";
 import breadcrumbs from "./pages/breadcrumbs";
+import modal from "./pages/modal";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -37,7 +38,8 @@ const pages = [
   inputs,
   navBar,
   breadcrumbs,
-  bottomSheet
+  bottomSheet,
+  modal
 ];
 
 const sizes = [
