@@ -44,6 +44,7 @@
     ]
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
     "collectCoverageFrom": [
       "src/**/*.js"
