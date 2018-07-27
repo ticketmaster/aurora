@@ -44,6 +44,8 @@
     ]
   },
   "jest": {
+    "testURL": "http://localhost/",
+    "testEnvironment": "jsdom",
     "setupTestFrameworkScriptFile": "./config/jest.config.js",
     "collectCoverageFrom": [
       "src/**/*.js"
