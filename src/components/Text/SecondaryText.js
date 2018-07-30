@@ -8,8 +8,8 @@ const SecondaryStyledText = StyledText.extend`
   color: ${colors.onyx.light};
 `;
 
-const SecondaryText = ({ children }) => (
-  <SecondaryStyledText>{children}</SecondaryStyledText>
+const SecondaryText = ({ children, ...props }) => (
+  <SecondaryStyledText {...props}>{children}</SecondaryStyledText>
 );
 
 SecondaryText.propTypes = {

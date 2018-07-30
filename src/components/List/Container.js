@@ -4,16 +4,16 @@ import PropTypes from "prop-types";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 import { ContainerProvider } from "./Context";
-import DeviceSizeProvider from "../DeviceSize/Provider";
 import DisplayFor from "../DeviceSize";
 import Portal from "../Portal";
 import Backdrop from "../Backdrop";
 import BottomSheet from "../BottomSheet";
+import Modal from "../Modal";
 import spacing from "../../theme/spacing";
 
 const Container = styled.div`
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   padding-left: ${spacing.cozy};
   padding-right: ${spacing.cozy};
 `;
@@ -21,13 +21,33 @@ const Container = styled.div`
 class ListContainer extends Component {
   state = {
     openIndex: -1,
-    portalContent: null,
+    mobilePortalContent: null,
+    desktopPortalContent: null,
+    onCloseRequest: () => {}, // eslint-disable-line
     renderIntoPortal: () => {} // eslint-disable-line
   };
 
   componentWillMount() {
-    this.setState({ renderIntoPortal: this.renderIntoPortal }); // eslint-disable-line
+    this.setState({
+      renderIntoPortal: this.renderIntoPortal, // eslint-disable-line
+      onCloseRequest: this.onCloseRequest // eslint-disable-line
+    });
   }
+
+  onCloseRequest = () => {
+    if (this.state.desktopPortalContent) {
+      this.setState({ desktopPortalContent: null });
+      this.props.onModalClose();
+    }
+    if (this.state.mobilePortalContent) {
+      this.setState({
+        mobilePortalContent: null,
+        openIndex: -1
+      });
+
+      this.props.onRowCollapse();
+    }
+  };
 
   onExpandOrCollapse = event => {
     event.preventDefault();
@@ -38,43 +58,39 @@ class ListContainer extends Component {
       target
     } = event;
 
-    const { onRowCollapse } = this.props;
-
     if (
-      target.className.includes("container--overlay") ||
-      target.className.includes("button--cancel")
+      target.className.includes("button--expand-or-collapse") ||
+      target.className.includes("button--more-info")
     ) {
-      onRowCollapse();
-    }
+      const dataIndex = parseInt(index, 10);
 
-    const dataIndex = target.className.includes("container--overlay")
-      ? this.state.openIndex
-      : parseInt(index, 10);
-
-    if (dataIndex > -1) {
-      return this.state.openIndex === dataIndex
-        ? this.setState({ openIndex: -1, portalContent: null })
-        : this.setState({ openIndex: dataIndex });
+      if (dataIndex > -1) {
+        if (target.className.includes("button--expand-or-collapse")) {
+          return this.state.openIndex === dataIndex
+            ? this.setState({ openIndex: -1 })
+            : this.setState({ openIndex: dataIndex });
+        }
+        return this.setState({ openIndex: dataIndex });
+      }
     }
     return null;
   };
 
-  renderIntoPortal = ({ children }) => {
-    this.setState({ portalContent: children });
-  };
+  renderIntoPortal = ({ children, contentType }) =>
+    contentType === "mobile"
+      ? this.setState({ mobilePortalContent: children })
+      : this.setState({ desktopPortalContent: children });
 
   render() {
     return (
-      <DeviceSizeProvider>
-        <Container onClick={this.onExpandOrCollapse}>
-          <ContainerProvider value={this.state}>
-            {this.props.children}
-          </ContainerProvider>
+      <Container onClick={this.onExpandOrCollapse}>
+        <ContainerProvider value={this.state}>
+          {this.props.children}
 
           <DisplayFor small>
             <Portal>
               <ReactCSSTransitionGroup
-                transitionName="modal"
+                transitionName="bottom-sheet"
                 component={this.state.openIndex !== -1 ? Backdrop : "span"}
                 transitionAppear
                 transitionAppearTimeout={300}
@@ -82,27 +98,46 @@ class ListContainer extends Component {
                 transitionLeaveTimeout={300}
               >
                 {this.state.openIndex !== -1 &&
-                  this.state.portalContent && (
+                  this.state.mobilePortalContent && (
                     <BottomSheet index={this.state.openIndex}>
-                      {this.state.portalContent}
+                      {this.state.mobilePortalContent}
                     </BottomSheet>
                   )}
               </ReactCSSTransitionGroup>
             </Portal>
           </DisplayFor>
-        </Container>
-      </DeviceSizeProvider>
+
+          <DisplayFor medium large xLarge>
+            <Portal>
+              <ReactCSSTransitionGroup
+                transitionName="modal"
+                component={this.state.desktopPortalContent ? Backdrop : "span"}
+                transitionAppear
+                transitionAppearTimeout={300}
+                transitionEnterTimeout={300}
+                transitionLeaveTimeout={100}
+              >
+                {this.state.desktopPortalContent && (
+                  <Modal>{this.state.desktopPortalContent}</Modal>
+                )}
+              </ReactCSSTransitionGroup>
+            </Portal>
+          </DisplayFor>
+        </ContainerProvider>
+      </Container>
     );
   }
 }
 
 ListContainer.defaultProps = {
-  onRowCollapse: () => {}
+  onRowCollapse: () => {},
+  onModalClose: () => {}
 };
 
 ListContainer.propTypes = {
   children: PropTypes.node.isRequired,
-  onRowCollapse: PropTypes.func
+  onRowCollapse: PropTypes.func,
+  onModalClose: PropTypes.func
 };
 
 export default ListContainer;

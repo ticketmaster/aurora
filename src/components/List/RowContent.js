@@ -14,6 +14,7 @@ import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 
 import IconButton from "../Button/IconButton";
+import typography from "../../theme/typography";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -63,8 +64,26 @@ const LinkWrapper = styled.a`
       ${props => (props.variant === "withLink" ? spacing.cozy : "18px")}
       0;
     &:hover {
-    background-color: ${colors.azure.light};
-  }
+      background-color: ${colors.azure.light};
+    }
+    
+    &:hover .text--primary:after {
+      background-color: ${colors.azure.muted};
+    }
+
+    &:hover .text--secondary:after {
+      background-color: ${colors.azure.muted};
+    }
+
+
+    &:hover .text--primary:before {
+      content: ""
+    }
+
+    &:hover .text--secondary:before {
+      content: ""
+    }
+
   `};
 `;
 
@@ -82,7 +101,7 @@ const TitleColumn = styled(Column)`
   display: none;
   ${largeAndUp`
     display: ${props => (props.isOpen ? "none" : "flex")};
-    justify-content: center;
+    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
   `};
 `;
@@ -111,7 +130,7 @@ const SubTitleColumn = styled(Column)`
   display: none;
   ${largeAndUp`
     display: flex;
-    justify-content: center;
+    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
   `};
 `;
@@ -162,6 +181,64 @@ const MobileContainer = styled.div`
   `};
 `;
 
+const MultilinePrimaryText = styled(PrimaryText).attrs({
+  className: "text--primary"
+})`
+  overflow: hidden;
+  position: relative;
+  line-height: ${typography.lineHeight.header}em;
+  max-height: 2.5em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
+  }
+`;
+
+const SingleLineSecondaryText = styled(SecondaryText).attrs({
+  className: "text--secondary"
+})`
+  overflow: hidden;
+  position: relative;
+  line-height: ${typography.lineHeight.header}em;
+  max-height: ${typography.lineHeight.header}em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background-color: white;
+  }
+`;
+
 const ListRowContent = ({
   rowItem: {
     title,
@@ -189,12 +266,9 @@ const ListRowContent = ({
         aria-label={isOpen ? "Collapse Row" : "Expand Row"}
         aria-expanded={isOpen}
         data-index={index}
+        style={isOpen ? { transform: "rotate(-180deg)" } : null}
       >
-        <ChevronIcon
-          size={15}
-          color={colors.blackPearl}
-          direction={isOpen ? "up" : "down"}
-        />
+        <ChevronIcon size={15} color={colors.blackPearl} />
       </IconWrapper>
       <LinkWrapper
         role="link"
@@ -211,28 +285,32 @@ const ListRowContent = ({
 
         <Row style={{ width: "100%" }}>
           <MobileOnlyColumn small={12}>
-            <PrimaryText>{title}</PrimaryText>
-            <SecondaryText>{subTitle}</SecondaryText>
+            <MultilinePrimaryText>{title}</MultilinePrimaryText>
+            <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
           </MobileOnlyColumn>
 
           <TabletOnlyColumn isOpen={isOpen} medium={12}>
-            <PrimaryText style={{ display: isOpen ? "none" : "flex" }}>
+            <MultilinePrimaryText style={{ display: isOpen ? "none" : "flex" }}>
               {title}
-            </PrimaryText>
+            </MultilinePrimaryText>
           </TabletOnlyColumn>
           <TabletOnlyColumn isOpen={isOpen} medium={12}>
             {isOpen ? (
-              <PrimaryText>{subTitle}</PrimaryText>
+              <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
             ) : (
-              <SecondaryText>{subTitle}</SecondaryText>
+              <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
             )}
           </TabletOnlyColumn>
 
           <TitleColumn isOpen={isOpen} large={6} xLarge={6}>
-            <PrimaryText>{title}</PrimaryText>
+            <MultilinePrimaryText>{title}</MultilinePrimaryText>
           </TitleColumn>
-          <SubTitleColumn large={isOpen ? 12 : 6} xLarge={isOpen ? 12 : 6}>
-            <PrimaryText>{subTitle}</PrimaryText>
+          <SubTitleColumn
+            isOpen={isOpen}
+            large={isOpen ? 12 : 6}
+            xLarge={isOpen ? 12 : 6}
+          >
+            <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
           </SubTitleColumn>
         </Row>
       </LinkWrapper>
@@ -258,11 +336,7 @@ const ListRowContent = ({
           role="button"
           onClick={onOverflowClick}
         >
-          <OverflowIcon
-            size={22}
-            data-index={index}
-            color={colors.onyx.light}
-          />
+          <OverflowIcon size={22} color={colors.onyx.light} />
         </IconButton>
       </MobileContainer>
     </ListContainer>

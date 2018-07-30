@@ -15,7 +15,7 @@ const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
         isOpen={openIndex === index}
         index={index}
         onOverflowClick={() => {
-          renderIntoPortal({ children });
+          renderIntoPortal({ children, contentType: "mobile" });
           onOverflowClick();
         }}
         {...props}
