@@ -18,6 +18,19 @@ describe("Header", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders withOverlay", () => {
+    const component = renderer.create(
+      <Header withOverlay>
+        <Heading>
+          <Heading.Strong>Generic</Heading.Strong>{" "}
+          <Heading.Span>Header</Heading.Span>
+        </Heading>
+      </Header>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders with custom level", () => {
     const component = renderer.create(
       <Header>

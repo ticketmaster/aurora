@@ -19,6 +19,9 @@ rows:
     Type: string
     Default:
     Notes: Uses an image as background instead of a gradient.
+  - Prop: withOverlay
+    Type: boolean
+    Notes: Applies a dark gradient to header
 ```
 
 ### Heading Props

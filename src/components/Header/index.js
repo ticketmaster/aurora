@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 import Gradient from "../Gradient";
 import Row from "../Grid/Row";
@@ -8,6 +9,7 @@ import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 const HeaderGradient = Gradient.extend`
   display: flex;
+  position: relative;
   align-items: flex-end;
   min-height: 122px;
   ${mediumAndUp`
@@ -21,8 +23,14 @@ const HeaderContainer = Container.extend`
   padding-top: 60px;
 `;
 
-const Header = ({ deg, from, to, children, style }) => (
-  <HeaderGradient deg={deg} from={from} to={to} style={style}>
+const Header = ({ deg, from, to, children, className, style, withOverlay }) => (
+  <HeaderGradient
+    deg={deg}
+    from={from}
+    to={to}
+    style={style}
+    className={classNames({ "gradient--overlay": withOverlay }, className)}
+  >
     <HeaderContainer>
       <Row>{children}</Row>
     </HeaderContainer>
@@ -31,11 +39,15 @@ const Header = ({ deg, from, to, children, style }) => (
 
 Header.propTypes = {
   ...Gradient.propTypes,
-  style: PropTypes.objectOf(PropTypes.string)
+  className: PropTypes.string,
+  style: PropTypes.objectOf(PropTypes.string),
+  withOverlay: PropTypes.bool
 };
 
 Header.defaultProps = {
-  style: {}
+  className: null,
+  style: {},
+  withOverlay: false
 };
 
 export default Header;
