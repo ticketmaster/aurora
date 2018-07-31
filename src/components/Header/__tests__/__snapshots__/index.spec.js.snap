@@ -35,6 +35,7 @@ exports[`Header renders with custom level 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -212,6 +213,7 @@ exports[`Header renders with default 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -323,6 +325,183 @@ exports[`Header renders with default 1`] = `
 
 <header
   className="c0"
+  from="#026cdf"
+  style={Object {}}
+  to="#3ac7ff"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="row c2"
+    >
+      <h2
+        className="c3"
+      >
+        <span
+          className="c4"
+        >
+          Generic
+        </span>
+         
+        <span
+          className="c5"
+        >
+          Header
+        </span>
+      </h2>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`Header renders withOverlay 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c2 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  min-height: 122px;
+}
+
+.c0.gradient--overlay:after {
+  z-index: 2;
+  height: 100%;
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  margin: 0 auto;
+  max-width: 1248px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.c5 {
+  font-weight: 300;
+}
+
+.c4 {
+  font-weight: 300;
+  font-weight: 800;
+}
+
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  line-height: 1.25;
+  color: rgba(255,255,255,1);
+  font-size: 24px;
+}
+
+@media screen and (min-width:481px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0 {
+    min-height: 140px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0 {
+    min-height: 218px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c3 {
+    font-size: 46px;
+  }
+}
+
+<header
+  className="gradient--overlay c0"
   from="#026cdf"
   style={Object {}}
   to="#3ac7ff"
