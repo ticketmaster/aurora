@@ -36,6 +36,9 @@ rows:
   - Prop: onRowCollapse
     Type: func
     Notes: Optional.
+  - Prop: onModalClose
+    Type: func
+    Notes: Optional.
 ```
 
 ### RowItem Prop Table

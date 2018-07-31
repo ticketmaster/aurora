@@ -881,7 +881,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
-  margin: 12px 0 12px 0;
+  margin: 12px 0 8px 0;
 }
 
 .c6 {
@@ -928,7 +928,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 18px 0 18px 0;
+  padding: 18px 0 8px 0;
 }
 
 .c20:disabled {
@@ -1165,7 +1165,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:481px) {
   .c5 {
-    margin: 18px 0 18px 0;
+    margin: 18px 0 8px 0;
   }
 
   .c5:hover {
@@ -1479,6 +1479,811 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           className="c8"
         >
           on Partner Site
+        </div>
+      </div>
+    </div>
+    <div
+      className="c27 c11"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c9 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c11 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c17 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c24 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 75%;
+  -webkit-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+}
+
+.c26 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 25%;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+
+.c13 {
+  font-size: 14px;
+  color: rgba(0,0,15,1);
+}
+
+.c8 {
+  font-size: 14px;
+  color: rgba(0,0,15,0.6);
+}
+
+.c7 {
+  font-size: 14px;
+  color: rgba(0,0,15,1);
+  font-weight: 600;
+}
+
+.c25 {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  min-width: 45px;
+  max-width: 45px;
+  height: 45px;
+  width: 45px;
+}
+
+.c4:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
+  cursor: not-allowed;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4 > * {
+  pointer-events: none;
+}
+
+.c22 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  min-width: 35px;
+  max-width: 35px;
+  height: 35px;
+  width: 35px;
+}
+
+.c22:disabled {
+  color: rgba(255,255,255 0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255 0.5);
+  cursor: not-allowed;
+}
+
+.c22:focus {
+  outline: none;
+}
+
+.c22 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c1:not(:last-of-type) {
+  border-bottom: 0.5px solid #E0E0E0;
+}
+
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  display: none;
+}
+
+.c5 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 12px 0 8px 0;
+}
+
+.c6 {
+  min-width: 101px;
+  max-width: 116px;
+  padding-left: 8px;
+}
+
+.c16 {
+  display: none;
+}
+
+.c15 {
+  display: none;
+}
+
+.c18 {
+  display: none;
+}
+
+.c20 {
+  font-size: 14px;
+  font-weight: 600;
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid rgba(2,108,223,1);
+  max-width: 102px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 18px 0 8px 0;
+}
+
+.c20:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c23 {
+  padding-left: 8px;
+}
+
+.c27 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c19 {
+  display: none;
+  padding-left: 16px;
+  padding-right: 24px;
+}
+
+.c12 {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.25em;
+  max-height: 2.5em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.c12:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c12:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+.c14 {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.25em;
+  max-height: 1.25em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.c14:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.c14:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background-color: white;
+}
+
+.c0 {
+  width: 100%;
+  overflow: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width:481px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c11 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c11 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c11 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c17 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c17 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c17 {
+    max-width: 50%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c24 {
+    max-width: 83.33333333333334%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 83.33333333333334%;
+    -ms-flex: 0 0 83.33333333333334%;
+    flex: 0 0 83.33333333333334%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c24 {
+    max-width: 87.5%;
+    -webkit-flex: 0 0 87.5%;
+    -ms-flex: 0 0 87.5%;
+    flex: 0 0 87.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c24 {
+    max-width: 90%;
+    -webkit-flex: 0 0 90%;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c26 {
+    max-width: 16.666666666666664%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 16.666666666666664%;
+    -ms-flex: 0 0 16.666666666666664%;
+    flex: 0 0 16.666666666666664%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c26 {
+    max-width: 12.5%;
+    -webkit-flex: 0 0 12.5%;
+    -ms-flex: 0 0 12.5%;
+    flex: 0 0 12.5%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c26 {
+    max-width: 10%;
+    -webkit-flex: 0 0 10%;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+  }
+}
+
+@media only screen and {
+  .c13 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    margin-bottom: 0;
+    border-radius: 4px;
+    box-shadow: 0;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    margin: 18px 0 8px 0;
+  }
+
+  .c5:hover {
+    background-color: rgba(2,108,223,0.2);
+  }
+
+  .c5:hover .text--primary:after {
+    background-color: rgba(2,108,223,0.01);
+  }
+
+  .c5:hover .text--secondary:after {
+    background-color: rgba(2,108,223,0.01);
+  }
+
+  .c5:hover .text--primary:before {
+    content: "";
+  }
+
+  .c5:hover .text--secondary:before {
+    content: "";
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c15 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c23 {
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c27 {
+    border-top: 0.5px solid #E0E0E0;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c21 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <button
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse c3 c4"
+        data-index={0}
+        role="button"
+        size={45}
+        style={null}
+      >
+        <svg
+          fill="#1F262D"
+          height={15}
+          style={Object {}}
+          viewBox="0 0 15 7"
+          width={15}
+        >
+          <path
+            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          />
+        </svg>
+      </button>
+      <a
+        aria-label="See Tickets"
+        className="c5"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="c6"
+        >
+          <div
+            className="c7"
+            color={null}
+            style={
+              Object {
+                "textTransform": "uppercase",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="c8"
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="row c9"
+          style={
+            Object {
+              "width": "100%",
+            }
+          }
+        >
+          <div
+            className="c10 c11"
+          >
+            <div
+              className="text--primary c12 c13"
+            >
+              Del Mar Fairgrounds
+            </div>
+            <div
+              className="text--secondary c14 c8"
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="c15 c11"
+          >
+            <div
+              className="text--primary c12 c13"
+              style={
+                Object {
+                  "display": "flex",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="c15 c11"
+          >
+            <div
+              className="text--secondary c14 c8"
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="c16 c17"
+          >
+            <div
+              className="text--primary c12 c13"
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="c18 c17"
+          >
+            <div
+              className="text--primary c12 c13"
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        className="c19"
+      >
+        <span
+          aria-label="See Tickets"
+          className="c20"
+          onClick={[Function]}
+          role="button"
+          width="102px"
+        >
+          See Tickets
+        </span>
+      </div>
+      <div
+        className="c21"
+      >
+        <button
+          aria-label="More Info"
+          className="button--more-info c22"
+          data-index={0}
+          onClick={[Function]}
+          role="button"
+          size={35}
+        >
+          <svg
+            fill="rgba(0, 0, 15, 0.6)"
+            height={22}
+            viewBox="0 0 5 21"
+            width={22}
+          >
+            <path
+              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="c23 row c9"
+    >
+      <div
+        className="c24"
+      >
+        <a
+          className="c25"
+          color=""
+          href="/"
+          rel="_self"
+          target=""
+        >
+          Ticket options available
+        </a>
+      </div>
+      <div
+        className="c26"
+      >
+        <div
+          className="c8"
+        >
+          click here
         </div>
       </div>
     </div>

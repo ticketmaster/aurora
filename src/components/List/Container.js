@@ -91,7 +91,7 @@ class ListContainer extends Component {
             <Portal>
               <ReactCSSTransitionGroup
                 transitionName="bottom-sheet"
-                component={this.state.openIndex !== -1 ? Backdrop : "span"}
+                component={this.state.mobilePortalContent ? Backdrop : "span"}
                 transitionAppear
                 transitionAppearTimeout={300}
                 transitionEnterTimeout={300}
