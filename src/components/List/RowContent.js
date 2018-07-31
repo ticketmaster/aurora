@@ -58,10 +58,10 @@ const LinkWrapper = styled.a`
   padding-bottom: ${spacing.cozy};
 
   margin: 12px 0
-    ${props => (props.variant === "withLink" ? spacing.cozy : "12px")} 0;
+    ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
   ${mediumAndUp`
     margin: 18px 0
-      ${props => (props.variant === "withLink" ? spacing.cozy : "18px")}
+      ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
       0;
     &:hover {
       background-color: ${colors.azure.light};
@@ -141,7 +141,7 @@ const ListRowButton = StyledButton.withComponent("span").extend`
   justify-content: center;
   align-items: center;
   padding: 18px 0
-      ${props => (props.variant === "withLink" ? spacing.cozy : "18px")}
+      ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
       0;
 `;
 
@@ -275,6 +275,7 @@ const ListRowContent = ({
         aria-label={buttonText}
         onClick={onClick}
         href={url}
+        rowVariant={variant}
       >
         <DateWrapper>
           <BoldText style={{ textTransform: "uppercase" }} color={dateColor}>
@@ -321,6 +322,7 @@ const ListRowContent = ({
           role="button"
           width="102px"
           variant="standard"
+          rowVariant={variant}
           onClick={onClick}
         >
           {buttonText}

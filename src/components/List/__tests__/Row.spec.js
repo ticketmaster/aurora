@@ -61,4 +61,24 @@ describe("<ListRow />", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("renders List Row with variant withLink correctly", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          rowItem={{
+            ...listItems[0],
+            variant: "withLink",
+            linkUrl: "/",
+            linkTitle: "Ticket options available",
+            linkSubTitle: "click here"
+          }}
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

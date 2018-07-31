@@ -9,11 +9,11 @@ const Row = styled.div.attrs({ className: "row" })`
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin-left: ${spacing.gutters.small / 2 * -1}px;
-  margin-right: ${spacing.gutters.small / 2 * -1}px;
+  margin-left: ${(spacing.gutters.small / 2) * -1}px;
+  margin-right: ${(spacing.gutters.small / 2) * -1}px;
   ${mediumAndUp`
-    margin-left: ${spacing.gutters.mediumAndUp / 2 * -1}px;
-    margin-right: ${spacing.gutters.mediumAndUp / 2 * -1}px;
+    margin-left: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
+    margin-right: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
   `};
   & .row {
     flex: 0 1 100%;

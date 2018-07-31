@@ -60,15 +60,18 @@ class Backdrop extends Component {
   };
 
   render() {
+    const { children, ...rest } = this.props;
     return (
       <ItemContainerConsumer>
         {value => {
           this.onCloseRequest = value ? value.onCloseRequest : () => {};
           return (
-            <Overlay onClick={this.handleOutsideClick}>
-              <BackdropProvider value={this.state}>
-                {this.props.children}
-              </BackdropProvider>
+            <Overlay onClick={this.handleOutsideClick} {...rest}>
+              {this.props.children && (
+                <BackdropProvider value={this.state}>
+                  {this.props.children}
+                </BackdropProvider>
+              )}
             </Overlay>
           );
         }}
