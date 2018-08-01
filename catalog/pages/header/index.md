@@ -120,3 +120,26 @@ responsive: true
   <div>Some other content</div>
 </React.Fragment>
 ```
+
+### Image Header with Underlaid Image Background
+
+```react
+responsive: true
+---
+<React.Fragment>
+  <HeaderWithImage
+    withUnderlay={true}
+    backgroundImage="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
+    backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, from: colors.defaultGradient.from, to: colors.heliotrope.base, style: { backgroundPosition: "center" } }}
+  >
+    <Column medium={7} large={8}>
+      <Heading level={1}>
+          <Heading.Strong>City</Heading.Strong>
+          {" "}
+          <Heading.Span>Header</Heading.Span>
+      </Heading>
+    </Column>
+  </HeaderWithImage>
+  <div>Some other content</div>
+</React.Fragment>
+```

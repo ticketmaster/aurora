@@ -8,7 +8,7 @@ import Container from "../Grid/Container";
 import Row from "../Grid/Row";
 import { mediumAndUp } from "../../theme/mediaQueries";
 
-const GradientBackground = styled(Gradient)`
+const GradientBackground = Gradient.extend`
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@ const GradientBackground = styled(Gradient)`
   max-height: 218px;
 `;
 
-const ImageBackground = styled(GradientBackground)`
+const ImageBackground = GradientBackground.extend`
   background-size: cover;
   background-repeat: no-repeat;
 `;
@@ -51,38 +51,58 @@ const ImageHeader = ({
   to,
   deg,
   backgroundImage,
+  backgroundImageProps,
   withOverlay,
+  withUnderlay,
   ...props
-}) => (
-  <Wrapper {...props}>
-    {backgroundImage ? (
-      <ImageBackground
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-        className={classNames({ "gradient--overlay": withOverlay })}
-        aria-hidden
-      />
-    ) : (
-      <GradientBackground
-        from={from}
-        to={to}
-        deg={deg}
-        className={classNames({ "gradient--overlay": withOverlay })}
-      />
-    )}
-    <ContainerWrapper>
-      <ContainerRow>{children}</ContainerRow>
-    </ContainerWrapper>
-  </Wrapper>
-);
+}) => {
+  const {
+    style: backgroundImageStyle,
+    ...otherBackgroundImageProps
+  } = backgroundImageProps;
+  return (
+    <Wrapper {...props}>
+      {backgroundImage ? (
+        <ImageBackground
+          style={{
+            ...(backgroundImageStyle || {}),
+            backgroundImage: `url(${backgroundImage})`
+          }}
+          {...otherBackgroundImageProps}
+          className={classNames({
+            "gradient--overlay": withOverlay,
+            "gradient--underlay": withUnderlay
+          })}
+          aria-hidden
+        />
+      ) : (
+        <GradientBackground
+          from={from}
+          to={to}
+          deg={deg}
+          className={classNames({
+            "gradient--overlay": withOverlay,
+            "gradient--underlay": withUnderlay
+          })}
+        />
+      )}
+      <ContainerWrapper>
+        <ContainerRow>{children}</ContainerRow>
+      </ContainerWrapper>
+    </Wrapper>
+  );
+};
 
 ImageHeader.propTypes = {
   ...Gradient.propTypes,
   backgroundImage: PropTypes.string,
+  backgroundImageProps: PropTypes.objectOf(PropTypes.any),
   withOverlay: PropTypes.bool
 };
 
 ImageHeader.defaultProps = {
   backgroundImage: null,
+  backgroundImageProps: {},
   withOverlay: false
 };
 

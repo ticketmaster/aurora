@@ -2,23 +2,6 @@
 
 exports[`WithImage renders header background image 1`] = `
 .c3 {
-  z-index: 1;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c3.gradient--overlay:after {
-  z-index: 2;
-  height: 100%;
-  content: "";
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c5 {
   margin: 0 auto;
   max-width: 1248px;
   width: 100%;
@@ -27,7 +10,7 @@ exports[`WithImage renders header background image 1`] = `
   box-sizing: border-box;
 }
 
-.c7 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,7 +29,7 @@ exports[`WithImage renders header background image 1`] = `
   margin-right: -8px;
 }
 
-.c7 .row {
+.c5 .row {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -54,7 +37,9 @@ exports[`WithImage renders header background image 1`] = `
   margin-right: 0;
 }
 
-.c2 {
+.c1 {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
   position: absolute;
   top: 0;
   left: 0;
@@ -62,11 +47,30 @@ exports[`WithImage renders header background image 1`] = `
   z-index: 1;
   min-height: 218px;
   max-height: 218px;
-}
-
-.c1 {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.c1.gradient--overlay:after,
+.c1.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c1.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
 .c0 {
@@ -74,12 +78,12 @@ exports[`WithImage renders header background image 1`] = `
   position: relative;
 }
 
-.c4 {
+.c2 {
   padding-top: 60px;
   z-index: 2;
 }
 
-.c6 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -88,7 +92,7 @@ exports[`WithImage renders header background image 1`] = `
   z-index: 2;
 }
 
-.c8 {
+.c6 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -100,50 +104,62 @@ exports[`WithImage renders header background image 1`] = `
 
 @media screen and (min-width:481px) {
   .c3 {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c3 {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c3.gradient--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c3.gradient--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c5 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c7 {
+  .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c9 {
+  .c1 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c7 {
     padding-top: 60px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c8 {
+  .c6 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -154,7 +170,7 @@ exports[`WithImage renders header background image 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c8 {
+  .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -163,7 +179,7 @@ exports[`WithImage renders header background image 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c8 {
+  .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -176,7 +192,7 @@ exports[`WithImage renders header background image 1`] = `
 >
   <span
     aria-hidden={true}
-    className="c1 c2 c3"
+    className="c1"
     from="#026cdf"
     style={
       Object {
@@ -186,16 +202,464 @@ exports[`WithImage renders header background image 1`] = `
     to="#3ac7ff"
   />
   <div
-    className="c4 c5"
+    className="c2 c3"
   >
     <div
-      className="c6 row c7"
+      className="c4 row c5"
     >
       <div
-        className="c8"
+        className="c6"
       >
         <div
-          className="c9"
+          className="c7"
+        >
+          <img
+            alt="place holder"
+            src="https://placekitten.com/g/400/242"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`WithImage renders header background image correctly when a withOverlay prop equaling true is passed 1`] = `
+.c3 {
+  margin: 0 auto;
+  max-width: 1248px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c5 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 218px;
+  max-height: 218px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c1.gradient--overlay:after,
+.c1.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c1.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0 {
+  width: 100%;
+  position: relative;
+}
+
+.c2 {
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c7 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c6 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c6 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+<header
+  className="c0"
+>
+  <span
+    aria-hidden={true}
+    className="gradient--overlay c1"
+    from="#026cdf"
+    style={
+      Object {
+        "backgroundImage": "url(https://placekitten.com/g/2/2)",
+      }
+    }
+    to="#3ac7ff"
+  />
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4 row c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
+        >
+          <img
+            alt="place holder"
+            src="https://placekitten.com/g/400/242"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+`;
+
+exports[`WithImage renders header background image correctly when a withUnderlay prop equaling true is passed 1`] = `
+.c3 {
+  margin: 0 auto;
+  max-width: 1248px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c5 .row {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 218px;
+  max-height: 218px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c1.gradient--overlay:after,
+.c1.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c1.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0 {
+  width: 100%;
+  position: relative;
+}
+
+.c2 {
+  padding-top: 60px;
+  z-index: 2;
+}
+
+.c4 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width:481px) {
+  .c3 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c5 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c7 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c6 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .c6 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+<header
+  className="c0"
+>
+  <span
+    aria-hidden={true}
+    className="gradient--underlay c1"
+    from="#026cdf"
+    style={
+      Object {
+        "backgroundImage": "url(https://placekitten.com/g/2/2)",
+      }
+    }
+    to="#3ac7ff"
+  />
+  <div
+    className="c2 c3"
+  >
+    <div
+      className="c4 row c5"
+    >
+      <div
+        className="c6"
+      >
+        <div
+          className="c7"
         >
           <img
             alt="place holder"
@@ -209,24 +673,7 @@ exports[`WithImage renders header background image 1`] = `
 `;
 
 exports[`WithImage renders header with image 1`] = `
-.c2 {
-  z-index: 1;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2.gradient--overlay:after {
-  z-index: 2;
-  height: 100%;
-  content: "";
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c4 {
+.c3 {
   margin: 0 auto;
   max-width: 1248px;
   width: 100%;
@@ -235,7 +682,7 @@ exports[`WithImage renders header with image 1`] = `
   box-sizing: border-box;
 }
 
-.c6 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,7 +701,7 @@ exports[`WithImage renders header with image 1`] = `
   margin-right: -8px;
 }
 
-.c6 .row {
+.c5 .row {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -263,6 +710,8 @@ exports[`WithImage renders header with image 1`] = `
 }
 
 .c1 {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
   position: absolute;
   top: 0;
   left: 0;
@@ -272,17 +721,39 @@ exports[`WithImage renders header with image 1`] = `
   max-height: 218px;
 }
 
+.c1.gradient--overlay:after,
+.c1.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c1.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
 .c0 {
   width: 100%;
   position: relative;
 }
 
-.c3 {
+.c2 {
   padding-top: 60px;
   z-index: 2;
 }
 
-.c5 {
+.c4 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -291,7 +762,7 @@ exports[`WithImage renders header with image 1`] = `
   z-index: 2;
 }
 
-.c7 {
+.c6 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -302,51 +773,63 @@ exports[`WithImage renders header with image 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c2 {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c2 {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c2.gradient--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c2.gradient--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:481px) {
-  .c4 {
+  .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c6 {
+  .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c8 {
-    padding-top: 60px;
+  .c1 {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c1.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:481px) {
   .c7 {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c6 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -357,7 +840,7 @@ exports[`WithImage renders header with image 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c7 {
+  .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -366,7 +849,7 @@ exports[`WithImage renders header with image 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c7 {
+  .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -378,21 +861,21 @@ exports[`WithImage renders header with image 1`] = `
   className="c0"
 >
   <span
-    className="c1 c2"
+    className="c1"
     from="#026cdf"
     to="#3ac7ff"
   />
   <div
-    className="c3 c4"
+    className="c2 c3"
   >
     <div
-      className="c5 row c6"
+      className="c4 row c5"
     >
       <div
-        className="c7"
+        className="c6"
       >
         <div
-          className="c8"
+          className="c7"
         >
           <img
             alt="place holder"
