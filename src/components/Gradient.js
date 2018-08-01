@@ -16,15 +16,19 @@ const Gradient = styled.span`
       `linear-gradient(${props.deg.large}, ${props.from}, ${props.to})`};
   `};
 
-  &.gradient--overlay:after {
-    z-index: 2;
+  &.gradient--overlay:after,
+  &.gradient--underlay:after {
     height: 100%;
     content: "";
-    opacity: 0.4;
     top: 0;
     left: 0;
     right: 0;
     position: absolute;
+  }
+
+  &.gradient--overlay:after {
+    z-index: 2;
+    opacity: 0.4;
     background-image: linear-gradient(77deg, rgba(0, 0, 0, 0), #000000);
     ${mediumAndUp`
         background-image: linear-gradient(82deg, rgba(0, 0, 0, 0), #000000);
@@ -33,6 +37,20 @@ const Gradient = styled.span`
     ${largeAndUp`
       background-image: linear-gradient(86deg, rgba(0, 0, 0, 0), #000000);
       `};
+  }
+
+  &.gradient--underlay:after {
+    z-index: -1;
+    opacity: 0.8;
+    background-image: ${props =>
+      `linear-gradient(${props.deg.small}, ${props.from}, ${props.to})`};
+    ${mediumAndUp`
+      background-image: ${props =>
+        `linear-gradient(${props.deg.medium}, ${props.from}, ${props.to})`};
+    `} ${largeAndUp`
+      background-image: ${props =>
+        `linear-gradient(${props.deg.large}, ${props.from}, ${props.to})`};
+    `};
   }
 `;
 

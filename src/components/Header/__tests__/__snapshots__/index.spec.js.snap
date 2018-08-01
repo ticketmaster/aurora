@@ -43,16 +43,26 @@ exports[`Header renders with custom level 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after {
-  z-index: 2;
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
   height: 100%;
   content: "";
-  opacity: 0.4;
   top: 0;
   left: 0;
   right: 0;
   position: absolute;
+}
+
+.c0.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
 .c1 {
@@ -111,6 +121,18 @@ exports[`Header renders with custom level 1`] = `
 @media screen and (min-width:769px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
@@ -221,16 +243,26 @@ exports[`Header renders with default 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after {
-  z-index: 2;
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
   height: 100%;
   content: "";
-  opacity: 0.4;
   top: 0;
   left: 0;
   right: 0;
   position: absolute;
+}
+
+.c0.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
 .c1 {
@@ -289,6 +321,18 @@ exports[`Header renders with default 1`] = `
 @media screen and (min-width:769px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
@@ -398,16 +442,26 @@ exports[`Header renders withOverlay 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after {
-  z-index: 2;
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
   height: 100%;
   content: "";
-  opacity: 0.4;
   top: 0;
   left: 0;
   right: 0;
   position: absolute;
+}
+
+.c0.gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
 .c1 {
@@ -466,6 +520,18 @@ exports[`Header renders withOverlay 1`] = `
 @media screen and (min-width:769px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:481px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c0.gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
