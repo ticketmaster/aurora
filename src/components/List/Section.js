@@ -6,15 +6,16 @@ import { spacing, colors, typography, constants } from "../../theme";
 
 import { Row, Column } from "../Grid";
 import BoldText from "../Text/BoldText";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { largeAndUp } from "../../theme/mediaQueries";
 
 const SectionContainer = styled(Column)`
-  padding: ${spacing.moderate};
+  padding: ${spacing.moderate} ${spacing.normal};
   border-bottom: 1px solid ${colors.lightGray};
 
-  ${mediumAndUp`
+  ${largeAndUp`
     border: none;
-    padding: 0 ${spacing.moderate} 0;
+    padding-left: ${spacing.moderate};
+    padding-right: ${spacing.moderate};
   `};
 `;
 
@@ -29,7 +30,7 @@ const TitleText = styled(BoldText)`
 `;
 
 const Section = ({ title, totalSections, children }) => (
-  <SectionContainer medium={constants.MAX_COLUMNS / totalSections}>
+  <SectionContainer large={constants.MAX_COLUMNS / totalSections}>
     <TitleContainer>
       <TitleText>{title}</TitleText>
     </TitleContainer>

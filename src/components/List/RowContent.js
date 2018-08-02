@@ -10,16 +10,15 @@ import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import ChevronIcon from "../Icons/Chevron";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { largeAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 
 import IconButton from "../Button/IconButton";
-import typography from "../../theme/typography";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
 
-  ${mediumAndUp`
+  ${largeAndUp`
   margin-bottom: ${props => (props.isOpen ? "12px" : 0)};
   border-radius: 4px;
   box-shadow: ${props =>
@@ -43,7 +42,7 @@ const IconWrapper = styled(IconButton).attrs({
   size: 45
 })`
   display: none;
-  ${mediumAndUp`
+  ${largeAndUp`
     display: block;
   `};
 `;
@@ -59,7 +58,7 @@ const LinkWrapper = styled.a`
 
   margin: 12px 0
     ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
-  ${mediumAndUp`
+  ${largeAndUp`
     margin: 18px 0
       ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
       0;
@@ -91,7 +90,7 @@ const DateWrapper = styled.div`
   min-width: 101px;
   max-width: 116px;
   padding-left: ${spacing.cozy};
-  ${mediumAndUp`
+  ${largeAndUp`
    padding-left: 0;
   }
   `};
@@ -107,22 +106,8 @@ const TitleColumn = styled(Column)`
 `;
 
 const MobileOnlyColumn = styled(Column)`
-  ${mediumAndUp`
-  display: none;
-  `};
-`;
-
-const TabletOnlyColumn = styled(Column)`
-  display: none;
-
-  ${mediumAndUp`
-    display: flex;
-    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
-    align-items: ${props => (props.isOpen ? "center" : "flex-start")};
-  `};
-
   ${largeAndUp`
-    display: none;
+  display: none;
   `};
 `;
 
@@ -147,7 +132,7 @@ const ListRowButton = StyledButton.withComponent("span").extend`
 
 const LinkRow = styled(Row)`
   padding-left: ${spacing.cozy};
-  ${mediumAndUp`
+  ${largeAndUp`
   padding-left: 12px;
   `};
 `;
@@ -156,7 +141,7 @@ const OverflowDesktopContainer = styled(Column)`
   max-height: 0;
   overflow: hidden;
 
-  ${mediumAndUp`
+  ${largeAndUp`
   border-top: 0.5px solid ${colors.lightGray};
   transition: max-height 0.5s ease-in-out;
   max-height: ${props => (props.isOpen ? "600px" : "0")};
@@ -168,7 +153,7 @@ const DesktopContainer = styled.div`
   padding-left: ${spacing.moderate};
   padding-right: ${spacing.normal};
 
-  ${mediumAndUp`
+  ${largeAndUp`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,67 +161,27 @@ const DesktopContainer = styled.div`
 `;
 
 const MobileContainer = styled.div`
-  ${mediumAndUp`
+  ${largeAndUp`
   display: none;
   `};
 `;
 
-const MultilinePrimaryText = styled(PrimaryText).attrs({
-  className: "text--primary"
-})`
+const MultilinePrimaryText = styled(PrimaryText)`
+  /* stylelint-disable */
+  display: -webkit-box;
   overflow: hidden;
-  position: relative;
-  line-height: ${typography.lineHeight.header}em;
-  max-height: 2.5em;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-
-  &:before {
-    content: "...";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: white;
-  }
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* stylelint-enable */
 `;
 
-const SingleLineSecondaryText = styled(SecondaryText).attrs({
-  className: "text--secondary"
-})`
+const SingleLineSecondaryText = styled(SecondaryText)`
+  /* stylelint-disable */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  position: relative;
-  line-height: ${typography.lineHeight.header}em;
-  max-height: ${typography.lineHeight.header}em;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-
-  &:before {
-    content: "...";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background-color: white;
-  }
+  /* stylelint-enable */
 `;
 
 const ListRowContent = ({
@@ -281,7 +226,7 @@ const ListRowContent = ({
           <BoldText style={{ textTransform: "uppercase" }} color={dateColor}>
             {dateTitle}
           </BoldText>
-          <SecondaryText>{dateSubTitle}</SecondaryText>
+          <SingleLineSecondaryText>{dateSubTitle}</SingleLineSecondaryText>
         </DateWrapper>
 
         <Row style={{ width: "100%" }}>
@@ -289,19 +234,6 @@ const ListRowContent = ({
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
             <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
           </MobileOnlyColumn>
-
-          <TabletOnlyColumn isOpen={isOpen} medium={12}>
-            <MultilinePrimaryText style={{ display: isOpen ? "none" : "flex" }}>
-              {title}
-            </MultilinePrimaryText>
-          </TabletOnlyColumn>
-          <TabletOnlyColumn isOpen={isOpen} medium={12}>
-            {isOpen ? (
-              <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
-            ) : (
-              <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
-            )}
-          </TabletOnlyColumn>
 
           <TitleColumn isOpen={isOpen} large={6} xLarge={6}>
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
