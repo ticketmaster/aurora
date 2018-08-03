@@ -20,7 +20,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .row {
+.c10 .c10 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -509,7 +509,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row c10"
+          className="c10"
           style={
             Object {
               "width": "100%",
@@ -614,7 +614,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .row {
+.c10 .c10 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -1198,7 +1198,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row c10"
+          className="c10"
           style={
             Object {
               "width": "100%",
@@ -1277,7 +1277,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 row c10"
+      className="c22 c10"
     >
       <div
         className="c23"
@@ -1329,7 +1329,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .row {
+.c10 .c10 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -1913,7 +1913,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row c10"
+          className="c10"
           style={
             Object {
               "width": "100%",
@@ -1992,7 +1992,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 row c10"
+      className="c22 c10"
     >
       <div
         className="c23"
@@ -2044,7 +2044,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .row {
+.c10 .c10 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -2533,7 +2533,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row c10"
+          className="c10"
           style={
             Object {
               "width": "100%",

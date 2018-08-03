@@ -20,7 +20,7 @@ exports[`Header renders with custom level 1`] = `
   margin-right: -8px;
 }
 
-.c2 .row {
+.c2 .c2 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -177,7 +177,7 @@ exports[`Header renders with custom level 1`] = `
     className="c1"
   >
     <div
-      className="row c2"
+      className="c2"
     >
       <h1
         className="c3"
@@ -220,7 +220,7 @@ exports[`Header renders with default 1`] = `
   margin-right: -8px;
 }
 
-.c2 .row {
+.c2 .c2 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -377,7 +377,7 @@ exports[`Header renders with default 1`] = `
     className="c1"
   >
     <div
-      className="row c2"
+      className="c2"
     >
       <h2
         className="c3"
@@ -419,7 +419,7 @@ exports[`Header renders withOverlay 1`] = `
   margin-right: -8px;
 }
 
-.c2 .row {
+.c2 .c2 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -576,7 +576,7 @@ exports[`Header renders withOverlay 1`] = `
     className="c1"
   >
     <div
-      className="row c2"
+      className="c2"
     >
       <h2
         className="c3"

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import spacing from "../../theme/spacing";
 import { mediumAndUp } from "../../theme/mediaQueries";
 
-const Row = styled.div.attrs({ className: "row" })`
+const Row = styled.div`
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
@@ -15,7 +15,7 @@ const Row = styled.div.attrs({ className: "row" })`
     margin-left: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
     margin-right: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
   `};
-  & .row {
+  & & {
     flex: 0 1 100%;
     margin-left: 0;
     margin-right: 0;
