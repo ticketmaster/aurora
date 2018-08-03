@@ -23,33 +23,14 @@ const IconContainer = styled.div`
   padding-right: ${spacing.cozy};
 `;
 
+/* stylelint-disable */
 const MultiLineLink = styled(Link)`
-  display: inline-block;
+  display: -webkit-box;
   overflow: hidden;
-  position: relative;
-  line-height: 1.2em;
-  max-height: 2.4em;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-
-  &:before {
-    content: "...";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: white;
-  }
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 `;
+/* stylelint-enable */
 
 const handleItemClick = (children, value, event, onItemClick) => {
   if (children && value) {

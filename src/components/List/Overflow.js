@@ -2,16 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { spacing } from "../../theme";
-import { mediumAndUp } from "../../theme/mediaQueries";
-
 import Row from "../Grid/Row";
+import spacing from "../../../src/theme/spacing";
+import { largeAndUp } from "../../theme/mediaQueries";
 
 const OverflowRow = styled(Row)`
-  ${mediumAndUp`
-    padding-left: ${spacing.shakira};
-    padding-top: ${spacing.moderate};
-    padding-bottom: ${spacing.moderate};
+  overflow: hidden;
+
+  ${largeAndUp`
+ padding-left: ${spacing.moderate};
   `};
 `;
 

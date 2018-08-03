@@ -82,10 +82,11 @@ class ListContainer extends Component {
       : this.setState({ desktopPortalContent: children });
 
   render() {
+    const { children, ...rest } = this.props;
     return (
-      <Container onClick={this.onExpandOrCollapse}>
+      <Container onClick={this.onExpandOrCollapse} {...rest}>
         <ContainerProvider value={this.state}>
-          {this.props.children}
+          {children}
 
           <DisplayFor small>
             <Portal>

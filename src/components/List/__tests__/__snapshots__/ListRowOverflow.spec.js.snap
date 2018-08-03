@@ -49,6 +49,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-right: 0;
 }
 
+.c0 {
+  overflow: hidden;
+}
+
 .c3 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -66,7 +70,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 .c2 {
-  padding: 16px;
+  padding: 16px 24px;
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -116,31 +120,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 .c9 {
-  display: inline-block;
+  display: -webkit-box;
   overflow: hidden;
-  position: relative;
-  line-height: 1.2em;
-  max-height: 2.4em;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-}
-
-.c9:before {
-  content: "...";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.c9:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  background: white;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 @media screen and (min-width:481px) {
@@ -150,22 +133,20 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:769px) {
   .c0 {
-    padding-left: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-left: 16px;
   }
 }
 
 @media screen and (min-width:481px) {
   .c3 {
-    max-width: 25%;
+    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -193,10 +174,11 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:769px) {
   .c2 {
     border: none;
-    padding: 0 16px 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
