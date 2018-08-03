@@ -1,5 +1,4 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
 
 import CheckBoxGroup from "../CheckBox/CheckBoxGroup";
@@ -90,9 +89,8 @@ describe("CheckBoxGroup", () => {
   });
 
   function renderGroupComponent(props = {}) {
-    return renderer.create(
+    return renderIntoDocument(
       <CheckBoxGroup {...props}>
-        {" "}
         <CheckBox
           name="something"
           data-testid="test-checkbox2"

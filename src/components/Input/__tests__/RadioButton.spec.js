@@ -1,5 +1,4 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import { renderIntoDocument, cleanup, fireEvent } from "react-testing-library";
 import RadioGroup from "../RadioButton/RadioGroup";
 import RadioButton from "../RadioButton/RadioButton";
@@ -131,10 +130,9 @@ describe("RadioGroup", () => {
   });
 
   function renderGroupComponent(props = {}) {
-    return renderer.create(
+    return renderIntoDocument(
       <RadioGroup {...props}>
-        {" "}
-        <RadioButton name="name1" value="value" size="small" index={0} />{" "}
+        <RadioButton name="name1" value="value" size="small" index={0} />
       </RadioGroup>
     );
   }
