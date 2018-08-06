@@ -29,7 +29,7 @@ exports[`WithImage renders header background image 1`] = `
   margin-right: -8px;
 }
 
-.c5 .row {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -205,7 +205,7 @@ exports[`WithImage renders header background image 1`] = `
     className="c2 c3"
   >
     <div
-      className="c4 row c5"
+      className="c4 c5"
     >
       <div
         className="c6"
@@ -253,7 +253,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   margin-right: -8px;
 }
 
-.c5 .row {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -429,7 +429,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
     className="c2 c3"
   >
     <div
-      className="c4 row c5"
+      className="c4 c5"
     >
       <div
         className="c6"
@@ -477,7 +477,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   margin-right: -8px;
 }
 
-.c5 .row {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -653,7 +653,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
     className="c2 c3"
   >
     <div
-      className="c4 row c5"
+      className="c4 c5"
     >
       <div
         className="c6"
@@ -701,7 +701,7 @@ exports[`WithImage renders header with image 1`] = `
   margin-right: -8px;
 }
 
-.c5 .row {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -869,7 +869,7 @@ exports[`WithImage renders header with image 1`] = `
     className="c2 c3"
   >
     <div
-      className="c4 row c5"
+      className="c4 c5"
     >
       <div
         className="c6"
