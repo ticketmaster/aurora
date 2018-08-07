@@ -6,7 +6,9 @@ import {
   CheckBoxButton,
   RadioGroup,
   CheckBoxGroup,
-  Input
+  Input,
+  DropDownGroup,
+  DropDownOption
 } from "../../../src/components/Input";
 import Header from "../../../src/components/Header";
 import Column from "../../../src/components/Grid/Column";
@@ -28,7 +30,9 @@ export default {
     RadioGroup,
     CheckBoxGroup,
     Input,
-    Spacing
+    Spacing,
+    DropDownGroup,
+    DropDownOption
   },
   content: pageLoader(() => import("./index.md"))
 };

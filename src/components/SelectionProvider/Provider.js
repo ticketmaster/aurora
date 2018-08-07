@@ -33,23 +33,18 @@ export default class ItemSelectionProvider extends React.Component {
     return null;
   }
 
-  componentDidMount() {}
-
   componentDidUpdate() {
     this.props.onChange && this.props.onChange(this.state.selected); // eslint-disable-line
   }
-
   onClick = ({ value }) => {
     if (!this.props.isMultiSelect) {
       this.setState({ selected: [value] });
       return;
     }
-
     if (!this.state.selected.includes(value)) {
       this.setState({ selected: [...this.state.selected, value] });
       return;
     }
-
     const { selected } = this.state;
     const index = selected.indexOf(value);
     this.setState({
@@ -57,7 +52,14 @@ export default class ItemSelectionProvider extends React.Component {
     });
   };
 
-  state = { selected: [], onClick: this.onClick, firstUpdate: true }; // eslint-disable-line
+  /* eslint-disable */
+  state = {
+    selected: [],
+    onClick: this.onClick,
+    firstUpdate: true,
+    children: []
+  };
+  /* eslint-enable */
 
   render() {
     return <Provider value={this.state}>{this.props.children}</Provider>;

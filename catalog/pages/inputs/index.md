@@ -133,7 +133,7 @@ span: 6
 </Container>
 ```
 
-## Check Box Button
+## Check Box Group
 
 ### Props
 
@@ -149,6 +149,10 @@ rows:
     Default: N/A
     Notes:
 ```
+
+## Check Box Button
+
+### Props
 
 ```table
 span: 6
@@ -287,6 +291,80 @@ span: 6
             <Spacing top={{small: "cozy"}}>
                 <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test3" label="Last Name"/>
             </Spacing>
+       </Column>
+    </Row>
+</Container>
+```
+
+## Drop Down Group
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: onChange
+    Type: string
+    Default: top
+    Notes: Can be top or left
+  - Prop: variant
+    Type: string
+    Default: 0
+    Notes: one of (0: border or 1: no-border
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Specifies pre-selected values
+  - Prop: label
+    Type: string
+    Default: N/A
+    Notes: for variant 1
+  - Prop: placeholder
+    Type: string
+    Default: N/A
+    Notes: for variant 0
+```
+
+## Drop Down Option
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: index
+    Type: string
+    Default: N/A
+    Notes: Required
+```
+
+```react
+span: 6
+---
+<Container>
+    <Row>
+        <Column medium={6}>
+            <DropDownGroup variant={0}>
+                <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+          </DropDownGroup>
+       </Column>
+
+        <Column medium={6}>
+            <DropDownGroup variant={1}>
+                <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+          </DropDownGroup>
        </Column>
     </Row>
 </Container>
