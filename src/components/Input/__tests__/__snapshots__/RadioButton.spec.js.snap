@@ -1,487 +1,181 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioGroup renders default input 1`] = `
-.c1 {
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  outline: none;
+Object {
+  "container": <div>
+    <div
+      role="radiogroup"
+    >
+      <label
+        class="radio-button--small sc-bwzfXH kAfebM"
+        id="name1valuelabel"
+      >
+        <input
+          aria-checked="false"
+          aria-labelledby="name1valuelabel"
+          class="sc-bdVaJa dQEANw"
+          id="name1valueinput"
+          name="name1"
+          role="radio"
+          type="radio"
+          value="value"
+        />
+        <span
+          class="sc-htpNat uTBrX"
+        />
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
 }
-
-.radio-button--large .c1 {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1 {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid rgba(0,0,15,0.6);
-}
-
-.radio-button--large .c1:before {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1:before {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before.radio-button--disabled {
-  color: grey;
-}
-
-.c1:after {
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  background-color: rgba(2,108,223,1);
-}
-
-.radio-button--large .c1:after {
-  width: 12px;
-  height: 12px;
-}
-
-.radio-button--small .c1:after {
-  width: 8px;
-  height: 8px;
-}
-
-.c1:hover:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:focus:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:checked:after {
-  opacity: 1;
-  position: absolute;
-}
-
-.c0 {
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: left;
-  color: rgba(0,0,15,1);
-  outline: none;
-}
-
-.c0.radio-button--disabled {
-  color: grey;
-  cursor: default;
-  pointer-events: none;
-}
-
-.c0.radio-button--large {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0.radio-button--small {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 7px;
-}
-
-<div
-  onKeyDown={[Function]}
-  role="radiogroup"
->
-   
-  <label
-    className="radio-button--small c0"
-    id="name1valuelabel"
-  >
-    <input
-      aria-checked={false}
-      aria-labelledby="name1valuelabel"
-      checked={false}
-      className="c1"
-      disabled={false}
-      id="name1valueinput"
-      name="name1"
-      onChange={[Function]}
-      onClick={null}
-      role="radio"
-      size="small"
-      type="radio"
-      value="value"
-    />
-    <span
-      className="c2"
-    />
-  </label>
-   
-</div>
 `;
 
 exports[`RadioGroup renders large input 1`] = `
-.c1 {
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  outline: none;
+Object {
+  "container": <div>
+    <div
+      role="radiogroup"
+    >
+      <label
+        class="radio-button--small sc-bwzfXH kAfebM"
+        id="name1valuelabel"
+      >
+        <input
+          aria-checked="false"
+          aria-labelledby="name1valuelabel"
+          class="sc-bdVaJa dQEANw"
+          id="name1valueinput"
+          name="name1"
+          role="radio"
+          type="radio"
+          value="value"
+        />
+        <span
+          class="sc-htpNat uTBrX"
+        />
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
 }
-
-.radio-button--large .c1 {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1 {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid rgba(0,0,15,0.6);
-}
-
-.radio-button--large .c1:before {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1:before {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before.radio-button--disabled {
-  color: grey;
-}
-
-.c1:after {
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  background-color: rgba(2,108,223,1);
-}
-
-.radio-button--large .c1:after {
-  width: 12px;
-  height: 12px;
-}
-
-.radio-button--small .c1:after {
-  width: 8px;
-  height: 8px;
-}
-
-.c1:hover:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:focus:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:checked:after {
-  opacity: 1;
-  position: absolute;
-}
-
-.c0 {
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: left;
-  color: rgba(0,0,15,1);
-  outline: none;
-}
-
-.c0.radio-button--disabled {
-  color: grey;
-  cursor: default;
-  pointer-events: none;
-}
-
-.c0.radio-button--large {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0.radio-button--small {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 7px;
-}
-
-<div
-  onKeyDown={[Function]}
-  role="radiogroup"
->
-   
-  <label
-    className="radio-button--small c0"
-    id="name1valuelabel"
-  >
-    <input
-      aria-checked={false}
-      aria-labelledby="name1valuelabel"
-      checked={false}
-      className="c1"
-      disabled={false}
-      id="name1valueinput"
-      name="name1"
-      onChange={[Function]}
-      onClick={null}
-      role="radio"
-      size="small"
-      type="radio"
-      value="value"
-    />
-    <span
-      className="c2"
-    />
-  </label>
-   
-</div>
 `;
 
 exports[`RadioGroup renders small input 1`] = `
-.c1 {
-  margin: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: relative;
-  outline: none;
+Object {
+  "container": <div>
+    <div
+      role="radiogroup"
+    >
+      <label
+        class="radio-button--small sc-bwzfXH kAfebM"
+        id="name1valuelabel"
+      >
+        <input
+          aria-checked="false"
+          aria-labelledby="name1valuelabel"
+          class="sc-bdVaJa dQEANw"
+          id="name1valueinput"
+          name="name1"
+          role="radio"
+          type="radio"
+          value="value"
+        />
+        <span
+          class="sc-htpNat uTBrX"
+        />
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
 }
-
-.radio-button--large .c1 {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1 {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 1px solid rgba(0,0,15,0.6);
-}
-
-.radio-button--large .c1:before {
-  width: 24px;
-  height: 24px;
-}
-
-.radio-button--small .c1:before {
-  width: 16px;
-  height: 16px;
-}
-
-.c1:before.radio-button--disabled {
-  color: grey;
-}
-
-.c1:after {
-  content: "";
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  border-radius: 50%;
-  background-color: rgba(2,108,223,1);
-}
-
-.radio-button--large .c1:after {
-  width: 12px;
-  height: 12px;
-}
-
-.radio-button--small .c1:after {
-  width: 8px;
-  height: 8px;
-}
-
-.c1:hover:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:focus:before {
-  border-width: 2px;
-  border-color: rgba(2,108,223,1);
-}
-
-.c1:checked:after {
-  opacity: 1;
-  position: absolute;
-}
-
-.c0 {
-  position: relative;
-  cursor: pointer;
-  margin: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: left;
-  color: rgba(0,0,15,1);
-  outline: none;
-}
-
-.c0.radio-button--disabled {
-  color: grey;
-  cursor: default;
-  pointer-events: none;
-}
-
-.c0.radio-button--large {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.c0.radio-button--small {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-left: 7px;
-}
-
-<div
-  onKeyDown={[Function]}
-  role="radiogroup"
->
-   
-  <label
-    className="radio-button--small c0"
-    id="name1valuelabel"
-  >
-    <input
-      aria-checked={false}
-      aria-labelledby="name1valuelabel"
-      checked={false}
-      className="c1"
-      disabled={false}
-      id="name1valueinput"
-      name="name1"
-      onChange={[Function]}
-      onClick={null}
-      role="radio"
-      size="small"
-      type="radio"
-      value="value"
-    />
-    <span
-      className="c2"
-    />
-  </label>
-   
-</div>
 `;
