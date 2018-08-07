@@ -29,42 +29,51 @@ rows:
 ```react
 responsive: true
 ---
-const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center" };
-<div>
-    <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
+<Spacing top={{small: "normal"}} bottom={{small: "normal"}}>
+    <Container>
         <Row>
-            <Column medium={4} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+            <Column medium={4}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                    </ImageCard>
+                </Spacing>
             </Column>
-            <Column small={6} medium={4} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288" />
+            <Column small={6} medium={4}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard src="https://placekitten.com/g/512/288" />
+                </Spacing>
             </Column>
-            <Column small={6} medium={4} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+            <Column small={6} medium={4}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                    </ImageCard>
+                </Spacing>
             </Column>
-            <Column medium={6} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                    <div style={styles}>Additional Content</div>
-                </ImageCard>
+            <Column medium={6}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                        <div>Additional Content</div>
+                    </ImageCard>
+                </Spacing>
             </Column>
-            <Column medium={6} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                    <div style={styles}>Additional Content</div>
-                </ImageCard>
+            <Column medium={6}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                        <div>Additional Content</div>
+                    </ImageCard>
+                </Spacing>
             </Column>
         </Row>
     </Container>
-</div>
+</Spacing>
 ```
 
 ## Image Card Half
@@ -74,23 +83,26 @@ Displays an image card in "half" mode. This mode does not support additional con
 ```react
 responsive: true
 ---
-const styles = { backgroundColor: "white", padding: "10px 0", textAlign: "center" };
-<div>
-    <Container style={{ paddingBottom: "20px", paddingTop: "20px" }}>
+<Spacing top={{small: "normal"}} bottom={{small: "normal"}}>
+    <Container>
         <Row>
-            <Column medium={6} large={3} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard type="half" src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+            <Column medium={6} large={3}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard type="half" src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                    </ImageCard>
+                </Spacing>
             </Column>
-            <Column medium={6} large={3} style={{marginTop: spacing.gutters.small}}>
-                <ImageCard type="half" src="https://placekitten.com/g/512/288">
-                    <ImageCard.Title>Title</ImageCard.Title>
-                    <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
-                </ImageCard>
+            <Column medium={6} large={3}>
+                <Spacing bottom={{small: "moderate"}}>
+                    <ImageCard type="half" src="https://placekitten.com/g/512/288">
+                        <ImageCard.Title>Title</ImageCard.Title>
+                        <ImageCard.SubTitle>Sub Title</ImageCard.SubTitle>
+                    </ImageCard>
+                </Spacing>
             </Column>
         </Row>
     </Container>
-</div>
+</Spacing>
 ```
