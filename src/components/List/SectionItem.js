@@ -12,7 +12,7 @@ const ItemContainer = styled.div.attrs({
   display: flex;
   flex-direction: row;
   align-items: center;
-  cursor: ${props => (props.onClick ? "pointer" : "default")};
+  cursor: ${props => (props.onItemClick ? "pointer" : "default")};
 
   &:not(:last-of-type) {
     margin-bottom: ${spacing.moderate};
@@ -51,6 +51,7 @@ const SectionItem = ({
         role="link"
         aria-label="Section Item"
         onClick={event => handleItemClick(children, value, event, onItemClick)}
+        onItemClick={onItemClick}
         {...props}
       >
         {icon && <IconContainer>{icon}</IconContainer>}

@@ -36,6 +36,7 @@ const RowWrapper = styled.div`
 const ListContainer = styled.div`
   align-items: center;
   display: flex;
+  padding-right: ${spacing.cozy};
 `;
 
 const IconWrapper = styled(IconButton).attrs({
@@ -56,6 +57,7 @@ const LinkWrapper = styled.a`
   cursor: pointer;
   padding-top: ${spacing.cozy};
   padding-bottom: ${spacing.cozy};
+  border-radius: 2px;
 
   margin: 12px 0
     ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
@@ -148,7 +150,7 @@ const OverflowDesktopContainer = styled(Column)`
 const DesktopContainer = styled.div`
   display: none;
   padding-left: ${spacing.moderate};
-  padding-right: ${spacing.normal};
+  padding-right: ${spacing.cozy};
 
   ${largeAndUp`
     display: flex;

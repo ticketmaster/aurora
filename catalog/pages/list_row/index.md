@@ -21,7 +21,7 @@ rows:
     Notes: Optional. Default is null.
   - Prop: onExpandShow
     Type:  one of either "title" or "subTitle"
-    Notes: Optional. Defualt is "subTitle"
+    Notes: Optional. Defualt is "subTitles"
 ```
 
 ### ListContainer

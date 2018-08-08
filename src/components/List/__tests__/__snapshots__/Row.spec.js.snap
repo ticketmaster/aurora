@@ -149,6 +149,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -170,6 +171,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 12px 0;
 }
 
@@ -231,7 +233,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -765,6 +767,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -786,6 +789,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 8px 0;
 }
 
@@ -851,7 +855,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -1475,6 +1479,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -1496,6 +1501,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 8px 0;
 }
 
@@ -1561,7 +1567,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -2158,6 +2164,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -2179,6 +2186,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 12px 0;
 }
 
@@ -2240,7 +2248,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
