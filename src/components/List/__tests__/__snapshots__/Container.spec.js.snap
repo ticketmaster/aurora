@@ -2,13 +2,13 @@
 
 exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cross icon on mobile 1`] = `
 <div
-  class="sc-chPdSV gHWRuY"
+  class="sc-chPdSV hddFlW"
 >
   <div
-    class="sc-kEYyzF fQwHpz"
+    class="sc-kEYyzF dfTlJY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="true"
@@ -32,12 +32,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -70,7 +70,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cvbbAY bwfHrP sc-bZQynM cfEvYQ"
+            class="sc-cvbbAY bwfHrP sc-bZQynM AkMDZ"
           >
             <div
               class="sc-gipzik hGSyBv sc-kGXeez loiItH"
@@ -88,19 +88,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -185,7 +185,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -421,10 +421,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -447,12 +447,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -503,19 +503,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -600,7 +600,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -836,10 +836,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -862,12 +862,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -918,19 +918,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -1015,7 +1015,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -1256,13 +1256,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
 exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cross icon on mobile 2`] = `
 <div>
   <div
-    class="sc-chPdSV gHWRuY"
+    class="sc-chPdSV hddFlW"
   >
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -1286,12 +1286,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -1342,19 +1342,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -1439,7 +1439,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -1675,10 +1675,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -1701,12 +1701,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -1757,19 +1757,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -1854,7 +1854,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -2090,10 +2090,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -2116,12 +2116,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -2172,19 +2172,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -2269,7 +2269,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -2510,13 +2510,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
 
 exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cross icon on mobile 3`] = `
 <div
-  class="sc-chPdSV gHWRuY"
+  class="sc-chPdSV hddFlW"
 >
   <div
-    class="sc-kEYyzF fQwHpz"
+    class="sc-kEYyzF dfTlJY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="true"
@@ -2540,12 +2540,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -2578,7 +2578,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cvbbAY bwfHrP sc-bZQynM cfEvYQ"
+            class="sc-cvbbAY bwfHrP sc-bZQynM AkMDZ"
           >
             <div
               class="sc-gipzik hGSyBv sc-kGXeez loiItH"
@@ -2596,19 +2596,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -2693,7 +2693,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -2929,10 +2929,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -2955,12 +2955,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -3011,19 +3011,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -3108,7 +3108,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -3344,10 +3344,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -3370,12 +3370,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -3426,19 +3426,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -3523,7 +3523,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -3764,13 +3764,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
 exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cross icon on mobile 4`] = `
 <div>
   <div
-    class="sc-chPdSV gHWRuY"
+    class="sc-chPdSV hddFlW"
   >
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -3794,12 +3794,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -3850,19 +3850,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -3947,7 +3947,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -4183,10 +4183,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -4209,12 +4209,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -4265,19 +4265,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -4362,7 +4362,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -4598,10 +4598,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -4624,12 +4624,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -4680,19 +4680,19 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -4777,7 +4777,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -5019,13 +5019,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
 exports[`<ListContainer /> closes the modal when clicked on an expanded item on Desktop and clicked on cross icon 1`] = `
 <div>
   <div
-    class="sc-chPdSV gHWRuY"
+    class="sc-chPdSV hddFlW"
   >
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -5048,12 +5048,12 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -5104,19 +5104,19 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -5204,7 +5204,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
             </div>
             <div
               aria-label="Section Item"
-              class="sc-fMiknA section-item fWHejH"
+              class="sc-fMiknA section-item eNjwym"
               role="link"
             >
               <div
@@ -5269,13 +5269,13 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
 
 exports[`<ListContainer /> collapses the listRow when clicked on collapse button 1`] = `
 <div
-  class="sc-chPdSV gHWRuY"
+  class="sc-chPdSV hddFlW"
 >
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -5299,12 +5299,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -5355,19 +5355,19 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -5452,7 +5452,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -5688,10 +5688,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -5714,12 +5714,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -5770,19 +5770,19 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -5867,7 +5867,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -6103,10 +6103,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -6129,12 +6129,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -6185,19 +6185,19 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -6282,7 +6282,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -6522,13 +6522,13 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
 
 exports[`<ListContainer /> expands the listRow when clicked on expand button 1`] = `
 <div
-  class="sc-chPdSV gHWRuY"
+  class="sc-chPdSV hddFlW"
 >
   <div
-    class="sc-kEYyzF fQwHpz"
+    class="sc-kEYyzF dfTlJY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="true"
@@ -6552,12 +6552,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -6590,7 +6590,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
           <div
-            class="sc-cvbbAY bwfHrP sc-bZQynM cfEvYQ"
+            class="sc-cvbbAY bwfHrP sc-bZQynM AkMDZ"
           >
             <div
               class="sc-gipzik hGSyBv sc-kGXeez loiItH"
@@ -6608,19 +6608,19 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -6705,7 +6705,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -6941,10 +6941,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -6967,12 +6967,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -7023,19 +7023,19 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -7120,7 +7120,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -7356,10 +7356,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     </div>
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -7382,12 +7382,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -7438,19 +7438,19 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -7535,7 +7535,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
         <div
           aria-label="Section Item"
-          class="sc-fMiknA section-item fWHejH"
+          class="sc-fMiknA section-item eNjwym"
           role="link"
         >
           <div
@@ -7776,13 +7776,13 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
 exports[`<ListContainer /> opens the bottomSheet for the row when clicked on overflow button 1`] = `
 <div>
   <div
-    class="sc-chPdSV gHWRuY"
+    class="sc-chPdSV hddFlW"
   >
     <div
-      class="sc-kEYyzF fQwHpz"
+      class="sc-kEYyzF dfTlJY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="true"
@@ -7806,12 +7806,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -7844,7 +7844,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
             <div
-              class="sc-cvbbAY bwfHrP sc-bZQynM cfEvYQ"
+              class="sc-cvbbAY bwfHrP sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-gipzik hGSyBv sc-kGXeez loiItH"
@@ -7862,19 +7862,19 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -7959,7 +7959,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -8195,10 +8195,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -8221,12 +8221,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -8277,19 +8277,19 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -8374,7 +8374,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -8610,10 +8610,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       </div>
     </div>
     <div
-      class="sc-kEYyzF gDqNcy"
+      class="sc-kEYyzF exRIGY"
     >
       <div
-        class="sc-kkGfuU iyxmsm"
+        class="sc-kkGfuU gGaJgN"
       >
         <button
           aria-expanded="false"
@@ -8636,12 +8636,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-hSdWYo cfFAoY"
+          class="sc-hSdWYo lmmHvK"
           href="/"
           role="link"
         >
           <div
-            class="sc-eHgmQL guqODM"
+            class="sc-eHgmQL lcbpia"
           >
             <div
               class="sc-dxgOiQ jwaoTg"
@@ -8692,19 +8692,19 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
           </div>
-        </a>
-        <div
-          class="sc-iRbamj ebLCdR"
-        >
-          <span
-            aria-label="See Tickets"
-            class="sc-jAaTju knVXEA"
-            role="button"
-            width="102px"
+          <div
+            class="sc-iRbamj eqQVOG"
           >
-            See Tickets
-          </span>
-        </div>
+            <span
+              aria-label="See Tickets"
+              class="sc-jAaTju knVXEA"
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
         <div
           class="sc-jlyJG kcCTet"
         >
@@ -8789,7 +8789,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
           <div
             aria-label="Section Item"
-            class="sc-fMiknA section-item fWHejH"
+            class="sc-fMiknA section-item eNjwym"
             role="link"
           >
             <div
@@ -9030,13 +9030,13 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
 
 exports[`<ListContainer /> renders ListContainer correctly without any expanded sections 1`] = `
 <div
-  class="sc-chPdSV gHWRuY"
+  class="sc-chPdSV hddFlW"
 >
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -9059,12 +9059,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -9115,19 +9115,19 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -9156,10 +9156,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     />
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -9182,12 +9182,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -9238,19 +9238,19 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >
@@ -9279,10 +9279,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     />
   </div>
   <div
-    class="sc-kEYyzF gDqNcy"
+    class="sc-kEYyzF exRIGY"
   >
     <div
-      class="sc-kkGfuU iyxmsm"
+      class="sc-kkGfuU gGaJgN"
     >
       <button
         aria-expanded="false"
@@ -9305,12 +9305,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-hSdWYo cfFAoY"
+        class="sc-hSdWYo lmmHvK"
         href="/"
         role="link"
       >
         <div
-          class="sc-eHgmQL guqODM"
+          class="sc-eHgmQL lcbpia"
         >
           <div
             class="sc-dxgOiQ jwaoTg"
@@ -9361,19 +9361,19 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
         </div>
-      </a>
-      <div
-        class="sc-iRbamj ebLCdR"
-      >
-        <span
-          aria-label="See Tickets"
-          class="sc-jAaTju knVXEA"
-          role="button"
-          width="102px"
+        <div
+          class="sc-iRbamj eqQVOG"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            class="sc-jAaTju knVXEA"
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         class="sc-jlyJG kcCTet"
       >

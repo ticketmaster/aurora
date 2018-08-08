@@ -27,13 +27,15 @@ const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
 );
 
 ListRow.defaultProps = {
-  children: null
+  children: null,
+  onExpandShow: "subTitle"
 };
 
 ListRow.propTypes = {
   rowItem: PropTypes.shape(rowDataShape).isRequired,
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
+  onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
   children: PropTypes.node
 };
 

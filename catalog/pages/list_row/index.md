@@ -19,6 +19,9 @@ rows:
   - Prop: children
     Type: node
     Notes: Optional. Default is null.
+  - Prop: onExpandShow
+    Type:  one of either "title" or "subTitle"
+    Notes: Optional. Defualt is "subTitles"
 ```
 
 ### ListContainer

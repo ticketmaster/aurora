@@ -149,6 +149,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -170,6 +171,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 12px 0;
 }
 
@@ -231,7 +233,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -250,7 +252,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c0 {
   width: 100%;
-  overflow: auto;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -337,6 +338,8 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     margin-bottom: 0;
     border-radius: 4px;
     box-shadow: 0;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
 }
 
@@ -369,12 +372,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
   .c5:hover .text--secondary:before {
     content: "";
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c6 {
-    padding-left: 0;
   }
 }
 
@@ -549,20 +546,20 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
         </div>
-      </a>
-      <div
-        className="c18"
-      >
-        <span
-          aria-label="See Tickets"
-          className="c19"
-          onClick={[Function]}
-          role="button"
-          width="102px"
+        <div
+          className="c18"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            className="c19"
+            onClick={[Function]}
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         className="c20"
       >
@@ -770,6 +767,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -791,6 +789,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 8px 0;
 }
 
@@ -856,7 +855,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -875,7 +874,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c0 {
   width: 100%;
-  overflow: auto;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1020,6 +1018,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     margin-bottom: 0;
     border-radius: 4px;
     box-shadow: 0;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
 }
 
@@ -1052,12 +1052,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
   .c5:hover .text--secondary:before {
     content: "";
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c6 {
-    padding-left: 0;
   }
 }
 
@@ -1238,20 +1232,20 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
         </div>
-      </a>
-      <div
-        className="c18"
-      >
-        <span
-          aria-label="See Tickets"
-          className="c19"
-          onClick={[Function]}
-          role="button"
-          width="102px"
+        <div
+          className="c18"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            className="c19"
+            onClick={[Function]}
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         className="c20"
       >
@@ -1485,6 +1479,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -1506,6 +1501,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 8px 0;
 }
 
@@ -1571,7 +1567,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -1590,7 +1586,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c0 {
   width: 100%;
-  overflow: auto;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1735,6 +1730,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     margin-bottom: 0;
     border-radius: 4px;
     box-shadow: 0;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
 }
 
@@ -1767,12 +1764,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
   .c5:hover .text--secondary:before {
     content: "";
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c6 {
-    padding-left: 0;
   }
 }
 
@@ -1953,20 +1944,20 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
         </div>
-      </a>
-      <div
-        className="c18"
-      >
-        <span
-          aria-label="See Tickets"
-          className="c19"
-          onClick={[Function]}
-          role="button"
-          width="102px"
+        <div
+          className="c18"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            className="c19"
+            onClick={[Function]}
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         className="c20"
       >
@@ -2173,6 +2164,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 8px;
 }
 
 .c3 {
@@ -2194,6 +2186,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 8px;
+  border-radius: 2px;
   margin: 12px 0 12px 0;
 }
 
@@ -2255,7 +2248,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 .c18 {
   display: none;
   padding-left: 16px;
-  padding-right: 24px;
+  padding-right: 8px;
 }
 
 .c13 {
@@ -2274,7 +2267,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c0 {
   width: 100%;
-  overflow: auto;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -2361,6 +2353,8 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     margin-bottom: 0;
     border-radius: 4px;
     box-shadow: 0;
+    -webkit-transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.5s ease-in-out;
   }
 }
 
@@ -2393,12 +2387,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
   .c5:hover .text--secondary:before {
     content: "";
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c6 {
-    padding-left: 0;
   }
 }
 
@@ -2573,20 +2561,20 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
         </div>
-      </a>
-      <div
-        className="c18"
-      >
-        <span
-          aria-label="See Tickets"
-          className="c19"
-          onClick={[Function]}
-          role="button"
-          width="102px"
+        <div
+          className="c18"
         >
-          See Tickets
-        </span>
-      </div>
+          <span
+            aria-label="See Tickets"
+            className="c19"
+            onClick={[Function]}
+            role="button"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
       <div
         className="c20"
       >

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
-.c12 {
+.c13 {
   border: solid 1px #E0E0E0;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -17,7 +17,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   overflow: hidden;
 }
 
-.c13 {
+.c14 {
   width: 100%;
   height: 100%;
 }
@@ -84,7 +84,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   text-transform: uppercase;
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
   color: rgba(0,0,15,0.6);
 }
@@ -112,6 +112,25 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 .c7:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+}
+
+.c11:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
@@ -245,7 +264,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item c7"
+      className="section-item c11"
       onClick={[Function]}
       role="link"
     >
@@ -278,7 +297,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c11"
+          className="c12"
         >
           Parking Pass Available
         </div>
@@ -342,7 +361,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
           United Center
         </a>
         <div
-          className="c11"
+          className="c12"
         >
           Chicago, IL
         </div>
@@ -372,12 +391,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c12"
+          className="c13"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c13"
+            className="c14"
             src="https://placekitten.com/g/512/288"
           />
         </div>
@@ -404,12 +423,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c12"
+          className="c13"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c13"
+            className="c14"
             src="https://placekitten.com/g/512/288"
           />
         </div>

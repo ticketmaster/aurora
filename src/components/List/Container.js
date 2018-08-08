@@ -13,7 +13,6 @@ import spacing from "../../theme/spacing";
 
 const Container = styled.div`
   width: 100%;
-  overflow: auto;
   padding-left: ${spacing.cozy};
   padding-right: ${spacing.cozy};
 `;
