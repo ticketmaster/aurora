@@ -17,6 +17,7 @@ const ModalContainer = styled(Column)`
   border: solid 1px rgba(0, 0, 0, 0.04);
   padding: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
   max-height: calc(100% - 96px);
   z-index: 100;
 

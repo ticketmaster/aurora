@@ -25,6 +25,7 @@ const RowWrapper = styled.div`
     props.isOpen
       ? "0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19)"
       : 0};
+  transition: box-shadow 0.5s ease-in-out;
   `};
 
   &:not(:last-of-type) {
@@ -90,16 +91,12 @@ const DateWrapper = styled.div`
   min-width: 101px;
   max-width: 116px;
   padding-left: ${spacing.cozy};
-  ${largeAndUp`
-   padding-left: 0;
-  }
-  `};
 `;
 
 const TitleColumn = styled(Column)`
   display: none;
   ${largeAndUp`
-    display: ${props => (props.isOpen ? "none" : "flex")};
+    display: ${props => (props.hideOnExpand ? "none" : "flex")};
     justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
   `};
@@ -114,7 +111,7 @@ const MobileOnlyColumn = styled(Column)`
 const SubTitleColumn = styled(Column)`
   display: none;
   ${largeAndUp`
-    display: flex;
+    display: ${props => (props.hideOnExpand ? "none" : "flex")};
     justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
   `};
@@ -202,6 +199,7 @@ const ListRowContent = ({
   isOpen,
   index,
   onOverflowClick,
+  onExpandShow,
   children
 }) => (
   <RowWrapper variant={variant} isOpen={isOpen}>
@@ -235,10 +233,16 @@ const ListRowContent = ({
             <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
           </MobileOnlyColumn>
 
-          <TitleColumn isOpen={isOpen} large={6} xLarge={6}>
+          <TitleColumn
+            hideOnExpand={isOpen && onExpandShow === "subTitle"}
+            isOpen={isOpen}
+            large={isOpen ? 12 : 6}
+            xLarge={isOpen ? 12 : 6}
+          >
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
           </TitleColumn>
           <SubTitleColumn
+            hideOnExpand={isOpen && onExpandShow === "title"}
             isOpen={isOpen}
             large={isOpen ? 12 : 6}
             xLarge={isOpen ? 12 : 6}
@@ -246,20 +250,20 @@ const ListRowContent = ({
             <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
           </SubTitleColumn>
         </Row>
-      </LinkWrapper>
 
-      <DesktopContainer>
-        <ListRowButton
-          aria-label={buttonText}
-          role="button"
-          width="102px"
-          variant="standard"
-          rowVariant={variant}
-          onClick={onClick}
-        >
-          {buttonText}
-        </ListRowButton>
-      </DesktopContainer>
+        <DesktopContainer>
+          <ListRowButton
+            aria-label={buttonText}
+            role="button"
+            width="102px"
+            variant="standard"
+            rowVariant={variant}
+            onClick={onClick}
+          >
+            {buttonText}
+          </ListRowButton>
+        </DesktopContainer>
+      </LinkWrapper>
 
       <MobileContainer>
         <IconButton
@@ -293,6 +297,7 @@ const ListRowContent = ({
 
 ListRowContent.defaultProps = {
   isOpen: false,
+  onExpandShow: "subTitle",
   children: null
 };
 
@@ -301,6 +306,7 @@ ListRowContent.propTypes = {
   isOpen: PropTypes.bool,
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
+  onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
   children: PropTypes.node
 };
 

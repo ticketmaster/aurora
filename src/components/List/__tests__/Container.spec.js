@@ -181,7 +181,7 @@ describe("<ListContainer />", () => {
 
   it("closes the bottomSheet for the row when clicked on cross icon on mobile", () => {
     const { container, queryByTestId } = renderIntoDocument(
-      <ListContainer onRowCollapse={() => {}}>
+      <ListContainer onRowCollapse={() => {}} resizeCallBack={() => {}}>
         {listItems.map((item, index) => (
           <ListRow
             key={item.rowId}
