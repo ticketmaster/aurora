@@ -359,11 +359,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 
   .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--primary:before {
@@ -1039,11 +1039,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 
   .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--primary:before {
@@ -1751,11 +1751,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 
   .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--primary:before {
@@ -2374,11 +2374,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 
   .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.01);
+    background-color: rgba(2,108,223,0.1);
   }
 
   .c5:hover .text--primary:before {
