@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import spacing from "../theme/spacing";
-import { mediumAndUp, largeAndUp, xLargeAndUp } from "../theme/mediaQueries";
+import { mediumAndUp, largeAndUp, smallAndUp } from "../theme/mediaQueries";
 
 const getSpacing = val => spacing[val] || val || 0;
 
@@ -10,13 +10,13 @@ const Spacing = styled.div`
   padding-top: ${props => getSpacing(props.top.small)};
   padding-bottom: ${props => getSpacing(props.bottom.small)};
 
-  ${mediumAndUp`
+  ${smallAndUp`
     padding-top: ${props => getSpacing(props.top.medium || props.top.small)};
     padding-bottom: ${props =>
       getSpacing(props.bottom.medium || props.bottom.small)};
   `};
 
-  ${largeAndUp`
+  ${mediumAndUp`
     padding-top: ${props =>
       getSpacing(props.top.large || props.top.medium || props.top.small)};
     padding-bottom: ${props =>
@@ -25,7 +25,7 @@ const Spacing = styled.div`
       )};
   `};
 
-  ${xLargeAndUp`
+  ${largeAndUp`
     padding-top: ${props =>
       getSpacing(
         props.top.xLarge ||

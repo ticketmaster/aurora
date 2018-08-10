@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
 
 const Span = styled.span`
@@ -22,11 +22,11 @@ const margins = styled.span`
   color: ${p => (p.color ? p.color : colors.white.base)};
   font-size: ${typography.size.tera};
 
-  ${mediumAndUp`
+  ${smallAndUp`
     font-size: ${typography.size.zetta};
   `};
 
-  ${largeAndUp`
+  ${mediumAndUp`
     font-size: ${typography.size.bronto};
   `};
 `;
