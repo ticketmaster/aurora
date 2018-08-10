@@ -6,7 +6,7 @@ import ImageCard from "../index";
 describe("ImageCard", () => {
   it("renders standard card", () => {
     const component = renderer.create(
-      <ImageCard src="http://localhost/img.png" />
+      <ImageCard src="http://localhost/img.png" alt="image" title="image" />
     );
 
     expect(component.toJSON()).toMatchSnapshot();
