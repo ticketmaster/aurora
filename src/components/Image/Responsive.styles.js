@@ -10,7 +10,7 @@ const StyledResponsiveImage = styled.div.attrs({
   padding-top: ${({ height, width }) => `${(height / width) * 100}%`};
   background-image: ${({ image }) => `url(${image})`};
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 `;
 
 StyledResponsiveImage.propTypes = {
