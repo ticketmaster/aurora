@@ -21,7 +21,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
     role="dialog"
   >
     <div
-      class="sc-gqjmRU iUNIdM sc-htpNat cXQsRx"
+      class="sc-gqjmRU iUNIdM sc-htpNat hoaOKb"
     >
       <button
         aria-label="Close BottomSheet"
@@ -64,7 +64,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
     role="dialog"
   >
     <div
-      class="sc-gqjmRU iUNIdM sc-htpNat cXQsRx"
+      class="sc-gqjmRU iUNIdM sc-htpNat hoaOKb"
     >
       <button
         aria-label="Close BottomSheet"

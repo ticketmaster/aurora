@@ -145,20 +145,20 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   -webkit-box-orient: vertical;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0 {
     padding-left: 16px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c3 {
     max-width: 100%;
     padding-right: 12px;
@@ -169,7 +169,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c3 {
     max-width: 25%;
     -webkit-flex: 0 0 25%;
@@ -178,7 +178,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c3 {
     max-width: 25%;
     -webkit-flex: 0 0 25%;
@@ -187,13 +187,13 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media only screen and {
+@media only screen and (min-width:480px) {
   .c6 {
     font-size: 16px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c2 {
     border: none;
     padding-left: 16px;

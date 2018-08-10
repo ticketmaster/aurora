@@ -3,7 +3,7 @@ import { mediumAndUp, largeAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 
-const getSize = val => val / constants.MAX_COLUMNS * 100;
+const getSize = val => (val / constants.MAX_COLUMNS) * 100;
 
 const getFlexProps = val =>
   val === 12
@@ -62,5 +62,7 @@ Column.defaultProps = {
   large: null,
   xLarge: null
 };
+
+Column.displayName = "Column";
 
 export default Column;

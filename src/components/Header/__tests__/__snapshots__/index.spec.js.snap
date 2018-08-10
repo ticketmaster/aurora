@@ -67,7 +67,7 @@ exports[`Header renders with custom level 1`] = `
 
 .c1 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -93,75 +93,75 @@ exports[`Header renders with custom level 1`] = `
   font-size: 24px;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     min-height: 140px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     min-height: 218px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 46px;
   }
@@ -267,7 +267,7 @@ exports[`Header renders with default 1`] = `
 
 .c1 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -293,75 +293,75 @@ exports[`Header renders with default 1`] = `
   font-size: 24px;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     min-height: 140px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     min-height: 218px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 46px;
   }
@@ -466,7 +466,7 @@ exports[`Header renders withOverlay 1`] = `
 
 .c1 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -492,75 +492,75 @@ exports[`Header renders withOverlay 1`] = `
   font-size: 24px;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c0.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     min-height: 140px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     min-height: 218px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 46px;
   }

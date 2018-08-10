@@ -5,16 +5,16 @@ import classNames from "classnames";
 import Gradient from "../Gradient";
 import Row from "../Grid/Row";
 import Container from "../Grid/Container";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 const HeaderGradient = Gradient.extend`
   display: flex;
   position: relative;
   align-items: flex-end;
   min-height: 122px;
-  ${mediumAndUp`
+  ${smallAndUp`
     min-height: 140px;
-  `} ${largeAndUp`
+  `} ${mediumAndUp`
     min-height: 218px;
   `};
 `.withComponent("header");

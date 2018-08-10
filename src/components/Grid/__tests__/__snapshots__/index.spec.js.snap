@@ -3,7 +3,7 @@
 exports[`Grid renders medium and up when medium size defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -47,21 +47,21 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     max-width: 50%;
     padding-right: 12px;
@@ -72,7 +72,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c2 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
@@ -81,7 +81,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c2 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
@@ -108,7 +108,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 exports[`Grid renders multiple sizes defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -152,21 +152,21 @@ exports[`Grid renders multiple sizes defined 1`] = `
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     max-width: 50%;
     padding-right: 12px;
@@ -177,7 +177,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c2 {
     max-width: 25%;
     -webkit-flex: 0 0 25%;
@@ -186,7 +186,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c2 {
     max-width: 8.333333333333332%;
     -webkit-flex: 0 0 8.333333333333332%;
@@ -213,7 +213,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
 exports[`Grid renders small size defined 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -257,21 +257,21 @@ exports[`Grid renders small size defined 1`] = `
   flex: 0 0 50%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     max-width: 50%;
     padding-right: 12px;
@@ -282,7 +282,7 @@ exports[`Grid renders small size defined 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c2 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
@@ -291,7 +291,7 @@ exports[`Grid renders small size defined 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c2 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
@@ -318,7 +318,7 @@ exports[`Grid renders small size defined 1`] = `
 exports[`Grid renders with defaults 1`] = `
 .c0 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -362,21 +362,21 @@ exports[`Grid renders with defaults 1`] = `
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c2 {
     max-width: 100%;
     padding-right: 12px;
@@ -387,7 +387,7 @@ exports[`Grid renders with defaults 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c2 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -396,7 +396,7 @@ exports[`Grid renders with defaults 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c2 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
