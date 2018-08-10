@@ -490,7 +490,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color=""
             style={
               Object {
                 "textTransform": "uppercase",
@@ -1176,7 +1176,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color=""
             style={
               Object {
                 "textTransform": "uppercase",
@@ -1888,7 +1888,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color=""
             style={
               Object {
                 "textTransform": "uppercase",
@@ -2505,7 +2505,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color=""
             style={
               Object {
                 "textTransform": "uppercase",
