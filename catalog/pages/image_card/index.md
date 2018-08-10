@@ -19,6 +19,10 @@ rows:
     Type: string
     Default:
     Notes: Alt text for image
+  - Prop: title
+    Type: string
+    Default:
+    Notes: Title text for image
   - Prop: children
     Type: ImageCard.Title, ImageCard.SubTitle, ReactElement
     Default:
