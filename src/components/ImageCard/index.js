@@ -57,15 +57,15 @@ const RowContainer = Container.extend`
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, children, type, ...props }) => {
-  const [title, subTitle, ...rest] = Children.toArray(children || []);
-  const img = props.image || <Image src={src} alt={alt} />;
+const ImageCard = ({ src, alt, title, children, type, ...props }) => {
+  const [imageTitle, subTitle, ...rest] = Children.toArray(children || []);
+  const img = props.image || <Image src={src} alt={alt} title={title} />;
   if (type === "half") {
     return (
       <RowContainer>
         <Card>{img}</Card>
         <CaptionContainer>
-          {title}
+          {imageTitle}
           {subTitle}
         </CaptionContainer>
       </RowContainer>
@@ -77,9 +77,9 @@ const ImageCard = ({ src, alt, children, type, ...props }) => {
       <Container>
         {img}
         <Overlay>
-          {(title || subTitle) && (
+          {(imageTitle || subTitle) && (
             <CaptionContainer>
-              {title}
+              {imageTitle}
               {subTitle}
             </CaptionContainer>
           )}
@@ -94,6 +94,7 @@ ImageCard.propTypes = {
   type: PropTypes.oneOf(["full", "half"]),
   src: PropTypes.string,
   alt: PropTypes.string,
+  title: PropTypes.string,
   children: PropTypes.node,
   image: PropTypes.element
 };
@@ -101,6 +102,7 @@ ImageCard.propTypes = {
 ImageCard.defaultProps = {
   type: "full",
   alt: "",
+  title: "",
   src: "",
   children: null,
   image: null

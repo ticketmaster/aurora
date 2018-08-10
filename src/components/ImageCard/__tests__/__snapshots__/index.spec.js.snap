@@ -51,6 +51,7 @@ exports[`ImageCard renders card without overlay 1`] = `
       alt=""
       className="c2"
       src="http://localhost/img.png"
+      title=""
     />
     <div
       className="c3"
@@ -107,9 +108,10 @@ exports[`ImageCard renders standard card 1`] = `
     className="c1"
   >
     <img
-      alt=""
+      alt="image"
       className="c2"
       src="http://localhost/img.png"
+      title="image"
     />
     <div
       className="c3"
@@ -182,6 +184,7 @@ exports[`ImageCard renders type = half 1`] = `
       alt=""
       className="c2"
       src="http://localhost/img.png"
+      title=""
     />
   </div>
   <div
@@ -366,6 +369,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
       alt=""
       className="c2"
       src="http://localhost/img.png"
+      title=""
     />
     <div
       className="c3"
@@ -462,6 +466,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
       alt=""
       className="c2"
       src="http://localhost/img.png"
+      title=""
     />
     <div
       className="c3"
