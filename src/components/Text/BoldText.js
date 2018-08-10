@@ -1,11 +1,9 @@
-import React from "react";
 import PropTypes from "prop-types";
-
 import { colors, typography } from "../../theme";
 import constants from "../../theme/constants";
 import StyledText from "./StyledText";
 
-const BoldStyledText = StyledText.extend`
+const BoldText = StyledText.extend`
   color: ${props => props.color || colors.onyx.base};
   font-weight: ${typography.weight.semiBold};
 
@@ -14,18 +12,11 @@ const BoldStyledText = StyledText.extend`
   }
 `;
 
-const BoldText = ({ color, children, ...rest }) => (
-  <BoldStyledText color={color} {...rest}>
-    {children}
-  </BoldStyledText>
-);
-
 BoldText.defaultProps = {
-  color: null
+  color: ""
 };
 
 BoldText.propTypes = {
-  children: PropTypes.string.isRequired,
   color: PropTypes.string
 };
 

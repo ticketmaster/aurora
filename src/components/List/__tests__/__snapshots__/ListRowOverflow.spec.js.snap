@@ -212,7 +212,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color=""
       >
         Ticket Options
       </div>
@@ -312,7 +312,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color=""
       >
         Venue Info
       </div>
@@ -376,7 +376,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color=""
       >
         Lineup
       </div>
@@ -454,7 +454,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color=""
       >
         More
       </div>
