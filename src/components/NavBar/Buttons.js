@@ -8,7 +8,7 @@ import User from "../Icons/User";
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import typography from "../../theme/typography";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
 import getRelByTarget from "../../utils/link";
 
 const BaseButton = styled.button`
@@ -33,7 +33,7 @@ const BaseButton = styled.button`
     font-weight: ${typography.weight.regular};
   }
 
-  ${mediumAndUp`
+  ${smallAndUp`
     padding-right: ${({ isLast }) =>
       isLast
         ? spacing.gutters.mediumAndUp
@@ -90,10 +90,10 @@ const LogoBtn = styled(Button)`
   padding-left: ${spacing.gutters.small / 2}px;
   padding-right: ${spacing.gutters.small / 2}px;
 
-  ${mediumAndUp`
+  ${smallAndUp`
     padding-left: ${spacing.gutters.mediumAndUp / 2}px;
     padding-right: ${spacing.gutters.mediumAndUp / 2}px;
-  `} ${largeAndUp`
+  `} ${mediumAndUp`
     padding-left: ${spacing.gutters.mediumAndUp}px;
   `};
 `;

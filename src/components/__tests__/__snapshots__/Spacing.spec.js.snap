@@ -7,21 +7,21 @@ exports[`Spacing renders top and bottom spacing for medium device 1`] = `
   padding-bottom: 0;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -40,21 +40,21 @@ exports[`Spacing renders top and bottom spacing for medium device 2`] = `
   padding-bottom: 0;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -73,21 +73,21 @@ exports[`Spacing renders top and bottom spacing for medium device 3`] = `
   padding-bottom: 0;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -106,21 +106,21 @@ exports[`Spacing renders top and bottom spacing for small device 1`] = `
   padding-bottom: 24px;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:480px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
   .c0 {
     padding-top: 24px;
     padding-bottom: 24px;

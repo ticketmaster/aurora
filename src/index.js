@@ -52,7 +52,12 @@ export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";
 export { default as typography } from "./theme/typography";
 export { default as zIndex } from "./theme/zIndex";
-export { largeAndUp, mediumAndUp, xLargeAndUp } from "./theme/mediaQueries";
+export {
+  largeAndUp,
+  mediumAndUp,
+  xLargeAndUp,
+  smallAndUp
+} from "./theme/mediaQueries";
 export {
   PrimaryText,
   SecondaryText,
