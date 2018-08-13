@@ -494,9 +494,9 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -585,9 +585,9 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 

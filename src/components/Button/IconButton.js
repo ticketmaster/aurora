@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledButton } from "../Button";
+import { StyledButtonOld } from "./Base.old.styles";
 
-const StyledIconButton = StyledButton.extend`
+const StyledIconButton = StyledButtonOld.extend`
   min-width: ${props => props.size}px;
   max-width: ${props => props.size}px;
   height: ${props => props.size}px;

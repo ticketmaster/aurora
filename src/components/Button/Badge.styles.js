@@ -1,7 +1,7 @@
-import { StyledButton } from "./Base.styles";
+import { StyledButtonOld } from "./Base.old.styles";
 import { typography } from "../../theme";
 
-const StyledBadge = StyledButton.extend`
+const StyledBadge = StyledButtonOld.extend`
   font-size: ${typography.size.uno};
   display: flex;
   flex-flow: row;
