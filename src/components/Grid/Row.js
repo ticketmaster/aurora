@@ -22,4 +22,6 @@ const Row = styled.div`
   }
 `;
 
+Row.displayName = "Row";
+
 export default Row;
