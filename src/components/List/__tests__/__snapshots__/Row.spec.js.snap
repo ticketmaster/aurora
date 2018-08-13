@@ -84,9 +84,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -118,9 +118,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -702,9 +702,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -736,9 +736,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -1414,9 +1414,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -1448,9 +1448,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -2099,9 +2099,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -2133,9 +2133,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 

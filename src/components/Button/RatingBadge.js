@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import StyledBadge from "./Badge.styles";
 import StarIcon from "../Icons/Star";
-import BUTTON_VARIANTS from "./constants";
+import { BUTTON_VARIANTS } from "./constants";
 
 const Container = styled.span`
   padding-left: 2px;

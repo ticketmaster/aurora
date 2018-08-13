@@ -9,8 +9,12 @@ span: 6
 rows:
   - Prop: variant
     Type: string
-    Default:
-    Notes: Determines style variant
+    Default: '`standart`'
+    Notes: Determines style variant. Possible variants are `standard`, `special`, `outline`, `transparent`
+  - Prop: size
+    Type: string
+    Default: '`regular`'
+    Notes: Determines button size. Possible sizes are `small`, `regular`, `large`
   - Prop: children
     Type: node
     Default:
@@ -21,40 +25,92 @@ rows:
     Notes: Passes through any other props to underlying button, or in the case of an href prop being passed, anchor, element
 ```
 
-### Standard
+### Standart button
 
 ```react
-<Button variant="standard">My cool button</Button>
+---
+<ThemeProvider theme={{ themeName: 'b2c' }}>
+    <div>
+        <div style={spacing}>
+            <Button size="small">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button>My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button size="large">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button size="large" disabled>My cool button</Button>
+        </div>
+    </div>
+</ThemeProvider>
 ```
 
-### Standard Disabled
+### Special button
 
 ```react
-<Button variant="standard" disabled>My cool button</Button>
+---
+<ThemeProvider theme={{ themeName: 'b2c' }}>
+    <div>
+        <div style={spacing}>
+            <Button variant="special" size="small">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="special">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="special" size="large">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="special" size="large" disabled>My cool button</Button>
+        </div>
+    </div>
+</ThemeProvider>
 ```
 
-### Outline
+### Outline button
 
 ```react
-<Button variant="outline">My cool button</Button>
+---
+<ThemeProvider theme={{ themeName: 'b2c' }}>
+    <div>
+        <div style={spacing}>
+            <Button variant="outline" size="small">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="outline">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="outline" size="large">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="outline" size="large" disabled>My cool button</Button>
+        </div>
+    </div>
+</ThemeProvider>
 ```
 
-### Outline Disabled
+### Transparent button
 
 ```react
-<Button variant="outline" disabled>My cool button</Button>
-```
-
-### Transparent
-
-```react
-<Button variant="transparent">My cool button</Button>
-```
-
-### Transparent Disabled
-
-```react
-<Button variant="transparent" disabled>My cool button</Button>
+---
+<ThemeProvider theme={{ themeName: 'b2c' }}>
+    <div>
+        <div style={spacing}>
+            <Button variant="transparent" size="small">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="transparent">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="transparent" size="large">My cool button</Button>
+        </div>
+        <div style={spacing}>
+            <Button variant="transparent" size="large" disabled>My cool button</Button>
+        </div>
+    </div>
+</ThemeProvider>
 ```
 
 ### Badge

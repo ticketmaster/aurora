@@ -2,8 +2,24 @@ const colors = {
   azure: {
     base: "rgba(2, 108, 223, 1)",
     light: "rgba(2, 108, 223, 0.2)",
-    muted: "rgba(2, 108, 223, 0.1)"
+    muted: "rgba(2, 108, 223, 0.1)",
+    restrained: "rgba(2, 108, 223, 0.4)",
+    hover: "#0150a7",
+    pressed: "#013670"
   },
+  emerald: {
+    base: "#1BAB1E",
+    dark: "#148016",
+    light: "#dbf3db",
+    hover: "#23702c",
+    pressed: "#265333",
+    muted: "rgba(27, 171, 30, 0.4)"
+  },
+  outlined: {
+    hover: "#ECF4FD",
+    pressed: "#D9E8F9"
+  },
+  transparent: "transparent",
   summerSky: "#3AC7FF",
   blackPearl: "#1F262D",
   slate: "#999999",
@@ -52,7 +68,7 @@ const colors = {
     base: "rgba(255, 255, 255, 1)",
     lighter: "rgba(255, 255, 255, 0.2)",
     light: "rgba(255, 255, 255, 0.7)",
-    muted: "rgba(255, 255, 255 0.5)"
+    muted: "rgba(255, 255, 255, 0.5)"
   },
   defaultGradient: {
     from: "#026cdf",
