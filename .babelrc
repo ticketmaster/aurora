@@ -1,4 +1,16 @@
 {
   "presets": ["env", "react", "stage-2", "catalog/babel"],
-  "plugins": ["transform-object-rest-spread"]
+  "plugins": ["transform-object-rest-spread"],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "babel-plugin-styled-components",
+          {
+            "displayName": true
+          }
+        ]
+      ]
+    }
+  }
 }
