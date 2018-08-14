@@ -7,6 +7,7 @@ import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 import typography from "../../theme/typography";
+import { Text } from "../Text";
 
 const Image = styled.img`
   width: 100%;
@@ -27,11 +28,19 @@ const Overlay = styled.div`
 const CaptionContainer = styled.div`
   position: relative;
   color: ${colors.white.base};
-  background-color: rgba(31, 38, 45, 0.8);
+  background-color: ${props => (props.half ? "none" : "rgba(31, 38, 45, 0.8)")};
   border-radius: ${constants.borderRadius.large};
   padding: ${spacing.slim} ${spacing.cozy};
   margin-left: ${spacing.cozy};
   margin-bottom: ${spacing.cozy};
+  font-style: ${props => (props.half ? "normal" : "inherit")};
+  font-stretch: ${props => (props.half ? "normal" : "inherit")};
+  line-height: ${props => (props.half ? "normal" : "inherit")};
+  letter-spacing: ${props => (props.half ? "normal" : "inherit")};
+`;
+
+const HalfCard = Card.extend`
+  width: ${props => (props.width ? props.width : "")};
 `;
 
 const Title = styled.span`
@@ -39,11 +48,19 @@ const Title = styled.span`
   width: 100%;
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
+  > .image-card__title--half > span {
+    font-size: ${typography.size.hecto};
+    color: ${colors.azure.base};
+  }
 `;
 
 const SubTitle = styled.span`
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.regular};
+  > .image-card__subtitle--half > span {
+    color: ${colors.blackPearl};
+    letter-spacing: "normal";
+  }
 `;
 
 const Container = styled.div`
@@ -63,10 +80,14 @@ const ImageCard = ({ src, alt, title, children, type, ...props }) => {
   if (type === "half") {
     return (
       <RowContainer>
-        <Card>{img}</Card>
-        <CaptionContainer>
-          {imageTitle}
-          {subTitle}
+        <HalfCard width="50%">{img}</HalfCard>
+        <CaptionContainer half>
+          <Title>
+            <Text className="image-card__title--half">{imageTitle}</Text>
+          </Title>
+          <SubTitle half>
+            <Text className="image-card__subtitle--half">{subTitle}</Text>
+          </SubTitle>
         </CaptionContainer>
       </RowContainer>
     );
