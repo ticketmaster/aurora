@@ -56,7 +56,7 @@ const ModalContainer = styled(Column)`
 `;
 
 const ModalContent = styled.div`
-  padding: 0 ${spacing.shakira} ${spacing.shakira};
+  padding: 0 ${spacing.comfy} ${spacing.comfy};
 `;
 
 const CancelButtonContainer = styled(Row)`
