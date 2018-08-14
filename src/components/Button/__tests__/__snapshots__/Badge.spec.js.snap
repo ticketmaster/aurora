@@ -2,18 +2,17 @@
 
 exports[`Badge /> renders link Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -45,6 +44,7 @@ exports[`Badge /> renders link Badge correctly 1`] = `
 <button
   className="c0"
   href="/"
+  size="regular"
 >
   Badge
 </button>
@@ -52,18 +52,17 @@ exports[`Badge /> renders link Badge correctly 1`] = `
 
 exports[`Badge /> renders outline Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -94,6 +93,7 @@ exports[`Badge /> renders outline Badge correctly 1`] = `
 
 <button
   className="c0"
+  size="regular"
 >
   Badge
 </button>
@@ -101,18 +101,17 @@ exports[`Badge /> renders outline Badge correctly 1`] = `
 
 exports[`Badge /> renders outline disabled Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -144,6 +143,7 @@ exports[`Badge /> renders outline disabled Badge correctly 1`] = `
 <button
   className="c0"
   disabled={true}
+  size="regular"
 >
   Badge
 </button>
@@ -151,18 +151,17 @@ exports[`Badge /> renders outline disabled Badge correctly 1`] = `
 
 exports[`Badge /> renders standard Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -193,6 +192,7 @@ exports[`Badge /> renders standard Badge correctly 1`] = `
 
 <button
   className="c0"
+  size="regular"
 >
   Badge
 </button>
@@ -200,18 +200,17 @@ exports[`Badge /> renders standard Badge correctly 1`] = `
 
 exports[`Badge /> renders standard disabled Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -243,6 +242,7 @@ exports[`Badge /> renders standard disabled Badge correctly 1`] = `
 <button
   className="c0"
   disabled={true}
+  size="regular"
 >
   Badge
 </button>
@@ -250,18 +250,17 @@ exports[`Badge /> renders standard disabled Badge correctly 1`] = `
 
 exports[`Badge /> renders transparent Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -284,14 +283,15 @@ exports[`Badge /> renders transparent Badge correctly 1`] = `
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
 <button
   className="c0"
+  size="regular"
 >
   Badge
 </button>
@@ -299,18 +299,17 @@ exports[`Badge /> renders transparent Badge correctly 1`] = `
 
 exports[`Badge /> renders transparent disabled Badge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -333,15 +332,16 @@ exports[`Badge /> renders transparent disabled Badge correctly 1`] = `
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
 <button
   className="c0"
   disabled={true}
+  size="regular"
 >
   Badge
 </button>

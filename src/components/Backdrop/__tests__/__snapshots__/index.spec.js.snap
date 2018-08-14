@@ -17,15 +17,15 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
 >
   <div
     aria-modal="true"
-    class="sc-VigVT cjpxrU"
+    class="sc-gzVnrw kwjrSt"
     role="dialog"
   >
     <div
-      class="sc-jTzLTM leZhon sc-htpNat hoaOKb"
+      class="sc-htoDjs cCSsXo sc-htpNat hoaOKb"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-gqjmRU eoSmaZ"
+        class="button--cancel sc-bZQynM dlhAKC"
         role="button"
         size="45"
       >
@@ -60,15 +60,15 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
 >
   <div
     aria-modal="true"
-    class="sc-VigVT cjpxrU"
+    class="sc-gzVnrw kwjrSt"
     role="dialog"
   >
     <div
-      class="sc-jTzLTM leZhon sc-htpNat hoaOKb"
+      class="sc-htoDjs cCSsXo sc-htpNat hoaOKb"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-gqjmRU eoSmaZ"
+        class="button--cancel sc-bZQynM dlhAKC"
         role="button"
         size="45"
       >
