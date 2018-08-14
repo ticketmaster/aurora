@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,7 +20,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -28,7 +28,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -38,7 +38,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -48,23 +48,23 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   color: rgba(0,0,15,1);
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
   color: rgba(0,0,15,0.6);
 }
 
-.c7 {
+.c8 {
   font-size: 14px;
   color: rgba(0,0,15,1);
   font-weight: 600;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -83,22 +83,22 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   width: 45px;
 }
 
-.c4:disabled {
+.c5:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c5:focus {
   outline: none;
 }
 
-.c4 > * {
+.c5 > * {
   pointer-events: none;
 }
 
-.c21 {
+.c22 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -117,30 +117,30 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   width: 35px;
 }
 
-.c21:disabled {
+.c22:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c21:focus {
+.c22:focus {
   outline: none;
 }
 
-.c21 > * {
+.c22 > * {
   pointer-events: none;
 }
 
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
+.c1:not(:last-of-type) > div {
   border-bottom: 0.5px solid #E0E0E0;
 }
 
 .c2 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -152,11 +152,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   padding-right: 8px;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c5 {
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
@@ -175,21 +175,21 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin: 12px 0 12px 0;
 }
 
-.c6 {
+.c7 {
   min-width: 101px;
   max-width: 116px;
   padding-left: 8px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c17 {
+.c18 {
   display: none;
 }
 
-.c19 {
+.c20 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -218,32 +218,32 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   padding: 18px 0 18px 0;
 }
 
-.c19:disabled {
+.c20:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
-.c22 {
+.c23 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c19 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -257,14 +257,14 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -275,7 +275,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -284,7 +284,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -293,7 +293,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c16 {
+  .c17 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -304,7 +304,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -313,7 +313,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -322,20 +322,25 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media only screen and {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media only screen and {
-  .c7 {
+  .c8 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:769px) {
   .c1 {
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
     border-radius: 4px;
     box-shadow: 0;
     -webkit-transition: box-shadow 0.5s ease-in-out;
@@ -344,39 +349,56 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c3 {
+  .c4 {
     display: block;
+    border: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 100ms linear;
+    -webkit-transition: transform 100ms linear;
+    transition: transform 100ms linear;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c5 {
+  .c6 {
     margin: 18px 0 18px 0;
   }
 
-  .c5:hover {
+  .c6:hover {
     background-color: rgba(2,108,223,0.2);
   }
 
-  .c5:hover .text--primary:after {
+  .c6:hover .text--primary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--secondary:after {
+  .c6:hover .text--secondary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--primary:before {
+  .c6:hover .text--primary:before {
     content: "";
   }
 
-  .c5:hover .text--secondary:before {
+  .c6:hover .text--secondary:before {
     content: "";
   }
 }
 
 @media screen and (min-width:769px) {
-  .c15 {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -389,17 +411,34 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c17 {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -412,20 +451,32 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c22 {
+  .c23 {
+    max-height: none;
+    height: auto;
     border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
+  .c19 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -442,7 +493,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -457,142 +508,146 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     <div
       className="c2"
     >
-      <button
-        aria-expanded={false}
-        aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
-        data-index={0}
-        role="button"
-        size={45}
-        style={null}
-      >
-        <svg
-          fill="#1F262D"
-          height={15}
-          style={Object {}}
-          viewBox="0 0 15 7"
-          width={15}
-        >
-          <path
-            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-          />
-        </svg>
-      </button>
-      <a
-        aria-label="See Tickets"
-        className="c5"
-        href="/"
-        onClick={[Function]}
-        role="link"
-      >
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-            color={null}
-            style={
-              Object {
-                "textTransform": "uppercase",
-              }
-            }
-          >
-            apr 23
-          </div>
-          <div
-            className="c8 c9"
-          >
-            Thu, 8:00 PM
-          </div>
-        </div>
-        <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            className="c11 c12"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-            <div
-              className="c8 c9"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-          <div
-            className="c15 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-        </div>
-        <div
-          className="c18"
-        >
-          <span
-            aria-label="See Tickets"
-            className="c19"
-            onClick={[Function]}
-            role="button"
-            width="102px"
-          >
-            See Tickets
-          </span>
-        </div>
-      </a>
       <div
-        className="c20"
+        className="c3"
       >
         <button
-          aria-label="More Info"
-          className="button--more-info c21"
+          aria-expanded={false}
+          aria-label="Expand Row"
+          className="button--expand-or-collapse c4 c5"
           data-index={0}
-          onClick={[Function]}
           role="button"
-          size={35}
+          size={45}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
-            height={22}
-            viewBox="0 0 5 21"
-            width={22}
+            fill="#1F262D"
+            height={15}
+            style={Object {}}
+            viewBox="0 0 15 7"
+            width={15}
           >
             <path
-              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
             />
           </svg>
         </button>
+        <a
+          aria-label="See Tickets"
+          className="c6"
+          href="/"
+          onClick={[Function]}
+          role="link"
+        >
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+              color={null}
+              style={
+                Object {
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              apr 23
+            </div>
+            <div
+              className="c9 c10"
+            >
+              Thu, 8:00 PM
+            </div>
+          </div>
+          <div
+            className="c11"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="c12 c13"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+              <div
+                className="c9 c10"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+            <div
+              className="c16 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+            </div>
+            <div
+              className="c18 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+          </div>
+          <div
+            className="c19"
+          >
+            <span
+              aria-label="See Tickets"
+              className="c20"
+              onClick={[Function]}
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
+        <div
+          className="c21"
+        >
+          <button
+            aria-label="More Info"
+            className="button--more-info c22"
+            data-index={0}
+            onClick={[Function]}
+            role="button"
+            size={35}
+          >
+            <svg
+              fill="rgba(0, 0, 15, 0.6)"
+              height={22}
+              viewBox="0 0 5 21"
+              width={22}
+            >
+              <path
+                d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
+      <div
+        className="c23 c13"
+        height={null}
+      />
     </div>
-    <div
-      className="c22 c12"
-    />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with link correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -611,7 +666,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -619,7 +674,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -629,7 +684,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -639,7 +694,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c23 {
+.c24 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -649,7 +704,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 75%;
 }
 
-.c25 {
+.c26 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -659,30 +714,30 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 25%;
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   color: rgba(0,0,15,1);
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
   color: rgba(0,0,15,0.6);
 }
 
-.c7 {
+.c8 {
   font-size: 14px;
   color: rgba(0,0,15,1);
   font-weight: 600;
 }
 
-.c24 {
+.c25 {
   font-size: 14px;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -701,22 +756,22 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   width: 45px;
 }
 
-.c4:disabled {
+.c5:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c5:focus {
   outline: none;
 }
 
-.c4 > * {
+.c5 > * {
   pointer-events: none;
 }
 
-.c21 {
+.c22 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -735,30 +790,30 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   width: 35px;
 }
 
-.c21:disabled {
+.c22:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c21:focus {
+.c22:focus {
   outline: none;
 }
 
-.c21 > * {
+.c22 > * {
   pointer-events: none;
 }
 
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
+.c1:not(:last-of-type) > div {
   border-bottom: 0.5px solid #E0E0E0;
 }
 
 .c2 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -770,11 +825,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding-right: 8px;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c5 {
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
@@ -793,21 +848,21 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin: 12px 0 8px 0;
 }
 
-.c6 {
+.c7 {
   min-width: 101px;
   max-width: 116px;
   padding-left: 8px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c17 {
+.c18 {
   display: none;
 }
 
-.c19 {
+.c20 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -836,36 +891,36 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding: 18px 0 8px 0;
 }
 
-.c19:disabled {
+.c20:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
-.c22 {
+.c23 {
   padding-left: 8px;
 }
 
-.c26 {
+.c27 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c19 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -879,14 +934,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -897,7 +952,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -906,7 +961,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -915,7 +970,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c16 {
+  .c17 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -926,7 +981,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -935,7 +990,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -944,7 +999,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c23 {
+  .c24 {
     max-width: 83.33333333333334%;
     padding-right: 12px;
     padding-left: 12px;
@@ -955,7 +1010,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c23 {
+  .c24 {
     max-width: 87.5%;
     -webkit-flex: 0 0 87.5%;
     -ms-flex: 0 0 87.5%;
@@ -964,7 +1019,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c23 {
+  .c24 {
     max-width: 90%;
     -webkit-flex: 0 0 90%;
     -ms-flex: 0 0 90%;
@@ -973,7 +1028,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c25 {
+  .c26 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -984,7 +1039,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c25 {
+  .c26 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -993,7 +1048,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c25 {
+  .c26 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -1002,20 +1057,25 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media only screen and {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media only screen and {
-  .c7 {
+  .c8 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:769px) {
   .c1 {
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
     border-radius: 4px;
     box-shadow: 0;
     -webkit-transition: box-shadow 0.5s ease-in-out;
@@ -1024,39 +1084,56 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c3 {
+  .c4 {
     display: block;
+    border: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 100ms linear;
+    -webkit-transition: transform 100ms linear;
+    transition: transform 100ms linear;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c5 {
+  .c6 {
     margin: 18px 0 8px 0;
   }
 
-  .c5:hover {
+  .c6:hover {
     background-color: rgba(2,108,223,0.2);
   }
 
-  .c5:hover .text--primary:after {
+  .c6:hover .text--primary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--secondary:after {
+  .c6:hover .text--secondary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--primary:before {
+  .c6:hover .text--primary:before {
     content: "";
   }
 
-  .c5:hover .text--secondary:before {
+  .c6:hover .text--secondary:before {
     content: "";
   }
 }
 
 @media screen and (min-width:769px) {
-  .c15 {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1069,17 +1146,34 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c17 {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1092,26 +1186,38 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c22 {
+  .c23 {
     padding-left: 12px;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c26 {
+  .c27 {
+    max-height: none;
+    height: auto;
     border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
+  .c19 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1128,7 +1234,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -1143,168 +1249,172 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     <div
       className="c2"
     >
-      <button
-        aria-expanded={false}
-        aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
-        data-index={0}
-        role="button"
-        size={45}
-        style={null}
-      >
-        <svg
-          fill="#1F262D"
-          height={15}
-          style={Object {}}
-          viewBox="0 0 15 7"
-          width={15}
-        >
-          <path
-            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-          />
-        </svg>
-      </button>
-      <a
-        aria-label="See Tickets"
-        className="c5"
-        href="/"
-        onClick={[Function]}
-        role="link"
-      >
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-            color={null}
-            style={
-              Object {
-                "textTransform": "uppercase",
-              }
-            }
-          >
-            apr 23
-          </div>
-          <div
-            className="c8 c9"
-          >
-            Thu, 8:00 PM
-          </div>
-        </div>
-        <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            className="c11 c12"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-            <div
-              className="c8 c9"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-          <div
-            className="c15 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-        </div>
-        <div
-          className="c18"
-        >
-          <span
-            aria-label="See Tickets"
-            className="c19"
-            onClick={[Function]}
-            role="button"
-            width="102px"
-          >
-            See Tickets
-          </span>
-        </div>
-      </a>
       <div
-        className="c20"
+        className="c3"
       >
         <button
-          aria-label="More Info"
-          className="button--more-info c21"
+          aria-expanded={false}
+          aria-label="Expand Row"
+          className="button--expand-or-collapse c4 c5"
           data-index={0}
-          onClick={[Function]}
           role="button"
-          size={35}
+          size={45}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
-            height={22}
-            viewBox="0 0 5 21"
-            width={22}
+            fill="#1F262D"
+            height={15}
+            style={Object {}}
+            viewBox="0 0 15 7"
+            width={15}
           >
             <path
-              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
             />
           </svg>
         </button>
-      </div>
-    </div>
-    <div
-      className="c22 c10"
-    >
-      <div
-        className="c23"
-      >
         <a
-          className="c24"
-          color=""
-          href=""
-          rel="_self"
-          target=""
+          aria-label="See Tickets"
+          className="c6"
+          href="/"
+          onClick={[Function]}
+          role="link"
         >
-          Ticket Options Available
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+              color={null}
+              style={
+                Object {
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              apr 23
+            </div>
+            <div
+              className="c9 c10"
+            >
+              Thu, 8:00 PM
+            </div>
+          </div>
+          <div
+            className="c11"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="c12 c13"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+              <div
+                className="c9 c10"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+            <div
+              className="c16 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+            </div>
+            <div
+              className="c18 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+          </div>
+          <div
+            className="c19"
+          >
+            <span
+              aria-label="See Tickets"
+              className="c20"
+              onClick={[Function]}
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
         </a>
-      </div>
-      <div
-        className="c25"
-      >
         <div
-          className="c9"
+          className="c21"
         >
-          on Partner Site
+          <button
+            aria-label="More Info"
+            className="button--more-info c22"
+            data-index={0}
+            onClick={[Function]}
+            role="button"
+            size={35}
+          >
+            <svg
+              fill="rgba(0, 0, 15, 0.6)"
+              height={22}
+              viewBox="0 0 5 21"
+              width={22}
+            >
+              <path
+                d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
+      <div
+        className="c23 c11"
+      >
+        <div
+          className="c24"
+        >
+          <a
+            className="c25"
+            color=""
+            href=""
+            rel="_self"
+            target=""
+          >
+            Ticket Options Available
+          </a>
+        </div>
+        <div
+          className="c26"
+        >
+          <div
+            className="c10"
+          >
+            on Partner Site
+          </div>
+        </div>
+      </div>
+      <div
+        className="c27 c13"
+        height={null}
+      />
     </div>
-    <div
-      className="c26 c12"
-    />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1323,7 +1433,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -1331,7 +1441,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1341,7 +1451,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1351,7 +1461,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c23 {
+.c24 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1361,7 +1471,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 75%;
 }
 
-.c25 {
+.c26 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1371,30 +1481,30 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 25%;
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   color: rgba(0,0,15,1);
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
   color: rgba(0,0,15,0.6);
 }
 
-.c7 {
+.c8 {
   font-size: 14px;
   color: rgba(0,0,15,1);
   font-weight: 600;
 }
 
-.c24 {
+.c25 {
   font-size: 14px;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -1413,22 +1523,22 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   width: 45px;
 }
 
-.c4:disabled {
+.c5:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c5:focus {
   outline: none;
 }
 
-.c4 > * {
+.c5 > * {
   pointer-events: none;
 }
 
-.c21 {
+.c22 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -1447,30 +1557,30 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   width: 35px;
 }
 
-.c21:disabled {
+.c22:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c21:focus {
+.c22:focus {
   outline: none;
 }
 
-.c21 > * {
+.c22 > * {
   pointer-events: none;
 }
 
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
+.c1:not(:last-of-type) > div {
   border-bottom: 0.5px solid #E0E0E0;
 }
 
 .c2 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1482,11 +1592,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding-right: 8px;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c5 {
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
@@ -1505,21 +1615,21 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin: 12px 0 8px 0;
 }
 
-.c6 {
+.c7 {
   min-width: 101px;
   max-width: 116px;
   padding-left: 8px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c17 {
+.c18 {
   display: none;
 }
 
-.c19 {
+.c20 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -1548,36 +1658,36 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding: 18px 0 8px 0;
 }
 
-.c19:disabled {
+.c20:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
-.c22 {
+.c23 {
   padding-left: 8px;
 }
 
-.c26 {
+.c27 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c19 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -1591,14 +1701,14 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1609,7 +1719,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1618,7 +1728,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1627,7 +1737,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c16 {
+  .c17 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1638,7 +1748,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -1647,7 +1757,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -1656,7 +1766,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c23 {
+  .c24 {
     max-width: 83.33333333333334%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1667,7 +1777,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c23 {
+  .c24 {
     max-width: 87.5%;
     -webkit-flex: 0 0 87.5%;
     -ms-flex: 0 0 87.5%;
@@ -1676,7 +1786,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c23 {
+  .c24 {
     max-width: 90%;
     -webkit-flex: 0 0 90%;
     -ms-flex: 0 0 90%;
@@ -1685,7 +1795,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c25 {
+  .c26 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1696,7 +1806,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c25 {
+  .c26 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -1705,7 +1815,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c25 {
+  .c26 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -1714,20 +1824,25 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media only screen and {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media only screen and {
-  .c7 {
+  .c8 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:769px) {
   .c1 {
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
     border-radius: 4px;
     box-shadow: 0;
     -webkit-transition: box-shadow 0.5s ease-in-out;
@@ -1736,39 +1851,56 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c3 {
+  .c4 {
     display: block;
+    border: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 100ms linear;
+    -webkit-transition: transform 100ms linear;
+    transition: transform 100ms linear;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c5 {
+  .c6 {
     margin: 18px 0 8px 0;
   }
 
-  .c5:hover {
+  .c6:hover {
     background-color: rgba(2,108,223,0.2);
   }
 
-  .c5:hover .text--primary:after {
+  .c6:hover .text--primary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--secondary:after {
+  .c6:hover .text--secondary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--primary:before {
+  .c6:hover .text--primary:before {
     content: "";
   }
 
-  .c5:hover .text--secondary:before {
+  .c6:hover .text--secondary:before {
     content: "";
   }
 }
 
 @media screen and (min-width:769px) {
-  .c15 {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1781,17 +1913,34 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c17 {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1804,26 +1953,38 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c22 {
+  .c23 {
     padding-left: 12px;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c26 {
+  .c27 {
+    max-height: none;
+    height: auto;
     border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
+  .c19 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1840,7 +2001,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -1855,168 +2016,172 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     <div
       className="c2"
     >
-      <button
-        aria-expanded={false}
-        aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
-        data-index={0}
-        role="button"
-        size={45}
-        style={null}
-      >
-        <svg
-          fill="#1F262D"
-          height={15}
-          style={Object {}}
-          viewBox="0 0 15 7"
-          width={15}
-        >
-          <path
-            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-          />
-        </svg>
-      </button>
-      <a
-        aria-label="See Tickets"
-        className="c5"
-        href="/"
-        onClick={[Function]}
-        role="link"
-      >
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-            color={null}
-            style={
-              Object {
-                "textTransform": "uppercase",
-              }
-            }
-          >
-            apr 23
-          </div>
-          <div
-            className="c8 c9"
-          >
-            Thu, 8:00 PM
-          </div>
-        </div>
-        <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            className="c11 c12"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-            <div
-              className="c8 c9"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-          <div
-            className="c15 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-        </div>
-        <div
-          className="c18"
-        >
-          <span
-            aria-label="See Tickets"
-            className="c19"
-            onClick={[Function]}
-            role="button"
-            width="102px"
-          >
-            See Tickets
-          </span>
-        </div>
-      </a>
       <div
-        className="c20"
+        className="c3"
       >
         <button
-          aria-label="More Info"
-          className="button--more-info c21"
+          aria-expanded={false}
+          aria-label="Expand Row"
+          className="button--expand-or-collapse c4 c5"
           data-index={0}
-          onClick={[Function]}
           role="button"
-          size={35}
+          size={45}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
-            height={22}
-            viewBox="0 0 5 21"
-            width={22}
+            fill="#1F262D"
+            height={15}
+            style={Object {}}
+            viewBox="0 0 15 7"
+            width={15}
           >
             <path
-              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
             />
           </svg>
         </button>
-      </div>
-    </div>
-    <div
-      className="c22 c10"
-    >
-      <div
-        className="c23"
-      >
         <a
-          className="c24"
-          color=""
+          aria-label="See Tickets"
+          className="c6"
           href="/"
-          rel="_self"
-          target=""
+          onClick={[Function]}
+          role="link"
         >
-          Ticket options available
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+              color={null}
+              style={
+                Object {
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              apr 23
+            </div>
+            <div
+              className="c9 c10"
+            >
+              Thu, 8:00 PM
+            </div>
+          </div>
+          <div
+            className="c11"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="c12 c13"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+              <div
+                className="c9 c10"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+            <div
+              className="c16 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+            </div>
+            <div
+              className="c18 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+          </div>
+          <div
+            className="c19"
+          >
+            <span
+              aria-label="See Tickets"
+              className="c20"
+              onClick={[Function]}
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
         </a>
-      </div>
-      <div
-        className="c25"
-      >
         <div
-          className="c9"
+          className="c21"
         >
-          click here
+          <button
+            aria-label="More Info"
+            className="button--more-info c22"
+            data-index={0}
+            onClick={[Function]}
+            role="button"
+            size={35}
+          >
+            <svg
+              fill="rgba(0, 0, 15, 0.6)"
+              height={22}
+              viewBox="0 0 5 21"
+              width={22}
+            >
+              <path
+                d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
+      <div
+        className="c23 c11"
+      >
+        <div
+          className="c24"
+        >
+          <a
+            className="c25"
+            color=""
+            href="/"
+            rel="_self"
+            target=""
+          >
+            Ticket options available
+          </a>
+        </div>
+        <div
+          className="c26"
+        >
+          <div
+            className="c10"
+          >
+            click here
+          </div>
+        </div>
+      </div>
+      <div
+        className="c27 c13"
+        height={null}
+      />
     </div>
-    <div
-      className="c26 c12"
-    />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders standard List Row correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2035,7 +2200,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -2043,7 +2208,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -2053,7 +2218,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -2063,23 +2228,23 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   color: rgba(0,0,15,1);
 }
 
-.c9 {
+.c10 {
   font-size: 14px;
   color: rgba(0,0,15,0.6);
 }
 
-.c7 {
+.c8 {
   font-size: 14px;
   color: rgba(0,0,15,1);
   font-weight: 600;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -2098,22 +2263,22 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   width: 45px;
 }
 
-.c4:disabled {
+.c5:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c5:focus {
   outline: none;
 }
 
-.c4 > * {
+.c5 > * {
   pointer-events: none;
 }
 
-.c21 {
+.c22 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -2132,30 +2297,30 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   width: 35px;
 }
 
-.c21:disabled {
+.c22:disabled {
   color: rgba(255,255,255 0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255 0.5);
   cursor: not-allowed;
 }
 
-.c21:focus {
+.c22:focus {
   outline: none;
 }
 
-.c21 > * {
+.c22 > * {
   pointer-events: none;
 }
 
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
+.c1:not(:last-of-type) > div {
   border-bottom: 0.5px solid #E0E0E0;
 }
 
 .c2 {
+  background-color: rgba(255,255,255,1);
+}
+
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2167,11 +2332,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   padding-right: 8px;
 }
 
-.c3 {
+.c4 {
   display: none;
 }
 
-.c5 {
+.c6 {
   -webkit-text-decoration: none;
   text-decoration: none;
   display: -webkit-box;
@@ -2190,21 +2355,21 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin: 12px 0 12px 0;
 }
 
-.c6 {
+.c7 {
   min-width: 101px;
   max-width: 116px;
   padding-left: 8px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c17 {
+.c18 {
   display: none;
 }
 
-.c19 {
+.c20 {
   font-size: 14px;
   font-weight: 600;
   height: 36px;
@@ -2233,32 +2398,32 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   padding: 18px 0 18px 0;
 }
 
-.c19:disabled {
+.c20:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
   border: 1px solid rgba(2,108,223,0.2);
   cursor: not-allowed;
 }
 
-.c22 {
+.c23 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c19 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -2272,14 +2437,14 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:481px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2290,7 +2455,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -2299,7 +2464,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -2308,7 +2473,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:481px) {
-  .c16 {
+  .c17 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2319,7 +2484,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -2328,7 +2493,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1025px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -2337,20 +2502,25 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media only screen and {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media only screen and {
-  .c7 {
+  .c8 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:769px) {
   .c1 {
-    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .c2 {
     border-radius: 4px;
     box-shadow: 0;
     -webkit-transition: box-shadow 0.5s ease-in-out;
@@ -2359,39 +2529,56 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c3 {
+  .c4 {
     display: block;
+    border: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-transition: -webkit-transform 100ms linear;
+    -webkit-transition: transform 100ms linear;
+    transition: transform 100ms linear;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c5 {
+  .c6 {
     margin: 18px 0 18px 0;
   }
 
-  .c5:hover {
+  .c6:hover {
     background-color: rgba(2,108,223,0.2);
   }
 
-  .c5:hover .text--primary:after {
+  .c6:hover .text--primary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--secondary:after {
+  .c6:hover .text--secondary:after {
     background-color: rgba(2,108,223,0.1);
   }
 
-  .c5:hover .text--primary:before {
+  .c6:hover .text--primary:before {
     content: "";
   }
 
-  .c5:hover .text--secondary:before {
+  .c6:hover .text--secondary:before {
     content: "";
   }
 }
 
 @media screen and (min-width:769px) {
-  .c15 {
+  .c16 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2404,17 +2591,34 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c17 {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2427,20 +2631,32 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c22 {
+  .c23 {
+    max-height: none;
+    height: auto;
     border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
   }
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
+  .c19 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2457,7 +2673,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c20 {
+  .c21 {
     display: none;
   }
 }
@@ -2472,136 +2688,140 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     <div
       className="c2"
     >
-      <button
-        aria-expanded={false}
-        aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
-        data-index={0}
-        role="button"
-        size={45}
-        style={null}
-      >
-        <svg
-          fill="#1F262D"
-          height={15}
-          style={Object {}}
-          viewBox="0 0 15 7"
-          width={15}
-        >
-          <path
-            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-          />
-        </svg>
-      </button>
-      <a
-        aria-label="See Tickets"
-        className="c5"
-        href="/"
-        onClick={[Function]}
-        role="link"
-      >
-        <div
-          className="c6"
-        >
-          <div
-            className="c7"
-            color={null}
-            style={
-              Object {
-                "textTransform": "uppercase",
-              }
-            }
-          >
-            apr 23
-          </div>
-          <div
-            className="c8 c9"
-          >
-            Thu, 8:00 PM
-          </div>
-        </div>
-        <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            className="c11 c12"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-            <div
-              className="c8 c9"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-          <div
-            className="c15 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              Del Mar Fairgrounds
-            </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
-            <div
-              className="c13 c14"
-            >
-              KABOO 3-Day Pass
-            </div>
-          </div>
-        </div>
-        <div
-          className="c18"
-        >
-          <span
-            aria-label="See Tickets"
-            className="c19"
-            onClick={[Function]}
-            role="button"
-            width="102px"
-          >
-            See Tickets
-          </span>
-        </div>
-      </a>
       <div
-        className="c20"
+        className="c3"
       >
         <button
-          aria-label="More Info"
-          className="button--more-info c21"
+          aria-expanded={false}
+          aria-label="Expand Row"
+          className="button--expand-or-collapse c4 c5"
           data-index={0}
-          onClick={[Function]}
           role="button"
-          size={35}
+          size={45}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
-            height={22}
-            viewBox="0 0 5 21"
-            width={22}
+            fill="#1F262D"
+            height={15}
+            style={Object {}}
+            viewBox="0 0 15 7"
+            width={15}
           >
             <path
-              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
             />
           </svg>
         </button>
+        <a
+          aria-label="See Tickets"
+          className="c6"
+          href="/"
+          onClick={[Function]}
+          role="link"
+        >
+          <div
+            className="c7"
+          >
+            <div
+              className="c8"
+              color={null}
+              style={
+                Object {
+                  "textTransform": "uppercase",
+                }
+              }
+            >
+              apr 23
+            </div>
+            <div
+              className="c9 c10"
+            >
+              Thu, 8:00 PM
+            </div>
+          </div>
+          <div
+            className="c11"
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          >
+            <div
+              className="c12 c13"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+              <div
+                className="c9 c10"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+            <div
+              className="c16 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                Del Mar Fairgrounds
+              </div>
+            </div>
+            <div
+              className="c18 c17"
+            >
+              <div
+                className="c14 c15"
+              >
+                KABOO 3-Day Pass
+              </div>
+            </div>
+          </div>
+          <div
+            className="c19"
+          >
+            <span
+              aria-label="See Tickets"
+              className="c20"
+              onClick={[Function]}
+              role="button"
+              width="102px"
+            >
+              See Tickets
+            </span>
+          </div>
+        </a>
+        <div
+          className="c21"
+        >
+          <button
+            aria-label="More Info"
+            className="button--more-info c22"
+            data-index={0}
+            onClick={[Function]}
+            role="button"
+            size={35}
+          >
+            <svg
+              fill="rgba(0, 0, 15, 0.6)"
+              height={22}
+              viewBox="0 0 5 21"
+              width={22}
+            >
+              <path
+                d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
+      <div
+        className="c23 c13"
+        height={null}
+      />
     </div>
-    <div
-      className="c22 c12"
-    />
   </div>
 </div>
 `;
