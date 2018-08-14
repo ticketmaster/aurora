@@ -5,17 +5,37 @@ import { render, Simulate } from "react-testing-library";
 import { Button } from "../";
 
 describe("<Button />", () => {
-  it("renders standard button correctly", () => {
+  it("renders standard small size button correctly", () => {
     const component = renderer.create(
-      <Button variant="standard">Dummy Label</Button>
+      <Button size="small">Dummy Label</Button>
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders standard disabled button correctly", () => {
+  it("renders standard regular size button correctly", () => {
+    const component = renderer.create(<Button>Dummy Label</Button>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders standard large size button correctly", () => {
     const component = renderer.create(
-      <Button variant="standard" disabled>
+      <Button size="large">Dummy Label</Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders standard regular size disabled button correctly", () => {
+    const component = renderer.create(<Button disabled>Dummy Label</Button>);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders special small size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="special" size="small">
         Dummy Label
       </Button>
     );
@@ -23,7 +43,45 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders outline button correctly", () => {
+  it("renders special regular size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="special">Dummy Label</Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders special large size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="special" size="large">
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders special regular size disabled button correctly", () => {
+    const component = renderer.create(
+      <Button variant="special" disabled>
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders outline small size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="outline" size="small">
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders outline regular size button correctly", () => {
     const component = renderer.create(
       <Button variant="outline">Dummy Label</Button>
     );
@@ -31,7 +89,17 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders outline disabled button correctly", () => {
+  it("renders outline large size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="outline" size="large">
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders outline regular size disabled button correctly", () => {
     const component = renderer.create(
       <Button variant="outline" disabled>
         Dummy Label
@@ -41,7 +109,17 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders transparent button correctly", () => {
+  it("renders transparent small size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="transparent" size="small">
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders transparent regular size button correctly", () => {
     const component = renderer.create(
       <Button variant="transparent">Dummy Label</Button>
     );
@@ -49,7 +127,17 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders transparent disabled button correctly", () => {
+  it("renders transparent large size button correctly", () => {
+    const component = renderer.create(
+      <Button variant="transparent" size="large">
+        Dummy Label
+      </Button>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders transparent regular size disabled button correctly", () => {
     const component = renderer.create(
       <Button variant="transparent" disabled>
         Dummy Label
@@ -60,11 +148,7 @@ describe("<Button />", () => {
   });
 
   it("renders link button correctly", () => {
-    const component = renderer.create(
-      <Button href="/" variant="standard">
-        Dummy Label
-      </Button>
-    );
+    const component = renderer.create(<Button href="/">Dummy Label</Button>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });

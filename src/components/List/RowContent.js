@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import spacing from "../../theme/spacing";
 import colors from "../../theme/colors";
 
-import { StyledButton } from "../Button";
+import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
@@ -120,7 +120,9 @@ const SubTitleColumn = styled(Column)`
 `;
 
 const ListRowButton = StyledButton.withComponent("span").extend`
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,6 +261,7 @@ const ListRowContent = ({
             role="button"
             width="102px"
             variant="standard"
+            size="regular"
             rowVariant={variant}
             onClick={onClick}
           >

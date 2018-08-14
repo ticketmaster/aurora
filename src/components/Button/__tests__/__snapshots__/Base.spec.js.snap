@@ -2,26 +2,48 @@
 
 exports[`<Button /> renders link button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
 }
 
 .c0:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
@@ -29,18 +51,20 @@ exports[`<Button /> renders link button correctly 1`] = `
   className="c0"
   href="/"
   rel={undefined}
+  size="regular"
 >
   Dummy Label
 </a>
 `;
 
-exports[`<Button /> renders outline button correctly 1`] = `
+exports[`<Button /> renders outline large size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 16px;
+  line-height: 2.63;
   width: 100%;
-  min-width: 100px;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
@@ -48,29 +72,52 @@ exports[`<Button /> renders outline button correctly 1`] = `
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #ebf4fd;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #d6e7fa;
 }
 
 .c0:disabled {
-  color: rgba(2,108,223,0.2);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid rgba(2,108,223,0.4);
   cursor: not-allowed;
 }
 
 <button
   className="c0"
+  size="large"
 >
   Dummy Label
 </button>
 `;
 
-exports[`<Button /> renders outline disabled button correctly 1`] = `
+exports[`<Button /> renders outline regular size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
@@ -78,140 +125,785 @@ exports[`<Button /> renders outline disabled button correctly 1`] = `
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #ebf4fd;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #d6e7fa;
 }
 
 .c0:disabled {
-  color: rgba(2,108,223,0.2);
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid rgba(2,108,223,0.4);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders outline regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #ebf4fd;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid rgba(2,108,223,0.4);
   cursor: not-allowed;
 }
 
 <button
   className="c0"
   disabled={true}
+  size="regular"
 >
   Dummy Label
 </button>
 `;
 
-exports[`<Button /> renders standard button correctly 1`] = `
+exports[`<Button /> renders outline small size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 12px;
+  line-height: 1.84;
   width: 100%;
-  min-width: 100px;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,1);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #ebf4fd;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid rgba(2,108,223,0.4);
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="small"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders special large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1BAB1E;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #265333;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(27,171,30,0.4);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="large"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders special regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1BAB1E;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #265333;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(27,171,30,0.4);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders special regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1BAB1E;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #265333;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(27,171,30,0.4);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders special small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1BAB1E;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #265333;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(27,171,30,0.4);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="small"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders standard large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
 }
 
 .c0:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
 <button
   className="c0"
+  size="large"
 >
   Dummy Label
 </button>
 `;
 
-exports[`<Button /> renders standard disabled button correctly 1`] = `
+exports[`<Button /> renders standard regular size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
 }
 
 .c0:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
+}
+
+.c0:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
 <button
   className="c0"
   disabled={true}
+  size="regular"
 >
   Dummy Label
 </button>
 `;
 
-exports[`<Button /> renders transparent button correctly 1`] = `
+exports[`<Button /> renders standard small size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 12px;
+  line-height: 1.84;
   width: 100%;
-  min-width: 100px;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  background-color: rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
 <button
   className="c0"
+  size="small"
 >
   Dummy Label
 </button>
 `;
 
-exports[`<Button /> renders transparent disabled button correctly 1`] = `
+exports[`<Button /> renders transparent large size button correctly 1`] = `
 .c0 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 16px;
+  line-height: 2.63;
   width: 100%;
-  min-width: 100px;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: rgba(255,255,255,1);
+  color: rgba(2,108,223,1);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: rgba(2,108,223,0.1);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: rgba(2,108,223,0.2);
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(2,108,223,1);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="large"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders transparent regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: rgba(2,108,223,0.1);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: rgba(2,108,223,0.2);
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders transparent regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: rgba(2,108,223,0.1);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: rgba(2,108,223,0.2);
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
 <button
   className="c0"
   disabled={true}
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
+exports[`<Button /> renders transparent small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c0:hover {
+  background-color: rgba(2,108,223,0.1);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: rgba(2,108,223,0.2);
+}
+
+.c0:disabled {
+  color: rgba(2,108,223,1);
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  size="small"
 >
   Dummy Label
 </button>

@@ -65,18 +65,18 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 45px;
   max-width: 45px;
   height: 45px;
@@ -84,9 +84,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -99,18 +99,18 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c21 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 35px;
   max-width: 35px;
   height: 35px;
@@ -118,9 +118,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -190,19 +190,27 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c19 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -218,10 +226,26 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   padding: 18px 0 18px 0;
 }
 
+.c19:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c19:hover {
+  background-color: #0150a7;
+}
+
+.c19:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
+}
+
 .c19:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
@@ -554,6 +578,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="c19"
             onClick={[Function]}
             role="button"
+            size="regular"
             width="102px"
           >
             See Tickets
@@ -683,18 +708,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 45px;
   max-width: 45px;
   height: 45px;
@@ -702,9 +727,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -717,18 +742,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c21 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 35px;
   max-width: 35px;
   height: 35px;
@@ -736,9 +761,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -808,19 +833,27 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c19 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -836,10 +869,26 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding: 18px 0 8px 0;
 }
 
+.c19:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c19:hover {
+  background-color: #0150a7;
+}
+
+.c19:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
+}
+
 .c19:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
@@ -1240,6 +1289,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="c19"
             onClick={[Function]}
             role="button"
+            size="regular"
             width="102px"
           >
             See Tickets
@@ -1395,18 +1445,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 45px;
   max-width: 45px;
   height: 45px;
@@ -1414,9 +1464,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -1429,18 +1479,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c21 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 35px;
   max-width: 35px;
   height: 35px;
@@ -1448,9 +1498,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -1520,19 +1570,27 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c19 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1548,10 +1606,26 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding: 18px 0 8px 0;
 }
 
+.c19:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c19:hover {
+  background-color: #0150a7;
+}
+
+.c19:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
+}
+
 .c19:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
@@ -1952,6 +2026,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="c19"
             onClick={[Function]}
             role="button"
+            size="regular"
             width="102px"
           >
             See Tickets
@@ -2080,18 +2155,18 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 45px;
   max-width: 45px;
   height: 45px;
@@ -2099,9 +2174,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c4:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -2114,18 +2189,18 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c21 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
   min-width: 35px;
   max-width: 35px;
   height: 35px;
@@ -2133,9 +2208,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c21:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -2205,19 +2280,27 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c19 {
-  font-size: 14px;
   font-weight: 600;
-  height: 36px;
+  font-size: 14px;
+  line-height: 2.43;
   width: 100%;
-  min-width: 100px;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
   text-align: center;
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2233,10 +2316,26 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   padding: 18px 0 18px 0;
 }
 
+.c19:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+}
+
+.c19:hover {
+  background-color: #0150a7;
+}
+
+.c19:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+  background-color: #013670;
+}
+
 .c19:disabled {
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
+  border: 1px solid transparent;
   cursor: not-allowed;
 }
 
@@ -2569,6 +2668,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="c19"
             onClick={[Function]}
             role="button"
+            size="regular"
             width="102px"
           >
             See Tickets

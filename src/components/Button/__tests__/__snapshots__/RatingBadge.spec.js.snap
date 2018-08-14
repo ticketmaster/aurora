@@ -2,18 +2,17 @@
 
 exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -80,6 +79,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -119,18 +119,17 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,6 +195,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -235,18 +235,17 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(2,108,223,1);
   background-color: rgba(255,255,255,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -313,6 +312,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -352,18 +352,17 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -429,6 +428,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -468,18 +468,17 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: rgba(2,108,223,1);
   border: 1px solid rgba(2,108,223,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -546,6 +545,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -585,18 +585,17 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -620,9 +619,9 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -662,6 +661,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
@@ -701,18 +701,17 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 600;
   height: 36px;
   width: 100%;
   min-width: 100px;
+  font-weight: 600;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
-  cursor: pointer;
   color: rgba(255,255,255,1);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -736,9 +735,9 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
 }
 
 .c0:disabled {
-  color: rgba(255,255,255 0.5);
+  color: rgba(255,255,255,0.5);
   background-color: transparent;
-  border: 1px solid rgba(255,255,255 0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
@@ -779,6 +778,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
+  size="regular"
 >
   <span
     className="c1"
