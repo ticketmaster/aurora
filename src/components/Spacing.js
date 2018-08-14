@@ -38,7 +38,7 @@ const Spacing = styled.div`
         props.bottom.large ||
           props.bottom.medium ||
           props.bottom.small ||
-          props.top.xSmall
+          props.bottom.xSmall
       )}
   `};
 `;
