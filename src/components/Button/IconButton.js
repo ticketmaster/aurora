@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledButton } from "../Button";
+import { GenericButton } from "./Badge.styles";
 
-const StyledIconButton = StyledButton.extend`
+const StyledIconButton = GenericButton.extend`
   min-width: ${props => props.size}px;
   max-width: ${props => props.size}px;
   height: ${props => props.size}px;

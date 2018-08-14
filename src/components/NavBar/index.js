@@ -7,7 +7,7 @@ import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 import typography from "../../theme/typography";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 import Links from "./Links";
 import Buttons from "./Buttons";
@@ -67,11 +67,11 @@ const Nav = styled.nav.attrs({
     height: 60px;
     z-index: 4;
     background-image: linear-gradient(77deg, rgba(0, 0, 0, 0), #000000);
-    ${mediumAndUp`
+    ${smallAndUp`
         background-image: linear-gradient(82deg, rgba(0, 0, 0, 0), #000000);
       `};
 
-    ${largeAndUp`
+    ${mediumAndUp`
       background-image: linear-gradient(86deg, rgba(0, 0, 0, 0), #000000);
       `};
   }
@@ -86,7 +86,7 @@ const Container = styled.div`
   align-items: center;
   align-content: center;
   z-index: 5;
-  ${largeAndUp`
+  ${mediumAndUp`
     margin: 0 auto;
   `};
 
@@ -111,7 +111,7 @@ const Left = styled.div`
   height: 60px;
   display: flex;
   padding-left: ${parseInt(spacing.normal, 10) / 2}px;
-  ${largeAndUp`width: 50%;`};
+  ${mediumAndUp`width: 50%;`};
 `;
 
 const MessageContainer = styled.div`

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import spacing from "../../theme/spacing";
 import colors from "../../theme/colors";
 
-import { StyledButton } from "../Button";
+import { GenericButton } from "../Button/Badge.styles";
 import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
@@ -119,7 +119,7 @@ const SubTitleColumn = styled(Column)`
   `};
 `;
 
-const ListRowButton = StyledButton.withComponent("span").extend`
+const ListRowButton = GenericButton.withComponent("span").extend`
   max-width: 102px;
   display: flex;
   justify-content: center;
