@@ -310,7 +310,7 @@ rows:
   - Prop: variant
     Type: string
     Default: 0
-    Notes: one of (0: border or 1: no-border
+    Notes: one of "0 - border" and "1 - no-border"
   - Prop: value
     Type: string
     Default: N/A
