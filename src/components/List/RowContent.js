@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 import colors from "../../theme/colors";
 import { Row, Column } from "../Grid";
@@ -119,16 +120,20 @@ class ListRowContent extends Component {
                   isOpen={isOpen}
                   large={isOpen ? 12 : 6}
                   xLarge={isOpen ? 12 : 6}
-                  isAnimated
+                  className={classnames({
+                    "list-row__title--fade-out": this.props.isOpen
+                  })}
                 >
                   <MultilinePrimaryText>{title}</MultilinePrimaryText>
                 </TitleColumn>
                 <SubTitleColumn
-                  isAnimated
                   hideOnExpand={isOpen && onExpandShow === "title"}
                   isOpen={isOpen}
                   large={isOpen ? 12 : 6}
                   xLarge={isOpen ? 12 : 6}
+                  className={classnames({
+                    "list-row__subtitle--fade-out": this.props.isOpen
+                  })}
                 >
                   <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
                 </SubTitleColumn>
@@ -176,7 +181,11 @@ class ListRowContent extends Component {
             isOpen={isOpen}
             innerRef={this.initRowDetailsRef}
             height={this.state.rowDetailsHeight}
-            isMounted={this.state.isMounted}
+            className={classnames({
+              "list-row--notMounted": !this.state.isMounted,
+              "list-row--open": this.state.isMounted && isOpen,
+              "list-row--close": this.state.isMounted && !isOpen
+            })}
           >
             {children}
           </OverflowDesktopContainer>

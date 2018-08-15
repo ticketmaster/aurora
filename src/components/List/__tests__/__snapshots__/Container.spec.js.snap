@@ -8,7 +8,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF cVHWUc"
   >
     <div
-      class="sc-kkGfuU hsuBLF"
+      class="sc-kkGfuU goCMAC"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -16,7 +16,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse fKRrHb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -34,7 +34,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -58,7 +58,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -72,7 +72,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP jKOEpI sc-bZQynM AkMDZ"
+              class="list-row__title--fade-out sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -81,7 +81,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf gBoNVC sc-bZQynM AkMDZ"
+              class="list-row__subtitle--fade-out sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -127,7 +127,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj ipYgsU sc-bZQynM AkMDZ"
+        class="list-row--open sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -428,7 +428,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -436,7 +436,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -454,7 +454,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -478,7 +478,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -492,7 +492,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -501,7 +501,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -547,7 +547,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -848,7 +848,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -856,7 +856,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -874,7 +874,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -898,7 +898,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -912,7 +912,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -921,7 +921,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -967,7 +967,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -1276,7 +1276,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -1284,7 +1284,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -1302,7 +1302,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -1326,7 +1326,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1340,7 +1340,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1349,7 +1349,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1395,7 +1395,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -1696,7 +1696,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -1704,7 +1704,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -1722,7 +1722,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -1746,7 +1746,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1760,7 +1760,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1769,7 +1769,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -1815,7 +1815,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -2116,7 +2116,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -2124,7 +2124,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -2142,7 +2142,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -2166,7 +2166,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2180,7 +2180,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2189,7 +2189,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2235,7 +2235,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -2544,7 +2544,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF cVHWUc"
   >
     <div
-      class="sc-kkGfuU hsuBLF"
+      class="sc-kkGfuU goCMAC"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -2552,7 +2552,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse fKRrHb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -2570,7 +2570,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -2594,7 +2594,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2608,7 +2608,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP jKOEpI sc-bZQynM AkMDZ"
+              class="list-row__title--fade-out sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2617,7 +2617,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf gBoNVC sc-bZQynM AkMDZ"
+              class="list-row__subtitle--fade-out sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -2663,7 +2663,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj ipYgsU sc-bZQynM AkMDZ"
+        class="list-row--open sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -2964,7 +2964,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -2972,7 +2972,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -2990,7 +2990,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -3014,7 +3014,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3028,7 +3028,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3037,7 +3037,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3083,7 +3083,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -3384,7 +3384,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -3392,7 +3392,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -3410,7 +3410,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -3434,7 +3434,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3448,7 +3448,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3457,7 +3457,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3503,7 +3503,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -3812,7 +3812,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -3820,7 +3820,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -3838,7 +3838,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -3862,7 +3862,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3876,7 +3876,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3885,7 +3885,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -3931,7 +3931,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -4232,7 +4232,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -4240,7 +4240,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -4258,7 +4258,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -4282,7 +4282,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4296,7 +4296,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4305,7 +4305,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4351,7 +4351,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -4652,7 +4652,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -4660,7 +4660,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -4678,7 +4678,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -4702,7 +4702,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4716,7 +4716,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4725,7 +4725,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -4771,7 +4771,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -5081,7 +5081,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -5089,7 +5089,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -5107,7 +5107,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -5131,7 +5131,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5145,7 +5145,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5154,7 +5154,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5200,7 +5200,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -5336,7 +5336,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -5344,7 +5344,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -5362,7 +5362,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -5386,7 +5386,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5400,7 +5400,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5409,7 +5409,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5455,7 +5455,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -5756,7 +5756,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -5764,7 +5764,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -5782,7 +5782,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -5806,7 +5806,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5820,7 +5820,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5829,7 +5829,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -5875,7 +5875,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -6176,7 +6176,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -6184,7 +6184,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -6202,7 +6202,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -6226,7 +6226,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6240,7 +6240,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6249,7 +6249,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6295,7 +6295,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -6603,7 +6603,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="sc-kEYyzF cVHWUc"
   >
     <div
-      class="sc-kkGfuU hsuBLF"
+      class="sc-kkGfuU goCMAC"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -6611,7 +6611,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse fKRrHb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -6629,7 +6629,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -6653,7 +6653,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6667,7 +6667,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-jWBwVP jKOEpI sc-bZQynM AkMDZ"
+              class="list-row__title--fade-out sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6676,7 +6676,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-cMljjf gBoNVC sc-bZQynM AkMDZ"
+              class="list-row__subtitle--fade-out sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -6722,7 +6722,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
       </div>
       <div
-        class="sc-iRbamj ipYgsU sc-bZQynM AkMDZ"
+        class="list-row--open sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -7023,7 +7023,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -7031,7 +7031,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -7049,7 +7049,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -7073,7 +7073,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7087,7 +7087,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7096,7 +7096,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7142,7 +7142,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -7443,7 +7443,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -7451,7 +7451,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -7469,7 +7469,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -7493,7 +7493,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7507,7 +7507,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7516,7 +7516,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7562,7 +7562,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       >
         <div
@@ -7871,7 +7871,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="sc-kEYyzF cVHWUc"
     >
       <div
-        class="sc-kkGfuU hsuBLF"
+        class="sc-kkGfuU goCMAC"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -7879,7 +7879,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="true"
             aria-label="Collapse Row"
-            class="sc-hSdWYo button--expand-or-collapse fKRrHb sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -7897,7 +7897,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -7921,7 +7921,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7935,7 +7935,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-jWBwVP jKOEpI sc-bZQynM AkMDZ"
+                class="list-row__title--fade-out sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7944,7 +7944,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-cMljjf gBoNVC sc-bZQynM AkMDZ"
+                class="list-row__subtitle--fade-out sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -7990,7 +7990,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
         </div>
         <div
-          class="sc-iRbamj ipYgsU sc-bZQynM AkMDZ"
+          class="list-row--open sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -8291,7 +8291,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -8299,7 +8299,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -8317,7 +8317,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -8341,7 +8341,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8355,7 +8355,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8364,7 +8364,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8410,7 +8410,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -8711,7 +8711,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="sc-kEYyzF jWXHrq"
     >
       <div
-        class="sc-kkGfuU dVVCeF"
+        class="sc-kkGfuU MMpwV"
       >
         <div
           class="sc-iAyFgw kBClfo"
@@ -8719,7 +8719,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -8737,7 +8737,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </button>
           <a
             aria-label="See Tickets"
-            class="sc-eHgmQL fBBGQU"
+            class="sc-eHgmQL fBEQlf"
             href="/"
             role="link"
           >
@@ -8761,7 +8761,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               style="width: 100%;"
             >
               <div
-                class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+                class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8775,7 +8775,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+                class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8784,7 +8784,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
                 </div>
               </div>
               <div
-                class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+                class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
               >
                 <div
                   class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -8830,7 +8830,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           </div>
         </div>
         <div
-          class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+          class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
           height="0"
         >
           <div
@@ -9139,7 +9139,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -9147,7 +9147,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -9165,7 +9165,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -9189,7 +9189,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9203,7 +9203,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9212,7 +9212,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9258,7 +9258,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       />
     </div>
@@ -9267,7 +9267,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -9275,7 +9275,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -9293,7 +9293,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -9317,7 +9317,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9331,7 +9331,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9340,7 +9340,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9386,7 +9386,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       />
     </div>
@@ -9395,7 +9395,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="sc-kEYyzF jWXHrq"
   >
     <div
-      class="sc-kkGfuU dVVCeF"
+      class="sc-kkGfuU MMpwV"
     >
       <div
         class="sc-iAyFgw kBClfo"
@@ -9403,7 +9403,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse cOYmKx sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -9421,7 +9421,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-eHgmQL fBBGQU"
+          class="sc-eHgmQL fBEQlf"
           href="/"
           role="link"
         >
@@ -9445,7 +9445,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             style="width: 100%;"
           >
             <div
-              class="sc-brqgnP cpRRud sc-bZQynM AkMDZ"
+              class="sc-cMljjf kCXkmy sc-bZQynM AkMDZ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9459,7 +9459,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-jWBwVP htwhYY sc-bZQynM cfEvYQ"
+              class="sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9468,7 +9468,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
               </div>
             </div>
             <div
-              class="sc-cMljjf jIxNZg sc-bZQynM cfEvYQ"
+              class="sc-brqgnP jxaWxJ sc-jWBwVP bltbtb sc-bZQynM cfEvYQ"
             >
               <div
                 class="sc-csuQGl oMJjN sc-kGXeez loiItH"
@@ -9514,7 +9514,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         </div>
       </div>
       <div
-        class="sc-iRbamj gUyuqk sc-bZQynM AkMDZ"
+        class="list-row--close sc-iRbamj cBNDqr sc-bZQynM AkMDZ"
         height="0"
       />
     </div>

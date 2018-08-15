@@ -185,8 +185,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: none;
 }
 
-.c18 {
-  display: none;
+.c18.list-row__subtitle--fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c20 {
@@ -343,8 +345,8 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   .c2 {
     border-radius: 4px;
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    -webkit-transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -355,9 +357,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    -webkit-transition: -webkit-transform 100ms linear;
-    -webkit-transition: transform 100ms linear;
-    transition: transform 100ms linear;
+    -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -397,16 +399,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -418,6 +410,12 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     opacity: 1;
     -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
     transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+  }
+
+  .c16.list-row__title--fade-out {
+    opacity: 0;
+    -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -428,50 +426,33 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 50%;
-    opacity: 1;
-    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-  }
-}
-
-@media screen and (min-width:769px) {
   .c23 {
     max-height: none;
     height: auto;
     border-top: 0.5px solid #E0E0E0;
+  }
+
+  .c23.list-row--notMounted {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+
+  .c23.list-row--open {
+    -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    max-height: nullpx;
+    opacity: 1;
+  }
+
+  .c23.list-row--close {
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    max-height: 0;
+    opacity: 0.2;
   }
 }
 
@@ -590,7 +571,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               </div>
             </div>
             <div
-              className="c18 c17"
+              className="c18 c16 c17"
             >
               <div
                 className="c14 c15"
@@ -638,7 +619,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </div>
       <div
-        className="c23 c13"
+        className="list-row--notMounted c23 c13"
         height={null}
       />
     </div>
@@ -858,8 +839,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: none;
 }
 
-.c18 {
-  display: none;
+.c18.list-row__subtitle--fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c20 {
@@ -1078,8 +1061,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   .c2 {
     border-radius: 4px;
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    -webkit-transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -1090,9 +1073,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    -webkit-transition: -webkit-transform 100ms linear;
-    -webkit-transition: transform 100ms linear;
-    transition: transform 100ms linear;
+    -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -1132,16 +1115,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1153,46 +1126,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     opacity: 1;
     -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
     transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+  }
+
+  .c16.list-row__title--fade-out {
+    opacity: 0;
+    -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
 @media screen and (min-width:769px) {
   .c12 {
     display: none;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 50%;
-    opacity: 1;
-    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
@@ -1207,12 +1152,29 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     max-height: none;
     height: auto;
     border-top: 0.5px solid #E0E0E0;
+  }
+
+  .c27.list-row--notMounted {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+
+  .c27.list-row--open {
+    -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    max-height: nullpx;
+    opacity: 1;
+  }
+
+  .c27.list-row--close {
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    max-height: 0;
+    opacity: 0.2;
   }
 }
 
@@ -1331,7 +1293,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               </div>
             </div>
             <div
-              className="c18 c17"
+              className="c18 c16 c17"
             >
               <div
                 className="c14 c15"
@@ -1405,7 +1367,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </div>
       <div
-        className="c27 c13"
+        className="list-row--notMounted c27 c13"
         height={null}
       />
     </div>
@@ -1625,8 +1587,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: none;
 }
 
-.c18 {
-  display: none;
+.c18.list-row__subtitle--fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c20 {
@@ -1845,8 +1809,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   .c2 {
     border-radius: 4px;
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    -webkit-transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -1857,9 +1821,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    -webkit-transition: -webkit-transform 100ms linear;
-    -webkit-transition: transform 100ms linear;
-    transition: transform 100ms linear;
+    -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -1899,16 +1863,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1920,46 +1874,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     opacity: 1;
     -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
     transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+  }
+
+  .c16.list-row__title--fade-out {
+    opacity: 0;
+    -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
 @media screen and (min-width:769px) {
   .c12 {
     display: none;
-  }
-}
-
-@media screen and (min-width:769px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 50%;
-    opacity: 1;
-    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
   }
 }
 
@@ -1974,12 +1900,29 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     max-height: none;
     height: auto;
     border-top: 0.5px solid #E0E0E0;
+  }
+
+  .c27.list-row--notMounted {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+
+  .c27.list-row--open {
+    -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    max-height: nullpx;
+    opacity: 1;
+  }
+
+  .c27.list-row--close {
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    max-height: 0;
+    opacity: 0.2;
   }
 }
 
@@ -2098,7 +2041,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               </div>
             </div>
             <div
-              className="c18 c17"
+              className="c18 c16 c17"
             >
               <div
                 className="c14 c15"
@@ -2172,7 +2115,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </div>
       <div
-        className="c27 c13"
+        className="list-row--notMounted c27 c13"
         height={null}
       />
     </div>
@@ -2365,8 +2308,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: none;
 }
 
-.c18 {
-  display: none;
+.c18.list-row__subtitle--fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c20 {
@@ -2523,8 +2468,8 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   .c2 {
     border-radius: 4px;
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    -webkit-transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 500ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -2535,9 +2480,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    -webkit-transition: -webkit-transform 100ms linear;
-    -webkit-transition: transform 100ms linear;
-    transition: transform 100ms linear;
+    -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -2577,16 +2522,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -2598,6 +2533,12 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     opacity: 1;
     -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
     transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
+  }
+
+  .c16.list-row__title--fade-out {
+    opacity: 0;
+    -webkit-transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: opacity 100ms cubic-bezier(0.455,0.03,0.515,0.955);
   }
 }
 
@@ -2608,50 +2549,33 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:769px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 50%;
-    opacity: 1;
-    -webkit-transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-    transition: opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53) 100ms;
-  }
-}
-
-@media screen and (min-width:769px) {
   .c23 {
     max-height: none;
     height: auto;
     border-top: 0.5px solid #E0E0E0;
+  }
+
+  .c23.list-row--notMounted {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     -webkit-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
+  }
+
+  .c23.list-row--open {
+    -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+    max-height: nullpx;
+    opacity: 1;
+  }
+
+  .c23.list-row--close {
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    max-height: 0;
+    opacity: 0.2;
   }
 }
 
@@ -2770,7 +2694,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               </div>
             </div>
             <div
-              className="c18 c17"
+              className="c18 c16 c17"
             >
               <div
                 className="c14 c15"
@@ -2818,7 +2742,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </div>
       <div
-        className="c23 c13"
+        className="list-row--notMounted c23 c13"
         height={null}
       />
     </div>
