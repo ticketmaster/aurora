@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import spacing from "../../theme/spacing";
 import colors from "../../theme/colors";
 import { StyledButton } from "../Button";
@@ -7,9 +7,7 @@ import { PrimaryText, SecondaryText } from "../Text";
 import { largeAndUp } from "../../theme/mediaQueries";
 import IconButton from "../Button/IconButton";
 import timing from "../../theme/animationTimings";
-
-const bezierEasy = "cubic-bezier(0.455, 0.03, 0.515, 0.955)";
-const bezierExit = "cubic-bezier(0.55, 0.085, 0.68, 0.53)";
+import { bezierEasy, bezierExit } from "../../theme/easing";
 
 export const RowWrapperContainer = styled.div`
   ${largeAndUp`
@@ -28,7 +26,7 @@ export const RowWrapper = styled.div`
       props.isOpen
         ? "0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19)"
         : 0};
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow ${timing.enterSpecial}ms ${bezierEasy};
   `};
 `;
 
@@ -47,7 +45,7 @@ export const IconWrapper = styled(IconButton).attrs({
     display: block;
     border: 0;
     transform: ${props => (props.isOpen ? "rotate(-180deg)" : "none")};
-    transition: transform ${timing.caretRotate}ms linear;
+    transition: transform ${timing.enter}ms ${bezierEasy};
   `};
 `;
 
@@ -69,11 +67,9 @@ export const LinkWrapper = styled.a`
     &:hover {
       background-color: ${colors.azure.light};
     }
-    
     &:hover .text--primary:after {
       background-color: ${colors.azure.muted};
     }
-
     &:hover .text--secondary:after {
       background-color: ${colors.azure.muted};
     }
@@ -92,49 +88,33 @@ export const DateWrapper = styled.div`
   padding-left: ${spacing.cozy};
 `;
 
-const opacityColumnAnimationFadeOut = `opacity ${
-  timing.contentFadeOut
-}ms ${bezierEasy}`;
-const opacityColumnAnimationFadeIn = `opacity ${
-  timing.contentFadeIn
-}ms ${bezierExit} ${timing.contentFadeInDelay}ms`;
-const opacityColumnAnimation = css`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex: 0 0 100%;
-  max-width: 50%;
-  opacity: ${props => (props.isOpen ? 0 : 1)};
-  transition: ${props =>
-    props.isOpen
-      ? opacityColumnAnimationFadeOut
-      : opacityColumnAnimationFadeIn};
-`;
-
 export const TitleColumn = styled(Column)`
   display: none;
   ${largeAndUp`
-    display: ${props => (props.hideOnExpand ? "none" : "flex")};
-    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
-    
-    transition: all 0s ease 0s; 
-    ${props => props.isAnimated && opacityColumnAnimation}    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 50%;
+    opacity: 1;
+    transition: opacity ${timing.exit}ms ${bezierExit} ${timing.enter}ms;    
+    &.list-row__title--fade-out {
+       opacity: 0;
+       transition: opacity ${timing.enter}ms ${bezierEasy};
+    };
   `};
+`;
+
+export const SubTitleColumn = styled(TitleColumn)`
+  &.list-row__subtitle--fade-out {
+    opacity: 0;
+    transition: opacity ${timing.enter}ms ${bezierEasy};
+  }
 `;
 
 export const MobileOnlyColumn = styled(Column)`
   ${largeAndUp`
     display: none;
-  `};
-`;
-
-export const SubTitleColumn = styled(Column)`
-  display: none;
-  ${largeAndUp`
-    display: ${props => (props.hideOnExpand ? "none" : "flex")};
-    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
-    transition: all 0s ease 0s; 
-    ${props => props.isAnimated && opacityColumnAnimation}  
   `};
 `;
 
@@ -155,27 +135,10 @@ export const LinkRow = styled(Row)`
   `};
 `;
 
-const maxRowHeight = 600;
-const expandAnimation = `max-height ${
-  timing.collapse
-}ms ${bezierEasy}, opacity ${timing.collapse}ms ${bezierEasy}`;
-const collapseAnimation = `max-height ${
-  timing.collapse
-}ms ${bezierExit}, opacity ${timing.collapse / 2}ms ${bezierExit}`;
-const mounted = css`
-  transition: ${props =>
-    props.isOpen ? `${expandAnimation}` : `${collapseAnimation}`};
-  max-height: ${props =>
-    props.isOpen ? `${props.height}px` || `${maxRowHeight}px` : "0"};
-  opacity: ${props => (props.isOpen ? 1 : 0.2)};
-`;
-const notMounted = css`
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all 0s ease 0s;
-`;
+const expandAnimation = `max-height ${timing.exit}ms ${bezierEasy}, 
+  opacity ${timing.exit}ms ${bezierEasy}`;
+const collapseAnimation = `max-height ${timing.exit}ms ${bezierExit}, 
+  opacity ${timing.exit / 2}ms ${bezierExit}`;
 
 export const OverflowDesktopContainer = styled(Column)`
   max-height: 0;
@@ -184,8 +147,23 @@ export const OverflowDesktopContainer = styled(Column)`
     max-height: none;
     height: auto;
     border-top: 0.5px solid ${colors.lightGray};
-    
-    ${props => (props.isMounted ? mounted : notMounted)}    
+    &.list-row--notMounted {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0s ease 0s;
+    }    
+    &.list-row--open {
+      transition: ${expandAnimation};
+      max-height: ${props => `${props.height}px` || "600px"};
+      opacity: 1;
+    }
+    &.list-row--close {
+      transition: ${collapseAnimation};
+      max-height: 0;
+      opacity: 0.2;
+    }    
   `};
 `;
 

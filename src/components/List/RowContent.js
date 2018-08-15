@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 import colors from "../../theme/colors";
 import { Row, Column } from "../Grid";
@@ -28,51 +29,85 @@ import {
   TitleColumn
 } from "./RowContent.styles";
 
-const ListRowContent = ({
-  rowItem: {
-    title,
-    subTitle,
-    dateTitle,
-    dateSubTitle,
-    buttonText,
-    variant,
-    linkTitle,
-    linkUrl,
-    linkSubTitle,
-    dateColor,
-    onClick,
-    url
-  },
-  isOpen,
-  index,
-  onOverflowClick,
-  onExpandShow,
-  children
-}) => (
-  <RowWrapper variant={variant} isOpen={isOpen}>
-    <ListContainer>
-      <IconWrapper
-        role="button"
-        aria-label={isOpen ? "Collapse Row" : "Expand Row"}
-        aria-expanded={isOpen}
-        data-index={index}
-        style={isOpen ? { transform: "rotate(-180deg)" } : null}
-      >
-        <ChevronIcon size={15} color={colors.blackPearl} />
-      </IconWrapper>
-      <LinkWrapper
-        role="link"
-        aria-label={buttonText}
-        onClick={onClick}
-        href={url}
-        rowVariant={variant}
-      >
-        <DateWrapper>
-          <BoldText style={{ textTransform: "uppercase" }} color={dateColor}>
-            {dateTitle}
-          </BoldText>
-          <SingleLineSecondaryText>{dateSubTitle}</SingleLineSecondaryText>
-        </DateWrapper>
+class ListRowContent extends Component {
+  state = {
+    rowDetailsHeight: null,
+    isMounted: false
+  };
+
+  componentDidMount() {
+    this.onMount();
+  }
+
+  onMount = () => {
+    if (this.rowDetailsElement) {
+      this.setState({
+        isMounted: true,
+        rowDetailsHeight: this.rowDetailsElement.clientHeight
+      });
+    }
+  };
+
+  initRowDetailsRef = ref => {
+    if (!this.rowDetailsElement) {
+      this.rowDetailsElement = ref;
+    }
+  };
+
+  render() {
+    const {
+      rowItem: {
+        title,
+        subTitle,
+        dateTitle,
+        dateSubTitle,
+        buttonText,
+        variant,
+        linkTitle,
+        linkUrl,
+        linkSubTitle,
+        dateColor,
+        onClick,
+        url
+      },
+      isOpen,
+      index,
+      onOverflowClick,
+      onExpandShow,
+      children
+    } = this.props;
+
+    return (
+      <RowWrapperContainer isOpen={isOpen}>
+        <RowWrapper variant={variant} isOpen={isOpen}>
+          <ListContainer>
+            <IconWrapper
+              role="button"
+              aria-label={isOpen ? "Collapse Row" : "Expand Row"}
+              aria-expanded={isOpen}
+              data-index={index}
+              isOpen={isOpen}
+            >
+              <ChevronIcon size={15} color={colors.blackPearl} />
+            </IconWrapper>
+            <LinkWrapper
+              role="link"
+              aria-label={buttonText}
+              onClick={onClick}
+              href={url}
+              rowVariant={variant}
+            >
+              <DateWrapper>
+                <BoldText
+                  style={{ textTransform: "uppercase" }}
+                  color={dateColor}
+                >
+                  {dateTitle}
+                </BoldText>
+                <SingleLineSecondaryText>
+                  {dateSubTitle}
+                </SingleLineSecondaryText>
+              </DateWrapper>
 
               <Row style={{ width: "100%" }}>
                 <MobileOnlyColumn small={12}>
@@ -85,15 +120,20 @@ const ListRowContent = ({
                   isOpen={isOpen}
                   large={isOpen ? 12 : 6}
                   xLarge={isOpen ? 12 : 6}
+                  className={classnames({
+                    "list-row__title--fade-out": this.props.isOpen
+                  })}
                 >
                   <MultilinePrimaryText>{title}</MultilinePrimaryText>
                 </TitleColumn>
                 <SubTitleColumn
-                  isAnimated
                   hideOnExpand={isOpen && onExpandShow === "title"}
                   isOpen={isOpen}
                   large={isOpen ? 12 : 6}
                   xLarge={isOpen ? 12 : 6}
+                  className={classnames({
+                    "list-row__subtitle--fade-out": this.props.isOpen
+                  })}
                 >
                   <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
                 </SubTitleColumn>
@@ -105,7 +145,6 @@ const ListRowContent = ({
                   role="button"
                   width="102px"
                   variant="standard"
-                  size="regular"
                   rowVariant={variant}
                   onClick={onClick}
                 >
@@ -142,7 +181,11 @@ const ListRowContent = ({
             isOpen={isOpen}
             innerRef={this.initRowDetailsRef}
             height={this.state.rowDetailsHeight}
-            isMounted={this.state.isMounted}
+            className={classnames({
+              "list-row--notMounted": !this.state.isMounted,
+              "list-row--open": this.state.isMounted && isOpen,
+              "list-row--close": this.state.isMounted && !isOpen
+            })}
           >
             {children}
           </OverflowDesktopContainer>

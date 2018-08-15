@@ -1,9 +1,7 @@
 const listTimings = {
-  caretRotate: 100,
-  collapse: 300,
-  contentFadeOut: 100,
-  contentFadeIn: 300,
-  contentFadeInDelay: 100
+  enter: 100,
+  exit: 300,
+  enterSpecial: 500
 };
 
 export default listTimings;
