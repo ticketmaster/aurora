@@ -6,7 +6,7 @@ exports[`Input renders bottom label 1`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -32,11 +32,11 @@ exports[`Input renders bottom label 1`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -96,7 +96,7 @@ exports[`Input renders bottom label 1`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -156,7 +156,7 @@ exports[`Input renders bottom label 2`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -182,11 +182,11 @@ exports[`Input renders bottom label 2`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -246,7 +246,7 @@ exports[`Input renders bottom label 2`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -306,7 +306,7 @@ exports[`Input renders default input 1`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -332,11 +332,11 @@ exports[`Input renders default input 1`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -396,7 +396,7 @@ exports[`Input renders default input 1`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -456,7 +456,7 @@ exports[`Input renders error top label 1`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -482,11 +482,11 @@ exports[`Input renders error top label 1`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -546,7 +546,7 @@ exports[`Input renders error top label 1`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -580,7 +580,7 @@ exports[`Input renders error top label 1`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -643,7 +643,7 @@ exports[`Input renders error top label 2`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -669,11 +669,11 @@ exports[`Input renders error top label 2`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -733,7 +733,7 @@ exports[`Input renders error top label 2`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -767,7 +767,7 @@ exports[`Input renders error top label 2`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
@@ -830,7 +830,7 @@ exports[`Input renders top label 1`] = `
   width: 100%;
   border-radius: 2px;
   background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(0,0,15,0.6);
+  border: solid 1px rgba(38,38,38,0.6);
   padding-left: 18px;
   line-height: 2.57;
 }
@@ -856,11 +856,11 @@ exports[`Input renders top label 1`] = `
 }
 
 .c3:-webkit-input-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:-moz-placeholder {
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c3:focus {
@@ -920,7 +920,7 @@ exports[`Input renders top label 1`] = `
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: rgba(0,0,15,0.4);
+  color: rgba(38,38,38,0.4);
   position: relative;
 }
 
