@@ -124,7 +124,7 @@ exports[`SearchInput renders inverted input 1`] = `
   width: 100%;
   padding: 14px 16px 14px calc(16px + 16px + 8px);
   background-color: transparent;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   border: 0;
   font-size: 16px;
 }
@@ -242,7 +242,7 @@ exports[`SearchInput renders slim & inverted input 1`] = `
   width: 100%;
   padding: 9px 12px 9px calc(12px + 12px + 10px);
   background-color: transparent;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   border: 0;
   font-size: 14px;
 }
