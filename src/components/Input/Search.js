@@ -19,6 +19,7 @@ const Input = styled.input.attrs({
       ? "9px 12px 9px calc(12px + 12px + 10px)"
       : "14px 16px 14px calc(16px + 16px + 8px)"};
   background-color: transparent;
+  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
   border: 0;
   font-size: ${props =>
     props.slim ? typography.size.hecto : typography.size.kilo};
