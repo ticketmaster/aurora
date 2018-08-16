@@ -121,12 +121,11 @@ exports[`ImageCard renders standard card 1`] = `
 `;
 
 exports[`ImageCard renders type = half 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(38,38,38,1);
 }
 
 .c2 {
@@ -137,11 +136,27 @@ exports[`ImageCard renders type = half 1`] = `
 .c3 {
   position: relative;
   color: rgba(255,255,255,1);
-  background-color: rgba(31,38,45,0.8);
+  background-color: none;
   border-radius: 4px;
   padding: 4px 8px;
   margin-left: 8px;
   margin-bottom: 8px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
+.c1 {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.08),0 0 4px 0 rgba(0,0,0,0.16);
+  width: 50%;
 }
 
 .c4 {
@@ -151,9 +166,22 @@ exports[`ImageCard renders type = half 1`] = `
   font-weight: 600;
 }
 
-.c5 {
+.c4 > .image-card__title--half > span {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+}
+
+.c6 {
   font-size: 14px;
   font-weight: 400;
+}
+
+.c6 > .image-card__subtitle--half > span {
+  color: #1F262D;
+  -webkit-letter-spacing: "normal";
+  -moz-letter-spacing: "normal";
+  -ms-letter-spacing: "normal";
+  letter-spacing: "normal";
 }
 
 .c0 {
@@ -179,6 +207,7 @@ exports[`ImageCard renders type = half 1`] = `
 >
   <div
     className="container-block c1"
+    width="50%"
   >
     <img
       alt=""
@@ -193,12 +222,32 @@ exports[`ImageCard renders type = half 1`] = `
     <span
       className="c4"
     >
-      Title
+      <div
+        className="text text--dark text--primary image-card__title--half c5"
+        disabled={false}
+        size="hecto"
+      >
+        <span
+          className="c4"
+        >
+          Title
+        </span>
+      </div>
     </span>
     <span
-      className="c5"
+      className="c6"
     >
-      Sub Title
+      <div
+        className="text text--dark text--primary image-card__subtitle--half c5"
+        disabled={false}
+        size="hecto"
+      >
+        <span
+          className="c6"
+        >
+          Sub Title
+        </span>
+      </div>
     </span>
   </div>
 </div>
@@ -237,6 +286,13 @@ exports[`ImageCard renders with custom image 1`] = `
   padding: 4px 8px;
   margin-left: 8px;
   margin-bottom: 8px;
+  font-style: inherit;
+  font-stretch: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c4 {
@@ -246,9 +302,22 @@ exports[`ImageCard renders with custom image 1`] = `
   font-weight: 600;
 }
 
+.c4 > .image-card__title--half > span {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+}
+
 .c5 {
   font-size: 14px;
   font-weight: 400;
+}
+
+.c5 > .image-card__subtitle--half > span {
+  color: #1F262D;
+  -webkit-letter-spacing: "normal";
+  -moz-letter-spacing: "normal";
+  -ms-letter-spacing: "normal";
+  letter-spacing: "normal";
 }
 
 .c1 {
@@ -334,6 +403,13 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   padding: 4px 8px;
   margin-left: 8px;
   margin-bottom: 8px;
+  font-style: inherit;
+  font-stretch: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c5 {
@@ -343,9 +419,22 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   font-weight: 600;
 }
 
+.c5 > .image-card__title--half > span {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+}
+
 .c6 {
   font-size: 14px;
   font-weight: 400;
+}
+
+.c6 > .image-card__subtitle--half > span {
+  color: #1F262D;
+  -webkit-letter-spacing: "normal";
+  -moz-letter-spacing: "normal";
+  -ms-letter-spacing: "normal";
+  letter-spacing: "normal";
 }
 
 .c1 {
@@ -431,6 +520,13 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   padding: 4px 8px;
   margin-left: 8px;
   margin-bottom: 8px;
+  font-style: inherit;
+  font-stretch: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
 }
 
 .c5 {
@@ -440,9 +536,22 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   font-weight: 600;
 }
 
+.c5 > .image-card__title--half > span {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+}
+
 .c6 {
   font-size: 14px;
   font-weight: 400;
+}
+
+.c6 > .image-card__subtitle--half > span {
+  color: #1F262D;
+  -webkit-letter-spacing: "normal";
+  -moz-letter-spacing: "normal";
+  -ms-letter-spacing: "normal";
+  letter-spacing: "normal";
 }
 
 .c1 {
