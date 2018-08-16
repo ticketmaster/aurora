@@ -23,7 +23,8 @@ class ListContainer extends Component {
     mobilePortalContent: null,
     desktopPortalContent: null,
     onCloseRequest: () => {}, // eslint-disable-line
-    renderIntoPortal: () => {} // eslint-disable-line
+    renderIntoPortal: () => {}, // eslint-disable-line
+    rowExpandedHeights: {}
   };
 
   componentWillMount() {
@@ -75,6 +76,34 @@ class ListContainer extends Component {
     return null;
   };
 
+  onRowDetailsTransitionEnd = event => {
+    const {
+      target: { dataset },
+      target
+    } = event;
+
+    if (target.className.includes("list-row--open")) {
+      this.setRowExpandedHeight(
+        parseInt(dataset.index, 10),
+        target.clientHeight
+      );
+    }
+  };
+
+  setRowExpandedHeight = (index, height) => {
+    if (
+      this.state.openIndex === index &&
+      !this.state.rowExpandedHeights[index]
+    ) {
+      this.setState({
+        rowExpandedHeights: {
+          ...this.state.rowExpandedHeights,
+          [index]: height
+        }
+      });
+    }
+  };
+
   renderIntoPortal = ({ children, contentType }) =>
     contentType === "mobile"
       ? this.setState({ mobilePortalContent: children })
@@ -82,8 +111,13 @@ class ListContainer extends Component {
 
   render() {
     const { children, ...rest } = this.props;
+
     return (
-      <Container onClick={this.onExpandOrCollapse} {...rest}>
+      <Container
+        onClick={this.onExpandOrCollapse}
+        onTransitionEnd={this.onRowDetailsTransitionEnd}
+        {...rest}
+      >
         <ContainerProvider value={this.state}>
           {children}
 
