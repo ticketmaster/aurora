@@ -50,17 +50,17 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c14 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c7 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -597,7 +597,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           size={35}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
+            fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
             width={22}
@@ -686,17 +686,17 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c14 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c7 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -1308,7 +1308,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           size={35}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
+            fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
             width={22}
@@ -1423,17 +1423,17 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c14 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c7 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -2045,7 +2045,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           size={35}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
+            fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
             width={22}
@@ -2140,17 +2140,17 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c14 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
-  color: rgba(0,0,15,0.6);
+  color: rgba(38,38,38,0.6);
 }
 
 .c7 {
   font-size: 14px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -2687,7 +2687,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           size={35}
         >
           <svg
-            fill="rgba(0, 0, 15, 0.6)"
+            fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
             width={22}

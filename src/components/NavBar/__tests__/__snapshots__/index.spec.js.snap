@@ -48,7 +48,7 @@ exports[`NavBar renders fixed 1`] = `
 .c9 {
   display: none;
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
   border-radius: 4px;
@@ -73,7 +73,7 @@ exports[`NavBar renders fixed 1`] = `
 
 .nav--inverted .c6,
 .links__list .c6 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -86,7 +86,7 @@ exports[`NavBar renders fixed 1`] = `
 .nav--inverted .c6:active,
 .links__list .c6:visited,
 .links__list .c6:active {
-  color: rgba(0,0,15,1) !important;
+  color: rgba(38,38,38,1) !important;
 }
 
 .c6:focus,
@@ -131,7 +131,7 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 .nav--inverted .c2 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -164,7 +164,7 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 .nav--inverted .c4 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -214,12 +214,12 @@ exports[`NavBar renders fixed 1`] = `
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
 .c0.nav--inverted .linkItem:visited {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {
@@ -500,7 +500,7 @@ exports[`NavBar renders inverted 1`] = `
 .c8 {
   display: none;
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
   border-radius: 4px;
@@ -525,7 +525,7 @@ exports[`NavBar renders inverted 1`] = `
 
 .nav--inverted .c6,
 .links__list .c6 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -538,7 +538,7 @@ exports[`NavBar renders inverted 1`] = `
 .nav--inverted .c6:active,
 .links__list .c6:visited,
 .links__list .c6:active {
-  color: rgba(0,0,15,1) !important;
+  color: rgba(38,38,38,1) !important;
 }
 
 .c6:focus,
@@ -583,7 +583,7 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 .nav--inverted .c2 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -616,7 +616,7 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 .nav--inverted .c4 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -666,12 +666,12 @@ exports[`NavBar renders inverted 1`] = `
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
 .c0.nav--inverted .linkItem:visited {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {
@@ -949,7 +949,7 @@ exports[`NavBar renders with defaults 1`] = `
 .c6 {
   display: none;
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
   border-radius: 4px;
@@ -974,7 +974,7 @@ exports[`NavBar renders with defaults 1`] = `
 
 .nav--inverted .c4,
 .links__list .c4 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -987,7 +987,7 @@ exports[`NavBar renders with defaults 1`] = `
 .nav--inverted .c4:active,
 .links__list .c4:visited,
 .links__list .c4:active {
-  color: rgba(0,0,15,1) !important;
+  color: rgba(38,38,38,1) !important;
 }
 
 .c4:focus,
@@ -1051,7 +1051,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 .nav--inverted .c2 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -1084,7 +1084,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 .nav--inverted .c7 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -1117,7 +1117,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 .nav--inverted .c9 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
@@ -1162,12 +1162,12 @@ exports[`NavBar renders with defaults 1`] = `
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
 .c0.nav--inverted .linkItem:visited {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {

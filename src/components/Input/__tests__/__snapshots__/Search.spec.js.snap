@@ -12,7 +12,7 @@ exports[`SearchInput renders default input 1`] = `
 
 .c2:focus {
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   outline: 0;
 }
 
@@ -85,7 +85,7 @@ exports[`SearchInput renders default input 1`] = `
 }
 
 .search--focus .c1 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 <div
@@ -129,7 +129,7 @@ exports[`SearchInput renders inverted input 1`] = `
 
 .c2:focus {
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   outline: 0;
 }
 
@@ -181,7 +181,7 @@ exports[`SearchInput renders inverted input 1`] = `
   overflow: hidden;
   outline: 0;
   border: 1px solid #bfbfbf;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   background-color: rgba(255,255,255,1);
 }
 
@@ -198,11 +198,11 @@ exports[`SearchInput renders inverted input 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding-left: 16px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .search--focus .c1 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 <div
@@ -246,7 +246,7 @@ exports[`SearchInput renders slim & inverted input 1`] = `
 
 .c2:focus {
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   outline: 0;
 }
 
@@ -298,7 +298,7 @@ exports[`SearchInput renders slim & inverted input 1`] = `
   overflow: hidden;
   outline: 0;
   border: 1px solid #bfbfbf;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   background-color: rgba(255,255,255,1);
 }
 
@@ -315,11 +315,11 @@ exports[`SearchInput renders slim & inverted input 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding-left: 12px;
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 .search--focus .c1 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 <div
@@ -363,7 +363,7 @@ exports[`SearchInput renders slim input 1`] = `
 
 .c2:focus {
   background-color: rgba(255,255,255,1);
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
   outline: 0;
 }
 
@@ -436,7 +436,7 @@ exports[`SearchInput renders slim input 1`] = `
 }
 
 .search--focus .c1 {
-  color: rgba(0,0,15,1);
+  color: rgba(38,38,38,1);
 }
 
 <div
