@@ -5,6 +5,7 @@ import styled from "styled-components";
 import spacing from "../../theme/spacing";
 import { SecondaryText, Link } from "../Text";
 import { ItemContainerConsumer } from "./Context";
+import { LinkTitle } from "../Text/Link";
 
 const ItemContainer = styled.div.attrs({
   className: "section-item"
@@ -19,12 +20,14 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
+const ItemContainerLink = ItemContainer.withComponent(Link);
+
 const IconContainer = styled.div`
   padding-right: ${spacing.cozy};
 `;
 
 /* stylelint-disable */
-const MultiLineLink = styled(Link)`
+const MultiLineLink = LinkTitle.withComponent("div").extend`
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -36,37 +39,44 @@ const handleItemClick = (children, value, event, onItemClick) => {
   if (children && value) {
     value.renderIntoPortal({ children, contentType: "desktop" });
   }
-  onItemClick(event);
+
+  if (onItemClick) {
+    onItemClick(event);
+  }
 };
 
 const SectionItem = ({
   item: { icon, title, subTitle, onItemClick, url },
   children,
   ...props
-}) => (
-  <ItemContainerConsumer>
-    {value => (
-      <ItemContainer
-        key={title}
-        role="link"
-        aria-label="Section Item"
-        onClick={event => handleItemClick(children, value, event, onItemClick)}
-        onItemClick={onItemClick}
-        {...props}
-      >
-        {icon && <IconContainer>{icon}</IconContainer>}
-        <div>
-          {onItemClick ? (
-            <MultiLineLink href={url}>{title}</MultiLineLink>
-          ) : (
-            <SecondaryText>{title}</SecondaryText>
-          )}
-          {subTitle ? <SecondaryText>{subTitle}</SecondaryText> : null}
-        </div>
-      </ItemContainer>
-    )}
-  </ItemContainerConsumer>
-);
+}) => {
+  const Container = url ? ItemContainerLink : ItemContainer;
+  const Title = onItemClick || url ? MultiLineLink : SecondaryText;
+
+  return (
+    <ItemContainerConsumer>
+      {value => (
+        <Container
+          key={title}
+          role="link"
+          aria-label="Section Item"
+          onClick={event =>
+            handleItemClick(children, value, event, onItemClick)
+          }
+          onItemClick={onItemClick}
+          href={url}
+          {...props}
+        >
+          {icon && <IconContainer>{icon}</IconContainer>}
+          <div>
+            <Title>{title}</Title>
+            {subTitle && <SecondaryText>{subTitle}</SecondaryText>}
+          </div>
+        </Container>
+      )}
+    </ItemContainerConsumer>
+  );
+};
 
 SectionItem.defaultProps = {
   children: null
