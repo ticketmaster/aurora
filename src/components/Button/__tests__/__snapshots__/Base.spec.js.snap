@@ -34,9 +34,9 @@ exports[`<Button /> renders link button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -89,9 +89,9 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #d6e7fa;
 }
 
@@ -142,9 +142,9 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #d6e7fa;
 }
 
@@ -195,9 +195,9 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #d6e7fa;
 }
 
@@ -249,9 +249,9 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #d6e7fa;
 }
 
@@ -302,9 +302,9 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #265333;
 }
 
@@ -355,9 +355,9 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #265333;
 }
 
@@ -408,9 +408,9 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #265333;
 }
 
@@ -462,9 +462,9 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #265333;
 }
 
@@ -515,9 +515,9 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -568,9 +568,9 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -621,9 +621,9 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -675,9 +675,9 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -728,9 +728,9 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(2,108,223,0.2);
 }
 
@@ -781,9 +781,9 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(2,108,223,0.2);
 }
 
@@ -834,9 +834,9 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(2,108,223,0.2);
 }
 
@@ -888,9 +888,9 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
 }
 
 .c0:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(2,108,223,0.2);
 }
 

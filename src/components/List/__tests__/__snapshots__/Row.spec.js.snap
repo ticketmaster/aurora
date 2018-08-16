@@ -236,9 +236,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c19:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -879,9 +879,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c19:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -1616,9 +1616,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c19:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
@@ -2326,9 +2326,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c19:active {
-  -webkit-transform: scale(0.95,0.95);
-  -ms-transform: scale(0.95,0.95);
-  transform: scale(0.95,0.95);
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
