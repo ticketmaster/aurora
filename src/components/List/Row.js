@@ -7,13 +7,14 @@ import ListRowContent from "./RowContent";
 
 const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
   <ItemContainerConsumer>
-    {({ openIndex, renderIntoPortal }) => (
+    {({ openIndex, renderIntoPortal, rowExpandedHeights }) => (
       <ListRowContent
         rowItem={{
           ...rowItem
         }}
         isOpen={openIndex === index}
         index={index}
+        rowExpandedHeights={rowExpandedHeights}
         onOverflowClick={() => {
           renderIntoPortal({ children, contentType: "mobile" });
           onOverflowClick();

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 
@@ -29,175 +29,284 @@ import {
   TitleColumn
 } from "./RowContent.styles";
 
-class ListRowContent extends Component {
-  state = {
-    rowDetailsHeight: null,
-    isMounted: false
-  };
+const ListRowContent = ({
+  rowItem: {
+    title,
+    subTitle,
+    dateTitle,
+    dateSubTitle,
+    buttonText,
+    variant,
+    linkTitle,
+    linkUrl,
+    linkSubTitle,
+    dateColor,
+    onClick,
+    url
+  },
+  isOpen,
+  index,
+  onOverflowClick,
+  onExpandShow,
+  rowExpandedHeights,
+  children
+}) => (
+  <RowWrapperContainer isOpen={isOpen}>
+    <RowWrapper variant={variant} isOpen={isOpen}>
+      <ListContainer>
+        <IconWrapper
+          role="button"
+          aria-label={isOpen ? "Collapse Row" : "Expand Row"}
+          aria-expanded={isOpen}
+          data-index={index}
+          isOpen={isOpen}
+        >
+          <ChevronIcon size={15} color={colors.blackPearl} />
+        </IconWrapper>
+        <LinkWrapper
+          role="link"
+          aria-label={buttonText}
+          onClick={onClick}
+          href={url}
+          rowVariant={variant}
+        >
+          <DateWrapper>
+            <BoldText style={{ textTransform: "uppercase" }} color={dateColor}>
+              {dateTitle}
+            </BoldText>
+            <SingleLineSecondaryText>{dateSubTitle}</SingleLineSecondaryText>
+          </DateWrapper>
 
-  componentDidMount() {
-    this.onMount();
-  }
+          <Row style={{ width: "100%" }}>
+            <MobileOnlyColumn small={12}>
+              <MultilinePrimaryText>{title}</MultilinePrimaryText>
+              <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
+            </MobileOnlyColumn>
 
-  onMount = () => {
-    if (this.rowDetailsElement) {
-      this.setState({
-        isMounted: true,
-        rowDetailsHeight: this.rowDetailsElement.clientHeight
-      });
-    }
-  };
-
-  initRowDetailsRef = ref => {
-    if (!this.rowDetailsElement) {
-      this.rowDetailsElement = ref;
-    }
-  };
-
-  render() {
-    const {
-      rowItem: {
-        title,
-        subTitle,
-        dateTitle,
-        dateSubTitle,
-        buttonText,
-        variant,
-        linkTitle,
-        linkUrl,
-        linkSubTitle,
-        dateColor,
-        onClick,
-        url
-      },
-      isOpen,
-      index,
-      onOverflowClick,
-      onExpandShow,
-      children
-    } = this.props;
-
-    return (
-      <RowWrapperContainer isOpen={isOpen}>
-        <RowWrapper variant={variant} isOpen={isOpen}>
-          <ListContainer>
-            <IconWrapper
-              role="button"
-              aria-label={isOpen ? "Collapse Row" : "Expand Row"}
-              aria-expanded={isOpen}
-              data-index={index}
+            <TitleColumn
+              hideOnExpand={isOpen && onExpandShow === "subTitle"}
               isOpen={isOpen}
+              large={isOpen ? 12 : 6}
+              xLarge={isOpen ? 12 : 6}
+              className={classnames({
+                "list-row__title--fade-out": isOpen
+              })}
             >
-              <ChevronIcon size={15} color={colors.blackPearl} />
-            </IconWrapper>
-            <LinkWrapper
-              role="link"
+              <MultilinePrimaryText>{title}</MultilinePrimaryText>
+            </TitleColumn>
+            <SubTitleColumn
+              hideOnExpand={isOpen && onExpandShow === "title"}
+              isOpen={isOpen}
+              large={isOpen ? 12 : 6}
+              xLarge={isOpen ? 12 : 6}
+              className={classnames({
+                "list-row__subtitle--fade-out": isOpen
+              })}
+            >
+              <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
+            </SubTitleColumn>
+          </Row>
+
+          <DesktopContainer>
+            <ListRowButton
               aria-label={buttonText}
-              onClick={onClick}
-              href={url}
+              role="button"
+              width="102px"
+              variant="standard"
               rowVariant={variant}
+              onClick={onClick}
             >
-              <DateWrapper>
-                <BoldText
-                  style={{ textTransform: "uppercase" }}
-                  color={dateColor}
-                >
-                  {dateTitle}
-                </BoldText>
-                <SingleLineSecondaryText>
-                  {dateSubTitle}
-                </SingleLineSecondaryText>
-              </DateWrapper>
+              {buttonText}
+            </ListRowButton>
+          </DesktopContainer>
+        </LinkWrapper>
 
-              <Row style={{ width: "100%" }}>
-                <MobileOnlyColumn small={12}>
-                  <MultilinePrimaryText>{title}</MultilinePrimaryText>
-                  <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
-                </MobileOnlyColumn>
-
-                <TitleColumn
-                  hideOnExpand={isOpen && onExpandShow === "subTitle"}
-                  isOpen={isOpen}
-                  large={isOpen ? 12 : 6}
-                  xLarge={isOpen ? 12 : 6}
-                  className={classnames({
-                    "list-row__title--fade-out": this.props.isOpen
-                  })}
-                >
-                  <MultilinePrimaryText>{title}</MultilinePrimaryText>
-                </TitleColumn>
-                <SubTitleColumn
-                  hideOnExpand={isOpen && onExpandShow === "title"}
-                  isOpen={isOpen}
-                  large={isOpen ? 12 : 6}
-                  xLarge={isOpen ? 12 : 6}
-                  className={classnames({
-                    "list-row__subtitle--fade-out": this.props.isOpen
-                  })}
-                >
-                  <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
-                </SubTitleColumn>
-              </Row>
-
-              <DesktopContainer>
-                <ListRowButton
-                  aria-label={buttonText}
-                  role="button"
-                  width="102px"
-                  variant="standard"
-                  rowVariant={variant}
-                  onClick={onClick}
-                >
-                  {buttonText}
-                </ListRowButton>
-              </DesktopContainer>
-            </LinkWrapper>
-
-            <MobileContainer>
-              <IconButton
-                className="button--more-info"
-                size={35}
-                data-index={index}
-                aria-label="More Info"
-                role="button"
-                onClick={onOverflowClick}
-              >
-                <OverflowIcon size={22} color={colors.onyx.light} />
-              </IconButton>
-            </MobileContainer>
-          </ListContainer>
-          {variant === "withLink" ? (
-            <LinkRow>
-              <Column small={9} medium={10} large={10.5} xLarge={10.8}>
-                <Link href={linkUrl}>{linkTitle}</Link>
-              </Column>
-              <Column small={3} medium={2} large={1.5} xLarge={1.2}>
-                <SecondaryText>{linkSubTitle}</SecondaryText>
-              </Column>
-            </LinkRow>
-          ) : null}
-
-          <OverflowDesktopContainer
-            isOpen={isOpen}
-            innerRef={this.initRowDetailsRef}
-            height={this.state.rowDetailsHeight}
-            className={classnames({
-              "list-row--notMounted": !this.state.isMounted,
-              "list-row--open": this.state.isMounted && isOpen,
-              "list-row--close": this.state.isMounted && !isOpen
-            })}
+        <MobileContainer>
+          <IconButton
+            className="button--more-info"
+            size={35}
+            data-index={index}
+            aria-label="More Info"
+            role="button"
+            onClick={onOverflowClick}
           >
-            {children}
-          </OverflowDesktopContainer>
-        </RowWrapper>
-      </RowWrapperContainer>
-    );
-  }
-}
+            <OverflowIcon size={22} color={colors.onyx.light} />
+          </IconButton>
+        </MobileContainer>
+      </ListContainer>
+      {variant === "withLink" ? (
+        <LinkRow>
+          <Column small={9} medium={10} large={10.5} xLarge={10.8}>
+            <Link href={linkUrl}>{linkTitle}</Link>
+          </Column>
+          <Column small={3} medium={2} large={1.5} xLarge={1.2}>
+            <SecondaryText>{linkSubTitle}</SecondaryText>
+          </Column>
+        </LinkRow>
+      ) : null}
+
+      <OverflowDesktopContainer
+        data-index={index}
+        isOpen={isOpen}
+        height={rowExpandedHeights[index] || 600}
+        className={classnames({
+          "list-row--open": isOpen,
+          "list-row--close": !isOpen
+        })}
+      >
+        {children}
+      </OverflowDesktopContainer>
+    </RowWrapper>
+  </RowWrapperContainer>
+);
+
+// class ListRowContent extends Component {
+//
+//   render() {
+//     const {
+//       rowItem: {
+//         title,
+//         subTitle,
+//         dateTitle,
+//         dateSubTitle,
+//         buttonText,
+//         variant,
+//         linkTitle,
+//         linkUrl,
+//         linkSubTitle,
+//         dateColor,
+//         onClick,
+//         url
+//       },
+//       isOpen,
+//       index,
+//       onOverflowClick,
+//       onExpandShow,
+//       children
+//     } = this.props;
+//
+//     return (
+//       <RowWrapperContainer isOpen={isOpen}>
+//         <RowWrapper variant={variant} isOpen={isOpen}>
+//           <ListContainer>
+//             <IconWrapper
+//               role="button"
+//               aria-label={isOpen ? "Collapse Row" : "Expand Row"}
+//               aria-expanded={isOpen}
+//               data-index={index}
+//               isOpen={isOpen}
+//             >
+//               <ChevronIcon size={15} color={colors.blackPearl} />
+//             </IconWrapper>
+//             <LinkWrapper
+//               role="link"
+//               aria-label={buttonText}
+//               onClick={onClick}
+//               href={url}
+//               rowVariant={variant}
+//             >
+//               <DateWrapper>
+//                 <BoldText
+//                   style={{ textTransform: "uppercase" }}
+//                   color={dateColor}
+//                 >
+//                   {dateTitle}
+//                 </BoldText>
+//                 <SingleLineSecondaryText>
+//                   {dateSubTitle}
+//                 </SingleLineSecondaryText>
+//               </DateWrapper>
+//
+//               <Row style={{ width: "100%" }}>
+//                 <MobileOnlyColumn small={12}>
+//                   <MultilinePrimaryText>{title}</MultilinePrimaryText>
+//                   <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
+//                 </MobileOnlyColumn>
+//
+//                 <TitleColumn
+//                   hideOnExpand={isOpen && onExpandShow === "subTitle"}
+//                   isOpen={isOpen}
+//                   large={isOpen ? 12 : 6}
+//                   xLarge={isOpen ? 12 : 6}
+//                   className={classnames({
+//                     "list-row__title--fade-out": this.props.isOpen
+//                   })}
+//                 >
+//                   <MultilinePrimaryText>{title}</MultilinePrimaryText>
+//                 </TitleColumn>
+//                 <SubTitleColumn
+//                   hideOnExpand={isOpen && onExpandShow === "title"}
+//                   isOpen={isOpen}
+//                   large={isOpen ? 12 : 6}
+//                   xLarge={isOpen ? 12 : 6}
+//                   className={classnames({
+//                     "list-row__subtitle--fade-out": this.props.isOpen
+//                   })}
+//                 >
+//                   <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
+//                 </SubTitleColumn>
+//               </Row>
+//
+//               <DesktopContainer>
+//                 <ListRowButton
+//                   aria-label={buttonText}
+//                   role="button"
+//                   width="102px"
+//                   variant="standard"
+//                   rowVariant={variant}
+//                   onClick={onClick}
+//                 >
+//                   {buttonText}
+//                 </ListRowButton>
+//               </DesktopContainer>
+//             </LinkWrapper>
+//
+//             <MobileContainer>
+//               <IconButton
+//                 className="button--more-info"
+//                 size={35}
+//                 data-index={index}
+//                 aria-label="More Info"
+//                 role="button"
+//                 onClick={onOverflowClick}
+//               >
+//                 <OverflowIcon size={22} color={colors.onyx.light} />
+//               </IconButton>
+//             </MobileContainer>
+//           </ListContainer>
+//           {variant === "withLink" ? (
+//             <LinkRow>
+//               <Column small={9} medium={10} large={10.5} xLarge={10.8}>
+//                 <Link href={linkUrl}>{linkTitle}</Link>
+//               </Column>
+//               <Column small={3} medium={2} large={1.5} xLarge={1.2}>
+//                 <SecondaryText>{linkSubTitle}</SecondaryText>
+//               </Column>
+//             </LinkRow>
+//           ) : null}
+//
+//           <OverflowDesktopContainer
+//             data-index={index}
+//             isOpen={isOpen}
+//             height={this.props.rowExpandedHeights[this.props.index] || 600}
+//             className={classnames({
+//               "list-row--open": isOpen,
+//               "list-row--close": !isOpen
+//             })}
+//             onTransitionEnd={this.onDetailsTransitionEnd}
+//           >
+//             {children}
+//           </OverflowDesktopContainer>
+//         </RowWrapper>
+//       </RowWrapperContainer>
+//     );
+//   }
+// }
 
 ListRowContent.defaultProps = {
   isOpen: false,
   onExpandShow: "subTitle",
+  rowExpandedHeights: {},
   children: null
 };
 
@@ -207,7 +316,8 @@ ListRowContent.propTypes = {
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
-  children: PropTypes.node
+  children: PropTypes.node,
+  rowExpandedHeights: PropTypes.objectOf(PropTypes.number)
 };
 
 export default ListRowContent;

@@ -135,28 +135,22 @@ export const LinkRow = styled(Row)`
   `};
 `;
 
-const expandAnimation = `max-height ${timing.exit}ms ${bezierEasy}, 
+const expandAnimation = `max-height ${timing.exit}ms ${bezierEasy},
   opacity ${timing.exit}ms ${bezierEasy}`;
-const collapseAnimation = `max-height ${timing.exit}ms ${bezierExit}, 
-  opacity ${timing.exit / 2}ms ${bezierExit}`;
+const collapseAnimation = `max-height ${timing.exit}ms ${bezierExit},
+  opacity ${timing.exit}ms ${bezierExit}`;
 
 export const OverflowDesktopContainer = styled(Column)`
   max-height: 0;
   overflow: hidden;
   ${largeAndUp`
-    max-height: none;
+    max-height: 0;
     height: auto;
+    opacity: 1;
     border-top: 0.5px solid ${colors.lightGray};
-    &.list-row--notMounted {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: all 0s ease 0s;
-    }    
     &.list-row--open {
       transition: ${expandAnimation};
-      max-height: ${props => `${props.height}px` || "600px"};
+      max-height: ${props => `${props.height}px`};
       opacity: 1;
     }
     &.list-row--close {

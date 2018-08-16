@@ -427,30 +427,22 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media screen and (min-width:769px) {
   .c23 {
-    max-height: none;
+    max-height: 0;
     height: auto;
+    opacity: 1;
     border-top: 0.5px solid #E0E0E0;
-  }
-
-  .c23.list-row--notMounted {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
   }
 
   .c23.list-row--open {
     -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-    max-height: nullpx;
+    max-height: 600px;
     opacity: 1;
   }
 
   .c23.list-row--close {
-    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
     max-height: 0;
     opacity: 0.2;
   }
@@ -482,6 +474,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 <div
   className="c0"
   onClick={[Function]}
+  onTransitionEnd={[Function]}
 >
   <div
     className="c1"
@@ -619,8 +612,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </div>
       <div
-        className="list-row--notMounted c23 c13"
-        height={null}
+        className="list-row--close c23 c13"
+        data-index={0}
+        height={600}
       />
     </div>
   </div>
@@ -1149,30 +1143,22 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:769px) {
   .c27 {
-    max-height: none;
+    max-height: 0;
     height: auto;
+    opacity: 1;
     border-top: 0.5px solid #E0E0E0;
-  }
-
-  .c27.list-row--notMounted {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
   }
 
   .c27.list-row--open {
     -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-    max-height: nullpx;
+    max-height: 600px;
     opacity: 1;
   }
 
   .c27.list-row--close {
-    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
     max-height: 0;
     opacity: 0.2;
   }
@@ -1204,6 +1190,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 <div
   className="c0"
   onClick={[Function]}
+  onTransitionEnd={[Function]}
 >
   <div
     className="c1"
@@ -1367,8 +1354,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </div>
       <div
-        className="list-row--notMounted c27 c13"
-        height={null}
+        className="list-row--close c27 c13"
+        data-index={0}
+        height={600}
       />
     </div>
   </div>
@@ -1897,30 +1885,22 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:769px) {
   .c27 {
-    max-height: none;
+    max-height: 0;
     height: auto;
+    opacity: 1;
     border-top: 0.5px solid #E0E0E0;
-  }
-
-  .c27.list-row--notMounted {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
   }
 
   .c27.list-row--open {
     -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-    max-height: nullpx;
+    max-height: 600px;
     opacity: 1;
   }
 
   .c27.list-row--close {
-    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
     max-height: 0;
     opacity: 0.2;
   }
@@ -1952,6 +1932,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 <div
   className="c0"
   onClick={[Function]}
+  onTransitionEnd={[Function]}
 >
   <div
     className="c1"
@@ -2115,8 +2096,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </div>
       <div
-        className="list-row--notMounted c27 c13"
-        height={null}
+        className="list-row--close c27 c13"
+        data-index={0}
+        height={600}
       />
     </div>
   </div>
@@ -2550,30 +2532,22 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media screen and (min-width:769px) {
   .c23 {
-    max-height: none;
+    max-height: 0;
     height: auto;
+    opacity: 1;
     border-top: 0.5px solid #E0E0E0;
-  }
-
-  .c23.list-row--notMounted {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
   }
 
   .c23.list-row--open {
     -webkit-transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: max-height 300ms cubic-bezier(0.455,0.03,0.515,0.955), opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-    max-height: nullpx;
+    max-height: 600px;
     opacity: 1;
   }
 
   .c23.list-row--close {
-    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 150ms cubic-bezier(0.55,0.085,0.68,0.53);
+    -webkit-transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 300ms cubic-bezier(0.55,0.085,0.68,0.53), opacity 300ms cubic-bezier(0.55,0.085,0.68,0.53);
     max-height: 0;
     opacity: 0.2;
   }
@@ -2605,6 +2579,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 <div
   className="c0"
   onClick={[Function]}
+  onTransitionEnd={[Function]}
 >
   <div
     className="c1"
@@ -2742,8 +2717,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </div>
       <div
-        className="list-row--notMounted c23 c13"
-        height={null}
+        className="list-row--close c23 c13"
+        data-index={0}
+        height={600}
       />
     </div>
   </div>
