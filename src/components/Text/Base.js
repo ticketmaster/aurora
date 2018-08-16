@@ -48,7 +48,7 @@ const TextBase = ({
 };
 
 TextBase.propTypes = {
-  tag: PropTypes.oneOf(["div", "span", "p"]),
+  tag: PropTypes.oneOf(["div", "span", "p", "h3", "h4", "h5", "h6"]),
   variant: PropTypes.oneOf(["accent", "dark", "light"]),
   accent: PropTypes.oneOf([
     "",

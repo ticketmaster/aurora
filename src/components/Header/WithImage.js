@@ -6,7 +6,7 @@ import classNames from "classnames";
 import Gradient from "../Gradient";
 import Container from "../Grid/Container";
 import Row from "../Grid/Row";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 
 const GradientBackground = Gradient.extend`
   position: absolute;
@@ -37,6 +37,10 @@ const ContainerRow = styled(Row)`
   align-items: center;
   position: relative;
   z-index: 2;
+  ${xLargeAndUp`
+    padding-left: 72px;
+    padding-right: 72px;
+  `};
 `;
 
 const ImageWrapper = styled.div`

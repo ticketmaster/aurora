@@ -3,12 +3,20 @@ import renderer from "react-test-renderer";
 import Spacing from "../Spacing";
 
 describe("Spacing", () => {
-  it("renders top and bottom spacing for small device", () =>
+  it("renders top and bottom spacing for xSmall device (320-479)", () =>
+    expect(
+      renderComponent({
+        top: { xSmall: "normal" },
+        bottom: { xSmall: "normal" }
+      })
+    ).toMatchSnapshot());
+
+  it("renders top and bottom spacing for small device (480-767)", () =>
     expect(
       renderComponent({ top: { small: "normal" }, bottom: { small: "normal" } })
     ).toMatchSnapshot());
 
-  it("renders top and bottom spacing for medium device", () =>
+  it("renders top and bottom spacing for medium device (767-1023)", () =>
     expect(
       renderComponent({
         top: { medium: "normal" },
@@ -16,19 +24,11 @@ describe("Spacing", () => {
       })
     ).toMatchSnapshot());
 
-  it("renders top and bottom spacing for medium device", () =>
+  it("renders top and bottom spacing for large device (>1024)", () =>
     expect(
       renderComponent({
         top: { large: "normal" },
         bottom: { large: "normal" }
-      })
-    ).toMatchSnapshot());
-
-  it("renders top and bottom spacing for medium device", () =>
-    expect(
-      renderComponent({
-        top: { xLarge: "normal" },
-        bottom: { xLarge: "normal" }
       })
     ).toMatchSnapshot());
 

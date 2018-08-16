@@ -1,5 +1,8 @@
 import { pageLoader } from "catalog";
+import { ThemeProvider } from "styled-components";
 
+import { Container, Row, Column } from "../../../src/components/Grid";
+import Spacing from "../../../src/components/Spacing";
 import { Button, Badge, RatingBadge } from "../../../src/components/Button";
 import { ChevronIcon, StarIcon } from "../../../src/components/Icons";
 import colors from "../../../src/theme/colors";
@@ -16,7 +19,12 @@ export default {
     StarIcon,
     RatingBadge,
     colors,
-    starIconStyles
+    starIconStyles,
+    ThemeProvider,
+    Container,
+    Row,
+    Column,
+    Spacing
   },
   content: pageLoader(() => import("./index.md"))
 };

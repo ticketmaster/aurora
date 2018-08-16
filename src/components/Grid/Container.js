@@ -4,7 +4,7 @@ import spacing from "../../theme/spacing";
 
 const Container = styled.div`
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: ${spacing.gutters.small}px;
   padding-right: ${spacing.gutters.small}px;
@@ -14,5 +14,7 @@ const Container = styled.div`
     padding-right: ${spacing.gutters.mediumAndUp}px;
   `};
 `;
+
+Container.displayName = "Container";
 
 export default Container;

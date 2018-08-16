@@ -3,7 +3,7 @@
 exports[`WithImage renders header background image 1`] = `
 .c3 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -102,63 +102,70 @@ exports[`WithImage renders header background image 1`] = `
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:1440px) {
+  .c4 {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c7 {
     padding-top: 60px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c6 {
     max-width: 100%;
     padding-right: 12px;
@@ -169,7 +176,7 @@ exports[`WithImage renders header background image 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -178,7 +185,7 @@ exports[`WithImage renders header background image 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -227,7 +234,7 @@ exports[`WithImage renders header background image 1`] = `
 exports[`WithImage renders header background image correctly when a withOverlay prop equaling true is passed 1`] = `
 .c3 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -326,63 +333,70 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:1440px) {
+  .c4 {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c7 {
     padding-top: 60px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c6 {
     max-width: 100%;
     padding-right: 12px;
@@ -393,7 +407,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -402,7 +416,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -451,7 +465,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 exports[`WithImage renders header background image correctly when a withUnderlay prop equaling true is passed 1`] = `
 .c3 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -550,63 +564,70 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:1440px) {
+  .c4 {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c7 {
     padding-top: 60px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c6 {
     max-width: 100%;
     padding-right: 12px;
@@ -617,7 +638,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -626,7 +647,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -675,7 +696,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 exports[`WithImage renders header with image 1`] = `
 .c3 {
   margin: 0 auto;
-  max-width: 1248px;
+  max-width: 1440px;
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
@@ -772,63 +793,70 @@ exports[`WithImage renders header with image 1`] = `
   flex: 0 0 100%;
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c1.gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:1440px) {
+  .c4 {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c7 {
     padding-top: 60px;
   }
 }
 
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
   .c6 {
     max-width: 100%;
     padding-right: 12px;
@@ -839,7 +867,7 @@ exports[`WithImage renders header with image 1`] = `
   }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1024px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
@@ -848,7 +876,7 @@ exports[`WithImage renders header with image 1`] = `
   }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1440px) {
   .c6 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;

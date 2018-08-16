@@ -4,7 +4,20 @@ import styled from "styled-components";
 
 import StyledBadge from "./Badge.styles";
 import StarIcon from "../Icons/Star";
-import BUTTON_VARIANTS from "./constants";
+import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
+
+const StyledBadgeRating = StyledBadge.extend`
+  padding: 0;
+`;
+
+const ContentWrapper = styled.span`
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
 
 const Container = styled.span`
   padding-left: 2px;
@@ -23,19 +36,21 @@ const RatingBadge = ({
   ratingCount,
   ...props
 }) => (
-  <StyledBadge
+  <StyledBadgeRating
     itemProp="aggregateRating"
     itemScope
     itemType="https://schema.org/AggregateRating"
     variant={variant}
     {...props}
   >
-    <StyledStarIcon size={12} />
-    <Container>{children}</Container>
-    {ratingValue && <meta itemProp="ratingValue" content={ratingValue} />}
-    {bestRating && <meta itemProp="bestRating" content={bestRating} />}
-    {ratingCount && <meta itemProp="ratingCount" content={ratingCount} />}
-  </StyledBadge>
+    <ContentWrapper>
+      <StyledStarIcon size={12} />
+      <Container>{children}</Container>
+      {ratingValue && <meta itemProp="ratingValue" content={ratingValue} />}
+      {bestRating && <meta itemProp="bestRating" content={bestRating} />}
+      {ratingCount && <meta itemProp="ratingCount" content={ratingCount} />}
+    </ContentWrapper>
+  </StyledBadgeRating>
 );
 
 RatingBadge.propTypes = {
@@ -43,11 +58,13 @@ RatingBadge.propTypes = {
   ratingValue: PropTypes.string.isRequired,
   bestRating: PropTypes.string,
   ratingCount: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(BUTTON_VARIANTS)
+  variant: PropTypes.oneOf(BUTTON_VARIANTS),
+  size: PropTypes.oneOf(BUTTON_SIZES)
 };
 
 RatingBadge.defaultProps = {
   variant: "standard",
+  size: "regular",
   bestRating: "5"
 };
 
