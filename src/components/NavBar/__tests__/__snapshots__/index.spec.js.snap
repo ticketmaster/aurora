@@ -183,13 +183,6 @@ exports[`NavBar renders fixed 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -202,9 +195,6 @@ exports[`NavBar renders fixed 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -232,6 +222,16 @@ exports[`NavBar renders fixed 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fadeIn {
+  -webkit-animation: bcCCNc 0.3s linear;
+  animation: bcCCNc 0.3s linear;
+}
+
+.c0.nav--fadeOut {
+  -webkit-animation: joDzUq 0.3s linear;
+  animation: joDzUq 0.3s linear;
 }
 
 .c1 {
@@ -307,7 +307,7 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 <nav
-  className="nav--relative c0"
+  className="nav--relative nav--fadeIn c0"
   role="navigation"
   style={
     Object {
@@ -635,13 +635,6 @@ exports[`NavBar renders inverted 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -654,9 +647,6 @@ exports[`NavBar renders inverted 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -684,6 +674,16 @@ exports[`NavBar renders inverted 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fadeIn {
+  -webkit-animation: bcCCNc 0.3s linear;
+  animation: bcCCNc 0.3s linear;
+}
+
+.c0.nav--fadeOut {
+  -webkit-animation: joDzUq 0.3s linear;
+  animation: joDzUq 0.3s linear;
 }
 
 .c1 {
@@ -759,7 +759,7 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 <nav
-  className="nav--relative nav--inverted c0"
+  className="nav--relative nav--inverted nav--fadeIn c0"
   role="navigation"
   style={
     Object {
@@ -1131,13 +1131,6 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -1150,9 +1143,6 @@ exports[`NavBar renders with defaults 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -1180,6 +1170,16 @@ exports[`NavBar renders with defaults 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fadeIn {
+  -webkit-animation: bcCCNc 0.3s linear;
+  animation: bcCCNc 0.3s linear;
+}
+
+.c0.nav--fadeOut {
+  -webkit-animation: joDzUq 0.3s linear;
+  animation: joDzUq 0.3s linear;
 }
 
 .c1 {
@@ -1249,7 +1249,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 <nav
-  className="nav--relative c0"
+  className="nav--relative nav--fadeIn c0"
   role="navigation"
   style={
     Object {
