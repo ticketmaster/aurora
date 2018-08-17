@@ -16,7 +16,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -24,7 +24,8 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            style="transform: rotate(-180deg);"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -437,7 +438,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -445,7 +446,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -858,7 +859,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -866,7 +867,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -1287,7 +1288,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -1295,7 +1296,8 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              style=""
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -1708,7 +1710,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -1716,7 +1718,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -2129,7 +2131,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -2137,7 +2139,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -2558,7 +2560,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -2566,7 +2568,8 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            style="transform: rotate(-180deg);"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -2979,7 +2982,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -2987,7 +2990,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -3400,7 +3403,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -3408,7 +3411,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -3829,7 +3832,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -3837,7 +3840,8 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              style=""
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -4250,7 +4254,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -4258,7 +4262,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -4671,7 +4675,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -4679,7 +4683,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -5101,7 +5105,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -5109,7 +5113,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -5357,7 +5361,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -5365,7 +5369,8 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            style=""
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -5778,7 +5783,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -5786,7 +5791,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -6199,7 +6204,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -6207,7 +6212,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -6627,7 +6632,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -6635,7 +6640,8 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            style="transform: rotate(-180deg);"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -7048,7 +7054,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -7056,7 +7062,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -7469,7 +7475,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -7477,7 +7483,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -7898,7 +7904,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="true"
             aria-label="Collapse Row"
-            class="sc-hSdWYo button--expand-or-collapse iHMCKb sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="0"
             role="button"
             size="45"
@@ -7906,7 +7912,8 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              style="transform: rotate(-180deg);"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -8319,7 +8326,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="1"
             role="button"
             size="45"
@@ -8327,7 +8334,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -8740,7 +8747,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           <button
             aria-expanded="false"
             aria-label="Expand Row"
-            class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+            class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
             data-index="2"
             role="button"
             size="45"
@@ -8748,7 +8755,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             <svg
               fill="#1F262D"
               height="15"
-              viewBox="0 0 15 7"
+              viewBox="0 -1 15 7"
               width="15"
             >
               <path
@@ -9169,7 +9176,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="0"
           role="button"
           size="45"
@@ -9177,7 +9184,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -9298,7 +9305,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="1"
           role="button"
           size="45"
@@ -9306,7 +9313,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path
@@ -9427,7 +9434,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="sc-hSdWYo button--expand-or-collapse jflIhG sc-VigVT iPzHsq"
+          class="sc-hSdWYo button--expand-or-collapse hWSAJs sc-VigVT iPzHsq"
           data-index="2"
           role="button"
           size="45"
@@ -9435,7 +9442,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           <svg
             fill="#1F262D"
             height="15"
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width="15"
           >
             <path

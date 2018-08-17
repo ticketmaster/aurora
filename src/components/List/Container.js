@@ -78,11 +78,15 @@ class ListContainer extends Component {
 
   onRowDetailsTransitionEnd = event => {
     const {
-      target: { dataset },
-      target
+      target: { dataset = {} },
+      target = {}
     } = event;
 
-    if (target.className.includes("list-row--open")) {
+    if (
+      target.className &&
+      target.className.includes &&
+      target.className.includes("list-row--open")
+    ) {
       this.setRowExpandedHeight(
         parseInt(dataset.index, 10),
         target.clientHeight

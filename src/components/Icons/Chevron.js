@@ -20,7 +20,7 @@ const ChevronIcon = ({ size, color, direction, children, ...props }) => (
   <svg
     {...props}
     style={getChevronStyle({ direction })}
-    viewBox="0 0 15 7"
+    viewBox="0 -1 15 7"
     width={size}
     height={size}
     fill={color}

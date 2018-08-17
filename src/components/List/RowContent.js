@@ -61,7 +61,11 @@ const ListRowContent = ({
           data-index={index}
           isOpen={isOpen}
         >
-          <ChevronIcon size={15} color={colors.blackPearl} />
+          <ChevronIcon
+            size={15}
+            color={colors.blackPearl}
+            direction={isOpen && "up"}
+          />
         </IconWrapper>
         <LinkWrapper
           role="link"

@@ -25,7 +25,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -95,7 +95,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -165,7 +165,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
         class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -235,7 +235,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
         class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -309,7 +309,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
         class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -379,7 +379,7 @@ exports[`DropDownGroup renders default input 1`] = `
         class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
@@ -451,7 +451,7 @@ exports[`DropDownGroup renders variant 1 1`] = `
         class="dropdown--no-border sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
-        viewBox="0 0 15 7"
+        viewBox="0 -1 15 7"
         width="12"
       >
         <path
