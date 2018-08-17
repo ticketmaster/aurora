@@ -9,7 +9,7 @@ exports[`ChevronDownIcon ChevronLeftIcon renders chevronLeft icon correctly 1`] 
       "transform": "rotate(90deg)",
     }
   }
-  viewBox="0 0 15 7"
+  viewBox="0 -1 15 7"
   width={13}
 >
   <title>
@@ -30,7 +30,7 @@ exports[`ChevronDownIcon ChevronRightIcon renders chevronRight icon correctly 1`
       "transform": "rotate(-90deg)",
     }
   }
-  viewBox="0 0 15 7"
+  viewBox="0 -1 15 7"
   width={13}
 >
   <title>
@@ -51,7 +51,7 @@ exports[`ChevronDownIcon ChevronUpIcon renders chevronUp icon correctly 1`] = `
       "transform": "rotate(-180deg)",
     }
   }
-  viewBox="0 0 15 7"
+  viewBox="0 -1 15 7"
   width={13}
 >
   <title>
@@ -68,7 +68,7 @@ exports[`ChevronDownIcon renders default chevronDown icon correctly 1`] = `
   fill="#000"
   height={13}
   style={Object {}}
-  viewBox="0 0 15 7"
+  viewBox="0 -1 15 7"
   width={13}
 >
   <title>

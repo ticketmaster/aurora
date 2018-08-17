@@ -76,7 +76,7 @@ const getPadding = ({ size }) => SIZES[size].padding;
 export const StyledButton = styled.button`
   font-weight: ${typography.weight.semiBold};
   font-size: ${({ size }) => SIZES[size].fontSize};
-  line-height: ${({ size }) => SIZES[size].lineHeight};
+  line-height: ${({ size }) => SIZES[size].fontSize};
   width: 100%;
   padding: 0 ${getPadding} 0 ${getPadding};
   min-width: 60px;
