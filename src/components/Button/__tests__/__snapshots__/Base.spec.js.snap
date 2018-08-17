@@ -4,7 +4,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -61,7 +61,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 2.63;
+  line-height: 16px;
   width: 100%;
   padding: 0 14px 0 14px;
   min-width: 60px;
@@ -114,7 +114,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -167,7 +167,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -221,7 +221,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.84;
+  line-height: 12px;
   width: 100%;
   padding: 0 10px 0 10px;
   min-width: 60px;
@@ -274,7 +274,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 2.63;
+  line-height: 16px;
   width: 100%;
   padding: 0 14px 0 14px;
   min-width: 60px;
@@ -327,7 +327,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -380,7 +380,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -434,7 +434,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.84;
+  line-height: 12px;
   width: 100%;
   padding: 0 10px 0 10px;
   min-width: 60px;
@@ -487,7 +487,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 2.63;
+  line-height: 16px;
   width: 100%;
   padding: 0 14px 0 14px;
   min-width: 60px;
@@ -540,7 +540,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -593,7 +593,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -647,7 +647,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.84;
+  line-height: 12px;
   width: 100%;
   padding: 0 10px 0 10px;
   min-width: 60px;
@@ -700,7 +700,7 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 16px;
-  line-height: 2.63;
+  line-height: 16px;
   width: 100%;
   padding: 0 14px 0 14px;
   min-width: 60px;
@@ -753,7 +753,7 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -806,7 +806,7 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 .c0 {
   font-weight: 600;
   font-size: 14px;
-  line-height: 2.43;
+  line-height: 14px;
   width: 100%;
   padding: 0 12px 0 12px;
   min-width: 60px;
@@ -860,7 +860,7 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
 .c0 {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.84;
+  line-height: 12px;
   width: 100%;
   padding: 0 10px 0 10px;
   min-width: 60px;

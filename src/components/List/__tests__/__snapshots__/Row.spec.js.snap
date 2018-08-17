@@ -193,10 +193,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c20 {
   font-weight: 600;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 14px;
+  line-height: 14px;
   width: 100%;
-  padding: 0 0 0 0;
+  padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
   text-transform: capitalize;
@@ -605,6 +605,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               className="c20"
               onClick={[Function]}
               role="button"
+              size="regular"
               width="102px"
             >
               See Tickets
@@ -865,10 +866,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c20 {
   font-weight: 600;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 14px;
+  line-height: 14px;
   width: 100%;
-  padding: 0 0 0 0;
+  padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
   text-transform: capitalize;
@@ -1345,6 +1346,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               className="c20"
               onClick={[Function]}
               role="button"
+              size="regular"
               width="102px"
             >
               See Tickets
@@ -1631,10 +1633,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c20 {
   font-weight: 600;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 14px;
+  line-height: 14px;
   width: 100%;
-  padding: 0 0 0 0;
+  padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
   text-transform: capitalize;
@@ -2111,6 +2113,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               className="c20"
               onClick={[Function]}
               role="button"
+              size="regular"
               width="102px"
             >
               See Tickets
@@ -2370,10 +2373,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c20 {
   font-weight: 600;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 14px;
+  line-height: 14px;
   width: 100%;
-  padding: 0 0 0 0;
+  padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
   text-transform: capitalize;
@@ -2782,6 +2785,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               className="c20"
               onClick={[Function]}
               role="button"
+              size="regular"
               width="102px"
             >
               See Tickets
