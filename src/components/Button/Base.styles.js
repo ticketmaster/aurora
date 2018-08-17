@@ -115,7 +115,7 @@ export const StyledButton = styled.button`
   }
 
   &:active {
-    transform: scale(0.95, 0.95);
+    transform: scale(0.98, 0.98) translate(0, 1px);
     background-color: ${({ variant, theme: { themeName } }) => {
       const buttonTheme = themes[themeName].buttons[variant];
       return colorVariants[variant](buttonTheme).backgroundColorPressed;
