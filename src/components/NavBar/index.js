@@ -104,12 +104,12 @@ const Nav = styled.nav.attrs({
       `};
   }
 
-  &.nav--fadeIn {
-    animation: ${fadeIn} 0.3s linear;
+  &.nav--fade-in {
+    animation: ${fadeIn} 0.3s ease-in-out;
   }
 
-  &.nav--fadeOut {
-    animation: ${fadeOut} 0.3s linear;
+  &.nav--fade-out {
+    animation: ${fadeOut} 0.3s ease-in-out;
   }
 `;
 
@@ -180,24 +180,26 @@ class NavBar extends Component {
     style: {}
   };
 
-  constructor(props) {
-    super(props);
+  constructor(...args) {
+    super(...args);
     this.navbar = React.createRef();
   }
 
   componentWillUpdate() {
     const navbar = this.navbar.current;
-    navbar.classList.remove("nav--fadeIn");
-    navbar.offsetWidth; // eslint-disable-line
-    navbar.classList.add("nav--fadeIn");
+    navbar.classList.remove("nav--fade-in");
+    // we need this to reset the animation
+    // eslint-disable-next-line
+    navbar.offsetWidth;
+    navbar.classList.add("nav--fade-in");
   }
 
   componentDidUpdate() {
     const navbar = this.navbar.current;
     if (navbar.classList.contains("nav--absolute")) {
-      navbar.classList.add("nav--fadeOut");
+      navbar.classList.add("nav--fade-out");
     } else {
-      navbar.classList.remove("nav--fadeOut");
+      navbar.classList.remove("nav--fade-out");
     }
   }
 
@@ -221,7 +223,7 @@ class NavBar extends Component {
           invert && "nav--inverted",
           !!backgroundColor && "nav--overlay",
           className,
-          "nav--fadeIn"
+          "nav--fade-in"
         )}
         invert={invert}
         style={{ ...style, backgroundColor }}
