@@ -64,7 +64,7 @@ const ListRowContent = ({
           <ChevronIcon
             size={15}
             color={colors.blackPearl}
-            direction={isOpen && "up"}
+            direction={isOpen ? "up" : "down"}
           />
         </IconWrapper>
         <LinkWrapper

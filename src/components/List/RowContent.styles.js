@@ -120,7 +120,9 @@ export const MobileOnlyColumn = styled(Column)`
 `;
 
 export const ListRowButton = StyledButton.withComponent("span").extend`
+  min-width: 100px;
   max-width: 102px;
+  height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;

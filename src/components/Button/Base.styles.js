@@ -71,12 +71,13 @@ const SIZES = {
   }
 };
 
-const getPadding = ({ size }) => SIZES[size].padding;
+const getPadding = ({ size }) => (SIZES[size] ? SIZES[size].padding : 0);
 
 export const StyledButton = styled.button`
   font-weight: ${typography.weight.semiBold};
-  font-size: ${({ size }) => SIZES[size].fontSize};
-  line-height: ${({ size }) => SIZES[size].lineHeight};
+  font-size: ${({ size }) => (SIZES[size] ? SIZES[size].fontSize : "inherit")};
+  line-height: ${({ size }) =>
+    SIZES[size] ? SIZES[size].lineHeight : "inherit"};
   width: 100%;
   padding: 0 ${getPadding} 0 ${getPadding};
   min-width: 60px;
