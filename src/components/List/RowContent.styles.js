@@ -44,8 +44,9 @@ export const IconWrapper = styled(IconButton).attrs({
   ${largeAndUp`
     display: block;
     border: 0;
-    transform: ${props => (props.isOpen ? "rotate(-180deg)" : "none")};
-    transition: transform ${timing.enter}ms ${bezierEasy};
+    svg {
+      transition: transform ${timing.enter}ms ${bezierEasy};
+    }
   `};
 `;
 

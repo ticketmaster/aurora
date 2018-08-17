@@ -354,9 +354,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   .c4 {
     display: block;
     border: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  }
+
+  .c4 svg {
     -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
@@ -497,7 +497,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             fill="#1F262D"
             height={15}
             style={Object {}}
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width={15}
           >
             <path
@@ -1064,9 +1064,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   .c4 {
     display: block;
     border: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  }
+
+  .c4 svg {
     -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
@@ -1213,7 +1213,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             fill="#1F262D"
             height={15}
             style={Object {}}
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width={15}
           >
             <path
@@ -1806,9 +1806,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   .c4 {
     display: block;
     border: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  }
+
+  .c4 svg {
     -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
@@ -1955,7 +1955,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             fill="#1F262D"
             height={15}
             style={Object {}}
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width={15}
           >
             <path
@@ -2459,9 +2459,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   .c4 {
     display: block;
     border: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
+  }
+
+  .c4 svg {
     -webkit-transition: -webkit-transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     -webkit-transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
     transition: transform 100ms cubic-bezier(0.455,0.03,0.515,0.955);
@@ -2602,7 +2602,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             fill="#1F262D"
             height={15}
             style={Object {}}
-            viewBox="0 0 15 7"
+            viewBox="0 -1 15 7"
             width={15}
           >
             <path
