@@ -88,8 +88,8 @@ exports[`Header renders with custom level 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
-  line-height: 1.25;
   color: blue;
+  font-weight: 400;
   font-size: 24px;
 }
 
@@ -155,13 +155,13 @@ exports[`Header renders with custom level 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
   .c3 {
     font-size: 46px;
   }
@@ -182,6 +182,13 @@ exports[`Header renders with custom level 1`] = `
       <h1
         className="c3"
         color="blue"
+        size={
+          Object {
+            "large": "bronto",
+            "medium": "zetta",
+            "small": "tera",
+          }
+        }
       >
         <span
           className="c4"
@@ -288,8 +295,8 @@ exports[`Header renders with default 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
-  line-height: 1.25;
   color: rgba(255,255,255,1);
+  font-weight: 400;
   font-size: 24px;
 }
 
@@ -355,13 +362,13 @@ exports[`Header renders with default 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
   .c3 {
     font-size: 46px;
   }
@@ -381,6 +388,13 @@ exports[`Header renders with default 1`] = `
     >
       <h2
         className="c3"
+        size={
+          Object {
+            "large": "bronto",
+            "medium": "zetta",
+            "small": "tera",
+          }
+        }
       >
         <span
           className="c4"
@@ -487,8 +501,8 @@ exports[`Header renders withOverlay 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
-  line-height: 1.25;
   color: rgba(255,255,255,1);
+  font-weight: 400;
   font-size: 24px;
 }
 
@@ -554,13 +568,13 @@ exports[`Header renders withOverlay 1`] = `
   }
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
   .c3 {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1024px) {
   .c3 {
     font-size: 46px;
   }
@@ -580,6 +594,13 @@ exports[`Header renders withOverlay 1`] = `
     >
       <h2
         className="c3"
+        size={
+          Object {
+            "large": "bronto",
+            "medium": "zetta",
+            "small": "tera",
+          }
+        }
       >
         <span
           className="c4"

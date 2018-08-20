@@ -10,6 +10,7 @@ const typography = {
     header: "1.25"
   },
   size: {
+    mini: "10px",
     uno: "12px",
     hecto: "14px",
     kilo: "16px",

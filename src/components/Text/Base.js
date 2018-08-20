@@ -12,8 +12,10 @@ const TextBase = ({
   secondary,
   disabled,
   size,
+  responsiveSize,
   weight,
   className,
+  allCaps,
   children,
   ...props
 }) => {
@@ -33,13 +35,22 @@ const TextBase = ({
   return (
     <Text
       className={classes}
-      size={size}
+      size={{
+        small: responsiveSize.small || size,
+        medium: responsiveSize.medium || responsiveSize.small || size,
+        large:
+          responsiveSize.large ||
+          responsiveSize.medium ||
+          responsiveSize.small ||
+          size
+      }}
       weight={weight}
       variant={variant}
       accent={accent}
       primary={primary}
       secondary={secondary}
       disabled={disabled}
+      allCaps={allCaps}
       {...props}
     >
       {children}
@@ -62,13 +73,19 @@ TextBase.propTypes = {
     "summerSky",
     "turquoise"
   ]),
-  size: PropTypes.oneOf(["uno", "hecto", "kilo", "giga", "tera"]),
+  size: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
+  responsiveSize: PropTypes.shape({
+    small: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
+    medium: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
+    large: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"])
+  }),
   weight: PropTypes.oneOf(["regular", "semiBold"]),
   className: PropTypes.string,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  allCaps: PropTypes.bool
 };
 
 TextBase.defaultProps = {
@@ -76,11 +93,19 @@ TextBase.defaultProps = {
   variant: "dark",
   accent: "",
   size: "hecto",
+  responsiveSize: {
+    small: null,
+    medium: null,
+    large: null
+  },
   weight: "regular",
   className: "",
   primary: false,
   secondary: false,
-  disabled: false
+  disabled: false,
+  allCaps: false
 };
+
+TextBase.displayName = "Text";
 
 export default TextBase;
