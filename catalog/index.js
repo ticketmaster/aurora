@@ -51,6 +51,11 @@ const sizes = [
 ];
 
 ReactDOM.render(
-  <Catalog title="Prism" theme={theme} pages={pages} responsiveSizes={sizes} />,
+  <Catalog
+    title="Aurora"
+    theme={theme}
+    pages={pages}
+    responsiveSizes={sizes}
+  />,
   document.getElementById("catalog")
 );

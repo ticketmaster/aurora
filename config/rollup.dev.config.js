@@ -8,7 +8,7 @@ export default {
       file: "dist/index.umd.js",
       format: "umd",
       sourcemap: true,
-      name: "TicketmasterPrism",
+      name: "TicketmasterAurora",
       globals: {
         react: "React",
         "react-dom": "ReactDOM",
