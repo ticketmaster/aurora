@@ -6,23 +6,23 @@ import typography from "../../theme/typography";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import spacing from "../../theme/spacing";
 
-const Light = styled.span`
+const Span = styled.span`
   font-weight: ${typography.weight.light};
 `;
 
-const ExtraBold = Light.extend`
+const Strong = Span.extend`
   font-weight: ${typography.weight.extraBold};
 `;
 
 const margins = styled.span`
+  ${({ monospace }) => (monospace ? `font-family: monospace, monospace` : "")};
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: ${spacing.cozy};
   line-height: ${({ lineHeight }) => typography.lineHeight[lineHeight]};
   color: ${p => (p.color ? p.color : colors.white.base)};
-  font-weight: ${typography.weight.regular};
+  font-weight: ${({ weight }) => typography.weight[weight]};
   font-size: ${({ size }) => typography.size[size.small]};
-
   ${mediumAndUp`
     font-size: ${({ size }) => typography.size[size.medium]};
   `};
@@ -71,13 +71,15 @@ const Heading = ({
 
 Heading.propTypes = {
   level: PropTypes.oneOf([1, 2, 3, 4, 5]),
-  size: PropTypes.oneOf([Object.keys(typography.size)]),
+  size: PropTypes.oneOf(Object.keys(typography.size)),
   responsiveSize: PropTypes.shape({
-    small: PropTypes.oneOf([Object.keys(typography.size)]),
-    medium: PropTypes.oneOf([Object.keys(typography.size)]),
-    large: PropTypes.oneOf([Object.keys(typography.size)])
+    small: PropTypes.oneOf(Object.keys(typography.size)),
+    medium: PropTypes.oneOf(Object.keys(typography.size)),
+    large: PropTypes.oneOf(Object.keys(typography.size))
   }),
-  lineHeight: PropTypes.oneOf([Object.keys(typography.lineHeight)]),
+  weight: PropTypes.oneOf(["light", "regular", "extraBold"]),
+  lineHeight: PropTypes.oneOf(Object.keys(typography.lineHeight)),
+  monospace: PropTypes.bool,
   children: PropTypes.node
 };
 
@@ -90,14 +92,14 @@ Heading.defaultProps = {
     large: null
   },
   lineHeight: "body",
+  weight: "regular",
+  monospace: false,
   children: null
 };
 
-Heading.Span = Light; // NOTE: deprecated
-Heading.Light = Light;
-Heading.Light.displayName = "Light";
-Heading.Strong = ExtraBold; // NOTE: deprecated
-Heading.ExtraBold = ExtraBold;
-Heading.ExtraBold.displayName = "ExtraBold";
+Heading.Span = Span; // NOTE: deprecated
+Heading.Strong = Strong; // NOTE: deprecated
+
+Heading.displayName = "Heading";
 
 export default Heading;
