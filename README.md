@@ -1,5 +1,5 @@
 <div align="center">
-<h1>@ticketmaster/prism</h1>
+<h1>@ticketmaster/aurora</h1>
 <strong>Shared UI Library for Ticketmaster</strong>
 </div>
 
@@ -20,15 +20,15 @@
 
 ## How to get started
 
-Prism relies on the [react](https://www.npmjs.com/package/react),
+Aurora relies on the [react](https://www.npmjs.com/package/react),
 [prop-types](https://www.npmjs.com/package/prop-types),
 and [styled-components](https://www.npmjs.com/package/styled-components)
 peer-dependency packages to already be installed and set up in your project.
 
-Install prism from the npm registry by running the following command in your terminal:
+Install Aurora from the npm registry by running the following command in your terminal:
 
 ```bash
-npm install @ticketmaster/prism
+npm install @ticketmaster/aurora
 ```
 
 Then import each component you want to use in your app:
@@ -36,7 +36,7 @@ Then import each component you want to use in your app:
 ```jsx
 import React from "react";
 import ReactDOM from "react-dom";
-import { Button } from "@ticketmaster/prism";
+import { Button } from "@ticketmaster/aurora";
 
 ReactDOM.render(
   <Button variant="standard">Hello, world!</Button>,
@@ -44,11 +44,11 @@ ReactDOM.render(
 );
 ```
 
-[![Edit mq3q2prnjy](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mq3q2prnjy?autoresize=1&hidenavigation=1)
+[![Edit 430zk16k6w](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/430zk16k6w?autoresize=1&hidenavigation=1)
 
 ## Running the catalog locally
 
-In order to run the [catalog](https://code.ticketmaster.com/prism/) locally, complete the following steps:
+In order to run the [catalog](https://code.ticketmaster.com/aurora/) locally, complete the following steps:
 
 1.  Execute `yarn install` at this directory's root
 2.  Execute `yarn catalog-start` at this directory's root
@@ -56,7 +56,7 @@ In order to run the [catalog](https://code.ticketmaster.com/prism/) locally, com
 
 ## How to use
 
-A documentation of each component and living styleguide is available at https://code.ticketmaster.com/prism/
+A documentation of each component and living styleguide is available at https://code.ticketmaster.com/aurora/
 
 ## Other docs
 
@@ -68,22 +68,22 @@ A documentation of each component and living styleguide is available at https://
 
 MIT
 
-[build-badge]: https://img.shields.io/travis/Ticketmaster/prism.svg
-[build]: https://travis-ci.org/Ticketmaster/prism
-[coverage-badge]: https://img.shields.io/codecov/c/github/ticketmaster/prism.svg
-[coverage]: https://codecov.io/github/ticketmaster/prism
-[greenkeeper-badge]: https://badges.greenkeeper.io/ticketmaster/prism.svg
-[version-badge]: https://img.shields.io/npm/v/@ticketmaster/prism.svg
-[package]: https://www.npmjs.com/package/@ticketmaster/prism
-[license-badge]: https://img.shields.io/npm/l/@ticketmaster/prism.svg
-[license]: https://github.com/ticketmaster/prism/blob/master/LICENSE
+[build-badge]: https://img.shields.io/travis/Ticketmaster/aurora.svg
+[build]: https://travis-ci.org/Ticketmaster/aurora
+[coverage-badge]: https://img.shields.io/codecov/c/github/ticketmaster/aurora.svg
+[coverage]: https://codecov.io/github/ticketmaster/aurora
+[greenkeeper-badge]: https://badges.greenkeeper.io/ticketmaster/aurora.svg
+[version-badge]: https://img.shields.io/npm/v/@ticketmaster/aurora.svg
+[package]: https://www.npmjs.com/package/@ticketmaster/aurora
+[license-badge]: https://img.shields.io/npm/l/@ticketmaster/aurora.svg
+[license]: https://github.com/ticketmaster/aurora/blob/master/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [prs]: http://makeapullrequest.com
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg
-[coc]: https://github.com/ticketmaster/prism/blob/master/other/CODE_OF_CONDUCT.md
-[contributing]: https://github.com/ticketmaster/prism/blob/master/CONTRIBUTING.md
-[maintaining]: https://github.com/ticketmaster/prism/blob/master/other/MAINTAINING.md
-[gzip-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/prism/dist/index.umd.min.js?compression=gzip&label=gzip%20size
-[size-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/prism/dist/index.umd.min.js?label=size
-[unpkg-dist]: https://unpkg.com/@ticketmaster/prism/dist/
+[coc]: https://github.com/ticketmaster/aurora/blob/master/other/CODE_OF_CONDUCT.md
+[contributing]: https://github.com/ticketmaster/aurora/blob/master/CONTRIBUTING.md
+[maintaining]: https://github.com/ticketmaster/aurora/blob/master/other/MAINTAINING.md
+[gzip-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/aurora/dist/index.umd.min.js?compression=gzip&label=gzip%20size
+[size-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/aurora/dist/index.umd.min.js?label=size
+[unpkg-dist]: https://unpkg.com/@ticketmaster/aurora/dist/
 [module-formats-badge]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20es-green.svg
