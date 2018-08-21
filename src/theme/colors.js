@@ -15,7 +15,8 @@ const colors = {
     light: "#dbf3db",
     hover: "#23702c",
     pressed: "#265333",
-    muted: "rgba(27, 171, 30, 0.4)"
+    muted: "rgba(27, 171, 30, 0.4)",
+    restrained: "rgba(27, 171, 30, 0.2)"
   },
   outlined: {
     hover: "#ECF4FD",

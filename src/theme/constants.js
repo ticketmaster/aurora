@@ -14,6 +14,11 @@ const constants = {
     mediumAndUp: "(min-width: 768px)",
     largeAndUp: "(min-width: 1024px)",
     xLargeAndUp: "(min-width: 1440px)"
+  },
+  easing: {
+    easeInOutQuad: "cubic-bezier(0.455, 0.03, 0.515, 0.955)",
+    exit: "cubic-bezier(0.55, 0.085, 0.68, 0.53)",
+    elastic: "cubic-bezier(0.175, 0.885, 0.32, 1.275)"
   }
 };
 

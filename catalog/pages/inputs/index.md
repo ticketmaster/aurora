@@ -369,3 +369,60 @@ span: 6
     </Row>
 </Container>
 ```
+
+## Toggle
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: bool
+    Default:
+    Notes: defines toggle position
+  - Prop: size
+    Type: string
+    Default:
+    Notes: defines toggle size, can be one `regular` and `large`
+  - Prop: disabled
+    Type: bool
+    Default:
+    Notes: defines if toggle is disabled
+  - Prop: onToggle
+    Type: function
+    Default:
+    Notes: on toggle callback function
+  - Prop: onClick
+    Type: function
+    Default:
+    Notes: on click callback function
+  - Prop: onMouseOver
+    Type: function
+    Default:
+    Notes: on mouseOver callback function
+  - Prop: onMouseOut
+    Type: function
+    Default:
+    Notes: on mouseOut callback function
+  - Prop: onBlur
+    Type: function
+    Default:
+    Notes: on blur callback function
+  - Prop: onFocus
+    Type: function
+    Default:
+    Notes: on focus callback function
+  - Prop: onKeyPress
+    Type: function
+    Default:
+    Notes: on keyPress callback function, by default `space` is used to switch the toggle
+```
+
+```react
+---
+<div>
+    <DemoToggleWrapper size="small"/>
+    <DemoToggleWrapper value={false} size="small" disabled/>
+    <DemoToggleWrapper size="large" />
+    <DemoToggleWrapper size="large" disabled/>
+</div>
+```
