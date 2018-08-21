@@ -32,7 +32,13 @@ export {
   VenueIcon,
   VipIcon,
   CrossIcon,
-  TicketIcon
+  TicketIcon,
+  FacebookIcon,
+  TwitterIcon,
+  InstagramIcon,
+  YoutubeIcon,
+  USIcon,
+  CAIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider

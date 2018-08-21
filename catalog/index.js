@@ -18,6 +18,8 @@ import image from "./pages/image";
 import images from "./pages/images";
 import breadcrumbs from "./pages/breadcrumbs";
 import modal from "./pages/modal";
+import footer from "./pages/footer";
+import flyout from "./pages/flyout";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -39,7 +41,9 @@ const pages = [
   navBar,
   breadcrumbs,
   bottomSheet,
-  modal
+  modal,
+  footer,
+  flyout
 ];
 
 const sizes = [

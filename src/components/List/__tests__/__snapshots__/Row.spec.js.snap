@@ -60,7 +60,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c7 {
   font-size: 14px;
-  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -354,7 +353,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media only screen and (min-width:480px) {
   .c7 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -697,7 +696,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c7 {
   font-size: 14px;
-  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -1060,7 +1058,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media only screen and (min-width:480px) {
   .c7 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -1435,7 +1433,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c7 {
   font-size: 14px;
-  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -1798,7 +1795,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media only screen and (min-width:480px) {
   .c7 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -2153,7 +2150,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c7 {
   font-size: 14px;
-  color: rgba(38,38,38,1);
   font-weight: 600;
 }
 
@@ -2447,7 +2443,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media only screen and (min-width:480px) {
   .c7 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 

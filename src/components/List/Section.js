@@ -24,28 +24,30 @@ const TitleContainer = styled(Row)`
 `;
 
 const TitleText = styled(BoldText)`
-  font-size: ${typography.size.uno};
-  color: ${colors.onyx.light};
-  text-transform: uppercase;
+  font-size: ${({ fontSize }) => fontSize || typography.size.uno};
+  color: ${({ color }) => color || colors.onyx.light};
+  text-transform: ${({ textTransform }) => textTransform || "uppercase"};
 `;
 
-const Section = ({ title, totalSections, children }) => (
-  <SectionContainer medium={constants.MAX_COLUMNS / totalSections}>
+const Section = ({ title, noOfColumns, titleStyle, children, ...rest }) => (
+  <SectionContainer medium={noOfColumns} {...rest}>
     <TitleContainer>
-      <TitleText>{title}</TitleText>
+      <TitleText {...titleStyle}>{title}</TitleText>
     </TitleContainer>
     {children}
   </SectionContainer>
 );
 
 Section.defaultProps = {
-  totalSections: 1,
+  noOfColumns: constants.MAX_COLUMNS,
+  titleStyle: {},
   children: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  totalSections: PropTypes.number,
+  noOfColumns: PropTypes.number,
+  titleStyle: PropTypes.objectOf(PropTypes.any),
   children: PropTypes.node
 };
 

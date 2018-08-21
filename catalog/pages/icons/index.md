@@ -107,6 +107,39 @@ rows:
     <div style={iconStyle}><ParkingIcon size={26} color="#000"><title>Parking Icon</title></ParkingIcon></div>
     <div style={iconLabelStyle}>Parking Icon</div>
   </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><TwitterIcon size={26} color="#000"><title>Twitter Icon</title></TwitterIcon></div>
+    <div style={iconLabelStyle}>Twitter Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><FacebookIcon size={26} color="#000"><title>Facebook Icon</title></FacebookIcon></div>
+    <div style={iconLabelStyle}>Facebook Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><InstagramIcon size={26} color="#000"><title>Instagram Icon</title></InstagramIcon></div>
+    <div style={iconLabelStyle}>Instagram Icon</div>
+  </Column>
 </Row>
+
+<Row>
+<Column medium={3}>
+    <div style={iconStyle}><YoutubeIcon size={26} color="#000"><title>Youtube Icon</title></YoutubeIcon></div>
+    <div style={iconLabelStyle}>Youtube Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><USIcon height={13} width={22}><title>US Icon</title></USIcon></div>
+    <div style={iconLabelStyle}>US Icon</div>
+  </Column>
+
+   <Column medium={3}>
+    <div style={iconStyle}><CAIcon height={13} width={22}><title>CA Icon</title></CAIcon></div>
+    <div style={iconLabelStyle}>CA Icon</div>
+  </Column>
+</Row>
+
 </Container>
 ```

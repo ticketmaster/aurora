@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Flyout /> renders Flyout correctly when its closed 1`] = `
+<div
+  class="sc-bdVaJa hEpNfj"
+>
+  <div
+    class="flyout-item flyout-item--selected sc-bwzfXH jMdqnU"
+  >
+    USA (English)
+  </div>
+  <div
+    class="flyout-item sc-bwzfXH jMdqnU"
+  >
+    Canada (English)
+  </div>
+  <div
+    class="flyout-item sc-bwzfXH jMdqnU"
+  >
+    Canada (Français)
+  </div>
+</div>
+`;
+
+exports[`<Flyout /> renders Flyout correctly when its open 1`] = `
+<div
+  class="sc-bdVaJa gOdxZs"
+>
+  <div
+    class="flyout-item flyout-item--selected sc-bwzfXH jMdqnU"
+  >
+    USA (English)
+  </div>
+  <div
+    class="flyout-item sc-bwzfXH jMdqnU"
+  >
+    Canada (English)
+  </div>
+  <div
+    class="flyout-item sc-bwzfXH jMdqnU"
+  >
+    Canada (Français)
+  </div>
+</div>
+`;
