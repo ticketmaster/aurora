@@ -8,10 +8,7 @@ import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 import { Provider as DropDownProvider } from "./Context";
 import SelectionProvider from "../../SelectionProvider/Provider";
 import { Consumer as SelectionConsumer } from "../../SelectionProvider/Context";
-
-const ARROWUP = 38;
-const ARROWDOWN = 40;
-const SPACEBAR = 32;
+import { ARROWUP, ARROWDOWN, SPACEBAR } from "../../../utils/keyCharCodes";
 
 const StyledGroup = styled.label`
   color: ${colors.onyx.light};

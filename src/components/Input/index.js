@@ -7,3 +7,4 @@ export { default as CheckBoxGroup } from "./CheckBox/CheckBoxGroup";
 export { default as Input } from "./Input";
 export { default as DropDownOption } from "./DropDown/DropDownOption";
 export { default as DropDownGroup } from "./DropDown/DropDownGroup";
+export { default as Toggle } from "./Toggle/Toggle";

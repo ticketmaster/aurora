@@ -125,6 +125,7 @@ exports[`ImageCard renders type = half 1`] = `
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(38,38,38,1);
 }
 
@@ -202,6 +203,18 @@ exports[`ImageCard renders type = half 1`] = `
   align-items: center;
 }
 
+@media screen and (min-width:768px) {
+  .c5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    font-size: 14px;
+  }
+}
+
 <div
   className="c0"
 >
@@ -225,7 +238,13 @@ exports[`ImageCard renders type = half 1`] = `
       <div
         className="text text--dark text--primary image-card__title--half c5"
         disabled={false}
-        size="hecto"
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
       >
         <span
           className="c4"
@@ -240,7 +259,13 @@ exports[`ImageCard renders type = half 1`] = `
       <div
         className="text text--dark text--primary image-card__subtitle--half c5"
         disabled={false}
-        size="hecto"
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
       >
         <span
           className="c6"

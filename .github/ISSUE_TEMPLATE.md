@@ -7,9 +7,9 @@ Please fill out this template with all the relevant information so we can
 understand what's going on and fix the issue.
 -->
 
-* `@ticketmaster/prism` version:
-* `node` version:
-* `npm` (or `yarn`) version:
+- `@ticketmaster/aurora` version:
+- `node` version:
+- `npm` (or `yarn`) version:
 
 Relevant code or config
 

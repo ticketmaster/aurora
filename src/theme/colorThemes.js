@@ -31,8 +31,7 @@ const themes = {
         color: colors.azure.base,
         disabledColor: colors.azure.restrained,
         hover: colors.azure.muted,
-        pressed: colors.azure.light,
-        disabled: colors.white.muted
+        pressed: colors.azure.light
       }
     }
   }

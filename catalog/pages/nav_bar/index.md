@@ -12,7 +12,7 @@ state: { invert: false }
                 <NavBar.MenuButton isFirst />
             </DisplayFor>
             <NavBar.LogoContainer>
-                Prism
+                Aurora
             </NavBar.LogoContainer>
             <DisplayFor large xLarge>
                 <NavBar.LinkRow>

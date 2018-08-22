@@ -1,7 +1,30 @@
-catalog/build
+# IDEs
+.vscode
+.vs
+.idea
+
+# Build directories
+.next
 dist
 coverage
+catalog/build
+
+# Package management
 node_modules
 package-lock.json
 yarn.lock
 yarn-error.log
+
+# Log files
+/*.log
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+*~
+Thumbs.db
+
+out/*

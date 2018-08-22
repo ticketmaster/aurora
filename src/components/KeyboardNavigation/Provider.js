@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Provider } from "./Context";
+import { ARROWUP, ARROWDOWN, SPACEBAR } from "../../utils/keyCharCodes";
 
 const { forEach } = React.Children;
-const ARROWUP = 38;
-const ARROWDOWN = 40;
 
 export default class KeyBoardProvider extends React.Component {
   static propTypes = {
@@ -71,7 +70,7 @@ export default class KeyBoardProvider extends React.Component {
         this.setState({ word: temp }, () => this.searchValue(temp));
       }
 
-      if (event.keyCode === 32) this.setState({ word: "" });
+      if (event.keyCode === SPACEBAR) this.setState({ word: "" });
     }
 
     if ([ARROWUP, ARROWDOWN].includes(event.keyCode)) {
