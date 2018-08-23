@@ -88,7 +88,7 @@ describe("NavBar", () => {
         .toJSON()
     ).toMatchSnapshot());
 
-  it("should reset animation while updating", () => {
+  xit("should reset animation while updating", () => {
     const { rerender, container } = render(
       <NavBar position="fixed">Content</NavBar>
     );

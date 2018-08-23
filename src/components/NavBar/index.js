@@ -1,3 +1,4 @@
+/* eslint react/prefer-stateless-function: off */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -179,26 +180,6 @@ class NavBar extends Component {
     style: {}
   };
 
-  constructor(...args) {
-    super(...args);
-    this.navbar = React.createRef();
-  }
-
-  componentDidUpdate() {
-    const navbar = this.navbar.current;
-    navbar.classList.remove("nav--fade-in");
-    // we need this to reset the animation
-    // eslint-disable-next-line
-    navbar.offsetWidth;
-    navbar.classList.add("nav--fade-in");
-
-    if (navbar.classList.contains("nav--absolute")) {
-      navbar.classList.add("nav--fade-out");
-    } else {
-      navbar.classList.remove("nav--fade-out");
-    }
-  }
-
   render() {
     const {
       children,
@@ -223,7 +204,6 @@ class NavBar extends Component {
         )}
         invert={invert}
         style={{ ...style, backgroundColor }}
-        innerRef={this.navbar}
       >
         {message ? (
           <MessageContainer>
