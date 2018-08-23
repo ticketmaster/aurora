@@ -85,7 +85,8 @@ TextBase.propTypes = {
   secondary: PropTypes.bool,
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
-  allCaps: PropTypes.bool
+  allCaps: PropTypes.bool,
+  monospace: PropTypes.bool
 };
 
 TextBase.defaultProps = {
@@ -103,7 +104,8 @@ TextBase.defaultProps = {
   primary: false,
   secondary: false,
   disabled: false,
-  allCaps: false
+  allCaps: false,
+  monospace: false
 };
 
 TextBase.displayName = "Text";

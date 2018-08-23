@@ -9,6 +9,7 @@ const Base = styled.div`
   font-weight: ${({ weight }) => typography.weight[weight]};
   line-height: ${typography.lineHeight.body};
   text-transform: ${({ allCaps }) => (allCaps ? "uppercase" : "none")};
+  ${({ monospace }) => (monospace ? `font-family: monospace, monospace` : "")};
   color: ${({ variant, accent, primary, secondary, disabled }) =>
     getFontColor({ variant, accent, primary, secondary, disabled })};
 
