@@ -39,7 +39,11 @@ export default class ScrollObserverProvider extends React.Component {
     /* istanbul ignore next */
     this.ticking = false;
     /* istanbul ignore next */
-    const scrollY = window.scrollY; // eslint-disable-line
+    const scrollY =
+      window.scrollY ||
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop;
     /* istanbul ignore next */
     this.setState(() => ({ scrollY }));
   };
