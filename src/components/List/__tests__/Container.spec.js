@@ -67,11 +67,9 @@ describe("<ListContainer />", () => {
                 totalSections={4}
                 key={section.title}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -99,11 +97,9 @@ describe("<ListContainer />", () => {
                 totalSections={4}
                 key={section.title}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -130,11 +126,9 @@ describe("<ListContainer />", () => {
                 totalSections={4}
                 key={section.title}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -161,11 +155,9 @@ describe("<ListContainer />", () => {
                 totalSections={4}
                 key={section.title}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -195,11 +187,9 @@ describe("<ListContainer />", () => {
                 totalSections={4}
                 key={section.title}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -262,5 +252,24 @@ describe("<ListContainer />", () => {
     const portal = queryByTestId("modal-root");
     Simulate.click(portal.querySelector(".button--close"));
     expect(container).toMatchSnapshot();
+  });
+
+  /* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
+  it("should allow default events", () => {
+    const clickSpy = jest.fn();
+
+    const { container } = renderIntoDocument(
+      <div onClick={clickSpy}>
+        <ListContainer>
+          <a href="/external">External URL</a>
+        </ListContainer>
+      </div>
+    );
+
+    Simulate.click(container.querySelector("a"));
+    const event = clickSpy.mock.calls[0][0];
+
+    expect(clickSpy).toHaveBeenCalled();
+    expect(event.defaultPrevented).toBeFalsy();
   });
 });

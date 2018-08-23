@@ -70,7 +70,8 @@ export const sections = [
         title: "United Center",
         subTitle: "Chicago, IL",
         icon: <VenueIcon size={26} color={colors.blackPearl} />,
-        onItemClick: () => {}
+        onItemClick: () => {},
+        url: "/"
       }
     ],
     totalSections: 4
@@ -125,6 +126,7 @@ export const items = [
     title: "United Center",
     subTitle: "Chicago, IL",
     icon: <VenueIcon size={26} color={colors.blackPearl} />,
-    onItemClick: () => {}
+    onItemClick: () => {},
+    url: "/"
   }
 ];

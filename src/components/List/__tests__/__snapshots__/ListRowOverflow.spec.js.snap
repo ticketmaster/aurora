@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
-.c13 {
+.c14 {
   border: solid 1px #E0E0E0;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -17,7 +17,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   height: 100%;
 }
@@ -84,12 +84,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   text-transform: uppercase;
 }
 
-.c12 {
+.c11 {
   font-size: 14px;
   color: rgba(38,38,38,0.6);
 }
 
-.c10 {
+.c13 {
   font-size: 14px;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
@@ -115,7 +115,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-bottom: 16px;
 }
 
-.c11 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,7 +130,26 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   cursor: text;
 }
 
-.c11:not(:last-of-type) {
+.c10:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c12:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
@@ -139,6 +158,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 .c9 {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -220,6 +243,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -251,20 +275,17 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="c9"
         >
           VIP Packages
-        </a>
+        </div>
       </div>
     </div>
     <div
       aria-label="Section Item"
-      className="section-item c11"
+      className="section-item c10"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -297,7 +318,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c12"
+          className="c11"
         >
           Parking Pass Available
         </div>
@@ -317,11 +338,15 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         Venue Info
       </div>
     </div>
-    <div
+    <a
       aria-label="Section Item"
-      className="section-item c7"
+      className="section-item c12 c13"
+      color=""
+      href="/"
       onClick={[Function]}
+      rel="_self"
       role="link"
+      target=""
     >
       <div
         className="c8"
@@ -351,22 +376,18 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="c9"
         >
           United Center
-        </a>
+        </div>
         <div
-          className="c12"
+          className="c11"
         >
           Chicago, IL
         </div>
       </div>
-    </div>
+    </a>
   </div>
   <div
     className="c2 c3"
@@ -384,6 +405,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -391,31 +413,28 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c13"
+          className="c14"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c14"
+            className="c15"
             src="https://placekitten.com/g/512/288"
           />
         </div>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="c9"
         >
           The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj
-        </a>
+        </div>
       </div>
     </div>
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -423,26 +442,22 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c13"
+          className="c14"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c14"
+            className="c15"
             src="https://placekitten.com/g/512/288"
           />
         </div>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="c9"
         >
           T.I
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -462,6 +477,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -493,15 +509,11 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="c9"
         >
           Sell Tickets
-        </a>
+        </div>
       </div>
     </div>
   </div>
