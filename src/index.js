@@ -2,6 +2,7 @@ export { Button, Badge, RatingBadge } from "./components/Button";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
+export { default as Gradient } from "./components/Gradient";
 export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
 export { default as Heading } from "./components/Header/Heading";

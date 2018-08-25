@@ -1,13 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import styled from "styled-components";
 
 import Gradient from "../Gradient";
 import Row from "../Grid/Row";
 import Container from "../Grid/Container";
 import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
 
-const HeaderGradient = Gradient.extend`
+const HeaderStyles = styled.header`
+  width: 100%;
+  display: flex;
+  position: relative;
+`;
+
+const HeaderGradient = styled(Gradient)`
   display: flex;
   position: relative;
   align-items: flex-end;
@@ -17,37 +24,55 @@ const HeaderGradient = Gradient.extend`
   `} ${mediumAndUp`
     min-height: 218px;
   `};
-`.withComponent("header");
+`;
 
 const HeaderContainer = Container.extend`
   padding-top: 60px;
 `;
 
-const Header = ({ deg, from, to, children, className, style, withOverlay }) => (
-  <HeaderGradient
-    deg={deg}
-    from={from}
-    to={to}
-    style={style}
-    className={classNames({ "gradient--overlay": withOverlay }, className)}
-  >
-    <HeaderContainer>
-      <Row>{children}</Row>
-    </HeaderContainer>
-  </HeaderGradient>
+const Header = ({
+  deg,
+  stops,
+  children,
+  className,
+  style,
+  withOverlay,
+  withSpotLight
+}) => (
+  <HeaderStyles role="heading" aria-level="1">
+    <HeaderGradient
+      tagName="header"
+      deg={deg}
+      stops={stops}
+      style={style}
+      className={classNames(
+        {
+          "gradient--overlay": withOverlay,
+          "gradient--spotlight": withSpotLight
+        },
+        className
+      )}
+    >
+      <HeaderContainer>
+        <Row>{children}</Row>
+      </HeaderContainer>
+    </HeaderGradient>
+  </HeaderStyles>
 );
 
 Header.propTypes = {
   ...Gradient.propTypes,
   className: PropTypes.string,
   style: PropTypes.objectOf(PropTypes.string),
-  withOverlay: PropTypes.bool
+  withOverlay: PropTypes.bool,
+  withSpotLight: PropTypes.bool
 };
 
 Header.defaultProps = {
   className: null,
   style: {},
-  withOverlay: false
+  withOverlay: false,
+  withSpotLight: false
 };
 
 export default Header;
