@@ -30,7 +30,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
         size="45"
       >
         <svg
-          fill="rgba(0, 0, 15, 1)"
+          fill="rgba(38, 38, 38, 1)"
           height="12"
           viewBox="0 0 12 12"
           width="12"
@@ -73,7 +73,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
         size="45"
       >
         <svg
-          fill="rgba(0, 0, 15, 1)"
+          fill="rgba(38, 38, 38, 1)"
           height="12"
           viewBox="0 0 12 12"
           width="12"

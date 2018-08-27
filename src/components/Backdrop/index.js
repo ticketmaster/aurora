@@ -45,7 +45,6 @@ class Backdrop extends Component {
   };
 
   handleOutsideClick = e => {
-    e.preventDefault();
     const { childRef } = this.state;
 
     if (childRef && childRef.current) {
@@ -67,9 +66,9 @@ class Backdrop extends Component {
           this.onCloseRequest = value ? value.onCloseRequest : () => {};
           return (
             <Overlay onClick={this.handleOutsideClick} {...rest}>
-              {this.props.children && (
+              {children && (
                 <BackdropProvider value={this.state}>
-                  {this.props.children}
+                  {children}
                 </BackdropProvider>
               )}
             </Overlay>

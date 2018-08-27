@@ -15,7 +15,8 @@ const colors = {
     light: "#dbf3db",
     hover: "#23702c",
     pressed: "#265333",
-    muted: "rgba(27, 171, 30, 0.4)"
+    muted: "rgba(27, 171, 30, 0.4)",
+    restrained: "rgba(27, 171, 30, 0.2)"
   },
   outlined: {
     hover: "#ECF4FD",
@@ -27,20 +28,36 @@ const colors = {
   slate: "#999999",
   moonstone: "#D1D1D1",
   shale: "#E6E6E6",
-  quartz: "#FAFAFA",
+  quartz: "#f6f6f6",
   lightGray: "#E0E0E0",
   aquamarine: "#00FFFF",
-  turquoise: "#31CCAA",
+  turquoise: {
+    base: "#14a1a3",
+    dark: "#0a7e80",
+    light: "#20c4c7"
+  },
+  ruby: {
+    base: "#d93a3a",
+    darkRuby: "#a22b2b",
+    lightRuby: "#ffeded"
+  },
+  amber: {
+    base: "#f2bd2a",
+    darkAmber: "#b98800",
+    lightAmber: "#fff5d9"
+  },
+  moonrock: "#bfbfbf",
+  diatomite: "#ebebeb",
   heliotrope: {
     base: "#C56BFF",
-    dark: "#A145DC",
-    light: "#DCA6FF",
+    dark: "#904eba",
+    light: "#f0daff",
     muted: "#F3E1FF"
   },
   cruz: {
-    base: "#922f90",
-    dark: "#6d236b",
-    light: "#c897c7",
+    base: "#962d94",
+    dark: "#6d236c",
+    light: "#e4cbe3",
     muted: "#e3cae3"
   },
   alert: {
@@ -62,9 +79,9 @@ const colors = {
     muted: "#C5E9C6"
   },
   onyx: {
-    base: "rgba(0, 0, 15, 1)",
-    light: "rgba(0, 0, 15, 0.6)",
-    muted: "rgba(0, 0, 15, 0.4)"
+    base: "rgba(38, 38, 38, 1)",
+    light: "rgba(38, 38, 38, 0.6)",
+    muted: "rgba(38, 38, 38, 0.4)"
   },
   white: {
     base: "rgba(255, 255, 255, 1)",

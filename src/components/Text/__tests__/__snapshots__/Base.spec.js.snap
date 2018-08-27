@@ -5,13 +5,32 @@ exports[`BaseText should render disabled text with a div tag in an accent varian
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(2,108,223,0.1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--accent text--azure text--disabled c0"
   disabled={true}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -22,13 +41,32 @@ exports[`BaseText should render disabled text with a div tag in the dark variant
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,0.4);
+  text-transform: none;
+  color: rgba(38,38,38,0.4);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--dark text--disabled c0"
   disabled={true}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -39,13 +77,32 @@ exports[`BaseText should render disabled text with a div tag in the light varian
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(255,255,255,0.5);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--light text--disabled c0"
   disabled={true}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -56,13 +113,32 @@ exports[`BaseText should render primary text with a div tag in an accent variant
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: #00FFFF;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--accent text--aquamarine c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -73,13 +149,32 @@ exports[`BaseText should render primary text with a div tag in an accent variant
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(2,108,223,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--accent text--azure c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -90,13 +185,32 @@ exports[`BaseText should render primary text with a div tag in the dark variant 
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,1);
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--dark text--primary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -107,13 +221,32 @@ exports[`BaseText should render primary text with a div tag in the dark variant 
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,1);
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--dark text--primary text--custom c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -124,13 +257,32 @@ exports[`BaseText should render primary text with a div tag in the light variant
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(255,255,255,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--light text--primary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -141,13 +293,32 @@ exports[`BaseText should render primary text with a div tag of the size prop pas
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,1);
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 20px;
+  }
 }
 
 <div
   className="text text--dark text--primary c0"
   disabled={false}
-  size="giga"
+  size={
+    Object {
+      "large": "giga",
+      "medium": "giga",
+      "small": "giga",
+    }
+  }
 >
   Text
 </div>
@@ -158,13 +329,32 @@ exports[`BaseText should render primary text with a div tag of the weight prop p
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
-  color: rgba(0,0,15,1);
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--dark text--primary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -175,13 +365,32 @@ exports[`BaseText should render primary text with a tag prop in the dark variant
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,1);
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <span
   className="text text--dark text--primary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </span>
@@ -192,13 +401,32 @@ exports[`BaseText should render secondary text with a div tag in an accent varia
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(2,108,223,0.2);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--accent text--azure text--secondary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -209,13 +437,32 @@ exports[`BaseText should render secondary text with a div tag in the dark varian
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: rgba(0,0,15,0.6);
+  text-transform: none;
+  color: rgba(38,38,38,0.6);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--dark text--secondary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>
@@ -226,13 +473,32 @@ exports[`BaseText should render secondary text with a div tag in the light varia
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+  text-transform: none;
   color: rgba(255,255,255,0.7);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
 }
 
 <div
   className="text text--light text--secondary c0"
   disabled={false}
-  size="hecto"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
 >
   Text
 </div>

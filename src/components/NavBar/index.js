@@ -218,7 +218,8 @@ class NavBar extends Component {
           position && `nav--${position}`,
           invert && "nav--inverted",
           !!backgroundColor && "nav--overlay",
-          className
+          className,
+          "nav--fade-in"
         )}
         invert={invert}
         style={{ ...style, backgroundColor }}
