@@ -38,7 +38,9 @@ rows:
 ```react
 responsive: true
 ---
-<Header>
+<Header
+  withSpotLight
+>
     <Heading level={1}>
         <Heading.Strong>Generic</Heading.Strong>
         {" "}
@@ -53,7 +55,9 @@ responsive: true
 responsive: true
 ---
 <React.Fragment>
-  <HeaderWithImage>
+  <HeaderWithImage
+    withSpotLight
+  >
     <Column medium={7} large={8}>
       <Row>
         <Breadcrumb style={breadcrumbStyles}>
@@ -130,7 +134,7 @@ responsive: true
   <HeaderWithImage
     withUnderlay={true}
     backgroundImage="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
-    backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, from: colors.defaultGradient.from, to: colors.heliotrope.base, style: { backgroundPosition: "center" } }}
+    backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, stops: [colors.defaultGradient.from, colors.heliotrope.base ], style: { backgroundPosition: "center" } }}
   >
     <Column medium={7} large={8}>
       <Heading level={1}>
