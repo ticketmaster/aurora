@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const VenueIcon = ({ size, color, ...props }) => (
+const VenueIcon = ({ size, color, children, ...props }) => (
   <svg width={size} height={size} viewBox="0 0 26 26" {...props}>
+    {children}
     <g fill="none" fillRule="evenodd" transform="translate(1 .85)">
       <circle cx="12" cy="12.15" r="12.5" fill="#FAFAFA" stroke="#E0E0E0" />
       <path
@@ -16,12 +17,14 @@ const VenueIcon = ({ size, color, ...props }) => (
 VenueIcon.displayName = "VenueIcon";
 
 VenueIcon.defaultProps = {
-  color: "currentColor"
+  color: "currentColor",
+  children: null
 };
 
 VenueIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  children: PropTypes.node
 };
 
 export default VenueIcon;

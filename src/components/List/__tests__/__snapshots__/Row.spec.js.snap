@@ -60,6 +60,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c7 {
   font-size: 14px;
+  color: #1F262D;
   font-weight: 600;
 }
 
@@ -514,7 +515,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color="#1F262D"
             style={
               Object {
                 "textTransform": "uppercase",
@@ -696,6 +697,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c7 {
   font-size: 14px;
+  color: #1F262D;
   font-weight: 600;
 }
 
@@ -1225,7 +1227,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color="#1F262D"
             style={
               Object {
                 "textTransform": "uppercase",
@@ -1433,6 +1435,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c7 {
   font-size: 14px;
+  color: #1F262D;
   font-weight: 600;
 }
 
@@ -1962,7 +1965,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color="#1F262D"
             style={
               Object {
                 "textTransform": "uppercase",
@@ -2150,6 +2153,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c7 {
   font-size: 14px;
+  color: #1F262D;
   font-weight: 600;
 }
 
@@ -2604,7 +2608,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         >
           <div
             className="c7"
-            color={null}
+            color="#1F262D"
             style={
               Object {
                 "textTransform": "uppercase",

@@ -7,6 +7,9 @@ exports[`CAIcon renders correctly 1`] = `
   viewBox="0 0 640 480"
   width={22}
 >
+  <title>
+    CA Icon
+  </title>
   <g
     transform="translate(74.118) scale(.9375)"
   >

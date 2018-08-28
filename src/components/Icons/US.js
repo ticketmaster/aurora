@@ -1,8 +1,9 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-const USIcon = ({ width, height, ...props }) => (
+const USIcon = ({ width, height, children, ...props }) => (
   <svg {...props} height={height} width={width} viewBox="0 0 640 480">
+    {children}
     <g fillRule="evenodd" transform="scale(.9375)">
       <g strokeWidth="1pt">
         <path
@@ -30,9 +31,14 @@ const USIcon = ({ width, height, ...props }) => (
 
 USIcon.displayName = "USIcon";
 
+USIcon.defaultProps = {
+  children: null
+};
+
 USIcon.propTypes = {
   width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired
+  height: PropTypes.number.isRequired,
+  children: PropTypes.node
 };
 
 export default USIcon;

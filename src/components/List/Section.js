@@ -24,15 +24,15 @@ const TitleContainer = styled(Row)`
 `;
 
 const TitleText = styled(BoldText)`
-  font-size: ${({ fontSize }) => fontSize || typography.size.uno};
-  color: ${({ color }) => color || colors.onyx.light};
-  text-transform: ${({ textTransform }) => textTransform || "uppercase"};
+  font-size: ${typography.size.uno};
+  color: ${colors.onyx.light};
+  text-transform: uppercase;
 `;
 
 const Section = ({ title, noOfColumns, titleStyle, children, ...rest }) => (
   <SectionContainer medium={noOfColumns} {...rest}>
     <TitleContainer>
-      <TitleText {...titleStyle}>{title}</TitleText>
+      <TitleText style={titleStyle}>{title}</TitleText>
     </TitleContainer>
     {children}
   </SectionContainer>

@@ -7,6 +7,9 @@ exports[`USIcon renders correctly 1`] = `
   viewBox="0 0 640 480"
   width={22}
 >
+  <title>
+    US Icon
+  </title>
   <g
     fillRule="evenodd"
     transform="scale(.9375)"

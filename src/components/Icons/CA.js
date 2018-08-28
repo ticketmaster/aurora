@@ -1,8 +1,9 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-const CAIcon = ({ height, width, ...props }) => (
+const CAIcon = ({ height, width, children, ...props }) => (
   <svg {...props} height={height} width={width} viewBox="0 0 640 480">
+    {children}
     <g transform="translate(74.118) scale(.9375)">
       <path fill="#fff" d="M81.137 0h362.276v512H81.137z" />
       <path
@@ -15,9 +16,14 @@ const CAIcon = ({ height, width, ...props }) => (
 
 CAIcon.displayName = "CAIcon";
 
+CAIcon.defaultProps = {
+  children: null
+};
+
 CAIcon.propTypes = {
   height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired
+  width: PropTypes.number.isRequired,
+  children: PropTypes.node
 };
 
 export default CAIcon;

@@ -27,9 +27,12 @@ const IconContainer = styled.div`
 `;
 
 /* stylelint-disable */
-const MultiLineLink = LinkTitle.withComponent("div").extend`
+const MultiLineLink = styled(LinkTitle.withComponent("div")).attrs({
+  className: "section-item-link"
+})`
   display: -webkit-box;
   overflow: hidden;
+
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 `;

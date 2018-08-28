@@ -1,8 +1,9 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-const InstagramIcon = ({ size, color, ...props }) => (
+const InstagramIcon = ({ size, color, children, ...props }) => (
   <svg {...props} viewBox="0 0 14 14" width={size} height={size} fill={color}>
+    {children}
     <g fill={color} fillRule="nonzero">
       <path d="M7.056 3.486c-1.96 0-3.584 1.565-3.584 3.514 0 1.949 1.596 3.514 3.584 3.514S10.64 8.922 10.64 7c0-1.922-1.624-3.514-3.584-3.514zm0 5.765C5.796 9.251 4.76 8.235 4.76 7c0-1.235 1.036-2.251 2.296-2.251 1.26 0 2.296 1.016 2.296 2.251 0 1.235-1.036 2.251-2.296 2.251z" />
       <ellipse cx="10.78" cy="3.404" rx="1" ry="1" />
@@ -14,12 +15,14 @@ const InstagramIcon = ({ size, color, ...props }) => (
 InstagramIcon.displayName = "InstagramIcon";
 
 InstagramIcon.defaultProps = {
-  color: "currentcolor"
+  color: "currentcolor",
+  children: null
 };
 
 InstagramIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string
+  color: PropTypes.string,
+  children: PropTypes.node
 };
 
 export default InstagramIcon;
