@@ -318,12 +318,12 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c16 {
-    max-width: 100%;
+    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -357,7 +357,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-bottom: 0;
     border-radius: 4px;
@@ -367,13 +367,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c3 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin: 18px 0 18px 0;
   }
@@ -399,7 +399,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c15 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -416,13 +416,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c11 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c17 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -439,7 +439,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c22 {
     border-top: 0.5px solid #E0E0E0;
     -webkit-transition: max-height 0.5s ease-in-out;
@@ -448,7 +448,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c18 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -465,7 +465,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c20 {
     display: none;
   }
@@ -965,12 +965,12 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c16 {
-    max-width: 100%;
+    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -1062,7 +1062,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-bottom: 0;
     border-radius: 4px;
@@ -1072,13 +1072,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c3 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin: 18px 0 8px 0;
   }
@@ -1104,7 +1104,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c15 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1121,13 +1121,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c11 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c17 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1144,13 +1144,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c22 {
     padding-left: 12px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c26 {
     border-top: 0.5px solid #E0E0E0;
     -webkit-transition: max-height 0.5s ease-in-out;
@@ -1159,7 +1159,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c18 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1176,7 +1176,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c20 {
     display: none;
   }
@@ -1702,12 +1702,12 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c16 {
-    max-width: 100%;
+    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -1799,7 +1799,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-bottom: 0;
     border-radius: 4px;
@@ -1809,13 +1809,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c3 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin: 18px 0 8px 0;
   }
@@ -1841,7 +1841,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c15 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1858,13 +1858,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c11 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c17 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1881,13 +1881,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c22 {
     padding-left: 12px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c26 {
     border-top: 0.5px solid #E0E0E0;
     -webkit-transition: max-height 0.5s ease-in-out;
@@ -1896,7 +1896,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c18 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1913,7 +1913,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c20 {
     display: none;
   }
@@ -2408,12 +2408,12 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c16 {
-    max-width: 100%;
+    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -2447,7 +2447,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c1 {
     margin-bottom: 0;
     border-radius: 4px;
@@ -2457,13 +2457,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c3 {
     display: block;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c5 {
     margin: 18px 0 18px 0;
   }
@@ -2489,7 +2489,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c15 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2506,13 +2506,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c11 {
     display: none;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c17 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2529,7 +2529,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c22 {
     border-top: 0.5px solid #E0E0E0;
     -webkit-transition: max-height 0.5s ease-in-out;
@@ -2538,7 +2538,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c18 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2555,7 +2555,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c20 {
     display: none;
   }

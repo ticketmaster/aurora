@@ -175,7 +175,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 16px;
   }
@@ -183,12 +183,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c3 {
-    max-width: 100%;
+    max-width: 25%;
     padding-right: 12px;
     padding-left: 12px;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
@@ -216,7 +216,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c2 {
     border: none;
     padding-left: 16px;

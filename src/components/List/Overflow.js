@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 import Row from "../Grid/Row";
 import spacing from "../../../src/theme/spacing";
-import { largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp } from "../../theme/mediaQueries";
 
 const OverflowRow = styled(Row)`
   overflow: hidden;
 
-  ${largeAndUp`
- padding-left: ${spacing.moderate};
+  ${mediumAndUp`
+    padding-left: ${spacing.moderate};
   `};
 `;
 
