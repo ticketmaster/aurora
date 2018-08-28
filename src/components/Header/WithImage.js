@@ -75,7 +75,8 @@ const ImageHeader = ({
           {...otherBackgroundImageProps}
           className={classNames({
             "gradient--overlay": !withSpotLight && withOverlay,
-            "gradient--underlay": !withSpotLight && withUnderlay
+            "gradient--underlay": withUnderlay,
+            "gradient--spotlight": withSpotLight
           })}
           aria-hidden
         />

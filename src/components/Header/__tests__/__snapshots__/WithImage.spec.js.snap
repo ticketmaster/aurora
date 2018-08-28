@@ -17,6 +17,12 @@ exports[`WithImage renders header background image 1`] = `
   position: absolute;
 }
 
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
 .c2:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
@@ -121,6 +127,18 @@ exports[`WithImage renders header background image 1`] = `
 @media screen and (min-width:1024px) {
   .c2.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
@@ -258,6 +276,12 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   position: absolute;
 }
 
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
 .c2:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
@@ -362,6 +386,18 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 @media screen and (min-width:1024px) {
   .c2.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
@@ -499,6 +535,12 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   position: absolute;
 }
 
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
 .c2:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
@@ -603,6 +645,18 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 @media screen and (min-width:1024px) {
   .c2.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
@@ -740,6 +794,12 @@ exports[`WithImage renders header with image 1`] = `
   position: absolute;
 }
 
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
 .c2:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
@@ -842,6 +902,18 @@ exports[`WithImage renders header with image 1`] = `
 @media screen and (min-width:1024px) {
   .c2.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
