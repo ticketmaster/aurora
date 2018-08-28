@@ -147,3 +147,26 @@ responsive: true
   <div>Some other content</div>
 </React.Fragment>
 ```
+
+### Image Header with Underlaid Image Background
+
+```react
+responsive: true
+---
+<React.Fragment>
+  <HeaderWithImage
+    withUnderlay={true}
+    withSpotLight={true}
+    backgroundImage="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
+  >
+    <Column medium={7} large={8}>
+      <Heading level={1}>
+          <Heading.Strong>City</Heading.Strong>
+          {" "}
+          <Heading.Span>Header</Heading.Span>
+      </Heading>
+    </Column>
+  </HeaderWithImage>
+  <div>Some other content</div>
+</React.Fragment>
+```

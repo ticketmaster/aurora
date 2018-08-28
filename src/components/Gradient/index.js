@@ -47,6 +47,20 @@ const GradientStyles = styled.span`
     ${largeAndUp`box-shadow: inset 0 1px 40px 10px rgba(0, 0, 0, 0.15);`};
   }
 
+  &.gradient--underlay.gradient--spotlight:after {
+    z-index: -1;
+    opacity: 0.8;
+    background-image: ${props =>
+      `linear-gradient(${props.deg.small}, ${props.stops.join(",")})`};
+    ${mediumAndUp`
+      background-image: ${props =>
+        `linear-gradient(${props.deg.medium}, ${props.stops.join(",")})`};
+    `} ${largeAndUp`
+      background-image: ${props =>
+        `linear-gradient(${props.deg.large}, ${props.stops.join(",")})`};
+    `};
+  }
+
   &:not(.gradient--spotlight).gradient--overlay:after {
     z-index: 2;
     opacity: 0.4;
