@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders a button when only onclick is provided 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<button
+  className="c0"
+  href={null}
+  rel="_self"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
+  target=""
+>
+  I am a link
+</button>
+`;
+
+exports[`Link renders a default link 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<a
+  className="c0"
+  href="http://localhost/"
+  rel="_self"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
+  target=""
+>
+  I am a link
+</a>
+`;
+
+exports[`Link renders a span when no href or onClick provided 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+<span
+  className="c0"
+  href={null}
+  rel="_self"
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
+  target=""
+>
+  I am a link
+</span>
+`;

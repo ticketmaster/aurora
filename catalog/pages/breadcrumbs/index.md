@@ -11,6 +11,10 @@ rows:
     Type: node
     Default:
     Notes: Render as the Breadcrumb's children
+  - Prop: variant
+    Type: light, dark, accent, none
+    Default: light
+    Notes:
   - Prop: ...props
     Type: any
     Default:
@@ -38,6 +42,14 @@ rows:
     Type: node
     Default:
     Notes: Render as the Breadcrumb's children
+  - Prop: size
+    Type: mini, uno, hecto, kilo, giga, tera, zetta
+    Default: uno
+    Notes: font size
+  - Prop: weight
+    Type: regular, semiBold
+    Default: semiBold
+    Notes: font weight
   - Prop: ...props
     Type: any
     Default:
@@ -47,20 +59,28 @@ rows:
 ### Breadcrumb with Breadcrumb.Items
 
 ```react
-<Breadcrumb style={breadcrumbStyles}>
-    <Breadcrumb.Item position="1" role="link" ariaLabel="Home" href="/" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-    <Breadcrumb.Item position="2" ariaLabel="Breadcrumbs" style={breadcrumbStyles}>Breadcrumbs</Breadcrumb.Item>
-</Breadcrumb>
+dark: true
+---
+<ThemeProvider theme={{ themeName: "tm"}}>
+  <Breadcrumb>
+      <Breadcrumb.Item position="1" role="link" ariaLabel="Home" href="/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item position="2" ariaLabel="Breadcrumbs">Breadcrumbs</Breadcrumb.Item>
+  </Breadcrumb>
+</ThemeProvider>
 ```
 
 ### Breadcrumb with Truncated Breadcrumb.Items
 
 ```react
-<Breadcrumb style={breadcrumbStyles}>
-    <Breadcrumb.Item position="1" ariaLabel="Lorem ipsum dolor sit amet, consectetur adipiscing elit" style={breadcrumbStyles}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</Breadcrumb.Item>
-    <Breadcrumb.Item position="2" ariaLabel="Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor." style={breadcrumbStyles}>Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor.
-</Breadcrumb.Item>
-    <Breadcrumb.Item position="3" ariaLabel="Cras vulputate nibh in lectus mollis, vel posuere est tincidunt." style={breadcrumbStyles}>Cras vulputate nibh in lectus mollis, vel posuere est tincidunt.
-</Breadcrumb.Item>
-</Breadcrumb>
+dark: true
+---
+<ThemeProvider theme={{ themeName: "tm"}}>
+  <Breadcrumb>
+      <Breadcrumb.Item position="1" ariaLabel="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit</Breadcrumb.Item>
+      <Breadcrumb.Item position="2" ariaLabel="Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor.">Pellentesque ornare nibh sed urna tincidunt, non bibendum enim porttitor.
+  </Breadcrumb.Item>
+      <Breadcrumb.Item position="3" ariaLabel="Cras vulputate nibh in lectus mollis, vel posuere est tincidunt.">Cras vulputate nibh in lectus mollis, vel posuere est tincidunt.
+  </Breadcrumb.Item>
+  </Breadcrumb>
+</ThemeProvider>
 ```

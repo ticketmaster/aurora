@@ -3,9 +3,38 @@
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 .c0 {
   font-size: 12px;
-  color: rgba(2,108,223,1);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: rgba(255,255,255,1);
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 12px;
+  }
 }
 
 <li
@@ -20,11 +49,16 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 >
   <a
     className="c0"
-    color=""
-    fontSize="12px"
     href="/"
     itemProp="item"
     rel="_self"
+    size={
+      Object {
+        "large": "uno",
+        "medium": "uno",
+        "small": "uno",
+      }
+    }
     target=""
   >
     Home
@@ -43,6 +77,38 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 .c0 {
   font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: rgba(255,255,255,1);
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 12px;
+  }
 }
 
 <li
@@ -57,9 +123,17 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
 >
   <span
     className="c0"
-    fontSize="12px"
     href={null}
     itemProp="item"
+    rel="_self"
+    size={
+      Object {
+        "large": "uno",
+        "medium": "uno",
+        "small": "uno",
+      }
+    }
+    target=""
   >
     Home
   </span>

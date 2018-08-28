@@ -704,13 +704,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   font-weight: 600;
 }
 
-.c24 {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c4 {
   height: 36px;
   width: 100%;
@@ -933,6 +926,30 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   width: 100%;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+.c24 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c24:focus,
+.c24:active,
+.c24:visited,
+.c24:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c24:hover {
+  color: #0150a7;
 }
 
 @media screen and (min-width:768px) {
@@ -1190,6 +1207,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .c24 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c24 {
+    font-size: 14px;
+  }
+}
+
 <div
   className="c0"
   onClick={[Function]}
@@ -1334,15 +1363,21 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       <div
         className="c23"
       >
-        <a
+        <span
           className="c24"
-          color=""
           href=""
           rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
           target=""
         >
           Ticket Options Available
-        </a>
+        </span>
       </div>
       <div
         className="c25"
@@ -1447,9 +1482,26 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c24 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c24:focus,
+.c24:active,
+.c24:visited,
+.c24:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c24:hover {
+  color: #0150a7;
 }
 
 .c4 {
@@ -1812,6 +1864,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c24 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c24 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     margin-bottom: 0;
     border-radius: 4px;
@@ -2077,9 +2141,15 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       >
         <a
           className="c24"
-          color=""
           href="/"
           rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
           target=""
         >
           Ticket options available

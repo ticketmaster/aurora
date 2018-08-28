@@ -91,9 +91,26 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 .c14 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c14:focus,
+.c14:active,
+.c14:visited,
+.c14:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c14:hover {
+  color: #0150a7;
 }
 
 .c7 {
@@ -227,6 +244,18 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
+@media screen and (min-width:768px) {
+  .c14 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    font-size: 14px;
+  }
+}
+
 <div
   className="c0 c1"
 >
@@ -346,11 +375,16 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <a
       aria-label="Section Item"
       className="section-item c13 c14"
-      color=""
       href="/"
-      onClick={[Function]}
       rel="_self"
       role="link"
+      size={
+        Object {
+          "large": "hecto",
+          "medium": "hecto",
+          "small": "hecto",
+        }
+      }
       target=""
     >
       <div
