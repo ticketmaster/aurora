@@ -80,11 +80,43 @@ TextBase.propTypes = {
     "summerSky",
     "turquoise"
   ]),
-  size: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
+  size: PropTypes.oneOf([
+    "mini",
+    "uno",
+    "hecto",
+    "kilo",
+    "giga",
+    "tera",
+    "zetta"
+  ]),
   responsiveSize: PropTypes.shape({
-    small: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
-    medium: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
-    large: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"])
+    small: PropTypes.oneOf([
+      "mini",
+      "uno",
+      "hecto",
+      "kilo",
+      "giga",
+      "tera",
+      "zetta"
+    ]),
+    medium: PropTypes.oneOf([
+      "mini",
+      "uno",
+      "hecto",
+      "kilo",
+      "giga",
+      "tera",
+      "zetta"
+    ]),
+    large: PropTypes.oneOf([
+      "mini",
+      "uno",
+      "hecto",
+      "kilo",
+      "giga",
+      "tera",
+      "zetta"
+    ])
   }),
   weight: PropTypes.oneOf(["regular", "semiBold"]),
   className: PropTypes.string,
