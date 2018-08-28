@@ -4,6 +4,14 @@ import classnames from "classnames";
 
 import StyledTextBase from "./Base.styles";
 
+const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
+
+const textTags = AVAILABLE_TAGS.reduce((acc, tag) => {
+  acc[tag] = StyledTextBase.withComponent(tag);
+
+  return acc;
+}, {});
+
 const TextBase = ({
   tag,
   variant,
@@ -19,8 +27,7 @@ const TextBase = ({
   children,
   ...props
 }) => {
-  const Text =
-    tag === "div" ? StyledTextBase : StyledTextBase.withComponent(tag);
+  const Text = textTags[tag];
 
   const classes = classnames({
     text: true,
@@ -59,7 +66,7 @@ const TextBase = ({
 };
 
 TextBase.propTypes = {
-  tag: PropTypes.oneOf(["div", "span", "p", "h3", "h4", "h5", "h6"]),
+  tag: PropTypes.oneOf(AVAILABLE_TAGS),
   variant: PropTypes.oneOf(["accent", "dark", "light"]),
   accent: PropTypes.oneOf([
     "",

@@ -1,7 +1,11 @@
-export const BUTTON_VARIANTS = [
-  "standard",
-  "special",
-  "outline",
-  "transparent"
-];
-export const BUTTON_SIZES = ["small", "regular", "large"];
+export const BUTTON_VARIANTS = {
+  standard: "standard",
+  special: "special",
+  outline: "outline",
+  transparent: "transparent"
+};
+export const BUTTON_SIZES = {
+  small: "small",
+  regular: "regular",
+  large: "large"
+};

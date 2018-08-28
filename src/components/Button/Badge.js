@@ -12,8 +12,8 @@ const Badge = ({ children, variant, ...props }) => (
 
 Badge.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(BUTTON_VARIANTS),
-  size: PropTypes.oneOf(BUTTON_SIZES)
+  variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
+  size: PropTypes.oneOf(Object.values(BUTTON_SIZES))
 };
 
 Badge.defaultProps = {

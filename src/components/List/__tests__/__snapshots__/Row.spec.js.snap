@@ -200,8 +200,8 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -228,7 +228,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c19:focus {
   outline: none;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .c19:hover {
@@ -243,10 +243,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c19:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
+  opacity: 0.2;
 }
 
 .c22 {
@@ -843,8 +844,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -871,7 +872,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c19:focus {
   outline: none;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .c19:hover {
@@ -886,10 +887,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c19:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
+  opacity: 0.2;
 }
 
 .c22 {
@@ -1580,8 +1582,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -1608,7 +1610,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c19:focus {
   outline: none;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .c19:hover {
@@ -1623,10 +1625,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c19:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
+  opacity: 0.2;
 }
 
 .c22 {
@@ -2290,8 +2293,8 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -2318,7 +2321,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c19:focus {
   outline: none;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .c19:hover {
@@ -2333,10 +2336,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c19:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
+  color: #ffffff;
+  background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
+  opacity: 0.2;
 }
 
 .c22 {

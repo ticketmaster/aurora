@@ -4,7 +4,7 @@ import { typography } from "../../theme";
 import { getFontColor } from "../../utils/typography";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
-const Base = styled.div`
+const Base = styled.span`
   font-size: ${({ size }) => typography.size[size.small]};
   font-weight: ${({ weight }) => typography.weight[weight]};
   line-height: ${typography.lineHeight.body};

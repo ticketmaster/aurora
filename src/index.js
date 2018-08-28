@@ -66,3 +66,5 @@ export {
   Link,
   BoldText
 } from "./components/Text";
+
+export { Toggle } from "./components/Input";

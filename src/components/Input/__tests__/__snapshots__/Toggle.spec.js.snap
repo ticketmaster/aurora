@@ -69,27 +69,28 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 }
 
 .toggle--active .c3 {
-  background-color: #1BAB1E;
-  border-color: #1BAB1E;
+  background-color: #1bab1e;
+  border-color: #1bab1e;
 }
 
 .toggle--inactive .c3 {
-  background-color: rgba(255,255,255,1);
-  border-color: #1BAB1E;
+  background-color: #ffffff;
+  border-color: #999999;
 }
 
 .c0:focus .c3 {
-  border-color: rgba(2,108,223,1);
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .toggle--enabled:hover .c3 {
-  border: 2px solid rgba(2,108,223,1);
+  border: 2px solid #026cdf;
 }
 
 .toggle--active.toggle--disabled .c3 {
-  background-color: rgba(27,171,30,0.2);
+  background-color: #1bab1e;
   border-color: #ebebeb;
+  opacity: 0.2;
 }
 
 .toggle--inactive.toggle--disabled .c3 {
@@ -171,7 +172,7 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: rgba(255,255,255,1);
+  background-color: #ffffff;
 }
 
 .toggle--inactive .c5 {
@@ -181,7 +182,8 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 
 .toggle--active.toggle--disabled .c5,
 .toggle--inactive.toggle--disabled .c5 {
-  background-color: #D1D1D1;
+  opacity: 0.7;
+  background-color: #bfbfbf;
 }
 
 .toggle--small.toggle--active .c5 {
@@ -286,27 +288,28 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 }
 
 .toggle--active .c3 {
-  background-color: #1BAB1E;
-  border-color: #1BAB1E;
+  background-color: #1bab1e;
+  border-color: #1bab1e;
 }
 
 .toggle--inactive .c3 {
-  background-color: rgba(255,255,255,1);
-  border-color: #1BAB1E;
+  background-color: #ffffff;
+  border-color: #999999;
 }
 
 .c0:focus .c3 {
-  border-color: rgba(2,108,223,1);
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .toggle--enabled:hover .c3 {
-  border: 2px solid rgba(2,108,223,1);
+  border: 2px solid #026cdf;
 }
 
 .toggle--active.toggle--disabled .c3 {
-  background-color: rgba(27,171,30,0.2);
+  background-color: #1bab1e;
   border-color: #ebebeb;
+  opacity: 0.2;
 }
 
 .toggle--inactive.toggle--disabled .c3 {
@@ -388,7 +391,7 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: rgba(255,255,255,1);
+  background-color: #ffffff;
 }
 
 .toggle--inactive .c5 {
@@ -398,7 +401,8 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 
 .toggle--active.toggle--disabled .c5,
 .toggle--inactive.toggle--disabled .c5 {
-  background-color: #D1D1D1;
+  opacity: 0.7;
+  background-color: #bfbfbf;
 }
 
 .toggle--small.toggle--active .c5 {
@@ -503,27 +507,28 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 }
 
 .toggle--active .c3 {
-  background-color: #1BAB1E;
-  border-color: #1BAB1E;
+  background-color: #1bab1e;
+  border-color: #1bab1e;
 }
 
 .toggle--inactive .c3 {
-  background-color: rgba(255,255,255,1);
-  border-color: #1BAB1E;
+  background-color: #ffffff;
+  border-color: #999999;
 }
 
 .c0:focus .c3 {
-  border-color: rgba(2,108,223,1);
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .toggle--enabled:hover .c3 {
-  border: 2px solid rgba(2,108,223,1);
+  border: 2px solid #026cdf;
 }
 
 .toggle--active.toggle--disabled .c3 {
-  background-color: rgba(27,171,30,0.2);
+  background-color: #1bab1e;
   border-color: #ebebeb;
+  opacity: 0.2;
 }
 
 .toggle--inactive.toggle--disabled .c3 {
@@ -605,7 +610,7 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: rgba(255,255,255,1);
+  background-color: #ffffff;
 }
 
 .toggle--inactive .c5 {
@@ -615,7 +620,8 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 
 .toggle--active.toggle--disabled .c5,
 .toggle--inactive.toggle--disabled .c5 {
-  background-color: #D1D1D1;
+  opacity: 0.7;
+  background-color: #bfbfbf;
 }
 
 .toggle--small.toggle--active .c5 {
@@ -720,27 +726,28 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 }
 
 .toggle--active .c3 {
-  background-color: #1BAB1E;
-  border-color: #1BAB1E;
+  background-color: #1bab1e;
+  border-color: #1bab1e;
 }
 
 .toggle--inactive .c3 {
-  background-color: rgba(255,255,255,1);
-  border-color: #1BAB1E;
+  background-color: #ffffff;
+  border-color: #999999;
 }
 
 .c0:focus .c3 {
-  border-color: rgba(2,108,223,1);
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
 }
 
 .toggle--enabled:hover .c3 {
-  border: 2px solid rgba(2,108,223,1);
+  border: 2px solid #026cdf;
 }
 
 .toggle--active.toggle--disabled .c3 {
-  background-color: rgba(27,171,30,0.2);
+  background-color: #1bab1e;
   border-color: #ebebeb;
+  opacity: 0.2;
 }
 
 .toggle--inactive.toggle--disabled .c3 {
@@ -822,7 +829,7 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: rgba(255,255,255,1);
+  background-color: #ffffff;
 }
 
 .toggle--inactive .c5 {
@@ -832,7 +839,8 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 
 .toggle--active.toggle--disabled .c5,
 .toggle--inactive.toggle--disabled .c5 {
-  background-color: #D1D1D1;
+  opacity: 0.7;
+  background-color: #bfbfbf;
 }
 
 .toggle--small.toggle--active .c5 {
