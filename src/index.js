@@ -32,7 +32,13 @@ export {
   VenueIcon,
   VipIcon,
   CrossIcon,
-  TicketIcon
+  TicketIcon,
+  FacebookIcon,
+  TwitterIcon,
+  InstagramIcon,
+  YoutubeIcon,
+  USIcon,
+  CAIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
@@ -68,3 +74,4 @@ export {
 } from "./components/Text";
 
 export { Toggle } from "./components/Input";
+export { LinkList, LinkListItem } from "./components/Link";

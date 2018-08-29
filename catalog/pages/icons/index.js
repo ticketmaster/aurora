@@ -10,7 +10,13 @@ import {
   VenueIcon,
   VipIcon,
   CrossIcon,
-  StarIcon
+  StarIcon,
+  TwitterIcon,
+  InstagramIcon,
+  YoutubeIcon,
+  FacebookIcon,
+  USIcon,
+  CAIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -42,6 +48,12 @@ export default {
     VipIcon,
     CrossIcon,
     StarIcon,
+    TwitterIcon,
+    InstagramIcon,
+    FacebookIcon,
+    YoutubeIcon,
+    USIcon,
+    CAIcon,
     Container,
     Row,
     Column,
