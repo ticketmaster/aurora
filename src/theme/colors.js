@@ -1,4 +1,5 @@
 const colors = {
+  // Deprecated colors. Should be removed
   azure: {
     base: "rgba(2, 108, 223, 1)",
     light: "rgba(2, 108, 223, 0.2)",
@@ -67,10 +68,9 @@ const colors = {
     muted: "#F5CDCD"
   },
   caution: {
-    base: "#F2BD2A",
-    dark: "#C19B2E",
-    light: "#F8DE94",
-    muted: "#FBEEC9"
+    base: "#f2bd2a",
+    dark: "#b98800",
+    light: "#fff5d9"
   },
   positive: {
     base: "#1BAB1E",
@@ -78,6 +78,11 @@ const colors = {
     light: "#8DD58E",
     muted: "#C5E9C6"
   },
+  defaultGradient: {
+    from: "#026cdf",
+    to: "#3ac7ff"
+  },
+  // Onyx and white are specific for typography. Should not be removed
   onyx: {
     base: "rgba(38, 38, 38, 1)",
     light: "rgba(38, 38, 38, 0.6)",
@@ -88,10 +93,6 @@ const colors = {
     lighter: "rgba(255, 255, 255, 0.2)",
     light: "rgba(255, 255, 255, 0.7)",
     muted: "rgba(255, 255, 255, 0.5)"
-  },
-  defaultGradient: {
-    from: "#026cdf",
-    to: "#3ac7ff"
   }
 };
 

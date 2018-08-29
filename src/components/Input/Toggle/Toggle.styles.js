@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, constants } from "../../..//theme";
+import { themes, constants } from "../../..//theme";
 
 export const ActiveArea = styled.button`
   background-color: transparent;
@@ -49,32 +49,33 @@ export const ReactToggleTrack = styled.div`
   }
 
   .toggle--active & {
-    background-color: ${colors.emerald.base};
-    border-color: ${colors.emerald.base};
+    background-color: ${themes.global.success.base};
+    border-color: ${themes.global.success.base};
   }
 
   .toggle--inactive & {
-    background-color: ${colors.white.base};
-    border-color: ${colors.emerald.base};
+    background-color: ${themes.global.gray06};
+    border-color: ${themes.global.gray02};
   }
 
   ${ActiveArea}:focus & {
-    border-color: ${colors.azure.base};
-    box-shadow: 0 0 5px 0 ${colors.azure.base};
+    border-color: ${themes.global.primary.base};
+    box-shadow: 0 0 5px 0 ${themes.global.primary.base};
   }
 
   .toggle--enabled:hover & {
-    border: 2px solid ${colors.azure.base};
+    border: 2px solid ${themes.global.primary.base};
   }
 
   .toggle--active.toggle--disabled & {
-    background-color: ${colors.emerald.restrained};
-    border-color: ${colors.diatomite};
+    background-color: ${themes.global.success.base};
+    border-color: ${themes.global.gray04};
+    opacity: 0.2;
   }
 
   .toggle--inactive.toggle--disabled & {
-    background-color: ${colors.white.muted};
-    border-color: ${colors.diatomite};
+    background-color: ${themes.global.white.muted};
+    border-color: ${themes.global.gray04};
   }
 `;
 
@@ -120,17 +121,18 @@ export const ReactToggleThumb = styled.div`
   }
 
   .toggle--active & {
-    background-color: ${colors.white.base};
+    background-color: ${themes.global.gray06};
   }
 
   .toggle--inactive & {
-    background-color: ${colors.slate};
+    background-color: ${themes.global.gray02};
     left: 3px;
   }
 
   .toggle--active.toggle--disabled &,
   .toggle--inactive.toggle--disabled & {
-    background-color: ${colors.moonstone};
+    opacity: 0.7;
+    background-color: ${themes.global.gray03};
   }
 
   .toggle--small.toggle--active & {

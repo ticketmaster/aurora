@@ -58,8 +58,8 @@ RatingBadge.propTypes = {
   ratingValue: PropTypes.string.isRequired,
   bestRating: PropTypes.string,
   ratingCount: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(BUTTON_VARIANTS),
-  size: PropTypes.oneOf(BUTTON_SIZES)
+  variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
+  size: PropTypes.oneOf(Object.values(BUTTON_SIZES))
 };
 
 RatingBadge.defaultProps = {
