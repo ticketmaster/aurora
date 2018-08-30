@@ -74,5 +74,5 @@ export {
   BoldText
 } from "./components/Text";
 
-export { Toggle } from "./components/Input";
+export { Toggle, DropDownGroup, DropDownOption } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
