@@ -224,7 +224,6 @@ NavBar.UserButton = Buttons.UserButton;
 NavBar.TextButton = Buttons.TextButton;
 NavBar.LinkRow = Links.LinkRow;
 NavBar.LinkList = Links.LinkList;
-NavBar.LinkListItem = Links.LinkListItem;
 NavBar.Link = Links.Link;
 NavBar.Right = Right;
 NavBar.Left = Left;

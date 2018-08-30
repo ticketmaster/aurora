@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import typography from "../../theme/typography";
+import { colors, typography } from "../../theme";
 import constants from "../../theme/constants";
 import StyledText from "./StyledText";
-import colors from "../../theme/colors";
 
 const BoldStyledText = StyledText.extend`
-  color: ${props => props.color};
+  color: ${props => props.color || colors.onyx.base};
   font-weight: ${typography.weight.semiBold};
 
   @media only screen and ${constants.breakpoints.smallAndUp} {
-    font-size: ${typography.size.uno};
+    font-size: ${typography.size.kilo};
   }
 `;
 
@@ -22,7 +21,7 @@ const BoldText = ({ color, children, ...rest }) => (
 );
 
 BoldText.defaultProps = {
-  color: colors.blackPearl
+  color: null
 };
 
 BoldText.propTypes = {
