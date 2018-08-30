@@ -55,6 +55,7 @@ export {
 } from "./components/ScrollObserver/Consumer";
 export { default as Portal } from "./components/Portal";
 export { default as colors } from "./theme/colors";
+export { default as themes } from "./theme/colorThemes";
 export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";
 export { default as typography } from "./theme/typography";
