@@ -12,7 +12,7 @@ const ItemContainer = styled.div.attrs({
 })`
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   cursor: ${props => (props.onItemClick ? "pointer" : "text")};
 
   &:not(:last-of-type) {
@@ -27,12 +27,9 @@ const IconContainer = styled.div`
 `;
 
 /* stylelint-disable */
-const MultiLineLink = styled(LinkTitle.withComponent("div")).attrs({
-  className: "section-item-link"
-})`
+const MultiLineLink = LinkTitle.withComponent("div").extend`
   display: -webkit-box;
   overflow: hidden;
-
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 `;

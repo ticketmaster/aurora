@@ -29,25 +29,23 @@ const TitleText = styled(BoldText)`
   text-transform: uppercase;
 `;
 
-const Section = ({ title, noOfColumns, titleStyle, children, ...rest }) => (
-  <SectionContainer medium={noOfColumns} {...rest}>
+const Section = ({ title, totalSections, children }) => (
+  <SectionContainer medium={constants.MAX_COLUMNS / totalSections}>
     <TitleContainer>
-      <TitleText style={titleStyle}>{title}</TitleText>
+      <TitleText>{title}</TitleText>
     </TitleContainer>
     {children}
   </SectionContainer>
 );
 
 Section.defaultProps = {
-  noOfColumns: constants.MAX_COLUMNS,
-  titleStyle: {},
+  totalSections: 1,
   children: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  noOfColumns: PropTypes.number,
-  titleStyle: PropTypes.objectOf(PropTypes.any),
+  totalSections: PropTypes.number,
   children: PropTypes.node
 };
 

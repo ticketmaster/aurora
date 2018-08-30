@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const VipIcon = ({ size, color, children, ...props }) => (
+const VipIcon = ({ size, color, ...props }) => (
   <svg width={size} height={size} viewBox="0 0 26 26" {...props}>
-    {children}
     <g fill="none" fillRule="evenodd" transform="translate(1 .85)">
       <circle cx="12" cy="12.15" r="12.5" fill="#FAFAFA" stroke="#E0E0E0" />
       <path
@@ -17,14 +16,12 @@ const VipIcon = ({ size, color, children, ...props }) => (
 VipIcon.displayName = "VipIcon";
 
 VipIcon.defaultProps = {
-  color: "currentColor",
-  children: null
+  color: "currentColor"
 };
 
 VipIcon.propTypes = {
   size: PropTypes.number.isRequired,
-  color: PropTypes.string,
-  children: PropTypes.node
+  color: PropTypes.string
 };
 
 export default VipIcon;

@@ -3,8 +3,7 @@ import styled from "styled-components";
 import {
   LinkRow as LinkRowBase,
   LinkList as LinkListBase,
-  LinkItem,
-  LinkListItem
+  LinkItem
 } from "../Link";
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
@@ -14,11 +13,8 @@ const LinkRow = LinkRowBase.extend`
   height: 60px;
 `;
 
-const LinkList = styled(LinkListBase).attrs({
-  role: "menu"
-})`
-  top: 60px;
-  left: -40%;
+const LinkList = LinkListBase.extend`
+  top: 41px;
 `;
 
 const Link = styled(LinkItem)`
@@ -59,6 +55,5 @@ const Link = styled(LinkItem)`
 export default {
   Link,
   LinkList,
-  LinkListItem,
   LinkRow
 };
