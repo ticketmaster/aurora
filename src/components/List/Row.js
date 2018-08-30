@@ -1,18 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import ListRowContent from "./RowContent";
 import { rowDataShape } from "./shape";
 import { ItemContainerConsumer } from "./Context";
-import ListRowContent from "./RowContent";
+import { determineIfOpen } from "./helper";
 
 const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
   <ItemContainerConsumer>
-    {({ openIndex, renderIntoPortal }) => (
+    {({ openIndex, expandMultiple, renderIntoPortal }) => (
       <ListRowContent
         rowItem={{
           ...rowItem
         }}
-        isOpen={openIndex === index}
+        isOpen={determineIfOpen(expandMultiple, openIndex, index)}
         index={index}
         onOverflowClick={() => {
           renderIntoPortal({ children, contentType: "mobile" });

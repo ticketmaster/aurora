@@ -21,7 +21,7 @@ rows:
     Notes: Optional. Default is null.
   - Prop: onExpandShow
     Type:  one of either "title" or "subTitle"
-    Notes: Optional. Defualt is "subTitles"
+    Notes: Optional. Default is "subTitles"
 ```
 
 ### ListContainer
@@ -42,6 +42,9 @@ rows:
   - Prop: onModalClose
     Type: func
     Notes: Optional.
+  - Prop: expandMultiple
+    Type: boolean
+    Notes: Optional. If true, multiple list rows can be expanded simultaneously. If false, only a single list row can be expanded at one time. Default is false.
 ```
 
 ### RowItem Prop Table
@@ -100,7 +103,7 @@ responsive: true
 responsive: true
 ---
 
-<ListContainer>
+<ListContainer expandMultiple={true}>
   <ListRow rowItem={listItems[0]} index={0} onOverflowClick={()=>{}}>
     <ListRowOverflow>
     {sections.map(section =>
