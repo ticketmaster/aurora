@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import colors from "../../../theme/colors";
+import themes from "../../../theme/colorThemes";
 
 const RadioInput = styled.input.attrs({
   type: "radio"
@@ -22,8 +22,12 @@ const RadioInput = styled.input.attrs({
     content: "";
     position: absolute;
     background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 1px solid ${colors.onyx.light};
+    border: ${({ theme: { themeName } }) =>
+      `1px solid ${themes[themeName].gray02}`};
 
     .radio-button--large & {
       width: 24px;
@@ -33,8 +37,9 @@ const RadioInput = styled.input.attrs({
       width: 16px;
       height: 16px;
     }
-    &.radio-button--disabled {
-      color: grey;
+    .radio-button--disabled & {
+      border: ${({ theme: { themeName } }) =>
+        `1px solid ${themes[themeName].gray01}`};
     }
   }
   &:after {
@@ -45,7 +50,8 @@ const RadioInput = styled.input.attrs({
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: ${colors.azure.base};
+    background-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
 
     .radio-button--large & {
       width: 12px;
@@ -55,14 +61,24 @@ const RadioInput = styled.input.attrs({
       width: 8px;
       height: 8px;
     }
+
+    .radio-button--disabled & {
+      background-color: ${({ theme: { themeName } }) =>
+        themes[themeName].gray01};
+    }
   }
   &:hover:before {
     border-width: 2px;
-    border-color: ${colors.azure.base};
+    border-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
   }
   &:focus:before {
-    border-width: 2px;
-    border-color: ${colors.azure.base};
+    outline: none;
+    border-width: 1px;
+    border-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
+    box-shadow: ${({ theme: { themeName } }) =>
+      `0 0 5px 0 ${themes[themeName].primary.base}`};
   }
   &:checked:after {
     opacity: 1;

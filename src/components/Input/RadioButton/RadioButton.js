@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Consumer } from "../../SelectionProvider/Context";
 import { Consumer as KeyBoardConsumer } from "../../KeyboardNavigation/Context";
-import colors from "../../../theme/colors";
+import themes from "../../../theme/colorThemes";
 import RadioInput from "./RadioInput";
 import composeEventHandlers from "../../../utils/composeEventHandlers";
 
@@ -15,11 +15,12 @@ const RadioWrapper = styled.label`
   display: flex;
   align-items: center;
   text-align: left;
-  color: ${colors.onyx.base};
+  color: ${({ theme: { themeName } }) => themes[themeName].gray01};
   outline: none;
+  min-height: 44px;
 
   &.radio-button--disabled {
-    color: grey;
+    opacity: 0.4;
     cursor: default;
     pointer-events: none;
   }
@@ -64,6 +65,7 @@ const RadioButton = ({
                 "radio-button--disabled": !isActive
               })}
               id={`${name + value}label`}
+              theme={props.theme}
             >
               <RadioInput
                 value={value}
@@ -95,14 +97,22 @@ RadioButton.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  theme: PropTypes.shape({
+    themeName: PropTypes.string
+  })
 };
 
 RadioButton.defaultProps = {
   size: "small",
   children: null,
   isActive: true,
-  onClick: null
+  onClick: null,
+  theme: {
+    themeName: "tm"
+  }
 };
+
+RadioButton.displayName = "RadioButton";
 
 export default RadioButton;
