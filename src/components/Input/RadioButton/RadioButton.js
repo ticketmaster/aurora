@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Consumer } from "../../SelectionProvider/Context";
 import { Consumer as KeyBoardConsumer } from "../../KeyboardNavigation/Context";
-import themes from "../../../theme/colorThemes";
+import { themes } from "../../../theme";
 import RadioInput from "./RadioInput";
 import composeEventHandlers from "../../../utils/composeEventHandlers";
 
