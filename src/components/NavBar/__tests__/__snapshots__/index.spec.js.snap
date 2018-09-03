@@ -211,7 +211,7 @@ exports[`NavBar renders fixed 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid undefined;
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
@@ -671,7 +671,7 @@ exports[`NavBar renders inverted 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid undefined;
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
@@ -1175,7 +1175,7 @@ exports[`NavBar renders with defaults 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  border-bottom: 1px solid undefined;
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
