@@ -26,7 +26,7 @@ const colors = {
   summerSky: "#3AC7FF",
   blackPearl: "#1F262D",
   slate: "#999999",
-  f: "#D1D1D1",
+  moonstone: "#D1D1D1",
   shale: "#E6E6E6",
   quartz: "#f6f6f6",
   lightGray: "#E0E0E0",
