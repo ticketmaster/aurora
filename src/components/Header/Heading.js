@@ -40,14 +40,7 @@ const levels = [
   margins.withComponent("h5")
 ];
 
-const Heading = ({
-  level,
-  size,
-  responsiveSize,
-  lineHeight,
-  children,
-  ...props
-}) => {
+const Heading = ({ level, size, responsiveSize, children, ...props }) => {
   const H = levels[level - 1];
   return (
     <H
@@ -91,7 +84,7 @@ Heading.defaultProps = {
     medium: null,
     large: null
   },
-  lineHeight: "body",
+  lineHeight: "header",
   weight: "regular",
   monospace: false,
   children: null

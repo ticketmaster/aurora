@@ -107,6 +107,7 @@ exports[`Header renders with custom level 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: blue;
   font-weight: 400;
   font-size: 24px;
@@ -355,6 +356,7 @@ exports[`Header renders with default 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: rgba(255,255,255,1);
   font-weight: 400;
   font-size: 24px;
@@ -602,6 +604,7 @@ exports[`Header renders withOverlay 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: rgba(255,255,255,1);
   font-weight: 400;
   font-size: 24px;
