@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes, constants } from "../../..//theme";
+import { themes, constants } from "../../../theme";
 
 export const ActiveArea = styled.button`
   background-color: transparent;

@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import themes from "../../../theme/colorThemes";
+import { themes, constants } from "../../../theme";
 
 const RadioInput = styled.input.attrs({
   type: "radio"
 })`
+  cursor: pointer;
   margin: 0;
   appearance: none;
   position: relative;
   outline: none;
+  transition: transform 0.1s ${constants.easing.easeInOutQuad};
+
+  &:active {
+    transform: scale(0.98, 0.98) translate(0, 1px);
+  }
+
   .radio-button--large & {
     width: 24px;
     height: 24px;
@@ -20,6 +27,9 @@ const RadioInput = styled.input.attrs({
   }
   &:before {
     content: "";
+    transition: border-color 0.3s ${constants.easing.easeInOutQuad},
+      border-width 0.3s ${constants.easing.easeInOutQuad},
+      box-shadow 0.3s ${constants.easing.easeInOutQuad};
     position: absolute;
     background-color: transparent;
     top: 50%;
@@ -44,6 +54,7 @@ const RadioInput = styled.input.attrs({
   }
   &:after {
     content: "";
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -67,11 +78,6 @@ const RadioInput = styled.input.attrs({
         themes[themeName].gray01};
     }
   }
-  &:hover:before {
-    border-width: 2px;
-    border-color: ${({ theme: { themeName } }) =>
-      themes[themeName].primary.base};
-  }
   &:focus:before {
     outline: none;
     border-width: 1px;
@@ -79,6 +85,11 @@ const RadioInput = styled.input.attrs({
       themes[themeName].primary.base};
     box-shadow: ${({ theme: { themeName } }) =>
       `0 0 5px 0 ${themes[themeName].primary.base}`};
+  }
+  &:hover:before {
+    border-width: 2px;
+    border-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
   }
   &:checked:after {
     opacity: 1;
