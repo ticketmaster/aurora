@@ -127,6 +127,7 @@ export const StyledButton = styled.button`
   }
 
   &:disabled {
+    transform: none;
     color: ${({ variant, theme: { themeName } }) => {
       const buttonTheme = themes[themeName];
       return colorVariants[variant](buttonTheme).color;

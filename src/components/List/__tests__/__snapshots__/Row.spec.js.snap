@@ -243,6 +243,9 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c19:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   color: #ffffff;
   background-color: #026cdf;
   border: 1px solid transparent;
@@ -887,6 +890,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c19:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   color: #ffffff;
   background-color: #026cdf;
   border: 1px solid transparent;
@@ -1625,6 +1631,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c19:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   color: #ffffff;
   background-color: #026cdf;
   border: 1px solid transparent;
@@ -2336,6 +2345,9 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c19:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
   color: #ffffff;
   background-color: #026cdf;
   border: 1px solid transparent;
