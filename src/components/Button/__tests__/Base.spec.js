@@ -14,7 +14,7 @@ describe("<Button />", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("renders stuandard regular size button correctly", () => {
+  it("renders standard regular size button correctly", () => {
     const component = renderer.create(<Button>Dummy Label</Button>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

@@ -546,6 +546,60 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 </button>
 `;
 
+exports[`<Button /> renders standard regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #013670;
+}
+
+.c0:disabled {
+  color: #ffffff;
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+<button
+  className="c0"
+  size="regular"
+>
+  Dummy Label
+</button>
+`;
+
 exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
 .c0 {
   font-weight: 600;
@@ -650,60 +704,6 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 <button
   className="c0"
   size="small"
->
-  Dummy Label
-</button>
-`;
-
-exports[`<Button /> renders stuandard regular size button correctly 1`] = `
-.c0 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c0:hover {
-  background-color: #0150a7;
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c0:disabled {
-  color: #ffffff;
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  cursor: not-allowed;
-  opacity: 0.2;
-}
-
-<button
-  className="c0"
-  size="regular"
 >
   Dummy Label
 </button>
