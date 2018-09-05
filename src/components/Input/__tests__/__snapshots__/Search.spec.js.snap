@@ -49,7 +49,7 @@ exports[`SearchInput renders default input 1`] = `
   color: rgba(255,255,255,1);
 }
 
-.c2::ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
@@ -167,7 +167,7 @@ exports[`SearchInput renders inverted input 1`] = `
   color: #26262699;
 }
 
-.c2::ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
@@ -285,7 +285,7 @@ exports[`SearchInput renders slim & inverted input 1`] = `
   color: #26262699;
 }
 
-.c2::ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
@@ -403,7 +403,7 @@ exports[`SearchInput renders slim input 1`] = `
   color: rgba(255,255,255,1);
 }
 
-.c2::ms-clear {
+.c2::-ms-clear {
   display: none;
 }
 
