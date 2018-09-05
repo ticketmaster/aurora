@@ -34,7 +34,6 @@ const global = {
   gray03: "#bfbfbf",
   gray04: "#ebebeb",
   gray05: "#f6f6f6",
-  gray06: "#ffffff",
   error: {
     base: "#d93a3a",
     dark: "#a22b2b",

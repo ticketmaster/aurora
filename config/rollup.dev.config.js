@@ -36,7 +36,13 @@ export default {
       plugins: [
         "transform-object-rest-spread",
         "transform-class-properties",
-        "external-helpers"
+        "external-helpers",
+        [
+          "babel-plugin-styled-components",
+          {
+            displayName: true
+          }
+        ]
       ],
       babelrc: false
     })

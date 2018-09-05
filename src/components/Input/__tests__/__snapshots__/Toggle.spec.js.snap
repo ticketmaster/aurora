@@ -74,7 +74,7 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 }
 
 .toggle--inactive .c3 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border-color: #999999;
 }
 
@@ -172,7 +172,7 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
 }
 
 .toggle--inactive .c5 {
@@ -293,7 +293,7 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 }
 
 .toggle--inactive .c3 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border-color: #999999;
 }
 
@@ -391,7 +391,7 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
 }
 
 .toggle--inactive .c5 {
@@ -512,7 +512,7 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 }
 
 .toggle--inactive .c3 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border-color: #999999;
 }
 
@@ -610,7 +610,7 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
 }
 
 .toggle--inactive .c5 {
@@ -731,7 +731,7 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 }
 
 .toggle--inactive .c3 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border-color: #999999;
 }
 
@@ -829,7 +829,7 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 }
 
 .toggle--active .c5 {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
 }
 
 .toggle--inactive .c5 {

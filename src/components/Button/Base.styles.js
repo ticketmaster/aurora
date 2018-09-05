@@ -5,32 +5,32 @@ import { typography, constants, themes } from "../../theme";
 
 const colorVariants = {
   standard: theme => ({
-    color: theme.gray06,
+    color: theme.white.base,
     backgroundColor: theme.primary.base,
     backgroundColorHover: theme.primary.medium,
     backgroundColorPressed: theme.primary.dark,
     borderColor: theme.transparent
   }),
   standardDisabled: theme => ({
-    color: theme.gray06,
+    color: theme.white.base,
     backgroundColor: theme.primary.base,
     borderColor: theme.transparent
   }),
   special: theme => ({
-    color: theme.gray06,
+    color: theme.white.base,
     backgroundColor: theme.special.base,
     backgroundColorHover: theme.special.medium,
     backgroundColorPressed: theme.special.dark,
     borderColor: theme.transparent
   }),
   specialDisabled: theme => ({
-    color: theme.gray06,
+    color: theme.white.base,
     backgroundColor: theme.special.base,
     borderColor: theme.transparent
   }),
   outline: theme => ({
     color: theme.primary.base,
-    backgroundColor: theme.gray06,
+    backgroundColor: theme.white.base,
     backgroundColorHover: theme.primary.light,
     backgroundColorPressed: theme.primary.muted,
     borderColor: theme.primary.base
