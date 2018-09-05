@@ -12,7 +12,7 @@ exports[`<Button /> renders link button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -44,7 +44,7 @@ exports[`<Button /> renders link button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -74,7 +74,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -131,7 +131,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -188,7 +188,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -246,7 +246,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
@@ -302,7 +302,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -332,7 +332,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -359,7 +359,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -389,7 +389,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -416,7 +416,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -446,7 +446,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -474,7 +474,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -504,7 +504,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -531,7 +531,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -561,7 +561,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -588,7 +588,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -618,7 +618,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -645,7 +645,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -675,7 +675,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -703,7 +703,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -733,7 +733,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;

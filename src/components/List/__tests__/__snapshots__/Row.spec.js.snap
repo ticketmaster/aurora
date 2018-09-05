@@ -200,7 +200,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -246,7 +246,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -847,7 +847,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -893,7 +893,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -1588,7 +1588,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -1634,7 +1634,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
@@ -2302,7 +2302,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   -webkit-transition: -webkit-transform 0.1s linear;
@@ -2348,7 +2348,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
   cursor: not-allowed;
