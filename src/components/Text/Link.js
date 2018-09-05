@@ -5,7 +5,7 @@ import { colors } from "../../theme";
 import StyledText from "./StyledText";
 import getRelByTarget from "../../utils/link";
 
-const LinkTitle = StyledText.withComponent(`a`).extend`
+export const LinkTitle = StyledText.withComponent(`a`).extend`
   color: ${({ color }) => color || colors.azure.base};
   text-decoration: none;
 `;
@@ -22,8 +22,8 @@ const Link = ({ href, children, ...props }) => {
 };
 
 Link.propTypes = {
-  children: PropTypes.string.isRequired,
-  href: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
   color: PropTypes.string,
   target: PropTypes.string,
   rel: PropTypes.string
@@ -32,8 +32,7 @@ Link.propTypes = {
 Link.defaultProps = {
   color: "",
   target: "",
-  rel: "_self",
-  href: "/"
+  rel: "_self"
 };
 
 export default Link;

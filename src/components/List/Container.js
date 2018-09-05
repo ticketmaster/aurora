@@ -49,22 +49,23 @@ class ListContainer extends Component {
   };
 
   onExpandOrCollapse = event => {
-    event.preventDefault();
-    const {
-      target: {
-        dataset: { index }
-      },
-      target
-    } = event;
+    const { className = "", dataset } = event.target || {};
+    const { index } = dataset || {};
+
+    if (!className) {
+      return null;
+    }
 
     if (
-      target.className.includes("button--expand-or-collapse") ||
-      target.className.includes("button--more-info")
+      className.includes("button--expand-or-collapse") ||
+      className.includes("button--more-info")
     ) {
+      event.preventDefault();
+
       const dataIndex = parseInt(index, 10);
 
       if (dataIndex > -1) {
-        if (target.className.includes("button--expand-or-collapse")) {
+        if (className.includes("button--expand-or-collapse")) {
           return this.state.openIndex === dataIndex
             ? this.setState({ openIndex: -1 })
             : this.setState({ openIndex: dataIndex });

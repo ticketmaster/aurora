@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint react/prefer-stateless-function: off */
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import classNames from "classnames";
@@ -14,6 +15,18 @@ import Buttons from "./Buttons";
 import Row from "../Grid/Row";
 import Column from "../Grid/Column";
 
+const mainStyle = `
+  background-color: transparent;
+  color: ${colors.white.base};
+  font-weight: ${typography.weight.semiBold};
+`;
+const invertedStyle = `
+  background-color: ${colors.white.base};
+  border-bottom: 1px solid ${colors.moonstone};
+  color: ${colors.onyx.base};
+  font-weight: ${typography.weight.regular};
+`;
+
 const Nav = styled.nav.attrs({
   role: "navigation"
 })`
@@ -23,14 +36,7 @@ const Nav = styled.nav.attrs({
   min-height: 60px;
   width: 100%;
   font-size: ${typography.size.kilo};
-  background-color: transparent;
-  color: ${colors.white.base};
-  font-weight: ${typography.weight.semiBold};
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-
-  &.nav--relative {
+  ${mainStyle} &.nav--relative {
     position: relative;
   }
 
@@ -40,7 +46,6 @@ const Nav = styled.nav.attrs({
 
   &.nav--fixed {
     position: fixed;
-    transform: translateY(0px);
   }
 
   & .linkItem:visited {
@@ -48,11 +53,7 @@ const Nav = styled.nav.attrs({
   }
 
   &.nav--inverted {
-    background-color: ${colors.white.base};
-    border-bottom: 1px solid ${colors.moonstone};
-    color: ${colors.onyx.base};
-    font-weight: ${typography.weight.regular};
-    .linkItem:visited {
+    ${invertedStyle} .linkItem:visited {
       color: ${colors.onyx.base};
     }
   }
@@ -74,6 +75,41 @@ const Nav = styled.nav.attrs({
     ${mediumAndUp`
       background-image: linear-gradient(86deg, rgba(0, 0, 0, 0), #000000);
       `};
+  }
+
+  &.nav--fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  &.nav--fade-out {
+    animation: fadeOut 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      position: fixed;
+      ${invertedStyle};
+    }
+    99% {
+      opacity: 0;
+      position: fixed;
+      ${mainStyle};
+    }
+    100% {
+      opacity: 0;
+      position: absolute;
+      ${mainStyle};
+    }
   }
 `;
 
@@ -123,57 +159,64 @@ const MessageContainer = styled.div`
   padding-bottom: 2px;
 `;
 
-const NavBar = ({
-  children,
-  position,
-  invert,
-  className,
-  backgroundColor,
-  style,
-  message,
-  ...props
-}) => (
-  <Nav
-    {...props}
-    className={classNames(
-      position && `nav--${position}`,
-      invert && "nav--inverted",
-      !!backgroundColor && "nav--overlay",
-      className
-    )}
-    invert={invert}
-    style={{ ...style, backgroundColor }}
-  >
-    {message ? (
-      <MessageContainer>
-        <Row>
-          <Column role="note">{message}</Column>
-        </Row>
-      </MessageContainer>
-    ) : null}
-    <Container>{children}</Container>
-  </Nav>
-);
+class NavBar extends Component {
+  static propTypes = {
+    children: PropTypes.node,
+    className: PropTypes.string,
+    position: PropTypes.oneOf(["relative", "absolute", "fixed"]),
+    invert: PropTypes.bool,
+    message: PropTypes.node,
+    backgroundColor: PropTypes.string,
+    style: PropTypes.objectOf(PropTypes.string)
+  };
 
-NavBar.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  position: PropTypes.oneOf(["relative", "absolute", "fixed"]),
-  invert: PropTypes.bool,
-  message: PropTypes.node,
-  backgroundColor: PropTypes.string,
-  style: PropTypes.objectOf(PropTypes.string)
-};
+  static defaultProps = {
+    className: null,
+    children: null,
+    position: "relative",
+    invert: false,
+    message: null,
+    backgroundColor: null,
+    style: {}
+  };
 
-NavBar.defaultProps = {
-  className: null,
-  children: null,
-  position: "relative",
-  invert: false,
-  message: null,
-  backgroundColor: null,
-  style: {}
-};
+  render() {
+    const {
+      children,
+      position,
+      invert,
+      className,
+      backgroundColor,
+      style,
+      message,
+      ...props
+    } = this.props;
+
+    return (
+      <Nav
+        {...props}
+        className={classNames(
+          position && `nav--${position}`,
+          invert && "nav--inverted",
+          !!backgroundColor && "nav--overlay",
+          className,
+          "nav--fade-in"
+        )}
+        invert={invert}
+        style={{ ...style, backgroundColor }}
+      >
+        {message ? (
+          <MessageContainer>
+            <Row>
+              <Column role="note">{message}</Column>
+            </Row>
+          </MessageContainer>
+        ) : null}
+        <Container>{children}</Container>
+      </Nav>
+    );
+  }
+}
 
 NavBar.MenuButton = Buttons.MenuButton;
 NavBar.SearchButton = Buttons.SearchButton;
@@ -181,6 +224,7 @@ NavBar.UserButton = Buttons.UserButton;
 NavBar.TextButton = Buttons.TextButton;
 NavBar.LinkRow = Links.LinkRow;
 NavBar.LinkList = Links.LinkList;
+NavBar.LinkListItem = Links.LinkListItem;
 NavBar.Link = Links.Link;
 NavBar.Right = Right;
 NavBar.Left = Left;

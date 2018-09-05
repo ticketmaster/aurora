@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
-.c13 {
+.c15 {
   border: solid 1px #E0E0E0;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -17,7 +17,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   overflow: hidden;
 }
 
-.c14 {
+.c16 {
   width: 100%;
   height: 100%;
 }
@@ -65,7 +65,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 .c6 {
   font-size: 14px;
-  color: rgba(38,38,38,1);
+  color: #1F262D;
   font-weight: 600;
 }
 
@@ -89,7 +89,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   color: rgba(38,38,38,0.6);
 }
 
-.c10 {
+.c14 {
   font-size: 14px;
   color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
@@ -104,10 +104,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   cursor: pointer;
 }
 
@@ -123,10 +123,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   cursor: text;
 }
 
@@ -134,8 +134,34 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-bottom: 16px;
 }
 
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.c13:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
 .c8 {
   padding-right: 8px;
+}
+
+.c10 {
+  font-size: 14px;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c9 {
@@ -152,7 +178,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: 16px;
   }
@@ -171,29 +197,29 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 @media screen and (min-width:1024px) {
   .c3 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .c3 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media only screen and (min-width:480px) {
   .c6 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:768px) {
   .c2 {
     border: none;
     padding-left: 16px;
@@ -212,7 +238,8 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color="#1F262D"
+        style={Object {}}
       >
         Ticket Options
       </div>
@@ -220,6 +247,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -251,20 +279,17 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="section-item-link c9 c10"
         >
           VIP Packages
-        </a>
+        </div>
       </div>
     </div>
     <div
       aria-label="Section Item"
       className="section-item c11"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -312,16 +337,21 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color="#1F262D"
+        style={Object {}}
       >
         Venue Info
       </div>
     </div>
-    <div
+    <a
       aria-label="Section Item"
-      className="section-item c7"
+      className="section-item c13 c14"
+      color=""
+      href="/"
       onClick={[Function]}
+      rel="_self"
       role="link"
+      target=""
     >
       <div
         className="c8"
@@ -351,22 +381,18 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="section-item-link c9 c10"
         >
           United Center
-        </a>
+        </div>
         <div
           className="c12"
         >
           Chicago, IL
         </div>
       </div>
-    </div>
+    </a>
   </div>
   <div
     className="c2 c3"
@@ -376,7 +402,8 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color="#1F262D"
+        style={Object {}}
       >
         Lineup
       </div>
@@ -384,6 +411,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -391,31 +419,28 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c13"
+          className="c15"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c14"
+            className="c16"
             src="https://placekitten.com/g/512/288"
           />
         </div>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="section-item-link c9 c10"
         >
           The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj
-        </a>
+        </div>
       </div>
     </div>
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -423,26 +448,22 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         className="c8"
       >
         <div
-          className="c13"
+          className="c15"
           size={40}
         >
           <img
             alt="circleImage"
-            className="c14"
+            className="c16"
             src="https://placekitten.com/g/512/288"
           />
         </div>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="section-item-link c9 c10"
         >
           T.I
-        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -454,7 +475,8 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     >
       <div
         className="c5 c6"
-        color={null}
+        color="#1F262D"
+        style={Object {}}
       >
         More
       </div>
@@ -462,6 +484,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item c7"
+      href={undefined}
       onClick={[Function]}
       role="link"
     >
@@ -493,15 +516,11 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
         </svg>
       </div>
       <div>
-        <a
-          className="c9 c10"
-          color=""
-          href="/"
-          rel="_self"
-          target=""
+        <div
+          className="section-item-link c9 c10"
         >
           Sell Tickets
-        </a>
+        </div>
       </div>
     </div>
   </div>

@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import colors from "../../../theme/colors";
+import { themes, constants } from "../../../theme";
 
 const RadioInput = styled.input.attrs({
   type: "radio"
 })`
+  cursor: pointer;
   margin: 0;
   appearance: none;
   position: relative;
   outline: none;
+  transition: transform 0.1s ${constants.easing.easeInOutQuad};
+
+  &:active {
+    transform: scale(0.98, 0.98) translate(0, 1px);
+  }
+
   .radio-button--large & {
     width: 24px;
     height: 24px;
@@ -20,10 +27,17 @@ const RadioInput = styled.input.attrs({
   }
   &:before {
     content: "";
+    transition: border-color 0.3s ${constants.easing.easeInOutQuad},
+      border-width 0.3s ${constants.easing.easeInOutQuad},
+      box-shadow 0.3s ${constants.easing.easeInOutQuad};
     position: absolute;
     background-color: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 1px solid ${colors.onyx.light};
+    border: ${({ theme: { themeName } }) =>
+      `1px solid ${themes[themeName].gray02}`};
 
     .radio-button--large & {
       width: 24px;
@@ -33,19 +47,22 @@ const RadioInput = styled.input.attrs({
       width: 16px;
       height: 16px;
     }
-    &.radio-button--disabled {
-      color: grey;
+    .radio-button--disabled & {
+      border: ${({ theme: { themeName } }) =>
+        `1px solid ${themes[themeName].gray01}`};
     }
   }
   &:after {
     content: "";
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: ${colors.azure.base};
+    background-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
 
     .radio-button--large & {
       width: 12px;
@@ -55,14 +72,24 @@ const RadioInput = styled.input.attrs({
       width: 8px;
       height: 8px;
     }
+
+    .radio-button--disabled & {
+      background-color: ${({ theme: { themeName } }) =>
+        themes[themeName].gray01};
+    }
+  }
+  &:focus:before {
+    outline: none;
+    border-width: 1px;
+    border-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
+    box-shadow: ${({ theme: { themeName } }) =>
+      `0 0 5px 0 ${themes[themeName].primary.base}`};
   }
   &:hover:before {
     border-width: 2px;
-    border-color: ${colors.azure.base};
-  }
-  &:focus:before {
-    border-width: 2px;
-    border-color: ${colors.azure.base};
+    border-color: ${({ theme: { themeName } }) =>
+      themes[themeName].primary.base};
   }
   &:checked:after {
     opacity: 1;

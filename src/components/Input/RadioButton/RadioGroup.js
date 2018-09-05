@@ -21,4 +21,6 @@ RadioGroup.defaultProps = {
   value: []
 };
 
+RadioGroup.displayName = "RadioGroup";
+
 export default RadioGroup;

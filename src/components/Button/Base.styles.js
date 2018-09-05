@@ -1,55 +1,56 @@
 import styled from "styled-components";
 
-import { typography, colors, constants, themes } from "../../theme";
+import { BUTTON_VARIANTS } from "./constants";
+import { typography, constants, themes } from "../../theme";
 
 const colorVariants = {
   standard: theme => ({
-    color: theme.color,
-    backgroundColor: theme.default,
-    backgroundColorHover: theme.hover,
-    backgroundColorPressed: theme.pressed,
-    borderColor: colors.transparent
+    color: theme.gray06,
+    backgroundColor: theme.primary.base,
+    backgroundColorHover: theme.primary.medium,
+    backgroundColorPressed: theme.primary.dark,
+    borderColor: theme.transparent
   }),
   standardDisabled: theme => ({
-    color: theme.color,
-    backgroundColor: theme.disabled,
-    borderColor: colors.transparent
+    color: theme.gray06,
+    backgroundColor: theme.primary.base,
+    borderColor: theme.transparent
   }),
   special: theme => ({
-    color: theme.color,
-    backgroundColor: theme.default,
-    backgroundColorHover: theme.hover,
-    backgroundColorPressed: theme.pressed,
-    borderColor: colors.transparent
+    color: theme.gray06,
+    backgroundColor: theme.special.base,
+    backgroundColorHover: theme.special.medium,
+    backgroundColorPressed: theme.special.dark,
+    borderColor: theme.transparent
   }),
   specialDisabled: theme => ({
-    color: theme.color,
-    backgroundColor: theme.disabled,
-    borderColor: colors.transparent
+    color: theme.gray06,
+    backgroundColor: theme.special.base,
+    borderColor: theme.transparent
   }),
   outline: theme => ({
-    color: theme.color,
-    backgroundColor: theme.default,
-    backgroundColorHover: theme.hover,
-    backgroundColorPressed: theme.pressed,
-    borderColor: theme.color
+    color: theme.primary.base,
+    backgroundColor: theme.gray06,
+    backgroundColorHover: theme.primary.light,
+    backgroundColorPressed: theme.primary.muted,
+    borderColor: theme.primary.base
   }),
   outlineDisabled: theme => ({
-    color: theme.disabledColor,
-    backgroundColor: theme.disabled,
-    borderColor: theme.disabledColor
+    color: theme.primary.base,
+    backgroundColor: theme.transparent,
+    borderColor: theme.primary.base
   }),
   transparent: theme => ({
-    color: theme.color,
-    backgroundColor: colors.transparent,
-    backgroundColorHover: theme.hover,
-    backgroundColorPressed: theme.pressed,
-    borderColor: colors.transparent
+    color: theme.primary.base,
+    backgroundColor: theme.transparent,
+    backgroundColorHover: theme.primary.light,
+    backgroundColorPressed: theme.primary.muted,
+    borderColor: theme.transparent
   }),
   transparentDisabled: theme => ({
-    color: theme.disabledColor,
-    backgroundColor: colors.transparent,
-    borderColor: colors.transparent
+    color: theme.primary.base,
+    backgroundColor: theme.transparent,
+    borderColor: theme.transparent
   })
 };
 
@@ -86,16 +87,16 @@ export const StyledButton = styled.button`
   cursor: pointer;
 
   color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName].buttons[variant];
+    const buttonTheme = themes[themeName];
     return colorVariants[variant](buttonTheme).color;
   }};
   background-color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName].buttons[variant];
+    const buttonTheme = themes[themeName];
     return colorVariants[variant](buttonTheme).backgroundColor;
   }};
   border: 1px solid
     ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName].buttons[variant];
+      const buttonTheme = themes[themeName];
       return colorVariants[variant](buttonTheme).borderColor;
     }};
 
@@ -104,12 +105,15 @@ export const StyledButton = styled.button`
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 5px 0 ${colors.azure.base};
+    box-shadow: ${({ theme: { themeName } }) => {
+      const buttonTheme = themes[themeName];
+      return `0 0 5px 0 ${buttonTheme.primary.base}`;
+    }};
   }
 
   &:hover {
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName].buttons[variant];
+      const buttonTheme = themes[themeName];
       return colorVariants[variant](buttonTheme).backgroundColorHover;
     }};
   }
@@ -117,33 +121,36 @@ export const StyledButton = styled.button`
   &:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName].buttons[variant];
+      const buttonTheme = themes[themeName];
       return colorVariants[variant](buttonTheme).backgroundColorPressed;
     }};
   }
 
   &:disabled {
+    transform: none;
     color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName].buttons[variant];
+      const buttonTheme = themes[themeName];
       return colorVariants[variant](buttonTheme).color;
     }};
 
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName].buttons[variant];
+      const buttonTheme = themes[themeName];
       return colorVariants[`${variant}Disabled`](buttonTheme).backgroundColor;
     }};
     border: 1px solid
       ${({ variant, theme: { themeName } }) => {
-        const buttonTheme = themes[themeName].buttons[variant];
+        const buttonTheme = themes[themeName];
         return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
       }};
     cursor: not-allowed;
+    ${({ variant }) =>
+      variant === BUTTON_VARIANTS.special ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
 `;
 
 StyledButton.defaultProps = {
   theme: {
-    themeName: "b2c"
+    themeName: "tm"
   }
 };
 

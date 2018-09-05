@@ -2,6 +2,40 @@
 
 exports[`Header renders with custom level 1`] = `
 .c2 {
+  z-index: 1;
+  width: 100%;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2.gradient--overlay:after,
+.c2.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c2:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,7 +54,7 @@ exports[`Header renders with custom level 1`] = `
   margin-right: -8px;
 }
 
-.c2 .c2 {
+.c4 .c4 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -29,8 +63,15 @@ exports[`Header renders with custom level 1`] = `
 }
 
 .c0 {
-  z-index: 1;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,29 +84,7 @@ exports[`Header renders with custom level 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after,
-.c0.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c0.gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c1 {
+.c3 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -75,19 +94,20 @@ exports[`Header renders with custom level 1`] = `
   padding-top: 60px;
 }
 
-.c5 {
+.c7 {
   font-weight: 300;
 }
 
-.c4 {
+.c6 {
   font-weight: 300;
   font-weight: 800;
 }
 
-.c3 {
+.c5 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: blue;
   font-weight: 400;
   font-size: 24px;
@@ -95,120 +115,176 @@ exports[`Header renders with custom level 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c2 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
+@media screen and (min-width:768px) {
+  .c4 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 @media screen and (min-width:480px) {
-  .c0 {
+  .c1 {
     min-height: 140px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     min-height: 218px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c1 {
+  .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c5 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c3 {
+  .c5 {
     font-size: 46px;
   }
 }
 
 <header
+  aria-level="1"
   className="c0"
-  from="#026cdf"
-  style={Object {}}
-  to="#3ac7ff"
+  role="heading"
 >
-  <div
-    className="c1"
+  <span
+    className="c1 c2"
+    style={Object {}}
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <h1
-        className="c3"
-        color="blue"
-        size={
-          Object {
-            "large": "bronto",
-            "medium": "zetta",
-            "small": "tera",
-          }
-        }
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
-        >
-          Generic
-        </span>
-         
-        <span
+        <h1
           className="c5"
+          color="blue"
+          size={
+            Object {
+              "large": "bronto",
+              "medium": "zetta",
+              "small": "tera",
+            }
+          }
         >
-          Header
-        </span>
-      </h1>
+          <span
+            className="c6"
+          >
+            Generic
+          </span>
+           
+          <span
+            className="c7"
+          >
+            Header
+          </span>
+        </h1>
+      </div>
     </div>
-  </div>
+  </span>
 </header>
 `;
 
 exports[`Header renders with default 1`] = `
 .c2 {
+  z-index: 1;
+  width: 100%;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2.gradient--overlay:after,
+.c2.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c2:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -227,7 +303,7 @@ exports[`Header renders with default 1`] = `
   margin-right: -8px;
 }
 
-.c2 .c2 {
+.c4 .c4 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -236,8 +312,15 @@ exports[`Header renders with default 1`] = `
 }
 
 .c0 {
-  z-index: 1;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -250,29 +333,7 @@ exports[`Header renders with default 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after,
-.c0.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c0.gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c1 {
+.c3 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -282,19 +343,20 @@ exports[`Header renders with default 1`] = `
   padding-top: 60px;
 }
 
-.c5 {
+.c7 {
   font-weight: 300;
 }
 
-.c4 {
+.c6 {
   font-weight: 300;
   font-weight: 800;
 }
 
-.c3 {
+.c5 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: rgba(255,255,255,1);
   font-weight: 400;
   font-size: 24px;
@@ -302,119 +364,175 @@ exports[`Header renders with default 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c2 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
+@media screen and (min-width:768px) {
+  .c4 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 @media screen and (min-width:480px) {
-  .c0 {
+  .c1 {
     min-height: 140px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     min-height: 218px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c1 {
+  .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c5 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c3 {
+  .c5 {
     font-size: 46px;
   }
 }
 
 <header
+  aria-level="1"
   className="c0"
-  from="#026cdf"
-  style={Object {}}
-  to="#3ac7ff"
+  role="heading"
 >
-  <div
-    className="c1"
+  <span
+    className="c1 c2"
+    style={Object {}}
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <h2
-        className="c3"
-        size={
-          Object {
-            "large": "bronto",
-            "medium": "zetta",
-            "small": "tera",
-          }
-        }
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
-        >
-          Generic
-        </span>
-         
-        <span
+        <h2
           className="c5"
+          size={
+            Object {
+              "large": "bronto",
+              "medium": "zetta",
+              "small": "tera",
+            }
+          }
         >
-          Header
-        </span>
-      </h2>
+          <span
+            className="c6"
+          >
+            Generic
+          </span>
+           
+          <span
+            className="c7"
+          >
+            Header
+          </span>
+        </h2>
+      </div>
     </div>
-  </div>
+  </span>
 </header>
 `;
 
 exports[`Header renders withOverlay 1`] = `
 .c2 {
+  z-index: 1;
+  width: 100%;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2.gradient--overlay:after,
+.c2.gradient--underlay:after {
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c2.gradient--underlay.gradient--spotlight:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c2:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c2:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -433,7 +551,7 @@ exports[`Header renders withOverlay 1`] = `
   margin-right: -8px;
 }
 
-.c2 .c2 {
+.c4 .c4 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -442,8 +560,15 @@ exports[`Header renders withOverlay 1`] = `
 }
 
 .c0 {
-  z-index: 1;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -456,29 +581,7 @@ exports[`Header renders withOverlay 1`] = `
   min-height: 122px;
 }
 
-.c0.gradient--overlay:after,
-.c0.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c0.gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c1 {
+.c3 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -488,19 +591,20 @@ exports[`Header renders withOverlay 1`] = `
   padding-top: 60px;
 }
 
-.c5 {
+.c7 {
   font-weight: 300;
 }
 
-.c4 {
+.c6 {
   font-weight: 300;
   font-weight: 800;
 }
 
-.c3 {
+.c5 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
+  line-height: 1.25;
   color: rgba(255,255,255,1);
   font-weight: 400;
   font-size: 24px;
@@ -508,113 +612,135 @@ exports[`Header renders withOverlay 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c2 {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--overlay:after {
+  .c2:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0.gradient--underlay:after {
+  .c2:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
+@media screen and (min-width:768px) {
+  .c4 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 @media screen and (min-width:480px) {
-  .c0 {
+  .c1 {
     min-height: 140px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     min-height: 218px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c1 {
+  .c3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c5 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c3 {
+  .c5 {
     font-size: 46px;
   }
 }
 
 <header
-  className="gradient--overlay c0"
-  from="#026cdf"
-  style={Object {}}
-  to="#3ac7ff"
+  aria-level="1"
+  className="c0"
+  role="heading"
 >
-  <div
-    className="c1"
+  <span
+    className="gradient--overlay c1 c2"
+    style={Object {}}
   >
     <div
-      className="c2"
+      className="c3"
     >
-      <h2
-        className="c3"
-        size={
-          Object {
-            "large": "bronto",
-            "medium": "zetta",
-            "small": "tera",
-          }
-        }
+      <div
+        className="c4"
       >
-        <span
-          className="c4"
-        >
-          Generic
-        </span>
-         
-        <span
+        <h2
           className="c5"
+          size={
+            Object {
+              "large": "bronto",
+              "medium": "zetta",
+              "small": "tera",
+            }
+          }
         >
-          Header
-        </span>
-      </h2>
+          <span
+            className="c6"
+          >
+            Generic
+          </span>
+           
+          <span
+            className="c7"
+          >
+            Header
+          </span>
+        </h2>
+      </div>
     </div>
-  </div>
+  </span>
 </header>
 `;

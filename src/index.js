@@ -2,6 +2,7 @@ export { Button, Badge, RatingBadge } from "./components/Button";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
+export { default as Gradient } from "./components/Gradient";
 export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
 export { default as Heading } from "./components/Header/Heading";
@@ -23,15 +24,27 @@ export { default as ContainerBlock } from "./components/Container/Block.styles";
 export { ResponsiveImage, StaticImage } from "./components/Image";
 export { Text } from "./components/Text";
 export {
+  CAIcon,
+  CampsiteIcon,
   ChevronIcon,
+  ClubIcon,
+  CrossIcon,
+  DonationIcon,
+  FacebookIcon,
+  GeneralIcon,
+  InstagramIcon,
   OverflowIcon,
+  ParkingIcon,
   SearchIcon,
-  UserIcon,
+  SpecialIcon,
   StarIcon,
+  TicketIcon,
+  TwitterIcon,
+  USIcon,
+  UserIcon,
   VenueIcon,
   VipIcon,
-  CrossIcon,
-  TicketIcon
+  YoutubeIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
@@ -48,6 +61,7 @@ export {
 } from "./components/ScrollObserver/Consumer";
 export { default as Portal } from "./components/Portal";
 export { default as colors } from "./theme/colors";
+export { default as themes } from "./theme/colorThemes";
 export { default as constants } from "./theme/constants";
 export { default as spacing } from "./theme/spacing";
 export { default as typography } from "./theme/typography";
@@ -65,3 +79,12 @@ export {
   Link,
   BoldText
 } from "./components/Text";
+
+export {
+  Toggle,
+  DropDownGroup,
+  DropDownOption,
+  RadioButton,
+  RadioGroup
+} from "./components/Input";
+export { LinkList, LinkListItem } from "./components/Link";

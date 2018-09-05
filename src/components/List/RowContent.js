@@ -10,7 +10,7 @@ import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import ChevronIcon from "../Icons/Chevron";
-import { largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 
 import IconButton from "../Button/IconButton";
@@ -18,14 +18,14 @@ import IconButton from "../Button/IconButton";
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
 
-  ${largeAndUp`
-  margin-bottom: ${props => (props.isOpen ? "12px" : 0)};
-  border-radius: 4px;
-  box-shadow: ${props =>
-    props.isOpen
-      ? "0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19)"
-      : 0};
-  transition: box-shadow 0.5s ease-in-out;
+  ${mediumAndUp`
+    margin-bottom: ${props => (props.isOpen ? "12px" : 0)};
+    border-radius: 4px;
+    box-shadow: ${props =>
+      props.isOpen
+        ? "0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19)"
+        : 0};
+    transition: box-shadow 0.5s ease-in-out;
   `};
 
   &:not(:last-of-type) {
@@ -44,7 +44,7 @@ const IconWrapper = styled(IconButton).attrs({
   size: 45
 })`
   display: none;
-  ${largeAndUp`
+  ${mediumAndUp`
     display: block;
   `};
 `;
@@ -61,7 +61,7 @@ const LinkWrapper = styled.a`
 
   margin: 12px 0
     ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
-  ${largeAndUp`
+  ${mediumAndUp`
     margin: 18px 0
       ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
       0;
@@ -97,7 +97,7 @@ const DateWrapper = styled.div`
 
 const TitleColumn = styled(Column)`
   display: none;
-  ${largeAndUp`
+  ${mediumAndUp`
     display: ${props => (props.hideOnExpand ? "none" : "flex")};
     justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
@@ -105,14 +105,14 @@ const TitleColumn = styled(Column)`
 `;
 
 const MobileOnlyColumn = styled(Column)`
-  ${largeAndUp`
-  display: none;
+  ${mediumAndUp`
+    display: none;
   `};
 `;
 
 const SubTitleColumn = styled(Column)`
   display: none;
-  ${largeAndUp`
+  ${mediumAndUp`
     display: ${props => (props.hideOnExpand ? "none" : "flex")};
     justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
     align-items: center;
@@ -133,8 +133,8 @@ const ListRowButton = StyledButton.withComponent("span").extend`
 
 const LinkRow = styled(Row)`
   padding-left: ${spacing.cozy};
-  ${largeAndUp`
-  padding-left: 12px;
+  ${mediumAndUp`
+    padding-left: 12px;
   `};
 `;
 
@@ -142,10 +142,10 @@ const OverflowDesktopContainer = styled(Column)`
   max-height: 0;
   overflow: hidden;
 
-  ${largeAndUp`
-  border-top: 0.5px solid ${colors.lightGray};
-  transition: max-height 0.5s ease-in-out;
-  max-height: ${props => (props.isOpen ? "600px" : "0")};
+  ${mediumAndUp`
+    border-top: 0.5px solid ${colors.lightGray};
+    transition: max-height 0.5s ease-in-out;
+    max-height: ${props => (props.isOpen ? "600px" : "0")};
   `};
 `;
 
@@ -154,7 +154,7 @@ const DesktopContainer = styled.div`
   padding-left: ${spacing.moderate};
   padding-right: ${spacing.cozy};
 
-  ${largeAndUp`
+  ${mediumAndUp`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,8 +162,8 @@ const DesktopContainer = styled.div`
 `;
 
 const MobileContainer = styled.div`
-  ${largeAndUp`
-  display: none;
+  ${mediumAndUp`
+    display: none;
   `};
 `;
 
@@ -232,7 +232,7 @@ const ListRowContent = ({
         </DateWrapper>
 
         <Row style={{ width: "100%" }}>
-          <MobileOnlyColumn small={12}>
+          <MobileOnlyColumn>
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
             <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
           </MobileOnlyColumn>
@@ -240,16 +240,14 @@ const ListRowContent = ({
           <TitleColumn
             hideOnExpand={isOpen && onExpandShow === "subTitle"}
             isOpen={isOpen}
-            large={isOpen ? 12 : 6}
-            xLarge={isOpen ? 12 : 6}
+            medium={isOpen ? 12 : 6}
           >
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
           </TitleColumn>
           <SubTitleColumn
             hideOnExpand={isOpen && onExpandShow === "title"}
             isOpen={isOpen}
-            large={isOpen ? 12 : 6}
-            xLarge={isOpen ? 12 : 6}
+            medium={isOpen ? 12 : 6}
           >
             <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
           </SubTitleColumn>

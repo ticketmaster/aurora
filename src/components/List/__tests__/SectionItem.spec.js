@@ -20,10 +20,21 @@ describe("<SectionItem />", () => {
     body.removeChild(modalRoot);
   });
 
-  it("renders SectionItem correctly", () => {
+  it('renders SectionItem without "url" correctly', () => {
     const { container } = render(
       <SectionItem
         item={sections[0].items[0]}
+        key={sections[0].items[0].title}
+      />
+    );
+    Simulate.click(container.querySelector(".section-item"));
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('renders SectionItem with "url" correctly', () => {
+    const { container } = render(
+      <SectionItem
+        item={{ ...sections[0].items[0], url: "https://ticketmaster.com/" }}
         key={sections[0].items[0].title}
       />
     );

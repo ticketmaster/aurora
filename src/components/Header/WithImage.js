@@ -8,7 +8,7 @@ import Container from "../Grid/Container";
 import Row from "../Grid/Row";
 import { mediumAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 
-const GradientBackground = Gradient.extend`
+const GradientBackground = styled(Gradient)`
   position: absolute;
   top: 0;
   left: 0;
@@ -51,13 +51,13 @@ const ImageWrapper = styled.div`
 
 const ImageHeader = ({
   children,
-  from,
-  to,
+  stops,
   deg,
   backgroundImage,
   backgroundImageProps,
   withOverlay,
   withUnderlay,
+  withSpotLight,
   ...props
 }) => {
   const {
@@ -65,7 +65,7 @@ const ImageHeader = ({
     ...otherBackgroundImageProps
   } = backgroundImageProps;
   return (
-    <Wrapper {...props}>
+    <Wrapper {...props} role="heading" aria-level="1">
       {backgroundImage ? (
         <ImageBackground
           style={{
@@ -74,19 +74,20 @@ const ImageHeader = ({
           }}
           {...otherBackgroundImageProps}
           className={classNames({
-            "gradient--overlay": withOverlay,
-            "gradient--underlay": withUnderlay
+            "gradient--overlay": !withSpotLight && withOverlay,
+            "gradient--underlay": withUnderlay,
+            "gradient--spotlight": withSpotLight
           })}
           aria-hidden
         />
       ) : (
         <GradientBackground
-          from={from}
-          to={to}
+          stops={stops}
           deg={deg}
           className={classNames({
-            "gradient--overlay": withOverlay,
-            "gradient--underlay": withUnderlay
+            "gradient--overlay": !withSpotLight && withOverlay,
+            "gradient--underlay": !withSpotLight && withUnderlay,
+            "gradient--spotlight": withSpotLight
           })}
         />
       )}
@@ -101,13 +102,17 @@ ImageHeader.propTypes = {
   ...Gradient.propTypes,
   backgroundImage: PropTypes.string,
   backgroundImageProps: PropTypes.objectOf(PropTypes.any),
-  withOverlay: PropTypes.bool
+  withOverlay: PropTypes.bool,
+  withUnderlay: PropTypes.bool,
+  withSpotLight: PropTypes.bool
 };
 
 ImageHeader.defaultProps = {
   backgroundImage: null,
   backgroundImageProps: {},
-  withOverlay: false
+  withOverlay: false,
+  withUnderlay: false,
+  withSpotLight: false
 };
 
 ImageHeader.ImageWrapper = ImageWrapper;

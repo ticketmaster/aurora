@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavBar renders fixed 1`] = `
+.c10 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.list-container--open .c10 {
+  display: block;
+}
+
+.c10.links__list--open {
+  display: block;
+}
+
 .c7 {
   display: inline-block;
   -webkit-text-decoration: none;
@@ -46,21 +67,8 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 .c9 {
-  display: none;
-  background-color: rgba(255,255,255,1);
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  top: 41px;
-}
-
-.list-container--open .c9 {
-  display: block;
+  top: 60px;
+  left: -40%;
 }
 
 .c6 {
@@ -183,13 +191,6 @@ exports[`NavBar renders fixed 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -202,9 +203,6 @@ exports[`NavBar renders fixed 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -232,6 +230,16 @@ exports[`NavBar renders fixed 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fade-in {
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.c0.nav--fade-out {
+  -webkit-animation: fadeOut 0.3s ease-in-out;
+  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -307,7 +315,7 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 <nav
-  className="nav--relative c0"
+  className="nav--fixed nav--fade-in c0"
   role="navigation"
   style={
     Object {
@@ -410,7 +418,7 @@ exports[`NavBar renders fixed 1`] = `
           Link 4
         </button>
         <div
-          className="links links__list c9"
+          className="c9 links links__list c10"
           role="menu"
           style={
             Object {
@@ -471,6 +479,27 @@ exports[`NavBar renders fixed 1`] = `
 `;
 
 exports[`NavBar renders inverted 1`] = `
+.c9 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.list-container--open .c9 {
+  display: block;
+}
+
+.c9.links__list--open {
+  display: block;
+}
+
 .c7 {
   display: inline-block;
   -webkit-text-decoration: none;
@@ -498,21 +527,8 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 .c8 {
-  display: none;
-  background-color: rgba(255,255,255,1);
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  top: 41px;
-}
-
-.list-container--open .c8 {
-  display: block;
+  top: 60px;
+  left: -40%;
 }
 
 .c6 {
@@ -635,13 +651,6 @@ exports[`NavBar renders inverted 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -654,9 +663,6 @@ exports[`NavBar renders inverted 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -684,6 +690,16 @@ exports[`NavBar renders inverted 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fade-in {
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.c0.nav--fade-out {
+  -webkit-animation: fadeOut 0.3s ease-in-out;
+  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -759,7 +775,7 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 <nav
-  className="nav--relative nav--inverted c0"
+  className="nav--relative nav--inverted nav--fade-in c0"
   role="navigation"
   style={
     Object {
@@ -859,7 +875,7 @@ exports[`NavBar renders inverted 1`] = `
           Link 4
         </button>
         <div
-          className="links links__list c8"
+          className="c8 links links__list c9"
           role="menu"
           style={
             Object {
@@ -920,6 +936,27 @@ exports[`NavBar renders inverted 1`] = `
 `;
 
 exports[`NavBar renders with defaults 1`] = `
+.c7 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.list-container--open .c7 {
+  display: block;
+}
+
+.c7.links__list--open {
+  display: block;
+}
+
 .c5 {
   display: inline-block;
   -webkit-text-decoration: none;
@@ -947,21 +984,8 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 .c6 {
-  display: none;
-  background-color: rgba(255,255,255,1);
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  top: 41px;
-}
-
-.list-container--open .c6 {
-  display: block;
+  top: 60px;
+  left: -40%;
 }
 
 .c4 {
@@ -1003,7 +1027,7 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: #E6E6E6;
 }
 
-.c8 {
+.c9 {
   width: 24px;
   height: 24px;
   border: solid 0.5px currentColor;
@@ -1055,7 +1079,7 @@ exports[`NavBar renders with defaults 1`] = `
   font-weight: 400;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1083,12 +1107,12 @@ exports[`NavBar renders with defaults 1`] = `
   font-weight: 600;
 }
 
-.nav--inverted .c7 {
+.nav--inverted .c8 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
-.c9 {
+.c10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1116,7 +1140,7 @@ exports[`NavBar renders with defaults 1`] = `
   font-weight: 600;
 }
 
-.nav--inverted .c9 {
+.nav--inverted .c10 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
@@ -1131,13 +1155,6 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  -webkit-transition-property: -webkit-transform;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
 }
 
 .c0.nav--relative {
@@ -1150,9 +1167,6 @@ exports[`NavBar renders with defaults 1`] = `
 
 .c0.nav--fixed {
   position: fixed;
-  -webkit-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
 }
 
 .c0 .linkItem:visited {
@@ -1180,6 +1194,16 @@ exports[`NavBar renders with defaults 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.nav--fade-in {
+  -webkit-animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.c0.nav--fade-out {
+  -webkit-animation: fadeOut 0.3s ease-in-out;
+  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -1211,14 +1235,14 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 @media screen and (min-width:480px) {
-  .c7 {
+  .c8 {
     padding-right: 12px;
     padding-left: 12px;
   }
 }
 
 @media screen and (min-width:480px) {
-  .c9 {
+  .c10 {
     padding-right: 24px;
     padding-left: 12px;
   }
@@ -1249,7 +1273,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 <nav
-  className="nav--relative c0"
+  className="nav--relative nav--fade-in c0"
   role="navigation"
   style={
     Object {
@@ -1342,7 +1366,7 @@ exports[`NavBar renders with defaults 1`] = `
           Link 4
         </button>
         <div
-          className="links links__list c6"
+          className="c6 links links__list c7"
           role="menu"
           style={
             Object {
@@ -1399,7 +1423,7 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
     </div>
     <button
-      className="c7"
+      className="c8"
       type="button"
     >
       <svg
@@ -1417,11 +1441,11 @@ exports[`NavBar renders with defaults 1`] = `
       </svg>
     </button>
     <button
-      className="c7"
+      className="c8"
       type="button"
     >
       <div
-        className="c8"
+        className="c9"
         color="currentColor"
         size={24}
       >
@@ -1438,7 +1462,7 @@ exports[`NavBar renders with defaults 1`] = `
       </div>
     </button>
     <button
-      className="c9"
+      className="c10"
       type="button"
     >
       Text Button!

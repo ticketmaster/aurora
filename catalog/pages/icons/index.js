@@ -1,16 +1,27 @@
 import { pageLoader } from "catalog";
 
 import {
+  CAIcon,
+  CampsiteIcon,
   ChevronIcon,
-  UserIcon,
+  ClubIcon,
+  CrossIcon,
+  DonationIcon,
+  FacebookIcon,
+  GeneralIcon,
+  InstagramIcon,
   OverflowIcon,
-  SearchIcon,
   ParkingIcon,
+  SearchIcon,
+  SpecialIcon,
+  StarIcon,
   TicketIcon,
+  TwitterIcon,
+  USIcon,
+  UserIcon,
   VenueIcon,
   VipIcon,
-  CrossIcon,
-  StarIcon
+  YoutubeIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -32,19 +43,32 @@ export default {
   path: "/icons",
   title: "Icons",
   imports: {
+    CAIcon,
+    CampsiteIcon,
     ChevronIcon,
-    UserIcon,
+    ClubIcon,
+    CrossIcon,
+    DonationIcon,
+    FacebookIcon,
+    GeneralIcon,
+    InstagramIcon,
     OverflowIcon,
-    SearchIcon,
     ParkingIcon,
+    SearchIcon,
+    SpecialIcon,
+    StarIcon,
     TicketIcon,
+    TwitterIcon,
+    USIcon,
+    UserIcon,
     VenueIcon,
     VipIcon,
-    CrossIcon,
-    StarIcon,
+    YoutubeIcon,
+
+    Column,
     Container,
     Row,
-    Column,
+
     iconStyle,
     iconLabelStyle
   },
