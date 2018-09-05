@@ -1,2 +1,2 @@
 /* eslint import/prefer-default-export: off */
-export { default as CheckBoxGroup } from "./CheckBoxGroup";
+export { default as CheckBox } from "./CheckBox";

@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckBox renders correctly after click  1`] = `
+<label
+  class="checkbox--small sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders correctly on focus  1`] = `
+<label
+  class="checkbox--small sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders default checkbox 1`] = `
+<label
+  class="checkbox--small sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders default checked checkbox 1`] = `
+<label
+  class="checkbox--small checkbox__checked sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="checkbox__checked sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders default indeterminate checkbox 1`] = `
+<label
+  class="checkbox--small checkbox__checked checkbox__indeterminate sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="checkbox__checked sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders disabled checkbox 1`] = `
+<label
+  class="checkbox--small checkbox--disabled sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    disabled=""
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="16"
+      stroke="rgba(38, 38, 38, 0.4)"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="16"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
+
+exports[`CheckBox renders large checkbox 1`] = `
+<label
+  class="checkbox--large sc-bZQynM dgNshy"
+>
+  <input
+    aria-labelledby="test_nametest_value"
+    class="sc-iwsKbI evTFzO"
+    name="test_name"
+    type="checkbox"
+    value="test_value"
+  />
+  <div
+    class="sc-htoDjs egyiwf"
+  >
+    <svg
+      class="sc-dnqmqq cOstNk"
+      fill="none"
+      fill-rule="evenodd"
+      height="24"
+      stroke="#026cdf"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="3"
+      viewBox="0 0 24 28"
+      width="24"
+    >
+      <path
+        d="M5.215 12.219l4.437 4.439 9.514-9.433"
+      />
+    </svg>
+  </div>
+  <span
+    class="sc-gzVnrw kcmiZY"
+    id="test_nametest_value"
+  >
+    Test checkbox
+  </span>
+</label>
+`;
