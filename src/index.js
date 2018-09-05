@@ -85,6 +85,7 @@ export {
   DropDownGroup,
   DropDownOption,
   RadioButton,
-  RadioGroup
+  RadioGroup,
+  CheckBoxButton
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
