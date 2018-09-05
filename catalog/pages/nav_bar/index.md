@@ -21,11 +21,11 @@ state: { invert: false }
                     <NavBar.Link>Link 3</NavBar.Link>
                     <NavBar.Link>
                         More
-                        <NavBar.LinkList style={{ width: "265px" }}>
-                            <NavBar.Link href="/">Link 4</NavBar.Link>
-                            <NavBar.Link>Link 5</NavBar.Link>
-                            <NavBar.Link>Link 6</NavBar.Link>
-                            <NavBar.Link>Link 7 With Really Long Content </NavBar.Link>
+                        <NavBar.LinkList style={{ width: "265px", top: '40px', left: 0}}>
+                            <NavBar.LinkListItem href="/">Link 4</NavBar.LinkListItem>
+                            <NavBar.LinkListItem>Link 5</NavBar.LinkListItem>
+                            <NavBar.LinkListItem>Link 6</NavBar.LinkListItem>
+                            <NavBar.LinkListItem>Link 7 With Really Long Content </NavBar.LinkListItem>
                         </NavBar.LinkList>
                     </NavBar.Link>
                 </NavBar.LinkRow>

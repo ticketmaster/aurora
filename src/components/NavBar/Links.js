@@ -18,7 +18,7 @@ const LinkList = styled(LinkListBase).attrs({
   role: "menu"
 })`
   top: 60px;
-  left: -40%;
+  left: -74%;
 `;
 
 const Link = styled(LinkItem)`
