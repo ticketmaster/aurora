@@ -976,3 +976,11 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
   Dummy Label
 </button>
 `;
+
+exports[`<Button /> should render button with global theme when incorrect theme name is used 1`] = `
+<button
+  class="sc-bdVaJa fmoPgI"
+>
+  Dummy Label
+</button>
+`;

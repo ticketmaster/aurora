@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { render, Simulate } from "react-testing-library";
+import { ThemeProvider } from "styled-components";
 
 import { Button } from "../";
 
@@ -163,5 +164,14 @@ describe("<Button />", () => {
 
     Simulate.click(getByText("Dummy Label"));
     expect(onClick).toHaveBeenCalled();
+  });
+
+  it("should render button with global theme when incorrect theme name is used", () => {
+    const { container } = render(
+      <ThemeProvider theme={{ themeName: "test" }}>
+        <Button>Dummy Label</Button>
+      </ThemeProvider>
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

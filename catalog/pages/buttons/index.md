@@ -29,7 +29,7 @@ rows:
 
 ```react
 ---
-<ThemeProvider theme={{ themeName: 'b2c' }}>
+<ThemeProvider theme={{ themeName: 'global' }}>
     <Container>
         <Row>
             <Column small={3}/>
@@ -54,7 +54,7 @@ rows:
 
 ```react
 ---
-<ThemeProvider theme={{ themeName: 'b2c' }}>
+<ThemeProvider theme={{ themeName: 'global' }}>
     <Container>
         <Row>
             <Column small={3}/>
@@ -79,7 +79,7 @@ rows:
 
 ```react
 ---
-<ThemeProvider theme={{ themeName: 'b2c' }}>
+<ThemeProvider theme={{ themeName: 'global' }}>
     <Container>
         <Row>
             <Column small={3}/>
@@ -104,6 +104,7 @@ rows:
 
 ```react
 ---
+//incorrect theme name
 <ThemeProvider theme={{ themeName: 'b2c' }}>
     <Container>
         <Row>
