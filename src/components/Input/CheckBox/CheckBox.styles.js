@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Checkmark from "../../Icons/Checkmark";
-import { constants, themes } from "../../../theme";
+import { constants, themes, typography } from "../../../theme";
 
 export const CheckBoxWrapper = styled.label`
   position: relative;
@@ -22,7 +22,7 @@ export const CheckBoxWrapper = styled.label`
   }
 
   &.checkbox--small {
-    font-size: 14px;
+    font-size: ${typography.size.hecto};
   }
 `;
 
