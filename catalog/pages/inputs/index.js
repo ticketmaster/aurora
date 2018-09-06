@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { pageLoader } from "catalog";
+import { ThemeProvider } from "styled-components";
 
 import {
   Search,
@@ -75,7 +76,8 @@ export default {
     DropDownGroup,
     DropDownOption,
     Toggle,
-    DemoToggleWrapper
+    DemoToggleWrapper,
+    ThemeProvider
   },
   content: pageLoader(() => import("./index.md"))
 };

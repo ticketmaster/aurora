@@ -1,634 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input renders bottom label 1`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
-<div
-  className="text--input-left c0"
->
-  <label
-    className="c1"
-    id="testlabel"
-  >
-    
-  </label>
-  <div
-    className="c2"
-  >
-    <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={false}
-      id="testinput"
-      name="test"
-      placeholder=""
-      type="text"
-    />
-  </div>
-</div>
-`;
-
-exports[`Input renders bottom label 2`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
-<div
-  className="text--input-top text--input-disabled c0"
->
-  <label
-    className="c1"
-    id="testlabel"
-  >
-    
-  </label>
-  <div
-    className="c2"
-  >
-    <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={true}
-      id="testinput"
-      name="test"
-      placeholder=""
-      type="text"
-    />
-  </div>
-</div>
-`;
-
 exports[`Input renders default input 1`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
 <div
-  className="text--input-top c0"
+  class="text--input-top text--input-regular sc-bdVaJa cBKMGA"
 >
   <label
-    className="c1"
-    id="testlabel"
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
   >
-    
+    First Name
   </label>
   <div
-    className="c2"
+    class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={false}
-      id="testinput"
-      name="test"
-      placeholder=""
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
       type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
+      role="alert"
     />
   </div>
 </div>
 `;
 
-exports[`Input renders error top label 1`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
-.c4 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c4 {
-  opacity: 0.35;
-}
-
-.text--input-left .c4 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c4.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c4.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
+exports[`Input renders disabled input 1`] = `
 <div
-  className="text--input-top text__error-top c0"
+  class="text--input-top text--input-disabled text--input-regular sc-bdVaJa cBKMGA"
 >
   <label
-    className="c1"
-    id="testlabel"
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
   >
-    
+    First Name
   </label>
   <div
-    className="c2"
+    class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={false}
-      id="testinput"
-      name="test"
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      disabled=""
+      id="test1firstname__input"
+      name="test1"
       placeholder=""
       type="text"
     />
     <label
-      aria-invalid={true}
-      className="text__error-top c4"
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
+      role="alert"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input renders input with error 1`] = `
+<div
+  class="text--input-top text__error text--input-regular sc-bdVaJa cBKMGA"
+>
+  <label
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
+  >
+    First Name
+  </label>
+  <div
+    class="sc-htpNat eXpulu"
+  >
+    <input
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
+      type="text"
+    />
+    <label
+      aria-invalid="true"
+      class="sc-ifAKCX dfGglR"
       role="alert"
     >
       Something Went Wrong
@@ -637,338 +93,121 @@ exports[`Input renders error top label 1`] = `
 </div>
 `;
 
-exports[`Input renders error top label 2`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
-.c4 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c4 {
-  opacity: 0.35;
-}
-
-.text--input-left .c4 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c4.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c4.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
+exports[`Input renders large input 1`] = `
 <div
-  className="c0"
+  class="text--input-top text--input-large sc-bdVaJa cBKMGA"
 >
   <label
-    className="c1"
-    id="testlabel"
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
   >
-    
+    First Name
   </label>
   <div
-    className="c2"
+    class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={false}
-      id="testinput"
-      name="test"
-      placeholder=""
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
       type="text"
     />
     <label
-      aria-invalid={true}
-      className="c4"
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
       role="alert"
-    >
-      Something  Went Wrong
-    </label>
+    />
   </div>
 </div>
 `;
 
-exports[`Input renders top label 1`] = `
-.c3 {
-  height: 36px;
-  width: 100%;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px rgba(38,38,38,0.6);
-  padding-left: 18px;
-  line-height: 2.57;
-}
-
-.text__error-top .c3 {
-  border-color: #D93A3A;
-}
-
-.text__error-left .c3 {
-  border-color: #D93A3A;
-}
-
-.c3.text--input-left {
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c3:hover {
-  border: 2px rgba(2,108,223,1) solid;
-  padding-left: 17px;
-}
-
-.c3:-webkit-input-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:-moz-placeholder {
-  color: rgba(38,38,38,0.6);
-}
-
-.c3:focus {
-  border: 1px rgba(2,108,223,1) solid;
-  padding-left: 18px;
-  border-radius: 2px;
-  box-shadow: 0 0 5px 0 rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  outline: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 2;
-  -webkit-flex-grow: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c0.text--input-top {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: left;
-  -webkit-justify-content: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-}
-
-.c0.text--input-left {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0.text--input-disabled {
-  pointer-events: none;
-  opacity: 0.35;
-}
-
-.c1 {
-  font-size: 12px;
-  height: 13px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgba(38,38,38,0.4);
-  position: relative;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.35;
-}
-
-.text--input-top .c1 {
-  margin-bottom: 6px;
-}
-
-.text--input-left .c1 {
-  margin-right: 11px;
-  margin-top: 10px;
-}
-
-.c1.text__error-top {
-  color: #D93A3A;
-  margin-top: 1px;
-  font-size: 12px;
-  line-height: 1.25;
-}
-
-.c1.text__error-left {
-  color: #D93A3A;
-  margin-top: 1px;
-}
-
+exports[`Input renders left labeled input 1`] = `
 <div
-  className="text--input-top c0"
+  class="text--input-left text--input-regular sc-bdVaJa cBKMGA"
 >
   <label
-    className="c1"
-    id="testlabel"
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
   >
-    
+    First Name
   </label>
   <div
-    className="c2"
+    class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="testlabel"
-      className="c3"
-      disabled={false}
-      id="testinput"
-      name="test"
-      placeholder=""
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
       type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
+      role="alert"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input renders small input 1`] = `
+<div
+  class="text--input-top text--input-small sc-bdVaJa cBKMGA"
+>
+  <label
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
+  >
+    First Name
+  </label>
+  <div
+    class="sc-htpNat eXpulu"
+  >
+    <input
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
+      type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
+      role="alert"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input renders top labeled input 1`] = `
+<div
+  class="text--input-top text--input-regular sc-bdVaJa cBKMGA"
+>
+  <label
+    class="sc-bwzfXH yJMup"
+    id="test1firstname__label"
+  >
+    First Name
+  </label>
+  <div
+    class="sc-htpNat eXpulu"
+  >
+    <input
+      aria-labelledby="test1firstname__label"
+      class="sc-bxivhb jZNkaQ"
+      id="test1firstname__input"
+      name="test1"
+      placeholder="test hint"
+      type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX dfGglR"
+      role="alert"
     />
   </div>
 </div>
