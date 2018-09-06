@@ -35,7 +35,7 @@ const Input = styled.input.attrs({
   &::placeholder {
     color: ${props => (props.invert ? "#26262699" : colors.white.base)};
   }
-  &::ms-clear {
+  &::-ms-clear {
     display: none;
   }
   &::-webkit-search-cancel-button {
