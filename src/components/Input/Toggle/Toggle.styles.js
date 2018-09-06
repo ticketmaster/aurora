@@ -54,7 +54,7 @@ export const ReactToggleTrack = styled.div`
   }
 
   .toggle--inactive & {
-    background-color: ${themes.global.gray06};
+    background-color: ${themes.global.white.base};
     border-color: ${themes.global.gray02};
   }
 
@@ -121,7 +121,7 @@ export const ReactToggleThumb = styled.div`
   }
 
   .toggle--active & {
-    background-color: ${themes.global.gray06};
+    background-color: ${themes.global.white.base};
   }
 
   .toggle--inactive & {
