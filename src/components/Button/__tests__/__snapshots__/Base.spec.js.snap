@@ -18,8 +18,8 @@ exports[`<Button /> renders link button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -79,8 +79,8 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -112,6 +112,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -136,8 +137,8 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -169,6 +170,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -193,8 +195,8 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -227,6 +229,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 <button
   className="c0"
   disabled={true}
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -251,8 +254,8 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -284,6 +287,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -308,8 +312,8 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -341,6 +345,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -365,8 +370,8 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -398,6 +403,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -422,8 +428,8 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -456,6 +462,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 <button
   className="c0"
   disabled={true}
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -480,8 +487,8 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -513,6 +520,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -537,8 +545,8 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -570,6 +578,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -594,8 +603,8 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -627,6 +636,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -651,8 +661,8 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -685,6 +695,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 <button
   className="c0"
   disabled={true}
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -709,8 +720,8 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -742,6 +753,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -766,8 +778,8 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -799,6 +811,7 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -823,8 +836,8 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -856,6 +869,7 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -880,8 +894,8 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -914,6 +928,7 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 <button
   className="c0"
   disabled={true}
+  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -938,8 +953,8 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0:focus {
@@ -971,6 +986,7 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
 
 <button
   className="c0"
+  onClick={[Function]}
   size="small"
 >
   Dummy Label
