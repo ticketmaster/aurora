@@ -32,7 +32,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -40,14 +40,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -60,12 +60,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -74,7 +74,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG iFMjaU sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -83,7 +83,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl hQVXcQ sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -130,6 +130,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -224,6 +225,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -286,6 +288,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -354,6 +357,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -435,7 +439,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -443,14 +447,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -463,12 +467,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -477,7 +481,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -486,7 +490,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -533,6 +537,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -627,6 +632,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -689,6 +695,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -757,6 +764,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -838,7 +846,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -846,14 +854,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -866,12 +874,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -880,7 +888,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -889,7 +897,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -936,6 +944,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1030,6 +1039,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1092,6 +1102,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1160,6 +1171,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1250,7 +1262,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -1258,14 +1270,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -1278,12 +1290,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -1292,7 +1304,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -1301,7 +1313,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -1348,6 +1360,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1442,6 +1455,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1504,6 +1518,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1572,6 +1587,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1653,7 +1669,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -1661,14 +1677,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -1681,12 +1697,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -1695,7 +1711,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -1704,7 +1720,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -1751,6 +1767,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1845,6 +1862,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1907,6 +1925,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -1975,6 +1994,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2056,7 +2076,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -2064,14 +2084,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -2084,12 +2104,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -2098,7 +2118,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -2107,7 +2127,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -2154,6 +2174,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2248,6 +2269,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2310,6 +2332,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2378,6 +2401,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2468,7 +2492,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -2476,14 +2500,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -2496,12 +2520,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -2510,7 +2534,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG iFMjaU sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -2519,7 +2543,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl hQVXcQ sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -2566,6 +2590,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2660,6 +2685,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2722,6 +2748,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2790,6 +2817,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -2871,7 +2899,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -2879,14 +2907,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -2899,12 +2927,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -2913,7 +2941,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -2922,7 +2950,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -2969,6 +2997,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3063,6 +3092,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3125,6 +3155,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3193,6 +3224,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3274,7 +3306,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -3282,14 +3314,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -3302,12 +3334,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -3316,7 +3348,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -3325,7 +3357,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -3372,6 +3404,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3466,6 +3499,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3528,6 +3562,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3596,6 +3631,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3686,7 +3722,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -3694,14 +3730,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -3714,12 +3750,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -3728,7 +3764,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -3737,7 +3773,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -3784,6 +3820,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3878,6 +3915,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -3940,6 +3978,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4008,6 +4047,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4089,7 +4129,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -4097,14 +4137,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -4117,12 +4157,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -4131,7 +4171,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -4140,7 +4180,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -4187,6 +4227,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4281,6 +4322,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4343,6 +4385,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4411,6 +4454,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4492,7 +4536,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -4500,14 +4544,14 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -4520,12 +4564,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -4534,7 +4578,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -4543,7 +4587,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -4590,6 +4634,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4684,6 +4729,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4746,6 +4792,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4814,6 +4861,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -4904,7 +4952,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -4912,14 +4960,14 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -4932,12 +4980,12 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -4946,7 +4994,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -4955,7 +5003,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -5005,6 +5053,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         >
           <div
             class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+            id="789"
           >
             <div
               class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5149,7 +5198,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -5157,14 +5206,14 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -5177,12 +5226,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -5191,7 +5240,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -5200,7 +5249,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -5247,6 +5296,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5341,6 +5391,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5403,6 +5454,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5471,6 +5523,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5552,7 +5605,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -5560,14 +5613,14 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -5580,12 +5633,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -5594,7 +5647,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -5603,7 +5656,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -5650,6 +5703,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5744,6 +5798,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5806,6 +5861,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5874,6 +5930,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -5955,7 +6012,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -5963,14 +6020,14 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -5983,12 +6040,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -5997,7 +6054,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -6006,7 +6063,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -6053,6 +6110,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6147,6 +6205,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6209,6 +6268,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6277,6 +6337,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6366,7 +6427,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -6374,14 +6435,14 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -6394,12 +6455,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -6408,7 +6469,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-jlyJG iFMjaU sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -6417,7 +6478,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-csuQGl hQVXcQ sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -6464,6 +6525,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6558,6 +6620,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6620,6 +6683,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6688,6 +6752,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6769,7 +6834,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -6777,14 +6842,14 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -6797,12 +6862,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -6811,7 +6876,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -6820,7 +6885,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -6867,6 +6932,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -6961,6 +7027,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7023,6 +7090,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7091,6 +7159,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7172,7 +7241,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -7180,14 +7249,14 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -7200,12 +7269,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -7214,7 +7283,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -7223,7 +7292,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -7270,6 +7339,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     >
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="789"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7364,6 +7434,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="456"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7426,6 +7497,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="123"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7494,6 +7566,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </div>
       <div
         class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+        id="1011"
       >
         <div
           class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7584,7 +7657,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -7592,14 +7665,14 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -7612,12 +7685,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -7626,7 +7699,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-jlyJG iFMjaU sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -7635,7 +7708,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-csuQGl hQVXcQ sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -7682,6 +7755,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7776,6 +7850,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7838,6 +7913,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7906,6 +7982,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -7987,7 +8064,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -7995,14 +8072,14 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -8015,12 +8092,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -8029,7 +8106,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -8038,7 +8115,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -8085,6 +8162,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8179,6 +8257,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8241,6 +8320,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8309,6 +8389,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8390,7 +8471,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-gPEVay kYhlP"
+          class="sc-gPEVay dgyPEx"
           href="/"
           role="link"
         >
@@ -8398,14 +8479,14 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             class="sc-iRbamj kewpQc"
           >
             <div
-              class="sc-kpOJdX djyQFC"
+              class="date--text sc-kpOJdX djyQFC"
               color="#1F262D"
               style="text-transform: uppercase;"
             >
               apr 23
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               Thu, 8:00 PM
             </div>
@@ -8418,12 +8499,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
               <div
-                class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+                class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
               >
                 KABOO 3-Day Pass
               </div>
@@ -8432,7 +8513,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 Del Mar Fairgrounds
               </div>
@@ -8441,7 +8522,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
             >
               <div
-                class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+                class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
               >
                 KABOO 3-Day Pass
               </div>
@@ -8488,6 +8569,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       >
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="789"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8582,6 +8664,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="456"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8644,6 +8727,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="123"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8712,6 +8796,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </div>
         <div
           class="sc-gisBJw hvbbJe sc-bZQynM cRWIlh"
+          id="1011"
         >
           <div
             class="sc-kjoXOD iOvevK sc-EHOje fNonPI"
@@ -8801,7 +8886,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -8809,14 +8894,14 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -8829,12 +8914,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -8843,7 +8928,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -8852,7 +8937,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -8925,7 +9010,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -8933,14 +9018,14 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -8953,12 +9038,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -8967,7 +9052,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -8976,7 +9061,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>
@@ -9049,7 +9134,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-gPEVay kYhlP"
+        class="sc-gPEVay dgyPEx"
         href="/"
         role="link"
       >
@@ -9057,14 +9142,14 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           class="sc-iRbamj kewpQc"
         >
           <div
-            class="sc-kpOJdX djyQFC"
+            class="date--text sc-kpOJdX djyQFC"
             color="#1F262D"
             style="text-transform: uppercase;"
           >
             apr 23
           </div>
           <div
-            class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+            class="day-time--text sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
           >
             Thu, 8:00 PM
           </div>
@@ -9077,12 +9162,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-gipzik fyfmES sc-bZQynM cRWIlh"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              class="sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
+              class="list-row--subtitle sc-eqIVtm iKoCDp sc-kGXeez fNtIEy"
             >
               KABOO 3-Day Pass
             </div>
@@ -9091,7 +9176,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-jlyJG bPRefX sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--title sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               Del Mar Fairgrounds
             </div>
@@ -9100,7 +9185,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             class="sc-csuQGl eTHHpB sc-bZQynM cFzilm"
           >
             <div
-              class="sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
+              class="list-row--subtitle sc-dVhcbM cwtPga sc-kgoBCf jBUxbb"
             >
               KABOO 3-Day Pass
             </div>

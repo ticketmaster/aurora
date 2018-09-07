@@ -11,7 +11,12 @@ describe("<ListRowOverflow />", () => {
     const component = renderer.create(
       <ListRowOverflow>
         {sections.map(section => (
-          <Section title={section.title} totalSections={4} key={section.title}>
+          <Section
+            title={section.title}
+            totalSections={4}
+            key={section.id}
+            id={section.id}
+          >
             {section.items
               .slice(0, 4)
               .map(sectionItem => (
