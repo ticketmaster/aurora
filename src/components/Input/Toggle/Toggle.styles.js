@@ -29,6 +29,7 @@ export const ActiveArea = styled.button`
 `;
 
 export const ReactToggleTrack = styled.div`
+  box-sizing: border-box;
   padding: 0;
   border-radius: 21px;
   display: flex;
