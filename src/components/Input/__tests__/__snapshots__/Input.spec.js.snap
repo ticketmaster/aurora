@@ -2,7 +2,7 @@
 
 exports[`Input renders default input 1`] = `
 <div
-  class="text--input-top text--input-regular sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -32,7 +32,7 @@ exports[`Input renders default input 1`] = `
 
 exports[`Input renders disabled input 1`] = `
 <div
-  class="text--input-top text--input-disabled text--input-regular sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top text--input-disabled sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -63,7 +63,7 @@ exports[`Input renders disabled input 1`] = `
 
 exports[`Input renders input with error 1`] = `
 <div
-  class="text--input-top text__error text--input-regular sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top text__error sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -95,7 +95,7 @@ exports[`Input renders input with error 1`] = `
 
 exports[`Input renders large input 1`] = `
 <div
-  class="text--input-top text--input-large sc-bdVaJa cBKMGA"
+  class="text--input-large text--input-top sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -125,7 +125,7 @@ exports[`Input renders large input 1`] = `
 
 exports[`Input renders left labeled input 1`] = `
 <div
-  class="text--input-left text--input-regular sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-left sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -155,7 +155,7 @@ exports[`Input renders left labeled input 1`] = `
 
 exports[`Input renders small input 1`] = `
 <div
-  class="text--input-top text--input-small sc-bdVaJa cBKMGA"
+  class="text--input-small text--input-top sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"
@@ -185,7 +185,7 @@ exports[`Input renders small input 1`] = `
 
 exports[`Input renders top labeled input 1`] = `
 <div
-  class="text--input-top text--input-regular sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
   <label
     class="sc-bwzfXH yJMup"

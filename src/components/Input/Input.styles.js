@@ -1,13 +1,7 @@
 /* stylelint-disable no-descending-specificity */
 import styled from "styled-components";
-import { constants, themes } from "../../theme";
-
-const errorColor = ({ theme: { themeName } }) => themes[themeName].error.base;
-const white = ({ theme: { themeName } }) => themes[themeName].white.base;
-const primaryColor = ({ theme: { themeName } }) =>
-  themes[themeName].primary.base;
-const gray01 = ({ theme: { themeName } }) => themes[themeName].gray01;
-const gray02 = ({ theme: { themeName } }) => themes[themeName].gray02;
+import { constants, typography } from "../../theme";
+import getThemeValue from "../../utils/getThemeValue";
 
 export const FieldInputWrapper = styled.div`
   display: flex;
@@ -26,18 +20,18 @@ export const FieldInputWrapper = styled.div`
 `;
 
 export const FieldInputText = styled.label`
-  font-size: 12px;
+  font-size: ${typography.size.uno};
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: ${gray01};
+  color: ${getThemeValue("gray01")};
   position: relative;
   .text--input-small & {
-    font-size: 10px;
+    font-size: ${typography.size.mini};
     line-height: 1.3;
   }
   .text--input-large & {
-    font-size: 14px;
+    font-size: ${typography.size.hecto};
     line-height: 1.29;
   }
   .text--input-disabled & {
@@ -70,36 +64,36 @@ export const FieldInputBox = styled.input.attrs({
   height: 36px;
   width: 100%;
   border-radius: ${constants.borderRadius.small};
-  background-color: ${white};
-  border: solid 1px ${gray02};
+  background-color: ${getThemeValue("white", "base")};
+  border: solid 1px ${getThemeValue("gray02")};
   padding-left: 10px;
   line-height: 2.57;
-  font-size: 14px;
-  color: ${gray01};
+  font-size: ${typography.size.hecto};
+  color: ${getThemeValue("gray01")};
   &.text--input-left {
     flex-grow: 2;
   }
   &::placeholder {
     /* chrome, firefox */
-    color: ${gray01};
+    color: ${getThemeValue("gray01")};
     opacity: 0.4;
   }
   &::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: ${gray01};
+    color: ${getThemeValue("gray01")};
     opacity: 0.4;
   }
   &:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: ${gray01};
+    color: ${getThemeValue("gray01")};
     opacity: 0.4;
   }
   &:focus {
-    border: 1px ${primaryColor} solid;
+    border: 1px ${getThemeValue("primary", "base")} solid;
     padding-left: 10px;
     border-radius: ${constants.borderRadius.small};
-    box-shadow: inset 0 0 4px 0 ${primaryColor};
-    background-color: ${white};
+    box-shadow: inset 0 0 4px 0 ${getThemeValue("primary", "base")};
+    background-color: ${getThemeValue("white", "base")};
     outline: none;
     .text--input-small & {
       padding-left: 8px;
@@ -109,7 +103,7 @@ export const FieldInputBox = styled.input.attrs({
     }
   }
   &:hover {
-    border: 2px ${primaryColor} solid;
+    border: 2px ${getThemeValue("primary", "base")} solid;
     padding-left: 9px;
     .text--input-small & {
       padding-left: 7px;
@@ -120,26 +114,26 @@ export const FieldInputBox = styled.input.attrs({
   }
   .text--input-small & {
     height: 24px;
-    font-size: 12px;
+    font-size: ${typography.size.uno};
     padding-left: 8px;
   }
   .text--input-large & {
     height: 44px;
-    font-size: 16px;
+    font-size: ${typography.size.kilo};
     padding-left: 12px;
   }
   .text__error & {
-    border-color: ${errorColor};
+    border-color: ${getThemeValue("error", "base")};
   }
 `;
 
 export const FieldErrorText = styled.label`
   opacity: 0;
-  font-size: 12px;
+  font-size: ${typography.size.uno};
   height: 13px;
   line-height: 1.25;
   text-align: left;
-  color: ${errorColor};
+  color: ${getThemeValue("error", "base")};
   position: relative;
   margin-top: 1px;
   transition: opacity 0.3s ${constants.easing.easeInOutQuad};

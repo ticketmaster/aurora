@@ -21,36 +21,36 @@ const Input = ({
   errorMessage,
   size,
   ...rest
-}) => (
-  <FieldInputWrapper
-    className={classNames({
-      "text--input-top": labelPosition === "top",
-      "text--input-left": labelPosition === "left",
-      "text--input-disabled": disabled,
-      text__error: errorMessage,
-      "text--input-small": size === "small",
-      "text--input-regular": size === "regular",
-      "text--input-large": size === "large"
-    })}
-  >
-    <FieldInputText id={sluggify(`${name + label}__label`)}>
-      {label}
-    </FieldInputText>
-    <ErrorBoxWrapper>
-      <FieldInputBox
-        placeholder={disabled ? "" : placeholder}
-        name={name}
-        id={sluggify(`${name + label}__input`)}
-        disabled={disabled}
-        {...rest}
-        aria-labelledby={sluggify(`${name + label}__label`)}
-      />
-      <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
-        {errorMessage}
-      </FieldErrorText>
-    </ErrorBoxWrapper>
-  </FieldInputWrapper>
-);
+}) => {
+  const sluggified = sluggify(name + label);
+  return (
+    <FieldInputWrapper
+      className={classNames(
+        `text--input-${size}`,
+        `text--input-${labelPosition}`,
+        {
+          "text--input-disabled": disabled,
+          text__error: errorMessage
+        }
+      )}
+    >
+      <FieldInputText id={`${sluggified}__label`}>{label}</FieldInputText>
+      <ErrorBoxWrapper>
+        <FieldInputBox
+          placeholder={disabled ? "" : placeholder}
+          name={name}
+          id={`${sluggified}__input`}
+          disabled={disabled}
+          {...rest}
+          aria-labelledby={`${sluggified}__label`}
+        />
+        <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
+          {errorMessage}
+        </FieldErrorText>
+      </ErrorBoxWrapper>
+    </FieldInputWrapper>
+  );
+};
 Input.propTypes = {
   children: PropTypes.node,
   labelPosition: PropTypes.string,
