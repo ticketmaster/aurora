@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 
 import StyledTextBase from "./Base.styles";
+import * as PT from "./PropTypes";
 
 const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
 
@@ -67,26 +68,11 @@ const TextBase = ({
 
 TextBase.propTypes = {
   tag: PropTypes.oneOf(AVAILABLE_TAGS),
-  variant: PropTypes.oneOf(["accent", "dark", "light"]),
-  accent: PropTypes.oneOf([
-    "",
-    "aquamarine",
-    "azure",
-    "alert",
-    "caution",
-    "cruz",
-    "heliotrope",
-    "positive",
-    "summerSky",
-    "turquoise"
-  ]),
-  size: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
-  responsiveSize: PropTypes.shape({
-    small: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
-    medium: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"]),
-    large: PropTypes.oneOf(["mini", "uno", "hecto", "kilo", "giga", "tera"])
-  }),
-  weight: PropTypes.oneOf(["regular", "semiBold"]),
+  variant: PT.variant,
+  accent: PT.accent,
+  size: PT.size,
+  responsiveSize: PT.responsiveSize,
+  weight: PT.weight,
   className: PropTypes.string,
   primary: PropTypes.bool,
   secondary: PropTypes.bool,

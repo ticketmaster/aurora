@@ -5,7 +5,7 @@ import { themes } from "../theme";
  * The second function accepts a theme object. It's provided in styled components
  * automatically.
  */
-export default (...args) => ({ theme: { themeName } }) =>
+export default (...args) => ({ theme: { themeName = "tm" } = {} } = {}) =>
   args.reduce((acc, el) => {
     if (acc[el] === undefined) {
       throw new ReferenceError("value is not defined");
