@@ -101,7 +101,7 @@ export const StyledButton = styled.button`
     }};
 
   transition: transform 0.1s linear;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ${constants.easing.easeInOutQuad};
 
   &:focus {
     outline: none;
