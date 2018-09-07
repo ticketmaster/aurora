@@ -38,6 +38,7 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 }
 
 .c3 {
+  box-sizing: border-box;
   padding: 0;
   border-radius: 21px;
   display: -webkit-box;
@@ -257,6 +258,7 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 }
 
 .c3 {
+  box-sizing: border-box;
   padding: 0;
   border-radius: 21px;
   display: -webkit-box;
@@ -476,6 +478,7 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 }
 
 .c3 {
+  box-sizing: border-box;
   padding: 0;
   border-radius: 21px;
   display: -webkit-box;
@@ -695,6 +698,7 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 }
 
 .c3 {
+  box-sizing: border-box;
   padding: 0;
   border-radius: 21px;
   display: -webkit-box;

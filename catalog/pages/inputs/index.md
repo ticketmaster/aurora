@@ -243,56 +243,97 @@ rows:
     Type: boolean
     Default: "false"
     Notes: Will disable text input
+  - Prop: size
+    Type: string
+    Default: regular
+    Notes: Defines the size of an input field. Can be small, regular or large
 ```
 
 ```react
 span: 6
 ---
 <Container>
-    <Row>
-        <Column medium={6}>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" placeholder="Hint Text" name="test2" label="Last Name"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" placeholder="Hint Text" name="test2" label="Last Name" errorMessage="Something else Went Wrong" />
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test3" label="Last Name"/>
-            </Spacing>
-       </Column>
+    <ThemeProvider theme={{ themeName: 'tm' }}>
+        <Row>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="small"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                </Spacing>
+            </Column>
+        </Row>
+    </ThemeProvider>
+</Container>
+```
 
-        <Column medium={6}>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" placeholder="Hint Text" name="test2" label="Last Name"/>
-            </Spacing>
-
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" placeholder="Hint Text" name="test2" label="Last Name" errorMessage="Something else Went Wrong" />
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
-            </Spacing>
-            <Spacing top={{small: "cozy"}}>
-                <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test3" label="Last Name"/>
-            </Spacing>
-       </Column>
-    </Row>
+```react
+span: 6
+---
+<Container>
+    <ThemeProvider theme={{ themeName: 'tm' }}>
+        <Row>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="small"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                </Spacing>
+            </Column>
+        </Row>
+    </ThemeProvider>
 </Container>
 ```
 

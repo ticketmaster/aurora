@@ -1,6 +1,6 @@
 import React from "react";
-import renderer from "react-test-renderer";
-import { cleanup } from "react-testing-library";
+import { ThemeProvider } from "styled-components";
+import { cleanup, render } from "react-testing-library";
 
 import Input from "../Input";
 
@@ -8,47 +8,52 @@ describe("Input", () => {
   afterEach(cleanup);
 
   it("renders default input", () => {
-    expect(renderGroupComponent({ name: "test" })).toMatchSnapshot();
+    const { container } = renderInputComponent();
+    expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("renders top label", () => {
-    expect(
-      renderGroupComponent({ labelPosition: "top", name: "test" })
-    ).toMatchSnapshot();
+  it("renders small input", () => {
+    const { container } = renderInputComponent({ size: "small" });
+    expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("renders bottom label", () => {
-    expect(
-      renderGroupComponent({ labelPosition: "left", name: "test" })
-    ).toMatchSnapshot();
+  it("renders large input", () => {
+    const { container } = renderInputComponent({ size: "large" });
+    expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("renders bottom label", () => {
-    expect(
-      renderGroupComponent({ disabled: true, name: "test" })
-    ).toMatchSnapshot();
+  it("renders top labeled input", () => {
+    const { container } = renderInputComponent({ labelPosition: "top" });
+    expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("renders error top label", () => {
-    expect(
-      renderGroupComponent({
-        labelPosition: "top",
-        errorMessage: "Something Went Wrong",
-        name: "test"
-      })
-    ).toMatchSnapshot();
-  });
-  it("renders error top label", () => {
-    expect(
-      renderGroupComponent({
-        labelPosition: "bottom",
-        errorMessage: "Something  Went Wrong",
-        name: "test"
-      })
-    ).toMatchSnapshot();
+  it("renders left labeled input", () => {
+    const { container } = renderInputComponent({ labelPosition: "left" });
+    expect(container.firstChild).toMatchSnapshot();
   });
 
-  function renderGroupComponent(props = {}) {
-    return renderer.create(<Input {...props} />);
+  it("renders disabled input", () => {
+    const { container } = renderInputComponent({ disabled: true });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("renders input with error", () => {
+    const { container } = renderInputComponent({
+      errorMessage: "Something Went Wrong"
+    });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  function renderInputComponent(props = {}) {
+    return render(
+      <ThemeProvider theme={{ themeName: "tm" }}>
+        <Input
+          name="test1"
+          label="First Name"
+          placeholder="test hint"
+          {...props}
+        />
+      </ThemeProvider>
+    );
   }
 });

@@ -206,8 +206,8 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   min-width: 100px;
   max-width: 102px;
   height: 36px;
@@ -853,8 +853,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   min-width: 100px;
   max-width: 102px;
   height: 36px;
@@ -1594,8 +1594,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   min-width: 100px;
   max-width: 102px;
   height: 36px;
@@ -2308,8 +2308,8 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-transition: -webkit-transform 0.1s linear;
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   min-width: 100px;
   max-width: 102px;
   height: 36px;
