@@ -12,6 +12,9 @@ exports[`ImageCard renders card without overlay 1`] = `
 .c2 {
   width: 100%;
   max-width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c3 {
@@ -72,6 +75,9 @@ exports[`ImageCard renders standard card 1`] = `
 .c2 {
   width: 100%;
   max-width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c3 {
@@ -132,6 +138,9 @@ exports[`ImageCard renders type = half 1`] = `
 .c2 {
   width: 100%;
   max-width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c3 {
@@ -402,6 +411,9 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 .c2 {
   width: 100%;
   max-width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c3 {
@@ -519,6 +531,9 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 .c2 {
   width: 100%;
   max-width: 100%;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 
 .c3 {

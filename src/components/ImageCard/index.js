@@ -12,6 +12,7 @@ import { Text } from "../Text";
 const Image = styled.img`
   width: 100%;
   max-width: 100%;
+  flex: none;
 `;
 
 //  come back
