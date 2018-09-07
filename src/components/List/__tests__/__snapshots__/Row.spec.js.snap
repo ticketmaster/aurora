@@ -178,6 +178,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -920,6 +921,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -1773,6 +1775,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -2583,6 +2586,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
