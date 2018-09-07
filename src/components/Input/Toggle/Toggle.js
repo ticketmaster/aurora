@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -12,47 +12,55 @@ import {
   ReactThumbCenteringContainer
 } from "./Toggle.styles";
 
-const Toggle = ({ value, size, disabled, onClick, onToggle, ...rest }) => (
-  <ActiveArea
-    className={classNames(
-      disabled ? "toggle--disabled" : "toggle--enabled",
-      value ? "toggle--active" : "toggle--inactive",
-      {
-        "toggle--small": size === "small",
-        "toggle--large": size === "large"
-      }
-    )}
-    role="switch"
-    aria-checked={value}
-    size={size}
-    onClick={composeEventHandlers(onClick, onToggle)}
-    disabled={disabled}
-    {...rest}
-  >
-    <ReactToggle>
-      <ReactToggleTrack />
-      <ReactThumbCenteringContainer>
-        <ReactToggleThumb />
-      </ReactThumbCenteringContainer>
-    </ReactToggle>
-  </ActiveArea>
-);
-
-Toggle.propTypes = {
-  value: PropTypes.bool.isRequired,
-  onToggle: PropTypes.func,
-  onClick: PropTypes.func,
-  size: PropTypes.oneOf(TOGGLE_SIZES),
-  disabled: PropTypes.bool
-};
-
 const noop = () => {};
 
-Toggle.defaultProps = {
-  disabled: false,
-  onClick: noop,
-  onToggle: noop,
-  size: TOGGLE_SIZES[1]
-};
+class Toggle extends Component {
+  static propTypes = {
+    value: PropTypes.bool.isRequired,
+    onToggle: PropTypes.func,
+    onClick: PropTypes.func,
+    size: PropTypes.oneOf(TOGGLE_SIZES),
+    disabled: PropTypes.bool
+  };
+  static defaultProps = {
+    disabled: false,
+    onClick: noop,
+    onToggle: noop,
+    size: TOGGLE_SIZES[1]
+  };
+  render() {
+    const { value, size, disabled, onClick, onToggle, ...rest } = this.props;
+    return (
+      <ActiveArea
+        className={classNames(
+          disabled ? "toggle--disabled" : "toggle--enabled",
+          value ? "toggle--active" : "toggle--inactive",
+          {
+            "toggle--small": size === "small",
+            "toggle--large": size === "large"
+          }
+        )}
+        role="switch"
+        aria-checked={value}
+        size={size}
+        onClick={composeEventHandlers(onClick, onToggle, () =>
+          this.activeArea.blur()
+        )}
+        disabled={disabled}
+        {...rest}
+        innerRef={el => {
+          this.activeArea = el;
+        }}
+      >
+        <ReactToggle>
+          <ReactToggleTrack />
+          <ReactThumbCenteringContainer>
+            <ReactToggleThumb />
+          </ReactThumbCenteringContainer>
+        </ReactToggle>
+      </ActiveArea>
+    );
+  }
+}
 
 export default Toggle;
