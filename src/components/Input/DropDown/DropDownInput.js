@@ -8,16 +8,16 @@ const StyledDropDownItem = styled.span`
   .dropdown__items & {
     appearance: none;
     height: 36px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 4px;
-    padding: 0 12px;
+    margin: 4px 8px 0 8px;
+    padding: 7px 12px;
     font-size: 16px;
     text-align: left;
     border: none;
     background-color: ${colors.white.base};
-    display: flex;
     align-items: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
     &:hover,
     &:focus,
     &.dropdown__selected {

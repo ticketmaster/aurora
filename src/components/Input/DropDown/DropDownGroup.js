@@ -76,6 +76,9 @@ const StyledChildWrapper = styled.div`
     display: flex;
     overflow: auto;
     height: 135px;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 10;
   }
 `;
 
@@ -83,6 +86,7 @@ const StyledGroupWrapper = styled.div`
   position: relative;
   color: grey;
   width: 100%;
+  outline: none;
 `;
 
 const StyledChevron = styled(ChevronIcon)`
