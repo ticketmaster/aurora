@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationIcon renders correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Location Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M0 0h24v24H0z"
+    />
+    <path
+      d="M12.373 23.833a.5.5 0 0 1-.746 0C5.883 17.413 3 12.495 3 9c0-5.276 3.724-9 9-9s9 3.724 9 9c0 3.495-2.883 8.414-8.627 14.833zM20 9c0-4.724-3.276-8-8-8S4 4.276 4 9c0 3.1 2.66 7.707 8 13.748C17.34 16.708 20 12.1 20 9zm-8 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+      fill="#262626"
+      fillOpacity=".5"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;

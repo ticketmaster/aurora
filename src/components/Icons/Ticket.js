@@ -1,14 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { PropTypes } from "prop-types";
+import { themes } from "../../theme";
 
-const TicketIcon = ({ size, color, children, ...props }) => (
-  <svg width={size} height={size} viewBox="0 0 26 26" {...props}>
+const TicketIcon = ({ children, ...props }) => (
+  <svg
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+  >
     {children}
-    <g fill="none" fillRule="evenodd" transform="translate(1 .85)">
-      <circle cx="12" cy="12.15" r="12.5" fill="#FAFAFA" stroke="#E0E0E0" />
+    <g fill="none" fillRule="evenodd">
+      <path d="M24 0H0v24h24z" />
       <path
-        fill={color}
-        d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+        fill={themes.global.gray01}
+        fillOpacity=".5"
+        fillRule="nonzero"
+        d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
       />
     </g>
   </svg>
@@ -16,15 +25,12 @@ const TicketIcon = ({ size, color, children, ...props }) => (
 
 TicketIcon.displayName = "TicketIcon";
 
-TicketIcon.defaultProps = {
-  color: "currentColor",
-  children: null
+TicketIcon.propTypes = {
+  children: PropTypes.node
 };
 
-TicketIcon.propTypes = {
-  size: PropTypes.number.isRequired,
-  color: PropTypes.string,
-  children: PropTypes.node
+TicketIcon.defaultProps = {
+  children: null
 };
 
 export default TicketIcon;

@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 import * as sizes from "./iconSizes";
 import { themes } from "../../theme";
 
-const searchIcons = {
+const closeIcons = {
   small: (children, props) => (
     <svg
       {...props}
@@ -19,7 +19,7 @@ const searchIcons = {
           fill={themes.global.gray01}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M12 6.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-.564 4.229l4.418 4.417a.5.5 0 0 1-.708.708l-4.417-4.418a6.5 6.5 0 1 1 .707-.707z"
+          d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
         />
       </g>
     </svg>
@@ -39,26 +39,26 @@ const searchIcons = {
           fill={themes.global.gray01}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M18 9.5a8.5 8.5 0 1 0-17 0 8.5 8.5 0 0 0 17 0zm-1.438 6.355l7.292 7.291a.5.5 0 0 1-.708.708l-7.291-7.292a9.5 9.5 0 1 1 .707-.707z"
+          d="M12 10.869L22.634.234a.8.8 0 1 1 1.132 1.132L13.13 12l10.635 10.634a.8.8 0 1 1-1.132 1.132L12 13.13 1.366 23.766a.8.8 0 1 1-1.132-1.132L10.87 12 .234 1.366A.8.8 0 1 1 1.366.234L12 10.87z"
         />
       </g>
     </svg>
   )
 };
 
-const SearchIcon = ({ size, children, ...props }) =>
-  searchIcons[size] ? searchIcons[size](children, props) : null;
+const CloseIcon = ({ size, children, ...props }) =>
+  closeIcons[size](children, props);
 
-SearchIcon.displayName = "SearchIcon";
+CloseIcon.displayName = "CloseIcon";
 
-SearchIcon.defaultProps = {
+CloseIcon.defaultProps = {
   size: sizes.smallLarge[0],
   children: null
 };
 
-SearchIcon.propTypes = {
+CloseIcon.propTypes = {
   size: PropTypes.oneOf(sizes.smallLarge),
   children: PropTypes.node
 };
 
-export default SearchIcon;
+export default CloseIcon;

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForwardIcon renders correctly 1`] = `
+<svg
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Forward Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M16 0H0v16h16z"
+    />
+    <path
+      d="M10.905 8l-6.678 6.678a.774.774 0 0 0 1.095 1.095l7.225-7.226a.774.774 0 0 0 0-1.094L5.322.227a.774.774 0 0 0-1.095 1.095L10.905 8z"
+      fill="#262626"
+      fillOpacity=".5"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;
+
+exports[`ForwardIcon renders large correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Forward Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M24 0H0v24h24z"
+    />
+    <path
+      d="M6.224 22.692a.766.766 0 1 0 1.084 1.084l11.234-11.234c.299-.3.299-.785 0-1.084L7.308.224a.766.766 0 0 0-1.084 1.084L16.917 12 6.224 22.692z"
+      fill="#262626"
+      fillOpacity=".5"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;

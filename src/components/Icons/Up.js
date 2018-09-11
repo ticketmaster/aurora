@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 import * as sizes from "./iconSizes";
 import { themes } from "../../theme";
 
-const searchIcons = {
+const upIcons = {
   small: (children, props) => (
     <svg
       {...props}
@@ -19,7 +19,7 @@ const searchIcons = {
           fill={themes.global.gray01}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M12 6.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-.564 4.229l4.418 4.417a.5.5 0 0 1-.708.708l-4.417-4.418a6.5 6.5 0 1 1 .707-.707z"
+          d="M8 4.869l-6.678 6.678a.774.774 0 0 1-1.095-1.094l7.226-7.226a.774.774 0 0 1 1.094 0l7.226 7.226a.774.774 0 0 1-1.095 1.094L8 4.87z"
         />
       </g>
     </svg>
@@ -39,26 +39,25 @@ const searchIcons = {
           fill={themes.global.gray01}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M18 9.5a8.5 8.5 0 1 0-17 0 8.5 8.5 0 0 0 17 0zm-1.438 6.355l7.292 7.291a.5.5 0 0 1-.708.708l-7.291-7.292a9.5 9.5 0 1 1 .707-.707z"
+          d="M22.692 17.542a.766.766 0 1 0 1.084-1.084L12.542 5.224c-.3-.299-.785-.299-1.084 0L.224 16.458a.766.766 0 1 0 1.084 1.084L12 6.85l10.692 10.692z"
         />
       </g>
     </svg>
   )
 };
 
-const SearchIcon = ({ size, children, ...props }) =>
-  searchIcons[size] ? searchIcons[size](children, props) : null;
+const UpIcon = ({ size, children, ...props }) => upIcons[size](children, props);
 
-SearchIcon.displayName = "SearchIcon";
+UpIcon.displayName = "UpIcon";
 
-SearchIcon.defaultProps = {
+UpIcon.defaultProps = {
   size: sizes.smallLarge[0],
   children: null
 };
 
-SearchIcon.propTypes = {
+UpIcon.propTypes = {
   size: PropTypes.oneOf(sizes.smallLarge),
   children: PropTypes.node
 };
 
-export default SearchIcon;
+export default UpIcon;
