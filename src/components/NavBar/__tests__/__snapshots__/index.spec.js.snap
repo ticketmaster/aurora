@@ -77,6 +77,9 @@ exports[`NavBar renders fixed 1`] = `
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
+  text-shadow: 1px 0px 0px transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .nav--inverted .c6,
@@ -111,39 +114,8 @@ exports[`NavBar renders fixed 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 16px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav--inverted .c2 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c4 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,11 +141,66 @@ exports[`NavBar renders fixed 1`] = `
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c2 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c2.nav-button--last {
+  padding-right: 16px;
+}
+
+.c2.nav-button--first {
+  padding-left: 16px;
+}
+
+.c4 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .nav--inverted .c4 {
   color: rgba(38,38,38,1);
   font-weight: 400;
+}
+
+.c4.nav-button--last {
+  padding-right: 16px;
+}
+
+.c4.nav-button--first {
+  padding-left: 16px;
 }
 
 .c3 {
@@ -191,6 +218,9 @@ exports[`NavBar renders fixed 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0.nav--relative {
@@ -205,19 +235,9 @@ exports[`NavBar renders fixed 1`] = `
   position: fixed;
 }
 
-.c0 .linkItem:visited {
-  color: rgba(255,255,255,1);
-}
-
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c0.nav--inverted .linkItem:visited {
-  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {
@@ -230,16 +250,6 @@ exports[`NavBar renders fixed 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.nav--fade-in {
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.c0.nav--fade-out {
-  -webkit-animation: fadeOut 0.3s ease-in-out;
-  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -266,6 +276,14 @@ exports[`NavBar renders fixed 1`] = `
 @media screen and (min-width:480px) {
   .c2 {
     padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c2.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c2.nav-button--first {
     padding-left: 24px;
   }
 }
@@ -274,6 +292,14 @@ exports[`NavBar renders fixed 1`] = `
   .c4 {
     padding-right: 12px;
     padding-left: 12px;
+  }
+
+  .c4.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c4.nav-button--first {
+    padding-left: 24px;
   }
 }
 
@@ -308,14 +334,14 @@ exports[`NavBar renders fixed 1`] = `
   }
 }
 
-@media (min-width:1440px) {
+@media screen and (min-width:1440px) {
   .c1 {
     padding: 0 44px;
   }
 }
 
 <nav
-  className="nav--fixed nav--fade-in c0"
+  className="nav--fixed c0"
   role="navigation"
   style={
     Object {
@@ -537,6 +563,9 @@ exports[`NavBar renders inverted 1`] = `
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
+  text-shadow: 1px 0px 0px transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .nav--inverted .c6,
@@ -571,39 +600,8 @@ exports[`NavBar renders inverted 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 16px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav--inverted .c2 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c4 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -629,11 +627,66 @@ exports[`NavBar renders inverted 1`] = `
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c2 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c2.nav-button--last {
+  padding-right: 16px;
+}
+
+.c2.nav-button--first {
+  padding-left: 16px;
+}
+
+.c4 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .nav--inverted .c4 {
   color: rgba(38,38,38,1);
   font-weight: 400;
+}
+
+.c4.nav-button--last {
+  padding-right: 16px;
+}
+
+.c4.nav-button--first {
+  padding-left: 16px;
 }
 
 .c3 {
@@ -651,6 +704,9 @@ exports[`NavBar renders inverted 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0.nav--relative {
@@ -665,19 +721,9 @@ exports[`NavBar renders inverted 1`] = `
   position: fixed;
 }
 
-.c0 .linkItem:visited {
-  color: rgba(255,255,255,1);
-}
-
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c0.nav--inverted .linkItem:visited {
-  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {
@@ -690,16 +736,6 @@ exports[`NavBar renders inverted 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.nav--fade-in {
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.c0.nav--fade-out {
-  -webkit-animation: fadeOut 0.3s ease-in-out;
-  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -726,6 +762,14 @@ exports[`NavBar renders inverted 1`] = `
 @media screen and (min-width:480px) {
   .c2 {
     padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c2.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c2.nav-button--first {
     padding-left: 24px;
   }
 }
@@ -734,6 +778,14 @@ exports[`NavBar renders inverted 1`] = `
   .c4 {
     padding-right: 12px;
     padding-left: 12px;
+  }
+
+  .c4.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c4.nav-button--first {
+    padding-left: 24px;
   }
 }
 
@@ -768,14 +820,14 @@ exports[`NavBar renders inverted 1`] = `
   }
 }
 
-@media (min-width:1440px) {
+@media screen and (min-width:1440px) {
   .c1 {
     padding: 0 44px;
   }
 }
 
 <nav
-  className="nav--relative nav--inverted nav--fade-in c0"
+  className="nav--relative nav--inverted c0"
   role="navigation"
   style={
     Object {
@@ -994,6 +1046,9 @@ exports[`NavBar renders with defaults 1`] = `
   color: rgba(255,255,255,1);
   font-size: 16px;
   font-weight: 600;
+  text-shadow: 1px 0px 0px transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .nav--inverted .c4,
@@ -1027,7 +1082,52 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: #E6E6E6;
 }
 
-.c9 {
+.c2 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c2 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c2.nav-button--last {
+  padding-right: 16px;
+}
+
+.c2.nav-button--first {
+  padding-left: 16px;
+}
+
+.c8 {
   width: 24px;
   height: 24px;
   border: solid 0.5px currentColor;
@@ -1046,105 +1146,6 @@ exports[`NavBar renders with defaults 1`] = `
   justify-content: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 16px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav--inverted .c2 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 8px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav--inverted .c8 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 16px;
-  padding-left: 8px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.nav--inverted .c10 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
 .c0 {
   top: 0;
   left: 0;
@@ -1155,6 +1156,9 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c0.nav--relative {
@@ -1169,19 +1173,9 @@ exports[`NavBar renders with defaults 1`] = `
   position: fixed;
 }
 
-.c0 .linkItem:visited {
-  color: rgba(255,255,255,1);
-}
-
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
   border-bottom: 1px solid #D1D1D1;
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c0.nav--inverted .linkItem:visited {
-  color: rgba(38,38,38,1);
 }
 
 .c0.nav--overlay:after {
@@ -1194,16 +1188,6 @@ exports[`NavBar renders with defaults 1`] = `
   height: 60px;
   z-index: 4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c0.nav--fade-in {
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-.c0.nav--fade-out {
-  -webkit-animation: fadeOut 0.3s ease-in-out;
-  animation: fadeOut 0.3s ease-in-out;
 }
 
 .c1 {
@@ -1230,21 +1214,15 @@ exports[`NavBar renders with defaults 1`] = `
 @media screen and (min-width:480px) {
   .c2 {
     padding-right: 12px;
-    padding-left: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c8 {
-    padding-right: 12px;
     padding-left: 12px;
   }
-}
 
-@media screen and (min-width:480px) {
-  .c10 {
+  .c2.nav-button--last {
     padding-right: 24px;
-    padding-left: 12px;
+  }
+
+  .c2.nav-button--first {
+    padding-left: 24px;
   }
 }
 
@@ -1266,14 +1244,14 @@ exports[`NavBar renders with defaults 1`] = `
   }
 }
 
-@media (min-width:1440px) {
+@media screen and (min-width:1440px) {
   .c1 {
     padding: 0 44px;
   }
 }
 
 <nav
-  className="nav--relative nav--fade-in c0"
+  className="nav--relative c0"
   role="navigation"
   style={
     Object {
@@ -1423,7 +1401,7 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
     </div>
     <button
-      className="c8"
+      className="c2"
       type="button"
     >
       <svg
@@ -1441,11 +1419,11 @@ exports[`NavBar renders with defaults 1`] = `
       </svg>
     </button>
     <button
-      className="c8"
+      className="c2"
       type="button"
     >
       <div
-        className="c9"
+        className="c8"
         color="currentColor"
         size={24}
       >
@@ -1462,7 +1440,7 @@ exports[`NavBar renders with defaults 1`] = `
       </div>
     </button>
     <button
-      className="c10"
+      className="c2"
       type="button"
     >
       Text Button!

@@ -9,6 +9,7 @@ import Column from "../../../src/components/Grid/Column";
 import Row from "../../../src/components/Grid/Row";
 import DeviceSizeProvider from "../../../src/components/DeviceSize/Provider";
 import DisplayFor from "../../../src/components/DeviceSize";
+import DrawerProvider from "../../../src/components/Drawer/Provider";
 
 export default {
   path: "/nav_bar",
@@ -22,7 +23,8 @@ export default {
     Column,
     Row,
     DeviceSizeProvider,
-    DisplayFor
+    DisplayFor,
+    DrawerProvider
   },
   content: pageLoader(() => import("./index.md"))
 };

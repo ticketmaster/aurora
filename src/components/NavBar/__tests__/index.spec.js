@@ -1,6 +1,5 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { render } from "react-testing-library";
 
 import NavBar from "../index";
 
@@ -87,23 +86,4 @@ describe("NavBar", () => {
         )
         .toJSON()
     ).toMatchSnapshot());
-
-  xit("should reset animation while updating", () => {
-    const { rerender, container } = render(
-      <NavBar position="fixed">Content</NavBar>
-    );
-    expect(
-      container.firstChild.classList.contains("nav--fade-out")
-    ).toBeFalsy();
-
-    rerender(<NavBar position="absolute">Content</NavBar>);
-    expect(
-      container.firstChild.classList.contains("nav--fade-out")
-    ).toBeTruthy();
-
-    rerender(<NavBar position="fixed">Content</NavBar>);
-    expect(
-      container.firstChild.classList.contains("nav--fade-out")
-    ).toBeFalsy();
-  });
 });

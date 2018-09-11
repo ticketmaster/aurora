@@ -9,6 +9,7 @@ import {
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
 import spacing from "../../theme/spacing";
+import constants from "../../theme/constants";
 
 const LinkRow = LinkRowBase.extend`
   height: 60px;
@@ -27,6 +28,8 @@ const Link = styled(LinkItem)`
   color: ${colors.white.base};
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
+  text-shadow: 1px 0px 0px transparent;
+  transition: all 300ms ${constants.easing.easeInOutQuad};
 
   .nav--inverted &,
   .links__list & {
