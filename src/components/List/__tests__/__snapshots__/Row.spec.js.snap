@@ -386,22 +386,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
-
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
-  }
 }
 
 @media screen and (min-width:768px) {
@@ -518,7 +502,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
+            className="date--text c7"
             color="#1F262D"
             style={
               Object {
@@ -529,7 +513,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="day-time--text c8 c9"
           >
             Thu, 8:00 PM
           </div>
@@ -546,12 +530,12 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="list-row--subtitle c8 c9"
             >
               KABOO 3-Day Pass
             </div>
@@ -560,7 +544,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
@@ -569,7 +553,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="c17 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--subtitle c13 c14"
             >
               KABOO 3-Day Pass
             </div>
@@ -1113,22 +1097,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
-
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
-  }
 }
 
 @media screen and (min-width:768px) {
@@ -1263,7 +1231,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
+            className="date--text c7"
             color="#1F262D"
             style={
               Object {
@@ -1274,7 +1242,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="day-time--text c8 c9"
           >
             Thu, 8:00 PM
           </div>
@@ -1291,12 +1259,12 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="list-row--subtitle c8 c9"
             >
               KABOO 3-Day Pass
             </div>
@@ -1305,7 +1273,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
@@ -1314,7 +1282,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="c17 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--subtitle c13 c14"
             >
               KABOO 3-Day Pass
             </div>
@@ -1902,22 +1870,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
-
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
-  }
 }
 
 @media screen and (min-width:768px) {
@@ -2040,7 +1992,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
+            className="date--text c7"
             color="#1F262D"
             style={
               Object {
@@ -2051,7 +2003,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="day-time--text c8 c9"
           >
             Thu, 8:00 PM
           </div>
@@ -2068,12 +2020,12 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="list-row--subtitle c8 c9"
             >
               KABOO 3-Day Pass
             </div>
@@ -2082,7 +2034,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
@@ -2091,7 +2043,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="c17 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--subtitle c13 c14"
             >
               KABOO 3-Day Pass
             </div>
@@ -2561,22 +2513,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
-
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
-  }
-
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
-  }
 }
 
 @media screen and (min-width:768px) {
@@ -2693,7 +2629,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
+            className="date--text c7"
             color="#1F262D"
             style={
               Object {
@@ -2704,7 +2640,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="day-time--text c8 c9"
           >
             Thu, 8:00 PM
           </div>
@@ -2721,12 +2657,12 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="list-row--subtitle c8 c9"
             >
               KABOO 3-Day Pass
             </div>
@@ -2735,7 +2671,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--title c13 c14"
             >
               Del Mar Fairgrounds
             </div>
@@ -2744,7 +2680,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="c17 c16"
           >
             <div
-              className="c13 c14"
+              className="list-row--subtitle c13 c14"
             >
               KABOO 3-Day Pass
             </div>

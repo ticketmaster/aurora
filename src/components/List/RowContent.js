@@ -68,23 +68,6 @@ const LinkWrapper = styled.a`
     &:hover {
       background-color: ${colors.azure.light};
     }
-    
-    &:hover .text--primary:after {
-      background-color: ${colors.azure.muted};
-    }
-
-    &:hover .text--secondary:after {
-      background-color: ${colors.azure.muted};
-    }
-
-
-    &:hover .text--primary:before {
-      content: ""
-    }
-
-    &:hover .text--secondary:before {
-      content: ""
-    }
 
   `};
 `;
@@ -205,9 +188,10 @@ const ListRowContent = ({
   index,
   onOverflowClick,
   onExpandShow,
-  children
+  children,
+  ...rest
 }) => (
-  <RowWrapper variant={variant} isOpen={isOpen}>
+  <RowWrapper variant={variant} isOpen={isOpen} {...rest}>
     <ListContainer>
       <IconWrapper
         role="button"
@@ -226,16 +210,26 @@ const ListRowContent = ({
         rowVariant={variant}
       >
         <DateWrapper>
-          <BoldText style={{ textTransform: "uppercase" }} color={dateColor}>
+          <BoldText
+            className="date--text"
+            style={{ textTransform: "uppercase" }}
+            color={dateColor}
+          >
             {dateTitle}
           </BoldText>
-          <SingleLineSecondaryText>{dateSubTitle}</SingleLineSecondaryText>
+          <SingleLineSecondaryText className="day-time--text">
+            {dateSubTitle}
+          </SingleLineSecondaryText>
         </DateWrapper>
 
         <Row style={{ width: "100%" }}>
           <MobileOnlyColumn>
-            <MultilinePrimaryText>{title}</MultilinePrimaryText>
-            <SingleLineSecondaryText>{subTitle}</SingleLineSecondaryText>
+            <MultilinePrimaryText className="list-row--title">
+              {title}
+            </MultilinePrimaryText>
+            <SingleLineSecondaryText className="list-row--subtitle">
+              {subTitle}
+            </SingleLineSecondaryText>
           </MobileOnlyColumn>
 
           <TitleColumn
@@ -243,14 +237,18 @@ const ListRowContent = ({
             isOpen={isOpen}
             medium={isOpen ? 12 : 6}
           >
-            <MultilinePrimaryText>{title}</MultilinePrimaryText>
+            <MultilinePrimaryText className="list-row--title">
+              {title}
+            </MultilinePrimaryText>
           </TitleColumn>
           <SubTitleColumn
             hideOnExpand={isOpen && onExpandShow === "title"}
             isOpen={isOpen}
             medium={isOpen ? 12 : 6}
           >
-            <MultilinePrimaryText>{subTitle}</MultilinePrimaryText>
+            <MultilinePrimaryText className="list-row--subtitle">
+              {subTitle}
+            </MultilinePrimaryText>
           </SubTitleColumn>
         </Row>
 
