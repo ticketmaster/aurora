@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 import spacing from "../../theme/spacing";
 import colors from "../../theme/colors";
@@ -10,8 +11,9 @@ import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import ChevronIcon from "../Icons/Chevron";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
+import constants from "../../theme/constants";
 
 import IconButton from "../Button/IconButton";
 
@@ -19,13 +21,22 @@ const RowWrapper = styled.div`
   background-color: ${colors.white.base};
 
   ${mediumAndUp`
-    margin-bottom: ${props => (props.isOpen ? "12px" : 0)};
     border-radius: 4px;
-    box-shadow: ${props =>
-      props.isOpen
-        ? "0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19)"
-        : 0};
-    transition: box-shadow 0.5s ease-in-out;
+    &.row__wrapper--expanded {
+      transition: box-shadow 0.3s ${
+        constants.easing.easeInOutQuad
+      }, margin-bottom 0.3s ${constants.easing.easeInOutQuad};
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 12px;
+    }
+    
+    &.row__wrapper--collapsed {
+      transition: box-shadow 0.3s ${
+        constants.easing.easeInQuad
+      }, margin-bottom 0.3s ${constants.easing.easeInQuad};
+      box-shadow: 0;
+      margin-bottom: 0;
+    }
   `};
 
   &:not(:last-of-type) {
@@ -34,18 +45,27 @@ const RowWrapper = styled.div`
 `;
 
 const ListContainer = styled.div`
+  background-color: ${colors.white.base};
   align-items: center;
   display: flex;
   padding-right: ${spacing.cozy};
 `;
 
 const IconWrapper = styled(IconButton).attrs({
-  className: "button--expand-or-collapse",
   size: 45
 })`
   display: none;
   ${mediumAndUp`
     display: block;
+
+    &.button--expanded,
+    &.button--collapsed {
+      transition: all 0.1s linear;
+    }
+
+    &.button--expanded {
+      transform: rotate(-180deg);
+    }
   `};
 `;
 
@@ -78,27 +98,28 @@ const DateWrapper = styled.div`
   padding-left: ${spacing.cozy};
 `;
 
-const TitleColumn = styled(Column)`
+const ContentColumn = styled(Column)`
   display: none;
   ${mediumAndUp`
-    display: ${props => (props.hideOnExpand ? "none" : "flex")};
-    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
-    align-items: center;
-  `};
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  &.column__content--expanded {
+    transition: opacity 0.1s ${constants.easing.easeInQuad};
+    opacity: 0;
+  }
+  
+  &.column__content--collapsed {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
+    opacity: 1;
+  }
+`};
 `;
 
 const MobileOnlyColumn = styled(Column)`
   ${mediumAndUp`
     display: none;
-  `};
-`;
-
-const SubTitleColumn = styled(Column)`
-  display: none;
-  ${mediumAndUp`
-    display: ${props => (props.hideOnExpand ? "none" : "flex")};
-    justify-content: ${props => (props.isOpen ? "center" : "flex-start")};
-    align-items: center;
   `};
 `;
 
@@ -128,8 +149,22 @@ const OverflowDesktopContainer = styled(Column)`
 
   ${mediumAndUp`
     border-top: 0.5px solid ${colors.lightGray};
-    transition: max-height 0.5s ease-in-out;
-    max-height: ${props => (props.isOpen ? "600px" : "0")};
+
+    &.container__overflow--expanded {
+      background-color: ${colors.white.base};
+      max-height: 600px;
+      transition: max-height 0.3s ${
+        constants.easing.easeInOutQuad
+      }, opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
+      opacity: 1;
+    }
+
+    &.container__overflow--collapsed {
+      transition: max-height 0.3s ${
+        constants.easing.easeInQuad
+      }, opacity 0.1s ${constants.easing.easeInQuad};
+      opacity: 0;
+    }
   `};
 `;
 
@@ -158,6 +193,29 @@ const MultilinePrimaryText = styled(PrimaryText)`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   /* stylelint-enable */
+
+  ${mediumAndUp`
+    &.multiline-text {
+      position: absolute;
+      transition: opacity 0.1s ${constants.easing.easeInQuad};
+      opacity: 0;
+    }
+
+    &.multiline-text--active {
+      transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
+      opacity: 1;
+    }
+
+    &.multiline-text__subtitle {
+      margin-left: 40px;
+    }
+  `};
+
+  ${largeAndUp`
+    &.multiline-text__subtitle {
+      margin-left: 125px;
+    }
+  `};
 `;
 
 const SingleLineSecondaryText = styled(SecondaryText)`
@@ -191,14 +249,26 @@ const ListRowContent = ({
   children,
   ...rest
 }) => (
-  <RowWrapper variant={variant} isOpen={isOpen} {...rest}>
+  <RowWrapper
+    variant={variant}
+    className={classnames({
+      row__wrapper: true,
+      "row__wrapper--expanded": isOpen,
+      "row__wrapper--collapsed": !isOpen
+    })}
+    {...rest}
+  >
     <ListContainer>
       <IconWrapper
         role="button"
         aria-label={isOpen ? "Collapse Row" : "Expand Row"}
         aria-expanded={isOpen}
         data-index={index}
-        style={isOpen ? { transform: "rotate(-180deg)" } : null}
+        className={classnames({
+          "button--expand-or-collapse": true,
+          "button--expanded": isOpen,
+          "button--collapsed": !isOpen
+        })}
       >
         <ChevronIcon size={15} color={colors.blackPearl} />
       </IconWrapper>
@@ -232,24 +302,44 @@ const ListRowContent = ({
             </SingleLineSecondaryText>
           </MobileOnlyColumn>
 
-          <TitleColumn
-            hideOnExpand={isOpen && onExpandShow === "subTitle"}
-            isOpen={isOpen}
-            medium={isOpen ? 12 : 6}
+          <ContentColumn
+            key="primary"
+            medium={4.5}
+            large={4}
+            xLarge={5}
+            className={classnames({
+              column__content: true,
+              "list-row--title": true,
+              "column__content--expanded": isOpen,
+              "column__content--collapsed": !isOpen
+            })}
           >
-            <MultilinePrimaryText className="list-row--title">
-              {title}
-            </MultilinePrimaryText>
-          </TitleColumn>
-          <SubTitleColumn
-            hideOnExpand={isOpen && onExpandShow === "title"}
-            isOpen={isOpen}
-            medium={isOpen ? 12 : 6}
-          >
-            <MultilinePrimaryText className="list-row--subtitle">
+            <MultilinePrimaryText>{title}</MultilinePrimaryText>
+          </ContentColumn>
+          <ContentColumn key="secondary" medium={7.5} large={8} xLarge={7}>
+            <MultilinePrimaryText
+              key="collapsed"
+              className={classnames({
+                "multiline-text": true,
+                "multiline-text__subtitle": true,
+                "list-row--subtitle": true,
+                "multiline-text--active": !isOpen,
+                "multiline-text--hidden": isOpen
+              })}
+            >
               {subTitle}
             </MultilinePrimaryText>
-          </SubTitleColumn>
+            <MultilinePrimaryText
+              key="expanded"
+              className={classnames({
+                "multiline-text": true,
+                "multiline-text--active": isOpen,
+                "multiline-text--hidden": !isOpen
+              })}
+            >
+              {isOpen && onExpandShow === "title" ? title : subTitle}
+            </MultilinePrimaryText>
+          </ContentColumn>
         </Row>
 
         <DesktopContainer>
@@ -291,7 +381,13 @@ const ListRowContent = ({
       </LinkRow>
     ) : null}
 
-    <OverflowDesktopContainer isOpen={isOpen}>
+    <OverflowDesktopContainer
+      className={classnames({
+        container__overflow: true,
+        "container__overflow--expanded": isOpen,
+        "container__overflow--collapsed": !isOpen
+      })}
+    >
       {children}
     </OverflowDesktopContainer>
   </RowWrapper>
