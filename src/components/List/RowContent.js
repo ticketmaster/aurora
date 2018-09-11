@@ -126,6 +126,7 @@ const ListRowButton = StyledButton.withComponent("span").extend`
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0
       ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
       0;

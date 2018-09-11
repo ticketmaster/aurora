@@ -37,7 +37,7 @@ export const listItems = [
     subTitle: "KABOO 3-Day Pass",
     dateTitle: "apr 23",
     dateSubTitle: "Thu, 8:00 PM",
-    buttonText: "See Tickets",
+    buttonText: "Acheter des Billets",
     variant: "standard",
     onClick: () => {},
     url: "/"

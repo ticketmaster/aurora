@@ -223,6 +223,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 18px 0;
 }
 
@@ -863,6 +864,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 8px 0;
 }
 
@@ -1663,6 +1665,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 8px 0;
 }
 
@@ -2395,6 +2398,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 18px 0;
 }
 
