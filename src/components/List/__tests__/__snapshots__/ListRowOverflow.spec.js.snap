@@ -99,7 +99,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
 .c14:focus,

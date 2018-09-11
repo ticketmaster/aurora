@@ -64,6 +64,7 @@ dark: true
 <ThemeProvider theme={{ themeName: "tm"}}>
   <Breadcrumb>
       <Breadcrumb.Item position="1" role="link" ariaLabel="Home" href="/">Home</Breadcrumb.Item>
+      <Breadcrumb.Item position="1" role="link" ariaLabel="Home" onClick={() => {}}>Path</Breadcrumb.Item>
       <Breadcrumb.Item position="2" ariaLabel="Breadcrumbs">Breadcrumbs</Breadcrumb.Item>
   </Breadcrumb>
 </ThemeProvider>
