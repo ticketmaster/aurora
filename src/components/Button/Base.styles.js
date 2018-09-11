@@ -82,7 +82,7 @@ export const StyledButton = styled.button`
   padding: 0 ${getPadding} 0 ${getPadding};
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
+  ${({ noTransform }) => (noTransform ? "" : "text-transform: capitalize;")}
   border-radius: ${constants.borderRadius.small};
   cursor: pointer;
 
