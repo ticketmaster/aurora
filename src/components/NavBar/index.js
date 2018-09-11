@@ -1,4 +1,3 @@
-/* eslint react/prefer-stateless-function: off */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -180,6 +179,26 @@ class NavBar extends Component {
     style: {}
   };
 
+  constructor(...args) {
+    super(...args);
+    this.navbar = React.createRef();
+    this.initialLoad = true;
+  }
+
+  componentDidUpdate() {
+    const navbar = this.navbar.current;
+
+    if (navbar.classList.contains("nav--absolute") && !this.initialLoad) {
+      navbar.classList.remove("nav--fade-in");
+      navbar.classList.add("nav--fade-out");
+    }
+    if (navbar.classList.contains("nav--fixed")) {
+      this.initialLoad = false;
+      navbar.classList.remove("nav--fade-out");
+      navbar.classList.add("nav--fade-in");
+    }
+  }
+
   render() {
     const {
       children,
@@ -204,6 +223,7 @@ class NavBar extends Component {
         )}
         invert={invert}
         style={{ ...style, backgroundColor }}
+        innerRef={this.navbar}
       >
         {message ? (
           <MessageContainer>

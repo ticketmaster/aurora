@@ -88,22 +88,20 @@ describe("NavBar", () => {
         .toJSON()
     ).toMatchSnapshot());
 
-  xit("should reset animation while updating", () => {
+  it("should reset animation while updating", () => {
     const { rerender, container } = render(
-      <NavBar position="fixed">Content</NavBar>
+      <NavBar position="absolute">Content</NavBar>
     );
     expect(
       container.firstChild.classList.contains("nav--fade-out")
     ).toBeFalsy();
 
-    rerender(<NavBar position="absolute">Content</NavBar>);
-    expect(
-      container.firstChild.classList.contains("nav--fade-out")
-    ).toBeTruthy();
-
     rerender(<NavBar position="fixed">Content</NavBar>);
     expect(
-      container.firstChild.classList.contains("nav--fade-out")
-    ).toBeFalsy();
+      container.firstChild.classList.contains("nav--fade-in")
+    ).toBeTruthy();
+
+    rerender(<NavBar position="absolute">Content</NavBar>);
+    expect(container.firstChild.classList.contains("nav--fade-in")).toBeFalsy();
   });
 });
