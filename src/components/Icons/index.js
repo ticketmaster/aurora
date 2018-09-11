@@ -19,3 +19,4 @@ export { default as UserIcon } from "./User";
 export { default as VenueIcon } from "./Venue";
 export { default as VipIcon } from "./Vip";
 export { default as YoutubeIcon } from "./Youtube";
+export { default as HeartIcon } from "./Heart";
