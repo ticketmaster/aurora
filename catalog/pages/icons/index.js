@@ -21,7 +21,8 @@ import {
   UserIcon,
   VenueIcon,
   VipIcon,
-  YoutubeIcon
+  YoutubeIcon,
+  HeartIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -64,6 +65,7 @@ export default {
     VenueIcon,
     VipIcon,
     YoutubeIcon,
+    HeartIcon,
 
     Column,
     Container,

@@ -45,7 +45,8 @@ export {
   UserIcon,
   VenueIcon,
   VipIcon,
-  YoutubeIcon
+  YoutubeIcon,
+  HeartIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider

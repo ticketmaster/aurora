@@ -15,20 +15,24 @@ span: 6
 rows:
   - Prop: size
     Type: number
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
     Notes: Optional
   - Prop: children
     Type: node
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
     Notes: Optional
   - Prop: direction
     Type: string
     Component: ChevronIcon
     Notes: Optional. Value is one of ["up", "down", "left", "right"]
+  - Prop: opacity
+    Type: number
+    Component: HeartIcon
+    Notes: Optional
 ```
 
 ```react
@@ -131,6 +135,11 @@ rows:
   <Column medium={3}>
     <div style={iconStyle}><VipIcon size={26} color="#262626"><title>Vip Icon</title></VipIcon></div>
     <div style={iconLabelStyle}>Vip Icon</div>
+  </Column>
+
+  <Column medium={3}>
+      <div style={iconStyle}><HeartIcon size={26} color="#262626"><title>Heart Icon</title></VipIcon></div>
+      <div style={iconLabelStyle}>Heart Icon</div>
   </Column>
 </Row>
 
