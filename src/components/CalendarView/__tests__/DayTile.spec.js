@@ -6,10 +6,16 @@ const DEFAULT_PROPS = {
   dateLabel: "10",
   title: "Henderson, NV — Sunset Station Outdoor Amphitheater",
   subTitle: "On Sale: Fri, 08/17/18 10:00 AM",
-  ctaButtons: [
-    <DayTile.Button>2:00 pm</DayTile.Button>,
-    <DayTile.Button>6:00 pm</DayTile.Button>
-  ],
+  ctaButtons: (
+    <DayTile.ButtonsGroup>
+      <DayTile.ButtonsGroup.Item>
+        <DayTile.Button>2:00 pm</DayTile.Button>
+      </DayTile.ButtonsGroup.Item>
+      <DayTile.ButtonsGroup.Item>
+        <DayTile.Button>6:00 pm</DayTile.Button>
+      </DayTile.ButtonsGroup.Item>
+    </DayTile.ButtonsGroup>
+  ),
   moreButton: <DayTile.MoreButton>+4 More Times</DayTile.MoreButton>,
   onOverflowClick: () => {},
   withOverflow: true
