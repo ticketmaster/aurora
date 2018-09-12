@@ -3,3 +3,4 @@ export { StyledButton, StyledButtonLink } from "./Base.styles";
 export { default as Badge } from "./Badge";
 export { default as StyledBadge } from "./Badge.styles";
 export { default as RatingBadge } from "./RatingBadge";
+export { default as IconButton } from "./IconButton";

@@ -47,7 +47,7 @@ export const listItems = [
 export const sections = [
   {
     title: "Ticket Options",
-    key: "789",
+    id: "789",
     items: [
       {
         title: "VIP Packages",
@@ -64,7 +64,7 @@ export const sections = [
 
   {
     title: "Venue Info",
-    key: "456",
+    id: "456",
     items: [
       {
         title: "United Center",
@@ -79,7 +79,7 @@ export const sections = [
 
   {
     title: "Lineup",
-    key: "123",
+    id: "123",
     items: [
       {
         title:
@@ -109,7 +109,7 @@ export const sections = [
   },
   {
     title: "More",
-    key: "1011",
+    id: "1011",
     items: [
       {
         title: "Sell Tickets",

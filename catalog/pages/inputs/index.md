@@ -389,7 +389,7 @@ span: 6
 <Container>
     <Row>
         <Column medium={6}>
-            <DropDownGroup variant={0}>
+            <DropDownGroup variant={0} placeholder="Select an option">
                 <DropDownOption value="0" index={0}>Option One</DropDownOption>
                 <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                 <DropDownOption value="2" index={2}>Option Three</DropDownOption>

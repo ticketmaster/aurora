@@ -16,7 +16,6 @@ export const LinkTitle = StyledText.withComponent(`a`).extend`
 const LinkBase = Base.withComponent("a").extend`
   text-decoration: none;
   transition: color 0.3s ease;
-  cursor: pointer;
   &:focus,
   &:active,
   &:visited,
@@ -29,13 +28,25 @@ const LinkBase = Base.withComponent("a").extend`
   }
 `;
 
+const LinkButtonBase = LinkBase.withComponent("button").extend`
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+`;
+
+const LinkSpanBase = LinkBase.withComponent("span").extend`
+  cursor: pointer;
+`;
+
 const getElement = ({ href, onClick }) => {
   if (href && href.length) return LinkBase;
 
-  if (!href && onClick && typeof onClick === "function")
-    return LinkBase.withComponent("button");
+  if (!href && onClick && typeof onClick === "function") return LinkButtonBase;
 
-  return LinkBase.withComponent("span");
+  return LinkSpanBase;
 };
 
 const Link = ({
