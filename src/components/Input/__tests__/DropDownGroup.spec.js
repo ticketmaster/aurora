@@ -16,9 +16,16 @@ describe("DropDownGroup", () => {
     expect(renderComponent().container.firstChild).toMatchSnapshot();
   });
 
-  it("renders variant 1", () => {
+  it("renders variant 0 with a placeholder prop", () => {
     expect(
       renderComponent({ placeholder: "Select An Option", variant: 1 }).container
+        .firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders variant 1 with a label prop", () => {
+    expect(
+      renderComponent({ label: "Selected Option:", variant: 1 }).container
         .firstChild
     ).toMatchSnapshot();
   });
