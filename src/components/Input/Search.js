@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import SearchIcon from "../Icons/Search";
+import { SearchIconDeprecated as SearchIcon } from "../Icons";
 import colors from "../../theme/colors";
 import typography from "../../theme/typography";
 import constants from "../../theme/constants";

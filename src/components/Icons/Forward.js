@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 import * as sizes from "./iconSizes";
 import { themes } from "../../theme";
 
-const searchIcons = {
+const forwardIcons = {
   small: (color, children, props) => (
     <svg
       {...props}
@@ -19,7 +19,7 @@ const searchIcons = {
           fill={color}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M12 6.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-.564 4.229l4.418 4.417a.5.5 0 0 1-.708.708l-4.417-4.418a6.5 6.5 0 1 1 .707-.707z"
+          d="M10.905 8l-6.678 6.678a.774.774 0 0 0 1.095 1.095l7.225-7.226a.774.774 0 0 0 0-1.094L5.322.227a.774.774 0 0 0-1.095 1.095L10.905 8z"
         />
       </g>
     </svg>
@@ -39,28 +39,28 @@ const searchIcons = {
           fill={color}
           fillOpacity=".5"
           fillRule="nonzero"
-          d="M18 9.5a8.5 8.5 0 1 0-17 0 8.5 8.5 0 0 0 17 0zm-1.438 6.355l7.292 7.291a.5.5 0 0 1-.708.708l-7.291-7.292a9.5 9.5 0 1 1 .707-.707z"
+          d="M6.224 22.692a.766.766 0 1 0 1.084 1.084l11.234-11.234c.299-.3.299-.785 0-1.084L7.308.224a.766.766 0 0 0-1.084 1.084L16.917 12 6.224 22.692z"
         />
       </g>
     </svg>
   )
 };
 
-const SearchIcon = ({ size, color, children, ...props }) =>
-  searchIcons[size] ? searchIcons[size](color, children, props) : null;
+const ForwardIcon = ({ size, color, children, ...props }) =>
+  forwardIcons[size](color, children, props);
 
-SearchIcon.displayName = "SearchIcon";
+ForwardIcon.displayName = "ForwardIcon";
 
-SearchIcon.defaultProps = {
+ForwardIcon.defaultProps = {
   size: sizes.smallLarge[0],
   children: null,
   color: themes.global.gray01
 };
 
-SearchIcon.propTypes = {
+ForwardIcon.propTypes = {
   size: PropTypes.oneOf(sizes.smallLarge),
   children: PropTypes.node,
   color: PropTypes.string
 };
 
-export default SearchIcon;
+export default ForwardIcon;
