@@ -57,15 +57,7 @@ const DayTile = ({
         {withImage ? overflowButton : null}
       </DayTileContent>
       <DayTileFooter>
-        {ctaButtons.length ? (
-          <DayTileButtonsGroup>
-            {ctaButtons.map(button => (
-              <DayTileButtonsGroup.Item key={button}>
-                {button}
-              </DayTileButtonsGroup.Item>
-            ))}
-          </DayTileButtonsGroup>
-        ) : null}
+        {ctaButtons}
         {moreButton}
       </DayTileFooter>
       {children}
@@ -75,7 +67,7 @@ const DayTile = ({
 
 DayTile.propTypes = {
   children: PropTypes.node,
-  ctaButtons: PropTypes.arrayOf(PropTypes.element),
+  ctaButtons: PropTypes.element,
   dateLabel: PropTypes.string.isRequired,
   image: PropTypes.element,
   isDisabled: PropTypes.bool,
@@ -89,7 +81,7 @@ DayTile.propTypes = {
 
 DayTile.defaultProps = {
   children: null,
-  ctaButtons: [],
+  ctaButtons: null,
   image: null,
   isDisabled: false,
   isHighlighted: false,
@@ -100,6 +92,7 @@ DayTile.defaultProps = {
   withOverflow: false
 };
 
+DayTile.ButtonsGroup = DayTileButtonsGroup;
 DayTile.Button = DayTileButton;
 DayTile.MoreButton = DayTileMoreButton;
 

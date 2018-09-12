@@ -12,11 +12,11 @@ rows:
     Default: "null"
     Notes: Optional
   - Prop: ctaButtons
-    Type: array<DayTile.Button>
-    Notes: Optional. CTA Buttons / Links corresponding to the data displayed (eg. links to EDP). Usage of <DayTile.Button /> component is required to in order to get proper button's style.
+    Type: element<DayTile.ButtonsGroup>
+    Notes: Optional. CTA Buttons / Links corresponding to the data displayed (eg. links to EDP). Usage of <DayTile.ButtonsGroup />, <DayTile.ButtonsGroup.Item />, <DayTile.Button /> components is required in order to get proper button's style.
   - Prop: dateLabel
-    Type: node
-    Notes: Required. A numeric "day of month" value
+    Type: string
+    Notes: Required. A string that contains numeric "day of month" value
   - Prop: image
     Type: node
     Default: "null"
@@ -30,9 +30,9 @@ rows:
     Default: "false"
     Notes: Optional. A flag that controls highlighted state (eg. in case of present local events)
   - Prop: moreButton
-    Type: element
+    Type: element<DayTile.MoreButton>
     Default: "null"
-    Notes: Optional. A button to use in place of More Button (eg. if more than 2 CTA buttons required, a "+X More y" label is recommended)
+    Notes: Optional. A button to use in place of More Button (eg. if more than 2 CTA buttons required, a "+X More y" label is recommended). Usage of <DayTile.MoreButton /> component is required in order to achieve proper styling.
   - Prop: onOverflowClick
     Type: function
     Notes: Optional. An `onClick` handler for the Overflow Button
@@ -61,10 +61,14 @@ responsive: true
   title="Henderson, NV — Sunset Station Outdoor Amphitheater"
   subTitle="On Sale: Fri, 08/17/18 10:00 AM"
   ctaButtons={
-    [
-      <DayTile.Button>2:00 pm</DayTile.Button>,
-      <DayTile.Button>6:00 pm</DayTile.Button>
-    ]
+    <DayTile.ButtonsGroup>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>2:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>6:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+    </DayTile.ButtonsGroup>
   }
   moreButton={
     <DayTile.MoreButton
@@ -93,10 +97,14 @@ responsive: true
   title="Henderson, NV — Sunset Station Outdoor Amphitheater"
   subTitle="On Sale: Fri, 08/17/18 10:00 AM"
   ctaButtons={
-    [
-      <DayTile.Button>2:00 pm</DayTile.Button>,
-      <DayTile.Button>6:00 pm</DayTile.Button>
-    ]
+    <DayTile.ButtonsGroup>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>2:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>6:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+    </DayTile.ButtonsGroup>
   }
   moreButton={
     <DayTile.MoreButton
@@ -134,10 +142,14 @@ responsive: true
     />
   }
   ctaButtons={
-    [
-      <DayTile.Button>2:00 pm</DayTile.Button>,
-      <DayTile.Button>6:00 pm</DayTile.Button>
-    ]
+    <DayTile.ButtonsGroup>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>2:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>6:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+    </DayTile.ButtonsGroup>
   }
   moreButton={
     <DayTile.MoreButton
@@ -174,10 +186,14 @@ responsive: true
     />
   }
   ctaButtons={
-    [
-      <DayTile.Button>2:00 pm</DayTile.Button>,
-      <DayTile.Button>6:00 pm</DayTile.Button>
-    ]
+    <DayTile.ButtonsGroup>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>2:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+        <DayTile.ButtonsGroup.Item>
+          <DayTile.Button>6:00 pm</DayTile.Button>
+        </DayTile.ButtonsGroup.Item>
+    </DayTile.ButtonsGroup>
   }
   moreButton={
     <DayTile.MoreButton
