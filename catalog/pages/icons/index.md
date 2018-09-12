@@ -8,27 +8,52 @@ Different icons which are generated as react components from the svg icons using
 To add icons to the project, use the command `npm run add-icons svgFilePath`.
 ```
 
-### Props
+### Icons Props (Deprecated)
+
+#### These icons are still available but will be removed soon
 
 ```table
 span: 6
 rows:
   - Prop: size
-    Type: number
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Type: string
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
     Notes: Optional
   - Prop: children
     Type: node
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
     Notes: Optional
   - Prop: direction
     Type: string
     Component: ChevronIcon
     Notes: Optional. Value is one of ["up", "down", "left", "right"]
+```
+
+### Icons Props
+
+```table
+span: 6
+rows:
+  - Prop: size
+    Type: string
+    Component: BackIcon, CalendarIcon, CloseIcon, DeleteIcon, DownIcon, ForwardIcon, HomeIcon, SearchIcon, UpIcon
+    Notes: Optional. Value is one of `small`, `large`
+  - Prop: size
+    Type: string
+    Component: ErrorIcon, InfoIcon, InfoDotIcon, SuccessIcon
+    Notes: Optional. Value is one of `small`, `regular`, `large`
+  - Prop: color
+    Type: string
+    Component: all
+    Notes: Optional
+  - Prop: children
+    Type: node
+    Component: all
+    Notes: Optional
 ```
 
 ```react

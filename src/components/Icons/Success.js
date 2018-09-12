@@ -4,7 +4,7 @@ import * as sizes from "./iconSizes";
 import { themes } from "../../theme";
 
 const successIcons = {
-  small: (children, props) => (
+  small: (color, children, props) => (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
@@ -16,13 +16,13 @@ const successIcons = {
       <g fill="none" fillRule="evenodd">
         <path d="M0 0h16v16H0z" />
         <path
-          fill={themes.global.special.base}
+          fill={color}
           d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm0 1A7 7 0 1 1 8 1a7 7 0 0 1 0 14zM6.537 9.738l4.242-4.243a.667.667 0 1 1 .943.943l-4.714 4.714a.667.667 0 0 1-.943 0l-2.37-2.37a.667.667 0 0 1 .943-.943l1.899 1.899z"
         />
       </g>
     </svg>
   ),
-  regular: (children, props) => (
+  regular: (color, children, props) => (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
@@ -34,13 +34,13 @@ const successIcons = {
       <g fill="none" fillRule="evenodd">
         <path d="M0 0h24v24H0z" />
         <path
-          fill={themes.global.special.base}
+          fill={color}
           d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 1C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zm-1.758-8.343l6.364-6.364a1 1 0 0 1 1.414 1.414l-7.071 7.071a1 1 0 0 1-1.414 0L5.98 13.223a1 1 0 0 1 1.414-1.414l2.848 2.848z"
         />
       </g>
     </svg>
   ),
-  large: (children, props) => (
+  large: (color, children, props) => (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const successIcons = {
       <g fill="none" fillRule="evenodd">
         <path d="M0 0h36v36H0z" />
         <path
-          fill={themes.global.special.base}
+          fill={color}
           d="M18 34c8.837 0 16-7.163 16-16S26.837 2 18 2 2 9.163 2 18s7.163 16 16 16zm0 1C8.611 35 1 27.389 1 18S8.611 1 18 1s17 7.611 17 17-7.611 17-17 17zm-2.637-12.818l9.546-9.546a1.5 1.5 0 1 1 2.121 2.121L16.424 25.364a1.5 1.5 0 0 1-2.122 0L8.97 20.032a1.5 1.5 0 1 1 2.121-2.122l4.272 4.272z"
         />
       </g>
@@ -60,19 +60,21 @@ const successIcons = {
   )
 };
 
-const SuccessIcon = ({ size, children, ...props }) =>
-  successIcons[size](children, props);
+const SuccessIcon = ({ size, color, children, ...props }) =>
+  successIcons[size](color, children, props);
 
 SuccessIcon.displayName = "SuccessIcon";
 
 SuccessIcon.defaultProps = {
   size: sizes.all[0],
-  children: null
+  children: null,
+  color: themes.global.special.base
 };
 
 SuccessIcon.propTypes = {
   size: PropTypes.oneOf(sizes.all),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default SuccessIcon;

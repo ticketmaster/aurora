@@ -4,7 +4,7 @@ import * as sizes from "./iconSizes";
 import { themes } from "../../theme";
 
 const downIcons = {
-  small: (children, props) => (
+  small: (color, children, props) => (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ const downIcons = {
       />
     </svg>
   ),
-  large: (children, props) => (
+  large: (color, children, props) => (
     <svg
       {...props}
       xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const downIcons = {
     >
       {children}
       <path
-        fill={themes.global.gray01}
+        fill={color}
         fillOpacity=".5"
         fillRule="nonzero"
         d="M22.692 7.224a.778.778 0 0 1 1.084 0c.299.293.299.768 0 1.061L12.542 19.283a.778.778 0 0 1-1.084 0L.224 8.285a.739.739 0 0 1 0-1.06.778.778 0 0 1 1.084 0L12 17.691 22.692 7.224z"
@@ -40,19 +40,21 @@ const downIcons = {
   )
 };
 
-const DownIcon = ({ size, children, ...props }) =>
-  downIcons[size](children, props);
+const DownIcon = ({ size, color, children, ...props }) =>
+  downIcons[size](color, children, props);
 
 DownIcon.displayName = "DownIcon";
 
 DownIcon.defaultProps = {
   size: sizes.smallLarge[0],
-  children: null
+  children: null,
+  color: themes.global.gray01
 };
 
 DownIcon.propTypes = {
   size: PropTypes.oneOf(sizes.smallLarge),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default DownIcon;
