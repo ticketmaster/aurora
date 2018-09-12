@@ -73,6 +73,7 @@ const LinkWrapper = styled.a`
   text-decoration: none;
   display: flex;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: ${spacing.cozy};

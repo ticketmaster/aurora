@@ -41,6 +41,18 @@ export const listItems = [
     variant: "standard",
     onClick: () => {},
     url: "/"
+  },
+  {
+    rowId: "571",
+    title:
+      "CEG & T Presents Amorphis/Dark Tranquillity/Moonspell/Omnium Gatherum",
+    subTitle: "Gramercy Theatre - New York, NY",
+    dateTitle: "sep 7",
+    dateSubTitle: "Fri, 7:00 PM",
+    buttonText: "See Tickets",
+    variant: "standard",
+    onClick: () => {},
+    url: "/"
   }
 ];
 
