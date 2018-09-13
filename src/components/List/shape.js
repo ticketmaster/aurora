@@ -24,6 +24,5 @@ export const sectionItemShape = {
       icon: PropTypes.node.isRequired,
       onItemClick: PropTypes.func
     })
-  ).isRequired,
-  totalSections: PropTypes.number
+  ).isRequired
 };
