@@ -34,7 +34,7 @@ export const listItems = [
   {
     rowId: "570",
     title: "Del Mar Fairgrounds",
-    subTitle: "KABOO 3-Day Pass",
+    subTitle: "KABOO 3-Day Premium Pass with Exclusive Back Stage Access",
     dateTitle: "apr 23",
     dateSubTitle: "Thu, 8:00 PM",
     buttonText: "Acheter des Billets",
@@ -70,8 +70,7 @@ export const sections = [
         title: "Parking Pass Available",
         icon: <ParkingIcon size={26} color={colors.blackPearl} />
       }
-    ],
-    totalSections: 4
+    ]
   },
 
   {
@@ -85,8 +84,7 @@ export const sections = [
         onItemClick: () => {},
         url: "/"
       }
-    ],
-    totalSections: 4
+    ]
   },
 
   {
@@ -116,8 +114,7 @@ export const sections = [
         ),
         onItemClick: () => {}
       }
-    ],
-    totalSections: 4
+    ]
   },
   {
     title: "More",
@@ -128,8 +125,7 @@ export const sections = [
         icon: <TicketIcon size={26} color={colors.blackPearl} />,
         onItemClick: () => {}
       }
-    ],
-    totalSections: 4
+    ]
   }
 ];
 

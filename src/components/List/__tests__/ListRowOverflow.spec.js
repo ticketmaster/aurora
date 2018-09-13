@@ -5,6 +5,9 @@ import { sections } from "../../../../catalog/pages/list_row/mock";
 import ListRowOverflow from "../Overflow";
 import Section from "../Section";
 import SectionItem from "../SectionItem";
+import { constants } from "../../../theme";
+
+const { MAX_COLUMNS } = constants;
 
 describe("<ListRowOverflow />", () => {
   it("renders ListRowOverflow correctly", () => {
@@ -13,7 +16,7 @@ describe("<ListRowOverflow />", () => {
         {sections.map(section => (
           <Section
             title={section.title}
-            totalSections={4}
+            totalSections={MAX_COLUMNS / sections.length}
             key={section.id}
             id={section.id}
           >

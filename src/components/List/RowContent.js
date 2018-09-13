@@ -11,7 +11,7 @@ import { Row, Column } from "../Grid";
 import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import ChevronIcon from "../Icons/Chevron";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
@@ -102,6 +102,7 @@ const DateWrapper = styled.div`
 const ContentColumn = styled(Column)`
   display: none;
   ${mediumAndUp`
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -196,25 +197,19 @@ const MultilinePrimaryText = styled(PrimaryText)`
   /* stylelint-enable */
 
   ${mediumAndUp`
-    &.multiline-text {
+    &.subtitle--hidden {
       position: absolute;
       transition: opacity 0.1s ${constants.easing.easeInQuad};
       opacity: 0;
     }
 
-    &.multiline-text--active {
+    &.subtitle--active {
       transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
       opacity: 1;
     }
 
-    &.multiline-text__subtitle {
-      margin-left: 40px;
-    }
-  `};
-
-  ${largeAndUp`
-    &.multiline-text__subtitle {
-      margin-left: 125px;
+    &.subtitle--expanded {
+      transform: translateX(-55%);
     }
   `};
 `;
@@ -305,9 +300,7 @@ const ListRowContent = ({
 
           <ContentColumn
             key="primary"
-            medium={4.5}
-            large={4}
-            xLarge={5}
+            medium={6}
             className={classnames({
               column__content: true,
               "list-row--title": true,
@@ -317,15 +310,14 @@ const ListRowContent = ({
           >
             <MultilinePrimaryText>{title}</MultilinePrimaryText>
           </ContentColumn>
-          <ContentColumn key="secondary" medium={7.5} large={8} xLarge={7}>
+          <ContentColumn key="secondary" medium={6}>
             <MultilinePrimaryText
               key="collapsed"
               className={classnames({
-                "multiline-text": true,
-                "multiline-text__subtitle": true,
+                subtitle: true,
                 "list-row--subtitle": true,
-                "multiline-text--active": !isOpen,
-                "multiline-text--hidden": isOpen
+                "subtitle--active": !isOpen,
+                "subtitle--hidden": isOpen
               })}
             >
               {subTitle}
@@ -333,9 +325,10 @@ const ListRowContent = ({
             <MultilinePrimaryText
               key="expanded"
               className={classnames({
-                "multiline-text": true,
-                "multiline-text--active": isOpen,
-                "multiline-text--hidden": !isOpen
+                subtitle: true,
+                "subtitle--expanded": true,
+                "subtitle--active": isOpen,
+                "subtitle--hidden": !isOpen
               })}
             >
               {isOpen && onExpandShow === "title" ? title : subTitle}

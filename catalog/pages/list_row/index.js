@@ -8,7 +8,10 @@ import {
   SectionItem
 } from "../../../src/components/List";
 import { Button } from "../../../src/components/Button";
+import { constants } from "../../../src/theme";
 import { listItems, sections } from "./mock";
+
+const { MAX_COLUMNS } = constants;
 
 const onOverflowButtonClick = ({ scope, index }) => ({ event }) => ev => {}; // eslint-disable-line
 
@@ -24,7 +27,8 @@ export default {
     Button,
     listItems,
     sections,
-    onOverflowButtonClick
+    onOverflowButtonClick,
+    MAX_COLUMNS
   },
   content: pageLoader(() => import("./index.md"))
 };

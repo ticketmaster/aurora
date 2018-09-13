@@ -15,7 +15,7 @@ responsive: true
     <BottomSheet>
      <ListRowOverflow>
       {sections.map(section =>
-        <Section title={section.title} totalSections={4} key={section.key}>
+        <Section title={section.title} noOfColumns={MAX_COLUMNS / sections.length} key={section.key}>
           {section.items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
         </Section>
