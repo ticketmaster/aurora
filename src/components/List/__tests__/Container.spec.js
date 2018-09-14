@@ -64,7 +64,7 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
                 id={section.id}
               >
@@ -97,9 +97,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
                 key={section.title}
                 id={section.id}
+                large={4}
               >
                 {section.items
                   .slice(0, 4)
@@ -129,7 +129,7 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
                 id={section.id}
               >
@@ -161,7 +161,7 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
                 id={section.id}
               >
@@ -196,7 +196,7 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
                 id={section.id}
               >
@@ -238,7 +238,7 @@ describe("<ListContainer />", () => {
           <ListRowOverflow>
             <Section
               title={sections[0].title}
-              totalSections={1}
+              large={1}
               key={sections[0].id}
               id={sections[0].id}
             >
