@@ -7,11 +7,7 @@ const StyledBreadcrumb = ListUnstyled.extend`
   font-weight: ${typography.weight.semiBold};
   display: flex;
   flex-flow: row;
-  ${({ childrenLen }) =>
-    childrenLen &&
-    `
-    flex: 0 1 ${Math.floor(100 / childrenLen)}%;
-  `} align-items: center;
+  align-items: center;
 
   &.breadcrumb--none {
     color: inherit;

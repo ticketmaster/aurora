@@ -11,7 +11,6 @@ const Breadcrumb = ({ children, className, variant, ...props }) => (
       className={classNames(className, `breadcrumb--${variant}`)}
       itemScope
       itemType="http://schema.org/Breadcrumb"
-      childrenLen={children && Array.from(children).length}
     >
       {children}
     </StyledBreadcrumb>
