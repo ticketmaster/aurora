@@ -16,7 +16,7 @@ describe("<ListRowOverflow />", () => {
         {sections.map(section => (
           <Section
             title={section.title}
-            totalSections={MAX_COLUMNS / sections.length}
+            large={MAX_COLUMNS / sections.length}
             key={section.id}
             id={section.id}
           >

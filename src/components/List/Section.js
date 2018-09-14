@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { spacing, colors, typography, constants } from "../../theme";
+import { spacing, colors, typography } from "../../theme";
 
 import { Row, Column } from "../Grid";
 import BoldText from "../Text/BoldText";
@@ -29,8 +29,8 @@ const TitleText = styled(BoldText)`
   text-transform: uppercase;
 `;
 
-const Section = ({ title, noOfColumns, titleStyle, children, ...rest }) => (
-  <SectionContainer medium={noOfColumns} {...rest}>
+const Section = ({ title, titleStyle, children, ...rest }) => (
+  <SectionContainer {...rest}>
     <TitleContainer>
       <TitleText style={titleStyle}>{title}</TitleText>
     </TitleContainer>
@@ -39,14 +39,12 @@ const Section = ({ title, noOfColumns, titleStyle, children, ...rest }) => (
 );
 
 Section.defaultProps = {
-  noOfColumns: constants.MAX_COLUMNS,
   titleStyle: {},
   children: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  noOfColumns: PropTypes.number,
   titleStyle: PropTypes.objectOf(PropTypes.any),
   children: PropTypes.node
 };

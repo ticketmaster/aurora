@@ -213,19 +213,19 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 @media screen and (min-width:1024px) {
   .c3 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .c3 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
