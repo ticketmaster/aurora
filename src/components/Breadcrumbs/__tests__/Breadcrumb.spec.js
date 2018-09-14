@@ -13,4 +13,11 @@ describe("<Breadcrumb />", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render when empty list passed in", () => {
+    const component = renderer.create(<Breadcrumb>{[]}</Breadcrumb>);
+    const tree = component.toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
 });
