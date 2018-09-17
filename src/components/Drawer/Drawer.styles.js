@@ -46,6 +46,8 @@ export const HeaderContent = styled.div`
   align-items: center;
   height: 60px;
   padding-left: ${spacing.moderate};
+  position: relative;
+  z-index: 5;
 `;
 
 export const CloseButton = styled.button`
