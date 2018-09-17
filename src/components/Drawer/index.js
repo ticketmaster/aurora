@@ -30,6 +30,22 @@ export default class Drawer extends React.Component {
 
   static defaultProps = { children: null, header: null };
 
+  getHeaderContent = props => {
+    const { header } = this.props;
+
+    if (typeof header === "function") return header(props);
+
+    if (typeof header === "string") {
+      return (
+        <Text size="kilo" variant="light" primary weight="semiBold">
+          {header}
+        </Text>
+      );
+    }
+
+    return header;
+  };
+
   renderChildren = props => {
     const { children } = this.props;
     if (typeof children === "function") return children(props);
@@ -37,39 +53,30 @@ export default class Drawer extends React.Component {
     return children;
   };
 
-  renderHeader = ({ toggleDrawer, isOpen }) => {
-    const { header } = this.props;
-
-    if (typeof header === "function") return header({ toggleDrawer, isOpen });
-
-    return (
-      <Gradient
-        className="gradient--spotlight"
-        style={{ height: "60px", position: "relative" }}
-      >
-        <HeaderContent>
-          <div>
-            {typeof content === "string" ? (
-              <Text size="kilo" variant="light" primary weight="semiBold">
-                {header}
-              </Text>
-            ) : (
-              header
-            )}
-          </div>
-          <CloseButton type="button" onClick={toggleDrawer}>
-            <HamburgerIcon
-              className={classNames({
-                hamburger: true,
-                "hamburger--opened": isOpen,
-                "hamburger--closed": !isOpen
-              })}
-            />
-          </CloseButton>
-        </HeaderContent>
-      </Gradient>
-    );
-  };
+  renderHeader = ({ toggleDrawer, isOpen }) => (
+    <Gradient
+      className="gradient--spotlight"
+      style={{ height: "60px", position: "relative" }}
+    >
+      <HeaderContent>
+        <div>
+          {this.getHeaderContent({
+            toggleDrawer,
+            isOpen
+          })}
+        </div>
+        <CloseButton type="button" onClick={toggleDrawer}>
+          <HamburgerIcon
+            className={classNames({
+              hamburger: true,
+              "hamburger--opened": isOpen,
+              "hamburger--closed": !isOpen
+            })}
+          />
+        </CloseButton>
+      </HeaderContent>
+    </Gradient>
+  );
 
   render() {
     const { className, ...rest } = this.props;

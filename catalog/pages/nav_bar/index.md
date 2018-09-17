@@ -1,5 +1,9 @@
 ### Default
 
+```hint
+The drawer is implemented using a React Portal. This requires a div with ID "modal-root" outside of the react root.
+```
+
 ```react
 responsive: false
 span: 6
@@ -32,7 +36,7 @@ state: { invert: false }
                     <NavBar.SearchButton />
                     <NavBar.UserButton />
                     <DisplayFor small medium>
-                        <NavBar.DrawerMenu header="Content!">
+                        <NavBar.DrawerMenu header="Content!" style={{ zIndex: "9999"}}>
                             <Spacing top={{xSmall: "moderate"}}>Some Menu Content</Spacing>
                         </NavBar.DrawerMenu>
                     </DisplayFor>
