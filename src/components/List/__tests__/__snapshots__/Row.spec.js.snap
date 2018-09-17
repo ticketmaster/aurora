@@ -102,7 +102,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
@@ -461,7 +461,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    border-top: 0.5px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
   }
 
   .c20.container__overflow--expanded {
@@ -869,7 +869,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
@@ -1308,7 +1308,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c24 {
-    border-top: 0.5px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
   }
 
   .c24.container__overflow--expanded {
@@ -1755,7 +1755,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
@@ -2194,7 +2194,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c24 {
-    border-top: 0.5px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
   }
 
   .c24.container__overflow--expanded {
@@ -2598,7 +2598,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
@@ -2957,7 +2957,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    border-top: 0.5px solid #E0E0E0;
+    border-top: 1px solid #E0E0E0;
   }
 
   .c20.container__overflow--expanded {
