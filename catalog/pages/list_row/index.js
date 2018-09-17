@@ -1,5 +1,7 @@
 import { pageLoader } from "catalog";
-
+import Container from "../../../src/components/Grid/Container";
+import Row from "../../../src/components/Grid/Row";
+import Column from "../../../src/components/Grid/Column";
 import {
   ListContainer,
   ListRow,
@@ -28,7 +30,10 @@ export default {
     listItems,
     sections,
     onOverflowButtonClick,
-    MAX_COLUMNS
+    MAX_COLUMNS,
+    Container,
+    Row,
+    Column
   },
   content: pageLoader(() => import("./index.md"))
 };
