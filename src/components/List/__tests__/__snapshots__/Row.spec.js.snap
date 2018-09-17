@@ -1572,6 +1572,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         <span
           className="c22"
           href=""
+          onClick={null}
           rel="_self"
           size={
             Object {
@@ -2458,6 +2459,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         <a
           className="c22"
           href="/"
+          onClick={null}
           rel="_self"
           size={
             Object {

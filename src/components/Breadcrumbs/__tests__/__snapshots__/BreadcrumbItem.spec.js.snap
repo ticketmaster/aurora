@@ -50,6 +50,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
     className="c0"
     href="/"
     itemProp="item"
+    onClick={null}
     rel="_self"
     size={
       Object {
@@ -124,6 +125,7 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
     className="c0"
     href={null}
     itemProp="item"
+    onClick={null}
     rel="_self"
     size={
       Object {
