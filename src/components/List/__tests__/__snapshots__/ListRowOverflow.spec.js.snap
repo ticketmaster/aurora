@@ -377,6 +377,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       aria-label="Section Item"
       className="section-item c13 c14"
       href="/"
+      onClick={[Function]}
       rel="_self"
       role="link"
       size={
