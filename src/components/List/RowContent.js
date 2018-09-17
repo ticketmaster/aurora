@@ -61,7 +61,7 @@ const RowWrapper = styled.div`
   `};
 
   &:not(:last-of-type) {
-    border-bottom: 0.5px solid ${colors.lightGray};
+    border-bottom: 1px solid ${colors.lightGray};
   }
 `;
 
@@ -180,7 +180,7 @@ const OverflowDesktopContainer = styled(Column)`
   overflow: hidden;
 
   ${mediumAndUp`
-    border-top: 0.5px solid ${colors.lightGray};
+    border-top: 1px solid ${colors.lightGray};
 
     &.container__overflow--expanded {
       background-color: ${colors.white.base};
