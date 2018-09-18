@@ -5,11 +5,11 @@ import { GenericButton } from "./Badge.styles";
 
 const StyledIconButton = GenericButton.extend`
   font-size: ${typography.size.hecto};
-
   min-width: ${props => props.size}px;
   max-width: ${props => props.size}px;
   height: ${props => props.size}px;
   width: ${props => props.size}px;
+  border: none;
 
   &:focus {
     outline: none;

@@ -15,15 +15,15 @@ span: 6
 rows:
   - Prop: size
     Type: number
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon, FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon, AppleIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon, FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon, AppleIcon
     Notes: Optional
   - Prop: children
     Type: node
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, TicketIcon, UserIcon, VenueIcon, VipIcon, HeartIcon, FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon, AppleIcon, USIcon, CAIcon
     Notes: Optional
   - Prop: direction
     Type: string
@@ -33,6 +33,14 @@ rows:
     Type: number
     Component: HeartIcon
     Notes: Optional
+  - Prop: height
+    Type: number
+    Component: USIcon, CAIcon
+    Notes: Required
+  - Prop: width
+    Type: number
+    Component: USIcon, CAIcon
+    Notes: Required
 ```
 
 ```react
@@ -138,16 +146,18 @@ rows:
   </Column>
 
   <Column medium={3}>
-      <div style={iconStyle}><HeartIcon size={26} color="#262626"><title>Heart Icon</title></VipIcon></div>
+      <div style={iconStyle}><HeartIcon size={26} color="#262626"><title>Heart Icon</title></HeartIcon></div>
       <div style={iconLabelStyle}>Heart Icon</div>
   </Column>
-</Row>
 
-<Row>
   <Column medium={3}>
     <div style={iconStyle}><FacebookIcon size={26} color="#000"><title>Facebook Icon</title></FacebookIcon></div>
     <div style={iconLabelStyle}>Facebook Icon</div>
   </Column>
+
+</Row>
+
+<Row>
 
   <Column medium={3}>
     <div style={iconStyle}><InstagramIcon size={26} color="#000"><title>Instagram Icon</title></InstagramIcon></div>
@@ -163,17 +173,34 @@ rows:
     <div style={iconStyle}><YoutubeIcon size={26} color="#000"><title>Youtube Icon</title></YoutubeIcon></div>
     <div style={iconLabelStyle}>Youtube Icon</div>
   </Column>
-</Row>
 
-<Row>
   <Column medium={3}>
     <div style={iconStyle}><CAIcon height={13} width={22}><title>CA Icon</title></CAIcon></div>
     <div style={iconLabelStyle}>CA Icon</div>
   </Column>
 
+</Row>
+
+<Row>
+
   <Column medium={3}>
     <div style={iconStyle}><USIcon height={13} width={22}><title>US Icon</title></USIcon></div>
     <div style={iconLabelStyle}>US Icon</div>
+  </Column>
+
+   <Column medium={3}>
+    <div style={iconStyle}><AppleIcon size={26} color="#000"><title>Apple Icon</title></AppleIcon></div>
+    <div style={iconLabelStyle}>Apple Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><GooglePlayIcon size={26}><title>GooglePlay Icon</title></GooglePlayIcon></div>
+    <div style={iconLabelStyle}>GoolePlay Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><LinkedinIcon size={26}><title>Linkedin Icon</title></LinkedinIcon></div>
+    <div style={iconLabelStyle}>Linkedin Icon</div>
   </Column>
 
 </Row>

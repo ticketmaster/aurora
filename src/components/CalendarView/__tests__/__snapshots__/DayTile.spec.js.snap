@@ -155,6 +155,7 @@ exports[`DayTile should render without errors 1`] = `
   max-width: 30px;
   height: 30px;
   width: 30px;
+  border: none;
 }
 
 .c8:disabled {
