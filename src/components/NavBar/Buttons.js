@@ -2,89 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
+import Button from "./ButtonBase";
 import Menu from "../Icons/Menu";
 import Search from "../Icons/Search";
 import User from "../Icons/User";
-import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
-import typography from "../../theme/typography";
 import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";
-import getRelByTarget from "../../utils/link";
-
-const BaseButton = styled.button`
-  display: flex;
-  align-items: center;
-  flex: 0 1 auto;
-  background-color: transparent;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  appearance: none;
-  padding-right: ${({ isLast }) =>
-    isLast ? spacing.gutters.small : spacing.gutters.small / 2}px;
-  padding-left: ${({ isFirst }) =>
-    isFirst ? spacing.gutters.small : spacing.gutters.small / 2}px;
-  color: ${colors.white.base};
-  font-size: ${typography.size.kilo};
-  font-weight: ${typography.weight.semiBold};
-  .nav--inverted & {
-    color: ${colors.onyx.base};
-    font-weight: ${typography.weight.regular};
-  }
-
-  ${smallAndUp`
-    padding-right: ${({ isLast }) =>
-      isLast
-        ? spacing.gutters.mediumAndUp
-        : parseInt(spacing.normal, 10) / 2}px;
-    padding-left: ${({ isFirst }) =>
-      isFirst
-        ? spacing.gutters.mediumAndUp
-        : parseInt(spacing.normal, 10) / 2}px;
-  `};
-`;
-
-const Anchor = BaseButton.withComponent("a");
-
-const Button = ({ children, href, target, rel, ...props }) => {
-  if (href) {
-    return (
-      <Anchor
-        {...props}
-        href={href}
-        target={target}
-        rel={getRelByTarget(target, rel)}
-      >
-        {children}
-      </Anchor>
-    );
-  }
-
-  return (
-    <BaseButton type="button" {...props}>
-      {children}
-    </BaseButton>
-  );
-};
-
-Button.propTypes = {
-  children: PropTypes.node,
-  href: PropTypes.string,
-  target: PropTypes.string,
-  rel: PropTypes.string,
-  isFirst: PropTypes.bool,
-  isLast: PropTypes.bool
-};
-
-Button.defaultProps = {
-  children: null,
-  href: null,
-  isFirst: false,
-  isLast: false,
-  target: "_self",
-  rel: null
-};
 
 const LogoBtn = styled(Button)`
   padding-left: ${spacing.gutters.small / 2}px;

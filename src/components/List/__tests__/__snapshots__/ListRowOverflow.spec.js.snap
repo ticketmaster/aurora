@@ -213,23 +213,23 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 @media screen and (min-width:1024px) {
   .c3 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .c3 {
-    max-width: 100%;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
+    max-width: 25%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
   }
 }
 
-@media only screen and (min-width:480px) {
+@media screen and (min-width:768px) {
   .c6 {
     font-size: 12px;
   }
@@ -377,6 +377,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       aria-label="Section Item"
       className="section-item c13 c14"
       href="/"
+      onClick={[Function]}
       rel="_self"
       role="link"
       size={

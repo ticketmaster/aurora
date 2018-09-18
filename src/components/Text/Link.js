@@ -64,7 +64,6 @@ const Link = ({
   const { target, rel } = props;
   const Elm = getElement({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
-
   return (
     <Elm
       {...props}
@@ -83,6 +82,7 @@ const Link = ({
       href={href}
       rel={validatedRel}
       weight={weight}
+      onClick={onClick}
     >
       {children}
     </Elm>

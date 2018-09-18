@@ -107,7 +107,7 @@ responsive: true
   <ListRow rowItem={listItems[0]} index={0} onOverflowClick={()=>{}}>
     <ListRowOverflow>
     {sections.map(section =>
-        <Section title={section.title} noOfColumns={MAX_COLUMNS / sections.length} key={section.key}>
+        <Section title={section.title} medium={MAX_COLUMNS / sections.length} key={section.key}>
           {section.items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
         </Section>
@@ -117,11 +117,11 @@ responsive: true
 
   <ListRow rowItem={listItems[1]} index={1} onOverflowClick={()=>{}}>
     <ListRowOverflow>
-      <Section title={sections[0].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[0].key}>
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
           {sections[0].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
-       <Section title={sections[1].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[1].key}>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
           {sections[1].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
@@ -131,15 +131,15 @@ responsive: true
 
   <ListRow rowItem={listItems[2]} index={2} onOverflowClick={()=>{}}>
     <ListRowOverflow>
-     <Section title={sections[0].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[0].key}>
+     <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
           {sections[0].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
-       <Section title={sections[1].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[1].key}>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
           {sections[1].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
-      <Section title={sections[2].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[2].key}>
+      <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
           {sections[2].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
@@ -148,15 +148,15 @@ responsive: true
 
   <ListRow rowItem={listItems[3]} index={3} onOverflowClick={()=>{}}>
     <ListRowOverflow>
-     <Section title={sections[0].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[0].key}>
+     <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
           {sections[0].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
-       <Section title={sections[1].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[1].key}>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
           {sections[1].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
-      <Section title={sections[2].title} noOfColumns={MAX_COLUMNS / sections.length} key={sections[2].key}>
+      <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
           {sections[2].items.map(item =>
           <SectionItem item={item} key={item.title}/>)}
       </Section>
@@ -176,7 +176,7 @@ responsive: true
  <ListRow rowItem={listItems[0]} index={0} onOverflowClick={()=>{}}>
  <ListRowOverflow>
  {sections.map(section =>
-    <Section title={section.title} noOfColumns={MAX_COLUMNS / sections.length} key={section.key}>
+    <Section title={section.title} large={MAX_COLUMNS / sections.length} key={section.key}>
       {section.items.map(item =>
       <SectionItem item={item} key={item.title}/>)}
     </Section>

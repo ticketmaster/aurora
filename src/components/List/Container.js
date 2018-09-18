@@ -9,13 +9,10 @@ import Portal from "../Portal";
 import Backdrop from "../Backdrop";
 import BottomSheet from "../BottomSheet";
 import Modal from "../Modal";
-import spacing from "../../theme/spacing";
 import { updateOpenIndex } from "./helper";
 
 const Container = styled.div`
   width: 100%;
-  padding-left: ${spacing.cozy};
-  padding-right: ${spacing.cozy};
 `;
 
 class ListContainer extends Component {

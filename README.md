@@ -56,7 +56,7 @@ In order to run the [catalog](https://code.ticketmaster.com/aurora/) locally, co
 
 ## How to use
 
-A documentation of each component and living styleguide is available at https://code.ticketmaster.com/aurora/
+A documentation of each component and living styleguide will be available on the brand site for Ticketmaster.com
 
 ## Other docs
 

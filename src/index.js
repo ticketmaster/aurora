@@ -1,8 +1,9 @@
-export { Button, Badge, RatingBadge } from "./components/Button";
+export { Button, Badge, RatingBadge, IconButton } from "./components/Button";
 export { DayTile } from "./components/CalendarView";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
+export { default as DrawerProvider } from "./components/Drawer/Provider";
 export { default as Gradient } from "./components/Gradient";
 export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
@@ -46,7 +47,10 @@ export {
   VenueIcon,
   VipIcon,
   YoutubeIcon,
-  HeartIcon
+  LinkedinIcon,
+  HeartIcon,
+  AppleIcon,
+  GooglePlayIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider

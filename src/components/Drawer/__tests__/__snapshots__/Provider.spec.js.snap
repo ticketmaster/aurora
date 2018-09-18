@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DrawerProvider renders child elements 1`] = `"<div class=\\"sc-ifAKCX eaZCGx\\"><div>Content</div></div>"`;
+
+exports[`DrawerProvider sets content 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX eaZCGx"
+  >
+    <div>
+      <button
+        data-testid="button"
+      >
+        ClickMe!
+      </button>
+      Content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DrawerProvider toggles drawer 1`] = `
+<div>
+  <div
+    class="drawer--open sc-ifAKCX eaZCGx"
+  >
+    <div>
+      <button
+        data-testid="button"
+      >
+        ClickMe!
+      </button>
+      Content
+    </div>
+  </div>
+</div>
+`;

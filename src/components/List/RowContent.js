@@ -8,14 +8,35 @@ import colors from "../../theme/colors";
 
 import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
-import { PrimaryText, SecondaryText, BoldText, Link } from "../Text";
+import { Link, Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import ChevronIcon from "../Icons/Chevron";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
-import IconButton from "../Button/IconButton";
+const IconButton = styled.button`
+  border: 0;
+  padding: 0 ${spacing.moderate};
+  outline: 0;
+  background: transparent;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.icon-button--last {
+    padding-left: ${spacing.moderate};
+    padding-right: 0;
+  }
+
+  > * {
+    pointer-events: none;
+  }
+`;
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -40,15 +61,14 @@ const RowWrapper = styled.div`
   `};
 
   &:not(:last-of-type) {
-    border-bottom: 0.5px solid ${colors.lightGray};
+    border-bottom: 1px solid ${colors.lightGray};
   }
 `;
 
 const ListContainer = styled.div`
   background-color: ${colors.white.base};
-  align-items: center;
+  align-items: stretch;
   display: flex;
-  padding-right: ${spacing.cozy};
 `;
 
 const IconWrapper = styled(IconButton).attrs({
@@ -94,9 +114,19 @@ const LinkWrapper = styled.a`
 `;
 
 const DateWrapper = styled.div`
-  min-width: 101px;
-  max-width: 116px;
-  padding-left: ${spacing.cozy};
+  width: 61.6%;
+  max-width: 101px;
+
+  ${smallAndUp`
+    width: 31.1%;
+  `} ${mediumAndUp`
+    width: 26.8%;
+    max-width: 116px;
+  `};
+
+  ${largeAndUp`
+    width: 32.7%;
+  `};
 `;
 
 const ContentColumn = styled(Column)`
@@ -150,7 +180,7 @@ const OverflowDesktopContainer = styled(Column)`
   overflow: hidden;
 
   ${mediumAndUp`
-    border-top: 0.5px solid ${colors.lightGray};
+    border-top: 1px solid ${colors.lightGray};
 
     &.container__overflow--expanded {
       background-color: ${colors.white.base};
@@ -183,12 +213,14 @@ const DesktopContainer = styled.div`
 `;
 
 const MobileContainer = styled.div`
+  display: flex;
+  align-items: stretch;
   ${mediumAndUp`
     display: none;
   `};
 `;
 
-const MultilinePrimaryText = styled(PrimaryText)`
+const MultilineText = styled(Text)`
   /* stylelint-disable */
   display: -webkit-box;
   overflow: hidden;
@@ -214,7 +246,7 @@ const MultilinePrimaryText = styled(PrimaryText)`
   `};
 `;
 
-const SingleLineSecondaryText = styled(SecondaryText)`
+const SingleLineText = styled(Text)`
   /* stylelint-disable */
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -257,6 +289,7 @@ const ListRowContent = ({
     <ListContainer>
       <IconWrapper
         role="button"
+        type="button"
         aria-label={isOpen ? "Collapse Row" : "Expand Row"}
         aria-expanded={isOpen}
         data-index={index}
@@ -276,26 +309,43 @@ const ListRowContent = ({
         rowVariant={variant}
       >
         <DateWrapper>
-          <BoldText
+          <Text
             className="date--text"
-            style={{ textTransform: "uppercase" }}
-            color={dateColor}
+            allCaps
+            responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+            weight="semiBold"
+            {...(dateColor
+              ? { accent: "heliotrope", variant: "accent", primary: true }
+              : {})}
           >
             {dateTitle}
-          </BoldText>
-          <SingleLineSecondaryText className="day-time--text">
+          </Text>
+          <SingleLineText
+            size="hecto"
+            variant="dark"
+            secondary
+            className="day-time--text"
+          >
             {dateSubTitle}
-          </SingleLineSecondaryText>
+          </SingleLineText>
         </DateWrapper>
 
         <Row style={{ width: "100%" }}>
           <MobileOnlyColumn>
-            <MultilinePrimaryText className="list-row--title">
+            <MultilineText
+              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+              className="list-row--title"
+            >
               {title}
-            </MultilinePrimaryText>
-            <SingleLineSecondaryText className="list-row--subtitle">
+            </MultilineText>
+            <SingleLineText
+              size="hecto"
+              variant="dark"
+              secondary
+              className="list-row--subtitle"
+            >
               {subTitle}
-            </SingleLineSecondaryText>
+            </SingleLineText>
           </MobileOnlyColumn>
 
           <ContentColumn
@@ -308,11 +358,14 @@ const ListRowContent = ({
               "column__content--collapsed": !isOpen
             })}
           >
-            <MultilinePrimaryText>{title}</MultilinePrimaryText>
+            <MultilineText responsiveSize={{ xSmall: "hecto", medium: "kilo" }}>
+              {title}
+            </MultilineText>
           </ContentColumn>
           <ContentColumn key="secondary" medium={6}>
-            <MultilinePrimaryText
+            <MultilineText
               key="collapsed"
+              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
               className={classnames({
                 subtitle: true,
                 "list-row--subtitle": true,
@@ -321,9 +374,10 @@ const ListRowContent = ({
               })}
             >
               {subTitle}
-            </MultilinePrimaryText>
-            <MultilinePrimaryText
+            </MultilineText>
+            <MultilineText
               key="expanded"
+              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
               className={classnames({
                 subtitle: true,
                 "subtitle--expanded": true,
@@ -332,7 +386,7 @@ const ListRowContent = ({
               })}
             >
               {isOpen && onExpandShow === "title" ? title : subTitle}
-            </MultilinePrimaryText>
+            </MultilineText>
           </ContentColumn>
         </Row>
 
@@ -353,10 +407,10 @@ const ListRowContent = ({
 
       <MobileContainer>
         <IconButton
-          className="button--more-info"
-          size={35}
+          className="button--more-info icon-button--last"
           data-index={index}
           aria-label="More Info"
+          type="button"
           role="button"
           onClick={onOverflowClick}
         >
@@ -370,7 +424,9 @@ const ListRowContent = ({
           <Link href={linkUrl}>{linkTitle}</Link>
         </Column>
         <Column small={3} medium={2} large={1.5} xLarge={1.2}>
-          <SecondaryText>{linkSubTitle}</SecondaryText>
+          <SingleLineText size="hecto" variant="dark" secondary>
+            {linkSubTitle}
+          </SingleLineText>
         </Column>
       </LinkRow>
     ) : null}
