@@ -1,4 +1,4 @@
-export { Button, Badge, RatingBadge } from "./components/Button";
+export { Button, Badge, RatingBadge, IconButton } from "./components/Button";
 export { DayTile } from "./components/CalendarView";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
@@ -47,7 +47,10 @@ export {
   VenueIcon,
   VipIcon,
   YoutubeIcon,
-  HeartIcon
+  LinkedinIcon,
+  HeartIcon,
+  AppleIcon,
+  GooglePlayIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider

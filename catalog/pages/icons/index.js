@@ -17,12 +17,15 @@ import {
   StarIcon,
   TicketIcon,
   TwitterIcon,
+  LinkedinIcon,
   USIcon,
   UserIcon,
   VenueIcon,
   VipIcon,
   YoutubeIcon,
-  HeartIcon
+  HeartIcon,
+  AppleIcon,
+  GooglePlayIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -60,17 +63,18 @@ export default {
     StarIcon,
     TicketIcon,
     TwitterIcon,
+    LinkedinIcon,
     USIcon,
     UserIcon,
     VenueIcon,
     VipIcon,
     YoutubeIcon,
     HeartIcon,
-
+    AppleIcon,
+    GooglePlayIcon,
     Column,
     Container,
     Row,
-
     iconStyle,
     iconLabelStyle
   },
