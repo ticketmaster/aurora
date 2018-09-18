@@ -8,7 +8,7 @@ import { SPACEBAR } from "../../../utils/keyCharCodes";
 import composeEventHandlers from "../../../utils/composeEventHandlers";
 import DropDownInput from "./DropDownInput";
 
-const DropDownOption = ({ value, index, children, ...props }) => (
+const DropDownOption = ({ value, index, children, className, ...props }) => (
   <KeyBoardConsumer>
     {({ focused, focusSelected }) => (
       <SelectionConsumer>
@@ -19,6 +19,7 @@ const DropDownOption = ({ value, index, children, ...props }) => (
               {({ isOpen, onClose }) => (
                 <DropDownInput
                   {...props}
+                  className={className}
                   isOpen={isOpen}
                   value={value}
                   index={index}
@@ -53,11 +54,13 @@ DropDownOption.propTypes = {
   value: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   onClick: PropTypes.func
 };
 
 DropDownOption.defaultProps = {
-  onClick: null
+  onClick: null,
+  className: ""
 };
 
 export default DropDownOption;

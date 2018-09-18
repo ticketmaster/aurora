@@ -381,6 +381,10 @@ rows:
     Type: string
     Default: N/A
     Notes: Required
+  - Prop: className
+    Type: string
+    Default: ""
+    Notes: Passed to StyledDropDownItem
 ```
 
 ```react

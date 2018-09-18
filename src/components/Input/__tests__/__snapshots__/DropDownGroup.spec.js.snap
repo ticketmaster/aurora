@@ -567,3 +567,55 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
   </div>
 </div>
 `;
+
+exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus,
+.dropdown__items .c0.dropdown__selected {
+  border-radius: 2px;
+  color: white;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus {
+  background-color: rgba(2,108,223,1);
+}
+
+.dropdown__items .c0:focus {
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  background-color: rgba(38,38,38,0.4);
+}
+
+<span
+  className="dropdown__item--expandable c0"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  selected={Array []}
+  tabIndex="-1"
+  value="ValueOne"
+>
+  Option One
+</span>
+`;

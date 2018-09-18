@@ -43,7 +43,12 @@ class DropDownInput extends React.Component {
     index: PropTypes.number.isRequired,
     children: PropTypes.node.isRequired,
     isFocused: PropTypes.bool.isRequired,
-    isSelected: PropTypes.bool.isRequired
+    isSelected: PropTypes.bool.isRequired,
+    className: PropTypes.string
+  };
+
+  static defaultProps = {
+    className: ""
   };
 
   componentDidUpdate() {
@@ -54,7 +59,14 @@ class DropDownInput extends React.Component {
   SelectedElement = React.createRef();
 
   render() {
-    const { value, index, children, isSelected, ...props } = this.props;
+    const {
+      value,
+      index,
+      children,
+      isSelected,
+      className,
+      ...props
+    } = this.props;
     return (
       <StyledDropDownItem
         tabIndex="-1"
@@ -63,7 +75,8 @@ class DropDownInput extends React.Component {
         innerRef={this.SelectedElement}
         {...props}
         className={classNames({
-          dropdown__selected: isSelected
+          dropdown__selected: isSelected,
+          [className]: !!className
         })}
       >
         {children}
