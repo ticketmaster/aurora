@@ -1,4 +1,5 @@
 import React from "react";
+import renderer from "react-test-renderer";
 import {
   renderIntoDocument,
   cleanup,
@@ -237,4 +238,20 @@ describe("DropDownGroup", () => {
       </div>
     );
   }
+});
+
+describe("DropDownOption", () => {
+  it("should render the correct markup when a className prop is passed", () => {
+    const component = renderer.create(
+      <DropDownOption
+        className="dropdown__item--expandable"
+        value="ValueOne"
+        index={0}
+      >
+        Option One
+      </DropDownOption>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });
