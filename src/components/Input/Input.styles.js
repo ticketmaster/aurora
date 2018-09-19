@@ -21,18 +21,15 @@ export const FieldInputWrapper = styled.div`
 
 export const FieldInputText = styled.label`
   font-size: ${typography.size.uno};
-  height: 13px;
   line-height: 1.25;
   text-align: left;
   color: ${getThemeValue("gray01")};
   position: relative;
   .text--input-small & {
     font-size: ${typography.size.mini};
-    line-height: 1.3;
   }
   .text--input-large & {
     font-size: ${typography.size.hecto};
-    line-height: 1.29;
   }
   .text--input-disabled & {
     opacity: 0.4;
@@ -65,9 +62,9 @@ export const FieldInputBox = styled.input.attrs({
   width: 100%;
   border-radius: ${constants.borderRadius.small};
   background-color: ${getThemeValue("white", "base")};
-  border: solid 1px ${getThemeValue("gray02")};
+  border: 1px solid ${getThemeValue("gray02")};
   padding-left: 10px;
-  line-height: 2.57;
+  line-height: normal;
   font-size: ${typography.size.hecto};
   color: ${getThemeValue("gray01")};
   &.text--input-left {
@@ -89,10 +86,10 @@ export const FieldInputBox = styled.input.attrs({
     opacity: 0.4;
   }
   &:focus {
-    border: 1px ${getThemeValue("primary", "base")} solid;
+    border: 1px solid ${getThemeValue("primary", "base")};
     padding-left: 10px;
     border-radius: ${constants.borderRadius.small};
-    box-shadow: inset 0 0 4px 0 ${getThemeValue("primary", "base")};
+    box-shadow: 0 0 4px 0 inset ${getThemeValue("primary", "base")};
     background-color: ${getThemeValue("white", "base")};
     outline: none;
     .text--input-small & {
@@ -103,7 +100,17 @@ export const FieldInputBox = styled.input.attrs({
     }
   }
   &:hover {
-    border: 2px ${getThemeValue("primary", "base")} solid;
+    border: 2px solid ${getThemeValue("primary", "base")};
+    .text__error & {
+      border: 1px solid ${getThemeValue("error", "base")};
+      padding-left: 10px;
+    }
+    .text__error.text--input-small & {
+      padding-left: 8px;
+    }
+    .text__error.text--input-large & {
+      padding-left: 12px;
+    }
     padding-left: 9px;
     .text--input-small & {
       padding-left: 7px;
@@ -123,14 +130,13 @@ export const FieldInputBox = styled.input.attrs({
     padding-left: 12px;
   }
   .text__error & {
-    border-color: ${getThemeValue("error", "base")};
+    border: 1px solid ${getThemeValue("error", "base")};
   }
 `;
 
 export const FieldErrorText = styled.label`
   opacity: 0;
   font-size: ${typography.size.uno};
-  height: 13px;
   line-height: 1.25;
   text-align: left;
   color: ${getThemeValue("error", "base")};
