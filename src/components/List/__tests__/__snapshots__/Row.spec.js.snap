@@ -211,7 +211,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -978,7 +977,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -1865,7 +1863,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -2709,7 +2706,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
