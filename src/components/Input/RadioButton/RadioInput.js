@@ -136,7 +136,6 @@ class RadioInputComponent extends React.Component {
         checked={checked}
         aria-labelledby={`${name + value}label`}
         aria-checked={checked}
-        role="radio"
         {...props}
         innerRef={this.SelectedElement}
       />
