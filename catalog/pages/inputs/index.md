@@ -102,7 +102,7 @@ span: 6
 <Container>
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
-          <RadioGroup>
+          <RadioGroup aria-label="test large radio">
                 <RadioButton size="large" name="Option1" value="FirstButton" index={0}>
                     Testing One
                 </RadioButton>
@@ -115,7 +115,7 @@ span: 6
           </RadioGroup>
         </Column>
         <Column medium={6} style={{ padding: "16px 0" }}>
-          <RadioGroup>
+          <RadioGroup aria-label="test small radio">
                 <RadioButton size="small" name="OptionSmall1" value="1" index={0}>
                     Testing One
                 </RadioButton>
