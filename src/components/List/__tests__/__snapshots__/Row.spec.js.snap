@@ -902,9 +902,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -982,6 +982,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .c24 {
@@ -1235,7 +1236,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -1300,7 +1301,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    padding-left: 12px;
+    padding-left: calc(16px + 16px + 15px);
   }
 }
 
@@ -1788,9 +1789,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -1868,6 +1869,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .c24 {
@@ -2121,7 +2123,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -2186,7 +2188,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    padding-left: 12px;
+    padding-left: calc(16px + 16px + 15px);
   }
 }
 
