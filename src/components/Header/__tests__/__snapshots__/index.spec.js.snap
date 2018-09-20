@@ -82,6 +82,7 @@ exports[`Header renders with custom level 1`] = `
   -ms-flex-align: flex-end;
   align-items: flex-end;
   min-height: 122px;
+  z-index: 1;
 }
 
 .c3 {
@@ -92,6 +93,7 @@ exports[`Header renders with custom level 1`] = `
   padding-right: 16px;
   box-sizing: border-box;
   padding-top: 60px;
+  z-index: 2;
 }
 
 .c7 {
@@ -331,6 +333,7 @@ exports[`Header renders with default 1`] = `
   -ms-flex-align: flex-end;
   align-items: flex-end;
   min-height: 122px;
+  z-index: 1;
 }
 
 .c3 {
@@ -341,6 +344,7 @@ exports[`Header renders with default 1`] = `
   padding-right: 16px;
   box-sizing: border-box;
   padding-top: 60px;
+  z-index: 2;
 }
 
 .c7 {
@@ -579,6 +583,7 @@ exports[`Header renders withOverlay 1`] = `
   -ms-flex-align: flex-end;
   align-items: flex-end;
   min-height: 122px;
+  z-index: 1;
 }
 
 .c3 {
@@ -589,6 +594,7 @@ exports[`Header renders withOverlay 1`] = `
   padding-right: 16px;
   box-sizing: border-box;
   padding-top: 60px;
+  z-index: 2;
 }
 
 .c7 {
