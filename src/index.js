@@ -48,7 +48,6 @@ export {
   AppleIcon,
   GooglePlayIcon,
   HeartIcon,
-  InfoDotIcon,
   ErrorIcon,
   SuccessIcon,
   InfoIcon,

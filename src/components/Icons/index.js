@@ -20,7 +20,6 @@ export { default as LinkedinIcon } from "./Linkedin";
 export { default as HeartIcon } from "./Heart";
 export { default as AppleIcon } from "./Apple";
 export { default as GooglePlayIcon } from "./GooglePlay";
-export { default as InfoDotIcon } from "./InfoDot";
 export { default as ErrorIcon } from "./Error";
 export { default as AlertIcon } from "./Alert";
 export { default as SuccessIcon } from "./Success";
