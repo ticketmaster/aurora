@@ -28,15 +28,15 @@ export default class DrawerProvider extends React.Component {
     );
   }
 
-  componentDidUpdate() {
-    const { isOpen } = this.state;
-    /* istanbul ignore next */
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.isOpen === false) return;
+    if (this.state.isOpen === true) return;
     if (
-      !isOpen &&
       typeof window !== "undefined" &&
       typeof window.scrollTo === "function"
     ) {
       window.scrollTo(0, this.scrollPosition);
+      this.scrollPosition = 0;
     }
   }
 
