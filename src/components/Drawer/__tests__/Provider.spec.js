@@ -84,4 +84,71 @@ describe("DrawerProvider", () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it("calls window scroll when closed", () => {
+    window.scrollTo = jest.fn();
+    const { getByTestId } = render(
+      <DrawerProvider>
+        <div>
+          <Consumer>
+            {({ setContent, toggleDrawer }) => (
+              <button
+                data-testid="button"
+                onClick={() => {
+                  setContent(
+                    <div data-testid="drawer-content">Drawer Content</div>
+                  );
+                  toggleDrawer();
+                }}
+              >
+                ClickMe!
+              </button>
+            )}
+          </Consumer>
+          Content
+        </div>
+      </DrawerProvider>
+    );
+
+    Simulate.click(getByTestId("button"));
+    Simulate.click(getByTestId("button"));
+
+    expect(window.scrollTo).toHaveBeenCalled();
+  });
+
+  it("calls does not  call window scroll with children change", () => {
+    window.scrollTo = jest.fn();
+    const { getByTestId } = render(<MockComponent />);
+
+    Simulate.click(getByTestId("button"));
+    Simulate.click(getByTestId("button"));
+
+    expect(window.scrollTo).not.toHaveBeenCalled();
+  });
 });
+
+class MockComponent extends React.Component {
+  state = { count: 0 };
+
+  render() {
+    return (
+      <DrawerProvider>
+        <div>
+          <Consumer>
+            {() => (
+              <button
+                data-testid="button"
+                onClick={() =>
+                  this.setState(({ count }) => ({ count: count + 1 }))
+                }
+              >
+                ClickMe!
+              </button>
+            )}
+          </Consumer>
+          Content {this.state.count}
+        </div>
+      </DrawerProvider>
+    );
+  }
+}
