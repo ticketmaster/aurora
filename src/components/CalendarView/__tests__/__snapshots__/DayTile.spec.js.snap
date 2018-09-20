@@ -86,7 +86,6 @@ exports[`DayTile should render without errors 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -134,7 +133,6 @@ exports[`DayTile should render without errors 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
