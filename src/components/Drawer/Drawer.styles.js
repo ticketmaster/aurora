@@ -16,7 +16,7 @@ export const DrawerContainer = styled.div`
   visibility: hidden;
   transform: translateY(-100%);
   opacity: 0;
-  transition: opacity 0.3ms ${constants.easing.easeInOutQuad};
+  transition: opacity 300ms ${constants.easing.easeInOutQuad};
   overflow: hidden;
   z-index: -1;
 

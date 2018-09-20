@@ -116,7 +116,7 @@ describe("DrawerProvider", () => {
     expect(window.scrollTo).toHaveBeenCalled();
   });
 
-  it("calls does not  call window scroll with children change", () => {
+  it("does not call window scroll with children change", () => {
     window.scrollTo = jest.fn();
     const { getByTestId } = render(<MockComponent />);
 
