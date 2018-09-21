@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import styled from "styled-components";
 
 import constants from "../../theme/constants";
@@ -17,8 +18,8 @@ const Container = styled.div.attrs({
   width: 205px;
   overflow: hidden;
   background-color: ${colors.white.base};
-  padding: ${spacing.cozy};
   border-radius: ${constants.borderRadius.small};
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 
   .list-container--open & {
     display: block;
@@ -27,6 +28,19 @@ const Container = styled.div.attrs({
   &.links__list--open {
     display: block;
   }
+`;
+
+const Wrapper = styled.div`
+  padding: ${spacing.cozy};
+  &.wrapper--has-after {
+    padding: ${spacing.cozy} ${spacing.cozy} 0 ${spacing.cozy};
+  }
+`;
+
+const AfterWrapper = styled.div`
+  padding: 0 ${spacing.cozy};
+  border-top: 1px solid ${colors.diatomite};
+  color: ${colors.blackPearl};
 `;
 
 class LinkList extends Component {
@@ -47,11 +61,18 @@ class LinkList extends Component {
   };
 
   render() {
-    const { children, ...rest } = this.props;
+    const { children, renderAfter, ...rest } = this.props;
 
     return (
       <LinkListProvider value={this.state}>
-        <Container {...rest}>{children}</Container>
+        <Container {...rest}>
+          <Wrapper
+            className={classNames({ "wrapper--has-after": !!renderAfter })}
+          >
+            {children}
+          </Wrapper>
+          {renderAfter && <AfterWrapper>{renderAfter}</AfterWrapper>}
+        </Container>
       </LinkListProvider>
     );
   }
@@ -59,13 +80,15 @@ class LinkList extends Component {
 
 LinkList.defaultProps = {
   selectedIndex: -1,
-  onItemClick: () => {}
+  onItemClick: () => {},
+  renderAfter: null
 };
 
 LinkList.propTypes = {
   children: PropTypes.node.isRequired,
   onItemClick: PropTypes.func,
-  selectedIndex: PropTypes.number
+  selectedIndex: PropTypes.number,
+  renderAfter: PropTypes.oneOfType([PropTypes.element, PropTypes.node])
 };
 
 export default LinkList;

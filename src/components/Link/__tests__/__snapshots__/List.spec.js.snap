@@ -2,47 +2,55 @@
 
 exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
 <div
-  class="sc-bdVaJa links links__list eAapZr"
+  class="sc-bdVaJa links links__list bhMvGM"
 >
   <div
-    class="links__list__item--selected sc-bwzfXH links__list__item dpfFYJ"
+    class="sc-bwzfXH bQTlgY"
   >
-    USA (English)
-  </div>
-  <div
-    class="sc-bwzfXH links__list__item dpfFYJ"
-  >
-    Canada (English)
-  </div>
-  <div
-    class="sc-bwzfXH links__list__item dpfFYJ"
-  >
-    Canada (Français)
+    <div
+      class="links__list__item--selected sc-bxivhb links__list__item gLeqeE"
+    >
+      USA (English)
+    </div>
+    <div
+      class="sc-bxivhb links__list__item gLeqeE"
+    >
+      Canada (English)
+    </div>
+    <div
+      class="sc-bxivhb links__list__item gLeqeE"
+    >
+      Canada (Français)
+    </div>
   </div>
 </div>
 `;
 
 exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = `
 <div
-  class="sc-bdVaJa links links__list eAapZr"
+  class="sc-bdVaJa links links__list bhMvGM"
 >
-  <a
-    class="sc-bxivhb links__list__item drJGEa"
-    href="/"
+  <div
+    class="sc-bwzfXH bQTlgY"
   >
-    USA (English)
-  </a>
-  <a
-    class="sc-bxivhb links__list__item drJGEa"
-    href="/"
-  >
-    Canada (English)
-  </a>
-  <a
-    class="sc-bxivhb links__list__item drJGEa"
-    href="/"
-  >
-    Canada (Français)
-  </a>
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      USA (English)
+    </a>
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      Canada (English)
+    </a>
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      Canada (Français)
+    </a>
+  </div>
 </div>
 `;
