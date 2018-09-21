@@ -27,7 +27,7 @@ const RadioInput = styled.input.attrs({
   }
   &:before {
     content: "";
-    transition: all 0.3s ${constants.easing.easeInOutQuad};
+    transition: box-shadow 0.3s ${constants.easing.easeInOutQuad};
     position: absolute;
     background-color: transparent;
     top: 50%;
