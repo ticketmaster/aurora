@@ -8,7 +8,7 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
   <a
     aria-expanded="false"
     aria-haspopup="true"
-    class="sc-htpNat link eCxJEw"
+    class="link link--has-other sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -17,21 +17,25 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list dbXoQO"
+    class="sc-bwzfXH links links__list iQcfWo"
   >
-    <span
-      class="list-container list-container--closed"
-      role="none"
+    <div
+      class="sc-htpNat emXdXc"
     >
-      <a
-        class="sc-htpNat link eCxJEw"
-        href="/page/"
-        role="link"
-        target="_self"
+      <span
+        class="list-container list-container--closed"
+        role="none"
       >
-        Sub Content
-      </a>
-    </span>
+        <a
+          class="link sc-ifAKCX edbLbi"
+          href="/page/"
+          role="link"
+          target="_self"
+        >
+          Sub Content
+        </a>
+      </span>
+    </div>
   </div>
 </span>
 `;
@@ -44,7 +48,7 @@ exports[`<Link> closes <LinkList> on touch start 1`] = `
   <a
     aria-expanded="false"
     aria-haspopup="true"
-    class="sc-htpNat link eCxJEw"
+    class="link link--has-other sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -53,21 +57,25 @@ exports[`<Link> closes <LinkList> on touch start 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list dbXoQO"
+    class="sc-bwzfXH links links__list iQcfWo"
   >
-    <span
-      class="list-container list-container--closed"
-      role="none"
+    <div
+      class="sc-htpNat emXdXc"
     >
-      <a
-        class="sc-htpNat link eCxJEw"
-        href="/page/"
-        role="link"
-        target="_self"
+      <span
+        class="list-container list-container--closed"
+        role="none"
       >
-        Sub Content
-      </a>
-    </span>
+        <a
+          class="link sc-ifAKCX edbLbi"
+          href="/page/"
+          role="link"
+          target="_self"
+        >
+          Sub Content
+        </a>
+      </span>
+    </div>
   </div>
 </span>
 `;
@@ -78,7 +86,7 @@ exports[`<Link> does not close when link has no content 1`] = `
   role="none"
 >
   <a
-    class="sc-htpNat link eCxJEw"
+    class="link sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -94,7 +102,7 @@ exports[`<Link> does not open when link has no content 1`] = `
   role="none"
 >
   <a
-    class="sc-htpNat link eCxJEw"
+    class="link sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -112,7 +120,7 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
   <a
     aria-expanded="true"
     aria-haspopup="true"
-    class="sc-htpNat link eCxJEw"
+    class="link link--has-other link--open sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -121,21 +129,25 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list dbXoQO"
+    class="sc-bwzfXH links links__list iQcfWo"
   >
-    <span
-      class="list-container list-container--closed"
-      role="none"
+    <div
+      class="sc-htpNat emXdXc"
     >
-      <a
-        class="sc-htpNat link eCxJEw"
-        href="/page/"
-        role="link"
-        target="_self"
+      <span
+        class="list-container list-container--closed"
+        role="none"
       >
-        Sub Content
-      </a>
-    </span>
+        <a
+          class="link sc-ifAKCX edbLbi"
+          href="/page/"
+          role="link"
+          target="_self"
+        >
+          Sub Content
+        </a>
+      </span>
+    </div>
   </div>
 </span>
 `;
@@ -148,7 +160,7 @@ exports[`<Link> opens <LinkList> on touch start 1`] = `
   <a
     aria-expanded="true"
     aria-haspopup="true"
-    class="sc-htpNat link eCxJEw"
+    class="link link--has-other link--open sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"
@@ -157,21 +169,25 @@ exports[`<Link> opens <LinkList> on touch start 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list dbXoQO"
+    class="sc-bwzfXH links links__list iQcfWo"
   >
-    <span
-      class="list-container list-container--closed"
-      role="none"
+    <div
+      class="sc-htpNat emXdXc"
     >
-      <a
-        class="sc-htpNat link eCxJEw"
-        href="/page/"
-        role="link"
-        target="_self"
+      <span
+        class="list-container list-container--closed"
+        role="none"
       >
-        Sub Content
-      </a>
-    </span>
+        <a
+          class="link sc-ifAKCX edbLbi"
+          href="/page/"
+          role="link"
+          target="_self"
+        >
+          Sub Content
+        </a>
+      </span>
+    </div>
   </div>
 </span>
 `;
