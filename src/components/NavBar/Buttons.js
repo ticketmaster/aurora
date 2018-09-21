@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Button from "./ButtonBase";
 import Menu from "../Icons/Menu";
-import Search from "../Icons/Search";
+import { SearchIconDeprecated as Search } from "../Icons";
 import User from "../Icons/User";
 import spacing from "../../theme/spacing";
 import { mediumAndUp, smallAndUp } from "../../theme/mediaQueries";

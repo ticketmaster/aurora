@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchIcon renders correctly 1`] = `
+<svg
+  height="16"
+  viewBox="0 0 16 16"
+  width="16"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Search Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M16 0H0v16h16z"
+    />
+    <path
+      d="M12 6.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-.564 4.229l4.418 4.417a.5.5 0 0 1-.708.708l-4.417-4.418a6.5 6.5 0 1 1 .707-.707z"
+      fill="currentColor"
+      fillOpacity=".5"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;
+
+exports[`SearchIcon renders large correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Search Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M24 0H0v24h24z"
+    />
+    <path
+      d="M18 9.5a8.5 8.5 0 1 0-17 0 8.5 8.5 0 0 0 17 0zm-1.438 6.355l7.292 7.291a.5.5 0 0 1-.708.708l-7.291-7.292a9.5 9.5 0 1 1 .707-.707z"
+      fill="currentColor"
+      fillOpacity=".5"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;
