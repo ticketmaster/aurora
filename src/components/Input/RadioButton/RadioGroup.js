@@ -3,9 +3,11 @@ import PropTypes from "prop-types";
 import Provider from "../../SelectionProvider/Provider";
 import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 
-const RadioGroup = ({ onChange, children, value }) => (
+const RadioGroup = ({ onChange, children, value, ...props }) => (
   <Provider onChange={onChange} isMultiSelect={false} value={value}>
-    <KeyBoardProvider role="radiogroup">{children}</KeyBoardProvider>
+    <KeyBoardProvider role="radiogroup" {...props}>
+      {children}
+    </KeyBoardProvider>
   </Provider>
 );
 

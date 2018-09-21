@@ -5,7 +5,7 @@ exports[`Input renders default input 1`] = `
   class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -15,7 +15,7 @@ exports[`Input renders default input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -23,7 +23,7 @@ exports[`Input renders default input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>
@@ -35,7 +35,7 @@ exports[`Input renders disabled input 1`] = `
   class="text--input-regular text--input-top text--input-disabled sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -45,7 +45,7 @@ exports[`Input renders disabled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       disabled=""
       id="test1firstname__input"
       name="test1"
@@ -54,7 +54,7 @@ exports[`Input renders disabled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>
@@ -66,7 +66,7 @@ exports[`Input renders input with error 1`] = `
   class="text--input-regular text--input-top text__error sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -76,7 +76,7 @@ exports[`Input renders input with error 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -84,7 +84,7 @@ exports[`Input renders input with error 1`] = `
     />
     <label
       aria-invalid="true"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     >
       Something Went Wrong
@@ -98,7 +98,7 @@ exports[`Input renders large input 1`] = `
   class="text--input-large text--input-top sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -108,7 +108,7 @@ exports[`Input renders large input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -116,7 +116,7 @@ exports[`Input renders large input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>
@@ -128,7 +128,7 @@ exports[`Input renders left labeled input 1`] = `
   class="text--input-regular text--input-left sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -138,7 +138,7 @@ exports[`Input renders left labeled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -146,7 +146,7 @@ exports[`Input renders left labeled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>
@@ -158,7 +158,7 @@ exports[`Input renders small input 1`] = `
   class="text--input-small text--input-top sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -168,7 +168,7 @@ exports[`Input renders small input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -176,7 +176,7 @@ exports[`Input renders small input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>
@@ -188,7 +188,7 @@ exports[`Input renders top labeled input 1`] = `
   class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
   <label
-    class="sc-bwzfXH yJMup"
+    class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
   >
     First Name
@@ -198,7 +198,7 @@ exports[`Input renders top labeled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb jZNkaQ"
+      class="sc-bxivhb hlBmN"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -206,7 +206,7 @@ exports[`Input renders top labeled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX dfGglR"
+      class="sc-ifAKCX gWpzXV"
       role="alert"
     />
   </div>

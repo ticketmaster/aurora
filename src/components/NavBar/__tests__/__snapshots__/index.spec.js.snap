@@ -10,8 +10,8 @@ exports[`NavBar renders fixed 1`] = `
   width: 205px;
   overflow: hidden;
   background-color: rgba(255,255,255,1);
-  padding: 8px;
   border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .list-container--open .c10 {
@@ -22,12 +22,21 @@ exports[`NavBar renders fixed 1`] = `
   display: block;
 }
 
+.c11 {
+  padding: 8px;
+}
+
+.c11.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
 .c7 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
   outline: 0;
   border: 0;
+  position: relative;
 }
 
 .links__list .c7 {
@@ -40,12 +49,23 @@ exports[`NavBar renders fixed 1`] = `
   outline: 0;
 }
 
+.c7.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid rgba(2,108,223,1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .c8 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
   outline: 0;
   border: 0;
+  position: relative;
 }
 
 .links__list .c8 {
@@ -56,6 +76,16 @@ exports[`NavBar renders fixed 1`] = `
 .c8:focus,
 .c8:hover {
   outline: 0;
+}
+
+.c8.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid rgba(2,108,223,1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .c5 {
@@ -218,7 +248,6 @@ exports[`NavBar renders fixed 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  border-bottom: 1px solid transparent;
   -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -237,7 +266,7 @@ exports[`NavBar renders fixed 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .c0.nav--overlay:after {
@@ -388,7 +417,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <a
-          className="c6 link c7"
+          className="link c6 c7"
           href="/"
           rel={null}
           role="link"
@@ -405,7 +434,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <button
-          className="c6 link c8"
+          className="link c6 c8"
           href={null}
           role="button"
         >
@@ -420,7 +449,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <button
-          className="c6 link c8"
+          className="link c6 c8"
           href={null}
           role="button"
         >
@@ -437,7 +466,7 @@ exports[`NavBar renders fixed 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="c6 link c8"
+          className="link link--has-other c6 c8"
           href={null}
           role="button"
         >
@@ -452,51 +481,55 @@ exports[`NavBar renders fixed 1`] = `
             }
           }
         >
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
+          <div
+            className="c11"
           >
-            <button
-              className="c6 link c8"
-              href={null}
-              role="button"
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 5
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c6 link c8"
-              href={null}
-              role="button"
+              <button
+                className="link c6 c8"
+                href={null}
+                role="button"
+              >
+                Link 5
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 6
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c6 link c8"
-              href={null}
-              role="button"
+              <button
+                className="link c6 c8"
+                href={null}
+                role="button"
+              >
+                Link 6
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 7 With Really Long Content 
-            </button>
-          </span>
+              <button
+                className="link c6 c8"
+                href={null}
+                role="button"
+              >
+                Link 7 With Really Long Content 
+              </button>
+            </span>
+          </div>
         </div>
       </span>
     </div>
@@ -514,8 +547,8 @@ exports[`NavBar renders inverted 1`] = `
   width: 205px;
   overflow: hidden;
   background-color: rgba(255,255,255,1);
-  padding: 8px;
   border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .list-container--open .c9 {
@@ -526,12 +559,21 @@ exports[`NavBar renders inverted 1`] = `
   display: block;
 }
 
+.c10 {
+  padding: 8px;
+}
+
+.c10.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
 .c7 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
   outline: 0;
   border: 0;
+  position: relative;
 }
 
 .links__list .c7 {
@@ -542,6 +584,16 @@ exports[`NavBar renders inverted 1`] = `
 .c7:focus,
 .c7:hover {
   outline: 0;
+}
+
+.c7.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid rgba(2,108,223,1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .c5 {
@@ -704,7 +756,6 @@ exports[`NavBar renders inverted 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  border-bottom: 1px solid transparent;
   -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -723,7 +774,7 @@ exports[`NavBar renders inverted 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .c0.nav--overlay:after {
@@ -873,7 +924,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="c6 link c7"
+          className="link c6 c7"
           href={null}
           role="button"
         >
@@ -888,7 +939,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="c6 link c7"
+          className="link c6 c7"
           href={null}
           role="button"
         >
@@ -903,7 +954,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="c6 link c7"
+          className="link c6 c7"
           href={null}
           role="button"
         >
@@ -920,7 +971,7 @@ exports[`NavBar renders inverted 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="c6 link c7"
+          className="link link--has-other c6 c7"
           href={null}
           role="button"
         >
@@ -935,51 +986,55 @@ exports[`NavBar renders inverted 1`] = `
             }
           }
         >
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
+          <div
+            className="c10"
           >
-            <button
-              className="c6 link c7"
-              href={null}
-              role="button"
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 5
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c6 link c7"
-              href={null}
-              role="button"
+              <button
+                className="link c6 c7"
+                href={null}
+                role="button"
+              >
+                Link 5
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 6
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c6 link c7"
-              href={null}
-              role="button"
+              <button
+                className="link c6 c7"
+                href={null}
+                role="button"
+              >
+                Link 6
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 7 With Really Long Content 
-            </button>
-          </span>
+              <button
+                className="link c6 c7"
+                href={null}
+                role="button"
+              >
+                Link 7 With Really Long Content 
+              </button>
+            </span>
+          </div>
         </div>
       </span>
     </div>
@@ -997,8 +1052,8 @@ exports[`NavBar renders with defaults 1`] = `
   width: 205px;
   overflow: hidden;
   background-color: rgba(255,255,255,1);
-  padding: 8px;
   border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .list-container--open .c7 {
@@ -1009,12 +1064,21 @@ exports[`NavBar renders with defaults 1`] = `
   display: block;
 }
 
+.c8 {
+  padding: 8px;
+}
+
+.c8.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
 .c5 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
   outline: 0;
   border: 0;
+  position: relative;
 }
 
 .links__list .c5 {
@@ -1025,6 +1089,16 @@ exports[`NavBar renders with defaults 1`] = `
 .c5:focus,
 .c5:hover {
   outline: 0;
+}
+
+.c5.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid rgba(2,108,223,1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .c3 {
@@ -1137,7 +1211,6 @@ exports[`NavBar renders with defaults 1`] = `
   background-color: transparent;
   color: rgba(255,255,255,1);
   font-weight: 600;
-  border-bottom: 1px solid transparent;
   -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -1156,7 +1229,7 @@ exports[`NavBar renders with defaults 1`] = `
 
 .c0.nav--inverted {
   background-color: rgba(255,255,255,1);
-  border-bottom: 1px solid #D1D1D1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
 .c0.nav--overlay:after {
@@ -1271,7 +1344,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="c4 link c5"
+          className="link c4 c5"
           href={null}
           role="button"
         >
@@ -1286,7 +1359,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="c4 link c5"
+          className="link c4 c5"
           href={null}
           role="button"
         >
@@ -1301,7 +1374,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="c4 link c5"
+          className="link c4 c5"
           href={null}
           role="button"
         >
@@ -1318,7 +1391,7 @@ exports[`NavBar renders with defaults 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="c4 link c5"
+          className="link link--has-other c4 c5"
           href={null}
           role="button"
         >
@@ -1333,51 +1406,55 @@ exports[`NavBar renders with defaults 1`] = `
             }
           }
         >
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
+          <div
+            className="c8"
           >
-            <button
-              className="c4 link c5"
-              href={null}
-              role="button"
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 5
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c4 link c5"
-              href={null}
-              role="button"
+              <button
+                className="link c4 c5"
+                href={null}
+                role="button"
+              >
+                Link 5
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 6
-            </button>
-          </span>
-          <span
-            className="list-container list-container--closed"
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            role="none"
-          >
-            <button
-              className="c4 link c5"
-              href={null}
-              role="button"
+              <button
+                className="link c4 c5"
+                href={null}
+                role="button"
+              >
+                Link 6
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              role="none"
             >
-              Link 7 With Really Long Content 
-            </button>
-          </span>
+              <button
+                className="link c4 c5"
+                href={null}
+                role="button"
+              >
+                Link 7 With Really Long Content 
+              </button>
+            </span>
+          </div>
         </div>
       </span>
     </div>

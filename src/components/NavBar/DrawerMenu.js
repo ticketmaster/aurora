@@ -13,7 +13,11 @@ const noop = () => {};
 class DrawerMenu extends React.Component {
   static propTypes = {
     onClick: PropTypes.func,
-    children: PropTypes.node,
+    children: PropTypes.oneOfType([
+      PropTypes.node,
+      PropTypes.element,
+      PropTypes.func
+    ]),
     setContent: PropTypes.func.isRequired,
     toggleDrawer: PropTypes.func.isRequired,
     isOpen: PropTypes.bool.isRequired
