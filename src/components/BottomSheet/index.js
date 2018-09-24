@@ -55,33 +55,36 @@ const CancelButtonRow = styled(Row)`
   align-items: flex-end;
 `;
 
-const BottomSheet = ({ children }) => (
+const BottomSheet = ({ children, withCancelBtn, ...props }) => (
   <BackdropConsumer>
     {backdropValue => (
       <BottomSheetContent
         innerRef={backdropValue ? backdropValue.childRef : null}
         role="dialog"
         aria-modal
+        {...props}
       >
-        <CancelButtonRow>
-          <ItemContainerConsumer>
-            {value => (
-              <IconButton
-                className="button--cancel"
-                size={45}
-                aria-label="Close BottomSheet"
-                role="button"
-                onClick={value ? value.onCloseRequest : () => {}}
-              >
-                <CrossIcon
-                  size={12}
-                  style={{ pointerEvent: "none" }}
-                  color={colors.onyx.base}
-                />
-              </IconButton>
-            )}
-          </ItemContainerConsumer>
-        </CancelButtonRow>
+        {withCancelBtn && (
+          <CancelButtonRow>
+            <ItemContainerConsumer>
+              {value => (
+                <IconButton
+                  className="button--cancel"
+                  size={45}
+                  aria-label="Close BottomSheet"
+                  role="button"
+                  onClick={value ? value.onCloseRequest : () => {}}
+                >
+                  <CrossIcon
+                    size={12}
+                    style={{ pointerEvent: "none" }}
+                    color={colors.onyx.base}
+                  />
+                </IconButton>
+              )}
+            </ItemContainerConsumer>
+          </CancelButtonRow>
+        )}
         {children}
       </BottomSheetContent>
     )}
@@ -89,10 +92,12 @@ const BottomSheet = ({ children }) => (
 );
 
 BottomSheet.defaultProps = {
+  withCancelBtn: true,
   children: null
 };
 
 BottomSheet.propTypes = {
+  withCancelBtn: PropTypes.bool,
   children: PropTypes.node
 };
 

@@ -25,7 +25,7 @@ rows:
     Notes: Passes through any other props to underlying button, or in the case of an href prop being passed, anchor, element
 ```
 
-### Standart button
+### Standard button
 
 ```react
 ---
