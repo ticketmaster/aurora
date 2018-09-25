@@ -15,9 +15,12 @@ import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
+const CHEVRON_ICON_SIZE = 15;
+const CHEVRON_ICON_PADDING = spacing.moderate;
+
 const IconButton = styled.button`
   border: 0;
-  padding: 0 ${spacing.moderate};
+  padding: 0 ${CHEVRON_ICON_PADDING};
   outline: 0;
   background: transparent;
   appearance: none;
@@ -97,14 +100,14 @@ const LinkWrapper = styled.a`
   width: 100%;
   cursor: pointer;
   padding-top: ${spacing.cozy};
-  padding-bottom: ${spacing.cozy};
+  padding-bottom: ${props =>
+    props.rowVariant === "withLink" ? "1px" : spacing.cozy};
   border-radius: 2px;
 
-  margin: 12px 0
-    ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
+  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? 0 : "12px")} 0;
   ${mediumAndUp`
     margin: 18px 0
-      ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
+      ${props => (props.rowVariant === "withLink" ? 0 : "18px")}
       0;
     &:hover {
       background-color: ${colors.azure.light};
@@ -170,8 +173,9 @@ const ListRowButton = StyledButton.withComponent("span").extend`
 
 const LinkRow = styled(Row)`
   padding-left: ${spacing.cozy};
+  padding-bottom: ${spacing.cozy};
   ${mediumAndUp`
-    padding-left: 12px;
+    padding-left: calc(${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_SIZE}px);
   `};
 `;
 
@@ -299,7 +303,7 @@ const ListRowContent = ({
           "button--collapsed": !isOpen
         })}
       >
-        <ChevronIcon size={15} color={colors.blackPearl} />
+        <ChevronIcon size={CHEVRON_ICON_SIZE} color={colors.blackPearl} />
       </IconWrapper>
       <LinkWrapper
         role="link"
