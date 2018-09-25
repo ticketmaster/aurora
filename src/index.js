@@ -26,6 +26,7 @@ export { default as ContainerBlock } from "./components/Container/Block.styles";
 export { ResponsiveImage, StaticImage } from "./components/Image";
 export { Text } from "./components/Text";
 export {
+  AlertIcon,
   CAIcon,
   CampsiteIcon,
   ChevronIcon,

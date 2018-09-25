@@ -177,35 +177,6 @@ rows:
 <Row>
   <Column medium={4}>
     <div style={iconStyle}>
-      <InfoDotIcon size="small">
-        <title>InfoDot Icon</title>
-      </InfoDotIcon>
-    </div>
-    <div style={iconLabelStyle}>Info dot small</div>
-  </Column>
-
-  <Column medium={4}>
-    <div style={iconStyle}>
-      <InfoDotIcon size="regular">
-        <title>InfoDot Icon</title>
-      </InfoDotIcon>
-    </div>
-    <div style={iconLabelStyle}>Info dot regular</div>
-  </Column>
-
-  <Column medium={4}>
-    <div style={iconStyle}>
-      <InfoDotIcon size="large">
-        <title>InfoDot Icon</title>
-      </InfoDotIcon>
-    </div>
-    <div style={iconLabelStyle}>Info dot large</div>
-  </Column>
-</Row>
-
-<Row>
-  <Column medium={4}>
-    <div style={iconStyle}>
       <ErrorIcon size="small">
         <title>Error Icon</title>
       </ErrorIcon>
