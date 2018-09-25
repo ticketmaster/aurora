@@ -117,7 +117,5 @@ export {
 export { LinkList, LinkListItem } from "./components/Link";
 export { default as Modal } from "./components/Modal";
 export { default as Backdrop } from "./components/Backdrop";
-export {
-  ContainerProvider,
-  ItemContainerConsumer
-} from "./components/List/Context";
+export { BackdropProvider } from "./components/Backdrop/Context";
+export { ContainerProvider } from "./components/List/Context";
