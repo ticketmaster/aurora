@@ -10,4 +10,10 @@ describe("ListIcon", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it("renders correctly the large variant", () => {
+    const component = renderer.create(<ListIcon size="large" />);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });
