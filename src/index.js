@@ -26,19 +26,26 @@ export { default as ContainerBlock } from "./components/Container/Block.styles";
 export { ResponsiveImage, StaticImage } from "./components/Image";
 export { Text } from "./components/Text";
 export {
+  AlertIcon,
   CAIcon,
   CampsiteIcon,
   ChevronIcon,
   ClubIcon,
+  ConcessionIcon,
   CrossIcon,
   DonationIcon,
   FacebookIcon,
   GeneralIcon,
   InstagramIcon,
+  HotelIcon,
+  MealIcon,
+  MembershipIcon,
+  MerchandiseIcon,
   OverflowIcon,
   ParkingIcon,
   SpecialIcon,
   StarIcon,
+  TransportationIcon,
   TwitterIcon,
   USIcon,
   VenueIcon,
@@ -116,3 +123,7 @@ export {
   Input
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
+export { default as Modal } from "./components/Modal";
+export { default as Backdrop } from "./components/Backdrop";
+export { BackdropProvider } from "./components/Backdrop/Context";
+export { ContainerProvider } from "./components/List/Context";
