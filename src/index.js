@@ -68,7 +68,8 @@ export {
   LocationIcon,
   TicketIcon,
   TicketsIcon,
-  UserIcon
+  UserIcon,
+  ListIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
