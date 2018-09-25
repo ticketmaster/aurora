@@ -49,3 +49,4 @@ export { default as TicketIcon } from "./Ticket";
 export { default as TicketsIcon } from "./Tickets";
 export { default as UserIcon } from "./User";
 export { default as SearchIconDeprecated } from "./Search.deprecated";
+export { default as ListIcon } from "./List";
