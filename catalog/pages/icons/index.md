@@ -98,15 +98,43 @@ rows:
   </Column>
 
   <Column medium={3}>
+    <div style={iconStyle}><ConcessionIcon size={26} color="#262626"><title>ConcessionIcon Icon</title></ConcessionIcon></div>
+    <div style={iconLabelStyle}>Concession Icon</div>
+  </Column>
+</Row>
+
+<Row>
+
+  <Column medium={3}>
     <div style={iconStyle}><DonationIcon size={26} color="#262626" /></div>
     <div style={iconLabelStyle}>Donation Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><GeneralIcon size={26} color="#262626" /></div>
+    <div style={iconLabelStyle}>General Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><HotelIcon size={26} color="#000"><title>Hotel Icon</title></HotelIcon></div>
+    <div style={iconLabelStyle}>Hotel Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><MealIcon size={26} color="#000"><title>Meal Icon</title></MealIcon></div>
+    <div style={iconLabelStyle}>Meal Icon</div>
   </Column>
 </Row>
 
 <Row>
   <Column medium={3}>
-    <div style={iconStyle}><GeneralIcon size={26} color="#262626" /></div>
-    <div style={iconLabelStyle}>General Icon</div>
+    <div style={iconStyle}><MerchandiseIcon size={26} color="#000"><title>Merchandise Icon</title></MerchandiseIcon></div>
+    <div style={iconLabelStyle}>Merchandise Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><MembershipIcon size={26} color="#000"><title>Membership Icon</title></MembershipIcon></div>
+    <div style={iconLabelStyle}>Membership Icon</div>
   </Column>
 
   <Column medium={3}>
@@ -128,6 +156,11 @@ rows:
 </Row>
 
 <Row>
+  <Column medium={3}>
+    <div style={iconStyle}><TransportationIcon size={26} color="#262626"><title>Transportation Icon</title></TransportationIcon></div>
+    <div style={iconLabelStyle}>Transportation Icon</div>
+  </Column>
+
   <Column medium={3}>
     <div style={iconStyle}><VenueIcon size={26} color="#262626"><title>Venue Icon</title></VenueIcon></div>
     <div style={iconLabelStyle}>Venue Icon</div>
@@ -268,7 +301,6 @@ rows:
     </div>
     <div style={iconLabelStyle}>Back icon small</div>
   </Column>
-
   <Column medium={3}>
     <div style={iconStyle}>
       <BackIcon size="large">
@@ -277,8 +309,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Back icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <ForwardIcon size="large">
         <title>Forward Icon</title>
@@ -286,8 +317,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Forward icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <ForwardIcon size="small">
         <title>Forward Icon</title>
@@ -296,7 +326,6 @@ rows:
     <div style={iconLabelStyle}>Forward icon small</div>
   </Column>
 </Row>
-
 <Row>
   <Column medium={3}>
     <div style={iconStyle}>
@@ -306,8 +335,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Up icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <UpIcon size="large">
         <title>Up Icon</title>
@@ -315,8 +343,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Up icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <DownIcon size="small">
         <title>Down Icon</title>
@@ -324,8 +351,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Down icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <DownIcon size="large">
         <title>Down Icon</title>
@@ -334,8 +360,7 @@ rows:
     <div style={iconLabelStyle}>Down icon large</div>
   </Column>
 </Row>
-
-<Row>
+ <Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <CloseIcon size="small">
@@ -344,8 +369,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Close icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <CloseIcon size="large">
         <title>Close Icon</title>
@@ -353,8 +377,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Close icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <DeleteIcon size="small">
         <title>Delete Icon</title>
@@ -362,8 +385,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Delete icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <DeleteIcon size="large">
         <title>Delete Icon</title>
@@ -372,8 +394,7 @@ rows:
     <div style={iconLabelStyle}>Delete icon large</div>
   </Column>
 </Row>
-
-<Row>
+ <Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <CalendarIcon size="small">
@@ -382,8 +403,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Calendar icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <CalendarIcon size="large">
         <title>Calendar Icon</title>
@@ -391,8 +411,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Calendar icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <HomeIcon size="small">
         <title>Home Icon</title>
@@ -400,8 +419,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Home icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <HomeIcon size="large">
         <title>Home Icon</title>
@@ -410,8 +428,7 @@ rows:
     <div style={iconLabelStyle}>Home icon large</div>
   </Column>
 </Row>
-
-<Row>
+ <Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <SearchIcon size="small">
@@ -420,8 +437,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Search icon small</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <SearchIcon size="large">
         <title>Search Icon</title>
@@ -429,8 +445,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Search icon large</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <BookmarkIcon>
         <title>Bookmark Icon</title>
@@ -438,8 +453,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Bookmark icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <ClearIcon>
         <title>Clear Icon</title>
@@ -447,10 +461,8 @@ rows:
     </div>
     <div style={iconLabelStyle}>Clear icon</div>
   </Column>
-
-</Row>
-
-<Row>
+ </Row>
+ <Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <EditIcon>
@@ -459,8 +471,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Edit icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <FeedbackIcon>
         <title>Feedback Icon</title>
@@ -468,8 +479,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Feedback icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <FilterIcon>
         <title>Filter Icon</title>
@@ -477,8 +487,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Filter icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <LocationIcon>
         <title>Location Icon</title>
@@ -486,10 +495,8 @@ rows:
     </div>
     <div style={iconLabelStyle}>Location icon</div>
   </Column>
-
-</Row>
-
-<Row>
+ </Row>
+ <Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <TicketIcon>
@@ -498,8 +505,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Ticket icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <TicketsIcon>
         <title>Tickets Icon</title>
@@ -507,8 +513,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Tickets icon</div>
   </Column>
-
-  <Column medium={3}>
+   <Column medium={3}>
     <div style={iconStyle}>
       <UserIcon>
         <title>User Icon</title>
@@ -516,7 +521,6 @@ rows:
     </div>
     <div style={iconLabelStyle}>User icon</div>
   </Column>
-
-</Row>
+ </Row>
 </Container>
 ```
