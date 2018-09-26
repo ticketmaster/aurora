@@ -23,22 +23,33 @@ export { default as SearchInput } from "./components/Input/Search";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export { default as ContainerBlock } from "./components/Container/Block.styles";
-export { ResponsiveImage, StaticImage } from "./components/Image";
+export {
+  ResponsiveImage,
+  StaticImage,
+  ThumbnailCircle
+} from "./components/Image";
 export { Text } from "./components/Text";
 export {
+  AlertIcon,
   CAIcon,
   CampsiteIcon,
   ChevronIcon,
   ClubIcon,
+  ConcessionIcon,
   CrossIcon,
   DonationIcon,
   FacebookIcon,
   GeneralIcon,
   InstagramIcon,
+  HotelIcon,
+  MealIcon,
+  MembershipIcon,
+  MerchandiseIcon,
   OverflowIcon,
   ParkingIcon,
   SpecialIcon,
   StarIcon,
+  TransportationIcon,
   TwitterIcon,
   USIcon,
   VenueIcon,
@@ -68,7 +79,8 @@ export {
   LocationIcon,
   TicketIcon,
   TicketsIcon,
-  UserIcon
+  UserIcon,
+  ListIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
@@ -115,3 +127,7 @@ export {
   Input
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
+export { default as Modal } from "./components/Modal";
+export { default as Backdrop } from "./components/Backdrop";
+export { BackdropProvider } from "./components/Backdrop/Context";
+export { ContainerProvider } from "./components/List/Context";

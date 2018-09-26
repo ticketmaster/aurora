@@ -154,5 +154,6 @@ StyledButton.defaultProps = {
 };
 
 export const StyledButtonLink = StyledButton.withComponent(`a`).extend`
+  display: block;
   text-decoration: none;
 `;
