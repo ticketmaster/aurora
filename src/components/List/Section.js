@@ -9,10 +9,8 @@ import BoldText from "../Text/BoldText";
 import { mediumAndUp } from "../../theme/mediaQueries";
 
 const SectionContainer = styled(Column)`
-  padding: ${props =>
-    props.padding ? props.padding : `${spacing.moderate} ${spacing.normal}`};
+  padding: ${spacing.moderate} ${spacing.normal};
   border-bottom: 1px solid ${colors.lightGray};
-
   ${mediumAndUp`
     border: none;
     padding-left: ${props => (props.padding ? 0 : spacing.moderate)};
@@ -30,8 +28,8 @@ const TitleText = styled(BoldText)`
   text-transform: uppercase;
 `;
 
-const Section = ({ title, titleStyle, children, ...rest }) => (
-  <SectionContainer {...rest}>
+const Section = ({ title, titleStyle, children, container }) => (
+  <SectionContainer style={{ ...container }}>
     <TitleContainer>
       <TitleText style={titleStyle}>{title}</TitleText>
     </TitleContainer>
@@ -42,14 +40,14 @@ const Section = ({ title, titleStyle, children, ...rest }) => (
 Section.defaultProps = {
   titleStyle: {},
   children: null,
-  padding: null
+  container: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
   titleStyle: PropTypes.objectOf(PropTypes.any),
   children: PropTypes.node,
-  padding: PropTypes.string
+  container: PropTypes.shape({})
 };
 
 export default Section;
