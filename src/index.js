@@ -1,5 +1,12 @@
 export { Button, Badge, RatingBadge, IconButton } from "./components/Button";
-export { DayTile } from "./components/CalendarView";
+export {
+  DayTile,
+  DayTileDate,
+  DayTileItem,
+  DayTileButton,
+  DayTileMoreButton,
+  DayTileOverflowButton
+} from "./components/CalendarView";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
