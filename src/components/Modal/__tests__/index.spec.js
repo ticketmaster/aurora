@@ -40,4 +40,16 @@ describe("<Modal />", () => {
     Simulate.click(container.querySelector(".button--close"));
     expect(container.innerHTML).toMatchSnapshot();
   });
+
+  it("should not display the cancel button", () => {
+    const { container } = render(
+      <Modal noCloseIcon>
+        <div>Europe</div>
+        <div>Africa</div>
+        <div>Asias</div>
+      </Modal>
+    );
+    expect(container.querySelector(".button--close")).toEqual(null);
+    expect(container.innerHTML).toMatchSnapshot();
+  });
 });
