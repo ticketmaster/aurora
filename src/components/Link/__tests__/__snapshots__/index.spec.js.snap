@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Link> closes <LinkList> on mouse leave 1`] = `
+exports[`<Link> closes <LinkList> on click 1`] = `
 <span
   class="list-container list-container--closed"
   role="none"
@@ -40,7 +40,7 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
 </span>
 `;
 
-exports[`<Link> closes <LinkList> on touch start 1`] = `
+exports[`<Link> closes <LinkList> on mouse leave 1`] = `
 <span
   class="list-container list-container--closed"
   role="none"
@@ -112,6 +112,46 @@ exports[`<Link> does not open when link has no content 1`] = `
 </span>
 `;
 
+exports[`<Link> opens <LinkList> on click 1`] = `
+<span
+  class="list-container list-container--open"
+  role="none"
+>
+  <a
+    aria-expanded="true"
+    aria-haspopup="true"
+    class="link link--has-other link--open sc-ifAKCX edbLbi"
+    href="/"
+    role="link"
+    target="_self"
+  >
+    Content
+  </a>
+   
+  <div
+    class="sc-bwzfXH links links__list iQcfWo"
+  >
+    <div
+      class="sc-htpNat emXdXc"
+    >
+      <span
+        class="list-container list-container--closed"
+        role="none"
+      >
+        <a
+          class="link sc-ifAKCX edbLbi"
+          href="/page/"
+          role="link"
+          target="_self"
+        >
+          Sub Content
+        </a>
+      </span>
+    </div>
+  </div>
+</span>
+`;
+
 exports[`<Link> opens <LinkList> on mouse enter 1`] = `
 <span
   class="list-container list-container--open"
@@ -152,15 +192,15 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
 </span>
 `;
 
-exports[`<Link> opens <LinkList> on touch start 1`] = `
+exports[`<Link> touch events exist does not open <LinkList> on mouse enter 1`] = `
 <span
-  class="list-container list-container--open"
+  class="list-container list-container--closed"
   role="none"
 >
   <a
-    aria-expanded="true"
+    aria-expanded="false"
     aria-haspopup="true"
-    class="link link--has-other link--open sc-ifAKCX edbLbi"
+    class="link link--has-other sc-ifAKCX edbLbi"
     href="/"
     role="link"
     target="_self"

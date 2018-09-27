@@ -55,7 +55,16 @@ export default class LinkItem extends React.Component {
     role: null
   };
 
-  state = { open: false };
+  state = {
+    open: false,
+    touchEventsExist: false
+  };
+
+  componentDidMount() {
+    if ("ontouchstart" in document.documentElement) {
+      this.setState({ touchEventsExist: true }); // eslint-disable-line
+    }
+  }
 
   open = () => this.hasOther && this.setState(() => ({ open: true }));
 
@@ -109,8 +118,8 @@ export default class LinkItem extends React.Component {
             ? "list-container list-container--open"
             : "list-container list-container--closed"
         }
-        onTouchStart={this.toggle}
-        onMouseEnter={this.open}
+        onClick={this.toggle}
+        onMouseEnter={this.state.touchEventsExist ? null : this.open}
         onMouseLeave={this.close}
         role="none"
       >

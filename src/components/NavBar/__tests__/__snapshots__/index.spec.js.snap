@@ -411,9 +411,9 @@ exports[`NavBar renders fixed 1`] = `
     >
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <a
@@ -428,9 +428,9 @@ exports[`NavBar renders fixed 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -443,9 +443,9 @@ exports[`NavBar renders fixed 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -458,9 +458,9 @@ exports[`NavBar renders fixed 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -486,9 +486,9 @@ exports[`NavBar renders fixed 1`] = `
           >
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -501,9 +501,9 @@ exports[`NavBar renders fixed 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -516,9 +516,9 @@ exports[`NavBar renders fixed 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -918,9 +918,9 @@ exports[`NavBar renders inverted 1`] = `
     >
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -933,9 +933,9 @@ exports[`NavBar renders inverted 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -948,9 +948,9 @@ exports[`NavBar renders inverted 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -963,9 +963,9 @@ exports[`NavBar renders inverted 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -991,9 +991,9 @@ exports[`NavBar renders inverted 1`] = `
           >
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -1006,9 +1006,9 @@ exports[`NavBar renders inverted 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -1021,9 +1021,9 @@ exports[`NavBar renders inverted 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -1338,9 +1338,9 @@ exports[`NavBar renders with defaults 1`] = `
     >
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -1353,9 +1353,9 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -1368,9 +1368,9 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -1383,9 +1383,9 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
       <span
         className="list-container list-container--closed"
+        onClick={[Function]}
         onMouseEnter={[Function]}
         onMouseLeave={[Function]}
-        onTouchStart={[Function]}
         role="none"
       >
         <button
@@ -1411,9 +1411,9 @@ exports[`NavBar renders with defaults 1`] = `
           >
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -1426,9 +1426,9 @@ exports[`NavBar renders with defaults 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
@@ -1441,9 +1441,9 @@ exports[`NavBar renders with defaults 1`] = `
             </span>
             <span
               className="list-container list-container--closed"
+              onClick={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-              onTouchStart={[Function]}
               role="none"
             >
               <button
