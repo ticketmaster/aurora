@@ -213,19 +213,19 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 
 @media screen and (min-width:1024px) {
   .c3 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media screen and (min-width:1440px) {
   .c3 {
-    max-width: 25%;
-    -webkit-flex: 0 0 25%;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
@@ -260,7 +260,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 >
   <div
     className="c2 c3"
-    id="789"
+    style={Object {}}
   >
     <div
       className="c4 c1"
@@ -360,7 +360,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   </div>
   <div
     className="c2 c3"
-    id="456"
+    style={Object {}}
   >
     <div
       className="c4 c1"
@@ -432,7 +432,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   </div>
   <div
     className="c2 c3"
-    id="123"
+    style={Object {}}
   >
     <div
       className="c4 c1"
@@ -506,7 +506,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   </div>
   <div
     className="c2 c3"
-    id="1011"
+    style={Object {}}
   >
     <div
       className="c4 c1"
