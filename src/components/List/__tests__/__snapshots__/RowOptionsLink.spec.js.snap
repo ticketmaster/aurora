@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c3:focus,
+.c3:active,
+.c3:visited,
+.c3:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c3:hover {
+  color: #0150a7;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c5:focus,
+.c5:active,
+.c5:visited,
+.c5:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c5:hover {
+  color: #0150a7;
+}
+
+.c0 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.c2 {
+  display: inline-block;
+}
+
+.c4 {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: inline-block;
+    opacity: 1;
+    line-height: 1.5;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+  }
+
+  .c4.link--hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  <button
+    className="link--row-options c2 c3"
+    data-index={0}
+    href={null}
+    onClick={[Function]}
+    rel="_self"
+    size={
+      Object {
+        "large": "hecto",
+        "medium": "hecto",
+        "small": "hecto",
+      }
+    }
+    target=""
+  />
+  <span
+    className="link--row-options c4 c5"
+    data-index={0}
+    href=""
+    onClick={null}
+    rel="_self"
+    size={
+      Object {
+        "large": "hecto",
+        "medium": "hecto",
+        "small": "hecto",
+      }
+    }
+    target=""
+  />
+</div>
+`;
