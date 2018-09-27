@@ -113,7 +113,7 @@ export default class SearchInput extends React.Component {
         )}
       >
         <IconContainer slim={slim} invert={invert}>
-          <SearchIcon size={16} />
+          <SearchIcon size="small" />
         </IconContainer>
         <Input
           {...{

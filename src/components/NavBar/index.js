@@ -27,7 +27,6 @@ const Nav = styled.nav.attrs({
   background-color: transparent;
   color: ${colors.white.base};
   font-weight: ${typography.weight.semiBold};
-  border-bottom: 1px solid transparent;
   transition: all 300ms ${constants.easing.easeInOutQuad};
 
   &.nav--relative {
@@ -44,7 +43,7 @@ const Nav = styled.nav.attrs({
 
   &.nav--inverted {
     background-color: ${colors.white.base};
-    border-bottom: 1px solid ${colors.moonstone};
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   }
 
   &.nav--overlay:after {

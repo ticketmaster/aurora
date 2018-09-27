@@ -23,6 +23,15 @@ state: { invert: false }
                         <NavBar.Link>Link 3</NavBar.Link>
                         <NavBar.Link>
                             More
+                            <NavBar.LinkList style={{ width: "275px", top: '40px', left: 0}} renderAfter={<span>After Content</span>}>
+                                <NavBar.LinkListItem href="/">Link 4</NavBar.LinkListItem>
+                                <NavBar.LinkListItem>Link 5</NavBar.LinkListItem>
+                                <NavBar.LinkListItem>Link 6</NavBar.LinkListItem>
+                                <NavBar.LinkListItem>Link 7 With Really Long Content </NavBar.LinkListItem>
+                            </NavBar.LinkList>
+                        </NavBar.Link>
+                        <NavBar.Link toggleChildrenOnClick>
+                            More on click
                             <NavBar.LinkList style={{ width: "275px", top: '40px', left: 0}}>
                                 <NavBar.LinkListItem href="/">Link 4</NavBar.LinkListItem>
                                 <NavBar.LinkListItem>Link 5</NavBar.LinkListItem>
