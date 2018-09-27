@@ -52,9 +52,9 @@ const RadioInput = styled.input.attrs({
   }
   &:after {
     content: "";
-    transition: width 0.3s ${constants.easing.easeInOutQuad},
-      height 0.3s ${constants.easing.easeInOutQuad},
-      opacity 0.3s ${constants.easing.easeInOutQuad};
+    transition: width 0.3s ${constants.easing.elastic},
+      height 0.3s ${constants.easing.elastic},
+      opacity 0.3s ${constants.easing.elastic};
     position: absolute;
     opacity: 0;
     top: 50%;
