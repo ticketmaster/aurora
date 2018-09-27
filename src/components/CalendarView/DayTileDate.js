@@ -6,7 +6,7 @@ import { Text } from "../Text";
 
 import { colors } from "../../theme";
 
-const DayTileDateLabelContainer = styled.div`
+const DayTileDateContainer = styled.div`
   display: flex;
   width: 30px;
   height: 30px;
@@ -15,34 +15,34 @@ const DayTileDateLabelContainer = styled.div`
   background-color: ${colors.white.base};
 `;
 
-const DEFAULT_TEXT_PROPS = {
+const ACCENT_TEXT_PROPS = {
   variant: "accent",
   accent: "heliotrope"
 };
 
-const DISABLED_TEXT_PROPS = {
+const DEFAULT_TEXT_PROPS = {
   disabled: true
 };
 
-const DayTileDateLabel = ({ children, isDisabled }) => {
-  const textProps = isDisabled ? DISABLED_TEXT_PROPS : DEFAULT_TEXT_PROPS;
+const DayTileDate = ({ children, accent }) => {
+  const textProps = accent ? ACCENT_TEXT_PROPS : DEFAULT_TEXT_PROPS;
 
   return (
-    <DayTileDateLabelContainer>
+    <DayTileDateContainer>
       <Text size="kilo" weight="semiBold" {...textProps}>
         {children}
       </Text>
-    </DayTileDateLabelContainer>
+    </DayTileDateContainer>
   );
 };
 
-DayTileDateLabel.propTypes = {
+DayTileDate.propTypes = {
   children: PropTypes.node.isRequired,
-  isAccent: PropTypes.bool
+  accent: PropTypes.bool
 };
 
-DayTileDateLabel.defaultProps = {
-  isAccent: true
+DayTileDate.defaultProps = {
+  accent: false
 };
 
-export default DayTileDateLabel;
+export default DayTileDate;
