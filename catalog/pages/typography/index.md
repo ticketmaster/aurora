@@ -315,3 +315,62 @@ const str = "Better is together";
 </Row>
 </Container>
 ```
+
+### Link Props
+
+```table
+span: 6
+rows:
+  - Prop: href
+    Type: string
+    Default: null
+    Notes: When not provided the component falls back to span or button
+  - Prop: onClick
+    Type: function
+    Default: null
+    Notes: When not provided the component falls back to button only if href is absent
+  - Prop: size
+    Type: string
+    Default: hecto
+    Notes: Determines the font-size of the Text. One of "uno", "hecto", "kilo", "giga", and "tera".
+  - Prop: weight
+    Type: string
+    Default: regular
+    Notes: Determines the font-weight of the Text. One of "regular" and "semiBold".
+  - Prop: primary
+    Type: boolean
+    Default: false
+    Notes: Determines if the base hue of the font-color should be used.
+  - Prop: secondary
+    Type: boolean
+    Default: false
+    Notes: Determines if the light hue of the font-color should be used.
+  - Prop: disabled
+    Type: boolean
+    Default: false
+    Notes: Determines if the muted hue of the font-color should be used.
+  - Prop: children
+    Type: node
+    Default:
+    Notes: Render as the Text's children
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying element.
+```
+
+### Link
+
+```react
+const str = "Better is together";
+<Container>
+    <Row style={fontSizeRowStyle}>
+        <Column medium={6}>
+            <Link href="#">{str}</Link>
+        </Column>
+        <Column medium={6}>
+            <Link href="#" weight="semiBold">{str}</Link>
+        </Column>
+    </Row>
+</Container>
+```

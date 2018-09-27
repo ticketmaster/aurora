@@ -34,9 +34,21 @@ export const listItems = [
   {
     rowId: "570",
     title: "Del Mar Fairgrounds",
-    subTitle: "KABOO 3-Day Pass",
+    subTitle: "KABOO 3-Day Premium Pass with Exclusive Back Stage Access",
     dateTitle: "apr 23",
     dateSubTitle: "Thu, 8:00 PM",
+    buttonText: "Acheter des Billets",
+    variant: "standard",
+    onClick: () => {},
+    url: "/"
+  },
+  {
+    rowId: "571",
+    title:
+      "CEG & T Presents Amorphis/Dark Tranquillity/Moonspell/Omnium Gatherum",
+    subTitle: "Gramercy Theatre - New York, NY",
+    dateTitle: "sep 7",
+    dateSubTitle: "Fri, 7:00 PM",
     buttonText: "See Tickets",
     variant: "standard",
     onClick: () => {},
@@ -47,7 +59,7 @@ export const listItems = [
 export const sections = [
   {
     title: "Ticket Options",
-    key: "789",
+    id: "789",
     items: [
       {
         title: "VIP Packages",
@@ -58,13 +70,12 @@ export const sections = [
         title: "Parking Pass Available",
         icon: <ParkingIcon size={26} color={colors.blackPearl} />
       }
-    ],
-    totalSections: 4
+    ]
   },
 
   {
     title: "Venue Info",
-    key: "456",
+    id: "456",
     items: [
       {
         title: "United Center",
@@ -73,13 +84,12 @@ export const sections = [
         onItemClick: () => {},
         url: "/"
       }
-    ],
-    totalSections: 4
+    ]
   },
 
   {
     title: "Lineup",
-    key: "123",
+    id: "123",
     items: [
       {
         title:
@@ -104,20 +114,18 @@ export const sections = [
         ),
         onItemClick: () => {}
       }
-    ],
-    totalSections: 4
+    ]
   },
   {
     title: "More",
-    key: "1011",
+    id: "1011",
     items: [
       {
         title: "Sell Tickets",
         icon: <TicketIcon size={26} color={colors.blackPearl} />,
         onItemClick: () => {}
       }
-    ],
-    totalSections: 4
+    ]
   }
 ];
 

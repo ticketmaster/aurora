@@ -9,14 +9,14 @@ Object {
       <label
         class="radio-button--small sc-bwzfXH iXqVth"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa choAdm"
+          class="sc-bdVaJa eBWDyn"
           id="name1valueinput"
           name="name1"
-          role="radio"
           type="radio"
           value="value"
         />
@@ -69,14 +69,14 @@ Object {
       <label
         class="radio-button--small sc-bwzfXH iXqVth"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa choAdm"
+          class="sc-bdVaJa eBWDyn"
           id="name1valueinput"
           name="name1"
-          role="radio"
           type="radio"
           value="value"
         />
@@ -129,14 +129,14 @@ Object {
       <label
         class="radio-button--small sc-bwzfXH iXqVth"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa choAdm"
+          class="sc-bdVaJa eBWDyn"
           id="name1valueinput"
           name="name1"
-          role="radio"
           type="radio"
           value="value"
         />

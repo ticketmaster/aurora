@@ -102,7 +102,7 @@ span: 6
 <Container>
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
-          <RadioGroup>
+          <RadioGroup aria-label="test large radio">
                 <RadioButton size="large" name="Option1" value="FirstButton" index={0}>
                     Testing One
                 </RadioButton>
@@ -115,7 +115,7 @@ span: 6
           </RadioGroup>
         </Column>
         <Column medium={6} style={{ padding: "16px 0" }}>
-          <RadioGroup>
+          <RadioGroup aria-label="test small radio">
                 <RadioButton size="small" name="OptionSmall1" value="1" index={0}>
                     Testing One
                 </RadioButton>
@@ -350,6 +350,10 @@ rows:
     Type: string
     Default: N/A
     Notes: Required
+  - Prop: className
+    Type: string
+    Default: ""
+    Notes: Passed to StyledDropDownItem
 ```
 
 ```react
@@ -358,7 +362,7 @@ span: 6
 <Container>
     <Row>
         <Column medium={6}>
-            <DropDownGroup variant={0}>
+            <DropDownGroup variant={0} placeholder="Select an option">
                 <DropDownOption value="0" index={0}>Option One</DropDownOption>
                 <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                 <DropDownOption value="2" index={2}>Option Three</DropDownOption>

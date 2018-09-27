@@ -1,4 +1,5 @@
 import { pageLoader } from "catalog";
+import { ThemeProvider } from "styled-components";
 
 import Header from "../../../src/components/Header";
 import Heading from "../../../src/components/Header/Heading";
@@ -11,7 +12,6 @@ import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
 import colors from "../../../src/theme/colors";
 
-const breadcrumbStyles = { color: colors.white.base };
 const starIconStyles = { marginRight: "2px" };
 const ratingBadgeStyles = { marginLeft: "12px" };
 
@@ -30,9 +30,9 @@ export default {
     StarIcon,
     Breadcrumb,
     colors,
-    breadcrumbStyles,
     starIconStyles,
-    ratingBadgeStyles
+    ratingBadgeStyles,
+    ThemeProvider
   },
   content: pageLoader(() => import("./index.md"))
 };

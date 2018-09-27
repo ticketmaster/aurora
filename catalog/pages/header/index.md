@@ -54,16 +54,17 @@ responsive: true
 ```react
 responsive: true
 ---
-<React.Fragment>
+<ThemeProvider theme={{ themeName: "tm"}}>
+  <React.Fragment>
   <HeaderWithImage
     withSpotLight
   >
     <Column medium={7} large={8}>
       <Row>
-        <Breadcrumb style={breadcrumbStyles}>
-          <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
-          <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
+        <Breadcrumb>
+          <Breadcrumb.Item position="1" href="/home">Home</Breadcrumb.Item>
+          <Breadcrumb.Item position="2" href="/concerts">Concert Tickets</Breadcrumb.Item>
+          <Breadcrumb.Item position="3">Rock</Breadcrumb.Item>
         </Breadcrumb>
         <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
             4.8
@@ -82,7 +83,8 @@ responsive: true
     </Column>
   </HeaderWithImage>
   <div>Some other content</div>
-</React.Fragment>
+  </React.Fragment>
+</ThemeProvider>
 ```
 
 ### Image Header with Image Background
@@ -90,6 +92,7 @@ responsive: true
 ```react
 responsive: true
 ---
+<ThemeProvider theme={{ themeName: "tm"}}>
 <React.Fragment>
   <HeaderWithImage
     withOverlay
@@ -97,10 +100,10 @@ responsive: true
   >
     <Column medium={7} large={8}>
       <Row>
-        <Breadcrumb style={breadcrumbStyles}>
-          <Breadcrumb.Item position="1" href="/home" style={breadcrumbStyles}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item position="2" href="/concerts" style={breadcrumbStyles}>Concert Tickets</Breadcrumb.Item>
-          <Breadcrumb.Item position="3" style={breadcrumbStyles}>Rock</Breadcrumb.Item>
+        <Breadcrumb>
+          <Breadcrumb.Item position="1" href="/home">Home</Breadcrumb.Item>
+          <Breadcrumb.Item position="2" href="/concerts">Concert Tickets</Breadcrumb.Item>
+          <Breadcrumb.Item position="3">Rock</Breadcrumb.Item>
         </Breadcrumb>
         <RatingBadge variant="transparent" ratingValue="4.8" bestRating="5" ratingCount="20" style={ratingBadgeStyles}>
             4.8
@@ -122,7 +125,8 @@ responsive: true
     </Column>
   </HeaderWithImage>
   <div>Some other content</div>
-</React.Fragment>
+  </React.Fragment>
+</ThemeProvider>
 ```
 
 ### Image Header with Underlaid Image Background

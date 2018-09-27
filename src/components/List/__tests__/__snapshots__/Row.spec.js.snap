@@ -48,87 +48,52 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c14 {
+.c7 {
   font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
   color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(38,38,38,0.6);
 }
 
-.c7 {
+.c14 {
   font-size: 14px;
-  color: #1F262D;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
 }
 
 .c4 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 45px;
-  max-width: 45px;
-  height: 45px;
-  width: 45px;
-}
-
-.c4:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .c4:focus {
   outline: none;
 }
 
+.c4.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 .c4 > * {
-  pointer-events: none;
-}
-
-.c21 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 35px;
-  max-width: 35px;
-  height: 35px;
-  width: 35px;
-}
-
-.c21:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c21:focus {
-  outline: none;
-}
-
-.c21 > * {
   pointer-events: none;
 }
 
@@ -137,19 +102,19 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 8px;
 }
 
 .c3 {
@@ -167,6 +132,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -176,20 +142,15 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c6 {
-  min-width: 101px;
-  max-width: 116px;
-  padding-left: 8px;
+  width: 61.6%;
+  max-width: 101px;
 }
 
 .c15 {
   display: none;
 }
 
-.c17 {
-  display: none;
-}
-
-.c19 {
+.c18 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -223,45 +184,56 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 18px 0;
 }
 
-.c19:focus {
+.c18:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c19:hover {
+.c18:hover {
   background-color: #0150a7;
 }
 
-.c19:active {
+.c18:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c19:disabled {
+.c18:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
-.c22 {
+.c20 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c17 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .c13 {
@@ -280,8 +252,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c0 {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -349,31 +319,77 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   }
 }
 
-@media only screen and (min-width:480px) {
+@media screen and (min-width:768px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c14 {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-width:480px) {
-  .c7 {
-    font-size: 12px;
+@media screen and (min-width:1024px) {
+  .c14 {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c1 {
-    margin-bottom: 0;
     border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width:768px) {
   .c3 {
     display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 }
 
@@ -385,26 +401,30 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
+}
 
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:480px) {
+  .c6 {
+    width: 31.1%;
   }
+}
 
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:768px) {
+  .c6 {
+    width: 26.8%;
+    max-width: 116px;
   }
+}
 
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
+@media screen and (min-width:1024px) {
+  .c6 {
+    width: 32.7%;
   }
 }
 
 @media screen and (min-width:768px) {
   .c15 {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -417,6 +437,18 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .c15.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c15.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
   }
 }
 
@@ -427,33 +459,27 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c20 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c20.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c20.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c17 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -470,8 +496,29 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c19 {
     display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13.subtitle--hidden {
+    position: absolute;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.subtitle--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.subtitle--expanded {
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
   }
 }
 
@@ -480,7 +527,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="c1"
+    className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
       className="c2"
@@ -488,11 +535,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
+        className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
         role="button"
         size={45}
-        style={null}
+        type="button"
       >
         <svg
           fill="#1F262D"
@@ -517,18 +564,28 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
-            color="#1F262D"
-            style={
+            className="text text--dark text--primary date--text c7"
+            disabled={false}
+            size={
               Object {
-                "textTransform": "uppercase",
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="text text--dark text--secondary day-time--text c8 c9"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
           >
             Thu, 8:00 PM
           </div>
@@ -545,41 +602,86 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary list-row--title c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed c15 c16"
+          >
+            <div
+              className="text text--dark text--primary c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
             </div>
           </div>
           <div
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
-              Del Mar Fairgrounds
+              KABOO 3-Day Pass
             </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
             </div>
           </div>
         </div>
         <div
-          className="c18"
+          className="c17"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="c18"
             onClick={[Function]}
             role="button"
             size="regular"
@@ -590,15 +692,15 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info c21"
+          className="button--more-info icon-button--last c4"
           data-index={0}
           onClick={[Function]}
           role="button"
-          size={35}
+          type="button"
         >
           <svg
             fill="rgba(38, 38, 38, 0.6)"
@@ -614,7 +716,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 c12"
+      className="container__overflow container__overflow--collapsed c20 c12"
     />
   </div>
 </div>
@@ -668,7 +770,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c23 {
+.c21 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -678,7 +780,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 75%;
 }
 
-.c25 {
+.c23 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -688,94 +790,76 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 25%;
 }
 
-.c14 {
+.c22 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c22:focus,
+.c22:active,
+.c22:visited,
+.c22:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c22:hover {
+  color: #0150a7;
+}
+
+.c7 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
   color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(38,38,38,0.6);
 }
 
-.c7 {
+.c14 {
   font-size: 14px;
-  color: #1F262D;
-  font-weight: 600;
-}
-
-.c24 {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
 }
 
 .c4 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 45px;
-  max-width: 45px;
-  height: 45px;
-  width: 45px;
-}
-
-.c4:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .c4:focus {
   outline: none;
 }
 
+.c4.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 .c4 > * {
-  pointer-events: none;
-}
-
-.c21 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 35px;
-  max-width: 35px;
-  height: 35px;
-  width: 35px;
-}
-
-.c21:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c21:focus {
-  outline: none;
-}
-
-.c21 > * {
   pointer-events: none;
 }
 
@@ -784,19 +868,19 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 8px;
 }
 
 .c3 {
@@ -814,29 +898,25 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
-  min-width: 101px;
-  max-width: 116px;
-  padding-left: 8px;
+  width: 61.6%;
+  max-width: 101px;
 }
 
 .c15 {
   display: none;
 }
 
-.c17 {
-  display: none;
-}
-
-.c19 {
+.c18 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -870,49 +950,61 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 8px 0;
 }
 
-.c19:focus {
+.c18:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c19:hover {
+.c18:hover {
   background-color: #0150a7;
 }
 
-.c19:active {
+.c18:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c19:disabled {
+.c18:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
-.c22 {
+.c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
-.c26 {
+.c24 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c17 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .c13 {
@@ -931,8 +1023,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c0 {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -1001,7 +1091,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c23 {
+  .c21 {
     max-width: 83.33333333333334%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1012,7 +1102,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c23 {
+  .c21 {
     max-width: 87.5%;
     -webkit-flex: 0 0 87.5%;
     -ms-flex: 0 0 87.5%;
@@ -1021,7 +1111,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c23 {
+  .c21 {
     max-width: 90%;
     -webkit-flex: 0 0 90%;
     -ms-flex: 0 0 90%;
@@ -1030,7 +1120,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c25 {
+  .c23 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1041,7 +1131,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c25 {
+  .c23 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -1050,7 +1140,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c25 {
+  .c23 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -1058,25 +1148,71 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   }
 }
 
-@media only screen and (min-width:480px) {
+@media screen and (min-width:768px) {
+  .c22 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c22 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c14 {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-width:480px) {
-  .c7 {
-    font-size: 12px;
+@media screen and (min-width:1024px) {
+  .c14 {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c1 {
-    margin-bottom: 0;
     border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    margin-bottom: 0;
   }
 }
 
@@ -1084,36 +1220,52 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   .c3 {
     display: block;
   }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
 }
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
+}
 
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:480px) {
+  .c6 {
+    width: 31.1%;
   }
+}
 
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:768px) {
+  .c6 {
+    width: 26.8%;
+    max-width: 116px;
   }
+}
 
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
+@media screen and (min-width:1024px) {
+  .c6 {
+    width: 32.7%;
   }
 }
 
 @media screen and (min-width:768px) {
   .c15 {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1126,6 +1278,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .c15.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c15.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
   }
 }
 
@@ -1136,39 +1300,33 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c20 {
+    padding-left: calc(16px + 16px + 15px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c24 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c24.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c24.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c17 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    padding-left: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c26 {
-    border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1185,8 +1343,29 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c19 {
     display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13.subtitle--hidden {
+    position: absolute;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.subtitle--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.subtitle--expanded {
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
   }
 }
 
@@ -1195,7 +1374,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="c1"
+    className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
       className="c2"
@@ -1203,11 +1382,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
+        className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
         role="button"
         size={45}
-        style={null}
+        type="button"
       >
         <svg
           fill="#1F262D"
@@ -1232,18 +1411,28 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
-            color="#1F262D"
-            style={
+            className="text text--dark text--primary date--text c7"
+            disabled={false}
+            size={
               Object {
-                "textTransform": "uppercase",
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="text text--dark text--secondary day-time--text c8 c9"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
           >
             Thu, 8:00 PM
           </div>
@@ -1260,41 +1449,86 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary list-row--title c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed c15 c16"
+          >
+            <div
+              className="text text--dark text--primary c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
             </div>
           </div>
           <div
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
-              Del Mar Fairgrounds
+              KABOO 3-Day Pass
             </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
             </div>
           </div>
         </div>
         <div
-          className="c18"
+          className="c17"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="c18"
             onClick={[Function]}
             role="button"
             size="regular"
@@ -1305,15 +1539,15 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info c21"
+          className="button--more-info icon-button--last c4"
           data-index={0}
           onClick={[Function]}
           role="button"
-          size={35}
+          type="button"
         >
           <svg
             fill="rgba(38, 38, 38, 0.6)"
@@ -1329,33 +1563,48 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 c10"
+      className="c20 c10"
     >
       <div
-        className="c23"
+        className="c21"
       >
-        <a
-          className="c24"
-          color=""
+        <span
+          className="c22"
           href=""
+          onClick={null}
           rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
           target=""
         >
           Ticket Options Available
-        </a>
+        </span>
       </div>
       <div
-        className="c25"
+        className="c23"
       >
         <div
-          className="c9"
+          className="text text--dark text--secondary c8 c9"
+          disabled={false}
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
         >
           on Partner Site
         </div>
       </div>
     </div>
     <div
-      className="c26 c12"
+      className="container__overflow container__overflow--collapsed c24 c12"
     />
   </div>
 </div>
@@ -1409,7 +1658,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c23 {
+.c21 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1419,7 +1668,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 75%;
 }
 
-.c25 {
+.c23 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1429,94 +1678,75 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 25%;
 }
 
-.c14 {
+.c22 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c22:focus,
+.c22:active,
+.c22:visited,
+.c22:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c22:hover {
+  color: #0150a7;
+}
+
+.c7 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
   color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(38,38,38,0.6);
 }
 
-.c7 {
+.c14 {
   font-size: 14px;
-  color: #1F262D;
-  font-weight: 600;
-}
-
-.c24 {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
 }
 
 .c4 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 45px;
-  max-width: 45px;
-  height: 45px;
-  width: 45px;
-}
-
-.c4:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .c4:focus {
   outline: none;
 }
 
+.c4.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 .c4 > * {
-  pointer-events: none;
-}
-
-.c21 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 35px;
-  max-width: 35px;
-  height: 35px;
-  width: 35px;
-}
-
-.c21:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c21:focus {
-  outline: none;
-}
-
-.c21 > * {
   pointer-events: none;
 }
 
@@ -1525,19 +1755,19 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 8px;
 }
 
 .c3 {
@@ -1555,29 +1785,25 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
-  min-width: 101px;
-  max-width: 116px;
-  padding-left: 8px;
+  width: 61.6%;
+  max-width: 101px;
 }
 
 .c15 {
   display: none;
 }
 
-.c17 {
-  display: none;
-}
-
-.c19 {
+.c18 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1611,49 +1837,61 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 8px 0;
 }
 
-.c19:focus {
+.c18:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c19:hover {
+.c18:hover {
   background-color: #0150a7;
 }
 
-.c19:active {
+.c18:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c19:disabled {
+.c18:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
-.c22 {
+.c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
-.c26 {
+.c24 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c17 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .c13 {
@@ -1672,8 +1910,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c0 {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -1742,7 +1978,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c23 {
+  .c21 {
     max-width: 83.33333333333334%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1753,7 +1989,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c23 {
+  .c21 {
     max-width: 87.5%;
     -webkit-flex: 0 0 87.5%;
     -ms-flex: 0 0 87.5%;
@@ -1762,7 +1998,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c23 {
+  .c21 {
     max-width: 90%;
     -webkit-flex: 0 0 90%;
     -ms-flex: 0 0 90%;
@@ -1771,7 +2007,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c25 {
+  .c23 {
     max-width: 16.666666666666664%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1782,7 +2018,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c25 {
+  .c23 {
     max-width: 12.5%;
     -webkit-flex: 0 0 12.5%;
     -ms-flex: 0 0 12.5%;
@@ -1791,7 +2027,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c25 {
+  .c23 {
     max-width: 10%;
     -webkit-flex: 0 0 10%;
     -ms-flex: 0 0 10%;
@@ -1799,25 +2035,71 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   }
 }
 
-@media only screen and (min-width:480px) {
+@media screen and (min-width:768px) {
+  .c22 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c22 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c14 {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-width:480px) {
-  .c7 {
-    font-size: 12px;
+@media screen and (min-width:1024px) {
+  .c14 {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c1 {
-    margin-bottom: 0;
     border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    margin-bottom: 0;
   }
 }
 
@@ -1825,36 +2107,52 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   .c3 {
     display: block;
   }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
 }
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
+}
 
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:480px) {
+  .c6 {
+    width: 31.1%;
   }
+}
 
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:768px) {
+  .c6 {
+    width: 26.8%;
+    max-width: 116px;
   }
+}
 
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
+@media screen and (min-width:1024px) {
+  .c6 {
+    width: 32.7%;
   }
 }
 
 @media screen and (min-width:768px) {
   .c15 {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1867,6 +2165,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .c15.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c15.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
   }
 }
 
@@ -1877,39 +2187,33 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c20 {
+    padding-left: calc(16px + 16px + 15px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c24 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c24.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c24.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c17 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    padding-left: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c26 {
-    border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1926,8 +2230,29 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c19 {
     display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13.subtitle--hidden {
+    position: absolute;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.subtitle--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.subtitle--expanded {
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
   }
 }
 
@@ -1936,7 +2261,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="c1"
+    className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
       className="c2"
@@ -1944,11 +2269,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
+        className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
         role="button"
         size={45}
-        style={null}
+        type="button"
       >
         <svg
           fill="#1F262D"
@@ -1973,18 +2298,28 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
-            color="#1F262D"
-            style={
+            className="text text--dark text--primary date--text c7"
+            disabled={false}
+            size={
               Object {
-                "textTransform": "uppercase",
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="text text--dark text--secondary day-time--text c8 c9"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
           >
             Thu, 8:00 PM
           </div>
@@ -2001,41 +2336,86 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary list-row--title c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed c15 c16"
+          >
+            <div
+              className="text text--dark text--primary c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
             </div>
           </div>
           <div
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
-              Del Mar Fairgrounds
+              KABOO 3-Day Pass
             </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
             </div>
           </div>
         </div>
         <div
-          className="c18"
+          className="c17"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="c18"
             onClick={[Function]}
             role="button"
             size="regular"
@@ -2046,15 +2426,15 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info c21"
+          className="button--more-info icon-button--last c4"
           data-index={0}
           onClick={[Function]}
           role="button"
-          size={35}
+          type="button"
         >
           <svg
             fill="rgba(38, 38, 38, 0.6)"
@@ -2070,33 +2450,48 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 c10"
+      className="c20 c10"
     >
       <div
-        className="c23"
+        className="c21"
       >
         <a
-          className="c24"
-          color=""
+          className="c22"
           href="/"
+          onClick={null}
           rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
           target=""
         >
           Ticket options available
         </a>
       </div>
       <div
-        className="c25"
+        className="c23"
       >
         <div
-          className="c9"
+          className="text text--dark text--secondary c8 c9"
+          disabled={false}
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
         >
           click here
         </div>
       </div>
     </div>
     <div
-      className="c26 c12"
+      className="container__overflow container__overflow--collapsed c24 c12"
     />
   </div>
 </div>
@@ -2150,87 +2545,52 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c14 {
+.c7 {
   font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
   color: rgba(38,38,38,1);
 }
 
 .c9 {
   font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
   color: rgba(38,38,38,0.6);
 }
 
-.c7 {
+.c14 {
   font-size: 14px;
-  color: #1F262D;
-  font-weight: 600;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
 }
 
 .c4 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 45px;
-  max-width: 45px;
-  height: 45px;
-  width: 45px;
-}
-
-.c4:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .c4:focus {
   outline: none;
 }
 
+.c4.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
 .c4 > * {
-  pointer-events: none;
-}
-
-.c21 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 35px;
-  max-width: 35px;
-  height: 35px;
-  width: 35px;
-}
-
-.c21:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c21:focus {
-  outline: none;
-}
-
-.c21 > * {
   pointer-events: none;
 }
 
@@ -2239,19 +2599,19 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c1:not(:last-of-type) {
-  border-bottom: 0.5px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 8px;
 }
 
 .c3 {
@@ -2269,6 +2629,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
+  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -2278,20 +2639,15 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c6 {
-  min-width: 101px;
-  max-width: 116px;
-  padding-left: 8px;
+  width: 61.6%;
+  max-width: 101px;
 }
 
 .c15 {
   display: none;
 }
 
-.c17 {
-  display: none;
-}
-
-.c19 {
+.c18 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -2325,45 +2681,56 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 1.4;
   padding: 18px 0 18px 0;
 }
 
-.c19:focus {
+.c18:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c19:hover {
+.c18:hover {
   background-color: #0150a7;
 }
 
-.c19:active {
+.c18:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c19:disabled {
+.c18:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
-.c22 {
+.c20 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c18 {
+.c17 {
   display: none;
   padding-left: 16px;
   padding-right: 8px;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
 }
 
 .c13 {
@@ -2382,8 +2749,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c0 {
   width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 @media screen and (min-width:768px) {
@@ -2451,31 +2816,77 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   }
 }
 
-@media only screen and (min-width:480px) {
+@media screen and (min-width:768px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c7 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c9 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c14 {
     font-size: 16px;
   }
 }
 
-@media only screen and (min-width:480px) {
-  .c7 {
-    font-size: 12px;
+@media screen and (min-width:1024px) {
+  .c14 {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width:768px) {
   .c1 {
-    margin-bottom: 0;
     border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
-    -webkit-transition: box-shadow 0.5s ease-in-out;
-    transition: box-shadow 0.5s ease-in-out;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width:768px) {
   .c3 {
     display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 }
 
@@ -2487,26 +2898,30 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
+}
 
-  .c5:hover .text--primary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:480px) {
+  .c6 {
+    width: 31.1%;
   }
+}
 
-  .c5:hover .text--secondary:after {
-    background-color: rgba(2,108,223,0.1);
+@media screen and (min-width:768px) {
+  .c6 {
+    width: 26.8%;
+    max-width: 116px;
   }
+}
 
-  .c5:hover .text--primary:before {
-    content: "";
-  }
-
-  .c5:hover .text--secondary:before {
-    content: "";
+@media screen and (min-width:1024px) {
+  .c6 {
+    width: 32.7%;
   }
 }
 
 @media screen and (min-width:768px) {
   .c15 {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2519,6 +2934,18 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .c15.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c15.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
   }
 }
 
@@ -2529,33 +2956,27 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c20 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c20.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c20.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c17 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    border-top: 0.5px solid #E0E0E0;
-    -webkit-transition: max-height 0.5s ease-in-out;
-    transition: max-height 0.5s ease-in-out;
-    max-height: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2572,8 +2993,29 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c19 {
     display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13.subtitle--hidden {
+    position: absolute;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.subtitle--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.subtitle--expanded {
+    -webkit-transform: translateX(-55%);
+    -ms-transform: translateX(-55%);
+    transform: translateX(-55%);
   }
 }
 
@@ -2582,7 +3024,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="c1"
+    className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
       className="c2"
@@ -2590,11 +3032,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse c3 c4"
+        className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
         role="button"
         size={45}
-        style={null}
+        type="button"
       >
         <svg
           fill="#1F262D"
@@ -2619,18 +3061,28 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           className="c6"
         >
           <div
-            className="c7"
-            color="#1F262D"
-            style={
+            className="text text--dark text--primary date--text c7"
+            disabled={false}
+            size={
               Object {
-                "textTransform": "uppercase",
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="c8 c9"
+            className="text text--dark text--secondary day-time--text c8 c9"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
           >
             Thu, 8:00 PM
           </div>
@@ -2647,41 +3099,86 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="c11 c12"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary list-row--title c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="c8 c9"
+              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed c15 c16"
+          >
+            <div
+              className="text text--dark text--primary c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
             </div>
           </div>
           <div
             className="c15 c16"
           >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
-              Del Mar Fairgrounds
+              KABOO 3-Day Pass
             </div>
-          </div>
-          <div
-            className="c17 c16"
-          >
             <div
-              className="c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
             >
               KABOO 3-Day Pass
             </div>
           </div>
         </div>
         <div
-          className="c18"
+          className="c17"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="c18"
             onClick={[Function]}
             role="button"
             size="regular"
@@ -2692,15 +3189,15 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info c21"
+          className="button--more-info icon-button--last c4"
           data-index={0}
           onClick={[Function]}
           role="button"
-          size={35}
+          type="button"
         >
           <svg
             fill="rgba(38, 38, 38, 0.6)"
@@ -2716,7 +3213,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="c22 c12"
+      className="container__overflow container__overflow--collapsed c20 c12"
     />
   </div>
 </div>

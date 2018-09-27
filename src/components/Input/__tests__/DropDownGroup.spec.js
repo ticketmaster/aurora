@@ -1,4 +1,5 @@
 import React from "react";
+import renderer from "react-test-renderer";
 import {
   renderIntoDocument,
   cleanup,
@@ -16,9 +17,16 @@ describe("DropDownGroup", () => {
     expect(renderComponent().container.firstChild).toMatchSnapshot();
   });
 
-  it("renders variant 1", () => {
+  it("renders variant 0 with a placeholder prop", () => {
     expect(
       renderComponent({ placeholder: "Select An Option", variant: 1 }).container
+        .firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders variant 1 with a label prop", () => {
+    expect(
+      renderComponent({ label: "Selected Option:", variant: 1 }).container
         .firstChild
     ).toMatchSnapshot();
   });
@@ -230,4 +238,20 @@ describe("DropDownGroup", () => {
       </div>
     );
   }
+});
+
+describe("DropDownOption", () => {
+  it("should render the correct markup when a className prop is passed", () => {
+    const component = renderer.create(
+      <DropDownOption
+        className="dropdown__item--expandable"
+        value="ValueOne"
+        index={0}
+      >
+        Option One
+      </DropDownOption>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

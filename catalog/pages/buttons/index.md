@@ -15,6 +15,9 @@ rows:
     Type: string
     Default: '`regular`'
     Notes: Determines button size. Possible sizes are `small`, `regular`, `large`
+  - Prop: href
+    Type: string
+    Notes: Determines wether underlying HTML element should be an `a`
   - Prop: children
     Type: node
     Default:
@@ -25,7 +28,7 @@ rows:
     Notes: Passes through any other props to underlying button, or in the case of an href prop being passed, anchor, element
 ```
 
-### Standart button
+### Standard button
 
 ```react
 ---
@@ -118,6 +121,28 @@ rows:
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="transparent" size="large" disabled>My cool button</Button>
+                </Spacing>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
+### Linked button
+
+```react
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column small={3}/>
+            <Column small={6}>
+                <Button size="small" href="#">My cool button</Button>
+                <Spacing top={{small: "moderate"}}>
+                    <Button href="#">My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
+                    <Button size="large" href="#">My cool button</Button>
                 </Spacing>
             </Column>
         </Row>

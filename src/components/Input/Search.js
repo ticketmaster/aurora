@@ -35,7 +35,7 @@ const Input = styled.input.attrs({
   &::placeholder {
     color: ${props => (props.invert ? "#26262699" : colors.white.base)};
   }
-  &::ms-clear {
+  &::-ms-clear {
     display: none;
   }
   &::-webkit-search-cancel-button {
@@ -113,7 +113,7 @@ export default class SearchInput extends React.Component {
         )}
       >
         <IconContainer slim={slim} invert={invert}>
-          <SearchIcon size={16} />
+          <SearchIcon size="small" />
         </IconContainer>
         <Input
           {...{

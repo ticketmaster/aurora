@@ -14,7 +14,7 @@ const RadioInput = styled.input.attrs({
   transition: transform 0.1s ${constants.easing.easeInOutQuad};
 
   &:active {
-    transform: scale(0.98, 0.98) translate(0, 1px);
+    transform: scale(0.95, 0.95);
   }
 
   .radio-button--large & {
@@ -27,9 +27,7 @@ const RadioInput = styled.input.attrs({
   }
   &:before {
     content: "";
-    transition: border-color 0.3s ${constants.easing.easeInOutQuad},
-      border-width 0.3s ${constants.easing.easeInOutQuad},
-      box-shadow 0.3s ${constants.easing.easeInOutQuad};
+    transition: box-shadow 0.3s ${constants.easing.easeInOutQuad};
     position: absolute;
     background-color: transparent;
     top: 50%;
@@ -54,9 +52,11 @@ const RadioInput = styled.input.attrs({
   }
   &:after {
     content: "";
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
-    opacity: 0;
+    transition: width 0.3s ${constants.easing.easeInOutQuad},
+      height 0.3s ${constants.easing.easeInOutQuad},
+      opacity 0.3s ${constants.easing.easeInOutQuad};
     position: absolute;
+    opacity: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -65,12 +65,12 @@ const RadioInput = styled.input.attrs({
       themes[themeName].primary.base};
 
     .radio-button--large & {
-      width: 12px;
-      height: 12px;
-    }
-    .radio-button--small & {
       width: 8px;
       height: 8px;
+    }
+    .radio-button--small & {
+      width: 5px;
+      height: 5px;
     }
 
     .radio-button--disabled & {
@@ -90,10 +90,28 @@ const RadioInput = styled.input.attrs({
     border-width: 2px;
     border-color: ${({ theme: { themeName } }) =>
       themes[themeName].primary.base};
+
+    .radio-button--large & {
+      width: 23px;
+      height: 23px;
+    }
+    .radio-button--small & {
+      width: 15px;
+      height: 15px;
+    }
   }
   &:checked:after {
-    opacity: 1;
     position: absolute;
+    opacity: 1;
+
+    .radio-button--large & {
+      width: 12px;
+      height: 12px;
+    }
+    .radio-button--small & {
+      width: 8px;
+      height: 8px;
+    }
   }
 `;
 
@@ -136,7 +154,6 @@ class RadioInputComponent extends React.Component {
         checked={checked}
         aria-labelledby={`${name + value}label`}
         aria-checked={checked}
-        role="radio"
         {...props}
         innerRef={this.SelectedElement}
       />

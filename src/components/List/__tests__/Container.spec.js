@@ -64,8 +64,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
+                id={section.id}
               >
                 {section.items.slice(0, 4).map(sectionItem => (
                   <SectionItem item={sectionItem} key={sectionItem.title} />
@@ -94,8 +95,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
                 key={section.title}
+                id={section.id}
+                large={4}
               >
                 {section.items.slice(0, 4).map(sectionItem => (
                   <SectionItem item={sectionItem} key={sectionItem.title} />
@@ -123,8 +125,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
+                id={section.id}
               >
                 {section.items.slice(0, 4).map(sectionItem => (
                   <SectionItem item={sectionItem} key={sectionItem.title} />
@@ -152,8 +155,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
+                id={section.id}
               >
                 {section.items.slice(0, 4).map(sectionItem => (
                   <SectionItem item={sectionItem} key={sectionItem.title} />
@@ -184,8 +188,9 @@ describe("<ListContainer />", () => {
             {sections.map(section => (
               <Section
                 title={section.title}
-                totalSections={4}
+                large={4}
                 key={section.title}
+                id={section.id}
               >
                 {section.items.slice(0, 4).map(sectionItem => (
                   <SectionItem item={sectionItem} key={sectionItem.title} />
@@ -223,8 +228,9 @@ describe("<ListContainer />", () => {
           <ListRowOverflow>
             <Section
               title={sections[0].title}
-              totalSections={1}
+              large={1}
               key={sections[0].id}
+              id={sections[0].id}
             >
               {sections[0].items.map(sectionItem => (
                 <SectionItem item={sectionItem} key={sectionItem.title} />

@@ -38,13 +38,13 @@ export const ReactToggleTrack = styled.div`
   transition: background-color 0.3s ${constants.easing.easeInOutQuad};
 
   .toggle--small & {
-    width: 30px;
+    width: 28px;
     height: 16px;
     border: 1px solid;
   }
 
   .toggle--large & {
-    width: 48px;
+    width: 42px;
     height: 24px;
     border: 1px solid;
   }
@@ -137,9 +137,9 @@ export const ReactToggleThumb = styled.div`
   }
 
   .toggle--small.toggle--active & {
-    left: 17px;
+    left: 15px;
   }
   .toggle--large.toggle--active & {
-    left: 27px;
+    left: 21px;
   }
 `;

@@ -8,6 +8,9 @@ import { sections } from "../list_row/mock";
 import ListRowOverflow from "../../../src/components/List/Overflow";
 import Section from "../../../src/components/List/Section";
 import SectionItem from "../../../src/components/List/SectionItem";
+import { constants } from "../../../src/theme";
+
+const { MAX_COLUMNS } = constants;
 
 export default {
   path: "/bottomSheet",
@@ -19,7 +22,8 @@ export default {
     SectionItem,
     sections,
     ListRowOverflow,
-    ReactCSSTransitionGroup
+    ReactCSSTransitionGroup,
+    MAX_COLUMNS
   },
   content: pageLoader(() => import("./index.md"))
 };

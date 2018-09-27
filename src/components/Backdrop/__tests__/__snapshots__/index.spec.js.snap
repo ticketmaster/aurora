@@ -25,7 +25,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-bZQynM dlhAKC"
+        class="button--cancel sc-bZQynM jMIYCi"
         role="button"
         size="45"
       >
@@ -68,7 +68,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-bZQynM dlhAKC"
+        class="button--cancel sc-bZQynM jMIYCi"
         role="button"
         size="45"
       >

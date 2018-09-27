@@ -1,7 +1,7 @@
 import { pageLoader } from "catalog";
 
 import { colors, typography } from "../../../src/theme";
-import { Text } from "../../../src/components/Text";
+import { Text, Link } from "../../../src/components/Text";
 import { Container, Row, Column } from "../../../src/components/Grid";
 
 const textStyle = {
@@ -46,6 +46,7 @@ export default {
     Row,
     Column,
     Text,
+    Link,
     getFontWeightTextStyle,
     fontWeightLabelStyle,
     fontSizeRowStyle,

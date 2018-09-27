@@ -9,17 +9,16 @@ import Portal from "../Portal";
 import Backdrop from "../Backdrop";
 import BottomSheet from "../BottomSheet";
 import Modal from "../Modal";
-import spacing from "../../theme/spacing";
+import { updateOpenIndex } from "./helper";
 
 const Container = styled.div`
   width: 100%;
-  padding-left: ${spacing.cozy};
-  padding-right: ${spacing.cozy};
 `;
 
 class ListContainer extends Component {
   state = {
     openIndex: -1,
+    expandMultiple: this.props.expandMultiple,
     mobilePortalContent: null,
     desktopPortalContent: null,
     onCloseRequest: () => {}, // eslint-disable-line
@@ -33,6 +32,7 @@ class ListContainer extends Component {
     });
   }
 
+  // Only used by modal on mobile devices
   onCloseRequest = () => {
     if (this.state.desktopPortalContent) {
       this.setState({ desktopPortalContent: null });
@@ -48,11 +48,12 @@ class ListContainer extends Component {
     }
   };
 
+  // Only used on tablet/desktop devices
   onExpandOrCollapse = event => {
     const { className = "", dataset } = event.target || {};
     const { index } = dataset || {};
 
-    if (!className) {
+    if (!className || className.constructor !== String) {
       return null;
     }
 
@@ -62,15 +63,13 @@ class ListContainer extends Component {
     ) {
       event.preventDefault();
 
+      const { openIndex, expandMultiple } = this.state;
       const dataIndex = parseInt(index, 10);
 
       if (dataIndex > -1) {
-        if (className.includes("button--expand-or-collapse")) {
-          return this.state.openIndex === dataIndex
-            ? this.setState({ openIndex: -1 })
-            : this.setState({ openIndex: dataIndex });
-        }
-        return this.setState({ openIndex: dataIndex });
+        return this.setState({
+          openIndex: updateOpenIndex(expandMultiple, openIndex, dataIndex)
+        });
       }
     }
     return null;
@@ -132,13 +131,15 @@ class ListContainer extends Component {
 
 ListContainer.defaultProps = {
   onRowCollapse: () => {},
-  onModalClose: () => {}
+  onModalClose: () => {},
+  expandMultiple: false
 };
 
 ListContainer.propTypes = {
   children: PropTypes.node.isRequired,
   onRowCollapse: PropTypes.func,
-  onModalClose: PropTypes.func
+  onModalClose: PropTypes.func,
+  expandMultiple: PropTypes.bool
 };
 
 export default ListContainer;

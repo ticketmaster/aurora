@@ -75,7 +75,11 @@ const StyledChildWrapper = styled.div`
     flex: 1;
     display: flex;
     overflow: auto;
-    height: 135px;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 10;
+    height: auto;
+    max-height: 300px;
   }
 `;
 
@@ -83,6 +87,7 @@ const StyledGroupWrapper = styled.div`
   position: relative;
   color: grey;
   width: 100%;
+  outline: none;
 `;
 
 const StyledChevron = styled(ChevronIcon)`
@@ -145,7 +150,7 @@ class DropDownGroup extends React.Component {
   };
 
   getCurrentSelection = value => {
-    const [label = null] = React.Children.toArray(this.props.children).filter(
+    const [label = ""] = React.Children.toArray(this.props.children).filter(
       c => c.props.value === value
     );
 
@@ -162,7 +167,9 @@ class DropDownGroup extends React.Component {
   };
 
   displayLabel = (selected, variant) => {
-    if (variant === 0 && selected.length === 0) return selected.length === 0;
+    const { placeholder } = this.props;
+
+    if (variant === 0 && selected.length === 0) return placeholder;
 
     if (variant === 0 && selected.length > 0)
       return this.getCurrentSelection(selected[0]);

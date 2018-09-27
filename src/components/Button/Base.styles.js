@@ -82,7 +82,7 @@ export const StyledButton = styled.button`
   padding: 0 ${getPadding} 0 ${getPadding};
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
+  ${({ noTransform }) => (noTransform ? "" : "text-transform: capitalize;")}
   border-radius: ${constants.borderRadius.small};
   cursor: pointer;
 
@@ -142,7 +142,6 @@ export const StyledButton = styled.button`
         const buttonTheme = themes[themeName];
         return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
       }};
-    cursor: not-allowed;
     ${({ variant }) =>
       variant === BUTTON_VARIANTS.special ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
@@ -155,5 +154,6 @@ StyledButton.defaultProps = {
 };
 
 export const StyledButtonLink = StyledButton.withComponent(`a`).extend`
+  display: block;
   text-decoration: none;
 `;

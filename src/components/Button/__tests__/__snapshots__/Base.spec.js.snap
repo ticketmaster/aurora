@@ -20,6 +20,7 @@ exports[`<Button /> renders link button correctly 1`] = `
   transition: transform 0.1s linear;
   -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -47,7 +48,6 @@ exports[`<Button /> renders link button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -106,7 +106,6 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid #026cdf;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -164,7 +163,6 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid #026cdf;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -222,7 +220,6 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
   color: #026cdf;
   background-color: transparent;
   border: 1px solid #026cdf;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -281,7 +278,6 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid #026cdf;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -339,7 +335,6 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.4;
 }
 
@@ -397,7 +392,6 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.4;
 }
 
@@ -455,7 +449,6 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.4;
 }
 
@@ -514,7 +507,6 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #1bab1e;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.4;
 }
 
@@ -572,7 +564,6 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -630,7 +621,6 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -688,7 +678,6 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -747,7 +736,6 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -805,7 +793,6 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -863,7 +850,6 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -921,7 +907,6 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
   color: #026cdf;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -980,7 +965,6 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
   color: #026cdf;
   background-color: transparent;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 

@@ -19,6 +19,7 @@ const HeaderGradient = styled(Gradient)`
   position: relative;
   align-items: flex-end;
   min-height: 122px;
+  z-index: 1;
   ${smallAndUp`
     min-height: 140px;
   `} ${mediumAndUp`
@@ -28,6 +29,7 @@ const HeaderGradient = styled(Gradient)`
 
 const HeaderContainer = Container.extend`
   padding-top: 60px;
+  z-index: 2;
 `;
 
 const Header = ({
