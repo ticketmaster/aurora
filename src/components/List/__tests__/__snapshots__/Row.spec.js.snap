@@ -97,6 +97,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -115,10 +119,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -356,6 +356,24 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -372,24 +390,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -537,6 +537,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -863,6 +864,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -881,10 +886,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -1197,6 +1198,24 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -1213,24 +1232,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -1384,6 +1385,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -1750,6 +1752,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -1768,10 +1774,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -2084,6 +2086,24 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -2100,24 +2120,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -2271,6 +2273,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -2594,6 +2597,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -2612,10 +2619,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -2853,6 +2856,24 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -2869,24 +2890,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -3034,6 +3037,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
