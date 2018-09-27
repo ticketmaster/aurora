@@ -1,99 +1,41 @@
-import React from "react";
-import PropTypes from "prop-types";
+import styled from "styled-components";
+import classnames from "classnames";
 
-import { Text } from "../Text";
+import { constants, colors } from "../../theme";
 
-import DayTileDateLabel from "./DayTileDateLabel";
-import DayTileOverflowButton from "./DayTileOverflowButton";
-import DayTileButton from "./DayTileButton";
-import DayTileMoreButton from "./DayTileMoreButton";
+const DAY_TILE_CLASS = "day-tile";
+const DAY_TILE_NO_BORDER_RADIUS_CLASS = `${DAY_TILE_CLASS}--no-border-radius`;
 
-import {
-  DayTileContainer,
-  DayTileHeader,
-  DayTileContent,
-  DayTileContentColumn,
-  DayTileFooter,
-  DayTileButtonsGroup
-} from "./DayTile.styles";
+const DayTile = styled.div.attrs({
+  className: ({ noBorderRadius }) =>
+    classnames(DAY_TILE_CLASS, {
+      [DAY_TILE_NO_BORDER_RADIUS_CLASS]: noBorderRadius
+    })
+})`
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  min-height: 190px;
+  background-color: ${colors.white.base};
+  border: solid 1px ${colors.onyx.muted};
+  border-radius: ${constants.borderRadius.small};
+  overflow: hidden;
 
-const DayTile = ({
-  children,
-  ctaButtons,
-  dateLabel,
-  image,
-  isDisabled,
-  isHighlighted,
-  moreButton,
-  onOverflowClick,
-  subTitle,
-  title,
-  withOverflow,
-  ...props
-}) => {
-  const withImage = !!image;
-  const overflowButton = withOverflow ? (
-    <DayTileOverflowButton onClick={onOverflowClick} />
-  ) : null;
+  &.${DAY_TILE_NO_BORDER_RADIUS_CLASS} {
+    border-radius: 0;
+  }
+`;
 
-  return (
-    <DayTileContainer
-      withImage={withImage}
-      isHighlighted={isHighlighted}
-      {...props}
-    >
-      <DayTileHeader>
-        <DayTileDateLabel isDisabled={isDisabled}>{dateLabel}</DayTileDateLabel>
-        {!withImage ? overflowButton : null}
-      </DayTileHeader>
-      {image}
-      <DayTileContent>
-        <DayTileContentColumn>
-          <Text size="uno">{title}</Text>
-          <Text secondary size="uno">
-            {subTitle}
-          </Text>
-        </DayTileContentColumn>
-        {withImage ? overflowButton : null}
-      </DayTileContent>
-      <DayTileFooter>
-        {ctaButtons}
-        {moreButton}
-      </DayTileFooter>
-      {children}
-    </DayTileContainer>
-  );
-};
-
-DayTile.propTypes = {
-  children: PropTypes.node,
-  ctaButtons: PropTypes.element,
-  dateLabel: PropTypes.string.isRequired,
-  image: PropTypes.element,
-  isDisabled: PropTypes.bool,
-  isHighlighted: PropTypes.bool,
-  moreButton: PropTypes.element,
-  onOverflowClick: PropTypes.func,
-  subTitle: PropTypes.string,
-  title: PropTypes.string,
-  withOverflow: PropTypes.bool
-};
-
-DayTile.defaultProps = {
-  children: null,
-  ctaButtons: null,
-  image: null,
-  isDisabled: false,
-  isHighlighted: false,
-  moreButton: null,
-  onOverflowClick: () => {},
-  subTitle: "",
-  title: "",
-  withOverflow: false
-};
-
-DayTile.ButtonsGroup = DayTileButtonsGroup;
-DayTile.Button = DayTileButton;
-DayTile.MoreButton = DayTileMoreButton;
+DayTile.Header = styled.header`
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  pointer-events: none;
+`;
 
 export default DayTile;
