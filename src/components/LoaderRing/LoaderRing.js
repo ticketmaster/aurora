@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { themes } from "../../theme";
 
 const Rotate = keyframes`
   from {
@@ -34,8 +35,9 @@ const OuterRing = styled(LoadingContainer)`
     width: 80px;
     height: 80px;
     margin: 0px;
-    border: 3px solid #2882e4;
-    border-color: #2882e4 transparent transparent transparent;
+    border: 3px solid ${themes.global.accent01.dark};
+    border-color: ${themes.global.accent01.dark} transparent transparent
+      transparent;
   }
 `;
 
@@ -45,8 +47,9 @@ const MiddleRing = styled(LoadingContainer)`
     height: 60px;
     margin-top: 7px;
     margin-left: 7px;
-    border: 3px solid #67a7ec;
-    border-color: #67a7ec transparent transparent transparent;
+    border: 3px solid ${themes.global.accent03.light};
+    border-color: ${themes.global.accent03.light} transparent transparent
+      transparent;
   }
 `;
 
@@ -56,8 +59,8 @@ const InnerRing = styled(LoadingContainer)`
     height: 40px;
     margin-top: 7px;
     margin-left: 7px;
-    border: 3px solid #b3d3f5;
-    border-color: #b3d3f5 transparent transparent transparent;
+    border: 3px solid ${themes.global.brand};
+    border-color: ${themes.global.brand} transparent transparent transparent;
   }
 `;
 
