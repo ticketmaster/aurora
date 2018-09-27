@@ -15,9 +15,11 @@ const Container = styled.div`
   width: 100%;
 `;
 
+const ITEMS_COLLAPSED = -1;
+
 class ListContainer extends Component {
   state = {
-    openIndex: -1,
+    openIndex: ITEMS_COLLAPSED,
     expandMultiple: this.props.expandMultiple,
     mobilePortalContent: null,
     desktopPortalContent: null,
@@ -41,7 +43,7 @@ class ListContainer extends Component {
     if (this.state.mobilePortalContent) {
       this.setState({
         mobilePortalContent: null,
-        openIndex: -1
+        openIndex: ITEMS_COLLAPSED
       });
 
       this.props.onRowCollapse();
@@ -97,7 +99,7 @@ class ListContainer extends Component {
                 transitionEnterTimeout={300}
                 transitionLeaveTimeout={300}
               >
-                {this.state.openIndex !== -1 &&
+                {this.state.openIndex !== ITEMS_COLLAPSED &&
                   this.state.mobilePortalContent && (
                     <BottomSheet index={this.state.openIndex}>
                       {this.state.mobilePortalContent}
