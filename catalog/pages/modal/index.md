@@ -52,7 +52,7 @@ responsive: true
 </ReactCSSTransitionGroup>
 ```
 
-### Modal with custom padding
+### Modal with custom padding on content
 
 ```react
 responsive: true
@@ -65,7 +65,34 @@ responsive: true
         transitionAppearTimeout={300}
         transitionEnterTimeout={300}
         transitionLeaveTimeout={100}>
-    <Modal padding="16px 40px 32px 0">
+    <Modal content={{ padding: "16px 40px 32px 0"}}>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+        <div>Hello World</div>
+    </Modal>
+</ReactCSSTransitionGroup>
+```
+
+### Modal with custom padding on container
+
+```react
+responsive: true
+---
+
+<ReactCSSTransitionGroup
+        transitionName="modal"
+        component={Backdrop}
+        transitionAppear
+        transitionAppearTimeout={300}
+        transitionEnterTimeout={300}
+        transitionLeaveTimeout={100}>
+    <Modal container={{ padding: "50px 8px 32px 60px"}}>
         <div>Hello World</div>
         <div>Hello World</div>
         <div>Hello World</div>
