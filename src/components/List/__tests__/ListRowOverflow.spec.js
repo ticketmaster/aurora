@@ -20,11 +20,9 @@ describe("<ListRowOverflow />", () => {
             key={section.id}
             id={section.id}
           >
-            {section.items
-              .slice(0, 4)
-              .map(sectionItem => (
-                <SectionItem item={sectionItem} key={sectionItem.title} />
-              ))}
+            {section.items.slice(0, 4).map(sectionItem => (
+              <SectionItem item={sectionItem} key={sectionItem.title} />
+            ))}
           </Section>
         ))}
       </ListRowOverflow>

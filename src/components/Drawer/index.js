@@ -25,10 +25,15 @@ export default class Drawer extends React.Component {
       PropTypes.node,
       PropTypes.func,
       PropTypes.string
-    ])
+    ]),
+    className: PropTypes.string
   };
 
-  static defaultProps = { children: null, header: null };
+  static defaultProps = {
+    children: null,
+    header: null,
+    className: ""
+  };
 
   getHeaderContent = props => {
     const { header } = this.props;

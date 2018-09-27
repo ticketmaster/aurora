@@ -122,8 +122,7 @@ export {
   DropDownOption,
   RadioButton,
   RadioGroup,
-  CheckBoxButton as CheckBox,
-  CheckBoxGroup,
+  CheckBox,
   Input
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";

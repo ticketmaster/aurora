@@ -133,23 +133,6 @@ span: 6
 </Container>
 ```
 
-## Check Box Group
-
-### Props
-
-```table
-span: 6
-rows:
-  - Prop: value
-    Type: array of strings
-    Default: N/A
-    Notes: Can be many values within the array
-  - Prop: onChange
-    Type: Function
-    Default: N/A
-    Notes:
-```
-
 ## Check Box Button
 
 ### Props
@@ -169,49 +152,35 @@ rows:
     Type: string
     Default: N/A
     Notes: Is Required
-  - Prop: isActive
-    Type: string
-    Default: "true"
-    Notes: Will disable checkbox input
-  - Prop: index
-    Type: number
+  - Prop: checked
+    Type: boolean or indeterminate
     Default: N/A
-    Notes: Is required for keyboard accessibility
+    Notes: Defines whether the checkbox is checked, unchecked or indeterminate
+  - Prop: style
+    Type: object
+    Default: N/A
+    Notes: CSS styles for a label elements
+  - Prop: disabled
+    Type: boolean
+    Default: N/A
+    Notes: Defines if a checkbox is disabled
 ```
 
 ```react
 span: 6
 ---
-<Container>
-    <Row>
-        <Column medium={6}  style={{ padding: "16px 0" }}>
-            <CheckBoxGroup value={["1","2","3"]}>
-                <CheckBoxButton size="large" name="Testing One"  value="1" index={0}>
-                    Testing One
-                </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Two" value="2" index={1}>
-                    Testing Two
-                </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Three" value="3" index={2}>
-                    Testing Three
-                </CheckBoxButton>
-            </CheckBoxGroup>
-        </Column>
-        <Column medium={6} style={{ padding: "16px 0" }}>
-            <CheckBoxGroup >
-                <CheckBoxButton size="small" name="Testing One"  value="1" index={0}>
-                    Testing One
-                </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Two" value="2" index={1}>
-                    Testing Two
-                </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Three" value="3" index={2}>
-                    Testing Three
-                </CheckBoxButton>
-            </CheckBoxGroup>
-        </Column>
-    </Row>
-</Container>
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column medium={6}  style={{ padding: "16px 0" }}>
+                <CheckboxExample size="small"/>
+            </Column>
+            <Column medium={6} style={{ padding: "16px 0" }}>
+                <CheckboxExample size="large"/>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
 ```
 
 ## Field Input

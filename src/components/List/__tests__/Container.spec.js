@@ -66,11 +66,9 @@ describe("<ListContainer />", () => {
                 key={section.title}
                 id={section.id}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -99,11 +97,9 @@ describe("<ListContainer />", () => {
                 id={section.id}
                 large={4}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -131,11 +127,9 @@ describe("<ListContainer />", () => {
                 key={section.title}
                 id={section.id}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -163,11 +157,9 @@ describe("<ListContainer />", () => {
                 key={section.title}
                 id={section.id}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>
@@ -198,11 +190,9 @@ describe("<ListContainer />", () => {
                 key={section.title}
                 id={section.id}
               >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
+                {section.items.slice(0, 4).map(sectionItem => (
+                  <SectionItem item={sectionItem} key={sectionItem.title} />
+                ))}
               </Section>
             ))}
           </ListRow>

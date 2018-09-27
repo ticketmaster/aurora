@@ -13,12 +13,14 @@ const MenuButton = ({ iconClassName, className, ...props }) => (
 
 MenuButton.propTypes = {
   isLast: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  iconClassName: PropTypes.string
 };
 
 MenuButton.defaultProps = {
   isLast: true,
-  className: ""
+  className: "",
+  iconClassName: ""
 };
 
 export default MenuButton;

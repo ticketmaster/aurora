@@ -96,7 +96,8 @@ Button.propTypes = {
   target: PropTypes.string,
   rel: PropTypes.string,
   isFirst: PropTypes.bool,
-  isLast: PropTypes.bool
+  isLast: PropTypes.bool,
+  className: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -105,7 +106,8 @@ Button.defaultProps = {
   isFirst: false,
   isLast: false,
   target: "_self",
-  rel: null
+  rel: null,
+  className: ""
 };
 
 export default Button;

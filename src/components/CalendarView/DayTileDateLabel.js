@@ -38,11 +38,13 @@ const DayTileDateLabel = ({ children, isDisabled }) => {
 
 DayTileDateLabel.propTypes = {
   children: PropTypes.node.isRequired,
-  isAccent: PropTypes.bool
+  isAccent: PropTypes.bool,
+  isDisabled: PropTypes.bool
 };
 
 DayTileDateLabel.defaultProps = {
-  isAccent: true
+  isAccent: true,
+  isDisabled: false
 };
 
 export default DayTileDateLabel;
