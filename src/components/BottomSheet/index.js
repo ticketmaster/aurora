@@ -9,7 +9,7 @@ import { Row } from "../Grid";
 import { BackdropConsumer } from "../Backdrop/Context";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
-import constants from "../../theme/constants";
+import { constants, spacing } from "../../theme";
 
 const BottomSheetContent = styled.div`
   background-color: white;
@@ -21,6 +21,8 @@ const BottomSheetContent = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
+  padding-right: ${spacing.cozy};
+  padding-left: ${spacing.cozy};
 
   &.bottom-sheet-enter {
     transform: translateY(100%);
