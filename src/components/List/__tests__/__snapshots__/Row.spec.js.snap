@@ -683,7 +683,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -1531,7 +1530,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -2419,7 +2417,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -3183,7 +3180,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
