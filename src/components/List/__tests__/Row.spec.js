@@ -6,8 +6,6 @@ import ListRowContainer from "../Container";
 import { listItems } from "../../../../catalog/pages/list_row/mock";
 import { colors } from "../../../theme";
 
-const onOverflowButtonClick = ({ scope, index }) => ({ event }) => ev => {}; // eslint-disable-line
-
 describe("<ListRow />", () => {
   const modalRoot = global.document.createElement("div");
   modalRoot.setAttribute("id", "modal-root");
