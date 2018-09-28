@@ -37,7 +37,7 @@ class DrawerMenu extends React.Component {
   }
 
   render() {
-    const { onClick, toggleDrawer, isOpen } = this.props;
+    const { onClick, toggleDrawer, isOpen, ...rest } = this.props;
 
     return (
       <MenuButton
@@ -47,6 +47,7 @@ class DrawerMenu extends React.Component {
           "hamburger--opened": isOpen,
           "hamburger--closed": !isOpen
         })}
+        {...rest}
       />
     );
   }
