@@ -18,10 +18,6 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: not-allowed;
-}
-
-.c1.toggle--enabled {
   cursor: pointer;
 }
 
@@ -238,10 +234,6 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: not-allowed;
-}
-
-.c1.toggle--enabled {
   cursor: pointer;
 }
 
@@ -458,10 +450,6 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: not-allowed;
-}
-
-.c1.toggle--enabled {
   cursor: pointer;
 }
 
@@ -678,10 +666,6 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: not-allowed;
-}
-
-.c1.toggle--enabled {
   cursor: pointer;
 }
 
