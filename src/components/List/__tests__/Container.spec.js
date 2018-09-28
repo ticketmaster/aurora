@@ -18,8 +18,6 @@ afterEach(() => {
   Consumer.mockReset();
 });
 
-const onOverflowButtonClick = ({ scope, index }) => ({ event }) => ev => {}; // eslint-disable-line
-
 describe("<ListContainer />", () => {
   beforeEach(() => {
     const modalRoot = global.document.createElement("div");

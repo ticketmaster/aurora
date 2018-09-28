@@ -25,12 +25,7 @@ const DayTileOverflowIcon = styled(OverflowIcon)`
 
 const DayTileOverflowButton = props => (
   <DayTileOverflowButtonContainer>
-    <DayTileOverflowIconButton
-      size={30}
-      aria-label="More Info"
-      role="button"
-      {...props}
-    >
+    <DayTileOverflowIconButton size={30} role="button" {...props}>
       <DayTileOverflowIcon size={21} color={colors.onyx.light} />
     </DayTileOverflowIconButton>
   </DayTileOverflowButtonContainer>
