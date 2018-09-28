@@ -10,36 +10,14 @@ import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
 import { Link, Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
-import ChevronIcon from "../Icons/Chevron";
 import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
+
+import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
 const CHEVRON_ICON_SIZE = 15;
 const CHEVRON_ICON_PADDING = spacing.moderate;
-
-const IconButton = styled.button`
-  border: 0;
-  padding: 0 ${CHEVRON_ICON_PADDING};
-  outline: 0;
-  background: transparent;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-
-  &:focus {
-    outline: none;
-  }
-
-  &.icon-button--last {
-    padding-left: ${spacing.moderate};
-    padding-right: 0;
-  }
-
-  > * {
-    pointer-events: none;
-  }
-`;
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -72,24 +50,6 @@ const ListContainer = styled.div`
   background-color: ${colors.white.base};
   align-items: stretch;
   display: flex;
-`;
-
-const IconWrapper = styled(IconButton).attrs({
-  size: 45
-})`
-  display: none;
-  ${mediumAndUp`
-    display: block;
-
-    &.button--expanded,
-    &.button--collapsed {
-      transition: all 0.1s linear;
-    }
-
-    &.button--expanded {
-      transform: rotate(-180deg);
-    }
-  `};
 `;
 
 const LinkWrapper = styled.a`
@@ -279,6 +239,8 @@ const ListRowContent = ({
   onOverflowClick,
   onExpandShow,
   children,
+  onExpandItem,
+  onCollapseItem,
   ...rest
 }) => (
   <RowWrapper
@@ -291,20 +253,13 @@ const ListRowContent = ({
     {...rest}
   >
     <ListContainer>
-      <IconWrapper
-        role="button"
-        type="button"
-        aria-label={isOpen ? "Collapse Row" : "Expand Row"}
-        aria-expanded={isOpen}
-        data-index={index}
-        className={classnames({
-          "button--expand-or-collapse": true,
-          "button--expanded": isOpen,
-          "button--collapsed": !isOpen
-        })}
-      >
-        <ChevronIcon size={CHEVRON_ICON_SIZE} color={colors.blackPearl} />
-      </IconWrapper>
+      <RowToggler
+        isOpen={isOpen}
+        index={index}
+        onExpandItem={onExpandItem}
+        onCollapseItem={onCollapseItem}
+      />
+
       <LinkWrapper
         role="link"
         aria-label={buttonText}
@@ -402,7 +357,6 @@ const ListRowContent = ({
             variant="standard"
             size="regular"
             rowVariant={variant}
-            onClick={onClick}
           >
             {buttonText}
           </ListRowButton>
@@ -414,8 +368,6 @@ const ListRowContent = ({
           className="button--more-info icon-button--last"
           data-index={index}
           aria-label="More Info"
-          type="button"
-          role="button"
           onClick={onOverflowClick}
         >
           <OverflowIcon size={22} color={colors.onyx.light} />
@@ -450,7 +402,9 @@ const ListRowContent = ({
 ListRowContent.defaultProps = {
   isOpen: false,
   onExpandShow: "subTitle",
-  children: null
+  children: null,
+  onExpandItem: RowToggler.defaultProps.onExpandItem,
+  onCollapseItem: RowToggler.defaultProps.onCollapseItem
 };
 
 ListRowContent.propTypes = {
@@ -459,7 +413,9 @@ ListRowContent.propTypes = {
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
-  children: PropTypes.node
+  children: PropTypes.node,
+  onExpandItem: RowToggler.propTypes.onExpandItem,
+  onCollapseItem: RowToggler.propTypes.onCollapseItem
 };
 
 export default ListRowContent;

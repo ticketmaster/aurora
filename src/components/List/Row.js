@@ -6,7 +6,15 @@ import { rowDataShape } from "./shape";
 import { ItemContainerConsumer } from "./Context";
 import { determineIfOpen } from "./helper";
 
-const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
+const ListRow = ({
+  children,
+  rowItem,
+  index,
+  onOverflowClick,
+  onExpandItem,
+  onCollapseItem,
+  ...props
+}) => (
   <ItemContainerConsumer>
     {({ openIndex, expandMultiple, renderIntoPortal }) => (
       <ListRowContent
@@ -19,6 +27,8 @@ const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
           renderIntoPortal({ children, contentType: "mobile" });
           onOverflowClick();
         }}
+        onExpandItem={onExpandItem}
+        onCollapseItem={onCollapseItem}
         {...props}
       >
         {children}
@@ -29,7 +39,9 @@ const ListRow = ({ children, rowItem, index, onOverflowClick, ...props }) => (
 
 ListRow.defaultProps = {
   children: null,
-  onExpandShow: "subTitle"
+  onExpandShow: "subTitle",
+  onExpandItem: ListRowContent.defaultProps.onExpandItem,
+  onCollapseItem: ListRowContent.defaultProps.onCollapseItem
 };
 
 ListRow.propTypes = {
@@ -37,7 +49,9 @@ ListRow.propTypes = {
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
-  children: PropTypes.node
+  children: PropTypes.node,
+  onExpandItem: ListRowContent.propTypes.onExpandItem,
+  onCollapseItem: ListRowContent.propTypes.onCollapseItem
 };
 
 export default ListRow;
