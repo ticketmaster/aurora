@@ -45,7 +45,7 @@ const AfterWrapper = styled.div`
 
 class LinkList extends Component {
   state = {
-    onItemClick: () => {}, // eslint-disable-line
+    onItemClick: /* istanbul ignore next */ () => {}, // eslint-disable-line
     selectedIndex: this.props.selectedIndex // eslint-disable-line
   };
 
@@ -80,7 +80,7 @@ class LinkList extends Component {
 
 LinkList.defaultProps = {
   selectedIndex: -1,
-  onItemClick: () => {},
+  onItemClick: /* istanbul ignore next */ () => {},
   renderAfter: null
 };
 

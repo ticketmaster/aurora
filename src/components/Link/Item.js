@@ -43,8 +43,7 @@ export default class LinkItem extends React.Component {
     href: PropTypes.string,
     target: PropTypes.string,
     rel: PropTypes.string,
-    role: PropTypes.string,
-    toggleChildrenOnClick: PropTypes.bool
+    role: PropTypes.string
   };
 
   static defaultProps = {
@@ -53,38 +52,10 @@ export default class LinkItem extends React.Component {
     href: null,
     target: "_self",
     rel: null,
-    role: null,
-    toggleChildrenOnClick: false
+    role: null
   };
 
   state = { open: false };
-
-  componentDidMount() {
-    if (this.props.toggleChildrenOnClick) {
-      document.addEventListener("click", this.handleOutsideClick);
-    }
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener("click", this.handleOutsideClick);
-  }
-
-  getHandlers = () => {
-    if (this.props.toggleChildrenOnClick) {
-      return this.clickHandlers;
-    }
-
-    return this.hoverHandlers;
-  };
-
-  handleOutsideClick = e => {
-    if (
-      this.thisComponent.current &&
-      !this.thisComponent.current.contains(e.target)
-    ) {
-      this.setState(() => ({ open: false }));
-    }
-  };
 
   open = () => this.hasOther && this.setState(() => ({ open: true }));
 
@@ -92,18 +63,6 @@ export default class LinkItem extends React.Component {
 
   toggle = () =>
     this.hasOther && this.setState(({ open }) => ({ open: !open }));
-
-  thisComponent = React.createRef();
-
-  clickHandlers = {
-    onClick: this.toggle
-  };
-
-  hoverHandlers = {
-    onTouchStart: this.toggle,
-    onMouseEnter: this.open,
-    onMouseLeave: this.close
-  };
 
   render() {
     const { children, rel, target, role, className, ...props } = this.props;
@@ -143,17 +102,17 @@ export default class LinkItem extends React.Component {
         {label}
       </StyledButton>
     );
-
     return (
       <span
-        ref={this.thisComponent}
         className={
           this.state.open
             ? "list-container list-container--open"
             : "list-container list-container--closed"
         }
+        onTouchStart={this.toggle}
+        onMouseEnter={this.open}
+        onMouseLeave={this.close}
         role="none"
-        {...this.getHandlers()}
       >
         {content}
         {other}

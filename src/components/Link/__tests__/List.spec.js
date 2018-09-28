@@ -71,4 +71,26 @@ describe("<LinkList />", () => {
     Simulate.click(container.querySelector(".links__list__item"));
     expect(onOptionSelected).toHaveBeenCalled();
   });
+
+  it("renders content after container", () => {
+    const { container } = render(
+      <LinkList
+        onItemClick={mockFn}
+        selectedIndex={0}
+        renderAfter={<span>after content</span>}
+      >
+        {countries.map((option, index) => (
+          <LinkListItem
+            index={index}
+            key={option.value}
+            onClick={mockFn}
+            href="/"
+          >
+            {option.text}
+          </LinkListItem>
+        ))}
+      </LinkList>
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
