@@ -12,7 +12,7 @@ import { Link, Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 
-import RowToggler, {IconButton} from "./RowToggler";
+import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
@@ -357,7 +357,6 @@ const ListRowContent = ({
             variant="standard"
             size="regular"
             rowVariant={variant}
-            onClick={onClick}
           >
             {buttonText}
           </ListRowButton>
