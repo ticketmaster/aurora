@@ -20,8 +20,14 @@ rows:
     Type: node
     Notes: Optional. Default is null.
   - Prop: onExpandShow
-    Type:  one of either "title" or "subTitle"
+    Type: one of either "title" or "subTitle"
     Notes: Optional. Default is "subTitles"
+  - Prop: onExpandItem
+    Type: "func({ index: number }): void"
+    Notes: Optional. This is called when a user clicks "expand row" chevron
+  - Prop: onCollapseItem
+    Type: "func({ index: number }): void"
+    Notes: Optional. This is called when a user clicks "collapse row" chevron
 ```
 
 ### ListContainer
@@ -93,7 +99,21 @@ rows:
 responsive: true
 ---
 <ListContainer>
-  <ListRow rowItem={listItems[0]} index={0} onOverflowClick={() => {}}/>
+  <ListRow
+    rowItem={listItems[0]}
+    index={0}
+    onOverflowClick={() => alert('Overflow Clicked')}
+    onExpandItem={({index}) => alert(`Expand ${index}`)}
+    onCollapseItem={({index}) => alert(`Collapse ${index}`)}
+  />
+
+  <ListRow
+    rowItem={listItems[0]}
+    index={1}
+    onOverflowClick={() => alert('Overflow Clicked')}
+    onExpandItem={({index}) => alert(`Expand ${index}`)}
+    onCollapseItem={({index}) => alert(`Collapse ${index}`)}
+  />
  </ListContainer>
 ```
 
@@ -104,7 +124,11 @@ responsive: true
 ---
 
 <ListContainer expandMultiple={true}>
-  <ListRow rowItem={listItems[0]} index={0} onOverflowClick={()=>{}}>
+  <ListRow
+    rowItem={listItems[0]}
+    index={0}
+    onOverflowClick={()=>{}}
+  >
     <ListRowOverflow>
     {sections.map(section =>
         <Section title={section.title} medium={MAX_COLUMNS / sections.length} key={section.key}>

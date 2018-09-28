@@ -187,7 +187,17 @@ class DropDownGroup extends React.Component {
   thisComponent = React.createRef();
 
   render() {
-    const { children, value, onChange, variant, ...props } = this.props;
+    const {
+      children,
+      value,
+      onChange,
+      variant,
+      isOpen: isOpenProp,
+      ...props
+    } = this.props;
+    const { isOpen: isOpenState } = this.state;
+    const isOpen = isOpenProp || isOpenState;
+
     return (
       <SelectionProvider
         onChange={onChange}
@@ -206,7 +216,7 @@ class DropDownGroup extends React.Component {
               <StyledGroup
                 onClick={this.onClick}
                 className={classNames({
-                  "dropdown--active": this.state.isOpen,
+                  "dropdown--active": isOpen,
                   "dropdown--border": variant === 0,
                   "dropdown--no-border": variant === 1
                 })}
@@ -216,7 +226,7 @@ class DropDownGroup extends React.Component {
                     "dropdown--selected": true,
                     "dropdown--border": variant === 0,
                     "dropdown--no-border": variant === 1,
-                    "dropdown--alignment": variant === 1 && this.state.isOpen
+                    "dropdown--alignment": variant === 1 && isOpen
                   })}
                 >
                   {this.displayLabel(selected, variant)}
@@ -224,7 +234,7 @@ class DropDownGroup extends React.Component {
 
                 <StyledChevron
                   className={classNames({
-                    "dropdown__icon--hide": this.state.isOpen,
+                    "dropdown__icon--hide": isOpen,
                     "dropdown--no-border": variant === 1
                   })}
                   direction="down"
@@ -235,10 +245,10 @@ class DropDownGroup extends React.Component {
               <StyledChildWrapper
                 className={classNames({
                   dropdown__items: true,
-                  "dropdown--clicked": this.state.isOpen
+                  "dropdown--clicked": isOpen
                 })}
               >
-                <DropDownProvider value={this.state}>
+                <DropDownProvider value={{ ...this.state, isOpen }}>
                   <StyledKeyboardProvider
                     role="listbox"
                     keywordSearch
@@ -262,7 +272,8 @@ DropDownGroup.propTypes = {
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
   variant: PropTypes.number,
-  label: PropTypes.string
+  label: PropTypes.string,
+  isOpen: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -270,6 +281,7 @@ DropDownGroup.defaultProps = {
   onChange: null,
   placeholder: "",
   variant: 0,
-  label: "Sort By:"
+  label: "Sort By:",
+  isOpen: false
 };
 export default DropDownGroup;
