@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Checkmark from "../../Icons/Checkmark";
-import { typography } from "../../../theme";
+import { constants, typography } from "../../../theme";
 import { getThemeValue } from "../../../utils";
 
 export const CheckBoxWrapper = styled.label`
@@ -44,6 +44,7 @@ export const CheckDivStyling = styled.div`
   position: absolute;
   opacity: 0;
   color: ${getThemeValue("primary", "base")};
+  transition: opacity 0.3s ${constants.easing.elastic};
 
   .checkbox__checked & {
     opacity: 1;

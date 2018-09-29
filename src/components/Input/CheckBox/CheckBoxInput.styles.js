@@ -12,6 +12,7 @@ export default styled.input.attrs({
   background-color: ${getThemeValue("white", "base")};
   border-color: ${getThemeValue("gray02")};
   border-radius: ${constants.borderRadius.small};
+
   .checkbox--large & {
     width: 24px;
     height: 24px;
@@ -22,6 +23,10 @@ export default styled.input.attrs({
     height: 16px;
   }
 
+  &:active {
+    transform: scale(0.95, 0.95);
+  }
+
   &:before {
     content: "";
     background-color: transparent;
@@ -29,6 +34,8 @@ export default styled.input.attrs({
     border: 1px solid ${getThemeValue("gray02")};
     position: absolute;
     cursor: pointer;
+    transition: border-width 0.3s ${constants.easing.easeInOutQuad};
+    transition: border-color 0.3s ${constants.easing.easeInOutQuad};
 
     .checkbox--large & {
       width: 24px;
