@@ -58,5 +58,10 @@ export const CheckDivStyling = styled.div`
 `;
 
 export const StyledCheckmark = styled(Checkmark)`
+  transition: all 0.3s ${constants.easing.elastic};
   margin-top: 3px;
+  transform: scale(0.7, 0.7);
+  .checkbox__checked & {
+    transform: scale(1, 1);
+  }
 `;

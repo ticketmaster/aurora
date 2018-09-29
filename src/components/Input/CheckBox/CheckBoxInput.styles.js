@@ -74,10 +74,11 @@ export default styled.input.attrs({
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.7, 0.7);
     border-radius: ${constants.borderRadius.small};
     background-color: ${getThemeValue("primary", "base")};
     cursor: pointer;
+    transition: all 0.3s ${constants.easing.elastic};
 
     .checkbox--disabled & {
       background-color: ${getThemeValue("gray02")};
@@ -85,10 +86,12 @@ export default styled.input.attrs({
     .checkbox--small.checkbox__indeterminate & {
       width: 8px;
       height: 2px;
+      transform: translate(-50%, -50%) scale(1, 1);
     }
     .checkbox--large.checkbox__indeterminate & {
       width: 12px;
       height: 2px;
+      transform: translate(-50%, -50%) scale(1, 1);
     }
   }
 `;
