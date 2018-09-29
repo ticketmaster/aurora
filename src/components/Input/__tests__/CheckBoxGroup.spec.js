@@ -15,11 +15,7 @@ describe("CheckBoxGroup", () => {
   });
 
   it("renders checked CheckBox without CheckBoxGroup", () => {
-    expect(renderCheckBox()).toMatchSnapshot();
-  });
-
-  it("renders indeterminate CheckBox without CheckBoxGroup", () => {
-    expect(renderCheckBox({ isChecked: "indeterminate" })).toMatchSnapshot();
+    expect(renderCheckBox({ isChecked: true })).toMatchSnapshot();
   });
 
   it("renders small input", () => {
