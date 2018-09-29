@@ -1,4 +1,4 @@
-import omitKeys from "../omitKeys";
+import { omitKeys } from "..";
 
 describe("omitKeys", () => {
   it("removes specified keys from object", () =>

@@ -1,4 +1,4 @@
-import sluggify from "../text";
+import { sluggify } from "..";
 
 describe("sluggify", () => {
   it("Should return the same string with all lower case letter and no white spaces", () => {
