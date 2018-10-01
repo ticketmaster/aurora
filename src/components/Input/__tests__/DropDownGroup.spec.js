@@ -31,9 +31,15 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
-  it("renders default input correctly when the isOpen prop with a value of true is passed", () => {
+  it("renders input correctly when the isOpen prop with a value of true is passed", () => {
     expect(
       renderComponent({ isOpen: true }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders input correctly when the keywordSearch prop with a value of false is passed", () => {
+    expect(
+      renderComponent({ keywordSearch: false }).container.firstChild
     ).toMatchSnapshot();
   });
 
