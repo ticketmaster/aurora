@@ -31,6 +31,12 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
+  it("renders default input correctly when the isOpen prop with a value of true is passed", () => {
+    expect(
+      renderComponent({ isOpen: true }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
   it("Should open the drop down onClick", () => {
     const { container, getByTestId } = renderComponent();
 
@@ -68,9 +74,40 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("Click outside should not close the dropdown when the isOpen prop equals true", () => {
+    const { container, getByTestId } = renderComponent({ isOpen: true });
+
+    fireEvent.click(getByTestId("test-dropContainer"));
+    fireEvent.click(getByTestId("test-outSideComponent"));
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("Space bar should select and close dropdown", () => {
     const onChange = jest.fn();
     const { container, getByTestId } = renderComponent({ onChange });
+
+    fireEvent.keyDown(getByTestId("test-dropContainer"), {
+      key: "ArrowDown",
+      keyCode: 40,
+      which: 40,
+      bubbles: true
+    });
+
+    fireEvent.keyDown(getByTestId("test-dropDownOptionOne"), {
+      key: "",
+      keyCode: 32,
+      which: 32,
+      bubbles: true
+    });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("Space bar should select and not close dropdown when the isOpen prop equals true", () => {
+    const onChange = jest.fn();
+    const { container, getByTestId } = renderComponent({
+      onChange,
+      isOpen: true
+    });
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowDown",

@@ -54,3 +54,39 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
   </div>
 </div>
 `;
+
+exports[`<LinkList /> renders content after container 1`] = `
+<div
+  class="sc-bdVaJa links links__list bhMvGM"
+>
+  <div
+    class="wrapper--has-after sc-bwzfXH bQTlgY"
+  >
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      USA (English)
+    </a>
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      Canada (English)
+    </a>
+    <a
+      class="sc-EHOje links__list__item hibrNn"
+      href="/"
+    >
+      Canada (Français)
+    </a>
+  </div>
+  <div
+    class="sc-htpNat egEwBh"
+  >
+    <span>
+      after content
+    </span>
+  </div>
+</div>
+`;
