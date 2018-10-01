@@ -43,7 +43,7 @@ describe("<Modal />", () => {
 
   it("should not display the cancel button", () => {
     const { container } = render(
-      <Modal noCloseIcon>
+      <Modal withCloseIcon={false}>
         <div>Europe</div>
         <div>Africa</div>
         <div>Asias</div>

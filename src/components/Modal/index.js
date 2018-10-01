@@ -66,7 +66,7 @@ const CancelButtonContainer = styled(Row)`
   padding-right: ${spacing.moderate};
 `;
 
-const Modal = ({ children, container, content, ...props }) => (
+const Modal = ({ children, containerProps, contentProps, ...props }) => (
   <BackdropConsumer>
     {backdropValue => (
       <ModalContainer
@@ -74,9 +74,9 @@ const Modal = ({ children, container, content, ...props }) => (
         role="dialog"
         aria-modal
         innerRef={backdropValue ? backdropValue.childRef : null}
-        style={{ ...container }}
+        {...containerProps}
       >
-        {!props.noCloseIcon && (
+        {props.withCloseIcon && (
           <CancelButtonContainer>
             <ItemContainerConsumer>
               {value => (
@@ -97,7 +97,7 @@ const Modal = ({ children, container, content, ...props }) => (
             </ItemContainerConsumer>
           </CancelButtonContainer>
         )}
-        <ModalContent style={{ ...content }}>{children}</ModalContent>
+        <ModalContent {...contentProps}>{children}</ModalContent>
       </ModalContainer>
     )}
   </BackdropConsumer>
@@ -105,16 +105,16 @@ const Modal = ({ children, container, content, ...props }) => (
 
 Modal.defaultProps = {
   children: null,
-  noCloseIcon: false,
-  container: null,
-  content: null
+  withCloseIcon: true,
+  containerProps: null,
+  contentProps: null
 };
 
 Modal.propTypes = {
   children: PropTypes.node,
-  noCloseIcon: PropTypes.bool,
-  container: PropTypes.shape({}),
-  content: PropTypes.shape({})
+  withCloseIcon: PropTypes.bool,
+  containerProps: PropTypes.shape({}),
+  contentProps: PropTypes.shape({})
 };
 
 export default Modal;
