@@ -66,4 +66,7 @@ export const ContentWrapper = styled.div`
   &.drawer--open {
     overflow: hidden;
   }
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
 `;

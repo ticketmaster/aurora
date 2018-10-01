@@ -180,13 +180,6 @@ exports[`WithImage renders header background image 1`] = `
   }
 }
 
-@media screen and (min-width:1440px) {
-  .c5 {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-}
-
 @media screen and (min-width:768px) {
   .c8 {
     padding-top: 60px;
@@ -436,13 +429,6 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   .c6 {
     margin-left: -12px;
     margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c5 {
-    padding-left: 72px;
-    padding-right: 72px;
   }
 }
 
@@ -698,13 +684,6 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   }
 }
 
-@media screen and (min-width:1440px) {
-  .c5 {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-}
-
 @media screen and (min-width:768px) {
   .c8 {
     padding-top: 60px;
@@ -952,13 +931,6 @@ exports[`WithImage renders header with image 1`] = `
   .c6 {
     margin-left: -12px;
     margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c5 {
-    padding-left: 72px;
-    padding-right: 72px;
   }
 }
 
