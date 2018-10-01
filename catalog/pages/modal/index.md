@@ -38,7 +38,7 @@ responsive: true
         transitionAppearTimeout={300}
         transitionEnterTimeout={300}
         transitionLeaveTimeout={100}>
-    <Modal noCloseIcon>
+    <Modal withCloseIcon={false}>
         <div>Hello World</div>
         <div>Hello World</div>
         <div>Hello World</div>
@@ -65,7 +65,7 @@ responsive: true
         transitionAppearTimeout={300}
         transitionEnterTimeout={300}
         transitionLeaveTimeout={100}>
-    <Modal content={{ padding: "16px 40px 32px 0"}}>
+    <Modal contentProps={{ style: { padding: "16px 40px 32px 0"}}}>
         <div>Hello World</div>
         <div>Hello World</div>
         <div>Hello World</div>
@@ -92,7 +92,7 @@ responsive: true
         transitionAppearTimeout={300}
         transitionEnterTimeout={300}
         transitionLeaveTimeout={100}>
-    <Modal container={{ padding: "50px 8px 32px 60px"}}>
+    <Modal containerProps={{ style: { padding: "50px 8px 32px 60px"}}}>
         <div>Hello World</div>
         <div>Hello World</div>
         <div>Hello World</div>
