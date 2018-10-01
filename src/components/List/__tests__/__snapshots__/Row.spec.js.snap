@@ -97,6 +97,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -115,10 +119,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -211,7 +211,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -357,6 +356,24 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -373,24 +390,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -538,6 +537,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -683,7 +683,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -707,7 +706,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
-            width="6"
+            width={22}
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -864,6 +863,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -884,10 +887,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: flex;
 }
 
-.c3 {
-  display: none;
-}
-
 .c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -903,9 +902,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -978,12 +977,12 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
 .c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .c24 {
@@ -1198,6 +1197,24 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -1218,26 +1235,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -1302,7 +1301,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    padding-left: 12px;
+    padding-left: calc(16px + 16px + 15px);
   }
 }
 
@@ -1385,6 +1384,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -1530,7 +1530,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -1554,7 +1553,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
-            width="6"
+            width={22}
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -1751,6 +1750,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -1771,10 +1774,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: flex;
 }
 
-.c3 {
-  display: none;
-}
-
 .c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1790,9 +1789,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 8px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -1865,12 +1864,12 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
 .c20 {
   padding-left: 8px;
+  padding-bottom: 8px;
 }
 
 .c24 {
@@ -2085,6 +2084,24 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -2105,26 +2122,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 8px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -2189,7 +2188,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c20 {
-    padding-left: 12px;
+    padding-left: calc(16px + 16px + 15px);
   }
 }
 
@@ -2272,6 +2271,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -2417,7 +2417,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -2441,7 +2440,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
-            width="6"
+            width={22}
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -2595,6 +2594,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   pointer-events: none;
 }
 
+.c3 {
+  display: none;
+}
+
 .c1 {
   background-color: rgba(255,255,255,1);
 }
@@ -2613,10 +2616,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-}
-
-.c3 {
-  display: none;
 }
 
 .c5 {
@@ -2709,7 +2708,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   color: rgba(255,255,255,1);
   background-color: #026cdf;
   border: 1px solid transparent;
-  cursor: not-allowed;
   opacity: 0.2;
 }
 
@@ -2855,6 +2853,24 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
   .c1 {
     border-radius: 4px;
   }
@@ -2871,24 +2887,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
     box-shadow: 0;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
   }
 }
 
@@ -3036,6 +3034,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         aria-label="Expand Row"
         className="button--expand-or-collapse button--collapsed c3 c4"
         data-index={0}
+        onClick={[Function]}
         role="button"
         size={45}
         type="button"
@@ -3181,7 +3180,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           <span
             aria-label="See Tickets"
             className="c18"
-            onClick={[Function]}
             role="button"
             size="regular"
             width="102px"
@@ -3205,7 +3203,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             fill="rgba(38, 38, 38, 0.6)"
             height={22}
             viewBox="0 0 5 21"
-            width="6"
+            width={22}
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"

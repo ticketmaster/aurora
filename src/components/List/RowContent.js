@@ -10,33 +10,14 @@ import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
 import { Link, Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
-import ChevronIcon from "../Icons/Chevron";
 import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
+
+import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 
-const IconButton = styled.button`
-  border: 0;
-  padding: 0 ${spacing.moderate};
-  outline: 0;
-  background: transparent;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-
-  &:focus {
-    outline: none;
-  }
-
-  &.icon-button--last {
-    padding-left: ${spacing.moderate};
-    padding-right: 0;
-  }
-
-  > * {
-    pointer-events: none;
-  }
-`;
+const CHEVRON_ICON_SIZE = 15;
+const CHEVRON_ICON_PADDING = spacing.moderate;
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -71,24 +52,6 @@ const ListContainer = styled.div`
   display: flex;
 `;
 
-const IconWrapper = styled(IconButton).attrs({
-  size: 45
-})`
-  display: none;
-  ${mediumAndUp`
-    display: block;
-
-    &.button--expanded,
-    &.button--collapsed {
-      transition: all 0.1s linear;
-    }
-
-    &.button--expanded {
-      transform: rotate(-180deg);
-    }
-  `};
-`;
-
 const LinkWrapper = styled.a`
   text-decoration: none;
   display: flex;
@@ -97,14 +60,14 @@ const LinkWrapper = styled.a`
   width: 100%;
   cursor: pointer;
   padding-top: ${spacing.cozy};
-  padding-bottom: ${spacing.cozy};
+  padding-bottom: ${props =>
+    props.rowVariant === "withLink" ? "1px" : spacing.cozy};
   border-radius: 2px;
 
-  margin: 12px 0
-    ${props => (props.rowVariant === "withLink" ? spacing.cozy : "12px")} 0;
+  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? 0 : "12px")} 0;
   ${mediumAndUp`
     margin: 18px 0
-      ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
+      ${props => (props.rowVariant === "withLink" ? 0 : "18px")}
       0;
     &:hover {
       background-color: ${colors.azure.light};
@@ -170,8 +133,9 @@ const ListRowButton = StyledButton.withComponent("span").extend`
 
 const LinkRow = styled(Row)`
   padding-left: ${spacing.cozy};
+  padding-bottom: ${spacing.cozy};
   ${mediumAndUp`
-    padding-left: 12px;
+    padding-left: calc(${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_SIZE}px);
   `};
 `;
 
@@ -275,6 +239,8 @@ const ListRowContent = ({
   onOverflowClick,
   onExpandShow,
   children,
+  onExpandItem,
+  onCollapseItem,
   ...rest
 }) => (
   <RowWrapper
@@ -287,20 +253,13 @@ const ListRowContent = ({
     {...rest}
   >
     <ListContainer>
-      <IconWrapper
-        role="button"
-        type="button"
-        aria-label={isOpen ? "Collapse Row" : "Expand Row"}
-        aria-expanded={isOpen}
-        data-index={index}
-        className={classnames({
-          "button--expand-or-collapse": true,
-          "button--expanded": isOpen,
-          "button--collapsed": !isOpen
-        })}
-      >
-        <ChevronIcon size={15} color={colors.blackPearl} />
-      </IconWrapper>
+      <RowToggler
+        isOpen={isOpen}
+        index={index}
+        onExpandItem={onExpandItem}
+        onCollapseItem={onCollapseItem}
+      />
+
       <LinkWrapper
         role="link"
         aria-label={buttonText}
@@ -398,7 +357,6 @@ const ListRowContent = ({
             variant="standard"
             size="regular"
             rowVariant={variant}
-            onClick={onClick}
           >
             {buttonText}
           </ListRowButton>
@@ -410,8 +368,6 @@ const ListRowContent = ({
           className="button--more-info icon-button--last"
           data-index={index}
           aria-label="More Info"
-          type="button"
-          role="button"
           onClick={onOverflowClick}
         >
           <OverflowIcon size={22} color={colors.onyx.light} />
@@ -446,7 +402,9 @@ const ListRowContent = ({
 ListRowContent.defaultProps = {
   isOpen: false,
   onExpandShow: "subTitle",
-  children: null
+  children: null,
+  onExpandItem: RowToggler.defaultProps.onExpandItem,
+  onCollapseItem: RowToggler.defaultProps.onCollapseItem
 };
 
 ListRowContent.propTypes = {
@@ -455,7 +413,9 @@ ListRowContent.propTypes = {
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
-  children: PropTypes.node
+  children: PropTypes.node,
+  onExpandItem: RowToggler.propTypes.onExpandItem,
+  onCollapseItem: RowToggler.propTypes.onCollapseItem
 };
 
 export default ListRowContent;

@@ -9,7 +9,7 @@ import { Row } from "../Grid";
 import { BackdropConsumer } from "../Backdrop/Context";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
-import constants from "../../theme/constants";
+import { constants, spacing } from "../../theme";
 
 const BottomSheetContent = styled.div`
   background-color: white;
@@ -21,6 +21,8 @@ const BottomSheetContent = styled.div`
   position: fixed;
   bottom: 0;
   left: 0;
+  padding-right: ${spacing.cozy};
+  padding-left: ${spacing.cozy};
 
   &.bottom-sheet-enter {
     transform: translateY(100%);
@@ -55,33 +57,36 @@ const CancelButtonRow = styled(Row)`
   align-items: flex-end;
 `;
 
-const BottomSheet = ({ children }) => (
+const BottomSheet = ({ children, withCancelBtn, ...props }) => (
   <BackdropConsumer>
     {backdropValue => (
       <BottomSheetContent
         innerRef={backdropValue ? backdropValue.childRef : null}
         role="dialog"
         aria-modal
+        {...props}
       >
-        <CancelButtonRow>
-          <ItemContainerConsumer>
-            {value => (
-              <IconButton
-                className="button--cancel"
-                size={45}
-                aria-label="Close BottomSheet"
-                role="button"
-                onClick={value ? value.onCloseRequest : () => {}}
-              >
-                <CrossIcon
-                  size={12}
-                  style={{ pointerEvent: "none" }}
-                  color={colors.onyx.base}
-                />
-              </IconButton>
-            )}
-          </ItemContainerConsumer>
-        </CancelButtonRow>
+        {withCancelBtn && (
+          <CancelButtonRow>
+            <ItemContainerConsumer>
+              {value => (
+                <IconButton
+                  className="button--cancel"
+                  size={45}
+                  aria-label="Close BottomSheet"
+                  role="button"
+                  onClick={value ? value.onCloseRequest : () => {}}
+                >
+                  <CrossIcon
+                    size={12}
+                    style={{ pointerEvent: "none" }}
+                    color={colors.onyx.base}
+                  />
+                </IconButton>
+              )}
+            </ItemContainerConsumer>
+          </CancelButtonRow>
+        )}
         {children}
       </BottomSheetContent>
     )}
@@ -89,10 +94,12 @@ const BottomSheet = ({ children }) => (
 );
 
 BottomSheet.defaultProps = {
+  withCancelBtn: true,
   children: null
 };
 
 BottomSheet.propTypes = {
+  withCancelBtn: PropTypes.bool,
   children: PropTypes.node
 };
 

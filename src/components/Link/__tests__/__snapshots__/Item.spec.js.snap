@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LinkItem /> renders LinkItem as button  1`] = `
+<div>
+  <span
+    class="list-container list-container--closed"
+    role="none"
+  >
+    <button
+      class="link sc-ifAKCX edbLbi"
+      role="button"
+    >
+      Button text
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<LinkItem /> renders LinkItem as link 1`] = `
+<div>
+  <span
+    class="list-container list-container--closed"
+    role="none"
+  >
+    <a
+      class="link sc-bxivhb fBqTYi"
+      href="http://localhost/new/"
+      rel="noopener"
+      role="link"
+      target="_blank"
+    >
+      Link text
+    </a>
+  </span>
+</div>
+`;
+
+exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
+<div>
+  <span
+    class="list-container list-container--closed"
+    role="none"
+  >
+    <button
+      aria-expanded="false"
+      aria-haspopup="true"
+      class="link link--has-other sc-ifAKCX edbLbi"
+      role="button"
+    >
+      Button text
+    </button>
+    <div
+      class="sc-bdVaJa links links__list bhMvGM"
+    >
+      <div
+        class="sc-bwzfXH bQTlgY"
+      >
+        <span
+          class="list-container list-container--closed"
+          role="none"
+        >
+          <a
+            class="link sc-bxivhb fBqTYi"
+            href="/"
+            role="link"
+            target="_self"
+          >
+            USA (English)
+          </a>
+        </span>
+        <span
+          class="list-container list-container--closed"
+          role="none"
+        >
+          <a
+            class="link sc-bxivhb fBqTYi"
+            href="/"
+            role="link"
+            target="_self"
+          >
+            Canada (English)
+          </a>
+        </span>
+        <span
+          class="list-container list-container--closed"
+          role="none"
+        >
+          <a
+            class="link sc-bxivhb fBqTYi"
+            href="/"
+            role="link"
+            target="_self"
+          >
+            Canada (Français)
+          </a>
+        </span>
+      </div>
+    </div>
+  </span>
+</div>
+`;

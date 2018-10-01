@@ -15,8 +15,8 @@ exports[`Drawer renders default drawer 1`] = `
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   overflow: hidden;
   z-index: -1;
 }
@@ -471,8 +471,8 @@ exports[`Drawer renders header elements 1`] = `
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   overflow: hidden;
   z-index: -1;
 }
@@ -934,8 +934,8 @@ exports[`Drawer renders multiple child elements 1`] = `
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   overflow: hidden;
   z-index: -1;
 }
@@ -1399,8 +1399,8 @@ exports[`Drawer renders string header header 1`] = `
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
   opacity: 0;
-  -webkit-transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 300ms cubic-bezier(0.455,0.03,0.515,0.955);
   overflow: hidden;
   z-index: -1;
 }

@@ -16,7 +16,7 @@ export const DrawerContainer = styled.div`
   visibility: hidden;
   transform: translateY(-100%);
   opacity: 0;
-  transition: opacity 0.3ms ${constants.easing.easeInOutQuad};
+  transition: opacity 300ms ${constants.easing.easeInOutQuad};
   overflow: hidden;
   z-index: -1;
 
@@ -66,4 +66,7 @@ export const ContentWrapper = styled.div`
   &.drawer--open {
     overflow: hidden;
   }
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
 `;

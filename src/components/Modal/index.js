@@ -56,7 +56,8 @@ const ModalContainer = styled(Column)`
 `;
 
 const ModalContent = styled.div`
-  padding: 0 ${spacing.comfy} ${spacing.comfy};
+  padding: ${props =>
+    props.padding ? props.padding : `0 ${spacing.comfy} ${spacing.comfy}`};
 `;
 
 const CancelButtonContainer = styled(Row)`
@@ -65,7 +66,7 @@ const CancelButtonContainer = styled(Row)`
   padding-right: ${spacing.moderate};
 `;
 
-const Modal = ({ children }) => (
+const Modal = ({ children, containerProps, contentProps, ...props }) => (
   <BackdropConsumer>
     {backdropValue => (
       <ModalContainer
@@ -73,38 +74,47 @@ const Modal = ({ children }) => (
         role="dialog"
         aria-modal
         innerRef={backdropValue ? backdropValue.childRef : null}
+        {...containerProps}
       >
-        <CancelButtonContainer>
-          <ItemContainerConsumer>
-            {value => (
-              <IconButton
-                className="button--close"
-                size={45}
-                aria-label="Close Modal"
-                role="button"
-                onClick={value ? value.onCloseRequest : () => {}}
-              >
-                <CrossIcon
-                  size={12}
-                  style={{ pointerEvent: "none" }}
-                  color={colors.onyx.base}
-                />
-              </IconButton>
-            )}
-          </ItemContainerConsumer>
-        </CancelButtonContainer>
-        <ModalContent>{children}</ModalContent>
+        {props.withCloseIcon && (
+          <CancelButtonContainer>
+            <ItemContainerConsumer>
+              {value => (
+                <IconButton
+                  className="button--close"
+                  size={45}
+                  aria-label="Close Modal"
+                  role="button"
+                  onClick={value ? value.onCloseRequest : () => {}}
+                >
+                  <CrossIcon
+                    size={12}
+                    style={{ pointerEvent: "none" }}
+                    color={colors.onyx.base}
+                  />
+                </IconButton>
+              )}
+            </ItemContainerConsumer>
+          </CancelButtonContainer>
+        )}
+        <ModalContent {...contentProps}>{children}</ModalContent>
       </ModalContainer>
     )}
   </BackdropConsumer>
 );
 
 Modal.defaultProps = {
-  children: null
+  children: null,
+  withCloseIcon: true,
+  containerProps: null,
+  contentProps: null
 };
 
 Modal.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  withCloseIcon: PropTypes.bool,
+  containerProps: PropTypes.shape({}),
+  contentProps: PropTypes.shape({})
 };
 
 export default Modal;

@@ -142,7 +142,6 @@ export const StyledButton = styled.button`
         const buttonTheme = themes[themeName];
         return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
       }};
-    cursor: not-allowed;
     ${({ variant }) =>
       variant === BUTTON_VARIANTS.special ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
@@ -155,5 +154,6 @@ StyledButton.defaultProps = {
 };
 
 export const StyledButtonLink = StyledButton.withComponent(`a`).extend`
+  display: block;
   text-decoration: none;
 `;

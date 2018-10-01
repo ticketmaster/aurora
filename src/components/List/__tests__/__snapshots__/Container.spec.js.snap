@@ -5,15 +5,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
   class="sc-fjdhpX fAFgBy"
 >
   <div
-    class="row__wrapper row__wrapper--expanded sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--expanded sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="0"
         role="button"
         size="45"
@@ -32,7 +32,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -97,7 +97,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -110,7 +110,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           type="button"
@@ -119,7 +119,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -381,25 +381,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -416,15 +415,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="1"
         role="button"
         size="45"
@@ -443,7 +442,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -508,7 +507,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -521,7 +520,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           type="button"
@@ -530,7 +529,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -792,25 +791,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -827,15 +825,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="2"
         role="button"
         size="45"
@@ -854,7 +852,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -919,7 +917,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="Acheter des Billets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -932,7 +930,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           type="button"
@@ -941,7 +939,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -1203,25 +1201,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -1238,15 +1235,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="3"
         role="button"
         size="45"
@@ -1265,7 +1262,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -1330,7 +1327,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -1343,7 +1340,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           type="button"
@@ -1352,7 +1349,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -1614,25 +1611,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -1657,15 +1653,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-fjdhpX fAFgBy"
   >
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           size="45"
@@ -1684,7 +1680,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -1749,7 +1745,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -1762,7 +1758,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="0"
             role="button"
             type="button"
@@ -1771,7 +1767,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -2033,25 +2029,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -2068,15 +2063,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           size="45"
@@ -2095,7 +2090,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -2160,7 +2155,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -2173,7 +2168,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="1"
             role="button"
             type="button"
@@ -2182,7 +2177,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -2444,25 +2439,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -2479,15 +2473,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           size="45"
@@ -2506,7 +2500,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -2571,7 +2565,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="Acheter des Billets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -2584,7 +2578,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="2"
             role="button"
             type="button"
@@ -2593,7 +2587,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -2855,25 +2849,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -2890,15 +2883,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           size="45"
@@ -2917,7 +2910,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -2982,7 +2975,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -2995,7 +2988,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="3"
             role="button"
             type="button"
@@ -3004,7 +2997,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -3266,25 +3259,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -3309,15 +3301,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
   class="sc-fjdhpX fAFgBy"
 >
   <div
-    class="row__wrapper row__wrapper--expanded sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--expanded sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="0"
         role="button"
         size="45"
@@ -3336,7 +3328,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -3401,7 +3393,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -3414,7 +3406,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           type="button"
@@ -3423,7 +3415,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -3685,25 +3677,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -3720,15 +3711,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="1"
         role="button"
         size="45"
@@ -3747,7 +3738,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -3812,7 +3803,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -3825,7 +3816,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           type="button"
@@ -3834,7 +3825,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -4096,25 +4087,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -4131,15 +4121,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="2"
         role="button"
         size="45"
@@ -4158,7 +4148,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -4223,7 +4213,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="Acheter des Billets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -4236,7 +4226,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           type="button"
@@ -4245,7 +4235,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -4507,25 +4497,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -4542,15 +4531,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="3"
         role="button"
         size="45"
@@ -4569,7 +4558,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -4634,7 +4623,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -4647,7 +4636,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           type="button"
@@ -4656,7 +4645,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -4918,25 +4907,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -4961,15 +4949,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="sc-fjdhpX fAFgBy"
   >
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           size="45"
@@ -4988,7 +4976,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -5053,7 +5041,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -5066,7 +5054,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="0"
             role="button"
             type="button"
@@ -5075,7 +5063,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -5337,25 +5325,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -5372,15 +5359,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           size="45"
@@ -5399,7 +5386,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -5464,7 +5451,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -5477,7 +5464,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="1"
             role="button"
             type="button"
@@ -5486,7 +5473,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -5748,25 +5735,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -5783,15 +5769,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           size="45"
@@ -5810,7 +5796,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -5875,7 +5861,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="Acheter des Billets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -5888,7 +5874,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="2"
             role="button"
             type="button"
@@ -5897,7 +5883,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -6159,25 +6145,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -6194,15 +6179,15 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           size="45"
@@ -6221,7 +6206,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -6286,7 +6271,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -6299,7 +6284,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="3"
             role="button"
             type="button"
@@ -6308,7 +6293,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -6570,25 +6555,24 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -6614,15 +6598,15 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
     class="sc-fjdhpX fAFgBy"
   >
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           size="45"
@@ -6641,7 +6625,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -6706,7 +6690,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -6719,7 +6703,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="0"
             role="button"
             type="button"
@@ -6728,7 +6712,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -6863,15 +6847,15 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
   class="sc-fjdhpX fAFgBy"
 >
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="0"
         role="button"
         size="45"
@@ -6890,7 +6874,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -6955,7 +6939,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -6968,7 +6952,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           type="button"
@@ -6977,7 +6961,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -7239,25 +7223,24 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -7274,15 +7257,15 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="1"
         role="button"
         size="45"
@@ -7301,7 +7284,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -7366,7 +7349,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -7379,7 +7362,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           type="button"
@@ -7388,7 +7371,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -7650,25 +7633,24 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -7685,15 +7667,15 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="2"
         role="button"
         size="45"
@@ -7712,7 +7694,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -7777,7 +7759,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         >
           <span
             aria-label="Acheter des Billets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -7790,7 +7772,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           type="button"
@@ -7799,7 +7781,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -8061,25 +8043,24 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -8096,15 +8077,15 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="3"
         role="button"
         size="45"
@@ -8123,7 +8104,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -8188,7 +8169,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -8201,7 +8182,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           type="button"
@@ -8210,7 +8191,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -8472,25 +8453,24 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -8514,15 +8494,15 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
   class="sc-fjdhpX fAFgBy"
 >
   <div
-    class="row__wrapper row__wrapper--expanded sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--expanded sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="0"
         role="button"
         size="45"
@@ -8541,7 +8521,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -8606,7 +8586,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -8619,7 +8599,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           type="button"
@@ -8628,7 +8608,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -8890,25 +8870,24 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -8925,15 +8904,15 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="1"
         role="button"
         size="45"
@@ -8952,7 +8931,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -9017,7 +8996,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -9030,7 +9009,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           type="button"
@@ -9039,7 +9018,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -9301,25 +9280,24 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -9336,15 +9314,15 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="2"
         role="button"
         size="45"
@@ -9363,7 +9341,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -9428,7 +9406,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         >
           <span
             aria-label="Acheter des Billets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -9441,7 +9419,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           type="button"
@@ -9450,7 +9428,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -9712,25 +9690,24 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -9747,15 +9724,15 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     </div>
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="3"
         role="button"
         size="45"
@@ -9774,7 +9751,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -9839,7 +9816,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -9852,7 +9829,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           type="button"
@@ -9861,7 +9838,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -10123,25 +10100,24 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             class="sc-kvZOFW kluiiQ"
           >
             <svg
-              height="26"
-              viewBox="0 0 26 26"
-              width="26"
+              height="24"
+              size="26"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <g
                 fill="none"
                 fill-rule="evenodd"
-                transform="translate(1 .85)"
               >
-                <circle
-                  cx="12"
-                  cy="12.15"
-                  fill="#FAFAFA"
-                  r="12.5"
-                  stroke="#E0E0E0"
+                <path
+                  d="M24 0H0v24h24z"
                 />
                 <path
-                  d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                  d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                   fill="#1F262D"
+                  fill-opacity=".5"
+                  fill-rule="nonzero"
                 />
               </g>
             </svg>
@@ -10166,15 +10142,15 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
     class="sc-fjdhpX fAFgBy"
   >
     <div
-      class="row__wrapper row__wrapper--expanded sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--expanded sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="button--expand-or-collapse button--expanded sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           size="45"
@@ -10193,7 +10169,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -10258,7 +10234,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -10271,7 +10247,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="0"
             role="button"
             type="button"
@@ -10280,7 +10256,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -10542,25 +10518,24 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -10577,15 +10552,15 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           size="45"
@@ -10604,7 +10579,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -10669,7 +10644,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -10682,7 +10657,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="1"
             role="button"
             type="button"
@@ -10691,7 +10666,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -10953,25 +10928,24 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -10988,15 +10962,15 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           size="45"
@@ -11015,7 +10989,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -11080,7 +11054,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           >
             <span
               aria-label="Acheter des Billets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -11093,7 +11067,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="2"
             role="button"
             type="button"
@@ -11102,7 +11076,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -11364,25 +11338,24 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -11399,15 +11372,15 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       </div>
     </div>
     <div
-      class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+      class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
     >
       <div
-        class="sc-gipzik bQghoc"
+        class="sc-csuQGl kDXTXJ"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           size="45"
@@ -11426,7 +11399,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-Rmtcm cZVtgW"
+          class="sc-Rmtcm haBwVN"
           href="/"
           role="link"
         >
@@ -11491,7 +11464,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           >
             <span
               aria-label="See Tickets"
-              class="sc-fMiknA bAjGiF"
+              class="sc-fMiknA fyVvwe"
               role="button"
               width="102px"
             >
@@ -11504,7 +11477,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
             data-index="3"
             role="button"
             type="button"
@@ -11513,7 +11486,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               fill="rgba(38, 38, 38, 0.6)"
               height="22"
               viewBox="0 0 5 21"
-              width="6"
+              width="22"
             >
               <path
                 d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -11775,25 +11748,24 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               class="sc-kvZOFW kluiiQ"
             >
               <svg
-                height="26"
-                viewBox="0 0 26 26"
-                width="26"
+                height="24"
+                size="26"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <g
                   fill="none"
                   fill-rule="evenodd"
-                  transform="translate(1 .85)"
                 >
-                  <circle
-                    cx="12"
-                    cy="12.15"
-                    fill="#FAFAFA"
-                    r="12.5"
-                    stroke="#E0E0E0"
+                  <path
+                    d="M24 0H0v24h24z"
                   />
                   <path
-                    d="M19.602 16.602H4.398a.384.384 0 0 1-.28-.118.384.384 0 0 1-.118-.28v-2.407c0-.11.04-.203.117-.281a.384.384 0 0 1 .281-.118c.334 0 .618-.117.852-.351a1.15 1.15 0 0 0 .352-.844 1.16 1.16 0 0 0-.352-.851A1.16 1.16 0 0 0 4.398 11a.384.384 0 0 1-.28-.117.384.384 0 0 1-.118-.281V8.203c0-.114.04-.21.117-.289a.384.384 0 0 1 .281-.117h15.204c.109 0 .203.039.28.117a.393.393 0 0 1 .118.29v2.398c0 .109-.04.203-.117.28a.384.384 0 0 1-.281.118 1.16 1.16 0 0 0-.852.352 1.16 1.16 0 0 0-.352.851c0 .328.118.61.352.844.234.234.518.351.852.351.109 0 .203.04.28.118a.384.384 0 0 1 .118.28v2.407c0 .11-.04.203-.117.281a.384.384 0 0 1-.281.118zm-14.805-.805h14.406v-1.64a1.835 1.835 0 0 1-.637-.243 2.014 2.014 0 0 1-.843-2.402 1.988 1.988 0 0 1 .843-1.02c.196-.12.408-.203.637-.25v-1.64H4.797v1.64c.229.047.441.13.637.25.195.12.364.266.507.438a1.988 1.988 0 0 1 0 2.543 2.014 2.014 0 0 1-.507.441c-.196.12-.408.2-.637.242v1.64zM16.398 15H7.602a.384.384 0 0 1-.282-.117.384.384 0 0 1-.117-.281V9.797c0-.11.04-.203.117-.281a.384.384 0 0 1 .282-.118h8.796c.11 0 .204.04.282.118a.384.384 0 0 1 .117.28v4.806c0 .109-.04.203-.117.28a.384.384 0 0 1-.282.118zM8 14.203h8v-4H8v4z"
+                    d="M18.006 4.528a1.03 1.03 0 0 0 1.457 1.457l.332-.332a.5.5 0 0 1 .707 0l3.14 3.14a1 1 0 0 1 0 1.414L10.207 23.642a1 1 0 0 1-1.415 0L.307 15.156a1 1 0 0 1 0-1.414L13.742.307a1 1 0 0 1 1.414 0l3.182 3.182a.5.5 0 0 1 0 .707l-.332.332zM14.45 1.014L1.014 14.45 9.5 22.935 22.935 9.499l-2.786-2.785a2.03 2.03 0 0 1-2.871-2.871l-2.829-2.829zM10.56 4.196a.5.5 0 1 1 .707-.707L13.39 5.61a.5.5 0 1 1-.708.708l-2.12-2.122zM7.732 14.803a.5.5 0 1 1-.707-.707l4.95-4.95a.5.5 0 1 1 .706.707l-4.95 4.95zm4.242 0a.5.5 0 1 1-.707-.707l2.829-2.829a.5.5 0 1 1 .707.707l-2.829 2.829zm2.122-7.071a.5.5 0 1 1 .707-.707l2.121 2.12a.5.5 0 1 1-.707.708l-2.121-2.121zm3.535 3.535a.5.5 0 1 1 .707-.707l2.122 2.121a.5.5 0 1 1-.707.708l-2.122-2.122z"
                     fill="#1F262D"
+                    fill-opacity=".5"
+                    fill-rule="nonzero"
                   />
                 </g>
               </svg>
@@ -11818,15 +11790,15 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
   class="sc-fjdhpX fAFgBy"
 >
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="0"
         role="button"
         size="45"
@@ -11845,7 +11817,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -11910,7 +11882,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -11923,7 +11895,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="0"
           role="button"
           type="button"
@@ -11932,7 +11904,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -11946,15 +11918,15 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     />
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="1"
         role="button"
         size="45"
@@ -11973,7 +11945,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -12038,7 +12010,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -12051,7 +12023,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="1"
           role="button"
           type="button"
@@ -12060,7 +12032,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -12074,15 +12046,15 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     />
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="2"
         role="button"
         size="45"
@@ -12101,7 +12073,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -12166,7 +12138,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         >
           <span
             aria-label="Acheter des Billets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -12179,7 +12151,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="2"
           role="button"
           type="button"
@@ -12188,7 +12160,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
@@ -12202,15 +12174,15 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     />
   </div>
   <div
-    class="row__wrapper row__wrapper--collapsed sc-jlyJG hqLccp"
+    class="row__wrapper row__wrapper--collapsed sc-gipzik iPVqGp"
   >
     <div
-      class="sc-gipzik bQghoc"
+      class="sc-csuQGl kDXTXJ"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-csuQGl kWVeGi sc-iRbamj gkrBxs"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
         data-index="3"
         role="button"
         size="45"
@@ -12229,7 +12201,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-Rmtcm cZVtgW"
+        class="sc-Rmtcm haBwVN"
         href="/"
         role="link"
       >
@@ -12294,7 +12266,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
         >
           <span
             aria-label="See Tickets"
-            class="sc-fMiknA bAjGiF"
+            class="sc-fMiknA fyVvwe"
             role="button"
             width="102px"
           >
@@ -12307,7 +12279,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
+          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
           data-index="3"
           role="button"
           type="button"
@@ -12316,7 +12288,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             fill="rgba(38, 38, 38, 0.6)"
             height="22"
             viewBox="0 0 5 21"
-            width="6"
+            width="22"
           >
             <path
               d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"

@@ -28,25 +28,27 @@ export default class DrawerProvider extends React.Component {
     );
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(_, prevState) {
     if (prevState.isOpen === false) return;
     if (this.state.isOpen === true) return;
     if (
       typeof window !== "undefined" &&
-      typeof window.scrollTo === "function"
+      typeof window.scrollTo === "function" &&
+      this.scrollPosition !== null
     ) {
       window.scrollTo(0, this.scrollPosition);
       this.scrollPosition = 0;
     }
+    this.shouldRestoreScroll = true;
   }
 
   setContent = content => this.setState(() => ({ content }));
 
-  toggleDrawer = () => {
+  toggleDrawer = ({ shouldRestoreScroll = true } = {}) => {
     this.setState(({ isOpen }) => {
       /* istanbul ignore else */
       if (typeof window !== "undefined" && !isOpen) {
-        this.scrollPosition = window.pageYOffset;
+        this.scrollPosition = shouldRestoreScroll ? window.pageYOffset : null;
       }
       return { isOpen: !isOpen };
     });
