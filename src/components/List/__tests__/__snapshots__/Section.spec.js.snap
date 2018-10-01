@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Section /> should render correctly 1`] = `
+<div
+  class="sc-EHOje kPnjTl sc-htpNat ilFmuo"
+>
+  <div
+    class="sc-bZQynM cVhsLr sc-bwzfXH FGnNw"
+  >
+    <div
+      class="sc-gzVnrw gkFLLD sc-ifAKCX hosgZI"
+      color="#1F262D"
+    >
+      Some title
+    </div>
+  </div>
+  <div>
+    content
+  </div>
+</div>
+`;

@@ -11,11 +11,10 @@ import { mediumAndUp } from "../../theme/mediaQueries";
 const SectionContainer = styled(Column)`
   padding: ${spacing.moderate} ${spacing.normal};
   border-bottom: 1px solid ${colors.lightGray};
-
   ${mediumAndUp`
     border: none;
-    padding-left: ${spacing.moderate};
-    padding-right: ${spacing.moderate};
+    padding-left: ${props => (props.padding ? 0 : spacing.moderate)};
+    padding-right: ${props => (props.padding ? 0 : spacing.moderate)};
   `};
 `;
 
@@ -29,8 +28,8 @@ const TitleText = styled(BoldText)`
   text-transform: uppercase;
 `;
 
-const Section = ({ title, titleStyle, children, ...rest }) => (
-  <SectionContainer {...rest}>
+const Section = ({ title, titleStyle, children, container }) => (
+  <SectionContainer style={{ ...container }}>
     <TitleContainer>
       <TitleText style={titleStyle}>{title}</TitleText>
     </TitleContainer>
@@ -40,13 +39,15 @@ const Section = ({ title, titleStyle, children, ...rest }) => (
 
 Section.defaultProps = {
   titleStyle: {},
-  children: null
+  children: null,
+  container: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
   titleStyle: PropTypes.objectOf(PropTypes.any),
-  children: PropTypes.node
+  children: PropTypes.node,
+  container: PropTypes.shape({})
 };
 
 export default Section;
