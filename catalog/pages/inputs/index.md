@@ -360,6 +360,10 @@ rows:
     Type: string
     Default: N/A
     Notes: for variant 1
+  - Prop: isOpen
+    Type: boolean
+    Default: false
+    Notes: Used to override internal isOpen state
   - Prop: placeholder
     Type: string
     Default: N/A

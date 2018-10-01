@@ -9,11 +9,7 @@ export const ActiveArea = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: not-allowed;
-
-  &.toggle--enabled {
-    cursor: pointer;
-  }
+  cursor: pointer;
 
   &.toggle--small {
     width: 44px;
