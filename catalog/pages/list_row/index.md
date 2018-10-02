@@ -125,7 +125,13 @@ responsive: true
 
 <ListContainer expandMultiple={true}>
   <ListRow
-    rowItem={listItems[0]}
+    rowItem={{
+            ...listItems[0],
+            variant: "withLink",
+            linkTitle: "Ticket Options Available",
+            linkUrl: "",
+            linkSubTitle: "on Partner Site"
+        }}
     index={0}
     onOverflowClick={()=>{}}
   >

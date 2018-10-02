@@ -8,16 +8,14 @@ import colors from "../../theme/colors";
 
 import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
-import { Link, Text } from "../Text";
+import { Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
 import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
-
-const CHEVRON_ICON_SIZE = 15;
-const CHEVRON_ICON_PADDING = spacing.moderate;
+import RowOptionsLink from "./RowOptionsLink";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -56,7 +54,6 @@ const LinkWrapper = styled.a`
   text-decoration: none;
   display: flex;
   justify-content: horizontal;
-  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: ${spacing.cozy};
@@ -64,10 +61,11 @@ const LinkWrapper = styled.a`
     props.rowVariant === "withLink" ? "1px" : spacing.cozy};
   border-radius: 2px;
 
-  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? 0 : "12px")} 0;
+  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? "25px" : "12px")}
+    0;
   ${mediumAndUp`
     margin: 18px 0
-      ${props => (props.rowVariant === "withLink" ? 0 : "18px")}
+      ${props => (props.rowVariant === "withLink" ? "25px" : "18px")}
       0;
     &:hover {
       background-color: ${colors.azure.light};
@@ -126,17 +124,7 @@ const ListRowButton = StyledButton.withComponent("span").extend`
   justify-content: center;
   align-items: center;
   line-height: 1.4;
-  padding: 18px 0
-      ${props => (props.rowVariant === "withLink" ? spacing.cozy : "18px")}
-      0;
-`;
-
-const LinkRow = styled(Row)`
-  padding-left: ${spacing.cozy};
-  padding-bottom: ${spacing.cozy};
-  ${mediumAndUp`
-    padding-left: calc(${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_SIZE}px);
-  `};
+  padding: 18px 0;
 `;
 
 const OverflowDesktopContainer = styled(Column)`
@@ -166,8 +154,9 @@ const OverflowDesktopContainer = styled(Column)`
 
 const DesktopContainer = styled.div`
   display: none;
-  padding-left: ${spacing.moderate};
+  padding-left: ${spacing.cozy};
   padding-right: ${spacing.cozy};
+  position: relative;
 
   ${mediumAndUp`
     display: flex;
@@ -216,7 +205,22 @@ const SingleLineText = styled(Text)`
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.2;
   /* stylelint-enable */
+`;
+
+const AbsoluteContent = styled.div`
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const ContentRow = styled(Row)`
+  width: 100%;
+  position: relative;
 `;
 
 const ListRowContent = ({
@@ -228,7 +232,7 @@ const ListRowContent = ({
     buttonText,
     variant,
     linkTitle,
-    linkUrl,
+    linkUrl = "",
     linkSubTitle,
     dateColor,
     onClick,
@@ -289,7 +293,7 @@ const ListRowContent = ({
           </SingleLineText>
         </DateWrapper>
 
-        <Row style={{ width: "100%" }}>
+        <ContentRow>
           <MobileOnlyColumn>
             <MultilineText
               responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
@@ -347,7 +351,17 @@ const ListRowContent = ({
               {isOpen && onExpandShow === "title" ? title : subTitle}
             </MultilineText>
           </ContentColumn>
-        </Row>
+
+          <RowOptionsLink
+            variant={variant}
+            isOpen={isOpen}
+            url={linkUrl}
+            index={index}
+            onClick={onOverflowClick}
+          >
+            {linkTitle}
+          </RowOptionsLink>
+        </ContentRow>
 
         <DesktopContainer>
           <ListRowButton
@@ -360,6 +374,13 @@ const ListRowContent = ({
           >
             {buttonText}
           </ListRowButton>
+          {variant === "withLink" && (
+            <AbsoluteContent>
+              <SingleLineText size="uno" variant="dark" secondary>
+                {linkSubTitle}
+              </SingleLineText>
+            </AbsoluteContent>
+          )}
         </DesktopContainer>
       </LinkWrapper>
 
@@ -374,18 +395,6 @@ const ListRowContent = ({
         </IconButton>
       </MobileContainer>
     </ListContainer>
-    {variant === "withLink" ? (
-      <LinkRow>
-        <Column small={9} medium={10} large={10.5} xLarge={10.8}>
-          <Link href={linkUrl}>{linkTitle}</Link>
-        </Column>
-        <Column small={3} medium={2} large={1.5} xLarge={1.2}>
-          <SingleLineText size="hecto" variant="dark" secondary>
-            {linkSubTitle}
-          </SingleLineText>
-        </Column>
-      </LinkRow>
-    ) : null}
 
     <OverflowDesktopContainer
       className={classnames({

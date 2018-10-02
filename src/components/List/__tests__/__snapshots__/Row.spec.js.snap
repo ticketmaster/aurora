@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -20,7 +20,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -28,7 +28,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -38,7 +38,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -64,7 +64,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   color: rgba(38,38,38,0.6);
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -132,7 +132,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
-  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -146,11 +145,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   max-width: 101px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c18 {
+.c19 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -185,26 +184,26 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 1.4;
-  padding: 18px 0 18px 0;
+  padding: 18px 0;
 }
 
-.c18:focus {
+.c19:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c18:hover {
+.c19:hover {
   background-color: #0150a7;
 }
 
-.c18:active {
+.c19:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c18:disabled {
+.c19:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -214,18 +213,19 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   opacity: 0.2;
 }
 
-.c20 {
+.c21 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c17 {
+.c18 {
   display: none;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-right: 8px;
+  position: relative;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,7 +236,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   align-items: stretch;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -248,6 +248,12 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.2;
+}
+
+.c10 {
+  width: 100%;
+  position: relative;
 }
 
 .c0 {
@@ -255,14 +261,14 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -273,7 +279,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -282,7 +288,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -291,7 +297,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
@@ -302,7 +308,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -311,7 +317,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -344,13 +350,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
@@ -423,7 +429,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c15 {
+  .c16 {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -439,13 +445,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     align-items: center;
   }
 
-  .c15.column__content--expanded {
+  .c16.column__content--expanded {
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c15.column__content--collapsed {
+  .c16.column__content--collapsed {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
@@ -453,17 +459,17 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c21 {
     border-top: 1px solid #E0E0E0;
   }
 
-  .c20.container__overflow--expanded {
+  .c21.container__overflow--expanded {
     background-color: rgba(255,255,255,1);
     max-height: 600px;
     -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
@@ -471,7 +477,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     opacity: 1;
   }
 
-  .c20.container__overflow--collapsed {
+  .c21.container__overflow--collapsed {
     -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
@@ -479,7 +485,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -496,26 +502,26 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c13.subtitle--hidden {
+  .c14.subtitle--hidden {
     position: absolute;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c13.subtitle--active {
+  .c14.subtitle--active {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
   }
 
-  .c13.subtitle--expanded {
+  .c14.subtitle--expanded {
     -webkit-transform: translateX(-55%);
     -ms-transform: translateX(-55%);
     transform: translateX(-55%);
@@ -592,18 +598,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
+          className="c10 c11"
         >
           <div
-            className="c11 c12"
+            className="c12 c13"
           >
             <div
-              className="text text--dark text--primary list-row--title c13 c14"
+              className="text text--dark text--primary list-row--title c14 c15"
               disabled={false}
               size={
                 Object {
@@ -630,10 +631,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c15 c16"
+            className="column__content list-row--title column__content--collapsed c16 c17"
           >
             <div
-              className="text text--dark text--primary c13 c14"
+              className="text text--dark text--primary c14 c15"
               disabled={false}
               size={
                 Object {
@@ -647,10 +648,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
               disabled={false}
               size={
                 Object {
@@ -663,7 +664,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
               disabled={false}
               size={
                 Object {
@@ -678,11 +679,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="c17"
+          className="c18"
         >
           <span
             aria-label="See Tickets"
-            className="c18"
+            className="c19"
             role="button"
             size="regular"
             width="102px"
@@ -692,7 +693,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="c19"
+        className="c20"
       >
         <button
           aria-label="More Info"
@@ -716,14 +717,14 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c20 c12"
+      className="container__overflow container__overflow--collapsed c21 c13"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with link correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -742,7 +743,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -750,7 +751,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -760,7 +761,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -770,24 +771,35 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c21 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 75%;
-  -webkit-flex: 0 0 75%;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
+.c20 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
 
-.c23 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
+.c20:focus,
+.c20:active,
+.c20:visited,
+.c20:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c20:hover {
+  color: #0150a7;
 }
 
 .c22 {
@@ -830,12 +842,20 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   color: rgba(38,38,38,0.6);
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-transform: none;
   color: rgba(38,38,38,1);
+}
+
+.c26 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.6);
 }
 
 .c4 {
@@ -864,6 +884,21 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c3 {
+  display: none;
+}
+
+.c18 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.c19 {
+  display: inline-block;
+}
+
+.c21 {
   display: none;
 }
 
@@ -898,13 +933,12 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
-  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 0 0;
+  margin: 12px 0 25px 0;
 }
 
 .c6 {
@@ -912,11 +946,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   max-width: 101px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c18 {
+.c24 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -951,26 +985,26 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 1.4;
-  padding: 18px 0 8px 0;
+  padding: 18px 0;
 }
 
-.c18:focus {
+.c24:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c18:hover {
+.c24:hover {
   background-color: #0150a7;
 }
 
-.c18:active {
+.c24:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c18:disabled {
+.c24:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -980,23 +1014,19 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   opacity: 0.2;
 }
 
-.c20 {
-  padding-left: 8px;
-  padding-bottom: 8px;
-}
-
-.c24 {
+.c28 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c17 {
+.c23 {
   display: none;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-right: 8px;
+  position: relative;
 }
 
-.c19 {
+.c27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1007,7 +1037,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   align-items: stretch;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -1019,6 +1049,27 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.2;
+}
+
+.c25 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  width: 100%;
+  position: relative;
 }
 
 .c0 {
@@ -1026,14 +1077,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1044,7 +1095,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1053,7 +1104,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1062,7 +1113,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1073,7 +1124,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -1082,7 +1133,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -1091,60 +1142,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c21 {
-    max-width: 83.33333333333334%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 83.33333333333334%;
-    -ms-flex: 0 0 83.33333333333334%;
-    flex: 0 0 83.33333333333334%;
+  .c20 {
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c21 {
-    max-width: 87.5%;
-    -webkit-flex: 0 0 87.5%;
-    -ms-flex: 0 0 87.5%;
-    flex: 0 0 87.5%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c21 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c23 {
-    max-width: 16.666666666666664%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 16.666666666666664%;
-    -ms-flex: 0 0 16.666666666666664%;
-    flex: 0 0 16.666666666666664%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c23 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c23 {
-    max-width: 10%;
-    -webkit-flex: 0 0 10%;
-    -ms-flex: 0 0 10%;
-    flex: 0 0 10%;
+  .c20 {
+    font-size: 14px;
   }
 }
 
@@ -1185,14 +1190,26 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c26 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c26 {
+    font-size: 12px;
   }
 }
 
@@ -1211,6 +1228,28 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    display: inline-block;
+    opacity: 1;
+    line-height: 1.5;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+  }
+
+  .c21.link--hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
   }
 }
 
@@ -1236,7 +1275,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 0 0;
+    margin: 18px 0 25px 0;
   }
 
   .c5:hover {
@@ -1264,7 +1303,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c15 {
+  .c16 {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1280,13 +1319,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     align-items: center;
   }
 
-  .c15.column__content--expanded {
+  .c16.column__content--expanded {
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c15.column__content--collapsed {
+  .c16.column__content--collapsed {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
@@ -1294,23 +1333,17 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
-    padding-left: calc(16px + 16px + 15px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c24 {
+  .c28 {
     border-top: 1px solid #E0E0E0;
   }
 
-  .c24.container__overflow--expanded {
+  .c28.container__overflow--expanded {
     background-color: rgba(255,255,255,1);
     max-height: 600px;
     -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
@@ -1318,7 +1351,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     opacity: 1;
   }
 
-  .c24.container__overflow--collapsed {
+  .c28.container__overflow--collapsed {
     -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
@@ -1326,7 +1359,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c17 {
+  .c23 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1343,26 +1376,26 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c27 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c13.subtitle--hidden {
+  .c14.subtitle--hidden {
     position: absolute;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c13.subtitle--active {
+  .c14.subtitle--active {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
   }
 
-  .c13.subtitle--expanded {
+  .c14.subtitle--expanded {
     -webkit-transform: translateX(-55%);
     -ms-transform: translateX(-55%);
     transform: translateX(-55%);
@@ -1439,18 +1472,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
+          className="c10 c11"
         >
           <div
-            className="c11 c12"
+            className="c12 c13"
           >
             <div
-              className="text text--dark text--primary list-row--title c13 c14"
+              className="text text--dark text--primary list-row--title c14 c15"
               disabled={false}
               size={
                 Object {
@@ -1477,10 +1505,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c15 c16"
+            className="column__content list-row--title column__content--collapsed c16 c17"
           >
             <div
-              className="text text--dark text--primary c13 c14"
+              className="text text--dark text--primary c14 c15"
               disabled={false}
               size={
                 Object {
@@ -1494,10 +1522,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
               disabled={false}
               size={
                 Object {
@@ -1510,7 +1538,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
               disabled={false}
               size={
                 Object {
@@ -1523,23 +1551,78 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               KABOO 3-Day Pass
             </div>
           </div>
+          <div
+            className="c18 c13"
+          >
+            <button
+              className="link--row-options c19 c20"
+              data-index={0}
+              href={null}
+              onClick={[Function]}
+              rel="_self"
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+              target=""
+            >
+              Ticket Options Available
+            </button>
+            <span
+              className="link--row-options c21 c22"
+              data-index={0}
+              href=""
+              onClick={null}
+              rel="_self"
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+              target=""
+            >
+              Ticket Options Available
+            </span>
+          </div>
         </div>
         <div
-          className="c17"
+          className="c23"
         >
           <span
             aria-label="See Tickets"
-            className="c18"
+            className="c24"
             role="button"
             size="regular"
             width="102px"
           >
             See Tickets
           </span>
+          <div
+            className="c25"
+          >
+            <div
+              className="text text--dark text--secondary c8 c26"
+              disabled={false}
+              size={
+                Object {
+                  "large": "uno",
+                  "medium": "uno",
+                  "small": "uno",
+                }
+              }
+            >
+              on Partner Site
+            </div>
+          </div>
         </div>
       </a>
       <div
-        className="c19"
+        className="c27"
       >
         <button
           aria-label="More Info"
@@ -1563,55 +1646,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="c20 c10"
-    >
-      <div
-        className="c21"
-      >
-        <span
-          className="c22"
-          href=""
-          onClick={null}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
-        >
-          Ticket Options Available
-        </span>
-      </div>
-      <div
-        className="c23"
-      >
-        <div
-          className="text text--dark text--secondary c8 c9"
-          disabled={false}
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-        >
-          on Partner Site
-        </div>
-      </div>
-    </div>
-    <div
-      className="container__overflow container__overflow--collapsed c24 c12"
+      className="container__overflow container__overflow--collapsed c28 c13"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1630,7 +1672,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -1638,7 +1680,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1648,7 +1690,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -1656,26 +1698,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
-}
-
-.c21 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 75%;
-  -webkit-flex: 0 0 75%;
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-}
-
-.c23 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 25%;
-  -webkit-flex: 0 0 25%;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
 }
 
 .c22 {
@@ -1701,6 +1723,37 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   color: #0150a7;
 }
 
+.c20 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c20:focus,
+.c20:active,
+.c20:visited,
+.c20:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c20:hover {
+  color: #0150a7;
+}
+
 .c7 {
   font-size: 14px;
   font-weight: 600;
@@ -1717,12 +1770,20 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   color: rgba(38,38,38,0.6);
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-transform: none;
   color: rgba(38,38,38,1);
+}
+
+.c26 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.6);
 }
 
 .c4 {
@@ -1751,6 +1812,21 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c3 {
+  display: none;
+}
+
+.c18 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.c19 {
+  display: inline-block;
+}
+
+.c21 {
   display: none;
 }
 
@@ -1785,13 +1861,12 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
-  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
   padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 0 0;
+  margin: 12px 0 25px 0;
 }
 
 .c6 {
@@ -1799,11 +1874,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   max-width: 101px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c18 {
+.c24 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1838,26 +1913,26 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 1.4;
-  padding: 18px 0 8px 0;
+  padding: 18px 0;
 }
 
-.c18:focus {
+.c24:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c18:hover {
+.c24:hover {
   background-color: #0150a7;
 }
 
-.c18:active {
+.c24:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c18:disabled {
+.c24:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -1867,23 +1942,19 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   opacity: 0.2;
 }
 
-.c20 {
-  padding-left: 8px;
-  padding-bottom: 8px;
-}
-
-.c24 {
+.c28 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c17 {
+.c23 {
   display: none;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-right: 8px;
+  position: relative;
 }
 
-.c19 {
+.c27 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1894,7 +1965,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   align-items: stretch;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -1906,6 +1977,27 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.2;
+}
+
+.c25 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  width: 100%;
+  position: relative;
 }
 
 .c0 {
@@ -1913,14 +2005,14 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1931,7 +2023,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1940,7 +2032,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -1949,7 +2041,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
@@ -1960,7 +2052,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -1969,69 +2061,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    max-width: 83.33333333333334%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 83.33333333333334%;
-    -ms-flex: 0 0 83.33333333333334%;
-    flex: 0 0 83.33333333333334%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c21 {
-    max-width: 87.5%;
-    -webkit-flex: 0 0 87.5%;
-    -ms-flex: 0 0 87.5%;
-    flex: 0 0 87.5%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c21 {
-    max-width: 90%;
-    -webkit-flex: 0 0 90%;
-    -ms-flex: 0 0 90%;
-    flex: 0 0 90%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c23 {
-    max-width: 16.666666666666664%;
-    padding-right: 12px;
-    padding-left: 12px;
-    -webkit-flex: 0 0 16.666666666666664%;
-    -ms-flex: 0 0 16.666666666666664%;
-    flex: 0 0 16.666666666666664%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c23 {
-    max-width: 12.5%;
-    -webkit-flex: 0 0 12.5%;
-    -ms-flex: 0 0 12.5%;
-    flex: 0 0 12.5%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c23 {
-    max-width: 10%;
-    -webkit-flex: 0 0 10%;
-    -ms-flex: 0 0 10%;
-    flex: 0 0 10%;
   }
 }
 
@@ -2043,6 +2077,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:1024px) {
   .c22 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c20 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c20 {
     font-size: 14px;
   }
 }
@@ -2072,14 +2118,26 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c26 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c26 {
+    font-size: 12px;
   }
 }
 
@@ -2098,6 +2156,28 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    display: inline-block;
+    opacity: 1;
+    line-height: 1.5;
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+  }
+
+  .c21.link--hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
   }
 }
 
@@ -2123,7 +2203,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 0 0;
+    margin: 18px 0 25px 0;
   }
 
   .c5:hover {
@@ -2151,7 +2231,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c15 {
+  .c16 {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2167,13 +2247,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     align-items: center;
   }
 
-  .c15.column__content--expanded {
+  .c16.column__content--expanded {
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c15.column__content--collapsed {
+  .c16.column__content--collapsed {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
@@ -2181,23 +2261,17 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
-    padding-left: calc(16px + 16px + 15px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c24 {
+  .c28 {
     border-top: 1px solid #E0E0E0;
   }
 
-  .c24.container__overflow--expanded {
+  .c28.container__overflow--expanded {
     background-color: rgba(255,255,255,1);
     max-height: 600px;
     -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
@@ -2205,7 +2279,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     opacity: 1;
   }
 
-  .c24.container__overflow--collapsed {
+  .c28.container__overflow--collapsed {
     -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
@@ -2213,7 +2287,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c17 {
+  .c23 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2230,26 +2304,26 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c27 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c13.subtitle--hidden {
+  .c14.subtitle--hidden {
     position: absolute;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c13.subtitle--active {
+  .c14.subtitle--active {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
   }
 
-  .c13.subtitle--expanded {
+  .c14.subtitle--expanded {
     -webkit-transform: translateX(-55%);
     -ms-transform: translateX(-55%);
     transform: translateX(-55%);
@@ -2326,18 +2400,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
+          className="c10 c11"
         >
           <div
-            className="c11 c12"
+            className="c12 c13"
           >
             <div
-              className="text text--dark text--primary list-row--title c13 c14"
+              className="text text--dark text--primary list-row--title c14 c15"
               disabled={false}
               size={
                 Object {
@@ -2364,10 +2433,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c15 c16"
+            className="column__content list-row--title column__content--collapsed c16 c17"
           >
             <div
-              className="text text--dark text--primary c13 c14"
+              className="text text--dark text--primary c14 c15"
               disabled={false}
               size={
                 Object {
@@ -2381,10 +2450,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
               disabled={false}
               size={
                 Object {
@@ -2397,7 +2466,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
               disabled={false}
               size={
                 Object {
@@ -2410,23 +2479,78 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               KABOO 3-Day Pass
             </div>
           </div>
+          <div
+            className="c18 c13"
+          >
+            <button
+              className="link--row-options c19 c20"
+              data-index={0}
+              href={null}
+              onClick={[Function]}
+              rel="_self"
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+              target=""
+            >
+              Ticket options available
+            </button>
+            <a
+              className="c21 c22"
+              data-index={0}
+              href="/"
+              onClick={null}
+              rel="_self"
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+              target=""
+            >
+              Ticket options available
+            </a>
+          </div>
         </div>
         <div
-          className="c17"
+          className="c23"
         >
           <span
             aria-label="See Tickets"
-            className="c18"
+            className="c24"
             role="button"
             size="regular"
             width="102px"
           >
             See Tickets
           </span>
+          <div
+            className="c25"
+          >
+            <div
+              className="text text--dark text--secondary c8 c26"
+              disabled={false}
+              size={
+                Object {
+                  "large": "uno",
+                  "medium": "uno",
+                  "small": "uno",
+                }
+              }
+            >
+              click here
+            </div>
+          </div>
         </div>
       </a>
       <div
-        className="c19"
+        className="c27"
       >
         <button
           aria-label="More Info"
@@ -2450,55 +2574,14 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="c20 c10"
-    >
-      <div
-        className="c21"
-      >
-        <a
-          className="c22"
-          href="/"
-          onClick={null}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
-        >
-          Ticket options available
-        </a>
-      </div>
-      <div
-        className="c23"
-      >
-        <div
-          className="text text--dark text--secondary c8 c9"
-          disabled={false}
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-        >
-          click here
-        </div>
-      </div>
-    </div>
-    <div
-      className="container__overflow container__overflow--collapsed c24 c12"
+      className="container__overflow container__overflow--collapsed c28 c13"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders standard List Row correctly 1`] = `
-.c10 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2517,7 +2600,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin-right: -8px;
 }
 
-.c10 .c10 {
+.c11 .c11 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -2525,7 +2608,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   margin-right: 0;
 }
 
-.c12 {
+.c13 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -2535,7 +2618,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c16 {
+.c17 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -2561,7 +2644,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   color: rgba(38,38,38,0.6);
 }
 
-.c14 {
+.c15 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -2629,7 +2712,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-justify-content: horizontal;
   -ms-flex-pack: horizontal;
   justify-content: horizontal;
-  overflow: hidden;
   width: 100%;
   cursor: pointer;
   padding-top: 8px;
@@ -2643,11 +2725,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   max-width: 101px;
 }
 
-.c15 {
+.c16 {
   display: none;
 }
 
-.c18 {
+.c19 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -2682,26 +2764,26 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   line-height: 1.4;
-  padding: 18px 0 18px 0;
+  padding: 18px 0;
 }
 
-.c18:focus {
+.c19:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c18:hover {
+.c19:hover {
   background-color: #0150a7;
 }
 
-.c18:active {
+.c19:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c18:disabled {
+.c19:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -2711,18 +2793,19 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   opacity: 0.2;
 }
 
-.c20 {
+.c21 {
   max-height: 0;
   overflow: hidden;
 }
 
-.c17 {
+.c18 {
   display: none;
-  padding-left: 16px;
+  padding-left: 8px;
   padding-right: 8px;
+  position: relative;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2733,7 +2816,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   align-items: stretch;
 }
 
-.c13 {
+.c14 {
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 2;
@@ -2745,6 +2828,12 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.2;
+}
+
+.c10 {
+  width: 100%;
+  position: relative;
 }
 
 .c0 {
@@ -2752,14 +2841,14 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2770,7 +2859,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -2779,7 +2868,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c12 {
+  .c13 {
     max-width: 100%;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
@@ -2788,7 +2877,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
@@ -2799,7 +2888,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -2808,7 +2897,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c16 {
+  .c17 {
     max-width: 50%;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
@@ -2841,13 +2930,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c14 {
+  .c15 {
     font-size: 16px;
   }
 }
@@ -2920,7 +3009,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c15 {
+  .c16 {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2936,13 +3025,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     align-items: center;
   }
 
-  .c15.column__content--expanded {
+  .c16.column__content--expanded {
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c15.column__content--collapsed {
+  .c16.column__content--collapsed {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
@@ -2950,17 +3039,17 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c11 {
+  .c12 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c21 {
     border-top: 1px solid #E0E0E0;
   }
 
-  .c20.container__overflow--expanded {
+  .c21.container__overflow--expanded {
     background-color: rgba(255,255,255,1);
     max-height: 600px;
     -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
@@ -2968,7 +3057,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     opacity: 1;
   }
 
-  .c20.container__overflow--collapsed {
+  .c21.container__overflow--collapsed {
     -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
@@ -2976,7 +3065,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c17 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2993,26 +3082,26 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c20 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c13.subtitle--hidden {
+  .c14.subtitle--hidden {
     position: absolute;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     opacity: 0;
   }
 
-  .c13.subtitle--active {
+  .c14.subtitle--active {
     -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
   }
 
-  .c13.subtitle--expanded {
+  .c14.subtitle--expanded {
     -webkit-transform: translateX(-55%);
     -ms-transform: translateX(-55%);
     transform: translateX(-55%);
@@ -3089,18 +3178,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10"
-          style={
-            Object {
-              "width": "100%",
-            }
-          }
+          className="c10 c11"
         >
           <div
-            className="c11 c12"
+            className="c12 c13"
           >
             <div
-              className="text text--dark text--primary list-row--title c13 c14"
+              className="text text--dark text--primary list-row--title c14 c15"
               disabled={false}
               size={
                 Object {
@@ -3127,10 +3211,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c15 c16"
+            className="column__content list-row--title column__content--collapsed c16 c17"
           >
             <div
-              className="text text--dark text--primary c13 c14"
+              className="text text--dark text--primary c14 c15"
               disabled={false}
               size={
                 Object {
@@ -3144,10 +3228,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="c15 c16"
+            className="c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c13 c14"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
               disabled={false}
               size={
                 Object {
@@ -3160,7 +3244,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c13 c14"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
               disabled={false}
               size={
                 Object {
@@ -3175,11 +3259,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="c17"
+          className="c18"
         >
           <span
             aria-label="See Tickets"
-            className="c18"
+            className="c19"
             role="button"
             size="regular"
             width="102px"
@@ -3189,7 +3273,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="c19"
+        className="c20"
       >
         <button
           aria-label="More Info"
@@ -3213,7 +3297,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c20 c12"
+      className="container__overflow container__overflow--collapsed c21 c13"
     />
   </div>
 </div>
