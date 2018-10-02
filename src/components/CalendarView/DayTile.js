@@ -16,7 +16,7 @@ const DayTile = styled.div.attrs({
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
-  min-height: 190px;
+  min-height: 192px;
   background-color: ${colors.white.base};
   border: solid 1px ${colors.onyx.muted};
   border-radius: ${constants.borderRadius.small};
