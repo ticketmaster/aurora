@@ -12,6 +12,8 @@ const RadioInput = styled.input.attrs({
   position: relative;
   outline: none;
   transition: transform 0.1s ${constants.easing.easeInOutQuad};
+  background: none;
+  border: none;
 
   &:active {
     transform: scale(0.95, 0.95);
