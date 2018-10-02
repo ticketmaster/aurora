@@ -25,6 +25,7 @@ import {
   VenueIcon,
   VipIcon,
   YoutubeIcon,
+  WarningIcon,
   // approved icons
   InfoDotIcon,
   ErrorIcon,
@@ -93,6 +94,7 @@ export default {
     VenueIcon,
     VipIcon,
     YoutubeIcon,
+    WarningIcon,
 
     InfoDotIcon,
     ErrorIcon,
