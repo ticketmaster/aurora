@@ -44,3 +44,5 @@ exports[`<Modal /> renders Modal correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`<Modal /> should not display the cancel button 1`] = `"<div class=\\"sc-EHOje jUNnHF sc-bxivhb cGbXwI\\" role=\\"dialog\\" aria-modal=\\"true\\"><div class=\\"sc-bZQynM jpIupZ\\"><div>Europe</div><div>Africa</div><div>Asias</div></div></div>"`;
