@@ -150,6 +150,43 @@ rows:
     Notes:
 ```
 
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column medium={6}  style={{ padding: "16px 0" }}>
+                <CheckBoxGroup value={["1","2","3"]}>
+                    <CheckBoxButton size="large" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                        Testing One
+                    </CheckBoxButton>
+                    <CheckBoxButton size="large" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
+                        Testing Two
+                    </CheckBoxButton>
+                    <CheckBoxButton size="large" name="Testing Three" value="3" index={2}>
+                        Testing Three
+                    </CheckBoxButton>
+                </CheckBoxGroup>
+            </Column>
+            <Column medium={6} style={{ padding: "16px 0" }}>
+                <CheckBoxGroup >
+                    <CheckBoxButton size="small" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                        Testing One
+                    </CheckBoxButton>
+                    <CheckBoxButton size="small" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
+                        Testing Two
+                    </CheckBoxButton>
+                    <CheckBoxButton size="small" name="Testing Three" value="3" index={2}>
+                        Testing Three
+                    </CheckBoxButton>
+                </CheckBoxGroup>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
 ## Check Box Button
 
 ### Props
@@ -169,49 +206,39 @@ rows:
     Type: string
     Default: N/A
     Notes: Is Required
-  - Prop: isActive
-    Type: string
-    Default: "true"
+  - Prop: disabled
+    Type: boolean
+    Default: 'false'
     Notes: Will disable checkbox input
   - Prop: index
     Type: number
     Default: N/A
-    Notes: Is required for keyboard accessibility
+    Notes: Is required for keyboard accessibility (only when used with CheckBoxGroup)
+  - Prop: onClick
+    Type: function
+    Default: N/A
+    Notes: click handler (required when used without CheckBoxGroup)
+  - Prop: isChecked
+    Type: boolean or "indeterminate"
+    Default: N/A
+    Notes: defines if checked or indeterminate (required when used without CheckBoxGroup)
 ```
 
 ```react
 span: 6
 ---
-<Container>
-    <Row>
-        <Column medium={6}  style={{ padding: "16px 0" }}>
-            <CheckBoxGroup value={["1","2","3"]}>
-                <CheckBoxButton size="large" name="Testing One"  value="1" index={0}>
-                    Testing One
-                </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Two" value="2" index={1}>
-                    Testing Two
-                </CheckBoxButton>
-                <CheckBoxButton size="large" name="Testing Three" value="3" index={2}>
-                    Testing Three
-                </CheckBoxButton>
-            </CheckBoxGroup>
-        </Column>
-        <Column medium={6} style={{ padding: "16px 0" }}>
-            <CheckBoxGroup >
-                <CheckBoxButton size="small" name="Testing One"  value="1" index={0}>
-                    Testing One
-                </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Two" value="2" index={1}>
-                    Testing Two
-                </CheckBoxButton>
-                <CheckBoxButton size="small" name="Testing Three" value="3" index={2}>
-                    Testing Three
-                </CheckBoxButton>
-            </CheckBoxGroup>
-        </Column>
-    </Row>
-</Container>
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column medium={6}  style={{ padding: "16px 0" }}>
+                <CheckboxWrapperExample size="small"/>
+            </Column>
+            <Column medium={6}  style={{ padding: "16px 0" }}>
+                <CheckboxWrapperExample size="large"/>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
 ```
 
 ## Field Input
@@ -473,9 +500,9 @@ rows:
 ```react
 ---
 <div>
-    <DemoToggleWrapper size="small"/>
-    <DemoToggleWrapper value={false} size="small" disabled/>
-    <DemoToggleWrapper size="large" />
-    <DemoToggleWrapper size="large" disabled/>
+    <ToggleWrapperExample size="small"/>
+    <ToggleWrapperExample value={false} size="small" disabled/>
+    <ToggleWrapperExample size="large" />
+    <ToggleWrapperExample size="large" disabled/>
 </div>
 ```

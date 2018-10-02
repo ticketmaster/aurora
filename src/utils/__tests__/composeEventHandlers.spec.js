@@ -1,4 +1,4 @@
-import composeEventHandlers from "../composeEventHandlers";
+import { composeEventHandlers } from "..";
 
 describe("composeEventHandlers", () => {
   const mockEvent = { target: "element" };

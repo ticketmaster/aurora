@@ -1,4 +1,4 @@
-import { getFontColor, getFontHue } from "../typography";
+import { getFontColor, getFontHue } from "..";
 import { colors } from "../../theme";
 
 describe("getFontColor", () => {

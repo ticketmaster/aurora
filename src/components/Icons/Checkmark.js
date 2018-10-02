@@ -7,7 +7,7 @@ const Checkmark = ({ size, color, children, ...props }) => (
     viewBox="0 0 24 28"
     width={size}
     height={size}
-    stroke="#026CDF"
+    stroke={color}
     strokeLinecap="round"
     strokeLinejoin="round"
     strokeWidth={3}

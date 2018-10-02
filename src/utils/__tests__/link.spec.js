@@ -1,4 +1,4 @@
-import getRelByTarget from "../link";
+import { getRelByTarget } from "..";
 
 describe("getRelByTarget", () => {
   it('should return "noopener" when target equals "_blank"', () => {
