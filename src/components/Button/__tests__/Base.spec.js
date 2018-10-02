@@ -3,7 +3,6 @@ import renderer from "react-test-renderer";
 import { render, Simulate } from "react-testing-library";
 
 import { Button } from "../";
-import { blur } from "../Base";
 
 describe("<Button />", () => {
   it("renders standard small size button correctly", () => {
@@ -164,16 +163,5 @@ describe("<Button />", () => {
 
     Simulate.click(getByText("Dummy Label"));
     expect(onClick).toHaveBeenCalled();
-  });
-
-  it("should execute blur method on event target", () => {
-    const mockFn = jest.fn();
-    const mockEventObj = {
-      target: {
-        blur: mockFn
-      }
-    };
-    blur(mockEventObj);
-    expect(mockFn.mock.calls.length).toBe(1);
   });
 });

@@ -5,10 +5,8 @@ import { StyledButton, StyledButtonLink } from "./Base.styles";
 import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
 import getRelByTarget from "../../utils/link";
 import composeEventHandlers from "../../utils/composeEventHandlers";
+import { blur } from "../../utils";
 
-export const blur = e => {
-  e.target.blur();
-}; // to avoid focus after click
 const Button = ({ variant, size, children, onClick, ...rest }) => {
   const { href } = rest;
 
