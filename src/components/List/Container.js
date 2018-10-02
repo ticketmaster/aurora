@@ -9,7 +9,7 @@ import Portal from "../Portal";
 import Backdrop from "../Backdrop";
 import BottomSheet from "../BottomSheet";
 import Modal from "../Modal";
-import { updateOpenIndex } from "./helper";
+import { updateOpenIndex, determineIfOpen } from "./helper";
 
 const Container = styled.div`
   width: 100%;
@@ -61,7 +61,13 @@ class ListContainer extends Component {
 
     if (
       className.includes("button--expand-or-collapse") ||
-      className.includes("button--more-info")
+      className.includes("button--more-info") ||
+      (className.includes("link--row-options") &&
+        !determineIfOpen(
+          this.state.expandMultiple,
+          this.state.openIndex,
+          parseInt(index, 10)
+        ))
     ) {
       event.preventDefault();
 
