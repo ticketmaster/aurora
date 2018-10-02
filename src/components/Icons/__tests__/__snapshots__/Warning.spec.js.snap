@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WarningIcon /> renders correctly 1`] = `
+<svg
+  height={36}
+  viewBox="0 0 36 36"
+  width={36}
+>
+  <title>
+    Warning Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M0 0h36v36H0z"
+    />
+    <path
+      d="M1.38 32.54L16.652 2.992a1 1 0 0 1 1.766-.02L34.59 32.52a1 1 0 0 1-.877 1.48H2.268a1 1 0 0 1-.889-1.46z"
+      fill="#F2BD2A"
+    />
+    <circle
+      cx="17.5"
+      cy="29.5"
+      fill="#FFF"
+      r="1.5"
+    />
+    <path
+      d="M17.5 25a1.5 1.5 0 0 0 1.5-1.5v-10a1.5 1.5 0 0 0-3 0v10a1.5 1.5 0 0 0 1.5 1.5z"
+      fill="#FFF"
+    />
+  </g>
+</svg>
+`;
