@@ -43,6 +43,12 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
+  it("renders input correctly when the withKeyboardProvider prop with a value of false is passed", () => {
+    expect(
+      renderComponent({ withKeyboardProvider: false }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
   it("Should open the drop down onClick", () => {
     const { container, getByTestId } = renderComponent();
 

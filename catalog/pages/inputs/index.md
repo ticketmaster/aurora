@@ -395,6 +395,10 @@ rows:
     Type: boolean
     Default: true
     Notes: Used to override ability to use keyboard to focus on drop down option
+  - Prop: withKeyboardProvider
+    Type: boolean
+    Default: true
+    Notes: Used to override inclusion of a KeyboardProvider to handle keydown events
   - Prop: placeholder
     Type: string
     Default: N/A

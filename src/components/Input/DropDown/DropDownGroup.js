@@ -194,6 +194,7 @@ class DropDownGroup extends React.Component {
       variant,
       isOpen: isOpenProp,
       keywordSearch,
+      withKeyboardProvider,
       ...props
     } = this.props;
     const { isOpen: isOpenState } = this.state;
@@ -250,13 +251,17 @@ class DropDownGroup extends React.Component {
                 })}
               >
                 <DropDownProvider value={{ ...this.state, isOpen }}>
-                  <StyledKeyboardProvider
-                    role="listbox"
-                    keywordSearch={keywordSearch}
-                    selected={selected}
-                  >
-                    {children}
-                  </StyledKeyboardProvider>
+                  {withKeyboardProvider ? (
+                    <StyledKeyboardProvider
+                      role="listbox"
+                      keywordSearch={keywordSearch}
+                      selected={selected}
+                    >
+                      {children}
+                    </StyledKeyboardProvider>
+                  ) : (
+                    children
+                  )}
                 </DropDownProvider>
               </StyledChildWrapper>
             </StyledGroupWrapper>
@@ -275,7 +280,8 @@ DropDownGroup.propTypes = {
   variant: PropTypes.number,
   label: PropTypes.string,
   isOpen: PropTypes.bool,
-  keywordSearch: PropTypes.bool
+  keywordSearch: PropTypes.bool,
+  withKeyboardProvider: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -285,6 +291,7 @@ DropDownGroup.defaultProps = {
   variant: 0,
   label: "Sort By:",
   isOpen: false,
-  keywordSearch: true
+  keywordSearch: true,
+  withKeyboardProvider: true
 };
 export default DropDownGroup;
