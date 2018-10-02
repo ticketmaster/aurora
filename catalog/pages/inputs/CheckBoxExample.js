@@ -9,6 +9,36 @@ export default class CheckboxWrapperExample extends Component {
     size: PropTypes.oneOf(TOGGLE_SIZES).isRequired
   };
 
+  static data = {
+    option: {
+      id: 0,
+      name: "fruits",
+      value: "fruits",
+      content: "Fruits"
+    },
+    subOptions: [
+      {
+        id: 1,
+        name: "apple",
+        value: "apple",
+        content:
+          "Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple"
+      },
+      {
+        id: 2,
+        name: "peach",
+        value: "peach",
+        content: "Peach"
+      },
+      {
+        id: 3,
+        name: "banana",
+        value: "banana",
+        content: "Banana"
+      }
+    ]
+  };
+
   state = {
     fruits: false,
     subOptions: {
@@ -20,10 +50,11 @@ export default class CheckboxWrapperExample extends Component {
 
   handleChange = e => {
     let fruits = false;
-    const { subOptions } = this.state;
+    const { data } = CheckboxWrapperExample;
     const { name, checked } = e.target;
+    const subOptions = { ...this.state.subOptions };
 
-    if (name === "fruits") {
+    if (name === data.option.name) {
       fruits = checked;
       Object.keys(this.state.subOptions).forEach(el => {
         subOptions[el] = fruits;
@@ -53,13 +84,14 @@ export default class CheckboxWrapperExample extends Component {
       : this.state[name];
 
   render() {
+    const { option, subOptions } = CheckboxWrapperExample.data;
     return (
       <Fragment>
         <CheckBoxButton
           size={this.props.size}
-          isChecked={this.isChecked("fruits")}
-          name="fruits"
-          value="fruits"
+          isChecked={this.isChecked(option.name)}
+          name={option.name}
+          value={option.value}
           onClick={this.handleChange}
           style={{
             marginBottom: "10px"
@@ -69,49 +101,22 @@ export default class CheckboxWrapperExample extends Component {
         </CheckBoxButton>
         <fieldset style={{ border: "none", margin: 0, padding: 0 }}>
           <ul style={{ listStyleType: "none", padding: "0 20px", margin: 0 }}>
-            <li>
-              <CheckBoxButton
-                size={this.props.size}
-                isChecked={this.isChecked("apple")}
-                name="apple"
-                value="apple"
-                onClick={this.handleChange}
-                style={{
-                  marginBottom: "10px"
-                }}
-              >
-                Apple Apple Apple Apple Apple Apple Apple Apple Apple Apple
-                Apple Apple
-              </CheckBoxButton>
-            </li>
-            <li>
-              <CheckBoxButton
-                size={this.props.size}
-                isChecked={this.isChecked("peach")}
-                name="peach"
-                value="peach"
-                onClick={this.handleChange}
-                style={{
-                  marginBottom: "10px"
-                }}
-              >
-                Peach
-              </CheckBoxButton>
-            </li>
-            <li>
-              <CheckBoxButton
-                size={this.props.size}
-                isChecked={this.isChecked("banana")}
-                name="banana"
-                value="banana"
-                onClick={this.handleChange}
-                style={{
-                  marginBottom: "10px"
-                }}
-              >
-                Banana
-              </CheckBoxButton>
-            </li>
+            {subOptions.map(({ id, name, value, content }) => (
+              <li key={id}>
+                <CheckBoxButton
+                  size={this.props.size}
+                  isChecked={this.isChecked(name)}
+                  name={name}
+                  value={value}
+                  onClick={this.handleChange}
+                  style={{
+                    marginBottom: "10px"
+                  }}
+                >
+                  {content}
+                </CheckBoxButton>
+              </li>
+            ))}
           </ul>
         </fieldset>
       </Fragment>
