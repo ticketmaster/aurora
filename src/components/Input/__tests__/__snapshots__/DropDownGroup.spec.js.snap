@@ -19,7 +19,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -89,7 +89,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -159,7 +159,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -229,7 +229,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -299,7 +299,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -371,7 +371,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
         Option One
       </div>
@@ -443,7 +443,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
         Option One
       </div>
@@ -515,7 +515,7 @@ exports[`DropDownGroup renders default input 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -585,7 +585,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -655,7 +655,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -725,7 +725,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -790,7 +790,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       class="dropdown--no-border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--no-border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
       >
         Sort By: 
       </div>
@@ -862,7 +862,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       class="dropdown--no-border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--no-border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
       >
         Selected Option: 
       </div>

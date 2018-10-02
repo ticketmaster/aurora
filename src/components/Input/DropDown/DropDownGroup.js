@@ -104,14 +104,12 @@ const StyledSelectedText = styled.div`
 
   &.dropdown--border {
     margin-left: 15px;
-    width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   &.dropdown--no-border {
     margin-right: 8px;
-    width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
