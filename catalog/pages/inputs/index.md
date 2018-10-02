@@ -391,6 +391,10 @@ rows:
     Type: boolean
     Default: false
     Notes: Used to override internal isOpen state
+  - Prop: keywordSearch
+    Type: boolean
+    Default: true
+    Notes: Used to override ability to use keyboard to focus on drop down option
   - Prop: placeholder
     Type: string
     Default: N/A
@@ -424,7 +428,7 @@ span: 6
 <Container>
     <Row>
         <Column medium={6}>
-            <DropDownGroup variant={0} placeholder="Select an option">
+            <DropDownGroup variant={0} keywordSearch={false} placeholder="Select an option">
                 <DropDownOption value="0" index={0}>Option One</DropDownOption>
                 <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                 <DropDownOption value="2" index={2}>Option Three</DropDownOption>
