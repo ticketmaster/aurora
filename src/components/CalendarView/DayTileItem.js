@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 import { Text } from "../Text";
 
-import { colors, spacing } from "../../theme";
+import { spacing } from "../../theme";
+
+import { getThemeValue } from "../../utils";
 
 const DayTileItem = styled.article`
   flex: auto;
@@ -39,7 +41,7 @@ DayTileItem.Footer = styled.footer`
 
 DayTileItem.Divider = styled.div`
   margin: ${spacing.cozy};
-  border-bottom: solid 1px ${colors.onyx.muted};
+  border-bottom: solid 1px ${getThemeValue("gray04")};
 `;
 
 const DayTileItemGroup = ({ children }) =>

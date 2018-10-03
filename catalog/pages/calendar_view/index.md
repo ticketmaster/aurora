@@ -55,11 +55,12 @@ rows:
                   <DayTileButton variant="outline" href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -161,11 +162,12 @@ rows:
                 <DayTileButton href="#">6:00 pm</DayTileButton>
               </DayTileButton.Group>
               <DayTileMoreButton
+                role="button"
                 onClick={() => {
                   alert('More Button Clicked');
                 }}
               >
-                +4 More Times
+                +4 More
               </DayTileMoreButton>
             </DayTileItem.Footer>
           </DayTileItem>
@@ -196,11 +198,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -232,11 +235,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -332,7 +336,7 @@ rows:
   - Prop: ...props
     Type: any
     Default:
-    Notes: Passes through any other props to underlying `<Button />`
+    Notes: Passes through any other props to underlying `<Link />`
 ```
 
 ```react
@@ -341,8 +345,11 @@ rows:
   <Row>
     <Column medium={6}>
       <Spacing top={{xSmall: "cozy" }} bottom={{xSmall: "cozy" }} style={{ maxWidth: "160px", margin: "auto" }}>
-        <DayTileMoreButton onClick={() => alert('More Button clicked')}>
-          + 4 More Times
+        <DayTileMoreButton
+          role="button"
+          onClick={() => alert('More Button clicked')}
+        >
+          + 4 More
         </DayTileMoreButton>
       </Spacing>
     </Column>
@@ -359,8 +366,11 @@ rows:
                   <DayTileButton href="#">2:00 pm</DayTileButton>
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
-                <DayTileMoreButton onClick={() => alert('More Button clicked')}>
-                  + 4 More Times
+                <DayTileMoreButton
+                  role="button"
+                  onClick={() => alert('More Button clicked')}
+                >
+                  + 4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -504,11 +514,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -543,11 +554,12 @@ rows:
                   <DayTileButton variant="outline" href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -666,11 +678,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -709,11 +722,12 @@ rows:
                   <DayTileButton variant="outline" href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -820,11 +834,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -856,11 +871,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -881,11 +897,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -924,11 +941,12 @@ rows:
                   <DayTileButton variant="outline" href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
@@ -973,11 +991,12 @@ rows:
                   <DayTileButton href="#">6:00 pm</DayTileButton>
                 </DayTileButton.Group>
                 <DayTileMoreButton
+                  role="button"
                   onClick={() => {
                     alert('More Button Clicked');
                   }}
                 >
-                  +4 More Times
+                  +4 More
                 </DayTileMoreButton>
               </DayTileItem.Footer>
             </DayTileItem>
