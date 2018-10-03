@@ -18,9 +18,9 @@ const DayTileDateContainer = styled.div`
 const DayTileDateText = styled(Text).attrs({
   size: "kilo",
   weight: "semiBold",
-  className: ({ accent }) =>
+  className: ({ isAccent }) =>
     classnames("day-tile-date__text", {
-      "day-tile-date__text--accent": accent
+      "day-tile-date__text--accent": isAccent
     })
 })`
   color: ${getThemeValue("gray02")};
@@ -32,7 +32,7 @@ const DayTileDateText = styled(Text).attrs({
 
 const DayTileDate = ({ children, accent }) => (
   <DayTileDateContainer>
-    <DayTileDateText accent={accent}>{children}</DayTileDateText>
+    <DayTileDateText isAccent={accent}>{children}</DayTileDateText>
   </DayTileDateContainer>
 );
 
