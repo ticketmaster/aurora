@@ -18,12 +18,12 @@
 [![gzip size][gzip-badge]][unpkg-dist]
 [![module formats: cjs][module-formats-badge]][unpkg-dist]
 
-## How to get started
+## How to get started:
 
 Aurora relies on the [react](https://www.npmjs.com/package/react),
 [prop-types](https://www.npmjs.com/package/prop-types),
 and [styled-components](https://www.npmjs.com/package/styled-components)
-peer-dependency packages to already be installed and set up in your project.
+peer-dependency packages are already to be installed and set up in your project.
 
 Install Aurora from the npm registry by running the following command in your terminal:
 
@@ -46,25 +46,25 @@ ReactDOM.render(
 
 [![Edit 430zk16k6w](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/430zk16k6w?autoresize=1&hidenavigation=1)
 
-## Running the catalog locally
+## Running the catalog locally:
 
-In order to run the [catalog](https://code.ticketmaster.com/aurora/) locally, complete the following steps:
+In order to run the [catalog](https://code.ticketmaster.com/aurora/) locally, you are required to complete the following steps:
 
-1.  Execute `yarn install` at this directory's root
-2.  Execute `yarn catalog-start` at this directory's root
+1.  Execute `yarn install` at this directory's root.
+2.  Execute `yarn catalog-start` at this directory's root.
 3.  Navigate to `http://localhost:4000/` or your host alias's port 4000.
 
-## How to use
+## How to use:
 
 A documentation of each component and living styleguide will be available on the brand site for Ticketmaster.com
 
-## Other docs
+## Other docs:
 
 - [Code of Conduct][coc]
 - [Contributing][contributing]
 - [Maintaining][maintaining]
 
-## LICENSE
+## LICENSE:
 
 MIT
 
