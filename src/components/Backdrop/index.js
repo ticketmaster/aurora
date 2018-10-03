@@ -1,90 +1,64 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 
-import { ItemContainerConsumer } from "../List/Context";
-import { BackdropProvider } from "./Context";
+import { ESCAPE } from "../../utils/keyCharCodes";
 
-const KEYCODES = {
-  ESCAPE: 27
-};
+import { Overlay } from "./index.styles";
 
-const Overlay = styled.div.attrs({
-  className: "container--overlay"
-})`
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-class Backdrop extends Component {
-  state = {
-    childRef: React.createRef()
+export default class Backdrop extends Component {
+  static propTypes = {
+    /* eslint-disable-next-line react/forbid-prop-types */
+    childRef: PropTypes.object.isRequired,
+    children: PropTypes.node.isRequired,
+    overlay: PropTypes.bool,
+    /* eslint-disable-next-line react/forbid-prop-types */
+    overlayProps: PropTypes.object,
+    onRequestClose: PropTypes.func
   };
+
+  static defaultProps = {
+    overlay: true,
+    overlayProps: {},
+    onRequestClose: null
+  };
+
   componentDidMount() {
-    document.addEventListener("click", this.handleOutsideClick, false);
-    document.addEventListener("keydown", this.onKeyPress, false);
+    document.addEventListener("click", this.handleOutsideClick);
+    document.addEventListener("keydown", this.onKeyPress);
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleOutsideClick, false);
-    document.removeEventListener("keydown", this.onKeyPress, false);
+    document.removeEventListener("click", this.handleOutsideClick);
+    document.removeEventListener("keydown", this.onKeyPress);
   }
 
-  onKeyPress = event => {
-    if (event.keyCode === KEYCODES.ESCAPE) {
-      this.onCloseRequest();
+  onKeyPress = e => {
+    const { onRequestClose } = this.props;
+
+    if (e.keyCode === ESCAPE && onRequestClose) {
+      onRequestClose(e);
     }
   };
 
   handleOutsideClick = e => {
-    const { childRef } = this.state;
+    const { childRef, onRequestClose } = this.props;
 
-    if (childRef && childRef.current) {
-      if (!childRef.current.contains(e.target)) {
-        if (this.onCloseRequest) {
-          this.onCloseRequest();
-        }
-      }
-    } else {
-      this.onCloseRequest();
+    if (
+      onRequestClose &&
+      childRef.current &&
+      !childRef.current.contains(e.target)
+    ) {
+      onRequestClose(e);
     }
   };
 
   render() {
-    const { children, ...rest } = this.props;
-    return (
-      <ItemContainerConsumer>
-        {value => {
-          this.onCloseRequest = value ? value.onCloseRequest : () => {};
-          return (
-            <Overlay onClick={this.handleOutsideClick} {...rest}>
-              {children && (
-                <BackdropProvider value={this.state}>
-                  {children}
-                </BackdropProvider>
-              )}
-            </Overlay>
-          );
-        }}
-      </ItemContainerConsumer>
-    );
+    const { children, overlay, overlayProps } = this.props;
+
+    if (overlay) {
+      return <Overlay {...overlayProps}>{children}</Overlay>;
+    }
+
+    return children;
   }
 }
-
-Backdrop.defaultProps = {
-  children: null
-};
-
-Backdrop.propTypes = {
-  children: PropTypes.node
-};
-
-export default Backdrop;

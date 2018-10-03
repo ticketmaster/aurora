@@ -1,17 +1,15 @@
 import { pageLoader } from "catalog";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-
-import Modal from "../../../src/components/Modal/index";
-import Backdrop from "../../../src/components/Backdrop/index";
+import Modal from "../../../src/components/Modal";
+import DeviceSizeProvider from "../../../src/components/DeviceSize/Provider";
+import { Button } from "../../../src/components/Button";
 
 export default {
-  path: "/modal",
+  path: "modal",
   title: "Modal",
   imports: {
-    Backdrop,
     Modal,
-    TransitionGroup,
-    CSSTransition
+    Button,
+    DeviceSizeProvider
   },
   content: pageLoader(() => import("./index.md"))
 };

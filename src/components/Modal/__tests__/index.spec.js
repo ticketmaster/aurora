@@ -1,55 +1,176 @@
 import React from "react";
-import { render, Simulate } from "react-testing-library";
+import {
+  render,
+  renderIntoDocument,
+  Simulate,
+  wait
+} from "react-testing-library";
 
-import Modal from "../";
+import { getContentHeight, getBottomActionBarShadow } from "../helper";
+
+import Modal from "../index";
+import { withModal } from "../context";
+
+jest.mock("../helper");
 
 describe("<Modal />", () => {
-  beforeEach(() => {
-    const modalRoot = global.document.createElement("div");
-    modalRoot.setAttribute("id", "modal-root");
-    modalRoot.setAttribute("data-testid", "modal-root");
-    const body = global.document.querySelector("body");
-    body.appendChild(modalRoot);
+  describe("render", () => {
+    it("should render without errors with default actionBar and pass extra props", () => {
+      const { container } = render(
+        <Modal modalContentProps={{ onClick: () => {} }}>
+          <div>Modal contents</div>
+        </Modal>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should render modal without actionBar", () => {
+      const { container } = render(
+        <Modal actionBar={null}>
+          <div>Modal contents</div>
+        </Modal>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should render with bottomActionBar", () => {
+      const { container } = render(
+        <Modal
+          actionBar={null}
+          bottomActionBar={<div>Place your controls here</div>}
+        >
+          <div>Modal contents</div>
+        </Modal>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should not render the modal if it is closed", () => {
+      const { container } = render(
+        <Modal isOpened={false}>
+          <div>Modal contents</div>
+        </Modal>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 
-  afterEach(() => {
-    const body = global.document.querySelector("body");
-    const modalRoot = global.document.getElementById("modal-root");
-    body.removeChild(modalRoot);
-  });
+  it("it should set the content height based on action bars heights", () => {
+    getContentHeight.mockReturnValue(100);
 
-  it("renders Modal correctly", () => {
-    const { container } = render(
-      <Modal>
-        <div>Europe</div>
-        <div>Africa</div>
-        <div>Asias</div>
+    const { getByTestId } = renderIntoDocument(
+      <Modal modalContentProps={{ "data-testid": "modal-content" }}>
+        <div>Modal contents</div>
       </Modal>
     );
-    expect(container.firstChild).toMatchSnapshot();
+
+    expect(getByTestId("modal-content").style.maxHeight).toBe("100");
   });
 
-  it("removes the Modal on clicking cancel button", () => {
-    const { container } = render(
-      <Modal>
-        <div>Europe</div>
-        <div>Africa</div>
-        <div>Asias</div>
+  it("should recalculate shadows and content height on props change", () => {
+    const { container, rerender } = render(
+      <Modal isOpened={false}>
+        <div>Modal contents</div>
       </Modal>
     );
-    Simulate.click(container.querySelector(".button--close"));
-    expect(container.innerHTML).toMatchSnapshot();
+
+    rerender(
+      <Modal isOpened>
+        <div>Modal contents</div>
+      </Modal>
+    );
+
+    expect(container).toMatchSnapshot();
   });
 
-  it("should not display the cancel button", () => {
-    const { container } = render(
-      <Modal withCloseIcon={false}>
-        <div>Europe</div>
-        <div>Africa</div>
-        <div>Asias</div>
+  it("should set bottom action bar shadow when the content was scrolled", () => {
+    getBottomActionBarShadow
+      .mockReturnValueOnce(false)
+      .mockReturnValueOnce(true);
+
+    const { container, getByTestId } = render(
+      <Modal bottomActionBar={<div />}>
+        <div data-testid="content">Modal contents</div>
       </Modal>
     );
-    expect(container.querySelector(".button--close")).toEqual(null);
-    expect(container.innerHTML).toMatchSnapshot();
+
+    Simulate.scroll(getByTestId("content"));
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should not fail on scroll when there is no scroll callback", () => {
+    const { getByTestId } = render(
+      <Modal modalContentProps={{ "data-testid": "modal-content" }}>
+        <div>Modal contents</div>
+      </Modal>
+    );
+
+    Simulate.scroll(getByTestId("modal-content"));
+  });
+
+  it("should call onScroll on content scroll", () => {
+    const scrollSpy = jest.fn();
+
+    const { getByTestId } = render(
+      <Modal
+        modalContentProps={{ "data-testid": "modal-content" }}
+        onScroll={scrollSpy}
+      >
+        <div>Modal contents</div>
+      </Modal>
+    );
+
+    Simulate.scroll(getByTestId("modal-content"));
+
+    expect(scrollSpy).toHaveBeenCalled();
+  });
+
+  describe("closeModal", () => {
+    it("should close the modal when there is no onRequestClose callback", async () => {
+      /* eslint-disable-next-line react/prop-types */
+      const MyComponent = ({ modal: { closeModal } }) => (
+        <button data-testid="close-modal" onClick={closeModal} />
+      );
+
+      const Component = withModal(MyComponent);
+
+      const { container, getByTestId } = render(
+        <Modal>
+          <Component />
+        </Modal>
+      );
+
+      Simulate.click(getByTestId("close-modal"));
+
+      await wait(() => !container, { timeout: 50 });
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should close the modal when the request was approved", async () => {
+      /* eslint-disable-next-line react/prop-types */
+      const MyComponent = ({ modal: { closeModal } }) => (
+        <button data-testid="close-modal" onClick={closeModal} />
+      );
+
+      const Component = withModal(MyComponent);
+
+      const { container, getByTestId } = render(
+        <Modal onRequestClose={() => true}>
+          <Component />
+        </Modal>
+      );
+
+      Simulate.click(getByTestId("close-modal"));
+
+      await wait(() => !container, { timeout: 50 });
+
+      expect(container).toMatchSnapshot();
+    });
   });
 });
