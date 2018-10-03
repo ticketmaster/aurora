@@ -4,7 +4,8 @@ import styled from "styled-components";
 import { IconButton } from "../Button";
 import { OverflowIcon } from "../Icons";
 
-import { spacing, colors } from "../../theme";
+import { spacing } from "../../theme";
+import { getThemeValue } from "../../utils";
 
 const DayTileOverflowButtonContainer = styled.div`
   margin-left: auto;
@@ -14,11 +15,12 @@ const DayTileOverflowIconButton = styled(IconButton)`
   display: block;
   padding: ${spacing.cozy} ${spacing.cozy} 0;
   border: 0;
+  color: ${getThemeValue("gray02")};
 `;
 
 const DayTileOverflowIcon = styled(OverflowIcon)`
   ${DayTileOverflowIconButton}:hover & {
-    color: ${colors.azure.base};
+    color: ${getThemeValue("primary", "base")};
     fill: currentColor;
   }
 `;
@@ -26,7 +28,7 @@ const DayTileOverflowIcon = styled(OverflowIcon)`
 const DayTileOverflowButton = props => (
   <DayTileOverflowButtonContainer>
     <DayTileOverflowIconButton size={30} role="button" {...props}>
-      <DayTileOverflowIcon size={21} color={colors.onyx.light} />
+      <DayTileOverflowIcon size={21} />
     </DayTileOverflowIconButton>
   </DayTileOverflowButtonContainer>
 );

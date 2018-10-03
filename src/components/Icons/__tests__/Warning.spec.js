@@ -8,9 +8,7 @@ describe("<WarningIcon />", () => {
 
   it("renders correctly", () => {
     const component = renderer.create(
-      <WarningIcon width={36} height={36}>
-        {children}
-      </WarningIcon>
+      <WarningIcon size={36}>{children}</WarningIcon>
     );
 
     expect(component.toJSON()).toMatchSnapshot();

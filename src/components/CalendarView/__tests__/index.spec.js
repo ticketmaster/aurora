@@ -41,8 +41,8 @@ describe("CalendarView", () => {
                     <DayTileButton href="#">2:00 pm</DayTileButton>
                     <DayTileButton href="#">6:00 pm</DayTileButton>
                   </DayTileButton.Group>
-                  <DayTileMoreButton onClick={() => {}}>
-                    +4 More Times
+                  <DayTileMoreButton role="button" onClick={() => {}}>
+                    +4 More
                   </DayTileMoreButton>
                 </DayTileItem.Footer>
               </DayTileItem>
@@ -65,8 +65,8 @@ describe("CalendarView", () => {
                     <DayTileButton href="#">2:00 pm</DayTileButton>
                     <DayTileButton href="#">6:00 pm</DayTileButton>
                   </DayTileButton.Group>
-                  <DayTileMoreButton onClick={() => {}}>
-                    +4 More Times
+                  <DayTileMoreButton role="button" onClick={() => {}}>
+                    +4 More
                   </DayTileMoreButton>
                 </DayTileItem.Footer>
               </DayTileItem>
