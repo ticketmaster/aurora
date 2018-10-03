@@ -104,14 +104,12 @@ const StyledSelectedText = styled.div`
 
   &.dropdown--border {
     margin-left: 15px;
-    width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   &.dropdown--no-border {
     margin-right: 8px;
-    width: 60%;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -193,6 +191,8 @@ class DropDownGroup extends React.Component {
       onChange,
       variant,
       isOpen: isOpenProp,
+      keywordSearch,
+      withKeyboardProvider,
       ...props
     } = this.props;
     const { isOpen: isOpenState } = this.state;
@@ -249,13 +249,17 @@ class DropDownGroup extends React.Component {
                 })}
               >
                 <DropDownProvider value={{ ...this.state, isOpen }}>
-                  <StyledKeyboardProvider
-                    role="listbox"
-                    keywordSearch
-                    selected={selected}
-                  >
-                    {children}
-                  </StyledKeyboardProvider>
+                  {withKeyboardProvider ? (
+                    <StyledKeyboardProvider
+                      role="listbox"
+                      keywordSearch={keywordSearch}
+                      selected={selected}
+                    >
+                      {children}
+                    </StyledKeyboardProvider>
+                  ) : (
+                    children
+                  )}
                 </DropDownProvider>
               </StyledChildWrapper>
             </StyledGroupWrapper>
@@ -273,7 +277,9 @@ DropDownGroup.propTypes = {
   placeholder: PropTypes.string,
   variant: PropTypes.number,
   label: PropTypes.string,
-  isOpen: PropTypes.bool
+  isOpen: PropTypes.bool,
+  keywordSearch: PropTypes.bool,
+  withKeyboardProvider: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -282,6 +288,8 @@ DropDownGroup.defaultProps = {
   placeholder: "",
   variant: 0,
   label: "Sort By:",
-  isOpen: false
+  isOpen: false,
+  keywordSearch: true,
+  withKeyboardProvider: true
 };
 export default DropDownGroup;

@@ -19,7 +19,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -89,7 +89,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -159,7 +159,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -229,7 +229,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -299,7 +299,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -371,7 +371,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
         Option One
       </div>
@@ -443,7 +443,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
         Option One
       </div>
@@ -515,7 +515,7 @@ exports[`DropDownGroup renders default input 1`] = `
       class="dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="sc-bxivhb bfTkLM"
@@ -566,7 +566,7 @@ exports[`DropDownGroup renders default input 1`] = `
 </div>
 `;
 
-exports[`DropDownGroup renders default input correctly when the isOpen prop with a value of true is passed 1`] = `
+exports[`DropDownGroup renders input correctly when the isOpen prop with a value of true is passed 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
@@ -585,7 +585,7 @@ exports[`DropDownGroup renders default input correctly when the isOpen prop with
       class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
         class="dropdown__icon--hide sc-bxivhb bfTkLM"
@@ -636,6 +636,141 @@ exports[`DropDownGroup renders default input correctly when the isOpen prop with
 </div>
 `;
 
+exports[`DropDownGroup renders input correctly when the keywordSearch prop with a value of false is passed 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders input correctly when the withKeyboardProvider prop with a value of false is passed 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionOne"
+        tabindex="-1"
+        value="ValueOne"
+      >
+        Option One
+      </span>
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionTwo"
+        tabindex="-1"
+        value="ValueTwo"
+      >
+        Second Option
+      </span>
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionThree"
+        tabindex="-1"
+        value="ValueThree"
+      >
+        Option Three
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
 <div
   data-testid="test-outSideComponent"
@@ -655,7 +790,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       class="dropdown--no-border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--no-border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
       >
         Sort By: 
       </div>
@@ -727,7 +862,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       class="dropdown--no-border sc-bdVaJa jOVSaQ"
     >
       <div
-        class="dropdown--selected dropdown--no-border sc-ifAKCX dIQjbB"
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
       >
         Selected Option: 
       </div>

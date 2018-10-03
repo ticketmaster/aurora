@@ -1,4 +1,4 @@
-import getThemeValue from "../getThemeValue";
+import { getThemeValue } from "..";
 
 describe("getThemeValue", () => {
   it("should get correct value one level deep", () => {

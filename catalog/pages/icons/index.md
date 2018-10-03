@@ -208,6 +208,13 @@ rows:
 </Row>
 
 <Row>
+  <Column medium={3}>
+    <div style={iconStyle}><WarningIcon height={36} width={36}><title>Warning Icon</title></WarningIcon></div>
+    <div style={iconLabelStyle}>Warning Icon</div>
+  </Column>
+</Row>
+
+<Row>
   <Column medium={4}>
     <div style={iconStyle}>
       <ErrorIcon size="small">

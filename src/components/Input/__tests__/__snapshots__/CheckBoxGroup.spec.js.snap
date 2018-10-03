@@ -1,5 +1,158 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CheckBoxGroup renders checked CheckBox without CheckBoxGroup 1`] = `
+Object {
+  "container": <div>
+    <label
+      class="checkbox--small checkbox__checked sc-gzVnrw jLPzax"
+    >
+      <input
+        checked=""
+        class="sc-bZQynM bOQGeJ"
+        data-testid="test-checkbox"
+        id="something1input"
+        name="something"
+        type="checkbox"
+        value="1"
+      />
+      <div
+        class="sc-dnqmqq jurKOe"
+      >
+        <svg
+          class="sc-iwsKbI eyASts"
+          fill="none"
+          fill-rule="evenodd"
+          height="16"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="3"
+          viewBox="0 0 24 28"
+          width="16"
+        >
+          <path
+            d="M5.215 12.219l4.437 4.439 9.514-9.433"
+          />
+        </svg>
+      </div>
+      <span
+        aria-checked="true"
+        aria-labelledby="something1"
+        class="sc-htoDjs dloQcR"
+        role="checkbox"
+      />
+    </label>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CheckBoxGroup renders default CheckBox without CheckBoxGroup 1`] = `
+Object {
+  "container": <div>
+    <label
+      class="checkbox--small sc-gzVnrw jLPzax"
+    >
+      <input
+        class="sc-bZQynM bOQGeJ"
+        data-testid="test-checkbox"
+        id="something1input"
+        name="something"
+        type="checkbox"
+        value="1"
+      />
+      <div
+        class="sc-dnqmqq jurKOe"
+      >
+        <svg
+          class="sc-iwsKbI eyASts"
+          fill="none"
+          fill-rule="evenodd"
+          height="16"
+          stroke="currentcolor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="3"
+          viewBox="0 0 24 28"
+          width="16"
+        >
+          <path
+            d="M5.215 12.219l4.437 4.439 9.514-9.433"
+          />
+        </svg>
+      </div>
+      <span
+        aria-checked="false"
+        aria-labelledby="something1"
+        class="sc-htoDjs dloQcR"
+        role="checkbox"
+      />
+    </label>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`CheckBoxGroup renders default input 1`] = `
 Object {
   "container": <div>
@@ -7,25 +160,25 @@ Object {
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-bwzfXH fvlgzD"
+        class="checkbox--large sc-gzVnrw jLPzax"
       >
         <input
-          class="sc-bdVaJa girhbC"
-          data-testid="test-checkbox2"
-          id="something2input"
+          class="sc-bZQynM bOQGeJ"
+          data-testid="test-checkbox"
+          id="somethingelseinput"
           name="something"
           type="checkbox"
-          value="2"
+          value="else"
         />
         <div
-          class="sc-bxivhb ksihEt"
+          class="sc-dnqmqq jurKOe"
         >
           <svg
-            class="sc-ifAKCX gdCEzj"
+            class="sc-iwsKbI eyASts"
             fill="none"
             fill-rule="evenodd"
             height="24"
-            stroke="#026CDF"
+            stroke="currentcolor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="3"
@@ -39,8 +192,8 @@ Object {
         </div>
         <span
           aria-checked="false"
-          aria-labelledby="something2"
-          class="sc-htpNat uTBrX"
+          aria-labelledby="somethingelse"
+          class="sc-htoDjs dloQcR"
           role="checkbox"
         />
       </label>
@@ -87,25 +240,25 @@ Object {
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-bwzfXH fvlgzD"
+        class="checkbox--large sc-gzVnrw jLPzax"
       >
         <input
-          class="sc-bdVaJa girhbC"
-          data-testid="test-checkbox2"
-          id="something2input"
+          class="sc-bZQynM bOQGeJ"
+          data-testid="test-checkbox"
+          id="somethingelseinput"
           name="something"
           type="checkbox"
-          value="2"
+          value="else"
         />
         <div
-          class="sc-bxivhb ksihEt"
+          class="sc-dnqmqq jurKOe"
         >
           <svg
-            class="sc-ifAKCX gdCEzj"
+            class="sc-iwsKbI eyASts"
             fill="none"
             fill-rule="evenodd"
             height="24"
-            stroke="#026CDF"
+            stroke="currentcolor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="3"
@@ -119,8 +272,8 @@ Object {
         </div>
         <span
           aria-checked="false"
-          aria-labelledby="something2"
-          class="sc-htpNat uTBrX"
+          aria-labelledby="somethingelse"
+          class="sc-htoDjs dloQcR"
           role="checkbox"
         />
       </label>
@@ -167,25 +320,25 @@ Object {
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-bwzfXH fvlgzD"
+        class="checkbox--large sc-gzVnrw jLPzax"
       >
         <input
-          class="sc-bdVaJa girhbC"
-          data-testid="test-checkbox2"
-          id="something2input"
+          class="sc-bZQynM bOQGeJ"
+          data-testid="test-checkbox"
+          id="somethingelseinput"
           name="something"
           type="checkbox"
-          value="2"
+          value="else"
         />
         <div
-          class="sc-bxivhb ksihEt"
+          class="sc-dnqmqq jurKOe"
         >
           <svg
-            class="sc-ifAKCX gdCEzj"
+            class="sc-iwsKbI eyASts"
             fill="none"
             fill-rule="evenodd"
             height="24"
-            stroke="#026CDF"
+            stroke="currentcolor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="3"
@@ -199,8 +352,8 @@ Object {
         </div>
         <span
           aria-checked="false"
-          aria-labelledby="something2"
-          class="sc-htpNat uTBrX"
+          aria-labelledby="somethingelse"
+          class="sc-htoDjs dloQcR"
           role="checkbox"
         />
       </label>
