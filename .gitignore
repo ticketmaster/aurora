@@ -12,7 +12,7 @@ catalog/build
 # Package management
 node_modules
 package-lock.json
-yarn.lock
+#yarn.lock
 yarn-error.log
 
 # Log files
