@@ -360,7 +360,7 @@ exports[`CalendarView should render without errors 1`] = `
       className="c2"
     >
       <div
-        className="text text--dark day-tile-date__text day-tile-date__text--accent c3 c4"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent c3 c4"
         disabled={false}
         size={
           Object {
