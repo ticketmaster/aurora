@@ -17,7 +17,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -39,7 +39,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -97,7 +97,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -119,7 +119,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -177,7 +177,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -199,7 +199,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -257,7 +257,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -279,7 +279,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -337,7 +337,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -359,7 +359,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -417,7 +417,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -439,7 +439,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -497,7 +497,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
     tabindex="-1"
   >
     <label
-      class="dropdown--large dropdown--border dropdown__label--disabled sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border dropdown__label--disabled sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -519,7 +519,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -577,7 +577,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -599,7 +599,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -659,7 +659,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -683,7 +683,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -741,7 +741,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -765,7 +765,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -823,7 +823,7 @@ exports[`DropDownGroup renders default input 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -845,7 +845,7 @@ exports[`DropDownGroup renders default input 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -903,7 +903,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -925,7 +925,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -983,7 +983,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -1005,7 +1005,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -1063,7 +1063,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -1085,7 +1085,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <span
@@ -1138,7 +1138,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--no-border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -1164,7 +1164,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div
@@ -1222,7 +1222,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa dBVwTm"
+      class="dropdown--large dropdown--no-border sc-bdVaJa fGMcWf"
     >
       <span
         class="sc-htpNat irkcXP"
@@ -1248,7 +1248,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH fjZiAU"
+      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
     >
       <div>
         <div

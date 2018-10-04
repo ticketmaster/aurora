@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import ChevronIcon from "../../Icons/Chevron";
 import KeyBoardProvider from "../../KeyboardNavigation/Provider";
-import { constants, zIndex } from "../../../theme";
+import { constants, zIndex, typography } from "../../../theme";
 import getThemeValue from "../../../utils/getThemeValue";
 
 const { small } = constants.borderRadius;
+const DROP_DOWN_SHADOW = "0 2px 4px 0 rgba(0, 0, 0, 0.12)";
 
 export const StyledGroup = styled.label`
   width: 100%;
@@ -21,7 +22,7 @@ export const StyledGroup = styled.label`
   transition: border-color 0.3s ${constants.easing.easeInOutQuad},
     z-index 0s ease 0.3s;
 
-  z-index: 0;
+  z-index: ${zIndex.default};
 
   &.dropdown--small {
     height: 36px;
@@ -46,21 +47,21 @@ export const StyledGroup = styled.label`
     margin: 0;
     border: solid 1px ${getThemeValue("gray02")};
     border-radius: ${small} ${small} 0 0;
-    z-index: ${zIndex.layout.overlay +
-      1}; /* for the purpose of the correct box-shadow */
+    /* for the purpose of the correct box-shadow */
+    z-index: ${zIndex.layout.overlay + 1};
     transition: border-color 0.3s ${constants.easing.easeInOutQuad},
       z-index 0s ease;
   }
 
   .dropdown--disabled & {
     cursor: default;
-    color: rgba(38, 38, 38, 0.4);
+    color: ${getThemeValue("onyx", "muted")};
     transition: none;
   }
 
   .dropdown--open-upward & {
     border-radius: 0 0 ${small} ${small};
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: ${DROP_DOWN_SHADOW};
   }
 
   &:hover:not(.dropdown__label--disabled) {
@@ -75,7 +76,7 @@ export const StyledChildWrapper = styled.div`
   border-radius: 0 0 ${small} ${small};
   white-space: nowrap;
   margin-top: -1px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: ${DROP_DOWN_SHADOW};
   min-width: 100%;
   box-sizing: border-box;
   overscroll-behavior: contain;
@@ -85,7 +86,6 @@ export const StyledChildWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   z-index: ${zIndex.layout.overlay};
-  /* min-height: 86px; */
   border-color: ${getThemeValue("gray02")};
   border-style: solid;
   border-width: 0;
@@ -112,7 +112,7 @@ export const StyledChildWrapper = styled.div`
   .dropdown--open-upward & {
     bottom: 43px;
     border-radius: ${small} ${small} 0 0;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: ${DROP_DOWN_SHADOW};
     &.dropdown__items--small {
       bottom: 35px;
     }
@@ -152,14 +152,14 @@ export const StyledChevron = styled(ChevronIcon)`
 `;
 
 export const StyledSelectedText = styled.div`
-  font-size: 16px;
+  font-size: ${typography.size.kilo};
   white-space: nowrap;
   width: 85%;
   overflow: hidden;
   text-overflow: ellipsis;
 
   .dropdown--small & {
-    font-size: 14px;
+    font-size: ${typography.size.hecto};
   }
 
   .dropdown--border & {

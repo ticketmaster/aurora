@@ -83,7 +83,7 @@ class DropDownGroup extends React.Component {
     const optionsHeight = this.optionsContainer.current.offsetHeight;
     const optionsMaxHeight = optionsHeight > 413 ? 413 : optionsHeight;
 
-    return spaceToBottom <= optionsMaxHeight + +ADDITIONAL_SPACE;
+    return spaceToBottom <= optionsMaxHeight + ADDITIONAL_SPACE;
   };
 
   handleOutsideClick = e => {
