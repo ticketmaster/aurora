@@ -13,6 +13,7 @@ export default {
         react: "React",
         "react-dom": "ReactDOM",
         "react-addons-css-transition-group": "ReactCSSTransitionGroup",
+        "react-transition-group": "ReactTransitionGroup",
         "prop-types": "PropTypes",
         "styled-components": "styled",
         classnames: "classNames"
@@ -51,6 +52,7 @@ export default {
     "react",
     "react-dom",
     "react-addons-css-transition-group",
+    "react-transition-group",
     "prop-types",
     "styled-components",
     "classnames"
