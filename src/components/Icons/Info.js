@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import { allSizes, types } from "./iconConstants";
+import { themes } from "../../theme";
 
 const infoIcons = {
   outline: {
@@ -117,23 +118,21 @@ const infoIcons = {
   }
 };
 
-const InfoIcon = ({ type, size, color, children, ...props }) =>
-  infoIcons[type][size](color, children, props);
+const InfoIcon = ({ type, size, children, ...props }) =>
+  infoIcons[type][size](themes.global.primary.base, children, props);
 
 InfoIcon.displayName = "InfoIcon";
 
 InfoIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null,
-  color: "currentColor"
+  children: null
 };
 
 InfoIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node,
-  color: PropTypes.string
+  children: PropTypes.node
 };
 
 export default InfoIcon;

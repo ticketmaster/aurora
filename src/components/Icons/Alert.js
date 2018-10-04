@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import { allSizes, types } from "./iconConstants";
+import { themes } from "../../theme";
 
 const alertIcons = {
   outline: {
@@ -117,23 +118,21 @@ const alertIcons = {
   }
 };
 
-const AlertIcon = ({ type, size, color, children, ...props }) =>
-  alertIcons[type][size](color, children, props);
+const AlertIcon = ({ type, size, children, ...props }) =>
+  alertIcons[type][size](themes.global.caution.base, children, props);
 
 AlertIcon.displayName = "AlertIcon";
 
 AlertIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null,
-  color: "currentColor"
+  children: null
 };
 
 AlertIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node,
-  color: PropTypes.string
+  children: PropTypes.node
 };
 
 export default AlertIcon;

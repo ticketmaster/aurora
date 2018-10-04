@@ -30,6 +30,7 @@ export { default as ErrorIcon } from "./Error";
 export { default as AlertIcon } from "./Alert";
 export { default as SuccessIcon } from "./Success";
 export { default as InfoIcon } from "./Info";
+export { default as InfoDotIcon } from "./InfoDot";
 export { default as BackIcon } from "./Back";
 export { default as ForwardIcon } from "./Forward";
 export { default as UpIcon } from "./Up";

@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import { allSizes, types } from "./iconConstants";
+import { themes } from "../../theme";
 
 const errorIcons = {
   outline: {
@@ -117,23 +118,21 @@ const errorIcons = {
   }
 };
 
-const ErrorIcon = ({ type, size, color, children, ...props }) =>
-  errorIcons[type][size](color, children, props);
+const ErrorIcon = ({ type, size, children, ...props }) =>
+  errorIcons[type][size](themes.global.error.base, children, props);
 
 ErrorIcon.displayName = "ErrorIcon";
 
 ErrorIcon.defaultProps = {
   size: allSizes[0],
   type: types[0],
-  children: null,
-  color: "currentColor"
+  children: null
 };
 
 ErrorIcon.propTypes = {
   size: PropTypes.oneOf(allSizes),
   type: PropTypes.oneOf(types),
-  children: PropTypes.node,
-  color: PropTypes.string
+  children: PropTypes.node
 };
 
 export default ErrorIcon;

@@ -1,5 +1,6 @@
 import React from "react";
 import { PropTypes } from "prop-types";
+import { themes } from "../../theme";
 
 const BookmarkIcon = ({ children, color, ...props }) => (
   <svg
@@ -12,7 +13,7 @@ const BookmarkIcon = ({ children, color, ...props }) => (
     {children}
     <path
       fill={color}
-      fillOpacity=".5"
+      {...color !== "currentColor" && { fillOpacity: ".5" }}
       fillRule="nonzero"
       d="M13 1H3v13.29l3.957-2.229a2 2 0 0 1 1.946-.01L13 14.309V1zM3 0h10a1 1 0 0 1 1 1v15l-5.58-3.072a1 1 0 0 0-.973.005L2 16V1a1 1 0 0 1 1-1z"
     />
@@ -28,7 +29,7 @@ BookmarkIcon.propTypes = {
 
 BookmarkIcon.defaultProps = {
   children: null,
-  color: "currentColor"
+  color: themes.global.gray01
 };
 
 export default BookmarkIcon;
