@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopOver should match snapshot 1`] = `
+.c0 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  padding: 16px;
+  display: none;
+  top: 0px;
+  left: 0px;
+}
+
+<div
+  className="c0"
+/>
+`;
