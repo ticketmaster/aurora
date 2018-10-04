@@ -2,38 +2,46 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import colors from "../../../theme/colors";
+import { typography, constants } from "../../../theme";
+import getThemeValue from "../../../utils/getThemeValue";
 
 const StyledDropDownItem = styled.span`
+  cursor: pointer;
+
   .dropdown__items & {
     appearance: none;
     height: 36px;
     margin: 4px 8px 0 8px;
     padding: 7px 12px;
-    font-size: 16px;
+    font-size: ${typography.size.kilo};
     text-align: left;
     border: none;
-    background-color: ${colors.white.base};
+    background-color: ${getThemeValue("white", "base")};
     align-items: center;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    color: ${getThemeValue("gray01")};
 
     &:hover,
     &:focus,
     &.dropdown__selected {
-      border-radius: 2px;
-      color: white;
+      border-radius: ${constants.borderRadius.small};
+      color: ${getThemeValue("white", "base")};
     }
     &:hover,
     &:focus {
-      background-color: ${colors.azure.base};
+      background-color: ${getThemeValue("primary", "base")};
     }
     &:focus {
       outline: none;
     }
     &.dropdown__selected {
-      background-color: ${colors.onyx.muted};
+      color: ${getThemeValue("gray01")};
+      background-color: ${getThemeValue("gray04")};
     }
+  }
+  .dropdown__items.dropdown__items--small & {
+    height: 32px;
   }
 `;
 
@@ -69,6 +77,7 @@ class DropDownInput extends React.Component {
     } = this.props;
     return (
       <StyledDropDownItem
+        role="option"
         tabIndex="-1"
         value={value}
         index={index}

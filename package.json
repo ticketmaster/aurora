@@ -65,6 +65,7 @@
     "react": ">=15",
     "react-addons-css-transition-group": ">=15",
     "react-dom": ">=15",
+    "react-transition-group": "^2.5.0",
     "styled-components": ">=2"
   },
   "devDependencies": {
@@ -115,5 +116,6 @@
   },
   "bugs": {
     "url": "https://github.com/Ticketmaster/aurora/issues"
-  }
+  },
+  "dependencies": {}
 }

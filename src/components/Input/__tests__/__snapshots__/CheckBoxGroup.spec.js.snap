@@ -7,6 +7,7 @@ Object {
       class="checkbox--small checkbox__checked sc-gzVnrw jLPzax"
     >
       <input
+        checked=""
         class="sc-bZQynM bOQGeJ"
         data-testid="test-checkbox"
         id="something1input"

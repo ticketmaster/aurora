@@ -377,8 +377,8 @@ rows:
     Notes: Can be top or left
   - Prop: variant
     Type: string
-    Default: 0:border
-    Notes: One of 0:border or 1:no-border
+    Default: 0
+    Notes: One of 0 (with border) or 1 (without border)
   - Prop: value
     Type: string
     Default: N/A
@@ -386,23 +386,27 @@ rows:
   - Prop: label
     Type: string
     Default: N/A
-    Notes: for variant 1
-  - Prop: isOpen
-    Type: boolean
-    Default: false
-    Notes: Used to override internal isOpen state
-  - Prop: keywordSearch
-    Type: boolean
-    Default: true
-    Notes: Used to override ability to use keyboard to focus on drop down option
-  - Prop: withKeyboardProvider
-    Type: boolean
-    Default: true
-    Notes: Used to override inclusion of a KeyboardProvider to handle keydown events
+    Notes: Visible with selected option. Supported only in variant 1
   - Prop: placeholder
     Type: string
     Default: N/A
-    Notes: for variant 0
+    Notes: Visible instead of selected option. Overrides label. Supported in both variants.
+  - Prop: isOpen
+    Type: boolean
+    Default: "false"
+    Notes: Used to override internal isOpen state
+  - Prop: keywordSearch
+    Type: boolean
+    Default: 'true'
+    Notes: Used to override ability to use keyboard to focus on drop down option
+  - Prop: withKeyboardProvider
+    Type: boolean
+    Default: 'true'
+    Notes: Used to override inclusion of a KeyboardProvider to handle keydown events
+  - Prop: size
+    Type: small or large
+    Default: large
+    Notes: Defines size
 ```
 
 ## Drop Down Option
@@ -429,29 +433,73 @@ rows:
 ```react
 span: 6
 ---
-<Container>
-    <Row>
-        <Column medium={6}>
-            <DropDownGroup variant={0} keywordSearch={false} placeholder="Select an option">
-                <DropDownOption value="0" index={0}>Option One</DropDownOption>
-                <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                <DropDownOption value="2" index={2}>Option Three</DropDownOption>
-                <DropDownOption value="3" index={3}>Option Four</DropDownOption>
-                <DropDownOption value="4" index={4}>Option Five</DropDownOption>
-          </DropDownGroup>
-       </Column>
-
-        <Column medium={6}>
-            <DropDownGroup variant={1}>
-                <DropDownOption value="0" index={0}>Option One</DropDownOption>
-                <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                <DropDownOption value="2" index={2}>Option Three</DropDownOption>
-                <DropDownOption value="3" index={3}>Option Four</DropDownOption>
-                <DropDownOption value="4" index={4}>Option Five</DropDownOption>
-          </DropDownGroup>
-       </Column>
-    </Row>
-</Container>
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column medium={4}>
+                <DropDownGroup size="small" variant={0} placeholder="Select an option" label="blah">
+                    <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                    <DropDownOption value="5" index={5}>Option Six</DropDownOption>
+                    <DropDownOption value="6" index={6}>Option Two</DropDownOption>
+                    <DropDownOption value="7" index={7}>Option Three</DropDownOption>
+                    <DropDownOption value="8" index={8}>Option Four</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownGroup variant={0} placeholder="Select an option">
+                    <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownGroup variant={0} placeholder="Select an option" disabled>
+                    <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+                <DropDownGroup size="small" variant={1} placeholder="Select an option">
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownGroup variant={1} label="Sort By:">
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownGroup variant={1} label="Sort By:" disabled>
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
 ```
 
 ## Toggle
