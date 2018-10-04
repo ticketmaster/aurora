@@ -4,30 +4,25 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -39,41 +34,36 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown--clicked sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -84,30 +74,25 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -119,41 +104,36 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown--clicked sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -164,30 +144,25 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -199,41 +174,36 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -244,30 +214,25 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -279,281 +244,36 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown--clicked sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup Escape key should close the drop down 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        class="sc-EHOje hRvppO"
+        role="listbox"
       >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup Should close the drop down on click outside 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup Should not focus onClick 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="dropdown--disabled sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="-1"
-  >
-    <label
-      class="dropdown--large dropdown--border dropdown__label--disabled sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="dropdown__text--disabled sc-EHOje dIwNFE"
-      />
-      <svg
-        class="dropdown__chevron--disabled sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -564,30 +284,25 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -599,41 +314,36 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -646,32 +356,27 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
+      class="dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
         Option One
       </div>
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -683,433 +388,31 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="dropdown__selected sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup Space bar should select and not close dropdown when the isOpen prop equals true 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje hRvppO"
+        role="listbox"
       >
-        Option One
-      </div>
-      <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="dropdown__selected sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders default input 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders input correctly when the isOpen prop with a value of true is passed 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders input correctly when the keywordSearch prop with a value of false is passed 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
-        >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders input correctly when the withKeyboardProvider prop with a value of false is passed 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--border sc-bdVaJa fGMcWf"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__"
-      />
-      <div
-        class="sc-EHOje dIwNFE"
-      />
-      <svg
-        class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
-      >
-        <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
-    >
-      <div>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="dropdown__selected sc-bZQynM kUhPug"
           data-testid="test-dropDownOptionOne"
-          role="option"
           tabindex="-1"
           value="ValueOne"
         >
           Option One
         </span>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="sc-bZQynM kUhPug"
           data-testid="test-dropDownOptionTwo"
-          role="option"
           tabindex="-1"
           value="ValueTwo"
         >
           Second Option
         </span>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="sc-bZQynM kUhPug"
           data-testid="test-dropDownOptionThree"
-          role="option"
           tabindex="-1"
           value="ValueThree"
         >
@@ -1121,38 +424,31 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 </div>
 `;
 
-exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
+exports[`DropDownGroup Space bar should select and not close dropdown when the isOpen prop equals true 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__Select_An_Option"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa fGMcWf"
+      class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__Select_An_Option"
-      >
-        Select An Option
-      </span>
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
       >
-        Select An Option
+        Option One
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -1164,41 +460,383 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown--clicked sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="dropdown__selected sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders default input 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders input correctly when the isOpen prop with a value of true is passed 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--active dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="dropdown__icon--hide sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown--clicked sc-bwzfXH bNMXLY"
+    >
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders input correctly when the keywordSearch prop with a value of false is passed 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders input correctly when the withKeyboardProvider prop with a value of false is passed 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder=""
+    tabindex="0"
+  >
+    <label
+      class="dropdown--border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--border sc-ifAKCX iEvNXJ"
+      />
+      <svg
+        class="sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionOne"
+        tabindex="-1"
+        value="ValueOne"
+      >
+        Option One
+      </span>
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionTwo"
+        tabindex="-1"
+        value="ValueTwo"
+      >
+        Second Option
+      </span>
+      <span
+        class="sc-bZQynM kUhPug"
+        data-testid="test-dropDownOptionThree"
+        tabindex="-1"
+        value="ValueThree"
+      >
+        Option Three
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div>
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    class="sc-htpNat dEypGd"
+    data-testid="test-dropContainer"
+    label="Sort By:"
+    placeholder="Select An Option"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--no-border sc-bdVaJa jOVSaQ"
+    >
+      <div
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
+      >
+        Sort By: 
+      </div>
+      <svg
+        class="dropdown--no-border sc-bxivhb bfTkLM"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items sc-bwzfXH bNMXLY"
+    >
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -1209,34 +847,27 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
 <div
   data-testid="test-outSideComponent"
 >
-  <div
-    data-testid="something"
-  >
+  <div>
     something
   </div>
   <div
     aria-haspopup="listbox"
-    aria-labelledby="hidden-label__Selected_Option:"
-    class="sc-bxivhb pBoyv"
+    class="sc-htpNat dEypGd"
     data-testid="test-dropContainer"
+    label="Selected Option:"
+    placeholder=""
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa fGMcWf"
+      class="dropdown--no-border sc-bdVaJa jOVSaQ"
     >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__Selected_Option:"
-      >
-        Selected Option:
-      </span>
       <div
-        class="sc-EHOje dIwNFE"
+        class="dropdown--selected dropdown--no-border sc-ifAKCX iEvNXJ"
       >
         Selected Option: 
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-bxivhb bfTkLM"
         fill="currentColor"
         height="12"
         viewBox="0 0 15 7"
@@ -1248,41 +879,36 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items sc-bwzfXH bNMXLY"
     >
-      <div>
-        <div
-          class="sc-bZQynM koCnbp"
-          role="listbox"
+      <div
+        class="sc-EHOje hRvppO"
+        role="listbox"
+      >
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionOne"
+          tabindex="-1"
+          value="ValueOne"
         >
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionOne"
-            role="option"
-            tabindex="-1"
-            value="ValueOne"
-          >
-            Option One
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionTwo"
-            role="option"
-            tabindex="-1"
-            value="ValueTwo"
-          >
-            Second Option
-          </span>
-          <span
-            class="sc-gzVnrw gYxgrq"
-            data-testid="test-dropDownOptionThree"
-            role="option"
-            tabindex="-1"
-            value="ValueThree"
-          >
-            Option Three
-          </span>
-        </div>
+          Option One
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionTwo"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-bZQynM kUhPug"
+          data-testid="test-dropDownOptionThree"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
       </div>
     </div>
   </div>
@@ -1290,10 +916,6 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
 `;
 
 exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
-.c0 {
-  cursor: pointer;
-}
-
 .dropdown__items .c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1311,19 +933,18 @@ exports[`DropDownOption should render the correct markup when a className prop i
   align-items: center;
   overflow-x: hidden;
   text-overflow: ellipsis;
-  color: #262626;
 }
 
 .dropdown__items .c0:hover,
 .dropdown__items .c0:focus,
 .dropdown__items .c0.dropdown__selected {
   border-radius: 2px;
-  color: rgba(255,255,255,1);
+  color: white;
 }
 
 .dropdown__items .c0:hover,
 .dropdown__items .c0:focus {
-  background-color: #026cdf;
+  background-color: rgba(2,108,223,1);
 }
 
 .dropdown__items .c0:focus {
@@ -1331,19 +952,13 @@ exports[`DropDownOption should render the correct markup when a className prop i
 }
 
 .dropdown__items .c0.dropdown__selected {
-  color: #262626;
-  background-color: #ebebeb;
-}
-
-.dropdown__items.dropdown__items--small .c0 {
-  height: 32px;
+  background-color: rgba(38,38,38,0.4);
 }
 
 <span
   className="dropdown__item--expandable c0"
   onClick={[Function]}
   onKeyDown={[Function]}
-  role="option"
   selected={Array []}
   tabIndex="-1"
   value="ValueOne"

@@ -1,27 +1,128 @@
 import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Transition } from "react-transition-group";
-
-import { TWO_SIZE_VARIANT } from "../../../utils/sizes";
+import ChevronIcon from "../../Icons/Chevron";
+import colors from "../../../theme/colors";
+import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 import { Provider as DropDownProvider } from "./Context";
 import SelectionProvider from "../../SelectionProvider/Provider";
 import { Consumer as SelectionConsumer } from "../../SelectionProvider/Context";
-import {
-  ARROWUP,
-  ARROWDOWN,
-  SPACEBAR,
-  ESCAPE
-} from "../../../utils/keyCharCodes";
-import {
-  StyledGroup,
-  StyledChildWrapper,
-  StyledGroupWrapper,
-  StyledChevron,
-  StyledSelectedText,
-  StyledKeyboardProvider,
-  HiddenLabel
-} from "./DropDownGroup.styles";
+import { ARROWUP, ARROWDOWN, SPACEBAR } from "../../../utils/keyCharCodes";
+
+const StyledGroup = styled.label`
+  color: ${colors.onyx.light};
+  width: 100%;
+  height: 44px;
+  background-color: white;
+
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &.dropdown--border {
+    border: solid 1px ${colors.onyx.muted};
+    text-align: left;
+    &:hover {
+      margin: -1px;
+      border: solid 2px ${colors.azure.base};
+    }
+  }
+
+  &.dropdown--no-border {
+    border: solid 1px ${colors.white.base};
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  &:focus {
+    margin: -1px;
+    border: solid 2px ${colors.azure.base};
+  }
+
+  &.dropdown--active {
+    margin: 0;
+    border: solid 1px ${colors.onyx.muted};
+    border-radius: 2px 2px 0px 0px;
+    &:hover {
+      margin: 0;
+      border: solid 1px ${colors.onyx.muted};
+    }
+  }
+`;
+
+const StyledChildWrapper = styled.div`
+  display: none;
+  background-color: white;
+  border-radius: 0 0 2px 2px;
+  border: solid 1px ${colors.onyx.muted};
+  padding-top: 4px;
+  padding-bottom: 8px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  min-width: 100%;
+  box-sizing: content-box;
+
+  &.dropdown--clicked {
+    flex-direction: column;
+    position: absolute;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 10;
+    height: auto;
+    max-height: 300px;
+  }
+`;
+
+const StyledGroupWrapper = styled.div`
+  position: relative;
+  color: grey;
+  width: 100%;
+  outline: none;
+`;
+
+const StyledChevron = styled(ChevronIcon)`
+  margin-right: 12px;
+
+  &.dropdown__icon--hide {
+    display: none;
+  }
+`;
+
+const StyledSelectedText = styled.div`
+  font-size: 16px;
+  white-space: nowrap;
+
+  &.dropdown--border {
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.dropdown--no-border {
+    margin-right: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &.dropdown--alignment {
+    margin-right: 32px;
+  }
+`;
+
+const StyledKeyboardProvider = styled(KeyBoardProvider)`
+  min-height: min-content;
+  flex-direction: column;
+  display: flex;
+`;
 
 class DropDownGroup extends React.Component {
   componentDidMount() {
@@ -33,33 +134,16 @@ class DropDownGroup extends React.Component {
   }
 
   onClick = () => {
-    this.setState(({ isOpen }) => ({
-      // set openUpward to false when closing the dropdown, otherwise check position
-      openUpward: isOpen ? false : this.checkPosition(),
-      isOpen: !isOpen
-    }));
+    this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
   };
 
   onKeyDown = e => {
-    const { keyCode } = e;
-    e.preventDefault();
-    if (keyCode === ESCAPE) {
-      this.setState({ isOpen: false });
-      return;
-    }
-    if (keyCode === ARROWUP || keyCode === ARROWDOWN) {
+    if (e.keyCode === ARROWUP || e.keyCode === ARROWDOWN) {
+      e.preventDefault();
       this.setState({ isOpen: true });
-      return;
     }
-    if (keyCode === SPACEBAR) {
+    if (e.keyCode === SPACEBAR) {
       this.setState(({ isOpen }) => ({ isOpen: !isOpen }));
-    }
-  };
-
-  onMouseDown = e => {
-    e.preventDefault();
-    if (this.props.disabled) {
-      e.stopPropagation();
     }
   };
 
@@ -74,54 +158,31 @@ class DropDownGroup extends React.Component {
     return label;
   };
 
-  checkPosition = () => {
-    // check if dropdown height is higher than the space underneath it
-    const viewPortHeight = document.documentElement.clientHeight;
-    const { bottom } = this.styledGroup.current.getBoundingClientRect();
-    const spaceToBottom = viewPortHeight - bottom;
-    const ADDITIONAL_SPACE = 54; // according to requirements
-    const optionsHeight = this.optionsContainer.current.offsetHeight;
-    const optionsMaxHeight = optionsHeight > 413 ? 413 : optionsHeight;
-
-    return spaceToBottom <= optionsMaxHeight + ADDITIONAL_SPACE;
-  };
-
   handleOutsideClick = e => {
-    if (this.state.isOpen && !this.thisComponent.current.contains(e.target)) {
-      this.setState(() => ({ isOpen: false, openUpward: false }));
+    if (!this.thisComponent.current.contains(e.target)) {
+      this.setState(() => ({ isOpen: false }));
     }
   };
 
   displayLabel = (selected, variant) => {
-    const { placeholder, label } = this.props;
+    const { placeholder } = this.props;
 
-    if (placeholder.length > 0 && selected.length === 0) {
-      return placeholder;
-    }
+    if (variant === 0 && selected.length === 0) return placeholder;
 
-    if (variant === 0 && selected.length > 0) {
+    if (variant === 0 && selected.length > 0)
       return this.getCurrentSelection(selected[0]);
-    }
 
-    if (variant === 1 && label.length > 0) {
-      return `${label} ${this.getCurrentSelection(selected[0])}`;
-    }
-
-    return this.getCurrentSelection(selected[0]);
+    return `${this.props.label} ${this.getCurrentSelection(selected[0])}`;
   };
-
-  thisComponent = React.createRef();
-  optionsContainer = React.createRef();
-  styledGroup = React.createRef();
-  ANIMATION_TIMEOUT = 300;
 
   /* eslint-disable */
   state = {
     isOpen: false,
-    onClose: this.onClick,
-    openUpward: false
+    onClose: this.onClick
   };
   /* eslint-enable */
+
+  thisComponent = React.createRef();
 
   render() {
     const {
@@ -132,19 +193,10 @@ class DropDownGroup extends React.Component {
       isOpen: isOpenProp,
       keywordSearch,
       withKeyboardProvider,
-      placeholder,
-      label,
-      disabled,
-      size,
       ...props
     } = this.props;
-    const { isOpen: isOpenState, openUpward } = this.state;
+    const { isOpen: isOpenState } = this.state;
     const isOpen = isOpenProp || isOpenState;
-    const hiddenLabelId = `hidden-label__${(placeholder || label).replace(
-      / /g,
-      "_"
-    )}`;
-    const onClickListener = disabled ? {} : { onClick: this.onClick };
 
     return (
       <SelectionProvider
@@ -154,94 +206,63 @@ class DropDownGroup extends React.Component {
       >
         <SelectionConsumer>
           {({ selected }) => (
-            <Transition in={openUpward} timeout={this.ANIMATION_TIMEOUT}>
-              {state => {
-                // keep dropdown--open-upward className until collapse animation is finished (.3s)
-                const hasOpenUpwardClass = state !== "exited";
+            <StyledGroupWrapper
+              {...props}
+              tabIndex="0"
+              aria-haspopup="listbox"
+              onKeyDown={this.onKeyDown}
+              innerRef={this.thisComponent}
+            >
+              <StyledGroup
+                onClick={this.onClick}
+                className={classNames({
+                  "dropdown--active": isOpen,
+                  "dropdown--border": variant === 0,
+                  "dropdown--no-border": variant === 1
+                })}
+              >
+                <StyledSelectedText
+                  className={classNames({
+                    "dropdown--selected": true,
+                    "dropdown--border": variant === 0,
+                    "dropdown--no-border": variant === 1,
+                    "dropdown--alignment": variant === 1 && isOpen
+                  })}
+                >
+                  {this.displayLabel(selected, variant)}
+                </StyledSelectedText>
 
-                return (
-                  <StyledGroupWrapper
-                    {...props}
-                    className={classNames({
-                      "dropdown--open-upward": hasOpenUpwardClass,
-                      "dropdown--disabled": disabled
-                    })}
-                    tabIndex={disabled ? -1 : 0}
-                    aria-haspopup="listbox"
-                    aria-labelledby={hiddenLabelId}
-                    onKeyDown={this.onKeyDown}
-                    innerRef={this.thisComponent}
-                  >
-                    <StyledGroup
-                      {...onClickListener}
-                      onMouseDown={this.onMouseDown} // disable focus on click
-                      className={classNames(`dropdown--${size}`, {
-                        "dropdown--active": isOpen,
-                        "dropdown--border": variant === 0,
-                        "dropdown--no-border": variant === 1,
-                        "dropdown__label--disabled": disabled
-                      })}
-                      innerRef={this.styledGroup}
+                <StyledChevron
+                  className={classNames({
+                    "dropdown__icon--hide": isOpen,
+                    "dropdown--no-border": variant === 1
+                  })}
+                  direction="down"
+                  size={12}
+                />
+              </StyledGroup>
+
+              <StyledChildWrapper
+                className={classNames({
+                  dropdown__items: true,
+                  "dropdown--clicked": isOpen
+                })}
+              >
+                <DropDownProvider value={{ ...this.state, isOpen }}>
+                  {withKeyboardProvider ? (
+                    <StyledKeyboardProvider
+                      role="listbox"
+                      keywordSearch={keywordSearch}
+                      selected={selected}
                     >
-                      {/* HiddenLabel is required for correct screen readers 
-                          readings when an option is selected */}
-                      <HiddenLabel id={hiddenLabelId}>
-                        {placeholder || label}
-                      </HiddenLabel>
-                      <StyledSelectedText
-                        className={classNames({
-                          "dropdown__text--disabled": disabled
-                        })}
-                      >
-                        {this.displayLabel(selected, variant)}
-                      </StyledSelectedText>
-
-                      <StyledChevron
-                        className={classNames({
-                          "dropdown__icon--hide": isOpen,
-                          "dropdown--no-border": variant === 1,
-                          "dropdown__chevron--disabled": disabled
-                        })}
-                        direction="down"
-                        size={12}
-                      />
-                    </StyledGroup>
-                    <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
-                      {wrapperState => (
-                        <StyledChildWrapper
-                          className={classNames(
-                            "dropdown__items",
-                            `dropdown__items--${size}`,
-                            {
-                              "dropdown--clicked": isOpen,
-                              "dropdown--overflow": wrapperState === "entered"
-                            }
-                          )}
-                        >
-                          <DropDownProvider value={{ ...this.state, isOpen }}>
-                            {/* this div is required to decide which way to open a dropdown */}
-                            <div ref={this.optionsContainer}>
-                              {withKeyboardProvider ? (
-                                <StyledKeyboardProvider
-                                  role="listbox"
-                                  aria-labelledby={hiddenLabelId}
-                                  keywordSearch={keywordSearch}
-                                  selected={selected}
-                                >
-                                  {children}
-                                </StyledKeyboardProvider>
-                              ) : (
-                                children
-                              )}
-                            </div>
-                          </DropDownProvider>
-                        </StyledChildWrapper>
-                      )}
-                    </Transition>
-                  </StyledGroupWrapper>
-                );
-              }}
-            </Transition>
+                      {children}
+                    </StyledKeyboardProvider>
+                  ) : (
+                    children
+                  )}
+                </DropDownProvider>
+              </StyledChildWrapper>
+            </StyledGroupWrapper>
           )}
         </SelectionConsumer>
       </SelectionProvider>
@@ -258,9 +279,7 @@ DropDownGroup.propTypes = {
   label: PropTypes.string,
   isOpen: PropTypes.bool,
   keywordSearch: PropTypes.bool,
-  withKeyboardProvider: PropTypes.bool,
-  disabled: PropTypes.bool,
-  size: PropTypes.oneOf(TWO_SIZE_VARIANT)
+  withKeyboardProvider: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -268,12 +287,9 @@ DropDownGroup.defaultProps = {
   onChange: null,
   placeholder: "",
   variant: 0,
+  label: "Sort By:",
   isOpen: false,
   keywordSearch: true,
-  withKeyboardProvider: true,
-  label: "",
-  disabled: false,
-  size: TWO_SIZE_VARIANT[1]
+  withKeyboardProvider: true
 };
-
 export default DropDownGroup;

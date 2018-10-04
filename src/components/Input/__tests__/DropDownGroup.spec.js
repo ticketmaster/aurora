@@ -56,32 +56,6 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("Should close the drop down on click outside", () => {
-    const { container, getByTestId } = renderComponent();
-
-    fireEvent.click(getByTestId("test-dropContainer"));
-    fireEvent.click(getByTestId("something"));
-
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it("Should not focus onClick", () => {
-    const { container } = renderComponent({ disabled: true });
-    fireEvent.mouseDown(container.querySelector("label"));
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it("Escape key should close the drop down", () => {
-    const { container, getByTestId } = renderComponent();
-
-    fireEvent.keyDown(getByTestId("test-dropContainer"), {
-      key: "Escape",
-      keyCode: 27,
-      which: 27
-    });
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   it("Arrow key up should open the drop down", () => {
     const { container, getByTestId } = renderComponent();
 
@@ -286,7 +260,7 @@ describe("DropDownGroup", () => {
   function renderComponent(props = {}) {
     return renderIntoDocument(
       <div data-testid="test-outSideComponent">
-        <div data-testid="something">something</div>
+        <div>something</div>
         <DropDownGroup {...props} data-testid="test-dropContainer">
           <DropDownOption
             data-testid="test-dropDownOptionOne"
