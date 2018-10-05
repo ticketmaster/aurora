@@ -1,10 +1,16 @@
 import { colors } from "../theme";
 
-export const getFontHue = ({ fontColor, primary, secondary, disabled }) => {
+export const getFontHue = ({
+  fontColor,
+  primary,
+  secondary,
+  disabled,
+  variant
+}) => {
   if (typeof fontColor !== "object") return fontColor;
 
   const fontHues = {
-    primary: fontColor.base,
+    primary: variant === "accent" ? fontColor.dark : fontColor.base,
     secondary: fontColor.light,
     disabled: fontColor.muted
   };
@@ -35,5 +41,5 @@ export const getFontColor = ({
   };
 
   const fontColor = fontColors[variant] || fontColors.dark;
-  return getFontHue({ fontColor, primary, secondary, disabled });
+  return getFontHue({ fontColor, primary, secondary, disabled, variant });
 };

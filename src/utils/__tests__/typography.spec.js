@@ -41,7 +41,7 @@ describe("getFontColor", () => {
   it("should return the primary accent color when variant equals accent and primary equals true", () => {
     expect(
       getFontColor({ variant: "accent", accent: "azure", primary: true })
-    ).toEqual(colors.azure.base);
+    ).toEqual(colors.azure.dark);
   });
 
   it("should return the secondary accent color when variant equals accent and secondary equals true", () => {
@@ -97,7 +97,7 @@ describe("getFontHue", () => {
   it("should return the primary accent color when fontColor equals an accent with multiple shades and primary equals true", () => {
     expect(
       getFontHue({ fontColor: colors.azure, accent: "azure", primary: true })
-    ).toEqual(colors.azure.base);
+    ).toEqual(colors.azure.dark);
   });
 
   it("should return the secondary accent color when fontColor equals an accent with multiple shades and secondary equals true", () => {
