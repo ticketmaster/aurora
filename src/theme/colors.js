@@ -1,6 +1,7 @@
 const colors = {
   // Deprecated colors. Should be removed
   azure: {
+    dark: "rgba(2, 108, 223, 1)",
     base: "rgba(2, 108, 223, 1)",
     light: "rgba(2, 108, 223, 0.2)",
     muted: "rgba(2, 108, 223, 0.1)",
