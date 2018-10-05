@@ -15,7 +15,7 @@ const Strong = Span.extend`
 `;
 
 const margins = styled.span`
-  ${({ monospace }) => (monospace ? `font-family: monospace, monospace` : "")};
+  ${({ monospace }) => (monospace ? `font-feature-settings: "tnum"` : "")};
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: ${spacing.cozy};

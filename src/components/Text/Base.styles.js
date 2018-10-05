@@ -9,7 +9,7 @@ const Base = styled.span`
   font-weight: ${({ weight }) => typography.weight[weight]};
   line-height: ${typography.lineHeight.body};
   text-transform: ${({ allCaps }) => (allCaps ? "uppercase" : "none")};
-  ${({ monospace }) => (monospace ? `font-family: monospace, monospace` : "")};
+  ${({ monospace }) => (monospace ? `font-feature-settings: "tnum"` : "")};
   color: ${({ variant, accent, primary, secondary, disabled }) =>
     getFontColor({ variant, accent, primary, secondary, disabled })};
 
