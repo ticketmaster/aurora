@@ -32,12 +32,14 @@ const ModalContainer = styled(Column)`
     transition: all 0.3s ease-in-out;
   }
 
-  &.modal-leave {
+  &.modal-leave,
+  &.modal-exit {
     opacity: 1;
     transform: scale(1);
   }
 
-  &.modal-leave.modal-leave-active {
+  &.modal-leave.modal-leave-active,
+  &.modal-exit.modal-exit-active {
     opacity: 0;
     transition: all 0.1s ease-in-out;
     transform: scale(0.7);

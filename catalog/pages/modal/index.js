@@ -1,5 +1,5 @@
 import { pageLoader } from "catalog";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Modal from "../../../src/components/Modal/index";
 import Backdrop from "../../../src/components/Backdrop/index";
@@ -10,7 +10,8 @@ export default {
   imports: {
     Backdrop,
     Modal,
-    ReactCSSTransitionGroup
+    TransitionGroup,
+    CSSTransition
   },
   content: pageLoader(() => import("./index.md"))
 };
