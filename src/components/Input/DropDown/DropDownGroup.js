@@ -127,6 +127,7 @@ class DropDownGroup extends React.Component {
     const {
       children,
       value,
+      valueOverride,
       onChange,
       variant,
       isOpen: isOpenProp,
@@ -151,6 +152,7 @@ class DropDownGroup extends React.Component {
         onChange={onChange}
         isMultiSelect={false}
         value={value}
+        valueOverride={valueOverride}
       >
         <SelectionConsumer>
           {({ selected }) => (
@@ -251,6 +253,7 @@ class DropDownGroup extends React.Component {
 
 DropDownGroup.propTypes = {
   value: PropTypes.arrayOf(PropTypes.string),
+  valueOverride: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node.isRequired,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
@@ -265,6 +268,7 @@ DropDownGroup.propTypes = {
 
 DropDownGroup.defaultProps = {
   value: [],
+  valueOverride: null,
   onChange: null,
   placeholder: "",
   variant: 0,

@@ -382,7 +382,11 @@ rows:
   - Prop: value
     Type: string
     Default: N/A
-    Notes: Specifies pre-selected values
+    Notes: Specifies initial values
+  - Prop: valueOverride
+    Type: string
+    Default: N/A
+    Notes: Specifies values that override internal state
   - Prop: label
     Type: string
     Default: N/A
@@ -450,7 +454,7 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={0} placeholder="Select an option">
+                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option">
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
