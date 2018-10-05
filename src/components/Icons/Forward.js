@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import { smallLarge } from "./iconConstants";
+import { themes } from "../../theme";
 
 const forwardIcons = {
   small: (color, children, props) => (
@@ -16,7 +17,7 @@ const forwardIcons = {
         <path d="M16 0H0v16h16z" />
         <path
           fill={color}
-          fillOpacity=".5"
+          {...color !== "currentColor" && { fillOpacity: ".5" }}
           fillRule="nonzero"
           d="M10.905 8l-6.678 6.678a.774.774 0 0 0 1.095 1.095l7.225-7.226a.774.774 0 0 0 0-1.094L5.322.227a.774.774 0 0 0-1.095 1.095L10.905 8z"
         />
@@ -36,7 +37,7 @@ const forwardIcons = {
         <path d="M24 0H0v24h24z" />
         <path
           fill={color}
-          fillOpacity=".5"
+          {...color !== "currentColor" && { fillOpacity: ".5" }}
           fillRule="nonzero"
           d="M6.224 22.692a.766.766 0 1 0 1.084 1.084l11.234-11.234c.299-.3.299-.785 0-1.084L7.308.224a.766.766 0 0 0-1.084 1.084L16.917 12 6.224 22.692z"
         />
@@ -53,7 +54,7 @@ ForwardIcon.displayName = "ForwardIcon";
 ForwardIcon.defaultProps = {
   size: smallLarge[0],
   children: null,
-  color: "currentColor"
+  color: themes.global.gray01
 };
 
 ForwardIcon.propTypes = {
