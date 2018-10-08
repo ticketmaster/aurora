@@ -1,6 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 import { allSizes, types } from "./iconConstants";
+import { themes } from "../../theme";
 
 const successIcons = {
   outline: {
@@ -117,23 +118,21 @@ const successIcons = {
   }
 };
 
-const SuccessIcon = ({ type, size, color, children, ...props }) =>
-  successIcons[type][size](color, children, props);
+const SuccessIcon = ({ type, size, children, ...props }) =>
+  successIcons[type][size](themes.global.success.base, children, props);
 
 SuccessIcon.displayName = "SuccessIcon";
 
 SuccessIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null,
-  color: "currentColor"
+  children: null
 };
 
 SuccessIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node,
-  color: PropTypes.string
+  children: PropTypes.node
 };
 
 export default SuccessIcon;
