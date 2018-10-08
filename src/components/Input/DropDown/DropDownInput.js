@@ -60,8 +60,9 @@ class DropDownInput extends React.Component {
   };
 
   componentDidUpdate() {
-    if (!this.props.isFocused) return;
-    this.SelectedElement.current.focus();
+    if (this.props.isFocused && this.SelectedElement.current) {
+      this.SelectedElement.current.focus();
+    }
   }
 
   SelectedElement = React.createRef();

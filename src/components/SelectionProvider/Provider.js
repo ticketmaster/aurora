@@ -21,10 +21,10 @@ export default class ItemSelectionProvider extends React.Component {
 
   constructor(props) {
     super(props);
-    const { value } = props;
+    const { value, valueOverride } = props;
 
     this.state = {
-      selected: Array.isArray(value) ? value : []
+      selected: Array.isArray(valueOverride) ? valueOverride : value
     };
   }
 
