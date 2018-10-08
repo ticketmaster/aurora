@@ -1,5 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
+import { render } from "react-testing-library";
 
 import Column from "../Column";
 
@@ -14,5 +15,15 @@ describe("Column", () => {
     );
 
     expect(console.error).toHaveBeenCalled(); // eslint-disable-line
+  });
+
+  it("renders correctly when value is 0", () => {
+    const { container } = render(
+      <Column small={1} medium={0}>
+        <span>Content!</span>
+      </Column>
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 });

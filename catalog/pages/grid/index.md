@@ -2,7 +2,9 @@
 
 A number of different column widths & combinations can be used to create layouts.
 
-By default columns are 100% width which is the equivalent of 12/12
+By default columns are 100% width which is the equivalent of 12/12.
+
+Use 0 value when column should not be visible.
 
 ```react
 responsive: true
@@ -45,8 +47,9 @@ responsive: true
 <div>
     <Container style={{ paddingBottom: "20px" }}>
         <Row>
-            <Column small={12} medium={6}><p style={contentStyles}>One</p></Column>
-            <Column small={12} medium={6}><p style={contentStyles}>Two</p></Column>
+            <Column small={2} medium={0} large={4} xLarge={6}><p style={contentStyles}>Zero</p></Column>
+            <Column small={6} medium={8} large={4} xLarge={0}><p style={contentStyles}>One</p></Column>
+            <Column small={4} medium={4} large={4} xLarge={6}><p style={contentStyles}>Two</p></Column>
         </Row>
     </Container>
 
