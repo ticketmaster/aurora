@@ -27,7 +27,9 @@ class CheckBoxInputComponent extends React.Component {
   }
 
   componentDidUpdate() {
-    this.props.isFocused && this.SelectedElement.current.focus(); // eslint-disable-line
+    if (this.props.isFocused && this.SelectedElement.current) {
+      this.SelectedElement.current.focus();
+    }
   }
 
   render() {
