@@ -536,7 +536,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
-      className="c2"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
@@ -562,13 +562,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="c5"
+        className="link__wrapper c5"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="c6"
+          className="date__wrapper c6"
         >
           <div
             className="text text--dark text--primary date--text c7"
@@ -598,10 +598,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="row__content c10 c11"
         >
           <div
-            className="c12 c13"
+            className="column__mobile-only c12 c13"
           >
             <div
               className="text text--dark text--primary list-row--title c14 c15"
@@ -648,10 +648,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="c16 c17"
+            className="column__content c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
               disabled={false}
               size={
                 Object {
@@ -1410,7 +1410,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
-      className="c2"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
@@ -1436,13 +1436,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="c5"
+        className="link__wrapper c5"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="c6"
+          className="date__wrapper c6"
         >
           <div
             className="text text--dark text--primary date--text c7"
@@ -1472,10 +1472,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="row__content c10 c11"
         >
           <div
-            className="c12 c13"
+            className="column__mobile-only c12 c13"
           >
             <div
               className="text text--dark text--primary list-row--title c14 c15"
@@ -1522,10 +1522,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="c16 c17"
+            className="column__content c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
               disabled={false}
               size={
                 Object {
@@ -2338,7 +2338,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
-      className="c2"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
@@ -2364,13 +2364,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="c5"
+        className="link__wrapper c5"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="c6"
+          className="date__wrapper c6"
         >
           <div
             className="text text--dark text--primary date--text c7"
@@ -2400,10 +2400,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="row__content c10 c11"
         >
           <div
-            className="c12 c13"
+            className="column__mobile-only c12 c13"
           >
             <div
               className="text text--dark text--primary list-row--title c14 c15"
@@ -2450,10 +2450,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="c16 c17"
+            className="column__content c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
               disabled={false}
               size={
                 Object {
@@ -3116,7 +3116,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     className="row__wrapper row__wrapper--collapsed c1"
   >
     <div
-      className="c2"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
@@ -3142,13 +3142,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="c5"
+        className="link__wrapper c5"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="c6"
+          className="date__wrapper c6"
         >
           <div
             className="text text--dark text--primary date--text c7"
@@ -3178,10 +3178,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="c10 c11"
+          className="row__content c10 c11"
         >
           <div
-            className="c12 c13"
+            className="column__mobile-only c12 c13"
           >
             <div
               className="text text--dark text--primary list-row--title c14 c15"
@@ -3228,10 +3228,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="c16 c17"
+            className="column__content c16 c17"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
               disabled={false}
               size={
                 Object {

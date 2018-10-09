@@ -263,10 +263,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     id="789"
   >
     <div
-      className="c4 c1"
+      className="container__title c4 c1"
     >
       <div
-        className="c5 c6"
+        className="text__title c5 c6"
         color="#1F262D"
         style={Object {}}
       >
@@ -363,10 +363,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     id="456"
   >
     <div
-      className="c4 c1"
+      className="container__title c4 c1"
     >
       <div
-        className="c5 c6"
+        className="text__title c5 c6"
         color="#1F262D"
         style={Object {}}
       >
@@ -435,10 +435,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     id="123"
   >
     <div
-      className="c4 c1"
+      className="container__title c4 c1"
     >
       <div
-        className="c5 c6"
+        className="text__title c5 c6"
         color="#1F262D"
         style={Object {}}
       >
@@ -509,10 +509,10 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     id="1011"
   >
     <div
-      className="c4 c1"
+      className="container__title c4 c1"
     >
       <div
-        className="c5 c6"
+        className="text__title c5 c6"
         color="#1F262D"
         style={Object {}}
       >

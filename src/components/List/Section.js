@@ -31,8 +31,12 @@ const TitleText = styled(BoldText)`
 
 const Section = ({ title, titleStyle, children, ...rest }) => (
   <SectionContainer {...rest}>
-    <TitleContainer>
-      <TitleText style={titleStyle}>{title}</TitleText>
+    {/* this class name is for automation purposes please do not remove or modify the name */}
+    <TitleContainer className="container__title">
+      {/* this class name is for automation purposes please do not remove or modify the name */}
+      <TitleText style={titleStyle} className="text__title">
+        {title}
+      </TitleText>
     </TitleContainer>
     {children}
   </SectionContainer>

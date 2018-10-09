@@ -63,13 +63,16 @@ const BottomSheet = ({ children, withCancelBtn, ...props }) => (
   <BackdropConsumer>
     {backdropValue => (
       <BottomSheetContent
+        // this class name is for automation purposes please do not remove or modify the name
+        className="content__bottom-sheet"
         innerRef={backdropValue ? backdropValue.childRef : null}
         role="dialog"
         aria-modal
         {...props}
       >
         {withCancelBtn && (
-          <CancelButtonRow>
+          // this class name is for automation purposes please do not remove or modify the name
+          <CancelButtonRow className="row__button--cancel">
             <ItemContainerConsumer>
               {value => (
                 <IconButton
