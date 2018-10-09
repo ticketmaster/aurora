@@ -78,6 +78,7 @@ const BottomSheet = ({ children, withCancelBtn, ...props }) => (
                   aria-label="Close BottomSheet"
                   role="button"
                   onClick={value ? value.onCloseRequest : () => {}}
+                  data-tid={`${value.overflowMenuCloseTid}-${props.index}`}
                 >
                   <CrossIcon
                     size={12}
