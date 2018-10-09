@@ -29,10 +29,12 @@ const TitleText = styled(BoldText)`
   text-transform: uppercase;
 `;
 
-const Section = ({ title, titleStyle, children, ...rest }) => (
+const Section = ({ title, titleStyle, children, dataTid, ...rest }) => (
   <SectionContainer {...rest}>
     <TitleContainer>
-      <TitleText style={titleStyle}>{title}</TitleText>
+      <TitleText style={titleStyle} data-tid={dataTid}>
+        {title}
+      </TitleText>
     </TitleContainer>
     {children}
   </SectionContainer>
@@ -40,13 +42,15 @@ const Section = ({ title, titleStyle, children, ...rest }) => (
 
 Section.defaultProps = {
   titleStyle: {},
-  children: null
+  children: null,
+  dataTid: null
 };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
   titleStyle: PropTypes.objectOf(PropTypes.any),
-  children: PropTypes.node
+  children: PropTypes.node,
+  dataTid: PropTypes.string
 };
 
 export default Section;

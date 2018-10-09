@@ -67,8 +67,15 @@ class Backdrop extends Component {
           return (
             <Overlay onClick={this.handleOutsideClick} {...rest}>
               {children && (
-                <BackdropProvider value={this.state}>
-                  {children}
+                <BackdropProvider
+                  value={{
+                    ...this.state,
+                    ...value
+                  }}
+                >
+                  {React.Children.map(children, child =>
+                    React.cloneElement(child, value)
+                  )}
                 </BackdropProvider>
               )}
             </Overlay>

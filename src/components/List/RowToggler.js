@@ -1,22 +1,20 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import classnames from "classnames";
 
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
-import {mediumAndUp} from "../../theme/mediaQueries";
+import { mediumAndUp } from "../../theme/mediaQueries";
 
 import ChevronIcon from "../Icons/Chevron";
-
 
 const CHEVRON_ICON_SIZE = 15;
 const CHEVRON_ICON_PADDING = spacing.moderate;
 
-
 export const IconButton = styled.button.attrs({
-  role: 'button',
-  type: 'button',
+  role: "button",
+  type: "button"
 })`
   border: 0;
   padding: 0 ${CHEVRON_ICON_PADDING};
@@ -25,16 +23,16 @@ export const IconButton = styled.button.attrs({
   appearance: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  
+
   &:focus {
     outline: none;
   }
-  
+
   &.icon-button--last {
     padding-left: ${spacing.moderate};
     padding-right: 0;
   }
-  
+
   > * {
     pointer-events: none;
   }
@@ -44,7 +42,7 @@ const IconWrapper = styled(IconButton).attrs({
   size: 45
 })`
   display: none;
-  
+
   ${mediumAndUp`
     display: block;
     &.button--expanded,
@@ -69,11 +67,13 @@ export default class RowToggler extends React.PureComponent {
      * Property onCollapseItem is called whenever user clicks chevron on the expanded item
      */
     onCollapseItem: PropTypes.func,
+    dataTid: PropTypes.string
   };
 
   static defaultProps = {
     onExpandItem: () => {},
     onCollapseItem: () => {},
+    dataTid: ""
   };
 
   handleClick = () => {
@@ -87,21 +87,22 @@ export default class RowToggler extends React.PureComponent {
   };
 
   render() {
-    const { isOpen, index } = this.props;
+    const { isOpen, index, dataTid } = this.props;
 
     return (
       <IconWrapper
         aria-label={isOpen ? "Collapse Row" : "Expand Row"}
         aria-expanded={isOpen}
         data-index={index}
-        className={classnames("button--expand-or-collapse",{
+        className={classnames("button--expand-or-collapse", {
           "button--expanded": isOpen,
           "button--collapsed": !isOpen
         })}
         onClick={this.handleClick}
+        data-tid={dataTid}
       >
         <ChevronIcon size={CHEVRON_ICON_SIZE} color={colors.blackPearl} />
       </IconWrapper>
-    )
+    );
   }
 }

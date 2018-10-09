@@ -245,6 +245,16 @@ const ListRowContent = ({
   children,
   onExpandItem,
   onCollapseItem,
+  dataTidGroup: {
+    rowTogglerTid,
+    rowTid,
+    dateTid,
+    subtitleTid,
+    collapsedSubtitleTid,
+    expandedSubtitleTid,
+    moreInfoButtonTid,
+    dateTimeTid
+  },
   ...rest
 }) => (
   <RowWrapper
@@ -262,6 +272,7 @@ const ListRowContent = ({
         index={index}
         onExpandItem={onExpandItem}
         onCollapseItem={onCollapseItem}
+        dataTid={rowTogglerTid}
       />
 
       <LinkWrapper
@@ -270,6 +281,7 @@ const ListRowContent = ({
         onClick={onClick}
         href={url}
         rowVariant={variant}
+        data-tid={rowTid}
       >
         <DateWrapper>
           <Text
@@ -280,6 +292,7 @@ const ListRowContent = ({
             {...(dateColor
               ? { accent: "heliotrope", variant: "accent", primary: true }
               : {})}
+            data-tid={dateTid}
           >
             {dateTitle}
           </Text>
@@ -288,6 +301,7 @@ const ListRowContent = ({
             variant="dark"
             secondary
             className="day-time--text"
+            data-tid={dateTimeTid}
           >
             {dateSubTitle}
           </SingleLineText>
@@ -306,6 +320,7 @@ const ListRowContent = ({
               variant="dark"
               secondary
               className="list-row--subtitle"
+              data-tid={subtitleTid}
             >
               {subTitle}
             </SingleLineText>
@@ -335,6 +350,7 @@ const ListRowContent = ({
                 "subtitle--active": !isOpen,
                 "subtitle--hidden": isOpen
               })}
+              data-tid={collapsedSubtitleTid}
             >
               {subTitle}
             </MultilineText>
@@ -347,6 +363,7 @@ const ListRowContent = ({
                 "subtitle--active": isOpen,
                 "subtitle--hidden": !isOpen
               })}
+              data-tid={expandedSubtitleTid}
             >
               {isOpen && onExpandShow === "title" ? title : subTitle}
             </MultilineText>
@@ -390,6 +407,7 @@ const ListRowContent = ({
           data-index={index}
           aria-label="More Info"
           onClick={onOverflowClick}
+          data-tid={moreInfoButtonTid}
         >
           <OverflowIcon size={22} color={colors.onyx.light} />
         </IconButton>
@@ -413,7 +431,8 @@ ListRowContent.defaultProps = {
   onExpandShow: "subTitle",
   children: null,
   onExpandItem: RowToggler.defaultProps.onExpandItem,
-  onCollapseItem: RowToggler.defaultProps.onCollapseItem
+  onCollapseItem: RowToggler.defaultProps.onCollapseItem,
+  dataTidGroup: {}
 };
 
 ListRowContent.propTypes = {
@@ -424,7 +443,8 @@ ListRowContent.propTypes = {
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
   children: PropTypes.node,
   onExpandItem: RowToggler.propTypes.onExpandItem,
-  onCollapseItem: RowToggler.propTypes.onCollapseItem
+  onCollapseItem: RowToggler.propTypes.onCollapseItem,
+  dataTidGroup: PropTypes.objectOf(PropTypes.string)
 };
 
 export default ListRowContent;
