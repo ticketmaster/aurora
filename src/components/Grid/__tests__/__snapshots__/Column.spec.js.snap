@@ -9,3 +9,13 @@ exports[`Column renders correctly when value is 0 1`] = `
   </span>
 </div>
 `;
+
+exports[`Column renders correctly without any props 1`] = `
+<div
+  class="sc-bdVaJa hDXzVr"
+>
+  <span>
+    Content!
+  </span>
+</div>
+`;

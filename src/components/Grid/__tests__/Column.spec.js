@@ -26,4 +26,14 @@ describe("Column", () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it("renders correctly without any props", () => {
+    const { container } = render(
+      <Column>
+        <span>Content!</span>
+      </Column>
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
