@@ -60,6 +60,7 @@ export const FieldInputBox = styled.input.attrs({
 })`
   height: 36px;
   width: 100%;
+  box-sizing: border-box;
   border-radius: ${constants.borderRadius.small};
   background-color: ${getThemeValue("white", "base")};
   border: 1px solid ${getThemeValue("gray02")};

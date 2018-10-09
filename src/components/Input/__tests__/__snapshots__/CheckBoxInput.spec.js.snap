@@ -31,6 +31,7 @@ exports[`<CheckBoxInput /> should render the correct markup 1`] = `
 
 .c0:before {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid #999999;
@@ -79,6 +80,7 @@ exports[`<CheckBoxInput /> should render the correct markup 1`] = `
 
 .c0::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,6 +157,7 @@ exports[`<CheckBoxInput /> should render the correct markup when additional prop
 
 .c0:before {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid #999999;
@@ -203,6 +206,7 @@ exports[`<CheckBoxInput /> should render the correct markup when additional prop
 
 .c0::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -279,6 +283,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the disabled pr
 
 .c0:before {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid #999999;
@@ -327,6 +332,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the disabled pr
 
 .c0::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -403,6 +409,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the isChecked p
 
 .c0:before {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid #999999;
@@ -451,6 +458,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the isChecked p
 
 .c0::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -527,6 +535,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the size prop e
 
 .c0:before {
   content: "";
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid #999999;
@@ -575,6 +584,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the size prop e
 
 .c0::after {
   content: "";
+  box-sizing: border-box;
   position: absolute;
   top: 50%;
   left: 50%;
