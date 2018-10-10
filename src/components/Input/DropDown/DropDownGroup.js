@@ -33,9 +33,10 @@ class DropDownGroup extends React.Component {
   }
 
   onClick = () => {
+    const { shouldOpenDownward } = this.props;
     this.setState(({ isOpen }) => ({
       // set openUpward to false when closing the dropdown, otherwise check position
-      openUpward: isOpen ? false : this.checkPosition(),
+      openUpward: isOpen || shouldOpenDownward ? false : this.checkPosition(),
       isOpen: !isOpen
     }));
   };
@@ -263,7 +264,8 @@ DropDownGroup.propTypes = {
   keywordSearch: PropTypes.bool,
   withKeyboardProvider: PropTypes.bool,
   disabled: PropTypes.bool,
-  size: PropTypes.oneOf(TWO_SIZE_VARIANT)
+  size: PropTypes.oneOf(TWO_SIZE_VARIANT),
+  shouldOpenDownward: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -277,7 +279,8 @@ DropDownGroup.defaultProps = {
   withKeyboardProvider: true,
   label: "",
   disabled: false,
-  size: TWO_SIZE_VARIANT[1]
+  size: TWO_SIZE_VARIANT[1],
+  shouldOpenDownward: false
 };
 
 export default DropDownGroup;

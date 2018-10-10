@@ -78,7 +78,8 @@ export default class SearchInput extends React.Component {
     onFocus: PropTypes.func,
     slim: PropTypes.bool,
     invert: PropTypes.bool,
-    className: PropTypes.string
+    className: PropTypes.string,
+    iconProps: PropTypes.objectOf(PropTypes.string)
   };
 
   static defaultProps = {
@@ -86,7 +87,8 @@ export default class SearchInput extends React.Component {
     onFocus: null,
     slim: false,
     invert: false,
-    className: null
+    className: null,
+    iconProps: null
   };
 
   state = { isFocused: false };
@@ -102,7 +104,7 @@ export default class SearchInput extends React.Component {
     }));
 
   render() {
-    const { slim, invert, className, ...props } = this.props;
+    const { slim, invert, className, iconProps, ...props } = this.props;
     return (
       <Container
         slim={slim}
@@ -113,7 +115,7 @@ export default class SearchInput extends React.Component {
         )}
       >
         <IconContainer slim={slim} invert={invert}>
-          <SearchIcon size="small" />
+          <SearchIcon size="small" {...iconProps} />
         </IconContainer>
         <Input
           {...{

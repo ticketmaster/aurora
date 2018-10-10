@@ -1,4 +1,35 @@
-## Search
+## SearchInput
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: onBlur
+    Type: function
+    Default: null
+    Notes: Handler function
+  - Prop: onFocus
+    Type: function
+    Default: null
+    Notes: Handler function
+  - Prop: slim
+    Type: boolean
+    Default: "false"
+    Notes: Size design variant
+  - Prop: invert
+    Type: boolean
+    Default: N/A
+    Notes: Color design variant
+  - Prop: className
+    Type: string
+    Default: null
+    Notes: Enables passing a className to the Container
+  - Prop: iconProps
+    Type: object
+    Default: null
+    Notes: Enables passing props to the SearchIcon
+```
 
 ```react
 responsive: true
@@ -6,7 +37,7 @@ span: 6
 ---
 <Header>
     <Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
-        <Search placeholder="Enter term..." />
+        <Search placeholder="Enter term..." iconProps={{ color: "currentColor" }} />
     </Column>
 </Header>
 ```
@@ -407,6 +438,10 @@ rows:
     Type: boolean
     Default: 'true'
     Notes: Used to override inclusion of a KeyboardProvider to handle keydown events
+  - Prop: shouldOpenDownward
+    Type: boolean
+    Default: 'false'
+    Notes: Used to ensure that the DropDownGroup always opens downward
   - Prop: size
     Type: small or large
     Default: large
@@ -454,7 +489,7 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option">
+                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option" shouldOpenDownward={true}>
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>

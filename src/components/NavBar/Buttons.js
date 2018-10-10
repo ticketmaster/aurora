@@ -67,19 +67,21 @@ SearchButton.defaultProps = {
   children: null
 };
 
-const UserButton = ({ children, ...props }) => (
+const UserButton = ({ children, iconProps, ...props }) => (
   <Button {...props}>
-    <User size={24} />
+    <User size={24} {...iconProps} />
     {children}
   </Button>
 );
 
 UserButton.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  iconProps: PropTypes.objectOf(PropTypes.string)
 };
 
 UserButton.defaultProps = {
-  children: null
+  children: null,
+  iconProps: null
 };
 
 const TextButton = ({ children, ...props }) => (
