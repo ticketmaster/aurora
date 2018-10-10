@@ -63,9 +63,10 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -75,6 +76,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 @media screen and (min-width:1024px) {
   .c2 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -84,6 +86,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
 @media screen and (min-width:1440px) {
   .c2 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -168,9 +171,10 @@ exports[`Grid renders multiple sizes defined 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -180,6 +184,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
 @media screen and (min-width:1024px) {
   .c2 {
     max-width: 25%;
+    display: block;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
@@ -189,6 +194,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
 @media screen and (min-width:1440px) {
   .c2 {
     max-width: 8.333333333333332%;
+    display: block;
     -webkit-flex: 0 0 8.333333333333332%;
     -ms-flex: 0 0 8.333333333333332%;
     flex: 0 0 8.333333333333332%;
@@ -273,9 +279,10 @@ exports[`Grid renders small size defined 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -285,6 +292,7 @@ exports[`Grid renders small size defined 1`] = `
 @media screen and (min-width:1024px) {
   .c2 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -294,6 +302,7 @@ exports[`Grid renders small size defined 1`] = `
 @media screen and (min-width:1440px) {
   .c2 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -378,9 +387,10 @@ exports[`Grid renders with defaults 1`] = `
 
 @media screen and (min-width:768px) {
   .c2 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -390,6 +400,7 @@ exports[`Grid renders with defaults 1`] = `
 @media screen and (min-width:1024px) {
   .c2 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -399,6 +410,7 @@ exports[`Grid renders with defaults 1`] = `
 @media screen and (min-width:1440px) {
   .c2 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;

@@ -23,6 +23,12 @@ describe("SearchInput", () => {
     expect(renderComponent({ invert: true, slim: true })).toMatchSnapshot();
   });
 
+  it("passes iconProps to the SearchIcon component", () => {
+    expect(
+      renderComponent({ iconProps: { color: "currentColor" } })
+    ).toMatchSnapshot();
+  });
+
   it("it calls componsed onFocus from props", () => {
     const onFocus = jest.fn();
     const { getByPlaceholderText } = renderIntoDocument(

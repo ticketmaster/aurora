@@ -24,7 +24,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
@@ -39,7 +39,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -47,7 +47,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -56,7 +56,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -65,7 +65,7 @@ exports[`DropDownGroup Arrow down arrow should open the drop down 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -104,7 +104,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
@@ -119,7 +119,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -127,7 +127,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -136,7 +136,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -145,7 +145,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -184,7 +184,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -199,7 +199,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -207,7 +207,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -216,7 +216,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -225,7 +225,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -264,7 +264,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
@@ -279,7 +279,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -287,7 +287,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -296,7 +296,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -305,7 +305,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -344,7 +344,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -359,7 +359,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -367,7 +367,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -376,7 +376,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -385,7 +385,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -424,7 +424,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -439,7 +439,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -447,7 +447,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -456,7 +456,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -465,7 +465,7 @@ exports[`DropDownGroup Should close the drop down on click outside 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -504,7 +504,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
         id="hidden-label__"
       />
       <div
-        class="dropdown__text--disabled sc-EHOje dIwNFE"
+        class="dropdown__text--disabled sc-EHOje vdlIp"
       />
       <svg
         class="dropdown__chevron--disabled sc-ifAKCX bGhIY"
@@ -519,7 +519,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -527,7 +527,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -536,7 +536,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -545,7 +545,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -584,7 +584,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -599,7 +599,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -607,7 +607,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -616,7 +616,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -625,7 +625,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -666,7 +666,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       >
         Option One
       </div>
@@ -683,7 +683,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -691,7 +691,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           role="listbox"
         >
           <span
-            class="dropdown__selected sc-gzVnrw gYxgrq"
+            class="dropdown__selected sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -700,7 +700,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -709,7 +709,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -748,7 +748,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       >
         Option One
       </div>
@@ -765,7 +765,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -773,7 +773,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           role="listbox"
         >
           <span
-            class="dropdown__selected sc-gzVnrw gYxgrq"
+            class="dropdown__selected sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -782,7 +782,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -791,7 +791,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -830,7 +830,7 @@ exports[`DropDownGroup renders default input 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -845,7 +845,7 @@ exports[`DropDownGroup renders default input 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -853,7 +853,7 @@ exports[`DropDownGroup renders default input 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -862,7 +862,7 @@ exports[`DropDownGroup renders default input 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -871,7 +871,7 @@ exports[`DropDownGroup renders default input 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -910,7 +910,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
@@ -925,7 +925,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -933,7 +933,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -942,7 +942,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -951,7 +951,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -990,7 +990,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -1005,7 +1005,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -1013,7 +1013,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -1022,7 +1022,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -1031,7 +1031,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -1070,7 +1070,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       />
       <svg
         class="sc-ifAKCX bGhIY"
@@ -1085,11 +1085,11 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="sc-gzVnrw iJMNFP"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1098,7 +1098,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Option One
         </span>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="sc-gzVnrw iJMNFP"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1107,7 +1107,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Second Option
         </span>
         <span
-          class="sc-gzVnrw gYxgrq"
+          class="sc-gzVnrw iJMNFP"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1147,7 +1147,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
         Select An Option
       </span>
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       >
         Select An Option
       </div>
@@ -1164,7 +1164,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -1172,7 +1172,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -1181,7 +1181,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -1190,7 +1190,7 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -1231,7 +1231,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
         Selected Option:
       </span>
       <div
-        class="sc-EHOje dIwNFE"
+        class="sc-EHOje vdlIp"
       >
         Selected Option: 
       </div>
@@ -1248,7 +1248,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH leEpLr"
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
         <div
@@ -1256,7 +1256,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
           role="listbox"
         >
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionOne"
             role="option"
             tabindex="-1"
@@ -1265,7 +1265,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
             Option One
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionTwo"
             role="option"
             tabindex="-1"
@@ -1274,7 +1274,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
             Second Option
           </span>
           <span
-            class="sc-gzVnrw gYxgrq"
+            class="sc-gzVnrw iJMNFP"
             data-testid="test-dropDownOptionThree"
             role="option"
             tabindex="-1"
@@ -1292,6 +1292,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
 exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
 .c0 {
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .dropdown__items .c0 {
@@ -1312,6 +1313,7 @@ exports[`DropDownOption should render the correct markup when a className prop i
   overflow-x: hidden;
   text-overflow: ellipsis;
   color: #262626;
+  line-height: 1.25;
 }
 
 .dropdown__items .c0:hover,
@@ -1337,6 +1339,8 @@ exports[`DropDownOption should render the correct markup when a className prop i
 
 .dropdown__items.dropdown__items--small .c0 {
   height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
 }
 
 <span

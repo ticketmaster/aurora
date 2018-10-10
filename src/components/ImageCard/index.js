@@ -80,7 +80,7 @@ const ImageCard = ({ src, alt, title, children, type, ...props }) => {
   const img = props.image || <Image src={src} alt={alt} title={title} />;
   if (type === "half") {
     return (
-      <RowContainer>
+      <RowContainer {...props}>
         <HalfCard width="50%">{img}</HalfCard>
         <CaptionContainer half>
           <Title>
@@ -95,7 +95,7 @@ const ImageCard = ({ src, alt, title, children, type, ...props }) => {
   }
 
   return (
-    <Card>
+    <Card {...props}>
       <Container>
         {img}
         <Overlay>
