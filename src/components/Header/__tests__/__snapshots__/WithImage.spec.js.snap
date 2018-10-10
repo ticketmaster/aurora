@@ -188,9 +188,10 @@ exports[`WithImage renders header background image 1`] = `
 
 @media screen and (min-width:768px) {
   .c7 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -200,6 +201,7 @@ exports[`WithImage renders header background image 1`] = `
 @media screen and (min-width:1024px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -209,6 +211,7 @@ exports[`WithImage renders header background image 1`] = `
 @media screen and (min-width:1440px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -440,9 +443,10 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 
 @media screen and (min-width:768px) {
   .c7 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -452,6 +456,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 @media screen and (min-width:1024px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -461,6 +466,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 @media screen and (min-width:1440px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -692,9 +698,10 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 
 @media screen and (min-width:768px) {
   .c7 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -704,6 +711,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 @media screen and (min-width:1024px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -713,6 +721,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 @media screen and (min-width:1440px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -942,9 +951,10 @@ exports[`WithImage renders header with image 1`] = `
 
 @media screen and (min-width:768px) {
   .c7 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -954,6 +964,7 @@ exports[`WithImage renders header with image 1`] = `
 @media screen and (min-width:1024px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -963,6 +974,7 @@ exports[`WithImage renders header with image 1`] = `
 @media screen and (min-width:1440px) {
   .c7 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;

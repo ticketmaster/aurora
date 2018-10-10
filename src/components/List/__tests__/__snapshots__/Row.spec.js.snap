@@ -269,9 +269,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c13 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -281,6 +282,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -290,6 +292,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -298,9 +301,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c17 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -310,6 +314,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -319,6 +324,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1085,9 +1091,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c13 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1097,6 +1104,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1106,6 +1114,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1114,9 +1123,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c17 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1126,6 +1136,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -1135,6 +1146,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2013,9 +2025,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c13 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2025,6 +2038,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2034,6 +2048,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2042,9 +2057,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c17 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2054,6 +2070,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2063,6 +2080,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2849,9 +2867,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c13 {
-    max-width: 100%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2861,6 +2880,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2870,6 +2890,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c13 {
     max-width: 100%;
+    display: block;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -2878,9 +2899,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c17 {
-    max-width: 50%;
     padding-right: 12px;
     padding-left: 12px;
+    max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2890,6 +2912,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 @media screen and (min-width:1024px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -2899,6 +2922,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 @media screen and (min-width:1440px) {
   .c17 {
     max-width: 50%;
+    display: block;
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
