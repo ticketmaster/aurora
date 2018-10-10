@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Column renders correctly when value is 0 1`] = `
+<div
+  class="sc-bdVaJa iSjriR"
+>
+  <span>
+    Content!
+  </span>
+</div>
+`;
+
+exports[`Column renders correctly without any props 1`] = `
+<div
+  class="sc-bdVaJa hDXzVr"
+>
+  <span>
+    Content!
+  </span>
+</div>
+`;

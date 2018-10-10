@@ -7,6 +7,7 @@ import getThemeValue from "../../../utils/getThemeValue";
 
 const StyledDropDownItem = styled.span`
   cursor: pointer;
+  box-sizing: border-box;
 
   .dropdown__items & {
     appearance: none;
@@ -21,6 +22,7 @@ const StyledDropDownItem = styled.span`
     overflow-x: hidden;
     text-overflow: ellipsis;
     color: ${getThemeValue("gray01")};
+    line-height: 1.25;
 
     &:hover,
     &:focus,
@@ -42,6 +44,8 @@ const StyledDropDownItem = styled.span`
   }
   .dropdown__items.dropdown__items--small & {
     height: 32px;
+    font-size: ${typography.size.hecto};
+    line-height: 1.3;
   }
 `;
 
@@ -60,8 +64,9 @@ class DropDownInput extends React.Component {
   };
 
   componentDidUpdate() {
-    if (!this.props.isFocused) return;
-    this.SelectedElement.current.focus();
+    if (this.props.isFocused && this.SelectedElement.current) {
+      this.SelectedElement.current.focus();
+    }
   }
 
   SelectedElement = React.createRef();

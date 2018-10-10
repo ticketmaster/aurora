@@ -29,6 +29,7 @@ export default styled.input.attrs({
 
   &:before {
     content: "";
+    box-sizing: border-box;
     background-color: transparent;
     border-radius: ${constants.borderRadius.small};
     border: 1px solid ${getThemeValue("gray02")};
@@ -71,6 +72,7 @@ export default styled.input.attrs({
 
   &::after {
     content: "";
+    box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;

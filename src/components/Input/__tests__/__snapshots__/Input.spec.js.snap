@@ -15,7 +15,7 @@ exports[`Input renders default input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -45,7 +45,7 @@ exports[`Input renders disabled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       disabled=""
       id="test1firstname__input"
       name="test1"
@@ -76,7 +76,7 @@ exports[`Input renders input with error 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -108,7 +108,7 @@ exports[`Input renders large input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -138,7 +138,7 @@ exports[`Input renders left labeled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -168,7 +168,7 @@ exports[`Input renders small input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -198,7 +198,7 @@ exports[`Input renders top labeled input 1`] = `
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hlBmN"
+      class="sc-bxivhb cmIlUT"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
