@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropDownInput /> should render the correct markup 1`] = `
+.c0 {
+  cursor: pointer;
+}
+
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus,
+.dropdown__items .c0.dropdown__selected {
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus {
+  background-color: #026cdf;
+}
+
+.dropdown__items .c0:focus {
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+}
+
+.dropdown__items.dropdown__items--small .c0 {
+  height: 32px;
+}
+
+<span
+  className="c0"
+  role="option"
+  tabIndex="-1"
+  value="rock"
+>
+  Rock & Roll
+</span>
+`;
+
+exports[`<DropDownInput /> should render the correct markup when additional props are passed 1`] = `
+.c0 {
+  cursor: pointer;
+}
+
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus,
+.dropdown__items .c0.dropdown__selected {
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus {
+  background-color: #026cdf;
+}
+
+.dropdown__items .c0:focus {
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+}
+
+.dropdown__items.dropdown__items--small .c0 {
+  height: 32px;
+}
+
+<span
+  className="c0"
+  data-index={0}
+  role="option"
+  tabIndex="-1"
+  value="rock"
+>
+  Rock & Roll
+</span>
+`;
+
+exports[`<DropDownInput /> should render the correct markup when the className prop is valid 1`] = `
+.c0 {
+  cursor: pointer;
+}
+
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus,
+.dropdown__items .c0.dropdown__selected {
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus {
+  background-color: #026cdf;
+}
+
+.dropdown__items .c0:focus {
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+}
+
+.dropdown__items.dropdown__items--small .c0 {
+  height: 32px;
+}
+
+<span
+  className="input--drop-down c0"
+  role="option"
+  tabIndex="-1"
+  value="rock"
+>
+  Rock & Roll
+</span>
+`;
+
+exports[`<DropDownInput /> should render the correct markup when the isSelected prop equals true 1`] = `
+.c0 {
+  cursor: pointer;
+}
+
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus,
+.dropdown__items .c0.dropdown__selected {
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+}
+
+.dropdown__items .c0:hover,
+.dropdown__items .c0:focus {
+  background-color: #026cdf;
+}
+
+.dropdown__items .c0:focus {
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+}
+
+.dropdown__items.dropdown__items--small .c0 {
+  height: 32px;
+}
+
+<span
+  className="dropdown__selected c0"
+  role="option"
+  tabIndex="-1"
+  value="rock"
+>
+  Rock & Roll
+</span>
+`;

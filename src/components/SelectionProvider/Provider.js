@@ -1,65 +1,61 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import { Provider } from "./Context";
+import { updateOpenIndexMultiple } from "../List/helper";
 
 export default class ItemSelectionProvider extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     onChange: PropTypes.func,
     isMultiSelect: PropTypes.bool.isRequired,
-    value: PropTypes.arrayOf(PropTypes.string) // eslint-disable-line
+    value: PropTypes.arrayOf(PropTypes.string), // eslint-disable-line
+    valueOverride: PropTypes.arrayOf(PropTypes.string) // eslint-disable-line
   };
 
   static defaultProps = {
-    onChange: null,
-    value: []
+    value: [],
+    valueOverride: null,
+    onChange: null
   };
 
-  static getDerivedStateFromProps(props, state) {
-    if (!props.value || !props.value.length) return null;
+  constructor(props) {
+    super(props);
+    const { value, valueOverride } = props;
 
-    if (props.isMultiSelect) {
-      if (state.firstUpdate === true) {
-        return {
-          selected: [...props.value, ...state.selected],
-          firstUpdate: false
-        };
-      }
-    }
-
-    if (state.selected.length === 0 && state.firstUpdate === true)
-      return { selected: [...props.value] };
-
-    return null;
+    this.state = {
+      selected: Array.isArray(valueOverride) ? valueOverride : value
+    };
   }
 
-  componentDidUpdate() {
-    this.props.onChange && this.props.onChange(this.state.selected); // eslint-disable-line
+  static getDerivedStateFromProps(props) {
+    const { valueOverride } = props;
+
+    return Array.isArray(valueOverride)
+      ? {
+          selected: valueOverride
+        }
+      : null;
   }
-  onClick = ({ value }) => {
-    if (!this.props.isMultiSelect) {
-      this.setState({ selected: [value] });
-      return;
-    }
-    if (!this.state.selected.includes(value)) {
-      this.setState({ selected: [...this.state.selected, value] });
-      return;
-    }
-    const { selected } = this.state;
-    const index = selected.indexOf(value);
+
+  componentDidMount = () => {
     this.setState({
-      selected: [...selected.slice(0, index), ...selected.slice(index + 1)]
+      onClick: this.onClick // eslint-disable-line
     });
   };
 
-  /* eslint-disable */
-  state = {
-    selected: [],
-    onClick: this.onClick,
-    firstUpdate: true,
-    children: []
+  onClick = ({ value }) => {
+    const { isMultiSelect, onChange } = this.props;
+    const { selected } = this.state;
+    const updatedSelections = isMultiSelect
+      ? updateOpenIndexMultiple(selected, value)
+      : [value];
+
+    this.setState({
+      selected: updatedSelections
+    });
+    if (onChange) onChange(updatedSelections);
   };
-  /* eslint-enable */
 
   render() {
     return <Provider value={this.state}>{this.props.children}</Provider>;
