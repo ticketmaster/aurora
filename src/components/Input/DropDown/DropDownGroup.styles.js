@@ -99,7 +99,7 @@ export const StyledChildWrapper = styled.div`
     padding-top: 4px;
     padding-bottom: 8px;
     border-width: 1px;
-    max-height: 399px;
+    max-height: 300px;
 
     transition: max-height 0.3s ${constants.easing.easeInOutQuad},
       border-width 0s, padding-top 0s, padding-bottom 0s;
@@ -163,26 +163,26 @@ export const StyledSelectedText = styled.div`
   }
 
   .dropdown--border & {
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   .dropdown--no-border & {
-    margin-right: 8px;
+    margin-right: 10px;
   }
 
   .dropdown--active.dropdown--no-border & {
-    margin-right: 9px;
+    margin-right: 11px;
   }
 
   .dropdown--border:hover & {
     &:not(.dropdown__text--disabled) {
-      margin-left: 14px;
+      margin-left: 15px;
     }
   }
 
   .dropdown--active.dropdown--no-border:hover & {
     &:not(.dropdown__text--disabled) {
-      margin-right: 8px;
+      margin-right: 10px;
     }
   }
 `;
