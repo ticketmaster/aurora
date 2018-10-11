@@ -22,6 +22,13 @@ const MOBILE_MAX_WIDTH = 767;
 const SPACE_FROM_MOUSE = 10;
 
 class PopOver extends Component {
+  /*
+   * Static function that needs to be called from the parent -> PopOver.getDimensionsFromEvent
+   * The parent should pass the click event which will trigger showing the PopOver.
+   * By default the PopOver is shown withing the view port. If we need to show it inside
+   * certain element we should pass the html element as second parameter.
+   * The function will return an object that should be provided to the PopOver as props.
+   */
   static getDimensionsFromEvent(e, parent = {}) {
     const { clientX: mouseX } = e;
     const { offsetTop: elTop, clientHeight: elHeight } = e.currentTarget;
@@ -43,6 +50,16 @@ class PopOver extends Component {
     };
   }
 
+  /*
+   * Static function that determines PopOver position.
+   * @position(object) - top and bottom position of the elemt that triggers showing PopOver;
+   * Mouse horizontal position on the sreen - so we can center the PopOver;
+   * Additional container position and size
+   * @state(object) - PopOver width and height;
+   * Page scroll position
+   * Viewport size
+   * @reduce(object) - additional top/bottom screen reduction cause by sticky header/footer
+   */
   static calculatePosition(position, state, reduce) {
     const { width, windowScroll, height, windowWidth, windowHeight } = state;
     const { top: reduceTop, bottom: reduceBottom } = reduce;
@@ -90,6 +107,10 @@ class PopOver extends Component {
     };
   }
 
+  /*
+   * Every time we hide PopOver we set its dimensions to 0 instead of doing it in setDimensions function
+   * which will call setting new state and triggering another render cycle
+   */
   static getDerivedStateFromProps(props) {
     if (!props.isVisible) {
       return {
