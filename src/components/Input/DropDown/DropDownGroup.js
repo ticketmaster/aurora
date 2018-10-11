@@ -147,6 +147,9 @@ class DropDownGroup extends React.Component {
       "_"
     )}`;
     const onClickListener = disabled ? {} : { onClick: this.onClick };
+    const ChildrenWrapper = withKeyboardProvider
+      ? StyledKeyboardProvider
+      : StyledKeyboardProvider.withComponent("div");
 
     return (
       <SelectionProvider
@@ -156,96 +159,97 @@ class DropDownGroup extends React.Component {
         valueOverride={valueOverride}
       >
         <SelectionConsumer>
-          {({ selected }) => (
-            <Transition in={openUpward} timeout={this.ANIMATION_TIMEOUT}>
-              {state => {
-                // keep dropdown--open-upward className until collapse animation is finished (.3s)
-                const hasOpenUpwardClass = state !== "exited";
+          {({ selected }) => {
+            const keyboardProviderProps = withKeyboardProvider
+              ? { keywordSearch, selected }
+              : {};
 
-                return (
-                  <StyledGroupWrapper
-                    {...props}
-                    className={classNames({
-                      "dropdown--open-upward": hasOpenUpwardClass,
-                      "dropdown--disabled": disabled
-                    })}
-                    tabIndex={disabled ? -1 : 0}
-                    aria-haspopup="listbox"
-                    aria-labelledby={hiddenLabelId}
-                    onKeyDown={this.onKeyDown}
-                    innerRef={this.thisComponent}
-                  >
-                    <StyledGroup
-                      {...onClickListener}
-                      onMouseDown={this.onMouseDown} // disable focus on click
-                      className={classNames(`dropdown--${size}`, {
-                        "dropdown--active": isOpen,
-                        "dropdown--border": variant === 0,
-                        "dropdown--no-border": variant === 1,
-                        "dropdown__label--disabled": disabled
+            return (
+              <Transition in={openUpward} timeout={this.ANIMATION_TIMEOUT}>
+                {state => {
+                  // keep dropdown--open-upward className until collapse animation is finished (.3s)
+                  const hasOpenUpwardClass = state !== "exited";
+
+                  return (
+                    <StyledGroupWrapper
+                      {...props}
+                      className={classNames({
+                        "dropdown--open-upward": hasOpenUpwardClass,
+                        "dropdown--disabled": disabled
                       })}
-                      innerRef={this.styledGroup}
+                      tabIndex={disabled ? -1 : 0}
+                      aria-haspopup="listbox"
+                      aria-labelledby={hiddenLabelId}
+                      onKeyDown={this.onKeyDown}
+                      innerRef={this.thisComponent}
                     >
-                      {/* HiddenLabel is required for correct screen readers 
-                          readings when an option is selected */}
-                      <HiddenLabel id={hiddenLabelId}>
-                        {placeholder || label}
-                      </HiddenLabel>
-                      <StyledSelectedText
-                        className={classNames({
-                          "dropdown__text--disabled": disabled
-                        })}
-                      >
-                        {this.displayLabel(selected, variant)}
-                      </StyledSelectedText>
-
-                      <StyledChevron
-                        className={classNames({
-                          "dropdown__icon--hide": isOpen,
+                      <StyledGroup
+                        {...onClickListener}
+                        onMouseDown={this.onMouseDown} // disable focus on click
+                        className={classNames(`dropdown--${size}`, {
+                          "dropdown--active": isOpen,
+                          "dropdown--border": variant === 0,
                           "dropdown--no-border": variant === 1,
-                          "dropdown__chevron--disabled": disabled
+                          "dropdown__label--disabled": disabled
                         })}
-                        direction="down"
-                        size={12}
-                      />
-                    </StyledGroup>
-                    <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
-                      {wrapperState => (
-                        <StyledChildWrapper
-                          className={classNames(
-                            "dropdown__items",
-                            `dropdown__items--${size}`,
-                            {
-                              "dropdown--clicked": isOpen,
-                              "dropdown--overflow": wrapperState === "entered"
-                            }
-                          )}
+                        innerRef={this.styledGroup}
+                      >
+                        {/* HiddenLabel is required for correct screen readers 
+                          readings when an option is selected */}
+                        <HiddenLabel id={hiddenLabelId}>
+                          {placeholder || label}
+                        </HiddenLabel>
+                        <StyledSelectedText
+                          className={classNames({
+                            "dropdown__text--disabled": disabled
+                          })}
                         >
-                          <DropDownProvider value={{ ...this.state, isOpen }}>
-                            {/* this div is required to decide which way to open a dropdown */}
-                            <div ref={this.optionsContainer}>
-                              {withKeyboardProvider ? (
-                                <StyledKeyboardProvider
+                          {this.displayLabel(selected, variant)}
+                        </StyledSelectedText>
+
+                        <StyledChevron
+                          className={classNames({
+                            "dropdown__icon--hide": isOpen,
+                            "dropdown--no-border": variant === 1,
+                            "dropdown__chevron--disabled": disabled
+                          })}
+                          direction="down"
+                          size={12}
+                        />
+                      </StyledGroup>
+                      <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
+                        {wrapperState => (
+                          <StyledChildWrapper
+                            className={classNames(
+                              "dropdown__items",
+                              `dropdown__items--${size}`,
+                              {
+                                "dropdown--clicked": isOpen,
+                                "dropdown--overflow": wrapperState === "entered"
+                              }
+                            )}
+                          >
+                            <DropDownProvider value={{ ...this.state, isOpen }}>
+                              {/* this div is required to decide which way to open a dropdown */}
+                              <div ref={this.optionsContainer}>
+                                <ChildrenWrapper
                                   role="listbox"
                                   aria-labelledby={hiddenLabelId}
-                                  keywordSearch={keywordSearch}
-                                  selected={selected}
+                                  {...keyboardProviderProps}
                                 >
                                   {children}
-                                </StyledKeyboardProvider>
-                              ) : (
-                                children
-                              )}
-                            </div>
-                          </DropDownProvider>
-                        </StyledChildWrapper>
-                      )}
-                    </Transition>
-                  </StyledGroupWrapper>
-                );
-              }}
-            </Transition>
-          )}
+                                </ChildrenWrapper>
+                              </div>
+                            </DropDownProvider>
+                          </StyledChildWrapper>
+                        )}
+                      </Transition>
+                    </StyledGroupWrapper>
+                  );
+                }}
+              </Transition>
+            );
+          }}
         </SelectionConsumer>
       </SelectionProvider>
     );

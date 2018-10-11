@@ -1088,33 +1088,39 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
     >
       <div>
-        <span
-          class="sc-gzVnrw iJMNFP"
-          data-testid="test-dropDownOptionOne"
-          role="option"
-          tabindex="-1"
-          value="ValueOne"
+        <div
+          aria-labelledby="hidden-label__"
+          class="sc-htoDjs dQowVh"
+          role="listbox"
         >
-          Option One
-        </span>
-        <span
-          class="sc-gzVnrw iJMNFP"
-          data-testid="test-dropDownOptionTwo"
-          role="option"
-          tabindex="-1"
-          value="ValueTwo"
-        >
-          Second Option
-        </span>
-        <span
-          class="sc-gzVnrw iJMNFP"
-          data-testid="test-dropDownOptionThree"
-          role="option"
-          tabindex="-1"
-          value="ValueThree"
-        >
-          Option Three
-        </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            data-testid="test-dropDownOptionOne"
+            role="option"
+            tabindex="-1"
+            value="ValueOne"
+          >
+            Option One
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            data-testid="test-dropDownOptionTwo"
+            role="option"
+            tabindex="-1"
+            value="ValueTwo"
+          >
+            Second Option
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            data-testid="test-dropDownOptionThree"
+            role="option"
+            tabindex="-1"
+            value="ValueThree"
+          >
+            Option Three
+          </span>
+        </div>
       </div>
     </div>
   </div>
