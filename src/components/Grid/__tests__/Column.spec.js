@@ -36,4 +36,14 @@ describe("Column", () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it("renders correctly when small value is 0", () => {
+    const { container } = render(
+      <Column small={0} medium={6}>
+        <span>Content!</span>
+      </Column>
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

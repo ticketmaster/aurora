@@ -33,6 +33,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -43,6 +44,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -762,6 +764,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -772,6 +775,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -1697,6 +1701,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -1707,6 +1712,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -2631,6 +2637,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -2641,6 +2648,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;

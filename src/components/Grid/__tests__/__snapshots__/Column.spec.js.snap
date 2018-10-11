@@ -1,8 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Column renders correctly when small value is 0 1`] = `
+<div
+  class="sc-bdVaJa jCYtFM"
+>
+  <span>
+    Content!
+  </span>
+</div>
+`;
+
 exports[`Column renders correctly when value is 0 1`] = `
 <div
-  class="sc-bdVaJa iSjriR"
+  class="sc-bdVaJa fFxxKd"
 >
   <span>
     Content!
@@ -12,7 +22,7 @@ exports[`Column renders correctly when value is 0 1`] = `
 
 exports[`Column renders correctly without any props 1`] = `
 <div
-  class="sc-bdVaJa hDXzVr"
+  class="sc-bdVaJa fVSYzJ"
 >
   <span>
     Content!
