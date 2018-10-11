@@ -32,6 +32,14 @@ describe("Spacing", () => {
       })
     ).toMatchSnapshot());
 
+  it("renders top and bottom spacing for xLarge device (>1440)", () =>
+    expect(
+      renderComponent({
+        top: { xLarge: "normal" },
+        bottom: { xLarge: "normal" }
+      })
+    ).toMatchSnapshot());
+
   function renderComponent(props = {}) {
     return renderer.create(<Spacing {...props} />).toJSON();
   }

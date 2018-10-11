@@ -1,45 +1,49 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import spacing from "../theme/spacing";
-import { mediumAndUp, largeAndUp, smallAndUp } from "../theme/mediaQueries";
+import {
+  mediumAndUp,
+  largeAndUp,
+  smallAndUp,
+  xLargeAndUp
+} from "../theme/mediaQueries";
 
 const getSpacing = val => spacing[val] || val || 0;
 
 const Spacing = styled.div`
   width: 100%;
-  padding-top: ${props => getSpacing(props.top.xSmall)};
-  padding-bottom: ${props => getSpacing(props.bottom.xSmall)};
+  padding-top: ${({ top }) => getSpacing(top.xSmall)};
+  padding-bottom: ${({ bottom }) => getSpacing(bottom.xSmall)};
 
   ${smallAndUp`
-    padding-top: ${props => getSpacing(props.top.small || props.top.xSmall)};
-    padding-bottom: ${props =>
-      getSpacing(props.bottom.small || props.bottom.xSmall)};
+    padding-top: ${({ top }) => getSpacing(top.small || top.xSmall)};
+    padding-bottom: ${({ bottom }) =>
+      getSpacing(bottom.small || bottom.xSmall)};
   `};
 
   ${mediumAndUp`
-    padding-top: ${props =>
-      getSpacing(props.top.medium || props.top.small || props.top.xSmall)};
-    padding-bottom: ${props =>
-      getSpacing(
-        props.bottom.medium || props.bottom.small || props.bottom.xSmall
-      )};
+    padding-top: ${({ top }) =>
+      getSpacing(top.medium || top.small || top.xSmall)};
+    padding-bottom: ${({ bottom }) =>
+      getSpacing(bottom.medium || bottom.small || bottom.xSmall)};
   `};
 
   ${largeAndUp`
-    padding-top: ${props =>
+    padding-top: ${({ top }) =>
+      getSpacing(top.large || top.medium || top.small || top.xSmall)};
+    padding-bottom: ${({ bottom }) =>
       getSpacing(
-        props.top.large ||
-          props.top.medium ||
-          props.top.small ||
-          props.top.xSmall
+        bottom.large || bottom.medium || bottom.small || bottom.xSmall
       )};
-    padding-bottom: ${props =>
+  `};
+
+  ${xLargeAndUp`
+    padding-top: ${({ top }) =>
+      getSpacing(top.large || top.medium || top.small || top.xSmall)};
+    padding-bottom: ${({ bottom }) =>
       getSpacing(
-        props.bottom.large ||
-          props.bottom.medium ||
-          props.bottom.small ||
-          props.bottom.xSmall
-      )}
+        bottom.large || bottom.medium || bottom.small || bottom.xSmall
+      )};
   `};
 `;
 
@@ -47,7 +51,8 @@ const spacingShape = PropTypes.shape({
   xSmall: PropTypes.string,
   small: PropTypes.string,
   medium: PropTypes.string,
-  large: PropTypes.string
+  large: PropTypes.string,
+  xLarge: PropTypes.string
 });
 
 Spacing.propTypes = {
