@@ -3,16 +3,26 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classnames from "classnames";
 
-import { Column } from "../Grid";
+import { Column, Row } from "../Grid";
 import { Link } from "../Text";
 import { mediumAndUp } from "../../theme/mediaQueries";
 import constants from "../../theme/constants";
+import spacing from "../../theme/spacing";
 
-const OptionsContent = styled(Column)`
+import {
+  CHEVRON_ICON_PADDING,
+  CHEVRON_ICON_SIZE,
+  ROW_DATE_MEDIUM_WIDTH,
+  ROW_DATE_SMALL_WIDTH
+} from "./constants";
+
+const Content = styled(Row)`
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
+  padding-left: ${ROW_DATE_SMALL_WIDTH};
+  padding-bottom: ${spacing.cozy};
+  ${mediumAndUp`
+    padding-left: calc(${CHEVRON_ICON_SIZE}px + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${ROW_DATE_MEDIUM_WIDTH});
+  `};
 `;
 
 const MobileLink = styled(Link)`
@@ -38,26 +48,28 @@ const DesktopLink = styled(Link)`
 
 const RowOptionsLink = ({ variant, isOpen, url, index, onClick, children }) =>
   variant === "withLink" && (
-    <OptionsContent>
-      <MobileLink
-        linkUrl={url}
-        data-index={index}
-        onClick={onClick}
-        className="link--row-options"
-      >
-        {children}
-      </MobileLink>
-      <DesktopLink
-        href={url}
-        data-index={index}
-        className={classnames({
-          "link--row-options": !url.length,
-          "link--hidden": isOpen
-        })}
-      >
-        {children}
-      </DesktopLink>
-    </OptionsContent>
+    <Content>
+      <Column>
+        <MobileLink
+          linkUrl={url}
+          data-index={index}
+          onClick={onClick}
+          className="link--row-options"
+        >
+          {children}
+        </MobileLink>
+        <DesktopLink
+          href={url}
+          data-index={index}
+          className={classnames({
+            "link--row-options": !url.length,
+            "link--hidden": isOpen
+          })}
+        >
+          {children}
+        </DesktopLink>
+      </Column>
+    </Content>
   );
 
 RowOptionsLink.defaultProps = {

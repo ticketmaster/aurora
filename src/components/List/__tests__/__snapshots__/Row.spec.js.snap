@@ -777,7 +777,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c20 {
+.c25 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -797,18 +797,18 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
 }
 
-.c20:focus,
-.c20:active,
-.c20:visited,
-.c20:hover {
+.c25:focus,
+.c25:active,
+.c25:visited,
+.c25:hover {
   color: rgba(2,108,223,1);
 }
 
-.c20:hover {
+.c25:hover {
   color: #0150a7;
 }
 
-.c22 {
+.c27 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -821,14 +821,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
 }
 
-.c22:focus,
-.c22:active,
-.c22:visited,
-.c22:hover {
+.c27:focus,
+.c27:active,
+.c27:visited,
+.c27:hover {
   color: rgba(2,108,223,1);
 }
 
-.c22:hover {
+.c27:hover {
   color: #0150a7;
 }
 
@@ -856,7 +856,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c26 {
+.c21 {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -893,18 +893,17 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: none;
 }
 
-.c18 {
+.c23 {
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
+  padding-left: 101px;
+  padding-bottom: 8px;
 }
 
-.c19 {
+.c24 {
   display: inline-block;
 }
 
-.c21 {
+.c26 {
   display: none;
 }
 
@@ -944,7 +943,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding-top: 8px;
   padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 25px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -956,7 +955,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: none;
 }
 
-.c24 {
+.c19 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -994,23 +993,23 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   padding: 18px 0;
 }
 
-.c24:focus {
+.c19:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c24:hover {
+.c19:hover {
   background-color: #0150a7;
 }
 
-.c24:active {
+.c19:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c24:disabled {
+.c19:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -1025,14 +1024,14 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   overflow: hidden;
 }
 
-.c23 {
+.c18 {
   display: none;
   padding-left: 8px;
   padding-right: 8px;
   position: relative;
 }
 
-.c27 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1058,7 +1057,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   line-height: 1.2;
 }
 
-.c25 {
+.c20 {
   width: 100%;
   position: absolute;
   left: 0;
@@ -1154,25 +1153,25 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c25 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c20 {
+  .c25 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c22 {
+  .c27 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c22 {
+  .c27 {
     font-size: 14px;
   }
 }
@@ -1214,13 +1213,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c26 {
+  .c21 {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c26 {
+  .c21 {
     font-size: 12px;
   }
 }
@@ -1244,13 +1243,19 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c23 {
+    padding-left: calc(15px + 16px + 16px + 116px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c24 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c21 {
+  .c26 {
     display: inline-block;
     opacity: 1;
     line-height: 1.5;
@@ -1258,7 +1263,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
   }
 
-  .c21.link--hidden {
+  .c26.link--hidden {
     opacity: 0;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
@@ -1287,7 +1292,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 25px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -1371,7 +1376,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c23 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1388,7 +1393,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c27 {
+  .c22 {
     display: none;
   }
 }
@@ -1563,51 +1568,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               KABOO 3-Day Pass
             </div>
           </div>
-          <div
-            className="c18 c13"
-          >
-            <button
-              className="link--row-options c19 c20"
-              data-index={0}
-              href={null}
-              onClick={[Function]}
-              rel="_self"
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
-              target=""
-            >
-              Ticket Options Available
-            </button>
-            <span
-              className="link--row-options c21 c22"
-              data-index={0}
-              href=""
-              onClick={null}
-              rel="_self"
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
-              target=""
-            >
-              Ticket Options Available
-            </span>
-          </div>
         </div>
         <div
-          className="c23"
+          className="c18"
         >
           <span
             aria-label="See Tickets"
-            className="c24"
+            className="c19"
             role="button"
             size="regular"
             width="102px"
@@ -1615,10 +1582,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="c25"
+            className="c20"
           >
             <div
-              className="text text--dark text--secondary c8 c26"
+              className="text text--dark text--secondary c8 c21"
               disabled={false}
               size={
                 Object {
@@ -1634,7 +1601,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </a>
       <div
-        className="c27"
+        className="c22"
       >
         <button
           aria-label="More Info"
@@ -1655,6 +1622,48 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             />
           </svg>
         </button>
+      </div>
+    </div>
+    <div
+      className="c23 c11"
+    >
+      <div
+        className="c13"
+      >
+        <button
+          className="link--row-options c24 c25"
+          data-index={0}
+          href={null}
+          onClick={[Function]}
+          rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
+          target=""
+        >
+          Ticket Options Available
+        </button>
+        <span
+          className="link--row-options c26 c27"
+          data-index={0}
+          href=""
+          onClick={null}
+          rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
+          target=""
+        >
+          Ticket Options Available
+        </span>
       </div>
     </div>
     <div
@@ -1712,7 +1721,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   flex: 0 0 100%;
 }
 
-.c22 {
+.c27 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -1724,18 +1733,18 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   transition: color 0.3s ease;
 }
 
-.c22:focus,
-.c22:active,
-.c22:visited,
-.c22:hover {
+.c27:focus,
+.c27:active,
+.c27:visited,
+.c27:hover {
   color: rgba(2,108,223,1);
 }
 
-.c22:hover {
+.c27:hover {
   color: #0150a7;
 }
 
-.c20 {
+.c25 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -1755,14 +1764,14 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   cursor: pointer;
 }
 
-.c20:focus,
-.c20:active,
-.c20:visited,
-.c20:hover {
+.c25:focus,
+.c25:active,
+.c25:visited,
+.c25:hover {
   color: rgba(2,108,223,1);
 }
 
-.c20:hover {
+.c25:hover {
   color: #0150a7;
 }
 
@@ -1790,7 +1799,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c26 {
+.c21 {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -1827,18 +1836,17 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: none;
 }
 
-.c18 {
+.c23 {
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
+  padding-left: 101px;
+  padding-bottom: 8px;
 }
 
-.c19 {
+.c24 {
   display: inline-block;
 }
 
-.c21 {
+.c26 {
   display: none;
 }
 
@@ -1878,7 +1886,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding-top: 8px;
   padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 25px 0;
+  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -1890,7 +1898,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: none;
 }
 
-.c24 {
+.c19 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1928,23 +1936,23 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   padding: 18px 0;
 }
 
-.c24:focus {
+.c19:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c24:hover {
+.c19:hover {
   background-color: #0150a7;
 }
 
-.c24:active {
+.c19:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c24:disabled {
+.c19:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -1959,14 +1967,14 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   overflow: hidden;
 }
 
-.c23 {
+.c18 {
   display: none;
   padding-left: 8px;
   padding-right: 8px;
   position: relative;
 }
 
-.c27 {
+.c22 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1992,7 +2000,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   line-height: 1.2;
 }
 
-.c25 {
+.c20 {
   width: 100%;
   position: absolute;
   left: 0;
@@ -2088,25 +2096,25 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c22 {
+  .c27 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c22 {
+  .c27 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c20 {
+  .c25 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c20 {
+  .c25 {
     font-size: 14px;
   }
 }
@@ -2148,13 +2156,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c26 {
+  .c21 {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c26 {
+  .c21 {
     font-size: 12px;
   }
 }
@@ -2178,13 +2186,19 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c19 {
+  .c23 {
+    padding-left: calc(15px + 16px + 16px + 116px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c24 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c21 {
+  .c26 {
     display: inline-block;
     opacity: 1;
     line-height: 1.5;
@@ -2192,7 +2206,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
   }
 
-  .c21.link--hidden {
+  .c26.link--hidden {
     opacity: 0;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
@@ -2221,7 +2235,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin: 18px 0 25px 0;
+    margin: 18px 0 0 0;
   }
 
   .c5:hover {
@@ -2305,7 +2319,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c23 {
+  .c18 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2322,7 +2336,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c27 {
+  .c22 {
     display: none;
   }
 }
@@ -2497,51 +2511,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               KABOO 3-Day Pass
             </div>
           </div>
-          <div
-            className="c18 c13"
-          >
-            <button
-              className="link--row-options c19 c20"
-              data-index={0}
-              href={null}
-              onClick={[Function]}
-              rel="_self"
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
-              target=""
-            >
-              Ticket options available
-            </button>
-            <a
-              className="c21 c22"
-              data-index={0}
-              href="/"
-              onClick={null}
-              rel="_self"
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
-              target=""
-            >
-              Ticket options available
-            </a>
-          </div>
         </div>
         <div
-          className="c23"
+          className="c18"
         >
           <span
             aria-label="See Tickets"
-            className="c24"
+            className="c19"
             role="button"
             size="regular"
             width="102px"
@@ -2549,10 +2525,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="c25"
+            className="c20"
           >
             <div
-              className="text text--dark text--secondary c8 c26"
+              className="text text--dark text--secondary c8 c21"
               disabled={false}
               size={
                 Object {
@@ -2568,7 +2544,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="c27"
+        className="c22"
       >
         <button
           aria-label="More Info"
@@ -2589,6 +2565,48 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             />
           </svg>
         </button>
+      </div>
+    </div>
+    <div
+      className="c23 c11"
+    >
+      <div
+        className="c13"
+      >
+        <button
+          className="link--row-options c24 c25"
+          data-index={0}
+          href={null}
+          onClick={[Function]}
+          rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
+          target=""
+        >
+          Ticket options available
+        </button>
+        <a
+          className="c26 c27"
+          data-index={0}
+          href="/"
+          onClick={null}
+          rel="_self"
+          size={
+            Object {
+              "large": "hecto",
+              "medium": "hecto",
+              "small": "hecto",
+            }
+          }
+          target=""
+        >
+          Ticket options available
+        </a>
       </div>
     </div>
     <div
