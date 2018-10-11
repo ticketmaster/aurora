@@ -256,12 +256,14 @@ const ListRowContent = ({
     })}
     {...rest}
   >
-    <ListContainer>
+    {/* this class name is for automation purposes please do not remove or modify the name */}
+    <ListContainer className="list__container">
       <RowToggler
         isOpen={isOpen}
         index={index}
         onExpandItem={onExpandItem}
         onCollapseItem={onCollapseItem}
+        className="row__toggler"
       />
 
       <LinkWrapper
@@ -270,8 +272,11 @@ const ListRowContent = ({
         onClick={onClick}
         href={url}
         rowVariant={variant}
+        // this class name is for automation purposes please do not remove or modify the name
+        className="link__wrapper"
       >
-        <DateWrapper>
+        {/* this class name is for automation purposes please do not remove or modify the name */}
+        <DateWrapper className="date__wrapper">
           <Text
             className="date--text"
             allCaps
@@ -293,8 +298,10 @@ const ListRowContent = ({
           </SingleLineText>
         </DateWrapper>
 
-        <ContentRow>
-          <MobileOnlyColumn>
+        {/* this class name is for automation purposes please do not remove or modify the name */}
+        <ContentRow className="row__content">
+          {/* this class name is for automation purposes please do not remove or modify the name */}
+          <MobileOnlyColumn className="column__mobile-only">
             <MultilineText
               responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
               className="list-row--title"
@@ -325,7 +332,8 @@ const ListRowContent = ({
               {title}
             </MultilineText>
           </ContentColumn>
-          <ContentColumn key="secondary" medium={6}>
+          {/* this class name is for automation purposes please do not remove or modify the name */}
+          <ContentColumn key="secondary" medium={6} className="column__content">
             <MultilineText
               key="collapsed"
               responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
@@ -333,7 +341,9 @@ const ListRowContent = ({
                 subtitle: true,
                 "list-row--subtitle": true,
                 "subtitle--active": !isOpen,
-                "subtitle--hidden": isOpen
+                "subtitle--hidden": isOpen,
+                // this class name is for automation purposes please do not remove or modify the name
+                "subtitle--collapsed": true
               })}
             >
               {subTitle}

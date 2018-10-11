@@ -8,12 +8,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--expanded sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--expanded sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="0"
         role="button"
         size="45"
@@ -32,12 +32,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -51,10 +51,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -77,10 +77,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -109,7 +109,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           type="button"
@@ -135,10 +135,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -230,10 +230,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -293,10 +293,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -362,10 +362,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -417,12 +417,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="1"
         role="button"
         size="45"
@@ -441,12 +441,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -460,10 +460,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -486,10 +486,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -518,7 +518,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           type="button"
@@ -544,10 +544,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -639,10 +639,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -702,10 +702,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -771,10 +771,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -826,12 +826,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="2"
         role="button"
         size="45"
@@ -850,12 +850,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -869,10 +869,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -895,10 +895,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Premium Pass with Exclusive Back Stage Access
             </div>
@@ -927,7 +927,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           type="button"
@@ -953,10 +953,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -1048,10 +1048,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -1111,10 +1111,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -1180,10 +1180,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -1235,12 +1235,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="3"
         role="button"
         size="45"
@@ -1259,12 +1259,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -1278,10 +1278,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -1304,10 +1304,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               Gramercy Theatre - New York, NY
             </div>
@@ -1336,7 +1336,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           type="button"
@@ -1362,10 +1362,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -1457,10 +1457,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -1520,10 +1520,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -1589,10 +1589,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -1652,12 +1652,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           size="45"
@@ -1676,12 +1676,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -1695,10 +1695,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -1721,10 +1721,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -1753,7 +1753,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="0"
             role="button"
             type="button"
@@ -1779,10 +1779,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -1874,10 +1874,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -1937,10 +1937,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -2006,10 +2006,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -2061,12 +2061,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           size="45"
@@ -2085,12 +2085,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -2104,10 +2104,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -2130,10 +2130,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -2162,7 +2162,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="1"
             role="button"
             type="button"
@@ -2188,10 +2188,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -2283,10 +2283,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -2346,10 +2346,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -2415,10 +2415,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -2470,12 +2470,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           size="45"
@@ -2494,12 +2494,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -2513,10 +2513,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -2539,10 +2539,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Premium Pass with Exclusive Back Stage Access
               </div>
@@ -2571,7 +2571,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="2"
             role="button"
             type="button"
@@ -2597,10 +2597,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -2692,10 +2692,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -2755,10 +2755,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -2824,10 +2824,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -2879,12 +2879,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           size="45"
@@ -2903,12 +2903,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -2922,10 +2922,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -2948,10 +2948,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 Gramercy Theatre - New York, NY
               </div>
@@ -2980,7 +2980,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="3"
             role="button"
             type="button"
@@ -3006,10 +3006,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -3101,10 +3101,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -3164,10 +3164,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -3233,10 +3233,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -3296,12 +3296,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--expanded sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--expanded sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="0"
         role="button"
         size="45"
@@ -3320,12 +3320,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -3339,10 +3339,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -3365,10 +3365,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -3397,7 +3397,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           type="button"
@@ -3423,10 +3423,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -3518,10 +3518,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -3581,10 +3581,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -3650,10 +3650,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -3705,12 +3705,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="1"
         role="button"
         size="45"
@@ -3729,12 +3729,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -3748,10 +3748,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -3774,10 +3774,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -3806,7 +3806,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           type="button"
@@ -3832,10 +3832,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -3927,10 +3927,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -3990,10 +3990,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -4059,10 +4059,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -4114,12 +4114,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="2"
         role="button"
         size="45"
@@ -4138,12 +4138,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -4157,10 +4157,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -4183,10 +4183,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Premium Pass with Exclusive Back Stage Access
             </div>
@@ -4215,7 +4215,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           type="button"
@@ -4241,10 +4241,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -4336,10 +4336,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -4399,10 +4399,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -4468,10 +4468,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -4523,12 +4523,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="3"
         role="button"
         size="45"
@@ -4547,12 +4547,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -4566,10 +4566,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -4592,10 +4592,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               Gramercy Theatre - New York, NY
             </div>
@@ -4624,7 +4624,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           type="button"
@@ -4650,10 +4650,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -4745,10 +4745,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -4808,10 +4808,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -4877,10 +4877,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -4940,12 +4940,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           size="45"
@@ -4964,12 +4964,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -4983,10 +4983,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -5009,10 +5009,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -5041,7 +5041,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="0"
             role="button"
             type="button"
@@ -5067,10 +5067,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -5162,10 +5162,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -5225,10 +5225,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -5294,10 +5294,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -5349,12 +5349,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           size="45"
@@ -5373,12 +5373,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -5392,10 +5392,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -5418,10 +5418,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -5450,7 +5450,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="1"
             role="button"
             type="button"
@@ -5476,10 +5476,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -5571,10 +5571,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -5634,10 +5634,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -5703,10 +5703,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -5758,12 +5758,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           size="45"
@@ -5782,12 +5782,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -5801,10 +5801,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -5827,10 +5827,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Premium Pass with Exclusive Back Stage Access
               </div>
@@ -5859,7 +5859,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="2"
             role="button"
             type="button"
@@ -5885,10 +5885,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -5980,10 +5980,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -6043,10 +6043,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -6112,10 +6112,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -6167,12 +6167,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           size="45"
@@ -6191,12 +6191,12 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -6210,10 +6210,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -6236,10 +6236,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 Gramercy Theatre - New York, NY
               </div>
@@ -6268,7 +6268,7 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="3"
             role="button"
             type="button"
@@ -6294,10 +6294,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -6389,10 +6389,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -6452,10 +6452,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -6521,10 +6521,10 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -6585,12 +6585,12 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           size="45"
@@ -6609,12 +6609,12 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -6628,10 +6628,10 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -6654,10 +6654,10 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -6686,7 +6686,7 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="0"
             role="button"
             type="button"
@@ -6715,10 +6715,10 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
             id="789"
           >
             <div
-              class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+              class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
             >
               <div
-                class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+                class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
                 color="#1F262D"
               >
                 Ticket Options
@@ -6833,12 +6833,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="0"
         role="button"
         size="45"
@@ -6857,12 +6857,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -6876,10 +6876,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -6902,10 +6902,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -6934,7 +6934,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           type="button"
@@ -6960,10 +6960,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -7055,10 +7055,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -7118,10 +7118,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -7187,10 +7187,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -7242,12 +7242,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="1"
         role="button"
         size="45"
@@ -7266,12 +7266,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -7285,10 +7285,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -7311,10 +7311,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -7343,7 +7343,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           type="button"
@@ -7369,10 +7369,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -7464,10 +7464,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -7527,10 +7527,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -7596,10 +7596,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -7651,12 +7651,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="2"
         role="button"
         size="45"
@@ -7675,12 +7675,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -7694,10 +7694,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -7720,10 +7720,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Premium Pass with Exclusive Back Stage Access
             </div>
@@ -7752,7 +7752,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           type="button"
@@ -7778,10 +7778,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -7873,10 +7873,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -7936,10 +7936,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -8005,10 +8005,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -8060,12 +8060,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="3"
         role="button"
         size="45"
@@ -8084,12 +8084,12 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -8103,10 +8103,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -8129,10 +8129,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               Gramercy Theatre - New York, NY
             </div>
@@ -8161,7 +8161,7 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           type="button"
@@ -8187,10 +8187,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -8282,10 +8282,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -8345,10 +8345,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -8414,10 +8414,10 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -8476,12 +8476,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="row__wrapper row__wrapper--expanded sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="true"
         aria-label="Collapse Row"
-        class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--expanded sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="0"
         role="button"
         size="45"
@@ -8500,12 +8500,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -8519,10 +8519,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -8545,10 +8545,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -8577,7 +8577,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           type="button"
@@ -8603,10 +8603,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -8698,10 +8698,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -8761,10 +8761,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -8830,10 +8830,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -8885,12 +8885,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="1"
         role="button"
         size="45"
@@ -8909,12 +8909,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -8928,10 +8928,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -8954,10 +8954,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -8986,7 +8986,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           type="button"
@@ -9012,10 +9012,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -9107,10 +9107,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -9170,10 +9170,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -9239,10 +9239,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -9294,12 +9294,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="2"
         role="button"
         size="45"
@@ -9318,12 +9318,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -9337,10 +9337,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -9363,10 +9363,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Premium Pass with Exclusive Back Stage Access
             </div>
@@ -9395,7 +9395,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           type="button"
@@ -9421,10 +9421,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -9516,10 +9516,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -9579,10 +9579,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -9648,10 +9648,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -9703,12 +9703,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="3"
         role="button"
         size="45"
@@ -9727,12 +9727,12 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -9746,10 +9746,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -9772,10 +9772,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               Gramercy Theatre - New York, NY
             </div>
@@ -9804,7 +9804,7 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           type="button"
@@ -9830,10 +9830,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="789"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Ticket Options
@@ -9925,10 +9925,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="456"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Venue Info
@@ -9988,10 +9988,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="123"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             Lineup
@@ -10057,10 +10057,10 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
         id="1011"
       >
         <div
-          class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+          class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
         >
           <div
-            class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+            class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
             color="#1F262D"
           >
             More
@@ -10120,12 +10120,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="row__wrapper row__wrapper--expanded sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="true"
           aria-label="Collapse Row"
-          class="button--expand-or-collapse button--expanded sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--expanded sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           size="45"
@@ -10144,12 +10144,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -10163,10 +10163,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -10189,10 +10189,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -10221,7 +10221,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="0"
             role="button"
             type="button"
@@ -10247,10 +10247,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -10342,10 +10342,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -10405,10 +10405,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -10474,10 +10474,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -10529,12 +10529,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           size="45"
@@ -10553,12 +10553,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -10572,10 +10572,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -10598,10 +10598,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Pass
               </div>
@@ -10630,7 +10630,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="1"
             role="button"
             type="button"
@@ -10656,10 +10656,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -10751,10 +10751,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -10814,10 +10814,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -10883,10 +10883,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -10938,12 +10938,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           size="45"
@@ -10962,12 +10962,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="Acheter des Billets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -10981,10 +10981,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -11007,10 +11007,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 KABOO 3-Day Premium Pass with Exclusive Back Stage Access
               </div>
@@ -11039,7 +11039,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="2"
             role="button"
             type="button"
@@ -11065,10 +11065,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -11160,10 +11160,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -11223,10 +11223,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -11292,10 +11292,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -11347,12 +11347,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
       class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
     >
       <div
-        class="sc-hzDkRC iblHnN"
+        class="list__container sc-hzDkRC iblHnN"
       >
         <button
           aria-expanded="false"
           aria-label="Expand Row"
-          class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+          class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           size="45"
@@ -11371,12 +11371,12 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         </button>
         <a
           aria-label="See Tickets"
-          class="sc-jhAzac dgaDq"
+          class="link__wrapper sc-jhAzac dgaDq"
           href="/"
           role="link"
         >
           <div
-            class="sc-fBuWsC cQFZPA"
+            class="date__wrapper sc-fBuWsC cQFZPA"
           >
             <div
               class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -11390,10 +11390,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
             </div>
           </div>
           <div
-            class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+            class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
           >
             <div
-              class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+              class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
             >
               <div
                 class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -11416,10 +11416,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
               </div>
             </div>
             <div
-              class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+              class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
             >
               <div
-                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+                class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
               >
                 Gramercy Theatre - New York, NY
               </div>
@@ -11448,7 +11448,7 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
         >
           <button
             aria-label="More Info"
-            class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+            class="button--more-info icon-button--last sc-iRbamj gkrBxs"
             data-index="3"
             role="button"
             type="button"
@@ -11474,10 +11474,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="789"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Ticket Options
@@ -11569,10 +11569,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="456"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Venue Info
@@ -11632,10 +11632,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="123"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               Lineup
@@ -11701,10 +11701,10 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
           id="1011"
         >
           <div
-            class="sc-kvZOFW focpsv sc-EHOje fNonPI"
+            class="container__title sc-kvZOFW focpsv sc-EHOje fNonPI"
           >
             <div
-              class="sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
+              class="text__title sc-hqyNC bZDhvR sc-kpOJdX ioTPUY"
               color="#1F262D"
             >
               More
@@ -11764,12 +11764,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="0"
         role="button"
         size="45"
@@ -11788,12 +11788,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -11807,10 +11807,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -11833,10 +11833,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -11865,7 +11865,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="0"
           role="button"
           type="button"
@@ -11891,12 +11891,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="1"
         role="button"
         size="45"
@@ -11915,12 +11915,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -11934,10 +11934,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -11960,10 +11960,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Pass
             </div>
@@ -11992,7 +11992,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="1"
           role="button"
           type="button"
@@ -12018,12 +12018,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="2"
         role="button"
         size="45"
@@ -12042,12 +12042,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="Acheter des Billets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -12061,10 +12061,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -12087,10 +12087,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               KABOO 3-Day Premium Pass with Exclusive Back Stage Access
             </div>
@@ -12119,7 +12119,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="2"
           role="button"
           type="button"
@@ -12145,12 +12145,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
     class="row__wrapper row__wrapper--collapsed sc-bRBYWo jAGYvv"
   >
     <div
-      class="sc-hzDkRC iblHnN"
+      class="list__container sc-hzDkRC iblHnN"
     >
       <button
         aria-expanded="false"
         aria-label="Expand Row"
-        class="button--expand-or-collapse button--collapsed sc-jlyJG cGePth sc-iRbamj gWuOzJ"
+        class="button--expand-or-collapse button--collapsed sc-jlyJG eehRhP sc-iRbamj gkrBxs"
         data-index="3"
         role="button"
         size="45"
@@ -12169,12 +12169,12 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       </button>
       <a
         aria-label="See Tickets"
-        class="sc-jhAzac dgaDq"
+        class="link__wrapper sc-jhAzac dgaDq"
         href="/"
         role="link"
       >
         <div
-          class="sc-fBuWsC cQFZPA"
+          class="date__wrapper sc-fBuWsC cQFZPA"
         >
           <div
             class="text text--dark text--primary date--text sc-cvbbAY iQFoTG"
@@ -12188,10 +12188,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
           </div>
         </div>
         <div
-          class="sc-cJSrbW fezrYN sc-EHOje fNonPI"
+          class="row__content sc-cJSrbW fezrYN sc-EHOje fNonPI"
         >
           <div
-            class="sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
+            class="column__mobile-only sc-dVhcbM cEyKgl sc-bZQynM ebaHRd"
           >
             <div
               class="text text--dark text--primary list-row--title sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
@@ -12214,10 +12214,10 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
             </div>
           </div>
           <div
-            class="sc-fMiknA fYaikk sc-bZQynM gOqQnk"
+            class="column__content sc-fMiknA fYaikk sc-bZQynM gOqQnk"
           >
             <div
-              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
+              class="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed sc-cHGsZl kyidbD sc-cvbbAY fKPqTe"
             >
               Gramercy Theatre - New York, NY
             </div>
@@ -12246,7 +12246,7 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
       >
         <button
           aria-label="More Info"
-          class="button--more-info icon-button--last sc-iRbamj gWuOzJ"
+          class="button--more-info icon-button--last sc-iRbamj gkrBxs"
           data-index="3"
           role="button"
           type="button"
