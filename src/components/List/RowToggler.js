@@ -5,16 +5,14 @@ import classnames from "classnames";
 
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import {mediumAndUp} from "../../theme/mediaQueries";
 
 import ChevronIcon from "../Icons/Chevron";
-
-const CHEVRON_ICON_SIZE = 15;
-const CHEVRON_ICON_PADDING = spacing.moderate;
+import { CHEVRON_ICON_PADDING, CHEVRON_ICON_SIZE } from "./constants";
 
 export const IconButton = styled.button.attrs({
-  role: "button",
-  type: "button"
+  role: 'button',
+  type: 'button',
 })`
   border: 0;
   padding: 0 ${CHEVRON_ICON_PADDING};
