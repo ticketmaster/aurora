@@ -39,10 +39,16 @@ const Spacing = styled.div`
 
   ${xLargeAndUp`
     padding-top: ${({ top }) =>
-      getSpacing(top.large || top.medium || top.small || top.xSmall)};
+      getSpacing(
+        top.xLarge || top.large || top.medium || top.small || top.xSmall
+      )};
     padding-bottom: ${({ bottom }) =>
       getSpacing(
-        bottom.large || bottom.medium || bottom.small || bottom.xSmall
+        bottom.xLarge ||
+          bottom.large ||
+          bottom.medium ||
+          bottom.small ||
+          bottom.xSmall
       )};
   `};
 `;

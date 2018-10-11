@@ -150,8 +150,8 @@ exports[`Spacing renders top and bottom spacing for xLarge device (>1440) 1`] = 
 
 @media screen and (min-width:1440px) {
   .c0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
