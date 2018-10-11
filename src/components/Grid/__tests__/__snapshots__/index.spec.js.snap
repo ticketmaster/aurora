@@ -42,6 +42,7 @@ exports[`Grid renders medium and up when medium size defined 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -150,6 +151,7 @@ exports[`Grid renders multiple sizes defined 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -258,6 +260,7 @@ exports[`Grid renders small size defined 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 50%;
+  display: block;
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -366,6 +369,7 @@ exports[`Grid renders with defaults 1`] = `
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
