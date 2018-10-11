@@ -71,7 +71,7 @@ class PopOver extends Component {
     const containerLeft = offsetLeft + spaceFromEdge;
     const containerRight = offsetLeft + clientWidth - spaceFromEdge - width;
 
-    const topPisitionWithFallback =
+    const topPositionWithFallback =
       topPosition - spaceFromEdge >= Math.max(viewportTop, containerTop)
         ? topPosition
         : bottomPosition;
@@ -86,7 +86,7 @@ class PopOver extends Component {
         bottomPosition + height + spaceFromEdge <=
         Math.min(viewportBottom, containerBottom)
           ? bottomPosition
-          : topPisitionWithFallback
+          : topPositionWithFallback
     };
   }
 
@@ -113,6 +113,11 @@ class PopOver extends Component {
     };
 
     this.myRef = React.createRef();
+
+    this.pos = {
+      x: 0,
+      y: 0
+    };
   }
 
   componentDidUpdate() {
@@ -183,20 +188,19 @@ class PopOver extends Component {
       reduceTop,
       reduceBottom
     } = this.props;
-    const pos =
-      isVisible && !this.setDimensions()
-        ? PopOver.calculatePosition(position, this.state, {
-            top: reduceTop,
-            bottom: reduceBottom
-          })
-        : { x: 0, y: 0 };
+    if (isVisible && !this.setDimensions()) {
+      this.pos = PopOver.calculatePosition(position, this.state, {
+        top: reduceTop,
+        bottom: reduceBottom
+      });
+    }
 
     return (
       <StyledPopOver
         innerRef={this.myRef}
         isVisible={isVisible}
-        left={pos.x}
-        top={pos.y}
+        left={this.pos.x}
+        top={this.pos.y}
       >
         {children}
       </StyledPopOver>
