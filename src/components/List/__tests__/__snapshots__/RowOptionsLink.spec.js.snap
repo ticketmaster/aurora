@@ -2,16 +2,44 @@
 
 exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.c1 .c1 {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
   max-width: 100%;
+  display: block;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -31,18 +59,18 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c3:focus,
-.c3:active,
-.c3:visited,
-.c3:hover {
+.c4:focus,
+.c4:active,
+.c4:visited,
+.c4:hover {
   color: rgba(2,108,223,1);
 }
 
-.c3:hover {
+.c4:hover {
   color: #0150a7;
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -55,34 +83,40 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c5:focus,
-.c5:active,
-.c5:visited,
-.c5:hover {
+.c6:focus,
+.c6:active,
+.c6:visited,
+.c6:hover {
   color: rgba(2,108,223,1);
 }
 
-.c5:hover {
+.c6:hover {
   color: #0150a7;
 }
 
 .c0 {
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
+  padding-left: 101px;
+  padding-bottom: 8px;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
 }
 
-.c4 {
+.c5 {
   display: none;
 }
 
 @media screen and (min-width:768px) {
   .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
     padding-right: 12px;
     padding-left: 12px;
     max-width: 100%;
@@ -94,7 +128,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c1 {
+  .c2 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -104,7 +138,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c1 {
+  .c2 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -114,37 +148,43 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c4 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c3 {
+  .c4 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c5 {
+  .c6 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
+  .c0 {
+    padding-left: calc(15px + 16px + 16px + 116px);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     display: inline-block;
     opacity: 1;
     line-height: 1.5;
@@ -152,7 +192,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
   }
 
-  .c4.link--hidden {
+  .c5.link--hidden {
     opacity: 0;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
@@ -162,35 +202,39 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 <div
   className="c0 c1"
 >
-  <button
-    className="link--row-options c2 c3"
-    data-index={0}
-    href={null}
-    onClick={[Function]}
-    rel="_self"
-    size={
-      Object {
-        "large": "hecto",
-        "medium": "hecto",
-        "small": "hecto",
+  <div
+    className="c2"
+  >
+    <button
+      className="link--row-options c3 c4"
+      data-index={0}
+      href={null}
+      onClick={[Function]}
+      rel="_self"
+      size={
+        Object {
+          "large": "hecto",
+          "medium": "hecto",
+          "small": "hecto",
+        }
       }
-    }
-    target=""
-  />
-  <span
-    className="link--row-options c4 c5"
-    data-index={0}
-    href=""
-    onClick={null}
-    rel="_self"
-    size={
-      Object {
-        "large": "hecto",
-        "medium": "hecto",
-        "small": "hecto",
+      target=""
+    />
+    <span
+      className="link--row-options c5 c6"
+      data-index={0}
+      href=""
+      onClick={null}
+      rel="_self"
+      size={
+        Object {
+          "large": "hecto",
+          "medium": "hecto",
+          "small": "hecto",
+        }
       }
-    }
-    target=""
-  />
+      target=""
+    />
+  </div>
 </div>
 `;

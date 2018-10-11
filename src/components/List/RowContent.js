@@ -16,6 +16,7 @@ import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
 import RowOptionsLink from "./RowOptionsLink";
+import { ROW_DATE_SMALL_WIDTH, ROW_DATE_MEDIUM_WIDTH } from "./constants";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
@@ -61,11 +62,10 @@ const LinkWrapper = styled.a`
     props.rowVariant === "withLink" ? "1px" : spacing.cozy};
   border-radius: 2px;
 
-  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? "25px" : "12px")}
-    0;
+  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? "0" : "12px")} 0;
   ${mediumAndUp`
     margin: 18px 0
-      ${props => (props.rowVariant === "withLink" ? "25px" : "18px")}
+      ${props => (props.rowVariant === "withLink" ? "0" : "18px")}
       0;
     &:hover {
       background-color: ${colors.azure.light};
@@ -76,13 +76,13 @@ const LinkWrapper = styled.a`
 
 const DateWrapper = styled.div`
   width: 61.6%;
-  max-width: 101px;
+  max-width: ${ROW_DATE_SMALL_WIDTH};
 
   ${smallAndUp`
     width: 31.1%;
   `} ${mediumAndUp`
     width: 26.8%;
-    max-width: 116px;
+    max-width: ${ROW_DATE_MEDIUM_WIDTH};
   `};
 
   ${largeAndUp`
@@ -361,16 +361,6 @@ const ListRowContent = ({
               {isOpen && onExpandShow === "title" ? title : subTitle}
             </MultilineText>
           </ContentColumn>
-
-          <RowOptionsLink
-            variant={variant}
-            isOpen={isOpen}
-            url={linkUrl}
-            index={index}
-            onClick={onOverflowClick}
-          >
-            {linkTitle}
-          </RowOptionsLink>
         </ContentRow>
 
         <DesktopContainer>
@@ -405,6 +395,16 @@ const ListRowContent = ({
         </IconButton>
       </MobileContainer>
     </ListContainer>
+
+    <RowOptionsLink
+      variant={variant}
+      isOpen={isOpen}
+      url={linkUrl}
+      index={index}
+      onClick={onOverflowClick}
+    >
+      {linkTitle}
+    </RowOptionsLink>
 
     <OverflowDesktopContainer
       className={classnames({

@@ -30,8 +30,8 @@ const Column = styled.div`
   box-sizing: border-box;
   padding-right: ${spacing.gutters.small / 2}px;
   padding-left: ${spacing.gutters.small / 2}px;
-  max-width: ${props => getSize(props.small)}%;
-  ${props => getFlexProps(props.small)}
+
+  ${({ small }) => getColumnStylesMixin(small)}
 
   ${mediumAndUp`
     padding-right: ${spacing.gutters.mediumAndUp / 2}px;

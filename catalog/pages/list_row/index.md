@@ -100,7 +100,13 @@ responsive: true
 ---
 <ListContainer>
   <ListRow
-    rowItem={listItems[0]}
+    rowItem={{
+        ...listItems[0],
+        variant: "withLink",
+        linkTitle: "Ticket Options Available",
+        linkUrl: "",
+        linkSubTitle: "on Partner Site"
+    }}
     index={0}
     onOverflowClick={() => alert('Overflow Clicked')}
     onExpandItem={({index}) => alert(`Expand ${index}`)}
