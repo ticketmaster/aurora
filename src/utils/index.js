@@ -1,4 +1,3 @@
-export { default as blur } from "./blur";
 export { default as getThemeValue } from "./getThemeValue";
 export { default as composeEventHandlers } from "./composeEventHandlers";
 export { default as getRelByTarget } from "./link";

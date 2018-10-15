@@ -4,10 +4,8 @@ import PropTypes from "prop-types";
 import { StyledButton, StyledButtonLink } from "./Base.styles";
 import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
 import getRelByTarget from "../../utils/link";
-import composeEventHandlers from "../../utils/composeEventHandlers";
-import { blur } from "../../utils";
 
-const Button = ({ variant, size, children, onClick, ...rest }) => {
+const Button = ({ variant, size, children, ...rest }) => {
   const { href } = rest;
 
   if (href) {
@@ -27,12 +25,7 @@ const Button = ({ variant, size, children, onClick, ...rest }) => {
   }
 
   return (
-    <StyledButton
-      variant={variant}
-      size={size}
-      {...rest}
-      onClick={composeEventHandlers(blur, onClick)}
-    >
+    <StyledButton variant={variant} size={size} {...rest}>
       {children}
     </StyledButton>
   );
@@ -41,14 +34,12 @@ const Button = ({ variant, size, children, onClick, ...rest }) => {
 Button.propTypes = {
   variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
   size: PropTypes.oneOf(Object.values(BUTTON_SIZES)),
-  onClick: PropTypes.func,
   children: PropTypes.node.isRequired
 };
 
 Button.defaultProps = {
   size: "regular",
-  variant: "standard",
-  onClick: null
+  variant: "standard"
 };
 
 export default Button;

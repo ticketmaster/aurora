@@ -43,9 +43,7 @@ class Toggle extends Component {
         role="switch"
         aria-checked={value}
         size={size}
-        onClick={composeEventHandlers(onClick, onToggle, () =>
-          this.activeArea.blur()
-        )}
+        onClick={composeEventHandlers(onClick, onToggle)}
         disabled={disabled}
         {...rest}
         innerRef={el => {
