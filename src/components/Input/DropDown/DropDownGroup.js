@@ -128,7 +128,6 @@ class DropDownGroup extends React.Component {
   stopInteraction = e => {
     e.preventDefault();
     e.stopPropagation();
-    return false;
   };
 
   calculateSpaceToTop = () => {
