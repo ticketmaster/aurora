@@ -219,6 +219,23 @@ describe("DropDownGroup", () => {
     expect(optionChoice).toHaveLength(1);
   });
 
+  it("Pressing tab when the dropdown is open", () => {
+    const { getByTestId } = renderComponent();
+    const preventDefault = jest.fn();
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+
+    Simulate.keyDown(getByTestId("test-dropContainer"), {
+      key: "Tab",
+      keyCode: 9,
+      which: 9,
+      bubbles: true,
+      preventDefault
+    });
+
+    expect(preventDefault).toHaveBeenCalled();
+  });
+
   it("Should select options based on typed input", () => {
     const { queryAllByText, getByTestId } = renderComponent();
 
@@ -281,6 +298,15 @@ describe("DropDownGroup", () => {
 
     const optionChoice = queryAllByText("Option One");
     expect(optionChoice).toHaveLength(2);
+  });
+
+  it("disable scroll when dropdown is open", () => {
+    const { container, getByTestId } = renderComponent();
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+    fireEvent.wheel(getByTestId("test-outSideComponent"));
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   function renderComponent(props = {}) {
