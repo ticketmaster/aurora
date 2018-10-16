@@ -111,7 +111,6 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -168,7 +167,6 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -226,7 +224,6 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 <button
   className="c0"
   disabled={true}
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -283,7 +280,6 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -340,7 +336,6 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -397,7 +392,6 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -455,7 +449,6 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 <button
   className="c0"
   disabled={true}
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -512,7 +505,6 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -569,7 +561,6 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -626,7 +617,6 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -684,7 +674,6 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 <button
   className="c0"
   disabled={true}
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -741,7 +730,6 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="small"
 >
   Dummy Label
@@ -798,7 +786,6 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="large"
 >
   Dummy Label
@@ -855,7 +842,6 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -913,7 +899,6 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 <button
   className="c0"
   disabled={true}
-  onClick={[Function]}
   size="regular"
 >
   Dummy Label
@@ -970,7 +955,6 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
 
 <button
   className="c0"
-  onClick={[Function]}
   size="small"
 >
   Dummy Label

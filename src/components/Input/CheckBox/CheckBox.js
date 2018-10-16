@@ -5,7 +5,6 @@ import { Consumer } from "../../SelectionProvider/Context";
 import { Consumer as KeyBoardConsumer } from "../../KeyboardNavigation/Context";
 import CheckBoxInput from "./CheckBoxInput";
 import composeEventHandlers from "../../../utils/composeEventHandlers";
-import { blur } from "../../../utils";
 import {
   CheckBoxWrapper,
   CheckBoxText,
@@ -53,8 +52,7 @@ const CheckBoxButton = ({
                 onClick={composeEventHandlers(
                   () => onClick({ value }),
                   () => focusSelected({ index }),
-                  props.onClick,
-                  blur
+                  props.onClick
                 )}
                 {...index !== null && { isFocused: focused === index }}
               />
