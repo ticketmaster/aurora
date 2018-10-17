@@ -13,8 +13,20 @@ import DropDownOption from "../DropDown/DropDownOption";
 describe("DropDownGroup", () => {
   afterEach(cleanup);
 
-  it("renders default input", () => {
+  it("renders default dropdown", () => {
     expect(renderComponent().container.firstChild).toMatchSnapshot();
+  });
+
+  it("renders default dropdown that should always open downwards", () => {
+    expect(
+      renderComponent({ shouldOpenDownward: true }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders small dropdown", () => {
+    expect(
+      renderComponent({ size: "small" }).container.firstChild
+    ).toMatchSnapshot();
   });
 
   it("renders variant 0 with a placeholder prop", () => {
@@ -115,8 +127,9 @@ describe("DropDownGroup", () => {
   it("Click outside should not close the dropdown when the isOpen prop equals true", () => {
     const { container, getByTestId } = renderComponent({ isOpen: true });
 
-    fireEvent.click(getByTestId("test-dropContainer"));
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
     fireEvent.click(getByTestId("test-outSideComponent"));
+
     expect(container.firstChild).toMatchSnapshot();
   });
 
@@ -219,6 +232,23 @@ describe("DropDownGroup", () => {
     expect(optionChoice).toHaveLength(1);
   });
 
+  it("Pressing tab when the dropdown is open", () => {
+    const { getByTestId } = renderComponent();
+    const preventDefault = jest.fn();
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+
+    Simulate.keyDown(getByTestId("test-dropContainer"), {
+      key: "Tab",
+      keyCode: 9,
+      which: 9,
+      bubbles: true,
+      preventDefault
+    });
+
+    expect(preventDefault).toHaveBeenCalled();
+  });
+
   it("Should select options based on typed input", () => {
     const { queryAllByText, getByTestId } = renderComponent();
 
@@ -281,6 +311,53 @@ describe("DropDownGroup", () => {
 
     const optionChoice = queryAllByText("Option One");
     expect(optionChoice).toHaveLength(2);
+  });
+
+  it("should NOT disable TAB key when the dropdown is NOT open", () => {
+    const preventDefault = jest.fn();
+    const { getByTestId } = renderComponent();
+
+    Simulate.keyDown(getByTestId("test-dropDownOptionOne"), {
+      key: "",
+      keyCode: 9,
+      which: 9,
+      bubbles: true,
+      preventDefault
+    });
+    expect(preventDefault).not.toBeCalled();
+  });
+
+  it("should disable TAB key when the dropdown is open", () => {
+    const preventDefault = jest.fn();
+    const { getByTestId } = renderComponent();
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+
+    Simulate.keyDown(getByTestId("test-dropDownOptionOne"), {
+      key: "",
+      keyCode: 9,
+      which: 9,
+      bubbles: true,
+      preventDefault
+    });
+    expect(preventDefault).toHaveBeenCalled();
+  });
+
+  it("should disable scroll when dropdown is open", () => {
+    const { container, getByTestId } = renderComponent();
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+    fireEvent.wheel(getByTestId("test-outSideComponent"));
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("should allow scroll inside the dropdown when it is open", () => {
+    const { container, getByTestId } = renderComponent();
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+    fireEvent.wheel(getByTestId("test-dropDownOptionOne"));
+
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   function renderComponent(props = {}) {
