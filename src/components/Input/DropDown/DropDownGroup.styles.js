@@ -39,10 +39,6 @@ export const StyledGroup = styled.label`
     justify-content: flex-end;
   }
 
-  &:focus {
-    border: solid 2px ${getThemeValue("primary", "base")};
-  }
-
   &.dropdown--active {
     margin: 0;
     border: solid 1px ${getThemeValue("gray02")};
