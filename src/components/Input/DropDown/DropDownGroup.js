@@ -34,7 +34,7 @@ class DropDownGroup extends React.Component {
     // disables scroll when dropdown is open
     document.addEventListener("wheel", this.disableScroll);
     // scroll dropdown to top after opening
-    if (this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
+    if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
     }
   }
