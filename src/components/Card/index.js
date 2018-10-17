@@ -6,6 +6,7 @@ const Card = ContainerBlock.extend`
   background-color: ${themes.global.white.base};
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.12);
   padding: ${spacing.moderate};
+  border: none;
 `;
 
 Card.displayName = "Card";
