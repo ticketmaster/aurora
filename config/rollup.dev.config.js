@@ -12,7 +12,6 @@ export default {
       globals: {
         react: "React",
         "react-dom": "ReactDOM",
-        "react-addons-css-transition-group": "ReactCSSTransitionGroup",
         "react-transition-group": "ReactTransitionGroup",
         "prop-types": "PropTypes",
         "styled-components": "styled",
@@ -51,7 +50,6 @@ export default {
   external: [
     "react",
     "react-dom",
-    "react-addons-css-transition-group",
     "react-transition-group",
     "prop-types",
     "styled-components",
