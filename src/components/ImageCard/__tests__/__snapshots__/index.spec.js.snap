@@ -12,6 +12,7 @@ exports[`ImageCard renders card without overlay 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
 }
 
 .c2 {
@@ -80,6 +81,7 @@ exports[`ImageCard renders standard card 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
 }
 
 .c2 {
@@ -181,6 +183,7 @@ exports[`ImageCard renders type = half 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
   width: 50%;
 }
 
@@ -314,6 +317,7 @@ exports[`ImageCard renders with custom image 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
 }
 
 .c2 {
@@ -431,6 +435,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
 }
 
 .c2 {
@@ -556,6 +561,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
   padding: 16px;
+  border: none;
 }
 
 .c2 {
