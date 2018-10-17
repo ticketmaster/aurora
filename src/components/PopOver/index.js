@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import { CSSTransition } from "react-transition-group";
 import { themes, constants, spacing } from "../../theme";
 
 const StyledPopOver = styled.div`
@@ -12,8 +13,43 @@ const StyledPopOver = styled.div`
   max-width: 260px;
   padding: ${spacing.moderate};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
-  top: ${({ top }) => `${top}px`};
-  left: ${({ left }) => `${left}px`};
+  transition: opacity 0.1s ${constants.easing.easeInQuad},
+    transform 0.1s ${constants.easing.easeInQuad};
+
+  &.open-enter {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  &.open-enter-active {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
+      transform 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-enter-done {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
+      transform 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-exit {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-exit-active {
+    display: block;
+    opacity: 0;
+    transform: scale(0.7);
+  }
 `;
 
 const MIN_SPACE_FROM_EDGE = 24;
@@ -55,13 +91,19 @@ class PopOver extends Component {
    * @position(object) - top and bottom position of the elemt that triggers showing PopOver;
    * Mouse horizontal position on the sreen - so we can center the PopOver;
    * Additional container position and size
-   * @state(object) - PopOver width and height;
+   * @dimensions(object) - PopOver width and height;
    * Page scroll position
    * Viewport size
    * @reduce(object) - additional top/bottom screen reduction cause by sticky header/footer
    */
-  static calculatePosition(position, state, reduce) {
-    const { width, windowScroll, height, windowWidth, windowHeight } = state;
+  static calculatePosition(position, dimensions, reduce) {
+    const {
+      width,
+      windowScroll,
+      height,
+      windowWidth,
+      windowHeight
+    } = dimensions;
     const { top: reduceTop, bottom: reduceBottom } = reduce;
     const {
       elBottom,
@@ -107,25 +149,10 @@ class PopOver extends Component {
     };
   }
 
-  /*
-   * Every time we hide PopOver we set its dimensions to 0 instead of doing it in setDimensions function
-   * which will call setting new state and triggering another render cycle
-   */
-  static getDerivedStateFromProps(props) {
-    if (!props.isVisible) {
-      return {
-        width: 0,
-        height: 0
-      };
-    }
-
-    return null;
-  }
-
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.dimensions = {
       width: 0,
       height: 0,
       windowScroll: 0,
@@ -141,9 +168,34 @@ class PopOver extends Component {
     };
   }
 
-  componentDidUpdate() {
-    if (this.myRef.current) {
+  componentDidUpdate(prevProps) {
+    /*
+     * This causes force update of the popover position if we use only one popover and we transiotion from
+     * one zone that triggers the popover to another that triggers the same popover but with different place to display
+     */
+    const {
+      position: { mouseX, elTop, elBottom },
+      isVisible,
+      position,
+      reduceTop,
+      reduceBottom
+    } = this.props;
+
+    if (
+      (prevProps.position.mouseX !== mouseX ||
+        prevProps.position.elTop !== elTop ||
+        prevProps.position.elBottom !== elBottom) &&
+      isVisible &&
+      prevProps.isVisible === isVisible
+    ) {
       this.setDimensions();
+      this.pos = PopOver.calculatePosition(position, this.dimensions, {
+        top: reduceTop,
+        bottom: reduceBottom
+      });
+
+      this.myRef.current.style.top = `${this.pos.y}px`;
+      this.myRef.current.style.left = `${this.pos.x}px`;
     }
   }
 
@@ -155,7 +207,7 @@ class PopOver extends Component {
       windowHeight,
       width,
       height
-    } = this.state;
+    } = this.dimensions;
     const dimensions = {};
     if (global.window && isVisible) {
       const {
@@ -194,37 +246,49 @@ class PopOver extends Component {
       dimensions.width &&
       dimensions.height
     ) {
-      this.setState(dimensions);
+      this.dimensions = {
+        ...this.dimensions,
+        ...dimensions
+      };
       return true;
     }
 
     return false;
   };
 
-  render() {
-    const {
-      children,
-      isVisible,
-      position,
-      reduceTop,
-      reduceBottom
-    } = this.props;
-    if (isVisible && !this.setDimensions()) {
-      this.pos = PopOver.calculatePosition(position, this.state, {
+  popoverEnter = () => {
+    const { isVisible, position, reduceTop, reduceBottom } = this.props;
+
+    if (isVisible) {
+      this.setDimensions();
+      this.pos = PopOver.calculatePosition(position, this.dimensions, {
         top: reduceTop,
         bottom: reduceBottom
       });
     }
 
+    this.myRef.current.style.top = `${this.pos.y}px`;
+    this.myRef.current.style.left = `${this.pos.x}px`;
+  };
+
+  render() {
+    const { children, isVisible } = this.props;
+
     return (
-      <StyledPopOver
-        innerRef={this.myRef}
-        isVisible={isVisible}
-        left={this.pos.x}
-        top={this.pos.y}
+      <CSSTransition
+        in={isVisible}
+        key="popover-animation"
+        timeout={300}
+        classNames="open"
       >
-        {children}
-      </StyledPopOver>
+        <StyledPopOver
+          innerRef={this.myRef}
+          isVisible={isVisible}
+          onEnter={this.popoverEnter}
+        >
+          {children}
+        </StyledPopOver>
+      </CSSTransition>
     );
   }
 }
