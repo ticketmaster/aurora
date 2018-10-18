@@ -1417,7 +1417,8 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       <div
         class="sc-EHOje vdlIp"
       >
-        Selected Option: 
+        Selected Option:
+         
       </div>
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
@@ -1632,6 +1633,250 @@ exports[`DropDownGroup should disable scroll when dropdown is open 1`] = `
             value="ValueThree"
           >
             Option Three
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption 1`] = `
+<div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__Sort_By:"
+    class="sc-bxivhb pBoyv"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+    >
+      <span
+        class="sc-htpNat irkcXP"
+        id="hidden-label__Sort_By:"
+      >
+        Sort By:
+      </span>
+      <div
+        class="sc-EHOje vdlIp"
+      >
+        Sort By:
+         
+        Date
+      </div>
+      <svg
+        class="dropdown--no-border sc-ifAKCX bGhIY"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
+      style="max-height: 0;"
+    >
+      <div>
+        <div
+          class="sc-bZQynM koCnbp"
+          role="listbox"
+        >
+          <span
+            class="dropdown__selected sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="date"
+          >
+            Date
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="distance"
+          >
+            Distance - 
+            Closest
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="price"
+          >
+            Price 
+            <span>
+              On sale
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption 1`] = `
+<div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__Sort_By:"
+    class="sc-bxivhb pBoyv"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+    >
+      <span
+        class="sc-htpNat irkcXP"
+        id="hidden-label__Sort_By:"
+      >
+        Sort By:
+      </span>
+      <div
+        class="sc-EHOje vdlIp"
+      >
+        Sort By:
+         
+        Price 
+        <span>
+          On sale
+        </span>
+      </div>
+      <svg
+        class="dropdown--no-border sc-ifAKCX bGhIY"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
+      style="max-height: 0;"
+    >
+      <div>
+        <div
+          class="sc-bZQynM koCnbp"
+          role="listbox"
+        >
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="date"
+          >
+            Date
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="distance"
+          >
+            Distance - 
+            Closest
+          </span>
+          <span
+            class="dropdown__selected sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="price"
+          >
+            Price 
+            <span>
+              On sale
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string values is passed to each DropDownOption 1`] = `
+<div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__Sort_By:"
+    class="sc-bxivhb pBoyv"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+    >
+      <span
+        class="sc-htpNat irkcXP"
+        id="hidden-label__Sort_By:"
+      >
+        Sort By:
+      </span>
+      <div
+        class="sc-EHOje vdlIp"
+      >
+        Sort By:
+         
+        Distance - 
+        Closest
+      </div>
+      <svg
+        class="dropdown--no-border sc-ifAKCX bGhIY"
+        fill="currentColor"
+        height="12"
+        viewBox="0 0 15 7"
+        width="12"
+      >
+        <path
+          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large sc-bwzfXH fpSUnm"
+      style="max-height: 0;"
+    >
+      <div>
+        <div
+          class="sc-bZQynM koCnbp"
+          role="listbox"
+        >
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="date"
+          >
+            Date
+          </span>
+          <span
+            class="dropdown__selected sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="distance"
+          >
+            Distance - 
+            Closest
+          </span>
+          <span
+            class="sc-gzVnrw iJMNFP"
+            role="option"
+            tabindex="-1"
+            value="price"
+          >
+            Price 
+            <span>
+              On sale
+            </span>
           </span>
         </div>
       </div>

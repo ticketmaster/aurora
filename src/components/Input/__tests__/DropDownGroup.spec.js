@@ -11,65 +11,116 @@ import DropDownGroup from "../DropDown/DropDownGroup";
 import DropDownOption from "../DropDown/DropDownOption";
 
 describe("DropDownGroup", () => {
+  function renderTestComponentOne(props = {}) {
+    return renderIntoDocument(
+      <div data-testid="test-outSideComponent">
+        <div data-testid="something">something</div>
+        <DropDownGroup {...props} data-testid="test-dropContainer">
+          <DropDownOption
+            data-testid="test-dropDownOptionOne"
+            value="ValueOne"
+            index={0}
+          >
+            Option One
+          </DropDownOption>
+          <DropDownOption
+            data-testid="test-dropDownOptionTwo"
+            value="ValueTwo"
+            index={1}
+          >
+            Second Option
+          </DropDownOption>
+          <DropDownOption
+            data-testid="test-dropDownOptionThree"
+            value="ValueThree"
+            index={2}
+          >
+            Option Three
+          </DropDownOption>
+        </DropDownGroup>
+      </div>
+    );
+  }
+
+  function renderTestComponentTwo(props = {}) {
+    return renderIntoDocument(
+      <DropDownGroup {...props} variant={1} label="Sort By:">
+        <DropDownOption value="date" index={0}>
+          {"Date"}
+          {null}
+        </DropDownOption>
+        <DropDownOption value="distance" index={1}>
+          {"Distance - "}
+          {"Closest"}
+        </DropDownOption>
+        <DropDownOption value="price" index={2}>
+          {"Price "}
+          {<span>On sale</span>}
+        </DropDownOption>
+      </DropDownGroup>
+    );
+  }
+
   afterEach(cleanup);
 
   it("renders default dropdown", () => {
-    expect(renderComponent().container.firstChild).toMatchSnapshot();
+    expect(renderTestComponentOne().container.firstChild).toMatchSnapshot();
   });
 
   it("renders default dropdown that should always open downwards", () => {
     expect(
-      renderComponent({ shouldOpenDownward: true }).container.firstChild
+      renderTestComponentOne({ shouldOpenDownward: true }).container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders small dropdown", () => {
     expect(
-      renderComponent({ size: "small" }).container.firstChild
+      renderTestComponentOne({ size: "small" }).container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders variant 0 with a placeholder prop", () => {
     expect(
-      renderComponent({ placeholder: "Select An Option", variant: 1 }).container
-        .firstChild
+      renderTestComponentOne({ placeholder: "Select An Option", variant: 1 })
+        .container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders variant 1 with a label prop", () => {
     expect(
-      renderComponent({ label: "Selected Option:", variant: 1 }).container
-        .firstChild
+      renderTestComponentOne({ label: "Selected Option:", variant: 1 })
+        .container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders input correctly when the isOpen prop with a value of true is passed", () => {
     expect(
-      renderComponent({ isOpen: true }).container.firstChild
+      renderTestComponentOne({ isOpen: true }).container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders input correctly when the keywordSearch prop with a value of false is passed", () => {
     expect(
-      renderComponent({ keywordSearch: false }).container.firstChild
+      renderTestComponentOne({ keywordSearch: false }).container.firstChild
     ).toMatchSnapshot();
   });
 
   it("renders input correctly when the withKeyboardProvider prop with a value of false is passed", () => {
     expect(
-      renderComponent({ withKeyboardProvider: false }).container.firstChild
+      renderTestComponentOne({ withKeyboardProvider: false }).container
+        .firstChild
     ).toMatchSnapshot();
   });
 
   it("Should open the drop down onClick", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.click(getByTestId("test-dropContainer"));
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("Should close the drop down on click outside", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.click(getByTestId("test-dropContainer"));
     fireEvent.click(getByTestId("something"));
@@ -78,13 +129,13 @@ describe("DropDownGroup", () => {
   });
 
   it("Should not focus onClick", () => {
-    const { container } = renderComponent({ disabled: true });
+    const { container } = renderTestComponentOne({ disabled: true });
     fireEvent.mouseDown(container.querySelector("label"));
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("Escape key should close the drop down", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "Escape",
@@ -95,7 +146,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Arrow key up should open the drop down", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowUp",
@@ -106,7 +157,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Arrow down arrow should open the drop down", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowDown",
@@ -117,7 +168,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Click outside should close the dropdown", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.click(getByTestId("test-dropContainer"));
     fireEvent.click(getByTestId("test-outSideComponent"));
@@ -125,7 +176,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Click outside should not close the dropdown when the isOpen prop equals true", () => {
-    const { container, getByTestId } = renderComponent({ isOpen: true });
+    const { container, getByTestId } = renderTestComponentOne({ isOpen: true });
 
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
     fireEvent.click(getByTestId("test-outSideComponent"));
@@ -135,7 +186,7 @@ describe("DropDownGroup", () => {
 
   it("Space bar should select and close dropdown", () => {
     const onChange = jest.fn();
-    const { container, getByTestId } = renderComponent({ onChange });
+    const { container, getByTestId } = renderTestComponentOne({ onChange });
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowDown",
@@ -155,7 +206,7 @@ describe("DropDownGroup", () => {
 
   it("Space bar should select and not close dropdown when the isOpen prop equals true", () => {
     const onChange = jest.fn();
-    const { container, getByTestId } = renderComponent({
+    const { container, getByTestId } = renderTestComponentOne({
       onChange,
       isOpen: true
     });
@@ -177,7 +228,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Should remove event listener when unmount", () => {
-    const { container, unmount } = renderComponent();
+    const { container, unmount } = renderTestComponentOne();
 
     unmount();
     expect(container.innerHTML).toMatchSnapshot();
@@ -185,7 +236,7 @@ describe("DropDownGroup", () => {
 
   it("Should invoke an onChange handler option selected", () => {
     const onChange = jest.fn();
-    const { getByTestId } = renderComponent({ onChange });
+    const { getByTestId } = renderTestComponentOne({ onChange });
 
     Simulate.click(getByTestId("test-dropContainer"));
     Simulate.click(getByTestId("test-dropDownOptionOne"));
@@ -194,7 +245,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Should invoke an onChange handler when passed value to group", () => {
-    const { queryAllByText } = renderComponent({
+    const { queryAllByText } = renderTestComponentOne({
       value: ["ValueOne"]
     });
 
@@ -203,7 +254,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Selecting options after passing in values", () => {
-    const { queryAllByText, getByTestId } = renderComponent({
+    const { queryAllByText, getByTestId } = renderTestComponentOne({
       value: ["ValueOne"]
     });
 
@@ -233,7 +284,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Pressing tab when the dropdown is open", () => {
-    const { getByTestId } = renderComponent();
+    const { getByTestId } = renderTestComponentOne();
     const preventDefault = jest.fn();
 
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
@@ -250,7 +301,7 @@ describe("DropDownGroup", () => {
   });
 
   it("Should select options based on typed input", () => {
-    const { queryAllByText, getByTestId } = renderComponent();
+    const { queryAllByText, getByTestId } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowDown",
@@ -279,7 +330,9 @@ describe("DropDownGroup", () => {
 
   it("if entered texted doesn't not match then select the option that matched previously", () => {
     const onChange = jest.fn();
-    const { queryAllByText, getByTestId } = renderComponent({ onChange });
+    const { queryAllByText, getByTestId } = renderTestComponentOne({
+      onChange
+    });
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowDown",
@@ -315,7 +368,7 @@ describe("DropDownGroup", () => {
 
   it("should NOT disable TAB key when the dropdown is NOT open", () => {
     const preventDefault = jest.fn();
-    const { getByTestId } = renderComponent();
+    const { getByTestId } = renderTestComponentOne();
 
     Simulate.keyDown(getByTestId("test-dropDownOptionOne"), {
       key: "",
@@ -329,7 +382,7 @@ describe("DropDownGroup", () => {
 
   it("should disable TAB key when the dropdown is open", () => {
     const preventDefault = jest.fn();
-    const { getByTestId } = renderComponent();
+    const { getByTestId } = renderTestComponentOne();
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
 
     Simulate.keyDown(getByTestId("test-dropDownOptionOne"), {
@@ -343,7 +396,7 @@ describe("DropDownGroup", () => {
   });
 
   it("should disable scroll when dropdown is open", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
     fireEvent.wheel(getByTestId("test-outSideComponent"));
@@ -352,7 +405,7 @@ describe("DropDownGroup", () => {
   });
 
   it("should allow scroll inside the dropdown when it is open", () => {
-    const { container, getByTestId } = renderComponent();
+    const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
     fireEvent.wheel(getByTestId("test-dropDownOptionOne"));
@@ -360,36 +413,20 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  function renderComponent(props = {}) {
-    return renderIntoDocument(
-      <div data-testid="test-outSideComponent">
-        <div data-testid="something">something</div>
-        <DropDownGroup {...props} data-testid="test-dropContainer">
-          <DropDownOption
-            data-testid="test-dropDownOptionOne"
-            value="ValueOne"
-            index={0}
-          >
-            Option One
-          </DropDownOption>
-          <DropDownOption
-            data-testid="test-dropDownOptionTwo"
-            value="ValueTwo"
-            index={1}
-          >
-            Second Option
-          </DropDownOption>
-          <DropDownOption
-            data-testid="test-dropDownOptionThree"
-            value="ValueThree"
-            index={2}
-          >
-            Option Three
-          </DropDownOption>
-        </DropDownGroup>
-      </div>
-    );
-  }
+  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption", () => {
+    const { container } = renderTestComponentTwo({ value: ["date"] });
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string values is passed to each DropDownOption", () => {
+    const { container } = renderTestComponentTwo({ value: ["distance"] });
+    expect(container).toMatchSnapshot();
+  });
+
+  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption", () => {
+    const { container } = renderTestComponentTwo({ value: ["price"] });
+    expect(container).toMatchSnapshot();
+  });
 });
 
 describe("DropDownOption", () => {
