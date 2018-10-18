@@ -141,3 +141,4 @@ export { default as Backdrop } from "./components/Backdrop";
 export { BackdropProvider } from "./components/Backdrop/Context";
 export { ContainerProvider } from "./components/List/Context";
 export { default as PopOver } from "./components/PopOver";
+export { default as Tooltip } from "./components/Tooltip";
