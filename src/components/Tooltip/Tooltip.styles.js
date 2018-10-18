@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes, constants, spacing } from "../../theme";
+import { themes, constants, spacing, typography } from "../../theme";
 
 const StyledTooltip = styled.div`
   background-color: ${themes.global.white.base};
@@ -8,8 +8,10 @@ const StyledTooltip = styled.div`
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
   position: absolute;
   max-width: 260px;
+  color: ${themes.global.gray01};
   padding: ${spacing.cozy};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
+  font-size: ${typography.size.uno};
   transition: opacity 0.1s ${constants.easing.easeInQuad},
     transform 0.1s ${constants.easing.easeInQuad};
 
@@ -18,24 +20,24 @@ const StyledTooltip = styled.div`
     position: absolute;
     transition: opacity 0.1s ${constants.easing.easeInQuad},
       scale 0.1s ${constants.easing.easeInQuad};
-    bottom: -1px;
     display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
     border-right: 1px solid ${themes.global.gray02};
     border-bottom: 1px solid ${themes.global.gray02};
-    width: 19px;
-    height: 19px;
+    border-top-left-radius: 100%;
+    width: 12px;
+    height: 12px;
     transform: translateY(-50%) rotate(-135deg);
     background: ${themes.global.white.base};
     ${({ direction }) => {
       switch (direction) {
         case "top":
-          return "left: calc(50% - 9.5px); bottom: -20px; transform: translateY(-50%) rotate(45deg);";
+          return "left: calc(50% - 9.5px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
         case "bottom":
           return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
         case "left":
-          return "top: 10px; right: -10px; transform: translateY(0%) rotate(-45deg);";
+          return "top: 10px; right: -7px; transform: translateY(0%) rotate(-45deg);";
         case "right":
-          return "top: 10px; left: -10px; transform: translateY(0%) rotate(135deg);";
+          return "top: 10px; left: -7px; transform: translateY(0%) rotate(135deg);";
         default:
           return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
       }
