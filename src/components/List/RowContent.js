@@ -49,6 +49,16 @@ const ListContainer = styled.div`
   background-color: ${colors.white.base};
   align-items: stretch;
   display: flex;
+  padding-top: calc(12px + ${spacing.cozy});
+  padding-bottom: ${props =>
+    props.rowVariant === "withLink" ? "1px" : `calc(12px + ${spacing.cozy})`};
+  ${mediumAndUp`
+    padding-top: calc(18px + ${spacing.cozy});
+    padding-bottom: ${props =>
+      props.rowVariant === "withLink"
+        ? "0"
+        : `calc(18px + ${spacing.cozy})`};   
+  `};
 `;
 
 const LinkWrapper = styled.a`
@@ -57,20 +67,11 @@ const LinkWrapper = styled.a`
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
-  padding-top: ${spacing.cozy};
-  padding-bottom: ${props =>
-    props.rowVariant === "withLink" ? "1px" : spacing.cozy};
   border-radius: 2px;
-
-  margin: 12px 0 ${props => (props.rowVariant === "withLink" ? "0" : "12px")} 0;
   ${mediumAndUp`
-    margin: 18px 0
-      ${props => (props.rowVariant === "withLink" ? "0" : "18px")}
-      0;
     &:hover {
       background-color: ${colors.azure.light};
     }
-
   `};
 `;
 
@@ -257,7 +258,7 @@ const ListRowContent = ({
     {...rest}
   >
     {/* this class name is for automation purposes please do not remove or modify the name */}
-    <ListContainer className="list__container">
+    <ListContainer className="list__container" rowVariant={variant}>
       <RowToggler
         isOpen={isOpen}
         index={index}
@@ -271,7 +272,6 @@ const ListRowContent = ({
         aria-label={buttonText}
         onClick={onClick}
         href={url}
-        rowVariant={variant}
         // this class name is for automation purposes please do not remove or modify the name
         className="link__wrapper"
       >
