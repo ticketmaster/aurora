@@ -121,6 +121,8 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
 }
 
 .c5 {
@@ -136,10 +138,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
-  padding-top: 8px;
-  padding-bottom: 8px;
   border-radius: 2px;
-  margin: 12px 0 12px 0;
 }
 
 .c6 {
@@ -408,10 +407,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
-    margin: 18px 0 18px 0;
+  .c2 {
+    padding-top: calc(18px + 8px);
+    padding-bottom: calc(18px + 8px);
   }
+}
 
+@media screen and (min-width:768px) {
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
@@ -929,6 +931,8 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: 1px;
 }
 
 .c5 {
@@ -944,10 +948,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
-  padding-top: 8px;
-  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -1295,10 +1296,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
-    margin: 18px 0 0 0;
+  .c2 {
+    padding-top: calc(18px + 8px);
+    padding-bottom: 0;
   }
+}
 
+@media screen and (min-width:768px) {
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
@@ -1874,6 +1878,8 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: 1px;
 }
 
 .c5 {
@@ -1889,10 +1895,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
-  padding-top: 8px;
-  padding-bottom: 1px;
   border-radius: 2px;
-  margin: 12px 0 0 0;
 }
 
 .c6 {
@@ -2240,10 +2243,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
-    margin: 18px 0 0 0;
+  .c2 {
+    padding-top: calc(18px + 8px);
+    padding-bottom: 0;
   }
+}
 
+@media screen and (min-width:768px) {
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
@@ -2743,6 +2749,8 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
 }
 
 .c5 {
@@ -2758,10 +2766,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
-  padding-top: 8px;
-  padding-bottom: 8px;
   border-radius: 2px;
-  margin: 12px 0 12px 0;
 }
 
 .c6 {
@@ -3030,10 +3035,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
-    margin: 18px 0 18px 0;
+  .c2 {
+    padding-top: calc(18px + 8px);
+    padding-bottom: calc(18px + 8px);
   }
+}
 
+@media screen and (min-width:768px) {
   .c5:hover {
     background-color: rgba(2,108,223,0.2);
   }
