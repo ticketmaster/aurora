@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Transition } from "react-transition-group";
@@ -76,15 +76,13 @@ class DropDownGroup extends React.Component {
   };
 
   getCurrentSelection = value => {
-    const [label = ""] = React.Children.toArray(this.props.children).filter(
+    const selectedItem = React.Children.toArray(this.props.children).find(
       c => c.props.value === value
     );
 
-    if (label) {
-      return label.props.children;
-    }
-    return label;
+    return selectedItem && selectedItem.props.children;
   };
+
   closeDropdown = () => {
     this.setState(() => ({
       // set openUpward to false when closing the dropdown, otherwise check position
@@ -164,7 +162,11 @@ class DropDownGroup extends React.Component {
     }
 
     if (variant === 1 && label.length > 0) {
-      return `${label} ${this.getCurrentSelection(selected[0])}`;
+      return (
+        <Fragment>
+          {label} {this.getCurrentSelection(selected[0])}
+        </Fragment>
+      );
     }
 
     return this.getCurrentSelection(selected[0]);
