@@ -1,10 +1,11 @@
 import ContainerBlock from "../Container/Block.styles";
 import { constants, themes, spacing } from "../../theme";
+import { cardBoxShadow } from "../../theme/constants";
 
 const Card = ContainerBlock.extend`
   border-radius: ${constants.borderRadius.large};
   background-color: ${themes.global.white.base};
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: ${cardBoxShadow};
   padding: ${spacing.moderate};
   border: none;
 `;
