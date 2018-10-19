@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { themes, constants, spacing, typography } from "../../theme";
 import { popContainersBoxShadow } from "../../theme/constants";
-import { directions, variants } from "./constants";
+import { directions, variants, seatTooltipSizes } from "./constants";
 
-const StyledTooltip = styled.div`
+export const StyledTooltip = styled.div`
   background-color: ${({ variant }) =>
     variant === variants.dark
       ? themes.global.darkFill
@@ -120,4 +120,50 @@ const StyledTooltip = styled.div`
   }
 `;
 
-export default StyledTooltip;
+export const SeatData = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: ${({ size }) =>
+    size === seatTooltipSizes.large ? spacing.moderate : spacing.cozy};
+  border-bottom: ${({ hasChildren }) =>
+    hasChildren ? `1px solid ${themes.global.gray02}` : "none"};
+  line-height: 1;
+`;
+
+export const SeatDataColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const ColumnHeading = styled.div`
+  font-size: ${({ size }) =>
+    size === seatTooltipSizes.large
+      ? typography.size.hecto
+      : typography.size.uno};
+  text-transform: uppercase;
+  margin-bottom: ${({ size }) =>
+    size === seatTooltipSizes.large ? spacing.cozy : spacing.cozy};
+  color: ${themes.global.gray02};
+`;
+
+export const ColumnText = styled.div`
+  font-size: ${({ size }) =>
+    size === seatTooltipSizes.large
+      ? typography.size.kilo
+      : typography.size.hecto};
+  font-weight: ${typography.weight.semiBold};
+  color: ${({ variant }) =>
+    variant === "dark" ? themes.global.white.base : themes.global.gray01};
+`;
+
+export const AdditionalData = styled.div`
+  padding: ${({ size }) =>
+    size === seatTooltipSizes.large ? spacing.moderate : spacing.cozy};
+  font-size: ${({ size }) =>
+    size === seatTooltipSizes.large
+      ? typography.size.hecto
+      : typography.size.uno};
+  color: ${({ variant }) =>
+    variant === "dark" ? themes.global.white.base : themes.global.gray01};
+`;

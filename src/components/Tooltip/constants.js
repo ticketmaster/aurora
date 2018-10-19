@@ -11,3 +11,8 @@ export const variants = {
   dark: "dark",
   light: "light"
 };
+
+export const seatTooltipSizes = {
+  small: "small",
+  large: "large"
+};
