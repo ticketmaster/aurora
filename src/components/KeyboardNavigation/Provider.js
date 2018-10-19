@@ -5,6 +5,11 @@ import { ARROWUP, ARROWDOWN, SPACEBAR } from "../../utils/keyCharCodes";
 
 const { forEach } = React.Children;
 
+const getSelectedChild = (children, selectedValue) =>
+  React.Children.toArray(children).find(
+    thisArg => thisArg.props.value === selectedValue
+  );
+
 export default class KeyBoardProvider extends React.Component {
   static propTypes = {
     children(props, propName, componentName) {
@@ -35,18 +40,28 @@ export default class KeyBoardProvider extends React.Component {
   };
 
   static getDerivedStateFromProps(props, state) {
-    if (!props.selected || props.selected.length === 0) return null;
+    const { selected, children } = props;
+
+    if (!selected || !selected.length) return null;
+
+    const selectedValue = selected[selected.length - 1];
 
     if (state.firstUpdate === true) {
-      const childrenArray = React.Children.toArray(props.children);
+      const selectedChild = getSelectedChild(children, selectedValue);
 
-      const valueOfSelected = props.selected[0];
-      const selectedChild = childrenArray.find(
-        thisArg => thisArg.props.value === valueOfSelected
-      );
       return {
-        focused: selectedChild.props.index,
-        firstUpdate: false
+        focused: selectedChild ? selectedChild.props.index : 0,
+        firstUpdate: false,
+        prevSelectedValue: selectedValue
+      };
+    }
+
+    if (selectedValue !== state.prevSelectedValue) {
+      const selectedChild = getSelectedChild(children, selectedValue);
+
+      return {
+        focused: selectedChild ? selectedChild.props.index : 0,
+        prevSelectedValue: selectedValue
       };
     }
 
@@ -118,7 +133,8 @@ export default class KeyBoardProvider extends React.Component {
     focused: 0,
     focusSelected: this.onClick,
     word: "",
-    firstUpdate: true
+    firstUpdate: true,
+    prevSelectedValue: ""
   };
   /* eslint-enable */
 
