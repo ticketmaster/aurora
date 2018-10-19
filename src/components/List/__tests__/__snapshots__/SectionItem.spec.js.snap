@@ -3,14 +3,12 @@
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 <a
   aria-label="Section Item"
-  class="sc-ckVGcZ section-item ffrasD sc-iwsKbI dVGldd"
+  class="sc-kkGfuU section-item fuPFux sc-bZQynM cdIImQ"
   href="https://ticketmaster.com/"
-  rel="_self"
   role="link"
-  target=""
 >
   <div
-    class="sc-jKJlTe bOMZEa"
+    class="sc-iAyFgw dKukRT"
   >
     <svg
       height="26"
@@ -38,7 +36,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-hMqMXs section-item-link bcWcpG sc-eNQAEJ iXeQum"
+      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
     >
       VIP Packages
     </div>
@@ -48,15 +46,15 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 
 exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 <div
-  class="sc-jlyJG cRbOdf"
+  class="sc-hzDkRC kqTZRu"
 >
   <div
     aria-label="Section Item"
-    class="sc-dxgOiQ section-item gHYEhd"
+    class="sc-kEYyzF section-item bypXBG"
     role="link"
   >
     <div
-      class="sc-jKJlTe bOMZEa"
+      class="sc-iAyFgw dKukRT"
     >
       <svg
         height="26"
@@ -84,7 +82,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
     </div>
     <div>
       <div
-        class="sc-hMqMXs section-item-link bcWcpG sc-eNQAEJ iXeQum"
+        class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
       >
         VIP Packages
       </div>
@@ -96,11 +94,11 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
 <div
   aria-label="Section Item"
-  class="sc-dxgOiQ section-item gHYEhd"
+  class="sc-kEYyzF section-item bypXBG"
   role="link"
 >
   <div
-    class="sc-jKJlTe bOMZEa"
+    class="sc-iAyFgw dKukRT"
   >
     <svg
       height="26"
@@ -128,7 +126,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-hMqMXs section-item-link bcWcpG sc-eNQAEJ iXeQum"
+      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
     >
       VIP Packages
     </div>

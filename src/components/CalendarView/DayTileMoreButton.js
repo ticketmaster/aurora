@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Link } from "../Text";
+import Link from "../Text/LinkDeprecated";
 
 import { spacing } from "../../theme";
 import { getThemeValue } from "../../utils";

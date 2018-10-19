@@ -784,15 +784,20 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c25 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -803,11 +808,23 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   cursor: pointer;
 }
 
-.c25:focus,
-.c25:active,
-.c25:visited,
-.c25:hover {
-  color: rgba(2,108,223,1);
+.c25:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c25:visited {
+  color: #013670;
+}
+
+.c25:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c25:hover {
@@ -815,23 +832,40 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c27 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
   cursor: pointer;
 }
 
-.c27:focus,
-.c27:active,
-.c27:visited,
-.c27:hover {
-  color: rgba(2,108,223,1);
+.c27:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c27:visited {
+  color: #013670;
+}
+
+.c27:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c27:hover {
@@ -1154,30 +1188,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c27 {
-    font-size: 14px;
   }
 }
 
@@ -1643,15 +1653,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           data-index={0}
           href={null}
           onClick={[Function]}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
+          size="small"
         >
           Ticket Options Available
         </button>
@@ -1660,15 +1662,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           data-index={0}
           href=""
           onClick={null}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
+          size="small"
         >
           Ticket Options Available
         </span>
@@ -1732,22 +1726,39 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c27 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
 }
 
-.c27:focus,
-.c27:active,
-.c27:visited,
-.c27:hover {
-  color: rgba(2,108,223,1);
+.c27:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c27:visited {
+  color: #013670;
+}
+
+.c27:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c27:hover {
@@ -1755,15 +1766,20 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c25 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1774,11 +1790,23 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   cursor: pointer;
 }
 
-.c25:focus,
-.c25:active,
-.c25:visited,
-.c25:hover {
-  color: rgba(2,108,223,1);
+.c25:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c25:visited {
+  color: #013670;
+}
+
+.c25:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c25:hover {
@@ -2101,30 +2129,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c25 {
-    font-size: 14px;
   }
 }
 
@@ -2590,15 +2594,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           data-index={0}
           href={null}
           onClick={[Function]}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
+          size="small"
         >
           Ticket options available
         </button>
@@ -2607,15 +2603,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           data-index={0}
           href="/"
           onClick={null}
-          rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
-          target=""
+          size="small"
         >
           Ticket options available
         </a>
