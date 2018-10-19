@@ -10,6 +10,12 @@ describe("Tooltip", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("dark should match snapshot", () => {
+    const tree = renderer.create(<Tooltip isVisible variant="dark" />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it("should match snapshot when visisble and direction is bottom", () => {
     const tree = renderer
       .create(<Tooltip isVisible direction="bottom" />)

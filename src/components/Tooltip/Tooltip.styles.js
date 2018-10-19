@@ -1,14 +1,25 @@
 import styled from "styled-components";
 import { themes, constants, spacing, typography } from "../../theme";
+import { popContainersBoxShadow } from "../../theme/constants";
+import { directions, variants } from "./constants";
 
 const StyledTooltip = styled.div`
-  background-color: ${themes.global.white.base};
-  border: 1px solid ${themes.global.gray02};
+  background-color: ${({ variant }) =>
+    variant === variants.dark
+      ? themes.global.darkFill
+      : themes.global.white.base};
+  border: ${({ variant }) =>
+    variant === variants.dark
+      ? `1px solid ${themes.global.darkFill}`
+      : `1px solid ${themes.global.gray02}`};
   border-radius: ${constants.borderRadius.large};
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: ${popContainersBoxShadow};
   position: absolute;
   max-width: 260px;
-  color: ${themes.global.gray01};
+  color: ${({ variant }) =>
+    variant === variants.dark
+      ? themes.global.white.base
+      : themes.global.gray01};
   padding: ${spacing.cozy};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
   font-size: ${typography.size.uno};
@@ -21,25 +32,30 @@ const StyledTooltip = styled.div`
     transition: opacity 0.1s ${constants.easing.easeInQuad},
       scale 0.1s ${constants.easing.easeInQuad};
     display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
-    border-right: 1px solid ${themes.global.gray02};
-    border-bottom: 1px solid ${themes.global.gray02};
+    border-right: ${({ variant }) =>
+      variant === variants.light ? `1px solid ${themes.global.gray02}` : ""};
+    border-bottom: ${({ variant }) =>
+      variant === variants.light ? `1px solid ${themes.global.gray02}` : ""};
     border-top-left-radius: 100%;
     width: 12px;
     height: 12px;
     transform: translateY(-50%) rotate(-135deg);
-    background: ${themes.global.white.base};
+    background-color: ${({ variant }) =>
+      variant === variants.dark
+        ? themes.global.darkFill
+        : themes.global.white.base};
     ${({ direction }) => {
       switch (direction) {
-        case "top":
-          return "left: calc(50% - 9.5px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
-        case "bottom":
-          return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
-        case "left":
+        case directions.top:
+          return "left: calc(50% - 6px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
+        case directions.bottom:
+          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+        case directions.left:
           return "top: 10px; right: -7px; transform: translateY(0%) rotate(-45deg);";
-        case "right":
+        case directions.right:
           return "top: 10px; left: -7px; transform: translateY(0%) rotate(135deg);";
         default:
-          return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
       }
     }};
   }
