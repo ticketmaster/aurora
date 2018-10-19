@@ -1,6 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import Tooltip from "../../../src/components/Tooltip";
+import { variants } from "../../../src/components/Tooltip/constants";
 
 const Container = styled.div`
   margin-top: 100px;
@@ -48,6 +50,7 @@ class TooltipDemo extends React.Component {
 
   render() {
     const { isOpened, direction, ...position } = this.state;
+    const { variant } = this.props;
     const tooltip =
       "Some text to be rendered in theeii pop over component. Some text to be rendered in the popover component.";
     return (
@@ -81,6 +84,7 @@ class TooltipDemo extends React.Component {
           isVisible={isOpened}
           position={{ ...position }}
           direction={direction}
+          variant={variant}
         >
           {tooltip}
         </Tooltip>
@@ -88,5 +92,12 @@ class TooltipDemo extends React.Component {
     );
   }
 }
+
+TooltipDemo.propTypes = {
+  variant: PropTypes.oneOf(Object.values(variants))
+};
+TooltipDemo.defaultProps = {
+  variant: "light"
+};
 
 export default TooltipDemo;
