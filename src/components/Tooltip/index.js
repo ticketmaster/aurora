@@ -150,7 +150,7 @@ class Tooltip extends Component {
   };
 
   render() {
-    const { children, isVisible, direction, variant } = this.props;
+    const { children, isVisible, direction, variant, ...rest } = this.props;
 
     return (
       <CSSTransition
@@ -165,6 +165,7 @@ class Tooltip extends Component {
           innerRef={this.myRef}
           isVisible={isVisible}
           direction={direction}
+          {...rest}
         >
           {children}
         </StyledTooltip>

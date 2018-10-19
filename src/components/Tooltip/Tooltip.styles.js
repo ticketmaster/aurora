@@ -47,15 +47,15 @@ const StyledTooltip = styled.div`
     ${({ direction }) => {
       switch (direction) {
         case directions.top:
-          return "left: calc(50% - 9.5px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
+          return "left: calc(50% - 6px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
         case directions.bottom:
-          return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
         case directions.left:
           return "top: 10px; right: -7px; transform: translateY(0%) rotate(-45deg);";
         case directions.right:
           return "top: 10px; left: -7px; transform: translateY(0%) rotate(135deg);";
         default:
-          return "left: calc(50% - 9.5px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
       }
     }};
   }
