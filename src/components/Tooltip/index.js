@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { CSSTransition } from "react-transition-group";
 import StyledTooltip from "./Tooltip.styles";
-
-const SPACE_FROM_MOUSE = 20;
+import { directions, SPACE_FROM_MOUSE, variants } from "./constants";
 
 class Tooltip extends Component {
   /*
@@ -46,22 +45,22 @@ class Tooltip extends Component {
     const topPosition = elTop - SPACE_FROM_MOUSE - height;
 
     switch (direction) {
-      case "top":
+      case directions.top:
         return {
           x: elHorizontalCenter - width / 2,
           y: topPosition
         };
-      case "bottom":
+      case directions.bottom:
         return {
           x: elHorizontalCenter - width / 2,
           y: bottomPosition
         };
-      case "left":
+      case directions.left:
         return {
           x: elLeft - width - SPACE_FROM_MOUSE,
           y: elTop
         };
-      case "right":
+      case directions.right:
         return {
           x: elRight + SPACE_FROM_MOUSE,
           y: elTop
@@ -127,7 +126,7 @@ class Tooltip extends Component {
       }
     }
 
-    if (Object.keys(size).length) {
+    if (size.width || size.height) {
       this.size = {
         ...this.size,
         ...size
@@ -151,7 +150,7 @@ class Tooltip extends Component {
   };
 
   render() {
-    const { children, isVisible, direction } = this.props;
+    const { children, isVisible, direction, variant } = this.props;
 
     return (
       <CSSTransition
@@ -160,6 +159,7 @@ class Tooltip extends Component {
         timeout={300}
         classNames="open"
         onEnter={this.tooltipEnter}
+        variant={variant}
       >
         <StyledTooltip
           innerRef={this.myRef}
@@ -176,19 +176,21 @@ class Tooltip extends Component {
 Tooltip.propTypes = {
   children: PropTypes.node.isRequired,
   isVisible: PropTypes.bool,
-  direction: PropTypes.oneOf(["top", "bottom", "left", "right"]),
+  direction: PropTypes.oneOf(Object.values(directions)),
   position: PropTypes.shape({
     elHorizontalCenter: PropTypes.number,
     elVerticalCenter: PropTypes.number,
     elTop: PropTypes.number,
     elBottom: PropTypes.number,
     elLeft: PropTypes.number
-  })
+  }),
+  variant: PropTypes.oneOf(Object.values(variants))
 };
 
 Tooltip.defaultProps = {
   isVisible: false,
   direction: "bottom",
+  variant: "light",
   position: {
     elHorizontalCenter: 0,
     elVerticalCenter: 0,

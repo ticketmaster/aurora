@@ -15,6 +15,10 @@ rows:
     Type: boolean
     Default: false
     Notes: Show/hide tooltip
+  - Prop: variant
+    Type: one of 'dark', 'light'
+    Default: 'light'
+    Notes: Changes tooltip color scheme
   - Prop: position
     Type: Object
     Default: all props are 0
@@ -23,5 +27,8 @@ rows:
 
 ```react
 ---
-<TooltipDemo />
+<div>
+  <TooltipDemo />
+  <TooltipDemo variant="dark" />
+</div>
 ```

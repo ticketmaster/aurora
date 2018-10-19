@@ -1,5 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Tooltip dark should match snapshot 1`] = `
+.c0 {
+  background-color: #1f262d;
+  border: 1px solid #1f262d;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: rgba(255,255,255,1);
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), scale 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), scale 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: #1f262d;
+  left: calc(50% - 9.5px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c0.open-enter,
+.c0.open-enter:before {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c0.open-enter-active,
+.c0.open-enter-active:before {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0.open-enter-done,
+.c0.open-enter-active:before {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0.open-exit,
+.c0.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0.open-exit-active,
+.c0.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-exit-active {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+<div
+  className="c0"
+  direction="bottom"
+/>
+`;
+
 exports[`Tooltip should match snapshot 1`] = `
 .c0 {
   background-color: rgba(255,255,255,1);
@@ -31,7 +149,7 @@ exports[`Tooltip should match snapshot 1`] = `
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   left: calc(50% - 9.5px);
   top: -1px;
   -webkit-transform: translateY(-50%) rotate(-135deg);
@@ -151,7 +269,7 @@ exports[`Tooltip should match snapshot when visisble and direction is bottom 1`]
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   left: calc(50% - 9.5px);
   top: -1px;
   -webkit-transform: translateY(-50%) rotate(-135deg);
@@ -271,7 +389,7 @@ exports[`Tooltip should match snapshot when visisble and direction is invalid 1`
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   left: calc(50% - 9.5px);
   top: -1px;
   -webkit-transform: translateY(-50%) rotate(-135deg);
@@ -391,7 +509,7 @@ exports[`Tooltip should match snapshot when visisble and direction is left 1`] =
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   top: 10px;
   right: -7px;
   -webkit-transform: translateY(0%) rotate(-45deg);
@@ -511,7 +629,7 @@ exports[`Tooltip should match snapshot when visisble and direction is right 1`] 
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   top: 10px;
   left: -7px;
   -webkit-transform: translateY(0%) rotate(135deg);
@@ -631,7 +749,7 @@ exports[`Tooltip should match snapshot when visisble and direction is top 1`] = 
   -webkit-transform: translateY(-50%) rotate(-135deg);
   -ms-transform: translateY(-50%) rotate(-135deg);
   transform: translateY(-50%) rotate(-135deg);
-  background: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   left: calc(50% - 9.5px);
   bottom: -13px;
   -webkit-transform: translateY(-50%) rotate(45deg);
