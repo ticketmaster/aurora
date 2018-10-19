@@ -142,3 +142,8 @@ export { BackdropProvider } from "./components/Backdrop/Context";
 export { ContainerProvider } from "./components/List/Context";
 export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
+export {
+  DeviceConnectionProvider,
+  DeviceConnectionConsumer,
+  DisplayOn
+} from "./components/DeviceConnection";
