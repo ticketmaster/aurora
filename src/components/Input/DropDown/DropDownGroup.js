@@ -150,18 +150,14 @@ class DropDownGroup extends React.Component {
     }
   };
 
-  displayLabel = (selected, variant) => {
+  displayLabel = selected => {
     const { placeholder, label } = this.props;
 
     if (placeholder.length > 0 && selected.length === 0) {
       return placeholder;
     }
 
-    if (variant === 0 && selected.length > 0) {
-      return this.getCurrentSelection(selected[0]);
-    }
-
-    if (variant === 1 && label.length > 0) {
+    if (selected.length > 0 && label.length > 0) {
       return (
         <Fragment>
           {label} {this.getCurrentSelection(selected[0])}
@@ -274,7 +270,7 @@ class DropDownGroup extends React.Component {
                             "dropdown__text--disabled": disabled
                           })}
                         >
-                          {this.displayLabel(selected, variant)}
+                          {this.displayLabel(selected)}
                         </StyledSelectedText>
 
                         <StyledChevron
