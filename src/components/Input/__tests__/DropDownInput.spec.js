@@ -9,7 +9,9 @@ describe("<DropDownInput />", () => {
     value: "rock",
     children: "Rock & Roll",
     index: 0,
-    isSelected: false
+    isSelected: false,
+    isFocused: false,
+    isOpen: false
   };
 
   const render = (Component, props) => {

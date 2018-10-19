@@ -54,6 +54,7 @@ class DropDownInput extends React.Component {
     value: PropTypes.string.isRequired,
     index: PropTypes.number.isRequired,
     children: PropTypes.node.isRequired,
+    isOpen: PropTypes.bool.isRequired,
     isFocused: PropTypes.bool.isRequired,
     isSelected: PropTypes.bool.isRequired,
     className: PropTypes.string
@@ -64,7 +65,11 @@ class DropDownInput extends React.Component {
   };
 
   componentDidUpdate() {
-    if (this.props.isFocused && this.SelectedElement.current) {
+    if (
+      this.props.isOpen &&
+      this.props.isFocused &&
+      this.SelectedElement.current
+    ) {
       this.SelectedElement.current.focus();
     }
   }
