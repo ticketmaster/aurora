@@ -134,6 +134,16 @@ export const SeatDataColumn = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
+  text-align: center;
+
+  &:first-child {
+    text-align: left;
+  }
+
+  &:last-child {
+    text-align: right;
+  }
 `;
 
 export const ColumnHeading = styled.div`

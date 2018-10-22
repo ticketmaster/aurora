@@ -140,6 +140,19 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c2:first-child {
+  text-align: left;
+}
+
+.c2:last-child {
+  text-align: right;
 }
 
 .c3 {
@@ -375,6 +388,19 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c2:first-child {
+  text-align: left;
+}
+
+.c2:last-child {
+  text-align: right;
 }
 
 .c3 {
@@ -594,6 +620,19 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c2:first-child {
+  text-align: left;
+}
+
+.c2:last-child {
+  text-align: right;
 }
 
 .c3 {

@@ -413,17 +413,17 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption", () => {
+  it("should render the correct label when label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption", () => {
     const { container } = renderTestComponentTwo({ value: ["date"] });
     expect(container).toMatchSnapshot();
   });
 
-  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string values is passed to each DropDownOption", () => {
+  it("should render the correct label when label prop is passed, and when an array of children containing string values is passed to each DropDownOption", () => {
     const { container } = renderTestComponentTwo({ value: ["distance"] });
     expect(container).toMatchSnapshot();
   });
 
-  it("should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption", () => {
+  it("should render the correct label when label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption", () => {
     const { container } = renderTestComponentTwo({ value: ["price"] });
     expect(container).toMatchSnapshot();
   });
