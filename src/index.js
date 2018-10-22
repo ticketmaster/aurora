@@ -147,3 +147,5 @@ export {
   DeviceConnectionConsumer,
   DisplayOn
 } from "./components/DeviceConnection";
+export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
+export { default as SeatData } from "./components/Tooltip/SeatData";

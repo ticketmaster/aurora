@@ -421,7 +421,7 @@ rows:
   - Prop: label
     Type: string
     Default: N/A
-    Notes: Visible with selected option. Supported only in variant 1
+    Notes: Visible with selected option.
   - Prop: placeholder
     Type: string
     Default: N/A
@@ -476,7 +476,7 @@ span: 6
     <Container>
         <Row>
             <Column medium={4}>
-                <DropDownGroup size="small" variant={0} placeholder="Select an option" label="blah">
+                <DropDownGroup size="small" variant={0} placeholder="Select an option" label="Selected:">
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>

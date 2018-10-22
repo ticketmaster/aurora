@@ -1416,10 +1416,7 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       </span>
       <div
         class="sc-EHOje vdlIp"
-      >
-        Selected Option:
-         
-      </div>
+      />
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
         fill="currentColor"
@@ -1641,7 +1638,7 @@ exports[`DropDownGroup should disable scroll when dropdown is open 1`] = `
 </div>
 `;
 
-exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption 1`] = `
+exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption 1`] = `
 <div>
   <div
     aria-haspopup="listbox"
@@ -1721,7 +1718,7 @@ exports[`DropDownGroup should render the correct label when variant equals 1, a 
 </div>
 `;
 
-exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption 1`] = `
+exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption 1`] = `
 <div>
   <div
     aria-haspopup="listbox"
@@ -1804,7 +1801,7 @@ exports[`DropDownGroup should render the correct label when variant equals 1, a 
 </div>
 `;
 
-exports[`DropDownGroup should render the correct label when variant equals 1, a label prop is passed, and when an array of children containing string values is passed to each DropDownOption 1`] = `
+exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing string values is passed to each DropDownOption 1`] = `
 <div>
   <div
     aria-haspopup="listbox"
