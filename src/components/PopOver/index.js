@@ -281,12 +281,9 @@ class PopOver extends Component {
         key="popover-animation"
         timeout={300}
         classNames="open"
+        onEnter={this.popoverEnter}
       >
-        <StyledPopOver
-          innerRef={this.myRef}
-          isVisible={isVisible}
-          onEnter={this.popoverEnter}
-        >
+        <StyledPopOver innerRef={this.myRef} isVisible={isVisible}>
           {children}
         </StyledPopOver>
       </CSSTransition>
