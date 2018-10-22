@@ -1,6 +1,6 @@
-### PopOver
+### Tooltip
 
-PopOver Component
+Tooltip Component
 
 ### Props
 
