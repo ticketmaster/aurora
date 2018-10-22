@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { CSSTransition } from "react-transition-group";
-import StyledTooltip from "./Tooltip.styles";
+import { StyledTooltip } from "./Tooltip.styles";
 import { directions, SPACE_FROM_MOUSE, variants } from "./constants";
 
 class Tooltip extends Component {
