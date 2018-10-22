@@ -120,13 +120,13 @@ export const StyledTooltip = styled.div`
   }
 `;
 
-export const SeatData = styled.div`
+export const SeatDataStyled = styled.div`
   display: flex;
   justify-content: space-between;
   padding: ${({ size }) =>
     size === seatTooltipSizes.large ? spacing.moderate : spacing.cozy};
-  border-bottom: ${({ hasChildren }) =>
-    hasChildren ? `1px solid ${themes.global.gray02}` : "none"};
+  border-bottom: ${({ isLast }) =>
+    isLast ? `1px solid ${themes.global.gray02}` : "none"};
   line-height: 1;
 `;
 

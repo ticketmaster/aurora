@@ -1,50 +1,44 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Tooltip from "./index";
-import { seatTooltipSizes } from "./constants";
-import {
-  SeatData,
-  SeatDataColumn,
-  ColumnHeading,
-  ColumnText,
-  AdditionalData
-} from "./Tooltip.styles";
+import { seatTooltipSizes, variants } from "./constants";
+import { AdditionalData } from "./Tooltip.styles";
+
+import SeatData from "./SeatData";
 
 class SeatTooltip extends Component {
   static getDimensionsFromEvent = e => Tooltip.getDimensionsFromEvent(e);
 
   render() {
-    const { size, row, seat, section, children, ...rest } = this.props;
+    const { size, row, seat, section, children, variant, ...rest } = this.props;
     const maxWidth = size === seatTooltipSizes.small ? "180px" : "260px";
 
     return (
-      <Tooltip {...rest} style={{ width: maxWidth, padding: 0 }}>
+      <Tooltip
+        {...rest}
+        variant={variant}
+        style={{ width: maxWidth, padding: 0 }}
+      >
         {row !== undefined &&
           seat !== undefined &&
           section !== undefined && (
-            <SeatData size={size} hasChildren={!!children}>
-              <SeatDataColumn>
-                <ColumnHeading size={size}>Sec</ColumnHeading>
-                <ColumnText variant={rest.variant} size={size}>
-                  {section}
-                </ColumnText>
-              </SeatDataColumn>
-              <SeatDataColumn>
-                <ColumnHeading size={size}>Row</ColumnHeading>
-                <ColumnText variant={rest.variant} size={size}>
-                  {row}
-                </ColumnText>
-              </SeatDataColumn>
-              <SeatDataColumn>
-                <ColumnHeading size={size}>Seat</ColumnHeading>
-                <ColumnText variant={rest.variant} size={size}>
-                  {seat}
-                </ColumnText>
-              </SeatDataColumn>
-            </SeatData>
+            <SeatData
+              size={size}
+              row={row}
+              section={section}
+              seat={seat}
+              variant={variant}
+              isLast={!!children}
+            />
           )}
         {children && (
-          <AdditionalData size={size} variant={rest.variant}>
+          <AdditionalData
+            size={size}
+            row={row}
+            section={section}
+            seat={seat}
+            variant={variant}
+          >
             {children}
           </AdditionalData>
         )}
@@ -58,12 +52,14 @@ SeatTooltip.propTypes = {
   row: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   seat: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   size: PropTypes.oneOf(Object.values(seatTooltipSizes)),
-  children: PropTypes.node
+  children: PropTypes.node,
+  variant: PropTypes.oneOf(Object.values(variants))
 };
 
 SeatTooltip.defaultProps = {
   size: seatTooltipSizes.large,
-  children: null
+  children: null,
+  variant: "light"
 };
 
 SeatTooltip.displayName = "SeatTooltip";
