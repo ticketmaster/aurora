@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
 import { themes, constants, spacing } from "../../theme";
+import { popContainersBoxShadow } from "../../theme/constants";
 
 const StyledPopOver = styled.div`
   background-color: ${themes.global.white.base};
   border: 1px solid ${themes.global.gray02};
   border-radius: ${constants.borderRadius.large};
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: ${popContainersBoxShadow};
   position: absolute;
   max-width: 260px;
   padding: ${spacing.moderate};
