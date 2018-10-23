@@ -3,9 +3,11 @@
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 <a
   aria-label="Section Item"
-  class="sc-kkGfuU section-item fuPFux sc-bZQynM cdIImQ"
+  class="sc-kkGfuU section-item fuPFux sc-fjdhpX bPiEdk"
   href="https://ticketmaster.com/"
+  rel="_self"
   role="link"
+  target=""
 >
   <div
     class="sc-iAyFgw dKukRT"

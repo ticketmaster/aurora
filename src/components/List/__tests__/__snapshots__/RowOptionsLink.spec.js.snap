@@ -40,20 +40,15 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 .c4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -64,23 +59,11 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c4:focus {
-  outline: none;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
-}
-
-.c4:visited {
-  color: #013670;
-}
-
-.c4:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
+.c4:focus,
+.c4:active,
+.c4:visited,
+.c4:hover {
+  color: rgba(2,108,223,1);
 }
 
 .c4:hover {
@@ -88,40 +71,23 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 .c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
   cursor: pointer;
 }
 
-.c6:focus {
-  outline: none;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
-}
-
-.c6:visited {
-  color: #013670;
-}
-
-.c6:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
+.c6:focus,
+.c6:active,
+.c6:visited,
+.c6:hover {
+  color: rgba(2,108,223,1);
 }
 
 .c6:hover {
@@ -182,6 +148,30 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:768px) {
+  .c4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c4 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c6 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
   .c0 {
     padding-left: calc(15px + 16px + 16px + 116px);
   }
@@ -220,16 +210,30 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       data-index={0}
       href={null}
       onClick={[Function]}
-      rel={undefined}
-      size="small"
+      rel="_self"
+      size={
+        Object {
+          "large": "hecto",
+          "medium": "hecto",
+          "small": "hecto",
+        }
+      }
+      target=""
     />
     <span
       className="link--row-options c5 c6"
       data-index={0}
       href=""
       onClick={null}
-      rel={undefined}
-      size="small"
+      rel="_self"
+      size={
+        Object {
+          "large": "hecto",
+          "medium": "hecto",
+          "small": "hecto",
+        }
+      }
+      target=""
     />
   </div>
 </div>
