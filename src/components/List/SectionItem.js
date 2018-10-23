@@ -5,7 +5,7 @@ import styled from "styled-components";
 import spacing from "../../theme/spacing";
 import { SecondaryText, Link } from "../Text";
 import { ItemContainerConsumer } from "./Context";
-import { LinkTitle } from "../Text/Link";
+import { LinkTitle } from "../Text/LinkDeprecated";
 
 const ItemContainer = styled.div.attrs({
   className: "section-item"

@@ -2,15 +2,20 @@
 
 exports[`Link renders a button when only onclick is provided 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -21,42 +26,35 @@ exports[`Link renders a button when only onclick is provided 1`] = `
   cursor: pointer;
 }
 
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
-  color: rgba(2,108,223,1);
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c0:hover {
   color: #0150a7;
 }
 
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <button
   className="c0"
   href={null}
   onClick={[Function]}
-  rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
-  target=""
+  rel={undefined}
+  size="small"
 >
   I am a link
 </button>
@@ -64,53 +62,51 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 
 exports[`Link renders a default link 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
 }
 
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
-  color: rgba(2,108,223,1);
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c0:hover {
   color: #0150a7;
 }
 
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <a
   className="c0"
   href="http://localhost/"
   onClick={null}
-  rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
-  target=""
+  rel={undefined}
+  size="small"
 >
   I am a link
 </a>
@@ -118,54 +114,52 @@ exports[`Link renders a default link 1`] = `
 
 exports[`Link renders a span when no href or onClick provided 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
   cursor: pointer;
 }
 
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
-  color: rgba(2,108,223,1);
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c0:hover {
   color: #0150a7;
 }
 
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <span
   className="c0"
   href={null}
   onClick={null}
-  rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
-  target=""
+  rel={undefined}
+  size="small"
 >
   I am a link
 </span>

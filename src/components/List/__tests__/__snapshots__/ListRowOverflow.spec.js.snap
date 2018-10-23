@@ -91,22 +91,39 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 .c14 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
 }
 
-.c14:focus,
-.c14:active,
-.c14:visited,
-.c14:hover {
-  color: rgba(2,108,223,1);
+.c14:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c14:visited {
+  color: #013670;
+}
+
+.c14:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
 }
 
 .c14:hover {
@@ -247,18 +264,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   }
 }
 
-@media screen and (min-width:768px) {
-  .c14 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c14 {
-    font-size: 14px;
-  }
-}
-
 <div
   className="c0 c1"
 >
@@ -382,16 +387,9 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       className="section-item c13 c14"
       href="/"
       onClick={[Function]}
-      rel="_self"
+      rel={undefined}
       role="link"
-      size={
-        Object {
-          "large": "hecto",
-          "medium": "hecto",
-          "small": "hecto",
-        }
-      }
-      target=""
+      size="small"
     >
       <div
         className="c8"

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "../Text/Link";
+import Link from "../Text/LinkDeprecated";
 import * as PT from "../Text/PropTypes";
 
 const BreadcrumbItem = ({

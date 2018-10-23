@@ -1,34 +1,53 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
-import Base from "./Base.styles";
 import * as PT from "./PropTypes";
-import StyledText from "./StyledText";
-import colors from "../../theme/colors";
+import { typography } from "../../theme";
+import { getThemeValue } from "../../utils";
 import getRelByTarget from "../../utils/link";
-import { getFontColor } from "../../utils/typography";
 
-export const LinkTitle = StyledText.withComponent(`a`).extend`
-  color: ${({ color }) => color || colors.azure.base};
-  text-decoration: none;
-`;
+const SIZES = {
+  small: {
+    fontSize: typography.size.hecto
+  },
+  large: {
+    fontSize: typography.size.kilo
+  }
+};
 
-const LinkBase = Base.withComponent("a").extend`
+const LinkBase = styled.a`
   text-decoration: none;
   transition: color 0.3s ease;
-  &:focus,
-  &:active,
-  &:visited,
-  &:hover {
-    color: ${props => getFontColor(props)};
+  transition: text-decoration 0.3s ease;
+  transition: transform 0.1s linear;
+  font-weight: ${typography.weight.semiBold};
+  font-size: ${({ size }) => SIZES[size].fontSize};
+  line-height: ${typography.lineHeight.header};
+  color: ${getThemeValue("primary", "base")};
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+
+  &:visited {
+    color: ${getThemeValue("primary", "dark")};
+  }
+
+  &:active {
+    transform: scale(0.98, 0.98) translate(0, 1px);
+    color: ${getThemeValue("primary", "dark")};
   }
 
   &:hover {
-    color: ${colors.azure.hover};
+    color: ${getThemeValue("primary", "medium")};
   }
 `;
 
-const LinkButtonBase = LinkBase.withComponent("button").extend`
+const LinkButtonBase = LinkBase.withComponent(`button`).extend`
   appearance: none;
   border: 0;
   outline: 0;
@@ -37,7 +56,7 @@ const LinkButtonBase = LinkBase.withComponent("button").extend`
   cursor: pointer;
 `;
 
-const LinkSpanBase = LinkBase.withComponent("span").extend`
+const LinkSpanBase = LinkBase.withComponent(`span`).extend`
   cursor: pointer;
 `;
 
@@ -49,40 +68,18 @@ const getElement = ({ href, onClick }) => {
   return LinkSpanBase;
 };
 
-const Link = ({
-  href,
-  onClick,
-  children,
-  weight,
-  size,
-  responsiveSize,
-  variant,
-  accent,
-  primary,
-  ...props
-}) => {
+const Link = ({ href, onClick, children, size, ...props }) => {
   const { target, rel } = props;
   const Elm = getElement({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
+
   return (
     <Elm
       {...props}
-      size={{
-        small: responsiveSize.small || size,
-        medium: responsiveSize.medium || responsiveSize.small || size,
-        large:
-          responsiveSize.large ||
-          responsiveSize.medium ||
-          responsiveSize.small ||
-          size
-      }}
-      primary={primary}
-      variant={variant}
-      accent={accent}
+      size={size}
       href={href}
-      rel={validatedRel}
-      weight={weight}
       onClick={onClick}
+      rel={validatedRel}
     >
       {children}
     </Elm>
@@ -90,30 +87,18 @@ const Link = ({
 };
 
 Link.propTypes = {
+  size: PropTypes.oneOf(Object.values(PT.LINK_SIZES)),
   children: PropTypes.node.isRequired,
   href: PropTypes.string,
-  onClick: PropTypes.func,
-  target: PropTypes.string,
-  rel: PropTypes.string,
-  primary: PropTypes.bool,
-  size: PT.size,
-  responsiveSize: PT.responsiveSize,
-  weight: PT.weight,
-  variant: PT.variant,
-  accent: PT.accent
+  onClick: PropTypes.func
 };
 
 Link.defaultProps = {
-  target: "",
+  size: PT.LINK_SIZES.small,
   onClick: null,
-  href: null,
-  rel: "_self",
-  size: "hecto",
-  responsiveSize: {},
-  weight: "regular",
-  variant: "accent",
-  accent: "azure",
-  primary: true
+  href: null
 };
+
+Link.displayName = "Link";
 
 export default Link;
