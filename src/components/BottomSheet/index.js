@@ -24,31 +24,31 @@ const BottomSheetContent = styled.div`
   padding-right: ${spacing.cozy};
   padding-left: ${spacing.cozy};
 
-  &.bottom-sheet-enter {
+  .bottom-sheet-enter & {
     transform: translateY(100%);
   }
 
-  &.bottom-sheet-enter.bottom-sheet-enter-active {
+  .bottom-sheet-leave &,
+  .bottom-sheet-exit & {
+    transform: translateY(0);
+  }
+
+  .bottom-sheet-appear & {
+    transform: translateY(100%);
+  }
+
+  .bottom-sheet-enter.bottom-sheet-enter-active & {
     transform: translateY(0);
     transition: transform 300ms ease-in-out;
   }
 
-  &.bottom-sheet-leave,
-  &.bottom-sheet-exit {
-    transform: translateY(0);
-  }
-
-  &.bottom-sheet-leave.bottom-sheet-leave-active,
-  &.bottom-sheet-exit.bottom-sheet-exit-active {
+  .bottom-sheet-leave.bottom-sheet-leave-active &,
+  .bottom-sheet-exit.bottom-sheet-exit-active & {
     transform: translateY(100%);
     transition: transform 300ms ease-in-out;
   }
 
-  &.bottom-sheet-appear {
-    transform: translateY(100%);
-  }
-
-  &.bottom-sheet-appear.bottom-sheet-appear-active {
+  .bottom-sheet-appear.bottom-sheet-appear-active & {
     transform: translateY(0);
     transition: transform 300ms ease-in-out;
   }
