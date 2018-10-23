@@ -142,3 +142,5 @@ export { BackdropProvider } from "./components/Backdrop/Context";
 export { ContainerProvider } from "./components/List/Context";
 export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
+export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
+export { default as SeatData } from "./components/Tooltip/SeatData";
