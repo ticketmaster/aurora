@@ -2,7 +2,7 @@ import { pageLoader } from "catalog";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import BottomSheet from "../../../src/components/BottomSheet";
-import Backdrop from "../../../src/components/Backdrop/index";
+import Backdrop from "../../../src/components/List/Backdrop";
 
 import { sections } from "../list_row/mock";
 import ListRowOverflow from "../../../src/components/List/Overflow";

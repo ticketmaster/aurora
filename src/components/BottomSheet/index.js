@@ -6,7 +6,7 @@ import colors from "../../theme/colors";
 
 import { ItemContainerConsumer } from "../List/Context";
 import { Row } from "../Grid";
-import { BackdropConsumer } from "../Backdrop/Context";
+import { BackdropConsumer } from "../List/BackdropContext";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
 import { constants, spacing } from "../../theme";

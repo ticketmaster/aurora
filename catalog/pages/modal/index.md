@@ -1,102 +1,67 @@
 ### Modal
 
-```react
-responsive: true
----
-<TransitionGroup component={Backdrop} appear>
-    <CSSTransition
-      classNames="modal"
-      timeout={{ appear: 300, enter: 300, exit: 100 }}
-    >
-        <Modal>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-        </Modal>
-    </CSSTransition>
-</TransitionGroup>
+```table
+span: 6
+rows:
+  - Prop: actionBar
+    Type: node
+    Notes: Optional. Renders an action bar at the top of the modal. Close button will be rendered by default.
+  - Prop: bottomActionBar
+    Type: node
+    Notes: Optional. Renders an action bar at the bottom of the modal
+  - Prop: children
+    Type: node
+    Notes: The modal's children
+  - Prop: deviceSize
+    Type: object
+    Notes: An object provided by the DeviceSize component
+  - Prop: isOpened
+    Type: bool
+    Notes: Optional. Default true. Indicates, if the modal is opened by default
+  - Prop: size
+    Type: small, medium, large
+    Notes: Optional. Default small. The preferred size of the modal, adaptive for each screen size
+  - Prop: onRequestClose
+    Type: "() => Promise<bool>"
+    Notes: Optional. Allows to set custom close callback handler. May return false indicating that it is not allowed to close the modal
+  - Prop: onScroll
+    Type: func(Event)
+    Notes: Optional. Callback is fired when the user scrolls modal's content
 ```
 
-### Modal without close icon
+### Default Modal with default action bars
 
 ```react
 responsive: true
 ---
-
-<TransitionGroup component={Backdrop} appear>
-    <CSSTransition
-      classNames="modal"
-      timeout={{ appear: 300, enter: 300, exit: 100 }}
+<DeviceSizeProvider>
+    <Modal
+        onRequestClose={() => console.log('You shall not pass!')}
     >
-        <Modal withCloseIcon={false}>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-        </Modal>
-    </CSSTransition>
-</TransitionGroup>
+        {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
+    </Modal>
+</DeviceSizeProvider>
 ```
 
-### Modal with custom padding on content
+### Modal with custom action bars
 
 ```react
 responsive: true
 ---
-
-<TransitionGroup component={Backdrop} appear>
-    <CSSTransition
-      classNames="modal"
-      timeout={{ appear: 300, enter: 300, exit: 100 }}
+<DeviceSizeProvider>
+    <Modal
+        actionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo Modal</h1>
+            </div>
+        }
+        bottomActionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <Button style={{ width: 'auto' }}>See Tickets</Button>
+            </div>
+        }
     >
-        <Modal contentProps={{ style: { padding: "16px 40px 32px 0"}}}>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-        </Modal>
-    </CSSTransition>
-</TransitionGroup>
-```
-
-### Modal with custom padding on container
-
-```react
-responsive: true
----
-
-<TransitionGroup component={Backdrop} appear>
-    <CSSTransition
-      classNames="modal"
-      timeout={{ appear: 300, enter: 300, exit: 100 }}
-    >
-        <Modal containerProps={{ style: { padding: "50px 8px 32px 60px"}}}>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-            <div>Hello World</div>
-        </Modal>
-    </CSSTransition>
-</TransitionGroup>
+        {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
+    </Modal>
+</DeviceSizeProvider>
 ```

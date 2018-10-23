@@ -136,9 +136,9 @@ export {
   Input
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
-export { default as Modal } from "./components/Modal";
-export { default as Backdrop } from "./components/Backdrop";
-export { BackdropProvider } from "./components/Backdrop/Context";
+export { default as Modal } from "./components/List/Modal";
+export { default as Backdrop } from "./components/List/Backdrop";
+export { BackdropProvider } from "./components/List/BackdropContext";
 export { ContainerProvider } from "./components/List/Context";
 export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
