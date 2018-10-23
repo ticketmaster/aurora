@@ -6,9 +6,9 @@ import { CSSTransition } from "react-transition-group";
 import { ContainerProvider } from "./Context";
 import DisplayFor from "../DeviceSize";
 import Portal from "../Portal";
-import Backdrop from "../Backdrop";
+import Backdrop from "./Backdrop";
 import BottomSheet from "../BottomSheet";
-import Modal from "../Modal";
+import Modal from "./Modal";
 import { updateOpenIndex, determineIfOpen } from "./helper";
 
 const Container = styled.div`

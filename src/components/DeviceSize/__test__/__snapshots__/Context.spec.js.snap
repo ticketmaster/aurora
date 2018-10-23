@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withDeviceSize should render an underlying component and pass the deviceSize 1`] = `
+Object {
+  "isSmall": true,
+}
+`;
+
+exports[`withDeviceSize should render an underlying component and pass the deviceSize 2`] = `
+<div>
+  <div
+    demo="prop"
+  >
+    Component under test
+  </div>
+</div>
+`;

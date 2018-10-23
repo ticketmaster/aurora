@@ -1,58 +1,98 @@
 import React from "react";
-import { render, fireEvent } from "react-testing-library";
+import { render, renderIntoDocument, fireEvent } from "react-testing-library";
+
+import { ESCAPE } from "../../../utils/keyCharCodes";
 
 import Backdrop from "../index";
-import BottomSheet from "../../BottomSheet";
-
-jest.mock("../../List/Context", () => ({
-  ItemContainerConsumer: jest
-    .fn()
-    .mockImplementation(({ children }) =>
-      children({ onCloseRequest: jest.fn() })
-    )
-}));
 
 describe("<Backdrop />", () => {
-  it("renders Backdrop correctly", () => {
+  const childRef = {
+    current: {
+      contains: () => false
+    }
+  };
+
+  it("renders correctly with an overlay", () => {
     const { container } = render(
-      <Backdrop>
-        <BottomSheet>
-          <div>Europe</div>
-          <div>Africa</div>
-          <div>Asias</div>
-        </BottomSheet>
+      <Backdrop childRef={childRef}>
+        <div>Component under test</div>
       </Backdrop>
     );
-    expect(container.firstChild).toMatchSnapshot();
+
+    expect(container).toMatchSnapshot();
   });
 
-  it("calls the onKeyPress function on pressing the ESC key", () => {
+  it("renders correctly without an overlay", () => {
     const { container } = render(
-      <Backdrop>
-        <BottomSheet>
-          <div>Europe</div>
-          <div>Africa</div>
-          <div>Asias</div>
-        </BottomSheet>
+      <Backdrop childRef={childRef} overlay={false}>
+        <div>Component under test</div>
+      </Backdrop>
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("calls the onRequestClose callback on pressing the ESC key", () => {
+    const closeSpy = jest.fn();
+
+    render(
+      <Backdrop childRef={childRef} onRequestClose={closeSpy}>
+        <div>Component under test</div>
       </Backdrop>
     );
 
     fireEvent.keyDown(global.document, {
-      key: "Escape",
-      keyCode: 27
+      keyCode: ESCAPE
     });
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(closeSpy).toHaveBeenCalled();
   });
 
-  it("calls the handleOutsideClick function on clicking overlay", () => {
-    const { container } = render(
-      <Backdrop data-testid="container--overlay">
-        <div>Europe</div>
+  it("calls the onRequestClose function on clicking overlay", () => {
+    const closeSpy = jest.fn();
+
+    const { getByTestId } = renderIntoDocument(
+      <Backdrop
+        childRef={childRef}
+        overlayProps={{ "data-testid": "overlay" }}
+        onRequestClose={closeSpy}
+      >
+        <div>Component under test</div>
       </Backdrop>
     );
 
-    fireEvent.click(global.document);
-    expect(container.firstChild).toMatchSnapshot();
+    fireEvent.click(getByTestId("overlay"));
+
+    expect(closeSpy).toHaveBeenCalled();
+  });
+
+  describe("component lifecycle", () => {
+    const rel = document.removeEventListener;
+
+    beforeAll(() => {
+      document.removeEventListener = jest.fn();
+    });
+
+    beforeEach(() => {
+      rel.mockClear();
+    });
+
+    afterAll(() => {
+      document.removeEventListener = rel;
+    });
+  });
+
+  it("cleans up events on unmount", () => {
+    document.removeEventListener = jest.fn();
+
+    const { unmount } = render(
+      <Backdrop childRef={childRef}>
+        <div>Component under test</div>
+      </Backdrop>
+    );
+
+    unmount();
+
+    expect(document.removeEventListener).toHaveBeenCalledTimes(2);
   });
 });
