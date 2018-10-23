@@ -220,6 +220,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       data-index={0}
       href={null}
       onClick={[Function]}
+      rel={undefined}
       size="small"
     />
     <span
@@ -227,6 +228,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       data-index={0}
       href=""
       onClick={null}
+      rel={undefined}
       size="small"
     />
   </div>

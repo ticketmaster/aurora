@@ -387,6 +387,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       className="section-item c13 c14"
       href="/"
       onClick={[Function]}
+      rel={undefined}
       role="link"
       size="small"
     >

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import * as PT from "./PropTypes";
 import { typography } from "../../theme";
 import { getThemeValue } from "../../utils";
+import getRelByTarget from "../../utils/link";
 
 const SIZES = {
   small: {
@@ -68,9 +69,18 @@ const getElement = ({ href, onClick }) => {
 };
 
 const Link = ({ href, onClick, children, size, ...props }) => {
+  const { target, rel } = props;
   const Elm = getElement({ href, onClick });
+  const validatedRel = getRelByTarget(target, rel);
+
   return (
-    <Elm {...props} size={size} href={href} onClick={onClick}>
+    <Elm
+      {...props}
+      size={size}
+      href={href}
+      onClick={onClick}
+      rel={validatedRel}
+    >
       {children}
     </Elm>
   );

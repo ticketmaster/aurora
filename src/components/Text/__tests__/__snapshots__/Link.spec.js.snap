@@ -53,6 +53,7 @@ exports[`Link renders a button when only onclick is provided 1`] = `
   className="c0"
   href={null}
   onClick={[Function]}
+  rel={undefined}
   size="small"
 >
   I am a link
@@ -104,6 +105,7 @@ exports[`Link renders a default link 1`] = `
   className="c0"
   href="http://localhost/"
   onClick={null}
+  rel={undefined}
   size="small"
 >
   I am a link
@@ -156,6 +158,7 @@ exports[`Link renders a span when no href or onClick provided 1`] = `
   className="c0"
   href={null}
   onClick={null}
+  rel={undefined}
   size="small"
 >
   I am a link
