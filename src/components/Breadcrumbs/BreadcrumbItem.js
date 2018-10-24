@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { LinkDeprecated } from "../Text";
+import { Link } from "../Text";
 import * as PT from "../Text/PropTypes";
 
 const BreadcrumbItem = ({
@@ -19,7 +19,7 @@ const BreadcrumbItem = ({
     itemType="http://schema.org/ListItem"
     style={{ whiteSpace: "nowrap" }}
   >
-    <LinkDeprecated
+    <Link
       {...props}
       itemProp="item"
       size={size}
@@ -30,7 +30,7 @@ const BreadcrumbItem = ({
       href={href || null}
     >
       {children}
-    </LinkDeprecated>
+    </Link>
     {children && <meta itemProp="name" content={children} />}
     {position && <meta itemProp="position" content={position} />}
   </li>

@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import spacing from "../../theme/spacing";
-import { SecondaryText, LinkDeprecated } from "../Text";
+import { SecondaryText, Link } from "../Text";
 import { ItemContainerConsumer } from "./Context";
-import { LinkTitle } from "../Text/LinkDeprecated";
+import { LinkTitle } from "../Text/Link";
 
 const ItemContainer = styled.div.attrs({
   className: "section-item"
@@ -20,7 +20,7 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
-const ItemContainerLink = ItemContainer.withComponent(LinkDeprecated);
+const ItemContainerLink = ItemContainer.withComponent(Link);
 
 const IconContainer = styled.div`
   padding-right: ${spacing.cozy};

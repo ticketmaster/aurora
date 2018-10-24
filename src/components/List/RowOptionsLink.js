@@ -4,7 +4,7 @@ import styled from "styled-components";
 import classnames from "classnames";
 
 import { Column, Row } from "../Grid";
-import { LinkDeprecated } from "../Text";
+import { Link } from "../Text";
 import { mediumAndUp } from "../../theme/mediaQueries";
 import constants from "../../theme/constants";
 import spacing from "../../theme/spacing";
@@ -25,14 +25,14 @@ const Content = styled(Row)`
   `};
 `;
 
-const MobileLink = styled(LinkDeprecated)`
+const MobileLink = styled(Link)`
   display: inline-block;
   ${mediumAndUp`
     display: none;
   `};
 `;
 
-const DesktopLink = styled(LinkDeprecated)`
+const DesktopLink = styled(Link)`
   display: none;
   ${mediumAndUp`
     display: inline-block;
