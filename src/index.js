@@ -122,6 +122,7 @@ export {
   SecondaryText,
   SectionHeading,
   Link,
+  LinkDeprecated,
   BoldText
 } from "./components/Text";
 

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import spacing from "../../theme/spacing";
-import { SecondaryText, Link } from "../Text";
+import { SecondaryText, LinkDeprecated } from "../Text";
 import { ItemContainerConsumer } from "./Context";
 import { LinkTitle } from "../Text/LinkDeprecated";
 
@@ -20,7 +20,7 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
-const ItemContainerLink = ItemContainer.withComponent(Link);
+const ItemContainerLink = ItemContainer.withComponent(LinkDeprecated);
 
 const IconContainer = styled.div`
   padding-right: ${spacing.cozy};
