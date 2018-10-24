@@ -541,6 +541,110 @@ span: 6
 </ThemeProvider>
 ```
 
+## Button Group
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: title
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: value
+    Type: object
+    Default: N/A
+    Notes: Specifies default active buttons. The object key is section value and the object value is array of button values
+  - Prop: onChange
+    Type: function
+    Default: N/A
+    Notes:
+```
+
+## Button Group Section
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: title
+    Type: string
+    Default: N/A
+    Notes:
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: isMultiSelect
+    Type: bool
+    Default: 'false'
+    Notes:
+```
+
+## Button Group Section Button
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: onClick
+    Type: function
+    Default: N/A
+    Notes:
+```
+
+```react
+responsive: true
+span: 6
+---
+<Container>
+    <Row>
+        <Column medium={8} large={6} style={{ padding: "16px 0" }}>
+            <ButtonGroup title="Sort by:" value={{ 0: ["0"] }}>
+                <ButtonGroup.Section value="0" isMultiSelect>
+                    <ButtonGroup.Button value="0">All</ButtonGroup.Button>
+                    <ButtonGroup.Button value="1">Date</ButtonGroup.Button>
+                    <ButtonGroup.Button value="2">Name (A-Z)</ButtonGroup.Button>
+                    <ButtonGroup.Button value="3">Name (Z-A)</ButtonGroup.Button>
+                </ButtonGroup.Section>
+            </ButtonGroup>
+            <ButtonGroup title="Filter by:" value={{ 0: ["0"], 1: ["0"] }}>
+                <ButtonGroup.Section title="Category" value="0">
+                    <ButtonGroup.Button value="0">All</ButtonGroup.Button>
+                    <ButtonGroup.Button value="1">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="2">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="3">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="4">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="5">Button Label</ButtonGroup.Button>
+                </ButtonGroup.Section>
+                <ButtonGroup.Section title="Dates" value="1">
+                    <ButtonGroup.Button value="0">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="1">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="2">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="3">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="4">Button Label</ButtonGroup.Button>
+                    <ButtonGroup.Button value="5">Button Label</ButtonGroup.Button>
+                </ButtonGroup.Section>
+                <ButtonGroup.Section title="Distance (miles)" value="2">
+                    <ButtonGroup.Button value="0">All</ButtonGroup.Button>
+                    <ButtonGroup.Button value="1">10</ButtonGroup.Button>
+                    <ButtonGroup.Button value="2">20</ButtonGroup.Button>
+                    <ButtonGroup.Button value="3">30</ButtonGroup.Button>
+                    <ButtonGroup.Button value="4">40</ButtonGroup.Button>
+                </ButtonGroup.Section>
+            </ButtonGroup>
+        </Column>
+    </Row>
+</Container>
+```
+
 ## Toggle
 
 ```table

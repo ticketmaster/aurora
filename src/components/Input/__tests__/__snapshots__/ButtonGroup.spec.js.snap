@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup renders button group with default selected element 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="sc-jlyJG gGJSEH"
+    >
+      <div
+        class="sc-bwzfXH RpnLm"
+      >
+        <div
+          class="text text--dark text--primary sc-gipzik kiZGcR sc-kGXeez knVvqk"
+        >
+          Sort by
+        </div>
+      </div>
+      <div
+        class="sc-bwzfXH RpnLm"
+      >
+        <div
+          class="sc-bwzfXH RpnLm"
+        >
+          <div
+            class="text text--dark text--secondary sc-kEYyzF oQBJc sc-kGXeez ccFTWl"
+          >
+            Category
+          </div>
+        </div>
+        <div
+          class="sc-bdVaJa erSRMf"
+        >
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="button__selected sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button0"
+            >
+              All
+            </button>
+          </div>
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button1"
+            >
+              Concerts
+            </button>
+          </div>
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button2"
+            >
+              Button Label
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ButtonGroup renders default button group 1`] = `
+Object {
+  "container": <div>
+    <div
+      class="sc-jlyJG gGJSEH"
+    >
+      <div
+        class="sc-bwzfXH RpnLm"
+      >
+        <div
+          class="text text--dark text--primary sc-gipzik kiZGcR sc-kGXeez knVvqk"
+        >
+          Sort by
+        </div>
+      </div>
+      <div
+        class="sc-bwzfXH RpnLm"
+      >
+        <div
+          class="sc-bwzfXH RpnLm"
+        >
+          <div
+            class="text text--dark text--secondary sc-kEYyzF oQBJc sc-kGXeez ccFTWl"
+          >
+            Category
+          </div>
+        </div>
+        <div
+          class="sc-bdVaJa erSRMf"
+        >
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button0"
+            >
+              All
+            </button>
+          </div>
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button1"
+            >
+              Concerts
+            </button>
+          </div>
+          <div
+            class="sc-gPEVay ioTiOG"
+          >
+            <button
+              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              data-testid="test-button2"
+            >
+              Button Label
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
