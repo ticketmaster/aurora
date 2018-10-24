@@ -122,7 +122,7 @@ export {
   SecondaryText,
   SectionHeading,
   Link,
-  LinkDeprecated,
+  LinkCta,
   BoldText
 } from "./components/Text";
 

@@ -17,31 +17,16 @@
         <Spacing top={{ xSmall: 'comfy' }} />
         <Row>
             <Column small={2}>
-                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>Link:</Text>
+                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>LinkCta:</Text>
             </Column>
             <Column small={3} style={{ textAlign: "center" }}>
-                <Link href="http://someurl.com">Read more</Link>
+                <LinkCta href="http://someurl.com">Read more</LinkCta>
             </Column>
             <Column small={2}>
-                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>Link:</Text>
+                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>LinkCta:</Text>
             </Column>
             <Column small={3} style={{ textAlign: "center" }}>
-                <Link size="large" href="http://someurl.com">Read more</Link>
-            </Column>
-        </Row>
-        <Spacing top={{ xSmall: 'giant' }} />
-        <Row>
-            <Column small={2}>
-                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>Component:</Text>
-            </Column>
-            <Column small={3} style={{ textAlign: "center" }}>
-                <Link onClick={()=>{}}>Read more</Link>
-            </Column>
-            <Column small={2}>
-                <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>Component:</Text>
-            </Column>
-            <Column small={3} style={{ textAlign: "center" }}>
-                <Link size="large" onClick={()=>{}}>Read more</Link>
+                <LinkCta size="large" href="http://someurl.com">Read more</LinkCta>
             </Column>
         </Row>
         <Spacing top={{ xSmall: 'giant' }} />

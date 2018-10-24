@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { LinkDeprecated } from "../Text/";
+import { Link } from "../Text/";
 
 import { spacing } from "../../theme";
 import { getThemeValue } from "../../utils";
@@ -10,7 +10,7 @@ const DayTileMoreButtonContainer = styled.div`
   border-top: 1px solid ${getThemeValue("gray04")};
 `;
 
-const DayTileMoreButtonLink = styled(LinkDeprecated).attrs({
+const DayTileMoreButtonLink = styled(Link).attrs({
   size: "uno"
 })`
   display: block;
