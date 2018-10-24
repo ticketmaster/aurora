@@ -20,31 +20,31 @@ const ModalContainer = styled(Column)`
   overflow-x: hidden;
   max-height: calc(100% - 96px);
   z-index: 100;
-  &.modal-enter {
+  .modal-enter & {
     opacity: 0;
     transform: scale(0.7);
   }
-  &.modal-enter.modal-enter-active {
+  .modal-leave &,
+  .modal-exit & {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .modal-appear & {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  .modal-enter.modal-enter-active & {
     opacity: 1;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
   }
-  &.modal-leave,
-  &.modal-exit {
-    opacity: 1;
-    transform: scale(1);
-  }
-  &.modal-leave.modal-leave-active,
-  &.modal-exit.modal-exit-active {
+  .modal-leave.modal-leave-active &,
+  .modal-exit.modal-exit-active & {
     opacity: 0;
     transition: all 0.1s ease-in-out;
     transform: scale(0.7);
   }
-  &.modal-appear {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-  &.modal-appear.modal-appear-active {
+  .modal-appear.modal-appear-active & {
     opacity: 1;
     transform: scale(1);
     transition: all 0.3s ease-in-out;
