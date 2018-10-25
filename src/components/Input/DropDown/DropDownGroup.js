@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { Transition } from "react-transition-group";
 
+import { checkPassiveEventSupport } from "../../../utils";
 import { TWO_SIZE_VARIANT } from "../../../utils/sizes";
 import { Provider as DropDownProvider } from "./Context";
 import SelectionProvider from "../../SelectionProvider/Provider";
@@ -25,6 +26,8 @@ import {
 } from "./DropDownGroup.styles";
 
 class DropDownGroup extends React.Component {
+  static isPassiveSupported = checkPassiveEventSupport();
+
   componentDidMount() {
     document.addEventListener("click", this.handleOutsideClick);
   }
@@ -32,7 +35,15 @@ class DropDownGroup extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     const { isOpen } = this.state;
     // disables scroll when dropdown is open
-    document.addEventListener("wheel", this.disableScroll);
+    const touchMoveHandlerOptions = DropDownGroup.isPassiveSupported
+      ? { passive: false }
+      : false;
+    document.addEventListener("wheel", this.disableGlobalScroll);
+    document.addEventListener(
+      "touchmove",
+      this.disableGlobalScroll,
+      touchMoveHandlerOptions
+    );
     // scroll dropdown to top after opening
     if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
@@ -41,7 +52,8 @@ class DropDownGroup extends React.Component {
 
   componentWillUnmount() {
     document.removeEventListener("click", this.handleOutsideClick);
-    document.removeEventListener("wheel", this.disableScroll);
+    document.removeEventListener("wheel", this.disableGlobalScroll);
+    document.removeEventListener("touchmove", this.disableGlobalScroll);
   }
 
   onClick = () => {
@@ -117,9 +129,27 @@ class DropDownGroup extends React.Component {
     }
   };
 
-  disableScroll = e => {
-    if (this.state.isOpen && !this.groupWrapper.current.contains(e.target)) {
+  disableGlobalScroll = e => {
+    if (!this.state.isOpen || !e.cancelable) {
+      return;
+    }
+
+    const wasScrolledWithin = this.groupWrapper.current.contains(e.target);
+
+    const deltaY = e.touches
+      ? e.touches[0].clientY - this.lastTouchPosition
+      : e.deltaY;
+    const willChangeScrollOffset = this.checkDropdownScrollOffset(deltaY);
+
+    if (
+      (!wasScrolledWithin && this.props.preventGlobalScroll) ||
+      (wasScrolledWithin && willChangeScrollOffset)
+    ) {
       this.stopInteraction(e);
+    }
+
+    if (e.touches) {
+      this.lastTouchPosition = deltaY;
     }
   };
 
@@ -137,6 +167,15 @@ class DropDownGroup extends React.Component {
     const viewPortHeight = document.documentElement.clientHeight;
     const { bottom } = this.styledGroup.current.getBoundingClientRect();
     return viewPortHeight - bottom;
+  };
+
+  checkDropdownScrollOffset = deltaY => {
+    const {
+      current: { scrollHeight, scrollTop, clientHeight }
+    } = this.styledChildWrapper;
+    const isScrollDown = deltaY > 0;
+    const contentBottom = scrollTop + clientHeight;
+    return isScrollDown ? contentBottom >= scrollHeight : scrollTop <= 0;
   };
 
   // check if dropdown height is higher than the space underneath it
@@ -168,6 +207,7 @@ class DropDownGroup extends React.Component {
     return this.getCurrentSelection(selected[0]);
   };
 
+  lastTouchPosition = 0;
   groupWrapper = React.createRef();
   optionsContainer = React.createRef();
   styledGroup = React.createRef();
@@ -291,6 +331,7 @@ class DropDownGroup extends React.Component {
                               `dropdown__items--${size}`,
                               {
                                 "dropdown--clicked": isOpen,
+                                "dropdown--hidden": wrapperState === "exited",
                                 "dropdown--overflow": wrapperState === "entered"
                               }
                             )}
@@ -337,7 +378,8 @@ DropDownGroup.propTypes = {
   withKeyboardProvider: PropTypes.bool,
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(TWO_SIZE_VARIANT),
-  shouldOpenDownward: PropTypes.bool
+  shouldOpenDownward: PropTypes.bool,
+  preventGlobalScroll: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -352,7 +394,8 @@ DropDownGroup.defaultProps = {
   label: "",
   disabled: false,
   size: TWO_SIZE_VARIANT[1],
-  shouldOpenDownward: false
+  shouldOpenDownward: false,
+  preventGlobalScroll: false
 };
 
 export default DropDownGroup;

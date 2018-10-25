@@ -1,3 +1,6 @@
+export {
+  default as checkPassiveEventSupport
+} from "./checkPassiveEventSupport";
 export { default as getThemeValue } from "./getThemeValue";
 export { default as composeEventHandlers } from "./composeEventHandlers";
 export { default as getRelByTarget } from "./link";

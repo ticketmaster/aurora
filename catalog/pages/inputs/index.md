@@ -446,6 +446,10 @@ rows:
     Type: small or large
     Default: large
     Notes: Defines size
+  - Prop: preventGlobalScroll
+    Type: boolean
+    Default: 'false'
+    Notes: Disable document scrolling when DropDown is opened
 ```
 
 ## Drop Down Option

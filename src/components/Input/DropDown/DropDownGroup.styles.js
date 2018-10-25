@@ -105,6 +105,10 @@ export const StyledChildWrapper = styled.div`
     overflow-y: auto;
   }
 
+  &.dropdown--hidden {
+    z-index: 0;
+  }
+
   .dropdown--open-upward & {
     bottom: 43px;
     border-radius: ${small} ${small} 0 0;

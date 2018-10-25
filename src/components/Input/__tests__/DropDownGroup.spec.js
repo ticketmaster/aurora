@@ -68,9 +68,15 @@ describe("DropDownGroup", () => {
   });
 
   it("renders default dropdown that should always open downwards", () => {
-    expect(
-      renderTestComponentOne({ shouldOpenDownward: true }).container.firstChild
-    ).toMatchSnapshot();
+    const { container, getByTestId } = renderTestComponentOne({
+      shouldOpenDownward: true
+    });
+    fireEvent.keyDown(getByTestId("test-dropContainer"), {
+      key: "ArrowUp",
+      keyCode: 38,
+      which: 38
+    });
+    expect(container.firstChild).toMatchSnapshot();
   });
 
   it("renders small dropdown", () => {
@@ -79,17 +85,16 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
-  it("renders variant 0 with a placeholder prop", () => {
+  it("renders with a placeholder prop", () => {
     expect(
-      renderTestComponentOne({ placeholder: "Select An Option", variant: 1 })
-        .container.firstChild
+      renderTestComponentOne({ placeholder: "Select An Option" }).container
+        .firstChild
     ).toMatchSnapshot();
   });
 
-  it("renders variant 1 with a label prop", () => {
+  it("renders with a label prop", () => {
     expect(
-      renderTestComponentOne({ label: "Selected Option:", variant: 1 })
-        .container.firstChild
+      renderTestComponentOne({ label: "Selected Option:" }).container.firstChild
     ).toMatchSnapshot();
   });
 
@@ -150,8 +155,8 @@ describe("DropDownGroup", () => {
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "ArrowUp",
-      keyCode: 32,
-      which: 32
+      keyCode: 38,
+      which: 38
     });
     expect(container.firstChild).toMatchSnapshot();
   });
@@ -395,8 +400,10 @@ describe("DropDownGroup", () => {
     expect(preventDefault).toHaveBeenCalled();
   });
 
-  it("should disable scroll when dropdown is open", () => {
-    const { container, getByTestId } = renderTestComponentOne();
+  it("should disable scroll when dropdown is open and preventGlobalScroll prop with a value of true is passed", () => {
+    const { container, getByTestId } = renderTestComponentOne({
+      preventGlobalScroll: true
+    });
 
     fireEvent.click(getByTestId("test-dropDownOptionOne"));
     fireEvent.wheel(getByTestId("test-outSideComponent"));
@@ -426,6 +433,41 @@ describe("DropDownGroup", () => {
   it("should render the correct label when label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption", () => {
     const { container } = renderTestComponentTwo({ value: ["price"] });
     expect(container).toMatchSnapshot();
+  });
+
+  it("should correctly work with touch events", () => {
+    const { container, getByTestId } = renderTestComponentOne({
+      isOpen: false
+    });
+
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+    fireEvent.touchMove(getByTestId("test-dropDownOptionOne"), {
+      cancelable: true,
+      touches: [
+        {
+          clientY: 42
+        }
+      ]
+    });
+    fireEvent.touchMove(getByTestId("test-dropDownOptionOne"), {
+      cancelable: false,
+      touches: [
+        {
+          clientY: 777
+        }
+      ]
+    });
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("should correctly work with passive event listeners", () => {
+    const { isPassiveSupported: isDefaultPassiveSupported } = DropDownGroup;
+    DropDownGroup.isPassiveSupported = true;
+    const { container, getByTestId } = renderTestComponentOne();
+    fireEvent.click(getByTestId("test-dropDownOptionOne"));
+    expect(container.firstChild).toMatchSnapshot();
+    DropDownGroup.isPassiveSupported = isDefaultPassiveSupported;
   });
 });
 
