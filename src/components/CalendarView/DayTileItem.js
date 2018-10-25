@@ -8,7 +8,7 @@ import { spacing } from "../../theme";
 import { getThemeValue } from "../../utils";
 
 const DayTileItem = styled.article`
-  flex: auto;
+  flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
   min-height: 190px;
@@ -25,10 +25,6 @@ DayTileItem.Content = styled.div`
   flex: auto;
   display: flex;
   flex-flow: row nowrap;
-
-  ${DayTileItem.Header} + & {
-    align-items: center;
-  }
 `;
 
 DayTileItem.ContentColumn = styled.div`
@@ -40,7 +36,7 @@ DayTileItem.Footer = styled.footer`
 `;
 
 DayTileItem.Divider = styled.div`
-  margin: ${spacing.cozy};
+  margin: 0 ${spacing.cozy} ${spacing.cozy};
   border-bottom: solid 1px ${getThemeValue("gray04")};
 `;
 
