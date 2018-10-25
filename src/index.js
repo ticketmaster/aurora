@@ -134,7 +134,8 @@ export {
   RadioGroup,
   CheckBoxButton as CheckBox,
   CheckBoxGroup,
-  Input
+  Input,
+  ButtonGroup
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
 export { default as Modal } from "./components/List/Modal";
