@@ -6,7 +6,7 @@ import colors from "../../theme/colors";
 
 import { ItemContainerConsumer } from "../List/Context";
 import { Row } from "../Grid";
-import { BackdropConsumer } from "../Backdrop/Context";
+import { BackdropConsumer } from "../List/BackdropContext";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
 import { constants, spacing } from "../../theme";
@@ -24,31 +24,31 @@ const BottomSheetContent = styled.div`
   padding-right: ${spacing.cozy};
   padding-left: ${spacing.cozy};
 
-  &.bottom-sheet-enter {
+  .bottom-sheet-enter & {
     transform: translateY(100%);
   }
 
-  &.bottom-sheet-enter.bottom-sheet-enter-active {
+  .bottom-sheet-leave &,
+  .bottom-sheet-exit & {
+    transform: translateY(0);
+  }
+
+  .bottom-sheet-appear & {
+    transform: translateY(100%);
+  }
+
+  .bottom-sheet-enter.bottom-sheet-enter-active & {
     transform: translateY(0);
     transition: transform 300ms ease-in-out;
   }
 
-  &.bottom-sheet-leave,
-  &.bottom-sheet-exit {
-    transform: translateY(0);
-  }
-
-  &.bottom-sheet-leave.bottom-sheet-leave-active,
-  &.bottom-sheet-exit.bottom-sheet-exit-active {
+  .bottom-sheet-leave.bottom-sheet-leave-active &,
+  .bottom-sheet-exit.bottom-sheet-exit-active & {
     transform: translateY(100%);
     transition: transform 300ms ease-in-out;
   }
 
-  &.bottom-sheet-appear {
-    transform: translateY(100%);
-  }
-
-  &.bottom-sheet-appear.bottom-sheet-appear-active {
+  .bottom-sheet-appear.bottom-sheet-appear-active & {
     transform: translateY(0);
     transition: transform 300ms ease-in-out;
   }

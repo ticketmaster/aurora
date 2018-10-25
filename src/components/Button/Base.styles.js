@@ -51,6 +51,18 @@ const colorVariants = {
     color: theme.primary.base,
     backgroundColor: theme.transparent,
     borderColor: theme.transparent
+  }),
+  outlineGray: theme => ({
+    color: theme.darkFill,
+    backgroundColor: theme.white.base,
+    backgroundColorHover: theme.white.base,
+    backgroundColorPressed: theme.white.base,
+    borderColor: theme.gray04
+  }),
+  outlineGrayDisabled: theme => ({
+    color: theme.primary.base,
+    backgroundColor: theme.transparent,
+    borderColor: theme.gray02
   })
 };
 

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withModal should render an underlying component and pass modal props 1`] = `
+Object {
+  "modal": "options",
+}
+`;
+
+exports[`withModal should render an underlying component and pass modal props 2`] = `
+<div>
+  <div
+    demo="prop"
+  >
+    Component Under Test
+  </div>
+</div>
+`;

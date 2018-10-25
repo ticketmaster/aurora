@@ -16,7 +16,15 @@ export default class DeviceSizeProvider extends React.Component {
 
   static defaultProps = { fallbackDetection: null, cssOnly: false };
 
-  initialState = { isInitialized: false, isSmall: true }; // eslint-disable-line
+  static initialState = {
+    isInitialized: false,
+    isXSmall: false,
+    isSmall: true,
+    isMedium: false,
+    isLarge: false,
+    isXLarge: false,
+    cssOnly: false
+  };
 
   static getDerivedStateFromProps(props, state) {
     if (!state.isInitialized && typeof props.fallbackDetection === "function") {
@@ -35,7 +43,7 @@ export default class DeviceSizeProvider extends React.Component {
     return null;
   }
 
-  state = this.initialState;
+  state = DeviceSizeProvider.initialState;
 
   componentDidMount() {
     if (
@@ -49,10 +57,13 @@ export default class DeviceSizeProvider extends React.Component {
       return;
     }
 
+    this.xSmallMedia = window.matchMedia(constants.breakpoints.xSmallAndDown);
     this.smallMedia = window.matchMedia(constants.breakpoints.small);
     this.mediumMedia = window.matchMedia(constants.breakpoints.medium);
     this.largeMedia = window.matchMedia(constants.breakpoints.large);
     this.xLargeMedia = window.matchMedia(constants.breakpoints.xLarge);
+
+    this.xSmallMedia.addListener(this.setSize);
     this.smallMedia.addListener(this.setSize);
     this.mediumMedia.addListener(this.setSize);
     this.largeMedia.addListener(this.setSize);
@@ -78,6 +89,7 @@ export default class DeviceSizeProvider extends React.Component {
 
     this.setState(() => ({
       isInitialized: true,
+      isXSmall: this.xSmallMedia.matches,
       isSmall: this.smallMedia.matches && !this.mediumMedia.matches,
       isMedium: this.mediumMedia.matches && !this.largeMedia.matches,
       isLarge: this.largeMedia.matches && !this.xLargeMedia.matches,
@@ -87,6 +99,7 @@ export default class DeviceSizeProvider extends React.Component {
   };
 
   unsubscribe = () => {
+    if (this.xSmallMedia) this.xSmallMedia.removeListener(this.setSize);
     if (this.smallMedia) this.smallMedia.removeListener(this.setSize);
     if (this.mediumMedia) this.mediumMedia.removeListener(this.setSize);
     if (this.largeMedia) this.largeMedia.removeListener(this.setSize);

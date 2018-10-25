@@ -103,6 +103,31 @@ rows:
 </ThemeProvider>
 ```
 
+### OutlineGray button
+
+```react
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row>
+            <Column small={3}/>
+            <Column small={6}>
+                <Button variant="outlineGray" size="small">My cool button</Button>
+                <Spacing top={{small: "moderate"}}>
+                    <Button variant="outlineGray">My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
+                    <Button variant="outlineGray" size="large">My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
+                    <Button variant="outlineGray" size="large" disabled>My cool button</Button>
+                </Spacing>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
 ### Transparent button
 
 ```react

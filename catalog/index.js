@@ -22,7 +22,7 @@ import calendarView from "./pages/calendar_view";
 import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
 import deviceConnection from "./pages/device_connection";
-import seattooltip from "./pages/seattooltip";
+import links from "./pages/links";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -49,7 +49,7 @@ const pages = [
   popover,
   tooltip,
   deviceConnection,
-  seattooltip
+  links,
 ];
 
 const sizes = [
