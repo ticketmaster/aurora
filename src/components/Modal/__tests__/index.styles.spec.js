@@ -4,8 +4,10 @@ import renderer from "react-test-renderer";
 import { ActionBar, BottomActionBar } from "../index.styles";
 
 describe("<ActionBar />", () => {
-  it("should omit shadow and gutters by default", () => {
-    const wrapper = renderer.create(<ActionBar />);
+  it("should omit shadow and gutters", () => {
+    const wrapper = renderer.create(
+      <ActionBar shadow={false} gutters={false} />
+    );
 
     expect(wrapper).toMatchSnapshot();
   });
@@ -18,8 +20,10 @@ describe("<ActionBar />", () => {
 });
 
 describe("<BottomActionBar />", () => {
-  it("should omit shadow and gutters by default", () => {
-    const wrapper = renderer.create(<BottomActionBar />);
+  it("should omit shadow and gutters", () => {
+    const wrapper = renderer.create(
+      <BottomActionBar shadow={false} gutters={false} />
+    );
 
     expect(wrapper).toMatchSnapshot();
   });

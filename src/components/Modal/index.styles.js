@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-import { spacing, colors, constants } from "../../theme";
-import {
-  xSmallAndDown,
-  smallAndUp,
-  mediumAndUp,
-  largeAndUp
-} from "../../theme/mediaQueries";
+import { spacing, colors, constants, zIndex } from "../../theme";
+import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import Column from "../Grid/Column";
 
 const SHADOW_OFFSET_X = "0 16px 16px 0 rgba(0, 0, 0, 0.06)";
@@ -16,15 +11,15 @@ export const ModalContainer = styled(Column)`
   position: relative;
   background-color: ${colors.white.base};
   padding: 0;
+  z-index: ${zIndex.layout.overlay};
 
-  ${xSmallAndDown`
-    height: 100vh;
-  `};
+  height: 100vh;
 
   ${smallAndUp`
     margin: 0 auto;
     top: 50%;
     transform: translateY(-50%);
+    height: auto;
     max-height: calc(100vh - 88px * 2);
 
     border-radius: ${constants.borderRadius.large};
@@ -35,9 +30,7 @@ export const ModalContainer = styled(Column)`
 `;
 
 const actionBarGutters = css`
-  ${xSmallAndDown`
-    padding: ${spacing.gutters.small}px;
-  `};
+  padding: ${spacing.gutters.small}px;
 
   ${smallAndUp`
     padding: ${spacing.gutters.small}px;
@@ -64,14 +57,13 @@ export const ActionBar = styled.div`
 `;
 
 ActionBar.propTypes = {
+  shadow: PropTypes.bool.isRequired,
   gutters: PropTypes.bool.isRequired
 };
 
 const contentGutters = css`
-  ${xSmallAndDown`
-    padding-left: ${spacing.gutters.small}px;
-    padding-right: ${spacing.gutters.small}px;
-  `};
+  padding-left: ${spacing.gutters.small}px;
+  padding-right: ${spacing.gutters.small}px;
 
   ${smallAndUp`
     padding-left: ${spacing.gutters.small}px;
@@ -101,9 +93,7 @@ ModalContent.propTypes = {
 };
 
 const bottomActionBarGutters = css`
-  ${xSmallAndDown`
-    padding: ${spacing.gutters.small}px;
-  `};
+  padding: ${spacing.gutters.small}px;
 
   ${smallAndUp`
     padding: ${spacing.gutters.small}px;
@@ -111,7 +101,9 @@ const bottomActionBarGutters = css`
 
   ${mediumAndUp`
     padding: ${spacing.gutters.mediumAndUp}px;
-  `} ${largeAndUp`
+  `};
+
+  ${largeAndUp`
     padding: ${spacing.gutters.largeAndUp}px;
     padding-top: 24px;
   `};
@@ -126,5 +118,6 @@ export const BottomActionBar = styled.div`
 `;
 
 BottomActionBar.propTypes = {
+  shadow: PropTypes.bool.isRequired,
   gutters: PropTypes.bool.isRequired
 };
