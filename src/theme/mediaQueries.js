@@ -14,6 +14,12 @@ export const smallAndUp = (...args) => css`
   }
 `;
 
+export const mediumAndDown = (...args) => css`
+  @media screen and ${constants.breakpoints.mediumAndDown} {
+    ${css(...args)};
+  }
+`;
+
 export const mediumAndUp = (...args) => css`
   @media screen and ${constants.breakpoints.mediumAndUp} {
     ${css(...args)};

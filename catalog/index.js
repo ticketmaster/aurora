@@ -22,6 +22,7 @@ import calendarView from "./pages/calendar_view";
 import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
 import links from "./pages/links";
+import tabs from "./pages/tabs";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -48,6 +49,7 @@ const pages = [
   popover,
   tooltip,
   links,
+  tabs
 ];
 
 const sizes = [
