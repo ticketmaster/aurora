@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -10,6 +9,7 @@ import { withModal } from "./context";
 
 import { CloseButtonContainer } from "./DefaultActionBar.styles";
 
+// TODO: allow to set up the title and background
 export const ModalActionBar = ({ modal: { closeModal }, iconButtonProps }) => (
   <CloseButtonContainer>
     <CrossIcon

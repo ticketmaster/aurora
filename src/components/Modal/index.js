@@ -9,7 +9,6 @@ import {
 } from "./index.styles";
 
 import Backdrop from "../Backdrop";
-import DefaultActionBar from "./DefaultActionBar";
 
 import { ModalProvider } from "./context";
 import {
@@ -49,19 +48,26 @@ class Modal extends React.Component {
     ]),
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
-    // eslint-disable-next-line react/forbid-prop-types
-    modalContentProps: PropTypes.object
+    /* eslint-disable react/forbid-prop-types */
+    containerProps: PropTypes.object,
+    actionBarProps: PropTypes.object,
+    contentProps: PropTypes.object,
+    bottomActionBarProps: PropTypes.object
+    /* eslint-enable react/forbid-prop-types */
   };
 
   static defaultProps = {
-    actionBar: <DefaultActionBar />,
+    actionBar: null,
     bottomActionBar: null,
     gutters: true,
     isOpened: true,
-    size: MODAL_SIZE_SMALL,
+    size: MODAL_SIZE_MEDIUM,
     onRequestClose: null,
     onScroll: null,
-    modalContentProps: {}
+    containerProps: {},
+    actionBarProps: {},
+    contentProps: {},
+    bottomActionBarProps: {}
   };
 
   static getDerivedStateFromProps(props, state) {
@@ -99,14 +105,14 @@ class Modal extends React.Component {
   contentRef = React.createRef();
   bottomActionBarRef = React.createRef();
 
-  closeModal = async () => {
+  closeModal = () => {
     const { onRequestClose } = this.props;
 
-    const requestApproved = await isRequestCloseApproved({ onRequestClose });
-
-    if (!onRequestClose || requestApproved) {
-      this.setState({ isOpened: false });
-    }
+    isRequestCloseApproved({ onRequestClose }).then(requestApproved => {
+      if (requestApproved) {
+        this.setState({ isOpened: false });
+      }
+    });
   };
 
   handleScroll = e => {
@@ -174,7 +180,10 @@ class Modal extends React.Component {
       gutters,
       size,
       deviceSize,
-      modalContentProps
+      containerProps,
+      actionBarProps,
+      contentProps,
+      bottomActionBarProps
     } = this.props;
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
@@ -189,12 +198,14 @@ class Modal extends React.Component {
           <ModalContainer
             small={getModalSize({ deviceSize, preferredSize: size })}
             innerRef={this.containerRef}
+            {...containerProps}
           >
             {actionBar && (
               <ActionBar
                 shadow={actionBarShadow}
                 innerRef={this.actionBarRef}
                 gutters={gutters}
+                {...actionBarProps}
               >
                 {actionBar}
               </ActionBar>
@@ -202,8 +213,8 @@ class Modal extends React.Component {
             <ModalContent
               innerRef={this.contentRef}
               onScroll={this.handleScroll}
-              {...modalContentProps}
               gutters={gutters}
+              {...contentProps}
             >
               {children}
             </ModalContent>
@@ -212,6 +223,7 @@ class Modal extends React.Component {
                 shadow={bottomActionBarShadow}
                 innerRef={this.bottomActionBarRef}
                 gutters={gutters}
+                {...bottomActionBarProps}
               >
                 {bottomActionBar}
               </BottomActionBar>
