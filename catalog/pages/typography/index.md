@@ -97,7 +97,7 @@ const str = "Better is together";
 </Row>
 <Row style={fontSizeRowStyle}>
     <Column medium={2}>Kilo - 16 px</Column>
-    <Column medium={6}}>
+    <Column medium={6}>
         <Text size="kilo">{str}</Text>
     </Column>
 </Row>

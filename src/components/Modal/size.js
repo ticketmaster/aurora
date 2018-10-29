@@ -1,5 +1,3 @@
-// https://app.zeplin.io/project/5b0f3c0bbae1b8511315f6f2/screen/5b4846296396e8127efe806a
-
 export const MODAL_SIZE_SMALL = "small";
 export const MODAL_SIZE_MEDIUM = "medium";
 export const MODAL_SIZE_LARGE = "large";
