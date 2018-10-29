@@ -3,34 +3,13 @@
 exports[`<Modal /> closeModal should close the modal when the request was approved 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-htpNat gsIAaW"
-      >
-        <div
-          class="sc-bZQynM diOXpf"
-        >
-          <svg
-            aria-label="Close Modal"
-            class="button--close"
-            fill="rgba(38, 38, 38, 1)"
-            height="12"
-            role="button"
-            viewBox="0 0 12 12"
-            width="12"
-          >
-            <path
-              d="M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
         style="max-height: 100;"
       >
         <button
@@ -45,34 +24,13 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 exports[`<Modal /> closeModal should close the modal when there is no onRequestClose callback 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-htpNat gsIAaW"
-      >
-        <div
-          class="sc-bZQynM diOXpf"
-        >
-          <svg
-            aria-label="Close Modal"
-            class="button--close"
-            fill="rgba(38, 38, 38, 1)"
-            height="12"
-            role="button"
-            viewBox="0 0 12 12"
-            width="12"
-          >
-            <path
-              d="M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
         style="max-height: 100;"
       >
         <button
@@ -86,43 +44,30 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 
 exports[`<Modal /> render should not render the modal if it is closed 1`] = `<div />`;
 
-exports[`<Modal /> render should render modal without actionBar 1`] = `
+exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-htpNat gYdIYG"
       >
         <div>
-          Modal contents
+          Action bar controls
         </div>
       </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<Modal /> render should render with bottomActionBar 1`] = `
-<div>
-  <div
-    class="sc-EHOje container--overlay kxqJdb"
-  >
-    <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
-    >
       <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
       >
         <div>
           Modal contents
         </div>
       </div>
       <div
-        class="sc-ifAKCX gHRYap"
+        class="sc-ifAKCX fQNkTf"
       >
         <div>
           Place your controls here
@@ -133,37 +78,17 @@ exports[`<Modal /> render should render with bottomActionBar 1`] = `
 </div>
 `;
 
-exports[`<Modal /> render should render without errors with default actionBar and pass extra props 1`] = `
+exports[`<Modal /> render should render without errors and pass extra props 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
+      style="width: 210px;"
     >
       <div
-        class="sc-htpNat gsIAaW"
-      >
-        <div
-          class="sc-bZQynM diOXpf"
-        >
-          <svg
-            aria-label="Close Modal"
-            class="button--close"
-            fill="rgba(38, 38, 38, 1)"
-            height="12"
-            role="button"
-            viewBox="0 0 12 12"
-            width="12"
-          >
-            <path
-              d="M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
       >
         <div>
           Modal contents
@@ -177,34 +102,13 @@ exports[`<Modal /> render should render without errors with default actionBar an
 exports[`<Modal /> should recalculate shadows and content height on props change 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-htpNat gsIAaW"
-      >
-        <div
-          class="sc-bZQynM diOXpf"
-        >
-          <svg
-            aria-label="Close Modal"
-            class="button--close"
-            fill="rgba(38, 38, 38, 1)"
-            height="12"
-            role="button"
-            viewBox="0 0 12 12"
-            width="12"
-          >
-            <path
-              d="M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
         style="max-height: 100;"
       >
         <div>
@@ -219,34 +123,13 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 exports[`<Modal /> should set bottom action bar shadow when the content was scrolled 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay kxqJdb"
+    class="sc-EHOje container--overlay czzgRX"
   >
     <div
-      class="sc-bwzfXH gCqeak sc-bdVaJa hPYopS"
+      class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-htpNat gsIAaW"
-      >
-        <div
-          class="sc-bZQynM diOXpf"
-        >
-          <svg
-            aria-label="Close Modal"
-            class="button--close"
-            fill="rgba(38, 38, 38, 1)"
-            height="12"
-            role="button"
-            viewBox="0 0 12 12"
-            width="12"
-          >
-            <path
-              d="M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        class="sc-bxivhb hcTEGx"
+        class="sc-bxivhb hkfQrY"
         style="max-height: 100;"
       >
         <div
@@ -256,7 +139,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
         </div>
       </div>
       <div
-        class="sc-ifAKCX jaxnho"
+        class="sc-ifAKCX fQNkTf"
       >
         <div />
       </div>
