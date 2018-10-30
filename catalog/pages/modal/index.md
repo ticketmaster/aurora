@@ -55,7 +55,7 @@ responsive: true
 </DeviceSizeProvider>
 ```
 
-### Modal with custom action bars
+### Modal with custom action bars and long content
 
 ```react
 responsive: true
@@ -74,6 +74,29 @@ responsive: true
         }
     >
         {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
+    </Modal>
+</DeviceSizeProvider>
+```
+
+### Modal with custom action bars and short content
+
+```react
+responsive: true
+---
+<DeviceSizeProvider>
+    <Modal
+        actionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo Modal</h1>
+            </div>
+        }
+        bottomActionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <Button style={{ width: 'auto' }}>See Tickets</Button>
+            </div>
+        }
+    >
+        {Array(8).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
     </Modal>
 </DeviceSizeProvider>
 ```

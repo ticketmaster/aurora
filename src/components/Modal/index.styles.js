@@ -83,7 +83,7 @@ const contentGutters = css`
 
 export const ModalContent = styled.div`
   background-color: ${colors.white.base};
-  overflow-y: scroll;
+  overflow-y: auto;
 
   ${({ gutters }) => (gutters ? contentGutters : "")};
 `;
