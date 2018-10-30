@@ -9,8 +9,8 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
       class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-bxivhb hkfQrY"
-        style="max-height: 100;"
+        class="sc-bxivhb bSaKFF"
+        style="min-height: 100; max-height: 100;"
       >
         <button
           data-testid="close-modal"
@@ -30,8 +30,8 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
       class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-bxivhb hkfQrY"
-        style="max-height: 100;"
+        class="sc-bxivhb bSaKFF"
+        style="min-height: 100; max-height: 100;"
       >
         <button
           data-testid="close-modal"
@@ -60,7 +60,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
         </div>
       </div>
       <div
-        class="sc-bxivhb hkfQrY"
+        class="sc-bxivhb bSaKFF"
       >
         <div>
           Modal contents
@@ -88,7 +88,7 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
       style="width: 210px;"
     >
       <div
-        class="sc-bxivhb hkfQrY"
+        class="sc-bxivhb bSaKFF"
       >
         <div>
           Modal contents
@@ -108,8 +108,8 @@ exports[`<Modal /> should recalculate shadows and content height on props change
       class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-bxivhb hkfQrY"
-        style="max-height: 100;"
+        class="sc-bxivhb bSaKFF"
+        style="min-height: 100; max-height: 100;"
       >
         <div>
           Modal contents
@@ -129,8 +129,8 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
       class="sc-bwzfXH iqdfeW sc-bdVaJa hPYopS"
     >
       <div
-        class="sc-bxivhb hkfQrY"
-        style="max-height: 100;"
+        class="sc-bxivhb bSaKFF"
+        style="min-height: 100; max-height: 100;"
       >
         <div
           data-testid="content"
