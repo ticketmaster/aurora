@@ -126,16 +126,26 @@ class Modal extends React.Component {
   };
 
   updateModalHeight = () => {
+    const {
+      deviceSize: { isSmall }
+    } = this.props;
+
     const actionBar = this.actionBarRef.current;
     const bottomActionBar = this.bottomActionBarRef.current;
     const content = this.contentRef.current;
     const container = this.containerRef.current;
 
-    content.style.maxHeight = getContentHeight({
+    const contentHeight = getContentHeight({
       actionBar,
       bottomActionBar,
       container
     });
+
+    if (isSmall) {
+      content.style.minHeight = contentHeight;
+    }
+
+    content.style.maxHeight = contentHeight;
   };
 
   updateShadows = () => {
