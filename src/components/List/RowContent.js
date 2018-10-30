@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import classnames from "classnames";
@@ -224,199 +224,223 @@ const ContentRow = styled(Row)`
   position: relative;
 `;
 
-const ListRowContent = ({
-  rowItem: {
-    title,
-    subTitle,
-    dateTitle,
-    dateSubTitle,
-    buttonText,
-    variant,
-    linkTitle,
-    linkUrl = "",
-    linkSubTitle,
-    dateColor,
-    onClick,
-    url
-  },
-  isOpen,
-  index,
-  onOverflowClick,
-  onExpandShow,
-  children,
-  onExpandItem,
-  onCollapseItem,
-  ...rest
-}) => (
-  <RowWrapper
-    variant={variant}
-    className={classnames({
-      row__wrapper: true,
-      "row__wrapper--expanded": isOpen,
-      "row__wrapper--collapsed": !isOpen
-    })}
-    {...rest}
-  >
-    {/* this class name is for automation purposes please do not remove or modify the name */}
-    <ListContainer className="list__container" rowVariant={variant}>
-      <RowToggler
-        isOpen={isOpen}
-        index={index}
-        onExpandItem={onExpandItem}
-        onCollapseItem={onCollapseItem}
-        className="row__toggler"
-      />
+class ListRowContent extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.isOpen && this.props.index !== prevProps.index) {
+      this.props.resetOpenIndex();
+    }
+  }
 
-      <LinkWrapper
-        role="link"
-        aria-label={buttonText}
-        onClick={onClick}
-        href={url}
-        // this class name is for automation purposes please do not remove or modify the name
-        className="link__wrapper"
+  componentWillUnmount() {
+    if (this.props.isOpen) {
+      this.props.resetOpenIndex();
+    }
+  }
+
+  render() {
+    const {
+      rowItem: {
+        title,
+        subTitle,
+        dateTitle,
+        dateSubTitle,
+        buttonText,
+        variant,
+        linkTitle,
+        linkUrl = "",
+        linkSubTitle,
+        dateColor,
+        onClick,
+        url
+      },
+      isOpen,
+      index,
+      onOverflowClick,
+      onExpandShow,
+      children,
+      onExpandItem,
+      onCollapseItem,
+      ...rest
+    } = this.props;
+
+    return (
+      <RowWrapper
+        variant={variant}
+        className={classnames({
+          row__wrapper: true,
+          "row__wrapper--expanded": isOpen,
+          "row__wrapper--collapsed": !isOpen
+        })}
+        {...rest}
       >
         {/* this class name is for automation purposes please do not remove or modify the name */}
-        <DateWrapper className="date__wrapper">
-          <Text
-            className="date--text"
-            allCaps
-            responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-            weight="semiBold"
-            {...(dateColor
-              ? { accent: "heliotrope", variant: "accent", primary: true }
-              : {})}
-          >
-            {dateTitle}
-          </Text>
-          <SingleLineText
-            size="hecto"
-            variant="dark"
-            secondary
-            className="day-time--text"
-          >
-            {dateSubTitle}
-          </SingleLineText>
-        </DateWrapper>
+        <ListContainer className="list__container" rowVariant={variant}>
+          <RowToggler
+            isOpen={isOpen}
+            index={index}
+            onExpandItem={onExpandItem}
+            onCollapseItem={onCollapseItem}
+            className="row__toggler"
+          />
 
-        {/* this class name is for automation purposes please do not remove or modify the name */}
-        <ContentRow className="row__content">
-          {/* this class name is for automation purposes please do not remove or modify the name */}
-          <MobileOnlyColumn className="column__mobile-only">
-            <MultilineText
-              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-              className="list-row--title"
-            >
-              {title}
-            </MultilineText>
-            <SingleLineText
-              size="hecto"
-              variant="dark"
-              secondary
-              className="list-row--subtitle"
-            >
-              {subTitle}
-            </SingleLineText>
-          </MobileOnlyColumn>
-
-          <ContentColumn
-            key="primary"
-            medium={6}
-            className={classnames({
-              column__content: true,
-              "list-row--title": true,
-              "column__content--expanded": isOpen,
-              "column__content--collapsed": !isOpen
-            })}
-          >
-            <MultilineText responsiveSize={{ xSmall: "hecto", medium: "kilo" }}>
-              {title}
-            </MultilineText>
-          </ContentColumn>
-          {/* this class name is for automation purposes please do not remove or modify the name */}
-          <ContentColumn key="secondary" medium={6} className="column__content">
-            <MultilineText
-              key="collapsed"
-              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-              className={classnames({
-                subtitle: true,
-                "list-row--subtitle": true,
-                "subtitle--active": !isOpen,
-                "subtitle--hidden": isOpen,
-                // this class name is for automation purposes please do not remove or modify the name
-                "subtitle--collapsed": true
-              })}
-            >
-              {subTitle}
-            </MultilineText>
-            <MultilineText
-              key="expanded"
-              responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-              className={classnames({
-                subtitle: true,
-                "subtitle--expanded": true,
-                "subtitle--active": isOpen,
-                "subtitle--hidden": !isOpen
-              })}
-            >
-              {isOpen && onExpandShow === "title" ? title : subTitle}
-            </MultilineText>
-          </ContentColumn>
-        </ContentRow>
-
-        <DesktopContainer>
-          <ListRowButton
+          <LinkWrapper
+            role="link"
             aria-label={buttonText}
-            role="button"
-            width="102px"
-            variant="standard"
-            size="regular"
-            rowVariant={variant}
+            onClick={onClick}
+            href={url}
+            // this class name is for automation purposes please do not remove or modify the name
+            className="link__wrapper"
           >
-            {buttonText}
-          </ListRowButton>
-          {variant === "withLink" && (
-            <AbsoluteContent>
-              <SingleLineText size="uno" variant="dark" secondary>
-                {linkSubTitle}
+            {/* this class name is for automation purposes please do not remove or modify the name */}
+            <DateWrapper className="date__wrapper">
+              <Text
+                className="date--text"
+                allCaps
+                responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                weight="semiBold"
+                {...(dateColor
+                  ? { accent: "heliotrope", variant: "accent", primary: true }
+                  : {})}
+              >
+                {dateTitle}
+              </Text>
+              <SingleLineText
+                size="hecto"
+                variant="dark"
+                secondary
+                className="day-time--text"
+              >
+                {dateSubTitle}
               </SingleLineText>
-            </AbsoluteContent>
-          )}
-        </DesktopContainer>
-      </LinkWrapper>
+            </DateWrapper>
 
-      <MobileContainer>
-        <IconButton
-          className="button--more-info icon-button--last"
-          data-index={index}
-          aria-label="More Info"
+            {/* this class name is for automation purposes please do not remove or modify the name */}
+            <ContentRow className="row__content">
+              {/* this class name is for automation purposes please do not remove or modify the name */}
+              <MobileOnlyColumn className="column__mobile-only">
+                <MultilineText
+                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                  className="list-row--title"
+                >
+                  {title}
+                </MultilineText>
+                <SingleLineText
+                  size="hecto"
+                  variant="dark"
+                  secondary
+                  className="list-row--subtitle"
+                >
+                  {subTitle}
+                </SingleLineText>
+              </MobileOnlyColumn>
+
+              <ContentColumn
+                key="primary"
+                medium={6}
+                className={classnames({
+                  column__content: true,
+                  "list-row--title": true,
+                  "column__content--expanded": isOpen,
+                  "column__content--collapsed": !isOpen
+                })}
+              >
+                <MultilineText
+                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                >
+                  {title}
+                </MultilineText>
+              </ContentColumn>
+              {/* this class name is for automation purposes please do not remove or modify the name */}
+              <ContentColumn
+                key="secondary"
+                medium={6}
+                className="column__content"
+              >
+                <MultilineText
+                  key="collapsed"
+                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                  className={classnames({
+                    subtitle: true,
+                    "list-row--subtitle": true,
+                    "subtitle--active": !isOpen,
+                    "subtitle--hidden": isOpen,
+                    // this class name is for automation purposes please do not remove or modify the name
+                    "subtitle--collapsed": true
+                  })}
+                >
+                  {subTitle}
+                </MultilineText>
+                <MultilineText
+                  key="expanded"
+                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                  className={classnames({
+                    subtitle: true,
+                    "subtitle--expanded": true,
+                    "subtitle--active": isOpen,
+                    "subtitle--hidden": !isOpen
+                  })}
+                >
+                  {isOpen && onExpandShow === "title" ? title : subTitle}
+                </MultilineText>
+              </ContentColumn>
+            </ContentRow>
+
+            <DesktopContainer>
+              <ListRowButton
+                aria-label={buttonText}
+                role="button"
+                width="102px"
+                variant="standard"
+                size="regular"
+                rowVariant={variant}
+              >
+                {buttonText}
+              </ListRowButton>
+              {variant === "withLink" && (
+                <AbsoluteContent>
+                  <SingleLineText size="uno" variant="dark" secondary>
+                    {linkSubTitle}
+                  </SingleLineText>
+                </AbsoluteContent>
+              )}
+            </DesktopContainer>
+          </LinkWrapper>
+
+          <MobileContainer>
+            <IconButton
+              className="button--more-info icon-button--last"
+              data-index={index}
+              aria-label="More Info"
+              onClick={onOverflowClick}
+            >
+              <OverflowIcon size={22} color={colors.onyx.light} />
+            </IconButton>
+          </MobileContainer>
+        </ListContainer>
+
+        <RowOptionsLink
+          variant={variant}
+          isOpen={isOpen}
+          url={linkUrl}
+          index={index}
           onClick={onOverflowClick}
         >
-          <OverflowIcon size={22} color={colors.onyx.light} />
-        </IconButton>
-      </MobileContainer>
-    </ListContainer>
+          {linkTitle}
+        </RowOptionsLink>
 
-    <RowOptionsLink
-      variant={variant}
-      isOpen={isOpen}
-      url={linkUrl}
-      index={index}
-      onClick={onOverflowClick}
-    >
-      {linkTitle}
-    </RowOptionsLink>
-
-    <OverflowDesktopContainer
-      className={classnames({
-        container__overflow: true,
-        "container__overflow--expanded": isOpen,
-        "container__overflow--collapsed": !isOpen
-      })}
-    >
-      {children}
-    </OverflowDesktopContainer>
-  </RowWrapper>
-);
+        <OverflowDesktopContainer
+          className={classnames({
+            container__overflow: true,
+            "container__overflow--expanded": isOpen,
+            "container__overflow--collapsed": !isOpen
+          })}
+        >
+          {children}
+        </OverflowDesktopContainer>
+      </RowWrapper>
+    );
+  }
+}
 
 ListRowContent.defaultProps = {
   isOpen: false,
@@ -434,7 +458,8 @@ ListRowContent.propTypes = {
   onExpandShow: PropTypes.oneOf(["title", "subTitle"]),
   children: PropTypes.node,
   onExpandItem: RowToggler.propTypes.onExpandItem,
-  onCollapseItem: RowToggler.propTypes.onCollapseItem
+  onCollapseItem: RowToggler.propTypes.onCollapseItem,
+  resetOpenIndex: PropTypes.func.isRequired
 };
 
 export default ListRowContent;
