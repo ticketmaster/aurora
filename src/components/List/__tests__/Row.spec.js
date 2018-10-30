@@ -22,6 +22,22 @@ describe("<ListRow />", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders List Row with title correctly when expanded", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          isOpen
+          rowItem={listItems[0]}
+          onExpandShow="title"
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders List Row with link correctly", () => {
     const component = renderer.create(
       <ListRowContainer>
@@ -49,7 +65,7 @@ describe("<ListRow />", () => {
           rowItem={{
             ...listItems[0],
             variant: "standard",
-            dateColor: colors.heliotrope.bases
+            dateColor: colors.heliotrope.base
           }}
           index={0}
           onOverflowClick={jest.fn()}
@@ -76,6 +92,32 @@ describe("<ListRow />", () => {
         />
       </ListRowContainer>
     );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("List Row unmounts correctly", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          isOpen
+          rowItem={listItems[0]}
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
+    );
+    component.unmount();
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it("List Row unmounts correctly", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow rowItem={listItems[0]} index={0} onOverflowClick={jest.fn()} />
+      </ListRowContainer>
+    );
+    component.unmount();
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
