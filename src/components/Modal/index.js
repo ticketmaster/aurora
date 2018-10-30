@@ -1,122 +1,238 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 
-import CrossIcon from "../Icons/Cross";
-import IconButton from "../Button/IconButton";
-import { spacing, colors, constants } from "../../theme/index";
-import { ItemContainerConsumer } from "../List/Context";
-import { BackdropConsumer } from "../Backdrop/Context";
-import Column from "../Grid/Column";
-import Row from "../Grid/Row";
+import {
+  ModalContainer,
+  ModalContent,
+  ActionBar,
+  BottomActionBar
+} from "./index.styles";
 
-const ModalContainer = styled(Column)`
-  background-color: ${colors.white.base};
-  border-radius: ${constants.borderRadius.large};
-  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
-  border: solid 1px rgba(0, 0, 0, 0.04);
-  padding: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: calc(100% - 96px);
-  z-index: 100;
+import Backdrop from "../Backdrop";
 
-  &.modal-enter {
-    opacity: 0;
-    transform: scale(0.7);
+import { ModalProvider } from "./context";
+import {
+  MODAL_SIZE_SMALL,
+  MODAL_SIZE_MEDIUM,
+  MODAL_SIZE_LARGE,
+  getModalSize
+} from "./size";
+import { withDeviceSize } from "../DeviceSize/Context";
+import {
+  getContentHeight,
+  getBottomActionBarShadow,
+  getActionBarShadow,
+  isRequestCloseApproved
+} from "./helper";
+
+class Modal extends React.Component {
+  static propTypes = {
+    actionBar: PropTypes.node,
+    bottomActionBar: PropTypes.node,
+    children: PropTypes.node.isRequired,
+    deviceSize: PropTypes.shape({
+      isXSmall: PropTypes.bool,
+      isSmall: PropTypes.bool,
+      isMedium: PropTypes.bool,
+      isLarge: PropTypes.bool,
+      isXLarge: PropTypes.bool
+    }).isRequired,
+    gutters: PropTypes.bool,
+    // This is used inside the `getDerivedStateFromProps`
+    // eslint-disable-next-line react/no-unused-prop-types
+    isOpened: PropTypes.bool,
+    size: PropTypes.oneOf([
+      MODAL_SIZE_SMALL,
+      MODAL_SIZE_MEDIUM,
+      MODAL_SIZE_LARGE
+    ]),
+    onRequestClose: PropTypes.func,
+    onScroll: PropTypes.func,
+    /* eslint-disable react/forbid-prop-types */
+    containerProps: PropTypes.object,
+    actionBarProps: PropTypes.object,
+    contentProps: PropTypes.object,
+    bottomActionBarProps: PropTypes.object
+    /* eslint-enable react/forbid-prop-types */
+  };
+
+  static defaultProps = {
+    actionBar: null,
+    bottomActionBar: null,
+    gutters: true,
+    isOpened: true,
+    size: MODAL_SIZE_MEDIUM,
+    onRequestClose: null,
+    onScroll: null,
+    containerProps: {},
+    actionBarProps: {},
+    contentProps: {},
+    bottomActionBarProps: {}
+  };
+
+  static getDerivedStateFromProps(props, state) {
+    if (props.isOpened !== state.isOpened) {
+      return {
+        isOpened: props.isOpened
+      };
+    }
+
+    return null;
   }
 
-  &.modal-enter.modal-enter-active {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
+  state = {
+    isOpened: true,
+    actionBarShadow: false,
+    bottomActionBarShadow: false
+  };
+
+  componentDidMount() {
+    if (this.props.isOpened) {
+      this.updateModalHeight();
+      this.updateShadows();
+    }
   }
 
-  &.modal-leave,
-  &.modal-exit {
-    opacity: 1;
-    transform: scale(1);
+  componentDidUpdate(prevProps) {
+    if (this.props.isOpened && !prevProps.isOpened) {
+      this.updateModalHeight();
+      this.updateShadows();
+    }
   }
 
-  &.modal-leave.modal-leave-active,
-  &.modal-exit.modal-exit-active {
-    opacity: 0;
-    transition: all 0.1s ease-in-out;
-    transform: scale(0.7);
+  actionBarRef = React.createRef();
+  containerRef = React.createRef();
+  contentRef = React.createRef();
+  bottomActionBarRef = React.createRef();
+
+  closeModal = () => {
+    const { onRequestClose } = this.props;
+
+    isRequestCloseApproved({ onRequestClose }).then(requestApproved => {
+      if (requestApproved) {
+        this.setState({ isOpened: false });
+      }
+    });
+  };
+
+  handleScroll = e => {
+    const { onScroll } = this.props;
+
+    if (onScroll) {
+      onScroll(e);
+    }
+
+    this.updateShadows();
+  };
+
+  updateModalHeight = () => {
+    const actionBar = this.actionBarRef.current;
+    const bottomActionBar = this.bottomActionBarRef.current;
+    const content = this.contentRef.current;
+    const container = this.containerRef.current;
+
+    content.style.maxHeight = getContentHeight({
+      actionBar,
+      bottomActionBar,
+      container
+    });
+  };
+
+  updateShadows = () => {
+    this.updateActionBarShadow();
+
+    const bottomActionBar = this.bottomActionBarRef.current;
+
+    if (bottomActionBar) {
+      this.updateBottomActionBarShadow();
+    }
+  };
+
+  updateActionBarShadow = () => {
+    const content = this.contentRef.current;
+
+    const actionBarShadow = getActionBarShadow({ content });
+
+    if (actionBarShadow !== this.state.actionBarShadow) {
+      this.setState({
+        actionBarShadow
+      });
+    }
+  };
+
+  updateBottomActionBarShadow = () => {
+    const content = this.contentRef.current;
+
+    const bottomActionBarShadow = getBottomActionBarShadow({ content });
+
+    if (bottomActionBarShadow !== this.state.bottomActionBarShadow) {
+      this.setState({
+        bottomActionBarShadow
+      });
+    }
+  };
+
+  render() {
+    const {
+      actionBar,
+      bottomActionBar,
+      children,
+      gutters,
+      size,
+      deviceSize,
+      containerProps,
+      actionBarProps,
+      contentProps,
+      bottomActionBarProps
+    } = this.props;
+    const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
+    const { closeModal } = this;
+
+    if (!isOpened) {
+      return null;
+    }
+
+    return (
+      <ModalProvider value={{ closeModal }}>
+        <Backdrop childRef={this.containerRef} onRequestClose={this.closeModal}>
+          <ModalContainer
+            small={getModalSize({ deviceSize, preferredSize: size })}
+            innerRef={this.containerRef}
+            {...containerProps}
+          >
+            {actionBar && (
+              <ActionBar
+                shadow={actionBarShadow}
+                innerRef={this.actionBarRef}
+                gutters={gutters}
+                {...actionBarProps}
+              >
+                {actionBar}
+              </ActionBar>
+            )}
+            <ModalContent
+              innerRef={this.contentRef}
+              onScroll={this.handleScroll}
+              gutters={gutters}
+              {...contentProps}
+            >
+              {children}
+            </ModalContent>
+            {bottomActionBar && (
+              <BottomActionBar
+                shadow={bottomActionBarShadow}
+                innerRef={this.bottomActionBarRef}
+                gutters={gutters}
+                {...bottomActionBarProps}
+              >
+                {bottomActionBar}
+              </BottomActionBar>
+            )}
+          </ModalContainer>
+        </Backdrop>
+      </ModalProvider>
+    );
   }
+}
 
-  &.modal-appear {
-    opacity: 0;
-    transform: scale(0.7);
-  }
-
-  &.modal-appear.modal-appear-active {
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-`;
-
-const ModalContent = styled.div`
-  padding: ${props =>
-    props.padding ? props.padding : `0 ${spacing.comfy} ${spacing.comfy}`};
-`;
-
-const CancelButtonContainer = styled(Row)`
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-right: ${spacing.moderate};
-`;
-
-const Modal = ({ children, containerProps, contentProps, ...props }) => (
-  <BackdropConsumer>
-    {backdropValue => (
-      <ModalContainer
-        small={4}
-        role="dialog"
-        aria-modal
-        innerRef={backdropValue ? backdropValue.childRef : null}
-        {...containerProps}
-      >
-        {props.withCloseIcon && (
-          <CancelButtonContainer>
-            <ItemContainerConsumer>
-              {value => (
-                <IconButton
-                  className="button--close"
-                  size={45}
-                  aria-label="Close Modal"
-                  role="button"
-                  onClick={value ? value.onCloseRequest : () => {}}
-                >
-                  <CrossIcon
-                    size={12}
-                    style={{ pointerEvent: "none" }}
-                    color={colors.onyx.base}
-                  />
-                </IconButton>
-              )}
-            </ItemContainerConsumer>
-          </CancelButtonContainer>
-        )}
-        <ModalContent {...contentProps}>{children}</ModalContent>
-      </ModalContainer>
-    )}
-  </BackdropConsumer>
-);
-
-Modal.defaultProps = {
-  children: null,
-  withCloseIcon: true,
-  containerProps: null,
-  contentProps: null
-};
-
-Modal.propTypes = {
-  children: PropTypes.node,
-  withCloseIcon: PropTypes.bool,
-  containerProps: PropTypes.shape({}),
-  contentProps: PropTypes.shape({})
-};
-
-export default Modal;
+export default withDeviceSize(Modal);

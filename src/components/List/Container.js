@@ -6,9 +6,9 @@ import { CSSTransition } from "react-transition-group";
 import { ContainerProvider } from "./Context";
 import DisplayFor from "../DeviceSize";
 import Portal from "../Portal";
-import Backdrop from "../Backdrop";
+import Backdrop from "./Backdrop";
 import BottomSheet from "../BottomSheet";
-import Modal from "../Modal";
+import Modal from "./Modal";
 import { updateOpenIndex, determineIfOpen } from "./helper";
 
 const Container = styled.div`
@@ -99,7 +99,6 @@ class ListContainer extends Component {
           {children}
           <DisplayFor small>
             <Portal>
-              {isBottomSheetOpen && <Backdrop />}
               <CSSTransition
                 classNames="bottom-sheet"
                 timeout={300}
@@ -108,16 +107,17 @@ class ListContainer extends Component {
                 unmountOnExit
                 mountOnEnter
               >
-                <BottomSheet index={openIndex}>
-                  {mobilePortalContent}
-                </BottomSheet>
+                <Backdrop>
+                  <BottomSheet index={openIndex}>
+                    {mobilePortalContent}
+                  </BottomSheet>
+                </Backdrop>
               </CSSTransition>
             </Portal>
           </DisplayFor>
 
           <DisplayFor medium large xLarge>
             <Portal>
-              {desktopPortalContent && <Backdrop />}
               <CSSTransition
                 classNames="modal"
                 timeout={{
@@ -129,7 +129,9 @@ class ListContainer extends Component {
                 unmountOnExit
                 mountOnEnter
               >
-                <Modal>{desktopPortalContent}</Modal>
+                <Backdrop>
+                  <Modal>{desktopPortalContent}</Modal>
+                </Backdrop>
               </CSSTransition>
             </Portal>
           </DisplayFor>

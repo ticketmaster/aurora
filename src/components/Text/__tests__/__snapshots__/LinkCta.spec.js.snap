@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkCta renders a button when only onclick is provided 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+<button
+  className="c0"
+  href={null}
+  onClick={[Function]}
+  rel={undefined}
+  size="small"
+>
+  I am a link
+</button>
+`;
+
+exports[`LinkCta renders a default LinkCta 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+<a
+  className="c0"
+  href="http://localhost/"
+  onClick={null}
+  rel={undefined}
+  size="small"
+>
+  I am a link
+</a>
+`;
+
+exports[`LinkCta renders a span when no href or onClick provided 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+<span
+  className="c0"
+  href={null}
+  onClick={null}
+  rel={undefined}
+  size="small"
+>
+  I am a link
+</span>
+`;

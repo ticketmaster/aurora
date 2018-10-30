@@ -2,6 +2,7 @@ const global = {
   brand: "#026cdf",
   primary: {
     base: "#026cdf",
+    lightBase: "rgba(2, 108, 223, 0.1)",
     medium: "#0150a7",
     dark: "#013670",
     light: "#ebf4fd",

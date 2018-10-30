@@ -10,7 +10,8 @@ const spacing = {
   colossal: "88px",
   gutters: {
     small: 16,
-    mediumAndUp: 24
+    mediumAndUp: 24,
+    largeAndUp: 32
   }
 };
 
