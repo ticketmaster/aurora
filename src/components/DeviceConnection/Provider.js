@@ -40,6 +40,7 @@ class DeviceConnectionProvider extends Component {
     }
   };
 
+  /* istanbul ignore next */
   onConnectionChange() {
     const { effectiveType, type } = global.navigator.connection;
     this.update({ [effectiveType || type]: true });
