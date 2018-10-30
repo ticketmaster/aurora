@@ -16,11 +16,14 @@ const ListRow = ({
   ...props
 }) => (
   <ItemContainerConsumer>
-    {({ openIndex, expandMultiple, renderIntoPortal }) => (
+    {({
+      openIndex,
+      expandMultiple,
+      renderIntoPortal,
+      ...restItemContainerProps
+    }) => (
       <ListRowContent
-        rowItem={{
-          ...rowItem
-        }}
+        rowItem={rowItem}
         isOpen={determineIfOpen(expandMultiple, openIndex, index)}
         index={index}
         onOverflowClick={() => {
@@ -29,6 +32,7 @@ const ListRow = ({
         }}
         onExpandItem={onExpandItem}
         onCollapseItem={onCollapseItem}
+        {...restItemContainerProps}
         {...props}
       >
         {children}
