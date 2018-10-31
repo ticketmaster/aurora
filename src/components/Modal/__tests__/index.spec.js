@@ -65,11 +65,30 @@ describe("<Modal />", () => {
     });
   });
 
-  it("it should set the content height based on action bars heights", () => {
+  it("it should set the content `height` based on action bars heights for smaller screens", () => {
     getContentHeight.mockReturnValue(100);
 
     const { getByTestId } = renderIntoDocument(
-      <Modal contentProps={{ "data-testid": "modal-content" }}>
+      <Modal
+        contentProps={{ "data-testid": "modal-content" }}
+        deviceSize={{ isSmall: true }}
+      >
+        <div>Modal contents</div>
+      </Modal>
+    );
+
+    expect(getByTestId("modal-content").style.minHeight).toBe("100");
+    expect(getByTestId("modal-content").style.maxHeight).toBe("100");
+  });
+
+  it("it should set the content `maxHeight` based on action bars heights for larger screens", () => {
+    getContentHeight.mockReturnValue(100);
+
+    const { getByTestId } = renderIntoDocument(
+      <Modal
+        contentProps={{ "data-testid": "modal-content" }}
+        deviceSize={{ isSmall: false, isMedium: true }}
+      >
         <div>Modal contents</div>
       </Modal>
     );

@@ -16,8 +16,8 @@ const StyledText = styled(Text)`
   line-height: 1.25;
 `;
 
-const ButtonGroup = ({ title, children, value, onChange }) => (
-  <Group>
+const ButtonGroup = ({ title, children, value, onChange, ...props }) => (
+  <Group {...props}>
     <Spacing bottom={{ xSmall: "moderate" }}>
       <StyledText size="giga" weight="semiBold">
         {title}

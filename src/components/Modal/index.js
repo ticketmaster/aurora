@@ -105,10 +105,10 @@ class Modal extends React.Component {
   contentRef = React.createRef();
   bottomActionBarRef = React.createRef();
 
-  closeModal = () => {
+  closeModal = event => {
     const { onRequestClose } = this.props;
 
-    isRequestCloseApproved({ onRequestClose }).then(requestApproved => {
+    isRequestCloseApproved({ onRequestClose, event }).then(requestApproved => {
       if (requestApproved) {
         this.setState({ isOpened: false });
       }
@@ -126,16 +126,26 @@ class Modal extends React.Component {
   };
 
   updateModalHeight = () => {
+    const {
+      deviceSize: { isSmall }
+    } = this.props;
+
     const actionBar = this.actionBarRef.current;
     const bottomActionBar = this.bottomActionBarRef.current;
     const content = this.contentRef.current;
     const container = this.containerRef.current;
 
-    content.style.maxHeight = getContentHeight({
+    const contentHeight = getContentHeight({
       actionBar,
       bottomActionBar,
       container
     });
+
+    if (isSmall) {
+      content.style.minHeight = contentHeight;
+    }
+
+    content.style.maxHeight = contentHeight;
   };
 
   updateShadows = () => {
