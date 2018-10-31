@@ -6,15 +6,7 @@ import * as PT from "./PropTypes";
 import { typography } from "../../theme";
 import { getThemeValue } from "../../utils";
 import getRelByTarget from "../../utils/link";
-
-const SIZES = {
-  small: {
-    fontSize: typography.size.hecto
-  },
-  large: {
-    fontSize: typography.size.kilo
-  }
-};
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 const LinkCtaBase = styled.a`
   text-decoration: none;
@@ -22,15 +14,15 @@ const LinkCtaBase = styled.a`
   transition: text-decoration 0.3s ease;
   transition: transform 0.1s linear;
   font-weight: ${typography.weight.semiBold};
-  font-size: ${({ size }) => SIZES[size].fontSize};
+  font-size: ${({ size }) =>
+    (size.small && typography.size[size.small]) || size.small || "inherit"};
   line-height: ${typography.lineHeight.header};
   color: ${getThemeValue("primary", "base")};
   display: inline-block;
 
   &:focus {
     outline: none;
-    text-decoration-line: underline;
-    text-decoration-style: double;
+    text-decoration: underline;
   }
 
   &:visited {
@@ -45,6 +37,18 @@ const LinkCtaBase = styled.a`
   &:hover {
     color: ${getThemeValue("primary", "medium")};
   }
+
+  ${mediumAndUp`
+    font-size: ${({ size }) =>
+      (size.medium && typography.size[size.medium]) ||
+      size.medium ||
+      "inherit"};
+  `};
+
+  ${largeAndUp`
+    font-size: ${({ size }) =>
+      (size.large && typography.size[size.large]) || size.large || "inherit"};
+  `};
 `;
 
 const LinkCtaButtonBase = LinkCtaBase.withComponent(`button`).extend`
@@ -69,7 +73,14 @@ const getElement = ({ href, onClick }) => {
   return LinkCtaSpanBase;
 };
 
-const LinkCta = ({ href, onClick, children, size, ...props }) => {
+const LinkCta = ({
+  href,
+  onClick,
+  children,
+  size,
+  responsiveSize,
+  ...props
+}) => {
   const { target, rel } = props;
   const Elm = getElement({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
@@ -77,7 +88,15 @@ const LinkCta = ({ href, onClick, children, size, ...props }) => {
   return (
     <Elm
       {...props}
-      size={size}
+      size={{
+        small: responsiveSize.small || size,
+        medium: responsiveSize.medium || responsiveSize.small || size,
+        large:
+          responsiveSize.large ||
+          responsiveSize.medium ||
+          responsiveSize.small ||
+          size
+      }}
       href={href}
       onClick={onClick}
       rel={validatedRel}
@@ -88,15 +107,21 @@ const LinkCta = ({ href, onClick, children, size, ...props }) => {
 };
 
 LinkCta.propTypes = {
-  size: PropTypes.oneOf(Object.values(PT.LINK_SIZES)),
+  size: PropTypes.string,
+  responsiveSize: PT.responsiveSize,
   children: PropTypes.node.isRequired,
   href: PropTypes.string,
   onClick: PropTypes.func
 };
 
 LinkCta.defaultProps = {
-  size: PT.LINK_SIZES.small,
+  size: null,
   onClick: null,
+  responsiveSize: {
+    small: null,
+    medium: null,
+    large: null
+  },
   href: null
 };
 
