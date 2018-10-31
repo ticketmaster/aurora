@@ -105,10 +105,10 @@ class Modal extends React.Component {
   contentRef = React.createRef();
   bottomActionBarRef = React.createRef();
 
-  closeModal = () => {
+  closeModal = event => {
     const { onRequestClose } = this.props;
 
-    isRequestCloseApproved({ onRequestClose }).then(requestApproved => {
+    isRequestCloseApproved({ onRequestClose, event }).then(requestApproved => {
       if (requestApproved) {
         this.setState({ isOpened: false });
       }
