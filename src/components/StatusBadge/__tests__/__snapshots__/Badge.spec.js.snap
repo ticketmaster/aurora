@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge should match snapshot when type is dark 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.25;
+  -moz-letter-spacing: 0.25;
+  -ms-letter-spacing: 0.25;
+  letter-spacing: 0.25;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
+<div
+  className=" badge c0"
+  color="#026cdf"
+  type="dark"
+>
+  snapshot test
+</div>
+`;
+
+exports[`Badge should match snapshot when type is light 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: #262626;
+  font-size: 10px;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.25;
+  -moz-letter-spacing: 0.25;
+  -ms-letter-spacing: 0.25;
+  letter-spacing: 0.25;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
+<div
+  className=" badge c0"
+  color="#026cdf"
+  type="light"
+>
+  light test
+</div>
+`;
+
+exports[`Badge should match snapshot when type is undefined 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.25;
+  -moz-letter-spacing: 0.25;
+  -ms-letter-spacing: 0.25;
+  letter-spacing: 0.25;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
+<div
+  className=" badge c0"
+  color="#026cdf"
+  type="dark"
+>
+  snapshot test
+</div>
+`;
