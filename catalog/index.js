@@ -47,7 +47,7 @@ const pages = [
   calendarView,
   popover,
   tooltip,
-  links,
+  links
 ];
 
 const sizes = [

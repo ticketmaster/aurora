@@ -92,3 +92,16 @@ responsive: true
     loader={null}
 />
 ```
+
+### Lazy Static Image (1:1)
+
+```react
+responsive: true
+---
+<LazyImageExample
+    src="http://placekitten.com/g"
+    alt="Test Kitten"
+    height={400}
+    width={400}
+/>
+```

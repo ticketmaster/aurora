@@ -159,3 +159,8 @@ export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
 export { default as SeatData } from "./components/Tooltip/SeatData";
+export {
+  LazyLoaderProvider,
+  LazyLoaderConsumer,
+  LazyLoader
+} from "./components/LazyLoader";
