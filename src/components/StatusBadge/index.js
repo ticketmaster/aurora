@@ -6,6 +6,7 @@ import Tooltip from "../Tooltip";
 import { themes } from "../../theme";
 
 import { badgeTypes, badgeProps } from "./constants";
+import { directions } from "../Tooltip/constants";
 
 const StatusBadgeCotainer = styled.div`
   display: flex;
@@ -94,14 +95,7 @@ StatusBadge.propTypes = {
   type: PropTypes.oneOf(Object.values(badgeTypes)),
   visibleBadges: PropTypes.arrayOf(PropTypes.shape({ ...badgeProps })),
   hiddenBadges: PropTypes.arrayOf(PropTypes.shape({ ...badgeProps })),
-  tooltipDirection: PropTypes.oneOf(
-    Object.values({
-      top: "top",
-      bottom: "bottom",
-      left: "left",
-      right: "right"
-    })
-  )
+  tooltipDirection: PropTypes.oneOf(Object.values(directions))
 };
 
 StatusBadge.defaultProps = {
