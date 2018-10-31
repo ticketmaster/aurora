@@ -16,7 +16,12 @@ class ButtonGroupSectionContent extends PureComponent {
     groupValue: PropTypes.objectOf(PropTypes.any).isRequired,
     sectionValue: PropTypes.string.isRequired,
     isMultiSelect: PropTypes.bool.isRequired,
+    valueOverride: PropTypes.arrayOf(PropTypes.string),
     children: PropTypes.node.isRequired
+  };
+
+  static defaultProps = {
+    valueOverride: null
   };
 
   onChange = (selected = []) => {
@@ -31,13 +36,20 @@ class ButtonGroupSectionContent extends PureComponent {
   };
 
   render() {
-    const { groupValue, sectionValue, isMultiSelect, children } = this.props;
+    const {
+      groupValue,
+      sectionValue,
+      isMultiSelect,
+      valueOverride,
+      children
+    } = this.props;
     return (
       <ButtonsSection>
         <SelectionProvider
           onChange={this.onChange}
           isMultiSelect={isMultiSelect}
           value={groupValue[sectionValue]}
+          valueOverride={valueOverride}
         >
           {children}
         </SelectionProvider>

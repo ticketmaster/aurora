@@ -4,12 +4,7 @@ exports[`<ActionBar /> should add shadow and gutters 1`] = `
 .c0 {
   position: relative;
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-}
-
-@media screen and (max-width:479px) {
-  .c0 {
-    padding: 16px;
-  }
+  padding: 16px;
 }
 
 @media screen and (min-width:480px) {
@@ -38,7 +33,7 @@ exports[`<ActionBar /> should add shadow and gutters 1`] = `
 />
 `;
 
-exports[`<ActionBar /> should omit shadow and gutters by default 1`] = `
+exports[`<ActionBar /> should omit shadow and gutters 1`] = `
 .c0 {
   position: relative;
   box-shadow: none;
@@ -53,12 +48,7 @@ exports[`<BottomActionBar /> should add shadow and gutters 1`] = `
 .c0 {
   position: relative;
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-}
-
-@media screen and (max-width:479px) {
-  .c0 {
-    padding: 16px;
-  }
+  padding: 16px;
 }
 
 @media screen and (min-width:480px) {
@@ -85,7 +75,7 @@ exports[`<BottomActionBar /> should add shadow and gutters 1`] = `
 />
 `;
 
-exports[`<BottomActionBar /> should omit shadow and gutters by default 1`] = `
+exports[`<BottomActionBar /> should omit shadow and gutters 1`] = `
 .c0 {
   position: relative;
   box-shadow: none;

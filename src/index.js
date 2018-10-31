@@ -142,6 +142,19 @@ export { default as Modal } from "./components/List/Modal";
 export { default as Backdrop } from "./components/List/Backdrop";
 export { BackdropProvider } from "./components/List/BackdropContext";
 export { ContainerProvider } from "./components/List/Context";
+
+export { default as AdaptiveModal } from "./components/Modal";
+export {
+  default as AdaptiveActionBar
+} from "./components/Modal/DefaultActionBar";
+export {
+  MODAL_SIZE_SMALL,
+  MODAL_SIZE_MEDIUM,
+  MODAL_SIZE_LARGE
+} from "./components/Modal/size";
+export { ModalConsumer, withModal } from "./components/Modal/context";
+export { default as AdaptiveBackdrop } from "./components/Backdrop";
+
 export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";

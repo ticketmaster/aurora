@@ -6,39 +6,45 @@ import {
   wait
 } from "react-testing-library";
 
-import { getContentHeight, getBottomActionBarShadow } from "../helper";
+import {
+  getActionBarShadow,
+  getContentHeight,
+  getBottomActionBarShadow,
+  isRequestCloseApproved
+} from "../helper";
 
 import Modal from "../index";
 import { withModal } from "../context";
 
 jest.mock("../helper");
 
+beforeAll(() => {
+  getActionBarShadow.mockReturnValue(true);
+  getBottomActionBarShadow.mockReturnValue(true);
+  isRequestCloseApproved.mockReturnValue(Promise.resolve(true));
+});
+
 describe("<Modal />", () => {
   describe("render", () => {
-    it("should render without errors with default actionBar and pass extra props", () => {
-      const { container } = render(
-        <Modal modalContentProps={{ onClick: () => {} }}>
-          <div>Modal contents</div>
-        </Modal>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it("should render modal without actionBar", () => {
-      const { container } = render(
-        <Modal actionBar={null}>
-          <div>Modal contents</div>
-        </Modal>
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it("should render with bottomActionBar", () => {
+    it("should render without errors and pass extra props", () => {
       const { container } = render(
         <Modal
-          actionBar={null}
+          containerProps={{ style: { width: "210px" } }}
+          actionBarProps={{ backgroundColor: "white" }}
+          contentProps={{ onClick: () => {} }}
+          bottomActionBarProps={{ backgroundColor: "black" }}
+        >
+          <div>Modal contents</div>
+        </Modal>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should render with actionBar and bottomActionBar", () => {
+      const { container } = render(
+        <Modal
+          actionBar={<div>Action bar controls</div>}
           bottomActionBar={<div>Place your controls here</div>}
         >
           <div>Modal contents</div>
@@ -59,11 +65,30 @@ describe("<Modal />", () => {
     });
   });
 
-  it("it should set the content height based on action bars heights", () => {
+  it("it should set the content `height` based on action bars heights for smaller screens", () => {
     getContentHeight.mockReturnValue(100);
 
     const { getByTestId } = renderIntoDocument(
-      <Modal modalContentProps={{ "data-testid": "modal-content" }}>
+      <Modal
+        contentProps={{ "data-testid": "modal-content" }}
+        deviceSize={{ isSmall: true }}
+      >
+        <div>Modal contents</div>
+      </Modal>
+    );
+
+    expect(getByTestId("modal-content").style.minHeight).toBe("100");
+    expect(getByTestId("modal-content").style.maxHeight).toBe("100");
+  });
+
+  it("it should set the content `maxHeight` based on action bars heights for larger screens", () => {
+    getContentHeight.mockReturnValue(100);
+
+    const { getByTestId } = renderIntoDocument(
+      <Modal
+        contentProps={{ "data-testid": "modal-content" }}
+        deviceSize={{ isSmall: false, isMedium: true }}
+      >
         <div>Modal contents</div>
       </Modal>
     );
@@ -105,7 +130,7 @@ describe("<Modal />", () => {
 
   it("should not fail on scroll when there is no scroll callback", () => {
     const { getByTestId } = render(
-      <Modal modalContentProps={{ "data-testid": "modal-content" }}>
+      <Modal contentProps={{ "data-testid": "modal-content" }}>
         <div>Modal contents</div>
       </Modal>
     );
@@ -118,7 +143,7 @@ describe("<Modal />", () => {
 
     const { getByTestId } = render(
       <Modal
-        modalContentProps={{ "data-testid": "modal-content" }}
+        contentProps={{ "data-testid": "modal-content" }}
         onScroll={scrollSpy}
       >
         <div>Modal contents</div>

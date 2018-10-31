@@ -14,6 +14,7 @@ const ButtonGroupSection = ({
   title,
   value: sectionValue,
   isMultiSelect,
+  valueOverride,
   children
 }) => (
   <Spacing bottom={{ xSmall: "moderate" }}>
@@ -27,6 +28,7 @@ const ButtonGroupSection = ({
     <ButtonGroupSectionContent
       isMultiSelect={isMultiSelect}
       sectionValue={sectionValue}
+      valueOverride={valueOverride}
     >
       {children}
     </ButtonGroupSectionContent>
@@ -35,13 +37,15 @@ const ButtonGroupSection = ({
 
 ButtonGroupSection.defaultProps = {
   title: "",
-  isMultiSelect: false
+  isMultiSelect: false,
+  valueOverride: null
 };
 
 ButtonGroupSection.propTypes = {
   title: PropTypes.string,
   value: PropTypes.string.isRequired,
   isMultiSelect: PropTypes.bool,
+  valueOverride: PropTypes.arrayOf(PropTypes.string),
   children: PropTypes.node.isRequired
 };
 
