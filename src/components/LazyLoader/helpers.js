@@ -1,5 +1,5 @@
 import { PLACEHOLDER_IMAGE, DEFAULT_TARGET_DENSITY } from "./constants";
-import { createParams } from "../../utils/createParams";
+import createParams from "../../utils/createParams";
 
 export const resize = ({ src = "", ...params }) => {
   try {
