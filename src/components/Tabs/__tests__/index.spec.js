@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-testing-library";
+import { render, Simulate } from "react-testing-library";
 
 import { Tabs } from "../index";
 
@@ -19,12 +19,23 @@ const textProps = {
 
 describe("<Tabs />", () => {
   it("should render tabs component correctly", () => {
-    const { container } = render(<Tabs {...mainProps} />);
+    const { container, unmount } = render(<Tabs {...mainProps} />);
     expect(container).toMatchSnapshot();
+    unmount();
   });
 
   it("should render tabs component correctly with props for text of tabs", () => {
-    const { container } = render(<Tabs {...mainProps} {...textProps} />);
+    const { container, unmount } = render(
+      <Tabs {...mainProps} {...textProps} />
+    );
     expect(container).toMatchSnapshot();
+    unmount();
+  });
+
+  it("should call onClick function with index of tab when click on it", () => {
+    const { unmount, container } = render(<Tabs {...mainProps} />);
+    Simulate.click(container.querySelector('div[data-index="1"]'));
+    expect(onTabsClick).toHaveBeenLastCalledWith(1);
+    unmount();
   });
 });

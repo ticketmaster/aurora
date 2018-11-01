@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { TabsProvider, TabsConsumer } from "./TabsProvider";
 import { Text } from "../Text";
 import { spacing, zIndex, colors, themes } from "../../theme";
-import { largeAndUp, mediumAndDown } from "../../theme/mediaQueries";
+import { largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 const padding = spacing.moderate;
 
@@ -13,12 +13,13 @@ const Container = styled.div.attrs({
   className: props =>
     props.areTabsOverflow ? "tabs__container--overflowed" : null
 })`
-  ${mediumAndDown`
+  ${smallAndUp`
     &.tabs__container--overflowed:after {
-      width: 100vw;
-      left: calc(50% - 50vw);
+      width: 100%;
+      left: 0;
     }
   `};
+
   position: relative;
   z-index: ${zIndex.reset};
   width: 100%;
@@ -34,17 +35,22 @@ const Container = styled.div.attrs({
     bottom: 0;
     z-index: ${zIndex.unset};
   }
+
+  &.tabs__container--overflowed:after {
+    width: 100vw;
+    left: calc(50% - 50vw);
+  }
 `;
 
 const Content = styled.div.attrs({
   className: props =>
     props.areTabsOverflow ? "tabs__content--overflowed" : null
 })`
-  ${mediumAndDown`
+  ${smallAndUp`
     &.tab__content--overflowed {
-      margin-left: calc(50% - 50vw);
-      padding-left: calc(50vw - 50%);
-      width: 100vw;
+      margin-left: 0;
+      padding-left: 0;
+      width: 100%;
     }
   `};
   display: flex;
@@ -55,6 +61,12 @@ const Content = styled.div.attrs({
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  &.tab__content--overflowed {
+    margin-left: calc(50% - 50vw);
+    padding-left: calc(50vw - 50%);
+    width: 100vw;
   }
 `;
 

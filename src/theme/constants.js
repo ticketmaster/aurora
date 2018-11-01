@@ -11,7 +11,6 @@ const constants = {
     xLarge: "(min-width: 1440px)",
     xSmallAndDown: "(max-width: 479px)",
     smallAndUp: "(min-width: 480px)",
-    mediumAndDown: "(max-width: 768px)",
     mediumAndUp: "(min-width: 768px)",
     largeAndUp: "(min-width: 1024px)",
     xLargeAndUp: "(min-width: 1440px)"
