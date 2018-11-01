@@ -19,10 +19,10 @@ export const StyledBadge = styled.div`
   background-color: ${({ color }) => color};
 `;
 
-const StatusBadge = ({ variatn, color, label, className, ...rest }) => (
+const StatusBadge = ({ variant, color, label, className, ...rest }) => (
   <StyledBadge
     className={classNames(className, `badge`)}
-    variatn={variatn}
+    variant={variant}
     color={color}
     {...rest}
   >
