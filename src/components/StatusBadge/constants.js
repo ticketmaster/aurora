@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { themes } from "../../theme";
 
-export const badgeTypes = {
+export const badgeVariants = {
   light: "light",
   dark: "dark"
 };

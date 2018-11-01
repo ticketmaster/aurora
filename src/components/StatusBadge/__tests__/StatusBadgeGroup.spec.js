@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
-import StatusBadge from "../index";
+import { StatusBadgeGroup } from "../";
 import Tooltip from "../../Tooltip";
 
 const badges = [
@@ -9,22 +9,30 @@ const badges = [
   { label: "caution", color: "#f0f0f0" }
 ];
 
-describe("StatusBadge", () => {
+describe("StatusBadgeGroup", () => {
   it("should match snapshot", () => {
     const tree = renderer
       .create(
-        <StatusBadge type="dark" visibleBadges={badges} hiddenBadges={badges} />
+        <StatusBadgeGroup
+          variant="dark"
+          visibleBadges={badges}
+          hiddenBadges={badges}
+        />
       )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  it("mouseLeave should set state to isOpened: false", () => {
+  it("mouseLeave should set state to isOpen: false", () => {
     const setStateMock = jest.fn();
     const instance = renderer
       .create(
-        <StatusBadge type="dark" visibleBadges={badges} hiddenBadges={badges} />
+        <StatusBadgeGroup
+          variant="dark"
+          visibleBadges={badges}
+          hiddenBadges={badges}
+        />
       )
       .getInstance();
 
@@ -33,18 +41,22 @@ describe("StatusBadge", () => {
 
     expect(setStateMock).toHaveBeenCalledTimes(1);
     expect(setStateMock).toHaveBeenCalledWith({
-      isOpened: false
+      isOpen: false
     });
   });
 
-  it("elementHovered should set state to isOpened: true and position data", () => {
+  it("elementHovered should set state to isOpen: true and position data", () => {
     const setStateMock = jest.fn();
     Tooltip.getDimensionsFromEvent = jest.fn(() => ({
       test: "test data"
     }));
     const instance = renderer
       .create(
-        <StatusBadge type="dark" visibleBadges={badges} hiddenBadges={badges} />
+        <StatusBadgeGroup
+          variant="dark"
+          visibleBadges={badges}
+          hiddenBadges={badges}
+        />
       )
       .getInstance();
 
@@ -54,7 +66,7 @@ describe("StatusBadge", () => {
     expect(setStateMock).toHaveBeenCalledTimes(1);
     expect(Tooltip.getDimensionsFromEvent).toHaveBeenCalledTimes(1);
     expect(setStateMock).toHaveBeenCalledWith({
-      isOpened: true,
+      isOpen: true,
       test: "test data"
     });
   });

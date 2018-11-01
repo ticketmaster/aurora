@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge should match snapshot when type is dark 1`] = `
+exports[`StatusBadge should match snapshot when variant is dark 1`] = `
 .c0 {
   padding: 4px 8px;
   font-weight: 600;
@@ -17,15 +17,14 @@ exports[`Badge should match snapshot when type is dark 1`] = `
 }
 
 <div
-  className=" badge c0"
+  className="badge c0"
   color="#026cdf"
-  type="dark"
 >
   snapshot test
 </div>
 `;
 
-exports[`Badge should match snapshot when type is light 1`] = `
+exports[`StatusBadge should match snapshot when variant is light 1`] = `
 .c0 {
   padding: 4px 8px;
   font-weight: 600;
@@ -42,15 +41,14 @@ exports[`Badge should match snapshot when type is light 1`] = `
 }
 
 <div
-  className=" badge c0"
+  className="badge c0"
   color="#026cdf"
-  type="light"
 >
   light test
 </div>
 `;
 
-exports[`Badge should match snapshot when type is undefined 1`] = `
+exports[`StatusBadge should match snapshot when variant is undefined 1`] = `
 .c0 {
   padding: 4px 8px;
   font-weight: 600;
@@ -67,9 +65,8 @@ exports[`Badge should match snapshot when type is undefined 1`] = `
 }
 
 <div
-  className=" badge c0"
+  className="badge c0"
   color="#026cdf"
-  type="dark"
 >
   snapshot test
 </div>

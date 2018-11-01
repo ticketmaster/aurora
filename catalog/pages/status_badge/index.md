@@ -7,10 +7,10 @@ Status Badge Component
 ```table
 span: 4
 rows:
-  - Prop: type
+  - Prop: variant
     Type: one of 'dark', 'light'
     Default: dark
-    Notes: Renders text contrasting text
+    Notes: When 'dark' renders white text, when 'light' renders black text
   - Prop: tooltipDirection
     Type: one of 'top', 'bottom', 'left', 'right'
     Default: bottom

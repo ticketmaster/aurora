@@ -159,4 +159,4 @@ export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
 export { default as SeatData } from "./components/Tooltip/SeatData";
-export { default as StatusBadge } from "./components/StatusBadge";
+export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatusBadge should match snapshot 1`] = `
+exports[`StatusBadgeGroup should match snapshot 1`] = `
 .c1 {
   padding: 4px 8px;
   font-weight: 600;
@@ -195,16 +195,14 @@ exports[`StatusBadge should match snapshot 1`] = `
   className="c0"
 >
   <div
-    className=" badge c1"
+    className="badge c1"
     color="#d3d3d3"
-    type="dark"
   >
     error
   </div>
   <div
-    className=" badge c2"
+    className="badge c2"
     color="#f0f0f0"
-    type="dark"
   >
     caution
   </div>
@@ -222,14 +220,12 @@ exports[`StatusBadge should match snapshot 1`] = `
     <div
       className="hidden badge c1"
       color="#d3d3d3"
-      type="dark"
     >
       error
     </div>
     <div
       className="hidden badge c2"
       color="#f0f0f0"
-      type="dark"
     >
       caution
     </div>
