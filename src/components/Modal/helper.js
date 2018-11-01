@@ -13,12 +13,12 @@ export const getActionBarShadow = ({ content }) => Boolean(content.scrollTop);
 export const getBottomActionBarShadow = ({ content }) =>
   Boolean(content.scrollHeight - content.scrollTop - content.clientHeight > 0);
 
-export const isRequestCloseApproved = ({ onRequestClose }) => {
+export const isRequestCloseApproved = ({ onRequestClose, event }) => {
   if (!onRequestClose) {
     return Promise.resolve(true);
   }
 
-  return Promise.resolve(onRequestClose())
+  return Promise.resolve(onRequestClose(event))
     .then(result => (typeof result === "undefined" ? true : Boolean(result)))
     .catch(() => false);
 };

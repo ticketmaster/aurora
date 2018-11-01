@@ -11,6 +11,7 @@ import Column from "../Grid/Column";
 import Row from "../Grid/Row";
 
 const ModalContainer = styled(Column)`
+  position: relative;
   background-color: ${colors.white.base};
   border-radius: ${constants.borderRadius.large};
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
