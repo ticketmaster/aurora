@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import { LazyLoader } from "../../../src/components/LazyLoader";
 import { Button } from "../../../src/components/Button";
 
-const resizeFn = ({ src, width, height }) => `${src}/${width}/${height}`;
+export const resizeFn = ({ src, width, height }) => `${src}/${width}/${height}`;
 
-class ImgClass extends Component {
+export class ImgClass extends Component {
   static propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports a backgroundImage style 1`] = `
+Object {
+  "current": Object {
+    "onload": [Function],
+    "style": Object {
+      "backgroundImage": "url(http://placekitten.com/g/400/400)",
+      "filter": "none",
+    },
+  },
+}
+`;
+
+exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports src 1`] = `
+Object {
+  "current": Object {
+    "onload": [Function],
+    "src": "http://placekitten.com/g/400/400",
+    "style": Object {},
+  },
+}
+`;
+
+exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports srcset 1`] = `
+Object {
+  "current": Object {
+    "onload": [Function],
+    "src": "",
+    "srcset": "http://placekitten.com/g/400/400 1x, http://placekitten.com/g/800/800 2x, http://placekitten.com/g/1200/1200 3x",
+    "style": Object {},
+  },
+}
+`;
+
+exports[`LazyLoaderProvider should load a low res, blurred version of the image passed prior to loading 1`] = `
+<div>
+  <img
+    alt="Test Kitten"
+    height="400"
+    src="http://placekitten.com/g/40/40"
+    style="filter: blur(10px);"
+    width="400"
+  />
+</div>
+`;
