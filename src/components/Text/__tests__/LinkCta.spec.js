@@ -25,4 +25,16 @@ describe("LinkCta", () => {
       renderer.create(<LinkCta>I am a link</LinkCta>).toJSON() // eslint-disable-line
     ).toMatchSnapshot();
   });
+
+  it("static size from typography", () => {
+    expect(
+      renderer.create(<LinkCta size="normal">I am a link</LinkCta>).toJSON() // eslint-disable-line
+    ).toMatchSnapshot();
+  });
+
+  it("static size as pixels", () => {
+    expect(
+      renderer.create(<LinkCta size="20px">I am a link</LinkCta>).toJSON() // eslint-disable-line
+    ).toMatchSnapshot();
+  });
 });

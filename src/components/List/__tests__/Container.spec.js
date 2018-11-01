@@ -10,6 +10,42 @@ jest.mock("../../DeviceSize/Context", () => ({
   Consumer: jest.fn()
 }));
 
+const getListRows = (extensions, options) => {
+  const { item: rowItem = {} } = extensions || {};
+  const { reversed } = options || {};
+
+  const listRows = listItems.slice(0);
+
+  if (reversed) {
+    listRows.reverse();
+  }
+
+  return listRows.map((item, index) => (
+    <ListRow
+      key={item.rowId}
+      rowItem={{
+        ...item,
+        ...rowItem
+      }}
+      index={index}
+      onOverflowClick={() => {}}
+    >
+      {sections.map(section => (
+        <Section
+          title={section.title}
+          key={section.title}
+          id={section.id}
+          large={4}
+        >
+          {section.items.slice(0, 4).map(sectionItem => (
+            <SectionItem item={sectionItem} key={sectionItem.title} />
+          ))}
+        </Section>
+      ))}
+    </ListRow>
+  ));
+};
+
 beforeEach(() => {
   Consumer.mockImplementation(({ children }) => children({ isSmall: true }));
 });
@@ -50,96 +86,45 @@ describe("<ListContainer />", () => {
   });
 
   it("collapses the listRow when clicked on collapse button", () => {
-    const { container } = render(
-      <ListContainer>
-        {listItems.map((item, index) => (
-          <ListRow
-            key={item.rowId}
-            rowItem={item}
-            index={index}
-            onOverflowClick={() => {}}
-          >
-            {sections.map(section => (
-              <Section
-                title={section.title}
-                large={4}
-                key={section.title}
-                id={section.id}
-              >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
-              </Section>
-            ))}
-          </ListRow>
-        ))}
-      </ListContainer>
+    const listRows = getListRows();
+    const { container } = render(<ListContainer>{listRows}</ListContainer>);
+    Simulate.click(container.querySelector(".button--expand-or-collapse"));
+    Simulate.click(container.querySelector(".button--expand-or-collapse"));
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("collapses the listRow after changing its order", () => {
+    const listRows = getListRows();
+    const { container, rerender } = render(
+      <ListContainer test>{listRows}</ListContainer>
     );
     Simulate.click(container.querySelector(".button--expand-or-collapse"));
-    Simulate.click(container.querySelector(".button--expand-or-collapse"));
+    const listRowsReversed = getListRows(null, { reversed: true });
+    rerender(<ListContainer test>{listRowsReversed}</ListContainer>);
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("expands the listRow when clicked on expand button", () => {
-    const { container } = render(
-      <ListContainer>
-        {listItems.map((item, index) => (
-          <ListRow
-            key={item.rowId}
-            rowItem={item}
-            index={index}
-            onOverflowClick={() => {}}
-          >
-            {sections.map(section => (
-              <Section
-                title={section.title}
-                key={section.title}
-                id={section.id}
-                large={4}
-              >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
-              </Section>
-            ))}
-          </ListRow>
-        ))}
-      </ListContainer>
-    );
+    const listRows = getListRows();
+    const { container } = render(<ListContainer>{listRows}</ListContainer>);
     Simulate.click(container.querySelector(".button--expand-or-collapse"));
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("expands the listRow when clicked on expand Link", () => {
+    const listRows = getListRows({
+      item: { variant: "withLink", linkTitle: "test title" }
+    });
+    const { container } = render(<ListContainer>{listRows}</ListContainer>);
+    Simulate.click(container.querySelector(".link--row-options"));
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("opens the bottomSheet for the row when clicked on overflow button", () => {
+    const listRows = getListRows();
     const { container } = renderIntoDocument(
       <ListContainer onRowCollapse={() => {}} onModalClose={() => {}}>
-        {listItems.map((item, index) => (
-          <ListRow
-            key={item.rowId}
-            rowItem={item}
-            index={index}
-            onOverflowClick={() => {}}
-          >
-            {sections.map(section => (
-              <Section
-                title={section.title}
-                large={4}
-                key={section.title}
-                id={section.id}
-              >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
-              </Section>
-            ))}
-          </ListRow>
-        ))}
+        {listRows}
       </ListContainer>
     );
     Simulate.click(container.querySelector(".button--more-info"));
@@ -147,32 +132,9 @@ describe("<ListContainer />", () => {
   });
 
   it("closes the bottomSheet for the row when clicked on cross icon on mobile", () => {
+    const listRows = getListRows();
     const { container, queryByTestId } = renderIntoDocument(
-      <ListContainer onRowCollapse={() => {}}>
-        {listItems.map((item, index) => (
-          <ListRow
-            key={item.rowId}
-            rowItem={item}
-            index={index}
-            onOverflowClick={() => {}}
-          >
-            {sections.map(section => (
-              <Section
-                title={section.title}
-                large={4}
-                key={section.title}
-                id={section.id}
-              >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
-              </Section>
-            ))}
-          </ListRow>
-        ))}
-      </ListContainer>
+      <ListContainer onRowCollapse={() => {}}>{listRows}</ListContainer>
     );
     Simulate.click(container.querySelector(".button--more-info"));
     expect(container.firstChild).toMatchSnapshot();
@@ -182,31 +144,10 @@ describe("<ListContainer />", () => {
   });
 
   it("closes the bottomSheet for the row when clicked on cross icon on mobile", () => {
+    const listRows = getListRows();
     const { container, queryByTestId } = renderIntoDocument(
       <ListContainer onRowCollapse={() => {}} resizeCallBack={() => {}}>
-        {listItems.map((item, index) => (
-          <ListRow
-            key={item.rowId}
-            rowItem={item}
-            index={index}
-            onOverflowClick={() => {}}
-          >
-            {sections.map(section => (
-              <Section
-                title={section.title}
-                large={4}
-                key={section.title}
-                id={section.id}
-              >
-                {section.items
-                  .slice(0, 4)
-                  .map(sectionItem => (
-                    <SectionItem item={sectionItem} key={sectionItem.title} />
-                  ))}
-              </Section>
-            ))}
-          </ListRow>
-        ))}
+        {listRows}
       </ListContainer>
     );
     Simulate.click(container.querySelector(".button--more-info"));
