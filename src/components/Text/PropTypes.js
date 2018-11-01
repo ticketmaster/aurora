@@ -26,8 +26,3 @@ export const responsiveSize = PropTypes.shape({
 });
 
 export const weight = PropTypes.oneOf(["regular", "semiBold"]);
-
-export const LINK_SIZES = {
-  small: "small",
-  large: "large"
-};

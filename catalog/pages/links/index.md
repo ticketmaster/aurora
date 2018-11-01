@@ -7,11 +7,11 @@
         <Row>
             <Column small={2}/>
             <Column small={3}>
-                <Text size="giga" style={{ textAlign: "center" }}>14px</Text>
+                <Text size="giga" style={{ textAlign: "center" }}>18px</Text>
             </Column>
             <Column small={2}/>
             <Column small={3}>
-                <Text size="giga" style={{ textAlign: "center" }}>16px</Text>
+                <Text size="giga" style={{ textAlign: "center" }}>Uno</Text>
             </Column>
         </Row>
         <Spacing top={{ xSmall: 'comfy' }} />
@@ -20,13 +20,13 @@
                 <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>LinkCta:</Text>
             </Column>
             <Column small={3} style={{ textAlign: "center" }}>
-                <LinkCta href="http://someurl.com">Read more</LinkCta>
+                <LinkCta size="18px" href="http://someurl.com">Read more</LinkCta>
             </Column>
             <Column small={2}>
                 <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>LinkCta:</Text>
             </Column>
             <Column small={3} style={{ textAlign: "center" }}>
-                <LinkCta size="large" href="http://someurl.com">Read more</LinkCta>
+                <LinkCta size="uno" href="http://someurl.com">Read more</LinkCta>
             </Column>
         </Row>
         <Spacing top={{ xSmall: 'giant' }} />

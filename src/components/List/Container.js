@@ -11,6 +11,8 @@ import BottomSheet from "../BottomSheet";
 import Modal from "./Modal";
 import { updateOpenIndex, determineIfOpen } from "./helper";
 
+const noop = () => {};
+
 const Container = styled.div`
   width: 100%;
 `;
@@ -23,14 +25,16 @@ class ListContainer extends Component {
     expandMultiple: this.props.expandMultiple,
     mobilePortalContent: null,
     desktopPortalContent: null,
-    onCloseRequest: () => {}, // eslint-disable-line
-    renderIntoPortal: () => {} // eslint-disable-line
+    onCloseRequest: noop, // eslint-disable-line
+    renderIntoPortal: noop, // eslint-disable-line
+    resetOpenIndex: noop // eslint-disable-line
   };
 
   componentWillMount() {
     this.setState({
       renderIntoPortal: this.renderIntoPortal, // eslint-disable-line
-      onCloseRequest: this.onCloseRequest // eslint-disable-line
+      onCloseRequest: this.onCloseRequest, // eslint-disable-line
+      resetOpenIndex: this.resetOpenIndex // eslint-disable-line
     });
   }
 
@@ -51,8 +55,8 @@ class ListContainer extends Component {
 
   // Only used on tablet/desktop devices
   onExpandOrCollapse = event => {
-    const { className = "", dataset } = event.target || {};
-    const { index } = dataset || {};
+    const { className, dataset } = event.target;
+    const { index } = dataset;
 
     if (!className || className.constructor !== String) {
       return null;
@@ -81,6 +85,8 @@ class ListContainer extends Component {
     }
     return null;
   };
+
+  resetOpenIndex = () => this.setState({ openIndex: ITEMS_COLLAPSED });
 
   renderIntoPortal = ({ children, contentType }) =>
     contentType === "mobile"
@@ -142,8 +148,8 @@ class ListContainer extends Component {
 }
 
 ListContainer.defaultProps = {
-  onRowCollapse: () => {},
-  onModalClose: () => {},
+  onRowCollapse: noop,
+  onModalClose: noop,
   expandMultiple: false
 };
 
