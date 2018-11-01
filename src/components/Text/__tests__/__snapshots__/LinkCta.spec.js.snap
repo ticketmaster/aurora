@@ -12,7 +12,7 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
   font-weight: 600;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
@@ -28,10 +28,8 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
 
 .c0:focus {
   outline: none;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:visited {
@@ -49,12 +47,30 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
   color: #0150a7;
 }
 
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
 <button
   className="c0"
   href={null}
   onClick={[Function]}
   rel={undefined}
-  size="small"
+  size={
+    Object {
+      "large": null,
+      "medium": null,
+      "small": null,
+    }
+  }
 >
   I am a link
 </button>
@@ -72,7 +88,7 @@ exports[`LinkCta renders a default LinkCta 1`] = `
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
   font-weight: 600;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
@@ -80,10 +96,8 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 
 .c0:focus {
   outline: none;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:visited {
@@ -101,12 +115,30 @@ exports[`LinkCta renders a default LinkCta 1`] = `
   color: #0150a7;
 }
 
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
 <a
   className="c0"
   href="http://localhost/"
   onClick={null}
   rel={undefined}
-  size="small"
+  size={
+    Object {
+      "large": null,
+      "medium": null,
+      "small": null,
+    }
+  }
 >
   I am a link
 </a>
@@ -124,7 +156,7 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
   -webkit-transition: transform 0.1s linear;
   transition: transform 0.1s linear;
   font-weight: 600;
-  font-size: 14px;
+  font-size: inherit;
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
@@ -133,10 +165,8 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 
 .c0:focus {
   outline: none;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  -webkit-text-decoration-style: double;
-  text-decoration-style: double;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0:visited {
@@ -154,12 +184,168 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
   color: #0150a7;
 }
 
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: inherit;
+  }
+}
+
 <span
   className="c0"
   href={null}
   onClick={null}
   rel={undefined}
-  size="small"
+  size={
+    Object {
+      "large": null,
+      "medium": null,
+      "small": null,
+    }
+  }
+>
+  I am a link
+</span>
+`;
+
+exports[`LinkCta static size as pixels 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+<span
+  className="c0"
+  href={null}
+  onClick={null}
+  rel={undefined}
+  size={
+    Object {
+      "large": "20px",
+      "medium": "20px",
+      "small": "20px",
+    }
+  }
+>
+  I am a link
+</span>
+`;
+
+exports[`LinkCta static size from typography 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-transition: text-decoration 0.3s ease;
+  transition: text-decoration 0.3s ease;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  font-weight: 600;
+  font-size: normal;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:visited {
+  color: #013670;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: normal;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: normal;
+  }
+}
+
+<span
+  className="c0"
+  href={null}
+  onClick={null}
+  rel={undefined}
+  size={
+    Object {
+      "large": "normal",
+      "medium": "normal",
+      "small": "normal",
+    }
+  }
 >
   I am a link
 </span>

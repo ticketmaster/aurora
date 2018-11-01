@@ -157,6 +157,11 @@ export { default as AdaptiveBackdrop } from "./components/Backdrop";
 
 export { default as PopOver } from "./components/PopOver";
 export { default as Tooltip } from "./components/Tooltip";
+export {
+  DeviceConnectionProvider,
+  DeviceConnectionConsumer,
+  DisplayOn
+} from "./components/DeviceConnection";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
 export { default as SeatData } from "./components/Tooltip/SeatData";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";

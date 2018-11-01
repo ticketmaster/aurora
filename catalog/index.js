@@ -21,6 +21,7 @@ import modal from "./pages/modal";
 import calendarView from "./pages/calendar_view";
 import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
+import deviceConnection from "./pages/device_connection";
 import links from "./pages/links";
 import statusBadge from "./pages/status_badge";
 
@@ -48,6 +49,7 @@ const pages = [
   calendarView,
   popover,
   tooltip,
+  deviceConnection,
   links,
   statusBadge
 ];

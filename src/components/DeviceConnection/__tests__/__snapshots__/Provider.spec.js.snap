@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeviceConnectionProvider should pass the effectiveType to the Consumer's children 1`] = `
+<div>
+  {"slow-2g":false,"2g":false,"3g":false,"4g":true,"isInitialized":true}
+</div>
+`;
+
+exports[`DeviceConnectionProvider should pass the type to the Consumer's children 1`] = `
+<div>
+  {"slow-2g":false,"2g":true,"3g":false,"4g":false,"isInitialized":true}
+</div>
+`;
+
+exports[`DeviceConnectionProvider should update when the connection changes 1`] = `
+<div>
+  {"slow-2g":false,"2g":false,"3g":false,"4g":true,"isInitialized":true}
+</div>
+`;
