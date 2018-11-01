@@ -1,31 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LazyLoader should load a high res version of the image passed when the imageRef supports a backgroundImage style 1`] = `
-Object {
-  "current": null,
-}
-`;
-
-exports[`LazyLoader should load a high res version of the image passed when the imageRef supports src 1`] = `
-Object {
-  "current": null,
-}
-`;
-
-exports[`LazyLoader should load a high res version of the image passed when the imageRef supports srcset 1`] = `
-Object {
-  "current": null,
-}
-`;
-
 exports[`LazyLoader should load a low res, blurred version of the image passed prior to loading 1`] = `
-<div>
-  <img
-    alt="Test Kitten"
-    height="400"
-    src="http://placekitten.com/g/40/40"
-    style="filter: blur(10px);"
-    width="400"
-  />
-</div>
+<img
+  alt="Test Kitten"
+  height={400}
+  src="http://placekitten.com/g/40/40"
+  style={
+    Object {
+      "filter": "blur(10px)",
+      "transition": "80ms filter linear",
+    }
+  }
+  width={400}
+/>
 `;

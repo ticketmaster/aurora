@@ -1,5 +1,4 @@
 import renderer from "react-test-renderer";
-import { render } from "react-testing-library";
 
 import {
   renderComponent,
@@ -10,9 +9,11 @@ import {
 
 describe("LazyLoader", () => {
   it("should load a low res, blurred version of the image passed prior to loading", () => {
-    const { container } = renderComponent({}, render);
+    const component = renderComponent({}, renderer.create, {
+      createNodeMock: createImgWithSrc
+    });
 
-    expect(container).toMatchSnapshot();
+    expect(component).toMatchSnapshot();
   });
 
   it.skip("should load a high res version of the image passed when the imageRef supports srcset", () => {

@@ -1,8 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { LazyLoader } from "../../../src/components/LazyLoader";
-import { Button } from "../../../src/components/Button";
+import { LazyLoader, Column, Button } from "../../../src";
 
 export const resizeFn = ({ src, width, height }) => `${src}/${width}/${height}`;
 
@@ -44,7 +43,7 @@ const LazyImageExample = ({ src, alt, height, width, style }) => (
     resizeFn={resizeFn}
   >
     {({ src: lazySrc, style: lazyStyle, imageRef, load }) => (
-      <Fragment>
+      <Column style={{ display: "flex", flexDirection: "column" }}>
         <ImgClass
           className="image--lazy"
           src={lazySrc}
@@ -54,10 +53,14 @@ const LazyImageExample = ({ src, alt, height, width, style }) => (
           style={lazyStyle}
           imageRef={imageRef}
         />
-        <Button variant="standard" onClick={() => load(true)}>
+        <Button
+          variant="standard"
+          style={{ maxWidth: "400px" }}
+          onClick={() => load(true)}
+        >
           Load image
         </Button>
-      </Fragment>
+      </Column>
     )}
   </LazyLoader>
 );
