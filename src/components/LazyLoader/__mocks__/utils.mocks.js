@@ -17,10 +17,7 @@ const PROPS = {
 export const renderComponent = (props = {}, renderFn, ref) =>
   renderFn(
     <LazyLoader {...PROPS} {...props}>
-      {val => {
-        console.log({ val, ref });
-        return <ImgClass key="test" {...PROPS} {...val} />;
-      }}
+      {val => <ImgClass key="test" {...PROPS} {...val} />}
     </LazyLoader>,
     ref
   );
