@@ -24,48 +24,51 @@ describe("StatusBadgeGroup", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("mouseLeave should set state to isOpen: false", () => {
-    const setStateMock = jest.fn();
-    const instance = renderer
-      .create(
-        <StatusBadgeGroup
-          variant="dark"
-          visibleBadges={badges}
-          hiddenBadges={badges}
-        />
-      )
-      .getInstance();
+  it("call mouse leave event should call mouseLeave function and call setState", () => {
+    const spy = jest.spyOn(StatusBadgeGroup.prototype, "mouseLeave");
+    const spyState = jest.spyOn(StatusBadgeGroup.prototype, "setState");
+    const element = renderer.create(
+      <StatusBadgeGroup
+        variant="dark"
+        visibleBadges={badges}
+        hiddenBadges={badges}
+      />
+    );
 
-    instance.setState = setStateMock;
-    instance.mouseLeave();
+    const hiddenBadgesLabel = element.root.findByProps({ children: "+2 more" });
+    hiddenBadgesLabel.props.onMouseLeave();
 
-    expect(setStateMock).toHaveBeenCalledTimes(1);
-    expect(setStateMock).toHaveBeenCalledWith({
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spyState).toHaveBeenCalledTimes(1);
+    expect(spyState).toHaveBeenCalledWith({
       isOpen: false
     });
   });
 
-  it("elementHovered should set state to isOpen: true and position data", () => {
-    const setStateMock = jest.fn();
+  it("call mouse enter event should call elementHovered function and call setState", () => {
+    const spy = jest.spyOn(StatusBadgeGroup.prototype, "elementHovered");
+    const spyState = jest
+      .spyOn(StatusBadgeGroup.prototype, "setState")
+      .mockImplementation(() => {});
     Tooltip.getDimensionsFromEvent = jest.fn(() => ({
       test: "test data"
     }));
-    const instance = renderer
-      .create(
-        <StatusBadgeGroup
-          variant="dark"
-          visibleBadges={badges}
-          hiddenBadges={badges}
-        />
-      )
-      .getInstance();
+    const element = renderer.create(
+      <StatusBadgeGroup
+        variant="dark"
+        visibleBadges={badges}
+        hiddenBadges={badges}
+      />
+    );
 
-    instance.setState = setStateMock;
-    instance.elementHovered();
+    spyState.mockClear();
 
-    expect(setStateMock).toHaveBeenCalledTimes(1);
-    expect(Tooltip.getDimensionsFromEvent).toHaveBeenCalledTimes(1);
-    expect(setStateMock).toHaveBeenCalledWith({
+    const hiddenBadgesLabel = element.root.findByProps({ children: "+2 more" });
+    hiddenBadgesLabel.props.onMouseEnter();
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spyState).toHaveBeenCalledTimes(1);
+    expect(spyState).toHaveBeenCalledWith({
       isOpen: true,
       test: "test data"
     });

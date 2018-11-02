@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import StatusBadge, { StyledBadge } from "./StatusBadge";
 import Tooltip from "../Tooltip";
-import { themes } from "../../theme";
+import { themes, spacing } from "../../theme";
 
 import { badgeVariants, badgeProps } from "./constants";
 import { directions } from "../Tooltip/constants";
@@ -11,15 +11,15 @@ import { directions } from "../Tooltip/constants";
 const StatusBadgeContainer = styled.div`
   display: flex;
   .badge {
-    margin-left: 8px;
+    margin-left: ${spacing.cozy};
 
     &:first-child,
     &.hidden {
-      margin-left: 0px;
+      margin-left: 0;
     }
 
     &.hidden {
-      margin-top: 8px;
+      margin-top: ${spacing.cozy};
       :first-child {
         margin-top: 0;
       }
@@ -37,23 +37,30 @@ const BadgeTooltip = styled(Tooltip)`
 `;
 
 class StatusBadgeGroup extends Component {
-  state = {
-    isOpen: false
-  };
+  constructor(props) {
+    super(props);
 
-  mouseLeave = () => {
+    this.state = {
+      isOpen: false
+    };
+
+    this.mouseLeave = this.mouseLeave.bind(this);
+    this.elementHovered = this.elementHovered.bind(this);
+  }
+
+  mouseLeave() {
     this.setState({
       isOpen: false
     });
-  };
+  }
 
-  elementHovered = e => {
+  elementHovered(e) {
     const data = Tooltip.getDimensionsFromEvent(e);
     this.setState({
       isOpen: true,
       ...data
     });
-  };
+  }
 
   renderBadges = (badges, variant, additionalClass) =>
     badges.map(item => (
