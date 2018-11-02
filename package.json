@@ -28,6 +28,7 @@
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch --no-cache --notify",
     "test:cover": "NODE_ENV=test jest --coverage",
+    "test:ci": "NODE_ENV=test jest --changedSince=master --runInBand",
     "add-icons": "pixo $* --out-dir src/components/Icons"
   },
   "lint-staged": {
