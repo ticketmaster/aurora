@@ -23,6 +23,7 @@ import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
 import deviceConnection from "./pages/device_connection";
 import links from "./pages/links";
+import statusBadge from "./pages/status_badge";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -50,6 +51,7 @@ const pages = [
   tooltip,
   deviceConnection,
   links,
+  statusBadge
 ];
 
 const sizes = [
