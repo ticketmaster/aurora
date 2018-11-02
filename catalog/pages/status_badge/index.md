@@ -30,6 +30,6 @@ rows:
 <div>
   <StatusBadgeDemo />
   <Spacing top={{ xSmall: 'colossal' }}/>
-  <StatusBadgeDemo type="light" />
+  <StatusBadgeDemo variant="light" />
 </div>
 ```

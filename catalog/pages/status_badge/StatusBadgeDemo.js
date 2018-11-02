@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { themes, StatusBadge } from "../../../src";
+import { themes, StatusBadgeGroup } from "../../../src";
 
 const visible = [
   { label: "error", color: themes.global.error.base },
@@ -16,20 +16,20 @@ const visibleLight = [
   { label: "success", color: themes.global.success.light }
 ];
 
-const StatusBadgeDemo = ({ type }) => (
-  <StatusBadge
-    type={type}
-    visibleBadges={type === "light" ? visibleLight : visible}
-    hiddenBadges={type === "light" ? visibleLight : visible}
+const StatusBadgeDemo = ({ variant }) => (
+  <StatusBadgeGroup
+    variant={variant}
+    visibleBadges={variant === "light" ? visibleLight : visible}
+    hiddenBadges={variant === "light" ? visibleLight : visible}
   />
 );
 
 StatusBadgeDemo.propTypes = {
-  type: PropTypes.string
+  variant: PropTypes.string
 };
 
 StatusBadgeDemo.defaultProps = {
-  type: "dark"
+  variant: "dark"
 };
 
 export default StatusBadgeDemo;
