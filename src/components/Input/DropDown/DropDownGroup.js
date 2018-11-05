@@ -31,11 +31,13 @@ class DropDownGroup extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { isOpen } = this.state;
-    // disables scroll when dropdown is open
-    document.addEventListener("wheel", this.disableScroll);
     // scroll dropdown to top after opening
     if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
+      // disables scroll when dropdown is open
+      document.addEventListener("wheel", this.disableScroll);
+    } else {
+      document.removeEventListener("wheel", this.disableScroll);
     }
   }
 
@@ -118,7 +120,16 @@ class DropDownGroup extends React.Component {
   };
 
   disableScroll = e => {
-    if (this.state.isOpen && !this.groupWrapper.current.contains(e.target)) {
+    const dropdownHeight = this.styledChildWrapper.current.clientHeight;
+    const optionsHeight = this.optionsContainer.current.clientHeight;
+    const isScrollable = optionsHeight > dropdownHeight;
+    // disable scroll when a user scrolls outside of dropdown or
+    // withing a dropdown and it is not scrollable
+    if (
+      this.state.isOpen &&
+      (!this.groupWrapper.current.contains(e.target) ||
+        (this.groupWrapper.current.contains(e.target) && !isScrollable))
+    ) {
       this.stopInteraction(e);
     }
   };

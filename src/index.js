@@ -169,3 +169,4 @@ export {
   LazyLoaderConsumer,
   LazyLoader
 } from "./components/LazyLoader";
+export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";
