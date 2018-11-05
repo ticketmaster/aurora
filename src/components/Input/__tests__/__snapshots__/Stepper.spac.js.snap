@@ -1,0 +1,6713 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper decrements correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper decrements from non-zero value correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper decrements twice correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper handles case when input is deleted 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper handles input value correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -1134px;"
+      type="text"
+      value="42"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper handles input value longer than 2 chars correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper increments correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper increments twice correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -27px;"
+      type="text"
+      value="1"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper renders default stepper 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Stepper renders disabled stepper 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH kUVilN"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="disabled sc-htpNat cVmlFN"
+  >
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb ffdMev"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH kUVilN"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;

@@ -1,49 +1,14 @@
-## SearchInput
-
-### Props
-
-```table
-span: 6
-rows:
-  - Prop: onBlur
-    Type: function
-    Default: null
-    Notes: Handler function
-  - Prop: onFocus
-    Type: function
-    Default: null
-    Notes: Handler function
-  - Prop: slim
-    Type: boolean
-    Default: "false"
-    Notes: Size design variant
-  - Prop: invert
-    Type: boolean
-    Default: N/A
-    Notes: Color design variant
-  - Prop: className
-    Type: string
-    Default: null
-    Notes: Enables passing a className to the Container
-  - Prop: iconProps
-    Type: object
-    Default: null
-    Notes: Enables passing props to the SearchIcon
-```
-
 ```react
-responsive: true
 span: 6
 ---
-<Header>
-    <Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
-        <Search placeholder="Enter term..." iconProps={{ color: "currentColor" }} />
-    </Column>
-</Header>
+<div style={{ width: "300px" }}>
+  <Stepper />
+  <Spacing bottom={{small: "moderate"}} />
+  <Stepper disabled/>
+</div>
 ```
 
 ```react
-responsive: true
 span: 6
 ---
 <Container>
