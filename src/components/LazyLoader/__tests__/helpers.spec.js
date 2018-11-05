@@ -64,12 +64,14 @@ describe("resize", () => {
 
   it("should return src when src does not contain a host", () => {
     const src = "/assets/test.jpg";
+
     expect(resize({ src })).toEqual(src);
   });
 
   it("should return src if an error occurs", () => {
-    const src = "/assets/test.jpg";
-    expect(resize({ src, params: null })).toEqual(src);
+    const src = null;
+
+    expect(resize({ src })).toEqual(src);
   });
 });
 
@@ -160,7 +162,7 @@ describe("getSrcSetByDensity", () => {
 });
 
 describe("getTargetDensity", () => {
-  it("should return 3 if global.window.devicePixelRatio is greater than 3", () => {
+  it("should return 3 if window.devicePixelRatio is greater than 3", () => {
     Object.defineProperty(global.window, "devicePixelRatio", {
       writable: true,
       value: 5
@@ -169,7 +171,7 @@ describe("getTargetDensity", () => {
     expect(getTargetDensity()).toEqual(3);
   });
 
-  it("should return a rounded ratio if global.window.devicePixelRatio is less than 3", () => {
+  it("should return a rounded ratio if window.devicePixelRatio is less than 3", () => {
     Object.defineProperty(global.window, "devicePixelRatio", {
       writable: true,
       value: 2.4
@@ -178,7 +180,7 @@ describe("getTargetDensity", () => {
     expect(getTargetDensity()).toEqual(2);
   });
 
-  it("should return defaultTargetDensity if global.window.devicePixelRatio is undefined", () => {
+  it("should return defaultTargetDensity if window.devicePixelRatio is undefined", () => {
     Object.defineProperty(global.window, "devicePixelRatio", {
       writable: true,
       value: undefined

@@ -1,19 +1,20 @@
 import { PLACEHOLDER_IMAGE, DEFAULT_TARGET_DENSITY } from "./constants";
 import createParams from "../../utils/createParams";
 
+/* istanbul ignore next */
+const Url = process.browser ? global.window.URL : require("url");
+
 export const resize = ({ src = "", ...params }) => {
   try {
-    const { host, pathname } = process.browser
-      ? new global.Url(src)
-      : global.Url.parse(src);
+    const { host, pathname } = process.browser ? new Url(src) : Url.parse(src);
 
     if (!host) {
       return src;
     }
 
-    const url = `https://${host}${pathname}`;
+    const url = `https://${host}/${pathname}`;
     const fit = params.width && params.height ? { fit: "crop" } : {};
-    const resizeSrc = `${url}?${createParams({ ...params, ...fit })}`;
+    const resizeSrc = `${url}${createParams({ ...params, ...fit })}`;
     return resizeSrc;
   } catch (e) {
     return src;

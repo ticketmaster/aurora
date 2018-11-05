@@ -6,7 +6,7 @@ import {
   resizeFn as testResizeFn
 } from "../../../../catalog/pages/images/LazyImageExample";
 
-const PROPS = {
+export const PROPS = {
   src: "http://placekitten.com/g",
   alt: "Test Kitten",
   height: 400,
@@ -14,9 +14,11 @@ const PROPS = {
   resizeFn: testResizeFn
 };
 
+const mergeProps = props => ({ ...PROPS, ...props });
+
 export const renderComponent = (props = {}, renderFn, ref) =>
   renderFn(
-    <LazyLoader {...PROPS} {...props}>
+    <LazyLoader {...mergeProps(props)}>
       {val => <ImgClass key="test" {...PROPS} {...val} />}
     </LazyLoader>,
     ref
@@ -24,7 +26,7 @@ export const renderComponent = (props = {}, renderFn, ref) =>
 
 export const renderProviderComponent = (props = {}, renderFn, ref) =>
   renderFn(
-    <LazyLoaderProvider {...PROPS} {...props}>
+    <LazyLoaderProvider {...mergeProps(props)}>
       <LazyLoaderConsumer>
         {val => <ImgClass key="test" {...PROPS} {...val} />}
       </LazyLoaderConsumer>

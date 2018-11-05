@@ -45,8 +45,8 @@ class LazyLoaderProvider extends PureComponent {
     /* eslint-enable */
   }
 
-  componentDidUpdate(prevProps) {
-    const { src, style } = this.props;
+  componentDidUpdate(prevProps = {}) {
+    const { src, style, width, height, resizeFn } = this.props;
     const { src: prevSrc } = prevProps;
 
     if (src !== prevSrc) {
@@ -61,7 +61,7 @@ class LazyLoaderProvider extends PureComponent {
 
   onload = () => {
     const { imageRef } = this.state;
-    if (imageRef && imageRef.current.style) {
+    if (imageRef && imageRef.current) {
       imageRef.current.style.filter = "none";
     }
   };

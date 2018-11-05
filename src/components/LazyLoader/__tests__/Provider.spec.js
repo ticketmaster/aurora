@@ -4,7 +4,8 @@ import {
   renderProviderComponent,
   createImgWithSrcset,
   createImgWithSrc,
-  createDiv
+  createDiv,
+  PROPS as providerProps
 } from "../__mocks__/utils.mocks";
 
 describe("LazyLoaderProvider", () => {
@@ -49,7 +50,36 @@ describe("LazyLoaderProvider", () => {
     expect(instance.state.imageRef).toMatchSnapshot();
   });
 
-  it.skip("should invoke componentDidUpdate and set state to a low res, blurred version of the image when the src changes", () => {
+  it("should not load a high res version of the image passed when the load function is invoked with a value of false", () => {
+    const component = renderProviderComponent({}, renderer.create, {
+      createNodeMock: createImgWithSrcset
+    });
+
+    const instance = component.getInstance();
+    instance.load(false);
+
+    expect(component).toMatchSnapshot();
+  });
+
+  it("should not error when calling the onload method if no ref is available", () => {
+    const component = renderProviderComponent({}, renderer.create);
+
+    const instance = component.getInstance();
+    expect(() => instance.onload()).not.toThrow();
+  });
+
+  it("should invoke componentDidUpdate and not setState when src equals prevSrc", () => {
+    const component = renderProviderComponent({}, renderer.create, {
+      createNodeMock: createImgWithSrcset
+    });
+
+    const instance = component.getInstance();
+    instance.componentDidUpdate(providerProps);
+
+    expect(instance.state).toMatchSnapshot();
+  });
+
+  it("should invoke componentDidUpdate and set state to a low res, blurred version of the image when the src changes", () => {
     const component = renderProviderComponent({}, renderer.create, {
       createNodeMock: createImgWithSrcset
     });
