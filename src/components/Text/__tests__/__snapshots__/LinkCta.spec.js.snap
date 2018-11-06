@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
-.c0 {
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
@@ -16,6 +16,30 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
+}
+
+.c1:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c1:visited {
+  color: #013670;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  color: #013670;
+}
+
+.c1:hover {
+  color: #0150a7;
+}
+
+.c0 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -26,41 +50,20 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
   cursor: pointer;
 }
 
-.c0:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:visited {
-  color: #013670;
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c0:hover {
-  color: #0150a7;
-}
-
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     font-size: inherit;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c1 {
     font-size: inherit;
   }
 }
 
 <button
-  className="c0"
+  className="c0 c1"
   href={null}
   onClick={[Function]}
   rel={undefined}
@@ -145,7 +148,7 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 `;
 
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
-.c0 {
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
@@ -160,44 +163,47 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
-  cursor: pointer;
 }
 
-.c0:focus {
+.c1:focus {
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c0:visited {
+.c1:visited {
   color: #013670;
 }
 
-.c0:active {
+.c1:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   color: #013670;
 }
 
-.c0:hover {
+.c1:hover {
   color: #0150a7;
 }
 
+.c0 {
+  cursor: pointer;
+}
+
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     font-size: inherit;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c1 {
     font-size: inherit;
   }
 }
 
 <span
-  className="c0"
+  className="c0 c1"
   href={null}
   onClick={null}
   rel={undefined}
@@ -214,7 +220,7 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 `;
 
 exports[`LinkCta static size as pixels 1`] = `
-.c0 {
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
@@ -229,44 +235,47 @@ exports[`LinkCta static size as pixels 1`] = `
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
-  cursor: pointer;
 }
 
-.c0:focus {
+.c1:focus {
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c0:visited {
+.c1:visited {
   color: #013670;
 }
 
-.c0:active {
+.c1:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   color: #013670;
 }
 
-.c0:hover {
+.c1:hover {
   color: #0150a7;
 }
 
+.c0 {
+  cursor: pointer;
+}
+
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     font-size: 20px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c1 {
     font-size: 20px;
   }
 }
 
 <span
-  className="c0"
+  className="c0 c1"
   href={null}
   onClick={null}
   rel={undefined}
@@ -283,7 +292,7 @@ exports[`LinkCta static size as pixels 1`] = `
 `;
 
 exports[`LinkCta static size from typography 1`] = `
-.c0 {
+.c1 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
@@ -298,44 +307,47 @@ exports[`LinkCta static size from typography 1`] = `
   line-height: 1.25;
   color: #026cdf;
   display: inline-block;
-  cursor: pointer;
 }
 
-.c0:focus {
+.c1:focus {
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c0:visited {
+.c1:visited {
   color: #013670;
 }
 
-.c0:active {
+.c1:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   color: #013670;
 }
 
-.c0:hover {
+.c1:hover {
   color: #0150a7;
 }
 
+.c0 {
+  cursor: pointer;
+}
+
 @media screen and (min-width:768px) {
-  .c0 {
+  .c1 {
     font-size: normal;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c0 {
+  .c1 {
     font-size: normal;
   }
 }
 
 <span
-  className="c0"
+  className="c0 c1"
   href={null}
   onClick={null}
   rel={undefined}

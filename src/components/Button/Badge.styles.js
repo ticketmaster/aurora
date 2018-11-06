@@ -59,7 +59,7 @@ export const GenericButton = styled.button`
   }
 `;
 
-const StyledBadge = GenericButton.extend`
+const StyledBadge = styled(GenericButton)`
   font-size: ${typography.size.uno};
   display: flex;
   flex-flow: row;

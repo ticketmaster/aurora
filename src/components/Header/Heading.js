@@ -10,7 +10,7 @@ const Span = styled.span`
   font-weight: ${typography.weight.light};
 `;
 
-const Strong = Span.extend`
+const Strong = styled(Span)`
   font-weight: ${typography.weight.extraBold};
 `;
 
