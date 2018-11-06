@@ -165,7 +165,7 @@ StyledButton.defaultProps = {
   }
 };
 
-export const StyledButtonLink = StyledButton.withComponent(`a`).extend`
+export const StyledButtonLink = styled(StyledButton.withComponent(`a`))`
   display: block;
   text-decoration: none;
 `;

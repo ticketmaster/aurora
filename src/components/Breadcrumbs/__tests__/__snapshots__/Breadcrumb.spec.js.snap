@@ -1,10 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumb /> renders correctly 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.c0 {
   font-weight: 600;
   display: -webkit-box;
   display: -webkit-flex;
@@ -58,7 +61,7 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light c0"
+    className="breadcrumb--light c0 c1"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   >
@@ -69,10 +72,13 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
 `;
 
 exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.c0 {
   font-weight: 600;
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,7 +129,7 @@ exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light c0"
+    className="breadcrumb--light c0 c1"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   />

@@ -1,9 +1,10 @@
+import styled from "styled-components";
 import { ListUnstyled } from "../List";
 import typography from "../../theme/typography";
 import spacing from "../../theme/spacing";
 import getThemeValue from "../../utils/getThemeValue";
 
-const StyledBreadcrumb = ListUnstyled.extend`
+const StyledBreadcrumb = styled(ListUnstyled)`
   font-weight: ${typography.weight.semiBold};
   display: flex;
   flex-flow: row;

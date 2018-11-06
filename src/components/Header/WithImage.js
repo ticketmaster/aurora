@@ -18,7 +18,7 @@ const GradientBackground = styled(Gradient)`
   max-height: 218px;
 `;
 
-const ImageBackground = GradientBackground.extend`
+const ImageBackground = styled(GradientBackground)`
   background-size: cover;
   background-repeat: no-repeat;
 `;

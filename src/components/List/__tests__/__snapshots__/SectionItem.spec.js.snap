@@ -3,7 +3,7 @@
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 <a
   aria-label="Section Item"
-  class="sc-kkGfuU section-item fuPFux sc-iwsKbI dVGldd"
+  class="sc-kkGfuU section-item fuPFux sc-iwsKbI efGKkK sc-dnqmqq dzQJpC"
   href="https://ticketmaster.com/"
   rel="_self"
   role="link"
@@ -38,7 +38,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
+      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo fGeIxQ"
     >
       VIP Packages
     </div>
@@ -84,7 +84,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
     </div>
     <div>
       <div
-        class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
+        class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo fGeIxQ"
       >
         VIP Packages
       </div>
@@ -128,7 +128,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo qHVia"
+      class="sc-eHgmQL section-item-link jaEeup sc-hSdWYo fGeIxQ"
     >
       VIP Packages
     </div>
