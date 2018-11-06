@@ -36,8 +36,8 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
-const LinkItemContainer = ItemContainer.withComponent("a").extend`
-text-decoration: none;
+const LinkItemContainer = styled(ItemContainer.withComponent("a"))`
+  text-decoration: none;
 `;
 
 const ListItem = ({ children, index, onClick, href, ...rest }) => (

@@ -11,7 +11,7 @@ import typography from "../../theme/typography";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 
-const LinkRow = LinkRowBase.extend`
+const LinkRow = styled(LinkRowBase)`
   height: 60px;
 `;
 

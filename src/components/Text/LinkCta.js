@@ -51,7 +51,7 @@ const LinkCtaBase = styled.a`
   `};
 `;
 
-const LinkCtaButtonBase = LinkCtaBase.withComponent(`button`).extend`
+const LinkCtaButtonBase = styled(LinkCtaBase.withComponent(`button`))`
   appearance: none;
   border: 0;
   outline: 0;
@@ -60,7 +60,7 @@ const LinkCtaButtonBase = LinkCtaBase.withComponent(`button`).extend`
   cursor: pointer;
 `;
 
-const LinkCtaSpanBase = LinkCtaBase.withComponent(`span`).extend`
+const LinkCtaSpanBase = styled(LinkCtaBase.withComponent(`span`))`
   cursor: pointer;
 `;
 

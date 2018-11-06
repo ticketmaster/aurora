@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import { typography } from "../../theme";
 import { GenericButton } from "./Badge.styles";
 
-const StyledIconButton = GenericButton.extend`
+const StyledIconButton = styled(GenericButton)`
   font-size: ${typography.size.hecto};
   min-width: ${props => props.size}px;
   max-width: ${props => props.size}px;

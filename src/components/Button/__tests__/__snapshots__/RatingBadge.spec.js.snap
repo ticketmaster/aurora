@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -13,6 +13,16 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   border: 1px solid rgba(2,108,223,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,17 +42,13 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62,11 +68,11 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -74,7 +80,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -82,10 +88,10 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -97,7 +103,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -118,7 +124,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -130,6 +136,16 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   border: 1px solid rgba(2,108,223,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -149,17 +165,13 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(2,108,223,0.2);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -179,11 +191,11 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -191,17 +203,17 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -213,7 +225,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -234,7 +246,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -246,6 +258,16 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   border: 1px solid rgba(2,108,223,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(2,108,223,0.2);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -265,17 +287,13 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(2,108,223,0.2);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -295,11 +313,11 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -307,7 +325,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -315,10 +333,10 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -330,7 +348,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -351,7 +369,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -363,6 +381,16 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   border: 1px solid rgba(2,108,223,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -382,17 +410,13 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -412,11 +436,11 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -424,17 +448,17 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -446,7 +470,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -467,7 +491,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -479,6 +503,16 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   border: 1px solid rgba(2,108,223,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,1);
+  background-color: rgba(2,108,223,0.2);
+  border: 1px solid rgba(2,108,223,0.2);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -498,17 +532,13 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -528,11 +558,11 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -540,7 +570,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -548,10 +578,10 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -563,7 +593,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -584,7 +614,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -596,6 +626,16 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -615,17 +655,13 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -645,11 +681,11 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -657,17 +693,17 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -679,7 +715,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>
@@ -700,7 +736,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] = `
-.c0 {
+.c2 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -712,6 +748,16 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c1 {
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -731,17 +777,13 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   max-width: 45px;
   min-width: 45px;
   height: 20px;
+}
+
+.c0 {
   padding: 0;
 }
 
-.c0:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c1 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -761,11 +803,11 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   height: 100%;
 }
 
-.c3 {
+.c5 {
   padding-left: 2px;
 }
 
-.c2 {
+.c4 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -773,7 +815,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
 }
 
 <button
-  className="c0"
+  className="c0 c1 c2"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -781,10 +823,10 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   size="regular"
 >
   <span
-    className="c1"
+    className="c3"
   >
     <svg
-      className="c2"
+      className="c4"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -796,7 +838,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
       />
     </svg>
     <span
-      className="c3"
+      className="c5"
     >
       RatingBadge
     </span>

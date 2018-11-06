@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import { colors, typography } from "../../theme";
 import constants from "../../theme/constants";
 import StyledText from "./StyledText";
 
-const PrimaryStyledText = StyledText.extend`
+const PrimaryStyledText = styled(StyledText)`
   color: ${colors.onyx.base};
 
   @media only screen and ${constants.breakpoints.smallAndUp} {

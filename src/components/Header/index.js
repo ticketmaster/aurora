@@ -27,7 +27,7 @@ const HeaderGradient = styled(Gradient)`
   `};
 `;
 
-const HeaderContainer = Container.extend`
+const HeaderContainer = styled(Container)`
   padding-top: 60px;
   z-index: 2;
 `;

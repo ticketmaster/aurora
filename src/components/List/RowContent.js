@@ -117,7 +117,7 @@ const MobileOnlyColumn = styled(Column)`
   `};
 `;
 
-const ListRowButton = StyledButton.withComponent("span").extend`
+const ListRowButton = styled(StyledButton.withComponent("span"))`
   min-width: 100px;
   max-width: 102px;
   height: 36px;

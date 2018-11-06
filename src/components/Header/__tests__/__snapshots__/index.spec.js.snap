@@ -35,7 +35,7 @@ exports[`Header renders with custom level 1`] = `
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,12 +54,21 @@ exports[`Header renders with custom level 1`] = `
   margin-right: -8px;
 }
 
-.c4 .c4 {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -86,26 +95,19 @@ exports[`Header renders with custom level 1`] = `
 }
 
 .c3 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
   padding-top: 60px;
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   font-weight: 300;
 }
 
-.c6 {
-  font-weight: 300;
+.c7 {
   font-weight: 800;
 }
 
-.c5 {
+.c6 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
@@ -170,9 +172,16 @@ exports[`Header renders with custom level 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     margin-left: -12px;
     margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -189,20 +198,13 @@ exports[`Header renders with custom level 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c5 {
+  .c6 {
     font-size: 46px;
   }
 }
@@ -217,13 +219,13 @@ exports[`Header renders with custom level 1`] = `
     style={Object {}}
   >
     <div
-      className="c3"
+      className="c3 c4"
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h1
-          className="c5"
+          className="c6"
           color="blue"
           size={
             Object {
@@ -234,13 +236,13 @@ exports[`Header renders with custom level 1`] = `
           }
         >
           <span
-            className="c6"
+            className="c7 c8"
           >
             Generic
           </span>
            
           <span
-            className="c7"
+            className="c8"
           >
             Header
           </span>
@@ -286,7 +288,7 @@ exports[`Header renders with default 1`] = `
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -305,12 +307,21 @@ exports[`Header renders with default 1`] = `
   margin-right: -8px;
 }
 
-.c4 .c4 {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -337,26 +348,19 @@ exports[`Header renders with default 1`] = `
 }
 
 .c3 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
   padding-top: 60px;
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   font-weight: 300;
 }
 
-.c6 {
-  font-weight: 300;
+.c7 {
   font-weight: 800;
 }
 
-.c5 {
+.c6 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
@@ -421,9 +425,16 @@ exports[`Header renders with default 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     margin-left: -12px;
     margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -440,20 +451,13 @@ exports[`Header renders with default 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c5 {
+  .c6 {
     font-size: 46px;
   }
 }
@@ -468,13 +472,13 @@ exports[`Header renders with default 1`] = `
     style={Object {}}
   >
     <div
-      className="c3"
+      className="c3 c4"
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h2
-          className="c5"
+          className="c6"
           size={
             Object {
               "large": "bronto",
@@ -484,13 +488,13 @@ exports[`Header renders with default 1`] = `
           }
         >
           <span
-            className="c6"
+            className="c7 c8"
           >
             Generic
           </span>
            
           <span
-            className="c7"
+            className="c8"
           >
             Header
           </span>
@@ -536,7 +540,7 @@ exports[`Header renders withOverlay 1`] = `
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -555,12 +559,21 @@ exports[`Header renders withOverlay 1`] = `
   margin-right: -8px;
 }
 
-.c4 .c4 {
+.c5 .c5 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
   margin-left: 0;
   margin-right: 0;
+}
+
+.c4 {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
 
 .c0 {
@@ -587,26 +600,19 @@ exports[`Header renders withOverlay 1`] = `
 }
 
 .c3 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
   padding-top: 60px;
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   font-weight: 300;
 }
 
-.c6 {
-  font-weight: 300;
+.c7 {
   font-weight: 800;
 }
 
-.c5 {
+.c6 {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 8px;
@@ -671,9 +677,16 @@ exports[`Header renders withOverlay 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     margin-left: -12px;
     margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -690,20 +703,13 @@ exports[`Header renders withOverlay 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
+  .c6 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c5 {
+  .c6 {
     font-size: 46px;
   }
 }
@@ -718,13 +724,13 @@ exports[`Header renders withOverlay 1`] = `
     style={Object {}}
   >
     <div
-      className="c3"
+      className="c3 c4"
     >
       <div
-        className="c4"
+        className="c5"
       >
         <h2
-          className="c5"
+          className="c6"
           size={
             Object {
               "large": "bronto",
@@ -734,13 +740,13 @@ exports[`Header renders withOverlay 1`] = `
           }
         >
           <span
-            className="c6"
+            className="c7 c8"
           >
             Generic
           </span>
            
           <span
-            className="c7"
+            className="c8"
           >
             Header
           </span>
