@@ -24,6 +24,7 @@ import tooltip from "./pages/tooltip";
 import deviceConnection from "./pages/device_connection";
 import links from "./pages/links";
 import tabs from "./pages/tabs";
+import statusBadge from "./pages/status_badge";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -51,7 +52,8 @@ const pages = [
   tooltip,
   deviceConnection,
   links,
-  tabs
+  tabs,
+  statusBadge
 ];
 
 const sizes = [
