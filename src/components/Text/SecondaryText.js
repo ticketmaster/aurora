@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import { colors } from "../../theme";
 import StyledText from "./StyledText";
 
-const SecondaryStyledText = StyledText.extend`
+const SecondaryStyledText = styled(StyledText)`
   color: ${colors.onyx.light};
 `;
 

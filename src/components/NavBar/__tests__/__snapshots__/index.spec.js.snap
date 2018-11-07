@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavBar renders fixed 1`] = `
-.c10 {
+.c6 .list-container {
+  position: relative;
+}
+
+.c11 {
   display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -14,49 +18,20 @@ exports[`NavBar renders fixed 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
-.list-container--open .c10 {
+.list-container--open .c11 {
   display: block;
 }
 
-.c10.links__list--open {
+.c11.links__list--open {
   display: block;
 }
 
-.c11 {
+.c12 {
   padding: 8px;
 }
 
-.c11.wrapper--has-after {
+.c12.wrapper--has-after {
   padding: 8px 8px 0 8px;
-}
-
-.c7 {
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 0;
-  border: 0;
-  position: relative;
-}
-
-.links__list .c7 {
-  width: 100%;
-  text-align: left;
-}
-
-.c7:focus,
-.c7:hover {
-  outline: 0;
-}
-
-.c7.link--has-other.link--open:after {
-  content: "";
-  display: inline-block;
-  border-bottom: 4px solid rgba(2,108,223,1);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .c8 {
@@ -88,20 +63,45 @@ exports[`NavBar renders fixed 1`] = `
   bottom: 0;
 }
 
+.c9 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c9 {
+  width: 100%;
+  text-align: left;
+}
+
+.c9:focus,
+.c9:hover {
+  outline: 0;
+}
+
+.c9.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid rgba(2,108,223,1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .c5 {
   height: 60px;
 }
 
-.c5 .list-container {
-  position: relative;
-}
-
-.c9 {
+.c10 {
   top: 60px;
   left: -74%;
 }
 
-.c6 {
+.c7 {
   background-color: transparent;
   padding: 19px 16px 19px 16px;
   color: rgba(255,255,255,1);
@@ -112,34 +112,34 @@ exports[`NavBar renders fixed 1`] = `
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.nav--inverted .c6,
-.links__list .c6 {
+.nav--inverted .c7,
+.links__list .c7 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
-.c6:visited,
-.c6:active {
+.c7:visited,
+.c7:active {
   color: rgba(255,255,255,1);
 }
 
-.nav--inverted .c6:visited,
-.nav--inverted .c6:active,
-.links__list .c6:visited,
-.links__list .c6:active {
+.nav--inverted .c7:visited,
+.nav--inverted .c7:active,
+.links__list .c7:visited,
+.links__list .c7:active {
   color: rgba(38,38,38,1) !important;
 }
 
-.c6:focus,
-.c6:hover {
+.c7:focus,
+.c7:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c6:focus,
-.nav--inverted .c6:hover,
-.links__list .c6:focus,
-.links__list .c6:hover {
+.nav--inverted .c7:focus,
+.nav--inverted .c7:hover,
+.links__list .c7:focus,
+.links__list .c7:hover {
   background-color: #E6E6E6;
 }
 
@@ -406,7 +406,7 @@ exports[`NavBar renders fixed 1`] = `
       Logo
     </a>
     <div
-      className="links links__row c5"
+      className="c5 links links__row c6"
       role="menubar"
     >
       <span
@@ -417,7 +417,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <a
-          className="link c6 c7"
+          className="link c7 c8"
           href="/"
           rel={null}
           role="link"
@@ -434,7 +434,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <button
-          className="link c6 c8"
+          className="link c7 c9"
           href={null}
           role="button"
         >
@@ -449,7 +449,7 @@ exports[`NavBar renders fixed 1`] = `
         role="none"
       >
         <button
-          className="link c6 c8"
+          className="link c7 c9"
           href={null}
           role="button"
         >
@@ -466,14 +466,14 @@ exports[`NavBar renders fixed 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="link link--has-other c6 c8"
+          className="link link--has-other c7 c9"
           href={null}
           role="button"
         >
           Link 4
         </button>
         <div
-          className="c9 links links__list c10"
+          className="c10 links links__list c11"
           role="menu"
           style={
             Object {
@@ -482,7 +482,7 @@ exports[`NavBar renders fixed 1`] = `
           }
         >
           <div
-            className="c11"
+            className="c12"
           >
             <span
               className="list-container list-container--closed"
@@ -492,7 +492,7 @@ exports[`NavBar renders fixed 1`] = `
               role="none"
             >
               <button
-                className="link c6 c8"
+                className="link c7 c9"
                 href={null}
                 role="button"
               >
@@ -507,7 +507,7 @@ exports[`NavBar renders fixed 1`] = `
               role="none"
             >
               <button
-                className="link c6 c8"
+                className="link c7 c9"
                 href={null}
                 role="button"
               >
@@ -522,7 +522,7 @@ exports[`NavBar renders fixed 1`] = `
               role="none"
             >
               <button
-                className="link c6 c8"
+                className="link c7 c9"
                 href={null}
                 role="button"
               >
@@ -538,7 +538,11 @@ exports[`NavBar renders fixed 1`] = `
 `;
 
 exports[`NavBar renders inverted 1`] = `
-.c9 {
+.c6 .list-container {
+  position: relative;
+}
+
+.c10 {
   display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -551,23 +555,23 @@ exports[`NavBar renders inverted 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
-.list-container--open .c9 {
+.list-container--open .c10 {
   display: block;
 }
 
-.c9.links__list--open {
+.c10.links__list--open {
   display: block;
 }
 
-.c10 {
+.c11 {
   padding: 8px;
 }
 
-.c10.wrapper--has-after {
+.c11.wrapper--has-after {
   padding: 8px 8px 0 8px;
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -576,17 +580,17 @@ exports[`NavBar renders inverted 1`] = `
   position: relative;
 }
 
-.links__list .c7 {
+.links__list .c8 {
   width: 100%;
   text-align: left;
 }
 
-.c7:focus,
-.c7:hover {
+.c8:focus,
+.c8:hover {
   outline: 0;
 }
 
-.c7.link--has-other.link--open:after {
+.c8.link--has-other.link--open:after {
   content: "";
   display: inline-block;
   border-bottom: 4px solid rgba(2,108,223,1);
@@ -600,16 +604,12 @@ exports[`NavBar renders inverted 1`] = `
   height: 60px;
 }
 
-.c5 .list-container {
-  position: relative;
-}
-
-.c8 {
+.c9 {
   top: 60px;
   left: -74%;
 }
 
-.c6 {
+.c7 {
   background-color: transparent;
   padding: 19px 16px 19px 16px;
   color: rgba(255,255,255,1);
@@ -620,34 +620,34 @@ exports[`NavBar renders inverted 1`] = `
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.nav--inverted .c6,
-.links__list .c6 {
+.nav--inverted .c7,
+.links__list .c7 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
-.c6:visited,
-.c6:active {
+.c7:visited,
+.c7:active {
   color: rgba(255,255,255,1);
 }
 
-.nav--inverted .c6:visited,
-.nav--inverted .c6:active,
-.links__list .c6:visited,
-.links__list .c6:active {
+.nav--inverted .c7:visited,
+.nav--inverted .c7:active,
+.links__list .c7:visited,
+.links__list .c7:active {
   color: rgba(38,38,38,1) !important;
 }
 
-.c6:focus,
-.c6:hover {
+.c7:focus,
+.c7:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c6:focus,
-.nav--inverted .c6:hover,
-.links__list .c6:focus,
-.links__list .c6:hover {
+.nav--inverted .c7:focus,
+.nav--inverted .c7:hover,
+.links__list .c7:focus,
+.links__list .c7:hover {
   background-color: #E6E6E6;
 }
 
@@ -913,7 +913,7 @@ exports[`NavBar renders inverted 1`] = `
       Logo
     </a>
     <div
-      className="links links__row c5"
+      className="c5 links links__row c6"
       role="menubar"
     >
       <span
@@ -924,7 +924,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="link c6 c7"
+          className="link c7 c8"
           href={null}
           role="button"
         >
@@ -939,7 +939,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="link c6 c7"
+          className="link c7 c8"
           href={null}
           role="button"
         >
@@ -954,7 +954,7 @@ exports[`NavBar renders inverted 1`] = `
         role="none"
       >
         <button
-          className="link c6 c7"
+          className="link c7 c8"
           href={null}
           role="button"
         >
@@ -971,14 +971,14 @@ exports[`NavBar renders inverted 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="link link--has-other c6 c7"
+          className="link link--has-other c7 c8"
           href={null}
           role="button"
         >
           Link 4
         </button>
         <div
-          className="c8 links links__list c9"
+          className="c9 links links__list c10"
           role="menu"
           style={
             Object {
@@ -987,7 +987,7 @@ exports[`NavBar renders inverted 1`] = `
           }
         >
           <div
-            className="c10"
+            className="c11"
           >
             <span
               className="list-container list-container--closed"
@@ -997,7 +997,7 @@ exports[`NavBar renders inverted 1`] = `
               role="none"
             >
               <button
-                className="link c6 c7"
+                className="link c7 c8"
                 href={null}
                 role="button"
               >
@@ -1012,7 +1012,7 @@ exports[`NavBar renders inverted 1`] = `
               role="none"
             >
               <button
-                className="link c6 c7"
+                className="link c7 c8"
                 href={null}
                 role="button"
               >
@@ -1027,7 +1027,7 @@ exports[`NavBar renders inverted 1`] = `
               role="none"
             >
               <button
-                className="link c6 c7"
+                className="link c7 c8"
                 href={null}
                 role="button"
               >
@@ -1043,7 +1043,11 @@ exports[`NavBar renders inverted 1`] = `
 `;
 
 exports[`NavBar renders with defaults 1`] = `
-.c7 {
+.c4 .list-container {
+  position: relative;
+}
+
+.c8 {
   display: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1056,23 +1060,23 @@ exports[`NavBar renders with defaults 1`] = `
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
 
-.list-container--open .c7 {
+.list-container--open .c8 {
   display: block;
 }
 
-.c7.links__list--open {
+.c8.links__list--open {
   display: block;
 }
 
-.c8 {
+.c9 {
   padding: 8px;
 }
 
-.c8.wrapper--has-after {
+.c9.wrapper--has-after {
   padding: 8px 8px 0 8px;
 }
 
-.c5 {
+.c6 {
   display: inline-block;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1081,17 +1085,17 @@ exports[`NavBar renders with defaults 1`] = `
   position: relative;
 }
 
-.links__list .c5 {
+.links__list .c6 {
   width: 100%;
   text-align: left;
 }
 
-.c5:focus,
-.c5:hover {
+.c6:focus,
+.c6:hover {
   outline: 0;
 }
 
-.c5.link--has-other.link--open:after {
+.c6.link--has-other.link--open:after {
   content: "";
   display: inline-block;
   border-bottom: 4px solid rgba(2,108,223,1);
@@ -1105,16 +1109,12 @@ exports[`NavBar renders with defaults 1`] = `
   height: 60px;
 }
 
-.c3 .list-container {
-  position: relative;
-}
-
-.c6 {
+.c7 {
   top: 60px;
   left: -74%;
 }
 
-.c4 {
+.c5 {
   background-color: transparent;
   padding: 19px 16px 19px 16px;
   color: rgba(255,255,255,1);
@@ -1125,34 +1125,34 @@ exports[`NavBar renders with defaults 1`] = `
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.nav--inverted .c4,
-.links__list .c4 {
+.nav--inverted .c5,
+.links__list .c5 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
-.c4:visited,
-.c4:active {
+.c5:visited,
+.c5:active {
   color: rgba(255,255,255,1);
 }
 
-.nav--inverted .c4:visited,
-.nav--inverted .c4:active,
-.links__list .c4:visited,
-.links__list .c4:active {
+.nav--inverted .c5:visited,
+.nav--inverted .c5:active,
+.links__list .c5:visited,
+.links__list .c5:active {
   color: rgba(38,38,38,1) !important;
 }
 
-.c4:focus,
-.c4:hover {
+.c5:focus,
+.c5:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c4:focus,
-.nav--inverted .c4:hover,
-.links__list .c4:focus,
-.links__list .c4:hover {
+.nav--inverted .c5:focus,
+.nav--inverted .c5:hover,
+.links__list .c5:focus,
+.links__list .c5:hover {
   background-color: #E6E6E6;
 }
 
@@ -1333,7 +1333,7 @@ exports[`NavBar renders with defaults 1`] = `
     </button>
     Content
     <div
-      className="links links__row c3"
+      className="c3 links links__row c4"
       role="menubar"
     >
       <span
@@ -1344,7 +1344,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="link c5 c6"
           href={null}
           role="button"
         >
@@ -1359,7 +1359,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="link c5 c6"
           href={null}
           role="button"
         >
@@ -1374,7 +1374,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="link c5 c6"
           href={null}
           role="button"
         >
@@ -1391,14 +1391,14 @@ exports[`NavBar renders with defaults 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="link link--has-other c4 c5"
+          className="link link--has-other c5 c6"
           href={null}
           role="button"
         >
           Link 4
         </button>
         <div
-          className="c6 links links__list c7"
+          className="c7 links links__list c8"
           role="menu"
           style={
             Object {
@@ -1407,7 +1407,7 @@ exports[`NavBar renders with defaults 1`] = `
           }
         >
           <div
-            className="c8"
+            className="c9"
           >
             <span
               className="list-container list-container--closed"
@@ -1417,7 +1417,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="link c5 c6"
                 href={null}
                 role="button"
               >
@@ -1432,7 +1432,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="link c5 c6"
                 href={null}
                 role="button"
               >
@@ -1447,7 +1447,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="link c5 c6"
                 href={null}
                 role="button"
               >

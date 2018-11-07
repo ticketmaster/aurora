@@ -40,7 +40,7 @@ const CaptionContainer = styled.div`
   letter-spacing: ${props => (props.half ? "normal" : "inherit")};
 `;
 
-const HalfCard = Card.extend`
+const HalfCard = styled(Card)`
   width: ${props => (props.width ? props.width : "")};
 `;
 
@@ -70,7 +70,7 @@ const Container = styled.div`
   position: relative;
 `;
 
-const RowContainer = Container.extend`
+const RowContainer = styled(Container)`
   flex-direction: row;
   align-items: center;
 `;

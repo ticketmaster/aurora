@@ -6,7 +6,7 @@ import StyledBadge from "./Badge.styles";
 import StarIcon from "../Icons/Star";
 import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
 
-const StyledBadgeRating = StyledBadge.extend`
+const StyledBadgeRating = styled(StyledBadge)`
   padding: 0;
 `;
 

@@ -38,16 +38,25 @@ exports[`CalendarView should render without errors 1`] = `
   pointer-events: none;
 }
 
-.c24 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
+.c27 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+
+.c27:focus,
+.c27:active,
+.c27:visited,
+.c27:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c27:hover {
+  color: #0150a7;
+}
+
+.c26 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -58,17 +67,6 @@ exports[`CalendarView should render without errors 1`] = `
   cursor: pointer;
 }
 
-.c24:focus,
-.c24:active,
-.c24:visited,
-.c24:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c24:hover {
-  color: #0150a7;
-}
-
 .c4 {
   font-size: 16px;
   font-weight: 600;
@@ -77,7 +75,7 @@ exports[`CalendarView should render without errors 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c15 {
+.c16 {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -85,7 +83,7 @@ exports[`CalendarView should render without errors 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c16 {
+.c17 {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
@@ -145,7 +143,7 @@ exports[`CalendarView should render without errors 1`] = `
   min-height: 30px;
 }
 
-.c12 {
+.c13 {
   -webkit-flex: auto;
   -ms-flex: auto;
   flex: auto;
@@ -158,25 +156,25 @@ exports[`CalendarView should render without errors 1`] = `
   flex-flow: row nowrap;
 }
 
-.c13 {
+.c14 {
   padding: 8px 8px 4px;
 }
 
-.c17 {
+.c18 {
   margin-top: auto;
 }
 
-.c25 {
+.c28 {
   margin: 0 8px 8px;
   border-bottom: solid 1px #ebebeb;
 }
 
-.c14 {
+.c15 {
   width: 100%;
   word-break: break-word;
 }
 
-.c21 {
+.c23 {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
@@ -194,28 +192,25 @@ exports[`CalendarView should render without errors 1`] = `
   transition: transform 0.1s linear;
   -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  display: block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
-.c21:focus {
+.c23:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c21:hover {
+.c23:hover {
   background-color: #0150a7;
 }
 
-.c21:active {
+.c23:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #013670;
 }
 
-.c21:disabled {
+.c23:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -225,7 +220,13 @@ exports[`CalendarView should render without errors 1`] = `
   opacity: 0.2;
 }
 
-.c10 {
+.c22 {
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -237,19 +238,22 @@ exports[`CalendarView should render without errors 1`] = `
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.c11:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c10 {
   font-size: 14px;
   min-width: 30px;
   max-width: 30px;
   height: 30px;
   width: 30px;
   border: none;
-}
-
-.c10:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
 }
 
 .c10:focus {
@@ -260,19 +264,19 @@ exports[`CalendarView should render without errors 1`] = `
   pointer-events: none;
 }
 
-.c19 {
+.c20 {
   padding: 0 8px 8px;
 }
 
-.c18 > .c20 + .c20 {
+.c19 > .c21 + .c21 {
   margin-top: 8px;
 }
 
-.c22 {
+.c24 {
   padding: 0 8px 8px;
 }
 
-.c23 {
+.c25 {
   display: block;
   width: 100%;
   padding: 3px 8px;
@@ -290,24 +294,12 @@ exports[`CalendarView should render without errors 1`] = `
   color: #999999;
 }
 
-.c8:hover .c11 {
+.c8:hover .c12 {
   color: #026cdf;
   fill: currentColor;
 }
 
 @media screen and (min-width:768px) {
-  .c24 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c24 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
   .c4 {
     font-size: 16px;
   }
@@ -320,25 +312,25 @@ exports[`CalendarView should render without errors 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c15 {
+  .c16 {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c15 {
+  .c16 {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c16 {
+  .c17 {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c16 {
+  .c17 {
     font-size: 12px;
   }
 }
@@ -378,13 +370,13 @@ exports[`CalendarView should render without errors 1`] = `
       >
         <button
           aria-label="More Info"
-          className="c8 c9 c10"
+          className="c8 c9 c10 c11"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="c11"
+            className="c12"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -398,13 +390,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="c12"
+      className="c13"
     >
       <div
-        className="c13"
+        className="c14"
       >
         <div
-          className="text text--dark text--primary c14 c15"
+          className="text text--dark text--primary c15 c16"
           disabled={false}
           size={
             Object {
@@ -417,7 +409,7 @@ exports[`CalendarView should render without errors 1`] = `
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary c14 c16"
+          className="text text--dark text--secondary c15 c17"
           disabled={false}
           size={
             Object {
@@ -432,16 +424,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="c17"
+      className="c18"
     >
       <div
-        className="c18 c19"
+        className="c19 c20"
       >
         <div
-          className="c20"
+          className="c21"
         >
           <a
-            className="c21"
+            className="c22 c23"
             href="#"
             rel={undefined}
             size="small"
@@ -450,10 +442,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <a
-            className="c21"
+            className="c22 c23"
             href="#"
             rel={undefined}
             size="small"
@@ -463,10 +455,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="c22"
+        className="c24"
       >
         <button
-          className="c23 c24"
+          className="c25 c26 c27"
           href={null}
           onClick={[Function]}
           rel="_self"
@@ -486,7 +478,7 @@ exports[`CalendarView should render without errors 1`] = `
     </footer>
   </article>
   <div
-    className="c25"
+    className="c28"
   />
   <article
     className="c5"
@@ -499,13 +491,13 @@ exports[`CalendarView should render without errors 1`] = `
       >
         <button
           aria-label="More Info"
-          className="c8 c9 c10"
+          className="c8 c9 c10 c11"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="c11"
+            className="c12"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -519,13 +511,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="c12"
+      className="c13"
     >
       <div
-        className="c13"
+        className="c14"
       >
         <div
-          className="text text--dark text--primary c14 c15"
+          className="text text--dark text--primary c15 c16"
           disabled={false}
           size={
             Object {
@@ -540,16 +532,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="c17"
+      className="c18"
     >
       <div
-        className="c18 c19"
+        className="c19 c20"
       >
         <div
-          className="c20"
+          className="c21"
         >
           <a
-            className="c21"
+            className="c22 c23"
             href="#"
             rel={undefined}
             size="small"
@@ -558,10 +550,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <a
-            className="c21"
+            className="c22 c23"
             href="#"
             rel={undefined}
             size="small"
@@ -571,10 +563,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="c22"
+        className="c24"
       >
         <button
-          className="c23 c24"
+          className="c25 c26 c27"
           href={null}
           onClick={[Function]}
           rel="_self"
