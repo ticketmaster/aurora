@@ -23,6 +23,7 @@ import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
 import deviceConnection from "./pages/device_connection";
 import links from "./pages/links";
+import tabs from "./pages/tabs";
 import statusBadge from "./pages/status_badge";
 
 const theme = {
@@ -51,6 +52,7 @@ const pages = [
   tooltip,
   deviceConnection,
   links,
+  tabs,
   statusBadge
 ];
 

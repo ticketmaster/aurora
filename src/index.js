@@ -164,4 +164,5 @@ export {
 } from "./components/DeviceConnection";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
 export { default as SeatData } from "./components/Tooltip/SeatData";
+export { Tabs, TabsProvider, TabsConsumer } from "./components/Tabs";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";
