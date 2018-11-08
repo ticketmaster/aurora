@@ -24,7 +24,6 @@
     "catalog-build": "catalog build  -u \"/aurora\"",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",
     "lint:css": "stylelint \"{src,catalog}/**/*.{js,jsx}\"",
-    "precommit": "lint-staged",
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch --no-cache --notify",
     "test:cover": "NODE_ENV=test jest --coverage",
@@ -65,7 +64,7 @@
     "react": ">=15",
     "react-dom": ">=15",
     "react-transition-group": "^2.5.0",
-    "styled-components": ">=2"
+    "styled-components": ">=4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -73,7 +72,7 @@
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0",
     "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-styled-components": "^1.8.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -102,7 +101,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-strip-prop-types": "^1.0.2",
     "rollup-plugin-uglify": "^3.0.0",
-    "styled-components": "^3.2.6",
+    "styled-components": "^4.0.3",
     "stylelint": "9.6.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -116,5 +115,10 @@
   "bugs": {
     "url": "https://github.com/Ticketmaster/aurora/issues"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }

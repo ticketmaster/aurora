@@ -27,6 +27,10 @@ export const ModalContainer = styled(Column)`
 
     box-shadow: ${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y};
   `};
+
+  ${mediumAndUp`
+    padding: 0;
+  `};
 `;
 
 const actionBarGutters = css`

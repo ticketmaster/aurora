@@ -1,184 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c1 .c1 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c2 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c5:focus,
-.c5:active,
-.c5:visited,
-.c5:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c5:hover {
-  color: #0150a7;
-}
-
-.c4 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.c8 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c8:focus,
-.c8:active,
-.c8:visited,
-.c8:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c8:hover {
-  color: #0150a7;
-}
-
-.c7 {
-  cursor: pointer;
-}
-
-.c0 {
-  width: 100%;
-  padding-left: 101px;
-  padding-bottom: 8px;
-}
-
-.c3 {
-  display: inline-block;
-}
-
-.c6 {
-  display: none;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c2 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    padding-left: calc(15px + 16px + 16px + 116px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    display: inline-block;
-    opacity: 1;
-    line-height: 1.5;
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-  }
-
-  .c6.link--hidden {
-    opacity: 0;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  }
-}
-
 <div
-  className="c0 c1"
+  className="kItATl"
 >
   <div
-    className="c2"
+    className="hXtSSo"
   >
     <button
-      className="link--row-options c3 c4 c5"
+      className="link--row-options lloPoD bxfJSg"
       data-index={0}
       href={null}
       onClick={[Function]}
@@ -193,7 +23,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       target=""
     />
     <span
-      className="link--row-options c6 c7 c8"
+      className="link--row-options bvvhOA ftLRQP"
       data-index={0}
       href=""
       onClick={null}

@@ -1,162 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchInput icon only should match snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 44px;
-  max-width: 100%;
-  min-width: 320px;
-  border: none;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,0.5);
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.c0.hidden {
-  visibility: hidden;
-}
-
-.c0.hidden > * {
-  visibility: hidden;
-}
-
-.c1 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: transparent;
-  outline: none;
-}
-
-.hidden .c1 {
-  visibility: visible;
-}
-
-.c3 {
-  font-size: 16px;
-  height: 100%;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: none;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c3::-webkit-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::-moz-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:-ms-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:focus {
-  outline: none;
-}
-
-.c2 {
-  margin: 0 16px;
-}
-
-.c5 {
-  border: none;
-  background: transparent;
-  outline: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  color: rgba(255,255,255,1);
-  padding: 0 16px 0 0;
-  height: 100%;
-}
-
-.c4 {
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 0;
-  height: 100%;
-  width: 44px;
-  margin-left: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: default;
-  visibility: hidden;
-  color: rgba(255,255,255,1);
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    width: 40px;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-  }
-}
-
 <div
-  className="search--container hidden c0"
+  className="search--container hidden eCubN"
   onBlur={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="search--search-icon dcLsgt"
     onClick={[Function]}
   >
     <svg
-      className="c2"
+      className="gxyxth"
       height="24"
       viewBox="0 0 24 24"
       width="24"
@@ -180,7 +36,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="search--input dykHyd"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -190,7 +46,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="search--clear-icon eyAPzR"
     onClick={[Function]}
     value=""
   >
@@ -217,7 +73,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="search--cancel-icon hTwZwm"
     onClick={[Function]}
   >
     Cancel
@@ -226,160 +82,18 @@ exports[`SearchInput icon only should match snapshot 1`] = `
 `;
 
 exports[`SearchInput large should match snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 44px;
-  max-width: 100%;
-  min-width: 320px;
-  border: none;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,0.5);
-}
-
-.c0.hidden {
-  visibility: hidden;
-}
-
-.c0.hidden > * {
-  visibility: hidden;
-}
-
-.c1 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: transparent;
-  outline: none;
-}
-
-.hidden .c1 {
-  visibility: visible;
-}
-
-.c3 {
-  font-size: 16px;
-  height: 100%;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: none;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c3::-webkit-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::-moz-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:-ms-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:focus {
-  outline: none;
-}
-
-.c2 {
-  margin: 0 16px;
-}
-
-.c5 {
-  border: none;
-  background: transparent;
-  outline: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  color: rgba(255,255,255,1);
-  padding: 0 16px 0 0;
-  height: 100%;
-}
-
-.c4 {
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 0;
-  height: 100%;
-  width: 44px;
-  margin-left: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: default;
-  visibility: hidden;
-  color: rgba(255,255,255,1);
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    width: 40px;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-  }
-}
-
 <div
-  className="search--container c0"
+  className="search--container kiWaFZ"
   onBlur={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="search--search-icon dcLsgt"
     onClick={[Function]}
   >
     <svg
-      className="c2"
+      className="gxyxth"
       height="24"
       viewBox="0 0 24 24"
       width="24"
@@ -403,7 +117,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="search--input dykHyd"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -413,7 +127,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="search--clear-icon eyAPzR"
     onClick={[Function]}
     value=""
   >
@@ -440,7 +154,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="search--cancel-icon hTwZwm"
     onClick={[Function]}
   >
     Cancel
@@ -449,160 +163,18 @@ exports[`SearchInput large should match snapshot 1`] = `
 `;
 
 exports[`SearchInput small should match snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 36px;
-  max-width: 100%;
-  min-width: 320px;
-  border: none;
-  border-radius: 2px;
-  background-color: rgba(255,255,255,0.5);
-}
-
-.c0.hidden {
-  visibility: hidden;
-}
-
-.c0.hidden > * {
-  visibility: hidden;
-}
-
-.c1 {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: transparent;
-  outline: none;
-}
-
-.hidden .c1 {
-  visibility: visible;
-}
-
-.c3 {
-  font-size: 14px;
-  height: 100%;
-  color: rgba(255,255,255,1);
-  padding: 0;
-  border: none;
-  background: none;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.c3::-webkit-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::-moz-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:-ms-input-placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3::placeholder {
-  color: rgba(255,255,255,1);
-}
-
-.c3:focus {
-  outline: none;
-}
-
-.c2 {
-  margin: 0 16px;
-}
-
-.c5 {
-  border: none;
-  background: transparent;
-  outline: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 8px;
-  color: rgba(255,255,255,1);
-  padding: 0 16px 0 0;
-  height: 100%;
-}
-
-.c4 {
-  background: transparent;
-  outline: none;
-  border: none;
-  padding: 0;
-  height: 100%;
-  width: 44px;
-  margin-left: 8px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: default;
-  visibility: visible;
-  color: rgba(255,255,255,1);
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    width: 40px;
-    -webkit-box-pack: left;
-    -webkit-justify-content: left;
-    -ms-flex-pack: left;
-    justify-content: left;
-  }
-}
-
 <div
-  className="search--container c0"
+  className="search--container gAMRvB"
   onBlur={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="search--search-icon dcLsgt"
     onClick={[Function]}
   >
     <svg
-      className="c2"
+      className="gxyxth"
       height="16"
       viewBox="0 0 16 16"
       width="16"
@@ -626,7 +198,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="search--input kUmVk"
     onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
@@ -636,7 +208,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="search--clear-icon fFGyfL"
     onClick={[Function]}
     value="test"
   >
@@ -663,7 +235,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="search--cancel-icon hTwZwm"
     onClick={[Function]}
   >
     Cancel
@@ -672,28 +244,7 @@ exports[`SearchInput small should match snapshot 1`] = `
 `;
 
 exports[`SearchSuggest should match snapshot 1`] = `
-.c0 {
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  border: 1px solid #999999;
-  border-top: none;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  padding: 16px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    max-height: 700px;
-  }
-}
-
 <div
-  className="c0"
+  className="edMyei"
 />
 `;

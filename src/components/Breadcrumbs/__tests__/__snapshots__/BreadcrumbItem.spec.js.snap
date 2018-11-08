@@ -1,44 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
-.c1 {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(255,255,255,1);
-}
-
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
-  color: rgba(255,255,255,1);
-}
-
-.c0:hover {
-  color: #0150a7;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: 12px;
-  }
-}
-
 <li
   itemProp="itemListElement"
   itemScope={true}
@@ -50,7 +12,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   }
 >
   <a
-    className="c0 c1"
+    className="hCyrKv"
     href="/"
     itemProp="item"
     onClick={null}
@@ -78,28 +40,6 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 `;
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c1:focus,
-.c1:active,
-.c1:visited,
-.c1:hover {
-  color: rgba(255,255,255,1);
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
 <li
   itemProp="itemListElement"
   itemScope={true}
@@ -111,7 +51,7 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   }
 >
   <span
-    className="c0 c1"
+    className="eZUnXh"
     href={null}
     itemProp="item"
     onClick={null}

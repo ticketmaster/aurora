@@ -1,231 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders with custom level 1`] = `
-.c2 {
-  z-index: 1;
-  width: 100%;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c2.gradient--underlay.gradient--spotlight:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2:not(.gradient--spotlight).gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c2:not(.gradient--spotlight).gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c5 .c5 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c4 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  min-height: 122px;
-  z-index: 1;
-}
-
-.c3 {
-  padding-top: 60px;
-  z-index: 2;
-}
-
-.c8 {
-  font-weight: 300;
-}
-
-.c7 {
-  font-weight: 800;
-}
-
-.c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 8px;
-  line-height: 1.25;
-  color: blue;
-  font-weight: 400;
-  font-size: 24px;
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2 {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
-    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c1 {
-    min-height: 140px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    min-height: 218px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    font-size: 46px;
-  }
-}
-
 <header
   aria-level="1"
-  className="c0"
+  className="hXMYMY"
   role="heading"
 >
   <span
-    className="c1 c2"
+    className="dSCYBL yROTA"
     style={Object {}}
   >
     <div
-      className="c3 c4"
+      className="zaQxq"
     >
       <div
-        className="c5"
+        className="kFBBeh"
       >
         <h1
-          className="c6"
+          className="icfhLg"
           color="blue"
           size={
             Object {
@@ -236,13 +28,13 @@ exports[`Header renders with custom level 1`] = `
           }
         >
           <span
-            className="c7 c8"
+            className="gzlGrX"
           >
             Generic
           </span>
            
           <span
-            className="c8"
+            className="beMIhb"
           >
             Header
           </span>
@@ -254,231 +46,23 @@ exports[`Header renders with custom level 1`] = `
 `;
 
 exports[`Header renders with default 1`] = `
-.c2 {
-  z-index: 1;
-  width: 100%;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c2.gradient--underlay.gradient--spotlight:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2:not(.gradient--spotlight).gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c2:not(.gradient--spotlight).gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c5 .c5 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c4 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  min-height: 122px;
-  z-index: 1;
-}
-
-.c3 {
-  padding-top: 60px;
-  z-index: 2;
-}
-
-.c8 {
-  font-weight: 300;
-}
-
-.c7 {
-  font-weight: 800;
-}
-
-.c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 8px;
-  line-height: 1.25;
-  color: rgba(255,255,255,1);
-  font-weight: 400;
-  font-size: 24px;
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2 {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
-    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c1 {
-    min-height: 140px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    min-height: 218px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    font-size: 46px;
-  }
-}
-
 <header
   aria-level="1"
-  className="c0"
+  className="hXMYMY"
   role="heading"
 >
   <span
-    className="c1 c2"
+    className="dSCYBL yROTA"
     style={Object {}}
   >
     <div
-      className="c3 c4"
+      className="zaQxq"
     >
       <div
-        className="c5"
+        className="kFBBeh"
       >
         <h2
-          className="c6"
+          className="jZEkVf"
           size={
             Object {
               "large": "bronto",
@@ -488,13 +72,13 @@ exports[`Header renders with default 1`] = `
           }
         >
           <span
-            className="c7 c8"
+            className="gzlGrX"
           >
             Generic
           </span>
            
           <span
-            className="c8"
+            className="beMIhb"
           >
             Header
           </span>
@@ -506,231 +90,23 @@ exports[`Header renders with default 1`] = `
 `;
 
 exports[`Header renders withOverlay 1`] = `
-.c2 {
-  z-index: 1;
-  width: 100%;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.c2.gradient--underlay.gradient--spotlight:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c2:not(.gradient--spotlight).gradient--overlay:after {
-  z-index: 2;
-  opacity: 0.4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c2:not(.gradient--spotlight).gradient--underlay:after {
-  z-index: -1;
-  opacity: 0.8;
-  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c5 .c5 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c4 {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-sizing: border-box;
-}
-
-.c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-  min-height: 122px;
-  z-index: 1;
-}
-
-.c3 {
-  padding-top: 60px;
-  z-index: 2;
-}
-
-.c8 {
-  font-weight: 300;
-}
-
-.c7 {
-  font-weight: 800;
-}
-
-.c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 8px;
-  line-height: 1.25;
-  color: rgba(255,255,255,1);
-  font-weight: 400;
-  font-size: 24px;
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2 {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
-    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
-    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c1 {
-    min-height: 140px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    min-height: 218px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    font-size: 32px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    font-size: 46px;
-  }
-}
-
 <header
   aria-level="1"
-  className="c0"
+  className="hXMYMY"
   role="heading"
 >
   <span
-    className="gradient--overlay c1 c2"
+    className="gradient--overlay dSCYBL yROTA"
     style={Object {}}
   >
     <div
-      className="c3 c4"
+      className="zaQxq"
     >
       <div
-        className="c5"
+        className="kFBBeh"
       >
         <h2
-          className="c6"
+          className="jZEkVf"
           size={
             Object {
               "large": "bronto",
@@ -740,13 +116,13 @@ exports[`Header renders withOverlay 1`] = `
           }
         >
           <span
-            className="c7 c8"
+            className="gzlGrX"
           >
             Generic
           </span>
            
           <span
-            className="c8"
+            className="beMIhb"
           >
             Header
           </span>

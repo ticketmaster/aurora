@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styled from "styled-components";
 
-import getRelByTarget from "../../utils/link";
+import { getRelByTarget } from "../../utils/link";
 import { colors } from "../../theme";
 
 const StyledLink = styled.a`
@@ -33,8 +33,6 @@ const StyledLink = styled.a`
     bottom: 0;
   }
 `;
-
-const StyledButton = StyledLink.withComponent("button");
 
 export default class LinkItem extends React.Component {
   static propTypes = {
@@ -102,14 +100,15 @@ export default class LinkItem extends React.Component {
         {label}
       </StyledLink>
     ) : (
-      <StyledButton
+      <StyledLink
         {...props}
         role={role || "button"}
         {...aria}
         className={classes}
+        as="button"
       >
         {label}
-      </StyledButton>
+      </StyledLink>
     );
     return (
       <span

@@ -181,7 +181,7 @@ class Tabs extends Component {
           isActive={itemIndex === index}
           underlineColor={underlineColor}
           onClick={() => onClick(itemIndex)}
-          innerRef={ref => {
+          ref={ref => {
             this.itemRefs[itemIndex] = ref;
           }}
           dataIndex={itemIndex}
@@ -202,7 +202,7 @@ class Tabs extends Component {
     return (
       <Container areTabsOverflow={this.state.isTabsContainerOverflows}>
         <Content
-          innerRef={ref => {
+          ref={ref => {
             this.content = ref;
           }}
           areTabsOverflow={this.state.isTabsContainerOverflows}

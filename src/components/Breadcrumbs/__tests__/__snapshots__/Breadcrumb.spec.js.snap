@@ -1,57 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumb /> renders correctly 1`] = `
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c0 {
-  font-weight: 600;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-flex: 0 1 50%;
-  -ms-flex: 0 1 50%;
-  flex: 0 1 50%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0.breadcrumb--none {
-  color: inherit;
-}
-
-.c0.breadcrumb--light {
-  color: rgba(255,255,255,1);
-}
-
-.c0.breadcrumb--dark {
-  color: rgba(38,38,38,1);
-}
-
-.c0.breadcrumb--accent {
-  color: #026cdf;
-}
-
-.c0 li:last-of-type {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c0 li:not(:last-of-type):after {
-  padding: 0 4px;
-  content: "/";
-}
-
 <nav
   style={
     Object {
@@ -61,7 +10,7 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light c0 c1"
+    className="breadcrumb--light cFKyxp"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   >
@@ -72,54 +21,6 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
 `;
 
 exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c0 {
-  font-weight: 600;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0.breadcrumb--none {
-  color: inherit;
-}
-
-.c0.breadcrumb--light {
-  color: rgba(255,255,255,1);
-}
-
-.c0.breadcrumb--dark {
-  color: rgba(38,38,38,1);
-}
-
-.c0.breadcrumb--accent {
-  color: #026cdf;
-}
-
-.c0 li:last-of-type {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.c0 li:not(:last-of-type):after {
-  padding: 0 4px;
-  content: "/";
-}
-
 <nav
   style={
     Object {
@@ -129,7 +30,7 @@ exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light c0 c1"
+    className="breadcrumb--light fSLlBH"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   />

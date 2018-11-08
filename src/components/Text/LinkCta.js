@@ -5,7 +5,7 @@ import styled from "styled-components";
 import * as PT from "./PropTypes";
 import { typography } from "../../theme";
 import { getThemeValue } from "../../utils";
-import getRelByTarget from "../../utils/link";
+import { getRelByTarget, getAsProp } from "../../utils/link";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 const LinkCtaBase = styled.a`
@@ -51,7 +51,7 @@ const LinkCtaBase = styled.a`
   `};
 `;
 
-const LinkCtaButtonBase = styled(LinkCtaBase.withComponent(`button`))`
+const LinkCtaButtonBase = styled(LinkCtaBase)`
   appearance: none;
   border: 0;
   outline: 0;
@@ -60,7 +60,7 @@ const LinkCtaButtonBase = styled(LinkCtaBase.withComponent(`button`))`
   cursor: pointer;
 `;
 
-const LinkCtaSpanBase = styled(LinkCtaBase.withComponent(`span`))`
+const LinkCtaSpanBase = styled(LinkCtaBase)`
   cursor: pointer;
 `;
 
@@ -83,11 +83,13 @@ const LinkCta = ({
 }) => {
   const { target, rel } = props;
   const Elm = getElement({ href, onClick });
+  const asProp = getAsProp({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
 
   return (
     <Elm
       {...props}
+      {...asProp}
       size={{
         small: responsiveSize.small || size,
         medium: responsiveSize.medium || responsiveSize.small || size,
@@ -111,7 +113,9 @@ LinkCta.propTypes = {
   responsiveSize: PT.responsiveSize,
   children: PropTypes.node.isRequired,
   href: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  target: PropTypes.string,
+  rel: PropTypes.string
 };
 
 LinkCta.defaultProps = {
@@ -122,7 +126,9 @@ LinkCta.defaultProps = {
     medium: null,
     large: null
   },
-  href: null
+  href: null,
+  target: "_self",
+  rel: ""
 };
 
 LinkCta.displayName = "LinkCta";

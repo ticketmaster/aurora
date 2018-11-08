@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./Base.styles";
 import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
-import getRelByTarget from "../../utils/link";
+import { getRelByTarget } from "../../utils/link";
 
 const Button = ({ variant, size, children, ...rest }) => {
   const { href } = rest;
@@ -17,6 +17,7 @@ const Button = ({ variant, size, children, ...rest }) => {
         variant={variant}
         size={size}
         rel={validatedRel}
+        as="a"
         {...rest}
       >
         {children}

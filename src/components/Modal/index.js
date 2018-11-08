@@ -70,6 +70,12 @@ class Modal extends React.Component {
     bottomActionBarProps: {}
   };
 
+  state = {
+    isOpened: true,
+    actionBarShadow: false,
+    bottomActionBarShadow: false
+  };
+
   static getDerivedStateFromProps(props, state) {
     if (props.isOpened !== state.isOpened) {
       return {
@@ -79,12 +85,6 @@ class Modal extends React.Component {
 
     return null;
   }
-
-  state = {
-    isOpened: true,
-    actionBarShadow: false,
-    bottomActionBarShadow: false
-  };
 
   componentDidMount() {
     if (this.props.isOpened) {
@@ -207,13 +207,13 @@ class Modal extends React.Component {
         <Backdrop childRef={this.containerRef} onRequestClose={this.closeModal}>
           <ModalContainer
             small={getModalSize({ deviceSize, preferredSize: size })}
-            innerRef={this.containerRef}
+            ref={this.containerRef}
             {...containerProps}
           >
             {actionBar && (
               <ActionBar
                 shadow={actionBarShadow}
-                innerRef={this.actionBarRef}
+                ref={this.actionBarRef}
                 gutters={gutters}
                 {...actionBarProps}
               >
@@ -221,7 +221,7 @@ class Modal extends React.Component {
               </ActionBar>
             )}
             <ModalContent
-              innerRef={this.contentRef}
+              ref={this.contentRef}
               onScroll={this.handleScroll}
               gutters={gutters}
               {...contentProps}
@@ -231,7 +231,7 @@ class Modal extends React.Component {
             {bottomActionBar && (
               <BottomActionBar
                 shadow={bottomActionBarShadow}
-                innerRef={this.bottomActionBarRef}
+                ref={this.bottomActionBarRef}
                 gutters={gutters}
                 {...bottomActionBarProps}
               >

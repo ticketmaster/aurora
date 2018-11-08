@@ -14,7 +14,7 @@ const Strong = styled(Span)`
   font-weight: ${typography.weight.extraBold};
 `;
 
-const margins = styled.span`
+const Margins = styled.span`
   ${({ monospace }) => (monospace ? `font-feature-settings: "tnum"` : "")};
   margin-top: 0;
   margin-bottom: 0;
@@ -32,19 +32,14 @@ const margins = styled.span`
   `};
 `;
 
-const levels = [
-  margins.withComponent("h1"),
-  margins.withComponent("h2"),
-  margins.withComponent("h3"),
-  margins.withComponent("h4"),
-  margins.withComponent("h5")
-];
+const levels = ["h1", "h2", "h3", "h4", "h5"];
 
 const Heading = ({ level, size, responsiveSize, children, ...props }) => {
-  const H = levels[level - 1];
+  const tag = levels[level - 1];
   return (
-    <H
+    <Margins
       {...props}
+      as={tag}
       size={{
         small: responsiveSize.small || size || "tera",
         medium:
@@ -58,7 +53,7 @@ const Heading = ({ level, size, responsiveSize, children, ...props }) => {
       }}
     >
       {children}
-    </H>
+    </Margins>
   );
 };
 
