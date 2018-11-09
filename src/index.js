@@ -28,6 +28,7 @@ export { default as BottomSheet } from "./components/BottomSheet";
 export { default as NavBar } from "./components/NavBar";
 export { default as Row } from "./components/Grid/Row";
 export { default as SearchInput } from "./components/Input/Search";
+export { default as SearchComponent } from "./components/SearchInput";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export { default as ContainerBlock } from "./components/Container/Block.styles";
