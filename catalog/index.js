@@ -14,7 +14,6 @@ import header from "./pages/header";
 import inputs from "./pages/inputs";
 import navBar from "./pages/nav_bar";
 import bottomSheet from "./pages/bottom_sheet";
-import image from "./pages/image";
 import images from "./pages/images";
 import breadcrumbs from "./pages/breadcrumbs";
 import modal from "./pages/modal";
@@ -39,7 +38,6 @@ const pages = [
   icons,
   images,
   imageCard,
-  image,
   listRow,
   header,
   inputs,
