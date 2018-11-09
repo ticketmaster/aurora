@@ -39,16 +39,25 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   flex: 0 0 100%;
 }
 
-.c4 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
+.c5 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+
+.c5:focus,
+.c5:active,
+.c5:visited,
+.c5:hover {
+  color: rgba(2,108,223,1);
+}
+
+.c5:hover {
+  color: #0150a7;
+}
+
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -59,39 +68,26 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c4:focus,
-.c4:active,
-.c4:visited,
-.c4:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c4:hover {
-  color: #0150a7;
-}
-
-.c6 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
+.c8 {
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  cursor: pointer;
 }
 
-.c6:focus,
-.c6:active,
-.c6:visited,
-.c6:hover {
+.c8:focus,
+.c8:active,
+.c8:visited,
+.c8:hover {
   color: rgba(2,108,223,1);
 }
 
-.c6:hover {
+.c8:hover {
   color: #0150a7;
+}
+
+.c7 {
+  cursor: pointer;
 }
 
 .c0 {
@@ -104,7 +100,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   display: inline-block;
 }
 
-.c5 {
+.c6 {
   display: none;
 }
 
@@ -148,30 +144,6 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c4 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
   .c0 {
     padding-left: calc(15px + 16px + 16px + 116px);
   }
@@ -184,7 +156,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
+  .c6 {
     display: inline-block;
     opacity: 1;
     line-height: 1.5;
@@ -192,7 +164,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
     transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
   }
 
-  .c5.link--hidden {
+  .c6.link--hidden {
     opacity: 0;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
@@ -206,7 +178,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
     className="c2"
   >
     <button
-      className="link--row-options c3 c4"
+      className="link--row-options c3 c4 c5"
       data-index={0}
       href={null}
       onClick={[Function]}
@@ -221,7 +193,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       target=""
     />
     <span
-      className="link--row-options c5 c6"
+      className="link--row-options c6 c7 c8"
       data-index={0}
       href=""
       onClick={null}

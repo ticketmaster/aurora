@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import Base from "./Base.styles";
 import * as PT from "./PropTypes";
@@ -8,12 +9,12 @@ import colors from "../../theme/colors";
 import getRelByTarget from "../../utils/link";
 import { getFontColor } from "../../utils/typography";
 
-export const LinkTitle = StyledText.withComponent(`a`).extend`
+export const LinkTitle = styled(StyledText.withComponent(`a`))`
   color: ${({ color }) => color || colors.azure.base};
   text-decoration: none;
 `;
 
-const LinkBase = Base.withComponent("a").extend`
+const LinkBase = styled(Base.withComponent("a"))`
   text-decoration: none;
   transition: color 0.3s ease;
   &:focus,
@@ -28,7 +29,7 @@ const LinkBase = Base.withComponent("a").extend`
   }
 `;
 
-const LinkButtonBase = LinkBase.withComponent("button").extend`
+const LinkButtonBase = styled(LinkBase.withComponent("button"))`
   appearance: none;
   border: 0;
   outline: 0;
@@ -37,7 +38,7 @@ const LinkButtonBase = LinkBase.withComponent("button").extend`
   cursor: pointer;
 `;
 
-const LinkSpanBase = LinkBase.withComponent("span").extend`
+const LinkSpanBase = styled(LinkBase.withComponent("span"))`
   cursor: pointer;
 `;
 

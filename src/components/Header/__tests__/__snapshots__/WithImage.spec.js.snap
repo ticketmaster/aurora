@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`WithImage renders header background image 1`] = `
-.c2 {
+.c3 {
   z-index: 1;
   width: 100%;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
+.c3.gradient--overlay:after,
+.c3.gradient--underlay:after {
   height: 100%;
   content: "";
   top: 0;
@@ -17,25 +17,25 @@ exports[`WithImage renders header background image 1`] = `
   position: absolute;
 }
 
-.c2.gradient--underlay.gradient--spotlight:after {
+.c3.gradient--underlay.gradient--spotlight:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2:not(.gradient--spotlight).gradient--overlay:after {
+.c3:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
 }
 
-.c2:not(.gradient--spotlight).gradient--underlay:after {
+.c3:not(.gradient--spotlight).gradient--underlay:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -44,7 +44,7 @@ exports[`WithImage renders header background image 1`] = `
   box-sizing: border-box;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,7 +63,7 @@ exports[`WithImage renders header background image 1`] = `
   margin-right: -8px;
 }
 
-.c6 .c6 {
+.c7 .c7 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -71,7 +71,7 @@ exports[`WithImage renders header background image 1`] = `
   margin-right: 0;
 }
 
-.c1 {
+.c2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,6 +79,9 @@ exports[`WithImage renders header background image 1`] = `
   z-index: 1;
   min-height: 218px;
   max-height: 218px;
+}
+
+.c1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -88,12 +91,12 @@ exports[`WithImage renders header background image 1`] = `
   position: relative;
 }
 
-.c3 {
+.c4 {
   padding-top: 60px;
   z-index: 2;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -102,7 +105,7 @@ exports[`WithImage renders header background image 1`] = `
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -114,81 +117,81 @@ exports[`WithImage renders header background image 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
+  .c3.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c6 {
+  .c7 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c8 {
+  .c9 {
     padding-top: 60px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-right: 12px;
     padding-left: 12px;
     max-width: 100%;
@@ -200,7 +203,7 @@ exports[`WithImage renders header background image 1`] = `
 }
 
 @media screen and (min-width:1024px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -210,7 +213,7 @@ exports[`WithImage renders header background image 1`] = `
 }
 
 @media screen and (min-width:1440px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -226,7 +229,7 @@ exports[`WithImage renders header background image 1`] = `
 >
   <span
     aria-hidden={true}
-    className="c1 c2"
+    className="c1 c2 c3"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -234,16 +237,16 @@ exports[`WithImage renders header background image 1`] = `
     }
   />
   <div
-    className="c3 c4"
+    className="c4 c5"
   >
     <div
-      className="c5 c6"
+      className="c6 c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <div
-          className="c8"
+          className="c9"
         >
           <img
             alt="place holder"
@@ -257,14 +260,14 @@ exports[`WithImage renders header background image 1`] = `
 `;
 
 exports[`WithImage renders header background image correctly when a withOverlay prop equaling true is passed 1`] = `
-.c2 {
+.c3 {
   z-index: 1;
   width: 100%;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
+.c3.gradient--overlay:after,
+.c3.gradient--underlay:after {
   height: 100%;
   content: "";
   top: 0;
@@ -273,25 +276,25 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   position: absolute;
 }
 
-.c2.gradient--underlay.gradient--spotlight:after {
+.c3.gradient--underlay.gradient--spotlight:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2:not(.gradient--spotlight).gradient--overlay:after {
+.c3:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
 }
 
-.c2:not(.gradient--spotlight).gradient--underlay:after {
+.c3:not(.gradient--spotlight).gradient--underlay:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -300,7 +303,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   box-sizing: border-box;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -319,7 +322,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   margin-right: -8px;
 }
 
-.c6 .c6 {
+.c7 .c7 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -327,7 +330,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   margin-right: 0;
 }
 
-.c1 {
+.c2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -335,6 +338,9 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   z-index: 1;
   min-height: 218px;
   max-height: 218px;
+}
+
+.c1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -344,12 +350,12 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   position: relative;
 }
 
-.c3 {
+.c4 {
   padding-top: 60px;
   z-index: 2;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -358,7 +364,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -370,81 +376,81 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
+  .c3.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c6 {
+  .c7 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c8 {
+  .c9 {
     padding-top: 60px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-right: 12px;
     padding-left: 12px;
     max-width: 100%;
@@ -456,7 +462,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 }
 
 @media screen and (min-width:1024px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -466,7 +472,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 }
 
 @media screen and (min-width:1440px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -482,7 +488,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 >
   <span
     aria-hidden={true}
-    className="gradient--overlay c1 c2"
+    className="gradient--overlay c1 c2 c3"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -490,16 +496,16 @@ exports[`WithImage renders header background image correctly when a withOverlay 
     }
   />
   <div
-    className="c3 c4"
+    className="c4 c5"
   >
     <div
-      className="c5 c6"
+      className="c6 c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <div
-          className="c8"
+          className="c9"
         >
           <img
             alt="place holder"
@@ -513,14 +519,14 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 `;
 
 exports[`WithImage renders header background image correctly when a withUnderlay prop equaling true is passed 1`] = `
-.c2 {
+.c3 {
   z-index: 1;
   width: 100%;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2.gradient--overlay:after,
-.c2.gradient--underlay:after {
+.c3.gradient--overlay:after,
+.c3.gradient--underlay:after {
   height: 100%;
   content: "";
   top: 0;
@@ -529,25 +535,25 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   position: absolute;
 }
 
-.c2.gradient--underlay.gradient--spotlight:after {
+.c3.gradient--underlay.gradient--spotlight:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c2:not(.gradient--spotlight).gradient--overlay:after {
+.c3:not(.gradient--spotlight).gradient--overlay:after {
   z-index: 2;
   opacity: 0.4;
   background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
 }
 
-.c2:not(.gradient--spotlight).gradient--underlay:after {
+.c3:not(.gradient--spotlight).gradient--underlay:after {
   z-index: -1;
   opacity: 0.8;
   background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
 }
 
-.c4 {
+.c5 {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
@@ -556,7 +562,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   box-sizing: border-box;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -575,7 +581,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   margin-right: -8px;
 }
 
-.c6 .c6 {
+.c7 .c7 {
   -webkit-flex: 0 1 100%;
   -ms-flex: 0 1 100%;
   flex: 0 1 100%;
@@ -583,7 +589,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   margin-right: 0;
 }
 
-.c1 {
+.c2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -591,6 +597,9 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   z-index: 1;
   min-height: 218px;
   max-height: 218px;
+}
+
+.c1 {
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -600,12 +609,12 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   position: relative;
 }
 
-.c3 {
+.c4 {
   padding-top: 60px;
   z-index: 2;
 }
 
-.c5 {
+.c6 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -614,7 +623,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
   z-index: 2;
 }
 
-.c7 {
+.c8 {
   box-sizing: border-box;
   padding-right: 8px;
   padding-left: 8px;
@@ -626,81 +635,81 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 }
 
 @media screen and (min-width:768px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2 {
+  .c3 {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--spotlight {
+  .c3.gradient--spotlight {
     box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2.gradient--underlay.gradient--spotlight:after {
+  .c3.gradient--underlay.gradient--spotlight:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--overlay:after {
+  .c3:not(.gradient--spotlight).gradient--overlay:after {
     background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:1024px) {
-  .c2:not(.gradient--spotlight).gradient--underlay:after {
+  .c3:not(.gradient--spotlight).gradient--underlay:after {
     background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
   }
 }
 
 @media screen and (min-width:768px) {
-  .c4 {
+  .c5 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c6 {
+  .c7 {
     margin-left: -12px;
     margin-right: -12px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c8 {
+  .c9 {
     padding-top: 60px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-right: 12px;
     padding-left: 12px;
     max-width: 100%;
@@ -712,7 +721,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 }
 
 @media screen and (min-width:1024px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -722,7 +731,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 }
 
 @media screen and (min-width:1440px) {
-  .c7 {
+  .c8 {
     max-width: 100%;
     display: block;
     -webkit-flex: 0 0 100%;
@@ -738,7 +747,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 >
   <span
     aria-hidden={true}
-    className="gradient--underlay c1 c2"
+    className="gradient--underlay c1 c2 c3"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -746,16 +755,16 @@ exports[`WithImage renders header background image correctly when a withUnderlay
     }
   />
   <div
-    className="c3 c4"
+    className="c4 c5"
   >
     <div
-      className="c5 c6"
+      className="c6 c7"
     >
       <div
-        className="c7"
+        className="c8"
       >
         <div
-          className="c8"
+          className="c9"
         >
           <img
             alt="place holder"
