@@ -36,7 +36,7 @@ exports[`LazyLoaderProvider should invoke componentDidUpdate and set state to a 
 exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports a backgroundImage style 1`] = `
 Object {
   "current": Object {
-    "onload": [Function],
+    "onload": [MockFunction],
     "style": Object {
       "backgroundImage": "url(http://placekitten.com/g/400/400)",
       "filter": "none",
@@ -60,7 +60,7 @@ Object {
   "current": Object {
     "onload": [Function],
     "src": "",
-    "srcset": "http://placekitten.com/g/400/400 1x, http://placekitten.com/g/800/800 2x, http://placekitten.com/g/1200/1200 3x",
+    "srcset": "http://placekitten.com/g/400/400 1x, http://placekitten.com/g/800/800 2x, http://placekitten.com/g/1200/1200 3x, http://placekitten.com/g/1600/1600 4x, http://placekitten.com/g/2000/2000 5x",
     "style": Object {},
   },
 }

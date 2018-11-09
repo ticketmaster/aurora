@@ -45,8 +45,11 @@ describe("LazyLoaderProvider", () => {
     });
 
     const instance = component.getInstance();
+    const onLoadSpy = jest.spyOn(instance, "onLoad");
     instance.load(true);
 
+    expect(onLoadSpy).toHaveBeenCalled();
+    instance.state.imageRef.current.onload.mockClear();
     expect(instance.state.imageRef).toMatchSnapshot();
   });
 
@@ -56,16 +59,18 @@ describe("LazyLoaderProvider", () => {
     });
 
     const instance = component.getInstance();
+    const onLoadSpy = jest.spyOn(instance, "onLoad");
     instance.load(false);
 
+    expect(onLoadSpy).not.toHaveBeenCalled();
     expect(component).toMatchSnapshot();
   });
 
-  it("should not error when calling the onload method if no ref is available", () => {
+  it("should not error when calling the onLoad method if no ref is available", () => {
     const component = renderProviderComponent({}, renderer.create);
 
     const instance = component.getInstance();
-    expect(() => instance.onload()).not.toThrow();
+    expect(() => instance.onLoad()).not.toThrow();
   });
 
   it("should invoke componentDidUpdate and not setState when src equals prevSrc", () => {
@@ -74,8 +79,10 @@ describe("LazyLoaderProvider", () => {
     });
 
     const instance = component.getInstance();
+    const setStateSpy = jest.spyOn(instance, "setState");
     instance.componentDidUpdate(providerProps);
 
+    expect(setStateSpy).not.toHaveBeenCalled();
     expect(instance.state).toMatchSnapshot();
   });
 
@@ -85,6 +92,7 @@ describe("LazyLoaderProvider", () => {
     });
 
     const instance = component.getInstance();
+    const setStateSpy = jest.spyOn(instance, "setState");
     instance.load(true);
 
     component.update(
@@ -93,6 +101,7 @@ describe("LazyLoaderProvider", () => {
       })
     );
 
+    expect(setStateSpy).toHaveBeenCalled();
     expect(component.toJSON()).toMatchSnapshot();
   });
 });

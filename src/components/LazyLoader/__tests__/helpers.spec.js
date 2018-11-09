@@ -7,7 +7,11 @@ import {
   getLowDefSrc,
   getTargetDensity
 } from "../helpers";
-import { DEFAULT_TARGET_DENSITY, PLACEHOLDER_IMAGE } from "../constants";
+import {
+  DEFAULT_TARGET_DENSITY,
+  DEFAULT_DEVICE_PIXEL_RATIOS,
+  PLACEHOLDER_IMAGE
+} from "../constants";
 
 const mockSrc = "https://ticketmaster.com/img.jpg";
 const mockParams = {
@@ -154,30 +158,42 @@ describe("getSrcSetByDensity", () => {
   });
 
   it("should return srcset", () => {
-    const srcset = getSrcSetByDensity(refWithSrcSet, mockGetSrcByDensity);
+    const srcset = getSrcSetByDensity(
+      refWithSrcSet,
+      DEFAULT_DEVICE_PIXEL_RATIOS,
+      mockGetSrcByDensity
+    );
 
-    expect(mockGetSrcByDensity).toHaveBeenCalledTimes(3);
-    expect(srcset).toEqual(`${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x`);
+    expect(mockGetSrcByDensity).toHaveBeenCalledTimes(5);
+    expect(srcset).toEqual(
+      `${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x, ${mockSrc} 4x, ${mockSrc} 5x`
+    );
   });
 });
 
 describe("getTargetDensity", () => {
-  it("should return 3 if window.devicePixelRatio is greater than 3", () => {
+  it("should return maxDevicePixelRatio if window.devicePixelRatio is greater than maxDevicePixelRatio", () => {
     Object.defineProperty(global.window, "devicePixelRatio", {
       writable: true,
-      value: 5
+      value: 6
     });
 
-    expect(getTargetDensity()).toEqual(3);
+    expect(
+      getTargetDensity(DEFAULT_TARGET_DENSITY, DEFAULT_DEVICE_PIXEL_RATIOS)
+    ).toEqual(
+      DEFAULT_DEVICE_PIXEL_RATIOS[DEFAULT_DEVICE_PIXEL_RATIOS.length - 1]
+    );
   });
 
-  it("should return a rounded ratio if window.devicePixelRatio is less than 3", () => {
+  it("should return a rounded ratio if window.devicePixelRatio is less than maxDevicePixelRatio", () => {
     Object.defineProperty(global.window, "devicePixelRatio", {
       writable: true,
       value: 2.4
     });
 
-    expect(getTargetDensity()).toEqual(2);
+    expect(
+      getTargetDensity(DEFAULT_TARGET_DENSITY, DEFAULT_DEVICE_PIXEL_RATIOS)
+    ).toEqual(2);
   });
 
   it("should return defaultTargetDensity if window.devicePixelRatio is undefined", () => {
@@ -186,9 +202,9 @@ describe("getTargetDensity", () => {
       value: undefined
     });
 
-    expect(getTargetDensity(DEFAULT_TARGET_DENSITY)).toEqual(
-      DEFAULT_TARGET_DENSITY
-    );
+    expect(
+      getTargetDensity(DEFAULT_TARGET_DENSITY, DEFAULT_DEVICE_PIXEL_RATIOS)
+    ).toEqual(DEFAULT_TARGET_DENSITY);
   });
 });
 
@@ -211,19 +227,39 @@ describe("getSrcVariantByAttr", () => {
 
   it("should return the evaluation of getSrcSetByDensity when srcAttr equals srcset", () => {
     expect(
-      getSrcVariantByAttr(refWithSrcSet, "srcset", mockGetSrcByDensity)
-    ).toEqual(`${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x`);
+      getSrcVariantByAttr(
+        refWithSrcSet,
+        "srcset",
+        DEFAULT_DEVICE_PIXEL_RATIOS,
+        DEFAULT_TARGET_DENSITY,
+        mockGetSrcByDensity
+      )
+    ).toEqual(
+      `${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x, ${mockSrc} 4x, ${mockSrc} 5x`
+    );
   });
 
   it("should return the evaluation of getSrcByDensity when srcAttr equals src", () => {
-    expect(getSrcVariantByAttr(refWithSrc, "src", mockGetSrcByDensity)).toEqual(
-      mockSrc
-    );
+    expect(
+      getSrcVariantByAttr(
+        refWithSrc,
+        "src",
+        DEFAULT_DEVICE_PIXEL_RATIOS,
+        DEFAULT_TARGET_DENSITY,
+        mockGetSrcByDensity
+      )
+    ).toEqual(mockSrc);
   });
 
   it("should return the evaluation of getSrcByDensity when srcAttr equals backgroundImage", () => {
     expect(
-      getSrcVariantByAttr({}, "backgroundImage", mockGetSrcByDensity)
+      getSrcVariantByAttr(
+        {},
+        "backgroundImage",
+        DEFAULT_DEVICE_PIXEL_RATIOS,
+        DEFAULT_TARGET_DENSITY,
+        mockGetSrcByDensity
+      )
     ).toEqual(mockSrc);
   });
 });

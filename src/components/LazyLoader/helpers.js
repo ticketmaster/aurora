@@ -1,4 +1,4 @@
-import { PLACEHOLDER_IMAGE, DEFAULT_TARGET_DENSITY } from "./constants";
+import { PLACEHOLDER_IMAGE } from "./constants";
 import createParams from "../../utils/createParams";
 
 /* istanbul ignore next */
@@ -33,20 +33,28 @@ export const createGetSrcByDensity = ({
     height: height ? height * density : null
   });
 
-export const getSrcSetByDensity = (ref, getSrcByDensity) =>
-  `${getSrcByDensity(1)} 1x, ${getSrcByDensity(2)} 2x, ${getSrcByDensity(
-    3
-  )} 3x`;
+export const getSrcSetByDensity = (ref, devicePixelRatios, getSrcByDensity) => {
+  const devicePixelRatiosLen = devicePixelRatios.length;
+  return devicePixelRatios.reduce(
+    /* eslint-disable-next-line no-return-assign */
+    (memo, ratio) =>
+      /* eslint-disable-next-line no-param-reassign */
+      (memo += `${getSrcByDensity(ratio)} ${ratio}x${
+        ratio === devicePixelRatiosLen ? "" : ", "
+      }`),
+    ""
+  );
+};
 
-export const getTargetDensity = (
-  defaultTargetDensity = DEFAULT_TARGET_DENSITY
-) => {
+export const getTargetDensity = (targetDensity, devicePixelRatios) => {
   if (typeof global.window !== "object" || !global.window.devicePixelRatio) {
-    return defaultTargetDensity;
+    return targetDensity;
   }
 
-  return global.window.devicePixelRatio > 3
-    ? 3
+  const maxDevicePixelRatio = devicePixelRatios[devicePixelRatios.length - 1];
+
+  return global.window.devicePixelRatio > maxDevicePixelRatio
+    ? maxDevicePixelRatio
     : Math.round(global.window.devicePixelRatio);
 };
 
@@ -56,10 +64,16 @@ export const getSrcAttr = ref => {
   return "backgroundImage";
 };
 
-export const getSrcVariantByAttr = (ref, srcAttr, getSrcByDensity) =>
+export const getSrcVariantByAttr = (
+  ref,
+  srcAttr,
+  devicePixelRatios,
+  targetDensity,
+  getSrcByDensity
+) =>
   srcAttr === "srcset"
-    ? getSrcSetByDensity(ref, getSrcByDensity)
-    : getSrcByDensity(getTargetDensity());
+    ? getSrcSetByDensity(ref, devicePixelRatios, getSrcByDensity)
+    : getSrcByDensity(getTargetDensity(targetDensity, devicePixelRatios));
 
 export const getLowDefSrc = ({ src, width, height, resizeFn }) =>
   src === PLACEHOLDER_IMAGE

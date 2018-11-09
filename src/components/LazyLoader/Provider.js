@@ -2,7 +2,12 @@ import React, { PureComponent, createRef } from "react";
 import PropTypes from "prop-types";
 
 import { Provider } from "./Context";
-import { PLACEHOLDER_IMAGE, BLUR_STYLES } from "./constants";
+import {
+  PLACEHOLDER_IMAGE,
+  BLUR_STYLES,
+  DEFAULT_DEVICE_PIXEL_RATIOS,
+  DEFAULT_TARGET_DENSITY
+} from "./constants";
 import {
   resize,
   getLowDefSrc,
@@ -18,6 +23,8 @@ class LazyLoaderProvider extends PureComponent {
     width: PropTypes.number,
     height: PropTypes.number,
     resizeFn: PropTypes.func,
+    targetDensity: PropTypes.number,
+    devicePixelRatios: PropTypes.arrayOf(PropTypes.number),
     style: PropTypes.objectOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     )
@@ -28,6 +35,8 @@ class LazyLoaderProvider extends PureComponent {
     width: null,
     height: null,
     resizeFn: resize,
+    targetDensity: DEFAULT_TARGET_DENSITY,
+    devicePixelRatios: DEFAULT_DEVICE_PIXEL_RATIOS,
     style: {}
   };
 
@@ -50,16 +59,17 @@ class LazyLoaderProvider extends PureComponent {
     const { src: prevSrc } = prevProps;
 
     if (src !== prevSrc) {
-      /* eslint-disable */
+      /* eslint-disable-next-line react/no-did-update-set-state */
       this.setState({
+        /* eslint-disable-next-line react/no-unused-state */
         src: getLowDefSrc({ src, width, height, resizeFn }),
+        /* eslint-disable-next-line react/no-unused-state */
         style: { ...style, ...BLUR_STYLES }
       });
-      /* eslint-enable */
     }
   }
 
-  onload = () => {
+  onLoad = () => {
     const { imageRef } = this.state;
     if (imageRef && imageRef.current) {
       imageRef.current.style.filter = "none";
@@ -68,10 +78,17 @@ class LazyLoaderProvider extends PureComponent {
 
   load = ready => {
     const { imageRef } = this.state;
-    const { src, width, height, resizeFn } = this.props;
+    const {
+      src,
+      width,
+      height,
+      resizeFn,
+      targetDensity,
+      devicePixelRatios
+    } = this.props;
 
     if (ready && imageRef && imageRef.current) {
-      imageRef.current.onload = this.onload;
+      imageRef.current.onload = this.onLoad;
 
       const getSrcByDensity = createGetSrcByDensity({
         src,
@@ -84,6 +101,8 @@ class LazyLoaderProvider extends PureComponent {
       const srcVariant = getSrcVariantByAttr(
         imageRef.current,
         srcAttr,
+        devicePixelRatios,
+        targetDensity,
         getSrcByDensity
       );
 
@@ -93,7 +112,7 @@ class LazyLoaderProvider extends PureComponent {
       }
 
       imageRef.current.style.backgroundImage = `url(${srcVariant})`;
-      this.onload();
+      this.onLoad();
     }
   };
 
