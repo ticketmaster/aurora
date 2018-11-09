@@ -109,9 +109,6 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 
 .c1 {
   background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -918,9 +915,6 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 .c1 {
   background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -1768,9 +1762,6 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 
 .c1 {
   background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -2581,9 +2572,6 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c1 {
   background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
@@ -3443,9 +3431,6 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c1 {
   background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
   border-bottom: 1px solid #E0E0E0;
 }
 
