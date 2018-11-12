@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
@@ -49,6 +50,8 @@ const plusIcon = (
 
 class Stepper extends Component {
   static MAX_LENGTH_VAL = 2;
+  static inputHeight = 27;
+
   static isNumber = str => {
     const numValue = parseInt(str, 10);
     const strValue = numValue.toString();
@@ -56,22 +59,25 @@ class Stepper extends Component {
     // except the case when it evaluates to NaN
     return !Number.isNaN(numValue) && strValue.length === str.length;
   };
+
   static propTypes = {
     disabled: PropTypes.bool
   };
+
   static defaultProps = {
     disabled: false
   };
 
   state = {
-    value: ""
+    value: "",
+    focused: false
   };
 
   handleChange = e => {
     const { value } = e.target;
 
     if (Stepper.isNumber(value) && value.length <= Stepper.MAX_LENGTH_VAL) {
-      this.setState(() => ({ value }));
+      this.setState(() => ({ value: Number.parseInt(value, 10) }));
     } else if (value === "") {
       // delete input case
       this.setState(() => ({ value: "" }));
@@ -82,6 +88,9 @@ class Stepper extends Component {
     this.setState(state => {
       if (state.value === "") {
         return { value: 0 };
+      }
+      if (state.value === 99) {
+        return { value: 99 };
       }
       return { value: state.value + 1 };
     });
@@ -94,8 +103,21 @@ class Stepper extends Component {
       return { value: state.value - 1 };
     });
 
+  handleFocus = () => {
+    this.setState(() => ({
+      focused: true
+    }));
+  };
+
+  handleBlur = () => {
+    this.setState(() => ({
+      focused: false
+    }));
+  };
+
   render() {
     const { disabled } = this.props;
+    const { value, focused } = this.state;
 
     return (
       <Container>
@@ -103,16 +125,30 @@ class Stepper extends Component {
           {minusIcon}
         </Button>
         <InputFieldContainer className={disabled ? "disabled" : ""}>
-          {[...Array(100)].map(() => (
+          {!focused ? (
+            [...Array(100)].map((_, i) => (
+              <InputField
+                onFocus={this.handleFocus}
+                onBlur={this.handleBlur}
+                key={i}
+                value={value}
+                onChange={this.handleChange}
+                disabled={disabled}
+                style={{
+                  top: `-${value * Stepper.inputHeight}px`
+                }}
+              />
+            ))
+          ) : (
             <InputField
-              value={this.state.value}
+              value={value}
               onChange={this.handleChange}
               disabled={disabled}
-              style={{
-                top: `-${this.state.value * 27}px`
-              }}
+              onFocus={this.handleFocus}
+              onBlur={this.handleBlur}
+              autoFocus
             />
-          ))}
+          )}
         </InputFieldContainer>
         <Button onClick={this.increment} disabled={disabled}>
           {plusIcon}
