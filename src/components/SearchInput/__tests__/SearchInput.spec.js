@@ -60,6 +60,7 @@ describe("SearchInput", () => {
           isInputVisible={false}
           onChange={onChange}
           hasBackground
+          isSuggestOpened
         />
       )
       .toJSON();

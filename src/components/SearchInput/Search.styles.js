@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { searchVariants, getSearchHeight } from "./constants";
+import { searchVariants, getSearchHeight, SearchMinWidth } from "./constants";
 import { SearchIcon, ClearIcon } from "../Icons";
 import { themes, typography, constants, spacing } from "../../theme";
 
@@ -9,11 +9,17 @@ export const SearchContainer = styled.div`
   align-items: center;
   height: ${({ variant, isFocused }) => getSearchHeight(variant, isFocused)};
   width: fit-content;
+  min-width: ${SearchMinWidth};
   border: ${({ isFocused }) =>
     isFocused ? `1px solid ${themes.global.gray02}` : "none"};
   border-radius: ${constants.borderRadius.small};
   background-color: ${({ isFocused }) =>
     isFocused ? themes.global.white.base : themes.global.white.muted};
+
+  ${({ isSuggestOpened }) =>
+    isSuggestOpened
+      ? 'border-bottom-left-radius: "none"; border-bottom-right-radius: "none";'
+      : ""};
 
   &.hidden {
     visibility: hidden;

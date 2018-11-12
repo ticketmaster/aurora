@@ -14,9 +14,12 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 320px;
   border: none;
   border-radius: 2px;
   background-color: rgba(255,255,255,0.5);
+  border-bottom-left-radius: "none";
+  border-bottom-right-radius: "none";
 }
 
 .c0.hidden {
@@ -244,6 +247,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 320px;
   border: none;
   border-radius: 2px;
   background-color: rgba(255,255,255,0.5);
@@ -474,6 +478,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 320px;
   border: none;
   border-radius: 2px;
   background-color: rgba(255,255,255,0.5);

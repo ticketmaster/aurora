@@ -65,6 +65,7 @@ class SearchInput extends Component {
       clearBtnAreaLabel,
       cancelBtnAreaLabel,
       inputAreaLabel,
+      isSuggestOpened,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
@@ -73,6 +74,7 @@ class SearchInput extends Component {
       <SearchContainer
         variant={variant}
         isFocused={isFocused}
+        isSuggestOpened={isSuggestOpened}
         {...rest}
         className={classNames("search--container", className, {
           hidden: !isInputVisible,
@@ -139,7 +141,8 @@ SearchInput.propTypes = {
   clearText: PropTypes.func,
   cancelCallback: PropTypes.func,
   hasBackground: PropTypes.bool,
-  isInputVisible: PropTypes.bool
+  isInputVisible: PropTypes.bool,
+  isSuggestOpened: PropTypes.bool
 };
 
 SearchInput.defaultProps = {
@@ -156,7 +159,8 @@ SearchInput.defaultProps = {
   searchBtnAreaLabel: "Search button",
   clearBtnAreaLabel: "Clear button",
   cancelBtnAreaLabel: "Cancel button",
-  inputAreaLabel: "Search input"
+  inputAreaLabel: "Search input",
+  isSuggestOpened: false
 };
 
 SearchInput.displayName = "SearcnInput";
