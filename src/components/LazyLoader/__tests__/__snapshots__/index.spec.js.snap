@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LazyLoader should load a low res, blurred version of the image passed prior to loading 1`] = `
+<img
+  alt="Test Kitten"
+  height={400}
+  src="http://placekitten.com/g/40/40"
+  style={
+    Object {
+      "filter": "blur(10px)",
+      "transition": "80ms filter linear",
+    }
+  }
+  width={400}
+/>
+`;
