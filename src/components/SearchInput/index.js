@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { ClearIcon } from "../Icons";
 
 import { searchVariants } from "./constants";
 import {
@@ -8,7 +9,6 @@ import {
   StyledSearchIcon,
   StyledInput,
   Icon,
-  ClearBtn,
   Cancel,
   Clear
 } from "./Search.styles";
@@ -109,8 +109,9 @@ class SearchInput extends Component {
           value={value}
           aria-label={clearBtnAreaLabel}
           className="search--clear-icon"
+          isFocused={isFocused}
         >
-          <ClearBtn isFocused={isFocused} color="currentColor" />
+          <ClearIcon color="currentColor" />
         </Clear>
         <Cancel
           isFocused={isFocused}

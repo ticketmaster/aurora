@@ -2,7 +2,21 @@ import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 import SearchInput from "../index";
-import { StyledInput, StyledSearchIcon, Clear, Cancel } from "../Search.styles";
+import {
+  StyledInput,
+  StyledSearchIcon,
+  Clear,
+  Cancel,
+  SearchSuggest
+} from "../Search.styles";
+
+describe("SearchSuggest", () => {
+  it("should match snapshot", () => {
+    const tree = renderer.create(<SearchSuggest />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+});
 
 describe("SearchInput", () => {
   it("small should match snapshot", () => {

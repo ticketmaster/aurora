@@ -11,15 +11,13 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 44px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   min-width: 320px;
   border: none;
   border-radius: 2px;
   background-color: rgba(255,255,255,0.5);
-  border-bottom-left-radius: "none";
-  border-bottom-right-radius: "none";
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .c0.hidden {
@@ -58,6 +56,10 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   padding: 0;
   border: none;
   background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -85,10 +87,6 @@ exports[`SearchInput icon only should match snapshot 1`] = `
 }
 
 .c5 {
-  color: rgba(255,255,255,1);
-}
-
-.c6 {
   border: none;
   background: transparent;
   outline: none;
@@ -113,30 +111,26 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   padding: 0;
   height: 100%;
   width: 44px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  margin-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: default;
   visibility: hidden;
+  color: rgba(255,255,255,1);
 }
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin-left: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
     display: none;
   }
 }
@@ -201,9 +195,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
     value=""
   >
     <svg
-      className="c5"
       height="24"
-      isFocused={false}
       viewBox="0 0 24 24"
       width="24"
       xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +217,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c6"
+    className="search--cancel-icon c5"
     onClick={[Function]}
   >
     Cancel
@@ -244,9 +236,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 44px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   min-width: 320px;
   border: none;
   border-radius: 2px;
@@ -289,6 +279,10 @@ exports[`SearchInput large should match snapshot 1`] = `
   padding: 0;
   border: none;
   background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -316,10 +310,6 @@ exports[`SearchInput large should match snapshot 1`] = `
 }
 
 .c5 {
-  color: rgba(255,255,255,1);
-}
-
-.c6 {
   border: none;
   background: transparent;
   outline: none;
@@ -344,30 +334,26 @@ exports[`SearchInput large should match snapshot 1`] = `
   padding: 0;
   height: 100%;
   width: 44px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  margin-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: default;
   visibility: hidden;
+  color: rgba(255,255,255,1);
 }
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin-left: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
     display: none;
   }
 }
@@ -432,9 +418,7 @@ exports[`SearchInput large should match snapshot 1`] = `
     value=""
   >
     <svg
-      className="c5"
       height="24"
-      isFocused={false}
       viewBox="0 0 24 24"
       width="24"
       xmlns="http://www.w3.org/2000/svg"
@@ -456,7 +440,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c6"
+    className="search--cancel-icon c5"
     onClick={[Function]}
   >
     Cancel
@@ -475,9 +459,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 36px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   min-width: 320px;
   border: none;
   border-radius: 2px;
@@ -520,6 +502,10 @@ exports[`SearchInput small should match snapshot 1`] = `
   padding: 0;
   border: none;
   background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -547,10 +533,6 @@ exports[`SearchInput small should match snapshot 1`] = `
 }
 
 .c5 {
-  color: rgba(255,255,255,1);
-}
-
-.c6 {
   border: none;
   background: transparent;
   outline: none;
@@ -575,30 +557,26 @@ exports[`SearchInput small should match snapshot 1`] = `
   padding: 0;
   height: 100%;
   width: 44px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  margin-left: 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   cursor: default;
   visibility: visible;
+  color: rgba(255,255,255,1);
 }
 
 @media screen and (min-width:768px) {
   .c5 {
-    margin-left: 8px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
     display: none;
   }
 }
@@ -663,9 +641,7 @@ exports[`SearchInput small should match snapshot 1`] = `
     value="test"
   >
     <svg
-      className="c5"
       height="24"
-      isFocused={false}
       viewBox="0 0 24 24"
       width="24"
       xmlns="http://www.w3.org/2000/svg"
@@ -687,10 +663,35 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c6"
+    className="search--cancel-icon c5"
     onClick={[Function]}
   >
     Cancel
   </button>
 </div>
+`;
+
+exports[`SearchSuggest should match snapshot 1`] = `
+.c0 {
+  max-width: 100%;
+  max-height: 700px;
+  border: 1px solid #999999;
+  border-top: none;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 16px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    height: 100%;
+    max-height: 100%;
+  }
+}
+
+<div
+  className="c0"
+/>
 `;

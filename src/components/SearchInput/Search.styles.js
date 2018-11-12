@@ -1,15 +1,22 @@
 import styled from "styled-components";
 
-import { searchVariants, getSearchHeight, SearchMinWidth } from "./constants";
-import { SearchIcon, ClearIcon } from "../Icons";
+import {
+  searchVariants,
+  getSearchHeight,
+  SearchMinWidth,
+  SuggestMaxHeight
+} from "./constants";
+import { SearchIcon } from "../Icons";
 import { themes, typography, constants, spacing } from "../../theme";
+import { cardBoxShadow } from "../../theme/constants";
 
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   height: ${({ variant, isFocused }) => getSearchHeight(variant, isFocused)};
-  width: fit-content;
-  min-width: ${SearchMinWidth};
+  max-width: 100%;
+  min-width: ${({ isFocused }) =>
+    isFocused ? `calc(${SearchMinWidth} - 2px)` : SearchMinWidth};
   border: ${({ isFocused }) =>
     isFocused ? `1px solid ${themes.global.gray02}` : "none"};
   border-radius: ${constants.borderRadius.small};
@@ -18,7 +25,7 @@ export const SearchContainer = styled.div`
 
   ${({ isSuggestOpened }) =>
     isSuggestOpened
-      ? 'border-bottom-left-radius: "none"; border-bottom-right-radius: "none";'
+      ? "border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
       : ""};
 
   &.hidden {
@@ -69,6 +76,7 @@ export const StyledInput = styled.input.attrs({
   padding: 0;
   border: none;
   background: none;
+  flex-grow: 1;
 
   &::placeholder {
     /* chrome, firefox */
@@ -83,14 +91,6 @@ export const StyledInput = styled.input.attrs({
 
 export const Icon = styled(SearchIcon)`
   margin: 0 ${spacing.moderate};
-`;
-
-export const ClearBtn = styled(ClearIcon)`
-  color: ${({ isFocused }) =>
-    !isFocused ? themes.global.white.base : themes.global.gray02};
-  @media screen and ${constants.breakpoints.mediumAndUp} {
-    margin-left: ${spacing.cozy};
-  }
 `;
 
 export const Cancel = styled.button`
@@ -117,14 +117,36 @@ export const Clear = styled.button`
   padding: 0;
   height: 100%;
   width: 44px;
-  justify-content: center;
+  margin-left: ${spacing.cozy};
   display: flex;
+  justify-content: center;
   align-items: center;
   cursor: default;
   visibility: ${({ value }) => (value ? "visible" : "hidden")};
+  color: ${({ isFocused }) =>
+    !isFocused ? themes.global.white.base : themes.global.gray02};
 
   @media screen and ${constants.breakpoints.mediumAndUp} {
     width: 40px;
     justify-content: left;
   }
 `;
+
+export const SearchSuggest = styled.div`
+  max-width: 100%;
+  max-height: ${SuggestMaxHeight};
+  border: 1px solid ${themes.global.gray02};
+  border-top: none;
+  border-bottom-left-radius: ${constants.borderRadius.small};
+  border-bottom-right-radius: ${constants.borderRadius.small};
+  padding: ${spacing.moderate};
+  background-color: ${themes.global.white.base};
+  box-shadow: ${cardBoxShadow};
+
+  @media screen and ${constants.breakpoints.mediumAndUp} {
+    height: 100%;
+    max-height: 100%;
+  }
+`;
+
+SearchSuggest.displayName = "SearchSuggest";

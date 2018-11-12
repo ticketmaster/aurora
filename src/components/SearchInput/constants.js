@@ -20,3 +20,5 @@ export const getSearchHeight = (variant, isFocused) => {
 };
 
 export const SearchMinWidth = "320px";
+
+export const SuggestMaxHeight = "700px";
