@@ -58,7 +58,7 @@ describe("LazyLoader", () => {
     instance.load(true);
 
     component.update(
-      renderComponent({ src: "http://placepuppy.com/g/" }, x => x, {
+      renderComponent({ src: "https://placepuppy.com/g/" }, x => x, {
         createNodeMock: createImgWithSrcset
       })
     );

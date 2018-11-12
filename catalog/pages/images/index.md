@@ -43,7 +43,7 @@ responsive: true
 responsive: true
 ---
 <ResponsiveImage
-    src="http://placekitten.com/g/826/465"
+    src="https://placekitten.com/g/826/465"
     alt="Test Kitten"
     height={465}
     width={826}
@@ -57,7 +57,7 @@ responsive: true
 responsive: true
 ---
 <ResponsiveImage
-    src="http://placekitten.com/g/400/400"
+    src="https://placekitten.com/g/400/400"
     alt="Test Kitten"
     height={400}
     width={400}
@@ -71,7 +71,7 @@ responsive: true
 responsive: true
 ---
 <StaticImage
-    src="http://placekitten.com/g/826/465"
+    src="https://placekitten.com/g/826/465"
     alt="Test Kitten"
     height={465}
     width={826}
@@ -85,7 +85,7 @@ responsive: true
 responsive: true
 ---
 <StaticImage
-    src="http://placekitten.com/g/400/400"
+    src="https://placekitten.com/g/400/400"
     alt="Test Kitten"
     height={400}
     width={400}
@@ -114,7 +114,7 @@ rows:
 ### ThumbnailCircleImage Image
 
 ```react
-<ThumbnailCircleImage size={40} src="https://placekitten.com/g/512/288" alt="thumbnailCircleImage"/>
+<ThumbnailCircleImage size={40} src="httpss://placekitten.com/g/512/288" alt="thumbnailCircleImage"/>
 ```
 
 ### LazyLoader
@@ -179,7 +179,7 @@ rows:
 responsive: true
 ---
 <LazyImageExample
-    src="http://placekitten.com/g"
+    src="https://placekitten.com/g"
     alt="Test Kitten"
     height={400}
     width={400}
