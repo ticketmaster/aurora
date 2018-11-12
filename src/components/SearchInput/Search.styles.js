@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 import { searchVariants, getSearchHeight } from "./constants";
-import { SearchIcon } from "../Icons";
-import { themes, typography, constants } from "../../theme";
+import { SearchIcon, ClearIcon } from "../Icons";
+import { themes, typography, constants, spacing } from "../../theme";
 
 export const SearchContainer = styled.div`
   display: flex;
@@ -76,28 +76,14 @@ export const StyledInput = styled.input.attrs({
 `;
 
 export const Icon = styled(SearchIcon)`
-  margin: 0 16px;
+  margin: 0 ${spacing.moderate};
 `;
 
-export const XButton = styled.button`
-  background: transparent;
-  outline: none;
-  border: ${({ isFocused }) =>
-    !isFocused
-      ? `1px solid ${themes.global.white.base}`
-      : `1px solid ${themes.global.gray02}`};
+export const ClearBtn = styled(ClearIcon)`
   color: ${({ isFocused }) =>
     !isFocused ? themes.global.white.base : themes.global.gray02};
-  padding: 0;
-  border-radius: 14px;
-  width: 14px;
-  height: 14px;
-  line-height: 14px;
-  font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
   @media screen and ${constants.breakpoints.mediumAndUp} {
-    margin-left: 8px;
+    margin-left: ${spacing.cozy};
   }
 `;
 
@@ -107,10 +93,10 @@ export const Cancel = styled.button`
   outline: none;
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: ${spacing.cozy};
   color: ${({ isFocused }) =>
     isFocused ? themes.global.primary.base : themes.global.white.base};
-  padding: 0 16px 0 0;
+  padding: 0 ${spacing.moderate} 0 0;
   height: 100%;
 
   @media screen and ${constants.breakpoints.mediumAndUp} {
@@ -118,7 +104,11 @@ export const Cancel = styled.button`
   }
 `;
 
-export const Clear = styled.div`
+export const Clear = styled.button`
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
   height: 100%;
   width: 44px;
   justify-content: center;

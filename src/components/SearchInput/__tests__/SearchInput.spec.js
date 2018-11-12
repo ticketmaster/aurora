@@ -18,7 +18,7 @@ describe("SearchInput", () => {
           variant="small"
           placeholder="Search Demo"
           value="test"
-          hasBackround
+          hasBackground
           onChange={onChange}
           onFocus={onFocus}
           onBlur={onBlur}
@@ -40,7 +40,7 @@ describe("SearchInput", () => {
           variant="large"
           placeholder="Search Demo"
           value=""
-          hasBackround
+          hasBackground
           onChange={onChange}
         />
       )
@@ -59,7 +59,7 @@ describe("SearchInput", () => {
           value=""
           isInputVisible={false}
           onChange={onChange}
-          hasBackround
+          hasBackground
         />
       )
       .toJSON();
@@ -76,7 +76,7 @@ describe("SearchInput", () => {
         value=""
         isInputVisible={false}
         onChange={onChange}
-        hasBackround
+        hasBackground
       />
     );
 
@@ -98,7 +98,7 @@ describe("SearchInput", () => {
         isInputVisible={false}
         onFocus={onFocus}
         onChange={() => {}}
-        hasBackround
+        hasBackground
       />
     );
 
@@ -125,7 +125,7 @@ describe("SearchInput", () => {
         isInputVisible={false}
         onFocus={onFocus}
         onChange={() => {}}
-        hasBackround
+        hasBackground
       />
     );
 
@@ -182,7 +182,7 @@ describe("SearchInput", () => {
         isInputVisible={false}
         onBlur={onBlur}
         onChange={() => {}}
-        hasBackround
+        hasBackground
       />
     );
 

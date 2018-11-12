@@ -8,7 +8,7 @@ import {
   StyledSearchIcon,
   StyledInput,
   Icon,
-  XButton,
+  ClearBtn,
   Cancel,
   Clear
 } from "./Search.styles";
@@ -18,7 +18,7 @@ class SearchInput extends Component {
     super(props);
 
     this.state = {
-      isFocused: !props.hasBackround
+      isFocused: !props.hasBackground
     };
 
     this.inputRef = React.createRef();
@@ -27,9 +27,9 @@ class SearchInput extends Component {
   }
 
   inputBlur() {
-    const { hasBackround, onBlur } = this.props;
+    const { hasBackground, onBlur } = this.props;
 
-    if (hasBackround) {
+    if (hasBackground) {
       this.setState({
         isFocused: false
       });
@@ -39,9 +39,9 @@ class SearchInput extends Component {
   }
 
   inputFocused() {
-    const { onFocus, hasBackround } = this.props;
+    const { onFocus, hasBackground } = this.props;
 
-    if (hasBackround) {
+    if (hasBackground) {
       this.setState({
         isFocused: true
       });
@@ -61,6 +61,10 @@ class SearchInput extends Component {
       searchIconSelect,
       className,
       isInputVisible,
+      searchBtnAreaLabel,
+      clearBtnAreaLabel,
+      cancelBtnAreaLabel,
+      inputAreaLabel,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
@@ -70,13 +74,17 @@ class SearchInput extends Component {
         variant={variant}
         isFocused={isFocused}
         {...rest}
-        className={classNames(className, { hidden: !isInputVisible })}
+        className={classNames("search--container", className, {
+          hidden: !isInputVisible,
+          "search--container-focused": isFocused
+        })}
       >
         <StyledSearchIcon
           variant={variant}
           isFocused={isFocused}
           onClick={searchIconSelect}
-          aria-label="Search button"
+          aria-label={searchBtnAreaLabel}
+          className="search--search-icon"
         >
           <Icon size={variant} color="currentColor" />
         </StyledSearchIcon>
@@ -89,15 +97,24 @@ class SearchInput extends Component {
           onBlur={this.inputBlur}
           isFocused={isFocused}
           innerRef={this.inputRef}
-          aria-label="Search input"
+          aria-label={inputAreaLabel}
+          className={classNames("search--input", {
+            "search--input-focused": isFocused
+          })}
         />
-        <Clear onClick={clearText} value={value} aria-label="Clear button">
-          <XButton isFocused={isFocused}>x</XButton>
+        <Clear
+          onClick={clearText}
+          value={value}
+          aria-label={clearBtnAreaLabel}
+          className="search--clear-icon"
+        >
+          <ClearBtn isFocused={isFocused} color="currentColor" />
         </Clear>
         <Cancel
           isFocused={isFocused}
           onClick={cancelCallback}
-          aria-label="Cancel button"
+          aria-label={cancelBtnAreaLabel}
+          className="search--cancel-icon"
         >
           Cancel
         </Cancel>
@@ -109,6 +126,11 @@ class SearchInput extends Component {
 SearchInput.propTypes = {
   variant: PropTypes.oneOf(Object.values(searchVariants)),
   placeholder: PropTypes.string,
+  className: PropTypes.string,
+  searchBtnAreaLabel: PropTypes.string,
+  clearBtnAreaLabel: PropTypes.string,
+  cancelBtnAreaLabel: PropTypes.string,
+  inputAreaLabel: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onFocus: PropTypes.func,
@@ -116,7 +138,7 @@ SearchInput.propTypes = {
   searchIconSelect: PropTypes.func,
   clearText: PropTypes.func,
   cancelCallback: PropTypes.func,
-  hasBackround: PropTypes.bool,
+  hasBackground: PropTypes.bool,
   isInputVisible: PropTypes.bool
 };
 
@@ -128,8 +150,13 @@ SearchInput.defaultProps = {
   clearText: () => {},
   searchIconSelect: () => {},
   cancelCallback: () => {},
-  hasBackround: false,
-  isInputVisible: true
+  hasBackground: false,
+  isInputVisible: true,
+  className: "",
+  searchBtnAreaLabel: "Search button",
+  clearBtnAreaLabel: "Clear button",
+  cancelBtnAreaLabel: "Cancel button",
+  inputAreaLabel: "Search input"
 };
 
 SearchInput.displayName = "SearcnInput";
