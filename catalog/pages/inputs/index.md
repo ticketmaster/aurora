@@ -713,7 +713,7 @@ rows:
     Notes: defines if toggle is disabled
 ```
 
-It also accepts any eventhandlers. e.g. `onChange`, `onBlur`, `onFocus` etc. as well as styles object.
+It also accepts any event handlers. e.g. `onChange`, `onBlur`, `onFocus` etc. as well as styles object.
 
 ```react
 span: 6
