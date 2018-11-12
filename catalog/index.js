@@ -14,7 +14,6 @@ import header from "./pages/header";
 import inputs from "./pages/inputs";
 import navBar from "./pages/nav_bar";
 import bottomSheet from "./pages/bottom_sheet";
-import image from "./pages/image";
 import images from "./pages/images";
 import breadcrumbs from "./pages/breadcrumbs";
 import modal from "./pages/modal";
@@ -23,6 +22,7 @@ import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
 import deviceConnection from "./pages/device_connection";
 import links from "./pages/links";
+import tabs from "./pages/tabs";
 import statusBadge from "./pages/status_badge";
 
 const theme = {
@@ -38,7 +38,6 @@ const pages = [
   icons,
   images,
   imageCard,
-  image,
   listRow,
   header,
   inputs,
@@ -51,6 +50,7 @@ const pages = [
   tooltip,
   deviceConnection,
   links,
+  tabs,
   statusBadge
 ];
 

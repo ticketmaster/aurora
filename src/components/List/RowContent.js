@@ -20,6 +20,7 @@ import { ROW_DATE_SMALL_WIDTH, ROW_DATE_MEDIUM_WIDTH } from "./constants";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
+  border-bottom: 1px solid ${colors.lightGray};
 
   ${mediumAndUp`
     border-radius: 4px;
@@ -39,10 +40,6 @@ const RowWrapper = styled.div`
       margin-bottom: 0;
     }
   `};
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid ${colors.lightGray};
-  }
 `;
 
 const ListContainer = styled.div`
@@ -117,7 +114,7 @@ const MobileOnlyColumn = styled(Column)`
   `};
 `;
 
-const ListRowButton = StyledButton.withComponent("span").extend`
+const ListRowButton = styled(StyledButton.withComponent("span"))`
   min-width: 100px;
   max-width: 102px;
   height: 36px;
