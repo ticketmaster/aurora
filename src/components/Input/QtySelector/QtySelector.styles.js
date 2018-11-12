@@ -14,9 +14,9 @@ export const Button = styled.button`
   border-radius: 50%;
   border: 1px solid ${getThemeValue("primary", "base")};
   color: ${getThemeValue("gray02")};
+  background-color: ${getThemeValue("white", "base")};
   outline: none;
   box-sizing: border-box;
-  cursor: pointer;
   padding: 0;
   font-size: ${typography.size.tera};
   line-height: 0;
@@ -24,34 +24,34 @@ export const Button = styled.button`
     background-color 0.3s ${constants.easing.easeInOutQuad},
     color 0.3s ${constants.easing.easeInOutQuad};
 
-  &:hover {
-    background-color: ${getThemeValue("primary", "light")};
-    color: ${getThemeValue("primary", "base")};
-  }
-
   &:disabled {
     border-color: ${getThemeValue("gray04")};
-    background-color: ${getThemeValue("white", "base")};
     color: ${getThemeValue("gray02")};
   }
 
-  &:active {
+  &:enabled:hover {
+    background-color: ${getThemeValue("primary", "light")};
+    color: ${getThemeValue("primary", "base")};
+    cursor: pointer;
+  }
+
+  &:enabled:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
     background-color: ${getThemeValue("primary", "muted")};
-    &:disabled {
-      transform: none;
-    }
   }
 `;
 
 export const InputFieldContainer = styled.div`
   overflow-y: hidden;
   display: flex;
-  height: 28px;
+  height: 29px;
   flex-direction: column;
   border-bottom: 1px solid ${getThemeValue("gray02")};
+  margin: 0px 12px;
+  position: relative;
+  bottom: 1px;
 
-  &:hover&:not(.disabled) {
+  &:hover&:not(.InputFieldContainer__disabled) {
     border-color: ${getThemeValue("primary", "base")};
   }
 `;
@@ -64,7 +64,7 @@ export const InputField = styled.input.attrs({
   outline: none;
   width: 31px;
   font-size: ${typography.size.giga};
-  line-height: 1.25;
+  height: 28px;
   text-align: center;
   color: #353c42;
   caret-color: #353c42;

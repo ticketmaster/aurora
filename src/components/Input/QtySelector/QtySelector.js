@@ -1,8 +1,9 @@
 /* eslint-disable react/no-array-index-key */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
-// import composeEventHandlers from "../../../utils/composeEventHandlers";
+import composeEventHandlers from "../../../utils/composeEventHandlers";
 import {
   Container,
   Button,
@@ -50,7 +51,7 @@ const plusIcon = (
 
 class QtySelector extends Component {
   static MAX_LENGTH_VAL = 2;
-  static inputHeight = 27;
+  static inputHeight = 28;
 
   static isNumber = str => {
     const numValue = parseInt(str, 10);
@@ -61,11 +62,13 @@ class QtySelector extends Component {
   };
 
   static propTypes = {
-    disabled: PropTypes.bool
+    disabled: PropTypes.bool,
+    style: PropTypes.objectOf(PropTypes.string)
   };
 
   static defaultProps = {
-    disabled: false
+    disabled: false,
+    style: {}
   };
 
   state = {
@@ -82,7 +85,7 @@ class QtySelector extends Component {
     ) {
       this.setState(() => ({ value: Number.parseInt(value, 10) }));
     } else if (value === "") {
-      // delete input case
+      // delete input value case
       this.setState(() => ({ value: "" }));
     }
   };
@@ -119,7 +122,7 @@ class QtySelector extends Component {
   };
 
   render() {
-    const { disabled } = this.props;
+    const { disabled, style, ...rest } = this.props;
     const { value, focused } = this.state;
 
     return (
@@ -127,28 +130,37 @@ class QtySelector extends Component {
         <Button onClick={this.decrement} disabled={disabled}>
           {minusIcon}
         </Button>
-        <InputFieldContainer className={disabled ? "disabled" : ""}>
+        <InputFieldContainer
+          className={classNames({ InputFieldContainer__disabled: disabled })}
+        >
           {!focused ? (
             [...Array(100)].map((_, i) => (
               <InputField
-                onFocus={this.handleFocus}
-                onBlur={this.handleBlur}
+                {...rest}
                 key={i}
                 value={value}
-                onChange={this.handleChange}
+                onFocus={composeEventHandlers(this.handleFocus, rest.onFocus)}
+                onBlur={composeEventHandlers(this.handleBlur, rest.onBlur)}
+                onChange={composeEventHandlers(
+                  this.handleChange,
+                  rest.onChange
+                )}
                 disabled={disabled}
                 style={{
+                  ...style,
                   top: `-${value * QtySelector.inputHeight}px`
                 }}
               />
             ))
           ) : (
             <InputField
+              {...rest}
               value={value}
-              onChange={this.handleChange}
+              onFocus={composeEventHandlers(this.handleFocus, rest.onFocus)}
+              onBlur={composeEventHandlers(this.handleBlur, rest.onBlur)}
+              onChange={composeEventHandlers(this.handleChange, rest.onChange)}
               disabled={disabled}
-              onFocus={this.handleFocus}
-              onBlur={this.handleBlur}
+              style={style}
               autoFocus
             />
           )}

@@ -1,4 +1,49 @@
+## SearchInput
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: onBlur
+    Type: function
+    Default: null
+    Notes: Handler function
+  - Prop: onFocus
+    Type: function
+    Default: null
+    Notes: Handler function
+  - Prop: slim
+    Type: boolean
+    Default: "false"
+    Notes: Size design variant
+  - Prop: invert
+    Type: boolean
+    Default: N/A
+    Notes: Color design variant
+  - Prop: className
+    Type: string
+    Default: null
+    Notes: Enables passing a className to the Container
+  - Prop: iconProps
+    Type: object
+    Default: null
+    Notes: Enables passing props to the SearchIcon
+```
+
 ```react
+responsive: true
+span: 6
+---
+<Header>
+    <Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
+        <Search placeholder="Enter term..." iconProps={{ color: "currentColor" }} />
+    </Column>
+</Header>
+```
+
+```react
+responsive: true
 span: 6
 ---
 <Container>
@@ -654,5 +699,31 @@ rows:
     <ToggleWrapperExample value={false} size="small" disabled/>
     <ToggleWrapperExample size="large" />
     <ToggleWrapperExample size="large" disabled/>
+</div>
+```
+
+## Quantity selector
+
+```table
+span: 6
+rows:
+  - Prop: disabled
+    Type: bool
+    Default:
+    Notes: defines if toggle is disabled
+```
+
+It also accepts any eventhandlers. e.g. `onChange`, `onBlur`, `onFocus` etc. as well as styles object.
+
+```react
+span: 6
+---
+<div style={{ display: 'flex' }}>
+    <div style={{ width: '50%' }}>
+        <QtySelector />
+    </div>
+    <div style={{ width: '50%' }}>
+        <QtySelector disabled/>
+    </div>
 </div>
 ```
