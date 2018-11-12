@@ -12,7 +12,7 @@ import {
   DropDownOption,
   Toggle,
   ButtonGroup,
-  Stepper
+  QtySelector
 } from "../../../src/components/Input";
 import CheckboxWrapperExample from "./CheckBoxExample";
 import ToggleWrapperExample from "./ToggleWrapperExample";
@@ -44,7 +44,7 @@ export default {
     ThemeProvider,
     CheckboxWrapperExample,
     ButtonGroup,
-    Stepper
+    QtySelector
   },
   content: pageLoader(() => import("./index.md"))
 };

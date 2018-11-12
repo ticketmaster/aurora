@@ -1,16 +1,6 @@
 ```react
 span: 6
 ---
-<div style={{ width: "300px" }}>
-  <Stepper />
-  <Spacing bottom={{small: "moderate"}} />
-  <Stepper disabled/>
-</div>
-```
-
-```react
-span: 6
----
 <Container>
     <Row>
         <Column medium={10} large={7} style={{ padding: "16px 0" }}>

@@ -3,23 +3,23 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { cleanup, render, Simulate } from "react-testing-library";
 
-import Stepper from "../Stepper/Stepper";
+import QtySelector from "../QtySelector/QtySelector";
 
-describe("Stepper", () => {
+describe("QtySelector", () => {
   afterEach(cleanup);
 
-  it("renders default stepper", () => {
-    const { container } = renderStepperComponent();
+  it("renders default QtySelector", () => {
+    const { container } = renderQtySelectorComponent();
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("renders disabled stepper", () => {
-    const { container } = renderStepperComponent({ disabled: true });
+  it("renders disabled QtySelector", () => {
+    const { container } = renderQtySelectorComponent({ disabled: true });
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("decrements correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const button = container.getElementsByTagName("button")[0];
 
     Simulate.click(button);
@@ -28,7 +28,7 @@ describe("Stepper", () => {
   });
 
   it("decrements twice correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const button = container.getElementsByTagName("button")[0];
 
     Simulate.click(button);
@@ -38,7 +38,7 @@ describe("Stepper", () => {
   });
 
   it("decrements from non-zero value correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const decButton = container.getElementsByTagName("button")[0];
     const incButton = container.getElementsByTagName("button")[1];
 
@@ -51,7 +51,7 @@ describe("Stepper", () => {
   });
 
   it("increments correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const button = container.getElementsByTagName("button")[1];
 
     Simulate.click(button);
@@ -60,7 +60,7 @@ describe("Stepper", () => {
   });
 
   it("increments twice correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const button = container.getElementsByTagName("button")[1];
 
     Simulate.click(button);
@@ -70,7 +70,7 @@ describe("Stepper", () => {
   });
 
   it("handles input value correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const input = container.getElementsByTagName("input")[0];
 
     Simulate.change(input, {
@@ -81,7 +81,7 @@ describe("Stepper", () => {
   });
 
   it("handles input value longer than 2 chars correctly", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const input = container.getElementsByTagName("input")[0];
 
     Simulate.change(input, {
@@ -91,8 +91,37 @@ describe("Stepper", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("handles input value longer than 2 chars correctly when using buttons", () => {
+    const { container } = renderQtySelectorComponent();
+    const input = container.getElementsByTagName("input")[0];
+    const button = container.getElementsByTagName("button")[1];
+
+    Simulate.change(input, {
+      target: { value: "99" }
+    });
+    Simulate.click(button);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("sets focus state to true after input is focused", () => {
+    const { container } = renderQtySelectorComponent();
+    const input = container.getElementsByTagName("input")[0];
+    Simulate.focus(input);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("sets focus state to false when input looses focus", () => {
+    const { container } = renderQtySelectorComponent();
+    const input = container.getElementsByTagName("input")[0];
+    Simulate.blur(input);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("handles case when input is deleted", () => {
-    const { container } = renderStepperComponent();
+    const { container } = renderQtySelectorComponent();
     const input = container.getElementsByTagName("input")[0];
 
     Simulate.change(input, {
@@ -102,10 +131,10 @@ describe("Stepper", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  function renderStepperComponent(props = {}) {
+  function renderQtySelectorComponent(props = {}) {
     return render(
       <ThemeProvider theme={{ themeName: "tm" }}>
-        <Stepper {...props} />
+        <QtySelector {...props} />
       </ThemeProvider>
     );
   }

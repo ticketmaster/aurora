@@ -8,7 +8,7 @@ import {
   Button,
   InputField,
   InputFieldContainer
-} from "./Stepper.styles";
+} from "./QtySelector.styles";
 
 const minusIcon = (
   <svg
@@ -48,7 +48,7 @@ const plusIcon = (
   </svg>
 );
 
-class Stepper extends Component {
+class QtySelector extends Component {
   static MAX_LENGTH_VAL = 2;
   static inputHeight = 27;
 
@@ -76,7 +76,10 @@ class Stepper extends Component {
   handleChange = e => {
     const { value } = e.target;
 
-    if (Stepper.isNumber(value) && value.length <= Stepper.MAX_LENGTH_VAL) {
+    if (
+      QtySelector.isNumber(value) &&
+      value.length <= QtySelector.MAX_LENGTH_VAL
+    ) {
       this.setState(() => ({ value: Number.parseInt(value, 10) }));
     } else if (value === "") {
       // delete input case
@@ -135,7 +138,7 @@ class Stepper extends Component {
                 onChange={this.handleChange}
                 disabled={disabled}
                 style={{
-                  top: `-${value * Stepper.inputHeight}px`
+                  top: `-${value * QtySelector.inputHeight}px`
                 }}
               />
             ))
@@ -158,4 +161,4 @@ class Stepper extends Component {
   }
 }
 
-export default Stepper;
+export default QtySelector;
