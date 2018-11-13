@@ -701,3 +701,29 @@ rows:
     <ToggleWrapperExample size="large" disabled/>
 </div>
 ```
+
+## Quantity selector
+
+```table
+span: 6
+rows:
+  - Prop: disabled
+    Type: bool
+    Default:
+    Notes: defines if toggle is disabled
+```
+
+It also accepts any event handlers. e.g. `onChange`, `onBlur`, `onFocus` etc. as well as styles object.
+
+```react
+span: 6
+---
+<div style={{ display: 'flex' }}>
+    <div style={{ width: '50%' }}>
+        <QtySelector />
+    </div>
+    <div style={{ width: '50%' }}>
+        <QtySelector disabled/>
+    </div>
+</div>
+```

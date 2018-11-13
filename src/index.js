@@ -137,7 +137,8 @@ export {
   CheckBoxButton as CheckBox,
   CheckBoxGroup,
   Input,
-  ButtonGroup
+  ButtonGroup,
+  QtySelector
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
 export { default as Modal } from "./components/List/Modal";
