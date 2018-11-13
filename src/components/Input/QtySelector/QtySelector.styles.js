@@ -29,6 +29,11 @@ export const Button = styled.button`
     color: ${getThemeValue("gray02")};
   }
 
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
+  }
+
   &:enabled:hover {
     background-color: ${getThemeValue("primary", "light")};
     color: ${getThemeValue("primary", "base")};
