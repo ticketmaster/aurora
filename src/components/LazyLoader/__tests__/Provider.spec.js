@@ -96,7 +96,7 @@ describe("LazyLoaderProvider", () => {
     instance.load(true);
 
     component.update(
-      renderProviderComponent({ src: "http://placepuppy.com/g/" }, x => x, {
+      renderProviderComponent({ src: "https://placepuppy.com/g/" }, x => x, {
         createNodeMock: createImgWithSrcset
       })
     );

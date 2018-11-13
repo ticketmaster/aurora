@@ -7,7 +7,7 @@ import {
 } from "../../../../catalog/pages/images/LazyImageExample";
 
 export const PROPS = {
-  src: "http://placekitten.com/g",
+  src: "https://placekitten.com/g",
   alt: "Test Kitten",
   height: 400,
   width: 400,
