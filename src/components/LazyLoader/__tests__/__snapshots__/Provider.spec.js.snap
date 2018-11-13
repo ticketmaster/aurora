@@ -10,7 +10,7 @@ Object {
     },
   },
   "load": [Function],
-  "src": "http://placekitten.com/g/40/40",
+  "src": "https://placekitten.com/g/40/40",
   "style": Object {
     "filter": "blur(10px)",
     "transition": "80ms filter linear",
@@ -22,7 +22,7 @@ exports[`LazyLoaderProvider should invoke componentDidUpdate and set state to a 
 <img
   alt="Test Kitten"
   height={400}
-  src="http://placepuppy.com/g//40/40"
+  src="https://placepuppy.com/g//40/40"
   style={
     Object {
       "filter": "blur(10px)",
@@ -38,7 +38,7 @@ Object {
   "current": Object {
     "onload": [MockFunction],
     "style": Object {
-      "backgroundImage": "url(http://placekitten.com/g/400/400)",
+      "backgroundImage": "url(https://placekitten.com/g/400/400)",
       "filter": "none",
     },
   },
@@ -49,7 +49,7 @@ exports[`LazyLoaderProvider should load a high res version of the image passed w
 Object {
   "current": Object {
     "onload": [Function],
-    "src": "http://placekitten.com/g/400/400",
+    "src": "https://placekitten.com/g/400/400",
     "style": Object {},
   },
 }
@@ -60,7 +60,7 @@ Object {
   "current": Object {
     "onload": [Function],
     "src": "",
-    "srcset": "http://placekitten.com/g/400/400 1x, http://placekitten.com/g/800/800 2x, http://placekitten.com/g/1200/1200 3x, http://placekitten.com/g/1600/1600 4x, http://placekitten.com/g/2000/2000 5x",
+    "srcset": "https://placekitten.com/g/400/400 1x, https://placekitten.com/g/800/800 2x, https://placekitten.com/g/1200/1200 3x, https://placekitten.com/g/1600/1600 4x, https://placekitten.com/g/2000/2000 5x",
     "style": Object {},
   },
 }
@@ -70,7 +70,7 @@ exports[`LazyLoaderProvider should load a low res, blurred version of the image 
 <img
   alt="Test Kitten"
   height={400}
-  src="http://placekitten.com/g/40/40"
+  src="https://placekitten.com/g/40/40"
   style={
     Object {
       "filter": "blur(10px)",
@@ -85,7 +85,7 @@ exports[`LazyLoaderProvider should not load a high res version of the image pass
 <img
   alt="Test Kitten"
   height={400}
-  src="http://placekitten.com/g/40/40"
+  src="https://placekitten.com/g/40/40"
   style={
     Object {
       "filter": "blur(10px)",

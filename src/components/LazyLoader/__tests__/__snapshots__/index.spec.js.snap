@@ -4,7 +4,7 @@ exports[`LazyLoader should load a low res, blurred version of the image passed p
 <img
   alt="Test Kitten"
   height={400}
-  src="http://placekitten.com/g/40/40"
+  src="https://placekitten.com/g/40/40"
   style={
     Object {
       "filter": "blur(10px)",
