@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const QtySelectorPlusIcon = props => (
+const QtySelectorPlusIcon = ({ children, ...props }) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +9,7 @@ const QtySelectorPlusIcon = props => (
     height="24"
     viewBox="0 0 24 24"
   >
+    {children}
     <g fill="none" fillRule="nonzero">
       <path d="M0 0h24v24H0z" />
       <path
@@ -21,5 +23,13 @@ const QtySelectorPlusIcon = props => (
 );
 
 QtySelectorPlusIcon.displayName = "QtySelectorPlusIcon";
+
+QtySelectorPlusIcon.defaultProps = {
+  children: null
+};
+
+QtySelectorPlusIcon.propTypes = {
+  children: PropTypes.node
+};
 
 export default QtySelectorPlusIcon;
