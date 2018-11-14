@@ -1,6 +1,6 @@
 ### DeviceConnectionProvider
 
-Analyzes the user's network connection and listens for changes.
+Analyzes the user's network connection and data usage preferences while listening for changes.
 
 ### Props
 
@@ -21,7 +21,7 @@ Receives a render prop containing the DeviceConnectionProvider's state when the 
 
 ### DisplayOn
 
-Returns children when the connection speed prop(s) passed match the user's connection speed when the DeviceConnectionProvider is above it in the React DOM hierarchy.
+Returns children when the connection speed/data usage preference prop(s) passed match the user's connection speed or data usage preferences when the DeviceConnectionProvider is above it in the React DOM hierarchy.
 
 ### Props
 
@@ -40,6 +40,9 @@ rows:
   - Prop: connslow2g
     Type: Boolean
     Default: false
+  - Prop: saveData
+    Type: Boolean
+    Default: null
   - Prop: children
     Type: Node
     Default:

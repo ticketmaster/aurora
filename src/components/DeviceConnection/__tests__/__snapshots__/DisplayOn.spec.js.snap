@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`DisplayOn should return children when the connection prop equals saveData and matches connection state 1`] = `
+<div>
+  Content
+</div>
+`;
+
 exports[`DisplayOn should return children when the connection prop matches connection state 1`] = `
 <div>
   Content

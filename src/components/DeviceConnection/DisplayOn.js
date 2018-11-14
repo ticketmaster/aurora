@@ -8,12 +8,14 @@ import {
   prefixedDeviceConnectionDefaultProps
 } from "./shape";
 
+export const getConnName = conn => (conn === "saveData" ? conn : `conn${conn}`);
+
 const DisplayOn = props => {
   const { children } = props;
   return (
     <Consumer>
       {val =>
-        CONNECTION_TYPES.find(conn => val[conn] && props[`conn${conn}`])
+        CONNECTION_TYPES.find(conn => val[conn] && props[getConnName(conn)])
           ? children
           : null
       }
@@ -23,9 +25,13 @@ const DisplayOn = props => {
 
 DisplayOn.propTypes = {
   ...prefixedDeviceConnectionProps,
+  saveData: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 
-DisplayOn.defaultProps = prefixedDeviceConnectionDefaultProps;
+DisplayOn.defaultProps = {
+  ...prefixedDeviceConnectionDefaultProps,
+  saveData: false
+};
 
 export default DisplayOn;
