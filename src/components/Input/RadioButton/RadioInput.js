@@ -159,7 +159,7 @@ class RadioInputComponent extends React.Component {
         aria-labelledby={`${name + value}label`}
         aria-checked={checked}
         {...props}
-        innerRef={this.SelectedElement}
+        ref={this.SelectedElement}
       />
     );
   }

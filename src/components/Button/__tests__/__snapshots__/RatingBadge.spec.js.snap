@@ -1,86 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="fJsNNK"
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -88,10 +10,10 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -103,7 +25,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -124,96 +46,18 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(2,108,223,0.2);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="cUUvNc"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -225,7 +69,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -246,86 +90,8 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(2,108,223,1);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(2,108,223,0.2);
-  background-color: rgba(255,255,255,1);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="cUUvNc"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -333,10 +99,10 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -348,7 +114,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -369,96 +135,18 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="fJsNNK"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -470,7 +158,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -491,86 +179,8 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,1);
-  border: 1px solid rgba(2,108,223,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(255,255,255,1);
-  background-color: rgba(2,108,223,0.2);
-  border: 1px solid rgba(2,108,223,0.2);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="fJsNNK"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -578,10 +188,10 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -593,7 +203,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -614,96 +224,18 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="fKtAjT"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -715,7 +247,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>
@@ -736,86 +268,8 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 `;
 
 exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] = `
-.c2 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.c2:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c1 {
-  font-size: 12px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 45px;
-  min-width: 45px;
-  height: 20px;
-}
-
-.c0 {
-  padding: 0;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.c5 {
-  padding-left: 2px;
-}
-
-.c4 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
 <button
-  className="c0 c1 c2"
+  className="fKtAjT"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -823,10 +277,10 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   size="regular"
 >
   <span
-    className="c3"
+    className="fzhVVQ"
   >
     <svg
-      className="c4"
+      className="kiOhBO"
       fill="currentColor"
       height={12}
       viewBox="0 0 11 10"
@@ -838,7 +292,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
       />
     </svg>
     <span
-      className="c5"
+      className="kSGCtX"
     >
       RatingBadge
     </span>

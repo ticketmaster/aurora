@@ -42,7 +42,7 @@ class CheckBoxInputComponent extends React.Component {
         id={`${name + value}input`}
         disabled={disabled}
         checked={isChecked}
-        innerRef={this.SelectedElement}
+        ref={this.SelectedElement}
       />
     );
   }

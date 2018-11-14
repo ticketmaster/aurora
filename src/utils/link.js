@@ -5,7 +5,14 @@
  * @param { String } rel - Specifies the relationship between the current document and the linked document (e.g. alternate, author, noopener, etc.)
  * @returns { String } rel
  */
-const getRelByTarget = (target, rel) =>
+export const getRelByTarget = (target, rel) =>
   target === "_blank" ? "noopener" : rel;
 
-export default getRelByTarget;
+export const getAsProp = ({ href, onClick }) => {
+  if (href && href.length) return { as: "a" };
+
+  if (!href && onClick && typeof onClick === "function")
+    return { as: "button" };
+
+  return { as: "span" };
+};

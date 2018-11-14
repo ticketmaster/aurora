@@ -15,7 +15,8 @@ const Row = styled.div`
     margin-left: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
     margin-right: ${(spacing.gutters.mediumAndUp / 2) * -1}px;
   `};
-  & & {
+
+  .row--gutterless {
     flex: 0 1 100%;
     margin-left: 0;
     margin-right: 0;

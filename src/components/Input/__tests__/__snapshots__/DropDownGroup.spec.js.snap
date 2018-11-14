@@ -1186,7 +1186,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       <div>
         <div
           aria-labelledby="hidden-label__"
-          class="sc-htoDjs dQowVh"
+          class="sc-bZQynM koCnbp"
           role="listbox"
         >
           <span
@@ -1883,61 +1883,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 `;
 
 exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
-.c0 {
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.dropdown__items .c0 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  height: 36px;
-  margin: 4px 8px 0 8px;
-  padding: 7px 12px;
-  font-size: 16px;
-  text-align: left;
-  border: none;
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  color: #262626;
-  line-height: 1.25;
-}
-
-.dropdown__items .c0:hover,
-.dropdown__items .c0:focus,
-.dropdown__items .c0.dropdown__selected {
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-}
-
-.dropdown__items .c0:hover,
-.dropdown__items .c0:focus {
-  background-color: #026cdf;
-}
-
-.dropdown__items .c0:focus {
-  outline: none;
-}
-
-.dropdown__items .c0.dropdown__selected {
-  color: #262626;
-  background-color: #ebebeb;
-}
-
-.dropdown__items.dropdown__items--small .c0 {
-  height: 32px;
-  font-size: 14px;
-  line-height: 1.3;
-}
-
 <span
-  className="dropdown__item--expandable c0"
+  className="dropdown__item--expandable iJMNFP"
   onClick={[Function]}
   onKeyDown={[Function]}
   role="option"

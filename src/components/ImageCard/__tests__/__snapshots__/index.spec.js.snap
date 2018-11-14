@@ -1,284 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ImageCard renders card without overlay 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c0 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c3 {
-  width: 100%;
-  max-width: 100%;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
 <div
-  className="c0 container-block c1"
+  className="container-block hXHtmw"
 >
   <div
-    className="c2"
+    className="igiVqV"
   >
     <img
       alt=""
-      className="c3"
+      className="fIQgYS"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="c4"
+      className="iRzHme"
     />
   </div>
 </div>
 `;
 
 exports[`ImageCard renders standard card 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c0 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c3 {
-  width: 100%;
-  max-width: 100%;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
 <div
-  className="c0 container-block c1"
+  className="container-block hXHtmw"
 >
   <div
-    className="c2"
+    className="igiVqV"
   >
     <img
       alt="image"
-      className="c3"
+      className="fIQgYS"
       src="http://localhost/img.png"
       title="image"
     />
     <div
-      className="c4"
+      className="iRzHme"
     />
   </div>
 </div>
 `;
 
 exports[`ImageCard renders type = half 1`] = `
-.c4 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c3 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c8 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c5 {
-  width: 100%;
-  max-width: 100%;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c6 {
-  position: relative;
-  color: rgba(255,255,255,1);
-  background-color: none;
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-}
-
-.c2 {
-  width: 50%;
-}
-
-.c7 {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.c7 > .image-card__title--half > span {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.c9 > .image-card__subtitle--half > span {
-  color: #1F262D;
-  -webkit-letter-spacing: "normal";
-  -moz-letter-spacing: "normal";
-  -ms-letter-spacing: "normal";
-  letter-spacing: "normal";
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
-.c0 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-@media screen and (min-width:768px) {
-  .c8 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c8 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="c0 c1"
+  className="dGrJdi"
 >
   <div
-    className="c2 c3 container-block c4"
+    className="container-block bgkVzE"
     width="50%"
   >
     <img
       alt=""
-      className="c5"
+      className="fIQgYS"
       src="http://localhost/img.png"
       title=""
     />
   </div>
   <div
-    className="c6"
+    className="brJtrF"
   >
     <span
-      className="c7"
+      className="jJmwnS"
     >
       <div
-        className="text text--dark text--primary image-card__title--half c8"
+        className="text text--dark text--primary image-card__title--half hTwOaP"
         disabled={false}
         size={
           Object {
@@ -289,17 +73,17 @@ exports[`ImageCard renders type = half 1`] = `
         }
       >
         <span
-          className="c7"
+          className="jJmwnS"
         >
           Title
         </span>
       </div>
     </span>
     <span
-      className="c9"
+      className="eKXBpw"
     >
       <div
-        className="text text--dark text--primary image-card__subtitle--half c8"
+        className="text text--dark text--primary image-card__subtitle--half hTwOaP"
         disabled={false}
         size={
           Object {
@@ -310,7 +94,7 @@ exports[`ImageCard renders type = half 1`] = `
         }
       >
         <span
-          className="c9"
+          className="eKXBpw"
         >
           Sub Title
         </span>
@@ -321,112 +105,26 @@ exports[`ImageCard renders type = half 1`] = `
 `;
 
 exports[`ImageCard renders with custom image 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c0 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c4 {
-  position: relative;
-  color: rgba(255,255,255,1);
-  background-color: rgba(31,38,45,0.8);
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  font-style: inherit;
-  font-stretch: inherit;
-  line-height: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-}
-
-.c5 {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.c5 > .image-card__title--half > span {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-}
-
-.c6 {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.c6 > .image-card__subtitle--half > span {
-  color: #1F262D;
-  -webkit-letter-spacing: "normal";
-  -moz-letter-spacing: "normal";
-  -ms-letter-spacing: "normal";
-  letter-spacing: "normal";
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
 <div
-  className="c0 container-block c1"
+  className="container-block hXHtmw"
 >
   <div
-    className="c2"
+    className="igiVqV"
   >
     <svg />
     <div
-      className="c3"
+      className="iRzHme"
     >
       <div
-        className="c4"
+        className="dAmSFY"
       >
         <span
-          className="c5"
+          className="jJmwnS"
         >
           Title
         </span>
         <span
-          className="c6"
+          className="eKXBpw"
         >
           Sub Title
         </span>
@@ -442,125 +140,31 @@ exports[`ImageCard renders with custom image 1`] = `
 `;
 
 exports[`ImageCard renders with title & subtitle 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c0 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c3 {
-  width: 100%;
-  max-width: 100%;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c5 {
-  position: relative;
-  color: rgba(255,255,255,1);
-  background-color: rgba(31,38,45,0.8);
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  font-style: inherit;
-  font-stretch: inherit;
-  line-height: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-}
-
-.c6 {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.c6 > .image-card__title--half > span {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.c7 > .image-card__subtitle--half > span {
-  color: #1F262D;
-  -webkit-letter-spacing: "normal";
-  -moz-letter-spacing: "normal";
-  -ms-letter-spacing: "normal";
-  letter-spacing: "normal";
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
 <div
-  className="c0 container-block c1"
+  className="container-block hXHtmw"
 >
   <div
-    className="c2"
+    className="igiVqV"
   >
     <img
       alt=""
-      className="c3"
+      className="fIQgYS"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="c4"
+      className="iRzHme"
     >
       <div
-        className="c5"
+        className="dAmSFY"
       >
         <span
-          className="c6"
+          className="jJmwnS"
         >
           Title
         </span>
         <span
-          className="c7"
+          className="eKXBpw"
         >
           Sub Title
         </span>
@@ -571,125 +175,31 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 `;
 
 exports[`ImageCard renders with title & subtitle, extra content 1`] = `
-.c1 {
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  border: 1px solid #bfbfbf;
-  padding: 16px;
-}
-
-.c0 {
-  border-radius: 4px;
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
-  padding: 16px;
-  border: none;
-}
-
-.c3 {
-  width: 100%;
-  max-width: 100%;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c5 {
-  position: relative;
-  color: rgba(255,255,255,1);
-  background-color: rgba(31,38,45,0.8);
-  border-radius: 4px;
-  padding: 4px 8px;
-  margin-left: 8px;
-  margin-bottom: 8px;
-  font-style: inherit;
-  font-stretch: inherit;
-  line-height: inherit;
-  -webkit-letter-spacing: inherit;
-  -moz-letter-spacing: inherit;
-  -ms-letter-spacing: inherit;
-  letter-spacing: inherit;
-}
-
-.c6 {
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.c6 > .image-card__title--half > span {
-  font-size: 14px;
-  color: rgba(2,108,223,1);
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.c7 > .image-card__subtitle--half > span {
-  color: #1F262D;
-  -webkit-letter-spacing: "normal";
-  -moz-letter-spacing: "normal";
-  -ms-letter-spacing: "normal";
-  letter-spacing: "normal";
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-}
-
 <div
-  className="c0 container-block c1"
+  className="container-block hXHtmw"
 >
   <div
-    className="c2"
+    className="igiVqV"
   >
     <img
       alt=""
-      className="c3"
+      className="fIQgYS"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="c4"
+      className="iRzHme"
     >
       <div
-        className="c5"
+        className="dAmSFY"
       >
         <span
-          className="c6"
+          className="jJmwnS"
         >
           Title
         </span>
         <span
-          className="c7"
+          className="eKXBpw"
         >
           Sub Title
         </span>

@@ -1,37 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link renders a button when only onclick is provided 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c1:focus,
-.c1:active,
-.c1:visited,
-.c1:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
 <button
-  className="c0 c1"
+  className="guyyDD"
   href={null}
   onClick={[Function]}
   rel="_self"
@@ -49,46 +20,8 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 `;
 
 exports[`Link renders a default link 1`] = `
-.c1 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-}
-
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c0:hover {
-  color: #0150a7;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: 14px;
-  }
-}
-
 <a
-  className="c0 c1"
+  className="dNRmqI"
   href="http://localhost/"
   onClick={null}
   rel="_self"
@@ -106,30 +39,8 @@ exports[`Link renders a default link 1`] = `
 `;
 
 exports[`Link renders a span when no href or onClick provided 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c1:focus,
-.c1:active,
-.c1:visited,
-.c1:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
 <span
-  className="c0 c1"
+  className="bkgKe"
   href={null}
   onClick={null}
   rel="_self"

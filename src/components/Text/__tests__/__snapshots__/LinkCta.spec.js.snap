@@ -1,72 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: inherit;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
-}
-
-.c1:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:visited {
-  color: #013670;
-}
-
-.c1:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: inherit;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: inherit;
-  }
-}
-
 <button
-  className="c0 c1"
+  className="jfDrEm"
   href={null}
   onClick={[Function]}
-  rel={undefined}
+  rel=""
   size={
     Object {
       "large": null,
@@ -74,67 +13,18 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
       "small": null,
     }
   }
+  target="_self"
 >
   I am a link
 </button>
 `;
 
 exports[`LinkCta renders a default LinkCta 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: inherit;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
-}
-
-.c0:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:visited {
-  color: #013670;
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c0:hover {
-  color: #0150a7;
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: inherit;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: inherit;
-  }
-}
-
 <a
-  className="c0"
+  className="dVBByn"
   href="http://localhost/"
   onClick={null}
-  rel={undefined}
+  rel=""
   size={
     Object {
       "large": null,
@@ -142,71 +32,18 @@ exports[`LinkCta renders a default LinkCta 1`] = `
       "small": null,
     }
   }
+  target="_self"
 >
   I am a link
 </a>
 `;
 
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: inherit;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
-}
-
-.c1:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:visited {
-  color: #013670;
-}
-
-.c1:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: inherit;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: inherit;
-  }
-}
-
 <span
-  className="c0 c1"
+  className="bvcokc"
   href={null}
   onClick={null}
-  rel={undefined}
+  rel=""
   size={
     Object {
       "large": null,
@@ -214,71 +51,18 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
       "small": null,
     }
   }
+  target="_self"
 >
   I am a link
 </span>
 `;
 
 exports[`LinkCta static size as pixels 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
-}
-
-.c1:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:visited {
-  color: #013670;
-}
-
-.c1:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: 20px;
-  }
-}
-
 <span
-  className="c0 c1"
+  className="cXeUXr"
   href={null}
   onClick={null}
-  rel={undefined}
+  rel=""
   size={
     Object {
       "large": "20px",
@@ -286,71 +70,18 @@ exports[`LinkCta static size as pixels 1`] = `
       "small": "20px",
     }
   }
+  target="_self"
 >
   I am a link
 </span>
 `;
 
 exports[`LinkCta static size from typography 1`] = `
-.c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-transition: text-decoration 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  font-weight: 600;
-  font-size: normal;
-  line-height: 1.25;
-  color: #026cdf;
-  display: inline-block;
-}
-
-.c1:focus {
-  outline: none;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c1:visited {
-  color: #013670;
-}
-
-.c1:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  color: #013670;
-}
-
-.c1:hover {
-  color: #0150a7;
-}
-
-.c0 {
-  cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    font-size: normal;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c1 {
-    font-size: normal;
-  }
-}
-
 <span
-  className="c0 c1"
+  className="jujMtQ"
   href={null}
   onClick={null}
-  rel={undefined}
+  rel=""
   size={
     Object {
       "large": "normal",
@@ -358,6 +89,7 @@ exports[`LinkCta static size from typography 1`] = `
       "small": "normal",
     }
   }
+  target="_self"
 >
   I am a link
 </span>

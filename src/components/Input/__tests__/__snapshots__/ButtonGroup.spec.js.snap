@@ -4,13 +4,13 @@ exports[`ButtonGroup renders button group with default selected element 1`] = `
 Object {
   "container": <div>
     <div
-      class="sc-jlyJG gGJSEH"
+      class="sc-eNQAEJ eFUqar"
     >
       <div
         class="sc-bwzfXH RpnLm"
       >
         <div
-          class="text text--dark text--primary sc-gipzik kiZGcR sc-kGXeez knVvqk"
+          class="text text--dark text--primary sc-hMqMXs hvZXeT sc-bZQynM lgtxAe"
         >
           Sort by
         </div>
@@ -22,7 +22,7 @@ Object {
           class="sc-bwzfXH RpnLm"
         >
           <div
-            class="text text--dark text--secondary sc-kEYyzF oQBJc sc-kGXeez ccFTWl"
+            class="text text--dark text--secondary sc-jTzLTM ifznyv sc-bZQynM kqNaHI"
           >
             Category
           </div>
@@ -31,30 +31,30 @@ Object {
           class="sc-bdVaJa erSRMf"
         >
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="button__selected sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="button__selected sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button2"
             >
               Button Label
@@ -102,13 +102,13 @@ exports[`ButtonGroup renders default button group 1`] = `
 Object {
   "container": <div>
     <div
-      class="sc-jlyJG gGJSEH"
+      class="sc-eNQAEJ eFUqar"
     >
       <div
         class="sc-bwzfXH RpnLm"
       >
         <div
-          class="text text--dark text--primary sc-gipzik kiZGcR sc-kGXeez knVvqk"
+          class="text text--dark text--primary sc-hMqMXs hvZXeT sc-bZQynM lgtxAe"
         >
           Sort by
         </div>
@@ -120,7 +120,7 @@ Object {
           class="sc-bwzfXH RpnLm"
         >
           <div
-            class="text text--dark text--secondary sc-kEYyzF oQBJc sc-kGXeez ccFTWl"
+            class="text text--dark text--secondary sc-jTzLTM ifznyv sc-bZQynM kqNaHI"
           >
             Category
           </div>
@@ -129,30 +129,30 @@ Object {
           class="sc-bdVaJa erSRMf"
         >
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-gPEVay ioTiOG"
+            class="sc-ckVGcZ cysqPO"
           >
             <button
-              class="sc-iRbamj ddnrJA sc-kkGfuU hTsDYr"
+              class="sc-jKJlTe fjhZEr sc-fjdhpX hkoAYT"
               data-testid="test-button2"
             >
               Button Label

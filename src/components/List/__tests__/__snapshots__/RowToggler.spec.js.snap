@@ -4,7 +4,7 @@ exports[`<RowToggler /> should render without errors when closed 1`] = `
 <button
   aria-expanded="false"
   aria-label="Expand Row"
-  class="button--expand-or-collapse button--collapsed sc-bwzfXH bULTYd sc-bdVaJa emvgUO"
+  class="button--expand-or-collapse button--collapsed sc-bwzfXH kJcqUu"
   data-index="3"
   role="button"
   size="45"
@@ -27,7 +27,7 @@ exports[`<RowToggler /> should render without errors when open 1`] = `
 <button
   aria-expanded="true"
   aria-label="Collapse Row"
-  class="button--expand-or-collapse button--expanded sc-bwzfXH bULTYd sc-bdVaJa emvgUO"
+  class="button--expand-or-collapse button--expanded sc-bwzfXH kJcqUu"
   data-index="1"
   role="button"
   size="45"

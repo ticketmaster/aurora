@@ -60,34 +60,6 @@ const SPACE_FROM_MOUSE = 10;
 
 class PopOver extends Component {
   /*
-   * Static function that needs to be called from the parent -> PopOver.getDimensionsFromEvent
-   * The parent should pass the click event which will trigger showing the PopOver.
-   * By default the PopOver is shown withing the view port. If we need to show it inside
-   * certain element we should pass the html element as second parameter.
-   * The function will return an object that should be provided to the PopOver as props.
-   */
-  static getDimensionsFromEvent(e, parent = {}) {
-    const { clientX: mouseX } = e;
-    const { offsetTop: elTop, clientHeight: elHeight } = e.currentTarget;
-    const {
-      offsetTop: offsetTop = 0,
-      clientHeight: clientHeight = 100000,
-      offsetLeft: offsetLeft = 0,
-      clientWidth: clientWidth = 100000
-    } = parent;
-
-    return {
-      mouseX,
-      elTop,
-      elBottom: elTop + elHeight,
-      offsetTop,
-      clientHeight,
-      offsetLeft,
-      clientWidth
-    };
-  }
-
-  /*
    * Static function that determines PopOver position.
    * @position(object) - top and bottom position of the elemt that triggers showing PopOver;
    * Mouse horizontal position on the sreen - so we can center the PopOver;
@@ -200,6 +172,34 @@ class PopOver extends Component {
     }
   }
 
+  /*
+   * Static function that needs to be called from the parent -> PopOver.getDimensionsFromEvent
+   * The parent should pass the click event which will trigger showing the PopOver.
+   * By default the PopOver is shown withing the view port. If we need to show it inside
+   * certain element we should pass the html element as second parameter.
+   * The function will return an object that should be provided to the PopOver as props.
+   */
+  static getDimensionsFromEvent(e, parent = {}) {
+    const { clientX: mouseX } = e;
+    const { offsetTop: elTop, clientHeight: elHeight } = e.currentTarget;
+    const {
+      offsetTop: offsetTop = 0,
+      clientHeight: clientHeight = 100000,
+      offsetLeft: offsetLeft = 0,
+      clientWidth: clientWidth = 100000
+    } = parent;
+
+    return {
+      mouseX,
+      elTop,
+      elBottom: elTop + elHeight,
+      offsetTop,
+      clientHeight,
+      offsetLeft,
+      clientWidth
+    };
+  }
+
   setDimensions = () => {
     const { isVisible } = this.props;
     const {
@@ -283,7 +283,7 @@ class PopOver extends Component {
         classNames="open"
         onEnter={this.popoverEnter}
       >
-        <StyledPopOver innerRef={this.myRef} isVisible={isVisible}>
+        <StyledPopOver ref={this.myRef} isVisible={isVisible}>
           {children}
         </StyledPopOver>
       </CSSTransition>

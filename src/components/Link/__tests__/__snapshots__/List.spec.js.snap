@@ -34,19 +34,19 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
     class="sc-bwzfXH bQTlgY"
   >
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       Canada (Français)
@@ -63,19 +63,19 @@ exports[`<LinkList /> renders content after container 1`] = `
     class="wrapper--has-after sc-bwzfXH bQTlgY"
   >
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-EHOje kFERna sc-ifAKCX links__list__item fVFuJb"
+      class="sc-ifAKCX links__list__item iOtTfI"
       href="/"
     >
       Canada (Français)

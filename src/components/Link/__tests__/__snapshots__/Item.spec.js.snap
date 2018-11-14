@@ -7,7 +7,7 @@ exports[`<LinkItem /> renders LinkItem as button  1`] = `
     role="none"
   >
     <button
-      class="link sc-ifAKCX edbLbi"
+      class="link sc-bxivhb fBqTYi"
       role="button"
     >
       Button text
@@ -44,7 +44,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
     <button
       aria-expanded="false"
       aria-haspopup="true"
-      class="link link--has-other sc-ifAKCX edbLbi"
+      class="link link--has-other sc-bxivhb fBqTYi"
       role="button"
     >
       Button text
