@@ -134,7 +134,8 @@ export const Clear = styled.button`
 
 export const SearchSuggest = styled.div`
   max-width: 100%;
-  max-height: ${SuggestMaxHeight};
+  height: 100%;
+  max-height: 100%;
   border: 1px solid ${themes.global.gray02};
   border-top: none;
   border-bottom-left-radius: ${constants.borderRadius.small};
@@ -142,10 +143,11 @@ export const SearchSuggest = styled.div`
   padding: ${spacing.moderate};
   background-color: ${themes.global.white.base};
   box-shadow: ${cardBoxShadow};
+  overflow-y: auto;
+  box-sizing: border-box;
 
   @media screen and ${constants.breakpoints.mediumAndUp} {
-    height: 100%;
-    max-height: 100%;
+    max-height: ${SuggestMaxHeight};
   }
 `;
 
