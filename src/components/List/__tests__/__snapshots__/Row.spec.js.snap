@@ -6,17 +6,17 @@ exports[`<ListRow /> List Row unmounts correctly 2`] = `null`;
 
 exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 <div
-  className="kqTZRu"
+  className="ixeVCK"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed dyibfp"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container gIlaTP"
+      className="list__container eFAfGr"
     >
       <button
         aria-expanded={false}
@@ -42,13 +42,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper jATPLZ"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper fyKQdj"
+          className="date__wrapper dIzoqV"
         >
           <div
             className="text text--accent text--heliotrope text--primary date--text dFzxVa"
@@ -64,7 +64,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text fKrMcG kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -78,13 +78,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content row--gutterless dHzoel"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only cqDAGA"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bVMAwk fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -97,7 +97,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle fKrMcG kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -111,10 +111,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed eqhyjg"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bVMAwk fOakIH"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -128,10 +128,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content eqhyjg"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -144,7 +144,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -159,11 +159,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="fCAZFC"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="emzGmc"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -173,7 +173,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="exhXhR"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
@@ -197,25 +197,87 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dotLPE"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
 `;
 
-exports[`<ListRow /> renders List Row with link correctly 1`] = `
+exports[`<ListRow /> renders List Row with label correctly 1`] = `
 <div
-  className="kqTZRu"
+  className="ixeVCK"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed dyibfp"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container kDWJsp"
+      className="gtrsDp"
+    >
+      <div
+        className="eYbbVw"
+      >
+        <div
+          className="row__label row__label--mobile dwkgmN"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+        <div
+          className="row__label row__label--desktop row__label--active kElDAq"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+        <div
+          className="row__label row__label--expanded row__label--desktop row__label--hidden kElDAq"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="list__container bmaMQK"
     >
       <button
         aria-expanded={false}
@@ -241,13 +303,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper jATPLZ"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper fyKQdj"
+          className="date__wrapper dIzoqV"
         >
           <div
             className="text text--dark text--primary date--text cJvdYQ"
@@ -263,7 +325,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text fKrMcG kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -277,13 +339,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content row--gutterless dHzoel"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only cqDAGA"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bVMAwk fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -296,7 +358,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle fKrMcG kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -310,10 +372,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed eqhyjg"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bVMAwk fOakIH"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -327,10 +389,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content eqhyjg"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -343,7 +405,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -358,38 +420,21 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="fCAZFC"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="emzGmc"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
           >
             See Tickets
           </span>
-          <div
-            className="gDOyQG"
-          >
-            <div
-              className="text text--dark text--secondary fKrMcG foyaPB"
-              disabled={false}
-              size={
-                Object {
-                  "large": "uno",
-                  "medium": "uno",
-                  "small": "uno",
-                }
-              }
-            >
-              on Partner Site
-            </div>
-          </div>
         </div>
       </a>
       <div
-        className="exhXhR"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
@@ -413,13 +458,229 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="wkTrd"
+      className="container__overflow container__overflow--collapsed hkONOE"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders List Row with link correctly 1`] = `
+<div
+  className="ixeVCK"
+  onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
+>
+  <div
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
+  >
+    <div
+      className="list__container chItLs"
+    >
+      <button
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse button--collapsed jxGugM"
+        data-index={0}
+        onClick={[Function]}
+        role="button"
+        size={45}
+        type="button"
+      >
+        <svg
+          fill="#1F262D"
+          height={15}
+          style={Object {}}
+          viewBox="0 0 15 7"
+          width={15}
+        >
+          <path
+            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          />
+        </svg>
+      </button>
+      <a
+        aria-label="See Tickets"
+        className="link__wrapper bMtiBb"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="date__wrapper dIzoqV"
+        >
+          <div
+            className="text text--dark text--primary date--text cJvdYQ"
+            disabled={false}
+            size={
+              Object {
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="row__content row--gutterless jliziJ"
+        >
+          <div
+            className="column__mobile-only hwQSiY"
+          >
+            <div
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+            <div
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="column__content iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+            <div
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+        <div
+          className="khBeGP"
+        >
+          <span
+            aria-label="See Tickets"
+            className="TAvlk"
+            role="button"
+            size="regular"
+            width="102px"
+          >
+            See Tickets
+          </span>
+          <div
+            className="dFpiHg"
+          >
+            <div
+              className="text text--dark text--secondary jjEscd foyaPB"
+              disabled={false}
+              size={
+                Object {
+                  "large": "uno",
+                  "medium": "uno",
+                  "small": "uno",
+                }
+              }
+            >
+              on Partner Site
+            </div>
+          </div>
+        </div>
+      </a>
+      <div
+        className="fPfNCK"
+      >
+        <button
+          aria-label="More Info"
+          className="button--more-info icon-button--last bIqKEx"
+          data-index={0}
+          onClick={[Function]}
+          role="button"
+          type="button"
+        >
+          <svg
+            fill="rgba(38, 38, 38, 0.6)"
+            height={22}
+            viewBox="0 0 5 21"
+            width={22}
+          >
+            <path
+              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="gSJHix"
     >
       <div
         className="jMKHiO"
       >
         <button
-          className="link--row-options JCGUN kDPAfh"
+          className="link--row-options jVlmkc kDPAfh"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -436,7 +697,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options gWUZiX eaCOkL"
+          className="link--row-options yTzPP eaCOkL"
           data-index={0}
           href=""
           onClick={null}
@@ -455,7 +716,206 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dotLPE"
+      className="container__overflow container__overflow--collapsed hkONOE"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders List Row with styled button 1`] = `
+<div
+  className="ixeVCK"
+  onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
+>
+  <div
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
+  >
+    <div
+      className="list__container eFAfGr"
+    >
+      <button
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse button--collapsed jxGugM"
+        data-index={0}
+        onClick={[Function]}
+        role="button"
+        size={45}
+        type="button"
+      >
+        <svg
+          fill="#1F262D"
+          height={15}
+          style={Object {}}
+          viewBox="0 0 15 7"
+          width={15}
+        >
+          <path
+            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          />
+        </svg>
+      </button>
+      <a
+        aria-label="More Info"
+        className="link__wrapper bMtiBb"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="date__wrapper dIzoqV"
+        >
+          <div
+            className="text text--dark text--primary date--text cJvdYQ"
+            disabled={false}
+            size={
+              Object {
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="row__content row--gutterless jliziJ"
+        >
+          <div
+            className="column__mobile-only hwQSiY"
+          >
+            <div
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+            <div
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="column__content iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+            <div
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+        <div
+          className="khBeGP"
+        >
+          <span
+            aria-label="More Info"
+            className="gMBrmr"
+            role="button"
+            size="regular"
+            width="102px"
+          >
+            More Info
+          </span>
+        </div>
+      </a>
+      <div
+        className="fPfNCK"
+      >
+        <button
+          aria-label="More Info"
+          className="button--more-info icon-button--last bIqKEx"
+          data-index={0}
+          onClick={[Function]}
+          role="button"
+          type="button"
+        >
+          <svg
+            fill="rgba(38, 38, 38, 0.6)"
+            height={22}
+            viewBox="0 0 5 21"
+            width={22}
+          >
+            <path
+              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
@@ -463,17 +923,17 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 
 exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 <div
-  className="kqTZRu"
+  className="ixeVCK"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--expanded dyibfp"
+    className="row__wrapper row__wrapper--expanded bdAxFg"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container gIlaTP"
+      className="list__container eFAfGr"
     >
       <button
         aria-expanded={true}
@@ -499,13 +959,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper jATPLZ"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper fyKQdj"
+          className="date__wrapper dIzoqV"
         >
           <div
             className="text text--dark text--primary date--text cJvdYQ"
@@ -521,7 +981,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text fKrMcG kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -535,13 +995,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="row__content row--gutterless dHzoel"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only cqDAGA"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bVMAwk fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -554,7 +1014,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle fKrMcG kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -568,10 +1028,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--expanded eqhyjg"
+            className="column__content list-row--title column__content--expanded iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bVMAwk fOakIH"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -585,10 +1045,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content eqhyjg"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -601,7 +1061,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -616,11 +1076,11 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="fCAZFC"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="emzGmc"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -630,7 +1090,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
         </div>
       </a>
       <div
-        className="exhXhR"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
@@ -654,7 +1114,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--expanded dotLPE"
+      className="container__overflow container__overflow--expanded hkONOE"
     />
   </div>
 </div>
@@ -662,17 +1122,17 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 
 exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 <div
-  className="kqTZRu"
+  className="ixeVCK"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed dyibfp"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container kDWJsp"
+      className="list__container chItLs"
     >
       <button
         aria-expanded={false}
@@ -698,13 +1158,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper jATPLZ"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper fyKQdj"
+          className="date__wrapper dIzoqV"
         >
           <div
             className="text text--dark text--primary date--text cJvdYQ"
@@ -720,7 +1180,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text fKrMcG kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -734,13 +1194,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content row--gutterless dHzoel"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only cqDAGA"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bVMAwk fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -753,7 +1213,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle fKrMcG kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -767,10 +1227,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed eqhyjg"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bVMAwk fOakIH"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -784,10 +1244,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content eqhyjg"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -800,7 +1260,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -815,11 +1275,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="fCAZFC"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="emzGmc"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -827,10 +1287,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="gDOyQG"
+            className="dFpiHg"
           >
             <div
-              className="text text--dark text--secondary fKrMcG foyaPB"
+              className="text text--dark text--secondary jjEscd foyaPB"
               disabled={false}
               size={
                 Object {
@@ -846,7 +1306,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="exhXhR"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
@@ -870,13 +1330,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="wkTrd"
+      className="gSJHix"
     >
       <div
         className="jMKHiO"
       >
         <button
-          className="link--row-options JCGUN kDPAfh"
+          className="link--row-options jVlmkc kDPAfh"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -893,7 +1353,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="gWUZiX dVGldd"
+          className="yTzPP dVGldd"
           data-index={0}
           href="/"
           onClick={null}
@@ -912,7 +1372,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dotLPE"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
@@ -920,17 +1380,17 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 exports[`<ListRow /> renders standard List Row correctly 1`] = `
 <div
-  className="kqTZRu"
+  className="ixeVCK"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed dyibfp"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container gIlaTP"
+      className="list__container eFAfGr"
     >
       <button
         aria-expanded={false}
@@ -956,13 +1416,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper jATPLZ"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper fyKQdj"
+          className="date__wrapper dIzoqV"
         >
           <div
             className="text text--dark text--primary date--text cJvdYQ"
@@ -978,7 +1438,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text fKrMcG kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -992,13 +1452,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content row--gutterless dHzoel"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only cqDAGA"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bVMAwk fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1011,7 +1471,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle fKrMcG kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -1025,10 +1485,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed eqhyjg"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bVMAwk fOakIH"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1042,10 +1502,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content eqhyjg"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1058,7 +1518,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bVMAwk fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1073,11 +1533,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="fCAZFC"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="emzGmc"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -1087,7 +1547,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="exhXhR"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
@@ -1111,7 +1571,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dotLPE"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>

@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RowLabel /> renders RowLabel 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="badge fQdJOo"
+        color="#D93A3A"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge fQdJOo"
+        color="#D93A3A"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge fQdJOo"
+        color="#D93A3A"
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="text text--accent text--positive text--primary dALODr hHYQGs"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--accent text--positive text--primary dALODr hHYQGs"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--accent text--positive text--primary dALODr hHYQGs"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders opened RowLabel 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="text text--dark text--primary dALODr iqtECQ"
+        disabled={false}
+        size={
+          Object {
+            "large": "hecto",
+            "medium": "hecto",
+            "small": "hecto",
+          }
+        }
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;

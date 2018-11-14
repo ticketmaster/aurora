@@ -26,6 +26,20 @@ describe("<Backdrop />", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("unmounts Backdrop correctly", () => {
+    const { container, unmount } = render(
+      <Backdrop>
+        <BottomSheet>
+          <div>Europe</div>
+          <div>Africa</div>
+          <div>Asias</div>
+        </BottomSheet>
+      </Backdrop>
+    );
+    unmount();
+    expect(container.firstChild).toBe(null);
+  });
+
   it("calls the onKeyPress function on pressing the ESC key", () => {
     const { container } = render(
       <Backdrop>
@@ -40,6 +54,25 @@ describe("<Backdrop />", () => {
     fireEvent.keyDown(global.document, {
       key: "Escape",
       keyCode: 27
+    });
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("do not calls the onKeyPress function on pressing any other key than ESC", () => {
+    const { container } = render(
+      <Backdrop>
+        <BottomSheet>
+          <div>Europe</div>
+          <div>Africa</div>
+          <div>Asias</div>
+        </BottomSheet>
+      </Backdrop>
+    );
+
+    fireEvent.keyDown(global.document, {
+      key: " ",
+      keyCode: 32
     });
 
     expect(container.firstChild).toMatchSnapshot();

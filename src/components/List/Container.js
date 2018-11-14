@@ -25,6 +25,7 @@ class ListContainer extends Component {
     expandMultiple: this.props.expandMultiple,
     mobilePortalContent: null,
     desktopPortalContent: null,
+    portalContentData: null,
     onCloseRequest: noop, // eslint-disable-line
     renderIntoPortal: noop, // eslint-disable-line
     resetOpenIndex: noop // eslint-disable-line
@@ -88,16 +89,22 @@ class ListContainer extends Component {
 
   resetOpenIndex = () => this.setState({ openIndex: ITEMS_COLLAPSED });
 
-  renderIntoPortal = ({ children, contentType }) =>
+  renderIntoPortal = ({ children, contentType, data: portalContentData }) =>
     contentType === "mobile"
-      ? this.setState({ mobilePortalContent: children })
-      : this.setState({ desktopPortalContent: children });
+      ? this.setState({ mobilePortalContent: children, portalContentData })
+      : this.setState({ desktopPortalContent: children, portalContentData });
 
   render() {
     const { children, ...rest } = this.props;
-    const { mobilePortalContent, desktopPortalContent, openIndex } = this.state;
+    const {
+      mobilePortalContent,
+      desktopPortalContent,
+      openIndex,
+      portalContentData
+    } = this.state;
     const isBottomSheetOpen =
       openIndex !== ITEMS_COLLAPSED && !!mobilePortalContent;
+    const { label, labelVariant } = portalContentData || {};
 
     return (
       <Container onClick={this.onExpandOrCollapse} {...rest}>
@@ -114,7 +121,11 @@ class ListContainer extends Component {
                 mountOnEnter
               >
                 <Backdrop>
-                  <BottomSheet index={openIndex}>
+                  <BottomSheet
+                    index={openIndex}
+                    label={label}
+                    labelVariant={labelVariant}
+                  >
                     {mobilePortalContent}
                   </BottomSheet>
                 </Backdrop>
