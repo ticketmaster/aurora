@@ -1,13 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import GRADIENT_VARIANTS from "./constants";
 
-const Angle = ({ className }) => (
+const styleVariants = {
+  standard: {
+    width: "auto",
+    preserveAspectRatio: "xMaxYMid meet"
+  },
+  special: {
+    width: "33%",
+    preserveAspectRatio: "none"
+  }
+};
+
+const Angle = ({ className, variant }) => (
   <svg
     viewBox="0 0 476 218"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    preserveAspectRatio="xMaxYMid meet"
+    preserveAspectRatio={styleVariants[variant].preserveAspectRatio}
     className={className}
   >
     <defs>
@@ -49,11 +61,13 @@ const Angle = ({ className }) => (
 );
 
 Angle.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(Object.values(GRADIENT_VARIANTS))
 };
 
 Angle.defaultProps = {
-  className: ""
+  className: "",
+  variant: "standard"
 };
 
 export default styled(Angle)`
@@ -61,5 +75,5 @@ export default styled(Angle)`
   right: 0;
   bottom: 0;
   height: 100%;
-  width: auto;
+  width: ${({ variant }) => styleVariants[variant].width};
 `;

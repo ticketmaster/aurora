@@ -6,17 +6,25 @@ import colors from "../../theme/colors";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import SpotLight from "./SpotLight";
 import Angle from "./Angle";
+import GRADIENT_VARIANTS from "./constants";
 
-const SPOTLIGHT_STOPS = [
-  "rgb(0, 45, 161)",
-  `${colors.azure.base} 55%`,
-  "rgb(0, 45, 161)"
-];
-
-const SPOTLIGHT_DEG = {
-  small: "256deg",
-  medium: "260deg",
-  large: "262deg"
+const spotlightVariants = {
+  standard: {
+    stops: ["rgb(0, 45, 161)", `${colors.azure.base} 55%`, "rgb(0, 45, 161)"],
+    deg: {
+      small: "256deg",
+      medium: "260deg",
+      large: "262deg"
+    }
+  },
+  special: {
+    stops: ["rgb(0, 45, 161)", `${colors.azure.base} 53%`, "rgb(0, 45, 161)"],
+    deg: {
+      small: "246deg",
+      medium: "264deg",
+      large: "266deg"
+    }
+  }
 };
 
 const GradientStyles = styled.span`
@@ -98,10 +106,10 @@ const SpotLightWrapper = styled.div`
   overflow: hidden;
 `;
 
-const Gradient = ({ children, className, stops, deg, ...props }) => {
+const Gradient = ({ children, className, stops, deg, variant, ...props }) => {
   const hasSpotLight = className.includes("gradient--spotlight");
-  const gradientStops = hasSpotLight ? SPOTLIGHT_STOPS : stops;
-  const gradientDeg = hasSpotLight ? SPOTLIGHT_DEG : deg;
+  const gradientStops = hasSpotLight ? spotlightVariants[variant].stops : stops;
+  const gradientDeg = hasSpotLight ? spotlightVariants[variant].deg : deg;
   return (
     <GradientStyles
       {...props}
@@ -111,8 +119,8 @@ const Gradient = ({ children, className, stops, deg, ...props }) => {
     >
       {hasSpotLight && (
         <SpotLightWrapper>
-          <SpotLight />
-          <Angle />
+          <SpotLight variant={variant} />
+          <Angle variant={variant} />
         </SpotLightWrapper>
       )}
       {children}
@@ -128,7 +136,8 @@ Gradient.propTypes = {
     medium: PropTypes.string.isRequired,
     large: PropTypes.string.isRequired
   }),
-  stops: PropTypes.arrayOf(PropTypes.string)
+  stops: PropTypes.arrayOf(PropTypes.string),
+  variant: PropTypes.oneOf(Object.values(GRADIENT_VARIANTS))
 };
 
 Gradient.defaultProps = {
@@ -139,7 +148,8 @@ Gradient.defaultProps = {
     medium: "80deg",
     large: "81deg"
   },
-  stops: [colors.defaultGradient.from, colors.defaultGradient.to]
+  stops: [colors.defaultGradient.from, colors.defaultGradient.to],
+  variant: "standard"
 };
 
 export default Gradient;

@@ -1,13 +1,25 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import GRADIENT_VARIANTS from "./constants";
 
-const SpotLight = ({ className }) => (
+const styleVariants = {
+  standard: {
+    width: "auto",
+    preserveAspectRatio: "xMinYMid meet"
+  },
+  special: {
+    width: "100%",
+    preserveAspectRatio: "none"
+  }
+};
+
+const SpotLight = ({ className, variant }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 1440 218"
-    preserveAspectRatio="xMinYMid meet"
+    preserveAspectRatio={styleVariants[variant].preserveAspectRatio}
     className={className}
   >
     <defs>
@@ -38,11 +50,13 @@ const SpotLight = ({ className }) => (
 );
 
 SpotLight.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(Object.values(GRADIENT_VARIANTS))
 };
 
 SpotLight.defaultProps = {
-  className: ""
+  className: "",
+  variant: "standard"
 };
 
 export default styled(SpotLight)`
@@ -51,6 +65,6 @@ export default styled(SpotLight)`
   right: 0;
   bottom: 0;
   left: 0;
-  width: auto;
+  width: ${({ variant }) => styleVariants[variant].width};
   height: 100%;
 `;
