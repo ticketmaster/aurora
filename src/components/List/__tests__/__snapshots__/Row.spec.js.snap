@@ -78,7 +78,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content dHzoel"
+          className="row__content row--gutterless dHzoel"
         >
           <div
             className="column__mobile-only cqDAGA"
@@ -277,7 +277,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content dHzoel"
+          className="row__content row--gutterless dHzoel"
         >
           <div
             className="column__mobile-only cqDAGA"
@@ -535,7 +535,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="row__content dHzoel"
+          className="row__content row--gutterless dHzoel"
         >
           <div
             className="column__mobile-only cqDAGA"
@@ -734,7 +734,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content dHzoel"
+          className="row__content row--gutterless dHzoel"
         >
           <div
             className="column__mobile-only cqDAGA"
@@ -992,7 +992,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content dHzoel"
+          className="row__content row--gutterless dHzoel"
         >
           <div
             className="column__mobile-only cqDAGA"
