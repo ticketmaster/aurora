@@ -17,7 +17,7 @@ const TEST_1 = [
       clientHeight: 200
     }
   },
-  140
+  "140px"
 ];
 
 const TEST_2 = [
@@ -29,7 +29,7 @@ const TEST_2 = [
       clientHeight: 200
     }
   },
-  180
+  "180px"
 ];
 
 const TEST_3 = [
@@ -41,7 +41,7 @@ const TEST_3 = [
       clientHeight: 200
     }
   },
-  160
+  "160px"
 ];
 
 const TEST_4 = [
@@ -50,7 +50,7 @@ const TEST_4 = [
       clientHeight: 200
     }
   },
-  200
+  "200px"
 ];
 
 describe("getContentHeight", () => {
