@@ -11,7 +11,8 @@ import {
   DropDownGroup,
   DropDownOption,
   Toggle,
-  ButtonGroup
+  ButtonGroup,
+  QtySelector
 } from "../../../src/components/Input";
 import CheckboxWrapperExample from "./CheckBoxExample";
 import ToggleWrapperExample from "./ToggleWrapperExample";
@@ -42,7 +43,8 @@ export default {
     ToggleWrapperExample,
     ThemeProvider,
     CheckboxWrapperExample,
-    ButtonGroup
+    ButtonGroup,
+    QtySelector
   },
   content: pageLoader(() => import("./index.md"))
 };

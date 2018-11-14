@@ -9,3 +9,4 @@ export { default as DropDownOption } from "./DropDown/DropDownOption";
 export { default as DropDownGroup } from "./DropDown/DropDownGroup";
 export { default as Toggle } from "./Toggle/Toggle";
 export { default as ButtonGroup } from "./ButtonGroup/ButtonGroup";
+export { default as QtySelector } from "./QtySelector/QtySelector";
