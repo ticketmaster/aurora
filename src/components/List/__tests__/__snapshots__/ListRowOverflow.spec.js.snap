@@ -315,3 +315,11 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`<ListRowOverflow /> renders with additional props when passed 1`] = `
+<div
+  className="row--gutterless gGzOKi"
+>
+  Content
+</div>
+`;
