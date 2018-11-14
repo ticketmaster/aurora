@@ -16,5 +16,5 @@ If a package is missing from this table, please reference the `package.json` for
 
 | Package name      | Peer-dependency range | Aurora version     |
 | ----------------- | --------------------- | ------------------ |
-| styled-components | >=v2                  | earliest - v3.43.1 |
-| styled-components | >=v4                  | v3.43.2 - latest   |
+| styled-components | >=v2                  | earliest - v3.43.3 |
+| styled-components | >=v4                  | v3.44.0 - latest   |
