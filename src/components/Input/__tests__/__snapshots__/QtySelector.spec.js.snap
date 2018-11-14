@@ -1,0 +1,8101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QtySelector decrements correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector decrements from non-zero value correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector decrements twice correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector handles case when input is deleted 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector handles input value correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -1176px;"
+      type="text"
+      value="42"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector handles input value longer than 2 chars correctly when using buttons 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -2772px;"
+      type="text"
+      value="99"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector increments correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector increments twice correctly 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -28px;"
+      type="text"
+      value="1"
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector renders default QtySelector 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector renders disabled QtySelector 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="InputFieldContainer__disabled sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      disabled=""
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector sets focus state to false when input looses focus 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+    <input
+      class="sc-bxivhb jFmpSD"
+      style="top: -0px;"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector sets focus state to true after input is focused 1`] = `
+<div
+  class="sc-bdVaJa jpqvBK"
+>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-htpNat jpOEBI"
+  >
+    <input
+      class="sc-bxivhb jFmpSD"
+      type="text"
+      value=""
+    />
+  </div>
+  <button
+    class="sc-bwzfXH iVGNbk"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
