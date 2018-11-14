@@ -674,7 +674,8 @@ exports[`SearchInput small should match snapshot 1`] = `
 exports[`SearchSuggest should match snapshot 1`] = `
 .c0 {
   max-width: 100%;
-  max-height: 700px;
+  height: 100%;
+  max-height: 100%;
   border: 1px solid #999999;
   border-top: none;
   border-bottom-left-radius: 2px;
@@ -682,12 +683,13 @@ exports[`SearchSuggest should match snapshot 1`] = `
   padding: 16px;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width:768px) {
   .c0 {
-    height: 100%;
-    max-height: 100%;
+    max-height: 700px;
   }
 }
 
