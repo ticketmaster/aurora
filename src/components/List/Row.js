@@ -27,7 +27,7 @@ const ListRow = ({
         isOpen={determineIfOpen(expandMultiple, openIndex, index)}
         index={index}
         onOverflowClick={() => {
-          renderIntoPortal({ children, contentType: "mobile" });
+          renderIntoPortal({ children, contentType: "mobile", data: rowItem });
           onOverflowClick();
         }}
         onExpandItem={onExpandItem}

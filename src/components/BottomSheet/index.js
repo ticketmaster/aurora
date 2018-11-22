@@ -1,15 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import classnames from "classnames";
 
 import colors from "../../theme/colors";
 
+import BottomSheetLabel from "./BottomSheetLabel";
 import { ItemContainerConsumer } from "../List/Context";
 import { Row } from "../Grid";
 import { BackdropConsumer } from "../List/BackdropContext";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
+import { mediumAndUp } from "../../theme/mediaQueries";
 import { constants, spacing } from "../../theme";
+
+const noop = () => {};
+
+const CANCEL_BUTTON_SIZE = 30;
+const CANCEL_BUTTON_ICON_SIZE = Math.floor(CANCEL_BUTTON_SIZE / 2);
 
 const BottomSheetContent = styled.div`
   background-color: white;
@@ -54,12 +62,40 @@ const BottomSheetContent = styled.div`
   }
 `;
 
-const CancelButtonRow = styled(Row)`
-  justify-content: flex-end;
-  align-items: flex-end;
+const HeaderRow = styled(Row)`
+  position: relative;
+  padding: ${spacing.moderate} ${spacing.normal} 0;
+  align-items: center;
+
+  &.row__button--cancel {
+    padding-right: calc(${spacing.normal} + ${CANCEL_BUTTON_SIZE}px);
+    min-height: calc(${spacing.moderate} + ${CANCEL_BUTTON_SIZE}px);
+  }
+
+  ${mediumAndUp`
+    padding-left: ${spacing.comfy};
+
+    &.row__button--cancel {
+      padding-right: calc(${spacing.comfy} + ${CANCEL_BUTTON_SIZE}px);
+    }
+  `};
 `;
 
-const BottomSheet = ({ children, withCancelBtn, ...props }) => (
+const CancelButton = styled(IconButton)`
+  position: absolute;
+  top: ${spacing.moderate};
+  right: ${spacing.moderate};
+  padding: 0;
+`;
+
+const BottomSheet = ({
+  label,
+  labelVariant,
+  withCancelBtn,
+  withHeader,
+  children,
+  ...props
+}) => (
   <BackdropConsumer>
     {backdropValue => (
       <BottomSheetContent
@@ -70,27 +106,35 @@ const BottomSheet = ({ children, withCancelBtn, ...props }) => (
         aria-modal
         {...props}
       >
-        {withCancelBtn && (
-          // this class name is for automation purposes please do not remove or modify the name
-          <CancelButtonRow className="row__button--cancel">
-            <ItemContainerConsumer>
-              {value => (
-                <IconButton
-                  className="button--cancel"
-                  size={45}
-                  aria-label="Close BottomSheet"
-                  role="button"
-                  onClick={value ? value.onCloseRequest : () => {}}
-                >
-                  <CrossIcon
-                    size={12}
-                    style={{ pointerEvent: "none" }}
-                    color={colors.onyx.base}
-                  />
-                </IconButton>
-              )}
-            </ItemContainerConsumer>
-          </CancelButtonRow>
+        {withHeader && (
+          <HeaderRow
+            className={classnames(
+              "row__header",
+              { "row__button--cancel": withCancelBtn } // this class name is for automation purposes please do not remove or modify the name
+            )}
+          >
+            <BottomSheetLabel variant={labelVariant}>{label}</BottomSheetLabel>
+
+            {withCancelBtn && (
+              <ItemContainerConsumer>
+                {value => (
+                  <CancelButton
+                    className="button--cancel"
+                    size={CANCEL_BUTTON_SIZE}
+                    aria-label="Close BottomSheet"
+                    role="button"
+                    onClick={value ? value.onCloseRequest : noop}
+                  >
+                    <CrossIcon
+                      size={CANCEL_BUTTON_ICON_SIZE}
+                      style={{ pointerEvent: "none" }}
+                      color={colors.onyx.base}
+                    />
+                  </CancelButton>
+                )}
+              </ItemContainerConsumer>
+            )}
+          </HeaderRow>
         )}
         {children}
       </BottomSheetContent>
@@ -99,12 +143,18 @@ const BottomSheet = ({ children, withCancelBtn, ...props }) => (
 );
 
 BottomSheet.defaultProps = {
+  label: BottomSheetLabel.defaultProps.children,
+  labelVariant: BottomSheetLabel.defaultProps.variant,
   withCancelBtn: true,
+  withHeader: true,
   children: null
 };
 
 BottomSheet.propTypes = {
+  label: BottomSheetLabel.propTypes.children,
+  labelVariant: BottomSheetLabel.propTypes.variant,
   withCancelBtn: PropTypes.bool,
+  withHeader: PropTypes.bool,
   children: PropTypes.node
 };
 

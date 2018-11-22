@@ -76,9 +76,18 @@ rows:
   - Prop: buttonText
     Type: String
     Notes: Required
+  - Prop: buttonVariant
+    Type: String
+    Notes: Optional. Determines button style variant. Possible variants are `standard`, `special`, `outline`, `transparent`. Default is `standard`
   - Prop: variant
     Type: String
     Notes: Required. Value is one of ["standard", "withLink"]
+  - Prop: label
+    Type: String
+    Notes: Optional. Label text. Default is ""
+  - Prop: labelVariant
+    Type: Number
+    Notes: Optional. Determines label style variant. Possible variants are `default`, `positive`, `alert`. Default is `default`
   - Prop: linkTitle
     Type: String
     Notes: Optional. Default is ""
@@ -105,7 +114,9 @@ responsive: true
         variant: "withLink",
         linkTitle: "Ticket Options Available",
         linkUrl: "",
-        linkSubTitle: "on Partner Site"
+        linkSubTitle: "on Partner Site",
+        label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
+        labelVariant: "positive"
     }}
     index={0}
     onOverflowClick={() => alert('Overflow Clicked')}
@@ -239,6 +250,76 @@ responsive: true
          index={0}
          onOverflowClick={()=>{}}
        />
+ </ListContainer>
+```
+
+### List Row with Label
+
+```react
+responsive: true
+---
+<ListContainer>
+ <ListRow
+    rowItem={{
+      ...listItems[0],
+      label: "custom label",
+    }}
+    index={0}
+    onOverflowClick={()=>{}}
+  >
+    <ListRowOverflow>
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+        {sections[0].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+        {sections[1].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+    </ListRowOverflow>
+  </ListRow>
+  <ListRow
+    rowItem={{
+      ...listItems[0],
+      label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
+      labelVariant: "positive"
+    }}
+    index={1}
+    onOverflowClick={()=>{}}
+  >
+    <ListRowOverflow>
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+        {sections[0].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+        {sections[1].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+    </ListRowOverflow>
+  </ListRow>
+  <ListRow
+    rowItem={{
+      ...listItems[0],
+      buttonText: "More Info",
+      buttonVariant: "outline",
+      label: "Sold out",
+      labelVariant: "alert"
+    }}
+    index={2}
+    onOverflowClick={()=>{}}
+  >
+    <ListRowOverflow>
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+        {sections[0].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+       <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+        {sections[1].items.map(item =>
+        <SectionItem item={item} key={item.title}/>)}
+      </Section>
+    </ListRowOverflow>
+  </ListRow>
  </ListContainer>
 ```
 

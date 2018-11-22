@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
+<div
+  className="text text--dark text--primary mrGpr iqtECQ"
+  disabled={false}
+  size={
+    Object {
+      "large": "hecto",
+      "medium": "hecto",
+      "small": "hecto",
+    }
+  }
+>
+  Custom label
+</div>
+`;
+
+exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`alert\` 1`] = `
+<div
+  className="badge juvjVG"
+  color="#D93A3A"
+>
+  Alert label
+</div>
+`;
+
+exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`positive\` 1`] = `
+<div
+  className="badge jIyRAX"
+  color="#1BAB1E"
+>
+  Positive label
+</div>
+`;
