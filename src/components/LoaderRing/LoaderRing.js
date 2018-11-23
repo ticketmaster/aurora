@@ -1,6 +1,26 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
+
 import { themes } from "../../theme";
+import { LOADER_RING_SIZES } from "./constants";
+
+const SIZES = {
+  [LOADER_RING_SIZES.small]: {
+    borderWidth: "2px",
+    marginValue: "4px",
+    outerRingLength: "48px",
+    middleRingLength: "36px",
+    innerRingLength: "24px"
+  },
+  [LOADER_RING_SIZES.regular]: {
+    borderWidth: "3px",
+    marginValue: "7px",
+    outerRingLength: "80px",
+    middleRingLength: "60px",
+    innerRingLength: "40px"
+  }
+};
 
 const Rotate = keyframes`
   from {
@@ -12,6 +32,8 @@ const Rotate = keyframes`
 `;
 
 const LoadingContainer = styled.div`
+  display: ${({ display }) => display};
+
   > div {
     box-sizing: border-box;
     display: block;
@@ -32,10 +54,11 @@ const LoadingContainer = styled.div`
 
 const OuterRing = styled(LoadingContainer)`
   > div {
-    width: 80px;
-    height: 80px;
+    width: ${({ size }) => SIZES[size].outerRingLength};
+    height: ${({ size }) => SIZES[size].outerRingLength};
     margin: 0px;
-    border: 3px solid ${themes.global.accent01.dark};
+    border: ${({ size }) => SIZES[size].borderWidth} solid
+      ${themes.global.accent01.dark};
     border-color: ${themes.global.accent01.dark} transparent transparent
       transparent;
   }
@@ -43,11 +66,12 @@ const OuterRing = styled(LoadingContainer)`
 
 const MiddleRing = styled(LoadingContainer)`
   > div {
-    width: 60px;
-    height: 60px;
-    margin-top: 7px;
-    margin-left: 7px;
-    border: 3px solid ${themes.global.accent03.light};
+    width: ${({ size }) => SIZES[size].middleRingLength};
+    height: ${({ size }) => SIZES[size].middleRingLength};
+    margin-top: ${({ size }) => SIZES[size].marginValue};
+    margin-left: ${({ size }) => SIZES[size].marginValue};
+    border: ${({ size }) => SIZES[size].borderWidth} solid
+      ${themes.global.accent03.light};
     border-color: ${themes.global.accent03.light} transparent transparent
       transparent;
   }
@@ -55,26 +79,27 @@ const MiddleRing = styled(LoadingContainer)`
 
 const InnerRing = styled(LoadingContainer)`
   > div {
-    width: 40px;
-    height: 40px;
-    margin-top: 7px;
-    margin-left: 7px;
-    border: 3px solid ${themes.global.brand};
+    width: ${({ size }) => SIZES[size].innerRingLength};
+    height: ${({ size }) => SIZES[size].innerRingLength};
+    margin-top: ${({ size }) => SIZES[size].marginValue};
+    margin-left: ${({ size }) => SIZES[size].marginValue};
+    border: ${({ size }) => SIZES[size].borderWidth} solid
+      ${themes.global.brand};
     border-color: ${themes.global.brand} transparent transparent transparent;
   }
 `;
 
-const LoaderRing = () => (
+const LoaderRing = props => (
   <React.Fragment>
-    <OuterRing>
+    <OuterRing {...props}>
       <div />
       <div />
       <div />
-      <MiddleRing>
+      <MiddleRing {...props}>
         <div />
         <div />
         <div />
-        <InnerRing>
+        <InnerRing {...props}>
           <div />
           <div />
           <div />
@@ -85,5 +110,15 @@ const LoaderRing = () => (
 );
 
 LoaderRing.displayName = "LoaderRing";
+
+LoaderRing.propTypes = {
+  size: PropTypes.oneOf(LOADER_RING_SIZES),
+  display: PropTypes.oneOf(["block", "inline-block"])
+};
+
+LoaderRing.defaultProps = {
+  size: LOADER_RING_SIZES.regular,
+  display: "block"
+};
 
 export default LoaderRing;
