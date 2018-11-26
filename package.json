@@ -86,7 +86,7 @@
     "babel-jest": "^23.4.2",
     "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.20",
-    "catalog": "^3.6.0",
+    "catalog": "https://github.com/nyonchev/catalog",
     "classnames": "^2.2.5",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^16.1.0",
