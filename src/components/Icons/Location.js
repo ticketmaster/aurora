@@ -1,13 +1,14 @@
 import React from "react";
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
+
 import { themes } from "../../theme";
 
-const LocationIcon = ({ children, color, ...props }) => (
+const LocationIcon = ({ children, color, size, ...props }) => (
   <svg
     {...props}
+    width={size}
+    height={size}
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
     viewBox="0 0 24 24"
   >
     {children}
@@ -27,12 +28,14 @@ LocationIcon.displayName = "LocationIcon";
 
 LocationIcon.propTypes = {
   children: PropTypes.node,
-  color: PropTypes.string
+  color: PropTypes.string,
+  size: PropTypes.number
 };
 
 LocationIcon.defaultProps = {
   children: null,
-  color: themes.global.gray01
+  color: themes.global.gray01,
+  size: 24
 };
 
 export default LocationIcon;
