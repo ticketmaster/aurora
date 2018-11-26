@@ -36,7 +36,8 @@ export default {
       ],
       plugins: [
         "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-proposal-class-properties"
+        "@babel/plugin-proposal-class-properties",
+        "babel-plugin-transform-react-remove-prop-types"
       ],
       babelrc: false
     }),
