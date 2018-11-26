@@ -248,7 +248,7 @@ class DropDownGroup extends React.Component {
                   return (
                     <StyledGroupWrapper
                       {...props}
-                      className={classNames({
+                      className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled
                       })}
