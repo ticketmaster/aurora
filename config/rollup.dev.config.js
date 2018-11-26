@@ -32,11 +32,13 @@ export default {
   plugins: [
     resolve(),
     babel({
-      presets: [["env", { modules: false }], "react"],
+      presets: [
+        ["@babel/preset-env", { modules: false }],
+        "@babel/preset-react"
+      ],
       plugins: [
-        "transform-object-rest-spread",
-        "transform-class-properties",
-        "external-helpers",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
         [
           "babel-plugin-styled-components",
           {
