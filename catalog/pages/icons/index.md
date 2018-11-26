@@ -452,22 +452,23 @@ rows:
     </div>
     <div style={iconLabelStyle}>Search icon large</div>
   </Column>
-   <Column medium={3}>
+  <Column medium={3}>
     <div style={iconStyle}>
-      <BookmarkIcon>
-        <title>Bookmark Icon</title>
-      </BookmarkIcon>
+      <NavigationArrowIcon>
+        <title>Navigation arrow icon small</title>
+      </NavigationArrowIcon>
     </div>
-    <div style={iconLabelStyle}>Bookmark icon</div>
+    <div style={iconLabelStyle}>Navigation arrow icon small</div>
   </Column>
-   <Column medium={3}>
+  <Column medium={3}>
     <div style={iconStyle}>
-      <ClearIcon>
-        <title>Clear Icon</title>
-      </ClearIcon>
+      <NavigationArrowIcon size="large">
+        <title>Navigation arrow icon large</title>
+      </NavigationArrowIcon>
     </div>
-    <div style={iconLabelStyle}>Clear icon</div>
+    <div style={iconLabelStyle}>Navigation arrow icon large</div>
   </Column>
+
  </Row>
  <Row>
   <Column medium={3}>
@@ -527,6 +528,24 @@ rows:
       </UserIcon>
     </div>
     <div style={iconLabelStyle}>User icon</div>
+  </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <BookmarkIcon>
+        <title>Bookmark Icon</title>
+      </BookmarkIcon>
+    </div>
+    <div style={iconLabelStyle}>Bookmark icon</div>
+  </Column>
+ </Row>
+ <Row>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <ClearIcon>
+        <title>Clear Icon</title>
+      </ClearIcon>
+    </div>
+    <div style={iconLabelStyle}>Clear icon</div>
   </Column>
  </Row>
 </Container>

@@ -26,6 +26,7 @@ import {
   VipIcon,
   YoutubeIcon,
   WarningIcon,
+  NavigationArrowIcon,
   // approved icons
   InfoDotIcon,
   ErrorIcon,
@@ -95,6 +96,7 @@ export default {
     VipIcon,
     YoutubeIcon,
     WarningIcon,
+    NavigationArrowIcon,
 
     InfoDotIcon,
     ErrorIcon,

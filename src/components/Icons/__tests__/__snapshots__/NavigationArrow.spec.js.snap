@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationArrowIcon renders correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g>
+    <circle
+      cx="12"
+      cy="12"
+      fill="none"
+      r="11.5"
+      stroke="#000"
+      strokeOpacity=".5"
+    />
+    <path
+      d="M 7.612 12.735 L 17.878 5.935 L 11.922 16.902 L 11.755 12.68 L 7.612 12.735 Z"
+      fill="none"
+      stroke="#000"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeOpacity=".5"
+    />
+  </g>
+</svg>
+`;
