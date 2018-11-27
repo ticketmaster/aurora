@@ -1,6 +1,5 @@
 import resolve from "rollup-plugin-node-resolve";
 import babel from "rollup-plugin-babel";
-import stripPropTypes from "rollup-plugin-strip-prop-types";
 import uglify from "rollup-plugin-uglify";
 
 export default {
@@ -31,15 +30,17 @@ export default {
   plugins: [
     resolve(),
     babel({
-      presets: [["env", { modules: false }], "react"],
+      presets: [
+        ["@babel/preset-env", { modules: false }],
+        "@babel/preset-react"
+      ],
       plugins: [
-        "transform-object-rest-spread",
-        "transform-class-properties",
-        "external-helpers"
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
+        "babel-plugin-transform-react-remove-prop-types"
       ],
       babelrc: false
     }),
-    stripPropTypes({ sourceMap: false }),
     uglify()
   ],
   external: [
