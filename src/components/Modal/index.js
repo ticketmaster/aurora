@@ -15,6 +15,7 @@ import {
   MODAL_SIZE_SMALL,
   MODAL_SIZE_MEDIUM,
   MODAL_SIZE_LARGE,
+  MODAL_SIZE_XLARGE,
   getModalSize
 } from "./size";
 import { withDeviceSize } from "../DeviceSize/Context";
@@ -44,7 +45,8 @@ class Modal extends React.Component {
     size: PropTypes.oneOf([
       MODAL_SIZE_SMALL,
       MODAL_SIZE_MEDIUM,
-      MODAL_SIZE_LARGE
+      MODAL_SIZE_LARGE,
+      MODAL_SIZE_XLARGE
     ]),
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
@@ -193,7 +195,8 @@ class Modal extends React.Component {
       containerProps,
       actionBarProps,
       contentProps,
-      bottomActionBarProps
+      bottomActionBarProps,
+      displayTop
     } = this.props;
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
@@ -209,6 +212,7 @@ class Modal extends React.Component {
             small={getModalSize({ deviceSize, preferredSize: size })}
             ref={this.containerRef}
             size={size}
+            displayTop={displayTop}
             {...containerProps}
           >
             {actionBar && (

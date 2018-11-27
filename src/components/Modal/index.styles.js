@@ -21,11 +21,13 @@ const widthM = {
 };
 
 export const ModalContainer = styled.div`
-  top: 50%;
+  top: ${({ displayTop }) => (displayTop ? 0 : "50%")};
   padding: 0;
-  margin: 0 16px;
+  margin-top: ${({ displayTop }) => (displayTop ? "88px" : "0")};
+  margin-left: 16px;
+  margin-right: 16px;
   position: relative;
-  transform: translateY(-50%);
+  transform: ${({ displayTop }) => (displayTop ? "none" : "translateY(-50%)")};
   z-index: ${zIndex.layout.overlay || "#fff"};
   background-color: ${colors.white.base};
   box-shadow: ${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y};
@@ -37,7 +39,8 @@ export const ModalContainer = styled.div`
 
   ${smallAndUp`
     max-width: 400px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   `};
 
   ${mediumAndUp`
@@ -72,6 +75,8 @@ export const ActionBar = styled.div`
   position: relative;
   font-size: ${typography.size.tera};
   line-height: ${typography.lineHeight.header};
+  font-weight: ${typography.weight.semiBold};
+  text-align: left;
   box-shadow: ${({ shadow }) =>
     shadow ? `${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y}` : "none"};
 

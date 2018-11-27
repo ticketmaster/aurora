@@ -6,7 +6,7 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -27,7 +27,7 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -50,10 +50,10 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
     >
       <div
-        class="sc-bwzfXH kLhZww"
+        class="sc-bwzfXH bLkgfD"
       >
         <div>
           Action bar controls
@@ -84,7 +84,7 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
       style="width: 210px;"
     >
       <div
@@ -105,7 +105,7 @@ exports[`<Modal /> should recalculate shadows and content height on props change
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -126,7 +126,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
     class="sc-ifAKCX container--overlay bdXTqX"
   >
     <div
-      class="sc-bdVaJa cPfhAa"
+      class="sc-bdVaJa jyiXkA"
     >
       <div
         class="sc-htpNat fIjnbp"
