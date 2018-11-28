@@ -11,6 +11,8 @@ export default class Backdrop extends Component {
     childRef: PropTypes.object.isRequired,
     children: PropTypes.node.isRequired,
     overlay: PropTypes.bool,
+    isVisible: PropTypes.bool,
+    animated: PropTypes.bool,
     /* eslint-disable-next-line react/forbid-prop-types */
     overlayProps: PropTypes.object,
     onRequestClose: PropTypes.func
@@ -19,7 +21,9 @@ export default class Backdrop extends Component {
   static defaultProps = {
     overlay: true,
     overlayProps: {},
-    onRequestClose: null
+    onRequestClose: null,
+    isVisible: true,
+    animated: false
   };
 
   componentDidMount() {
@@ -53,10 +57,14 @@ export default class Backdrop extends Component {
   };
 
   render() {
-    const { children, overlay, overlayProps } = this.props;
+    const { children, overlay, overlayProps, isVisible, animated } = this.props;
 
     if (overlay) {
-      return <Overlay {...overlayProps}>{children}</Overlay>;
+      return (
+        <Overlay isVisible={isVisible} animated={animated} {...overlayProps}>
+          {children}
+        </Overlay>
+      );
     }
 
     return children;

@@ -3,10 +3,10 @@
 exports[`<Modal /> closeModal should close the modal when the request was approved 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -24,10 +24,10 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 exports[`<Modal /> closeModal should close the modal when there is no onRequestClose callback 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -42,15 +42,33 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 </div>
 `;
 
-exports[`<Modal /> render should not render the modal if it is closed 1`] = `<div />`;
+exports[`<Modal /> render should not render the modal if it is closed 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX container--overlay cMwCBE"
+  >
+    <div
+      class="sc-bdVaJa fsJKRK"
+    >
+      <div
+        class="sc-htpNat fIjnbp"
+      >
+        <div>
+          Modal contents
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk"
     >
       <div
         class="sc-bwzfXH bLkgfD"
@@ -81,10 +99,10 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 exports[`<Modal /> render should render without errors and pass extra props 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk"
       style="width: 210px;"
     >
       <div
@@ -102,10 +120,10 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 exports[`<Modal /> should recalculate shadows and content height on props change 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn open-enter open-enter-active"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk open-enter open-enter-active"
     >
       <div
         class="sc-htpNat fIjnbp"
@@ -123,10 +141,10 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 exports[`<Modal /> should set bottom action bar shadow when the content was scrolled 1`] = `
 <div>
   <div
-    class="sc-ifAKCX container--overlay bdXTqX"
+    class="sc-ifAKCX container--overlay hTfgpn"
   >
     <div
-      class="sc-bdVaJa jyiXkA"
+      class="sc-bdVaJa PjKGk"
     >
       <div
         class="sc-htpNat fIjnbp"

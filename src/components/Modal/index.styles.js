@@ -20,7 +20,48 @@ const widthM = {
   xLarge: "640px"
 };
 
+const ContainerAnimation = css`
+  transition: opacity 0.1s ${constants.easing.easeInQuad},
+    transform 0.1s ${constants.easing.easeInQuad};
+
+  &.open-enter {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  &.open-enter-active {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
+      transform 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-enter-done {
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
+      transform 0.3s ${constants.easing.easeInOutQuad};
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-exit {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &.open-exit-active {
+    display: block;
+    opacity: 0;
+    transform: scale(0.7);
+  }
+`;
+
 export const ModalContainer = styled.div`
+  display: ${({ isOpened }) => (isOpened ? "block" : "none")};
   top: ${({ displayTop }) => (displayTop ? 0 : "50%")};
   padding: 0;
   margin-top: ${({ displayTop }) => (displayTop ? "88px" : "0")};
@@ -50,6 +91,8 @@ export const ModalContainer = styled.div`
   ${largeAndUp`
     max-width: ${({ size }) => widthL[size]};
   `};
+
+  ${ContainerAnimation};
 `;
 
 const actionBarGutters = css`

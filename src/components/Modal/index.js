@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { CSSTransition } from "react-transition-group";
 
 import {
   ModalContainer,
@@ -201,50 +202,66 @@ class Modal extends React.Component {
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
 
-    if (!isOpened) {
-      return null;
-    }
-
     return (
       <ModalProvider value={{ closeModal }}>
-        <Backdrop childRef={this.containerRef} onRequestClose={this.closeModal}>
-          <ModalContainer
-            small={getModalSize({ deviceSize, preferredSize: size })}
-            ref={this.containerRef}
-            size={size}
-            displayTop={displayTop}
-            {...containerProps}
+        <CSSTransition
+          in={isOpened}
+          key="overaly-animation"
+          timeout={300}
+          classNames="open"
+        >
+          <Backdrop
+            childRef={this.containerRef}
+            onRequestClose={this.closeModal}
+            isVisible={isOpened}
+            animated
           >
-            {actionBar && (
-              <ActionBar
-                shadow={actionBarShadow}
-                ref={this.actionBarRef}
-                gutters={gutters}
-                {...actionBarProps}
-              >
-                {actionBar}
-              </ActionBar>
-            )}
-            <ModalContent
-              ref={this.contentRef}
-              onScroll={this.handleScroll}
-              gutters={gutters}
-              {...contentProps}
+            <CSSTransition
+              in={isOpened}
+              key="modal-animation"
+              timeout={300}
+              classNames="open"
             >
-              {children}
-            </ModalContent>
-            {bottomActionBar && (
-              <BottomActionBar
-                shadow={bottomActionBarShadow}
-                ref={this.bottomActionBarRef}
-                gutters={gutters}
-                {...bottomActionBarProps}
+              <ModalContainer
+                small={getModalSize({ deviceSize, preferredSize: size })}
+                ref={this.containerRef}
+                isOpened={isOpened}
+                size={size}
+                displayTop={displayTop}
+                {...containerProps}
               >
-                {bottomActionBar}
-              </BottomActionBar>
-            )}
-          </ModalContainer>
-        </Backdrop>
+                {actionBar && (
+                  <ActionBar
+                    shadow={actionBarShadow}
+                    ref={this.actionBarRef}
+                    gutters={gutters}
+                    {...actionBarProps}
+                  >
+                    {actionBar}
+                  </ActionBar>
+                )}
+                <ModalContent
+                  ref={this.contentRef}
+                  onScroll={this.handleScroll}
+                  gutters={gutters}
+                  {...contentProps}
+                >
+                  {children}
+                </ModalContent>
+                {bottomActionBar && (
+                  <BottomActionBar
+                    shadow={bottomActionBarShadow}
+                    ref={this.bottomActionBarRef}
+                    gutters={gutters}
+                    {...bottomActionBarProps}
+                  >
+                    {bottomActionBar}
+                  </BottomActionBar>
+                )}
+              </ModalContainer>
+            </CSSTransition>
+          </Backdrop>
+        </CSSTransition>
       </ModalProvider>
     );
   }
