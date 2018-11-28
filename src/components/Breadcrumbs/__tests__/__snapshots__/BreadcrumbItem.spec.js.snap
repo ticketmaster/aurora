@@ -12,7 +12,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   }
 >
   <a
-    className="hCyrKv"
+    className="eOSDpb hCyrKv"
     href="/"
     itemProp="item"
     onClick={null}
@@ -51,7 +51,7 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   }
 >
   <span
-    className="eZUnXh"
+    className="kXsNXA eZUnXh"
     href={null}
     itemProp="item"
     onClick={null}
