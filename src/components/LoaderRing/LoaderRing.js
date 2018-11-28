@@ -54,6 +54,7 @@ const LoadingContainer = styled.div`
 
 const OuterRing = styled(LoadingContainer)`
   > div {
+    left: calc(50% - ${({ size }) => SIZES[size].outerRingLength} / 2);
     width: ${({ size }) => SIZES[size].outerRingLength};
     height: ${({ size }) => SIZES[size].outerRingLength};
     margin: 0px;
@@ -112,7 +113,7 @@ const LoaderRing = props => (
 LoaderRing.displayName = "LoaderRing";
 
 LoaderRing.propTypes = {
-  size: PropTypes.oneOf(LOADER_RING_SIZES),
+  size: PropTypes.oneOf(Object.values(LOADER_RING_SIZES)),
   display: PropTypes.oneOf(["block", "inline-block"])
 };
 
