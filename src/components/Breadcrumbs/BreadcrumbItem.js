@@ -1,7 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+
 import { Link } from "../Text";
 import * as PT from "../Text/PropTypes";
+import { getAsProp } from "../../utils/link";
+
+const spanStyles = css`
+  cursor: text;
+
+  &:hover {
+    color: currentColor;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  ${props => (getAsProp(props).as === "span" ? spanStyles : "")};
+`;
 
 const BreadcrumbItem = ({
   position,
@@ -19,7 +34,7 @@ const BreadcrumbItem = ({
     itemType="http://schema.org/ListItem"
     style={{ whiteSpace: "nowrap" }}
   >
-    <Link
+    <StyledLink
       {...props}
       itemProp="item"
       size={size}
@@ -30,7 +45,7 @@ const BreadcrumbItem = ({
       href={href || null}
     >
       {children}
-    </Link>
+    </StyledLink>
     {children && <meta itemProp="name" content={children} />}
     {position && <meta itemProp="position" content={position} />}
   </li>
