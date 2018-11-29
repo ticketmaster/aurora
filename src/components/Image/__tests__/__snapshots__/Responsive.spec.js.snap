@@ -17,3 +17,22 @@ exports[`ResponsiveImage should render correctly 1`] = `
   />
 </div>
 `;
+
+exports[`ResponsiveImage should render correctly when a children prop is passed 1`] = `
+<div
+  className="image image--responsive eFUxCO"
+  height={9}
+  width={16}
+>
+  <img
+    alt="Test Kitten"
+    className="image image--seo image--hidden eEqoji"
+    height={9}
+    src="https://placekitten.com/g/826/465"
+    width={16}
+  />
+  <title>
+    Responsive Image
+  </title>
+</div>
+`;

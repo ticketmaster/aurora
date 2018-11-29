@@ -328,7 +328,7 @@ class ListRowContent extends Component {
             </DateWrapper>
 
             {/* this class name is for automation purposes please do not remove or modify the name */}
-            <ContentRow className="row__content row--gutterless">
+            <ContentRow className="row__content">
               {/* this class name is for automation purposes please do not remove or modify the name */}
               <MobileOnlyColumn className="column__mobile-only">
                 <MultilineText
