@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ImageCard renders card without overlay 1`] = `
-<div
-  className="container-block hXHtmw"
->
-  <div
-    className="igiVqV"
-  >
-    <img
-      alt=""
-      className="fIQgYS"
-      src="http://localhost/img.png"
-      title=""
-    />
-    <div
-      className="iRzHme"
-    />
-  </div>
-</div>
-`;
-
 exports[`ImageCard renders standard card 1`] = `
 <div
   className="container-block hXHtmw"
@@ -46,7 +26,6 @@ exports[`ImageCard renders type = half 1`] = `
 >
   <div
     className="container-block bgkVzE"
-    width="50%"
   >
     <img
       alt=""
@@ -104,6 +83,44 @@ exports[`ImageCard renders type = half 1`] = `
 </div>
 `;
 
+exports[`ImageCard renders with additional content when \`cardTitle\` and \`cardSubtitle\` prop values are not provided (old API support) 1`] = `
+<div
+  className="container-block hXHtmw"
+>
+  <div
+    className="igiVqV"
+  >
+    <img
+      alt=""
+      className="fIQgYS"
+      src="http://localhost/img.png"
+      title=""
+    />
+    <div
+      className="iRzHme"
+    >
+      <div
+        className="dAmSFY"
+      >
+        <span
+          className="jJmwnS"
+        >
+          Title
+        </span>
+        <span
+          className="eKXBpw"
+        >
+          Sub Title
+        </span>
+      </div>
+    </div>
+  </div>
+  <div>
+    Extra content
+  </div>
+</div>
+`;
+
 exports[`ImageCard renders with custom image 1`] = `
 <div
   className="container-block hXHtmw"
@@ -132,8 +149,51 @@ exports[`ImageCard renders with custom image 1`] = `
     </div>
   </div>
   <div>
-    <div>
-      Extra content
+    Extra content
+  </div>
+</div>
+`;
+
+exports[`ImageCard renders with custom props 1`] = `
+<div
+  className="container-block hXHtmw"
+>
+  <div
+    className="igiVqV"
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  >
+    <img
+      alt=""
+      className="fIQgYS"
+      src="http://localhost/img.png"
+      title=""
+    />
+    <div
+      className="iRzHme"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      <div
+        className="dAmSFY"
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <span
+          className="jJmwnS"
+        >
+          Title
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -207,9 +267,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
     </div>
   </div>
   <div>
-    <div>
-      Extra content
-    </div>
+    Extra content
   </div>
 </div>
 `;
