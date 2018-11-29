@@ -5,557 +5,23 @@ exports[`<ListRow /> List Row unmounts correctly 1`] = `null`;
 exports[`<ListRow /> List Row unmounts correctly 2`] = `null`;
 
 exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c11 .c11 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c13 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #904eba;
-}
-
-.c4 {
-  border: 0;
-  padding: 0 16px;
-  outline: 0;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4.icon-button--last {
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.c4 > * {
-  pointer-events: none;
-}
-
-.c3 {
-  display: none;
-}
-
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c2 {
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: calc(12px + 8px);
-  padding-bottom: calc(12px + 8px);
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: horizontal;
-  -webkit-justify-content: horizontal;
-  -ms-flex-pack: horizontal;
-  justify-content: horizontal;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.c6 {
-  width: 61.6%;
-  max-width: 101px;
-}
-
-.c16 {
-  display: none;
-}
-
-.c19 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  min-width: 100px;
-  max-width: 102px;
-  height: 36px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1.4;
-  padding: 18px 0;
-}
-
-.c19:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c19:hover {
-  background-color: #0150a7;
-}
-
-.c19:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c19:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c21 {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.c18 {
-  display: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  position: relative;
-}
-
-.c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.c8 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.2;
-}
-
-.c10 {
-  width: 100%;
-  position: relative;
-}
-
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:768px) {
-  .c11 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c13 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c17 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    border-radius: 4px;
-  }
-
-  .c1.row__wrapper--expanded {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
-    margin-bottom: 12px;
-  }
-
-  .c1.row__wrapper--collapsed {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    box-shadow: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-top: calc(18px + 8px);
-    padding-bottom: calc(18px + 8px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5:hover {
-    background-color: rgba(2,108,223,0.2);
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c6 {
-    width: 31.1%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    width: 26.8%;
-    max-width: 116px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    width: 32.7%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .c16.column__content--expanded {
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c16.column__content--collapsed {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c12 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    border-top: 1px solid #E0E0E0;
-  }
-
-  .c21.container__overflow--expanded {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c21.container__overflow--collapsed {
-    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c20 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c14.subtitle--hidden {
-    position: absolute;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c14.subtitle--active {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c14.subtitle--expanded {
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-  }
-}
-
 <div
-  className="c0"
+  className="ixeVCK"
   onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed c1"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
   >
     <div
-      className="list__container c2"
+      className="list__container eFAfGr"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed c3 c4"
+        className="button--expand-or-collapse button--collapsed jxGugM"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -576,16 +42,16 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper c5"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper c6"
+          className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--accent text--heliotrope text--primary date--text c7"
+            className="text text--accent text--heliotrope text--primary date--text dFzxVa"
             disabled={false}
             size={
               Object {
@@ -598,7 +64,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text c8 c9"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -612,13 +78,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content c10 c11"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only c12 c13"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title c14 c15"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -631,7 +97,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -645,10 +111,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c16 c17"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary c14 c15"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -662,10 +128,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content c16 c17"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -678,7 +144,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -693,11 +159,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="c18"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -707,11 +173,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last c4"
+          className="button--more-info icon-button--last bIqKEx"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -731,720 +197,92 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c21 c13"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
 `;
 
-exports[`<ListRow /> renders List Row with link correctly 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c11 .c11 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c13 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c25 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.c25:focus,
-.c25:active,
-.c25:visited,
-.c25:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c25:hover {
-  color: #0150a7;
-}
-
-.c27 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  cursor: pointer;
-}
-
-.c27:focus,
-.c27:active,
-.c27:visited,
-.c27:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c27:hover {
-  color: #0150a7;
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: rgba(38,38,38,1);
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c21 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c4 {
-  border: 0;
-  padding: 0 16px;
-  outline: 0;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4.icon-button--last {
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.c4 > * {
-  pointer-events: none;
-}
-
-.c3 {
-  display: none;
-}
-
-.c23 {
-  width: 100%;
-  padding-left: 101px;
-  padding-bottom: 8px;
-}
-
-.c24 {
-  display: inline-block;
-}
-
-.c26 {
-  display: none;
-}
-
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c2 {
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: calc(12px + 8px);
-  padding-bottom: 1px;
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: horizontal;
-  -webkit-justify-content: horizontal;
-  -ms-flex-pack: horizontal;
-  justify-content: horizontal;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.c6 {
-  width: 61.6%;
-  max-width: 101px;
-}
-
-.c16 {
-  display: none;
-}
-
-.c19 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  min-width: 100px;
-  max-width: 102px;
-  height: 36px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1.4;
-  padding: 18px 0;
-}
-
-.c19:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c19:hover {
-  background-color: #0150a7;
-}
-
-.c19:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c19:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c28 {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.c18 {
-  display: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  position: relative;
-}
-
-.c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.c8 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.2;
-}
-
-.c20 {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c10 {
-  width: 100%;
-  position: relative;
-}
-
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:768px) {
-  .c11 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c13 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c17 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c21 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c23 {
-    padding-left: calc(15px + 16px + 16px + 116px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c24 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c26 {
-    display: inline-block;
-    opacity: 1;
-    line-height: 1.5;
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-  }
-
-  .c26.link--hidden {
-    opacity: 0;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    border-radius: 4px;
-  }
-
-  .c1.row__wrapper--expanded {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
-    margin-bottom: 12px;
-  }
-
-  .c1.row__wrapper--collapsed {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    box-shadow: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-top: calc(18px + 8px);
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5:hover {
-    background-color: rgba(2,108,223,0.2);
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c6 {
-    width: 31.1%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    width: 26.8%;
-    max-width: 116px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    width: 32.7%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .c16.column__content--expanded {
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c16.column__content--collapsed {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c12 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c28 {
-    border-top: 1px solid #E0E0E0;
-  }
-
-  .c28.container__overflow--expanded {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c28.container__overflow--collapsed {
-    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c14.subtitle--hidden {
-    position: absolute;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c14.subtitle--active {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c14.subtitle--expanded {
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-  }
-}
-
+exports[`<ListRow /> renders List Row with label correctly 1`] = `
 <div
-  className="c0"
+  className="ixeVCK"
   onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed c1"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
   >
     <div
-      className="list__container c2"
+      className="gtrsDp"
+    >
+      <div
+        className="eYbbVw"
+      >
+        <div
+          className="row__label row__label--mobile dwkgmN"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+        <div
+          className="row__label row__label--desktop row__label--active kElDAq"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+        <div
+          className="row__label row__label--expanded row__label--desktop row__label--hidden kElDAq"
+          data-index={0}
+        >
+          <div
+            className="text text--accent text--positive text--primary dEEfYk fISAna"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            On sale: MON • AUG 27 • 10 AM
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="list__container bmaMQK"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed c3 c4"
+        className="button--expand-or-collapse button--collapsed jxGugM"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1465,16 +303,16 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper c5"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper c6"
+          className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text c7"
+            className="text text--dark text--primary date--text cJvdYQ"
             disabled={false}
             size={
               Object {
@@ -1487,7 +325,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text c8 c9"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -1501,13 +339,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content c10 c11"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only c12 c13"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title c14 c15"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1520,7 +358,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -1534,10 +372,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c16 c17"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary c14 c15"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1551,10 +389,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content c16 c17"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1567,7 +405,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -1582,11 +420,210 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="c18"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="TAvlk"
+            role="button"
+            size="regular"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
+      <div
+        className="fPfNCK"
+      >
+        <button
+          aria-label="More Info"
+          className="button--more-info icon-button--last bIqKEx"
+          data-index={0}
+          onClick={[Function]}
+          role="button"
+          type="button"
+        >
+          <svg
+            fill="rgba(38, 38, 38, 0.6)"
+            height={22}
+            viewBox="0 0 5 21"
+            width={22}
+          >
+            <path
+              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="container__overflow container__overflow--collapsed hkONOE"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders List Row with link correctly 1`] = `
+<div
+  className="ixeVCK"
+  onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
+>
+  <div
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
+  >
+    <div
+      className="list__container chItLs"
+    >
+      <button
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse button--collapsed jxGugM"
+        data-index={0}
+        onClick={[Function]}
+        role="button"
+        size={45}
+        type="button"
+      >
+        <svg
+          fill="#1F262D"
+          height={15}
+          style={Object {}}
+          viewBox="0 0 15 7"
+          width={15}
+        >
+          <path
+            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          />
+        </svg>
+      </button>
+      <a
+        aria-label="See Tickets"
+        className="link__wrapper bMtiBb"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="date__wrapper dIzoqV"
+        >
+          <div
+            className="text text--dark text--primary date--text cJvdYQ"
+            disabled={false}
+            size={
+              Object {
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="row__content row--gutterless jliziJ"
+        >
+          <div
+            className="column__mobile-only hwQSiY"
+          >
+            <div
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+            <div
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="column__content iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+            <div
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+        </div>
+        <div
+          className="khBeGP"
+        >
+          <span
+            aria-label="See Tickets"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -1594,10 +631,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="c20"
+            className="dFpiHg"
           >
             <div
-              className="text text--dark text--secondary c8 c21"
+              className="text text--dark text--secondary jjEscd foyaPB"
               disabled={false}
               size={
                 Object {
@@ -1613,11 +650,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </a>
       <div
-        className="c22"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last c4"
+          className="button--more-info icon-button--last bIqKEx"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -1637,13 +674,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="c23 c11"
+      className="gSJHix"
     >
       <div
-        className="c13"
+        className="jMKHiO"
       >
         <button
-          className="link--row-options c24 c25"
+          className="link--row-options jVlmkc kDPAfh"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -1660,7 +697,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options c26 c27"
+          className="link--row-options yTzPP eaCOkL"
           data-index={0}
           href=""
           onClick={null}
@@ -1679,564 +716,30 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c28 c13"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
 `;
 
-exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c11 .c11 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c13 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: rgba(38,38,38,1);
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c4 {
-  border: 0;
-  padding: 0 16px;
-  outline: 0;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4.icon-button--last {
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.c4 > * {
-  pointer-events: none;
-}
-
-.c3 {
-  display: none;
-}
-
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c2 {
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: calc(12px + 8px);
-  padding-bottom: calc(12px + 8px);
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: horizontal;
-  -webkit-justify-content: horizontal;
-  -ms-flex-pack: horizontal;
-  justify-content: horizontal;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.c6 {
-  width: 61.6%;
-  max-width: 101px;
-}
-
-.c16 {
-  display: none;
-}
-
-.c19 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  min-width: 100px;
-  max-width: 102px;
-  height: 36px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1.4;
-  padding: 18px 0;
-}
-
-.c19:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c19:hover {
-  background-color: #0150a7;
-}
-
-.c19:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c19:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c21 {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.c18 {
-  display: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  position: relative;
-}
-
-.c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.c8 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.2;
-}
-
-.c10 {
-  width: 100%;
-  position: relative;
-}
-
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:768px) {
-  .c11 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c13 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c17 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    border-radius: 4px;
-  }
-
-  .c1.row__wrapper--expanded {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
-    margin-bottom: 12px;
-  }
-
-  .c1.row__wrapper--collapsed {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    box-shadow: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-top: calc(18px + 8px);
-    padding-bottom: calc(18px + 8px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5:hover {
-    background-color: rgba(2,108,223,0.2);
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c6 {
-    width: 31.1%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    width: 26.8%;
-    max-width: 116px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    width: 32.7%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .c16.column__content--expanded {
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c16.column__content--collapsed {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c12 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    border-top: 1px solid #E0E0E0;
-  }
-
-  .c21.container__overflow--expanded {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c21.container__overflow--collapsed {
-    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c20 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c14.subtitle--hidden {
-    position: absolute;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c14.subtitle--active {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c14.subtitle--expanded {
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-  }
-}
-
+exports[`<ListRow /> renders List Row with styled button 1`] = `
 <div
-  className="c0"
+  className="ixeVCK"
   onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--expanded c1"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
   >
     <div
-      className="list__container c2"
+      className="list__container eFAfGr"
     >
       <button
-        aria-expanded={true}
-        aria-label="Collapse Row"
-        className="button--expand-or-collapse button--expanded c3 c4"
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse button--collapsed jxGugM"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -2256,17 +759,17 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
         </svg>
       </button>
       <a
-        aria-label="See Tickets"
-        className="link__wrapper c5"
+        aria-label="More Info"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper c6"
+          className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text c7"
+            className="text text--dark text--primary date--text cJvdYQ"
             disabled={false}
             size={
               Object {
@@ -2279,7 +782,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text c8 c9"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -2293,13 +796,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="row__content c10 c11"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only c12 c13"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title c14 c15"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -2312,7 +815,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -2326,10 +829,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--expanded c16 c17"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary c14 c15"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -2343,10 +846,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content c16 c17"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -2359,7 +862,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active c14 c15"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -2369,30 +872,30 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
                 }
               }
             >
-              Del Mar Fairgrounds
+              KABOO 3-Day Pass
             </div>
           </div>
         </div>
         <div
-          className="c18"
+          className="khBeGP"
         >
           <span
-            aria-label="See Tickets"
-            className="c19"
+            aria-label="More Info"
+            className="gMBrmr"
             role="button"
             size="regular"
             width="102px"
           >
-            See Tickets
+            More Info
           </span>
         </div>
       </a>
       <div
-        className="c20"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last c4"
+          className="button--more-info icon-button--last bIqKEx"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -2412,719 +915,30 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--expanded c21 c13"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
 `;
 
-exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c11 .c11 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c13 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c27 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.c27:focus,
-.c27:active,
-.c27:visited,
-.c27:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c27:hover {
-  color: #0150a7;
-}
-
-.c25 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.c25:focus,
-.c25:active,
-.c25:visited,
-.c25:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c25:hover {
-  color: #0150a7;
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: rgba(38,38,38,1);
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c21 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c4 {
-  border: 0;
-  padding: 0 16px;
-  outline: 0;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4.icon-button--last {
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.c4 > * {
-  pointer-events: none;
-}
-
-.c3 {
-  display: none;
-}
-
-.c23 {
-  width: 100%;
-  padding-left: 101px;
-  padding-bottom: 8px;
-}
-
-.c24 {
-  display: inline-block;
-}
-
-.c26 {
-  display: none;
-}
-
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c2 {
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: calc(12px + 8px);
-  padding-bottom: 1px;
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: horizontal;
-  -webkit-justify-content: horizontal;
-  -ms-flex-pack: horizontal;
-  justify-content: horizontal;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.c6 {
-  width: 61.6%;
-  max-width: 101px;
-}
-
-.c16 {
-  display: none;
-}
-
-.c19 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  min-width: 100px;
-  max-width: 102px;
-  height: 36px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1.4;
-  padding: 18px 0;
-}
-
-.c19:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c19:hover {
-  background-color: #0150a7;
-}
-
-.c19:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c19:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c28 {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.c18 {
-  display: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  position: relative;
-}
-
-.c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.c8 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.2;
-}
-
-.c20 {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c10 {
-  width: 100%;
-  position: relative;
-}
-
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:768px) {
-  .c11 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c13 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c17 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c27 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c25 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c21 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c23 {
-    padding-left: calc(15px + 16px + 16px + 116px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c24 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c26 {
-    display: inline-block;
-    opacity: 1;
-    line-height: 1.5;
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-  }
-
-  .c26.link--hidden {
-    opacity: 0;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    border-radius: 4px;
-  }
-
-  .c1.row__wrapper--expanded {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
-    margin-bottom: 12px;
-  }
-
-  .c1.row__wrapper--collapsed {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    box-shadow: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-top: calc(18px + 8px);
-    padding-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5:hover {
-    background-color: rgba(2,108,223,0.2);
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c6 {
-    width: 31.1%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    width: 26.8%;
-    max-width: 116px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    width: 32.7%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .c16.column__content--expanded {
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c16.column__content--collapsed {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c12 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c28 {
-    border-top: 1px solid #E0E0E0;
-  }
-
-  .c28.container__overflow--expanded {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c28.container__overflow--collapsed {
-    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c22 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c14.subtitle--hidden {
-    position: absolute;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c14.subtitle--active {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c14.subtitle--expanded {
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-  }
-}
-
+exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 <div
-  className="c0"
+  className="ixeVCK"
   onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed c1"
+    className="row__wrapper row__wrapper--expanded bdAxFg"
+    onCloseRequest={[Function]}
   >
     <div
-      className="list__container c2"
+      className="list__container eFAfGr"
     >
       <button
-        aria-expanded={false}
-        aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed c3 c4"
+        aria-expanded={true}
+        aria-label="Collapse Row"
+        className="button--expand-or-collapse button--expanded jxGugM"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -3145,16 +959,16 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper c5"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper c6"
+          className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text c7"
+            className="text text--dark text--primary date--text cJvdYQ"
             disabled={false}
             size={
               Object {
@@ -3167,7 +981,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text c8 c9"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -3181,13 +995,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content c10 c11"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only c12 c13"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title c14 c15"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -3200,7 +1014,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -3214,10 +1028,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c16 c17"
+            className="column__content list-row--title column__content--expanded iRwVbZ"
           >
             <div
-              className="text text--dark text--primary c14 c15"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -3231,10 +1045,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content c16 c17"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -3247,7 +1061,206 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+        </div>
+        <div
+          className="khBeGP"
+        >
+          <span
+            aria-label="See Tickets"
+            className="TAvlk"
+            role="button"
+            size="regular"
+            width="102px"
+          >
+            See Tickets
+          </span>
+        </div>
+      </a>
+      <div
+        className="fPfNCK"
+      >
+        <button
+          aria-label="More Info"
+          className="button--more-info icon-button--last bIqKEx"
+          data-index={0}
+          onClick={[Function]}
+          role="button"
+          type="button"
+        >
+          <svg
+            fill="rgba(38, 38, 38, 0.6)"
+            height={22}
+            viewBox="0 0 5 21"
+            width={22}
+          >
+            <path
+              d="M0 2.5C0 1.81.242 1.22.727.732A2.394 2.394 0 0 1 2.492 0a2.42 2.42 0 0 1 1.773.732C4.755 1.221 5 1.81 5 2.5s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 5C1.8 5 1.212 4.756.727 4.268A2.418 2.418 0 0 1 0 2.5zm0 8.008c0-.692.242-1.283.727-1.773A2.39 2.39 0 0 1 2.492 8c.692 0 1.283.245 1.773.735S5 9.815 5 10.508a2.39 2.39 0 0 1-.735 1.765A2.43 2.43 0 0 1 2.492 13c-.692 0-1.28-.242-1.765-.727A2.403 2.403 0 0 1 0 10.508zM0 18.5c0-.69.242-1.28.727-1.768A2.394 2.394 0 0 1 2.492 16a2.42 2.42 0 0 1 1.773.732c.49.489.735 1.078.735 1.768s-.245 1.28-.735 1.768A2.42 2.42 0 0 1 2.492 21c-.692 0-1.28-.244-1.765-.732A2.418 2.418 0 0 1 0 18.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div
+      className="container__overflow container__overflow--expanded hkONOE"
+    />
+  </div>
+</div>
+`;
+
+exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
+<div
+  className="ixeVCK"
+  onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
+>
+  <div
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
+  >
+    <div
+      className="list__container chItLs"
+    >
+      <button
+        aria-expanded={false}
+        aria-label="Expand Row"
+        className="button--expand-or-collapse button--collapsed jxGugM"
+        data-index={0}
+        onClick={[Function]}
+        role="button"
+        size={45}
+        type="button"
+      >
+        <svg
+          fill="#1F262D"
+          height={15}
+          style={Object {}}
+          viewBox="0 0 15 7"
+          width={15}
+        >
+          <path
+            d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          />
+        </svg>
+      </button>
+      <a
+        aria-label="See Tickets"
+        className="link__wrapper bMtiBb"
+        href="/"
+        onClick={[Function]}
+        role="link"
+      >
+        <div
+          className="date__wrapper dIzoqV"
+        >
+          <div
+            className="text text--dark text--primary date--text cJvdYQ"
+            disabled={false}
+            size={
+              Object {
+                "large": "kilo",
+                "medium": "kilo",
+                "small": "hecto",
+              }
+            }
+          >
+            apr 23
+          </div>
+          <div
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            disabled={false}
+            size={
+              Object {
+                "large": "hecto",
+                "medium": "hecto",
+                "small": "hecto",
+              }
+            }
+          >
+            Thu, 8:00 PM
+          </div>
+        </div>
+        <div
+          className="row__content row--gutterless jliziJ"
+        >
+          <div
+            className="column__mobile-only hwQSiY"
+          >
+            <div
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+            <div
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              disabled={false}
+              size={
+                Object {
+                  "large": "hecto",
+                  "medium": "hecto",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+          </div>
+          <div
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              Del Mar Fairgrounds
+            </div>
+          </div>
+          <div
+            className="column__content iRwVbZ"
+          >
+            <div
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              disabled={false}
+              size={
+                Object {
+                  "large": "kilo",
+                  "medium": "kilo",
+                  "small": "hecto",
+                }
+              }
+            >
+              KABOO 3-Day Pass
+            </div>
+            <div
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -3262,11 +1275,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="c18"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -3274,10 +1287,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="c20"
+            className="dFpiHg"
           >
             <div
-              className="text text--dark text--secondary c8 c21"
+              className="text text--dark text--secondary jjEscd foyaPB"
               disabled={false}
               size={
                 Object {
@@ -3293,11 +1306,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="c22"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last c4"
+          className="button--more-info icon-button--last bIqKEx"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -3317,13 +1330,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="c23 c11"
+      className="gSJHix"
     >
       <div
-        className="c13"
+        className="jMKHiO"
       >
         <button
-          className="link--row-options c24 c25"
+          className="link--row-options jVlmkc kDPAfh"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -3340,7 +1353,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="c26 c27"
+          className="yTzPP dVGldd"
           data-index={0}
           href="/"
           onClick={null}
@@ -3359,564 +1372,30 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c28 c13"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders standard List Row correctly 1`] = `
-.c11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-
-.c11 .c11 {
-  -webkit-flex: 0 1 100%;
-  -ms-flex: 0 1 100%;
-  flex: 0 1 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.c13 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c17 {
-  box-sizing: border-box;
-  padding-right: 8px;
-  padding-left: 8px;
-  max-width: 100%;
-  display: block;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-}
-
-.c7 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: rgba(38,38,38,1);
-}
-
-.c9 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c4 {
-  border: 0;
-  padding: 0 16px;
-  outline: 0;
-  background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4.icon-button--last {
-  padding-left: 16px;
-  padding-right: 0;
-}
-
-.c4 > * {
-  pointer-events: none;
-}
-
-.c3 {
-  display: none;
-}
-
-.c1 {
-  background-color: rgba(255,255,255,1);
-}
-
-.c1:not(:last-of-type) {
-  border-bottom: 1px solid #E0E0E0;
-}
-
-.c2 {
-  background-color: rgba(255,255,255,1);
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: calc(12px + 8px);
-  padding-bottom: calc(12px + 8px);
-}
-
-.c5 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: horizontal;
-  -webkit-justify-content: horizontal;
-  -ms-flex-pack: horizontal;
-  justify-content: horizontal;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.c6 {
-  width: 61.6%;
-  max-width: 101px;
-}
-
-.c16 {
-  display: none;
-}
-
-.c19 {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2.43;
-  width: 100%;
-  padding: 0 12px 0 12px;
-  min-width: 60px;
-  text-align: center;
-  text-transform: capitalize;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  min-width: 100px;
-  max-width: 102px;
-  height: 36px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1.4;
-  padding: 18px 0;
-}
-
-.c19:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c19:hover {
-  background-color: #0150a7;
-}
-
-.c19:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c19:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c21 {
-  max-height: 0;
-  overflow: hidden;
-}
-
-.c18 {
-  display: none;
-  padding-left: 8px;
-  padding-right: 8px;
-  position: relative;
-}
-
-.c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-
-.c14 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.c8 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 1.2;
-}
-
-.c10 {
-  width: 100%;
-  position: relative;
-}
-
-.c0 {
-  width: 100%;
-}
-
-@media screen and (min-width:768px) {
-  .c11 {
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c13 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c13 {
-    max-width: 100%;
-    display: block;
-    -webkit-flex: 0 0 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c17 {
-    padding-right: 12px;
-    padding-left: 12px;
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c17 {
-    max-width: 50%;
-    display: block;
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c7 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c9 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    display: block;
-  }
-
-  .c3.button--expanded,
-  .c3.button--collapsed {
-    -webkit-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-  }
-
-  .c3.button--expanded {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    border-radius: 4px;
-  }
-
-  .c1.row__wrapper--expanded {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
-    margin-bottom: 12px;
-  }
-
-  .c1.row__wrapper--collapsed {
-    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-    box-shadow: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c2 {
-    padding-top: calc(18px + 8px);
-    padding-bottom: calc(18px + 8px);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c5:hover {
-    background-color: rgba(2,108,223,0.2);
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c6 {
-    width: 31.1%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c6 {
-    width: 26.8%;
-    max-width: 116px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c6 {
-    width: 32.7%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .c16.column__content--expanded {
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c16.column__content--collapsed {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c12 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c21 {
-    border-top: 1px solid #E0E0E0;
-  }
-
-  .c21.container__overflow--expanded {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c21.container__overflow--collapsed {
-    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c18 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c20 {
-    display: none;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c14.subtitle--hidden {
-    position: absolute;
-    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-    opacity: 0;
-  }
-
-  .c14.subtitle--active {
-    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .c14.subtitle--expanded {
-    -webkit-transform: translateX(-55%);
-    -ms-transform: translateX(-55%);
-    transform: translateX(-55%);
-  }
-}
-
 <div
-  className="c0"
+  className="ixeVCK"
   onClick={[Function]}
+  onModalClose={[Function]}
+  onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed c1"
+    className="row__wrapper row__wrapper--collapsed bdAxFg"
+    onCloseRequest={[Function]}
   >
     <div
-      className="list__container c2"
+      className="list__container eFAfGr"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed c3 c4"
+        className="button--expand-or-collapse button--collapsed jxGugM"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -3937,16 +1416,16 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper c5"
+        className="link__wrapper bMtiBb"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper c6"
+          className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text c7"
+            className="text text--dark text--primary date--text cJvdYQ"
             disabled={false}
             size={
               Object {
@@ -3959,7 +1438,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text c8 c9"
+            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
             disabled={false}
             size={
               Object {
@@ -3973,13 +1452,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content c10 c11"
+          className="row__content row--gutterless jliziJ"
         >
           <div
-            className="column__mobile-only c12 c13"
+            className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title c14 c15"
+              className="text text--dark text--primary list-row--title bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -3992,7 +1471,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle c8 c9"
+              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
               disabled={false}
               size={
                 Object {
@@ -4006,10 +1485,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed c16 c17"
+            className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary c14 c15"
+              className="text text--dark text--primary bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -4023,10 +1502,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content c16 c17"
+            className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed c14 c15"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -4039,7 +1518,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden c14 c15"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
               disabled={false}
               size={
                 Object {
@@ -4054,11 +1533,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="c18"
+          className="khBeGP"
         >
           <span
             aria-label="See Tickets"
-            className="c19"
+            className="TAvlk"
             role="button"
             size="regular"
             width="102px"
@@ -4068,11 +1547,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="c20"
+        className="fPfNCK"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last c4"
+          className="button--more-info icon-button--last bIqKEx"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -4092,7 +1571,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed c21 c13"
+      className="container__overflow container__overflow--collapsed hkONOE"
     />
   </div>
 </div>

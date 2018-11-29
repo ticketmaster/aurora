@@ -14,7 +14,9 @@ const OverflowRow = styled(Row)`
   `};
 `;
 
-const ListRowOverflow = ({ children }) => <OverflowRow>{children}</OverflowRow>;
+const ListRowOverflow = ({ children, ...props }) => (
+  <OverflowRow {...props}>{children}</OverflowRow>
+);
 
 ListRowOverflow.defaultProps = {
   children: null

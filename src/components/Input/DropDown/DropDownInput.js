@@ -91,7 +91,7 @@ class DropDownInput extends React.Component {
         tabIndex="-1"
         value={value}
         index={index}
-        innerRef={this.SelectedElement}
+        ref={this.SelectedElement}
         {...props}
         className={classNames({
           dropdown__selected: isSelected,

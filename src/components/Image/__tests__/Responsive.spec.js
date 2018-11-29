@@ -5,7 +5,7 @@ import ResponsiveImage from "../Responsive";
 
 describe("ResponsiveImage", () => {
   const PROPS = {
-    src: "http://placekitten.com/g/826/465",
+    src: "https://placekitten.com/g/826/465",
     alt: "Test Kitten",
     height: 9,
     width: 16,

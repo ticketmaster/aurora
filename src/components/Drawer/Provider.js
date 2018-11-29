@@ -68,7 +68,7 @@ export default class DrawerProvider extends React.Component {
       <Provider value={this.state}>
         <ContentWrapper
           className={classNames({ "drawer--open": isOpen }, className)}
-          innerRef={this.contentContainer}
+          ref={this.contentContainer}
         >
           {Children.only(children)}
           {content && <Portal>{content}</Portal>}

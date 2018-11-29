@@ -28,6 +28,8 @@ export { default as BottomSheet } from "./components/BottomSheet";
 export { default as NavBar } from "./components/NavBar";
 export { default as Row } from "./components/Grid/Row";
 export { default as SearchInput } from "./components/Input/Search";
+export { default as SearchComponent } from "./components/SearchInput";
+export { SearchSuggest } from "./components/SearchInput/Search.styles";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
 export { default as ContainerBlock } from "./components/Container/Block.styles";
@@ -135,7 +137,8 @@ export {
   CheckBoxButton as CheckBox,
   CheckBoxGroup,
   Input,
-  ButtonGroup
+  ButtonGroup,
+  QtySelector
 } from "./components/Input";
 export { LinkList, LinkListItem } from "./components/Link";
 export { default as Modal } from "./components/List/Modal";
@@ -164,4 +167,10 @@ export {
 } from "./components/DeviceConnection";
 export { default as SeatTooltip } from "./components/Tooltip/SeatTooltip";
 export { default as SeatData } from "./components/Tooltip/SeatData";
+export {
+  LazyLoaderProvider,
+  LazyLoaderConsumer,
+  LazyLoader
+} from "./components/LazyLoader";
+export { Tabs, TabsProvider, TabsConsumer } from "./components/Tabs";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";

@@ -8,7 +8,7 @@ import spacing from "../../theme/spacing";
 import typography from "../../theme/typography";
 import constants from "../../theme/constants";
 import { smallAndUp } from "../../theme/mediaQueries";
-import getRelByTarget from "../../utils/link";
+import { getRelByTarget } from "../../utils/link";
 
 const BaseButton = styled.button`
   backface-visibility: hidden;
@@ -54,8 +54,6 @@ const BaseButton = styled.button`
   `};
 `;
 
-const Anchor = BaseButton.withComponent("a");
-
 const Button = ({
   children,
   href,
@@ -68,7 +66,7 @@ const Button = ({
 }) => {
   if (href) {
     return (
-      <Anchor
+      <BaseButton
         {...props}
         className={classNames(
           { "nav-button--first": isFirst, "nav-button--last": isLast },
@@ -77,9 +75,10 @@ const Button = ({
         href={href}
         target={target}
         rel={getRelByTarget(target, rel)}
+        as="a"
       >
         {children}
-      </Anchor>
+      </BaseButton>
     );
   }
 
@@ -96,7 +95,8 @@ Button.propTypes = {
   target: PropTypes.string,
   rel: PropTypes.string,
   isFirst: PropTypes.bool,
-  isLast: PropTypes.bool
+  isLast: PropTypes.bool,
+  className: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -105,7 +105,8 @@ Button.defaultProps = {
   isFirst: false,
   isLast: false,
   target: "_self",
-  rel: null
+  rel: null,
+  className: ""
 };
 
 export default Button;

@@ -31,11 +31,13 @@ class DropDownGroup extends React.Component {
 
   componentDidUpdate(prevProps, prevState) {
     const { isOpen } = this.state;
-    // disables scroll when dropdown is open
-    document.addEventListener("wheel", this.disableScroll);
     // scroll dropdown to top after opening
     if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
+      // disables scroll when dropdown is open
+      document.addEventListener("wheel", this.disableScroll);
+    } else {
+      document.removeEventListener("wheel", this.disableScroll);
     }
   }
 
@@ -118,7 +120,16 @@ class DropDownGroup extends React.Component {
   };
 
   disableScroll = e => {
-    if (this.state.isOpen && !this.groupWrapper.current.contains(e.target)) {
+    const dropdownHeight = this.styledChildWrapper.current.clientHeight;
+    const optionsHeight = this.optionsContainer.current.clientHeight;
+    const isScrollable = optionsHeight > dropdownHeight;
+    // disable scroll when a user scrolls outside of dropdown or
+    // withing a dropdown and it is not scrollable
+    if (
+      this.state.isOpen &&
+      (!this.groupWrapper.current.contains(e.target) ||
+        (this.groupWrapper.current.contains(e.target) && !isScrollable))
+    ) {
       this.stopInteraction(e);
     }
   };
@@ -211,9 +222,6 @@ class DropDownGroup extends React.Component {
     const onClickListener = disabled
       ? { onMouseDown: this.stopInteraction }
       : { onClick: this.onClick };
-    const ChildrenWrapper = withKeyboardProvider
-      ? StyledKeyboardProvider
-      : StyledKeyboardProvider.withComponent("div");
     const childWrapperStyles = shouldOpenDownward
       ? {}
       : { maxHeight: maxDropdownHeight };
@@ -229,7 +237,7 @@ class DropDownGroup extends React.Component {
           {({ selected }) => {
             const keyboardProviderProps = withKeyboardProvider
               ? { keywordSearch, selected }
-              : {};
+              : { as: "div" };
 
             return (
               <Transition in={openUpward} timeout={this.ANIMATION_TIMEOUT}>
@@ -240,7 +248,7 @@ class DropDownGroup extends React.Component {
                   return (
                     <StyledGroupWrapper
                       {...props}
-                      className={classNames({
+                      className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled
                       })}
@@ -248,7 +256,7 @@ class DropDownGroup extends React.Component {
                       aria-haspopup="listbox"
                       aria-labelledby={hiddenLabelId}
                       onKeyDown={this.onKeyDown}
-                      innerRef={this.groupWrapper}
+                      ref={this.groupWrapper}
                     >
                       <StyledGroup
                         {...onClickListener}
@@ -258,7 +266,7 @@ class DropDownGroup extends React.Component {
                           "dropdown--no-border": variant === 1,
                           "dropdown__label--disabled": disabled
                         })}
-                        innerRef={this.styledGroup}
+                        ref={this.styledGroup}
                       >
                         {/* HiddenLabel is required for correct screen readers 
                           readings when an option is selected */}
@@ -295,18 +303,18 @@ class DropDownGroup extends React.Component {
                               }
                             )}
                             style={childWrapperStyles}
-                            innerRef={this.styledChildWrapper}
+                            ref={this.styledChildWrapper}
                           >
                             <DropDownProvider value={{ ...this.state, isOpen }}>
                               {/* this div is required to decide which way to open a dropdown */}
                               <div ref={this.optionsContainer}>
-                                <ChildrenWrapper
+                                <StyledKeyboardProvider
                                   role="listbox"
                                   aria-labelledby={hiddenLabelId}
                                   {...keyboardProviderProps}
                                 >
                                   {children}
-                                </ChildrenWrapper>
+                                </StyledKeyboardProvider>
                               </div>
                             </DropDownProvider>
                           </StyledChildWrapper>

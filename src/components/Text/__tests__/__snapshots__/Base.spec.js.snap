@@ -1,28 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BaseText should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,0.1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--accent text--azure text--disabled c0"
+  className="text text--accent text--azure text--disabled kKyETs"
   disabled={true}
   size={
     Object {
@@ -37,28 +17,8 @@ exports[`BaseText should render disabled text with a div tag in an accent varian
 `;
 
 exports[`BaseText should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.4);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--dark text--disabled c0"
+  className="text text--dark text--disabled glmlXg"
   disabled={true}
   size={
     Object {
@@ -73,28 +33,8 @@ exports[`BaseText should render disabled text with a div tag in the dark variant
 `;
 
 exports[`BaseText should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(255,255,255,0.5);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--light text--disabled c0"
+  className="text text--light text--disabled eOhfnK"
   disabled={true}
   size={
     Object {
@@ -109,28 +49,8 @@ exports[`BaseText should render disabled text with a div tag in the light varian
 `;
 
 exports[`BaseText should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: #00FFFF;
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--accent text--aquamarine c0"
+  className="text text--accent text--aquamarine gURYUM"
   disabled={false}
   size={
     Object {
@@ -145,28 +65,8 @@ exports[`BaseText should render primary text with a div tag in an accent variant
 `;
 
 exports[`BaseText should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--accent text--azure c0"
+  className="text text--accent text--azure lIbpq"
   disabled={false}
   size={
     Object {
@@ -181,28 +81,8 @@ exports[`BaseText should render primary text with a div tag in an accent variant
 `;
 
 exports[`BaseText should render primary text with a div tag in the dark variant by default 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--dark text--primary c0"
+  className="text text--dark text--primary ixExqb"
   disabled={false}
   size={
     Object {
@@ -217,28 +97,8 @@ exports[`BaseText should render primary text with a div tag in the dark variant 
 `;
 
 exports[`BaseText should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--dark text--primary text--custom c0"
+  className="text text--dark text--primary text--custom ixExqb"
   disabled={false}
   size={
     Object {
@@ -253,28 +113,8 @@ exports[`BaseText should render primary text with a div tag in the dark variant 
 `;
 
 exports[`BaseText should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(255,255,255,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--light text--primary c0"
+  className="text text--light text--primary eUaRKn"
   disabled={false}
   size={
     Object {
@@ -289,28 +129,8 @@ exports[`BaseText should render primary text with a div tag in the light variant
 `;
 
 exports[`BaseText should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
-.c0 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 20px;
-  }
-}
-
 <div
-  className="text text--dark text--primary c0"
+  className="text text--dark text--primary gGgKOz"
   disabled={false}
   size={
     Object {
@@ -325,28 +145,8 @@ exports[`BaseText should render primary text with a div tag of the size prop pas
 `;
 
 exports[`BaseText should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--dark text--primary c0"
+  className="text text--dark text--primary gQyGQj"
   disabled={false}
   size={
     Object {
@@ -361,28 +161,8 @@ exports[`BaseText should render primary text with a div tag of the weight prop p
 `;
 
 exports[`BaseText should render primary text with a tag prop in the dark variant by default 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <span
-  className="text text--dark text--primary c0"
+  className="text text--dark text--primary ixExqb"
   disabled={false}
   size={
     Object {
@@ -397,28 +177,8 @@ exports[`BaseText should render primary text with a tag prop in the dark variant
 `;
 
 exports[`BaseText should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,0.2);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--accent text--azure text--secondary c0"
+  className="text text--accent text--azure text--secondary hCFVCQ"
   disabled={false}
   size={
     Object {
@@ -433,28 +193,8 @@ exports[`BaseText should render secondary text with a div tag in an accent varia
 `;
 
 exports[`BaseText should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--dark text--secondary c0"
+  className="text text--dark text--secondary fRMqFP"
   disabled={false}
   size={
     Object {
@@ -469,28 +209,8 @@ exports[`BaseText should render secondary text with a div tag in the dark varian
 `;
 
 exports[`BaseText should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
-.c0 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(255,255,255,0.7);
-}
-
-@media screen and (min-width:768px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c0 {
-    font-size: 14px;
-  }
-}
-
 <div
-  className="text text--light text--secondary c0"
+  className="text text--light text--secondary gDFIZu"
   disabled={false}
   size={
     Object {

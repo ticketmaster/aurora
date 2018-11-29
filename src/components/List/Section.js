@@ -21,6 +21,11 @@ const SectionContainer = styled(Column)`
 
 const TitleContainer = styled(Row)`
   padding-bottom: ${spacing.moderate};
+  && {
+    flex: 0 1 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 `;
 
 const TitleText = styled(BoldText)`

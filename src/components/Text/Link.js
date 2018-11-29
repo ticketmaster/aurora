@@ -1,19 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import Base from "./Base.styles";
 import * as PT from "./PropTypes";
-import StyledText from "./StyledText";
 import colors from "../../theme/colors";
-import getRelByTarget from "../../utils/link";
+import { getRelByTarget, getAsProp } from "../../utils/link";
 import { getFontColor } from "../../utils/typography";
 
-export const LinkTitle = StyledText.withComponent(`a`).extend`
-  color: ${({ color }) => color || colors.azure.base};
-  text-decoration: none;
-`;
-
-const LinkBase = Base.withComponent("a").extend`
+const LinkBase = styled(Base)`
   text-decoration: none;
   transition: color 0.3s ease;
   &:focus,
@@ -28,7 +23,7 @@ const LinkBase = Base.withComponent("a").extend`
   }
 `;
 
-const LinkButtonBase = LinkBase.withComponent("button").extend`
+const LinkButtonBase = styled(LinkBase)`
   appearance: none;
   border: 0;
   outline: 0;
@@ -37,7 +32,7 @@ const LinkButtonBase = LinkBase.withComponent("button").extend`
   cursor: pointer;
 `;
 
-const LinkSpanBase = LinkBase.withComponent("span").extend`
+const LinkSpanBase = styled(LinkBase)`
   cursor: pointer;
 `;
 
@@ -63,10 +58,13 @@ const Link = ({
 }) => {
   const { target, rel } = props;
   const Elm = getElement({ href, onClick });
+  const asProp = getAsProp({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
+
   return (
     <Elm
       {...props}
+      {...asProp}
       size={{
         small: responsiveSize.small || size,
         medium: responsiveSize.medium || responsiveSize.small || size,

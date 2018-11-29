@@ -32,4 +32,12 @@ describe("<ListRowOverflow />", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("renders with additional props when passed", () => {
+    const component = renderer.create(
+      <ListRowOverflow className="row--gutterless">Content</ListRowOverflow>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

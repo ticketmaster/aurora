@@ -3,17 +3,11 @@
 exports[`StaticImage should render a lazy loading UI when a valid loader prop is passed 1`] = `"Loading..."`;
 
 exports[`StaticImage should render correctly 1`] = `
-.c0 {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-}
-
 <img
   alt="Test Kitten"
-  className="image image--static c0"
+  className="image image--static eBdrNh"
   height={9}
-  src="http://placekitten.com/g/826/465"
+  src="https://placekitten.com/g/826/465"
   width={16}
 />
 `;

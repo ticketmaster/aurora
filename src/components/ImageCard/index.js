@@ -40,8 +40,8 @@ const CaptionContainer = styled.div`
   letter-spacing: ${props => (props.half ? "normal" : "inherit")};
 `;
 
-const HalfCard = Card.extend`
-  width: ${props => (props.width ? props.width : "")};
+const HalfCard = styled(Card)`
+  width: 50%;
 `;
 
 const Title = styled.span`
@@ -70,24 +70,44 @@ const Container = styled.div`
   position: relative;
 `;
 
-const RowContainer = Container.extend`
+const RowContainer = styled(Container)`
   flex-direction: row;
   align-items: center;
 `;
 
-const ImageCard = ({ src, alt, title, children, type, ...props }) => {
-  const [imageTitle, subTitle, ...rest] = Children.toArray(children || []);
+const ImageCard = ({
+  src,
+  alt,
+  title,
+  type,
+  cardTitle,
+  cardSubtitle,
+  overlayProps,
+  containerProps,
+  captionContainerProps,
+  children,
+  ...props
+}) => {
+  let titleToShow = cardTitle;
+  let subtitleToShow = cardSubtitle;
+  let childrenToShow = children;
+  if (!cardTitle && !cardSubtitle) {
+    [titleToShow, subtitleToShow, ...childrenToShow] = Children.toArray(
+      children || []
+    );
+  }
   const img = props.image || <Image src={src} alt={alt} title={title} />;
+
   if (type === "half") {
     return (
       <RowContainer {...props}>
-        <HalfCard width="50%">{img}</HalfCard>
-        <CaptionContainer half>
+        <HalfCard>{img}</HalfCard>
+        <CaptionContainer {...captionContainerProps} half>
           <Title>
-            <Text className="image-card__title--half">{imageTitle}</Text>
+            <Text className="image-card__title--half">{titleToShow}</Text>
           </Title>
           <SubTitle half>
-            <Text className="image-card__subtitle--half">{subTitle}</Text>
+            <Text className="image-card__subtitle--half">{subtitleToShow}</Text>
           </SubTitle>
         </CaptionContainer>
       </RowContainer>
@@ -96,18 +116,18 @@ const ImageCard = ({ src, alt, title, children, type, ...props }) => {
 
   return (
     <Card {...props}>
-      <Container>
+      <Container {...containerProps}>
         {img}
-        <Overlay>
-          {(imageTitle || subTitle) && (
-            <CaptionContainer>
-              {imageTitle}
-              {subTitle}
+        <Overlay {...overlayProps}>
+          {(titleToShow || subtitleToShow) && (
+            <CaptionContainer {...captionContainerProps}>
+              {titleToShow}
+              {subtitleToShow}
             </CaptionContainer>
           )}
         </Overlay>
       </Container>
-      {(rest && rest.length && <div>{rest}</div>) || null}
+      {childrenToShow}
     </Card>
   );
 };
@@ -117,8 +137,13 @@ ImageCard.propTypes = {
   src: PropTypes.string,
   alt: PropTypes.string,
   title: PropTypes.string,
-  children: PropTypes.node,
-  image: PropTypes.element
+  image: PropTypes.element,
+  cardTitle: PropTypes.element,
+  cardSubtitle: PropTypes.element,
+  overlayProps: PropTypes.shape({}),
+  containerProps: PropTypes.shape({}),
+  captionContainerProps: PropTypes.shape({}),
+  children: PropTypes.node
 };
 
 ImageCard.defaultProps = {
@@ -126,8 +151,13 @@ ImageCard.defaultProps = {
   alt: "",
   title: "",
   src: "",
-  children: null,
-  image: null
+  image: null,
+  cardTitle: null,
+  cardSubtitle: null,
+  overlayProps: {},
+  containerProps: {},
+  captionContainerProps: {},
+  children: null
 };
 
 ImageCard.Title = Title;

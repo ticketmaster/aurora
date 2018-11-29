@@ -5,7 +5,9 @@ export const getContentHeight = ({ actionBar, bottomActionBar, container }) => {
     ? bottomActionBar.clientHeight
     : 0;
 
-  return container.clientHeight - actionBarHeight - bottomActionBarHeight;
+  return `${container.clientHeight -
+    actionBarHeight -
+    bottomActionBarHeight}px`;
 };
 
 export const getActionBarShadow = ({ content }) => Boolean(content.scrollTop);

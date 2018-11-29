@@ -15,11 +15,17 @@ import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
 import constants from "../../theme/constants";
+import RowLabel from "./RowLabel";
 import RowOptionsLink from "./RowOptionsLink";
-import { ROW_DATE_SMALL_WIDTH, ROW_DATE_MEDIUM_WIDTH } from "./constants";
+import {
+  ROW_DATE_SMALL_WIDTH,
+  ROW_DATE_MEDIUM_WIDTH,
+  ROW_BUTTON_WIDTH
+} from "./constants";
 
 const RowWrapper = styled.div`
   background-color: ${colors.white.base};
+  border-bottom: 1px solid ${colors.lightGray};
 
   ${mediumAndUp`
     border-radius: 4px;
@@ -39,25 +45,21 @@ const RowWrapper = styled.div`
       margin-bottom: 0;
     }
   `};
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid ${colors.lightGray};
-  }
 `;
 
 const ListContainer = styled.div`
   background-color: ${colors.white.base};
   align-items: stretch;
   display: flex;
-  padding-top: calc(12px + ${spacing.cozy});
+  padding-top: ${props =>
+    props.rowLabel ? "1px" : `calc(12px + ${spacing.cozy})`};
   padding-bottom: ${props =>
     props.rowVariant === "withLink" ? "1px" : `calc(12px + ${spacing.cozy})`};
   ${mediumAndUp`
-    padding-top: calc(18px + ${spacing.cozy});
+    padding-top: ${props =>
+      props.rowLabel ? "0" : `calc(18px + ${spacing.cozy})`};
     padding-bottom: ${props =>
-      props.rowVariant === "withLink"
-        ? "0"
-        : `calc(18px + ${spacing.cozy})`};   
+      props.rowVariant === "withLink" ? "0" : `calc(18px + ${spacing.cozy})`};
   `};
 `;
 
@@ -117,9 +119,9 @@ const MobileOnlyColumn = styled(Column)`
   `};
 `;
 
-const ListRowButton = StyledButton.withComponent("span").extend`
-  min-width: 100px;
-  max-width: 102px;
+const ListRowButton = styled(StyledButton)`
+  min-width: ${ROW_BUTTON_WIDTH};
+  max-width: ${ROW_BUTTON_WIDTH};
   height: 36px;
   display: flex;
   justify-content: center;
@@ -245,7 +247,10 @@ class ListRowContent extends Component {
         dateTitle,
         dateSubTitle,
         buttonText,
+        buttonVariant = "standard",
         variant,
+        label,
+        labelVariant,
         linkTitle,
         linkUrl = "",
         linkSubTitle,
@@ -273,8 +278,16 @@ class ListRowContent extends Component {
         })}
         {...rest}
       >
+        <RowLabel isOpen={isOpen} index={index} variant={labelVariant}>
+          {label}
+        </RowLabel>
+
         {/* this class name is for automation purposes please do not remove or modify the name */}
-        <ListContainer className="list__container" rowVariant={variant}>
+        <ListContainer
+          className="list__container"
+          rowVariant={variant}
+          rowLabel={label}
+        >
           <RowToggler
             isOpen={isOpen}
             index={index}
@@ -315,7 +328,7 @@ class ListRowContent extends Component {
             </DateWrapper>
 
             {/* this class name is for automation purposes please do not remove or modify the name */}
-            <ContentRow className="row__content">
+            <ContentRow className="row__content row--gutterless">
               {/* this class name is for automation purposes please do not remove or modify the name */}
               <MobileOnlyColumn className="column__mobile-only">
                 <MultilineText
@@ -389,9 +402,10 @@ class ListRowContent extends Component {
               <ListRowButton
                 aria-label={buttonText}
                 role="button"
-                width="102px"
-                variant="standard"
+                width={ROW_BUTTON_WIDTH}
+                variant={buttonVariant}
                 size="regular"
+                as="span"
                 rowVariant={variant}
               >
                 {buttonText}

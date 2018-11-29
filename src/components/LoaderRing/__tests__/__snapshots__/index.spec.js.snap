@@ -1,70 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
-.c1 > div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
-  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
-}
-
-.c1 > div:nth-child(1) {
-  -webkit-animation-delay: -0.45s;
-  animation-delay: -0.45s;
-}
-
-.c1 > div:nth-child(2) {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
-}
-
-.c1 > div:nth-child(3) {
-  -webkit-animation-delay: -0.15s;
-  animation-delay: -0.15s;
-}
-
-.c0 > div {
-  width: 80px;
-  height: 80px;
-  margin: 0px;
-  border: 3px solid #904eba;
-  border-color: #904eba transparent transparent transparent;
-}
-
-.c2 > div {
-  width: 60px;
-  height: 60px;
-  margin-top: 7px;
-  margin-left: 7px;
-  border: 3px solid #20c4c7;
-  border-color: #20c4c7 transparent transparent transparent;
-}
-
-.c3 > div {
-  width: 40px;
-  height: 40px;
-  margin-top: 7px;
-  margin-left: 7px;
-  border: 3px solid #026cdf;
-  border-color: #026cdf transparent transparent transparent;
-}
-
 <div
-  className="c0 c1"
+  className="emAHDt"
+  display="block"
+  size="regular"
 >
   <div />
   <div />
   <div />
   <div
-    className="c2 c1"
+    className="gMBTTJ"
+    display="block"
+    size="regular"
   >
     <div />
     <div />
     <div />
     <div
-      className="c3 c1"
+      className="jESAEz"
+      display="block"
+      size="regular"
     >
       <div />
       <div />

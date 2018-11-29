@@ -6,31 +6,6 @@ import { directions, SPACE_FROM_MOUSE, variants } from "./constants";
 
 class Tooltip extends Component {
   /*
-   * Static function that needs to be called from the parent -> Tooltip.getDimensionsFromEvent
-   * The parent should pass the click event which will trigger showing the Tooltip.
-   * By default the Tooltip is shown withing the view port. If we need to show it inside
-   * certain element we should pass the html element as second parameter.
-   * The function will return an object that should be provided to the Tooltip as props.
-   */
-  static getDimensionsFromEvent(e) {
-    const {
-      offsetTop: elTop,
-      clientHeight: elHeight,
-      clientWidth: elWidth,
-      offsetLeft: elLeft
-    } = e.currentTarget;
-
-    return {
-      elHorizontalCenter: elLeft + elWidth / 2,
-      elVerticalCenter: elTop + elHeight / 2,
-      elTop,
-      elBottom: elTop + elHeight,
-      elLeft,
-      elRight: elLeft + elWidth
-    };
-  }
-
-  /*
    * Function that determines Tooltip position.
    * @position(object) - top and bottom position of the elemt that triggers showing Tooltip;
    * Mouse horizontal position on the sreen - so we can center the Tooltip;
@@ -110,6 +85,31 @@ class Tooltip extends Component {
     }
   }
 
+  /*
+   * Static function that needs to be called from the parent -> Tooltip.getDimensionsFromEvent
+   * The parent should pass the click event which will trigger showing the Tooltip.
+   * By default the Tooltip is shown withing the view port. If we need to show it inside
+   * certain element we should pass the html element as second parameter.
+   * The function will return an object that should be provided to the Tooltip as props.
+   */
+  static getDimensionsFromEvent(e) {
+    const {
+      offsetTop: elTop,
+      clientHeight: elHeight,
+      clientWidth: elWidth,
+      offsetLeft: elLeft
+    } = e.currentTarget;
+
+    return {
+      elHorizontalCenter: elLeft + elWidth / 2,
+      elVerticalCenter: elTop + elHeight / 2,
+      elTop,
+      elBottom: elTop + elHeight,
+      elLeft,
+      elRight: elLeft + elWidth
+    };
+  }
+
   updateSize = () => {
     const { width, height } = this.size;
     const size = {};
@@ -162,7 +162,7 @@ class Tooltip extends Component {
         variant={variant}
       >
         <StyledTooltip
-          innerRef={this.myRef}
+          ref={this.myRef}
           isVisible={isVisible}
           direction={direction}
           {...rest}

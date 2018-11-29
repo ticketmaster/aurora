@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import spacing from "../../theme/spacing";
+import { colors, spacing } from "../../theme";
 import { SecondaryText, Link } from "../Text";
 import { ItemContainerConsumer } from "./Context";
-import { LinkTitle } from "../Text/Link";
 
 const ItemContainer = styled.div.attrs({
   className: "section-item"
@@ -20,16 +19,16 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
-const ItemContainerLink = ItemContainer.withComponent(Link);
-
 const IconContainer = styled.div`
   padding-right: ${spacing.cozy};
 `;
 
 /* stylelint-disable */
-const MultiLineLink = styled(LinkTitle.withComponent("div")).attrs({
+const MultiLineLink = styled.div.attrs({
   className: "section-item-link"
 })`
+  color: ${({ color }) => color || colors.azure.base};
+  text-decoration: none;
   display: -webkit-box;
   overflow: hidden;
 
@@ -53,13 +52,14 @@ const SectionItem = ({
   children,
   ...props
 }) => {
-  const Container = url ? ItemContainerLink : ItemContainer;
-  const Title = onItemClick || url ? MultiLineLink : SecondaryText;
+  const isMultiline = onItemClick || url;
+  const Title = isMultiline ? MultiLineLink : SecondaryText;
+  const itemContainerProps = url ? { ...props, as: Link } : props;
 
   return (
     <ItemContainerConsumer>
       {value => (
-        <Container
+        <ItemContainer
           key={title}
           role="link"
           aria-label="Section Item"
@@ -68,14 +68,14 @@ const SectionItem = ({
           }
           onItemClick={onItemClick}
           href={url}
-          {...props}
+          {...itemContainerProps}
         >
           {icon && <IconContainer>{icon}</IconContainer>}
           <div>
             <Title>{title}</Title>
             {subTitle && <SecondaryText>{subTitle}</SecondaryText>}
           </div>
-        </Container>
+        </ItemContainer>
       )}
     </ItemContainerConsumer>
   );

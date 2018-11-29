@@ -7,12 +7,6 @@ import * as PT from "./PropTypes";
 
 const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
 
-const textTags = AVAILABLE_TAGS.reduce((acc, tag) => {
-  acc[tag] = StyledTextBase.withComponent(tag);
-
-  return acc;
-}, {});
-
 const TextBase = ({
   tag,
   variant,
@@ -28,8 +22,6 @@ const TextBase = ({
   children,
   ...props
 }) => {
-  const Text = textTags[tag];
-
   const classes = classnames({
     text: true,
     [`text--${variant}`]: !!variant,
@@ -41,7 +33,7 @@ const TextBase = ({
   });
 
   return (
-    <Text
+    <StyledTextBase
       className={classes}
       size={{
         small: responsiveSize.small || size,
@@ -59,10 +51,11 @@ const TextBase = ({
       secondary={secondary}
       disabled={disabled}
       allCaps={allCaps}
+      as={tag}
       {...props}
     >
       {children}
-    </Text>
+    </StyledTextBase>
   );
 };
 

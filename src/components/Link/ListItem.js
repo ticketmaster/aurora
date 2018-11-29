@@ -36,15 +36,15 @@ const ItemContainer = styled.div.attrs({
   }
 `;
 
-const LinkItemContainer = ItemContainer.withComponent("a").extend`
-text-decoration: none;
+const LinkItemContainer = styled(ItemContainer)`
+  text-decoration: none;
 `;
 
 const ListItem = ({ children, index, onClick, href, ...rest }) => (
   <LinkListConsumer>
     {({ onItemClick, selectedIndex }) =>
       href ? (
-        <LinkItemContainer onClick={onClick} href={href} {...rest}>
+        <LinkItemContainer onClick={onClick} href={href} as="a" {...rest}>
           {children}
         </LinkItemContainer>
       ) : (

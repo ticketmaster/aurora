@@ -48,7 +48,7 @@ class PopOverDemo extends React.Component {
   render() {
     const { showPopOver, ...position } = this.state;
     return (
-      <Container innerRef={this.containerRef}>
+      <Container ref={this.containerRef}>
         <div
           style={{
             width: "100%",

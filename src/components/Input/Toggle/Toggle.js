@@ -46,7 +46,7 @@ class Toggle extends Component {
         onClick={composeEventHandlers(onClick, onToggle)}
         disabled={disabled}
         {...rest}
-        innerRef={el => {
+        ref={el => {
           this.activeArea = el;
         }}
       >

@@ -70,7 +70,7 @@ const Modal = ({ children, containerProps, contentProps, ...props }) => (
         small={4}
         role="dialog"
         aria-modal
-        innerRef={backdropValue ? backdropValue.childRef : null}
+        ref={backdropValue ? backdropValue.childRef : null}
         {...containerProps}
       >
         {props.withCloseIcon && (

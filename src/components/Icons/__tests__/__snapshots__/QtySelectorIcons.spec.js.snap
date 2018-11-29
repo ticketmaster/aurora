@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QtySelectorMinusIcon renders correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="nonzero"
+  >
+    <path
+      d="M0 0h24v24H0z"
+    />
+    <path
+      d="M4 12h16"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </g>
+</svg>
+`;
+
+exports[`QtySelectorPlusIcon renders correctly 1`] = `
+<svg
+  height="24"
+  viewBox="0 0 24 24"
+  width="24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="nonzero"
+  >
+    <path
+      d="M0 0h24v24H0z"
+    />
+    <path
+      d="M4 12h16M12 4v16"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </g>
+</svg>
+`;

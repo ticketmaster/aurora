@@ -1,359 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CalendarView should render without errors 1`] = `
-.c0 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  height: 100%;
-  min-height: 192px;
-  background-color: rgba(255,255,255,1);
-  border: solid 1px #ebebeb;
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.c0.day-tile--no-border-radius {
-  border-radius: 0;
-}
-
-.c1 {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 30px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  pointer-events: none;
-}
-
-.c24 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(2,108,223,1);
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
-
-.c24:focus,
-.c24:active,
-.c24:visited,
-.c24:hover {
-  color: rgba(2,108,223,1);
-}
-
-.c24:hover {
-  color: #0150a7;
-}
-
-.c4 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c15 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,1);
-}
-
-.c16 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-transform: none;
-  color: rgba(38,38,38,0.6);
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: rgba(255,255,255,1);
-}
-
-.c3 {
-  color: #999999;
-}
-
-.c3.day-tile-date__text--accent {
-  color: #904eba;
-}
-
-.c5 {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  min-height: 190px;
-}
-
-.c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  padding-left: 30px;
-  min-height: 30px;
-}
-
-.c12 {
-  -webkit-flex: auto;
-  -ms-flex: auto;
-  flex: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-}
-
-.c13 {
-  padding: 8px 8px 4px;
-}
-
-.c17 {
-  margin-top: auto;
-}
-
-.c25 {
-  margin: 0 8px 8px;
-  border-bottom: solid 1px #ebebeb;
-}
-
-.c14 {
-  width: 100%;
-  word-break: break-word;
-}
-
-.c21 {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.84;
-  width: 100%;
-  padding: 0 10px 0 10px;
-  min-width: 60px;
-  text-align: center;
-  border-radius: 2px;
-  cursor: pointer;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  -webkit-transition: -webkit-transform 0.1s linear;
-  -webkit-transition: transform 0.1s linear;
-  transition: transform 0.1s linear;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  display: block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c21:focus {
-  outline: none;
-  box-shadow: 0 0 5px 0 #026cdf;
-}
-
-.c21:hover {
-  background-color: #0150a7;
-}
-
-.c21:active {
-  -webkit-transform: scale(0.98,0.98) translate(0,1px);
-  -ms-transform: scale(0.98,0.98) translate(0,1px);
-  transform: scale(0.98,0.98) translate(0,1px);
-  background-color: #013670;
-}
-
-.c21:disabled {
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
-  color: rgba(255,255,255,1);
-  background-color: #026cdf;
-  border: 1px solid transparent;
-  opacity: 0.2;
-}
-
-.c10 {
-  height: 36px;
-  width: 100%;
-  min-width: 100px;
-  font-weight: 600;
-  text-align: center;
-  border-radius: 2px;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,1);
-  cursor: pointer;
-  text-transform: capitalize;
-  font-size: 14px;
-  min-width: 30px;
-  max-width: 30px;
-  height: 30px;
-  width: 30px;
-  border: none;
-}
-
-.c10:disabled {
-  color: rgba(255,255,255,0.5);
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  cursor: not-allowed;
-}
-
-.c10:focus {
-  outline: none;
-}
-
-.c10 > * {
-  pointer-events: none;
-}
-
-.c19 {
-  padding: 0 8px 8px;
-}
-
-.c18 > .c20 + .c20 {
+.c1 > .diClnh + .c2 {
   margin-top: 8px;
 }
 
-.c22 {
-  padding: 0 8px 8px;
-}
-
-.c23 {
-  display: block;
-  width: 100%;
-  padding: 3px 8px;
-  text-align: center;
-}
-
-.c7 {
-  margin-left: auto;
-}
-
-.c9 {
-  display: block;
-  padding: 8px 8px 0;
-  border: 0;
-  color: #999999;
-}
-
-.c8:hover .c11 {
+.c0:hover .fTvYSO {
   color: #026cdf;
   fill: currentColor;
 }
 
-@media screen and (min-width:768px) {
-  .c24 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c24 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c4 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c4 {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c15 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c15 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c16 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:1024px) {
-  .c16 {
-    font-size: 12px;
-  }
-}
-
 <div
-  className="day-tile c0"
+  className="day-tile gpBdvn"
 >
   <header
-    className="c1"
+    className="gVZTwB"
   >
     <div
-      className="c2"
+      className="fPPYIO"
     >
       <div
-        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent c3 c4"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent eeRzAt cYpwof"
         disabled={false}
         size={
           Object {
@@ -368,23 +35,23 @@ exports[`CalendarView should render without errors 1`] = `
     </div>
   </header>
   <article
-    className="c5"
+    className="cSkcyn"
   >
     <header
-      className="c6"
+      className="isAWQW"
     >
       <div
-        className="c7"
+        className="hloPZA"
       >
         <button
           aria-label="More Info"
-          className="c8 c9 c10"
+          className="c0 jyFIZA bexVpN"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="c11"
+            className="fTvYSO"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -398,13 +65,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="c12"
+      className="hjXLMW"
     >
       <div
-        className="c13"
+        className="vzSwW"
       >
         <div
-          className="text text--dark text--primary c14 c15"
+          className="text text--dark text--primary eWsGQH cQpfrv"
           disabled={false}
           size={
             Object {
@@ -417,7 +84,7 @@ exports[`CalendarView should render without errors 1`] = `
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary c14 c16"
+          className="text text--dark text--secondary eWsGQH kvBWLN"
           disabled={false}
           size={
             Object {
@@ -432,16 +99,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="c17"
+      className="IBSbT"
     >
       <div
-        className="c18 c19"
+        className="c1 kPyjMp"
       >
         <div
-          className="c20"
+          className="c2 diClnh"
         >
           <a
-            className="c21"
+            className="eGaUx"
             href="#"
             rel={undefined}
             size="small"
@@ -450,10 +117,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c20"
+          className="c2 diClnh"
         >
           <a
-            className="c21"
+            className="eGaUx"
             href="#"
             rel={undefined}
             size="small"
@@ -463,10 +130,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="c22"
+        className="cnZIRB"
       >
         <button
-          className="c23 c24"
+          className="cHWTPb FJEaM"
           href={null}
           onClick={[Function]}
           rel="_self"
@@ -486,26 +153,26 @@ exports[`CalendarView should render without errors 1`] = `
     </footer>
   </article>
   <div
-    className="c25"
+    className="bmGypZ"
   />
   <article
-    className="c5"
+    className="cSkcyn"
   >
     <header
-      className="c6"
+      className="isAWQW"
     >
       <div
-        className="c7"
+        className="hloPZA"
       >
         <button
           aria-label="More Info"
-          className="c8 c9 c10"
+          className="c0 jyFIZA bexVpN"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="c11"
+            className="fTvYSO"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -519,13 +186,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="c12"
+      className="hjXLMW"
     >
       <div
-        className="c13"
+        className="vzSwW"
       >
         <div
-          className="text text--dark text--primary c14 c15"
+          className="text text--dark text--primary eWsGQH cQpfrv"
           disabled={false}
           size={
             Object {
@@ -540,16 +207,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="c17"
+      className="IBSbT"
     >
       <div
-        className="c18 c19"
+        className="c1 kPyjMp"
       >
         <div
-          className="c20"
+          className="c2 diClnh"
         >
           <a
-            className="c21"
+            className="eGaUx"
             href="#"
             rel={undefined}
             size="small"
@@ -558,10 +225,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c20"
+          className="c2 diClnh"
         >
           <a
-            className="c21"
+            className="eGaUx"
             href="#"
             rel={undefined}
             size="small"
@@ -571,10 +238,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="c22"
+        className="cnZIRB"
       >
         <button
-          className="c23 c24"
+          className="cHWTPb FJEaM"
           href={null}
           onClick={[Function]}
           rel="_self"

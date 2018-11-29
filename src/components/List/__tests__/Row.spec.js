@@ -58,6 +58,42 @@ describe("<ListRow />", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("renders List Row with label correctly", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          rowItem={{
+            ...listItems[0],
+            label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
+            labelVariant: "positive"
+          }}
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("renders List Row with styled button", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow
+          rowItem={{
+            ...listItems[0],
+            buttonText: "More Info",
+            buttonVariant: "outline"
+          }}
+          index={0}
+          onOverflowClick={jest.fn()}
+        />
+      </ListRowContainer>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it("renders List Row with colored date correctly", () => {
     const component = renderer.create(
       <ListRowContainer>
