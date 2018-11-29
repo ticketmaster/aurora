@@ -26,14 +26,16 @@ export default class Backdrop extends Component {
     animated: false
   };
 
-  componentDidMount() {
-    document.addEventListener("click", this.handleOutsideClick);
-    document.addEventListener("keydown", this.onKeyPress);
+  constructor(props) {
+    super(props);
+
+    this.hasListeners = false;
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleOutsideClick);
-    document.removeEventListener("keydown", this.onKeyPress);
+    if (this.hasListeners) {
+      this.detachListeners();
+    }
   }
 
   onKeyPress = e => {
@@ -41,6 +43,22 @@ export default class Backdrop extends Component {
 
     if (e.keyCode === ESCAPE && onRequestClose) {
       onRequestClose(e);
+    }
+  };
+
+  attachListeners = () => {
+    if (document) {
+      document.addEventListener("click", this.handleOutsideClick);
+      document.addEventListener("keydown", this.onKeyPress);
+      this.hasListeners = true;
+    }
+  };
+
+  detachListeners = () => {
+    if (document) {
+      document.removeEventListener("click", this.handleOutsideClick);
+      document.removeEventListener("keydown", this.onKeyPress);
+      this.hasListeners = false;
     }
   };
 
@@ -58,6 +76,12 @@ export default class Backdrop extends Component {
 
   render() {
     const { children, overlay, overlayProps, isVisible, animated } = this.props;
+
+    if (isVisible && !this.hasListeners) {
+      this.attachListeners();
+    } else if (!isVisible && this.hasListeners) {
+      this.detachListeners();
+    }
 
     if (overlay) {
       return (
