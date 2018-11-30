@@ -27,6 +27,10 @@ rows:
     Type: number
     Default: 1
     Notes: Measured in pixels
+  - Prop: children
+    Type: node
+    Default: null
+    Notes: ResponsiveImage only
 ```
 
 ### Image with loader prop

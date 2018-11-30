@@ -23,4 +23,14 @@ describe("ResponsiveImage", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("should render correctly when a children prop is passed", () => {
+    const component = renderer.create(
+      <ResponsiveImage {...PROPS}>
+        <title>Responsive Image</title>
+      </ResponsiveImage>
+    );
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

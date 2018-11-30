@@ -10,7 +10,7 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light iODTDm"
+    className="breadcrumb--light bhmjif"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   >
@@ -30,7 +30,7 @@ exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light jieHDE"
+    className="breadcrumb--light blNvKQ"
     itemScope={true}
     itemType="http://schema.org/Breadcrumb"
   />
