@@ -26,7 +26,7 @@ export const Button = styled.button`
 
   &:disabled {
     border-color: ${getThemeValue("gray04")};
-    color: ${getThemeValue("gray02")};
+    color: ${getThemeValue("gray03")};
   }
 
   &:focus {
@@ -58,6 +58,10 @@ export const InputFieldContainer = styled.div`
 
   &:hover&:not(.InputFieldContainer__disabled) {
     border-color: ${getThemeValue("primary", "base")};
+  }
+
+  &.InputFieldContainer__disabled {
+    border-bottom: 1px solid ${getThemeValue("gray04")};
   }
 `;
 
