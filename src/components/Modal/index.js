@@ -206,7 +206,7 @@ class Modal extends React.Component {
       <ModalProvider value={{ closeModal }}>
         <CSSTransition
           in={isOpened}
-          key="overaly-animation"
+          key="overlay-animation"
           timeout={300}
           classNames="open"
         >

@@ -64,9 +64,9 @@ export const ModalContainer = styled.div`
   display: ${({ isOpened }) => (isOpened ? "block" : "none")};
   top: ${({ displayTop }) => (displayTop ? 0 : "50%")};
   padding: 0;
-  margin-top: ${({ displayTop }) => (displayTop ? "88px" : "0")};
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: ${({ displayTop }) => (displayTop ? spacing.colossal : "0")};
+  margin-left: ${spacing.moderate};
+  margin-right: ${spacing.moderate};
   position: relative;
   transform: ${({ displayTop }) => (displayTop ? "none" : "translateY(-50%)")};
   z-index: ${zIndex.layout.overlay || "#fff"};
