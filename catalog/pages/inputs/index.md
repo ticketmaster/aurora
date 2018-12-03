@@ -489,12 +489,28 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option" shouldOpenDownward={true}>
+                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option" shouldOpenDownward={false}>
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                    <DropDownOption value="5" index={5}>Option One One One One</DropDownOption>
+                    <DropDownOption value="6" index={6}>Option Two</DropDownOption>
+                    <DropDownOption value="7" index={7}>Option Three</DropDownOption>
+                    <DropDownOption value="8" index={8}>Option Four</DropDownOption>
+                    <DropDownOption value="9" index={9}>Option Five</DropDownOption>
+                    <DropDownOption value="10" index={10}>Option One One One One</DropDownOption>
+                    <DropDownOption value="11" index={11}>Option Two</DropDownOption>
+                    <DropDownOption value="12" index={12}>Option Three</DropDownOption>
+                    <DropDownOption value="13" index={13}>Option Four</DropDownOption>
+                    <DropDownOption value="14" index={14}>Option Five</DropDownOption>
+                    <DropDownOption value="15" index={15}>Option Five</DropDownOption>
+                    <DropDownOption value="16" index={16}>Option Two</DropDownOption>
+                    <DropDownOption value="17" index={17}>Option Three</DropDownOption>
+                    <DropDownOption value="18" index={18}>Option Four</DropDownOption>
+                    <DropDownOption value="19" index={19}>Option Five</DropDownOption>
+                    <DropDownOption value="20" index={20}>Option Five</DropDownOption>
                 </DropDownGroup>
             </Column>
             <Column medium={4}>

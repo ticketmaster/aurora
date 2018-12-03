@@ -34,16 +34,11 @@ class DropDownGroup extends React.Component {
     // scroll dropdown to top after opening
     if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
-      // disables scroll when dropdown is open
-      document.addEventListener("wheel", this.disableScroll);
-    } else {
-      document.removeEventListener("wheel", this.disableScroll);
     }
   }
 
   componentWillUnmount() {
     document.removeEventListener("click", this.handleOutsideClick);
-    document.removeEventListener("wheel", this.disableScroll);
   }
 
   onClick = () => {
@@ -85,31 +80,9 @@ class DropDownGroup extends React.Component {
     return selectedItem && selectedItem.props.children;
   };
 
-  closeDropdown = () => {
-    this.setState(() => ({
-      // set openUpward to false when closing the dropdown, otherwise check position
-      openUpward: false,
-      isOpen: false,
-      maxDropdownHeight: 0
-    }));
-  };
+  closeDropdown = () => this.setState({ isOpen: false });
 
-  openDropdown = () => {
-    this.setState(() => {
-      const { shouldOpenDownward } = this.props;
-      const openUpward = this.shouldOpenUpward();
-
-      return {
-        // set openUpward to false when closing the dropdown, otherwise check position
-        openUpward: shouldOpenDownward ? false : openUpward,
-        isOpen: true,
-        maxDropdownHeight:
-          (openUpward
-            ? this.calculateSpaceToTop()
-            : this.calculateSpaceToBottom()) - this.ADDITIONAL_SPACE
-      };
-    });
-  };
+  openDropdown = () => this.setState({ isOpen: true });
 
   toggleDropdown = () => {
     if (this.state.isOpen) {
@@ -119,41 +92,10 @@ class DropDownGroup extends React.Component {
     }
   };
 
-  disableScroll = e => {
-    const dropdownHeight = this.styledChildWrapper.current.clientHeight;
-    const optionsHeight = this.optionsContainer.current.clientHeight;
-    const isScrollable = optionsHeight > dropdownHeight;
-    // disable scroll when a user scrolls outside of dropdown or
-    // withing a dropdown and it is not scrollable
-    if (
-      this.state.isOpen &&
-      (!this.groupWrapper.current.contains(e.target) ||
-        (this.groupWrapper.current.contains(e.target) && !isScrollable))
-    ) {
-      this.stopInteraction(e);
-    }
-  };
-
   stopInteraction = e => {
     e.preventDefault();
     e.stopPropagation();
   };
-
-  calculateSpaceToTop = () => {
-    const { top } = this.styledGroup.current.getBoundingClientRect();
-    return top;
-  };
-
-  calculateSpaceToBottom = () => {
-    const viewPortHeight = document.documentElement.clientHeight;
-    const { bottom } = this.styledGroup.current.getBoundingClientRect();
-    return viewPortHeight - bottom;
-  };
-
-  // check if dropdown height is higher than the space underneath it
-  shouldOpenUpward = () =>
-    this.calculateSpaceToBottom() <
-    this.DROPDOWN_MIN_HEIGHT + this.ADDITIONAL_SPACE;
 
   handleOutsideClick = e => {
     if (this.state.isOpen && !this.groupWrapper.current.contains(e.target)) {
@@ -180,19 +122,13 @@ class DropDownGroup extends React.Component {
   };
 
   groupWrapper = React.createRef();
-  optionsContainer = React.createRef();
-  styledGroup = React.createRef();
   styledChildWrapper = React.createRef();
   ANIMATION_TIMEOUT = 300;
-  ADDITIONAL_SPACE = 44;
-  DROPDOWN_MIN_HEIGHT = this.props.size === "small" ? 120 : 135;
 
   /* eslint-disable */
   state = {
     isOpen: false,
-    onClose: this.onClick,
-    openUpward: false,
-    maxDropdownHeight: 0
+    onClose: this.onClick
   };
   /* eslint-enable */
 
@@ -213,7 +149,7 @@ class DropDownGroup extends React.Component {
       shouldOpenDownward,
       ...props
     } = this.props;
-    const { isOpen: isOpenState, openUpward, maxDropdownHeight } = this.state;
+    const { isOpen: isOpenState } = this.state;
     const isOpen = isOpenProp || isOpenState;
     const hiddenLabelId = `hidden-label__${(placeholder || label).replace(
       / /g,
@@ -222,9 +158,6 @@ class DropDownGroup extends React.Component {
     const onClickListener = disabled
       ? { onMouseDown: this.stopInteraction }
       : { onClick: this.onClick };
-    const childWrapperStyles = shouldOpenDownward
-      ? {}
-      : { maxHeight: maxDropdownHeight };
 
     return (
       <SelectionProvider
@@ -240,10 +173,11 @@ class DropDownGroup extends React.Component {
               : { as: "div" };
 
             return (
-              <Transition in={openUpward} timeout={this.ANIMATION_TIMEOUT}>
+              <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
                 {state => {
                   // keep dropdown--open-upward className until collapse animation is finished (.3s)
-                  const hasOpenUpwardClass = state !== "exited";
+                  const hasOpenUpwardClass =
+                    state !== "exited" && !shouldOpenDownward;
 
                   return (
                     <StyledGroupWrapper
@@ -266,7 +200,6 @@ class DropDownGroup extends React.Component {
                           "dropdown--no-border": variant === 1,
                           "dropdown__label--disabled": disabled
                         })}
-                        ref={this.styledGroup}
                       >
                         {/* HiddenLabel is required for correct screen readers 
                           readings when an option is selected */}
@@ -302,20 +235,16 @@ class DropDownGroup extends React.Component {
                                 "dropdown--overflow": wrapperState === "entered"
                               }
                             )}
-                            style={childWrapperStyles}
                             ref={this.styledChildWrapper}
                           >
                             <DropDownProvider value={{ ...this.state, isOpen }}>
-                              {/* this div is required to decide which way to open a dropdown */}
-                              <div ref={this.optionsContainer}>
-                                <StyledKeyboardProvider
-                                  role="listbox"
-                                  aria-labelledby={hiddenLabelId}
-                                  {...keyboardProviderProps}
-                                >
-                                  {children}
-                                </StyledKeyboardProvider>
-                              </div>
+                              <StyledKeyboardProvider
+                                role="listbox"
+                                aria-labelledby={hiddenLabelId}
+                                {...keyboardProviderProps}
+                              >
+                                {children}
+                              </StyledKeyboardProvider>
                             </DropDownProvider>
                           </StyledChildWrapper>
                         )}
@@ -360,7 +289,7 @@ DropDownGroup.defaultProps = {
   label: "",
   disabled: false,
   size: TWO_SIZE_VARIANT[1],
-  shouldOpenDownward: false
+  shouldOpenDownward: true
 };
 
 export default DropDownGroup;

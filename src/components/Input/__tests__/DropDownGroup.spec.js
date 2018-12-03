@@ -119,15 +119,6 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("Should close the drop down on click outside", () => {
-    const { container, getByTestId } = renderTestComponentOne();
-
-    fireEvent.click(getByTestId("test-dropContainer"));
-    fireEvent.click(getByTestId("something"));
-
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   it("Should not focus onClick", () => {
     const { container } = renderTestComponentOne({ disabled: true });
     fireEvent.mouseDown(container.querySelector("label"));
@@ -156,7 +147,7 @@ describe("DropDownGroup", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("Arrow down arrow should open the drop down", () => {
+  it("Arrow key down should open the drop down", () => {
     const { container, getByTestId } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
@@ -393,24 +384,6 @@ describe("DropDownGroup", () => {
       preventDefault
     });
     expect(preventDefault).toHaveBeenCalled();
-  });
-
-  it("should disable scroll when dropdown is open", () => {
-    const { container, getByTestId } = renderTestComponentOne();
-
-    fireEvent.click(getByTestId("test-dropDownOptionOne"));
-    fireEvent.wheel(getByTestId("test-outSideComponent"));
-
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
-  it("should allow scroll inside the dropdown when it is open", () => {
-    const { container, getByTestId } = renderTestComponentOne();
-
-    fireEvent.click(getByTestId("test-dropDownOptionOne"));
-    fireEvent.wheel(getByTestId("test-dropDownOptionOne"));
-
-    expect(container.firstChild).toMatchSnapshot();
   });
 
   it("should render the correct label when label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption", () => {
