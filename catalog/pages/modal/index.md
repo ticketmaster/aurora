@@ -27,6 +27,9 @@ rows:
   - Prop: deviceSize
     Type: object
     Notes: An object provided by the DeviceSize component
+  - Prop: displayTop
+    Type: bool
+    Notes: Optional. Default false. Indicates, if the modal should open at the top of the page or in the center (default)
   - Prop: isOpened
     Type: bool
     Notes: Optional. Default true. Indicates, if the modal is opened by default
