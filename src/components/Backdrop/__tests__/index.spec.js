@@ -12,6 +12,10 @@ describe("<Backdrop />", () => {
     }
   };
 
+  beforeEach(() => {
+    process.browser = true;
+  });
+
   it("renders correctly with an overlay", () => {
     const { container } = render(
       <Backdrop childRef={childRef}>
