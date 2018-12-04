@@ -1,6 +1,7 @@
 export const MODAL_SIZE_SMALL = "small";
 export const MODAL_SIZE_MEDIUM = "medium";
 export const MODAL_SIZE_LARGE = "large";
+export const MODAL_SIZE_XLARGE = "xLarge";
 
 const MODAL_XSMALL_SIZE = {
   small: 12,
