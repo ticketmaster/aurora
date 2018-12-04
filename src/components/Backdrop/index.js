@@ -32,6 +32,22 @@ export default class Backdrop extends Component {
     this.hasListeners = false;
   }
 
+  componentDidMount() {
+    if (this.props.isVisible && !this.hasListeners) {
+      this.attachListeners();
+    }
+  }
+
+  componentDidUpdate() {
+    const { isVisible } = this.props;
+
+    if (isVisible && !this.hasListeners) {
+      this.attachListeners();
+    } else if (!isVisible && this.hasListeners) {
+      this.detachListeners();
+    }
+  }
+
   componentWillUnmount() {
     if (this.hasListeners) {
       this.detachListeners();
@@ -76,12 +92,6 @@ export default class Backdrop extends Component {
 
   render() {
     const { children, overlay, overlayProps, isVisible, animated } = this.props;
-
-    if (isVisible && !this.hasListeners) {
-      this.attachListeners();
-    } else if (!isVisible && this.hasListeners) {
-      this.detachListeners();
-    }
 
     if (overlay) {
       return (
