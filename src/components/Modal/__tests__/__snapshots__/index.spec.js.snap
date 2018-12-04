@@ -3,13 +3,13 @@
 exports[`<Modal /> closeModal should close the modal when the request was approved 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe"
     >
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
         style="min-height: 100; max-height: 100;"
       >
         <button
@@ -24,13 +24,13 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 exports[`<Modal /> closeModal should close the modal when there is no onRequestClose callback 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe"
     >
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
         style="min-height: 100; max-height: 100;"
       >
         <button
@@ -42,32 +42,50 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 </div>
 `;
 
-exports[`<Modal /> render should not render the modal if it is closed 1`] = `<div />`;
+exports[`<Modal /> render should not render the modal if it is closed 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX container--overlay eeaXpE"
+  >
+    <div
+      class="sc-bdVaJa exJCYM"
+    >
+      <div
+        class="sc-htpNat fIjnbp"
+      >
+        <div>
+          Modal contents
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe"
     >
       <div
-        class="sc-htpNat gYdIYG"
+        class="sc-bwzfXH bLkgfD"
       >
         <div>
           Action bar controls
         </div>
       </div>
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
       >
         <div>
           Modal contents
         </div>
       </div>
       <div
-        class="sc-ifAKCX fQNkTf"
+        class="sc-bxivhb jhtazh"
       >
         <div>
           Place your controls here
@@ -81,14 +99,14 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 exports[`<Modal /> render should render without errors and pass extra props 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe"
       style="width: 210px;"
     >
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
       >
         <div>
           Modal contents
@@ -102,13 +120,13 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 exports[`<Modal /> should recalculate shadows and content height on props change 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW open-enter open-enter-active"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe open-enter open-enter-active"
     >
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
         style="min-height: 100; max-height: 100;"
       >
         <div>
@@ -123,13 +141,13 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 exports[`<Modal /> should set bottom action bar shadow when the content was scrolled 1`] = `
 <div>
   <div
-    class="sc-EHOje container--overlay czzgRX"
+    class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bwzfXH fEztCo"
+      class="sc-bdVaJa dBIbMe"
     >
       <div
-        class="sc-bxivhb bSaKFF"
+        class="sc-htpNat fIjnbp"
         style="min-height: 100; max-height: 100;"
       >
         <div
@@ -139,7 +157,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
         </div>
       </div>
       <div
-        class="sc-ifAKCX fQNkTf"
+        class="sc-bxivhb jhtazh"
       >
         <div />
       </div>

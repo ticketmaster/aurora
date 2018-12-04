@@ -11,6 +11,8 @@ export default class Backdrop extends Component {
     childRef: PropTypes.object.isRequired,
     children: PropTypes.node.isRequired,
     overlay: PropTypes.bool,
+    isVisible: PropTypes.bool,
+    animated: PropTypes.bool,
     /* eslint-disable-next-line react/forbid-prop-types */
     overlayProps: PropTypes.object,
     onRequestClose: PropTypes.func
@@ -19,17 +21,37 @@ export default class Backdrop extends Component {
   static defaultProps = {
     overlay: true,
     overlayProps: {},
-    onRequestClose: null
+    onRequestClose: null,
+    isVisible: true,
+    animated: false
   };
 
+  constructor(props) {
+    super(props);
+
+    this.hasListeners = false;
+  }
+
   componentDidMount() {
-    document.addEventListener("click", this.handleOutsideClick);
-    document.addEventListener("keydown", this.onKeyPress);
+    if (this.props.isVisible && !this.hasListeners) {
+      this.attachListeners();
+    }
+  }
+
+  componentDidUpdate() {
+    const { isVisible } = this.props;
+
+    if (isVisible && !this.hasListeners) {
+      this.attachListeners();
+    } else if (!isVisible && this.hasListeners) {
+      this.detachListeners();
+    }
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleOutsideClick);
-    document.removeEventListener("keydown", this.onKeyPress);
+    if (this.hasListeners) {
+      this.detachListeners();
+    }
   }
 
   onKeyPress = e => {
@@ -37,6 +59,22 @@ export default class Backdrop extends Component {
 
     if (e.keyCode === ESCAPE && onRequestClose) {
       onRequestClose(e);
+    }
+  };
+
+  attachListeners = () => {
+    if (process.browser) {
+      document.addEventListener("click", this.handleOutsideClick);
+      document.addEventListener("keydown", this.onKeyPress);
+      this.hasListeners = true;
+    }
+  };
+
+  detachListeners = () => {
+    if (process.browser) {
+      document.removeEventListener("click", this.handleOutsideClick);
+      document.removeEventListener("keydown", this.onKeyPress);
+      this.hasListeners = false;
     }
   };
 
@@ -53,10 +91,14 @@ export default class Backdrop extends Component {
   };
 
   render() {
-    const { children, overlay, overlayProps } = this.props;
+    const { children, overlay, overlayProps, isVisible, animated } = this.props;
 
     if (overlay) {
-      return <Overlay {...overlayProps}>{children}</Overlay>;
+      return (
+        <Overlay isVisible={isVisible} animated={animated} {...overlayProps}>
+          {children}
+        </Overlay>
+      );
     }
 
     return children;

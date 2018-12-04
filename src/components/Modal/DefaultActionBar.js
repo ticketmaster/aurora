@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { colors } from "../../theme/index";
+import { themes } from "../../theme";
 
 import CrossIcon from "../Icons/Cross";
 
@@ -15,7 +15,7 @@ export const ModalActionBar = ({ modal: { closeModal }, iconButtonProps }) => (
     <CrossIcon
       size={12}
       style={{ pointerEvent: "none" }}
-      color={colors.onyx.base}
+      color={themes.global.onyx.base}
       className="button--close"
       aria-label="Close Modal"
       role="button"
