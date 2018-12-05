@@ -1,31 +1,22 @@
 import styled from "styled-components";
-import classnames from "classnames";
 
 import { constants } from "../../theme";
 import { getThemeValue } from "../../utils";
 
-const DAY_TILE_CLASS = "day-tile";
-const DAY_TILE_NO_BORDER_RADIUS_CLASS = `${DAY_TILE_CLASS}--no-border-radius`;
-
-const DayTile = styled.div.attrs({
-  className: ({ noBorderRadius }) =>
-    classnames(DAY_TILE_CLASS, {
-      [DAY_TILE_NO_BORDER_RADIUS_CLASS]: noBorderRadius
-    })
-})`
+const DayTile = styled.div`
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
   min-height: 192px;
-  background-color: ${getThemeValue("white", "base")};
   border: solid 1px ${getThemeValue("gray04")};
-  border-radius: ${constants.borderRadius.small};
   overflow: hidden;
-
-  &.${DAY_TILE_NO_BORDER_RADIUS_CLASS} {
-    border-radius: 0;
-  }
+  background-color: ${({ highlighted }) =>
+    highlighted
+      ? getThemeValue("primary", "lightBase")
+      : getThemeValue("white", "base")};
+  border-radius: ${({ noBorderRadius }) =>
+    !noBorderRadius ? constants.borderRadius.small : "0"};
 `;
 
 DayTile.Header = styled.header`
