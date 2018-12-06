@@ -1,6 +1,6 @@
 ### Breadcrumb
 
-Breadcrumb Component to assist the user in visualizing site navigation hierarchically. Breadcrumb contains relevant metadata to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) for more details.
+Breadcrumb Component to assist the user in visualizing site navigation hierarchically.
 
 ### Props
 
@@ -23,7 +23,7 @@ rows:
 
 ### Breadcrumb.Item
 
-Breadcrumb.Item Component to serve as children of the Breadcrumb. Breadcrumb.Item contains relevant metadata as props to populate the BreadcrumbList Schema.org entity. Please visit the [BreadcrumbList documentation page](https://schema.org/BreadcrumbList) and view the required props below for more details.
+Breadcrumb.Item Component to serve as children of the Breadcrumb.
 
 ### Props
 

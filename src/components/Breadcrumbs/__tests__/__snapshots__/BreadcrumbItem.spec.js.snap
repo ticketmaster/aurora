@@ -2,9 +2,6 @@
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 <li
-  itemProp="itemListElement"
-  itemScope={true}
-  itemType="http://schema.org/ListItem"
   style={
     Object {
       "whiteSpace": "nowrap",
@@ -14,7 +11,6 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   <a
     className="eOSDpb hCyrKv"
     href="/"
-    itemProp="item"
     onClick={null}
     rel="_self"
     size={
@@ -28,22 +24,11 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   >
     Home
   </a>
-  <meta
-    content="Home"
-    itemProp="name"
-  />
-  <meta
-    content="1"
-    itemProp="position"
-  />
 </li>
 `;
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 <li
-  itemProp="itemListElement"
-  itemScope={true}
-  itemType="http://schema.org/ListItem"
   style={
     Object {
       "whiteSpace": "nowrap",
@@ -53,7 +38,6 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   <span
     className="kXsNXA eZUnXh"
     href={null}
-    itemProp="item"
     onClick={null}
     rel="_self"
     size={
@@ -67,13 +51,5 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   >
     Home
   </span>
-  <meta
-    content="Home"
-    itemProp="name"
-  />
-  <meta
-    content="1"
-    itemProp="position"
-  />
 </li>
 `;
