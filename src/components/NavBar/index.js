@@ -106,7 +106,7 @@ const Left = styled.div`
 const MessageContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-size: ${typography.size.uno};
+  font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.regular};
   padding-top: 2px;
   padding-bottom: 2px;
