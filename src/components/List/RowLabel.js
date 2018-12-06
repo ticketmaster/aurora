@@ -7,7 +7,7 @@ import { Text } from "../Text";
 import { Column, Row } from "../Grid";
 import { StatusBadge } from "../StatusBadge";
 import { mediumAndUp } from "../../theme/mediaQueries";
-import { constants, colors, spacing, typography } from "../../theme";
+import { constants, colors, spacing, typography, themes } from "../../theme";
 
 import {
   CHEVRON_ICON_PADDING,
@@ -77,7 +77,10 @@ const DesktopWrapper = styled.div`
 
 const LabelText = styled(Text)`
   font-size: ${typography.size.uno};
-  text-transform: uppercase;
+  font-weight: ${typography.weight.semiBold};
+  ${({ sentiment }) =>
+    sentiment === "positive" &&
+    `color: ${themes.global.special.base};`} text-transform: uppercase;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -89,7 +92,7 @@ const renderLabel = (label, variant) => {
       return <StatusBadge label={label} color={colors.alert.base} />;
     case "positive":
       return (
-        <LabelText primary variant="accent" accent="positive">
+        <LabelText primary sentiment="positive" variant="accent">
           {label}
         </LabelText>
       );
