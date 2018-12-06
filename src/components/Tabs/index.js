@@ -86,9 +86,13 @@ const Tab = styled.div`
 const checkIfOverflows = ({ offsetWidth = 0, scrollWidth = 0 } = {}) =>
   offsetWidth < scrollWidth;
 
-const TabItemButton = styled.div.attrs({
-  className: props => (props.isActive ? "tab__button--active" : ""),
-  "data-index": props => props.dataIndex
+const TabItemButton = styled.div.attrs(props => {
+  const { isActive, dataIndex, ...rest } = props;
+  return {
+    className: isActive ? "tab__button--active" : "",
+    "data-index": dataIndex,
+    ...rest
+  };
 })`
   display: block;
   padding: ${padding} 0 ${spacing.cozy} 0;
@@ -102,6 +106,10 @@ const TabItemButton = styled.div.attrs({
 class Tabs extends Component {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.node).isRequired,
+    itemsProps: PropTypes.arrayOf(PropTypes.any),
+    /* eslint-disable react/forbid-prop-types */
+    defaultItemProps: PropTypes.object,
+    /* eslint-enable react/forbid-prop-types */
     index: PropTypes.number,
     onClick: PropTypes.func,
     variant: PropTypes.string,
@@ -111,6 +119,8 @@ class Tabs extends Component {
   };
 
   static defaultProps = {
+    itemsProps: [],
+    defaultItemProps: {},
     index: -1,
     onClick: () => {},
     variant: null,
@@ -168,7 +178,15 @@ class Tabs extends Component {
   itemRefs = [];
 
   renderItems = () => {
-    const { items, index, onClick, underlineColor, ...textProps } = this.props;
+    const {
+      items,
+      index,
+      onClick,
+      underlineColor,
+      itemsProps,
+      defaultItemProps,
+      ...textProps
+    } = this.props;
 
     const areItemsValidKeys =
       items &&
@@ -185,6 +203,7 @@ class Tabs extends Component {
             this.itemRefs[itemIndex] = ref;
           }}
           dataIndex={itemIndex}
+          {...itemsProps[itemIndex] || defaultItemProps}
         >
           <Text
             responsiveSize={{ small: "kilo", large: "giga" }}
