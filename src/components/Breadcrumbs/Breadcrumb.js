@@ -9,8 +9,6 @@ const Breadcrumb = ({ children, className, variant, ...props }) => (
     <StyledBreadcrumb
       {...props}
       className={classNames(className, `breadcrumb--${variant}`)}
-      itemScope
-      itemType="http://schema.org/Breadcrumb"
       childrenLen={React.Children.count(children)}
     >
       {children}

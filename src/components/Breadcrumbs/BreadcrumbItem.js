@@ -28,15 +28,9 @@ const BreadcrumbItem = ({
   primary,
   ...props
 }) => (
-  <li
-    itemProp="itemListElement"
-    itemScope
-    itemType="http://schema.org/ListItem"
-    style={{ whiteSpace: "nowrap" }}
-  >
+  <li style={{ whiteSpace: "nowrap" }}>
     <StyledLink
       {...props}
-      itemProp="item"
       size={size}
       weight={weight}
       variant={variant}
@@ -46,8 +40,6 @@ const BreadcrumbItem = ({
     >
       {children}
     </StyledLink>
-    {children && <meta itemProp="name" content={children} />}
-    {position && <meta itemProp="position" content={position} />}
   </li>
 );
 
