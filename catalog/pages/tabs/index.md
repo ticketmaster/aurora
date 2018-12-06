@@ -7,6 +7,14 @@ rows:
     Type: [node]
     Default:
     Notes: Required. Array of tab items.
+  - Prop: itemsProps
+    Type: [array]
+    Default:
+    Notes: Optional. Array of objects that determine attributes applied to every tab item.
+  - Prop: defaultItemProps
+    Type: object
+    Default:
+    Notes: Optional. Object that determines default attributes applied to every tab item.
   - Prop: index
     Type: number
     Default: -1
@@ -54,6 +62,8 @@ responsive: true
         <React.Fragment>
         <Tabs
           items={['first tab', 'second tab', 'third tab', 'fourth tab', 'fifth tab', 'sixth tab']}
+          itemsProps={[{'data-customInfo': 'someInfo_0'}, {'data-customInfo': 'someInfo_1'}, {'data-customInfo': 'someInfo_2'}]}
+          defaultItemProps={{'data-customInfo': 'someDefaultInfo'}}
           index={tabIndex}
           onClick={onChangeTabIndex()}
         />
