@@ -1,5 +1,8 @@
-import { getFontColor, getFontHue } from "..";
-import { colors } from "../../theme";
+import { getFontColor, getFontHue, getThemedFontColor } from "../typography";
+import { colors, themes } from "../../theme";
+import { themeTm } from "../../utils/getThemeValue";
+
+const themeLne = { themeName: "lne" };
 
 describe("getFontColor", () => {
   it("should return the primary dark color when variant equals dark and primary equals true", () => {
@@ -140,5 +143,199 @@ describe("getFontHue", () => {
         disabled: true
       })
     ).toEqual(colors.aquamarine);
+  });
+
+  it("should return the primary dark color when themed equals true, fontColor equals onyx and primary equals true", () => {
+    expect(
+      getFontHue({ themed: true, fontColor: themes.tm.onyx, primary: true })
+    ).toEqual("base");
+  });
+
+  it("should return the secondary dark color when themed equals true, fontColor equals onyx and secondary equals true", () => {
+    expect(
+      getFontHue({ themed: true, fontColor: themes.tm.onyx, secondary: true })
+    ).toEqual("light");
+  });
+
+  it("should return the disabled dark color when themed equals true, fontColor equals onyx and disabled equals true", () => {
+    expect(
+      getFontHue({ themed: true, fontColor: themes.tm.onyx, disabled: true })
+    ).toEqual("muted");
+  });
+
+  it("should return the primary light color when themed equals true, fontColor equals white and primary equals true", () => {
+    expect(
+      getFontHue({ themed: true, fontColor: themes.tm.white, primary: true })
+    ).toEqual("base");
+  });
+
+  it("should return the secondary light color when themed equals true, fontColor equals white and secondary equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.white,
+        secondary: true
+      })
+    ).toEqual("light");
+  });
+
+  it("should return the disabled light color when themed equals true, fontColor equals white and disabled equals true", () => {
+    expect(
+      getFontHue({ themed: true, fontColor: themes.tm.white, disabled: true })
+    ).toEqual("muted");
+  });
+
+  it("should return the primary accent color when themed equals true, fontColor equals an accent with multiple shades and primary equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.primary,
+        accent: "primary",
+        variant: "accent",
+        primary: true
+      })
+    ).toEqual("dark");
+  });
+
+  it("should return the secondary accent color when themed equals true, fontColor equals an accent with multiple shades and secondary equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.primary,
+        accent: "primary",
+        variant: "accent",
+        secondary: true
+      })
+    ).toEqual("base");
+  });
+
+  it("should return the disabled accent color when themed equals true, fontColor equals an accent with multiple shades and disabled equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.primary,
+        accent: "primary",
+        variant: "accent",
+        disabled: true
+      })
+    ).toEqual("light");
+  });
+
+  it("should return an empty string when themed equals true, fontColor equals an accent with a singular shade and primary equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.accent04,
+        accent: "accent04",
+        variant: "accent",
+        primary: true
+      })
+    ).toEqual("");
+  });
+
+  it("should return an empty string when themed equals true, fontColor equals an accent with a singular shade and secondary equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.accent04,
+        accent: "accent04",
+        variant: "accent",
+        secondary: true
+      })
+    ).toEqual("");
+  });
+
+  it("should return an empty string when themed equals true, fontColor equals an accent with a singular shade and disabled equals true", () => {
+    expect(
+      getFontHue({
+        themed: true,
+        fontColor: themes.tm.accent04,
+        accent: "accent04",
+        variant: "accent",
+        disabled: true
+      })
+    ).toEqual("");
+  });
+});
+
+describe("getThemedFontColor", () => {
+  it("should return the primary dark color when variant equals dark and primary equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "dark", primary: true })
+    ).toEqual(themes.tm.onyx.base);
+  });
+
+  it("should return the secondary dark color when variant equals dark and secondary equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "dark", secondary: true })
+    ).toEqual(themes.tm.onyx.light);
+  });
+
+  it("should return the disabled dark color when variant equals dark and disabled equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "dark", disabled: true })
+    ).toEqual(themes.tm.onyx.muted);
+  });
+
+  it("should return the primary light color when variant equals light and primary equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "light", primary: true })
+    ).toEqual(themes.tm.white.base);
+  });
+
+  it("should return the secondary light color when variant equals light and secondary equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "light", secondary: true })
+    ).toEqual(themes.tm.white.light);
+  });
+
+  it("should return the disabled light color when variant equals light and disabled equals true", () => {
+    expect(
+      getThemedFontColor({ theme: themeTm, variant: "light", disabled: true })
+    ).toEqual(themes.tm.white.muted);
+  });
+
+  it("should return the primary accent color when variant equals accent and primary equals true", () => {
+    expect(
+      getThemedFontColor({
+        theme: themeTm,
+        variant: "accent",
+        accent: "primary",
+        primary: true
+      })
+    ).toEqual(themes.tm.primary.dark);
+  });
+
+  it("should return the secondary accent color when variant equals accent and secondary equals true", () => {
+    expect(
+      getThemedFontColor({
+        theme: themeTm,
+        variant: "accent",
+        accent: "primary",
+        secondary: true
+      })
+    ).toEqual(themes.tm.primary.base);
+  });
+
+  it("should return the disabled accent color when variant equals accent and disabled equals true", () => {
+    expect(
+      getThemedFontColor({
+        theme: themeTm,
+        variant: "accent",
+        accent: "primary",
+        disabled: true
+      })
+    ).toEqual(themes.tm.primary.light);
+  });
+
+  it("should return the primary accent color when variant equals accent, primary equals true, and themeName equaks 'lne'", () => {
+    expect(
+      getThemedFontColor({
+        theme: themeLne,
+        variant: "accent",
+        accent: "primary",
+        primary: true
+      })
+    ).toEqual(themes.lne.primary.dark);
   });
 });

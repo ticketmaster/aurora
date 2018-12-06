@@ -41,15 +41,9 @@ exports[`ImageCard renders type = half 1`] = `
       className="hctSdC"
     >
       <div
-        className="text text--dark text--primary image-card__title--half hTwOaP"
+        className="text text--dark text--primary image-card__title--half kWGHae"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         <span
           className="hctSdC"
@@ -62,15 +56,9 @@ exports[`ImageCard renders type = half 1`] = `
       className="iDMPFk"
     >
       <div
-        className="text text--dark text--primary image-card__subtitle--half hTwOaP"
+        className="text text--dark text--primary image-card__subtitle--half kWGHae"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         <span
           className="iDMPFk"

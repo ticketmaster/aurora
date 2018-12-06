@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import colors from "../../theme/colors";
-import typography from "../../theme/typography";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
-import spacing from "../../theme/spacing";
+
+import { colors, typography, spacing } from "../../theme";
+import {
+  getResponsiveSize,
+  responsiveSizeMixin
+} from "../../utils/responsiveSize";
 
 const Span = styled.span`
   font-weight: ${typography.weight.light};
@@ -22,14 +24,7 @@ const Margins = styled.span`
   line-height: ${({ lineHeight }) => typography.lineHeight[lineHeight]};
   color: ${p => (p.color ? p.color : colors.white.base)};
   font-weight: ${({ weight }) => typography.weight[weight]};
-  font-size: ${({ size }) => typography.size[size.small]};
-  ${mediumAndUp`
-    font-size: ${({ size }) => typography.size[size.medium]};
-  `};
-
-  ${largeAndUp`
-    font-size: ${({ size }) => typography.size[size.large]};
-  `};
+  ${({ size }) => responsiveSizeMixin(size)};
 `;
 
 const levels = ["h1", "h2", "h3", "h4", "h5"];
@@ -40,17 +35,20 @@ const Heading = ({ level, size, responsiveSize, children, ...props }) => {
     <Margins
       {...props}
       as={tag}
-      size={{
-        small: responsiveSize.small || size || "tera",
-        medium:
-          responsiveSize.medium || responsiveSize.small || size || "zetta",
-        large:
-          responsiveSize.large ||
-          responsiveSize.medium ||
-          responsiveSize.small ||
-          size ||
-          "bronto"
-      }}
+      size={getResponsiveSize({
+        size,
+        responsiveSize: {
+          small: responsiveSize.small || size || "tera",
+          medium:
+            responsiveSize.medium || responsiveSize.small || size || "zetta",
+          large:
+            responsiveSize.large ||
+            responsiveSize.medium ||
+            responsiveSize.small ||
+            size ||
+            "bronto"
+        }
+      })}
     >
       {children}
     </Margins>
@@ -74,11 +72,7 @@ Heading.propTypes = {
 Heading.defaultProps = {
   level: 2,
   size: null,
-  responsiveSize: {
-    small: null,
-    medium: null,
-    large: null
-  },
+  responsiveSize: {},
   lineHeight: "header",
   weight: "regular",
   monospace: false,

@@ -12,15 +12,9 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -30,15 +24,9 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -48,15 +36,9 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -253,15 +235,9 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg jYRmLz"
+        className="text text--accent text-- text--primary laxRsg gmxDtj"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -271,15 +247,9 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg jYRmLz"
+        className="text text--accent text-- text--primary laxRsg gmxDtj"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -289,15 +259,9 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg jYRmLz"
+        className="text text--accent text-- text--primary laxRsg gmxDtj"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -318,15 +282,9 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -336,15 +294,9 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>
@@ -354,15 +306,9 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw iqtECQ"
+        className="text text--dark text--primary jbDszw gwaFLV"
         disabled={false}
-        size={
-          Object {
-            "large": "hecto",
-            "medium": "hecto",
-            "small": "hecto",
-          }
-        }
+        size="hecto"
       >
         test label
       </div>

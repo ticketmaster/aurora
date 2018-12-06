@@ -60,7 +60,7 @@ BreadcrumbItem.defaultProps = {
   size: "uno",
   weight: "semiBold",
   primary: true,
-  responsiveSize: {}
+  responsiveSize: null
 };
 
 export default BreadcrumbItem;

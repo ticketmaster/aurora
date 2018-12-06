@@ -8,33 +8,21 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
     className="hXtSSo"
   >
     <button
-      className="link--row-options lloPoD bFvwFO"
+      className="link--row-options lloPoD kKXawf"
       data-index={0}
       href={null}
       onClick={[Function]}
       rel="_self"
-      size={
-        Object {
-          "large": "hecto",
-          "medium": "hecto",
-          "small": "hecto",
-        }
-      }
+      size="hecto"
       target=""
     />
     <span
-      className="link--row-options bvvhOA lpapXk"
+      className="link--row-options bvvhOA yTfNV"
       data-index={0}
       href=""
       onClick={null}
       rel="_self"
-      size={
-        Object {
-          "large": "hecto",
-          "medium": "hecto",
-          "small": "hecto",
-        }
-      }
+      size="hecto"
       target=""
     />
   </div>

@@ -6,7 +6,10 @@ import * as PT from "./PropTypes";
 import { typography } from "../../theme";
 import { getThemeValue } from "../../utils";
 import { getRelByTarget, getAsProp } from "../../utils/link";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import {
+  getResponsiveSize,
+  responsiveSizeMixin
+} from "../../utils/responsiveSize";
 
 const LinkCtaBase = styled.a`
   text-decoration: none;
@@ -14,8 +17,7 @@ const LinkCtaBase = styled.a`
   transition: text-decoration 0.3s ease;
   transition: transform 0.1s linear;
   font-weight: ${typography.weight.semiBold};
-  font-size: ${({ size }) =>
-    (size.small && typography.size[size.small]) || size.small || "inherit"};
+  ${({ size }) => responsiveSizeMixin(size)};
   line-height: ${typography.lineHeight.header};
   color: ${getThemeValue("primary", "base")};
   display: inline-block;
@@ -37,18 +39,6 @@ const LinkCtaBase = styled.a`
   &:hover {
     color: ${getThemeValue("primary", "medium")};
   }
-
-  ${mediumAndUp`
-    font-size: ${({ size }) =>
-      (size.medium && typography.size[size.medium]) ||
-      size.medium ||
-      "inherit"};
-  `};
-
-  ${largeAndUp`
-    font-size: ${({ size }) =>
-      (size.large && typography.size[size.large]) || size.large || "inherit"};
-  `};
 `;
 
 const LinkCtaButtonBase = styled(LinkCtaBase)`
@@ -90,15 +80,7 @@ const LinkCta = ({
     <Elm
       {...props}
       {...asProp}
-      size={{
-        small: responsiveSize.small || size,
-        medium: responsiveSize.medium || responsiveSize.small || size,
-        large:
-          responsiveSize.large ||
-          responsiveSize.medium ||
-          responsiveSize.small ||
-          size
-      }}
+      size={getResponsiveSize({ size, responsiveSize })}
       href={href}
       onClick={onClick}
       rel={validatedRel}
@@ -121,11 +103,7 @@ LinkCta.propTypes = {
 LinkCta.defaultProps = {
   size: null,
   onClick: null,
-  responsiveSize: {
-    small: null,
-    medium: null,
-    large: null
-  },
+  responsiveSize: PT.defaultResponsiveSize,
   href: null,
   target: "_self",
   rel: ""

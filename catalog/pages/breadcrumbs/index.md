@@ -46,6 +46,10 @@ rows:
     Type: mini, uno, hecto, kilo, giga, tera, zetta
     Default: uno
     Notes: font size
+  - Prop: responsiveSize
+    Type: object
+    Default: "{ xSmall: null, small: null, medium: null, large: null, xLarge: null }"
+    Notes: Determines the font-size of the Text at a given viewport size. If no viewport-specific font-size is provided, this prop will default to the next largest viewport-specific font-size provided or the size prop.
   - Prop: weight
     Type: regular, semiBold
     Default: semiBold
