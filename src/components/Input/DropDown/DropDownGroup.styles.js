@@ -75,7 +75,6 @@ export const StyledChildWrapper = styled.div`
   box-shadow: ${DROP_DOWN_SHADOW};
   min-width: 100%;
   box-sizing: border-box;
-  overscroll-behavior: contain;
 
   flex-direction: column;
   flex: 1;
@@ -95,7 +94,7 @@ export const StyledChildWrapper = styled.div`
     padding-top: 4px;
     padding-bottom: 8px;
     border-width: 1px;
-    max-height: 300px;
+    max-height: 606px;
 
     transition: max-height 0.3s ${constants.easing.easeInOutQuad},
       border-width 0s, padding-top 0s, padding-bottom 0s;
@@ -109,6 +108,7 @@ export const StyledChildWrapper = styled.div`
     bottom: 43px;
     border-radius: ${small} ${small} 0 0;
     box-shadow: ${DROP_DOWN_SHADOW};
+
     &.dropdown__items--small {
       bottom: 35px;
     }

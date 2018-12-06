@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { CSSTransition } from "react-transition-group";
 
 import {
   ModalContainer,
@@ -15,6 +16,7 @@ import {
   MODAL_SIZE_SMALL,
   MODAL_SIZE_MEDIUM,
   MODAL_SIZE_LARGE,
+  MODAL_SIZE_XLARGE,
   getModalSize
 } from "./size";
 import { withDeviceSize } from "../DeviceSize/Context";
@@ -44,7 +46,8 @@ class Modal extends React.Component {
     size: PropTypes.oneOf([
       MODAL_SIZE_SMALL,
       MODAL_SIZE_MEDIUM,
-      MODAL_SIZE_LARGE
+      MODAL_SIZE_LARGE,
+      MODAL_SIZE_XLARGE
     ]),
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
@@ -193,53 +196,72 @@ class Modal extends React.Component {
       containerProps,
       actionBarProps,
       contentProps,
-      bottomActionBarProps
+      bottomActionBarProps,
+      displayTop
     } = this.props;
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
 
-    if (!isOpened) {
-      return null;
-    }
-
     return (
       <ModalProvider value={{ closeModal }}>
-        <Backdrop childRef={this.containerRef} onRequestClose={this.closeModal}>
-          <ModalContainer
-            small={getModalSize({ deviceSize, preferredSize: size })}
-            ref={this.containerRef}
-            {...containerProps}
+        <CSSTransition
+          in={isOpened}
+          key="overlay-animation"
+          timeout={300}
+          classNames="open"
+        >
+          <Backdrop
+            childRef={this.containerRef}
+            onRequestClose={this.closeModal}
+            isVisible={isOpened}
+            animated
           >
-            {actionBar && (
-              <ActionBar
-                shadow={actionBarShadow}
-                ref={this.actionBarRef}
-                gutters={gutters}
-                {...actionBarProps}
-              >
-                {actionBar}
-              </ActionBar>
-            )}
-            <ModalContent
-              ref={this.contentRef}
-              onScroll={this.handleScroll}
-              gutters={gutters}
-              {...contentProps}
+            <CSSTransition
+              in={isOpened}
+              key="modal-animation"
+              timeout={300}
+              classNames="open"
             >
-              {children}
-            </ModalContent>
-            {bottomActionBar && (
-              <BottomActionBar
-                shadow={bottomActionBarShadow}
-                ref={this.bottomActionBarRef}
-                gutters={gutters}
-                {...bottomActionBarProps}
+              <ModalContainer
+                small={getModalSize({ deviceSize, preferredSize: size })}
+                ref={this.containerRef}
+                isOpened={isOpened}
+                size={size}
+                displayTop={displayTop}
+                {...containerProps}
               >
-                {bottomActionBar}
-              </BottomActionBar>
-            )}
-          </ModalContainer>
-        </Backdrop>
+                {actionBar && (
+                  <ActionBar
+                    shadow={actionBarShadow}
+                    ref={this.actionBarRef}
+                    gutters={gutters}
+                    {...actionBarProps}
+                  >
+                    {actionBar}
+                  </ActionBar>
+                )}
+                <ModalContent
+                  ref={this.contentRef}
+                  onScroll={this.handleScroll}
+                  gutters={gutters}
+                  {...contentProps}
+                >
+                  {children}
+                </ModalContent>
+                {bottomActionBar && (
+                  <BottomActionBar
+                    shadow={bottomActionBarShadow}
+                    ref={this.bottomActionBarRef}
+                    gutters={gutters}
+                    {...bottomActionBarProps}
+                  >
+                    {bottomActionBar}
+                  </BottomActionBar>
+                )}
+              </ModalContainer>
+            </CSSTransition>
+          </Backdrop>
+        </CSSTransition>
       </ModalProvider>
     );
   }
