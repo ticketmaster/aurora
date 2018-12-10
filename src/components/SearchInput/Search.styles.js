@@ -9,14 +9,15 @@ import {
 import { SearchIcon } from "../Icons";
 import { themes, typography, constants, spacing } from "../../theme";
 import { cardBoxShadow } from "../../theme/constants";
+import { mediumAndUp } from "../../theme/mediaQueries";
 
 export const SearchContainer = styled.div`
   display: flex;
+  box-sizing: border-box;
   align-items: center;
-  height: ${({ variant, isFocused }) => getSearchHeight(variant, isFocused)};
+  height: ${({ variant }) => getSearchHeight(variant)};
   max-width: 100%;
-  min-width: ${({ isFocused }) =>
-    isFocused ? `calc(${SearchMinWidth} - 2px)` : SearchMinWidth};
+  min-width: ${SearchMinWidth};
   border: ${({ isFocused }) =>
     isFocused ? `1px solid ${themes.global.gray02}` : "none"};
   border-radius: ${constants.borderRadius.small};
@@ -105,9 +106,9 @@ export const Cancel = styled.button`
   padding: 0 ${spacing.moderate} 0 0;
   height: 100%;
 
-  @media screen and ${constants.breakpoints.mediumAndUp} {
+  ${mediumAndUp`
     display: none;
-  }
+  `};
 `;
 
 export const Clear = styled.button`
@@ -118,18 +119,17 @@ export const Clear = styled.button`
   height: 100%;
   width: 44px;
   margin-left: ${spacing.cozy};
-  display: flex;
+  display: ${({ value }) => (value ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   cursor: default;
-  visibility: ${({ value }) => (value ? "visible" : "hidden")};
   color: ${({ isFocused }) =>
     !isFocused ? themes.global.white.base : themes.global.gray02};
 
-  @media screen and ${constants.breakpoints.mediumAndUp} {
+  ${mediumAndUp`
     width: 40px;
     justify-content: left;
-  }
+  `};
 `;
 
 export const SearchSuggest = styled.div`
@@ -146,9 +146,9 @@ export const SearchSuggest = styled.div`
   overflow-y: auto;
   box-sizing: border-box;
 
-  @media screen and ${constants.breakpoints.mediumAndUp} {
+  ${mediumAndUp`
     max-height: ${SuggestMaxHeight};
-  }
+  `};
 `;
 
 SearchSuggest.displayName = "SearchSuggest";

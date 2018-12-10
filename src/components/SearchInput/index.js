@@ -66,24 +66,25 @@ class SearchInput extends Component {
       cancelBtnAreaLabel,
       inputAreaLabel,
       isSuggestOpened,
+      hasBackground,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
-
+    const isStyleForFocusedUsed = !hasBackground || isFocused;
     return (
       <SearchContainer
         variant={variant}
-        isFocused={isFocused}
+        isFocused={isStyleForFocusedUsed}
         isSuggestOpened={isSuggestOpened}
         {...rest}
         className={classNames("search--container", className, {
           hidden: !isInputVisible,
-          "search--container-focused": isFocused
+          "search--container-focused": isStyleForFocusedUsed
         })}
       >
         <StyledSearchIcon
           variant={variant}
-          isFocused={isFocused}
+          isFocused={isStyleForFocusedUsed}
           onClick={searchIconSelect}
           aria-label={searchBtnAreaLabel}
           className="search--search-icon"
@@ -97,11 +98,11 @@ class SearchInput extends Component {
           onChange={onChange}
           onFocus={this.inputFocused}
           onBlur={this.inputBlur}
-          isFocused={isFocused}
-          innerRef={this.inputRef}
+          isFocused={isStyleForFocusedUsed}
+          ref={this.inputRef}
           aria-label={inputAreaLabel}
           className={classNames("search--input", {
-            "search--input-focused": isFocused
+            "search--input-focused": isStyleForFocusedUsed
           })}
         />
         <Clear
@@ -109,12 +110,12 @@ class SearchInput extends Component {
           value={value}
           aria-label={clearBtnAreaLabel}
           className="search--clear-icon"
-          isFocused={isFocused}
+          isFocused={isStyleForFocusedUsed}
         >
           <ClearIcon color="currentColor" />
         </Clear>
         <Cancel
-          isFocused={isFocused}
+          isFocused={isStyleForFocusedUsed}
           onClick={cancelCallback}
           aria-label={cancelBtnAreaLabel}
           className="search--cancel-icon"
