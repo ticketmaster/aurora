@@ -4,20 +4,12 @@ export const searchVariants = {
 };
 
 const searchHeight = {
-  small: 36,
-  large: 44
+  small: "36px",
+  large: "44px"
 };
 
-export const getSearchHeight = (variant, isFocused) => {
-  const heightOption = variant === searchVariants.small ? "small" : "large";
-
-  if (isFocused) {
-    // We remove 2 px from the height because when search is focused we add 1px border on top and bottom
-    return `${searchHeight[heightOption] - 2}px`;
-  }
-
-  return `${searchHeight[heightOption]}px`;
-};
+export const getSearchHeight = variant =>
+  searchHeight[variant] || searchHeight.large;
 
 export const SearchMinWidth = "320px";
 
