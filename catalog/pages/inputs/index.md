@@ -305,6 +305,10 @@ rows:
     Type: string
     Default: regular
     Notes: Defines the size of an input field. Can be small, regular or large
+  - Prop: tag
+    Type: enum("input", "textarea")
+    Default: N/A
+    Notes: Changes the underlying HTML Element.
 ```
 
 ```react
@@ -344,6 +348,11 @@ span: 6
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
                     <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input tag="textarea" labelPosition="top" placeholder="Hint Text" name="test1" label="Textarea" size="large"/>
                 </Spacing>
             </Column>
         </Row>
