@@ -7,7 +7,8 @@ import { Text } from "../Text";
 import { Column, Row } from "../Grid";
 import { StatusBadge } from "../StatusBadge";
 import { mediumAndUp } from "../../theme/mediaQueries";
-import { constants, colors, spacing, typography, themes } from "../../theme";
+import { constants, spacing, typography, themes } from "../../theme";
+import { labelsColorMap } from "./helper";
 
 import {
   CHEVRON_ICON_PADDING,
@@ -75,12 +76,13 @@ const DesktopWrapper = styled.div`
   `};
 `;
 
+const getTextColor = ({ sentiment }) => labelsColorMap[sentiment] || "inherit";
+
 const LabelText = styled(Text)`
   font-size: ${typography.size.uno};
   font-weight: ${typography.weight.semiBold};
-  ${({ sentiment }) =>
-    sentiment === "positive" &&
-    `color: ${themes.global.special.base};`} text-transform: uppercase;
+  color: ${getTextColor};
+  text-transform: uppercase;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -89,13 +91,23 @@ const LabelText = styled(Text)`
 const renderLabel = (label, variant) => {
   switch (variant) {
     case "alert":
-      return <StatusBadge label={label} color={colors.alert.base} />;
+      return <StatusBadge label={label} color={themes.global.error.base} />;
     case "positive":
       return (
         <LabelText primary sentiment="positive" variant="accent">
           {label}
         </LabelText>
       );
+    case "accent":
+      return (
+        <LabelText primary sentiment="accent" variant="accent">
+          {label}
+        </LabelText>
+      );
+    case "caution":
+      return <StatusBadge label={label} color={themes.global.caution.dark} />;
+    case "neutral":
+      return <StatusBadge label={label} color={themes.global.onyx.light} />;
     default:
       return <LabelText primary>{label}</LabelText>;
   }
@@ -158,7 +170,14 @@ RowLabel.defaultProps = {
 
 RowLabel.propTypes = {
   index: PropTypes.number,
-  variant: PropTypes.oneOf(["default", "positive", "alert"]),
+  variant: PropTypes.oneOf([
+    "default",
+    "positive",
+    "alert",
+    "accent",
+    "caution",
+    "neutral"
+  ]),
   isOpen: PropTypes.bool,
   children: PropTypes.string
 };
