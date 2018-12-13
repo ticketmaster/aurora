@@ -65,9 +65,18 @@ export const FieldInputBox = styled.input.attrs({
   background-color: ${getThemeValue("white", "base")};
   border: 1px solid ${getThemeValue("gray02")};
   padding-left: 10px;
+  padding-right: 10px;
   line-height: normal;
   font-size: ${typography.size.hecto};
   color: ${getThemeValue("gray01")};
+
+  textarea& {
+    resize: none;
+    min-height: 180px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
   &.text--input-left {
     flex-grow: 2;
   }
@@ -89,15 +98,18 @@ export const FieldInputBox = styled.input.attrs({
   &:focus {
     border: 1px solid ${getThemeValue("primary", "base")};
     padding-left: 10px;
+    padding-right: 10px;
     border-radius: ${constants.borderRadius.small};
     box-shadow: 0 0 4px 0 inset ${getThemeValue("primary", "base")};
     background-color: ${getThemeValue("white", "base")};
     outline: none;
     .text--input-small & {
       padding-left: 8px;
+      padding-right: 8px;
     }
     .text--input-large & {
       padding-left: 12px;
+      padding-right: 12px;
     }
   }
   &:hover {
@@ -105,30 +117,44 @@ export const FieldInputBox = styled.input.attrs({
     .text__error & {
       border: 1px solid ${getThemeValue("error", "base")};
       padding-left: 10px;
+      padding-right: 10px;
     }
     .text__error.text--input-small & {
       padding-left: 8px;
+      padding-right: 8px;
     }
     .text__error.text--input-large & {
       padding-left: 12px;
+      padding-right: 12px;
     }
     padding-left: 9px;
+    padding-right: 9px;
+
+    textarea& {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
     .text--input-small & {
       padding-left: 7px;
+      padding-right: 7px;
     }
     .text--input-large & {
       padding-left: 11px;
+      padding-right: 11px;
     }
   }
   .text--input-small & {
     height: 24px;
     font-size: ${typography.size.uno};
     padding-left: 8px;
+    padding-right: 8px;
   }
   .text--input-large & {
     height: 44px;
     font-size: ${typography.size.kilo};
     padding-left: 12px;
+    padding-right: 12px;
   }
   .text__error & {
     border: 1px solid ${getThemeValue("error", "base")};
