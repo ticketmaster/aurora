@@ -2,10 +2,10 @@ import { PLACEHOLDER_IMAGE } from "./constants";
 import createParams from "../../utils/createParams";
 
 /* istanbul ignore next */
-const Url = process.browser ? global.window.URL : require("url");
+const Url = typeof window === "object" ? global.window.URL : require("url");
 
 export const resize = ({ src = "", ...params }) => {
-  const isBrowser = process.browser;
+  const isBrowser = typeof window === "object";
 
   try {
     const { host, pathname } = isBrowser ? new Url(src) : Url.parse(src);

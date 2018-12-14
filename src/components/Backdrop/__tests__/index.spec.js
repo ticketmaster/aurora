@@ -5,6 +5,8 @@ import { ESCAPE } from "../../../utils/keyCharCodes";
 
 import Backdrop from "../index";
 
+let win;
+
 describe("<Backdrop />", () => {
   const childRef = {
     current: {
@@ -13,7 +15,12 @@ describe("<Backdrop />", () => {
   };
 
   beforeEach(() => {
-    process.browser = true;
+    if (!win) win = global.window;
+    global.window = null;
+  });
+
+  afterEach(() => {
+    global.window = win;
   });
 
   it("renders correctly with an overlay", () => {
