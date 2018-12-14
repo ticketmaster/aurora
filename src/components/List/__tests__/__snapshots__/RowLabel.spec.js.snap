@@ -12,7 +12,7 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {
@@ -30,7 +30,7 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {
@@ -48,7 +48,7 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {
@@ -57,6 +57,50 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
             "small": "hecto",
           }
         }
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
       >
         test label
       </div>
@@ -77,8 +121,8 @@ exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
       data-index={0}
     >
       <div
-        className="badge fQdJOo"
-        color="#D93A3A"
+        className="badge HwKQy"
+        color="#d93a3a"
       >
         test label
       </div>
@@ -88,8 +132,8 @@ exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
       data-index={0}
     >
       <div
-        className="badge fQdJOo"
-        color="#D93A3A"
+        className="badge HwKQy"
+        color="#d93a3a"
       >
         test label
       </div>
@@ -99,8 +143,96 @@ exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
       data-index={0}
     >
       <div
-        className="badge fQdJOo"
-        color="#D93A3A"
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders RowLabel variant \`caution\` 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<RowLabel /> renders RowLabel variant \`neutral\` 1`] = `
+<div
+  className="cubfaY"
+>
+  <div
+    className="htpsXd"
+  >
+    <div
+      className="row__label row__label--mobile ckHYku"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--desktop row__label--active iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
+      >
+        test label
+      </div>
+    </div>
+    <div
+      className="row__label row__label--expanded row__label--desktop row__label--hidden iRxQsz"
+      data-index={0}
+    >
+      <div
+        className="badge HwKQy"
+        color="#d93a3a"
       >
         test label
       </div>
@@ -121,7 +253,7 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dWVboP jYRmLz"
+        className="text text--accent text-- text--primary laxRsg jYRmLz"
         disabled={false}
         size={
           Object {
@@ -139,7 +271,7 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dWVboP jYRmLz"
+        className="text text--accent text-- text--primary laxRsg jYRmLz"
         disabled={false}
         size={
           Object {
@@ -157,7 +289,7 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dWVboP jYRmLz"
+        className="text text--accent text-- text--primary laxRsg jYRmLz"
         disabled={false}
         size={
           Object {
@@ -186,7 +318,7 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {
@@ -204,7 +336,7 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {
@@ -222,7 +354,7 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       data-index={0}
     >
       <div
-        className="text text--dark text--primary fMUDup iqtECQ"
+        className="text text--dark text--primary jbDszw iqtECQ"
         disabled={false}
         size={
           Object {

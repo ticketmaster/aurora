@@ -37,6 +37,33 @@ describe("<RowLabel />", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders RowLabel variant `accent`", () => {
+    const component = renderer.create(
+      <RowLabel index={0} variant="alert">
+        test label
+      </RowLabel>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it("renders RowLabel variant `caution`", () => {
+    const component = renderer.create(
+      <RowLabel index={0} variant="alert">
+        test label
+      </RowLabel>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it("renders RowLabel variant `neutral`", () => {
+    const component = renderer.create(
+      <RowLabel index={0} variant="alert">
+        test label
+      </RowLabel>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders RowLabel without children", () => {
     const component = renderer.create(<RowLabel index={0} />);
     const instance = component.getInstance();

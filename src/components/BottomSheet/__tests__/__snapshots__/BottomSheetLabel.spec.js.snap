@@ -12,14 +12,15 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
     }
   }
 >
+   
   Custom label
 </div>
 `;
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`alert\` 1`] = `
 <div
-  className="badge juvjVG"
-  color="#D93A3A"
+  className="badge fIDAm"
+  color="#d93a3a"
 >
   Alert label
 </div>
@@ -27,8 +28,8 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`positive\` 1`] = `
 <div
-  className="badge jIyRAX"
-  color="#1BAB1E"
+  className="badge NQMCG"
+  color="#1bab1e"
 >
   Positive label
 </div>

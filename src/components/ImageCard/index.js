@@ -9,6 +9,10 @@ import constants from "../../theme/constants";
 import typography from "../../theme/typography";
 import { Text } from "../Text";
 
+const CardWithoutPadding = styled(Card)`
+  padding: 0;
+`;
+
 const Image = styled.img`
   width: 100%;
   max-width: 100%;
@@ -40,7 +44,7 @@ const CaptionContainer = styled.div`
   letter-spacing: ${props => (props.half ? "normal" : "inherit")};
 `;
 
-const HalfCard = styled(Card)`
+const HalfCard = styled(CardWithoutPadding)`
   width: 50%;
 `;
 
@@ -115,7 +119,7 @@ const ImageCard = ({
   }
 
   return (
-    <Card {...props}>
+    <CardWithoutPadding {...props}>
       <Container {...containerProps}>
         {img}
         <Overlay {...overlayProps}>
@@ -128,7 +132,7 @@ const ImageCard = ({
         </Overlay>
       </Container>
       {childrenToShow}
-    </Card>
+    </CardWithoutPadding>
   );
 };
 

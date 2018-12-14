@@ -20,6 +20,7 @@ const Input = ({
   name,
   errorMessage,
   size,
+  tag,
   ...rest
 }) => {
   const sluggified = sluggify(name + label);
@@ -41,6 +42,7 @@ const Input = ({
           name={name}
           id={`${sluggified}__input`}
           disabled={disabled}
+          as={tag}
           {...rest}
           aria-labelledby={`${sluggified}__label`}
         />
@@ -59,7 +61,8 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
   errorMessage: PropTypes.string,
-  size: PropTypes.oneOf(INPUT_SIZES)
+  size: PropTypes.oneOf(INPUT_SIZES),
+  tag: PropTypes.oneOf(["textarea", "input"])
 };
 Input.defaultProps = {
   children: null,
@@ -68,7 +71,8 @@ Input.defaultProps = {
   disabled: false,
   label: "",
   errorMessage: null,
-  size: INPUT_SIZES[1]
+  size: INPUT_SIZES[1],
+  tag: "input"
 };
 
 export default Input;
