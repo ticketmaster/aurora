@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import colors from "../../theme/colors";
+import { labelsColorMap } from "../List/helper";
 
 import { Text } from "../Text";
 import { StatusBadge } from "../StatusBadge";
@@ -16,30 +16,22 @@ const BottomSheetLabel = ({ variant, children, ...restProps }) => {
     return null;
   }
 
-  switch (variant) {
-    case "alert":
-      return (
-        <StatusBadge
-          {...restProps}
-          label={children}
-          color={colors.alert.base}
-        />
-      );
-    case "positive":
-      return (
-        <StatusBadge
-          {...restProps}
-          label={children}
-          color={colors.positive.base}
-        />
-      );
-    default:
-      return (
-        <LabelText {...restProps} primary>
-          {children}
-        </LabelText>
-      );
+  if (labelsColorMap[variant]) {
+    return (
+      <StatusBadge
+        {...restProps}
+        label={children}
+        color={labelsColorMap[variant]}
+      />
+    );
   }
+
+  return (
+    <LabelText {...restProps} primary>
+      {" "}
+      {children}
+    </LabelText>
+  );
 };
 
 BottomSheetLabel.defaultProps = {
@@ -48,7 +40,14 @@ BottomSheetLabel.defaultProps = {
 };
 
 BottomSheetLabel.propTypes = {
-  variant: PropTypes.oneOf(["default", "positive", "alert"]),
+  variant: PropTypes.oneOf([
+    "default",
+    "positive",
+    "alert",
+    "accent",
+    "caution",
+    "neutral"
+  ]),
   children: PropTypes.string
 };
 
