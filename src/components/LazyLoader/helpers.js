@@ -5,14 +5,16 @@ import createParams from "../../utils/createParams";
 const Url = process.browser ? global.window.URL : require("url");
 
 export const resize = ({ src = "", ...params }) => {
+  const isBrowser = process.browser;
+
   try {
-    const { host, pathname } = process.browser ? new Url(src) : Url.parse(src);
+    const { host, pathname } = isBrowser ? new Url(src) : Url.parse(src);
 
     if (!host) {
       return src;
     }
 
-    const url = `https://${host}/${pathname}`;
+    const url = `https://${host}${isBrowser ? "" : "/"}${pathname}`;
     const fit = params.width && params.height ? { fit: "crop" } : {};
     const resizeSrc = `${url}${createParams({ ...params, ...fit })}`;
     return resizeSrc;
