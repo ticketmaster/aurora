@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`resize should return a URL with a valid width and an invalid height param appended 1`] = `"https://ticketmaster.com/assets/test.jpg?width=100"`;
+
+exports[`resize should return a URL with an invalid width and a valid height param appended 1`] = `"https://ticketmaster.com/assets/test.jpg?height=100"`;
+
+exports[`resize should return a URL with valid width and height params appended 1`] = `"https://ticketmaster.com/assets/test.jpg?width=100&height=100&fit=crop"`;
+
+exports[`resize should return src if an error occurs 1`] = `null`;
+
+exports[`resize should return src when src does not contain a host 1`] = `"/assets/test.jpg"`;
