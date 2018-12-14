@@ -38,10 +38,7 @@ describe("resize", () => {
     const src = "https://ticketmaster.com/assets/test.jpg";
 
     const url = resize({ src, ...mockParams });
-    expect(url.startsWith(`${src}?`));
-    expect(url.includes("width=100"));
-    expect(url.includes("height=100"));
-    expect(url.includes("fit=crop"));
+    expect(url).toMatchSnapshot();
   });
 
   it("should return a URL with a valid width and an invalid height param appended", () => {
@@ -51,8 +48,7 @@ describe("resize", () => {
     };
 
     const url = resize({ src, ...params });
-    expect(url.startsWith(`${src}?`));
-    expect(url.includes("width=100"));
+    expect(url).toMatchSnapshot();
   });
 
   it("should return a URL with an invalid width and a valid height param appended", () => {
@@ -62,20 +58,19 @@ describe("resize", () => {
     };
 
     const url = resize({ src, ...params });
-    expect(url.startsWith(`${src}?`));
-    expect(url.includes("height=100"));
+    expect(url).toMatchSnapshot();
   });
 
   it("should return src when src does not contain a host", () => {
     const src = "/assets/test.jpg";
 
-    expect(resize({ src })).toEqual(src);
+    expect(resize({ src })).toMatchSnapshot();
   });
 
   it("should return src if an error occurs", () => {
     const src = null;
 
-    expect(resize({ src })).toEqual(src);
+    expect(resize({ src })).toMatchSnapshot();
   });
 });
 
