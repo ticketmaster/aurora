@@ -63,7 +63,7 @@ export default class Backdrop extends Component {
   };
 
   attachListeners = () => {
-    if (process.browser) {
+    if (typeof window === "object") {
       document.addEventListener("click", this.handleOutsideClick);
       document.addEventListener("keydown", this.onKeyPress);
       this.hasListeners = true;
@@ -71,7 +71,7 @@ export default class Backdrop extends Component {
   };
 
   detachListeners = () => {
-    if (process.browser) {
+    if (typeof window === "object") {
       document.removeEventListener("click", this.handleOutsideClick);
       document.removeEventListener("keydown", this.onKeyPress);
       this.hasListeners = false;
