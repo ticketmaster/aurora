@@ -305,6 +305,10 @@ rows:
     Type: string
     Default: regular
     Notes: Defines the size of an input field. Can be small, regular or large
+  - Prop: tag
+    Type: enum("input", "textarea")
+    Default: N/A
+    Notes: Changes the underlying HTML Element.
 ```
 
 ```react
@@ -344,6 +348,11 @@ span: 6
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
                     <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input tag="textarea" labelPosition="top" placeholder="Hint Text" name="test1" label="Textarea" size="large"/>
                 </Spacing>
             </Column>
         </Row>
@@ -403,28 +412,28 @@ span: 6
 span: 6
 rows:
   - Prop: onChange
-    Type: string
-    Default: top
-    Notes: Can be top or left
+    Type: function
+    Default: "null"
+    Notes: Invoked with an array of updatedSelections when one or more option(s) is selected by the user
   - Prop: variant
-    Type: string
+    Type: number
     Default: 0
     Notes: One of 0 (with border) or 1 (without border)
   - Prop: value
-    Type: string
-    Default: N/A
-    Notes: Specifies initial values
+    Type: array
+    Default: []
+    Notes: Specifies array of initial string values
   - Prop: valueOverride
-    Type: string
-    Default: N/A
-    Notes: Specifies values that override internal state
+    Type: array
+    Default: "null"
+    Notes: Specifies array of string values that override internal state
   - Prop: label
     Type: string
-    Default: N/A
+    Default: ""
     Notes: Visible with selected option.
   - Prop: placeholder
     Type: string
-    Default: N/A
+    Default: ""
     Notes: Visible instead of selected option. Overrides label. Supported in both variants.
   - Prop: isOpen
     Type: boolean
@@ -440,11 +449,11 @@ rows:
     Notes: Used to override inclusion of a KeyboardProvider to handle keydown events
   - Prop: shouldOpenDownward
     Type: boolean
-    Default: 'false'
+    Default: 'true'
     Notes: Used to ensure that the DropDownGroup always opens downward
   - Prop: size
     Type: small or large
-    Default: large
+    Default: "large"
     Notes: Defines size
 ```
 
@@ -460,13 +469,21 @@ rows:
     Default: N/A
     Notes: Required
   - Prop: index
-    Type: string
+    Type: number
     Default: N/A
     Notes: Required
   - Prop: className
     Type: string
     Default: ""
     Notes: Passed to StyledDropDownItem
+  - Prop: onClick
+    Type: function
+    Default: "null"
+    Notes: Invoked with the synthetic event object when the DropDownOption is clicked
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying DropDownInput
 ```
 
 ```react
