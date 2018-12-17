@@ -1,40 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
-import { LazyLoader, Column, Button } from "../../../src";
+import { LazyLoader, ResponsiveImage, Column, Button } from "../../../src";
 
 export const resizeFn = ({ src, width, height }) => `${src}/${width}/${height}`;
 
-export class ImgClass extends Component {
-  static propTypes = {
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
-    style: PropTypes.objectOf(PropTypes.string),
-    imageRef: PropTypes.shape({}).isRequired
-  };
-
-  static defaultProps = {
-    style: {}
-  };
-
-  render() {
-    const { src, alt, height, width, style, imageRef } = this.props;
-    return (
-      <img
-        src={src}
-        alt={alt}
-        height={height}
-        width={width}
-        style={style}
-        ref={imageRef}
-      />
-    );
-  }
-}
-
-const LazyImageExample = ({ src, alt, height, width, style }) => (
+const LazyResponsiveImageExample = ({ src, alt, height, width, style }) => (
   <LazyLoader
     src={src}
     height={height}
@@ -44,7 +15,7 @@ const LazyImageExample = ({ src, alt, height, width, style }) => (
   >
     {({ src: lazySrc, style: lazyStyle, imageRef, load }) => (
       <Column style={{ display: "flex", flexDirection: "column" }}>
-        <ImgClass
+        <ResponsiveImage
           className="image--lazy"
           src={lazySrc}
           alt={alt}
@@ -65,7 +36,7 @@ const LazyImageExample = ({ src, alt, height, width, style }) => (
   </LazyLoader>
 );
 
-LazyImageExample.propTypes = {
+LazyResponsiveImageExample.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   height: PropTypes.number.isRequired,
@@ -75,8 +46,8 @@ LazyImageExample.propTypes = {
   )
 };
 
-LazyImageExample.defaultProps = {
+LazyResponsiveImageExample.defaultProps = {
   style: null
 };
 
-export default LazyImageExample;
+export default LazyResponsiveImageExample;

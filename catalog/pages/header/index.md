@@ -129,16 +129,18 @@ responsive: true
 </ThemeProvider>
 ```
 
-### Image Header with Underlaid Image Background
+### Lazy Image Header with Underlaid Image Background
 
 ```react
 responsive: true
 ---
 <React.Fragment>
-  <HeaderWithImage
+  <LazyHeaderWithImageExample
     withUnderlay={true}
     backgroundImage="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
     backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, stops: [colors.defaultGradient.from, colors.heliotrope.base ], style: { backgroundPosition: "center" } }}
+    height={350}
+    width={650}
   >
     <Column medium={7} large={8}>
       <Heading level={1}>
@@ -147,12 +149,11 @@ responsive: true
           <Heading.Span>Header</Heading.Span>
       </Heading>
     </Column>
-  </HeaderWithImage>
-  <div>Some other content</div>
+  </LazyHeaderWithImageExample>
 </React.Fragment>
 ```
 
-### Image Header with Underlaid Image Background
+### Image Header with Underlaid Image Background and Spotlight
 
 ```react
 responsive: true

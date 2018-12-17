@@ -3,7 +3,7 @@ import { pageLoader } from "catalog";
 import { ResponsiveImage, StaticImage } from "../../../src/";
 import ThumbnailCircleImage from "../../../src/components/Image/ThumbnailCircle";
 import { Container, Row, Column } from "../../../src/components/Grid";
-import LazyImageExample from "./LazyImageExample";
+import LazyResponsiveImageExample from "./LazyResponsiveImageExample";
 
 export default {
   path: "/images",
@@ -15,7 +15,7 @@ export default {
     Container,
     Row,
     Column,
-    LazyImageExample
+    LazyResponsiveImageExample
   },
   content: pageLoader(() => import("./index.md"))
 };

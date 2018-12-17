@@ -7,6 +7,7 @@ import HeaderWithImage from "../../../src/components/Header/WithImage";
 import ImageCard from "../../../src/components/ImageCard";
 import Breadcrumb from "../../../src/components/Breadcrumbs";
 import Spacing from "../../../src/components/Spacing";
+import LazyHeaderWithImageExample from "./LazyHeaderWithImageExample";
 import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
@@ -21,6 +22,7 @@ export default {
   imports: {
     Header,
     Heading,
+    LazyHeaderWithImageExample,
     HeaderWithImage,
     Column,
     Row,
