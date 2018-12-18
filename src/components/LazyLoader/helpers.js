@@ -61,8 +61,7 @@ export const getTargetDensity = (targetDensity, devicePixelRatios) => {
 
 export const getSrcAttr = ref => {
   if ("srcset" in ref) return "srcset";
-  if ("src" in ref) return "src";
-  return "backgroundImage";
+  return "src";
 };
 
 export const getSrcVariantByAttr = (

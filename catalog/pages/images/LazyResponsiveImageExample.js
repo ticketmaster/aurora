@@ -12,8 +12,9 @@ const LazyResponsiveImageExample = ({ src, alt, height, width, style }) => (
     width={width}
     style={style}
     resizeFn={resizeFn}
+    tag="div"
   >
-    {({ src: lazySrc, style: lazyStyle, imageRef, load }) => (
+    {({ src: lazySrc, style: lazyStyle, imageRef, backgroundRef, load }) => (
       <Column style={{ display: "flex", flexDirection: "column" }}>
         <ResponsiveImage
           className="image--lazy"
@@ -23,6 +24,7 @@ const LazyResponsiveImageExample = ({ src, alt, height, width, style }) => (
           width={width}
           style={lazyStyle}
           imageRef={imageRef}
+          backgroundRef={backgroundRef}
         />
         <Button
           variant="standard"

@@ -3,21 +3,22 @@
 exports[`Header renders with custom level 1`] = `
 <header
   aria-level="1"
-  className="hXMYMY"
+  className="eQlQti"
   role="heading"
 >
   <span
-    className="dSCYBL yROTA"
+    className="icuDWf evdfwO"
     style={Object {}}
   >
+    
     <div
-      className="zaQxq"
+      className="hhJOJe"
     >
       <div
-        className="kFBBeh"
+        className="bHZSLS"
       >
         <h1
-          className="icfhLg"
+          className="femmpc"
           color="blue"
           size={
             Object {
@@ -28,13 +29,13 @@ exports[`Header renders with custom level 1`] = `
           }
         >
           <span
-            className="gzlGrX"
+            className="laAajU"
           >
             Generic
           </span>
            
           <span
-            className="beMIhb"
+            className="jlRdIN"
           >
             Header
           </span>
@@ -48,21 +49,22 @@ exports[`Header renders with custom level 1`] = `
 exports[`Header renders with default 1`] = `
 <header
   aria-level="1"
-  className="hXMYMY"
+  className="eQlQti"
   role="heading"
 >
   <span
-    className="dSCYBL yROTA"
+    className="icuDWf evdfwO"
     style={Object {}}
   >
+    
     <div
-      className="zaQxq"
+      className="hhJOJe"
     >
       <div
-        className="kFBBeh"
+        className="bHZSLS"
       >
         <h2
-          className="jZEkVf"
+          className="djzKum"
           size={
             Object {
               "large": "bronto",
@@ -72,13 +74,13 @@ exports[`Header renders with default 1`] = `
           }
         >
           <span
-            className="gzlGrX"
+            className="laAajU"
           >
             Generic
           </span>
            
           <span
-            className="beMIhb"
+            className="jlRdIN"
           >
             Header
           </span>
@@ -92,21 +94,22 @@ exports[`Header renders with default 1`] = `
 exports[`Header renders withOverlay 1`] = `
 <header
   aria-level="1"
-  className="hXMYMY"
+  className="eQlQti"
   role="heading"
 >
   <span
-    className="gradient--overlay dSCYBL yROTA"
+    className="gradient--overlay icuDWf evdfwO"
     style={Object {}}
   >
+    
     <div
-      className="zaQxq"
+      className="hhJOJe"
     >
       <div
-        className="kFBBeh"
+        className="bHZSLS"
       >
         <h2
-          className="jZEkVf"
+          className="djzKum"
           size={
             Object {
               "large": "bronto",
@@ -116,13 +119,13 @@ exports[`Header renders withOverlay 1`] = `
           }
         >
           <span
-            className="gzlGrX"
+            className="laAajU"
           >
             Generic
           </span>
            
           <span
-            className="beMIhb"
+            className="jlRdIN"
           >
             Header
           </span>

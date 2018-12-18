@@ -2,7 +2,7 @@
 
 exports[`NavBar renders fixed 1`] = `
 <nav
-  className="nav--fixed kYUOWu"
+  className="nav--fixed cFQQgK"
   role="navigation"
   style={
     Object {
@@ -11,7 +11,7 @@ exports[`NavBar renders fixed 1`] = `
   }
 >
   <div
-    className="fPuwav"
+    className="WTkEJ"
   >
     <button
       className="egAjOF"
@@ -172,7 +172,7 @@ exports[`NavBar renders fixed 1`] = `
 
 exports[`NavBar renders inverted 1`] = `
 <nav
-  className="nav--relative nav--inverted kYUOWu"
+  className="nav--relative nav--inverted cFQQgK"
   role="navigation"
   style={
     Object {
@@ -181,7 +181,7 @@ exports[`NavBar renders inverted 1`] = `
   }
 >
   <div
-    className="fPuwav"
+    className="WTkEJ"
   >
     <button
       className="egAjOF"
@@ -339,7 +339,7 @@ exports[`NavBar renders inverted 1`] = `
 
 exports[`NavBar renders with defaults 1`] = `
 <nav
-  className="nav--relative kYUOWu"
+  className="nav--relative cFQQgK"
   role="navigation"
   style={
     Object {
@@ -348,7 +348,7 @@ exports[`NavBar renders with defaults 1`] = `
   }
 >
   <div
-    className="fPuwav"
+    className="WTkEJ"
   >
     <button
       className="egAjOF"

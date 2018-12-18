@@ -53,11 +53,32 @@ export const renderComponent = (props = {}, renderFn, ref) =>
     ref
   );
 
-export const renderProviderComponent = (props = {}, renderFn, ref) =>
+export const renderProviderComponentWithImg = (props = {}, renderFn, ref) =>
   renderFn(
     <LazyLoaderProvider {...mergeProps(props)}>
       <LazyLoaderConsumer>
         {val => <ImgClass key="test" {...PROPS} {...val} />}
+      </LazyLoaderConsumer>
+    </LazyLoaderProvider>,
+    ref
+  );
+
+export const renderProviderComponentWithImgAndDiv = (
+  props = {},
+  renderFn,
+  ref
+) =>
+  renderFn(
+    <LazyLoaderProvider {...mergeProps(props)}>
+      <LazyLoaderConsumer>
+        {val => {
+          const { imageRef, backgroundRef, ...rest } = val;
+          return (
+            <div {...rest} ref={backgroundRef}>
+              <ImgClass key="test" {...PROPS} {...rest} imageRef={imageRef} />
+            </div>
+          );
+        }}
       </LazyLoaderConsumer>
     </LazyLoaderProvider>,
     ref
@@ -74,6 +95,13 @@ export const createImgWithSrc = () => ({
   style: {}
 });
 
-export const createDiv = () => ({
-  style: {}
-});
+export const createElemByType = elem =>
+  elem.type === "img"
+    ? {
+        srcset: "",
+        src: "",
+        style: {}
+      }
+    : {
+        style: {}
+      };

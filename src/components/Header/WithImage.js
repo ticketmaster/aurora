@@ -58,7 +58,8 @@ const ImageHeader = ({
 }) => {
   const {
     style: backgroundImageStyle,
-    ref: backgroundImageRef,
+    imageRef,
+    backgroundRef,
     ...otherBackgroundImageProps
   } = backgroundImageProps;
   return (
@@ -69,7 +70,9 @@ const ImageHeader = ({
             ...(backgroundImageStyle || {}),
             backgroundImage: `url(${backgroundImage})`
           }}
-          gradientRef={backgroundImageRef}
+          src={backgroundImage}
+          imageRef={imageRef}
+          backgroundRef={backgroundRef}
           {...otherBackgroundImageProps}
           className={classNames({
             "gradient--overlay": !withSpotLight && withOverlay,

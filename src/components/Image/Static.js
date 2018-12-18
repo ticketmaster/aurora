@@ -28,7 +28,7 @@ StaticImage.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
   imageRef: PropTypes.shape({
-    current: PropTypes.element
+    current: PropTypes.object
   })
 };
 
