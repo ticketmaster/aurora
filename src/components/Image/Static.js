@@ -1,25 +1,35 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
 import StyledStaticImage from "./Static.styles";
 
-const StaticImage = ({ loader, src, alt, height, width, ...props }) =>
-  loader || (
-    <StyledStaticImage
-      src={src}
-      alt={alt}
-      height={height}
-      width={width}
-      {...props}
-    />
-  );
+class StaticImage extends PureComponent {
+  render() {
+    const { loader, src, alt, height, width, imageRef, ...props } = this.props;
+    return (
+      loader || (
+        <StyledStaticImage
+          src={src}
+          alt={alt}
+          height={height}
+          width={width}
+          ref={imageRef}
+          {...props}
+        />
+      )
+    );
+  }
+}
 
 StaticImage.propTypes = {
   loader: PropTypes.node,
   src: PropTypes.string,
   alt: PropTypes.string,
   height: PropTypes.number,
-  width: PropTypes.number
+  width: PropTypes.number,
+  imageRef: PropTypes.shape({
+    current: PropTypes.element
+  })
 };
 
 StaticImage.defaultProps = {
@@ -27,7 +37,8 @@ StaticImage.defaultProps = {
   src: "",
   alt: "",
   height: 1,
-  width: 1
+  width: 1,
+  imageRef: { current: null }
 };
 
 export default StaticImage;

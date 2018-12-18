@@ -27,6 +27,10 @@ rows:
     Type: number
     Default: 1
     Notes: Measured in pixels
+  - Prop: imageRef
+    Type: ref
+    Default: "{ current: null }"
+    Notes: React ref to pass to underlying div
   - Prop: children
     Type: node
     Default: null
@@ -118,7 +122,7 @@ rows:
 ### ThumbnailCircleImage Image
 
 ```react
-<ThumbnailCircleImage size={40} src="httpss://placekitten.com/g/512/288" alt="thumbnailCircleImage"/>
+<ThumbnailCircleImage size={40} src="https://placekitten.com/g/512/288" alt="thumbnailCircleImage"/>
 ```
 
 ### LazyLoader
@@ -177,12 +181,12 @@ rows:
     Notes: This argument should be invoked with a value of true when the imageRef is ready to be loaded. For example, you can use an IntersectionObserver to trigger this function once the imageRef enters the user's viewport.
 ```
 
-### Lazy Static Image (1:1)
+### Lazy Responsive Image (1:1)
 
 ```react
 responsive: true
 ---
-<LazyImageExample
+<LazyResponsiveImageExample
     src="https://placekitten.com/g"
     alt="Test Kitten"
     height={400}

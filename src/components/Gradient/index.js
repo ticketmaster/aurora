@@ -1,4 +1,4 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -98,27 +98,39 @@ const SpotLightWrapper = styled.div`
   overflow: hidden;
 `;
 
-const Gradient = ({ children, className, stops, deg, ...props }) => {
-  const hasSpotLight = className.includes("gradient--spotlight");
-  const gradientStops = hasSpotLight ? SPOTLIGHT_STOPS : stops;
-  const gradientDeg = hasSpotLight ? SPOTLIGHT_DEG : deg;
-  return (
-    <GradientStyles
-      {...props}
-      stops={gradientStops}
-      deg={gradientDeg}
-      className={className}
-    >
-      {hasSpotLight && (
-        <SpotLightWrapper>
-          <SpotLight />
-          <Angle />
-        </SpotLightWrapper>
-      )}
-      {children}
-    </GradientStyles>
-  );
-};
+class Gradient extends PureComponent {
+  render() {
+    const {
+      children,
+      className,
+      stops,
+      deg,
+      gradientRef,
+      ...props
+    } = this.props;
+
+    const hasSpotLight = className.includes("gradient--spotlight");
+    const gradientStops = hasSpotLight ? SPOTLIGHT_STOPS : stops;
+    const gradientDeg = hasSpotLight ? SPOTLIGHT_DEG : deg;
+    return (
+      <GradientStyles
+        {...props}
+        stops={gradientStops}
+        deg={gradientDeg}
+        className={className}
+        ref={gradientRef}
+      >
+        {hasSpotLight && (
+          <SpotLightWrapper>
+            <SpotLight />
+            <Angle />
+          </SpotLightWrapper>
+        )}
+        {children}
+      </GradientStyles>
+    );
+  }
+}
 
 Gradient.propTypes = {
   children: PropTypes.node,
@@ -128,7 +140,10 @@ Gradient.propTypes = {
     medium: PropTypes.string.isRequired,
     large: PropTypes.string.isRequired
   }),
-  stops: PropTypes.arrayOf(PropTypes.string)
+  stops: PropTypes.arrayOf(PropTypes.string),
+  backgroundImageRef: PropTypes.shape({
+    current: PropTypes.element
+  })
 };
 
 Gradient.defaultProps = {
@@ -139,7 +154,8 @@ Gradient.defaultProps = {
     medium: "80deg",
     large: "81deg"
   },
-  stops: [colors.defaultGradient.from, colors.defaultGradient.to]
+  stops: [colors.defaultGradient.from, colors.defaultGradient.to],
+  backgroundImageRef: { current: null }
 };
 
 export default Gradient;

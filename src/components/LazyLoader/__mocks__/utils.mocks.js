@@ -1,10 +1,39 @@
-import React from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import { LazyLoader, LazyLoaderProvider, LazyLoaderConsumer } from "../";
-import {
-  ImgClass,
-  resizeFn as testResizeFn
-} from "../../../../catalog/pages/images/LazyImageExample";
+
+export const testResizeFn = ({ src, width, height }) =>
+  `${src}/${width}/${height}`;
+
+export class ImgClass extends Component {
+  static propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+    style: PropTypes.objectOf(PropTypes.string),
+    imageRef: PropTypes.shape({}).isRequired
+  };
+
+  static defaultProps = {
+    style: {}
+  };
+
+  render() {
+    const { src, alt, height, width, style, imageRef } = this.props;
+    return (
+      <img
+        src={src}
+        alt={alt}
+        height={height}
+        width={width}
+        style={style}
+        ref={imageRef}
+      />
+    );
+  }
+}
 
 export const PROPS = {
   src: "https://placekitten.com/g",
