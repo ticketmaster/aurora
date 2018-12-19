@@ -152,12 +152,16 @@ rows:
     Type: Object
     Default: '{}'
     Notes: Optional
+  - Prop: tag
+    Type: string
+    Default: img
+    Notes: Type of the visible element used to display the lazy-loaded asset. If the tag is not an `img`, then the user must pass the imageRef prop to an img element and the backgroundRef to the element referenced by this prop.
   - Prop: resizeFn
     Type: Function({ src, height, width }) => String
     Default: resize function
     Notes: The default resize function appends computed width, height, and fit query parameters depending on the user's device resolution.
   - Prop: children
-    Type: Function({ src, style, imageRef, load }) => Node
+    Type: Function({ src, style, imageRef, backgroundRef, load }) => Node
     Default: ''
     Notes: This function will be invoked with the  LazyLoaderProvider's state, which is provided to the LazyLoaderConsumer.
 ```
@@ -169,13 +173,16 @@ span: 6
 rows:
   - Prop: src
     Type: String
-    Notes: Initially, this argument will be a low res version of the src prop passed to the LazyLoader. Once the load argument is invoked with a value of true, a high res version of the src prop will be computed and assigned to the imageRef. This high res src will be in the correct srcset, src, or backgroundImage format depending on the element type of the imageRef and the user's browser.
+    Notes: Initially, this argument will be a low res version of the src prop passed to the LazyLoader. Once the load argument is invoked with a value of true, a high res version of the src prop will be computed and assigned to the imageRef and/or backgroundRef. This high res src will be in the correct srcset, src, or backgroundImage format depending on the element type of the ref(s) and the user's browser.
   - Prop: style
     Type: Object
-    Notes: Prior to loading, this style argument will be composed of the style prop merged with blur styles. Once the load argument is invoked with a value of true, the filter style attribute will be removed from the imageRef.
+    Notes: Prior to loading, this style argument will be composed of the style prop merged with blur styles. Once the load argument is invoked with a value of true, the filter style attribute will be removed from the imageRef and/or backgroundRef.
   - Prop: imageRef
     Type: Object (Ref)
-    Notes: This argument should be passed to the img or div tag that contains the asset to be lazy loaded.
+    Notes: This argument should be passed to the img tag that contains the asset to be lazy loaded.
+  - Prop: backgroundRef
+    Type: Object (Ref)
+    Notes: Only used when the type of the visible element used to display the lazy-loaded asset is not an `img`. This argument should be passed to the non-img tag that contains the asset to be lazy loaded.
   - Prop: load
     Type: Function
     Notes: This argument should be invoked with a value of true when the imageRef is ready to be loaded. For example, you can use an IntersectionObserver to trigger this function once the imageRef enters the user's viewport.

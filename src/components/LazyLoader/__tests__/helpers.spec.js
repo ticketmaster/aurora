@@ -208,12 +208,8 @@ describe("getSrcAttr", () => {
     expect(getSrcAttr(refWithSrcSet)).toEqual("srcset");
   });
 
-  it("should return src when supported by the element", () => {
-    expect(getSrcAttr(refWithSrc)).toEqual("src");
-  });
-
-  it("should return backgroundImage by default", () => {
-    expect(getSrcAttr({})).toEqual("backgroundImage");
+  it("should return src by default", () => {
+    expect(getSrcAttr({})).toEqual("src");
   });
 });
 

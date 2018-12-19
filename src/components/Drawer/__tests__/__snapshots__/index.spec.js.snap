@@ -8,7 +8,7 @@ exports[`Drawer renders default drawer 1`] = `
     className="bwUIrh"
   >
     <span
-      className="gradient--spotlight kjjHxp"
+      className="gradient--spotlight jUSRpb"
       style={
         Object {
           "height": "60px",
@@ -16,8 +16,9 @@ exports[`Drawer renders default drawer 1`] = `
         }
       }
     >
+      
       <div
-        className="gmvlAd"
+        className="nBCnm"
       >
         <svg
           className="czenYD"
@@ -159,10 +160,10 @@ exports[`Drawer renders default drawer 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed bGGLlW"
+            className="hamburger hamburger--closed hjDmZH"
           >
             <span
-              className="jmwKIU"
+              className="kpXvGB"
             />
           </span>
         </button>
@@ -180,7 +181,7 @@ exports[`Drawer renders header elements 1`] = `
     className="bwUIrh"
   >
     <span
-      className="gradient--spotlight kjjHxp"
+      className="gradient--spotlight jUSRpb"
       style={
         Object {
           "height": "60px",
@@ -188,8 +189,9 @@ exports[`Drawer renders header elements 1`] = `
         }
       }
     >
+      
       <div
-        className="gmvlAd"
+        className="nBCnm"
       >
         <svg
           className="czenYD"
@@ -335,10 +337,10 @@ exports[`Drawer renders header elements 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed bGGLlW"
+            className="hamburger hamburger--closed hjDmZH"
           >
             <span
-              className="jmwKIU"
+              className="kpXvGB"
             />
           </span>
         </button>
@@ -359,7 +361,7 @@ exports[`Drawer renders multiple child elements 1`] = `
     className="bwUIrh"
   >
     <span
-      className="gradient--spotlight kjjHxp"
+      className="gradient--spotlight jUSRpb"
       style={
         Object {
           "height": "60px",
@@ -367,8 +369,9 @@ exports[`Drawer renders multiple child elements 1`] = `
         }
       }
     >
+      
       <div
-        className="gmvlAd"
+        className="nBCnm"
       >
         <svg
           className="czenYD"
@@ -510,10 +513,10 @@ exports[`Drawer renders multiple child elements 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed bGGLlW"
+            className="hamburger hamburger--closed hjDmZH"
           >
             <span
-              className="jmwKIU"
+              className="kpXvGB"
             />
           </span>
         </button>
@@ -540,7 +543,7 @@ exports[`Drawer renders string header header 1`] = `
     className="bwUIrh"
   >
     <span
-      className="gradient--spotlight kjjHxp"
+      className="gradient--spotlight jUSRpb"
       style={
         Object {
           "height": "60px",
@@ -548,8 +551,9 @@ exports[`Drawer renders string header header 1`] = `
         }
       }
     >
+      
       <div
-        className="gmvlAd"
+        className="nBCnm"
       >
         <svg
           className="czenYD"
@@ -686,7 +690,7 @@ exports[`Drawer renders string header header 1`] = `
       >
         <div>
           <div
-            className="text text--light text--primary ehXhKz"
+            className="text text--light text--primary eEHYYC"
             disabled={false}
             size={
               Object {
@@ -705,10 +709,10 @@ exports[`Drawer renders string header header 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed bGGLlW"
+            className="hamburger hamburger--closed hjDmZH"
           >
             <span
-              className="jmwKIU"
+              className="kpXvGB"
             />
           </span>
         </button>

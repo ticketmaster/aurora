@@ -18,8 +18,9 @@ const LazyHeaderWithImageExample = ({
     height={height}
     width={width}
     style={backgroundImageProps.style || {}}
+    tag="span"
   >
-    {({ src: lazySrc, style: lazyStyle, imageRef, load }) => (
+    {({ src: lazySrc, style: lazyStyle, imageRef, backgroundRef, load }) => (
       <Fragment>
         <HeaderWithImage
           withUnderlay={withUnderlay}
@@ -28,7 +29,8 @@ const LazyHeaderWithImageExample = ({
           backgroundImage={lazySrc}
           backgroundImageProps={{
             ...backgroundImageProps,
-            ref: imageRef,
+            imageRef,
+            backgroundRef,
             style: { ...lazyStyle, ...(backgroundImageProps.style || {}) }
           }}
         >

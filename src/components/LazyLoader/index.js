@@ -12,7 +12,8 @@ export const LazyLoader = ({
   width,
   style,
   resizeFn,
-  children
+  children,
+  tag
 }) => (
   <LazyLoaderProvider
     src={src}
@@ -20,6 +21,7 @@ export const LazyLoader = ({
     width={width}
     style={style}
     resizeFn={resizeFn}
+    tag={tag}
   >
     <LazyLoaderConsumer>{value => children(value)}</LazyLoaderConsumer>
   </LazyLoaderProvider>
@@ -33,7 +35,8 @@ LazyLoader.propTypes = {
   resizeFn: PropTypes.func,
   style: PropTypes.objectOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  )
+  ),
+  tag: PropTypes.string
 };
 
 LazyLoader.defaultProps = {
@@ -41,7 +44,8 @@ LazyLoader.defaultProps = {
   width: null,
   height: null,
   resizeFn: resize,
-  style: {}
+  style: {},
+  tag: "img"
 };
 
 export { LazyLoaderProvider, LazyLoaderConsumer };

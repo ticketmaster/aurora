@@ -3,29 +3,34 @@
 exports[`WithImage renders header background image 1`] = `
 <header
   aria-level="1"
-  className="gQgvQJ"
+  className="hspOjD"
   role="heading"
 >
   <span
     aria-hidden={true}
-    className="gFBHoc yROTA"
+    className="lblvod evdfwO"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
       }
     }
-  />
+  >
+    <img
+      className="image image--seo image--hidden fERDWn"
+      src="https://placekitten.com/g/2/2"
+    />
+  </span>
   <div
-    className="hhJOJe"
+    className="fEnjoq"
   >
     <div
-      className="gQIonf"
+      className="DtEVY"
     >
       <div
-        className="kesrzW"
+        className="cIOZtk"
       >
         <div
-          className="fAOYTB"
+          className="zVHGu"
         >
           <img
             alt="place holder"
@@ -41,29 +46,34 @@ exports[`WithImage renders header background image 1`] = `
 exports[`WithImage renders header background image correctly when a withOverlay prop equaling true is passed 1`] = `
 <header
   aria-level="1"
-  className="gQgvQJ"
+  className="hspOjD"
   role="heading"
 >
   <span
     aria-hidden={true}
-    className="gradient--overlay gFBHoc yROTA"
+    className="gradient--overlay lblvod evdfwO"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
       }
     }
-  />
+  >
+    <img
+      className="image image--seo image--hidden fERDWn"
+      src="https://placekitten.com/g/2/2"
+    />
+  </span>
   <div
-    className="hhJOJe"
+    className="fEnjoq"
   >
     <div
-      className="gQIonf"
+      className="DtEVY"
     >
       <div
-        className="kesrzW"
+        className="cIOZtk"
       >
         <div
-          className="fAOYTB"
+          className="zVHGu"
         >
           <img
             alt="place holder"
@@ -79,29 +89,34 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 exports[`WithImage renders header background image correctly when a withUnderlay prop equaling true is passed 1`] = `
 <header
   aria-level="1"
-  className="gQgvQJ"
+  className="hspOjD"
   role="heading"
 >
   <span
     aria-hidden={true}
-    className="gradient--underlay gFBHoc yROTA"
+    className="gradient--underlay lblvod evdfwO"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
       }
     }
-  />
+  >
+    <img
+      className="image image--seo image--hidden fERDWn"
+      src="https://placekitten.com/g/2/2"
+    />
+  </span>
   <div
-    className="hhJOJe"
+    className="fEnjoq"
   >
     <div
-      className="gQIonf"
+      className="DtEVY"
     >
       <div
-        className="kesrzW"
+        className="cIOZtk"
       >
         <div
-          className="fAOYTB"
+          className="zVHGu"
         >
           <img
             alt="place holder"
@@ -117,23 +132,25 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 exports[`WithImage renders header with image 1`] = `
 <header
   aria-level="1"
-  className="gQgvQJ"
+  className="hspOjD"
   role="heading"
 >
   <span
-    className="iGVDnG yROTA"
-  />
+    className="gEDJRt evdfwO"
+  >
+    
+  </span>
   <div
-    className="hhJOJe"
+    className="fEnjoq"
   >
     <div
-      className="gQIonf"
+      className="DtEVY"
     >
       <div
-        className="kesrzW"
+        className="cIOZtk"
       >
         <div
-          className="fAOYTB"
+          className="zVHGu"
         >
           <img
             alt="place holder"

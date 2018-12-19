@@ -14,6 +14,7 @@ class ResponsiveImage extends PureComponent {
       width,
       children,
       imageRef,
+      backgroundRef,
       ...rest
     } = this.props;
 
@@ -23,10 +24,16 @@ class ResponsiveImage extends PureComponent {
           image={src}
           height={height}
           width={width}
-          ref={imageRef}
+          ref={backgroundRef}
           {...rest}
         >
-          <StyledImageSeo src={src} alt={alt} height={height} width={width} />
+          <StyledImageSeo
+            src={src}
+            alt={alt}
+            height={height}
+            width={width}
+            ref={imageRef}
+          />
           {children}
         </StyledResponsiveImage>
       )
@@ -42,7 +49,10 @@ ResponsiveImage.propTypes = {
   width: PropTypes.number,
   children: PropTypes.node,
   imageRef: PropTypes.shape({
-    current: PropTypes.element
+    current: PropTypes.object
+  }),
+  backgroundRef: PropTypes.shape({
+    current: PropTypes.object
   })
 };
 
@@ -53,7 +63,8 @@ ResponsiveImage.defaultProps = {
   height: 1,
   width: 1,
   children: null,
-  imageRef: { current: null }
+  imageRef: { current: null },
+  backgroundRef: { current: null }
 };
 
 export default ResponsiveImage;

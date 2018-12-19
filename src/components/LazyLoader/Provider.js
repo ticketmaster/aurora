@@ -27,7 +27,8 @@ class LazyLoaderProvider extends PureComponent {
     devicePixelRatios: PropTypes.arrayOf(PropTypes.number),
     style: PropTypes.objectOf(
       PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-    )
+    ),
+    tag: PropTypes.string
   };
 
   static defaultProps = {
@@ -37,18 +38,20 @@ class LazyLoaderProvider extends PureComponent {
     resizeFn: resize,
     targetDensity: DEFAULT_TARGET_DENSITY,
     devicePixelRatios: DEFAULT_DEVICE_PIXEL_RATIOS,
-    style: {}
+    style: {},
+    tag: "img"
   };
 
   constructor(props) {
     super(props);
-    const { src, width, height, resizeFn, style } = props;
+    const { src, width, height, tag, resizeFn, style } = props;
 
     /* eslint-disable */
     this.state = {
       src: getLowDefSrc({ src, width, height, resizeFn }),
       style: { ...style, ...BLUR_STYLES },
       imageRef: createRef(),
+      backgroundRef: tag === "img" ? null : createRef(),
       load: this.load
     };
     /* eslint-enable */
@@ -71,13 +74,28 @@ class LazyLoaderProvider extends PureComponent {
 
   onLoad = () => {
     const { imageRef } = this.state;
+
     if (imageRef && imageRef.current) {
       imageRef.current.style.filter = "none";
     }
   };
 
+  onLoadBg = srcVariant => {
+    const { backgroundRef } = this.state;
+
+    if (backgroundRef && backgroundRef.current) {
+      backgroundRef.current.style.backgroundImage = `url(${srcVariant})`;
+      backgroundRef.current.style.filter = "none";
+    }
+  };
+
+  onLoadBoth = srcVariant => () => {
+    this.onLoad();
+    this.onLoadBg(srcVariant);
+  };
+
   load = ready => {
-    const { imageRef } = this.state;
+    const { imageRef, backgroundRef } = this.state;
     const {
       src,
       width,
@@ -88,7 +106,7 @@ class LazyLoaderProvider extends PureComponent {
     } = this.props;
 
     if (ready && imageRef && imageRef.current) {
-      imageRef.current.onload = this.onLoad;
+      if (!backgroundRef) imageRef.current.onload = this.onLoad;
 
       const getSrcByDensity = createGetSrcByDensity({
         src,
@@ -97,7 +115,7 @@ class LazyLoaderProvider extends PureComponent {
         resizeFn
       });
 
-      const srcAttr = getSrcAttr(imageRef.current);
+      const srcAttr = backgroundRef ? "src" : getSrcAttr(imageRef.current);
       const srcVariant = getSrcVariantByAttr(
         imageRef.current,
         srcAttr,
@@ -106,13 +124,8 @@ class LazyLoaderProvider extends PureComponent {
         getSrcByDensity
       );
 
-      if (srcAttr[0] === "s") {
-        imageRef.current[srcAttr] = srcVariant;
-        return;
-      }
-
-      imageRef.current.style.backgroundImage = `url(${srcVariant})`;
-      this.onLoad();
+      if (backgroundRef) imageRef.current.onload = this.onLoadBoth(srcVariant);
+      imageRef.current[srcAttr] = srcVariant;
     }
   };
 

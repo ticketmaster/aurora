@@ -6,6 +6,7 @@ import colors from "../../theme/colors";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import SpotLight from "./SpotLight";
 import Angle from "./Angle";
+import StyledImageSeo from "../Image/Seo.styles";
 
 const SPOTLIGHT_STOPS = [
   "rgb(0, 45, 161)",
@@ -101,11 +102,13 @@ const SpotLightWrapper = styled.div`
 class Gradient extends PureComponent {
   render() {
     const {
+      src,
       children,
       className,
       stops,
       deg,
-      gradientRef,
+      imageRef,
+      backgroundRef,
       ...props
     } = this.props;
 
@@ -118,8 +121,9 @@ class Gradient extends PureComponent {
         stops={gradientStops}
         deg={gradientDeg}
         className={className}
-        ref={gradientRef}
+        ref={backgroundRef}
       >
+        {src && imageRef && <StyledImageSeo src={src} ref={imageRef} />}
         {hasSpotLight && (
           <SpotLightWrapper>
             <SpotLight />
@@ -141,9 +145,13 @@ Gradient.propTypes = {
     large: PropTypes.string.isRequired
   }),
   stops: PropTypes.arrayOf(PropTypes.string),
-  backgroundImageRef: PropTypes.shape({
-    current: PropTypes.element
-  })
+  imageRef: PropTypes.shape({
+    current: PropTypes.object
+  }),
+  backgroundRef: PropTypes.shape({
+    current: PropTypes.object
+  }),
+  src: PropTypes.string
 };
 
 Gradient.defaultProps = {
@@ -155,7 +163,9 @@ Gradient.defaultProps = {
     large: "81deg"
   },
   stops: [colors.defaultGradient.from, colors.defaultGradient.to],
-  backgroundImageRef: { current: null }
+  imageRef: { current: null },
+  backgroundRef: { current: null },
+  src: ""
 };
 
 export default Gradient;

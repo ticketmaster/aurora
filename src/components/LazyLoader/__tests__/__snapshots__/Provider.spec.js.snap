@@ -2,6 +2,7 @@
 
 exports[`LazyLoaderProvider should invoke componentDidUpdate and not setState when src equals prevSrc 1`] = `
 Object {
+  "backgroundRef": null,
   "imageRef": Object {
     "current": Object {
       "src": "",
@@ -33,18 +34,6 @@ exports[`LazyLoaderProvider should invoke componentDidUpdate and set state to a 
 />
 `;
 
-exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports a backgroundImage style 1`] = `
-Object {
-  "current": Object {
-    "onload": [MockFunction],
-    "style": Object {
-      "backgroundImage": "url(https://placekitten.com/g/400/400)",
-      "filter": "none",
-    },
-  },
-}
-`;
-
 exports[`LazyLoaderProvider should load a high res version of the image passed when the imageRef supports src 1`] = `
 Object {
   "current": Object {
@@ -66,6 +55,29 @@ Object {
 }
 `;
 
+exports[`LazyLoaderProvider should load a high res version of the image passed when the tag equals div, imageRef supports src or srcset, and backgroundRef supports a backgroundImage style 1`] = `
+Object {
+  "backgroundRef": Object {
+    "current": Object {
+      "style": Object {
+        "backgroundImage": "url(https://placekitten.com/g/400/400)",
+        "filter": "none",
+      },
+    },
+  },
+  "imageRef": Object {
+    "current": Object {
+      "onload": [Function],
+      "src": "https://placekitten.com/g/400/400",
+      "srcset": "",
+      "style": Object {
+        "filter": "none",
+      },
+    },
+  },
+}
+`;
+
 exports[`LazyLoaderProvider should load a low res, blurred version of the image passed prior to loading 1`] = `
 <img
   alt="Test Kitten"
@@ -79,6 +91,32 @@ exports[`LazyLoaderProvider should load a low res, blurred version of the image 
   }
   width={400}
 />
+`;
+
+exports[`LazyLoaderProvider should low res, blurred version of the image passed prior to loading when the tag equals div, imageRef supports src or srcset, and backgroundRef supports a backgroundImage style 1`] = `
+<div
+  load={[Function]}
+  src="https://placekitten.com/g/40/40"
+  style={
+    Object {
+      "filter": "blur(10px)",
+      "transition": "80ms filter linear",
+    }
+  }
+>
+  <img
+    alt="Test Kitten"
+    height={400}
+    src="https://placekitten.com/g/40/40"
+    style={
+      Object {
+        "filter": "blur(10px)",
+        "transition": "80ms filter linear",
+      }
+    }
+    width={400}
+  />
+</div>
 `;
 
 exports[`LazyLoaderProvider should not load a high res version of the image passed when the load function is invoked with a value of false 1`] = `
