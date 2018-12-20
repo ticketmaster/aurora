@@ -11,8 +11,14 @@ describe("PopOver", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should match snapshot", () => {
+  it("should match snapshot when visible", () => {
     const tree = renderer.create(<PopOver isVisible />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("should match snapshot when visible and without borders", () => {
+    const tree = renderer.create(<PopOver isVisible noBorders />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -40,7 +46,9 @@ describe("PopOver", () => {
         windowHeight: 400
       };
 
-      expect(PopOver.calculatePosition(position, dimensions, reduce)).toEqual({
+      expect(
+        PopOver.calculatePosition({ position, dimensions, reduce })
+      ).toEqual({
         x: 16,
         y: 20
       });
@@ -64,9 +72,77 @@ describe("PopOver", () => {
         windowHeight: 400
       };
 
-      expect(PopOver.calculatePosition(position, dimensions, reduce)).toEqual({
+      expect(
+        PopOver.calculatePosition({ position, dimensions, reduce })
+      ).toEqual({
         x: 24,
         y: 390
+      });
+    });
+
+    it("should position PopOver near toggle to the right", () => {
+      const position = {
+        elBottom: 510,
+        elTop: 500,
+        elLeft: 30,
+        elWidth: 150,
+        mouseX: 5,
+        offsetTop: 0,
+        clientHeight: 1000,
+        offsetLeft: 0,
+        clientWidth: 1000
+      };
+      const dimensions = {
+        width: 100,
+        windowScroll: 100,
+        height: 100,
+        windowWidth: 1000,
+        windowHeight: 400
+      };
+
+      expect(
+        PopOver.calculatePosition({
+          position,
+          dimensions,
+          reduce,
+          inlineWithTarget: true
+        })
+      ).toEqual({
+        x: 188,
+        y: 500
+      });
+    });
+
+    it("should position PopOver near toggle to the left", () => {
+      const position = {
+        elBottom: 510,
+        elTop: 500,
+        elLeft: 900,
+        elWidth: 150,
+        mouseX: 5,
+        offsetTop: 0,
+        clientHeight: 1000,
+        offsetLeft: 0,
+        clientWidth: 1000
+      };
+      const dimensions = {
+        width: 100,
+        windowScroll: 100,
+        height: 100,
+        windowWidth: 1000,
+        windowHeight: 400
+      };
+
+      expect(
+        PopOver.calculatePosition({
+          position,
+          dimensions,
+          reduce,
+          inlineWithTarget: true
+        })
+      ).toEqual({
+        x: 792,
+        y: 500
       });
     });
   });
@@ -208,7 +284,9 @@ describe("PopOver", () => {
       clientX: 100,
       currentTarget: {
         offsetTop: 20,
-        clientHeight: 1000
+        clientHeight: 1000,
+        offsetLeft: 30,
+        offsetWidth: 150
       }
     };
     const wrapper = {
@@ -221,6 +299,8 @@ describe("PopOver", () => {
       expect(PopOver.getDimensionsFromEvent(event)).toEqual({
         mouseX: 100,
         elTop: 20,
+        elLeft: 30,
+        elWidth: 150,
         elBottom: 1020,
         offsetTop: 0,
         clientHeight: 100000,
@@ -233,6 +313,8 @@ describe("PopOver", () => {
       expect(PopOver.getDimensionsFromEvent(event, wrapper)).toEqual({
         mouseX: 100,
         elTop: 20,
+        elLeft: 30,
+        elWidth: 150,
         elBottom: 1020,
         offsetTop: 50,
         clientHeight: 200,

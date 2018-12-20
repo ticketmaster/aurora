@@ -2,12 +2,18 @@
 
 exports[`PopOver should match snapshot 1`] = `
 <div
-  className="fSRmwf"
+  className="dbzfGp"
 />
 `;
 
-exports[`PopOver should match snapshot 2`] = `
+exports[`PopOver should match snapshot when visible 1`] = `
 <div
-  className="hokLBr"
+  className="bqoXdg"
+/>
+`;
+
+exports[`PopOver should match snapshot when visible and without borders 1`] = `
+<div
+  className="fBMBDA"
 />
 `;

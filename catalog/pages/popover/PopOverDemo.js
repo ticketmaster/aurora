@@ -47,6 +47,8 @@ class PopOverDemo extends React.Component {
 
   render() {
     const { showPopOver, ...position } = this.state;
+    const { inlineWithTarget, noBorders } = this.props;
+
     return (
       <Container ref={this.containerRef}>
         <div
@@ -76,6 +78,8 @@ class PopOverDemo extends React.Component {
           isVisible={showPopOver}
           position={{ ...position }}
           reduceTop={76}
+          inlineWithTarget={inlineWithTarget}
+          noBorders={noBorders}
         >
           Some text to be rendered in the pop over component. Some text to be
           rendered in the pop over component.
@@ -86,11 +90,15 @@ class PopOverDemo extends React.Component {
 }
 
 PopOverDemo.propTypes = {
-  withinContainer: PropTypes.bool
+  withinContainer: PropTypes.bool,
+  inlineWithTarget: PropTypes.bool,
+  noBorders: PropTypes.bool
 };
 
 PopOverDemo.defaultProps = {
-  withinContainer: false
+  withinContainer: false,
+  inlineWithTarget: false,
+  noBorders: false
 };
 
 export default PopOverDemo;
