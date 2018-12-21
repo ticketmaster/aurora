@@ -38,7 +38,7 @@ exports[`ImageCard renders type = half 1`] = `
     className="bhUpna"
   >
     <span
-      className="kVTDvT"
+      className="hctSdC"
     >
       <div
         className="text text--dark text--primary image-card__title--half hTwOaP"
@@ -52,14 +52,14 @@ exports[`ImageCard renders type = half 1`] = `
         }
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
       </div>
     </span>
     <span
-      className="giRDlL"
+      className="iDMPFk"
     >
       <div
         className="text text--dark text--primary image-card__subtitle--half hTwOaP"
@@ -73,7 +73,7 @@ exports[`ImageCard renders type = half 1`] = `
         }
       >
         <span
-          className="giRDlL"
+          className="iDMPFk"
         >
           Sub Title
         </span>
@@ -103,12 +103,12 @@ exports[`ImageCard renders with additional content when \`cardTitle\` and \`card
         className="fZvbHN"
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
         <span
-          className="giRDlL"
+          className="iDMPFk"
         >
           Sub Title
         </span>
@@ -136,12 +136,12 @@ exports[`ImageCard renders with custom image 1`] = `
         className="fZvbHN"
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
         <span
-          className="giRDlL"
+          className="iDMPFk"
         >
           Sub Title
         </span>
@@ -189,7 +189,7 @@ exports[`ImageCard renders with custom props 1`] = `
         }
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
@@ -219,12 +219,12 @@ exports[`ImageCard renders with title & subtitle 1`] = `
         className="fZvbHN"
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
         <span
-          className="giRDlL"
+          className="iDMPFk"
         >
           Sub Title
         </span>
@@ -254,12 +254,12 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
         className="fZvbHN"
       >
         <span
-          className="kVTDvT"
+          className="hctSdC"
         >
           Title
         </span>
         <span
-          className="giRDlL"
+          className="iDMPFk"
         >
           Sub Title
         </span>

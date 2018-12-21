@@ -1,22 +1,24 @@
+import themes from "./colorThemes";
+
+const { tm } = themes;
+
 const colors = {
   // Deprecated colors. Should be removed
   azure: {
-    dark: "rgba(2, 108, 223, 1)",
-    base: "rgba(2, 108, 223, 1)",
+    dark: tm.primary.base,
+    base: tm.primary.base,
     light: "rgba(2, 108, 223, 0.2)",
-    muted: "rgba(2, 108, 223, 0.1)",
+    muted: tm.primary.lightBase,
     restrained: "rgba(2, 108, 223, 0.4)",
-    hover: "#0150a7",
-    hoverLight: "#ebf4fd",
-    pressed: "#013670",
-    pressedLight: "#d6e7fa"
+    hover: tm.primary.medium,
+    hoverLight: tm.primary.light,
+    pressed: tm.primary.dark,
+    pressedLight: tm.primary.muted
   },
   emerald: {
-    base: "#1BAB1E",
-    dark: "#148016",
-    light: "#dbf3db",
-    hover: "#23702c",
-    pressed: "#265333",
+    ...tm.success,
+    hover: tm.special.medium,
+    pressed: tm.special.dark,
     muted: "rgba(27, 171, 30, 0.4)",
     restrained: "rgba(27, 171, 30, 0.2)"
   },
@@ -24,77 +26,56 @@ const colors = {
     hover: "#ECF4FD",
     pressed: "#D9E8F9"
   },
-  transparent: "transparent",
+  transparent: tm.transparent,
   summerSky: "#3AC7FF",
-  blackPearl: "#1F262D",
-  slate: "#999999",
+  blackPearl: tm.darkFill,
+  slate: tm.gray02,
   moonstone: "#D1D1D1",
   shale: "#E6E6E6",
-  quartz: "#f6f6f6",
+  quartz: tm.gray05,
   lightGray: "#E0E0E0",
-  aquamarine: "#00FFFF",
-  turquoise: {
-    base: "#14a1a3",
-    dark: "#0a7e80",
-    light: "#20c4c7"
-  },
+  aquamarine: tm.accent04,
+  turquoise: tm.accent03,
   ruby: {
-    base: "#d93a3a",
-    darkRuby: "#a22b2b",
-    lightRuby: "#ffeded"
+    base: tm.error.base,
+    darkRuby: tm.error.dark,
+    lightRuby: tm.error.light
   },
   amber: {
-    base: "#f2bd2a",
-    darkAmber: "#b98800",
-    lightAmber: "#fff5d9"
+    base: tm.caution.base,
+    darkAmber: tm.caution.dark,
+    lightAmber: tm.caution.light
   },
-  moonrock: "#bfbfbf",
-  diatomite: "#ebebeb",
+  moonrock: tm.gray03,
+  diatomite: tm.gray04,
   heliotrope: {
-    base: "#C56BFF",
-    dark: "#904eba",
-    light: "#f0daff",
+    ...tm.accent01,
     muted: "#F3E1FF"
   },
   cruz: {
-    base: "#962d94",
-    dark: "#6d236c",
-    light: "#e4cbe3",
+    ...tm.accent02,
     muted: "#e3cae3"
   },
   alert: {
-    base: "#D93A3A",
+    base: tm.error.base,
     dark: "#AE393A",
     light: "#EC9C9C",
     muted: "#F5CDCD"
   },
-  caution: {
-    base: "#f2bd2a",
-    dark: "#b98800",
-    light: "#fff5d9"
-  },
+  caution: tm.caution,
   positive: {
-    base: "#1BAB1E",
+    base: tm.success.base,
     dark: "#208E25",
     light: "#8DD58E",
     muted: "#C5E9C6"
   },
   defaultGradient: {
-    from: "#026cdf",
+    from: tm.primary.base,
     to: "#3ac7ff"
   },
   // Onyx and white are specific for typography. Should not be removed
-  onyx: {
-    base: "rgba(38, 38, 38, 1)",
-    light: "rgba(38, 38, 38, 0.6)",
-    muted: "rgba(38, 38, 38, 0.4)"
-  },
-  white: {
-    base: "rgba(255, 255, 255, 1)",
-    lighter: "rgba(255, 255, 255, 0.2)",
-    light: "rgba(255, 255, 255, 0.7)",
-    muted: "rgba(255, 255, 255, 0.5)"
-  }
+  onyx: tm.onyx,
+  white: tm.white
 };
 
 export default colors;

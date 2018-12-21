@@ -7,7 +7,7 @@ exports[`<LinkItem /> renders LinkItem as button  1`] = `
     role="none"
   >
     <button
-      class="link sc-bxivhb fBqTYi"
+      class="link sc-bxivhb kPFQWz"
       role="button"
     >
       Button text
@@ -23,7 +23,7 @@ exports[`<LinkItem /> renders LinkItem as link 1`] = `
     role="none"
   >
     <a
-      class="link sc-bxivhb fBqTYi"
+      class="link sc-bxivhb kPFQWz"
       href="http://localhost/new/"
       rel="noopener"
       role="link"
@@ -44,7 +44,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
     <button
       aria-expanded="false"
       aria-haspopup="true"
-      class="link link--has-other sc-bxivhb fBqTYi"
+      class="link link--has-other sc-bxivhb kPFQWz"
       role="button"
     >
       Button text
@@ -60,7 +60,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link sc-bxivhb fBqTYi"
+            class="link sc-bxivhb kPFQWz"
             href="/"
             role="link"
             target="_self"
@@ -73,7 +73,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link sc-bxivhb fBqTYi"
+            class="link sc-bxivhb kPFQWz"
             href="/"
             role="link"
             target="_self"
@@ -86,7 +86,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link sc-bxivhb fBqTYi"
+            class="link sc-bxivhb kPFQWz"
             href="/"
             role="link"
             target="_self"

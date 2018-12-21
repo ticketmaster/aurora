@@ -50,7 +50,7 @@ exports[`BaseText should render disabled text with a div tag in the light varian
 
 exports[`BaseText should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
 <div
-  className="text text--accent text--aquamarine gURYUM"
+  className="text text--accent text--aquamarine fYxSMU"
   disabled={false}
   size={
     Object {
@@ -66,7 +66,7 @@ exports[`BaseText should render primary text with a div tag in an accent variant
 
 exports[`BaseText should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
 <div
-  className="text text--accent text--azure lIbpq"
+  className="text text--accent text--azure kWQOwt"
   disabled={false}
   size={
     Object {

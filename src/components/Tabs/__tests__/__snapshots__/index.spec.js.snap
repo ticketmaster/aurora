@@ -12,7 +12,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX tab__button--active fgyCrQ"
+          class="sc-fjdhpX tab__button--active ewbiMR"
           data-index="0"
         >
           <div
@@ -26,7 +26,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX fgyCrQ"
+          class="sc-fjdhpX ewbiMR"
           data-index="1"
         >
           <div
@@ -40,7 +40,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX fgyCrQ"
+          class="sc-fjdhpX ewbiMR"
           data-index="2"
         >
           <div
@@ -67,7 +67,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX tab__button--active fgyCrQ"
+          class="sc-fjdhpX tab__button--active ewbiMR"
           data-index="0"
         >
           <div
@@ -81,7 +81,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX fgyCrQ"
+          class="sc-fjdhpX ewbiMR"
           data-index="1"
         >
           <div
@@ -95,7 +95,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
         class="sc-jTzLTM HTrUN"
       >
         <div
-          class="sc-fjdhpX fgyCrQ"
+          class="sc-fjdhpX ewbiMR"
           data-index="2"
         >
           <div

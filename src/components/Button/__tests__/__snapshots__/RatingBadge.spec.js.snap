@@ -2,7 +2,7 @@
 
 exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 <button
-  className="fJsNNK"
+  className="ihWbwc"
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -47,7 +47,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 <button
-  className="cUUvNc"
+  className="jraGyQ"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -91,7 +91,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 <button
-  className="cUUvNc"
+  className="jraGyQ"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -136,7 +136,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 <button
-  className="fJsNNK"
+  className="ihWbwc"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -180,7 +180,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 <button
-  className="fJsNNK"
+  className="ihWbwc"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}

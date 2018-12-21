@@ -8,17 +8,17 @@ exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
     class="sc-bwzfXH bQTlgY"
   >
     <div
-      class="links__list__item--selected sc-bxivhb links__list__item gLeqeE"
+      class="links__list__item--selected sc-bxivhb links__list__item drwIGv"
     >
       USA (English)
     </div>
     <div
-      class="sc-bxivhb links__list__item gLeqeE"
+      class="sc-bxivhb links__list__item drwIGv"
     >
       Canada (English)
     </div>
     <div
-      class="sc-bxivhb links__list__item gLeqeE"
+      class="sc-bxivhb links__list__item drwIGv"
     >
       Canada (Français)
     </div>
@@ -34,19 +34,19 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
     class="sc-bwzfXH bQTlgY"
   >
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       Canada (Français)
@@ -63,26 +63,26 @@ exports[`<LinkList /> renders content after container 1`] = `
     class="wrapper--has-after sc-bwzfXH bQTlgY"
   >
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item iOtTfI"
+      class="sc-ifAKCX links__list__item jbGTXu"
       href="/"
     >
       Canada (Français)
     </a>
   </div>
   <div
-    class="sc-htpNat egEwBh"
+    class="sc-htpNat zcngC"
   >
     <span>
       after content
