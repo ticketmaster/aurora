@@ -26,5 +26,7 @@ const constants = {
 export const cardBoxShadow =
   "0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.12)";
 export const popContainersBoxShadow = "0 4px 4px 0 rgba(0, 0, 0, 0.12)";
+export const popContainersSharpBoxShadow =
+  "0 2px 8px 0 rgba(159, 159, 159, 0.5)";
 
 export default constants;

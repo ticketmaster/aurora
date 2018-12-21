@@ -15,6 +15,14 @@ rows:
     Type: boolean
     Default: false
     Notes: Show/hide popover
+  - Prop: inlineWithTarget
+    Type: boolean
+    Default: false
+    Notes: Indicates if PopOver should be placed right near toggle
+  - Prop: noBorders
+    Type: boolean
+    Default: false
+    Notes: Hides borders when set in true
   - Prop: reduceTop
     Type: number
     Default: 0
@@ -32,4 +40,11 @@ rows:
 ```react
 ---
 <PopOverDemo withinContainer />
+```
+
+### Inline with target and without borders
+
+```react
+---
+<PopOverDemo withinContainer inlineWithTarget noBorders/>
 ```

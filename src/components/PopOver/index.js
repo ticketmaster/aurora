@@ -2,17 +2,23 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
-import { themes, constants, spacing } from "../../theme";
-import { popContainersBoxShadow } from "../../theme/constants";
+import { themes, constants, spacing, zIndex } from "../../theme";
+import {
+  popContainersBoxShadow,
+  popContainersSharpBoxShadow
+} from "../../theme/constants";
 
 const StyledPopOver = styled.div`
   background-color: ${themes.global.white.base};
-  border: 1px solid ${themes.global.gray02};
+  ${({ noBorders }) =>
+    !noBorders && `border: 1px solid ${themes.global.gray02}`};
   border-radius: ${constants.borderRadius.large};
-  box-shadow: ${popContainersBoxShadow};
+  box-shadow: ${({ noBorders }) =>
+    noBorders ? popContainersSharpBoxShadow : popContainersBoxShadow};
   position: absolute;
-  max-width: 260px;
+  max-width: 300px;
   padding: ${spacing.moderate};
+  z-index: ${zIndex.layout.overlay};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
   transition: opacity 0.1s ${constants.easing.easeInQuad},
     transform 0.1s ${constants.easing.easeInQuad};
@@ -68,8 +74,9 @@ class PopOver extends Component {
    * Page scroll position
    * Viewport size
    * @reduce(object) - additional top/bottom screen reduction cause by sticky header/footer
+   * @inlineWithTarget(boolean) - an optional prop that allows to align PopOver with toggle
    */
-  static calculatePosition(position, dimensions, reduce) {
+  static calculatePosition({ position, dimensions, reduce, inlineWithTarget }) {
     const {
       width,
       windowScroll,
@@ -81,12 +88,24 @@ class PopOver extends Component {
     const {
       elBottom,
       elTop,
+      elLeft,
+      elWidth,
       mouseX,
       offsetTop,
       clientHeight,
       offsetLeft,
       clientWidth
     } = position;
+
+    if (inlineWithTarget) {
+      return {
+        x:
+          elLeft + width + MIN_SPACE_FROM_EDGE * 2 >= clientWidth
+            ? elLeft - width - spacing.gutters.tiny
+            : elLeft + elWidth + spacing.gutters.tiny,
+        y: elTop
+      };
+    }
 
     const viewportTop = windowScroll + reduceTop;
     const viewportBottom = windowScroll + windowHeight - reduceBottom;
@@ -110,7 +129,7 @@ class PopOver extends Component {
 
     return {
       x: Math.min(
-        Math.max(0 + spaceFromEdge, mouseX - width / 2, containerLeft),
+        Math.max(spaceFromEdge, mouseX - width / 2, containerLeft),
         windowWidth - spaceFromEdge - width,
         containerRight
       ),
@@ -149,6 +168,7 @@ class PopOver extends Component {
     const {
       position: { mouseX, elTop, elBottom },
       isVisible,
+      inlineWithTarget,
       position,
       reduceTop,
       reduceBottom
@@ -162,9 +182,13 @@ class PopOver extends Component {
       prevProps.isVisible === isVisible
     ) {
       this.setDimensions();
-      this.pos = PopOver.calculatePosition(position, this.dimensions, {
-        top: reduceTop,
-        bottom: reduceBottom
+
+      const reduce = { top: reduceTop, bottom: reduceBottom };
+      this.pos = PopOver.calculatePosition({
+        position,
+        dimensions: this.dimensions,
+        reduce,
+        inlineWithTarget
       });
 
       this.myRef.current.style.top = `${this.pos.y}px`;
@@ -181,7 +205,12 @@ class PopOver extends Component {
    */
   static getDimensionsFromEvent(e, parent = {}) {
     const { clientX: mouseX } = e;
-    const { offsetTop: elTop, clientHeight: elHeight } = e.currentTarget;
+    const {
+      offsetTop: elTop,
+      clientHeight: elHeight,
+      offsetLeft: elLeft,
+      offsetWidth: elWidth
+    } = e.currentTarget;
     const {
       offsetTop: offsetTop = 0,
       clientHeight: clientHeight = 100000,
@@ -192,6 +221,8 @@ class PopOver extends Component {
     return {
       mouseX,
       elTop,
+      elLeft,
+      elWidth,
       elBottom: elTop + elHeight,
       offsetTop,
       clientHeight,
@@ -258,13 +289,23 @@ class PopOver extends Component {
   };
 
   popoverEnter = () => {
-    const { isVisible, position, reduceTop, reduceBottom } = this.props;
+    const {
+      isVisible,
+      inlineWithTarget,
+      position,
+      reduceTop,
+      reduceBottom
+    } = this.props;
 
     if (isVisible) {
       this.setDimensions();
-      this.pos = PopOver.calculatePosition(position, this.dimensions, {
-        top: reduceTop,
-        bottom: reduceBottom
+
+      const reduce = { top: reduceTop, bottom: reduceBottom };
+      this.pos = PopOver.calculatePosition({
+        position,
+        dimensions: this.dimensions,
+        reduce,
+        inlineWithTarget
       });
     }
 
@@ -273,7 +314,7 @@ class PopOver extends Component {
   };
 
   render() {
-    const { children, isVisible } = this.props;
+    const { children, isVisible, noBorders } = this.props;
 
     return (
       <CSSTransition
@@ -283,7 +324,11 @@ class PopOver extends Component {
         classNames="open"
         onEnter={this.popoverEnter}
       >
-        <StyledPopOver ref={this.myRef} isVisible={isVisible}>
+        <StyledPopOver
+          ref={this.myRef}
+          isVisible={isVisible}
+          noBorders={noBorders}
+        >
           {children}
         </StyledPopOver>
       </CSSTransition>
@@ -294,6 +339,8 @@ class PopOver extends Component {
 PopOver.propTypes = {
   children: PropTypes.node.isRequired,
   isVisible: PropTypes.bool,
+  inlineWithTarget: PropTypes.bool,
+  noBorders: PropTypes.bool,
   reduceTop: PropTypes.number,
   reduceBottom: PropTypes.number,
   position: PropTypes.shape({
@@ -309,6 +356,8 @@ PopOver.propTypes = {
 
 PopOver.defaultProps = {
   isVisible: false,
+  inlineWithTarget: false,
+  noBorders: false,
   reduceTop: 0,
   reduceBottom: 0,
   position: {
