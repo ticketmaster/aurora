@@ -153,7 +153,8 @@ export {
 export {
   MODAL_SIZE_SMALL,
   MODAL_SIZE_MEDIUM,
-  MODAL_SIZE_LARGE
+  MODAL_SIZE_LARGE,
+  MODAL_SIZE_XLARGE
 } from "./components/Modal/size";
 export { ModalConsumer, withModal } from "./components/Modal/context";
 export { default as AdaptiveBackdrop } from "./components/Backdrop";
