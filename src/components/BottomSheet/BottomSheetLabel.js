@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { labelsColorMap } from "../List/helper";
+import { getLabelTextColor } from "../../utils";
 
 import { Text } from "../Text";
 import { StatusBadge } from "../StatusBadge";
@@ -15,14 +15,10 @@ const BottomSheetLabel = ({ variant, children, ...restProps }) => {
   if (!children) {
     return null;
   }
-
-  if (labelsColorMap[variant]) {
+  const StatusBadgeColor = getLabelTextColor({ variant });
+  if (StatusBadgeColor !== "inherit") {
     return (
-      <StatusBadge
-        {...restProps}
-        label={children}
-        color={labelsColorMap[variant]}
-      />
+      <StatusBadge {...restProps} label={children} color={StatusBadgeColor} />
     );
   }
 

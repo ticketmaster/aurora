@@ -8,7 +8,7 @@ import { Column, Row } from "../Grid";
 import { StatusBadge } from "../StatusBadge";
 import { mediumAndUp } from "../../theme/mediaQueries";
 import { constants, spacing, typography, themes } from "../../theme";
-import { labelsColorMap } from "./helper";
+import { getLabelTextColor } from "../../utils";
 
 import {
   CHEVRON_ICON_PADDING,
@@ -76,12 +76,10 @@ const DesktopWrapper = styled.div`
   `};
 `;
 
-const getTextColor = ({ sentiment }) => labelsColorMap[sentiment] || "inherit";
-
 const LabelText = styled(Text)`
   font-size: ${typography.size.uno};
   font-weight: ${typography.weight.semiBold};
-  color: ${getTextColor};
+  color: ${({ sentiment }) => getLabelTextColor({ variant: sentiment })};
   text-transform: uppercase;
   white-space: nowrap;
   text-overflow: ellipsis;

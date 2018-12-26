@@ -1,5 +1,3 @@
-import { themes } from "../../theme";
-
 export const updateOpenIndexSingle = (openIndex, dataIndex) => {
   if (openIndex === dataIndex) return -1;
   return dataIndex;
@@ -30,11 +28,3 @@ export const determineIfOpen = (expandMultiple, openIndex, index) =>
   expandMultiple
     ? Array.isArray(openIndex) && openIndex.includes(index)
     : openIndex === index;
-
-export const labelsColorMap = {
-  alert: themes.global.error.base,
-  positive: themes.global.success.base,
-  accent: themes.global.accent01.dark,
-  caution: themes.global.caution.dark,
-  neutral: themes.global.onyx.light
-};
