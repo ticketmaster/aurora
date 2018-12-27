@@ -16,7 +16,7 @@ import { constants, spacing } from "../../theme";
 
 const noop = () => {};
 
-const CANCEL_BUTTON_SIZE = 30;
+const CANCEL_BUTTON_SIZE = 28;
 const CANCEL_BUTTON_ICON_SIZE = Math.floor(CANCEL_BUTTON_SIZE / 2);
 
 const BottomSheetContent = styled.div`

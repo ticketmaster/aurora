@@ -11,6 +11,7 @@ import { constants, spacing, typography, themes } from "../../theme";
 import { getLabelTextColor } from "../../utils";
 
 import {
+  ROW_CONTAINER_VERTICAL_PADDING,
   CHEVRON_ICON_PADDING,
   CHEVRON_ICON_SIZE,
   ROW_DATE_MEDIUM_WIDTH,
@@ -27,6 +28,7 @@ const Content = styled(Row)`
 
   font-size: 11px;
   ${mediumAndUp`
+    padding-top: ${ROW_CONTAINER_VERTICAL_PADDING};
     padding-left: calc(${CHEVRON_ICON_SIZE}px + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${ROW_DATE_MEDIUM_WIDTH});
     padding-right: calc(${ROW_BUTTON_WIDTH} - ${rowMarginRight}px);
     font-size: ${typography.size.hecto};
@@ -54,6 +56,7 @@ const DesktopWrapper = styled.div`
 
   ${mediumAndUp`
     display: flex;
+    align-items: center;
     overflow: hidden;
 
     &.row__label--hidden {

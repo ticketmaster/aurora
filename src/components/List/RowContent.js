@@ -18,9 +18,13 @@ import constants from "../../theme/constants";
 import RowLabel from "./RowLabel";
 import RowOptionsLink from "./RowOptionsLink";
 import {
+  ROW_CONTAINER_VERTICAL_PADDING,
+  ROW_LINK_VERTICAL_PADDING,
+  ROW_LINK_HORIZONTAL_PADDING,
   ROW_DATE_SMALL_WIDTH,
   ROW_DATE_MEDIUM_WIDTH,
-  ROW_BUTTON_WIDTH
+  ROW_BUTTON_WIDTH,
+  staticProps
 } from "./constants";
 
 const RowWrapper = styled.div`
@@ -55,29 +59,37 @@ const ListContainer = styled.div`
     props.rowLabel ? "1px" : `calc(12px + ${spacing.cozy})`};
   padding-bottom: ${props =>
     props.rowVariant === "withLink" ? "1px" : `calc(12px + ${spacing.cozy})`};
+
   ${mediumAndUp`
     padding-top: ${props =>
-      props.rowLabel ? "0" : `calc(18px + ${spacing.cozy})`};
+      props.rowLabel ? "0" : ROW_CONTAINER_VERTICAL_PADDING};
     padding-bottom: ${props =>
-      props.rowVariant === "withLink" ? "0" : `calc(18px + ${spacing.cozy})`};
+      props.rowVariant === "withLink" ? "0" : ROW_CONTAINER_VERTICAL_PADDING};
   `};
 `;
 
 const LinkWrapper = styled.a`
   text-decoration: none;
   display: flex;
+  padding: ${ROW_LINK_VERTICAL_PADDING} ${ROW_LINK_HORIZONTAL_PADDING};
+  margin-left: -${ROW_LINK_HORIZONTAL_PADDING};
+  min-height: 49px;
   justify-content: horizontal;
   width: 100%;
   cursor: pointer;
   border-radius: 2px;
+
   ${mediumAndUp`
     &:hover {
-      background-color: ${colors.azure.light};
+      background-color: ${colors.azure.hoverLight};
     }
   `};
 `;
 
 const DateWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 61.6%;
   max-width: ${ROW_DATE_SMALL_WIDTH};
 
@@ -100,6 +112,7 @@ const ContentColumn = styled(Column)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  z-index: 2;
   
   &.column__content--expanded {
     transition: opacity 0.1s ${constants.easing.easeInQuad};
@@ -109,6 +122,24 @@ const ContentColumn = styled(Column)`
   &.column__content--collapsed {
     transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
     opacity: 1;
+  }
+
+  &.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    &.column__content--expanded {
+      z-index: 1;
+    }
+
+    ${mediumAndUp`
+      padding: 0 calc(${spacing.moderate} + ${spacing.gutters.mediumAndUp /
+      2}px);
+    `};
   }
 `};
 `;
@@ -122,7 +153,7 @@ const MobileOnlyColumn = styled(Column)`
 const ListRowButton = styled(StyledButton)`
   min-width: ${ROW_BUTTON_WIDTH};
   max-width: ${ROW_BUTTON_WIDTH};
-  height: 36px;
+  height: 41px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +189,6 @@ const OverflowDesktopContainer = styled(Column)`
 const DesktopContainer = styled.div`
   display: none;
   padding-left: ${spacing.cozy};
-  padding-right: ${spacing.cozy};
   position: relative;
 
   ${mediumAndUp`
@@ -179,27 +209,11 @@ const MobileContainer = styled.div`
 const MultilineText = styled(Text)`
   /* stylelint-disable */
   display: -webkit-box;
+  width: 100%;
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   /* stylelint-enable */
-
-  ${mediumAndUp`
-    &.subtitle--hidden {
-      position: absolute;
-      transition: opacity 0.1s ${constants.easing.easeInQuad};
-      opacity: 0;
-    }
-
-    &.subtitle--active {
-      transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
-      opacity: 1;
-    }
-
-    &.subtitle--expanded {
-      transform: translateX(-55%);
-    }
-  `};
 `;
 
 const SingleLineText = styled(Text)`
@@ -309,7 +323,7 @@ class ListRowContent extends Component {
               <Text
                 className="date--text"
                 allCaps
-                responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                responsiveSize={staticProps.defaultResponsiveSize}
                 weight="semiBold"
                 {...(dateColor
                   ? { accent: "heliotrope", variant: "accent", primary: true }
@@ -332,8 +346,8 @@ class ListRowContent extends Component {
               {/* this class name is for automation purposes please do not remove or modify the name */}
               <MobileOnlyColumn className="column__mobile-only">
                 <MultilineText
-                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-                  className="list-row--title"
+                  responsiveSize={staticProps.defaultResponsiveSize}
+                  className="list-row__title"
                 >
                   {title}
                 </MultilineText>
@@ -348,50 +362,59 @@ class ListRowContent extends Component {
               </MobileOnlyColumn>
 
               <ContentColumn
-                key="primary"
+                key="primary-collapsed"
                 medium={6}
                 className={classnames({
                   column__content: true,
-                  "list-row--title": true,
+                  "list-row__title": true,
                   "column__content--expanded": isOpen,
                   "column__content--collapsed": !isOpen
                 })}
               >
                 <MultilineText
-                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                  responsiveSize={staticProps.defaultResponsiveSize}
                 >
                   {title}
                 </MultilineText>
               </ContentColumn>
+
               {/* this class name is for automation purposes please do not remove or modify the name */}
               <ContentColumn
-                key="secondary"
+                key="secondary-collapsed"
                 medium={6}
-                className="column__content"
+                className={classnames({
+                  column__content: true,
+                  "list-row__title": true,
+                  "column__content--expanded": isOpen,
+                  "column__content--collapsed": !isOpen
+                })}
               >
                 <MultilineText
-                  key="collapsed"
-                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
+                  responsiveSize={staticProps.defaultResponsiveSize}
                   className={classnames({
                     subtitle: true,
                     "list-row--subtitle": true,
-                    "subtitle--active": !isOpen,
-                    "subtitle--hidden": isOpen,
                     // this class name is for automation purposes please do not remove or modify the name
                     "subtitle--collapsed": true
                   })}
                 >
                   {subTitle}
                 </MultilineText>
+              </ContentColumn>
+
+              <ContentColumn
+                key="primary-expanded"
+                className={classnames({
+                  column__content: true,
+                  "list-row__title": true,
+                  "column__content--fixed": true,
+                  "column__content--expanded": !isOpen,
+                  "column__content--collapsed": isOpen
+                })}
+              >
                 <MultilineText
-                  key="expanded"
-                  responsiveSize={{ xSmall: "hecto", medium: "kilo" }}
-                  className={classnames({
-                    subtitle: true,
-                    "subtitle--expanded": true,
-                    "subtitle--active": isOpen,
-                    "subtitle--hidden": !isOpen
-                  })}
+                  responsiveSize={staticProps.defaultResponsiveSize}
+                  className="subtitle"
                 >
                   {isOpen && onExpandShow === "title" ? title : subTitle}
                 </MultilineText>
