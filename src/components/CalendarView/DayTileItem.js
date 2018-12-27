@@ -5,7 +5,7 @@ import { Text } from "../Text";
 
 import { spacing } from "../../theme";
 
-import { getThemeValue } from "../../utils";
+import { getThemeValue, getLabelTextColor } from "../../utils";
 
 const DayTileItem = styled.article`
   flex: 0 0 auto;
@@ -49,9 +49,16 @@ const DayTileItemGroup = ({ children }) =>
     return [<DayTileItem.Divider />, child];
   });
 
-const DayTileItemBaseText = styled(Text).attrs({ size: "uno" })`
+const DayTileItemBaseText = styled(Text).attrs(() => ({ size: "uno" }))`
   width: 100%;
   word-break: break-word;
+`;
+
+const DayTileItemLabel = styled(DayTileItemBaseText).attrs(() => ({
+  weight: "semiBold"
+}))`
+  text-transform: uppercase;
+  color: ${getLabelTextColor};
 `;
 
 const DayTileItemTitle = DayTileItemBaseText;
@@ -63,5 +70,6 @@ const DayTileItemSubTitle = props => (
 DayTileItem.Group = DayTileItemGroup;
 DayTileItem.Title = DayTileItemTitle;
 DayTileItem.SubTitle = DayTileItemSubTitle;
+DayTileItem.Label = DayTileItemLabel;
 
 export default DayTileItem;

@@ -51,6 +51,9 @@ rows:
                   <DayTileItem.Title>
                     Henderson, NV — Sunset Station Outdoor Amphitheater
                   </DayTileItem.Title>
+                  <DayTileItem.Label variant="positive">
+                    ON SALE: TUE • JAN 29 • 5 PM
+                  </DayTileItem.Label>
                 </DayTileItem.ContentColumn>
               </DayTileItem.Content>
               <DayTileItem.Footer>
@@ -88,6 +91,9 @@ rows:
                   <DayTileItem.Title>
                     Henderson, NV — Sunset Station Outdoor Amphitheater
                   </DayTileItem.Title>
+                  <DayTileItem.Label variant="positiveDark">
+                    ON SALE: TUE • JAN 29 • 5 PM
+                  </DayTileItem.Label>
                 </DayTileItem.ContentColumn>
               </DayTileItem.Content>
               <DayTileItem.Footer>

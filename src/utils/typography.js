@@ -1,4 +1,4 @@
-import { colors } from "../theme";
+import { colors, themes } from "../theme";
 
 export const getFontHue = ({
   fontColor,
@@ -43,3 +43,14 @@ export const getFontColor = ({
   const fontColor = fontColors[variant] || fontColors.dark;
   return getFontHue({ fontColor, primary, secondary, disabled, variant });
 };
+
+const labelsColorMap = {
+  alert: themes.global.error.base,
+  positive: themes.global.success.base,
+  positiveDark: themes.global.success.dark,
+  accent: themes.global.accent01.dark,
+  caution: themes.global.caution.dark,
+  neutral: themes.global.onyx.light
+};
+export const getLabelTextColor = ({ variant }) =>
+  labelsColorMap[variant] || "inherit";
