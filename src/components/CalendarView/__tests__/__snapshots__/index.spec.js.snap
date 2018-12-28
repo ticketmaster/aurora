@@ -11,7 +11,7 @@ exports[`CalendarView should render without errors 1`] = `
 }
 
 <div
-  className="ggGwWQ"
+  className="day-tile GnYRo"
 >
   <header
     className="gVZTwB"
@@ -35,7 +35,7 @@ exports[`CalendarView should render without errors 1`] = `
     </div>
   </header>
   <article
-    className="cSkcyn"
+    className="eJBEmz"
   >
     <header
       className="isAWQW"
@@ -166,10 +166,10 @@ exports[`CalendarView should render without errors 1`] = `
     </footer>
   </article>
   <div
-    className="bmGypZ"
+    className="bJScud"
   />
   <article
-    className="cSkcyn"
+    className="eJBEmz"
   >
     <header
       className="isAWQW"
