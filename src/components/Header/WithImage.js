@@ -57,7 +57,7 @@ const ImageHeader = ({
   ...props
 }) => {
   const {
-    style: backgroundImageStyle,
+    style: backgroundImageStyle = {},
     imageRef,
     backgroundRef,
     ...otherBackgroundImageProps
@@ -67,7 +67,7 @@ const ImageHeader = ({
       {backgroundImage ? (
         <ImageBackground
           style={{
-            ...(backgroundImageStyle || {}),
+            ...backgroundImageStyle,
             backgroundImage: `url(${backgroundImage})`
           }}
           src={backgroundImage}
@@ -90,6 +90,7 @@ const ImageHeader = ({
             "gradient--underlay": !withSpotLight && withUnderlay,
             "gradient--spotlight": withSpotLight
           })}
+          style={backgroundImageStyle}
         />
       )}
       <ContainerWrapper>
