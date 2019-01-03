@@ -34,6 +34,7 @@ describe("CalendarView", () => {
                     <DayTileItem.SubTitle>
                       On Sale Starts Soon
                     </DayTileItem.SubTitle>
+                    <DayTileItem.Label>On Sale Starts Soon</DayTileItem.Label>
                   </DayTileItem.ContentColumn>
                 </DayTileItem.Content>
                 <DayTileItem.Footer>

@@ -1,18 +1,39 @@
 import React, { Children } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
+import classnames from "classnames";
 
 import { Text } from "../Text";
 
 import { spacing } from "../../theme";
 
-import { getThemeValue } from "../../utils";
+import { getThemeValue, getLabelTextColor } from "../../utils";
 
-const DayTileItem = styled.article`
+const DAY_TILE_ITEM_CLASS_HIGHLIGHTED = "day-tile-item--highlighted";
+
+const DayTileItem = styled.article.attrs({
+  className: ({ highlighted }) =>
+    classnames({
+      [DAY_TILE_ITEM_CLASS_HIGHLIGHTED]: highlighted
+    })
+})`
   flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;
   min-height: 190px;
+
+  &.${DAY_TILE_ITEM_CLASS_HIGHLIGHTED} {
+    background-color: ${getThemeValue("primary", "lightBase")};
+  }
 `;
+
+DayTileItem.propTypes = {
+  highlighted: PropTypes.bool
+};
+
+DayTileItem.defaultProps = {
+  highlighted: false
+};
 
 DayTileItem.Header = styled.header`
   display: flex;
@@ -36,7 +57,7 @@ DayTileItem.Footer = styled.footer`
 `;
 
 DayTileItem.Divider = styled.div`
-  margin: 0 ${spacing.cozy} ${spacing.cozy};
+  margin: ${spacing.slim} ${spacing.cozy};
   border-bottom: solid 1px ${getThemeValue("gray04")};
 `;
 
@@ -49,9 +70,16 @@ const DayTileItemGroup = ({ children }) =>
     return [<DayTileItem.Divider />, child];
   });
 
-const DayTileItemBaseText = styled(Text).attrs({ size: "uno" })`
+const DayTileItemBaseText = styled(Text).attrs(() => ({ size: "uno" }))`
   width: 100%;
   word-break: break-word;
+`;
+
+const DayTileItemLabel = styled(DayTileItemBaseText).attrs(() => ({
+  weight: "semiBold"
+}))`
+  text-transform: uppercase;
+  color: ${getLabelTextColor};
 `;
 
 const DayTileItemTitle = DayTileItemBaseText;
@@ -63,5 +91,6 @@ const DayTileItemSubTitle = props => (
 DayTileItem.Group = DayTileItemGroup;
 DayTileItem.Title = DayTileItemTitle;
 DayTileItem.SubTitle = DayTileItemSubTitle;
+DayTileItem.Label = DayTileItemLabel;
 
 export default DayTileItem;

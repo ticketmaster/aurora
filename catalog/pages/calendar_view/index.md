@@ -11,10 +11,6 @@ rows:
     Type: boolean
     Default: '`false`'
     Notes: Determines whether the DayTile container needs a border-radius
-  - Prop: highlighted
-    Type: boolean
-    Default: '`false`'
-    Notes: Determines whether the DayTile container needs to be highlighted
   - Prop: ...props
     Type: any
     Default:
@@ -25,17 +21,17 @@ rows:
 ---
 <Container>
   <Row>
-    <Column medium={3}>
+    <Column medium={4}>
       <Spacing top={{xSmall: "cozy" }} bottom={{xSmall: "cozy" }} style={{ maxWidth: "160px", margin: "auto" }}>
         <DayTile />
       </Spacing>
     </Column>
-    <Column medium={3}>
+    <Column medium={4}>
       <Spacing top={{xSmall: "cozy" }} bottom={{xSmall: "cozy" }} style={{ maxWidth: "160px", margin: "auto" }}>
         <DayTile noBorderRadius />
       </Spacing>
     </Column>
-    <Column medium={3}>
+    <Column medium={4}>
       <Spacing top={{xSmall: "cozy" }} bottom={{xSmall: "cozy" }} style={{ maxWidth: "160px", margin: "auto" }}>
         <DayTile>
           <DayTile.Header>
@@ -51,43 +47,9 @@ rows:
                   <DayTileItem.Title>
                     Henderson, NV — Sunset Station Outdoor Amphitheater
                   </DayTileItem.Title>
-                </DayTileItem.ContentColumn>
-              </DayTileItem.Content>
-              <DayTileItem.Footer>
-                <DayTileButton.Group>
-                  <DayTileButton href="#">2:00 pm</DayTileButton>
-                  <DayTileButton variant="outline" href="#">6:00 pm</DayTileButton>
-                </DayTileButton.Group>
-                <DayTileMoreButton
-                  role="button"
-                  onClick={() => {
-                    alert('More Button Clicked');
-                  }}
-                >
-                  +4 More
-                </DayTileMoreButton>
-              </DayTileItem.Footer>
-            </DayTileItem>
-          </DayTileItem.Group>
-        </DayTile>
-      </Spacing>
-    </Column>
-    <Column medium={3}>
-      <Spacing top={{xSmall: "cozy" }} bottom={{xSmall: "cozy" }} style={{ maxWidth: "160px", margin: "auto" }}>
-        <DayTile highlighted>
-          <DayTile.Header>
-            <DayTileDate accent>10</DayTileDate>
-          </DayTile.Header>
-          <DayTileItem.Group>
-            <DayTileItem>
-              <DayTileItem.Header>
-                <DayTileOverflowButton aria-label="More Info" onClick={() => alert('Overflow Button Clicked')} />
-              </DayTileItem.Header>
-              <DayTileItem.Content>
-                <DayTileItem.ContentColumn>
-                  <DayTileItem.Title>
-                    Henderson, NV — Sunset Station Outdoor Amphitheater
-                  </DayTileItem.Title>
+                  <DayTileItem.Label variant="positive">
+                    ON SALE: TUE • JAN 29 • 5 PM
+                  </DayTileItem.Label>
                 </DayTileItem.ContentColumn>
               </DayTileItem.Content>
               <DayTileItem.Footer>
@@ -173,6 +135,10 @@ Use `<DayTileItem.Header />` with `<DayTileOverflowButton />` in order to achiev
 ```table
 span: 6
 rows:
+  - Prop: highlighted
+    Type: boolean
+    Default: '`false`'
+    Notes: Determines whether the DayTileItem needs to be highlighted
   - Prop: ...props
     Type: any
     Default:
@@ -259,7 +225,7 @@ rows:
             <DayTileDate accent>10</DayTileDate>
           </DayTile.Header>
           <DayTileItem.Group>
-            <DayTileItem>
+            <DayTileItem highlighted>
               <DayTileItem.Header>
                 <DayTileOverflowButton aria-label="More Info" onClick={() => alert('Overflow Button Clicked')} />
               </DayTileItem.Header>
