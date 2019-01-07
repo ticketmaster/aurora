@@ -29,7 +29,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -290,7 +290,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -489,7 +489,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -680,7 +680,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc kDPAfh"
+          className="link--row-options jVlmkc gJYhwf"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -697,7 +697,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options yTzPP eaCOkL"
+          className="link--row-options yTzPP ktVXkN"
           data-index={0}
           href=""
           onClick={null}
@@ -747,7 +747,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -946,7 +946,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -1145,7 +1145,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"
@@ -1336,7 +1336,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc kDPAfh"
+          className="link--row-options jVlmkc gJYhwf"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -1353,7 +1353,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="yTzPP dVGldd"
+          className="yTzPP fleKMb"
           data-index={0}
           href="/"
           onClick={null}
@@ -1403,7 +1403,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         type="button"
       >
         <svg
-          fill="#1F262D"
+          fill="#1f262d"
           height={15}
           style={Object {}}
           viewBox="0 0 15 7"

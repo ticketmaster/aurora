@@ -2,7 +2,7 @@
 
 exports[`Badge /> renders link Badge correctly 1`] = `
 <button
-  className="jMQsCE"
+  className="fhmZxy"
   href="/"
   size="regular"
 >
@@ -12,7 +12,7 @@ exports[`Badge /> renders link Badge correctly 1`] = `
 
 exports[`Badge /> renders outline Badge correctly 1`] = `
 <button
-  className="bzRbpU"
+  className="pgeuK"
   size="regular"
 >
   Badge
@@ -21,7 +21,7 @@ exports[`Badge /> renders outline Badge correctly 1`] = `
 
 exports[`Badge /> renders outline disabled Badge correctly 1`] = `
 <button
-  className="bzRbpU"
+  className="pgeuK"
   disabled={true}
   size="regular"
 >
@@ -31,7 +31,7 @@ exports[`Badge /> renders outline disabled Badge correctly 1`] = `
 
 exports[`Badge /> renders standard Badge correctly 1`] = `
 <button
-  className="jMQsCE"
+  className="fhmZxy"
   size="regular"
 >
   Badge
@@ -40,7 +40,7 @@ exports[`Badge /> renders standard Badge correctly 1`] = `
 
 exports[`Badge /> renders standard disabled Badge correctly 1`] = `
 <button
-  className="jMQsCE"
+  className="fhmZxy"
   disabled={true}
   size="regular"
 >

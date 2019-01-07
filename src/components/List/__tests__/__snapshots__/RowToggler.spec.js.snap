@@ -11,7 +11,7 @@ exports[`<RowToggler /> should render without errors when closed 1`] = `
   type="button"
 >
   <svg
-    fill="#1F262D"
+    fill="#1f262d"
     height="15"
     viewBox="0 0 15 7"
     width="15"
@@ -34,7 +34,7 @@ exports[`<RowToggler /> should render without errors when open 1`] = `
   type="button"
 >
   <svg
-    fill="#1F262D"
+    fill="#1f262d"
     height="15"
     viewBox="0 0 15 7"
     width="15"
