@@ -18,13 +18,15 @@ exports[`Header renders with custom level 1`] = `
         className="bHZSLS"
       >
         <h1
-          className="femmpc"
+          className="BsAvo"
           color="blue"
           size={
             Object {
               "large": "bronto",
               "medium": "zetta",
               "small": "tera",
+              "xLarge": undefined,
+              "xSmall": "tera",
             }
           }
         >
@@ -64,12 +66,14 @@ exports[`Header renders with default 1`] = `
         className="bHZSLS"
       >
         <h2
-          className="djzKum"
+          className="bHZgTp"
           size={
             Object {
               "large": "bronto",
               "medium": "zetta",
               "small": "tera",
+              "xLarge": undefined,
+              "xSmall": "tera",
             }
           }
         >
@@ -109,12 +113,14 @@ exports[`Header renders withOverlay 1`] = `
         className="bHZSLS"
       >
         <h2
-          className="djzKum"
+          className="bHZgTp"
           size={
             Object {
               "large": "bronto",
               "medium": "zetta",
               "small": "tera",
+              "xLarge": undefined,
+              "xSmall": "tera",
             }
           }
         >

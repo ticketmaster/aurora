@@ -2,15 +2,9 @@
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
 <div
-  className="text text--dark text--primary mrGpr iqtECQ"
+  className="text text--dark text--primary mrGpr gwaFLV"
   disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
 >
    
   Custom label

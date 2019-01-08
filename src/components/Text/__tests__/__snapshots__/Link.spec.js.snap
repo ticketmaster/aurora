@@ -2,17 +2,11 @@
 
 exports[`Link renders a button when only onclick is provided 1`] = `
 <button
-  className="gAWtIe"
+  className="jhMktq"
   href={null}
   onClick={[Function]}
   rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
   target=""
 >
   I am a link
@@ -21,17 +15,11 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 
 exports[`Link renders a default link 1`] = `
 <a
-  className="jFaEbX"
+  className="efSPmK"
   href="http://localhost/"
   onClick={null}
   rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
   target=""
 >
   I am a link
@@ -40,17 +28,11 @@ exports[`Link renders a default link 1`] = `
 
 exports[`Link renders a span when no href or onClick provided 1`] = `
 <span
-  className="hFvjhk"
+  className="cAfJlC"
   href={null}
   onClick={null}
   rel="_self"
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
   target=""
 >
   I am a link

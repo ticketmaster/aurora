@@ -7,6 +7,7 @@ import * as PT from "./PropTypes";
 import colors from "../../theme/colors";
 import { getRelByTarget, getAsProp } from "../../utils/link";
 import { getFontColor } from "../../utils/typography";
+import { getResponsiveSize } from "../../utils/responsiveSize";
 
 const LinkBase = styled(Base)`
   text-decoration: none;
@@ -65,15 +66,7 @@ const Link = ({
     <Elm
       {...props}
       {...asProp}
-      size={{
-        small: responsiveSize.small || size,
-        medium: responsiveSize.medium || responsiveSize.small || size,
-        large:
-          responsiveSize.large ||
-          responsiveSize.medium ||
-          responsiveSize.small ||
-          size
-      }}
+      size={getResponsiveSize({ size, responsiveSize })}
       primary={primary}
       variant={variant}
       accent={accent}
@@ -107,7 +100,7 @@ Link.defaultProps = {
   href: null,
   rel: "_self",
   size: "hecto",
-  responsiveSize: {},
+  responsiveSize: PT.defaultResponsiveSize,
   weight: "regular",
   variant: "accent",
   accent: "azure",

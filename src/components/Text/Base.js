@@ -4,6 +4,8 @@ import classnames from "classnames";
 
 import StyledTextBase from "./Base.styles";
 import * as PT from "./PropTypes";
+import { themeShape, themeTm } from "../../utils/getThemeValue";
+import { getResponsiveSize } from "../../utils/responsiveSize";
 
 const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
 
@@ -20,12 +22,16 @@ const TextBase = ({
   className,
   allCaps,
   children,
+  theme,
+  themed,
   ...props
 }) => {
+  const isThemed = themed && theme && theme.themeName;
   const classes = classnames({
     text: true,
     [`text--${variant}`]: !!variant,
     [`text--${accent}`]: variant === "accent",
+    [`text-${isThemed}`]: isThemed,
     "text--primary": !!primary || (!secondary && !disabled && !accent),
     "text--secondary": !!secondary,
     "text--disabled": !!disabled,
@@ -35,15 +41,7 @@ const TextBase = ({
   return (
     <StyledTextBase
       className={classes}
-      size={{
-        small: responsiveSize.small || size,
-        medium: responsiveSize.medium || responsiveSize.small || size,
-        large:
-          responsiveSize.large ||
-          responsiveSize.medium ||
-          responsiveSize.small ||
-          size
-      }}
+      size={getResponsiveSize({ size, responsiveSize })}
       weight={weight}
       variant={variant}
       accent={accent}
@@ -52,6 +50,7 @@ const TextBase = ({
       disabled={disabled}
       allCaps={allCaps}
       as={tag}
+      themed={themed}
       {...props}
     >
       {children}
@@ -72,7 +71,9 @@ TextBase.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
   allCaps: PropTypes.bool,
-  monospace: PropTypes.bool
+  monospace: PropTypes.bool,
+  theme: PropTypes.shape(themeShape),
+  themed: PropTypes.bool
 };
 
 TextBase.defaultProps = {
@@ -80,18 +81,16 @@ TextBase.defaultProps = {
   variant: "dark",
   accent: "",
   size: "hecto",
-  responsiveSize: {
-    small: null,
-    medium: null,
-    large: null
-  },
+  responsiveSize: PT.defaultResponsiveSize,
   weight: "regular",
   className: "",
   primary: false,
   secondary: false,
   disabled: false,
   allCaps: false,
-  monospace: false
+  monospace: false,
+  theme: themeTm,
+  themed: false
 };
 
 TextBase.displayName = "Text";

@@ -690,15 +690,9 @@ exports[`Drawer renders string header header 1`] = `
       >
         <div>
           <div
-            className="text text--light text--primary eEHYYC"
+            className="text text--light text--primary bdJGfZ"
             disabled={false}
-            size={
-              Object {
-                "large": "kilo",
-                "medium": "kilo",
-                "small": "kilo",
-              }
-            }
+            size="kilo"
           >
             Some Title
           </div>

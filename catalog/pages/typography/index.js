@@ -1,4 +1,5 @@
 import { pageLoader } from "catalog";
+import { ThemeProvider } from "styled-components";
 
 import { colors, typography } from "../../../src/theme";
 import { Text, Link } from "../../../src/components/Text";
@@ -40,6 +41,7 @@ export default {
   path: "/typography",
   title: "Typography",
   imports: {
+    ThemeProvider,
     colors,
     typography,
     Container,

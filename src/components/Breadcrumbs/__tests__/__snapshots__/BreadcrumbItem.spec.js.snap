@@ -9,17 +9,11 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   }
 >
   <a
-    className="eOSDpb hCyrKv"
+    className="eOSDpb boAnYn"
     href="/"
     onClick={null}
     rel="_self"
-    size={
-      Object {
-        "large": "uno",
-        "medium": "uno",
-        "small": "uno",
-      }
-    }
+    size="uno"
     target=""
   >
     Home
@@ -36,17 +30,11 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   }
 >
   <span
-    className="kXsNXA eZUnXh"
+    className="kXsNXA gegmbY"
     href={null}
     onClick={null}
     rel="_self"
-    size={
-      Object {
-        "large": "uno",
-        "medium": "uno",
-        "small": "uno",
-      }
-    }
+    size="uno"
     target=""
   >
     Home

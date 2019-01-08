@@ -51,28 +51,24 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--accent text--heliotrope text--primary date--text dFzxVa"
+            className="text text--accent text--heliotrope text--primary date--text bxEtxF"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -84,28 +80,24 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -114,13 +106,15 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -131,26 +125,30 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -225,15 +223,9 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary iXtlNF kCFpc"
+            className="text text--accent text-- text--primary iXtlNF iutLsF"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             On sale: MON • AUG 27 • 10 AM
           </div>
@@ -243,15 +235,9 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary iXtlNF kCFpc"
+            className="text text--accent text-- text--primary iXtlNF iutLsF"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             On sale: MON • AUG 27 • 10 AM
           </div>
@@ -261,15 +247,9 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary iXtlNF kCFpc"
+            className="text text--accent text-- text--primary iXtlNF iutLsF"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             On sale: MON • AUG 27 • 10 AM
           </div>
@@ -312,28 +292,24 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -345,28 +321,24 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -375,13 +347,15 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -392,26 +366,30 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -511,28 +489,24 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -544,28 +518,24 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -574,13 +544,15 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -591,26 +563,30 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -634,15 +610,9 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="dFpiHg"
           >
             <div
-              className="text text--dark text--secondary jjEscd foyaPB"
+              className="text text--dark text--secondary jjEscd ftYllf"
               disabled={false}
-              size={
-                Object {
-                  "large": "uno",
-                  "medium": "uno",
-                  "small": "uno",
-                }
-              }
+              size="uno"
             >
               on Partner Site
             </div>
@@ -680,35 +650,23 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc gJYhwf"
+          className="link--row-options jVlmkc ljZgeW"
           data-index={0}
           href={null}
           onClick={[Function]}
           rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
+          size="hecto"
           target=""
         >
           Ticket Options Available
         </button>
         <span
-          className="link--row-options yTzPP ktVXkN"
+          className="link--row-options yTzPP gathjg"
           data-index={0}
           href=""
           onClick={null}
           rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
+          size="hecto"
           target=""
         >
           Ticket Options Available
@@ -769,28 +727,24 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -802,28 +756,24 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -832,13 +782,15 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -849,26 +801,30 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -968,28 +924,24 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -1001,28 +953,24 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -1031,13 +979,15 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             className="column__content list-row--title column__content--expanded iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -1048,26 +998,30 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -1167,28 +1121,24 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -1200,28 +1150,24 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -1230,13 +1176,15 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -1247,26 +1195,30 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -1290,15 +1242,9 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="dFpiHg"
           >
             <div
-              className="text text--dark text--secondary jjEscd foyaPB"
+              className="text text--dark text--secondary jjEscd ftYllf"
               disabled={false}
-              size={
-                Object {
-                  "large": "uno",
-                  "medium": "uno",
-                  "small": "uno",
-                }
-              }
+              size="uno"
             >
               click here
             </div>
@@ -1336,35 +1282,23 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc gJYhwf"
+          className="link--row-options jVlmkc ljZgeW"
           data-index={0}
           href={null}
           onClick={[Function]}
           rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
+          size="hecto"
           target=""
         >
           Ticket options available
         </button>
         <a
-          className="yTzPP fleKMb"
+          className="yTzPP dYTnRX"
           data-index={0}
           href="/"
           onClick={null}
           rel="_self"
-          size={
-            Object {
-              "large": "hecto",
-              "medium": "hecto",
-              "small": "hecto",
-            }
-          }
+          size="hecto"
           target=""
         >
           Ticket options available
@@ -1425,28 +1359,24 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           className="date__wrapper dIzoqV"
         >
           <div
-            className="text text--dark text--primary date--text cJvdYQ"
+            className="text text--dark text--primary date--text gpIiDw"
             disabled={false}
             size={
               Object {
-                "large": "kilo",
+                "large": undefined,
                 "medium": "kilo",
-                "small": "hecto",
+                "small": undefined,
+                "xLarge": undefined,
+                "xSmall": "hecto",
               }
             }
           >
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text jjEscd kzWFvt"
+            className="text text--dark text--secondary day-time--text jjEscd elzWGC"
             disabled={false}
-            size={
-              Object {
-                "large": "hecto",
-                "medium": "hecto",
-                "small": "hecto",
-              }
-            }
+            size="hecto"
           >
             Thu, 8:00 PM
           </div>
@@ -1458,28 +1388,24 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR fOakIH"
+              className="text text--dark text--primary list-row--title bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle jjEscd kzWFvt"
+              className="text text--dark text--secondary list-row--subtitle jjEscd elzWGC"
               disabled={false}
-              size={
-                Object {
-                  "large": "hecto",
-                  "medium": "hecto",
-                  "small": "hecto",
-                }
-              }
+              size="hecto"
             >
               KABOO 3-Day Pass
             </div>
@@ -1488,13 +1414,15 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="column__content list-row--title column__content--collapsed iRwVbZ"
           >
             <div
-              className="text text--dark text--primary bgACjR fOakIH"
+              className="text text--dark text--primary bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
@@ -1505,26 +1433,30 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="column__content iRwVbZ"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR fOakIH"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >
               KABOO 3-Day Pass
             </div>
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR fOakIH"
+              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
               disabled={false}
               size={
                 Object {
-                  "large": "kilo",
+                  "large": undefined,
                   "medium": "kilo",
-                  "small": "hecto",
+                  "small": undefined,
+                  "xLarge": undefined,
+                  "xSmall": "hecto",
                 }
               }
             >

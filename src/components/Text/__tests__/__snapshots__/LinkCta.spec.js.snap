@@ -2,17 +2,11 @@
 
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
 <button
-  className="jfDrEm"
+  className="hVTGTV"
   href={null}
   onClick={[Function]}
   rel=""
-  size={
-    Object {
-      "large": null,
-      "medium": null,
-      "small": null,
-    }
-  }
+  size={null}
   target="_self"
 >
   I am a link
@@ -21,17 +15,11 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
 
 exports[`LinkCta renders a default LinkCta 1`] = `
 <a
-  className="dVBByn"
+  className="ljHYvo"
   href="http://localhost/"
   onClick={null}
   rel=""
-  size={
-    Object {
-      "large": null,
-      "medium": null,
-      "small": null,
-    }
-  }
+  size={null}
   target="_self"
 >
   I am a link
@@ -40,17 +28,11 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 <span
-  className="bvcokc"
+  className="fEoxTn"
   href={null}
   onClick={null}
   rel=""
-  size={
-    Object {
-      "large": null,
-      "medium": null,
-      "small": null,
-    }
-  }
+  size={null}
   target="_self"
 >
   I am a link
@@ -59,17 +41,11 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 
 exports[`LinkCta static size as pixels 1`] = `
 <span
-  className="cXeUXr"
+  className="gZiBYz"
   href={null}
   onClick={null}
   rel=""
-  size={
-    Object {
-      "large": "20px",
-      "medium": "20px",
-      "small": "20px",
-    }
-  }
+  size="20px"
   target="_self"
 >
   I am a link
@@ -78,17 +54,11 @@ exports[`LinkCta static size as pixels 1`] = `
 
 exports[`LinkCta static size from typography 1`] = `
 <span
-  className="jujMtQ"
+  className="gZiBYz"
   href={null}
   onClick={null}
   rel=""
-  size={
-    Object {
-      "large": "normal",
-      "medium": "normal",
-      "small": "normal",
-    }
-  }
+  size="normal"
   target="_self"
 >
   I am a link

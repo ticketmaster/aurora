@@ -123,19 +123,13 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <a
       aria-label="Section Item"
-      className="section-item lhHEcP hzcqlQ"
+      className="section-item lhHEcP hUiqIJ"
       href="/"
       onClick={[Function]}
       onItemClick={[Function]}
       rel="_self"
       role="link"
-      size={
-        Object {
-          "large": "hecto",
-          "medium": "hecto",
-          "small": "hecto",
-        }
-      }
+      size="hecto"
       target=""
     >
       <div

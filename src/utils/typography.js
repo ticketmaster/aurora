@@ -1,3 +1,4 @@
+import getThemeValue from "./getThemeValue";
 import { colors, themes } from "../theme";
 
 export const getFontHue = ({
@@ -5,15 +6,22 @@ export const getFontHue = ({
   primary,
   secondary,
   disabled,
-  variant
+  variant,
+  themed
 }) => {
-  if (typeof fontColor !== "object") return fontColor;
+  if (typeof fontColor === "string") return themed ? "" : fontColor;
 
-  const fontHues = {
-    primary: variant === "accent" ? fontColor.dark : fontColor.base,
-    secondary: fontColor.light,
-    disabled: fontColor.muted
-  };
+  const fontHues = themed
+    ? {
+        primary: variant === "accent" ? "dark" : "base",
+        secondary: variant === "accent" ? "base" : "light",
+        disabled: variant === "accent" ? "light" : "muted"
+      }
+    : {
+        primary: variant === "accent" ? fontColor.dark : fontColor.base,
+        secondary: fontColor.light,
+        disabled: fontColor.muted
+      };
 
   switch (true) {
     case primary:
@@ -39,9 +47,53 @@ export const getFontColor = ({
     light: colors.white,
     accent: colors[accent]
   };
-
   const fontColor = fontColors[variant] || fontColors.dark;
-  return getFontHue({ fontColor, primary, secondary, disabled, variant });
+
+  return getFontHue({
+    fontColor,
+    primary,
+    secondary,
+    disabled,
+    variant,
+    themed: false
+  });
+};
+
+export const getThemedFontColor = ({
+  theme,
+  variant,
+  accent,
+  primary,
+  secondary,
+  disabled
+}) => {
+  if (!theme.themeName) {
+    return getFontColor({
+      variant,
+      accent,
+      primary,
+      secondary,
+      disabled
+    });
+  }
+
+  const fontColors = {
+    dark: "onyx",
+    light: "white",
+    accent
+  };
+
+  const fontColor = getThemeValue(fontColors[variant] || "onyx")({ theme });
+  const fontHue = getFontHue({
+    fontColor,
+    primary,
+    secondary,
+    disabled,
+    variant,
+    themed: true
+  });
+
+  return fontColor[fontHue] || fontColor;
 };
 
 const labelsColorMap = {

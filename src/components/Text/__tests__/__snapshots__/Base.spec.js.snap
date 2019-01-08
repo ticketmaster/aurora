@@ -1,142 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BaseText should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"small":"hecto","medium":"kilo","large":"giga","xLarge":"tera"}} 1`] = `
 <div
-  className="text text--accent text--azure text--disabled kKyETs"
-  disabled={true}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
-<div
-  className="text text--dark text--disabled glmlXg"
-  disabled={true}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
-<div
-  className="text text--light text--disabled eOhfnK"
-  disabled={true}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
-<div
-  className="text text--accent text--aquamarine fYxSMU"
-  disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
-<div
-  className="text text--accent text--azure kWQOwt"
-  disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag in the dark variant by default 1`] = `
-<div
-  className="text text--dark text--primary ixExqb"
-  disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
-<div
-  className="text text--dark text--primary text--custom ixExqb"
-  disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
-<div
-  className="text text--light text--primary eUaRKn"
-  disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
->
-  Text
-</div>
-`;
-
-exports[`BaseText should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
-<div
-  className="text text--dark text--primary gGgKOz"
+  className="text text--dark text--primary bfypyf"
   disabled={false}
   size={
     Object {
       "large": "giga",
-      "medium": "giga",
-      "small": "giga",
+      "medium": "kilo",
+      "small": "hecto",
+      "xLarge": "tera",
+      "xSmall": "hecto",
     }
   }
 >
@@ -144,15 +18,17 @@ exports[`BaseText should render primary text with a div tag of the size prop pas
 </div>
 `;
 
-exports[`BaseText should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"small":"hecto","medium":"kilo","large":"giga"}} 1`] = `
 <div
-  className="text text--dark text--primary gQyGQj"
+  className="text text--dark text--primary bnsoIo"
   disabled={false}
   size={
     Object {
-      "large": "hecto",
-      "medium": "hecto",
+      "large": "giga",
+      "medium": "kilo",
       "small": "hecto",
+      "xLarge": undefined,
+      "xSmall": "hecto",
     }
   }
 >
@@ -160,65 +36,327 @@ exports[`BaseText should render primary text with a div tag of the weight prop p
 </div>
 `;
 
-exports[`BaseText should render primary text with a tag prop in the dark variant by default 1`] = `
-<span
-  className="text text--dark text--primary ixExqb"
+exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"xSmall":"hecto"}} 1`] = `
+<div
+  className="text text--dark text--primary IkyOL"
   disabled={false}
   size={
     Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
+      "large": undefined,
+      "medium": undefined,
+      "small": undefined,
+      "xLarge": undefined,
+      "xSmall": "hecto",
     }
   }
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with responsiveSize should render correctly with {"size":"hecto","responsiveSize":{"xSmall":"uno","small":"hecto","medium":"kilo","large":"giga","xLarge":"tera"}} 1`] = `
+<div
+  className="text text--dark text--primary ickxtn"
+  disabled={false}
+  size={
+    Object {
+      "large": "giga",
+      "medium": "kilo",
+      "small": "hecto",
+      "xLarge": "tera",
+      "xSmall": "uno",
+    }
+  }
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with responsiveSize should render correctly with {"size":"hecto"} 1`] = `
+<div
+  className="text text--dark text--primary aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+<div
+  className="text text--accent text-tm text--disabled hoGQRo"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
+<div
+  className="text text--dark text-tm text--disabled gFiPCR"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
+<div
+  className="text text--light text-tm text--disabled gfzLpy"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
+<div
+  className="text text--accent text--gray04 text-tm eBBQip"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
+<div
+  className="text text--accent text-tm kSupHA"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag in the dark variant by default 1`] = `
+<div
+  className="text text--dark text-tm text--primary aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
+<div
+  className="text text--dark text-tm text--primary text--custom aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
+<div
+  className="text text--light text-tm text--primary dXzwiN"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
+<div
+  className="text text--dark text-tm text--primary eVMeEr"
+  disabled={false}
+  size="giga"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+<div
+  className="text text--dark text-tm text--primary bCrHtF"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with themed color palette should render primary text with a tag prop in the dark variant by default 1`] = `
+<span
+  className="text text--dark text-tm text--primary aYNzq"
+  disabled={false}
+  size="hecto"
 >
   Text
 </span>
 `;
 
-exports[`BaseText should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
+exports[`BaseText with themed color palette should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
 <div
-  className="text text--accent text--azure text--secondary hCFVCQ"
+  className="text text--accent text-tm text--secondary bMSavq"
   disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
 >
   Text
 </div>
 `;
 
-exports[`BaseText should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
+exports[`BaseText with themed color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
 <div
-  className="text text--dark text--secondary fRMqFP"
+  className="text text--dark text-tm text--secondary kVKmJn"
   disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
 >
   Text
 </div>
 `;
 
-exports[`BaseText should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
+exports[`BaseText with themed color palette should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
 <div
-  className="text text--light text--secondary gDFIZu"
+  className="text text--light text-tm text--secondary hyXTye"
   disabled={false}
-  size={
-    Object {
-      "large": "hecto",
-      "medium": "hecto",
-      "small": "hecto",
-    }
-  }
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+<div
+  className="text text--accent text--azure text--disabled izRgdV"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
+<div
+  className="text text--dark text--disabled gFiPCR"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
+<div
+  className="text text--light text--disabled gfzLpy"
+  disabled={true}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
+<div
+  className="text text--accent text--aquamarine drpppq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
+<div
+  className="text text--accent text--azure bMSavq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag in the dark variant by default 1`] = `
+<div
+  className="text text--dark text--primary aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
+<div
+  className="text text--dark text--primary text--custom aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
+<div
+  className="text text--light text--primary dXzwiN"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
+<div
+  className="text text--dark text--primary eVMeEr"
+  disabled={false}
+  size="giga"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+<div
+  className="text text--dark text--primary bCrHtF"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render primary text with a tag prop in the dark variant by default 1`] = `
+<span
+  className="text text--dark text--primary aYNzq"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</span>
+`;
+
+exports[`BaseText with traditional color palette should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
+<div
+  className="text text--accent text--azure text--secondary geWkHl"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
+<div
+  className="text text--dark text--secondary kVKmJn"
+  disabled={false}
+  size="hecto"
+>
+  Text
+</div>
+`;
+
+exports[`BaseText with traditional color palette should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
+<div
+  className="text text--light text--secondary hyXTye"
+  disabled={false}
+  size="hecto"
 >
   Text
 </div>

@@ -20,15 +20,9 @@ exports[`CalendarView should render without errors 1`] = `
       className="fPPYIO"
     >
       <div
-        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent eeRzAt cYpwof"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent eeRzAt cIRWLi"
         disabled={false}
-        size={
-          Object {
-            "large": "kilo",
-            "medium": "kilo",
-            "small": "kilo",
-          }
-        }
+        size="kilo"
       >
         10
       </div>
@@ -71,41 +65,23 @@ exports[`CalendarView should render without errors 1`] = `
         className="vzSwW"
       >
         <div
-          className="text text--dark text--primary eWsGQH cQpfrv"
+          className="text text--dark text--primary eWsGQH dIqltR"
           disabled={false}
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
         >
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary eWsGQH kvBWLN"
+          className="text text--dark text--secondary eWsGQH jUhKrd"
           disabled={false}
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
         >
           On Sale Starts Soon
         </div>
         <div
-          className="text text--dark text--primary ecpHhv eXpLMO"
+          className="text text--dark text--primary ecpHhv hGozFO"
           disabled={false}
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
         >
           On Sale Starts Soon
         </div>
@@ -146,18 +122,12 @@ exports[`CalendarView should render without errors 1`] = `
         className="gdYeDH"
       >
         <button
-          className="ftqlYH hBtELJ"
+          className="ftqlYH jHKQf"
           href={null}
           onClick={[Function]}
           rel="_self"
           role="button"
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
           target=""
         >
           +4 More
@@ -205,15 +175,9 @@ exports[`CalendarView should render without errors 1`] = `
         className="vzSwW"
       >
         <div
-          className="text text--dark text--primary eWsGQH cQpfrv"
+          className="text text--dark text--primary eWsGQH dIqltR"
           disabled={false}
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
         >
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
@@ -254,18 +218,12 @@ exports[`CalendarView should render without errors 1`] = `
         className="gdYeDH"
       >
         <button
-          className="ftqlYH hBtELJ"
+          className="ftqlYH jHKQf"
           href={null}
           onClick={[Function]}
           rel="_self"
           role="button"
-          size={
-            Object {
-              "large": "uno",
-              "medium": "uno",
-              "small": "uno",
-            }
-          }
+          size="uno"
           target=""
         >
           +4 More
