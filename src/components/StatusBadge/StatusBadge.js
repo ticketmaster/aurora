@@ -13,6 +13,7 @@ export const StyledBadge = styled.div`
   color: ${({ variant = "dark" }) =>
     variant === "light" ? themes.global.gray01 : themes.global.white.base};
   font-size: ${typography.size.mini};
+  line-height: 1.2;
   border-radius: ${constants.borderRadius.small};
   letter-spacing: 0.25;
   text-transform: uppercase;

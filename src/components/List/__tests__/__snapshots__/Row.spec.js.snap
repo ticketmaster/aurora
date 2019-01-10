@@ -16,7 +16,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eFAfGr"
+      className="list__container kkBlxj"
     >
       <button
         aria-expanded={false}
@@ -42,13 +42,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--accent text--heliotrope text--primary date--text bxEtxF"
@@ -80,7 +80,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -103,10 +103,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -122,10 +122,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -139,8 +139,12 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -157,11 +161,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"
@@ -213,7 +217,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="gtrsDp"
+      className="caOCXC"
     >
       <div
         className="eYbbVw"
@@ -231,7 +235,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--desktop row__label--active kElDAq"
+          className="row__label row__label--desktop row__label--active jYWGeZ"
           data-index={0}
         >
           <div
@@ -243,7 +247,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--expanded row__label--desktop row__label--hidden kElDAq"
+          className="row__label row__label--expanded row__label--desktop row__label--hidden jYWGeZ"
           data-index={0}
         >
           <div
@@ -257,7 +261,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </div>
     </div>
     <div
-      className="list__container bmaMQK"
+      className="list__container bzizqW"
     >
       <button
         aria-expanded={false}
@@ -283,13 +287,13 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -321,7 +325,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -344,10 +348,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -363,10 +367,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -380,8 +384,12 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -398,11 +406,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"
@@ -454,7 +462,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container chItLs"
+      className="list__container fHrAJP"
     >
       <button
         aria-expanded={false}
@@ -480,13 +488,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -518,7 +526,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -541,10 +549,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -560,10 +568,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -577,8 +585,12 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -595,11 +607,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"
@@ -644,13 +656,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="gSJHix"
+      className="koSuEQ"
     >
       <div
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc ljZgeW"
+          className="link--row-options eaiGVW ljZgeW"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -661,7 +673,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options yTzPP gathjg"
+          className="link--row-options bVJQqR gathjg"
           data-index={0}
           href=""
           onClick={null}
@@ -692,7 +704,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eFAfGr"
+      className="list__container kkBlxj"
     >
       <button
         aria-expanded={false}
@@ -718,13 +730,13 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
       </button>
       <a
         aria-label="More Info"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -756,7 +768,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -779,10 +791,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -798,10 +810,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -815,8 +827,12 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -833,11 +849,11 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="More Info"
-            className="gMBrmr"
+            className="bkeqmw"
             role="button"
             size="regular"
             width="102px"
@@ -889,7 +905,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eFAfGr"
+      className="list__container kkBlxj"
     >
       <button
         aria-expanded={true}
@@ -915,13 +931,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -953,7 +969,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -976,10 +992,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--expanded iRwVbZ"
+            className="column__content list-row__title column__content--expanded jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -995,10 +1011,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--expanded jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--hidden subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1012,8 +1028,12 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--collapsed jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--active bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1030,11 +1050,11 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"
@@ -1086,7 +1106,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container chItLs"
+      className="list__container fHrAJP"
     >
       <button
         aria-expanded={false}
@@ -1112,13 +1132,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -1150,7 +1170,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1173,10 +1193,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1192,10 +1212,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1209,8 +1229,12 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1227,11 +1251,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"
@@ -1276,13 +1300,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="gSJHix"
+      className="koSuEQ"
     >
       <div
         className="jMKHiO"
       >
         <button
-          className="link--row-options jVlmkc ljZgeW"
+          className="link--row-options eaiGVW ljZgeW"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -1293,7 +1317,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="yTzPP dYTnRX"
+          className="bVJQqR dYTnRX"
           data-index={0}
           href="/"
           onClick={null}
@@ -1324,7 +1348,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eFAfGr"
+      className="list__container kkBlxj"
     >
       <button
         aria-expanded={false}
@@ -1350,13 +1374,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper bMtiBb"
+        className="link__wrapper cvZUBR"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper dIzoqV"
+          className="date__wrapper iihpEp"
         >
           <div
             className="text text--dark text--primary date--text gpIiDw"
@@ -1388,7 +1412,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             className="column__mobile-only hwQSiY"
           >
             <div
-              className="text text--dark text--primary list-row--title bgACjR iFABcd"
+              className="text text--dark text--primary list-row__title hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1411,10 +1435,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row--title column__content--collapsed iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary bgACjR iFABcd"
+              className="text text--dark text--primary hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1430,10 +1454,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content iRwVbZ"
+            className="column__content list-row__title column__content--collapsed jBTLqa"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--active subtitle--collapsed bgACjR iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1447,8 +1471,12 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             >
               KABOO 3-Day Pass
             </div>
+          </div>
+          <div
+            className="column__content list-row__title column__content--fixed column__content--expanded jXoLcI"
+          >
             <div
-              className="text text--dark text--primary subtitle subtitle--expanded subtitle--hidden bgACjR iFABcd"
+              className="text text--dark text--primary subtitle hHGuXJ iFABcd"
               disabled={false}
               size={
                 Object {
@@ -1465,11 +1493,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="khBeGP"
+          className="eAndNU"
         >
           <span
             aria-label="See Tickets"
-            className="TAvlk"
+            className="kTfJNa"
             role="button"
             size="regular"
             width="102px"

@@ -5,19 +5,19 @@ exports[`StatusBadgeGroup should match snapshot 1`] = `
   className="xANBP"
 >
   <div
-    className="badge rEXJK"
+    className="badge jmtBfD"
     color="#d3d3d3"
   >
     error
   </div>
   <div
-    className="badge hQCwtu"
+    className="badge gNSpfG"
     color="#f0f0f0"
   >
     caution
   </div>
   <div
-    className="iJByaQ"
+    className="kmziPQ"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
@@ -28,13 +28,13 @@ exports[`StatusBadgeGroup should match snapshot 1`] = `
     direction="bottom"
   >
     <div
-      className="hidden badge rEXJK"
+      className="hidden badge jmtBfD"
       color="#d3d3d3"
     >
       error
     </div>
     <div
-      className="hidden badge hQCwtu"
+      className="hidden badge gNSpfG"
       color="#f0f0f0"
     >
       caution

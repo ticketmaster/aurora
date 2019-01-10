@@ -39,7 +39,7 @@ describe("<RowLabel />", () => {
 
   it("renders RowLabel variant `accent`", () => {
     const component = renderer.create(
-      <RowLabel index={0} variant="alert">
+      <RowLabel index={0} variant="accent">
         test label
       </RowLabel>
     );
@@ -48,7 +48,7 @@ describe("<RowLabel />", () => {
 
   it("renders RowLabel variant `caution`", () => {
     const component = renderer.create(
-      <RowLabel index={0} variant="alert">
+      <RowLabel index={0} variant="caution">
         test label
       </RowLabel>
     );
@@ -57,7 +57,7 @@ describe("<RowLabel />", () => {
 
   it("renders RowLabel variant `neutral`", () => {
     const component = renderer.create(
-      <RowLabel index={0} variant="alert">
+      <RowLabel index={0} variant="neutral">
         test label
       </RowLabel>
     );
