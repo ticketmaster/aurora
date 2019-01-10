@@ -528,6 +528,14 @@ rows:
     </div>
     <div style={iconLabelStyle}>User icon</div>
   </Column>
+   <Column medium={3}>
+    <div style={iconStyle}>
+      <VenueSearchIcon>
+        <title>VenueSearch Icon</title>
+      </VenueSearchIcon>
+    </div>
+    <div style={iconLabelStyle}>VenueSearch icon</div>
+  </Column>
  </Row>
 </Container>
 ```
