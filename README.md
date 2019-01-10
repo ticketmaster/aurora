@@ -54,6 +54,14 @@ In order to run the [catalog](https://code.ticketmaster.com/aurora/) locally, yo
 2.  Execute `yarn catalog-start` at this directory's root.
 3.  Navigate to `http://localhost:4000/` or your host alias's port 4000.
 
+## Running Storybook locally:
+
+In order to run the Storybook locally, you are required to complete the following steps:
+
+1.  Execute `yarn install` at this directory's root.
+2.  Execute `yarn storybook` at this directory's root.
+3.  Navigate to `http://localhost:5000/` or your host alias's port 5000.
+
 ## How to use:
 
 A documentation of each component and living styleguide will be available on the brand site for Ticketmaster.com.

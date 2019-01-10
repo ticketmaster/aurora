@@ -28,7 +28,9 @@
     "test:watch": "NODE_ENV=test jest --watch --no-cache --notify",
     "test:cover": "NODE_ENV=test jest --coverage",
     "test:ci": "NODE_ENV=test jest --changedSince=master --runInBand",
-    "add-icons": "pixo $* --out-dir src/components/Icons"
+    "add-icons": "pixo $* --out-dir src/components/Icons",
+    "storybook": "start-storybook -p 5000",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -81,10 +83,18 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.1.4",
+    "@storybook/addon-info": "^4.1.6",
+    "@storybook/addon-knobs": "^4.1.6",
+    "@storybook/addon-links": "^4.1.4",
+    "@storybook/addon-viewport": "^4.1.4",
+    "@storybook/addons": "^4.1.4",
+    "@storybook/react": "^4.1.4",
     "babel-cli": "^7.0.0-beta.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.5",
     "babel-plugin-styled-components": "^1.8.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.20",
     "catalog": "https://github.com/nyonchev/catalog",
