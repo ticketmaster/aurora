@@ -10,6 +10,7 @@ import constants from "../../theme/constants";
 import spacing from "../../theme/spacing";
 
 import {
+  ROW_CONTAINER_VERTICAL_PADDING,
   CHEVRON_ICON_PADDING,
   CHEVRON_ICON_SIZE,
   ROW_DATE_MEDIUM_WIDTH,
@@ -20,13 +21,17 @@ const Content = styled(Row)`
   width: 100%;
   padding-left: ${ROW_DATE_SMALL_WIDTH};
   padding-bottom: ${spacing.cozy};
+
   ${mediumAndUp`
+    padding-bottom: ${ROW_CONTAINER_VERTICAL_PADDING};
     padding-left: calc(${CHEVRON_ICON_SIZE}px + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${ROW_DATE_MEDIUM_WIDTH});
   `};
 `;
 
 const MobileLink = styled(Link)`
   display: inline-block;
+  line-height: 1.1;
+
   ${mediumAndUp`
     display: none;
   `};
@@ -34,11 +39,13 @@ const MobileLink = styled(Link)`
 
 const DesktopLink = styled(Link)`
   display: none;
+  line-height: 1.1;
+  opacity: 1;
+  transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
+
   ${mediumAndUp`
     display: inline-block;
-    opacity 1;
-    line-height: 1.5;
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
+    
     &.link--hidden {
       opacity 0;
       transition: opacity 0.1s ${constants.easing.easeInQuad};
