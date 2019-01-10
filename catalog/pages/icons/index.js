@@ -48,7 +48,8 @@ import {
   LocationIcon,
   TicketIcon,
   TicketsIcon,
-  UserIcon
+  UserIcon,
+  VenueSearchIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import colors from "../../../src/theme/colors";
@@ -118,6 +119,7 @@ export default {
     TicketIcon,
     TicketsIcon,
     UserIcon,
+    VenueSearchIcon,
 
     Column,
     Container,
