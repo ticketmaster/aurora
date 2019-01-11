@@ -31,7 +31,10 @@ class Modal extends React.Component {
   static propTypes = {
     actionBar: PropTypes.node,
     bottomActionBar: PropTypes.node,
-    children: PropTypes.node.isRequired,
+    children: PropTypes.oneOfType([
+      PropTypes.arrayOf(PropTypes.node),
+      PropTypes.node
+    ]),
     deviceSize: PropTypes.shape({
       isXSmall: PropTypes.bool,
       isSmall: PropTypes.bool,
@@ -62,6 +65,7 @@ class Modal extends React.Component {
   static defaultProps = {
     actionBar: null,
     bottomActionBar: null,
+    children: null,
     gutters: true,
     isOpened: true,
     size: MODAL_SIZE_MEDIUM,
