@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { BUTTON_VARIANTS } from "./constants";
+import { SPECIAL } from "../constants";
 import { typography, constants, themes } from "../../theme";
 
 const colorVariants = {
@@ -155,7 +155,7 @@ export const StyledButton = styled.button`
         return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
       }};
     ${({ variant }) =>
-      variant === BUTTON_VARIANTS.special ? "opacity: 0.4;" : "opacity: 0.2;"};
+      variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
 `;
 

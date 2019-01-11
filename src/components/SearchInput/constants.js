@@ -1,15 +1,10 @@
-export const searchVariants = {
-  small: "small",
-  large: "large"
-};
-
-const searchHeight = {
+const SEARCH_HEIGHT = {
   small: "36px",
   large: "44px"
 };
 
 export const getSearchHeight = variant =>
-  searchHeight[variant] || searchHeight.large;
+  SEARCH_HEIGHT[variant] || SEARCH_HEIGHT.large;
 
 export const SearchMinWidth = "320px";
 

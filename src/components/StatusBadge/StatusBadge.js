@@ -4,14 +4,15 @@ import styled from "styled-components";
 import classNames from "classnames";
 import { typography, themes, constants, spacing } from "../../theme";
 
-import { badgeVariants, badgeProps, badgeDefault } from "./constants";
+import { badgeProps, badgeDefault } from "./constants";
+import { VARIANTS, DARK, LIGHT } from "../constants";
 
 export const StyledBadge = styled.div`
   padding: ${spacing.slim} ${spacing.cozy};
   font-weight: ${typography.weight.semiBold};
   text-align: center;
-  color: ${({ variant = "dark" }) =>
-    variant === "light" ? themes.global.gray01 : themes.global.white.base};
+  color: ${({ variant = DARK }) =>
+    variant === LIGHT ? themes.global.gray01 : themes.global.white.base};
   font-size: ${typography.size.mini};
   line-height: 1.2;
   border-radius: ${constants.borderRadius.small};
@@ -33,13 +34,13 @@ const StatusBadge = ({ variant, color, label, className, ...rest }) => (
 
 StatusBadge.propTypes = {
   ...badgeProps,
-  variant: PropTypes.oneOf(Object.values(badgeVariants)),
+  variant: PropTypes.oneOf(VARIANTS),
   className: PropTypes.string
 };
 
 StatusBadge.defaultProps = {
   ...badgeDefault,
-  variant: badgeVariants.dark,
+  variant: DARK,
   className: ""
 };
 

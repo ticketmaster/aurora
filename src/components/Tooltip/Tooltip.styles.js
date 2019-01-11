@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import { themes, constants, spacing, typography } from "../../theme";
 import { popContainersBoxShadow } from "../../theme/constants";
-import { directions, variants, seatTooltipSizes } from "./constants";
+import { TOP, LEFT, RIGHT, BOTTOM, LIGHT, DARK, LARGE } from "../constants";
 
 export const StyledTooltip = styled.div`
   background-color: ${({ variant }) =>
-    variant === variants.dark
-      ? themes.global.darkFill
-      : themes.global.white.base};
+    variant === DARK ? themes.global.darkFill : themes.global.white.base};
   border: ${({ variant }) =>
-    variant === variants.dark
+    variant === DARK
       ? `1px solid ${themes.global.darkFill}`
       : `1px solid ${themes.global.gray02}`};
   border-radius: ${constants.borderRadius.large};
@@ -17,9 +15,7 @@ export const StyledTooltip = styled.div`
   position: absolute;
   max-width: 260px;
   color: ${({ variant }) =>
-    variant === variants.dark
-      ? themes.global.white.base
-      : themes.global.gray01};
+    variant === DARK ? themes.global.white.base : themes.global.gray01};
   padding: ${spacing.cozy};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
   font-size: ${typography.size.uno};
@@ -33,26 +29,24 @@ export const StyledTooltip = styled.div`
       scale 0.1s ${constants.easing.easeInQuad};
     display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
     border-right: ${({ variant }) =>
-      variant === variants.light ? `1px solid ${themes.global.gray02}` : ""};
+      variant === LIGHT ? `1px solid ${themes.global.gray02}` : ""};
     border-bottom: ${({ variant }) =>
-      variant === variants.light ? `1px solid ${themes.global.gray02}` : ""};
+      variant === LIGHT ? `1px solid ${themes.global.gray02}` : ""};
     border-top-left-radius: 100%;
     width: 12px;
     height: 12px;
     transform: translateY(-50%) rotate(-135deg);
     background-color: ${({ variant }) =>
-      variant === variants.dark
-        ? themes.global.darkFill
-        : themes.global.white.base};
+      variant === DARK ? themes.global.darkFill : themes.global.white.base};
     ${({ direction }) => {
       switch (direction) {
-        case directions.top:
+        case TOP:
           return "left: calc(50% - 6px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
-        case directions.bottom:
+        case BOTTOM:
           return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
-        case directions.left:
+        case LEFT:
           return "top: 10px; right: -7px; transform: translateY(0%) rotate(-45deg);";
-        case directions.right:
+        case RIGHT:
           return "top: 10px; left: -7px; transform: translateY(0%) rotate(135deg);";
         default:
           return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
@@ -123,8 +117,7 @@ export const StyledTooltip = styled.div`
 export const SeatDataStyled = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: ${({ size }) =>
-    size === seatTooltipSizes.large ? spacing.moderate : spacing.cozy};
+  padding: ${({ size }) => (size === LARGE ? spacing.moderate : spacing.cozy)};
   border-bottom: ${({ isLast }) =>
     isLast ? `1px solid ${themes.global.gray02}` : "none"};
   line-height: 1;
@@ -148,32 +141,25 @@ export const SeatDataColumn = styled.div`
 
 export const ColumnHeading = styled.div`
   font-size: ${({ size }) =>
-    size === seatTooltipSizes.large
-      ? typography.size.hecto
-      : typography.size.uno};
+    size === LARGE ? typography.size.hecto : typography.size.uno};
   text-transform: uppercase;
   margin-bottom: ${({ size }) =>
-    size === seatTooltipSizes.large ? spacing.cozy : spacing.cozy};
+    size === LARGE ? spacing.cozy : spacing.cozy};
   color: ${themes.global.gray02};
 `;
 
 export const ColumnText = styled.div`
   font-size: ${({ size }) =>
-    size === seatTooltipSizes.large
-      ? typography.size.kilo
-      : typography.size.hecto};
+    size === LARGE ? typography.size.kilo : typography.size.hecto};
   font-weight: ${typography.weight.semiBold};
   color: ${({ variant }) =>
-    variant === "dark" ? themes.global.white.base : themes.global.gray01};
+    variant === DARK ? themes.global.white.base : themes.global.gray01};
 `;
 
 export const AdditionalData = styled.div`
-  padding: ${({ size }) =>
-    size === seatTooltipSizes.large ? spacing.moderate : spacing.cozy};
+  padding: ${({ size }) => (size === LARGE ? spacing.moderate : spacing.cozy)};
   font-size: ${({ size }) =>
-    size === seatTooltipSizes.large
-      ? typography.size.hecto
-      : typography.size.uno};
+    size === LARGE ? typography.size.hecto : typography.size.uno};
   color: ${({ variant }) =>
-    variant === "dark" ? themes.global.white.base : themes.global.gray01};
+    variant === DARK ? themes.global.white.base : themes.global.gray01};
 `;

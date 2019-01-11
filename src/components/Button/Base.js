@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./Base.styles";
-import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
+import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD } from "../constants";
 import { getRelByTarget } from "../../utils/link";
 
 const Button = ({ variant, size, children, ...rest }) => {
@@ -33,14 +33,14 @@ const Button = ({ variant, size, children, ...rest }) => {
 };
 
 Button.propTypes = {
-  variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
-  size: PropTypes.oneOf(Object.values(BUTTON_SIZES)),
+  variant: PropTypes.oneOf(BUTTON_VARIANTS),
+  size: PropTypes.oneOf(SIZES),
   children: PropTypes.node.isRequired
 };
 
 Button.defaultProps = {
-  size: "regular",
-  variant: "standard"
+  size: REGULAR,
+  variant: STANDARD
 };
 
 export default Button;
