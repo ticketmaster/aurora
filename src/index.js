@@ -91,7 +91,8 @@ export {
   TicketsIcon,
   UserIcon,
   ListIcon,
-  WarningIcon
+  WarningIcon,
+  VenueSearchIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
