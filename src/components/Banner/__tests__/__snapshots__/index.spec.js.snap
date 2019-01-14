@@ -1,0 +1,382 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Banner /> renders correctly when closed 1`] = `<div />`;
+
+exports[`<Banner /> renders correctly when open 1`] = `
+<div>
+  <div
+    class="collapsed sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    />
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly when variant is set 1`] = `
+<div>
+  <div
+    class="collapsed banner-variant-alert sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+          <path
+            d="M1.074 19.997l10.35-17.7a.667.667 0 0 1 1.151 0l10.35 17.7A.667.667 0 0 1 22.35 21H1.65a.667.667 0 0 1-.576-1.003zM12 18.65c.578 0 1.047-.464 1.047-1.036 0-.573-.469-1.037-1.047-1.037s-1.047.464-1.047 1.037c0 .572.469 1.036 1.047 1.036zm0-4.127c.578 0 1.047-.469 1.047-1.047v-5.16a1.047 1.047 0 1 0-2.093 0v5.16c0 .578.468 1.047 1.046 1.047z"
+            fill="#f2bd2a"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      >
+        test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with close button 1`] = `
+<div>
+  <div
+    class="collapsed banner-variant-alert sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+          <path
+            d="M1.074 19.997l10.35-17.7a.667.667 0 0 1 1.151 0l10.35 17.7A.667.667 0 0 1 22.35 21H1.65a.667.667 0 0 1-.576-1.003zM12 18.65c.578 0 1.047-.464 1.047-1.036 0-.573-.469-1.037-1.047-1.037s-1.047.464-1.047 1.037c0 .572.469 1.036 1.047 1.036zm0-4.127c.578 0 1.047-.469 1.047-1.047v-5.16a1.047 1.047 0 1 0-2.093 0v5.16c0 .578.468 1.047 1.046 1.047z"
+            fill="#f2bd2a"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      >
+        test content
+      </div>
+    </div>
+    <span
+      class="sc-cSHVUG hjbZcj"
+    >
+      <svg
+        class="sc-kAzzGY bpMFWZ"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with content 1`] = `
+<div>
+  <div
+    class="collapsed sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    />
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      >
+        test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with custom icon 1`] = `
+<div>
+  <div
+    class="collapsed sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+          <path
+            d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 1C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zm3.89-15.596a.5.5 0 0 1 .706.707l-8.485 8.485a.5.5 0 0 1-.707-.707l8.485-8.485zm-8.486.707a.5.5 0 0 1 .707-.707l8.485 8.485a.5.5 0 0 1-.707.707L7.404 8.111z"
+            fill="#262626"
+            fill-opacity=".5"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      >
+        test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
+<div>
+  <div
+    class="collapsed banner-variant-alert sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+          <path
+            d="M1.074 19.997l10.35-17.7a.667.667 0 0 1 1.151 0l10.35 17.7A.667.667 0 0 1 22.35 21H1.65a.667.667 0 0 1-.576-1.003zM12 18.65c.578 0 1.047-.464 1.047-1.036 0-.573-.469-1.037-1.047-1.037s-1.047.464-1.047 1.037c0 .572.469 1.036 1.047 1.036zm0-4.127c.578 0 1.047-.469 1.047-1.047v-5.16a1.047 1.047 0 1 0-2.093 0v5.16c0 .578.468 1.047 1.046 1.047z"
+            fill="#f2bd2a"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <button
+        class="sc-gqjmRU hQkpeV sc-dnqmqq doqAvh"
+        rel=""
+        target="_self"
+      >
+        collapsedText
+      </button>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      >
+        test content
+      </div>
+    </div>
+    <span
+      class="sc-cSHVUG hjbZcj"
+    >
+      <svg
+        class="sc-kAzzGY bpMFWZ"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with link 1`] = `
+<div>
+  <div
+    class="collapsed banner-variant-alert sc-VigVT dFoUSu"
+  >
+    <div
+      class="sc-chPdSV bxRyLE"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M0 0h24v24H0z"
+          />
+          <path
+            d="M1.074 19.997l10.35-17.7a.667.667 0 0 1 1.151 0l10.35 17.7A.667.667 0 0 1 22.35 21H1.65a.667.667 0 0 1-.576-1.003zM12 18.65c.578 0 1.047-.464 1.047-1.036 0-.573-.469-1.037-1.047-1.037s-1.047.464-1.047 1.037c0 .572.469 1.036 1.047 1.036zm0-4.127c.578 0 1.047-.469 1.047-1.047v-5.16a1.047 1.047 0 1 0-2.093 0v5.16c0 .578.468 1.047 1.046 1.047z"
+            fill="#f2bd2a"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM fzkBgj"
+    >
+      <span
+        class="sc-jzJRlG jgmEmb"
+      >
+        This is your primary message text.
+      </span>
+      <a
+        class="sc-gqjmRU hQkpeV sc-htoDjs edbpIH"
+        href="ticketmaster.com"
+        rel=""
+        target="_self"
+      >
+        test link text
+      </a>
+      <div
+        class="sc-fjdhpX eCYCPc"
+      />
+    </div>
+    <span
+      class="sc-cSHVUG hjbZcj"
+    >
+      <svg
+        class="sc-kAzzGY bpMFWZ"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
+  </div>
+</div>
+`;
