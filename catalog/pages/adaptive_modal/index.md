@@ -1,4 +1,4 @@
-### Modal
+### AdaptiveModal
 
 ```table
 span: 6
@@ -44,30 +44,30 @@ rows:
     Notes: Optional. Callback is fired when the user scrolls modal's content
 ```
 
-### Default Modal with default action bars
+### Default AdaptiveModal with default action bars
 
 ```react
 responsive: true
 ---
 <DeviceSizeProvider>
-    <Modal
+    <AdaptiveModal
         onRequestClose={() => console.log('You shall not pass!')}
     >
         {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
-    </Modal>
+    </AdaptiveModal>
 </DeviceSizeProvider>
 ```
 
-### Modal with custom action bars and long content
+### AdaptiveModal with custom action bars and long content
 
 ```react
 responsive: true
 ---
 <DeviceSizeProvider>
-    <Modal
+    <AdaptiveModal
         actionBar={
             <div style={{ backgroundColor: 'white' }}>
-                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo Modal</h1>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>
             </div>
         }
         bottomActionBar={
@@ -77,20 +77,20 @@ responsive: true
         }
     >
         {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
-    </Modal>
+    </AdaptiveModal>
 </DeviceSizeProvider>
 ```
 
-### Modal with custom action bars and short content
+### AdaptiveModal with custom action bars and short content
 
 ```react
 responsive: true
 ---
 <DeviceSizeProvider>
-    <Modal
+    <AdaptiveModal
         actionBar={
             <div style={{ backgroundColor: 'white' }}>
-                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo Modal</h1>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>
             </div>
         }
         bottomActionBar={
@@ -100,6 +100,6 @@ responsive: true
         }
     >
         {Array(8).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
-    </Modal>
+    </AdaptiveModal>
 </DeviceSizeProvider>
 ```
