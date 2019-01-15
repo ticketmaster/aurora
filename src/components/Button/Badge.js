@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import StyledBadge from "./Badge.styles";
-import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
+import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD } from "../constants";
 
 const Badge = ({ children, variant, ...props }) => (
   <StyledBadge variant={variant} {...props}>
@@ -12,13 +12,13 @@ const Badge = ({ children, variant, ...props }) => (
 
 Badge.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
-  size: PropTypes.oneOf(Object.values(BUTTON_SIZES))
+  variant: PropTypes.oneOf(BUTTON_VARIANTS),
+  size: PropTypes.oneOf(SIZES)
 };
 
 Badge.defaultProps = {
-  size: "regular",
-  variant: "standard"
+  size: REGULAR,
+  variant: STANDARD
 };
 
 export default Badge;

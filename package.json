@@ -133,5 +133,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "browserslist": "> 0.2% in US"
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Tooltip from "./index";
-import { seatTooltipSizes, variants } from "./constants";
+import { SIZES_SL, SMALL, LARGE, VARIANTS, LIGHT } from "../constants";
 import { AdditionalData } from "./Tooltip.styles";
 
 import SeatData from "./SeatData";
@@ -11,7 +11,7 @@ class SeatTooltip extends Component {
 
   render() {
     const { size, row, seat, section, children, variant, ...rest } = this.props;
-    const maxWidth = size === seatTooltipSizes.small ? "180px" : "260px";
+    const maxWidth = size === SMALL ? "180px" : "260px";
 
     return (
       <Tooltip
@@ -51,15 +51,15 @@ SeatTooltip.propTypes = {
   section: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   row: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   seat: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  size: PropTypes.oneOf(Object.values(seatTooltipSizes)),
+  size: PropTypes.oneOf(SIZES_SL),
   children: PropTypes.node,
-  variant: PropTypes.oneOf(Object.values(variants))
+  variant: PropTypes.oneOf(VARIANTS)
 };
 
 SeatTooltip.defaultProps = {
-  size: seatTooltipSizes.large,
+  size: LARGE,
   children: null,
-  variant: "light"
+  variant: LIGHT
 };
 
 SeatTooltip.displayName = "SeatTooltip";

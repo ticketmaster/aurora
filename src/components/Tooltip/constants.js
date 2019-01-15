@@ -1,18 +1,3 @@
-export const SPACE_FROM_MOUSE = 20;
+const SPACE_FROM_MOUSE = 20;
 
-export const directions = {
-  top: "top",
-  bottom: "bottom",
-  left: "left",
-  right: "right"
-};
-
-export const variants = {
-  dark: "dark",
-  light: "light"
-};
-
-export const seatTooltipSizes = {
-  small: "small",
-  large: "large"
-};
+export default SPACE_FROM_MOUSE;

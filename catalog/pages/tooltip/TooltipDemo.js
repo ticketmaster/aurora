@@ -2,7 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Tooltip from "../../../src/components/Tooltip";
-import { variants } from "../../../src/components/Tooltip/constants";
+import {
+  VARIANTS,
+  LIGHT,
+  TOP,
+  BOTTOM,
+  LEFT,
+  RIGHT
+} from "../../../src/components/constants";
 
 const Container = styled.div`
   margin-top: 100px;
@@ -56,25 +63,25 @@ class TooltipDemo extends React.Component {
     return (
       <Container>
         <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, "top")}
+          onMouseEnter={e => this.elementHovered(e, TOP)}
           onMouseLeave={this.mouseLeave}
         >
           Top
         </TooltipButton>
         <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, "bottom")}
+          onMouseEnter={e => this.elementHovered(e, BOTTOM)}
           onMouseLeave={this.mouseLeave}
         >
           Bottom
         </TooltipButton>
         <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, "right")}
+          onMouseEnter={e => this.elementHovered(e, RIGHT)}
           onMouseLeave={this.mouseLeave}
         >
           Right
         </TooltipButton>
         <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, "left")}
+          onMouseEnter={e => this.elementHovered(e, LEFT)}
           onMouseLeave={this.mouseLeave}
         >
           Left
@@ -94,10 +101,10 @@ class TooltipDemo extends React.Component {
 }
 
 TooltipDemo.propTypes = {
-  variant: PropTypes.oneOf(Object.values(variants))
+  variant: PropTypes.oneOf(VARIANTS)
 };
 TooltipDemo.defaultProps = {
-  variant: "light"
+  variant: LIGHT
 };
 
 export default TooltipDemo;

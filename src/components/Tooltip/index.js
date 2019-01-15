@@ -2,7 +2,16 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { CSSTransition } from "react-transition-group";
 import { StyledTooltip } from "./Tooltip.styles";
-import { directions, SPACE_FROM_MOUSE, variants } from "./constants";
+import SPACE_FROM_MOUSE from "./constants";
+import {
+  DIRECTIONS,
+  TOP,
+  LEFT,
+  RIGHT,
+  BOTTOM,
+  VARIANTS,
+  LIGHT
+} from "../constants";
 
 class Tooltip extends Component {
   /*
@@ -20,22 +29,22 @@ class Tooltip extends Component {
     const topPosition = elTop - SPACE_FROM_MOUSE - height;
 
     switch (direction) {
-      case directions.top:
+      case TOP:
         return {
           x: elHorizontalCenter - width / 2,
           y: topPosition
         };
-      case directions.bottom:
+      case BOTTOM:
         return {
           x: elHorizontalCenter - width / 2,
           y: bottomPosition
         };
-      case directions.left:
+      case LEFT:
         return {
           x: elLeft - width - SPACE_FROM_MOUSE,
           y: elTop
         };
-      case directions.right:
+      case RIGHT:
         return {
           x: elRight + SPACE_FROM_MOUSE,
           y: elTop
@@ -177,7 +186,7 @@ class Tooltip extends Component {
 Tooltip.propTypes = {
   children: PropTypes.node.isRequired,
   isVisible: PropTypes.bool,
-  direction: PropTypes.oneOf(Object.values(directions)),
+  direction: PropTypes.oneOf(DIRECTIONS),
   position: PropTypes.shape({
     elHorizontalCenter: PropTypes.number,
     elVerticalCenter: PropTypes.number,
@@ -185,13 +194,13 @@ Tooltip.propTypes = {
     elBottom: PropTypes.number,
     elLeft: PropTypes.number
   }),
-  variant: PropTypes.oneOf(Object.values(variants))
+  variant: PropTypes.oneOf(VARIANTS)
 };
 
 Tooltip.defaultProps = {
   isVisible: false,
-  direction: "bottom",
-  variant: "light",
+  direction: BOTTOM,
+  variant: LIGHT,
   position: {
     elHorizontalCenter: 0,
     elVerticalCenter: 0,

@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
-import {
-  searchVariants,
-  getSearchHeight,
-  SearchMinWidth,
-  SuggestMaxHeight
-} from "./constants";
+import { getSearchHeight, SearchMinWidth, SuggestMaxHeight } from "./constants";
 import { SearchIcon } from "../Icons";
 import { themes, typography, constants, spacing } from "../../theme";
 import { cardBoxShadow } from "../../theme/constants";
 import { mediumAndUp } from "../../theme/mediaQueries";
+import { SMALL } from "../constants";
 
 export const SearchContainer = styled.div`
   display: flex;
@@ -68,9 +64,7 @@ export const StyledInput = styled.input.attrs({
   autoComplete: "off"
 })`
   font-size: ${({ variant }) =>
-    variant === searchVariants.small
-      ? typography.size.hecto
-      : typography.size.kilo};
+    variant === SMALL ? typography.size.hecto : typography.size.kilo};
   height: 100%;
   color: ${({ isFocused }) =>
     !isFocused ? themes.global.white.base : themes.global.gray01};

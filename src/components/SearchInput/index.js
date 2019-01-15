@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { ClearIcon } from "../Icons";
 
-import { searchVariants } from "./constants";
+import { SIZES_SL, LARGE } from "../constants";
 import {
   SearchContainer,
   StyledSearchIcon,
@@ -128,7 +128,7 @@ class SearchInput extends Component {
 }
 
 SearchInput.propTypes = {
-  variant: PropTypes.oneOf(Object.values(searchVariants)),
+  variant: PropTypes.oneOf(SIZES_SL),
   placeholder: PropTypes.string,
   className: PropTypes.string,
   searchBtnAreaLabel: PropTypes.string,
@@ -148,7 +148,7 @@ SearchInput.propTypes = {
 };
 
 SearchInput.defaultProps = {
-  variant: searchVariants.large,
+  variant: LARGE,
   placeholder: "",
   onFocus: () => {},
   onBlur: () => {},

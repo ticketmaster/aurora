@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
 
 import { themes } from "../../theme";
-import { LOADER_RING_SIZES } from "./constants";
+import { SIZES_SR, SMALL, REGULAR } from "../constants";
 
 const SIZES = {
-  [LOADER_RING_SIZES.small]: {
+  [SMALL]: {
     borderWidth: "2px",
     marginValue: "4px",
     outerRingLength: "48px",
     middleRingLength: "36px",
     innerRingLength: "24px"
   },
-  [LOADER_RING_SIZES.regular]: {
+  [REGULAR]: {
     borderWidth: "3px",
     marginValue: "7px",
     outerRingLength: "80px",
@@ -113,12 +113,12 @@ const LoaderRing = props => (
 LoaderRing.displayName = "LoaderRing";
 
 LoaderRing.propTypes = {
-  size: PropTypes.oneOf(Object.values(LOADER_RING_SIZES)),
+  size: PropTypes.oneOf(SIZES_SR),
   display: PropTypes.oneOf(["block", "inline-block"])
 };
 
 LoaderRing.defaultProps = {
-  size: LOADER_RING_SIZES.regular,
+  size: REGULAR,
   display: "block"
 };
 
