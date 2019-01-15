@@ -16,7 +16,7 @@ import navBar from "./pages/nav_bar";
 import bottomSheet from "./pages/bottom_sheet";
 import images from "./pages/images";
 import breadcrumbs from "./pages/breadcrumbs";
-import modal from "./pages/modal";
+import adaptiveModal from "./pages/adaptive_modal";
 import calendarView from "./pages/calendar_view";
 import popover from "./pages/popover";
 import tooltip from "./pages/tooltip";
@@ -45,7 +45,7 @@ const pages = [
   navBar,
   breadcrumbs,
   bottomSheet,
-  modal,
+  adaptiveModal,
   calendarView,
   popover,
   tooltip,

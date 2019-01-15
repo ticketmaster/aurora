@@ -8,7 +8,7 @@ import {
   ColumnText
 } from "./Tooltip.styles";
 
-import { seatTooltipSizes, variants } from "./constants";
+import { SIZES_SL, LARGE, VARIANTS, LIGHT } from "../constants";
 
 const SeatData = ({ size, isLast, section, row, seat, variant }) => (
   <SeatDataStyled size={size} isLast={isLast}>
@@ -37,14 +37,14 @@ SeatData.propTypes = {
   section: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   row: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   seat: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  size: PropTypes.oneOf(Object.values(seatTooltipSizes)),
-  variant: PropTypes.oneOf(Object.values(variants)),
+  size: PropTypes.oneOf(SIZES_SL),
+  variant: PropTypes.oneOf(VARIANTS),
   isLast: PropTypes.bool
 };
 
 SeatData.defaultProps = {
-  size: seatTooltipSizes.large,
-  variant: "light",
+  size: LARGE,
+  variant: LIGHT,
   isLast: false
 };
 

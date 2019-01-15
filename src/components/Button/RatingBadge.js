@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import StyledBadge from "./Badge.styles";
 import StarIcon from "../Icons/Star";
-import { BUTTON_VARIANTS, BUTTON_SIZES } from "./constants";
+import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD } from "../constants";
 
 const StyledBadgeRating = styled(StyledBadge)`
   padding: 0;
@@ -58,13 +58,13 @@ RatingBadge.propTypes = {
   ratingValue: PropTypes.string.isRequired,
   bestRating: PropTypes.string,
   ratingCount: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
-  size: PropTypes.oneOf(Object.values(BUTTON_SIZES))
+  variant: PropTypes.oneOf(BUTTON_VARIANTS),
+  size: PropTypes.oneOf(SIZES)
 };
 
 RatingBadge.defaultProps = {
-  variant: "standard",
-  size: "regular",
+  variant: STANDARD,
+  size: REGULAR,
   bestRating: "5"
 };
 

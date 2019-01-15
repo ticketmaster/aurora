@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { BUTTON_VARIANTS } from "../Button/constants";
+import { BUTTON_VARIANTS } from "../constants";
 import RowLabel from "./RowLabel";
 
 export const rowDataShape = {
@@ -10,7 +10,7 @@ export const rowDataShape = {
   url: PropTypes.string,
   dateSubTitle: PropTypes.string.isRequired,
   buttonText: PropTypes.string.isRequired,
-  buttonVariant: PropTypes.oneOf(Object.values(BUTTON_VARIANTS)),
+  buttonVariant: PropTypes.oneOf(BUTTON_VARIANTS),
   variant: PropTypes.oneOf(["standard", "withLink"]).isRequired,
   label: RowLabel.propTypes.children,
   labelVariant: RowLabel.propTypes.variant,

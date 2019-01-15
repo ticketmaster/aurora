@@ -1,12 +1,12 @@
 // this components was created for checkboxes demonstration purpose
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import TOGGLE_SIZES from "../../../src/components/Input/Toggle/constants";
+import { SIZES_SL } from "../../../src/components/constants";
 import { CheckBoxButton } from "../../../src/components/Input";
 
 export default class CheckboxWrapperExample extends Component {
   static propTypes = {
-    size: PropTypes.oneOf(TOGGLE_SIZES).isRequired
+    size: PropTypes.oneOf(SIZES_SL).isRequired
   };
 
   static data = {

@@ -31,7 +31,7 @@ export default {
     resolve(),
     babel({
       presets: [
-        ["@babel/preset-env", { modules: false }],
+        ["@babel/preset-env", { modules: false, useBuiltIns: "entry" }],
         "@babel/preset-react"
       ],
       plugins: [

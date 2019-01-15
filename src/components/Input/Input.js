@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import sluggify from "../../utils/text";
-import INPUT_SIZES from "./constants";
+import { SIZES, REGULAR, TOP } from "../constants";
 import {
   FieldInputWrapper,
   FieldInputBox,
@@ -61,17 +61,17 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
   errorMessage: PropTypes.string,
-  size: PropTypes.oneOf(INPUT_SIZES),
+  size: PropTypes.oneOf(SIZES),
   tag: PropTypes.oneOf(["textarea", "input"])
 };
 Input.defaultProps = {
   children: null,
-  labelPosition: "top",
+  labelPosition: TOP,
   placeholder: "",
   disabled: false,
   label: "",
   errorMessage: null,
-  size: INPUT_SIZES[1],
+  size: REGULAR,
   tag: "input"
 };
 

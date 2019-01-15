@@ -5,8 +5,8 @@ import StatusBadge, { StyledBadge } from "./StatusBadge";
 import Tooltip from "../Tooltip";
 import { themes, spacing } from "../../theme";
 
-import { badgeVariants, badgeProps } from "./constants";
-import { directions } from "../Tooltip/constants";
+import { badgeProps } from "./constants";
+import { VARIANTS, DARK, DIRECTIONS } from "../constants";
 
 const StatusBadgeContainer = styled.div`
   display: flex;
@@ -106,14 +106,14 @@ class StatusBadgeGroup extends Component {
 }
 
 StatusBadgeGroup.propTypes = {
-  variant: PropTypes.oneOf(Object.values(badgeVariants)),
+  variant: PropTypes.oneOf(VARIANTS),
   visibleBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
   hiddenBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
-  tooltipDirection: PropTypes.oneOf(Object.values(directions))
+  tooltipDirection: PropTypes.oneOf(DIRECTIONS)
 };
 
 StatusBadgeGroup.defaultProps = {
-  variant: badgeVariants.dark,
+  variant: DARK,
   visibleBadges: [],
   hiddenBadges: [],
   tooltipDirection: "bottom"
