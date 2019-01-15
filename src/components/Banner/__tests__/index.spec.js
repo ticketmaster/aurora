@@ -80,6 +80,21 @@ describe("<Banner />", () => {
     expect(container).toMatchSnapshot();
   });
 
+  it("renders correctly with custom title for the close button", () => {
+    const { container } = render(
+      renderBanner({
+        isOpen: true,
+        variant: "alert",
+        onRequestClose: () => {},
+        href: "ticketmaster.com",
+        linkText: "test link text",
+        closeButtonTitleText: "test close banner text"
+      })
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it("renders correctly with expand/collapse button", () => {
     const { container } = render(
       renderBanner({
@@ -96,23 +111,20 @@ describe("<Banner />", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("toggles state on click", () => {
-    const mockOnButtonClick = jest.fn();
-    const inst = renderer.create(
-      <Banner
-        heading="This is your primary message text."
-        content="test content"
-        variant="alert"
-        onRequestClose={() => {}}
-        expandedText="expandedText"
-        collapsedText="collapsedText"
-        onButtonClick={mockOnButtonClick}
-        isOpen
-      />
-    ).root.instance;
+  it("toggleContent toggles state on click and calls onButtonClick prop", () => {
+    const inst = createBannerInstance({});
 
     inst.toggleContent();
     expect(inst.state).toEqual({ isExpanded: true });
+  });
+
+  it("toggleContent calls onButtonClick prop when it is passed", () => {
+    const mockOnButtonClick = jest.fn();
+    const inst = createBannerInstance({
+      onButtonClick: mockOnButtonClick
+    });
+
+    inst.toggleContent();
     expect(mockOnButtonClick.mock.calls.length).toBe(1);
   });
 });
@@ -125,4 +137,19 @@ function renderBanner(props = {}) {
       {...props}
     />
   );
+}
+
+function createBannerInstance(props = {}) {
+  return renderer.create(
+    <Banner
+      heading="This is your primary message text."
+      content="test content"
+      variant="alert"
+      onRequestClose={() => {}}
+      expandedText="expandedText"
+      collapsedText="collapsedText"
+      isOpen
+      {...props}
+    />
+  ).root.instance;
 }

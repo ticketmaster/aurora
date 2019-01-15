@@ -34,7 +34,7 @@ rows:
     Default: none
     Notes: Specifies the URL of the page the link goes to. When `href` passed control element is an anchor element otherwise it is the expand/collapse button. Should NOT be used with onButtonClick, expandedText or collapsedText. Should be used with linkText
   - Prop: linkProps
-    Type: string
+    Type: object
     Default: none
     Notes: Link props when link control element is used. e.g. `target`
   - Prop: onButtonClick
@@ -50,7 +50,7 @@ rows:
     Default: none
     Notes: Collapsed state control button text. Should be used with expandedText and onButtonClick.
   - Prop: buttonProps
-    Type: string
+    Type: object
     Default: none
     Notes: Expand/collapse button props when button control element is used.
   - Prop: variant

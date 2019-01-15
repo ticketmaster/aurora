@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
+import { Text } from "../Text";
 import { variants, variantsIcons } from "./constants";
 import {
   Container,
-  Heading,
   Content,
   CloseButton,
   IconSection,
@@ -29,7 +29,8 @@ class Banner extends Component {
     buttonProps: PropTypes.shape(),
     style: PropTypes.shape(),
     variant: PropTypes.oneOf(variants),
-    icon: PropTypes.node
+    icon: PropTypes.node,
+    closeButtonTitleText: PropTypes.string
   };
 
   static defaultProps = {
@@ -45,7 +46,8 @@ class Banner extends Component {
     buttonProps: {},
     style: {},
     variant: null,
-    icon: null
+    icon: null,
+    closeButtonTitleText: "Close banner"
   };
 
   state = {
@@ -56,6 +58,7 @@ class Banner extends Component {
     const { onButtonClick } = this.props;
 
     this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }));
+
     if (onButtonClick) {
       onButtonClick();
     }
@@ -90,7 +93,7 @@ class Banner extends Component {
   };
 
   renderCloseButton = () => {
-    const { onRequestClose } = this.props;
+    const { onRequestClose, closeButtonTitleText } = this.props;
     if (!onRequestClose) {
       return null;
     }
@@ -98,7 +101,7 @@ class Banner extends Component {
     return (
       <CloseButton onClick={onRequestClose}>
         <CloseIcon size="small">
-          <title>Close banner</title>
+          <title>{closeButtonTitleText}</title>
         </CloseIcon>
       </CloseButton>
     );
@@ -132,7 +135,9 @@ class Banner extends Component {
       >
         <IconSection>{this.renderIcon()}</IconSection>
         <ContentSection>
-          <Heading>{heading}</Heading>
+          <Text tag="span" weight="semiBold">
+            {heading}
+          </Text>
           {this.renderControl()}
           <Content>{content}</Content>
         </ContentSection>

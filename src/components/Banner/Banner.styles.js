@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import { typography, spacing, constants } from "../../theme";
+import { spacing, constants } from "../../theme";
 import getThemeValue from "../../utils/getThemeValue";
 import { CloseIcon as CrossIcon } from "../Icons";
-import { LinkCta } from "../Text";
+import { LinkCta, Text } from "../Text";
 
 export const Link = styled(LinkCta)`
   color: #0064e6;
   padding-left: 4px;
+
   &:visited {
     color: #0064e6;
   }
@@ -51,16 +52,13 @@ export const Container = styled.div`
 
 export const ContentSection = styled.div`
   font-family: Averta, Courier, monospace;
-  color: ${getThemeValue("gray01")};
-  line-height: 1.29;
 `;
 
-export const Content = styled.div`
-  font-size: ${typography.size.hecto};
-  font-weight: ${typography.weight.regular};
+export const Content = styled(Text)`
   padding-top: 12px;
   opacity: 1;
   transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.1s;
+  line-height: 1.29;
 
   .collapsed & {
     transition: opacity 0.1s ${constants.easing.easeInOutQuad};
@@ -68,22 +66,28 @@ export const Content = styled.div`
   }
 `;
 
-export const Heading = styled.span`
-  font-size: ${typography.size.hecto};
-  font-weight: ${typography.weight.semiBold};
-  color: ${getThemeValue("gray01")};
-`;
-
-export const CloseButton = styled.span`
+export const CloseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 16px;
-  height: 16px;
+  top: 6px;
+  right: 7px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
+    border-radius: 1px;
   }
 `;
 
