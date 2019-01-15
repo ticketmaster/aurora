@@ -112,7 +112,6 @@ const ContentColumn = styled(Column)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  z-index: 2;
   
   &.column__content--expanded {
     transition: opacity 0.1s ${constants.easing.easeInQuad};
@@ -131,10 +130,6 @@ const ContentColumn = styled(Column)`
     width: 100%;
     height: 100%;
     text-align: center;
-
-    &.column__content--expanded {
-      z-index: 1;
-    }
 
     ${mediumAndUp`
       padding: 0 calc(${spacing.moderate} + ${spacing.gutters.mediumAndUp /
