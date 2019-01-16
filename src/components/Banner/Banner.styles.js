@@ -1,0 +1,102 @@
+import styled from "styled-components";
+import { spacing, constants } from "../../theme";
+import getThemeValue from "../../utils/getThemeValue";
+import { CloseIcon as CrossIcon } from "../Icons";
+import { LinkCta, Text } from "../Text";
+
+export const Link = styled(LinkCta)`
+  color: #0064e6;
+  padding-left: 4px;
+
+  &:visited {
+    color: #0064e6;
+  }
+`;
+
+export const Container = styled.div`
+  padding: ${spacing.moderate};
+  position: relative;
+  border: 1px solid ${getThemeValue("onyx", "muted")};
+  border-radius: ${constants.borderRadius.large};
+  display: flex;
+  overflow: hidden;
+  max-height: 500px;
+  transition: max-height 0.3s ${constants.easing.easeInOutQuad};
+  background-color: ${getThemeValue("white", "muted")};
+  box-sizing: border-box;
+
+  &.collapsed {
+    max-height: 56px;
+  }
+
+  &.banner-variant-error {
+    background-color: ${getThemeValue("error", "light")};
+    border-color: ${getThemeValue("error", "base")};
+  }
+
+  &.banner-variant-success {
+    background-color: ${getThemeValue("success", "light")};
+    border-color: ${getThemeValue("success", "base")};
+  }
+
+  &.banner-variant-alert {
+    background-color: rgba(242, 189, 42, 0.2);
+    border-color: ${getThemeValue("caution", "base")};
+  }
+
+  &.banner-variant-info {
+    background-color: rgba(2, 108, 223, 0.1);
+    border-color: ${getThemeValue("primary", "base")};
+  }
+`;
+
+export const ContentSection = styled.div`
+  font-family: Averta, Courier, monospace;
+`;
+
+export const Content = styled(Text)`
+  padding-top: 12px;
+  opacity: 1;
+  transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.1s;
+  line-height: 1.29;
+
+  .collapsed & {
+    transition: opacity 0.1s ${constants.easing.easeInOutQuad};
+    opacity: 0;
+  }
+`;
+
+export const CloseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    transform: scale(0.98, 0.98) translate(0, 1px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
+    border-radius: 1px;
+  }
+`;
+
+export const CloseIcon = styled(CrossIcon).attrs({
+  color: "currentColor"
+})`
+  color: ${getThemeValue("onyx", "muted")};
+`;
+
+export const IconSection = styled.div`
+  padding-right: ${spacing.moderate};
+`;

@@ -17,6 +17,7 @@ export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
 export { default as Heading } from "./components/Header/Heading";
 export { default as ImageCard } from "./components/ImageCard";
+export { default as Banner } from "./components/Banner";
 export {
   ListContainer,
   ListRow,
