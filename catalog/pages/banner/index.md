@@ -130,5 +130,7 @@ rows:
       console.log('onRequestClose');
     }}
   />
+  <Spacing bottom={{small: "moderate"}}/>
+  <FunctionalBannerDemo />
 </div>
 ```

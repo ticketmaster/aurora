@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
+import { Transition } from "react-transition-group";
 import { Text } from "../Text";
 import { variants, variantsIcons } from "./constants";
 import {
@@ -121,28 +122,34 @@ class Banner extends Component {
     const { isOpen, heading, content, variant, style } = this.props;
     const { isExpanded } = this.state;
 
-    if (!isOpen) {
-      return null;
-    }
-
     return (
-      <Container
-        className={classnames({
-          collapsed: !isExpanded,
-          [`banner-variant-${variant}`]: variant
-        })}
-        style={style}
+      <Transition
+        in={isOpen}
+        timeout={isOpen ? 0 : 300} // allows to animate fade in after render correctly
+        mountOnEnter
+        unmountOnExit
       >
-        <IconSection>{this.renderIcon()}</IconSection>
-        <ContentSection>
-          <Text tag="span" weight="semiBold">
-            {heading}
-          </Text>
-          {this.renderControl()}
-          <Content>{content}</Content>
-        </ContentSection>
-        {this.renderCloseButton()}
-      </Container>
+        {state => (
+          <Container
+            className={classnames({
+              collapsed: !isExpanded,
+              [`banner-variant-${variant}`]: variant,
+              "visible-banner": state === "entered"
+            })}
+            style={{ ...style }}
+          >
+            <IconSection>{this.renderIcon()}</IconSection>
+            <ContentSection>
+              <Text tag="span" weight="semiBold">
+                {heading}
+              </Text>
+              {this.renderControl()}
+              <Content>{content}</Content>
+            </ContentSection>
+            {this.renderCloseButton()}
+          </Container>
+        )}
+      </Transition>
     );
   }
 }

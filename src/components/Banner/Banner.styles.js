@@ -21,9 +21,17 @@ export const Container = styled.div`
   display: flex;
   overflow: hidden;
   max-height: 500px;
-  transition: max-height 0.3s ${constants.easing.easeInOutQuad};
+  transition: max-height 0.3s ${constants.easing.easeInOutQuad},
+    opacity 0.3s ${constants.easing.easeInQuad};
   background-color: ${getThemeValue("white", "muted")};
   box-sizing: border-box;
+  opacity: 0;
+
+  &.visible-banner {
+    transition: max-height 0.3s ${constants.easing.easeInOutQuad},
+      opacity 0.3s ${constants.easing.easeInOutQuad};
+    opacity: 1;
+  }
 
   &.collapsed {
     max-height: 56px;
