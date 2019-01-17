@@ -7,10 +7,12 @@ import IconButton from "../Button/IconButton";
 import { spacing, colors, constants } from "../../theme/index";
 import { ItemContainerConsumer } from "../List/Context";
 import { BackdropConsumer } from "./BackdropContext";
-import Column from "../Grid/Column";
 import Row from "../Grid/Row";
 
-const ModalContainer = styled(Column)`
+const ModalContainer = styled.div`
+  width: fit-content;
+  min-width: 400px;
+  max-width: 640px;
   position: relative;
   background-color: ${colors.white.base};
   border-radius: ${constants.borderRadius.large};
