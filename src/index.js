@@ -177,3 +177,4 @@ export {
 } from "./components/LazyLoader";
 export { Tabs, TabsProvider, TabsConsumer } from "./components/Tabs";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";
+export { default as RangeSlider } from "./components/RangeSlider";
