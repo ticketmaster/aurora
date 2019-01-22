@@ -27,10 +27,6 @@ const LinkCtaBase = styled.a`
     text-decoration: underline;
   }
 
-  &:visited {
-    color: ${getThemeValue("primary", "dark")};
-  }
-
   &:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
     color: ${getThemeValue("primary", "dark")};
