@@ -104,7 +104,7 @@ class FeedbackInline extends Component {
       <Container
         className={classnames({
           collapsed: !isExpanded,
-          [`banner-variant-${variant}`]: variant
+          [`banner-variant--${variant}`]: variant
         })}
         style={{ ...style }}
       >

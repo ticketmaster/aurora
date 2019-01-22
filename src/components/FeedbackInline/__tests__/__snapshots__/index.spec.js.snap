@@ -32,7 +32,7 @@ exports[`<FeedbackInline /> renders correctly 1`] = `
 exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert sc-VigVT cuPYes"
+    class="collapsed banner-variant--alert sc-VigVT cuPYes"
   >
     <div
       class="sc-jzJRlG Mrtrz"
@@ -85,7 +85,7 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 exports[`<FeedbackInline /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert sc-VigVT cuPYes"
+    class="collapsed banner-variant--alert sc-VigVT cuPYes"
   >
     <div
       class="sc-jzJRlG Mrtrz"
