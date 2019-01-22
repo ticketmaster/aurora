@@ -25,6 +25,7 @@ import links from "./pages/links";
 import tabs from "./pages/tabs";
 import statusBadge from "./pages/status_badge";
 import banner from "./pages/banner";
+import feedbackInline from "./pages/feedback_inline";
 import rangeSlider from "./pages/range_slider";
 
 const theme = {
@@ -55,6 +56,7 @@ const pages = [
   tabs,
   statusBadge,
   banner,
+  feedbackInline,
   rangeSlider
 ];
 
