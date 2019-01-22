@@ -1,30 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RangeSlider handleGenerator should match snapshot 1`] = `
-<Handle
-  value={3}
-/>
-`;
-
 exports[`RangeSlider should match snapshot 1`] = `
 <div
-  className="RangeSlider ljVsAN"
+  className="slider ljVsAN"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="RangeSlider-rail fIZwol"
+    className="slider__rail fIZwol"
   />
   <Track
-    className="RangeSlider-track"
+    className="slider__track"
     disabled={false}
     length={100}
     offset={0}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-1"
+    className="slider__handle slider__handle-1"
     disabled={false}
     max={100}
     min={0}
@@ -32,7 +26,7 @@ exports[`RangeSlider should match snapshot 1`] = `
     value={0}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-2"
+    className="slider__handle slider__handle-2"
     disabled={false}
     max={100}
     min={0}
@@ -44,23 +38,23 @@ exports[`RangeSlider should match snapshot 1`] = `
 
 exports[`RangeSlider should match snapshot when disabled 1`] = `
 <div
-  className="RangeSlider RangeSlider-disabled disabled ljVsAN"
+  className="slider slider--disabled disabled ljVsAN"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="RangeSlider-rail fIZwol"
+    className="slider__rail fIZwol"
   />
   <Track
-    className="RangeSlider-track"
+    className="slider__track"
     disabled={true}
     length={100}
     offset={0}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-1"
+    className="slider__handle slider__handle-1 slider__handle--disbaled"
     disabled={true}
     max={100}
     min={0}
@@ -68,7 +62,7 @@ exports[`RangeSlider should match snapshot when disabled 1`] = `
     value={0}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-2"
+    className="slider__handle slider__handle-2 slider__handle--disbaled"
     disabled={true}
     max={100}
     min={0}
@@ -80,23 +74,23 @@ exports[`RangeSlider should match snapshot when disabled 1`] = `
 
 exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
 <div
-  className="RangeSlider ljVsAN"
+  className="slider ljVsAN"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="RangeSlider-rail fIZwol"
+    className="slider__rail fIZwol"
   />
   <Track
-    className="RangeSlider-track"
+    className="slider__track"
     disabled={false}
     length={NaN}
     offset={NaN}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-1"
+    className="slider__handle slider__handle-1"
     disabled={false}
     max={0}
     min={0}
@@ -104,7 +98,7 @@ exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
     value={0}
   />
   <Handle
-    className="RangeSlider-handle RangeSlider-handle-2"
+    className="slider__handle slider__handle-2"
     disabled={false}
     max={0}
     min={0}

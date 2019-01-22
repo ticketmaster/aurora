@@ -11,7 +11,9 @@ const Track = props => {
     width: `${length}%`
   };
 
-  const classes = classnames(className, { disabled });
+  const classes = classnames(className, {
+    "slider__track--disabled": disabled
+  });
 
   return <SliderTrack className={classes} style={positonStyle} />;
 };

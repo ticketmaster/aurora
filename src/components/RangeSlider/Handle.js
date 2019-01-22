@@ -1,18 +1,10 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { SliderHandle } from "./RangeSlider.styles";
 
-export default class Handle extends React.Component {
+export default class Handle extends PureComponent {
   render() {
-    const {
-      offset,
-      disabled,
-      min,
-      max,
-      value,
-      className,
-      ...restProps
-    } = this.props;
+    const { offset, disabled, min, max, value, ...restProps } = this.props;
 
     const postionStyle = { left: `${offset}%` };
 
@@ -20,21 +12,19 @@ export default class Handle extends React.Component {
       <SliderHandle
         ref={this.setHandleRef}
         {...restProps}
-        className={className}
         style={postionStyle}
         // aria attribute
         role="slider"
         aria-valuemin={min}
         aria-valuemax={max}
         aria-valuenow={value}
-        aria-disabled={!!disabled}
+        aria-disabled={disabled}
       />
     );
   }
 }
 
 Handle.propTypes = {
-  className: PropTypes.string,
   offset: PropTypes.number.isRequired,
   disabled: PropTypes.bool,
   min: PropTypes.number.isRequired,
@@ -43,6 +33,5 @@ Handle.propTypes = {
 };
 
 Handle.defaultProps = {
-  disabled: false,
-  className: ""
+  disabled: false
 };

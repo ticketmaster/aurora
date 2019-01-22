@@ -24,7 +24,7 @@ class RangeSlider extends React.Component {
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     className: PropTypes.string,
-    thershold: PropTypes.number
+    threshold: PropTypes.number
   };
 
   static defaultProps = {
@@ -40,7 +40,7 @@ class RangeSlider extends React.Component {
     onBlur: null,
     className: "",
     disabled: false,
-    thershold: 0
+    threshold: 0
   };
 
   constructor(props) {
@@ -65,7 +65,7 @@ class RangeSlider extends React.Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    const { value: propsValue, min, max, thershold } = props;
+    const { value: propsValue, min, max, threshold } = props;
     if (!(propsValue || (min || min === 0) || max)) {
       return null;
     }
@@ -73,7 +73,7 @@ class RangeSlider extends React.Component {
     const { bounds } = state;
     const value = propsValue || bounds;
     const nextBounds = value.map((v, i) =>
-      utils.trimAlignValue(v, i, props, value, thershold)
+      utils.trimAlignValue(v, i, props, value, threshold)
     );
     if (
       nextBounds.length === bounds.length &&
@@ -93,9 +93,7 @@ class RangeSlider extends React.Component {
     if (!utils.isEventFromHandle(e, this.handlesRefs)) {
       this.dragOffset = 0;
     } else {
-      const handlePosition = utils.getHandleCenterPosition(e.target);
-      this.dragOffset = position - handlePosition;
-      position = handlePosition;
+      position = this.getHandlePosition(e, position);
     }
     this.removeDocumentEvents();
     this.onStart(position);
@@ -120,9 +118,7 @@ class RangeSlider extends React.Component {
     if (!utils.isEventFromHandle(e, this.handlesRefs)) {
       this.dragOffset = 0;
     } else {
-      const handlePosition = utils.getHandleCenterPosition(e.target);
-      this.dragOffset = position - handlePosition;
-      position = handlePosition;
+      position = this.getHandlePosition(e, position);
     }
     this.onStart(position);
     this.addDocumentTouchEvents();
@@ -222,6 +218,12 @@ class RangeSlider extends React.Component {
     this.moveTo(value);
   }
 
+  getHandlePosition = (e, position) => {
+    const handlePosition = utils.getHandleCenterPosition(e.target);
+    this.dragOffset = position - handlePosition;
+    return handlePosition;
+  };
+
   getValue = () => {
     const { bounds } = this.state;
     return bounds;
@@ -293,14 +295,6 @@ class RangeSlider extends React.Component {
     return coords.width;
   }
 
-  handleGenerator = ({ index, ...restProps }) => {
-    if (restProps.value === null) {
-      return null;
-    }
-
-    return <Handle {...restProps} key={index} />;
-  };
-
   moveTo(value) {
     const { handle, bounds } = this.state;
     const nextBounds = [...bounds];
@@ -314,13 +308,13 @@ class RangeSlider extends React.Component {
 
   calcValue(offset) {
     const { min, max } = this.props;
-    const ratio = Math.abs(Math.max(offset, 0) / this.getSliderLength());
+    const ratio = Math.max(offset, 0) / this.getSliderLength();
     const value = ratio * (max - min) + min;
     return value;
   }
 
   calcValueByPos(position) {
-    const { thershold } = this.props;
+    const { threshold } = this.props;
     const { handle, bounds } = this.state;
     const pixelOffset = position - this.getSliderStart();
     const nextValue = utils.trimAlignValue(
@@ -328,7 +322,7 @@ class RangeSlider extends React.Component {
       handle,
       this.props,
       bounds,
-      thershold
+      threshold
     );
     return nextValue;
   }
@@ -361,33 +355,44 @@ class RangeSlider extends React.Component {
     this.handlesRefs[index] = handle;
   }
 
-  render() {
+  renderHandles = () => {
     const { bounds } = this.state;
-    const { disabled, min, max, className } = this.props;
-
+    const { disabled, min, max } = this.props;
     const offsets = bounds.map(v => this.calcOffset(v));
 
-    const handleClassName = "RangeSlider-handle";
-    const handles = bounds.map((v, i) =>
-      this.handleGenerator({
-        className: classNames(handleClassName, {
-          [`${handleClassName}-${i + 1}`]: true
-        }),
-        offset: offsets[i],
-        value: v,
-        index: i,
-        min,
-        max,
-        disabled,
-        ref: h => this.saveHandle(i, h)
-      })
-    );
+    return bounds.map((v, i) => {
+      const key = i + 1;
+      const classes = classNames("slider__handle", {
+        [`slider__handle-${i + 1}`]: true,
+        "slider__handle--disbaled": disabled
+      });
 
-    const track = bounds.slice(0, -1).map((_, index) => {
+      return (
+        <Handle
+          key={key}
+          className={classes}
+          offset={offsets[i]}
+          value={v}
+          min={min}
+          max={max}
+          disabled={disabled}
+          ref={h => this.saveHandle(i, h)}
+        />
+      );
+    });
+  };
+
+  renderTrack = () => {
+    const { bounds } = this.state;
+    const { disabled } = this.props;
+    const offsets = bounds.map(v => this.calcOffset(v));
+
+    return bounds.slice(0, -1).map((_, index) => {
       const i = index + 1;
+
       return (
         <Track
-          className="RangeSlider-track"
+          className="slider__track"
           offset={offsets[i - 1]}
           length={offsets[i] - offsets[i - 1]}
           key={i}
@@ -395,9 +400,14 @@ class RangeSlider extends React.Component {
         />
       );
     });
+  };
 
-    const sliderClassName = classNames("RangeSlider", {
-      [`RangeSlider-disabled`]: disabled,
+  render() {
+    const { disabled, className } = this.props;
+    const handles = this.renderHandles();
+    const track = this.renderTrack();
+    const sliderClassName = classNames("slider", {
+      [`slider--disabled`]: disabled,
       disabled,
       [className]: className
     });
@@ -413,7 +423,7 @@ class RangeSlider extends React.Component {
         onFocus={disabled ? noop : this.onFocus}
         onBlur={disabled ? noop : this.onBlur}
       >
-        <SliderRail className="RangeSlider-rail" />
+        <SliderRail className="slider__rail" />
         {track}
         {handles}
       </SliderContainer>

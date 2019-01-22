@@ -117,20 +117,6 @@ describe("RangeSlider", () => {
     spy.mockRestore();
   });
 
-  it("handleGenerator should return null", () => {
-    const instance = renderer.create(<RangeSlider />).getInstance();
-    const result = instance.handleGenerator({ value: null, index: 0 });
-
-    expect(result).toBe(null);
-  });
-
-  it("handleGenerator should match snapshot", () => {
-    const instance = renderer.create(<RangeSlider />).getInstance();
-    const result = instance.handleGenerator({ value: 3, index: 0 });
-
-    expect(result).toMatchSnapshot();
-  });
-
   it("getSliderLength should return 0 when slider ref is 0", () => {
     const instance = renderer.create(<RangeSlider />).getInstance();
 
