@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RangeSlider should match snapshot 1`] = `
+<div
+  className="slider ljVsAN"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="slider__rail fIZwol"
+  />
+  <Track
+    className="slider__track"
+    disabled={false}
+    length={100}
+    offset={0}
+  />
+  <Handle
+    className="slider__handle slider__handle-1"
+    disabled={false}
+    max={100}
+    min={0}
+    offset={0}
+    value={0}
+  />
+  <Handle
+    className="slider__handle slider__handle-2"
+    disabled={false}
+    max={100}
+    min={0}
+    offset={100}
+    value={100}
+  />
+</div>
+`;
+
+exports[`RangeSlider should match snapshot when disabled 1`] = `
+<div
+  className="slider slider--disabled disabled ljVsAN"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="slider__rail fIZwol"
+  />
+  <Track
+    className="slider__track"
+    disabled={true}
+    length={100}
+    offset={0}
+  />
+  <Handle
+    className="slider__handle slider__handle-1 slider__handle--disbaled"
+    disabled={true}
+    max={100}
+    min={0}
+    offset={0}
+    value={0}
+  />
+  <Handle
+    className="slider__handle slider__handle-2 slider__handle--disbaled"
+    disabled={true}
+    max={100}
+    min={0}
+    offset={100}
+    value={100}
+  />
+</div>
+`;
+
+exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
+<div
+  className="slider ljVsAN"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onTouchStart={[Function]}
+>
+  <div
+    className="slider__rail fIZwol"
+  />
+  <Track
+    className="slider__track"
+    disabled={false}
+    length={NaN}
+    offset={NaN}
+  />
+  <Handle
+    className="slider__handle slider__handle-1"
+    disabled={false}
+    max={0}
+    min={0}
+    offset={NaN}
+    value={0}
+  />
+  <Handle
+    className="slider__handle slider__handle-2"
+    disabled={false}
+    max={0}
+    min={0}
+    offset={NaN}
+    value={0}
+  />
+</div>
+`;
