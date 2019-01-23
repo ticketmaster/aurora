@@ -5,10 +5,6 @@ import { LinkCta, Text } from "../Text";
 
 export const Link = styled(LinkCta)`
   color: ${getThemeValue("primary", "base")};
-
-  &:visited {
-    color: ${getThemeValue("primary", "base")};
-  }
 `;
 
 export const Container = styled.div`
