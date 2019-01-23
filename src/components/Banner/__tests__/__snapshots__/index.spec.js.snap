@@ -257,7 +257,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
         This is your primary message text.
       </span>
       <a
-        class="sc-gqjmRU dvGSGA sc-htoDjs edbpIH"
+        class="sc-gqjmRU dvGSGA sc-htoDjs kvjow"
         href="ticketmaster.com"
         rel=""
         target="_self"
@@ -337,7 +337,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
         This is your primary message text.
       </span>
       <button
-        class="sc-gqjmRU dvGSGA sc-dnqmqq doqAvh"
+        class="sc-gqjmRU dvGSGA sc-dnqmqq bpGJbX"
         rel=""
         target="_self"
       >
@@ -418,7 +418,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
         This is your primary message text.
       </span>
       <a
-        class="sc-gqjmRU dvGSGA sc-htoDjs edbpIH"
+        class="sc-gqjmRU dvGSGA sc-htoDjs kvjow"
         href="ticketmaster.com"
         rel=""
         target="_self"
