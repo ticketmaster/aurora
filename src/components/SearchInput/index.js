@@ -165,6 +165,6 @@ SearchInput.defaultProps = {
   isSuggestOpened: false
 };
 
-SearchInput.displayName = "SearcnComponent";
+SearchInput.displayName = "SearchComponent";
 
 export default SearchInput;
