@@ -2,19 +2,23 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import { EditIcon } from "../";
+import { TicketIcon } from "../";
 
-describe("EditIcon", () => {
-  const children = <title>Edit Icon</title>;
-
+describe("TicketIcon", () => {
   it("large renders correctly", () => {
-    const component = renderer.create(<EditIcon>{children}</EditIcon>);
+    const component = renderer.create(
+      <TicketIcon>
+        <title>Tickets Icon</title>
+      </TicketIcon>
+    );
 
     expect(component.toJSON()).toMatchSnapshot();
   });
   it("small renders correctly", () => {
     const component = renderer.create(
-      <EditIcon size="small">{children}</EditIcon>
+      <TicketIcon size="small">
+        <title>Tickets Icon</title>
+      </TicketIcon>
     );
 
     expect(component.toJSON()).toMatchSnapshot();
