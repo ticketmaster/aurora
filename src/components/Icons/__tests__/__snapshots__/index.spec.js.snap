@@ -822,7 +822,7 @@ exports[`icons StandardMailIcon should match snapshot 1`] = `
 </svg>
 `;
 
-exports[`icons TransferTicketIcon should match snapshot 1`] = `
+exports[`icons TransferTicketsIcon should match snapshot 1`] = `
 <svg
   height="24px"
   viewBox="0 0 24 24"
@@ -858,7 +858,7 @@ exports[`icons TransferTicketIcon should match snapshot 1`] = `
 </svg>
 `;
 
-exports[`icons UpgradeTicketIcon should match snapshot 1`] = `
+exports[`icons UpgradeTicketsIcon should match snapshot 1`] = `
 <svg
   height="24px"
   viewBox="0 0 24 24"

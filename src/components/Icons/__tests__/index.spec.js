@@ -24,8 +24,8 @@ import {
   SellTicketsIcon,
   ShareIcon,
   StandardMailIcon,
-  TransferTicketIcon,
-  UpgradeTicketIcon,
+  TransferTicketsIcon,
+  UpgradeTicketsIcon,
   VolumeHighIcon,
   VolumeLowIcon,
   VolumeMediumIcon,
@@ -177,16 +177,16 @@ describe("icons", () => {
 
     expect(tree).toMatchSnapshot();
   });
-  it("TransferTicketIcon should match snapshot", () => {
+  it("TransferTicketsIcon should match snapshot", () => {
     const tree = renderer
-      .create(<TransferTicketIcon>{children}</TransferTicketIcon>)
+      .create(<TransferTicketsIcon>{children}</TransferTicketsIcon>)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
-  it("UpgradeTicketIcon should match snapshot", () => {
+  it("UpgradeTicketsIcon should match snapshot", () => {
     const tree = renderer
-      .create(<UpgradeTicketIcon>{children}</UpgradeTicketIcon>)
+      .create(<UpgradeTicketsIcon>{children}</UpgradeTicketsIcon>)
       .toJSON();
 
     expect(tree).toMatchSnapshot();

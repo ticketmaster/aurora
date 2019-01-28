@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import { themes } from "../../theme";
 
-const UpgradeTicketIcon = ({ children, color, ...props }) => (
+const UpgradeTicketsIcon = ({ children, color, ...props }) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -22,16 +22,16 @@ const UpgradeTicketIcon = ({ children, color, ...props }) => (
   </svg>
 );
 
-UpgradeTicketIcon.displayName = "UpgradeTicketIcon";
+UpgradeTicketsIcon.displayName = "UpgradeTicketsIcon";
 
-UpgradeTicketIcon.propTypes = {
+UpgradeTicketsIcon.propTypes = {
   children: PropTypes.node,
   color: PropTypes.string
 };
 
-UpgradeTicketIcon.defaultProps = {
+UpgradeTicketsIcon.defaultProps = {
   children: null,
   color: themes.global.gray01
 };
 
-export default UpgradeTicketIcon;
+export default UpgradeTicketsIcon;

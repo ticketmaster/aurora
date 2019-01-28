@@ -2,7 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import { themes } from "../../theme";
 
-const TransferTicketIcon = ({ children, color, ...props }) => (
+const TransferTicketsIcon = ({ children, color, ...props }) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -30,16 +30,16 @@ const TransferTicketIcon = ({ children, color, ...props }) => (
   </svg>
 );
 
-TransferTicketIcon.displayName = "TransferTicketIcon";
+TransferTicketsIcon.displayName = "TransferTicketsIcon";
 
-TransferTicketIcon.propTypes = {
+TransferTicketsIcon.propTypes = {
   children: PropTypes.node,
   color: PropTypes.string
 };
 
-TransferTicketIcon.defaultProps = {
+TransferTicketsIcon.defaultProps = {
   children: null,
   color: themes.global.gray01
 };
 
-export default TransferTicketIcon;
+export default TransferTicketsIcon;
