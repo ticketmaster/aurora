@@ -52,6 +52,7 @@ export { default as UserIcon } from "./User";
 export { default as SearchIconDeprecated } from "./Search.deprecated";
 export { default as ListIcon } from "./List";
 export { default as WarningIcon } from "./Warning";
+export { default as VenueSearchIcon } from "./VenueSearch";
 export { default as CallUsIcon } from "./CallUs";
 export { default as CartIcon } from "./Cart";
 export { default as CheckingAccountIcon } from "./CheckingAccount";
