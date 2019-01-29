@@ -10,6 +10,7 @@ import grid from "./pages/grid/index";
 import icons from "./pages/icons/index";
 import imageCard from "./pages/image_card";
 import listRow from "./pages/list_row";
+import pureListRow from "./pages/pure_list_row";
 import header from "./pages/header";
 import inputs from "./pages/inputs";
 import navBar from "./pages/nav_bar";
@@ -42,6 +43,7 @@ const pages = [
   images,
   imageCard,
   listRow,
+  pureListRow,
   header,
   inputs,
   navBar,
