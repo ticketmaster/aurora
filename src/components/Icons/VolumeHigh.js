@@ -11,20 +11,11 @@ const VolumeHighIcon = ({ children, color, ...props }) => (
     viewBox="0 0 24 24"
   >
     {children}
-    <g
-      id="FLATTENED"
-      stroke="none"
-      strokeWidth="1"
-      fill="none"
-      fillRule="evenodd"
-    >
-      <g id="Artboard" transform="translate(-204.000000, -178.000000)">
-        <g
-          id="Icons/Actions/Volume-Up-24"
-          transform="translate(204.000000, 176.000000)"
-        >
+    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+      <g transform="translate(-204.000000, -178.000000)">
+        <g transform="translate(204.000000, 176.000000)">
           <g>
-            <rect id="bounds" x="0" y="0" width="24" height="24" />
+            <rect x="0" y="0" width="24" height="24" />
             <path
               fill={color}
               {...color !== "currentColor" && { fillOpacity: ".65" }}

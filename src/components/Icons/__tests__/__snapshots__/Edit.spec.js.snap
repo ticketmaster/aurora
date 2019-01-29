@@ -48,7 +48,6 @@ exports[`EditIcon small renders correctly 1`] = `
     >
       <rect
         height="16"
-        id="Bounds"
         width="16"
         x="0"
         y="1"
@@ -58,7 +57,6 @@ exports[`EditIcon small renders correctly 1`] = `
         fill="#262626"
         fillOpacity=".65"
         fillRule="nonzero"
-        id="Combined-Shape"
       />
     </g>
   </g>

@@ -20,14 +20,12 @@ exports[`InfoIcon filled renders correctly 1`] = `
       cx="8"
       cy="8"
       fill="#026cdf"
-      id="info"
       r="7"
     />
     <circle
       cx="8"
       cy="4.25"
       fill="#FFFFFF"
-      id="Oval-2"
       r="1"
     />
     <path
@@ -57,14 +55,12 @@ exports[`InfoIcon filled renders large correctly 1`] = `
       cx="18"
       cy="18"
       fill="#026cdf"
-      id="info"
       r="17"
     />
     <circle
       cx="18"
       cy="9.5"
       fill="#FFFFFF"
-      id="Oval-2"
       r="1.5"
     />
     <path
@@ -94,14 +90,12 @@ exports[`InfoIcon filled renders regular correctly 1`] = `
       cx="12"
       cy="12"
       ffill="#026cdf"
-      id="info"
       r="11"
     />
     <circle
       cx="12"
       cy="6.25"
       fill="#FFFFFF"
-      id="Oval-2"
       r="1"
     />
     <path

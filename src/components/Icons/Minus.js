@@ -11,15 +11,9 @@ const MinusIcon = ({ children, color, ...props }) => (
     viewBox="0 0 24 24"
   >
     {children}
-    <g
-      id="Icons/Actions/Minus-24"
-      stroke="none"
-      strokeWidth="1"
-      fill="none"
-      fillRule="evenodd"
-    >
+    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g fillRule="nonzero">
-        <rect id="Rectangle-4" x="0" y="0" width="24" height="24" />
+        <rect x="0" y="0" width="24" height="24" />
         <path
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}

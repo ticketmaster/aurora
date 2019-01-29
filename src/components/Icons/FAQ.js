@@ -13,7 +13,7 @@ const FAQIcon = ({ children, color, ...props }) => (
     {children}
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g>
-        <rect id="bounds" x="0" y="0" width="24" height="24" />
+        <rect x="0" y="0" width="24" height="24" />
         <path
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}

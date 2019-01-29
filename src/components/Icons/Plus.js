@@ -13,10 +13,9 @@ const PlusIcon = ({ children, color, ...props }) => (
     {children}
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g fillRule="nonzero">
-        <rect id="Rectangle-4" x="0" y="0" width="24" height="24" />
+        <rect x="0" y="0" width="24" height="24" />
         <path
           d="M4,12 L20,12"
-          id="Path-4"
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
@@ -25,7 +24,6 @@ const PlusIcon = ({ children, color, ...props }) => (
         />
         <path
           d="M12,4 L12,20"
-          id="Path-4-Copy"
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"

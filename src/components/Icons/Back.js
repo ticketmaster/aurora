@@ -17,7 +17,7 @@ const backIcons = {
         <path d="M16 0H0v16h16z" />
         <path
           fill={color}
-          {...color !== "currentColor" && { fillOpacity: ".5" }}
+          {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
           d="M4.869 8l6.678 6.678a.774.774 0 0 1-1.094 1.095L3.227 8.547a.774.774 0 0 1 0-1.094L10.453.227a.774.774 0 0 1 1.094 1.095L4.87 8z"
         />
@@ -37,7 +37,7 @@ const backIcons = {
         <path d="M24 0H0v24h24z" />
         <path
           fill={color}
-          {...color !== "currentColor" && { fillOpacity: ".5" }}
+          {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
           d="M17.542 22.692a.766.766 0 1 1-1.084 1.084L5.224 12.542c-.299-.3-.299-.785 0-1.084L16.458.224a.766.766 0 0 1 1.084 1.084L6.85 12l10.692 10.692z"
         />

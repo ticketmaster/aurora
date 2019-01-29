@@ -20,7 +20,7 @@ exports[`ClearIcon large renders correctly 1`] = `
     <path
       d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 1C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zm3.89-15.596a.5.5 0 0 1 .706.707l-8.485 8.485a.5.5 0 0 1-.707-.707l8.485-8.485zm-8.486.707a.5.5 0 0 1 .707-.707l8.485 8.485a.5.5 0 0 1-.707.707L7.404 8.111z"
       fill="#262626"
-      fillOpacity=".5"
+      fillOpacity=".65"
       fillRule="nonzero"
     />
   </g>
@@ -45,7 +45,6 @@ exports[`ClearIcon small renders correctly 1`] = `
   >
     <rect
       height="16"
-      id="Rectangle-4"
       width="16"
       x="0"
       y="0"
@@ -55,7 +54,6 @@ exports[`ClearIcon small renders correctly 1`] = `
       fill="#262626"
       fillOpacity=".65"
       fillRule="nonzero"
-      id="clear"
     />
   </g>
 </svg>

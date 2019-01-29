@@ -14,7 +14,6 @@ const ShareIcon = ({ children, color, ...props }) => (
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g>
         <polygon
-          id="bounds"
           transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) "
           points="24 0 0 0 0 24 24 24"
         />

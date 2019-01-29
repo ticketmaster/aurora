@@ -49,9 +49,7 @@ exports[`TicketIcon small renders correctly 1`] = `
     stroke="none"
     strokeWidth="1"
   >
-    <g
-      id="Icon-Single-Ticket"
-    >
+    <g>
       <mask
         fill="white"
         id="mask-2"
@@ -61,17 +59,12 @@ exports[`TicketIcon small renders correctly 1`] = `
         />
       </mask>
       <g
-        id="Bounds"
-      />
-      <g
         fill="#262626"
         fillOpacity=".65"
         fillRule="nonzero"
-        id="ticket"
         mask="url(#mask-2)"
       >
         <g
-          id="Combined-Shape"
           transform="translate(8.251948, 8.031508) rotate(-45.000000) translate(-8.251948, -8.031508) translate(0.751948, 3.031508)"
         >
           <path
