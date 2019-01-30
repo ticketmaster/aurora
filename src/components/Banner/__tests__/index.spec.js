@@ -112,10 +112,18 @@ describe("<Banner />", () => {
   });
 
   it("toggleContent toggles state on click and calls onButtonClick prop", () => {
-    const inst = createBannerInstance({});
-
+    const inst = createBannerInstance(
+      {},
+      {
+        createNodeMock: () => ({
+          offsetHeight: 300
+        })
+      }
+    );
     inst.toggleContent();
-    expect(inst.state).toEqual({ isExpanded: true });
+    expect(inst.state).toEqual({ isExpanded: true, maxHeight: "356px" });
+    inst.toggleContent();
+    expect(inst.state).toEqual({ isExpanded: false, maxHeight: "56px" });
   });
 
   it("toggleContent calls onButtonClick prop when it is passed", () => {
@@ -123,10 +131,37 @@ describe("<Banner />", () => {
     const inst = createBannerInstance({
       onButtonClick: mockOnButtonClick
     });
+    inst.content = {
+      current: {
+        offsetHeight: 300
+      }
+    };
 
     inst.toggleContent();
     expect(mockOnButtonClick.mock.calls.length).toBe(1);
   });
+
+  it("should set state on componentDidMount when content exists and state.isExpanded is true", () => {
+    const inst = createBannerInstance(
+      { isExpanded: true },
+      {
+        createNodeMock: () => ({
+          offsetHeight: 300
+        })
+      }
+    );
+
+    expect(inst.state.maxHeight).toBe("356px");
+  });
+
+  // it('should', () => {
+  //   const inst = createBannerInstance({ isExpanded: true }, {
+  //     createNodeMock: () => ({
+  //       offsetHeight: 300,
+  //     })
+  //   });
+  //   expect(inst.state.maxHeight).toBe('1000px');
+  // })
 });
 
 function renderBanner(props = {}) {
@@ -139,7 +174,7 @@ function renderBanner(props = {}) {
   );
 }
 
-function createBannerInstance(props = {}) {
+function createBannerInstance(props = {}, options = {}) {
   return renderer.create(
     <Banner
       heading="This is your primary message text."
@@ -150,6 +185,7 @@ function createBannerInstance(props = {}) {
       collapsedText="collapsedText"
       isOpen
       {...props}
-    />
+    />,
+    options
   ).root.instance;
 }

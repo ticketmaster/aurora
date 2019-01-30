@@ -11,7 +11,9 @@ import {
   IconSection,
   ContentSection,
   CloseIcon,
-  Link
+  Link,
+  BASE_BANNER_HEIGHT,
+  MAX_BANNER_HEIGHT
 } from "./Banner.styles";
 
 class Banner extends Component {
@@ -51,14 +53,36 @@ class Banner extends Component {
     closeButtonTitleText: "Close banner"
   };
 
+  // Container max height should be handled programmatically as content height is unknown
   state = {
-    isExpanded: this.props.isExpanded
+    isExpanded: this.props.isExpanded,
+    maxHeight: this.props.isExpanded
+      ? `${MAX_BANNER_HEIGHT}px` // max height if banner is expanded during first render
+      : `${BASE_BANNER_HEIGHT}px`
   };
+
+  componentDidMount() {
+    // update max height to the correct value so animation works correctly
+    if (this.props.content && this.state.isExpanded) {
+      const maxHeight = this.content.current.offsetHeight + BASE_BANNER_HEIGHT;
+
+      // eslint-disable-next-line react/no-did-mount-set-state
+      this.setState({ maxHeight: `${maxHeight}px` });
+    }
+  }
+
+  content = React.createRef();
 
   toggleContent = () => {
     const { onButtonClick } = this.props;
+    const contentHeight = this.content.current.offsetHeight;
+    const collapsedMaxHeight = `${BASE_BANNER_HEIGHT}px`;
+    const expandedMaxHeight = `${contentHeight + BASE_BANNER_HEIGHT}px`;
 
-    this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }));
+    this.setState(({ isExpanded }) => ({
+      isExpanded: !isExpanded,
+      maxHeight: isExpanded ? collapsedMaxHeight : expandedMaxHeight
+    }));
 
     if (onButtonClick) {
       onButtonClick();
@@ -120,7 +144,7 @@ class Banner extends Component {
 
   render() {
     const { isOpen, heading, content, variant, style } = this.props;
-    const { isExpanded } = this.state;
+    const { isExpanded, maxHeight } = this.state;
 
     return (
       <Transition
@@ -136,7 +160,7 @@ class Banner extends Component {
               [`banner-variant-${variant}`]: variant,
               "visible-banner": state === "entered"
             })}
-            style={{ ...style }}
+            style={{ ...style, maxHeight }}
           >
             <IconSection>{this.renderIcon()}</IconSection>
             <ContentSection>
@@ -144,7 +168,9 @@ class Banner extends Component {
                 {heading}
               </Text>
               {this.renderControl()}
-              <Content>{content}</Content>
+              <div ref={this.content}>
+                <Content>{content}</Content>
+              </div>
             </ContentSection>
             {this.renderCloseButton()}
           </Container>
