@@ -186,6 +186,9 @@ rows:
   - Prop: load
     Type: Function
     Notes: This argument should be invoked with a value of true when the imageRef is ready to be loaded. For example, you can use an IntersectionObserver to trigger this function once the imageRef enters the user's viewport.
+  - Prop: isLoaded
+    Type: Boolean
+    Notes: Distinguishes whether the asset is loaded.
 ```
 
 ### Lazy Responsive Image (1:1)

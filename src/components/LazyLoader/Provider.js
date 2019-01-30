@@ -52,7 +52,8 @@ class LazyLoaderProvider extends PureComponent {
       style: { ...style, ...BLUR_STYLES },
       imageRef: createRef(),
       backgroundRef: tag === "img" ? null : createRef(),
-      load: this.load
+      load: this.load,
+      isLoaded: false
     };
     /* eslint-enable */
   }
@@ -62,21 +63,40 @@ class LazyLoaderProvider extends PureComponent {
     const { src: prevSrc } = prevProps;
 
     if (src !== prevSrc) {
+      this.applyBlurs();
+
       /* eslint-disable-next-line react/no-did-update-set-state */
-      this.setState({
-        /* eslint-disable-next-line react/no-unused-state */
-        src: getLowDefSrc({ src, width, height, resizeFn }),
-        /* eslint-disable-next-line react/no-unused-state */
-        style: { ...style, ...BLUR_STYLES }
-      });
+      this.setState(
+        () => ({
+          imageRef: null,
+          backgroundRef: null,
+          /* eslint-disable-next-line react/no-unused-state */
+          src: getLowDefSrc({ src, width, height, resizeFn }),
+          /* eslint-disable-next-line react/no-unused-state */
+          style: { ...style, ...BLUR_STYLES },
+          isLoaded: false
+        }),
+        () => {
+          this.setState({
+            imageRef: createRef(),
+            backgroundRef: createRef()
+          });
+        }
+      );
     }
   }
 
   onLoad = () => {
-    const { imageRef } = this.state;
+    const { imageRef, backgroundRef } = this.state;
 
     if (imageRef && imageRef.current) {
       imageRef.current.style.filter = "none";
+
+      if (!backgroundRef) {
+        this.setState(() => ({
+          isLoaded: true
+        }));
+      }
     }
   };
 
@@ -86,12 +106,29 @@ class LazyLoaderProvider extends PureComponent {
     if (backgroundRef && backgroundRef.current) {
       backgroundRef.current.style.backgroundImage = `url(${srcVariant})`;
       backgroundRef.current.style.filter = "none";
+
+      this.setState(() => ({
+        isLoaded: true
+      }));
     }
   };
 
   onLoadBoth = srcVariant => () => {
     this.onLoad();
     this.onLoadBg(srcVariant);
+  };
+
+  applyBlurs = () => {
+    const { imageRef, backgroundRef } = this.state;
+
+    if (imageRef && imageRef.current) {
+      imageRef.current.style.filter = "blur(10px)";
+      imageRef.current.src = "";
+      imageRef.current.srcset = "";
+    }
+
+    if (backgroundRef && backgroundRef.current)
+      backgroundRef.current.style.filter = "blur(10px)";
   };
 
   load = ready => {
