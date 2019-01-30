@@ -2,13 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import PureListRowContent from "./PureRowContent";
-import { rowDataShape } from "./shape";
 import { ItemContainerConsumer } from "./Context";
 import { determineIfOpen } from "./helper";
 
 const PureListRow = ({
   children,
-  rowItem,
   index,
   onOverflowClick,
   onExpandItem,
@@ -26,7 +24,7 @@ const PureListRow = ({
         isOpen={determineIfOpen(expandMultiple, openIndex, index)}
         index={index}
         onOverflowClick={() => {
-          renderIntoPortal({ children, contentType: "mobile", data: rowItem });
+          renderIntoPortal({ children, contentType: "mobile" });
           onOverflowClick();
         }}
         onExpandItem={onExpandItem}
@@ -47,7 +45,6 @@ PureListRow.defaultProps = {
 };
 
 PureListRow.propTypes = {
-  rowItem: PropTypes.shape(rowDataShape).isRequired,
   index: PropTypes.number.isRequired,
   onOverflowClick: PropTypes.func.isRequired,
   children: PropTypes.node,
