@@ -123,6 +123,7 @@ export {
   UserIcon,
   ListIcon,
   WarningIcon,
+  RefreshIcon,
   VenueSearchIcon
 } from "./components/Icons";
 export {
