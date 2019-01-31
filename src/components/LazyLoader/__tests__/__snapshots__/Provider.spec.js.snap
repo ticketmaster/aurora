@@ -10,6 +10,7 @@ Object {
       "style": Object {},
     },
   },
+  "isLoaded": false,
   "load": [Function],
   "src": "https://placekitten.com/g/40/40",
   "style": Object {
@@ -95,6 +96,7 @@ exports[`LazyLoaderProvider should load a low res, blurred version of the image 
 
 exports[`LazyLoaderProvider should low res, blurred version of the image passed prior to loading when the tag equals div, imageRef supports src or srcset, and backgroundRef supports a backgroundImage style 1`] = `
 <div
+  isLoaded={false}
   load={[Function]}
   src="https://placekitten.com/g/40/40"
   style={
