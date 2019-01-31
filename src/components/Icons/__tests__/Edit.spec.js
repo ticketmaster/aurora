@@ -7,8 +7,15 @@ import { EditIcon } from "../";
 describe("EditIcon", () => {
   const children = <title>Edit Icon</title>;
 
-  it("renders correctly", () => {
+  it("large renders correctly", () => {
     const component = renderer.create(<EditIcon>{children}</EditIcon>);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+  it("small renders correctly", () => {
+    const component = renderer.create(
+      <EditIcon size="small">{children}</EditIcon>
+    );
 
     expect(component.toJSON()).toMatchSnapshot();
   });

@@ -122,7 +122,7 @@ export const sections = [
     items: [
       {
         title: "Sell Tickets",
-        icon: <TicketIcon size={26} color={colors.blackPearl} />,
+        icon: <TicketIcon color={colors.blackPearl} />,
         onItemClick: () => {}
       }
     ]

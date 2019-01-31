@@ -13,9 +13,7 @@ import {
 
 const LinkCtaBase = styled.a`
   text-decoration: none;
-  transition: color 0.3s ease;
-  transition: text-decoration 0.3s ease;
-  transition: transform 0.1s linear;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
   font-weight: ${typography.weight.semiBold};
   ${({ size }) => responsiveSizeMixin(size)};
   line-height: ${typography.lineHeight.header};
@@ -27,12 +25,7 @@ const LinkCtaBase = styled.a`
     text-decoration: underline;
   }
 
-  &:visited {
-    color: ${getThemeValue("primary", "dark")};
-  }
-
   &:active {
-    transform: scale(0.98, 0.98) translate(0, 1px);
     color: ${getThemeValue("primary", "dark")};
   }
 

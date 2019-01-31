@@ -18,7 +18,7 @@ const StyledPopOver = styled.div`
   position: absolute;
   max-width: 300px;
   padding: ${spacing.moderate};
-  z-index: ${zIndex.layout.overlay};
+  z-index: ${({ zInd }) => zInd};
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
   transition: opacity 0.1s ${constants.easing.easeInQuad},
     transform 0.1s ${constants.easing.easeInQuad};
@@ -314,7 +314,7 @@ class PopOver extends Component {
   };
 
   render() {
-    const { children, isVisible, noBorders } = this.props;
+    const { children, isVisible, noBorders, zInd } = this.props;
 
     return (
       <CSSTransition
@@ -328,6 +328,7 @@ class PopOver extends Component {
           ref={this.myRef}
           isVisible={isVisible}
           noBorders={noBorders}
+          zInd={zInd}
         >
           {children}
         </StyledPopOver>
@@ -351,7 +352,8 @@ PopOver.propTypes = {
     clientHeight: PropTypes.number,
     offsetLeft: PropTypes.number,
     clientWidth: PropTypes.number
-  })
+  }),
+  zInd: PropTypes.number
 };
 
 PopOver.defaultProps = {
@@ -368,7 +370,8 @@ PopOver.defaultProps = {
     clientHeight: 0,
     offsetLeft: 0,
     clientWidth: 0
-  }
+  },
+  zInd: zIndex.layout.overlay
 };
 
 PopOver.displayName = "PopOver";

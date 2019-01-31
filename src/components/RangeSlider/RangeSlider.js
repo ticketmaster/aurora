@@ -345,11 +345,11 @@ class RangeSlider extends React.Component {
     global.window.removeEventListener("mouseup", this.onEnd);
   }
 
-  calcOffset(value) {
+  calcOffset = value => {
     const { min, max } = this.props;
     const ratio = (value - min) / (max - min);
     return ratio * 100;
-  }
+  };
 
   saveHandle(index, handle) {
     this.handlesRefs[index] = handle;
@@ -358,13 +358,13 @@ class RangeSlider extends React.Component {
   renderHandles = () => {
     const { bounds } = this.state;
     const { disabled, min, max } = this.props;
-    const offsets = bounds.map(v => this.calcOffset(v));
+    const offsets = bounds.map(this.calcOffset);
 
     return bounds.map((v, i) => {
       const key = i + 1;
       const classes = classNames("slider__handle", {
         [`slider__handle-${i + 1}`]: true,
-        "slider__handle--disbaled": disabled
+        "slider__handle--disabled": disabled
       });
 
       return (
@@ -385,7 +385,7 @@ class RangeSlider extends React.Component {
   renderTrack = () => {
     const { bounds } = this.state;
     const { disabled } = this.props;
-    const offsets = bounds.map(v => this.calcOffset(v));
+    const offsets = bounds.map(this.calcOffset);
 
     return bounds.slice(0, -1).map((_, index) => {
       const i = index + 1;

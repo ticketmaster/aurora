@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const GooglePlayIcon = ({ size, ...props }) => (
   <svg {...props} viewBox="0 0 48 48" width={size} height={size}>
-    <g id="surface1">
+    <g>
       <path
         fill="#4DB6AC"
         d="M 7.703125 4.042969 C 7.292969 4.148438 7 4.507813 7 5.121094 C 7 6.921875 7 23.914063 7 23.914063 C 7 23.914063 7 42.28125 7 43.089844 C 7 43.535156 7.195313 43.835938 7.5 43.945313 L 27.679688 23.882813 Z "

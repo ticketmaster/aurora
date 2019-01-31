@@ -38,17 +38,17 @@ const global = {
   error: {
     base: "#d93a3a",
     dark: "#a22b2b",
-    light: "#ffeded"
+    light: "#f3c3c3"
   },
   caution: {
     base: "#f2bd2a",
     dark: "#b98800",
-    light: "#fff5d9"
+    light: "#fae5aa"
   },
   success: {
     base: "#1bab1e",
     dark: "#148016",
-    light: "#dbf3db"
+    light: "#bae5bb"
   },
   transparent: "transparent",
   onyx: {
