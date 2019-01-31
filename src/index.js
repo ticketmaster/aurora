@@ -22,6 +22,7 @@ export { default as FeedbackInline } from "./components/FeedbackInline";
 export {
   ListContainer,
   ListRow,
+  PureListRow,
   ListRowOverflow,
   Section,
   SectionItem
