@@ -4,6 +4,9 @@ import getThemeValue from "../../utils/getThemeValue";
 import { CloseIcon as CrossIcon } from "../Icons";
 import { LinkCta, Text } from "../Text";
 
+export const BASE_BANNER_HEIGHT = 56;
+export const MAX_BANNER_HEIGHT = 1000;
+
 export const Link = styled(LinkCta)`
   color: #0064e6;
   padding-left: 4px;
@@ -20,7 +23,6 @@ export const Container = styled.div`
   border-radius: ${constants.borderRadius.large};
   display: flex;
   overflow: hidden;
-  max-height: 500px;
   transition: max-height 0.3s ${constants.easing.easeInOutQuad},
     opacity 0.3s ${constants.easing.easeInQuad};
   background-color: ${getThemeValue("white", "muted")};
@@ -31,10 +33,6 @@ export const Container = styled.div`
     transition: max-height 0.3s ${constants.easing.easeInOutQuad},
       opacity 0.3s ${constants.easing.easeInOutQuad};
     opacity: 1;
-  }
-
-  &.collapsed {
-    max-height: 56px;
   }
 
   &.banner-variant-error {

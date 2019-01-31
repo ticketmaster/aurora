@@ -87,7 +87,7 @@ rows:
   <Spacing bottom={{small: "moderate"}}/>
   <Banner
     heading="This is your primary message text."
-    content="As a result, Audiences and other customer-related features in Fan are not    available. We are working to restore it as soon as possible. You can still work      with Pixels and CFCs during this time. Now is the time for all great men to come to  the aid of their party."
+    content="As a result, Audiences and other customer-related features in Fan are not    available. We are working to restore it as soon as possible. You can still work      with Pixels and CFCs during this time. Now is the time for all great men to come to  the aid of their party.As a result, Audiences and other customer-related features in Fan are not    available. We are working to restore it as soon as possible. You can still work      with Pixels and CFCs during this time. Now is the time for all great men to come to  the aid of their party."
     onButtonClick={() => {
       console.log('onControlClick');
     }}
