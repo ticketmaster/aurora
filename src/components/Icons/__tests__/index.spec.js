@@ -30,7 +30,8 @@ import {
   VolumeLowIcon,
   VolumeMediumIcon,
   VolumeMuteIcon,
-  WillCallIcon
+  WillCallIcon,
+  RefreshIcon
 } from "../index";
 
 describe("icons", () => {
@@ -222,6 +223,13 @@ describe("icons", () => {
   it("WillCallIcon should match snapshot", () => {
     const tree = renderer
       .create(<WillCallIcon>{children}</WillCallIcon>)
+      .toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+  it("RefreshIcon should match snapshot", () => {
+    const tree = renderer
+      .create(<RefreshIcon>{children}</RefreshIcon>)
       .toJSON();
 
     expect(tree).toMatchSnapshot();
