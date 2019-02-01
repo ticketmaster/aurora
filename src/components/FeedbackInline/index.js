@@ -8,7 +8,9 @@ import {
   IconSection,
   ContentSection,
   Link,
-  Heading
+  Heading,
+  MAX_FEEDBACK_HEIGHT,
+  BASE_FEEDBACK_HEIGHT
 } from "./FeedbackInline.styles";
 
 export function contentValidator(props, propName, componentName) {
@@ -46,7 +48,8 @@ class FeedbackInline extends Component {
     buttonProps: PropTypes.shape(),
     style: PropTypes.shape(),
     variant: PropTypes.oneOf(variants),
-    icon: PropTypes.node
+    icon: PropTypes.node,
+    iconClassName: PropTypes.string
   };
 
   static defaultProps = {
@@ -58,17 +61,54 @@ class FeedbackInline extends Component {
     buttonProps: {},
     style: {},
     variant: null,
-    icon: null
+    icon: null,
+    iconClassName: ""
   };
 
+  // Container max height should be handled programmatically as content height is unknown
   state = {
-    isExpanded: this.props.isExpanded
+    isExpanded: this.props.isExpanded,
+    maxHeight: this.props.isExpanded
+      ? `${MAX_FEEDBACK_HEIGHT}px` // max height if banner is expanded during first render
+      : `${BASE_FEEDBACK_HEIGHT}px`
   };
+
+  componentDidMount() {
+    // update max height to the correct value so animation works correctly
+    if (this.props.content && this.state.isExpanded) {
+      // with expanded content
+      const maxHeight =
+        this.content.current.offsetHeight +
+        this.heading.current.offsetHeight +
+        BASE_FEEDBACK_HEIGHT;
+
+      /* eslint-disable react/no-did-mount-set-state */
+      this.setState({ maxHeight: `${maxHeight}px` });
+    } else {
+      // without content or collapsed
+      const maxHeight =
+        this.heading.current.offsetHeight + BASE_FEEDBACK_HEIGHT;
+      this.setState({ maxHeight: `${maxHeight}px` });
+      /* eslint-enable react/no-did-mount-set-state */
+    }
+  }
+
+  content = React.createRef();
+  heading = React.createRef();
 
   toggleContent = () => {
     const { onButtonClick } = this.props;
+    const contentHeight = this.content.current.offsetHeight;
+    const headingHeight = this.heading.current.offsetHeight;
+    const collapsedMaxHeight = `${headingHeight + BASE_FEEDBACK_HEIGHT}px`;
+    const expandedMaxHeight = `${contentHeight +
+      headingHeight +
+      BASE_FEEDBACK_HEIGHT}px`;
 
-    this.setState(({ isExpanded }) => ({ isExpanded: !isExpanded }));
+    this.setState(({ isExpanded }) => ({
+      isExpanded: !isExpanded,
+      maxHeight: isExpanded ? collapsedMaxHeight : expandedMaxHeight
+    }));
 
     if (onButtonClick) {
       onButtonClick();
@@ -76,29 +116,48 @@ class FeedbackInline extends Component {
   };
 
   renderControl = () => {
-    const { expandedText, collapsedText, buttonProps } = this.props;
+    const {
+      href,
+      linkText,
+      expandedText,
+      collapsedText,
+      linkProps,
+      buttonProps
+    } = this.props;
     const { isExpanded } = this.state;
 
+    if (!linkText && !expandedText && !collapsedText) {
+      return null;
+    }
+
+    const props = href
+      ? { ...linkProps, href }
+      : { ...buttonProps, onClick: this.toggleContent };
+
+    const text = linkText || (isExpanded ? expandedText : collapsedText);
+
     return (
-      <Link size="hecto" onClick={this.toggleContent} {...buttonProps}>
-        {isExpanded ? expandedText : collapsedText}
+      <Link size="hecto" {...props}>
+        {text}
       </Link>
     );
   };
 
   renderIcon = () => {
-    const { variant, icon } = this.props;
+    const { variant, icon, iconClassName } = this.props;
     if (!variant && !icon) {
       return null;
     }
     const Icon = variantsIcons[variant];
 
-    return icon || <Icon type="filled" size="regular" />;
+    return (
+      icon || <Icon type="filled" size="regular" className={iconClassName} />
+    );
   };
 
   render() {
     const { heading, content, variant, style } = this.props;
-    const { isExpanded } = this.state;
+    const { isExpanded, maxHeight } = this.state;
 
     return (
       <Container
@@ -106,15 +165,19 @@ class FeedbackInline extends Component {
           collapsed: !isExpanded,
           [`banner-variant--${variant}`]: variant
         })}
-        style={{ ...style }}
+        style={{ ...style, maxHeight }}
       >
         <IconSection>{this.renderIcon()}</IconSection>
         <ContentSection>
-          <Heading tag="div" weight="semiBold">
-            {heading}
-          </Heading>
-          {this.renderControl()}
-          <Content>{content}</Content>
+          <div ref={this.heading}>
+            <Heading tag="span" weight="semiBold">
+              {heading}
+            </Heading>
+            {this.renderControl()}
+          </div>
+          <div ref={this.content}>
+            <Content>{content}</Content>
+          </div>
         </ContentSection>
       </Container>
     );

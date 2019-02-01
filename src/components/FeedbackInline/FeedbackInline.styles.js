@@ -3,7 +3,11 @@ import { spacing, constants, typography } from "../../theme";
 import getThemeValue from "../../utils/getThemeValue";
 import { LinkCta, Text } from "../Text";
 
+export const MAX_FEEDBACK_HEIGHT = 1000;
+export const BASE_FEEDBACK_HEIGHT = 21;
+
 export const Link = styled(LinkCta)`
+  padding-left: ${spacing.slim};
   color: ${getThemeValue("primary", "base")};
 `;
 
@@ -11,13 +15,8 @@ export const Container = styled.div`
   position: relative;
   display: inline-flex;
   overflow: hidden;
-  max-height: 500px;
   transition: max-height 0.3s ${constants.easing.easeInOutQuad};
   box-sizing: border-box;
-
-  &.collapsed {
-    max-height: 38px;
-  }
 `;
 
 export const ContentSection = styled.div`
@@ -37,7 +36,7 @@ export const Content = styled(Text)`
 `;
 
 export const IconSection = styled.div`
-  padding: ${spacing.cozy} ${spacing.cozy} 0 0;
+  padding-right: ${spacing.cozy};
 `;
 
 export const Heading = styled(Text)`

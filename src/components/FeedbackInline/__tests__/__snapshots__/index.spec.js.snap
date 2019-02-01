@@ -3,27 +3,27 @@
 exports[`<FeedbackInline /> renders correctly 1`] = `
 <div>
   <div
-    class="collapsed sc-VigVT cuPYes"
+    class="collapsed sc-VigVT joHkLC"
+    style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG Mrtrz"
+      class="sc-jzJRlG cmLmZf"
     />
     <div
       class="sc-jTzLTM iMznVS"
     >
-      <div
-        class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
-      >
-        This is your primary message text.
+      <div>
+        <span
+          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+        >
+          This is your primary message text.
+        </span>
       </div>
-      <button
-        class="sc-gqjmRU dfSICZ sc-dnqmqq lnMfTt"
-        rel=""
-        target="_self"
-      />
-      <div
-        class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
-      />
+      <div>
+        <div
+          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -32,12 +32,14 @@ exports[`<FeedbackInline /> renders correctly 1`] = `
 exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant--alert sc-VigVT cuPYes"
+    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG Mrtrz"
+      class="sc-jzJRlG cmLmZf"
     >
       <svg
+        class=""
         height="24"
         viewBox="0 0 24 24"
         width="24"
@@ -70,22 +72,26 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
     <div
       class="sc-jTzLTM iMznVS"
     >
-      <div
-        class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
-      >
-        This is your primary message text.
+      <div>
+        <span
+          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+        >
+          This is your primary message text.
+        </span>
+        <button
+          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          rel=""
+          target="_self"
+        >
+          collapsed
+        </button>
       </div>
-      <button
-        class="sc-gqjmRU dfSICZ sc-dnqmqq lnMfTt"
-        rel=""
-        target="_self"
-      >
-        collapsed
-      </button>
-      <div
-        class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
-      >
-        test content
+      <div>
+        <div
+          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+        >
+          test content
+        </div>
       </div>
     </div>
   </div>
@@ -95,12 +101,14 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 exports[`<FeedbackInline /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed banner-variant--alert sc-VigVT cuPYes"
+    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG Mrtrz"
+      class="sc-jzJRlG cmLmZf"
     >
       <svg
+        class=""
         height="24"
         viewBox="0 0 24 24"
         width="24"
@@ -133,22 +141,26 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
     <div
       class="sc-jTzLTM iMznVS"
     >
-      <div
-        class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
-      >
-        This is your primary message text.
+      <div>
+        <span
+          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+        >
+          This is your primary message text.
+        </span>
+        <button
+          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          rel=""
+          target="_self"
+        >
+          collapsed
+        </button>
       </div>
-      <button
-        class="sc-gqjmRU dfSICZ sc-dnqmqq lnMfTt"
-        rel=""
-        target="_self"
-      >
-        collapsed
-      </button>
-      <div
-        class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
-      >
-        test content
+      <div>
+        <div
+          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+        >
+          test content
+        </div>
       </div>
     </div>
   </div>
@@ -158,10 +170,11 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
 exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
 <div>
   <div
-    class="collapsed sc-VigVT cuPYes"
+    class="collapsed sc-VigVT joHkLC"
+    style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG Mrtrz"
+      class="sc-jzJRlG cmLmZf"
     >
       <svg
         height="24"
@@ -188,22 +201,96 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
     <div
       class="sc-jTzLTM iMznVS"
     >
-      <div
-        class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
-      >
-        This is your primary message text.
+      <div>
+        <span
+          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+        >
+          This is your primary message text.
+        </span>
+        <button
+          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          rel=""
+          target="_self"
+        >
+          collapsed
+        </button>
       </div>
-      <button
-        class="sc-gqjmRU dfSICZ sc-dnqmqq lnMfTt"
-        rel=""
-        target="_self"
+      <div>
+        <div
+          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+        >
+          test content
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<FeedbackInline /> renders correctly with link 1`] = `
+<div>
+  <div
+    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    style="max-height: 21px;"
+  >
+    <div
+      class="sc-jzJRlG cmLmZf"
+    >
+      <svg
+        class=""
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        collapsed
-      </button>
-      <div
-        class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
-      >
-        test content
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke="none"
+          stroke-width="1"
+        >
+          <path
+            d="M1.07417114,19.9968129 L11.4244437,2.29635624 C11.6102988,1.97851724 12.0186236,1.87152316 12.3364626,2.05737827 C12.4353263,2.11518846 12.5176304,2.19749248 12.5754406,2.29635624 L22.9257131,19.9968129 C23.1115683,20.3146519 23.0045742,20.7229766 22.6867352,20.9088318 C22.5846348,20.9685345 22.4684894,21 22.3502147,21 L1.64966956,21 C1.28147973,21 0.983002892,20.7015232 0.983002892,20.3333333 C0.983002892,20.2150587 1.01446838,20.0989132 1.07417114,19.9968129 Z"
+            fill="#f2bd2a"
+          />
+          <ellipse
+            cx="11.9999421"
+            cy="17.6145298"
+            fill="#FFFFFF"
+            rx="1.04658007"
+            ry="1.03620152"
+          />
+          <path
+            d="M11.9999421,14.5237405 L11.9999421,14.5237405 C12.5779523,14.5237405 13.0465222,14.0551706 13.0465222,13.4771604 L13.0465222,8.31690989 C13.0465222,7.73889968 12.5779523,7.27032982 11.9999421,7.27032982 L11.9999421,7.27032982 C11.4219319,7.27032982 10.9533621,7.73889968 10.9533621,8.31690989 L10.9533621,13.4771604 C10.9533621,14.0551706 11.4219319,14.5237405 11.9999421,14.5237405 Z"
+            fill="#FFFFFF"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="sc-jTzLTM iMznVS"
+    >
+      <div>
+        <span
+          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+        >
+          This is your primary message text.
+        </span>
+        <a
+          class="sc-gqjmRU hsFwTz sc-htoDjs klYiZk"
+          href="https://www.ticketmaster.com/"
+          rel="noopener"
+          target="_blank"
+        >
+          Link
+        </a>
+      </div>
+      <div>
+        <div
+          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+        >
+          test content
+        </div>
       </div>
     </div>
   </div>
