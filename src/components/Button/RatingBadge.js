@@ -8,6 +8,10 @@ import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD } from "../constants";
 
 const StyledBadgeRating = styled(StyledBadge)`
   padding: 0;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 const ContentWrapper = styled.span`
