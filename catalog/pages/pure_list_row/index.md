@@ -54,22 +54,23 @@ rows:
     Notes: Optional. If true, multiple list rows can be expanded simultaneously. If false, only a single list row can be expanded at one time. Default is false.
 ```
 
-### PureListRow
+### ListRow
 
-PureListRow Component with a standard variant. Behavior is inherited from List Row component
+ListRow Component with a pure variant.
 
-### Multiple Pure List Row with row trigger position on the right
+### Multiple List Row with row trigger position on the right
 
 ```react
 responsive: true
 ---
 <div style={{padding: '10px', background: '#fff'}}>
 <ListContainer expandMultiple={true}>
-  <PureListRow
+  <ListRow
     index={0}
     rowTriggerPosition="right"
     onOverflowClick={()=>{}}
     header={listItems[0].header}
+    isPure
   >
     <ListRowOverflow>
       <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -81,13 +82,14 @@ responsive: true
           <SectionItem item={item} key={item.title}/>)}
       </Section>
     </ListRowOverflow>
- </PureListRow>
+ </ListRow>
 
-  <PureListRow
+  <ListRow
     index={1}
     rowTriggerPosition="right"
     onOverflowClick={()=>{}}
     header={listItems[1].header}
+    isPure
    >
     <ListRowOverflow>
       <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -103,13 +105,14 @@ responsive: true
             <SectionItem item={item} key={item.title}/>)}
         </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
 
-  <PureListRow
+  <ListRow
     index={2}
     onOverflowClick={()=>{}}
     header={listItems[2].header}
+    isPure
   >
     <ListRowOverflow>
      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -125,12 +128,13 @@ responsive: true
            <SectionItem item={item} key={item.title}/>)}
        </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
-  <PureListRow
+  <ListRow
     index={3}
     onOverflowClick={()=>{}}
     header={listItems[0].header}
+    isPure
   >
     <ListRowOverflow>
      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -146,7 +150,7 @@ responsive: true
            <SectionItem item={item} key={item.title}/>)}
        </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
 </ListContainer>
 </div>
@@ -160,11 +164,12 @@ responsive: true
 ---
 <div style={{padding: '10px', background: '#fff'}}>
 <ListContainer expandMultiple={true}>
-  <PureListRow
+  <ListRow
     index={0}
     rowTriggerPosition="left"
     onOverflowClick={()=>{}}
     header={listItems[0].header}
+    isPure
   >
     <ListRowOverflow>
       <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -176,13 +181,14 @@ responsive: true
           <SectionItem item={item} key={item.title}/>)}
       </Section>
     </ListRowOverflow>
- </PureListRow>
+ </ListRow>
 
-  <PureListRow
+  <ListRow
     index={1}
     rowTriggerPosition="left"
     onOverflowClick={()=>{}}
     header={listItems[1].header}
+    isPure
    >
     <ListRowOverflow>
       <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -198,14 +204,15 @@ responsive: true
             <SectionItem item={item} key={item.title}/>)}
         </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
 
-  <PureListRow
+  <ListRow
     index={2}
     rowTriggerPosition="left"
     onOverflowClick={()=>{}}
     header={listItems[2].header}
+    isPure
   >
     <ListRowOverflow>
      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -221,13 +228,14 @@ responsive: true
            <SectionItem item={item} key={item.title}/>)}
        </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
-  <PureListRow
+  <ListRow
     index={3}
     rowTriggerPosition="left"
     onOverflowClick={()=>{}}
     header={listItems[0].header}
+    isPure
   >
     <ListRowOverflow>
      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
@@ -243,7 +251,7 @@ responsive: true
            <SectionItem item={item} key={item.title}/>)}
        </Section>
     </ListRowOverflow>
-  </PureListRow>
+  </ListRow>
 
 </ListContainer>
 </div>

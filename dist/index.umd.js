@@ -11308,75 +11308,6 @@
     resetOpenIndex: PropTypes__default.func.isRequired
   };
 
-  var ListRow = function ListRow(_ref) {
-    var children = _ref.children,
-      rowItem = _ref.rowItem,
-      index = _ref.index,
-      _onOverflowClick = _ref.onOverflowClick,
-      onExpandItem = _ref.onExpandItem,
-      onCollapseItem = _ref.onCollapseItem,
-      props = _objectWithoutProperties(_ref, [
-        "children",
-        "rowItem",
-        "index",
-        "onOverflowClick",
-        "onExpandItem",
-        "onCollapseItem"
-      ]);
-
-    return React__default.createElement(Consumer$1, null, function(_ref2) {
-      var openIndex = _ref2.openIndex,
-        expandMultiple = _ref2.expandMultiple,
-        renderIntoPortal = _ref2.renderIntoPortal,
-        restItemContainerProps = _objectWithoutProperties(_ref2, [
-          "openIndex",
-          "expandMultiple",
-          "renderIntoPortal"
-        ]);
-
-      return React__default.createElement(
-        ListRowContent,
-        _extends(
-          {
-            rowItem: rowItem,
-            isOpen: determineIfOpen(expandMultiple, openIndex, index),
-            index: index,
-            onOverflowClick: function onOverflowClick() {
-              renderIntoPortal({
-                children: children,
-                contentType: "mobile",
-                data: rowItem
-              });
-
-              _onOverflowClick();
-            },
-            onExpandItem: onExpandItem,
-            onCollapseItem: onCollapseItem
-          },
-          restItemContainerProps,
-          props
-        ),
-        children
-      );
-    });
-  };
-
-  ListRow.defaultProps = {
-    children: null,
-    onExpandShow: "subTitle",
-    onExpandItem: ListRowContent.defaultProps.onExpandItem,
-    onCollapseItem: ListRowContent.defaultProps.onCollapseItem
-  };
-  ListRow.propTypes = {
-    rowItem: PropTypes__default.shape(rowDataShape).isRequired,
-    index: PropTypes__default.number.isRequired,
-    onOverflowClick: PropTypes__default.func.isRequired,
-    onExpandShow: PropTypes__default.oneOf(["title", "subTitle"]),
-    children: PropTypes__default.node,
-    onExpandItem: ListRowContent.propTypes.onExpandItem,
-    onCollapseItem: ListRowContent.propTypes.onCollapseItem
-  };
-
   function _templateObject4$3() {
     var data = _taggedTemplateLiteral([
       "\n    margin-left: 0;\n    margin-right: 0;\n  "
@@ -11441,9 +11372,10 @@
       "background-color:",
       ";border-bottom:1px solid #ebebeb;border-top:1px solid #ebebeb;border-right:1px solid #fff;border-left:1px solid #fff;margin-bottom:-1px;padding:0 ",
       ";&:first-child{border-top:0px;}",
-      ";.button--expand-or-collapse{margin-right:",
-      ";margin-left:",
-      ";}"
+      ";.button--expand-or-collapse{position:absolute;right:",
+      ";left:",
+      ";z-index:10;margin:0;padding:0;height:calc(100% - ",
+      ");}"
     ],
     colors.white.base,
     spacing.cozy,
@@ -11456,11 +11388,12 @@
       constants.easing.easeInQuad
     ),
     function(props) {
-      return props.rowTriggerPosition === "right" ? "-16px" : "0";
+      return props.rowTriggerPosition === "right" ? "0" : "auto";
     },
     function(props) {
-      return props.rowTriggerPosition === "left" ? "-16px" : "0";
-    }
+      return props.rowTriggerPosition === "left" ? "0" : "auto";
+    },
+    spacing.spacious
   );
   var ListContainer$2 = styled__default.div.withConfig({
     displayName: "PureRowContent__ListContainer",
@@ -11470,7 +11403,7 @@
       "background-color:",
       ";align-items:stretch;display:flex;padding-top:",
       ";padding-bottom:",
-      ";"
+      ";position:relative;"
     ],
     colors.white.base,
     spacing.normal,
@@ -11657,18 +11590,22 @@
     rowTriggerPosition: PropTypes__default.oneOf(["right", "left"])
   };
 
-  var PureListRow = function PureListRow(_ref) {
+  var ListRow = function ListRow(_ref) {
     var children = _ref.children,
+      rowItem = _ref.rowItem,
       index = _ref.index,
       _onOverflowClick = _ref.onOverflowClick,
       onExpandItem = _ref.onExpandItem,
       onCollapseItem = _ref.onCollapseItem,
+      isPure = _ref.isPure,
       props = _objectWithoutProperties(_ref, [
         "children",
+        "rowItem",
         "index",
         "onOverflowClick",
         "onExpandItem",
-        "onCollapseItem"
+        "onCollapseItem",
+        "isPure"
       ]);
 
     return React__default.createElement(Consumer$1, null, function(_ref2) {
@@ -11681,42 +11618,73 @@
           "renderIntoPortal"
         ]);
 
-      return React__default.createElement(
-        PureListRowContent,
-        _extends(
-          {
-            isOpen: determineIfOpen(expandMultiple, openIndex, index),
-            index: index,
-            onOverflowClick: function onOverflowClick() {
-              renderIntoPortal({
-                children: children,
-                contentType: "mobile"
-              });
+      return isPure
+        ? React__default.createElement(
+            PureListRowContent,
+            _extends(
+              {
+                isOpen: determineIfOpen(expandMultiple, openIndex, index),
+                index: index,
+                onOverflowClick: function onOverflowClick() {
+                  renderIntoPortal({
+                    children: children,
+                    contentType: "mobile"
+                  });
 
-              _onOverflowClick();
-            },
-            onExpandItem: onExpandItem,
-            onCollapseItem: onCollapseItem
-          },
-          restItemContainerProps,
-          props
-        ),
-        children
-      );
+                  _onOverflowClick();
+                },
+                onExpandItem: onExpandItem,
+                onCollapseItem: onCollapseItem
+              },
+              restItemContainerProps,
+              props
+            ),
+            children
+          )
+        : React__default.createElement(
+            ListRowContent,
+            _extends(
+              {
+                rowItem: rowItem,
+                isOpen: determineIfOpen(expandMultiple, openIndex, index),
+                index: index,
+                onOverflowClick: function onOverflowClick() {
+                  renderIntoPortal({
+                    children: children,
+                    contentType: "mobile",
+                    data: rowItem
+                  });
+
+                  _onOverflowClick();
+                },
+                onExpandItem: onExpandItem,
+                onCollapseItem: onCollapseItem
+              },
+              restItemContainerProps,
+              props
+            ),
+            children
+          );
     });
   };
 
-  PureListRow.defaultProps = {
+  ListRow.defaultProps = {
     children: null,
-    onExpandItem: PureListRowContent.defaultProps.onExpandItem,
-    onCollapseItem: PureListRowContent.defaultProps.onCollapseItem
+    isPure: false,
+    onExpandShow: "subTitle",
+    onExpandItem: ListRowContent.defaultProps.onExpandItem,
+    onCollapseItem: ListRowContent.defaultProps.onCollapseItem,
+    rowItem: {}
   };
-  PureListRow.propTypes = {
+  ListRow.propTypes = {
+    rowItem: PropTypes__default.shape(rowDataShape),
     index: PropTypes__default.number.isRequired,
     onOverflowClick: PropTypes__default.func.isRequired,
+    onExpandShow: PropTypes__default.oneOf(["title", "subTitle"]),
     children: PropTypes__default.node,
-    onExpandItem: PureListRowContent.propTypes.onExpandItem,
-    onCollapseItem: PureListRowContent.propTypes.onCollapseItem
+    onExpandItem: ListRowContent.propTypes.onExpandItem,
+    onCollapseItem: ListRowContent.propTypes.onCollapseItem,
+    isPure: PropTypes__default.bool
   };
 
   var ListUnstyled = styled__default.ol.withConfig({
@@ -21430,7 +21398,6 @@
   exports.FeedbackInline = FeedbackInline;
   exports.ListContainer = ListContainer;
   exports.ListRow = ListRow;
-  exports.PureListRow = PureListRow;
   exports.ListRowOverflow = ListRowOverflow;
   exports.Section = Section;
   exports.SectionItem = SectionItem;

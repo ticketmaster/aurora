@@ -49,10 +49,14 @@ const RowWrapper = styled.div`
   `};
 
   .button--expand-or-collapse {
-    margin-right: ${props =>
-      props.rowTriggerPosition === "right" ? "-16px" : "0"};
-    margin-left: ${props =>
-      props.rowTriggerPosition === "left" ? "-16px" : "0"};
+    position: absolute;
+    right: ${props => (props.rowTriggerPosition === "right" ? "0" : "auto")};
+    left: ${props => (props.rowTriggerPosition === "left" ? "0" : "auto")};
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    /* spacing.spacious is spacing.normal * 2 - paddings for ListContainer */
+    height: calc(100% - ${spacing.spacious});
   }
 `;
 
@@ -62,6 +66,7 @@ const ListContainer = styled.div`
   display: flex;
   padding-top: ${spacing.normal};
   padding-bottom: ${spacing.normal};
+  position: relative;
 `;
 
 const OverflowDesktopContainer = styled(Column)`

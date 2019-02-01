@@ -4,7 +4,7 @@ import Row from "../../../src/components/Grid/Row";
 import Column from "../../../src/components/Grid/Column";
 import {
   ListContainer,
-  PureListRow,
+  ListRow,
   ListRowOverflow,
   Section,
   SectionItem
@@ -21,7 +21,7 @@ export default {
   path: "/pureListRow",
   title: "Pure List Row",
   imports: {
-    PureListRow,
+    ListRow,
     ListContainer,
     ListRowOverflow,
     Section,
