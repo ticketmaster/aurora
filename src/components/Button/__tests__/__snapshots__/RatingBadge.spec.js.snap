@@ -2,7 +2,7 @@
 
 exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 <button
-  className="ihWbwc"
+  className="fgmUUV"
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -47,7 +47,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 <button
-  className="jraGyQ"
+  className="NfVQf"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -91,7 +91,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 <button
-  className="jraGyQ"
+  className="NfVQf"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -136,7 +136,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 <button
-  className="ihWbwc"
+  className="fgmUUV"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -180,7 +180,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 <button
-  className="ihWbwc"
+  className="fgmUUV"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -225,7 +225,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 <button
-  className="fKtAjT"
+  className="JDXYr"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -269,7 +269,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 
 exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] = `
 <button
-  className="fKtAjT"
+  className="JDXYr"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
