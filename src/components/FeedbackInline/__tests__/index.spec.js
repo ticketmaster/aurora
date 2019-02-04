@@ -4,6 +4,7 @@ import renderer from "react-test-renderer";
 
 import { ClearIcon } from "../../Icons";
 import FeedbackInline, { contentValidator } from "..";
+import { BASE_FEEDBACK_HEIGHT } from "../FeedbackInline.styles";
 
 describe("<FeedbackInline />", () => {
   it("renders correctly", () => {
@@ -18,6 +19,21 @@ describe("<FeedbackInline />", () => {
         content: "test content",
         expandedText: "expanded",
         collapsedText: "collapsed",
+        variant: "alert",
+        onButtonClick: () => {}
+      })
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("renders correctly with link", () => {
+    const { container } = render(
+      renderInlineFeedback({
+        linkText: "Link",
+        href: "https://www.ticketmaster.com/",
+        linkProps: { target: "_blank" },
+        content: "test content",
         variant: "alert",
         onButtonClick: () => {}
       })
@@ -52,21 +68,56 @@ describe("<FeedbackInline />", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("toggleContent toggles state on click and calls onButtonClick prop", () => {
-    const inst = createInlineFeedbackInstance({});
+  it("toggleContent toggles state on click", () => {
+    const inst = createInlineFeedbackInstance(
+      {},
+      {
+        createNodeMock: () => ({
+          offsetHeight: 300
+        })
+      }
+    );
 
     inst.toggleContent();
-    expect(inst.state).toEqual({ isExpanded: true });
+    expect(inst.state).toEqual({
+      isExpanded: true,
+      maxHeight: `${600 + BASE_FEEDBACK_HEIGHT}px`
+    });
+    inst.toggleContent();
+    expect(inst.state).toEqual({
+      isExpanded: false,
+      maxHeight: `${300 + BASE_FEEDBACK_HEIGHT}px`
+    });
   });
 
   it("toggleContent calls onButtonClick prop when it is passed", () => {
     const mockOnButtonClick = jest.fn();
-    const inst = createInlineFeedbackInstance({
-      onButtonClick: mockOnButtonClick
-    });
+    const inst = createInlineFeedbackInstance(
+      {
+        onButtonClick: mockOnButtonClick
+      },
+      {
+        createNodeMock: () => ({
+          offsetHeight: 300
+        })
+      }
+    );
 
     inst.toggleContent();
     expect(mockOnButtonClick.mock.calls.length).toBe(1);
+  });
+
+  it("should set correct state when rendered expanded", () => {
+    const inst = createInlineFeedbackInstance(
+      { isExpanded: true },
+      {
+        createNodeMock: () => ({
+          offsetHeight: 300
+        })
+      }
+    );
+
+    expect(inst.state.maxHeight).toEqual(`${600 + BASE_FEEDBACK_HEIGHT}px`);
   });
 });
 
@@ -129,7 +180,7 @@ function renderInlineFeedback(props = {}) {
   );
 }
 
-function createInlineFeedbackInstance(props = {}) {
+function createInlineFeedbackInstance(props = {}, options = {}) {
   return renderer.create(
     <FeedbackInline
       heading="This is your primary message text."
@@ -138,6 +189,7 @@ function createInlineFeedbackInstance(props = {}) {
       expandedText="expandedText"
       collapsedText="collapsedText"
       {...props}
-    />
+    />,
+    options
   ).root.instance;
 }

@@ -153,15 +153,6 @@ describe("<Banner />", () => {
 
     expect(inst.state.maxHeight).toBe("356px");
   });
-
-  // it('should', () => {
-  //   const inst = createBannerInstance({ isExpanded: true }, {
-  //     createNodeMock: () => ({
-  //       offsetHeight: 300,
-  //     })
-  //   });
-  //   expect(inst.state.maxHeight).toBe('1000px');
-  // })
 });
 
 function renderBanner(props = {}) {

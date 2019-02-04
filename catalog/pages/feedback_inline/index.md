@@ -41,6 +41,10 @@ rows:
     Type: node
     Default: none
     Notes: Allows to pass a custom Icon
+  - Prop: iconClassName
+    Type: string
+    Default: none
+    Notes: Class name for a default icon
 ```
 
 ```react
@@ -76,23 +80,20 @@ rows:
   <FeedbackInline
     heading="Customer data is delayed."
     content="As a result, Audiences and other customer-related features in Fan are   not    available. We are working to restore it as soon as possible. You can    still work      with Pixels and CFCs during this time. Now is the time for     all great men to come to  the aid of their party."
-    expandedText="expandedText"
-    collapsedText="collapsedText"
-    onButtonClick={() => {
-      console.log('onControlClick');
-    }}
     variant="alert"
   />
   <Spacing bottom={{small: "moderate"}}/>
   <FeedbackInline
-    heading="Customer data is up-to-date."
+    heading="Customer data is up-to-date. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu."
     content="As a result, Audiences and other customer-related features in Fan are   not    available. We are working to restore it as soon as possible. You can    still work      with Pixels and CFCs during this time. Now is the time for     all great men to come to  the aid of their party."
-    expandedText="expandedText"
-    collapsedText="collapsedText"
+    linkText="Link"
+    href="https://www.ticketmaster.com/"
+    linkProps={{ target: '_blank' }}
     onButtonClick={() => {
       console.log('onControlClick');
     }}
     variant="success"
+    iconClassName="iconClassName"
   />
   <Spacing bottom={{small: "moderate"}}/>
 </div>
