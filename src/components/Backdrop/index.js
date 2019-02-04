@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
@@ -7,18 +8,17 @@ import { Overlay } from "./index.styles";
 
 export default class Backdrop extends Component {
   static propTypes = {
-    /* eslint-disable-next-line react/forbid-prop-types */
-    childRef: PropTypes.object.isRequired,
+    childRef: PropTypes.object,
     children: PropTypes.node.isRequired,
     overlay: PropTypes.bool,
     isVisible: PropTypes.bool,
     animated: PropTypes.bool,
-    /* eslint-disable-next-line react/forbid-prop-types */
     overlayProps: PropTypes.object,
     onRequestClose: PropTypes.func
   };
 
   static defaultProps = {
+    childRef: React.createRef(),
     overlay: true,
     overlayProps: {},
     onRequestClose: null,

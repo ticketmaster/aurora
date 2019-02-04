@@ -1,3 +1,4 @@
+/* global window: true */
 import React from "react";
 import {
   render,
@@ -5,6 +6,7 @@ import {
   Simulate,
   wait
 } from "react-testing-library";
+import renderer from "react-test-renderer";
 
 import {
   getActionBarShadow,
@@ -13,7 +15,7 @@ import {
   isRequestCloseApproved
 } from "../helper";
 
-import Modal from "../index";
+import ModalWithDeviceSize, { Modal as ModalComponent } from "../index";
 import { withModal } from "../context";
 
 jest.mock("../helper");
@@ -28,14 +30,14 @@ describe("<Modal />", () => {
   describe("render", () => {
     it("should render without errors and pass extra props", () => {
       const { container } = render(
-        <Modal
+        <ModalWithDeviceSize
           containerProps={{ style: { width: "210px" } }}
           actionBarProps={{ backgroundColor: "white" }}
           contentProps={{ onClick: () => {} }}
           bottomActionBarProps={{ backgroundColor: "black" }}
         >
           <div>Modal contents</div>
-        </Modal>
+        </ModalWithDeviceSize>
       );
 
       expect(container).toMatchSnapshot();
@@ -43,12 +45,12 @@ describe("<Modal />", () => {
 
     it("should render with actionBar and bottomActionBar", () => {
       const { container } = render(
-        <Modal
+        <ModalWithDeviceSize
           actionBar={<div>Action bar controls</div>}
           bottomActionBar={<div>Place your controls here</div>}
         >
           <div>Modal contents</div>
-        </Modal>
+        </ModalWithDeviceSize>
       );
 
       expect(container).toMatchSnapshot();
@@ -56,41 +58,25 @@ describe("<Modal />", () => {
 
     it("should not render the modal if it is closed", () => {
       const { container } = render(
-        <Modal isOpened={false}>
+        <ModalWithDeviceSize isOpened={false}>
           <div>Modal contents</div>
-        </Modal>
+        </ModalWithDeviceSize>
       );
 
       expect(container).toMatchSnapshot();
     });
   });
 
-  it("it should set the content `height` based on action bars heights for smaller screens", () => {
-    getContentHeight.mockReturnValue(100);
-
-    const { getByTestId } = renderIntoDocument(
-      <Modal
-        contentProps={{ "data-testid": "modal-content" }}
-        deviceSize={{ isSmall: true }}
-      >
-        <div>Modal contents</div>
-      </Modal>
-    );
-
-    expect(getByTestId("modal-content").style.minHeight).toBe("100");
-    expect(getByTestId("modal-content").style.maxHeight).toBe("100");
-  });
-
   it("it should set the content `maxHeight` based on action bars heights for larger screens", () => {
     getContentHeight.mockReturnValue(100);
 
     const { getByTestId } = renderIntoDocument(
-      <Modal
+      <ModalWithDeviceSize
         contentProps={{ "data-testid": "modal-content" }}
         deviceSize={{ isSmall: false, isMedium: true }}
       >
         <div>Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     expect(getByTestId("modal-content").style.maxHeight).toBe("100");
@@ -98,15 +84,15 @@ describe("<Modal />", () => {
 
   it("should recalculate shadows and content height on props change", () => {
     const { container, rerender } = render(
-      <Modal isOpened={false}>
+      <ModalWithDeviceSize isOpened={false}>
         <div>Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     rerender(
-      <Modal isOpened>
+      <ModalWithDeviceSize isOpened>
         <div>Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     expect(container).toMatchSnapshot();
@@ -118,9 +104,9 @@ describe("<Modal />", () => {
       .mockReturnValueOnce(true);
 
     const { container, getByTestId } = render(
-      <Modal bottomActionBar={<div />}>
+      <ModalWithDeviceSize bottomActionBar={<div />}>
         <div data-testid="content">Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     Simulate.scroll(getByTestId("content"));
@@ -130,9 +116,9 @@ describe("<Modal />", () => {
 
   it("should not fail on scroll when there is no scroll callback", () => {
     const { getByTestId } = render(
-      <Modal contentProps={{ "data-testid": "modal-content" }}>
+      <ModalWithDeviceSize contentProps={{ "data-testid": "modal-content" }}>
         <div>Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     Simulate.scroll(getByTestId("modal-content"));
@@ -142,17 +128,41 @@ describe("<Modal />", () => {
     const scrollSpy = jest.fn();
 
     const { getByTestId } = render(
-      <Modal
+      <ModalWithDeviceSize
         contentProps={{ "data-testid": "modal-content" }}
         onScroll={scrollSpy}
       >
         <div>Modal contents</div>
-      </Modal>
+      </ModalWithDeviceSize>
     );
 
     Simulate.scroll(getByTestId("modal-content"));
 
     expect(scrollSpy).toHaveBeenCalled();
+  });
+
+  it("should remove event listener on componentDidMount", () => {
+    const spy = jest.spyOn(window, "removeEventListener");
+
+    const instance = renderer
+      .create(
+        <ModalComponent deviceSize={{}}>
+          <div>Modal contents</div>
+        </ModalComponent>,
+        {
+          createNodeMock: () => ({
+            style: {
+              maxHeight: 300
+            }
+          })
+        }
+      )
+      .getInstance();
+    instance.componentWillUnmount();
+
+    expect(spy).toHaveBeenCalled();
+
+    spy.mockRestore();
   });
 
   describe("closeModal", () => {
@@ -165,9 +175,9 @@ describe("<Modal />", () => {
       const Component = withModal(MyComponent);
 
       const { container, getByTestId } = render(
-        <Modal>
+        <ModalWithDeviceSize>
           <Component />
-        </Modal>
+        </ModalWithDeviceSize>
       );
 
       Simulate.click(getByTestId("close-modal"));
@@ -186,9 +196,9 @@ describe("<Modal />", () => {
       const Component = withModal(MyComponent);
 
       const { container, getByTestId } = render(
-        <Modal onRequestClose={() => true}>
+        <ModalWithDeviceSize onRequestClose={() => true}>
           <Component />
-        </Modal>
+        </ModalWithDeviceSize>
       );
 
       Simulate.click(getByTestId("close-modal"));

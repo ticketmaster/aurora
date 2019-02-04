@@ -26,8 +26,9 @@ import {
   getActionBarShadow,
   isRequestCloseApproved
 } from "./helper";
+import { throttle } from "../../utils";
 
-class Modal extends React.Component {
+export class Modal extends React.Component {
   static propTypes = {
     actionBar: PropTypes.node,
     bottomActionBar: PropTypes.node,
@@ -77,6 +78,8 @@ class Modal extends React.Component {
     bottomActionBarProps: {}
   };
 
+  static throttleTimout = 100;
+
   state = {
     isOpened: true,
     actionBarShadow: false,
@@ -95,22 +98,35 @@ class Modal extends React.Component {
 
   componentDidMount() {
     if (this.props.isOpened) {
-      this.updateModalHeight();
-      this.updateShadows();
+      this.updateHeightAndShadows();
     }
+    window.addEventListener("resize", this.throttledUpdateHeightAndShadows); // eslint-disable-line
   }
 
   componentDidUpdate(prevProps) {
     if (this.props.isOpened && !prevProps.isOpened) {
-      this.updateModalHeight();
-      this.updateShadows();
+      this.updateHeightAndShadows();
     }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.throttledUpdateHeightAndShadows); // eslint-disable-line
   }
 
   actionBarRef = React.createRef();
   containerRef = React.createRef();
   contentRef = React.createRef();
   bottomActionBarRef = React.createRef();
+
+  throttledUpdateHeightAndShadows = throttle(
+    this.updateHeightAndShadows,
+    Modal.throttleTimout
+  );
+
+  updateHeightAndShadows = () => {
+    this.updateModalHeight();
+    this.updateShadows();
+  };
 
   closeModal = event => {
     const { onRequestClose } = this.props;
@@ -133,10 +149,6 @@ class Modal extends React.Component {
   };
 
   updateModalHeight = () => {
-    const {
-      deviceSize: { isSmall }
-    } = this.props;
-
     const actionBar = this.actionBarRef.current;
     const bottomActionBar = this.bottomActionBarRef.current;
     const content = this.contentRef.current;
@@ -147,10 +159,6 @@ class Modal extends React.Component {
       bottomActionBar,
       container
     });
-
-    if (isSmall) {
-      content.style.minHeight = contentHeight;
-    }
 
     content.style.maxHeight = contentHeight;
   };
@@ -215,7 +223,7 @@ class Modal extends React.Component {
           classNames="open"
         >
           <Backdrop
-            childRef={this.containerRef}
+            overlayProps={{ ref: this.containerRef }}
             onRequestClose={this.closeModal}
             isVisible={isOpened}
             animated
@@ -228,7 +236,6 @@ class Modal extends React.Component {
             >
               <ModalContainer
                 small={getModalSize({ deviceSize, preferredSize: size })}
-                ref={this.containerRef}
                 isOpened={isOpened}
                 size={size}
                 displayTop={displayTop}
