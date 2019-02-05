@@ -156,7 +156,14 @@ class FeedbackInline extends Component {
   };
 
   render() {
-    const { heading, content, variant, style, ...props } = this.props;
+    const {
+      heading,
+      content,
+      variant,
+      style,
+      onButtonClick,
+      ...props
+    } = this.props;
     const { isExpanded, maxHeight } = this.state;
 
     return (
