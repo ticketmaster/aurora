@@ -96,7 +96,7 @@ class FeedbackInline extends Component {
   content = React.createRef();
   heading = React.createRef();
 
-  toggleContent = () => {
+  toggleContent = e => {
     const { onButtonClick } = this.props;
     const contentHeight = this.content.current.offsetHeight;
     const headingHeight = this.heading.current.offsetHeight;
@@ -111,7 +111,7 @@ class FeedbackInline extends Component {
     }));
 
     if (onButtonClick) {
-      onButtonClick();
+      onButtonClick(e);
     }
   };
 
@@ -156,7 +156,7 @@ class FeedbackInline extends Component {
   };
 
   render() {
-    const { heading, content, variant, style } = this.props;
+    const { heading, content, variant, style, ...props } = this.props;
     const { isExpanded, maxHeight } = this.state;
 
     return (
@@ -166,6 +166,7 @@ class FeedbackInline extends Component {
           [`banner-variant--${variant}`]: variant
         })}
         style={{ ...style, maxHeight }}
+        {...props}
       >
         <IconSection>{this.renderIcon()}</IconSection>
         <ContentSection>
