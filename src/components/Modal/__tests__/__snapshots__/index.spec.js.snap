@@ -10,7 +10,7 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
     >
       <div
         class="sc-htpNat fIjnbp"
-        style="min-height: 100; max-height: 100;"
+        style="max-height: 100;"
       >
         <button
           data-testid="close-modal"
@@ -31,7 +31,7 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
     >
       <div
         class="sc-htpNat fIjnbp"
-        style="min-height: 100; max-height: 100;"
+        style="max-height: 100;"
       >
         <button
           data-testid="close-modal"
@@ -127,7 +127,7 @@ exports[`<Modal /> should recalculate shadows and content height on props change
     >
       <div
         class="sc-htpNat fIjnbp"
-        style="min-height: 100; max-height: 100;"
+        style="max-height: 100;"
       >
         <div>
           Modal contents
@@ -148,7 +148,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
     >
       <div
         class="sc-htpNat fIjnbp"
-        style="min-height: 100; max-height: 100;"
+        style="max-height: 100;"
       >
         <div
           data-testid="content"

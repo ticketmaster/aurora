@@ -75,7 +75,7 @@ export const ModalContainer = styled.div`
   border-radius: ${constants.borderRadius.large};
 
   height: auto;
-  max-height: calc(100vh - 88px * 2);
+  max-height: calc(100vh - ${spacing.colossal} * 2);
   overflow: hidden;
 
   ${smallAndUp`

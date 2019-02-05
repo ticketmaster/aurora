@@ -14,7 +14,7 @@ const TEST_1 = [
       clientHeight: 40
     },
     container: {
-      clientHeight: 200
+      clientHeight: 376
     }
   },
   "140px"
@@ -26,7 +26,7 @@ const TEST_2 = [
       clientHeight: 20
     },
     container: {
-      clientHeight: 200
+      clientHeight: 376
     }
   },
   "180px"
@@ -38,7 +38,7 @@ const TEST_3 = [
       clientHeight: 40
     },
     container: {
-      clientHeight: 200
+      clientHeight: 376
     }
   },
   "160px"
@@ -47,7 +47,7 @@ const TEST_3 = [
 const TEST_4 = [
   {
     container: {
-      clientHeight: 200
+      clientHeight: 376
     }
   },
   "200px"
