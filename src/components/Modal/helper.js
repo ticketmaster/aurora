@@ -1,3 +1,7 @@
+import { spacing } from "../../theme";
+
+export const SPACING = spacing.colossal.replace("px", "");
+
 export const getContentHeight = ({ actionBar, bottomActionBar, container }) => {
   const actionBarHeight = actionBar ? actionBar.clientHeight : 0;
 
@@ -6,6 +10,7 @@ export const getContentHeight = ({ actionBar, bottomActionBar, container }) => {
     : 0;
 
   return `${container.clientHeight -
+    SPACING * 2 -
     actionBarHeight -
     bottomActionBarHeight}px`;
 };
