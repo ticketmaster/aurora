@@ -2,31 +2,34 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Catalog } from "catalog";
 
-import home from "./pages/home";
-import colors from "./pages/colors";
-import typography from "./pages/typography";
+import accordion from "./pages/accordion";
+import adaptiveModal from "./pages/adaptive_modal";
+import banner from "./pages/banner";
+import bottomSheet from "./pages/bottom_sheet";
+import breadcrumbs from "./pages/breadcrumbs";
 import buttons from "./pages/buttons";
+import calendarView from "./pages/calendar_view";
+import colors from "./pages/colors";
+
+import deviceConnection from "./pages/device_connection";
+import feedbackInline from "./pages/feedback_inline";
 import grid from "./pages/grid/index";
+import header from "./pages/header";
+import home from "./pages/home";
 import icons from "./pages/icons/index";
 import imageCard from "./pages/image_card";
-import listRow from "./pages/list_row";
-import header from "./pages/header";
-import inputs from "./pages/inputs";
-import navBar from "./pages/nav_bar";
-import bottomSheet from "./pages/bottom_sheet";
 import images from "./pages/images";
-import breadcrumbs from "./pages/breadcrumbs";
-import adaptiveModal from "./pages/adaptive_modal";
-import calendarView from "./pages/calendar_view";
-import popover from "./pages/popover";
-import tooltip from "./pages/tooltip";
-import deviceConnection from "./pages/device_connection";
+import inputs from "./pages/inputs";
+
 import links from "./pages/links";
-import tabs from "./pages/tabs";
-import statusBadge from "./pages/status_badge";
-import banner from "./pages/banner";
-import feedbackInline from "./pages/feedback_inline";
+import listRow from "./pages/list_row";
+import navBar from "./pages/nav_bar";
+import popover from "./pages/popover";
 import rangeSlider from "./pages/range_slider";
+import statusBadge from "./pages/status_badge";
+import tabs from "./pages/tabs";
+import tooltip from "./pages/tooltip";
+import typography from "./pages/typography";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -36,6 +39,7 @@ const pages = [
   home,
   colors,
   typography,
+  accordion,
   buttons,
   grid,
   icons,
