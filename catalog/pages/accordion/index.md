@@ -10,7 +10,7 @@ Accordion Component
   <Accordion>
     <Accordion.Item label="foo">
         {(isOpen, toggle) => (
-          <div label="foo">
+          <React.Fragment>
             <Chevron
               label="foo"
               onClick={toggle}
@@ -18,13 +18,13 @@ Accordion Component
               color="#000"
               isOpen={isOpen}
             />
-            <Section label="foo"/>
+            <h5>I'm an accordion</h5>
             <Accordion.Panel
               isOpen={isOpen}
             >
               foo content
             </Accordion.Panel>
-          </div>
+          </React.Fragment>
         )}
       </Accordion.Item>
   </Accordion>
@@ -38,8 +38,7 @@ Accordion Component
   <Accordion>
     <Accordion.Item label="foo">
         {(isOpen, toggle) => (
-          <div label="foo">
-
+          <React.Fragment>
             <Section>
               <button className="chevron" label="foo" onClick={toggle}>
                 <Chevron
@@ -60,32 +59,30 @@ Accordion Component
                 Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
               </p>
             </Accordion.Panel>
-          </div>
+          </React.Fragment>
         )}
       </Accordion.Item>
       <Accordion.Item label="foobar">
         {(isOpen, toggle) => (
-          <div>
+          <React.Fragment>
              <Section>
-              <Chevron
-                className="chevron"
-                color="#000"
-                isOpen={isOpen}
-                label="foobar"
-                size={15}
-                onClick={toggle}
-              />
+              <button className="chevron" label="foobar" onClick={toggle}>
+                <Chevron
+                  color="#000"
+                  isOpen={isOpen}
+                  size={15}
+                />
+              </button>
+              <div className="date">date</div>
               <div className="cta">cta</div>
               <div className="section">section</div>
             </Section>
-            <Accordion.Panel
-              isOpen={isOpen}
-            >
+            <Accordion.Panel isOpen={isOpen}>
               <p>
                 Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
               </p>
             </Accordion.Panel>
-          </div>
+          </React.Fragment>
         )}
       </Accordion.Item>
   </Accordion>

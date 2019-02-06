@@ -30,6 +30,7 @@ class Accordion extends Component {
   }
 
   onClick = e => {
+    e.stopPropagation();
     const label = e.target.getAttribute("label");
 
     const {
