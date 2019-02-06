@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-
 import ChevronIcon from "../../components/Icons/Chevron";
 
 const Chevron = styled(ChevronIcon)`

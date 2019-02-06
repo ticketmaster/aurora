@@ -12,10 +12,10 @@ import AccordionPanel from "./AccordionPanel";
 // `;
 
 class Accordion extends Component {
-  // static propTypes = {
-  //   allowMultipleOpen: PropTypes.bool,
-  //   children: PropTypes.any.isRequired
-  // };
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    allowMultipleOpen: PropTypes.bool
+  };
 
   static defaultProps = {
     allowMultipleOpen: false
@@ -101,15 +101,6 @@ class Accordion extends Component {
     return <div className="accordion">{clonedChildren}</div>;
   }
 }
-
-Accordion.defaultProps = {
-  allowMultipleOpen: false
-};
-
-Accordion.propTypes = {
-  children: PropTypes.node.isRequired,
-  allowMultipleOpen: PropTypes.bool
-};
 
 Accordion.Item = AccordionItem;
 Accordion.Panel = AccordionPanel;

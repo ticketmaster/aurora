@@ -39,14 +39,45 @@ Accordion Component
     <Accordion.Item label="foo">
         {(isOpen, toggle) => (
           <div label="foo">
-            <Chevron
-              label="foo"
-              onClick={toggle}
-              size={15}
-              color="#000"
+
+            <Section>
+              <Chevron
+                className="chevron"
+                color="#000"
+                isOpen={isOpen}
+                label="foo"
+                size={15}
+                onClick={toggle}
+              />
+              <div className="cta">cta</div>
+              <div className="section">section</div>
+            </Section>
+
+            <Accordion.Panel
               isOpen={isOpen}
-            />
-            <Section label="foo"/>
+            >
+              <p>
+                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
+              </p>
+            </Accordion.Panel>
+          </div>
+        )}
+      </Accordion.Item>
+      <Accordion.Item label="foobar">
+        {(isOpen, toggle) => (
+          <div>
+             <Section>
+              <Chevron
+                className="chevron"
+                color="#000"
+                isOpen={isOpen}
+                label="foobar"
+                size={15}
+                onClick={toggle}
+              />
+              <div className="cta">cta</div>
+              <div className="section">section</div>
+            </Section>
             <Accordion.Panel
               isOpen={isOpen}
             >

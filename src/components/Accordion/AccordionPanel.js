@@ -1,10 +1,13 @@
 import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
 
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
 import constants from "../../theme/constants";
 
 const AccordionPanel = styled.div`
+  max-height: 0;
+  overflow: hidden;
   padding: 0 ${spacing.cozy};
   border-top: 1px solid ${colors.diatomite};
   color: ${colors.blackPearl};
@@ -25,5 +28,9 @@ const AccordionPanel = styled.div`
       opacity: 0;
     `};
 `;
+
+AccordionPanel.PropTypes = {
+  children: PropTypes.node
+};
 
 export default AccordionPanel;
