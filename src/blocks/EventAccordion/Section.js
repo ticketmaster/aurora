@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 const Grid = styled.div`
   display: grid;
-  grid-template-areas: "chevron section section section section cta";
-  grid-template-columns: 16px 1fr 1fr 1fr 1fr 50px;
+  grid-template-areas: "chevron date section section section section cta";
+  grid-template-columns: 16px 116px 1fr 1fr 1fr 1fr 50px;
   grid-gap: 16px 16px;
-  background-color: #2196f3;
+  background-color: #2196f314;
   padding: 10px;
 
   && div {
@@ -25,12 +25,15 @@ const Grid = styled.div`
   && .chevron {
     grid-area: chevron;
   }
+
+  && .date {
+    grid-area: date;
+  }
 `;
 
 const Section = ({ children, ...rest }) => (
   <Grid className="grid" {...rest}>
-    {" "}
-    {children}{" "}
+    {children}
   </Grid>
 );
 

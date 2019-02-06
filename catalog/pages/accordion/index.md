@@ -41,14 +41,14 @@ Accordion Component
           <div label="foo">
 
             <Section>
-              <Chevron
-                className="chevron"
-                color="#000"
-                isOpen={isOpen}
-                label="foo"
-                size={15}
-                onClick={toggle}
-              />
+              <button className="chevron" label="foo" onClick={toggle}>
+                <Chevron
+                  color="#000"
+                  isOpen={isOpen}
+                  size={15}
+                />
+              </button>
+              <div className="date">date</div>
               <div className="cta">cta</div>
               <div className="section">section</div>
             </Section>
