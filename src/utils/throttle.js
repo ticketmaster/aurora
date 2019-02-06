@@ -1,7 +1,6 @@
 export default (callback, wait, immediate = false) => {
   let timeout = null;
   let initialCall = true;
-
   // eslint-disable-next-line func-names
   return function(...args) {
     const callNow = immediate && initialCall;

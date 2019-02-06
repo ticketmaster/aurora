@@ -2,6 +2,7 @@ import { pageLoader } from "catalog";
 import AdaptiveModal from "../../../src/components/Modal";
 import DeviceSizeProvider from "../../../src/components/DeviceSize/Provider";
 import { Button } from "../../../src/components/Button";
+import ModalDemo from "./demo";
 
 export default {
   path: "modal",
@@ -9,7 +10,8 @@ export default {
   imports: {
     AdaptiveModal,
     Button,
-    DeviceSizeProvider
+    DeviceSizeProvider,
+    ModalDemo
   },
   content: pageLoader(() => import("./index.md"))
 };
