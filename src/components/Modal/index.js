@@ -118,15 +118,15 @@ export class Modal extends React.Component {
   contentRef = React.createRef();
   bottomActionBarRef = React.createRef();
 
-  throttledUpdateHeightAndShadows = throttle(
-    this.updateHeightAndShadows,
-    Modal.throttleTimout
-  );
-
   updateHeightAndShadows = () => {
     this.updateModalHeight();
     this.updateShadows();
   };
+
+  throttledUpdateHeightAndShadows = throttle(
+    this.updateHeightAndShadows,
+    Modal.throttleTimout
+  );
 
   closeModal = event => {
     const { onRequestClose } = this.props;

@@ -44,6 +44,10 @@ rows:
     Notes: Optional. Callback is fired when the user scrolls modal's content
 ```
 
+```react
+<ModalDemo />
+```
+
 ### Default AdaptiveModal with default action bars
 
 ```react
