@@ -5,12 +5,14 @@ import styled, { css } from "styled-components";
 const StyledAccordionItem = styled.div`
   background: white;
   overflow: hidden;
-  padding: 15px;
+  min-height: 55px;
 
   ${({ isOpen }) =>
     isOpen &&
     css`
-      color: red;
+      box-shadow: rgba(0, 0, 0, 0.01) 0px 4px 8px 0px,
+        rgba(0, 0, 0, 0.19) 0px 4px 10px 0px;
+      margin-bottom: 12px;
     `} ${({ isOpen }) =>
     !isOpen &&
     css`
@@ -19,7 +21,7 @@ const StyledAccordionItem = styled.div`
 `;
 
 const AccordionItem = ({ children, isOpen = false, toggle }) => (
-  <StyledAccordionItem isOpen={isOpen}>
+  <StyledAccordionItem className="accordion-item" isOpen={isOpen}>
     {children(isOpen, toggle)}
   </StyledAccordionItem>
 );

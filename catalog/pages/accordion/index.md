@@ -40,16 +40,16 @@ Accordion Component
         {(isOpen, toggle) => (
           <React.Fragment>
             <Section>
-              <button className="chevron" label="foo" onClick={toggle}>
+              <button className="section-chevron" label="foo" onClick={toggle}>
                 <Chevron
                   color="#000"
                   isOpen={isOpen}
                   size={15}
                 />
               </button>
-              <div className="date">date</div>
-              <div className="cta">cta</div>
-              <div className="section">section</div>
+              <div className="section-date">date</div>
+              <div className="section-cta">cta</div>
+              <div className="section-header">section</div>
             </Section>
 
             <Accordion.Panel
@@ -68,14 +68,15 @@ Accordion Component
              <Section>
               <button className="chevron" label="foobar" onClick={toggle}>
                 <Chevron
+                  className="chevron"
                   color="#000"
                   isOpen={isOpen}
                   size={15}
                 />
               </button>
-              <div className="date">date</div>
-              <div className="cta">cta</div>
-              <div className="section">section</div>
+              <div className="section-date">date</div>
+              <div className="section-cta">cta</div>
+              <div className="section-header">section</div>
             </Section>
             <Accordion.Panel isOpen={isOpen}>
               <p>
