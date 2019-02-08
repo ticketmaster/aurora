@@ -71,7 +71,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
       class="sc-bdVaJa dBIbMe"
     >
       <div
-        class="sc-bwzfXH bLkgfD"
+        class="sc-bwzfXH dvEnmx"
       >
         <div>
           Action bar controls
@@ -85,7 +85,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
         </div>
       </div>
       <div
-        class="sc-bxivhb jhtazh"
+        class="sc-bxivhb irByDn"
       >
         <div>
           Place your controls here
@@ -157,7 +157,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
         </div>
       </div>
       <div
-        class="sc-bxivhb jhtazh"
+        class="sc-bxivhb irByDn"
       >
         <div />
       </div>
