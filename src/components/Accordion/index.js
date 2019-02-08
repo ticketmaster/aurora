@@ -1,16 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
 
 import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
-
-const StyledAccordion = styled.div`
-  .section-date:hover,
-  .section-header:hover {
-    background: blue;
-  }
-`;
 
 class Accordion extends Component {
   static propTypes = {
@@ -100,9 +92,7 @@ class Accordion extends Component {
         toggle: e => this.onClick(e)
       })
     );
-    return (
-      <StyledAccordion className="accordion">{clonedChildren}</StyledAccordion>
-    );
+    return <div className="accordion">{clonedChildren}</div>;
   }
 }
 

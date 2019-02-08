@@ -11,18 +11,9 @@ Accordion Component
     <Accordion.Item label="foo">
         {(isOpen, toggle) => (
           <React.Fragment>
-            <Chevron
-              label="foo"
-              onClick={toggle}
-              size={15}
-              color="#000"
-              isOpen={isOpen}
-            />
-            <h5>I'm an accordion</h5>
-            <Accordion.Panel
-              isOpen={isOpen}
-            >
-              foo content
+            <div onClick={toggle} label="foo">I'm an accordion</div>
+            <Accordion.Panel isOpen={isOpen}>
+              Some content goes here
             </Accordion.Panel>
           </React.Fragment>
         )}
@@ -36,25 +27,16 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    <Accordion.Item label="foo">
+      <Accordion.Item label="foobar">
         {(isOpen, toggle) => (
           <React.Fragment>
-            <Section>
-              <button className="section-chevron" label="foo" onClick={toggle}>
-                <Chevron
-                  color="#000"
-                  isOpen={isOpen}
-                  size={15}
-                />
-              </button>
-              <div className="section-date">date</div>
-              <div className="section-cta">cta</div>
-              <div className="section-header">section</div>
-            </Section>
-
-            <Accordion.Panel
+            <Section
               isOpen={isOpen}
-            >
+              label="foobar"
+              title=""
+              onClick={toggle}
+            />
+            <Accordion.Panel isOpen={isOpen}>
               <p>
                 Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
               </p>
@@ -62,22 +44,63 @@ Accordion Component
           </React.Fragment>
         )}
       </Accordion.Item>
+      <Accordion.Item label="secondItem">
+        {(isOpen, toggle) => (
+          <React.Fragment>
+            <Section
+              isOpen={isOpen}
+              label="secondItem"
+              onSaleText="On Sale: Mon • Jan 1 • 10 AM"
+              statusBadge={{variant: "error", text:"Sold Out"}}
+              title="SecondItem"
+              onClick={toggle}
+            />
+            <Accordion.Panel isOpen={isOpen}>
+              <p>
+                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
+              </p>
+            </Accordion.Panel>
+          </React.Fragment>
+        )}
+      </Accordion.Item>
+      <Accordion.Item label="thirdItem">
+        {(isOpen, toggle) => (
+          <React.Fragment>
+            <Section
+              isOpen={isOpen}
+              label="thirdItem"
+              onSaleText="On Sale: Mon • Jan 1 • 10 AM"
+              statusBadge={{variant: "error", text:"Sold Out"}}
+              extrasAvailable={{text: "Extras Available", url: "#"}}
+              title="thirdItem"
+              onClick={toggle}
+            />
+            <Accordion.Panel isOpen={isOpen}>
+              <p>
+                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
+              </p>
+            </Accordion.Panel>
+          </React.Fragment>
+        )}
+      </Accordion.Item>
+  </Accordion>
+```
+
+### With OnSale
+
+```react
+ state: {openSections: {}}
+---
+  <Accordion>
       <Accordion.Item label="foobar">
         {(isOpen, toggle) => (
           <React.Fragment>
-             <Section>
-              <button className="chevron" label="foobar" onClick={toggle}>
-                <Chevron
-                  className="chevron"
-                  color="#000"
-                  isOpen={isOpen}
-                  size={15}
-                />
-              </button>
-              <div className="section-date">date</div>
-              <div className="section-cta">cta</div>
-              <div className="section-header">section</div>
-            </Section>
+            <Section
+              isOpen={isOpen}
+              label="foobar"
+              title=""
+              onClick={toggle}
+            />
             <Accordion.Panel isOpen={isOpen}>
               <p>
                 Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
