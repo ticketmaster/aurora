@@ -1,12 +1,13 @@
 import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
+// import {string, func, shape, oneOfType} from "prop-types";
+
+import Chevron from "./Chevron";
+import Ellipsis from "./Ellipsis";
 
 import { Button as AuroraButton } from "../../components/Button";
 import { Row as AuroraRow } from "../../components/Grid";
 import { Text } from "../../components/Text";
-import Chevron from "./Chevron";
-import Ellipsis from "./Ellipsis";
 import { StatusBadge } from "../../components/StatusBadge";
 
 import { mediumAndUp } from "../../theme/mediaQueries";
@@ -33,30 +34,44 @@ const ChevronWrapper = styled.button`
   border: none;
   display: flex;
   flex: 0;
-  min-width: 39px;
-  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 48px;
   position: relative;
 
   && :focus {
     outline: none;
   }
+
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      .chevron {
+        transform: rotate(-180deg);
+      }
+    `};
 `;
 
 const EventDate = styled.div`
   display: block;
   flex-direction: column;
-  margin: 0 !important;
+`;
 
-  div {
-    display: block;
-    padding-left: 4px;
-    padding-right: 16px;
-  }
+const Month = styled(Text)`
+  line-height: 20px;
+  margin: 0 !important;
+  display: block;
+  padding-left: 4px;
+  padding-right: 16px;
+`;
+
+const DayAndTime = styled(Month)`
+  line-height: 18px;
 `;
 
 const EventWrapper = styled(Row)`
   margin: 4px;
-  padding: 4px 0;
+  padding: 4px 16px 4px 0px;
 
   .ctaButton {
     display: none;
@@ -71,8 +86,6 @@ const EventWrapper = styled(Row)`
   }
 
   ${mediumAndUp`
-    padding: 4px 24px 4px 4px;
-
     .ctaButton {
       display: inline;
     }
@@ -81,7 +94,7 @@ const EventWrapper = styled(Row)`
       display: inline;
     }
 
-    .ctaEllipsis {
+    .ellipsis {
       display: none;
     }
   `};
@@ -116,6 +129,14 @@ const EventCTAWrapper = styled(Col)`
   padding-top: 14px;
 `;
 
+const EventTitle = styled(Text)`
+  line-height: 20px;
+`;
+
+const EventName = styled(Text)`
+  line-height: 18px;
+`;
+
 const Section = ({
   extrasAvailable,
   image,
@@ -127,19 +148,21 @@ const Section = ({
   partnerText,
   statusBadge
 }) => (
-  <EventWrapper className="eventWrapper">
+  <EventWrapper className="eventWrapper" isOpen={isOpen}>
     <EventInfoWrapper className="eventInfoWrapper">
       <ChevronWrapper
         className="chevronWrapper"
+        isOpen={isOpen}
         label={label}
         variant="transparent"
         onClick={onClick}
       >
         <Chevron
+          className="chevron"
           onClick={onClick}
           label={label}
           color="000"
-          isOpen={isOpen}
+          isopen={String(isOpen)}
           size={15}
         />
       </ChevronWrapper>
@@ -147,17 +170,21 @@ const Section = ({
       {image && <div> image </div>}
 
       <EventDate>
-        <Text size="kilo" weight="bold">
+        <Month primary size="kilo" weight="semiBold" tag="p">
           APR 5
-        </Text>
-        <Text size="hecko">Mon • 7:30 PM</Text>
+        </Month>
+        <DayAndTime size="hecto" tag="p">
+          Mon • 7:30 PM
+        </DayAndTime>
       </EventDate>
 
       <EventTextWrapper>
-        <Text size="kilo" weight="semiBold">
+        <EventTitle size="kilo" weight="semiBold" tag="p">
           Los Angeles, CA — STAPLES Center
-        </Text>
-        <Text size="hecto">Event Name</Text>
+        </EventTitle>
+        <EventName size="hecto" tag="p" variant="accent" accent="gray03">
+          Event Name
+        </EventName>
 
         {statusBadge &&
           statusBadge.variant &&
@@ -167,9 +194,13 @@ const Section = ({
             </BadgeWrapper>
           )}
 
-        {onSaleText && <Text size="kilo">{onSale}</Text>}
+        {onSaleText && (
+          <Text secondary accent="alert" size="uno" tag="p" weight="bold">
+            ON SALE: {onSaleText}
+          </Text>
+        )}
         {extrasAvailable && (
-          <Text primary label={label} size="uno" onClick={onClick}>
+          <Text primary label={label} size="uno" tag="p" onClick={onClick}>
             Extras Available
           </Text>
         )}
@@ -178,27 +209,32 @@ const Section = ({
 
     <EventCTAWrapper>
       <Button className="ctaButton">More Info</Button>
-      <Ellipsis className="ctaEllipsis" />
+      <Ellipsis className="ellipsis" size={0} />
       {partnerText && <p className="cta-subText">on Partner site</p>}
     </EventCTAWrapper>
   </EventWrapper>
 );
 
-Section.defaultProps = {
-  statusBadge: null,
-  partnerText: null
-};
+// Section.defaultProps = {
+//   onClick: null,
+//   partnerText: null,
+//   statusBadge: null
+// };
 
-Section.propTypes = {
-  statusBadge: PropTypes.oneOfType([null, variantType]),
-  // extrasAvailable: PropTypes.mix,
-  // image: PropTypes.mix,
-  // isOpen: PropTypes.mix,
-  // label: PropTypes.mix,
-  // onClick: PropTypes.mix,
-  // onSale: PropTypes.mix,
-  // onSaleText: PropTypes.mix,
-  partnerText: PropTypes.oneOfType([null, PropTypes.string])
-};
+// Section.propTypes = {
+// statusBadge: shape({
+//   text: string,
+//   varian: variantType
+// }),
+// onClick: func,
+// extrasAvailable: mix,
+// image: mix,
+// isOpen: mix,
+// label: mix,
+// onClick: mix,
+// onSale: mix,
+// onSaleText: mix,
+// partnerText: oneOfType(null, [string])
+// };
 
 export default Section;

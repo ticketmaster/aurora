@@ -1,8 +1,20 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
+
+const StyledAccordion = styled.div`
+  > :nth-child(n + 2)::before {
+    background: #ebebeb;
+    content: " ";
+    display: flex;
+    height: 1px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+`;
 
 class Accordion extends Component {
   static propTypes = {
@@ -16,7 +28,6 @@ class Accordion extends Component {
 
   constructor(props) {
     super(props);
-
     const openSections = {};
 
     this.state = { openSections };
@@ -92,7 +103,9 @@ class Accordion extends Component {
         toggle: e => this.onClick(e)
       })
     );
-    return <div className="accordion">{clonedChildren}</div>;
+    return (
+      <StyledAccordion className="accordion">{clonedChildren}</StyledAccordion>
+    );
   }
 }
 

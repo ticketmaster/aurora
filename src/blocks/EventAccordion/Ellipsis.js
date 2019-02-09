@@ -6,12 +6,6 @@ const Ellipsis = styled(OverflowIcon)`
   height: 22px;
   margin-top: 11px;
   min-width: 10px;
-
-  ${({ isOpen }) =>
-    isOpen &&
-    css`
-      transform: rotate(-180deg);
-    `};
 `;
 
 export default Ellipsis;

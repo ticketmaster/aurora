@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { bool, func } from "prop-types";
 import styled, { css } from "styled-components";
 
 const StyledAccordionItem = styled.div`
@@ -10,17 +10,19 @@ const StyledAccordionItem = styled.div`
   ${({ isOpen }) =>
     isOpen &&
     css`
-      box-shadow: rgba(0, 0, 0, 0.01) 0px 4px 8px 0px,
-        rgba(0, 0, 0, 0.19) 0px 4px 10px 0px;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.12);
       margin-bottom: 12px;
-    `} ${({ isOpen }) =>
-    !isOpen &&
-    css`
-      color: black;
+
+      && ::before {
+        height: 25px;
+        visibility: hidden;
+      }
     `};
 `;
 
-const AccordionItem = ({ children, isOpen = false, toggle }) => (
+const AccordionItem = ({ children, isOpen, toggle }) => (
   <StyledAccordionItem className="accordion-item" isOpen={isOpen}>
     {children(isOpen, toggle)}
   </StyledAccordionItem>
@@ -32,9 +34,9 @@ AccordionItem.defaultProps = {
 };
 
 AccordionItem.propTypes = {
-  children: PropTypes.func.isRequired,
-  isOpen: PropTypes.bool,
-  toggle: PropTypes.func
+  children: func.isRequired,
+  isOpen: bool,
+  toggle: func
 };
 
 export default AccordionItem;

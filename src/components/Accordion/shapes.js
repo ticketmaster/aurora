@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
+import { node, bool, func } from "prop-types";
 
 export const accordionShape = {
-  allowMultipleOpen: PropTypes.bool,
-  children: PropTypes.node.isRequired
+  allowMultipleOpen: bool,
+  children: node.isRequired
 };
 
 export const accordionItemShape = {
-  children: PropTypes.func.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  toggle: PropTypes.func.isRequired
+  children: func.isRequired,
+  isOpen: bool.isRequired,
+  toggle: func.isRequired
 };

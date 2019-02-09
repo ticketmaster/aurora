@@ -2,46 +2,33 @@
 
 Accordion Component
 
-#### Example
+### With Component Composition
 
 ```react
  state: {openSections: {}}
 ---
   <Accordion>
-    <Accordion.Item label="foo">
-        {(isOpen, toggle) => (
-          <React.Fragment>
-            <div onClick={toggle} label="foo">I'm an accordion</div>
-            <Accordion.Panel isOpen={isOpen}>
-              Some content goes here
-            </Accordion.Panel>
-          </React.Fragment>
-        )}
-      </Accordion.Item>
-  </Accordion>
-```
-
-### With Component Composition
-
-```react
- responsive: true
----
-  <Accordion>
-      <Accordion.Item label="foobar" isOpen>
+    {Array.from({length: 50}, (x,y) => (
+      <Accordion.Item label={y}>
         {(isOpen, toggle) => (
           <React.Fragment>
             <Section
               isOpen={isOpen}
-              label="foobar"
-              title=""
+              label={y}
+              title="foobar"
               onClick={toggle}
             />
             <Accordion.Panel isOpen={isOpen}>
-              <p>foo</p>
+              <Extras
+                lineUp
+                venueInfo
+                addOns
+                more
+              />
             </Accordion.Panel>
           </React.Fragment>
         )}
       </Accordion.Item>
-
+    ))}
   </Accordion>
 ```
