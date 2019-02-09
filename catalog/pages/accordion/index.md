@@ -24,10 +24,10 @@ Accordion Component
 ### With Component Composition
 
 ```react
- state: {openSections: {}}
+ responsive: true
 ---
   <Accordion>
-      <Accordion.Item label="foobar">
+      <Accordion.Item label="foobar" isOpen>
         {(isOpen, toggle) => (
           <React.Fragment>
             <Section
@@ -37,77 +37,11 @@ Accordion Component
               onClick={toggle}
             />
             <Accordion.Panel isOpen={isOpen}>
-              <p>
-                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
-              </p>
+              <p>foo</p>
             </Accordion.Panel>
           </React.Fragment>
         )}
       </Accordion.Item>
-      <Accordion.Item label="secondItem">
-        {(isOpen, toggle) => (
-          <React.Fragment>
-            <Section
-              isOpen={isOpen}
-              label="secondItem"
-              onSaleText="On Sale: Mon • Jan 1 • 10 AM"
-              statusBadge={{variant: "error", text:"Sold Out"}}
-              title="SecondItem"
-              onClick={toggle}
-            />
-            <Accordion.Panel isOpen={isOpen}>
-              <p>
-                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
-              </p>
-            </Accordion.Panel>
-          </React.Fragment>
-        )}
-      </Accordion.Item>
-      <Accordion.Item label="thirdItem">
-        {(isOpen, toggle) => (
-          <React.Fragment>
-            <Section
-              isOpen={isOpen}
-              label="thirdItem"
-              onSaleText="On Sale: Mon • Jan 1 • 10 AM"
-              statusBadge={{variant: "error", text:"Sold Out"}}
-              extrasAvailable={{text: "Extras Available", url: "#"}}
-              title="thirdItem"
-              onClick={toggle}
-            />
-            <Accordion.Panel isOpen={isOpen}>
-              <p>
-                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
-              </p>
-            </Accordion.Panel>
-          </React.Fragment>
-        )}
-      </Accordion.Item>
-  </Accordion>
-```
 
-### With OnSale
-
-```react
- state: {openSections: {}}
----
-  <Accordion>
-      <Accordion.Item label="foobar">
-        {(isOpen, toggle) => (
-          <React.Fragment>
-            <Section
-              isOpen={isOpen}
-              label="foobar"
-              title=""
-              onClick={toggle}
-            />
-            <Accordion.Panel isOpen={isOpen}>
-              <p>
-                Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.Ipsam quod voluptatem cumque. Sunt laudantium in voluptas. Totam libero voluptatem eum in asperiores cum voluptas.
-              </p>
-            </Accordion.Panel>
-          </React.Fragment>
-        )}
-      </Accordion.Item>
   </Accordion>
 ```
