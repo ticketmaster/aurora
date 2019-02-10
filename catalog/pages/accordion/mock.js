@@ -1,14 +1,4 @@
-import React from "react";
-
-import colors from "../../../src/theme/colors";
-
-import ParkingIcon from "../../../src/components/Icons/Parking";
-import VenueIcon from "../../../src/components/Icons/Venue";
-import TicketIcon from "../../../src/components/Icons/Ticket";
-import VipIcon from "../../../src/components/Icons/Vip";
-import ThumbnailCircleImage from "../../../src/components/Image/ThumbnailCircle";
-
-export const listItems = [
+export const EVENTS_DATA = [
   {
     buttonText: "See Tickets",
     dateSubTitle: "Thu, 8:00 PM",
@@ -17,7 +7,7 @@ export const listItems = [
     rowId: "567",
     subTitle: "KABOO 3-Day Pass",
     title: "Del Mar Fairgrounds",
-    url: "/",
+    url: "#",
     variant: "standard"
   },
   {
@@ -29,7 +19,7 @@ export const listItems = [
     buttonText: "See Tickets",
     variant: "standard",
     onClick: () => {},
-    url: "/"
+    url: "#"
   },
   {
     rowId: "570",
@@ -40,7 +30,7 @@ export const listItems = [
     buttonText: "Acheter des Billets",
     variant: "standard",
     onClick: () => {},
-    url: "/"
+    url: "#"
   },
   {
     rowId: "571",
@@ -52,23 +42,23 @@ export const listItems = [
     buttonText: "See Tickets",
     variant: "standard",
     onClick: () => {},
-    url: "/"
+    url: "#"
   }
 ];
 
-export const sections = [
+export const EXTRAS_DATA = [
   {
     title: "Ticket Options",
     id: "789",
     items: [
       {
         title: "VIP Packages",
-        icon: <VipIcon size={26} color={colors.blackPearl} />,
-        onItemClick: () => {}
+        onItemClick: () => {},
+        url: "#"
       },
       {
         title: "Parking Pass Available",
-        icon: <ParkingIcon size={26} color={colors.blackPearl} />
+        url: "#"
       }
     ]
   },
@@ -80,9 +70,8 @@ export const sections = [
       {
         title: "United Center",
         subTitle: "Chicago, IL",
-        icon: <VenueIcon size={26} color={colors.blackPearl} />,
         onItemClick: () => {},
-        url: "/"
+        url: "#"
       }
     ]
   },
@@ -94,25 +83,13 @@ export const sections = [
       {
         title:
           "The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
-        icon: (
-          <ThumbnailCircleImage
-            size={40}
-            src="https://placekitten.com/g/512/288"
-            alt="circleImage"
-          />
-        ),
-        onItemClick: () => {}
+        onItemClick: () => {},
+        url: "#"
       },
       {
         title: "T.I",
-        icon: (
-          <ThumbnailCircleImage
-            size={40}
-            src="https://placekitten.com/g/512/288"
-            alt="circleImage"
-          />
-        ),
-        onItemClick: () => {}
+        onItemClick: () => {},
+        url: "#"
       }
     ]
   },
@@ -122,8 +99,8 @@ export const sections = [
     items: [
       {
         title: "Sell Tickets",
-        icon: <TicketIcon color={colors.blackPearl} />,
-        onItemClick: () => {}
+        onItemClick: () => {},
+        url: "#"
       }
     ]
   }
@@ -133,8 +110,7 @@ export const items = [
   {
     title: "United Center",
     subTitle: "Chicago, IL",
-    icon: <VenueIcon size={26} color={colors.blackPearl} />,
     onItemClick: () => {},
-    url: "/"
+    url: "#"
   }
 ];

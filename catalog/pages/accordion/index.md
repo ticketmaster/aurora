@@ -8,23 +8,19 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    {Array.from({length: 50}, (x,y) => (
-      <Accordion.Item label={y}>
+    {EVENTS_DATA.map( event => (
+      <Accordion.Item label={event.rowId} key={event.rowId}>
         {(isOpen, toggle) => (
           <React.Fragment>
             <Section
               isOpen={isOpen}
-              label={y}
-              title="foobar"
-              onClick={toggle}
+              label={event.rowId}
+              item={event}
+              onToggle={toggle}
+              {...event}
             />
             <Accordion.Panel isOpen={isOpen}>
-              <Extras
-                lineUp
-                venueInfo
-                addOns
-                more
-              />
+              <Extras data={EXTRAS_DATA} />
             </Accordion.Panel>
           </React.Fragment>
         )}

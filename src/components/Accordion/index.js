@@ -1,22 +1,44 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
 
+import { mediumAndUp } from "../../theme/mediaQueries";
+
 const StyledAccordion = styled.div`
-  > :nth-child(n + 2)::before {
+  > :nth-child(n + 1)::after {
     background: #ebebeb;
+    content: " ";
+    display: flex;
+    height: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  > :nth-last-child(1)::after {
+    background: none;
     content: " ";
     display: flex;
     height: 1px;
     margin-left: 16px;
     margin-right: 16px;
   }
+
+  ${mediumAndUp`
+    > :nth-child(n + 1)::after {
+      background: #ebebeb;
+      content: " ";
+      display: flex;
+      height: 1px;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  `};
 `;
 
-class Accordion extends Component {
+class Accordion extends PureComponent {
   static propTypes = {
     children: PropTypes.node.isRequired,
     allowMultipleOpen: PropTypes.bool
@@ -75,21 +97,6 @@ class Accordion extends Component {
     }
     this.setState({ openSections: updatedOpenSections });
   };
-
-  recursiveCloneChildren(children) {
-    return React.Children.map(children, child => {
-      let childProps = {};
-      if (React.isValidElement(child)) {
-        childProps = { someNew: "propToAdd" };
-      }
-      if (child.props) {
-        // String has no Prop
-        childProps.children = this.recursiveCloneChildren(child.props.children);
-        return React.cloneElement(child, childProps);
-      }
-      return child;
-    });
-  }
 
   render() {
     const {
