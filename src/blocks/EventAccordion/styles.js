@@ -4,6 +4,9 @@ import { mediumAndUp } from "../../theme/mediaQueries";
 import { Row as AuroraRow } from "../../components/Grid";
 import { Text } from "../../components/Text";
 
+import colors from "../../theme/colors";
+import constants from "../../theme/constants";
+
 const Col = styled.div`
   max-width: none;
   flex: 0;
@@ -45,19 +48,22 @@ const ChevronWrapper = styled.button`
 const EventDate = styled.div`
   display: block;
   flex-direction: column;
+  color: ${colors.azure.hoverLight};
 `;
 
 const DayAndTime = styled(Text)`
-  line-height: 18px;
+  line-height: 16px;
   margin: 0 !important;
   display: block;
   padding-left: 4px;
   padding-right: 16px;
+  color: rgba(38, 38, 38, 0.6);
 `;
 
 const Month = styled(DayAndTime)`
   line-height: 20px;
   text-transform: uppercase;
+  color: #904eba;
 `;
 
 const EventWrapper = styled(Row)`
@@ -109,16 +115,49 @@ const EventInfoWrapper = styled(Row)`
   }
 `;
 
+const NameAndTitleWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  ${isOpen =>
+    isOpen &&
+    css`
+      .eventTitle {
+        display: hidden;
+      }
+    `};
+`;
+
 const EventTextWrapper = styled(Col)`
   flex: 1 1;
   * {
     margin: 0;
+  }
+
+  && *:nth-child(3) {
+    margin-top: 4px;
   }
 `;
 
 const EventCTAWrapper = styled(Col)`
   padding-left: 16px;
   padding-top: 14px;
+
+  p {
+    text-align: right;
+    margin-top: 4px;
+  }
+`;
+
+const DesktopBadge = styled(EventCTAWrapper)`
+  display: flex;
+  flex: 1 1;
+  max-width: 100px;
+  max-height: 51px;
+
+  p {
+    margin: 0;
+  }
 `;
 
 const EventTitle = styled(Text)`
@@ -127,10 +166,10 @@ const EventTitle = styled(Text)`
   line-height: 20px;
   max-height: 20px;
   text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
+  /* margin-right: -1em;
+  padding-right: 1em; */
 
-  &&:before {
+  /* &&:before {
     content: "...";
     position: absolute;
     right: 0;
@@ -144,40 +183,43 @@ const EventTitle = styled(Text)`
     height: 1em;
     margin-top: 0.2em;
     background: white;
-  }
+  } */
 `;
 
 const EventName = styled(Text)`
-  overflow: hidden;
-  position: relative;
-  line-height: 18px;
+  color: rgba(38, 38, 38, 0.6);
+  line-height: 16px;
+  /* margin-right: -1em; */
   max-height: 36px;
+  overflow: hidden;
+  /* padding-right: 1em; */
+  position: relative;
   text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
 
-  &&:before {
+  /* &&:before {
+    bottom: 0;
     content: "...";
     position: absolute;
     right: 0;
-    bottom: 0;
   }
   &&:after {
+    background: white;
     content: "";
+    height: 1em;
+    margin-top: 0.2em;
     position: absolute;
     right: 0;
     width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: white;
-  }
+  } */
 `;
 
 export {
   BadgeWrapper,
   Button,
+  NameAndTitleWrapper,
   ChevronWrapper,
   DayAndTime,
+  DesktopBadge,
   EventCTAWrapper,
   EventDate,
   EventInfoWrapper,

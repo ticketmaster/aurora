@@ -57,26 +57,26 @@ class Accordion extends PureComponent {
 
   onClick = e => {
     e.stopPropagation();
-    const label = e.target.getAttribute("label");
+    const id = e.target.getAttribute("id");
 
     const {
       props: { allowMultipleOpen },
       state: { openSections }
     } = this;
 
-    const isOpen = !!openSections[label];
+    const isOpen = !!openSections[id];
 
     if (allowMultipleOpen) {
       this.setState({
         openSections: {
           ...openSections,
-          [label]: !isOpen
+          [id]: !isOpen
         }
       });
     } else {
       this.setState({
         openSections: {
-          [label]: !isOpen
+          [id]: !isOpen
         }
       });
     }
@@ -91,7 +91,7 @@ class Accordion extends PureComponent {
     if (React.children) {
       React.children.forEach(child => {
         if (child.props.isOpen) {
-          updatedOpenSections[child.props.label] = true;
+          updatedOpenSections[child.props.id] = true;
         }
       });
     }
@@ -106,7 +106,7 @@ class Accordion extends PureComponent {
     const clonedChildren = React.Children.map(this.props.children, child =>
       React.cloneElement(child, {
         ...child.props,
-        isOpen: !!openSections[child.props.label],
+        isOpen: !!openSections[child.props.id],
         toggle: e => this.onClick(e)
       })
     );
@@ -119,3 +119,16 @@ class Accordion extends PureComponent {
 Accordion.Item = AccordionItem;
 Accordion.Panel = AccordionPanel;
 export default Accordion;
+
+/**
+options: {
+  linkTitle: "Ticket Options Available",
+  linkUrl: "",
+  linkSubTitle: "on Partner Site"
+}
+
+badge: {
+  label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
+  labelVariant: "positive"
+}
+ */

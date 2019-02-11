@@ -1,4 +1,4 @@
-export const EVENTS_DATA = [
+export const EVENTS = [
   {
     buttonText: "See Tickets",
     dateSubTitle: "Thu, 8:00 PM",
@@ -40,31 +40,106 @@ export const EVENTS_DATA = [
     dateTitle: "sep 7",
     dateSubTitle: "Fri, 7:00 PM",
     buttonText: "See Tickets",
-    variant: "standard",
+
+    linkTitle: "Ticket Options Available",
+    linkUrl: "",
+    linkSubTitle: "on Partner Site",
+    variant: "withLink",
+
+    label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
+    labelVariant: "positive",
     onClick: () => {},
     url: "#"
   }
 ];
 
+export const ADD_ONS = {
+  title: "ADD-ONS",
+  id: "789",
+  items: [
+    {
+      title: "VIP",
+      onItemClick: () => {},
+      url: "#"
+    },
+    {
+      title: "Parking",
+      url: "#"
+    }
+  ]
+};
+
+export const VENUE_INFO = {
+  title: "VENUE INFO",
+  id: "456",
+  items: [
+    {
+      title: "United Center",
+      subTitle: "Chicago, IL",
+      onItemClick: () => {},
+      url: "#"
+    }
+  ]
+};
+
+export const LINEUP = {
+  title: "LINEUP",
+  id: "123",
+  items: [
+    {
+      title:
+        "The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
+      onItemClick: () => {},
+      src: "https://placekitten.com/g/512/288",
+      url: "#"
+    },
+    {
+      title:
+        "The asdfadoots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
+      onItemClick: () => {},
+      src: "https://placekitten.com/g/512/288",
+      url: "#"
+    },
+    {
+      title: "T.I",
+      onItemClick: () => {},
+      src: "https://placekitten.com/g/512/288",
+      url: "#"
+    }
+  ]
+};
+
+export const MORE = {
+  title: "MORE",
+  id: "1011",
+  items: [
+    {
+      title: "Sell Tickets",
+      onItemClick: () => {},
+      url: "#"
+    }
+  ]
+};
+
 export const EXTRAS_DATA = [
   {
-    title: "Ticket Options",
+    title: "ADD-ONS",
     id: "789",
     items: [
       {
-        title: "VIP Packages",
+        title: "VIP",
         onItemClick: () => {},
         url: "#"
       },
       {
-        title: "Parking Pass Available",
+        title: "Parking",
         url: "#"
       }
     ]
   },
 
   {
-    title: "Venue Info",
+    title: "VENUE INFO",
     id: "456",
     items: [
       {
@@ -75,26 +150,34 @@ export const EXTRAS_DATA = [
       }
     ]
   },
-
   {
-    title: "Lineup",
+    title: "LINEUP",
     id: "123",
     items: [
       {
         title:
           "The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
         onItemClick: () => {},
+        src: "https://placekitten.com/g/512/288",
+        url: "#"
+      },
+      {
+        title:
+          "The asdfadoots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj",
+        onItemClick: () => {},
+        src: "https://placekitten.com/g/512/288",
         url: "#"
       },
       {
         title: "T.I",
         onItemClick: () => {},
+        src: "https://placekitten.com/g/512/288",
         url: "#"
       }
     ]
   },
   {
-    title: "More",
+    title: "MORE",
     id: "1011",
     items: [
       {

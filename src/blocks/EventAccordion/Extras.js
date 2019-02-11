@@ -1,11 +1,11 @@
 import React from "react";
 // import PropTypes from "prop-types";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { Text } from "../../components/Text";
-import { Row as AuroraRow, Column } from "../../components/Grid";
+import { Row as AuroraRow, Column as AuroraCol } from "../../components/Grid";
 import COLORS from "../../theme/colors";
-import AuroraIcon from "./Icon";
+import Icon from "./Icon";
 
 // import spacing from "../../theme/spacing";
 
@@ -13,11 +13,10 @@ const ExtrasWrapper = styled.div`
   display: flex;
   flex-direction: row;
   padding: 16px 16px 16px 47px;
-`;
 
-const Row = styled(AuroraRow)`
-  margin: 0 !important;
-  flex: 1 1;
+  && > div:nth-child(n + 2) {
+    margin-left: 16px;
+  }
 `;
 
 const ExtraTitle = styled(Text)`
@@ -31,25 +30,39 @@ const Extra = styled.div`
 `;
 
 const ExtraItem = styled.div`
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: [col] 50px [col] auto;
-  grid-template-rows: [row] auto [row] auto;
-  background-color: #2196f3;
-  padding: 10px;
-`;
-
-const Icon = styled(AuroraIcon)`
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  grid-column: col 1;
-  grid-row: row 1 / span 2;
+  margin-top: 8px;
+  margin-bottom: 8px;
 `;
 
-const ExtraOption = styled.div`
-  display: grid;
+const ExtrasText = styled(Text)`
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 1.5;
+  margin: 0;
 `;
+
+const ExtraOptions = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+`;
+
+const SubTitle = styled(Text)`
+  color: grey;
+  margin: 0;
+`;
+
+const getIconName = (title, extra) =>
+  title === "LINEUP"
+    ? "Avatar"
+    : title === "MORE"
+      ? "tickets"
+      : title === "VENUE INFO"
+        ? title
+        : extra.title;
 
 const Extras = ({ data }) => (
   <ExtrasWrapper>
@@ -62,21 +75,27 @@ const Extras = ({ data }) => (
           <ExtraItem key={extra.title + id}>
             <Icon
               key={extra.title}
-              name={extra.title}
+              name={getIconName(title, extra)}
               size={26}
+              src={extra.src}
               color={COLORS.blackPearl}
             />
-
-            <Text
-              primary
-              className="text"
-              size="uno"
-              tag="p"
-              href={extra.href}
-              onClick={extra.onClick}
-            >
-              {extra.title}
-            </Text>
+            <ExtraOptions>
+              <ExtrasText
+                primary
+                size="uno"
+                tag="p"
+                href={extra.href}
+                onClick={extra.onClick}
+              >
+                {extra.title}
+              </ExtrasText>
+              {extra.subTitle && (
+                <SubTitle primary size="uno" tag="p">
+                  {extra.subTitle}
+                </SubTitle>
+              )}
+            </ExtraOptions>
           </ExtraItem>
         ))}
       </Extra>

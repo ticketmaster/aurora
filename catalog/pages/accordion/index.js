@@ -10,7 +10,7 @@ import Extras from "../../../src/blocks/EventAccordion/Extras";
 import Section from "../../../src/blocks/EventAccordion/Section";
 import Text from "../../../src/components/Text";
 
-import { EXTRAS_DATA, EVENTS_DATA } from "./mock";
+import { EXTRAS_DATA, EVENTS } from "./mock";
 
 export default {
   path: "/accordion",
@@ -20,7 +20,7 @@ export default {
     AccordionItem,
     Button,
     Chevron,
-    EVENTS_DATA,
+    EVENTS,
     EXTRAS_DATA,
     Extras,
     Section,

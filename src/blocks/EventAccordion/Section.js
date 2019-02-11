@@ -8,14 +8,18 @@ import { StatusBadge } from "../../components/StatusBadge";
 import { Text } from "../../components/Text";
 import { themes } from "../../theme";
 
+import { formatOnSaleText } from "./utils/textUtils";
+
 import {
   BadgeWrapper,
   Button,
   ChevronWrapper,
   DayAndTime,
+  DesktopBadge,
   EventCTAWrapper,
   EventDate,
   EventInfoWrapper,
+  NameAndTitleWrapper,
   EventName,
   EventTextWrapper,
   EventTitle,
@@ -27,11 +31,12 @@ const Section = ({
   extrasAvailable,
   image,
   isOpen,
-  label,
+  id,
   onToggle,
-  onSale,
-  partnerText,
-  statusBadge,
+
+  linkSubTitle,
+  linkTitle,
+  label,
 
   buttonText,
   dateSubTitle,
@@ -50,14 +55,14 @@ const Section = ({
       <ChevronWrapper
         className="chevronWrapper"
         isOpen={isOpen}
-        label={label}
+        id={id}
         variant="transparent"
         onClick={onToggle}
       >
         <Chevron
           className="chevron"
           onClick={onToggle}
-          label={label}
+          id={id}
           color="000"
           isopen={String(isOpen)}
           size={15}
@@ -76,38 +81,64 @@ const Section = ({
       </EventDate>
 
       <EventTextWrapper>
-        <EventTitle size="kilo" weight="semiBold" tag="p">
-          {title}
-        </EventTitle>
-        <EventName accent="gray03" size="hecto" tag="p" variant="accent">
-          {subTitle}
-        </EventName>
+        <NameAndTitleWrapper className="nameEventWrapper" isOpen={isOpen}>
+          <EventTitle
+            className="eventTitle"
+            size="kilo"
+            weight="semiBold"
+            tag="p"
+          >
+            {title}
+          </EventTitle>
+          <EventName
+            className="eventName"
+            accent="gray03"
+            size="hecto"
+            tag="p"
+            variant="accent"
+          >
+            {subTitle}
+          </EventName>
+        </NameAndTitleWrapper>
 
-        {statusBadge &&
-          statusBadge.variant &&
-          statusBadge.text && (
-            <BadgeWrapper>
-              <StatusBadge label={label} color={themes.global.error.base} />
-            </BadgeWrapper>
-          )}
+        {label && (
+          <BadgeWrapper>
+            <StatusBadge id={id} color={themes.global.error.base}>
+              {label}
+            </StatusBadge>
+          </BadgeWrapper>
+        )}
 
         {onSaleText && (
           <Text accent="alert" secondary size="uno" tag="p" weight="bold">
-            ON SALE: {onSaleText}
+            {onSaleText}
           </Text>
         )}
-        {extrasAvailable && (
-          <Text primary label={label} size="uno" tag="p" onClick={onClick}>
-            Extras Available
+
+        {linkSubTitle && (
+          <Text primary id={id} size="uno" tag="p" onClick={onClick}>
+            {linkSubTitle}
           </Text>
         )}
       </EventTextWrapper>
     </EventInfoWrapper>
 
+    {label && (
+      <DesktopBadge>
+        <Text primary id={id} size="uno" tag="p">
+          {formatOnSaleText(label)}
+        </Text>
+      </DesktopBadge>
+    )}
+
     <EventCTAWrapper>
       <Button className="ctaButton">More Info</Button>
       <Ellipsis className="ellipsis" size={0} />
-      {partnerText && <p className="cta-subText">on Partner site</p>}
+      {linkSubTitle && (
+        <Text primary id={id} size="uno" tag="p" onClick={onClick}>
+          {linkSubTitle}
+        </Text>
+      )}
     </EventCTAWrapper>
   </EventWrapper>
 );

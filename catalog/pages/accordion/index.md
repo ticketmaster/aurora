@@ -8,13 +8,13 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    {EVENTS_DATA.map( event => (
-      <Accordion.Item label={event.rowId} key={event.rowId}>
+    {EVENTS.map( event => (
+      <Accordion.Item id={event.rowId} key={event.rowId}>
         {(isOpen, toggle) => (
           <React.Fragment>
             <Section
               isOpen={isOpen}
-              label={event.rowId}
+              id={event.rowId}
               item={event}
               onToggle={toggle}
               {...event}
