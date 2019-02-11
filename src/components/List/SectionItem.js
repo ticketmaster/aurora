@@ -37,13 +37,17 @@ const MultiLineLink = styled.div.attrs({
 `;
 /* stylelint-enable */
 
-const handleItemClick = (children, value, event, onItemClick) => {
+const handleItemClick = (children, value, event, onItemClick, url) => {
   if (children && value) {
     value.renderIntoPortal({ children, contentType: "desktop" });
   }
 
   if (onItemClick) {
     onItemClick(event);
+  }
+
+  if (url && value) {
+    value.resetOpenIndex();
   }
 };
 
@@ -64,7 +68,7 @@ const SectionItem = ({
           role="link"
           aria-label="Section Item"
           onClick={event =>
-            handleItemClick(children, value, event, onItemClick)
+            handleItemClick(children, value, event, onItemClick, url)
           }
           onItemClick={onItemClick}
           href={url}
