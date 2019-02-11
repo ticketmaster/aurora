@@ -28,6 +28,12 @@ rows:
   - Prop: onCollapseItem
     Type: "func({ index: number }): void"
     Notes: Optional. This is called when a user clicks "collapse row" chevron
+  - Prop: rowTriggerPosition
+    Type: one of either "right" or "left"
+    Notes: Optional. Default is "right". Works just with `isPure={true}`
+  - Prop: isPure
+    Type: bool
+    Notes: Optional. Set ListRow component to pure state (rowItem is not required). Experimental and Unstable!
 ```
 
 ### ListContainer
@@ -340,4 +346,248 @@ responsive: true
         onOverflowClick={()=>{}}
       />
 </ListContainer>
+```
+
+### Experimental and Unstable!
+
+### Multiple Pure List Row with row trigger position on the right
+
+```react
+responsive: true
+---
+<div style={{padding: '10px', background: '#fff'}}>
+<ListContainer expandMultiple={true}>
+  <ListRow
+    index={0}
+    rowTriggerPosition="right"
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<div style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center'}}>
+                <ThumbnailCircleImage size={40} src={pureListItems[0].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[0].text}
+                </Text>
+                <Text
+                  style={{ marginLeft: "15px" }}
+                  variant="accent"
+                  accent="turquoise"
+                  size="hecto"
+                >
+                  {pureListItems[0].expires}
+                </Text>
+              </div>)}
+  >
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+          {sections[0].items.map(item =>
+          <SectionItem item={item} key={item.title}/>)}
+      </Section>
+      <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+          {sections[1].items.map(item =>
+          <SectionItem item={item} key={item.title}/>)}
+      </Section>
+ </ListRow>
+
+  <ListRow
+    index={1}
+    rowTriggerPosition="right"
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<div style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center'}}>
+                <ThumbnailCircleImage size={40} src={pureListItems[1].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[1].text}
+                </Text>
+                <Text
+                  style={{ marginLeft: "15px" }}
+                  variant="accent"
+                  accent="turquoise"
+                  size="hecto"
+                >
+                  {pureListItems[1].expires}
+                </Text>
+              </div>)}
+   >
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+            {sections[0].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+         <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+            {sections[1].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+        <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
+            {sections[2].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+  </ListRow>
+
+  <ListRow
+    index={2}
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<div style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center'}}>
+                <ThumbnailCircleImage size={40} src={pureListItems[2].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[2].text}
+                </Text>
+                <Text
+                  style={{ marginLeft: "15px" }}
+                  variant="accent"
+                  accent="turquoise"
+                  size="hecto"
+                >
+                  {pureListItems[2].expires}
+                </Text>
+              </div>)}
+  >
+     <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+           {sections[0].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+        <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+           {sections[1].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+       <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
+           {sections[2].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+  </ListRow>
+
+  <ListRow
+    index={3}
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<div style={{
+                    width: '100%',
+                    display: 'flex',
+                    alignItems: 'center'}}>
+                <ThumbnailCircleImage size={40} src={pureListItems[0].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[0].text}
+                </Text>
+                <Text
+                  style={{ marginLeft: "15px" }}
+                  variant="accent"
+                  accent="turquoise"
+                  size="hecto"
+                >
+                  {pureListItems[0].expires}
+                </Text>
+              </div>)}
+  >
+     <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+           {sections[0].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+        <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+           {sections[1].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+       <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
+           {sections[2].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+  </ListRow>
+
+</ListContainer>
+</div>
+;
+```
+
+### Experimental and Unstable!
+
+### Pure List Row with row trigger position on the left
+
+```react
+responsive: true
+---
+<div style={{padding: '10px', background: '#fff'}}>
+<ListContainer>
+  <ListRow
+    index={0}
+    rowTriggerPosition="left"
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<ResponsiveHeader>
+                <ThumbnailCircleImage size={40} src={pureListItems[0].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[0].text}
+                </Text>
+              </ResponsiveHeader>)}
+  >
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+          {sections[0].items.map(item =>
+          <SectionItem item={item} key={item.title}/>)}
+      </Section>
+      <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+          {sections[1].items.map(item =>
+          <SectionItem item={item} key={item.title}/>)}
+      </Section>
+ </ListRow>
+
+  <ListRow
+    index={1}
+    rowTriggerPosition="left"
+    onOverflowClick={()=>{}}
+    isPure
+    header={(<ResponsiveHeader>
+                <ThumbnailCircleImage size={40} src={pureListItems[1].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[1].text}
+                </Text>
+              </ResponsiveHeader>)}
+   >
+      <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+            {sections[0].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+         <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+            {sections[1].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+        <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
+            {sections[2].items.map(item =>
+            <SectionItem item={item} key={item.title}/>)}
+        </Section>
+  </ListRow>
+
+  <ListRow
+    index={2}
+    onOverflowClick={()=>{}}
+    rowTriggerPosition="left"
+    isPure
+    header={(<ResponsiveHeader>
+                <ThumbnailCircleImage size={40} src={pureListItems[2].image} alt="circleImage" />
+                <Text style={{ marginLeft: "15px" }} size="hecto">
+                  {pureListItems[2].text}
+                </Text>
+              </ResponsiveHeader>)}
+  >
+     <Section title={sections[0].title} medium={MAX_COLUMNS / sections.length} key={sections[0].key}>
+           {sections[0].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+        <Section title={sections[1].title} medium={MAX_COLUMNS / sections.length} key={sections[1].key}>
+           {sections[1].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+       <Section title={sections[2].title} medium={MAX_COLUMNS / sections.length} key={sections[2].key}>
+           {sections[2].items.map(item =>
+           <SectionItem item={item} key={item.title}/>)}
+       </Section>
+  </ListRow>
+
+</ListContainer>
+</div>
+;
 ```

@@ -3,14 +3,14 @@
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 <a
   aria-label="Section Item"
-  class="sc-jTzLTM section-item kWWGwn sc-gzVnrw crFkrV"
+  class="sc-fjdhpX section-item hPgmqb sc-htoDjs ceWpUA"
   href="https://ticketmaster.com/"
   rel="_self"
   role="link"
   target=""
 >
   <div
-    class="sc-fjdhpX ervUOG"
+    class="sc-jzJRlG cmLmZf"
   >
     <svg
       height="26"
@@ -38,7 +38,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-jzJRlG section-item-link ipqkfH"
+      class="sc-cSHVUG section-item-link fgMzxv"
     >
       VIP Packages
     </div>
@@ -48,15 +48,15 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 
 exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 <div
-  class="sc-gipzik iGwYEP"
+  class="sc-csuQGl dBZpSr"
 >
   <div
     aria-label="Section Item"
-    class="sc-jTzLTM section-item kWWGwn"
+    class="sc-fjdhpX section-item hPgmqb"
     role="link"
   >
     <div
-      class="sc-fjdhpX ervUOG"
+      class="sc-jzJRlG cmLmZf"
     >
       <svg
         height="26"
@@ -84,7 +84,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
     </div>
     <div>
       <div
-        class="sc-jzJRlG section-item-link ipqkfH"
+        class="sc-cSHVUG section-item-link fgMzxv"
       >
         VIP Packages
       </div>
@@ -96,11 +96,11 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
 <div
   aria-label="Section Item"
-  class="sc-jTzLTM section-item kWWGwn"
+  class="sc-fjdhpX section-item hPgmqb"
   role="link"
 >
   <div
-    class="sc-fjdhpX ervUOG"
+    class="sc-jzJRlG cmLmZf"
   >
     <svg
       height="26"
@@ -128,7 +128,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-jzJRlG section-item-link ipqkfH"
+      class="sc-cSHVUG section-item-link fgMzxv"
     >
       VIP Packages
     </div>
