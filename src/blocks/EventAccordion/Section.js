@@ -4,7 +4,8 @@ import React from "react";
 
 import Chevron from "./Chevron";
 import Ellipsis from "./Ellipsis";
-import { StatusBadge } from "../../components/StatusBadge";
+import Badge from "./Badge";
+
 import { Text } from "../../components/Text";
 import { themes } from "../../theme";
 
@@ -103,9 +104,13 @@ const Section = ({
 
         {label && (
           <BadgeWrapper>
-            <StatusBadge id={id} color={themes.global.error.base}>
+            {/* <Badge
+              id={id}
+              label={label}
+              variant={variant}
+            >
               {label}
-            </StatusBadge>
+            </Badge> */}
           </BadgeWrapper>
         )}
 

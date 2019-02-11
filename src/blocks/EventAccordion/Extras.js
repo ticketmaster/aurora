@@ -66,7 +66,8 @@ const getIconName = (title, extra) =>
 
 const Extras = ({ data }) => (
   <ExtrasWrapper>
-    {data.map(({ title, id, items }) => (
+    foo
+    {/* {data.map(({ title, id, items }) => (
       <Extra key={id}>
         <ExtraTitle primary size="kilo" weight="semiBold" tag="p">
           {title}
@@ -99,7 +100,7 @@ const Extras = ({ data }) => (
           </ExtraItem>
         ))}
       </Extra>
-    ))}
+    ))} */}
   </ExtrasWrapper>
 );
 
