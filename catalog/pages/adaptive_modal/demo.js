@@ -101,7 +101,7 @@ class ModalDemo extends Component {
               onRequestClose={closingPromise}
               displayTop
             >
-              {Array(10)
+              {Array(100)
                 .fill("")
                 .map((_, i) => (
                   <div key={i.toString()}>Example Text Row {i + 1}</div>

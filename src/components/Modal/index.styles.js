@@ -3,9 +3,6 @@ import styled, { css } from "styled-components";
 import { spacing, colors, constants, zIndex, typography } from "../../theme";
 import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
-const SHADOW_OFFSET_X = "0 16px 16px 0 rgba(0, 0, 0, 0.06)";
-const SHADOW_OFFSET_Y = "0 0 16px 0 rgba(0, 0, 0, 0.12)";
-
 const widthL = {
   small: "400px",
   medium: "520px",
@@ -71,7 +68,7 @@ export const ModalContainer = styled.div`
   transform: ${({ displayTop }) => (displayTop ? "none" : "translateY(-50%)")};
   z-index: ${zIndex.layout.overlay || "#fff"};
   background-color: ${colors.white.base};
-  box-shadow: ${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y};
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
   border-radius: ${constants.borderRadius.large};
 
   height: auto;
@@ -121,7 +118,7 @@ export const ActionBar = styled.div`
   font-weight: ${typography.weight.semiBold};
   text-align: left;
   box-shadow: ${({ shadow }) =>
-    shadow ? `${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y}` : "none"};
+    shadow ? `0px 26px 18px -23px rgba(0,0,0,0.12)` : "none"};
 
   ${({ gutters }) => (gutters ? actionBarGutters : "")};
 `;
@@ -179,7 +176,7 @@ export const BottomActionBar = styled.div`
   position: relative;
   overflow: hidden;
   box-shadow: ${({ shadow }) =>
-    shadow ? `${SHADOW_OFFSET_X}, ${SHADOW_OFFSET_Y}` : "none"};
+    shadow ? `0px -26px 18px -23px rgba(0,0,0,0.12)` : "none"};
 
   ${({ gutters }) => (gutters ? bottomActionBarGutters : "")};
 
