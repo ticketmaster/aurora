@@ -10,7 +10,7 @@ import Extras from "../../../src/blocks/EventAccordion/Extras";
 import Section from "../../../src/blocks/EventAccordion/Section";
 import Text from "../../../src/components/Text";
 
-import { EXTRAS_DATA, EVENTS, EVENT } from "./mock";
+import { EXTRAS_DATA, EVENTS, EVENT, EVENTS_MANY } from "./mock";
 
 export default {
   path: "/accordion",
@@ -24,6 +24,7 @@ export default {
     EVENTS,
     EXTRAS_DATA,
     Extras,
+    EVENTS_MANY,
     Section,
     Text,
     ThemeProvider

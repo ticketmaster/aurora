@@ -8,9 +8,10 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    {EVENTS.map(({
+    {EVENTS_MANY.map(({
         id,
         products,
+        eventUrlLink: venueUrl,
         venues: [venue],
         attractions,
         ...rest
@@ -25,7 +26,13 @@ Accordion Component
                 handleToggle={handleToggle}
               />
               <Accordion.Panel isOpen={isOpen}>
-                <Extras items={{products, venue, attractions}} />
+                <Extras
+                  items={{
+                    products,
+                    venue: {...venue, venueUrl},
+                    attractions
+                  }}
+                />
               </Accordion.Panel>
             </React.Fragment>
           )}

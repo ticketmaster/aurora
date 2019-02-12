@@ -8,21 +8,20 @@ import Venue from "../../components/Icons/Venue";
 import Vip from "../../components/Icons/Vip";
 
 const AvatarWrapper = styled.div`
-  margin-right: 8px;
   min-width: 40px;
 `;
 
 const StyledTicket = styled(Ticket)`
-  svg {
+  .ticket-icon {
     transform: rotate(45deg);
   }
 `;
 
 const BaseIcon = props => {
   switch (props.name) {
-    case "Avatar":
+    case "Attraction":
       return (
-        <AvatarWrapper>
+        <AvatarWrapper className={props.className}>
           <Avatar {...props} size={40} />
         </AvatarWrapper>
       );
@@ -30,7 +29,7 @@ const BaseIcon = props => {
     case "Parking":
       return <Parking {...props} />;
 
-    case "tickets":
+    case "Tickets":
       return <StyledTicket {...props} size="small" />;
 
     case "VENUE INFO":
@@ -45,7 +44,7 @@ const BaseIcon = props => {
 };
 
 const Icon = styled(BaseIcon)`
-  margin-right: 8px;
+  
 `;
 
 export default Icon;
