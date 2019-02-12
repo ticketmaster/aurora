@@ -25,10 +25,23 @@ export const SearchContainer = styled.div`
       ? "border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
       : ""};
 
-  &.hidden {
+  visibility: visible;
+  > * {
+    visibility: visible;
+  }
+
+  &.search--container-icon-only {
     visibility: hidden;
     > * {
       visibility: hidden;
+    }
+
+    &.search--container-focused,
+    &.search--container-has-value {
+      visibility: visible;
+      > * {
+        visibility: visible;
+      }
     }
   }
 `;
@@ -44,7 +57,7 @@ export const StyledSearchIcon = styled.button`
   background: transparent;
   outline: none;
 
-  .hidden & {
+  .search--container & {
     visibility: visible;
   }
 `;
@@ -92,7 +105,7 @@ export const Cancel = styled.button`
   border: none;
   background: transparent;
   outline: none;
-  display: flex;
+  display: ${({ showElement }) => (showElement ? "flex" : "none")};
   align-items: center;
   margin-left: ${spacing.cozy};
   color: ${({ isFocused }) =>
@@ -116,9 +129,13 @@ export const Clear = styled.button`
   display: ${({ value }) => (value ? "flex" : "none")};
   justify-content: center;
   align-items: center;
-  cursor: default;
+  cursor: pointer;
   color: ${({ isFocused }) =>
     !isFocused ? themes.global.white.base : themes.global.gray02};
+
+  svg {
+    margin-left: ${({ variant }) => (variant === SMALL ? spacing.cozy : 0)};
+  }
 
   ${mediumAndUp`
     width: 40px;
@@ -143,6 +160,26 @@ export const SearchSuggest = styled.div`
   ${mediumAndUp`
     max-height: ${SuggestMaxHeight};
   `};
+`;
+
+export const MobileActiveSearch = styled.div`
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  left: 0;
+
+  .search--container {
+    padding-left: ${spacing.moderate};
+    border-radius: 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
+  .search--search-icon {
+    display: none;
+  }
 `;
 
 SearchSuggest.displayName = "SearchSuggest";

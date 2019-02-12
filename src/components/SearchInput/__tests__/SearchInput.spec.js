@@ -2,17 +2,16 @@ import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 import SearchInput from "../index";
-import {
-  StyledInput,
-  StyledSearchIcon,
-  Clear,
-  Cancel,
-  SearchSuggest
-} from "../Search.styles";
+import { Cancel, SearchSuggest } from "../Search.styles";
+import { getSearchHeight } from "../constants";
 
 describe("SearchSuggest", () => {
   it("should match snapshot", () => {
-    const tree = renderer.create(<SearchSuggest />).toJSON();
+    const tree = renderer
+      .create(
+        <SearchSuggest placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .toJSON();
 
     expect(tree).toMatchSnapshot();
   });
@@ -71,7 +70,7 @@ describe("SearchInput", () => {
           variant="large"
           placeholder="Search Demo"
           value=""
-          isInputVisible={false}
+          iconOnly
           onChange={onChange}
           hasBackground
           isSuggestOpened
@@ -82,205 +81,257 @@ describe("SearchInput", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("should call onChagne", () => {
-    const onChange = jest.fn();
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onChange={onChange}
-        hasBackground
-      />
-    );
+  it("cancelClick should remove focus and call cancelCallback", () => {
+    const cancelMock = jest.fn();
 
-    const input = element.root.findByType(StyledInput);
-    input.props.onChange("test data");
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          cancelCallback={cancelMock}
+        />
+      )
+      .getInstance();
 
-    expect(onChange).toHaveBeenCalledTimes(1);
-    expect(onChange).toHaveBeenCalledWith("test data");
+    instance.cancelClick();
+
+    expect(cancelMock).toHaveBeenCalledTimes(1);
+    expect(instance.state.isFocused).toBeFalsy();
   });
 
-  it("when hasBackground inputFocused should change state and call onFocus func prop", () => {
-    const onFocus = jest.fn();
-    const setStateMock = jest.fn();
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onFocus={onFocus}
-        onChange={() => {}}
-        hasBackground
-      />
-    );
+  it("clearTextClick should call focusInput and clearText", () => {
+    const clearMock = jest.fn();
 
-    const instance = element.getInstance();
-    instance.setState = setStateMock;
-    instance.inputFocused();
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          clearText={clearMock}
+        />
+      )
+      .getInstance();
 
-    expect(onFocus).toHaveBeenCalledTimes(1);
-    expect(setStateMock).toHaveBeenCalledTimes(1);
-    expect(setStateMock).toHaveBeenCalledWith({
+    const focusSpy = jest
+      .spyOn(instance, "focusInput")
+      .mockImplementation(() => {});
+
+    instance.clearTextClick();
+
+    expect(clearMock).toHaveBeenCalledTimes(1);
+    expect(focusSpy).toHaveBeenCalledTimes(1);
+
+    focusSpy.mockRestore();
+  });
+
+  it("searchIconClick should call focusInput and clearText", () => {
+    const searchMock = jest.fn();
+
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          searchIconSelect={searchMock}
+        />
+      )
+      .getInstance();
+    const focusSpy = jest
+      .spyOn(instance, "focusInput")
+      .mockImplementation(() => {});
+
+    instance.searchIconClick();
+
+    expect(searchMock).toHaveBeenCalledTimes(1);
+    expect(focusSpy).toHaveBeenCalledTimes(1);
+
+    focusSpy.mockRestore();
+  });
+
+  it("componentDidMount should listen for click", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+    const spy = jest.spyOn(global.window, "addEventListener");
+    instance.componentDidMount();
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith("click", instance.windowClick);
+
+    spy.mockRestore();
+  });
+
+  it("componentWillUnmount should listen for click", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+    const spy = jest.spyOn(global.window, "removeEventListener");
+    instance.componentWillUnmount();
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith("click", instance.windowClick);
+
+    spy.mockRestore();
+  });
+
+  it("containerClick should set inputClicked to true", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+
+    expect(instance.inputClicked).toBeFalsy();
+
+    instance.containerClick();
+
+    expect(instance.inputClicked).toBeTruthy();
+  });
+
+  it("windowClick should call blurInput and set inputCicked to false", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+    const spy = jest.spyOn(instance, "blurInput").mockImplementation(() => {});
+
+    instance.windowClick();
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(instance.inputClicked).toBeFalsy();
+
+    spy.mockRestore();
+  });
+
+  it("windowClick should not call blurInput and should set inputCicked to false when inputClicked is true", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+    const spy = jest.spyOn(instance, "blurInput").mockImplementation(() => {});
+
+    instance.inputClicked = true;
+    instance.windowClick();
+
+    expect(spy).toHaveBeenCalledTimes(0);
+    expect(instance.inputClicked).toBeFalsy();
+
+    spy.mockRestore();
+  });
+
+  it("blurInput should change focused to false and call onBlur", () => {
+    const blurMock = jest.fn();
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          onBlur={blurMock}
+        />
+      )
+      .getInstance();
+
+    instance.setState({
       isFocused: true
     });
-  });
+    const spy = jest.spyOn(instance, "setState");
+    instance.blurInput();
 
-  it("when hasBackground on focus function should change state and call onFocus func prop", () => {
-    const onFocus = jest.fn();
-    const spyInputFocused = jest.spyOn(SearchInput.prototype, "inputFocused");
-    const spySetState = jest.spyOn(SearchInput.prototype, "setState");
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onFocus={onFocus}
-        onChange={() => {}}
-        hasBackground
-      />
-    );
-
-    spySetState.mockClear();
-
-    const input = element.root.findByType(StyledInput);
-    input.props.onFocus("test data");
-
-    expect(onFocus).toHaveBeenCalledTimes(1);
-    expect(spyInputFocused).toHaveBeenCalledTimes(1);
-    expect(spyInputFocused).toHaveBeenCalledWith("test data");
-    expect(spySetState).toHaveBeenCalledTimes(1);
-    expect(spySetState).toHaveBeenCalledWith({
-      isFocused: true
-    });
-  });
-
-  it("when hasBackground is false on focus function should not change state and call onFocus func prop", () => {
-    const onFocus = jest.fn();
-    const spyInputFocused = jest.spyOn(SearchInput.prototype, "inputFocused");
-    const spySetState = jest.spyOn(SearchInput.prototype, "setState");
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onChange={() => {}}
-        onFocus={onFocus}
-      />
-    );
-
-    spyInputFocused.mockClear();
-    spySetState.mockClear();
-
-    const input = element.root.findByType(StyledInput);
-    input.props.onFocus("test data");
-
-    expect(onFocus).toHaveBeenCalledTimes(1);
-    expect(spyInputFocused).toHaveBeenCalledTimes(1);
-    expect(spyInputFocused).toHaveBeenCalledWith("test data");
-    expect(spySetState).toHaveBeenCalledTimes(0);
-  });
-
-  it("when hasBackground on focus function should change state and call onBlur func prop", () => {
-    const onBlur = jest.fn();
-    const spyInputBlur = jest.spyOn(SearchInput.prototype, "inputBlur");
-    const spySetState = jest.spyOn(SearchInput.prototype, "setState");
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onBlur={onBlur}
-        onChange={() => {}}
-        hasBackground
-      />
-    );
-
-    spyInputBlur.mockClear();
-    spySetState.mockClear();
-
-    const input = element.root.findByType(StyledInput);
-    input.props.onBlur("test data");
-
-    expect(onBlur).toHaveBeenCalledTimes(1);
-    expect(spyInputBlur).toHaveBeenCalledTimes(1);
-    expect(spyInputBlur).toHaveBeenCalledWith("test data");
-    expect(spySetState).toHaveBeenCalledTimes(1);
-    expect(spySetState).toHaveBeenCalledWith({
+    expect(blurMock).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith({
       isFocused: false
     });
+
+    spy.mockRestore();
   });
 
-  it("when hasBackground is false on focus function should not change state and call onBlur func prop", () => {
-    const onBlur = jest.fn();
-    const spyInputBlur = jest.spyOn(SearchInput.prototype, "inputBlur");
-    const spySetState = jest.spyOn(SearchInput.prototype, "setState");
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onChange={() => {}}
-        onBlur={onBlur}
-      />
-    );
+  it("blurInput should not call setState and onBlur when isFocused is false", () => {
+    const blurMock = jest.fn();
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          onBlur={blurMock}
+        />
+      )
+      .getInstance();
 
-    spyInputBlur.mockClear();
-    spySetState.mockClear();
+    const spy = jest.spyOn(instance, "setState");
+    instance.blurInput();
 
-    const input = element.root.findByType(StyledInput);
-    input.props.onBlur("test data");
+    expect(blurMock).toHaveBeenCalledTimes(0);
+    expect(spy).toHaveBeenCalledTimes(0);
 
-    expect(onBlur).toHaveBeenCalledTimes(1);
-    expect(spyInputBlur).toHaveBeenCalledTimes(1);
-    expect(spyInputBlur).toHaveBeenCalledWith("test data");
-    expect(spySetState).toHaveBeenCalledTimes(0);
+    spy.mockRestore();
   });
 
-  it("call searchIconSelect when search icon clicked", () => {
-    const searchIconSelect = jest.fn();
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onChange={() => {}}
-        searchIconSelect={searchIconSelect}
-      />
-    );
+  it("focusInput set state to isFocused true, call input focus method and call onFocus", () => {
+    const focushMock = jest.fn();
+    const inputFocusMock = jest.fn();
 
-    const el = element.root.findByType(StyledSearchIcon);
-    el.props.onClick("test data");
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          onFocus={focushMock}
+        />
+      )
+      .getInstance();
 
-    expect(searchIconSelect).toHaveBeenCalledTimes(1);
-    expect(searchIconSelect).toHaveBeenCalledWith("test data");
+    instance.inputRef.current = {
+      focus: inputFocusMock
+    };
+
+    instance.focusInput();
+
+    expect(focushMock).toHaveBeenCalledTimes(1);
+    expect(inputFocusMock).toHaveBeenCalledTimes(2);
+    expect(instance.state.isFocused).toBeTruthy();
   });
 
-  it("call clearText when clear icon selected", () => {
-    const clearText = jest.fn();
-    const element = renderer.create(
-      <SearchInput
-        variant="large"
-        placeholder="Search Demo"
-        value=""
-        isInputVisible={false}
-        onChange={() => {}}
-        clearText={clearText}
-      />
-    );
+  it("focusInput should not call onFocus and should call focus only once when isFocused is true", () => {
+    const focushMock = jest.fn();
+    const inputFocusMock = jest.fn();
 
-    const el = element.root.findByType(Clear);
-    el.props.onClick("test data");
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          onFocus={focushMock}
+        />
+      )
+      .getInstance();
 
-    expect(clearText).toHaveBeenCalledTimes(1);
-    expect(clearText).toHaveBeenCalledWith("test data");
+    instance.setState({
+      isFocused: true
+    });
+
+    instance.inputRef.current = {
+      focus: inputFocusMock
+    };
+
+    instance.focusInput();
+
+    expect(focushMock).toHaveBeenCalledTimes(0);
+    expect(inputFocusMock).toHaveBeenCalledTimes(1);
   });
 
   it("call cancelCallback when Cancel button selected", () => {
@@ -297,9 +348,17 @@ describe("SearchInput", () => {
     );
 
     const el = element.root.findByType(Cancel);
-    el.props.onClick("test data");
+    el.props.onClick();
 
     expect(cancelCallback).toHaveBeenCalledTimes(1);
-    expect(cancelCallback).toHaveBeenCalledWith("test data");
+  });
+});
+
+describe("getSearchHeight", () => {
+  it("should return 36px", () => {
+    expect(getSearchHeight("small")).toBe("36px");
+  });
+  it("should return 44px when no args", () => {
+    expect(getSearchHeight()).toBe("44px");
   });
 });
