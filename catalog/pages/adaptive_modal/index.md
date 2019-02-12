@@ -30,6 +30,9 @@ rows:
   - Prop: displayTop
     Type: bool
     Notes: Optional. Default false. Indicates, if the modal should open at the top of the page or in the center (default)
+  - Prop: fullscreen
+    Type: bool
+    Notes: Optional. Default false. Allows to render the modal fullscreen if has a 'true' value. All the responsive sizes ('size') options will be ignored if this prop has a 'true' value.
   - Prop: isOpened
     Type: bool
     Notes: Optional. Default true. Indicates, if the modal is opened by default
@@ -85,6 +88,30 @@ responsive: true
 </DeviceSizeProvider>
 ```
 
+### Fullscreen AdaptiveModal with custom action bars and long content
+
+```react
+responsive: true
+---
+<DeviceSizeProvider>
+    <AdaptiveModal
+        fullscreen
+        actionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>
+            </div>
+        }
+        bottomActionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <Button style={{ width: 'auto' }}>See Tickets</Button>
+            </div>
+        }
+    >
+        {Array(1000).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
+    </AdaptiveModal>
+</DeviceSizeProvider>
+```
+
 ### AdaptiveModal with custom action bars and short content
 
 ```react
@@ -92,6 +119,30 @@ responsive: true
 ---
 <DeviceSizeProvider>
     <AdaptiveModal
+        actionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>
+            </div>
+        }
+        bottomActionBar={
+            <div style={{ backgroundColor: 'white' }}>
+                <Button style={{ width: 'auto' }}>See Tickets</Button>
+            </div>
+        }
+    >
+        {Array(8).fill('').map((_, i) => <div key={i}>Text Row {i}</div>)}
+    </AdaptiveModal>
+</DeviceSizeProvider>
+```
+
+### Fullscreen AdaptiveModal with custom action bars and short content
+
+```react
+responsive: true
+---
+<DeviceSizeProvider>
+    <AdaptiveModal
+        fullscreen
         actionBar={
             <div style={{ backgroundColor: 'white' }}>
                 <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>

@@ -56,6 +56,20 @@ describe("<Modal />", () => {
       expect(container).toMatchSnapshot();
     });
 
+    it("should render fullscreen modal with action bars", () => {
+      const { container } = render(
+        <ModalWithDeviceSize
+          fullscreen
+          actionBar={<div>Action bar controls</div>}
+          bottomActionBar={<div>Place your controls here</div>}
+        >
+          <div>Modal contents</div>
+        </ModalWithDeviceSize>
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it("should not render the modal if it is closed", () => {
       const { container } = render(
         <ModalWithDeviceSize isOpened={false}>
@@ -68,7 +82,8 @@ describe("<Modal />", () => {
   });
 
   it("it should set the content `maxHeight` based on action bars heights for larger screens", () => {
-    getContentHeight.mockReturnValue(100);
+    const CONTENT_HEIGHT = "100px";
+    getContentHeight.mockReturnValue(CONTENT_HEIGHT);
 
     const { getByTestId } = renderIntoDocument(
       <ModalWithDeviceSize
@@ -79,7 +94,7 @@ describe("<Modal />", () => {
       </ModalWithDeviceSize>
     );
 
-    expect(getByTestId("modal-content").style.maxHeight).toBe("100");
+    expect(getByTestId("modal-content").style.maxHeight).toBe(CONTENT_HEIGHT);
   });
 
   it("should recalculate shadows and content height on props change", () => {
@@ -152,7 +167,7 @@ describe("<Modal />", () => {
         {
           createNodeMock: () => ({
             style: {
-              maxHeight: 300
+              maxHeight: "300px"
             }
           })
         }

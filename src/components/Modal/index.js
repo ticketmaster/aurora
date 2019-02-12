@@ -53,6 +53,7 @@ export class Modal extends React.Component {
       MODAL_SIZE_LARGE,
       MODAL_SIZE_XLARGE
     ]),
+    fullscreen: PropTypes.bool,
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
     /* eslint-disable react/forbid-prop-types */
@@ -70,6 +71,7 @@ export class Modal extends React.Component {
     gutters: true,
     isOpened: true,
     size: MODAL_SIZE_MEDIUM,
+    fullscreen: false,
     onRequestClose: null,
     onScroll: null,
     containerProps: {},
@@ -153,8 +155,10 @@ export class Modal extends React.Component {
     const bottomActionBar = this.bottomActionBarRef.current;
     const content = this.contentRef.current;
     const container = this.containerRef.current;
+    const { fullscreen } = this.props;
 
     const contentHeight = getContentHeight({
+      fullscreen,
       actionBar,
       bottomActionBar,
       container
@@ -209,7 +213,8 @@ export class Modal extends React.Component {
       actionBarProps,
       contentProps,
       bottomActionBarProps,
-      displayTop
+      displayTop,
+      fullscreen
     } = this.props;
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
@@ -239,6 +244,7 @@ export class Modal extends React.Component {
                 isOpened={isOpened}
                 size={size}
                 displayTop={displayTop}
+                fullscreen={fullscreen}
                 {...containerProps}
               >
                 {actionBar && (
