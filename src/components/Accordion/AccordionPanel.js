@@ -3,16 +3,16 @@ import { node } from "prop-types";
 
 import colors from "../../theme/colors";
 import spacing from "../../theme/spacing";
+import COLORS from "../../theme/colors";
 import constants from "../../theme/constants";
 
 const AccordionPanel = styled.div`
   max-height: 0;
   overflow: hidden;
-  /* border-top: 1px solid ${colors.diatomite}; */
-  color: ${colors.blackPearl};
+  color: ${COLORS.blackPearl};
 
   && ::before {
-    background: #ebebeb;
+    background: ${colors.diatomite};
     content: " ";
     display: flex;
     height: 1px;
@@ -32,15 +32,13 @@ const AccordionPanel = styled.div`
       transition: max-height 0.3s ${constants.easing.easeInOutQuad},
         opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
       opacity: 1;
-    `}
-
-    ${({ isOpen }) =>
-      !isOpen &&
-      css`
-        transition: max-height 0.3s ${constants.easing.easeInQuad},
-          opacity 0.1s ${constants.easing.easeInQuad};
-        opacity: 0;
-      `};
+    `} ${({ isOpen }) =>
+    !isOpen &&
+    css`
+      transition: max-height 0.3s ${constants.easing.easeInQuad},
+        opacity 0.1s ${constants.easing.easeInQuad};
+      opacity: 0;
+    `};
 `;
 
 AccordionPanel.propTypes = {

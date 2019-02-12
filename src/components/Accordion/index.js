@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
+import { bool, node } from "prop-types";
 import styled from "styled-components";
 
 import AccordionItem from "./AccordionItem";
@@ -40,8 +40,8 @@ const StyledAccordion = styled.div`
 
 class Accordion extends PureComponent {
   static propTypes = {
-    children: PropTypes.node.isRequired,
-    allowMultipleOpen: PropTypes.bool
+    children: node.isRequired,
+    allowMultipleOpen: bool
   };
 
   static defaultProps = {
@@ -119,16 +119,3 @@ class Accordion extends PureComponent {
 Accordion.Item = AccordionItem;
 Accordion.Panel = AccordionPanel;
 export default Accordion;
-
-/**
-options: {
-  linkTitle: "Ticket Options Available",
-  linkUrl: "",
-  linkSubTitle: "on Partner Site"
-}
-
-badge: {
-  label: "On sale: MON \u2022 AUG 27 \u2022 10 AM",
-  labelVariant: "positive"
-}
- */

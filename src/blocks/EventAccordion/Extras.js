@@ -1,11 +1,18 @@
 import React from "react";
-// import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import { arrayOf, shape } from "prop-types";
 
 import { Text } from "../../components/Text";
 import { Row as AuroraRow, Column as AuroraCol } from "../../components/Grid";
 import COLORS from "../../theme/colors";
 import Icon from "./Icon";
+
+import {
+  AttractionType,
+  AttractionsType,
+  ProductsType,
+  VenueType
+} from "../../components/types";
 
 // import spacing from "../../theme/spacing";
 
@@ -55,53 +62,66 @@ const SubTitle = styled(Text)`
   margin: 0;
 `;
 
-const getIconName = (title, extra) =>
-  title === "LINEUP"
-    ? "Avatar"
-    : title === "MORE"
-      ? "tickets"
-      : title === "VENUE INFO"
-        ? title
-        : extra.title;
+// const getIconName = (title, extra) =>
+//   title === "LINEUP"
+//     ? "Avatar"
+//     : title === "MORE"
+//       ? "tickets"
+//       : title === "VENUE INFO"
+//         ? title
+//         : extra.title;
 
-const Extras = ({ data }) => (
+// const ExtraItem = (item) => (
+// <Extra>
+//   <ExtraTitle primary size="kilo" weight="semiBold" tag="p">
+//     {title}
+//   </ExtraTitle>
+//   {items.map(extra => (
+//     <ExtraItem key={extra.title + id}>
+//       <Icon
+//         key={extra.title}
+//         name={getIconName(title, extra)}
+//         size={26}
+//         src={extra.src}
+//         color={COLORS.blackPearl}
+//       />
+//       <ExtraOptions>
+//         <ExtrasText
+//           primary
+//           size="uno"
+//           tag="p"
+//           href={extra.href}
+//           onClick={extra.onClick}
+//         >
+//           {extra.title}
+//         </ExtrasText>
+//         {extra.subTitle && (
+//           <SubTitle primary size="uno" tag="p">
+//             {extra.subTitle}
+//           </SubTitle>
+//         )}
+//       </ExtraOptions>
+//     </ExtraItem>
+//   ))}
+// </Extra>
+// )
+
+const Extras = ({
+  items: { attractions = null, products = null, venue = null }
+}) => (
   <ExtrasWrapper>
-    foo
-    {/* {data.map(({ title, id, items }) => (
-      <Extra key={id}>
-        <ExtraTitle primary size="kilo" weight="semiBold" tag="p">
-          {title}
-        </ExtraTitle>
-        {items.map(extra => (
-          <ExtraItem key={extra.title + id}>
-            <Icon
-              key={extra.title}
-              name={getIconName(title, extra)}
-              size={26}
-              src={extra.src}
-              color={COLORS.blackPearl}
-            />
-            <ExtraOptions>
-              <ExtrasText
-                primary
-                size="uno"
-                tag="p"
-                href={extra.href}
-                onClick={extra.onClick}
-              >
-                {extra.title}
-              </ExtrasText>
-              {extra.subTitle && (
-                <SubTitle primary size="uno" tag="p">
-                  {extra.subTitle}
-                </SubTitle>
-              )}
-            </ExtraOptions>
-          </ExtraItem>
-        ))}
-      </Extra>
-    ))} */}
+    {attractions && <div>attractions</div>}
+    {products && <div>products</div>}
+    {venue && <div>venue</div>}
   </ExtrasWrapper>
 );
+
+Extras.propTypes = {
+  items: shape({
+    attractions: AttractionsType,
+    products: ProductsType,
+    venue: shape(VenueType)
+  }).isRequired
+};
 
 export default Extras;

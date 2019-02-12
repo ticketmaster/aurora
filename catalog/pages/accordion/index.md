@@ -8,32 +8,29 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    {EVENT.map( event => {
-      const {
+    {EVENTS.map(({
+        id,
         products,
-        venues,
+        venues: [venue],
         attractions,
-      } = event;
-      const [ venue ] = venues;
-
-      return (
-        <Accordion.Item id={event.rowId} key={event.rowId}>
-          {(isOpen, toggle) => (
+        ...rest
+    }) => (
+        <Accordion.Item id={id} key={id}>
+          {(isOpen, handleToggle) => (
             <React.Fragment>
               <Section
                 isOpen={isOpen}
-                id={event.rowId}
-                item={event}
-                onToggle={toggle}
-                {...event}
+                id={id}
+                item={{...rest, venue}}
+                handleToggle={handleToggle}
               />
               <Accordion.Panel isOpen={isOpen}>
-                <Extras data={products, venue, attractions} />
+                <Extras items={{products, venue, attractions}} />
               </Accordion.Panel>
             </React.Fragment>
           )}
         </Accordion.Item>
       )
-    })}
+    )}
   </Accordion>
 ```
