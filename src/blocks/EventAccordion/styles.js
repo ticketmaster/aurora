@@ -19,29 +19,6 @@ const Button = styled(AuroraButton)`
   width: 102px;
 `;
 
-const ChevronWrapper = styled.button`
-  background: none;
-  border: none;
-  display: flex;
-  flex: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  min-width: 48px;
-  position: relative;
-
-  && :focus {
-    outline: none;
-  }
-
-  ${({ isOpen }) =>
-    isOpen &&
-    css`
-      .chevron {
-        transform: rotate(-180deg);
-      }
-    `};
-`;
-
 const EventDate = styled.div`
   color: ${colors.azure.hoverLight};
   display: block;
@@ -133,7 +110,6 @@ export {
   BadgeWrapper,
   Button,
   NameAndTitleWrapper,
-  ChevronWrapper,
   DayAndTime,
   DesktopBadge,
   EventCTAWrapper,

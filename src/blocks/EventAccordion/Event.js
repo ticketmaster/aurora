@@ -1,12 +1,12 @@
 import React from "react";
-import { string, func, bool, shape } from "prop-types";
 import styled from "styled-components";
+import { string, func, bool, shape } from "prop-types";
 import { EventType } from "../../components/types";
+
 import Chevron from "./Chevron";
 import Tile from "../Tile";
 
 import {
-  ChevronWrapper,
   EventDate,
   Container,
   NameAndTitleWrapper,
@@ -17,44 +17,27 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   /* padding: 16px 16px 16px 47px; */
-
   && > div:nth-child(n + 2) {
     margin-left: 16px;
   }
 `;
 
 const Event = ({
-  handleToggle = () => {},
-  id = null,
-  isOpen = false,
+  handleToggle,
+  id,
+  isOpen,
   item: {
     dates: {
-      status: { code = null }
+      status: { code }
     },
-    datesFormatted: { dateSubTitle = null, dateTitle = null },
-    name = null,
-    venue = null
+    datesFormatted: { dateSubTitle, dateTitle },
+    name,
+    venue
   }
 }) => (
-  <Wrapper className="Wrapper" isOpen={isOpen}>
+  <Wrapper isOpen={isOpen}>
     <Container className="Container">
-      <ChevronWrapper
-        className="chevronWrapper"
-        isOpen={isOpen}
-        id={id}
-        variant="transparent"
-        onClick={handleToggle}
-      >
-        <Chevron
-          className="chevron"
-          onClick={handleToggle}
-          id={id}
-          color="000"
-          isopen={String(isOpen)}
-          size={15}
-        />
-      </ChevronWrapper>
-
+      <Chevron id={id} isOpen={isOpen} onClick={handleToggle} />
       <EventDate>
         <Tile.Title>{dateTitle}</Tile.Title>
         <Tile.Text>{dateSubTitle}</Tile.Text>

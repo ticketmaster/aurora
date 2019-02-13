@@ -1,4 +1,5 @@
 import React from "react";
+import COLORS from "../../theme/colors";
 
 import Avatar from "../../components/Image/ThumbnailCircle";
 import Parking from "../../components/Icons/Parking";
@@ -12,16 +13,32 @@ const Icon = props => {
       return <Avatar size={40} {...props} />;
 
     case "Parking":
-      return <Parking {...props} />;
+      return (
+        <Parking
+          {...props}
+          className="icon"
+          color={COLORS.blackPearl}
+          size={24}
+        />
+      );
 
     case "Tickets":
-      return <Ticket {...props} size="small" />;
+      return <Ticket {...props} className="icon" size="small" />;
 
     case "VENUE INFO":
-      return <Venue {...props} />;
+      return (
+        <Venue
+          {...props}
+          className="icon"
+          color={COLORS.blackPearl}
+          size={24}
+        />
+      );
 
     case "VIP":
-      return <Vip {...props} />;
+      return (
+        <Vip {...props} className="icon" color={COLORS.blackPearl} size={24} />
+      );
 
     default:
       return <div />;

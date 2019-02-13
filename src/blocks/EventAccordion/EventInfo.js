@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import COLORS from "../../theme/colors";
 import Icon from "./Icon";
+import InfoItem from "./InfoItem";
 import Tile from "../Tile";
 
 import {
@@ -16,42 +17,6 @@ const Category = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1 1;
-`;
-
-const ExtraItem = styled.div`
-  align-items: self-start;
-  display: grid;
-  grid-auto-flow: dense;
-  grid-auto-rows: auto;
-  grid-gap: 6px 6px;
-  grid-template-areas:
-    "icon section section section section"
-    "  .  section section section section";
-  grid-template-columns: auto 1fr;
-  padding: 6px 0 0;
-
-  .section {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    grid-area: section;
-    justify-content: center;
-    margin: 0;
-    align-self: normal;
-    grid-row: section / span 1;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .lineup {
-    align-self: center;
-    grid-row: section / span 1;
-  }
-  .icon {
-    grid-area: icon;
-  }
 `;
 
 const Wrapper = styled.div`
@@ -80,18 +45,15 @@ const EventInfo = ({
           <Category>
             <Tile.Label>LINEUP</Tile.Label>
             {lineup.map(({ name, url, __typename }) => (
-              <ExtraItem key={`attraction-${name}`}>
+              <InfoItem key={`attraction-${name}`}>
                 <Tile.Link className="section lineup" href={url}>
                   {name}
                 </Tile.Link>
                 <Icon
-                  className="icon"
-                  color={COLORS.blackPearl}
                   name={__typename}
-                  size={40}
                   src="https://placekitten.com/g/512/288"
                 />
-              </ExtraItem>
+              </InfoItem>
             ))}
             {lineup &&
               attractions.length > 3 && (
@@ -105,24 +67,15 @@ const EventInfo = ({
       {venueName && (
         <Category>
           <Tile.Label>VENUE</Tile.Label>
-
-          <ExtraItem key={`venue-${venueName}`}>
+          <InfoItem key={`venue-${venueName}`}>
             <div className="section">
               <Tile.Link href={venueUrl}> {venueName} </Tile.Link>
               <Tile.Text>
-                {" "}
-                {city.name}, {state.stateCode}{" "}
+                {city.name}, {state.stateCode}
               </Tile.Text>
             </div>
-
-            <Icon
-              className="icon"
-              color={COLORS.blackPearl}
-              name="VENUE INFO"
-              size={24}
-              src="https://placekitten.com/g/512/288"
-            />
-          </ExtraItem>
+            <Icon name="VENUE INFO" src="https://placekitten.com/g/512/288" />
+          </InfoItem>
         </Category>
       )}
 
@@ -130,7 +83,7 @@ const EventInfo = ({
         <Category>
           <Tile.Label>ADD-ONS</Tile.Label>
           {products.map(({ name, url }) => (
-            <ExtraItem key={`attraction-${name}`}>
+            <InfoItem key={`attraction-${name}`}>
               <div className="section">
                 <Tile.Link className="section" href={url}>
                   {name}
@@ -143,7 +96,7 @@ const EventInfo = ({
                 size={24}
                 src="https://placekitten.com/g/512/288"
               />
-            </ExtraItem>
+            </InfoItem>
           ))}
         </Category>
       )}
