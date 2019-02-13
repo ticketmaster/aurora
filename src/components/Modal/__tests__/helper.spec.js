@@ -61,6 +61,23 @@ describe("getContentHeight", () => {
       expect(contentHeight).toBe(expected);
     });
   });
+
+  it("should calculate correct height for the fullscreen mode", () => {
+    const contentHeight = getContentHeight({
+      actionBar: {
+        clientHeight: 20
+      },
+      bottomActionBar: {
+        clientHeight: 40
+      },
+      container: {
+        clientHeight: 376
+      },
+      isFullscreen: true
+    });
+
+    expect(contentHeight).toEqual("316px");
+  });
 });
 
 describe("getActionBarShadow", () => {
