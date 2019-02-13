@@ -1,12 +1,13 @@
 import React from "react";
+import styled from "styled-components";
 
 import colors from "../../../src/theme/colors";
-
 import ParkingIcon from "../../../src/components/Icons/Parking";
 import VenueIcon from "../../../src/components/Icons/Venue";
 import TicketIcon from "../../../src/components/Icons/Ticket";
 import VipIcon from "../../../src/components/Icons/Vip";
 import ThumbnailCircleImage from "../../../src/components/Image/ThumbnailCircle";
+import { mediumAndUp } from "../../../src/theme/mediaQueries";
 
 export const listItems = [
   {
@@ -136,5 +137,34 @@ export const items = [
     icon: <VenueIcon size={26} color={colors.blackPearl} />,
     onItemClick: () => {},
     url: "/"
+  }
+];
+
+export const ResponsiveHeader = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  ${mediumAndUp`
+    padding-left: 35px;
+  `};
+`;
+
+export const pureListItems = [
+  {
+    image: "https://placekitten.com/g/512/288",
+    text: "VIP Packages",
+    expires: "Expires 06/17/2019"
+  },
+  {
+    image: "https://placekitten.com/g/512/289",
+    text: "VIP Packages",
+    expires: "Expires 05/11/2020"
+  },
+  {
+    image: "https://placekitten.com/g/512/283",
+    text: "VIP Packages",
+    expires: "Expires 08/22/2021"
   }
 ];

@@ -156,7 +156,7 @@ const ListRowButton = styled(StyledButton)`
   padding: 18px 0;
 `;
 
-const OverflowDesktopContainer = styled(Column)`
+export const OverflowDesktopContainer = styled(Column)`
   max-height: 0;
   overflow: hidden;
 
