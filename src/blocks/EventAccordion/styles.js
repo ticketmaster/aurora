@@ -1,11 +1,8 @@
 import styled, { css } from "styled-components";
 import { Button as AuroraButton } from "../../components/Button";
-import { mediumAndUp } from "../../theme/mediaQueries";
 import { Row as AuroraRow } from "../../components/Grid";
 import { Text } from "../../components/Text";
-
 import colors from "../../theme/colors";
-import constants from "../../theme/constants";
 
 const Col = styled.div`
   max-width: none;
