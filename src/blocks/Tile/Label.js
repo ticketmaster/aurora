@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Text as AuroraText } from "../../components/Text";
 
-const BaseLabel = styled(AuroraText)`
+const Wrapper = styled(AuroraText)`
   line-height: 20px;
   margin: 0;
   max-height: 20px;
@@ -12,9 +12,9 @@ const BaseLabel = styled(AuroraText)`
 `;
 
 const Label = ({ children }) => (
-  <BaseLabel size="uno" weight="semiBold" tag="p">
+  <Wrapper size="uno" weight="semiBold" tag="p">
     {children}
-  </BaseLabel>
+  </Wrapper>
 );
 // Label.propTypes = {
 //   children: string

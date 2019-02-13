@@ -73,7 +73,7 @@ const BadgeWrapper = styled.span`
   height: 20px;
 `;
 
-const EventInfoWrapper = styled(Row)`
+const Container = styled(Row)`
   flex: 1 1;
   margin: 0 !important;
   padding-bottom: 14px;
@@ -138,7 +138,7 @@ export {
   DesktopBadge,
   EventCTAWrapper,
   EventDate,
-  EventInfoWrapper,
+  Container,
   EventTextWrapper,
   Month
 };

@@ -8,7 +8,7 @@ import Tile from "../Tile";
 import {
   ChevronWrapper,
   EventDate,
-  EventInfoWrapper,
+  Container,
   NameAndTitleWrapper,
   EventTextWrapper
 } from "./styles";
@@ -37,7 +37,7 @@ const Event = ({
   }
 }) => (
   <Wrapper className="Wrapper" isOpen={isOpen}>
-    <EventInfoWrapper className="eventInfoWrapper">
+    <Container className="Container">
       <ChevronWrapper
         className="chevronWrapper"
         isOpen={isOpen}
@@ -66,7 +66,7 @@ const Event = ({
           <Tile.Text>{venue.name}</Tile.Text>
         </NameAndTitleWrapper>
       </EventTextWrapper>
-    </EventInfoWrapper>
+    </Container>
   </Wrapper>
 );
 

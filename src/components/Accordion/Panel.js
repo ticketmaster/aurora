@@ -1,18 +1,17 @@
 import styled, { css } from "styled-components";
 import { node } from "prop-types";
 
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
+// import spacing from "../../theme/spacing";
 import COLORS from "../../theme/colors";
 import constants from "../../theme/constants";
 
-const AccordionPanel = styled.div`
+const Panel = styled.div`
   max-height: 0;
   overflow: hidden;
   color: ${COLORS.blackPearl};
 
   && ::before {
-    background: ${colors.diatomite};
+    background: ${COLORS.diatomite};
     content: " ";
     display: flex;
     height: 1px;
@@ -27,7 +26,7 @@ const AccordionPanel = styled.div`
   ${({ isOpen }) =>
     isOpen &&
     css`
-      background-color: ${colors.white.base};
+      background-color: ${COLORS.white.base};
       max-height: 600px;
       transition: max-height 0.3s ${constants.easing.easeInOutQuad},
         opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
@@ -41,8 +40,8 @@ const AccordionPanel = styled.div`
     `};
 `;
 
-AccordionPanel.propTypes = {
+Panel.propTypes = {
   children: node
 };
 
-export default AccordionPanel;
+export default Panel;

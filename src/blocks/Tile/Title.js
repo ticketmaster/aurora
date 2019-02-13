@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Text as AuroraText } from "../../components/Text";
 
-const BaseTitle = styled(AuroraText)`
+const Wrapper = styled(AuroraText)`
   line-height: 20px;
   margin: 0;
   max-height: 20px;
@@ -12,9 +12,9 @@ const BaseTitle = styled(AuroraText)`
 `;
 
 const Title = ({ children }) => (
-  <BaseTitle size="kilo" weight="semiBold" tag="p">
+  <Wrapper size="kilo" weight="semiBold" tag="p">
     {children}
-  </BaseTitle>
+  </Wrapper>
 );
 // Title.propTypes = {
 //   children: string

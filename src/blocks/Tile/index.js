@@ -8,6 +8,7 @@ import Title from "./Title";
 const Tile = styled.div`
   background: #fff;
 `;
+
 Tile.Label = Label;
 Tile.Link = Link;
 Tile.Text = Text;

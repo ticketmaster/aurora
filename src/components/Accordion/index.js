@@ -2,12 +2,12 @@ import React, { PureComponent } from "react";
 import { bool, node } from "prop-types";
 import styled from "styled-components";
 
-import AccordionItem from "./AccordionItem";
-import AccordionPanel from "./AccordionPanel";
+import Section from "./Section";
+import Panel from "./Panel";
 
 // import { mediumAndUp } from "../../theme/mediaQueries";
 
-const StyledAccordion = styled.div`
+const Wrapper = styled.div`
   > :nth-child(n + 1)::after {
     background: #ebebeb;
     content: " ";
@@ -29,11 +29,11 @@ const StyledAccordion = styled.div`
 class Accordion extends PureComponent {
   static propTypes = {
     children: node.isRequired,
-    allowMultipleOpen: bool
+    multiToggle: bool
   };
 
   static defaultProps = {
-    allowMultipleOpen: false
+    multiToggle: false
   };
 
   constructor(props) {
@@ -48,13 +48,13 @@ class Accordion extends PureComponent {
     const id = e.target.getAttribute("id");
 
     const {
-      props: { allowMultipleOpen },
+      props: { multiToggle },
       state: { openSections }
     } = this;
 
     const isOpen = !!openSections[id];
 
-    if (allowMultipleOpen) {
+    if (multiToggle) {
       this.setState({
         openSections: {
           ...openSections,
@@ -98,12 +98,10 @@ class Accordion extends PureComponent {
         toggle: e => this.onClick(e)
       })
     );
-    return (
-      <StyledAccordion className="accordion">{clonedChildren}</StyledAccordion>
-    );
+    return <Wrapper className="accordion-wrapper">{clonedChildren}</Wrapper>;
   }
 }
 
-Accordion.Item = AccordionItem;
-Accordion.Panel = AccordionPanel;
+Accordion.Item = Section;
+Accordion.Panel = Panel;
 export default Accordion;

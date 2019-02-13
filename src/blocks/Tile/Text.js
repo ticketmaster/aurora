@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { string, node, oneOf } from "prop-types";
 import { Text as AuroraText } from "../../components/Text";
+// import { string, node, oneOf } from "prop-types";
 // import colors from "../../theme/colors";
 // import constants from "../../theme/constants";
 
-const BaseText = styled(AuroraText)`
+const Wrapper = styled(AuroraText)`
   color: rgba(38, 38, 38, 0.6);
   line-height: 16px;
   max-height: 36px;
@@ -16,7 +16,7 @@ const BaseText = styled(AuroraText)`
 `;
 
 const Text = ({ children, ...rest }) => (
-  <BaseText
+  <Wrapper
     className="eventName"
     accent="gray03"
     size="hecto"
@@ -25,7 +25,7 @@ const Text = ({ children, ...rest }) => (
     {...rest}
   >
     {children}
-  </BaseText>
+  </Wrapper>
 );
 
 // Text.propTypes = {

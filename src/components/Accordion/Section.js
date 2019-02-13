@@ -2,7 +2,7 @@ import React from "react";
 import { bool, func } from "prop-types";
 import styled, { css } from "styled-components";
 
-const StyledAccordionItem = styled.div`
+const Wrapper = styled.div`
   background: white;
   overflow: hidden;
   min-height: 55px;
@@ -22,21 +22,21 @@ const StyledAccordionItem = styled.div`
     `};
 `;
 
-const AccordionItem = ({ children, isOpen = false, toggle }) => (
-  <StyledAccordionItem className="accordion-item" isOpen={isOpen}>
+const Section = ({ children, isOpen = false, toggle }) => (
+  <Wrapper className="accordion-section" isOpen={isOpen}>
     {children(isOpen, toggle)}
-  </StyledAccordionItem>
+  </Wrapper>
 );
 
-AccordionItem.defaultProps = {
+Section.defaultProps = {
   isOpen: false,
   toggle: null
 };
 
-AccordionItem.propTypes = {
+Section.propTypes = {
   children: func.isRequired,
   isOpen: bool,
   toggle: func
 };
 
-export default AccordionItem;
+export default Section;

@@ -4,7 +4,6 @@ import { ThemeProvider } from "styled-components";
 import { Button } from "../../../src/components/Button";
 
 import Accordion from "../../../src/components/Accordion";
-import AccordionItem from "../../../src/components/Accordion/AccordionItem";
 import Chevron from "../../../src/blocks/EventAccordion/Chevron";
 import Event from "../../../src/blocks/EventAccordion/Event";
 import EventInfo from "../../../src/blocks/EventAccordion/EventInfo";
@@ -17,7 +16,6 @@ export default {
   title: "Accordion",
   imports: {
     Accordion,
-    AccordionItem,
     Button,
     Chevron,
     Event,
