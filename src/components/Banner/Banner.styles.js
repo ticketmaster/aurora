@@ -36,22 +36,22 @@ export const Container = styled.div`
   }
 
   &.banner-variant-error {
-    background-color: ${getThemeValue("error", "light")};
+    background-color: ${getThemeValue("error", "lightest")};
     border-color: ${getThemeValue("error", "base")};
   }
 
   &.banner-variant-success {
-    background-color: ${getThemeValue("success", "light")};
+    background-color: ${getThemeValue("success", "lightest")};
     border-color: ${getThemeValue("success", "base")};
   }
 
   &.banner-variant-alert {
-    background-color: rgba(242, 189, 42, 0.2);
+    background-color: ${getThemeValue("caution", "lightest")};
     border-color: ${getThemeValue("caution", "base")};
   }
 
   &.banner-variant-info {
-    background-color: rgba(2, 108, 223, 0.1);
+    background-color: ${getThemeValue("primary", "light")};
     border-color: ${getThemeValue("primary", "base")};
   }
 `;
