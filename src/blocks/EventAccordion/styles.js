@@ -1,17 +1,9 @@
 import styled, { css } from "styled-components";
 import { Button as AuroraButton } from "../../components/Button";
-import { Row as AuroraRow } from "../../components/Grid";
-import { Text } from "../../components/Text";
-import colors from "../../theme/colors";
 
 const Col = styled.div`
   max-width: none;
   flex: 0;
-`;
-
-const Row = styled(AuroraRow)`
-  flex: 1 1;
-  margin: 0 !important;
 `;
 
 const Button = styled(AuroraButton)`
@@ -19,71 +11,11 @@ const Button = styled(AuroraButton)`
   width: 102px;
 `;
 
-const EventDate = styled.div`
-  color: ${colors.azure.hoverLight};
-  display: block;
-  flex-direction: column;
-  margin-right: 8px;
-
-  && p:first-child {
-    color: #904eba;
-  }
-`;
-
-const DayAndTime = styled(Text)`
-  line-height: 16px;
-  margin: 0 !important;
-  display: block;
-  padding-left: 4px;
-  padding-right: 16px;
-  color: rgba(38, 38, 38, 0.6);
-`;
-
-const Month = styled(DayAndTime)`
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #904eba;
-`;
-
 const BadgeWrapper = styled.span`
   display: flex;
   height: 20px;
 `;
 
-const Container = styled(Row)`
-  flex: 1 1;
-  margin: 0 !important;
-  padding-bottom: 14px;
-  padding-top: 14px;
-
-  &&:hover {
-    background: lavender;
-  }
-`;
-
-const NameAndTitleWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  ${isOpen =>
-    isOpen &&
-    css`
-      .eventTitle {
-        display: hidden;
-      }
-    `};
-`;
-
-const EventTextWrapper = styled(Col)`
-  flex: 1 1;
-  * {
-    margin: 0;
-  }
-
-  && *:nth-child(3) {
-    margin-top: 4px;
-  }
-`;
 
 const EventCTAWrapper = styled(Col)`
   padding-left: 16px;
@@ -109,12 +41,6 @@ const DesktopBadge = styled(EventCTAWrapper)`
 export {
   BadgeWrapper,
   Button,
-  NameAndTitleWrapper,
-  DayAndTime,
   DesktopBadge,
-  EventCTAWrapper,
-  EventDate,
-  Container,
-  EventTextWrapper,
-  Month
+  EventCTAWrapper
 };

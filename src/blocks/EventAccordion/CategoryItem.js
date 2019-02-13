@@ -4,12 +4,6 @@ import styled from "styled-components";
 import Tile from "../Tile"
 import Icon from "./Icon";
 
-const Category = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1;
-`;
-
 const Wrapper = styled.div`
   align-items: self-start;
   display: grid;
@@ -67,6 +61,5 @@ const CategoryItem = ({
   <Icon type={type} src={src} />
 </Wrapper>
 );
-// <Tile.Label>{label}</Tile.Label>
 
 export default CategoryItem;

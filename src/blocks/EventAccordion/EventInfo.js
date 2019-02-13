@@ -1,24 +1,16 @@
 import React from "react";
-import { shape } from "prop-types";
 import styled from "styled-components";
+import { shape } from "prop-types";
 
-import COLORS from "../../theme/colors";
-import Icon from "./Icon";
-// import InfoItem from "./InfoItem";
-import Tile from "../Tile";
+import Category from "./Category";
 import CategoryItem from "./CategoryItem";
+import Tile from "../Tile";
 
 import {
   AttractionsType,
   ProductsType,
   VenueType
 } from "../../components/types";
-
-const Category = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 1 1;
-`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -34,7 +26,13 @@ const EventInfo = ({
   items: {
     attractions = null,
     products = [],
-    venue: { city, name: venueName, state, venueUrl, __typename: venueTypeName }
+    venue: {
+      city,
+      name: venueName,
+      state,
+      venueUrl,
+      __typename: venueTypeName
+    }
   }
 }) => {
   const lineup = attractions ? attractions.slice(0, 3) : null;
