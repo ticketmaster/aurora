@@ -21,8 +21,9 @@ const Wrapper = styled.button`
   ${({ isOpen }) =>
     isOpen &&
     css`
-      .chevron {
+      > svg {
         transform: rotate(-180deg);
+
       }
     `};
 `;
@@ -36,7 +37,7 @@ const StyledComponent = styled(AuroraChevron)`
 
 const Chevron = ({ isOpen = false, id = null, onClick = null }) => (
   <Wrapper id={id} isOpen={isOpen} variant="transparent" onClick={onClick}>
-    <StyledComponent className="chevron" id={id} size={15} onClick={onClick} />
+    <StyledComponent id={id} size={15} onClick={onClick} />
   </Wrapper>
 );
 

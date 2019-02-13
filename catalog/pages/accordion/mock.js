@@ -1,4 +1,4 @@
-export const EVENT = [
+export const EVENT_DATA = [
   {
     id: "vv1AaZA40Gkd-wNzW",
     name: "Dierks Bentley: Burning Man 2019",

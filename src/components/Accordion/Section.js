@@ -14,7 +14,6 @@ const Wrapper = styled.div`
       border-radius: 4px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 0 4px 0 rgba(0, 0, 0, 0.12);
       margin-bottom: 12px;
-      margin-top: -1px;
 
       && ::after {
         visibility: hidden;

@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { string } from "prop-types";
 
 import Tile from "../Tile"
 import Icon from "./Icon";
+
+import { IconType, LinkType } from "../../components/types";
 
 const Wrapper = styled.div`
   align-items: self-start;
@@ -61,5 +64,13 @@ const CategoryItem = ({
   <Icon type={type} src={src} />
 </Wrapper>
 );
+
+CategoryItem.propType = {
+  link: LinkType,
+  icon: IconType,
+  label: string,
+  text: string
+ 
+};
 
 export default CategoryItem;

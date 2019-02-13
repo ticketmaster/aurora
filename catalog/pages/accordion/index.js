@@ -9,7 +9,7 @@ import Event from "../../../src/blocks/EventAccordion/Event";
 import EventInfo from "../../../src/blocks/EventAccordion/EventInfo";
 import Text from "../../../src/components/Text";
 
-import { EXTRAS_DATA, EVENTS, EVENTS_MANY } from "./mock";
+import { EXTRAS_DATA, EVENTS, EVENT_DATA, EVENTS_MANY } from "./mock";
 
 export default {
   path: "/accordion",
@@ -20,6 +20,7 @@ export default {
     Chevron,
     Event,
     EventInfo,
+    EVENT_DATA,
     EVENTS,
     EXTRAS_DATA,
     EVENTS_MANY,

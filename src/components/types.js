@@ -1,6 +1,20 @@
 /* eslint-disable import/prefer-default-export */
 import { arrayOf, string, bool, shape } from "prop-types";
 
+const LinkType = {
+  text: string,
+  href: string,
+  icon: shape({
+    type: string,
+    src: string
+  })
+};
+
+const IconType = {
+  type: string,
+  src: string
+};
+
 const AttractionType = {
   id: string,
   name: string,
@@ -87,6 +101,8 @@ export {
   DateFormattedType,
   DatesType,
   EventType,
+  IconType,
+  LinkType,
   ProductsType,
   ProductType,
   VenueType

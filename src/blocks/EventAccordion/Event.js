@@ -1,33 +1,14 @@
 import React from "react";
-import styled, {css, keyframes} from "styled-components";
-import { EventType } from "../../components/types";
+import styled, {css} from "styled-components";
 import { string, func, bool, shape } from "prop-types";
-
-import constants from "../../theme/constants"
+import { EventType } from "../../components/types";
+import constants from "../../theme/constants";
 
 import Chevron from "./Chevron";
 import Date from "./Date";
 import Tile from "../Tile";
 
-const {easing} = constants;
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-`
+const {easing: {easeInOutQuad, easeInQuad}} = constants;
 
 const Wrapper = styled(Tile)`
   display: flex;
@@ -37,6 +18,28 @@ const Wrapper = styled(Tile)`
     margin-left: 16px;
   }
 `;
+
+const Animate = styled.div`
+  align-items: left
+  ${({isOpen}) =>
+    isOpen
+    ?
+      css`
+        align-items: center;
+        transition: opacity 0.1s ${easeInQuad},
+        height 0.1s ${easeInQuad};
+        height: 0;
+        opacity: 0;
+      `
+    :
+      css`
+        transition: opacity 0.3s ${easeInOutQuad} 0.2s;
+        height: auto;
+        opacity: 1;
+      `
+  };
+`;
+
 
 const Container = styled.div`
   flex: 1 1;
@@ -62,28 +65,9 @@ const TextWrapper = styled.div`
   }
 `;
 
-const TextContainer = styled.div`
+const TextContainer = styled(Animate)`
   display: flex;
   flex-direction: column;
-`;
-
-
-const Animate = styled.div`
-  ${({isOpen}) =>
-    isOpen
-    ?
-      css`
-        transition: opacity 0.1s ${easing.easeInQuad};
-        height: 0;
-        opacity: 0;
-      `
-    :
-      css`
-        transition: opacity 0.3s ${easing.easeInOutQuad} 0.2s;
-        height: auto;
-        opacity: 1;
-      `
-  };
 `;
 
 const Event = ({
@@ -101,22 +85,24 @@ const Event = ({
 }) => (
   <Wrapper isOpen={isOpen}>
     <Container className="event">
-      <Chevron id={id} isOpen={isOpen} onClick={handleToggle} />
-      
+      <Chevron
+        id={id}
+        isOpen={isOpen}
+        onClick={handleToggle}
+      /> 
       <Date>
         <Tile.Title>{dateTitle}</Tile.Title>
         <Tile.Text>{dateSubTitle}</Tile.Text>
       </Date>
 
       <TextWrapper>
-        <TextContainer className="nameEventWrapper" isOpen={isOpen}>
+        <TextContainer isOpen={isOpen}>
           <Tile.Title>{name}</Tile.Title>
-          <Tile.Text className>{venue.name}</Tile.Text>
-          
-            <Animate classname="desktop" isOpen={!isOpen}>
-              <Tile.Text>foobar</Tile.Text>
-            </Animate>
-          
+          <Tile.Text>{venue.name}</Tile.Text>  
+        </TextContainer>
+
+        <TextContainer isOpen={!isOpen}>
+          <Tile.Title>{name}</Tile.Title>
         </TextContainer>
       </TextWrapper>
 

@@ -5,8 +5,6 @@ import styled from "styled-components";
 import Section from "./Section";
 import Panel from "./Panel";
 
-// import { mediumAndUp } from "../../theme/mediaQueries";
-
 const Wrapper = styled.div`
   > :nth-child(n + 1)::after {
     background: #ebebeb;
@@ -43,7 +41,7 @@ class Accordion extends PureComponent {
     this.state = { openSections };
   }
 
-  onClick = e => {
+  onClick = (e) => {
     e.stopPropagation();
     const id = e.target.getAttribute("id");
 
@@ -95,7 +93,7 @@ class Accordion extends PureComponent {
       React.cloneElement(child, {
         ...child.props,
         isOpen: !!openSections[child.props.id],
-        toggle: e => this.onClick(e)
+        toggle: this.onClick
       })
     );
     return <Wrapper className="accordion-wrapper">{clonedChildren}</Wrapper>;
