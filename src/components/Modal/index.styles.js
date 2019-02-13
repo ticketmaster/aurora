@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
+import classNames from "classnames";
 import { spacing, colors, constants, zIndex, typography } from "../../theme";
 import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
@@ -57,7 +58,9 @@ const ContainerAnimation = css`
   }
 `;
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled.div.attrs(({ isFullscreen }) => ({
+  className: classNames({ fullscreen: isFullscreen })
+}))`
   display: ${({ isOpened }) => (isOpened ? "block" : "none")};
   top: ${({ displayTop }) => (displayTop ? 0 : "50%")};
   padding: 0;
@@ -74,6 +77,16 @@ export const ModalContainer = styled.div`
   height: auto;
   max-height: calc(100vh - ${spacing.colossal} * 2);
   overflow: hidden;
+
+  &.fullscreen {
+    top: 0;
+    margin: 0;
+    border-radius: 0;
+    transform: none;
+    height: 100%;
+    max-height: initial;
+    max-width: initial;
+  }
 
   ${smallAndUp`
     max-width: 400px;
@@ -147,6 +160,10 @@ const contentGutters = css`
 export const ModalContent = styled.div`
   background-color: ${colors.white.base};
   overflow-y: auto;
+
+  .fullscreen & {
+    height: 100%;
+  }
 
   ${({ gutters }) => (gutters ? contentGutters : "")};
 `;
