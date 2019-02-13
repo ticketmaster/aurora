@@ -1,3 +1,5 @@
+const success = "#1bab1e";
+
 const global = {
   brand: "#026cdf",
   primary: {
@@ -6,28 +8,38 @@ const global = {
     medium: "#0150a7",
     dark: "#013670",
     light: "#ebf4fd",
-    muted: "#d6e7fa"
+    muted: "#d6e7fa",
+    reverse: "#3396ff"
   },
   special: {
-    base: "#1bab1e",
+    base: success,
     medium: "#23702c",
     dark: "#265333"
   },
   darkFill: "#1f262d",
+  dark: {
+    base: "#1f262d",
+    light: "#8f9296",
+    lightest: "#e3e4e5"
+  },
   accent01: {
     base: "#c56bff",
     dark: "#904eba",
-    light: "#f0daff"
+    light: "#eacbff",
+    lightest: "#f9f0ff"
   },
   accent02: {
     base: "#962d94",
     dark: "#6d236c",
-    light: "#e4cbe3"
+    light: "#dfc0df",
+    lightest: "#f4eaf4"
   },
   accent03: {
     base: "#14a1a3",
     dark: "#0a7e80",
-    light: "#20c4c7"
+    light: "#aadddd",
+    lightest: "#cef2f2",
+    reverse: "#20c4c7"
   },
   accent04: "#00ffff",
   gray01: "#262626",
@@ -38,17 +50,20 @@ const global = {
   error: {
     base: "#d93a3a",
     dark: "#a22b2b",
-    light: "#f3c3c3"
+    light: "#f3c3c3",
+    lightest: "#fbebeb"
   },
   caution: {
     base: "#f2bd2a",
-    dark: "#b98800",
-    light: "#fae5aa"
+    dark: "#c69a22",
+    light: "#fae7b4",
+    lightest: "#fdf5df"
   },
   success: {
-    base: "#1bab1e",
+    base: success,
     dark: "#148016",
-    light: "#bae5bb"
+    light: "#bae5bb",
+    lightest: "#e8f6e8"
   },
   transparent: "transparent",
   onyx: {
