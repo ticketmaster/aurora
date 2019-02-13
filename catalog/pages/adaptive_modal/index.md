@@ -30,7 +30,7 @@ rows:
   - Prop: displayTop
     Type: bool
     Notes: Optional. Default false. Indicates, if the modal should open at the top of the page or in the center (default)
-  - Prop: fullscreen
+  - Prop: isFullscreen
     Type: bool
     Notes: Optional. Default false. Allows to render the modal fullscreen if has a 'true' value. All the responsive sizes ('size') options will be ignored if this prop has a 'true' value.
   - Prop: isOpened
@@ -95,7 +95,7 @@ responsive: true
 ---
 <DeviceSizeProvider>
     <AdaptiveModal
-        fullscreen
+        isFullscreen
         actionBar={
             <div style={{ backgroundColor: 'white' }}>
                 <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>
@@ -142,7 +142,7 @@ responsive: true
 ---
 <DeviceSizeProvider>
     <AdaptiveModal
-        fullscreen
+        isFullscreen
         actionBar={
             <div style={{ backgroundColor: 'white' }}>
                 <h1 style={{ padding: 0, margin: 0, fontSize: 16 }}>Demo AdaptiveModal</h1>

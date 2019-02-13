@@ -58,8 +58,8 @@ const ContainerAnimation = css`
   }
 `;
 
-export const ModalContainer = styled.div.attrs(({ fullscreen }) => ({
-  className: classNames({ fullscreen })
+export const ModalContainer = styled.div.attrs(({ isFullscreen }) => ({
+  className: classNames({ fullscreen: isFullscreen })
 }))`
   display: ${({ isOpened }) => (isOpened ? "block" : "none")};
   top: ${({ displayTop }) => (displayTop ? 0 : "50%")};

@@ -73,7 +73,7 @@ describe("getContentHeight", () => {
       container: {
         clientHeight: 376
       },
-      fullscreen: true
+      isFullscreen: true
     });
 
     expect(contentHeight).toEqual("316px");

@@ -59,7 +59,7 @@ describe("<Modal />", () => {
     it("should render fullscreen modal with action bars", () => {
       const { container } = render(
         <ModalWithDeviceSize
-          fullscreen
+          isFullscreen
           actionBar={<div>Action bar controls</div>}
           bottomActionBar={<div>Place your controls here</div>}
         >
