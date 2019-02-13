@@ -19,14 +19,14 @@ Accordion Component
         <Accordion.Item id={id} key={id}>
           {(isOpen, handleToggle) => (
             <React.Fragment>
-              <Section
+              <Event
                 isOpen={isOpen}
                 id={id}
                 item={{...rest, venue}}
                 handleToggle={handleToggle}
               />
               <Accordion.Panel isOpen={isOpen}>
-                <Extras
+                <EventInfo
                   items={{
                     products,
                     venue: {...venue, venueUrl},

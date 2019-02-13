@@ -46,9 +46,14 @@ const ChevronWrapper = styled.button`
 `;
 
 const EventDate = styled.div`
+  color: ${colors.azure.hoverLight};
   display: block;
   flex-direction: column;
-  color: ${colors.azure.hoverLight};
+  margin-right: 8px;
+
+  && p:first-child {
+    color: #904eba;
+  }
 `;
 
 const DayAndTime = styled(Text)`
@@ -64,39 +69,6 @@ const Month = styled(DayAndTime)`
   line-height: 20px;
   text-transform: uppercase;
   color: #904eba;
-`;
-
-const EventWrapper = styled(Row)`
-  margin: 4px;
-  padding: 4px 0px 4px 0px;
-
-  .ctaButton {
-    display: none;
-  }
-
-  .chevronWrapper {
-    display: none;
-  }
-
-  .ctaEllipsis {
-    display: inline;
-  }
-
-  ${mediumAndUp`
-    padding: 4px 16px 4px 0px;
-
-    .ctaButton {
-      display: inline;
-    }
-
-    .chevronWrapper {
-      display: inline;
-    }
-
-    .ellipsis {
-      display: none;
-    }
-  `};
 `;
 
 const BadgeWrapper = styled.span`
@@ -160,59 +132,6 @@ const DesktopBadge = styled(EventCTAWrapper)`
   }
 `;
 
-const EventTitle = styled(Text)`
-  overflow: hidden;
-  position: relative;
-  line-height: 20px;
-  max-height: 20px;
-  text-align: justify;
-  /* margin-right: -1em;
-  padding-right: 1em; */
-
-  /* &&:before {
-    content: "...";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  &&:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: white;
-  } */
-`;
-
-const EventName = styled(Text)`
-  color: rgba(38, 38, 38, 0.6);
-  line-height: 16px;
-  /* margin-right: -1em; */
-  max-height: 36px;
-  overflow: hidden;
-  /* padding-right: 1em; */
-  position: relative;
-  text-align: justify;
-
-  /* &&:before {
-    bottom: 0;
-    content: "...";
-    position: absolute;
-    right: 0;
-  }
-  &&:after {
-    background: white;
-    content: "";
-    height: 1em;
-    margin-top: 0.2em;
-    position: absolute;
-    right: 0;
-    width: 1em;
-  } */
-`;
-
 export {
   BadgeWrapper,
   Button,
@@ -223,9 +142,6 @@ export {
   EventCTAWrapper,
   EventDate,
   EventInfoWrapper,
-  EventName,
   EventTextWrapper,
-  EventTitle,
-  EventWrapper,
   Month
 };

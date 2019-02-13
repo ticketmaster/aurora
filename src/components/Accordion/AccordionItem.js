@@ -22,7 +22,7 @@ const StyledAccordionItem = styled.div`
     `};
 `;
 
-const AccordionItem = ({ children, isOpen, toggle }) => (
+const AccordionItem = ({ children, isOpen = false, toggle }) => (
   <StyledAccordionItem className="accordion-item" isOpen={isOpen}>
     {children(isOpen, toggle)}
   </StyledAccordionItem>

@@ -6,11 +6,11 @@ import { Button } from "../../../src/components/Button";
 import Accordion from "../../../src/components/Accordion";
 import AccordionItem from "../../../src/components/Accordion/AccordionItem";
 import Chevron from "../../../src/blocks/EventAccordion/Chevron";
-import Extras from "../../../src/blocks/EventAccordion/Extras";
-import Section from "../../../src/blocks/EventAccordion/Section";
+import Event from "../../../src/blocks/EventAccordion/Event";
+import EventInfo from "../../../src/blocks/EventAccordion/EventInfo";
 import Text from "../../../src/components/Text";
 
-import { EXTRAS_DATA, EVENTS, EVENT, EVENTS_MANY } from "./mock";
+import { EXTRAS_DATA, EVENTS, EVENTS_MANY } from "./mock";
 
 export default {
   path: "/accordion",
@@ -20,12 +20,11 @@ export default {
     AccordionItem,
     Button,
     Chevron,
-    EVENT,
+    Event,
+    EventInfo,
     EVENTS,
     EXTRAS_DATA,
-    Extras,
     EVENTS_MANY,
-    Section,
     Text,
     ThemeProvider
   },

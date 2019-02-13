@@ -5,7 +5,7 @@ import styled from "styled-components";
 import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
 
-import { mediumAndUp } from "../../theme/mediaQueries";
+// import { mediumAndUp } from "../../theme/mediaQueries";
 
 const StyledAccordion = styled.div`
   > :nth-child(n + 1)::after {
@@ -16,7 +16,6 @@ const StyledAccordion = styled.div`
     margin-left: 0px;
     margin-right: 0px;
   }
-
   > :nth-last-child(1)::after {
     background: none;
     content: " ";
@@ -25,17 +24,6 @@ const StyledAccordion = styled.div`
     margin-left: 16px;
     margin-right: 16px;
   }
-
-  ${mediumAndUp`
-    > :nth-child(n + 1)::after {
-      background: #ebebeb;
-      content: " ";
-      display: flex;
-      height: 1px;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-  `};
 `;
 
 class Accordion extends PureComponent {
