@@ -1,6 +1,16 @@
+import React from "react";
 import styled from "styled-components";
 
-const InfoItem = styled.div`
+import Tile from "../Tile"
+import Icon from "./Icon";
+
+const Category = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+`;
+
+const Wrapper = styled.div`
   align-items: self-start;
   display: grid;
   grid-auto-flow: dense;
@@ -36,4 +46,27 @@ const InfoItem = styled.div`
   }
 `;
 
-export default InfoItem;
+const CategoryItem = ({
+  link,
+  icon: {
+    type,
+    src = "https://placekitten.com/g/512/288"
+  },
+  label,
+  text
+}) => (
+<Wrapper>
+  <div className="section">
+    <Tile.Link href={link.href}> {link.text} </Tile.Link>
+    {text &&
+      <Tile.Text>
+        {text}
+      </Tile.Text>
+    }
+  </div>
+  <Icon type={type} src={src} />
+</Wrapper>
+);
+// <Tile.Label>{label}</Tile.Label>
+
+export default CategoryItem;

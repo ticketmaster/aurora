@@ -4,8 +4,9 @@ import styled from "styled-components";
 
 import COLORS from "../../theme/colors";
 import Icon from "./Icon";
-import InfoItem from "./InfoItem";
+// import InfoItem from "./InfoItem";
 import Tile from "../Tile";
+import CategoryItem from "./CategoryItem";
 
 import {
   AttractionsType,
@@ -33,7 +34,7 @@ const EventInfo = ({
   items: {
     attractions = null,
     products = [],
-    venue: { city, name: venueName, state, venueUrl }
+    venue: { city, name: venueName, state, venueUrl, __typename: venueTypeName }
   }
 }) => {
   const lineup = attractions ? attractions.slice(0, 3) : null;
@@ -44,17 +45,16 @@ const EventInfo = ({
         lineup[0].name && (
           <Category>
             <Tile.Label>LINEUP</Tile.Label>
+
             {lineup.map(({ name, url, __typename }) => (
-              <InfoItem key={`attraction-${name}`}>
-                <Tile.Link className="section lineup" href={url}>
-                  {name}
-                </Tile.Link>
-                <Icon
-                  name={__typename}
-                  src="https://placekitten.com/g/512/288"
-                />
-              </InfoItem>
+              <CategoryItem
+                key={`product-${name}`}
+                icon={{ type: __typename }}
+                label="LINEUP"
+                link={{ href: url, text: name }}
+              />
             ))}
+
             {lineup &&
               attractions.length > 3 && (
                 <Tile.Link className="section" href="#">
@@ -67,36 +67,25 @@ const EventInfo = ({
       {venueName && (
         <Category>
           <Tile.Label>VENUE</Tile.Label>
-          <InfoItem key={`venue-${venueName}`}>
-            <div className="section">
-              <Tile.Link href={venueUrl}> {venueName} </Tile.Link>
-              <Tile.Text>
-                {city.name}, {state.stateCode}
-              </Tile.Text>
-            </div>
-            <Icon name="VENUE INFO" src="https://placekitten.com/g/512/288" />
-          </InfoItem>
+          <CategoryItem
+            icon={{ type: venueTypeName }}
+            label="VENUE"
+            link={{ href: venueUrl, text: venueName }}
+            text={`${city.name}, ${state.stateCode}`}
+          />
         </Category>
       )}
 
       {products && (
         <Category>
           <Tile.Label>ADD-ONS</Tile.Label>
-          {products.map(({ name, url }) => (
-            <InfoItem key={`attraction-${name}`}>
-              <div className="section">
-                <Tile.Link className="section" href={url}>
-                  {name}
-                </Tile.Link>
-              </div>
-              <Icon
-                className="icon"
-                color={COLORS.blackPearl}
-                name={name}
-                size={24}
-                src="https://placekitten.com/g/512/288"
-              />
-            </InfoItem>
+          {products.map(({ name, url, type }) => (
+            <CategoryItem
+              key={`product-${name}`}
+              icon={{ type }}
+              label="VENUE"
+              link={{ href: url, text: name }}
+            />
           ))}
         </Category>
       )}

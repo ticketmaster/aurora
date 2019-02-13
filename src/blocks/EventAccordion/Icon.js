@@ -8,7 +8,7 @@ import Venue from "../../components/Icons/Venue";
 import Vip from "../../components/Icons/Vip";
 
 const Icon = props => {
-  switch (props.name) {
+  switch (props.type) {
     case "Attraction":
       return <Avatar size={40} {...props} />;
 
@@ -25,7 +25,7 @@ const Icon = props => {
     case "Tickets":
       return <Ticket {...props} className="icon" size="small" />;
 
-    case "VENUE INFO":
+    case "Venue":
       return (
         <Venue
           {...props}
@@ -35,7 +35,7 @@ const Icon = props => {
         />
       );
 
-    case "VIP":
+    case "Vip":
       return (
         <Vip {...props} className="icon" color={COLORS.blackPearl} size={24} />
       );
