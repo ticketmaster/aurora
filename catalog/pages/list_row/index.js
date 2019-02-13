@@ -10,8 +10,10 @@ import {
   SectionItem
 } from "../../../src/components/List";
 import { Button } from "../../../src/components/Button";
+import { Text } from "../../../src/components/Text";
 import { constants } from "../../../src/theme";
-import { listItems, sections } from "./mock";
+import { listItems, sections, pureListItems, ResponsiveHeader } from "./mock";
+import ThumbnailCircleImage from "../../../src/components/Image/ThumbnailCircle";
 
 const { MAX_COLUMNS } = constants;
 
@@ -29,11 +31,15 @@ export default {
     Button,
     listItems,
     sections,
+    pureListItems,
+    ThumbnailCircleImage,
+    ResponsiveHeader,
     onOverflowButtonClick,
     MAX_COLUMNS,
     Container,
     Row,
-    Column
+    Column,
+    Text
   },
   content: pageLoader(() => import("./index.md"))
 };

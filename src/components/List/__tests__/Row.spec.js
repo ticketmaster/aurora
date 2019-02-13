@@ -147,6 +147,7 @@ describe("<ListRow />", () => {
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
   it("List Row unmounts correctly", () => {
     const component = renderer.create(
       <ListRowContainer>
@@ -154,6 +155,16 @@ describe("<ListRow />", () => {
       </ListRowContainer>
     );
     component.unmount();
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it("List Row should render pure list", () => {
+    const component = renderer.create(
+      <ListRowContainer>
+        <ListRow isPure index={0} onOverflowClick={jest.fn()} />
+      </ListRowContainer>
+    );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
