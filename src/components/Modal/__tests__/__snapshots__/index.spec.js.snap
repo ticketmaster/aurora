@@ -6,11 +6,11 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
     class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bdVaJa dBIbMe"
+      class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat fIjnbp"
-        style="max-height: 100;"
+        class="sc-htpNat gcBzNf"
+        style="max-height: 100px;"
       >
         <button
           data-testid="close-modal"
@@ -27,11 +27,11 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
     class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bdVaJa dBIbMe"
+      class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat fIjnbp"
-        style="max-height: 100;"
+        class="sc-htpNat gcBzNf"
+        style="max-height: 100px;"
       >
         <button
           data-testid="close-modal"
@@ -48,13 +48,47 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
     class="sc-ifAKCX container--overlay eeaXpE"
   >
     <div
-      class="sc-bdVaJa exJCYM"
+      class="sc-bdVaJa gQMJB"
     >
       <div
-        class="sc-htpNat fIjnbp"
+        class="sc-htpNat gcBzNf"
       >
         <div>
           Modal contents
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Modal /> render should render fullscreen modal with action bars 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX container--overlay cMhviW"
+  >
+    <div
+      class="sc-bdVaJa fullscreen gylckg"
+    >
+      <div
+        class="sc-bwzfXH dvEnmx"
+      >
+        <div>
+          Action bar controls
+        </div>
+      </div>
+      <div
+        class="sc-htpNat gcBzNf"
+      >
+        <div>
+          Modal contents
+        </div>
+      </div>
+      <div
+        class="sc-bxivhb irByDn"
+      >
+        <div>
+          Place your controls here
         </div>
       </div>
     </div>
@@ -68,7 +102,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
     class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bdVaJa dBIbMe"
+      class="sc-bdVaJa gylckg"
     >
       <div
         class="sc-bwzfXH dvEnmx"
@@ -78,7 +112,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
         </div>
       </div>
       <div
-        class="sc-htpNat fIjnbp"
+        class="sc-htpNat gcBzNf"
       >
         <div>
           Modal contents
@@ -102,11 +136,11 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
     class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bdVaJa dBIbMe"
+      class="sc-bdVaJa gylckg"
       style="width: 210px;"
     >
       <div
-        class="sc-htpNat fIjnbp"
+        class="sc-htpNat gcBzNf"
       >
         <div>
           Modal contents
@@ -123,11 +157,11 @@ exports[`<Modal /> should recalculate shadows and content height on props change
     class="sc-ifAKCX container--overlay cMhviW open-enter open-enter-active"
   >
     <div
-      class="sc-bdVaJa dBIbMe open-enter open-enter-active"
+      class="sc-bdVaJa gylckg open-enter open-enter-active"
     >
       <div
-        class="sc-htpNat fIjnbp"
-        style="max-height: 100;"
+        class="sc-htpNat gcBzNf"
+        style="max-height: 100px;"
       >
         <div>
           Modal contents
@@ -144,11 +178,11 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
     class="sc-ifAKCX container--overlay cMhviW"
   >
     <div
-      class="sc-bdVaJa dBIbMe"
+      class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat fIjnbp"
-        style="max-height: 100;"
+        class="sc-htpNat gcBzNf"
+        style="max-height: 100px;"
       >
         <div
           data-testid="content"
