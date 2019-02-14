@@ -31,7 +31,7 @@ export const SliderTrack = styled.div`
   height: ${sliderHeight};
   background-color: ${themes.global.primary.base};
 
-  &.disabled {
+  &.slider__track--disabled {
     background-color: ${themes.global.gray03};
   }
 `;
