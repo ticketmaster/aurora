@@ -3,10 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classNames from "classnames";
 
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
-import typography from "../../theme/typography";
-import constants from "../../theme/constants";
+import { themes, spacing, typography, constants } from "../../theme";
 import { smallAndUp } from "../../theme/mediaQueries";
 import { getRelByTarget } from "../../utils/link";
 
@@ -23,12 +20,12 @@ const BaseButton = styled.button`
   appearance: none;
   padding-right: ${spacing.gutters.small / 2}px;
   padding-left: ${spacing.gutters.small / 2}px;
-  color: ${colors.white.base};
+  color: ${themes.global.white.base};
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
   transition: all 0.3ms ${constants.easing.easeInOutQuad};
   .nav--inverted & {
-    color: ${colors.onyx.base};
+    color: ${themes.global.onyx.base};
     font-weight: ${typography.weight.regular};
   }
 

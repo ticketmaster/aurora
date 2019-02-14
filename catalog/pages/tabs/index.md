@@ -37,7 +37,7 @@ rows:
     Notes: Optional. Determines the font-weight of the Text. One of “regular” and “semiBold”.
   - Prop: underlineColor
     Type: string
-    Default: rgba(2,108,223,1)(colors.azure.base)
+    Default: #026cdf(themes.tm.primary.base)
     Notes: Optional. Determines underline color of selected item.
 ```
 

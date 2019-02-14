@@ -1,16 +1,34 @@
 import { pageLoader } from "catalog";
 
-import colors from "../../../src/theme/colors";
+import { themes } from "../../../src/theme";
 
-const imports = Object.keys(colors)
-  .filter(colorName => typeof colors[colorName] === "object")
-  .map(colorName => ({
-    [colorName]: Object.keys(colors[colorName]).map(colorVariantName => ({
-      name: colorVariantName,
-      value: colors[colorName][colorVariantName]
+const { global, tm, lne } = themes;
+
+const getImports = (name, theme) =>
+  Object.keys(theme)
+    .map(colorName => ({
+      [`${name}${colorName}`]:
+        typeof theme[colorName] === "object"
+          ? Object.keys(theme[colorName]).map(colorVariantName => ({
+              name: colorVariantName,
+              value: theme[colorName][colorVariantName]
+            }))
+          : [
+              {
+                name: colorName,
+                value: theme[colorName]
+              }
+            ]
     }))
-  }))
-  .reduce((acc, cur) => ({ ...acc, ...cur }), {});
+    .reduce((acc, cur) => ({ ...acc, ...cur }), {});
+
+const imports = {
+  ...getImports("global", global),
+  ...getImports("tm", tm),
+  ...getImports("lne", lne)
+};
+
+console.log({ imports });
 
 export default {
   path: "/colors",

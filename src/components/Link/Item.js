@@ -4,7 +4,7 @@ import classNames from "classnames";
 import styled from "styled-components";
 
 import { getRelByTarget } from "../../utils/link";
-import { colors } from "../../theme";
+import { themes } from "../../theme";
 
 const StyledLink = styled.a`
   display: inline-block;
@@ -26,7 +26,7 @@ const StyledLink = styled.a`
   &.link--has-other.link--open:after {
     content: "";
     display: inline-block;
-    border-bottom: 4px solid ${colors.azure.base};
+    border-bottom: 4px solid ${themes.global.primary.base};
     position: absolute;
     left: 0;
     right: 0;

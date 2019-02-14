@@ -5,7 +5,7 @@ import { Container, Row, Column } from "../../../src/components/Grid";
 import Spacing from "../../../src/components/Spacing";
 import { Button, Badge, RatingBadge } from "../../../src/components/Button";
 import { ChevronIcon, StarIcon } from "../../../src/components/Icons";
-import colors from "../../../src/theme/colors";
+import { colors, themes } from "../../../src/theme";
 
 const starIconStyles = { marginRight: "2px" };
 
@@ -24,7 +24,8 @@ export default {
     Container,
     Row,
     Column,
-    Spacing
+    Spacing,
+    themes
   },
   content: pageLoader(() => import("./index.md"))
 };

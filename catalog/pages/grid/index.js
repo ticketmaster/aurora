@@ -1,10 +1,10 @@
 import { pageLoader } from "catalog";
 
 import { Container, Row, Column } from "../../../src/components/Grid";
-import colors from "../../../src/theme/colors";
+import themes from "../../../src/theme/colorThemes";
 
 const contentStyles = {
-  backgroundColor: colors.azure.base,
+  backgroundColor: themes.global.primary.base,
   textAlign: "center"
 };
 

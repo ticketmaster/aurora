@@ -52,10 +52,10 @@ import {
   VenueSearchIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
-import colors from "../../../src/theme/colors";
+import { themes } from "../../../src/theme";
 
 const iconStyle = {
-  backgroundColor: colors.white.base,
+  backgroundColor: themes.global.white.base,
   padding: "20px",
   display: "flex",
   justifyContent: "center",

@@ -3,10 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classNames from "classnames";
 
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
-import constants from "../../theme/constants";
-import typography from "../../theme/typography";
+import { themes, spacing, constants, typography } from "../../theme";
 import { smallAndUp, mediumAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 
 import Links from "./Links";
@@ -25,7 +22,7 @@ const Nav = styled.nav.attrs({
   width: 100%;
   font-size: ${typography.size.kilo};
   background-color: transparent;
-  color: ${colors.white.base};
+  color: ${themes.global.white.base};
   font-weight: ${typography.weight.semiBold};
   transition: all 300ms ${constants.easing.easeInOutQuad};
 
@@ -42,7 +39,7 @@ const Nav = styled.nav.attrs({
   }
 
   &.nav--inverted {
-    background-color: ${colors.white.base};
+    background-color: ${themes.global.white.base};
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   }
 

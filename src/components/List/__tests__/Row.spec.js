@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import ListRow from "../Row";
 import ListRowContainer from "../Container";
 import { listItems } from "../../../../catalog/pages/list_row/mock";
-import { colors } from "../../../theme";
+import { themes } from "../../../theme";
 
 describe("<ListRow />", () => {
   const modalRoot = global.document.createElement("div");
@@ -101,7 +101,7 @@ describe("<ListRow />", () => {
           rowItem={{
             ...listItems[0],
             variant: "standard",
-            dateColor: colors.heliotrope.base
+            dateColor: themes.global.accent01.base
           }}
           index={0}
           onOverflowClick={jest.fn()}

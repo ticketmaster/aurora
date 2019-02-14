@@ -11,7 +11,7 @@ import LazyHeaderWithImageExample from "./LazyHeaderWithImageExample";
 import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
-import colors from "../../../src/theme/colors";
+import { colors, themes } from "../../../src/theme";
 
 const starIconStyles = { marginRight: "2px" };
 const ratingBadgeStyles = { marginLeft: "12px" };
@@ -34,7 +34,8 @@ export default {
     colors,
     starIconStyles,
     ratingBadgeStyles,
-    ThemeProvider
+    ThemeProvider,
+    themes
   },
   content: pageLoader(() => import("./index.md"))
 };

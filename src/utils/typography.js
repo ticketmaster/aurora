@@ -43,8 +43,8 @@ export const getFontColor = ({
   disabled
 }) => {
   const fontColors = {
-    dark: colors.onyx,
-    light: colors.white,
+    dark: themes.global.onyx,
+    light: themes.global.white,
     accent: colors[accent]
   };
   const fontColor = fontColors[variant] || fontColors.dark;
