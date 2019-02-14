@@ -11,7 +11,7 @@ const Wrapper = styled.button`
   flex: 0;
   min-width: 48px;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-right: 8px;
   position: relative;
 
   && :focus {
@@ -23,7 +23,6 @@ const Wrapper = styled.button`
     css`
       > svg {
         transform: rotate(-180deg);
-
       }
     `};
 `;
@@ -32,7 +31,7 @@ const StyledComponent = styled(AuroraChevron)`
   transition: all 0.1s linear;
   position: absolute;
   left: 17px;
-  top: 12px;
+  top: 26px;
 `;
 
 const Chevron = ({ isOpen = false, id = null, onClick = null }) => (
