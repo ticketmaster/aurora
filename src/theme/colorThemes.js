@@ -3,20 +3,31 @@ const success = "#1bab1e";
 const global = {
   brand: "#026cdf",
   primary: {
+    // brand colors
     base: "#026cdf",
+    reverse: "#3396ff",
+    reverseLight: "#80b5ef",
+    reverseLightest: "#bfdaf6",
+
+    // button colors
+    dark: "#0150a7",
+    darkest: "#013670",
+    light: "#d6e7fa",
+    lightest: "#ebf4fd",
+
+    // not used in new components. kept for backward compatibility.
     lightBase: "rgba(2, 108, 223, 0.1)",
     medium: "#0150a7",
-    dark: "#013670",
-    light: "#ebf4fd",
-    muted: "#d6e7fa",
-    reverse: "#3396ff"
+    muted: "#d6e7fa"
   },
   special: {
     base: success,
-    medium: "#23702c",
-    dark: "#265333"
+    dark: "#23702c",
+    darkest: "#265333",
+
+    medium: "#23702c" // not used in new components. kept for backward compatibility.
   },
-  darkFill: "#1f262d",
+  darkFill: "#1f262d", // not used in new components. kept for backward compatibility.
   dark: {
     base: "#1f262d",
     light: "#8f9296",

@@ -84,7 +84,7 @@ exports[`BaseText with responsiveSize should render correctly with {"size":"hect
 
 exports[`BaseText with themed color palette should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
 <div
-  className="text text--accent text-tm text--disabled hoGQRo"
+  className="text text--accent text-tm text--disabled KITXe"
   disabled={true}
   size="hecto"
 >
@@ -124,7 +124,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 
 exports[`BaseText with themed color palette should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
 <div
-  className="text text--accent text-tm kSupHA"
+  className="text text--accent text-tm hdgsYv"
   disabled={false}
   size="hecto"
 >

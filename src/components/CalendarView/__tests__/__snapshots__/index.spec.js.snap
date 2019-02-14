@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CalendarView should render without errors 1`] = `
-.c1 > .iIyaxw + .c2 {
+.c1 > .ktYHxE + .c2 {
   margin-top: 8px;
 }
 
-.c0:hover .jeQtcI {
+.c0:hover .fiSZXT {
   color: #026cdf;
   fill: currentColor;
 }
@@ -17,10 +17,10 @@ exports[`CalendarView should render without errors 1`] = `
     className="gVZTwB"
   >
     <div
-      className="fPPYIO"
+      className="capNqu"
     >
       <div
-        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent eeRzAt cIRWLi"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent hPAfYZ cIRWLi"
         disabled={false}
         size="kilo"
       >
@@ -29,23 +29,23 @@ exports[`CalendarView should render without errors 1`] = `
     </div>
   </header>
   <article
-    className="eJBEmz"
+    className="bYjpGe"
   >
     <header
-      className="isAWQW"
+      className="bDMoiK"
     >
       <div
-        className="kOsvdf"
+        className="dBDuqP"
       >
         <button
           aria-label="More Info"
-          className="c0 keqEcd dhzuqt"
+          className="c0 fkIjyZ gsugBH"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="jeQtcI"
+            className="fiSZXT"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -59,27 +59,27 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="hjXLMW"
+      className="kAdUdq"
     >
       <div
-        className="vzSwW"
+        className="TtAyf"
       >
         <div
-          className="text text--dark text--primary eWsGQH dIqltR"
+          className="text text--dark text--primary bSXNxK dIqltR"
           disabled={false}
           size="uno"
         >
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary eWsGQH jUhKrd"
+          className="text text--dark text--secondary bSXNxK jUhKrd"
           disabled={false}
           size="uno"
         >
           On Sale Starts Soon
         </div>
         <div
-          className="text text--dark text--primary ecpHhv hGozFO"
+          className="text text--dark text--primary bhdbzH hGozFO"
           disabled={false}
           size="uno"
         >
@@ -88,16 +88,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="IBSbT"
+      className="fZIqZA"
     >
       <div
-        className="c1 hQwaoT"
+        className="c1 cnZIRB"
       >
         <div
-          className="c2 iIyaxw"
+          className="c2 ktYHxE"
         >
           <a
-            className="cDTWhu"
+            className="dbOaOg"
             href="#"
             rel={undefined}
             size="small"
@@ -106,10 +106,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c2 iIyaxw"
+          className="c2 ktYHxE"
         >
           <a
-            className="cDTWhu"
+            className="dbOaOg"
             href="#"
             rel={undefined}
             size="small"
@@ -119,10 +119,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="gdYeDH"
+        className="jXpsgi"
       >
         <button
-          className="ftqlYH jHKQf"
+          className="cJSbnz clbKAW"
           href={null}
           onClick={[Function]}
           rel="_self"
@@ -136,26 +136,26 @@ exports[`CalendarView should render without errors 1`] = `
     </footer>
   </article>
   <div
-    className="bJScud"
+    className="giyzyZ"
   />
   <article
-    className="eJBEmz"
+    className="bYjpGe"
   >
     <header
-      className="isAWQW"
+      className="bDMoiK"
     >
       <div
-        className="kOsvdf"
+        className="dBDuqP"
       >
         <button
           aria-label="More Info"
-          className="c0 keqEcd dhzuqt"
+          className="c0 fkIjyZ gsugBH"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="jeQtcI"
+            className="fiSZXT"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -169,13 +169,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="hjXLMW"
+      className="kAdUdq"
     >
       <div
-        className="vzSwW"
+        className="TtAyf"
       >
         <div
-          className="text text--dark text--primary eWsGQH dIqltR"
+          className="text text--dark text--primary bSXNxK dIqltR"
           disabled={false}
           size="uno"
         >
@@ -184,16 +184,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="IBSbT"
+      className="fZIqZA"
     >
       <div
-        className="c1 hQwaoT"
+        className="c1 cnZIRB"
       >
         <div
-          className="c2 iIyaxw"
+          className="c2 ktYHxE"
         >
           <a
-            className="cDTWhu"
+            className="dbOaOg"
             href="#"
             rel={undefined}
             size="small"
@@ -202,10 +202,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c2 iIyaxw"
+          className="c2 ktYHxE"
         >
           <a
-            className="cDTWhu"
+            className="dbOaOg"
             href="#"
             rel={undefined}
             size="small"
@@ -215,10 +215,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="gdYeDH"
+        className="jXpsgi"
       >
         <button
-          className="ftqlYH jHKQf"
+          className="cJSbnz clbKAW"
           href={null}
           onClick={[Function]}
           rel="_self"
