@@ -12,7 +12,7 @@ const ItemContainer = styled.div.attrs({
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  cursor: ${props => (props.onItemClick ? "pointer" : "text")};
+  cursor: ${props => (props.onItemClick || props.href ? "pointer" : "text")};
 
   &:not(:last-of-type) {
     margin-bottom: ${spacing.moderate};
