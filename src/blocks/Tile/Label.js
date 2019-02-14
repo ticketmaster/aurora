@@ -11,8 +11,8 @@ const Wrapper = styled(AuroraText)`
   text-align: justify;
 `;
 
-const Label = ({ children }) => (
-  <Wrapper size="uno" weight="semiBold" tag="p">
+const Label = ({ children, ...rest }) => (
+  <Wrapper size="uno" weight="semiBold" tag="p" {...rest}>
     {children}
   </Wrapper>
 );

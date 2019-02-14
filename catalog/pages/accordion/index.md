@@ -22,6 +22,7 @@ Accordion Component
               <Event
                 isOpen={isOpen}
                 id={id}
+                hasProducts={!!products}
                 item={{...rest, venue}}
                 handleToggle={handleToggle}
               />

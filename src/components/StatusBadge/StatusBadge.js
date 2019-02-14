@@ -12,7 +12,7 @@ export const StyledBadge = styled.div`
   font-weight: ${typography.weight.semiBold};
   text-align: center;
   color: ${({ variant = DARK }) =>
-    variant === LIGHT ? themes.global.gray01 : themes.global.white.base};
+  variant === LIGHT ? themes.global.gray01 : themes.global.white.base};
   font-size: ${typography.size.mini};
   line-height: 1.2;
   border-radius: ${constants.borderRadius.small};

@@ -34,8 +34,14 @@ const StyledComponent = styled(AuroraChevron)`
   top: 26px;
 `;
 
-const Chevron = ({ isOpen = false, id = null, onClick = null }) => (
-  <Wrapper id={id} isOpen={isOpen} variant="transparent" onClick={onClick}>
+const Chevron = ({ className, isOpen = false, id = null, onClick = null }) => (
+  <Wrapper
+    className={className}
+    id={id}
+    isOpen={isOpen}
+    variant="transparent"
+    onClick={onClick}
+  >
     <StyledComponent id={id} size={15} onClick={onClick} />
   </Wrapper>
 );

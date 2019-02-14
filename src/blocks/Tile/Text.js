@@ -15,16 +15,16 @@ const Wrapper = styled(AuroraText)`
   text-align: justify;
 `;
 
-const Text = ({ children, ...rest }) => (
+const Text = (props) => (
   <Wrapper
     className="eventName"
     accent="gray03"
     size="hecto"
     tag="p"
     variant="accent"
-    {...rest}
+    {...props}
   >
-    {children}
+    {props.children}
   </Wrapper>
 );
 
