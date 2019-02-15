@@ -35,6 +35,7 @@ const Hoverable = styled(RevealAnimation)`
   padding-bottom: 14px;
   padding-top: 14px;
   padding-left: 8px;
+  cursor: pointer;
 
   &&:hover {
     background: lavender;
@@ -65,7 +66,7 @@ const Event = ({
       className="chevron"
       onClick={handleToggle}
     /> 
-    <Hoverable className="event">
+    <Hoverable className="event" href="#">
       <Date>
         <Tile.Title>{dateTitle}</Tile.Title>
         <Tile.Text>{dateSubTitle}</Tile.Text>
