@@ -3,14 +3,15 @@ import styled, {css} from "styled-components";
 import { string, func, bool, shape } from "prop-types";
 import { EventType } from "../../components/types";
 import { Button} from "../../components/Button"
-import constants from "../../theme/constants";
-
-import { themes } from "../../theme";
-
-import { mediumAndUp } from "../../theme/mediaQueries";
 import {StatusBadge} from "../../components/StatusBadge"
 
+
+import { mediumAndUp } from "../../theme/mediaQueries";
+import { themes } from "../../theme";
+import constants from "../../theme/constants";
+
 import Badge from "./Badge"
+import BottomSheet from "./BottomSheet";
 import Chevron from "./Chevron";
 import Date from "./Date";
 import Ellipsis from "./Ellipsis";
@@ -23,6 +24,43 @@ const Wrapper = styled(Tile)`
   flex-direction: row;
   padding: 4px 0px;
 
+  .text-grid {
+    width: 100%;
+    border: 1px dashed;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: auto;
+/*     grid-template-rows: repeat(1fr); */
+    grid-template-areas:
+        "header header header header "
+        "nav nav-l nav-r featured "
+        "footer footer footer footer "
+}
+
+.main {
+    grid-area: header-start / header-start / footer-start / footer-end;
+    opacity: 0.5;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.grid-title {
+    grid-row: featured-start / featured-end;
+    grid-column: nav-l-end / featured;
+    opacity: 0.5
+}
+
+.grid-badge {
+    grid-area: header-start / nav-l / header-start / nav-r;
+    z-index: 2;
+    outline: 1px solid;
+    text-align: center;
+}
+
+.grid-text {
+    grid-area: nav-start / header-start / footer-start / featured-end;
+}
+
   .chevron {
     display: none
   }
@@ -34,20 +72,30 @@ const Wrapper = styled(Tile)`
     display: none;
   }
 
-  .open {
-    transition: opacity 0.3s ${easeInOutQuad} 0.2s;
-    height: auto;
-    width: auto;
+  .expand {
+    max-height: 600px !imporant;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
     opacity: 1;
   }
 
-  .closed {
-    transition: opacity 0.1s ${easeInQuad},
-    height 0.1s ${easeInQuad};
-    height: 0;
-    width: 0;
-    opacity: 0;
+  .collapse {
+      transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+      opacity: 0;
+      height: 0;
+  }
 
+  .expandWide {
+    max-width: 600px !imporant;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .collapseWide{
+      transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+      opacity: 0;
+      width: 0;
   }
 
   ${mediumAndUp`
@@ -87,18 +135,16 @@ const Animate = styled.div`
     ?
       css`
         align-items: center;
-        transition: opacity 0.1s ${easeInQuad},
-        height 0.1s ${easeInQuad};
-        height: 0;
-        width: 0;
-        opacity: 0;
+        max-height: 600px !imporant;
+        -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+        transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+        opacity: 1;
       `
     :
       css`
-        transition: opacity 0.3s ${easeInOutQuad} 0.2s;
-        height: auto;
-        width: auto;
-        opacity: 1;
+        max-height: 0;
+        transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+        opacity: 0;
       `
   };
 `;
@@ -114,67 +160,6 @@ const Hoverable = styled.div`
   &&:hover {
     background: lavender;
   }
-`;
-
-const TextWrapper = styled.div`
-  max-width: none;
-  flex: 1 1;
-
-  * {
-    margin: 0;
-  }
-
-  .addons {
-    font-size: 12px;
-    line-height: 15px;
-    margin-top: 4px;
-
-  }
-`;
-
-const TextContainer = styled(Animate)`
-  display: flex;
-  flex-direction: column;
-
-  ${mediumAndUp`
-    .badge {
-      display: none;
-    }
-  `};
-`;
-
-const GridWhileOpen = styled.div`
- max-height: 300px;
- visibility: visible;
- height: 36px;
- text-align: center;
- grid-template-area: "label label"
-                     "title title";
-
-  ${(isOpen) =>
-    isOpen &&
-    css`
-      /* temp for testing*/
-      /* background: blue; */
-    `
-  }
-
- grid-template-rows: 15px 1fr;
- grid-template-columns: 150px 1fr;
- align-items: center;
-
- .active-label {
-     grid-area: label;
-     grid-row: span 2;
-     line-height: 15px;
- }
-
- .active-title {
-     grid-area: title;
-     text-align: center;
-     grid-row: span 2;
-     line-height: 24px;
- }
 `;
 
 const ActionArea = styled.div`
@@ -221,6 +206,7 @@ const ActionArea = styled.div`
   `}
 `;
 
+
 const Event = ({
   handleToggle,
   id,
@@ -248,11 +234,169 @@ const Event = ({
         <Tile.Title>{dateTitle}</Tile.Title>
         <Tile.Text>{dateSubTitle}</Tile.Text>
       </Date>
+      <div className="text-grid">
+          <Tile.Title className={isOpen ? "expand grid-title" : "collapse grid-title"}>{name}</Tile.Title>
+          <Tile.Text className={isOpen ? "expand grid-text" : "collapse grid-text"}>{venue.name}</Tile.Text> 
 
-      <TextWrapper>
-        <TextContainer isOpen={isOpen}>
-          <Tile.Title>{name}</Tile.Title>
-          <Tile.Text>{venue.name}</Tile.Text>
+          
+          <div className={isOpen ? "expand grid-badge" : "collapse grid-badge"}>badge</div>
+          <div className={!isOpen ? "expand grid-main" : "collapse grid-main"}>
+              <Tile.Title >{name}</Tile.Title>
+              <Tile.Text>{venue.name}</Tile.Text> 
+              <Badge
+                className="badge"
+                label="On Sale: Mon • Jan 1 • 10 AM"
+                size="uno"
+              />
+              
+          </div>
+      </div>
+
+     
+      
+    </Hoverable>
+    
+    <ActionArea>
+      <Button className="cta-button"> See Tickets </Button>
+      <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
+      <Ellipsis
+        className="cta-ellipsis"
+        color="#000"
+        direction="right"
+        size={15}
+        id={id}
+        onClick={handleToggle}
+      />
+    </ActionArea>
+
+  </Wrapper>
+);
+
+
+
+Event.propTypes = {
+  handleToggle: func.isRequired,
+  hasProducts: bool,
+  id: string.isRequired,
+  isOpen: bool.isRequired,
+  item: shape({ ...EventType }).isRequired
+};
+
+export default Event;
+
+
+
+const TextWrapper = styled.div`
+  max-width: none;
+  flex: 1 1;
+
+  max-height: 36px;
+
+  * {
+    margin: 0;
+  }
+
+  .addons {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 4px;
+
+  }
+`;
+
+
+// const TextGrid = styled.div`
+//   border: 1px dashed;
+//   /* width: 100%; */
+//     display: grid;
+//     grid-template-columns: repeat(1fr);
+//     grid-template-rows: repeat(1fr);
+//     grid-template-areas:
+//         "header header header header "
+//         "nav nav nav featured "
+//         "footer footer footer footer "
+
+    
+//     .main {
+//         grid-area: header-start / header-start / footer-start / footer-end;
+//         opacity: 0.5;
+//         justify-content: flex-start;
+//         flex-direction: column;
+//     }
+
+//     .title {
+//         grid-row: featured-start / featured-end;
+//         grid-column: nav-l-end / featured;
+//         background: yellow;
+//         opacity: 0.5
+//     }
+
+//     .badge {
+//         grid-area: header-start / nav-l / header-start / nav-r;
+//         z-index: 2;
+//         outline: 1px solid;
+//         text-align: center;
+//     }
+
+//     .text {
+//         grid-area: nav-start / header-start / footer-start / featured-end;
+//         background: green;
+//         color: white;
+//     }
+
+
+// `;
+
+// const TextContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+
+//   ${mediumAndUp`
+//     .badge {
+//       display: none;
+//     }
+//   `};
+// `;
+
+// const GridWhileOpen = styled.div`
+ 
+//  text-align: center;
+//  grid-template-area: "label label"
+//                      "title title";
+
+//   }
+
+//  grid-template-rows: 15px 1fr;
+//  grid-template-columns: 150px 1fr;
+//  align-items: center;
+
+//  .active-label {
+//      grid-area: label;
+//      grid-row: span 2;
+//      line-height: 15px;
+//  }
+
+//  .active-title {
+//      grid-area: title;
+//      text-align: center;
+//      grid-row: span 2;
+//      line-height: 24px;
+//  }
+// `;
+
+
+//  <div className={isOpen ? "expand desktop-badge" : "collapse desktop-badge"}>
+//           <Badge
+//             className="badge"
+//             label="On Sale: Mon • Jan 1 • 10 AM"
+//             size="uno"
+//           />
+//         </div>
+
+ {/* <TextWrapper>
+        <TextContainer isOpen={isOpen} className={isOpen ? "expandWide" : "collapseWide"} > 
+          <Tile.Title >{name}</Tile.Title>
+          <Tile.Text >{venue.name}</Tile.Text> 
           <Badge
             className="badge"
             label="On Sale: Mon • Jan 1 • 10 AM"
@@ -269,9 +413,10 @@ const Event = ({
               EXTRAS AVAILABLE
             </Tile.Link>
           }
+
         </TextContainer>
 
-        <GridWhileOpen className={isOpen ? "open" : "closed"}>
+        <GridWhileOpen className={isOpen ? "expand" : "collapse"}>
            <Badge
             className="active-label"
             label="On Sale: Mon • Jan 1 • 10 AM"
@@ -280,36 +425,7 @@ const Event = ({
           <Tile.Title className="active-title">{name}</Tile.Title>
         </GridWhileOpen>
 
-      </TextWrapper>
-       <div className={isOpen ? "closed desktop-badge" : "open desktop-badge"}>
-          <Badge
-            className="badge"
-            label="On Sale: Mon • Jan 1 • 10 AM"
-            size="uno"
-          />
-        </div>
-
-    </Hoverable>
-    <ActionArea>
-      <Button className="cta-button">See Tickets</Button>
-      <Tile.Text
-        className="cta-text"
-        size="uno"
-      >On Partner Site</Tile.Text>
-      <Ellipsis size={15} color="#000" direction="right"className="cta-ellipsis" />
-    </ActionArea>
-  </Wrapper>
-);
-
-Event.propTypes = {
-  handleToggle: func.isRequired,
-  hasProducts: bool,
-  id: string.isRequired,
-  isOpen: bool.isRequired,
-  item: shape({ ...EventType }).isRequired
-};
-
-export default Event;
+      </TextWrapper> */}
 
 
 // max-height: 300px;

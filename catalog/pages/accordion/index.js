@@ -2,9 +2,11 @@ import { pageLoader } from "catalog";
 import { ThemeProvider } from "styled-components";
 
 import { Button } from "../../../src/components/Button";
+import DisplayFor from "../../../src/components/DeviceSize"
 
 import Accordion from "../../../src/components/Accordion";
 import Chevron from "../../../src/blocks/EventAccordion/Chevron";
+import BottomSheet from "../../../src/blocks/EventAccordion/BottomSheet"
 import Event from "../../../src/blocks/EventAccordion/Event";
 import EventInfo from "../../../src/blocks/EventAccordion/EventInfo";
 import Text from "../../../src/components/Text";
@@ -17,7 +19,9 @@ export default {
   imports: {
     Accordion,
     Button,
+    BottomSheet,
     Chevron,
+    DisplayFor,
     Event,
     EventInfo,
     EVENT_DATA,

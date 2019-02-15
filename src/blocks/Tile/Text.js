@@ -12,7 +12,6 @@ const Wrapper = styled(AuroraText)`
   margin: 0;
   overflow: hidden;
   position: relative;
-  text-align: justify;
 `;
 
 const Text = (props) => (

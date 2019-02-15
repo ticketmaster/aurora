@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { shape } from "prop-types";
 
 import Category from "./Category";
@@ -20,9 +20,23 @@ const Wrapper = styled.div`
   && > div:nth-child(n + 2) {
     margin-left: 16px;
   }
-`;
+
+  .expand {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px !imporant;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .collapse {
+      transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+      opacity: 0;
+  }
+`
 
 const EventInfo = ({
+  isOpen, 
   items: {
     attractions = null,
     products = [],
@@ -38,7 +52,7 @@ const EventInfo = ({
   const lineup = attractions ? attractions.slice(0, 3) : null;
 
   return (
-    <Wrapper>
+    <Wrapper className={isOpen ? "expand" : "collapse"}>
       {lineup &&
         lineup[0].name && (
           <Category>

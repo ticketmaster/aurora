@@ -2,6 +2,25 @@
 
 Accordion Component
 
+### Basic Example
+
+```react
+ state: {openSections: {}}
+---
+<Accordion>
+  <Accordion.Item id="foo">
+    {(isOpen, handleToggle) => (
+      <React.Fragment>
+        <div id="foo" onClick={handleToggle}>click me</div>
+        <Accordion.Panel isOpen={isOpen}>
+          body
+        </Accordion.Panel>
+      </React.Fragment>
+    )}
+  </Accordion.Item>
+</Accordion>
+```
+
 ### With Component Composition
 
 ```react
@@ -26,15 +45,19 @@ Accordion Component
                 item={{...rest, venue}}
                 handleToggle={handleToggle}
               />
-              <Accordion.Panel isOpen={isOpen}>
-                <EventInfo
-                  items={{
-                    products,
-                    venue: {...venue, venueUrl},
-                    attractions
-                  }}
-                />
-              </Accordion.Panel>
+              <DisplayFor small large xLarge>
+                <Accordion.Panel isOpen={isOpen}>
+                  <EventInfo
+                    isOpen={isOpen}
+                    items={{
+                      products,
+                      venue: {...venue, venueUrl},
+                      attractions
+                    }}
+                  />
+                </Accordion.Panel>
+              </DisplayFor> 
+
             </React.Fragment>
           )}
         </Accordion.Item>

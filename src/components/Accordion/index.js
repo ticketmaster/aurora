@@ -43,6 +43,7 @@ class Accordion extends PureComponent {
 
   onClick = (e) => {
     e.stopPropagation();
+    e.preventDefault();
     const id = e.target.getAttribute("id");
 
     const {

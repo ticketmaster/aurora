@@ -1,4 +1,4 @@
-import React from "react";
+import React, {PureComponent} from "react";
 import styled, { css } from "styled-components";
 import { string, func, bool } from "prop-types";
 
@@ -34,17 +34,34 @@ const StyledComponent = styled(AuroraChevron)`
   top: 26px;
 `;
 
-const Chevron = ({ className, isOpen = false, id = null, onClick = null }) => (
-  <Wrapper
-    className={className}
-    id={id}
-    isOpen={isOpen}
-    variant="transparent"
-    onClick={onClick}
-  >
-    <StyledComponent id={id} size={15} onClick={onClick} />
-  </Wrapper>
-);
+class Chevron extends PureComponent {
+  render (){
+    const { className, isOpen = false, id = null, onClick = null } = this.props;
+    return (
+      <Wrapper
+        className={className}
+        id={id}
+        isOpen={isOpen}
+        variant="transparent"
+        onClick={onClick}
+      >
+        <StyledComponent id={id} size={15} onClick={onClick} />
+      </Wrapper>
+    )
+  }
+}
+
+// const Chevron = ({ className, isOpen = false, id = null, onClick = null }) => (
+//   <Wrapper
+//     className={className}
+//     id={id}
+//     isOpen={isOpen}
+//     variant="transparent"
+//     onClick={onClick}
+//   >
+//     <StyledComponent id={id} size={15} onClick={onClick} />
+//   </Wrapper>
+// );
 
 Chevron.propTypes = {
   id: string.isRequired,
