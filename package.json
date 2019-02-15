@@ -9,7 +9,7 @@
     "ui-library",
     "ticketmaster"
   ],
-  "main": "dist/index.cjs.min.js",
+  "main": "dist/index.cjs.js",
   "jsnext:main": "dist/index.es.min.js",
   "module": "dist/index.es.min.js",
   "files": [
