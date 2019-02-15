@@ -3,11 +3,8 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classNames from "classnames";
 
-import colors from "../../theme/colors";
-import constants from "../../theme/constants";
+import { colors, constants, spacing, typography, themes } from "../../theme";
 import { LinkListConsumer } from "./Context";
-import spacing from "../../theme/spacing";
-import typography from "../../theme/typography";
 import composeEventHandlers from "../../utils/composeEventHandlers";
 
 const ItemContainer = styled.div.attrs({
@@ -16,7 +13,7 @@ const ItemContainer = styled.div.attrs({
   padding: 0 12px;
   height: 36px;
   display: flex;
-  color: ${colors.blackPearl};
+  color: ${themes.global.darkFill};
   align-items: center;
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.regular};
@@ -27,8 +24,8 @@ const ItemContainer = styled.div.attrs({
   }
 
   &:hover {
-    background-color: ${colors.azure.base};
-    color: ${colors.white.base};
+    background-color: ${themes.global.primary.base};
+    color: ${themes.global.white.base};
   }
 
   &:not(:last-of-type) {

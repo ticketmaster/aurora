@@ -2,8 +2,11 @@ import themes from "./colorThemes";
 
 const { tm } = themes;
 
+/**
+ * PLEASE NOTE: THESE COLORS ARE DEPRECATED! DO NOT USE!
+ * Please reference the colorThemes located in `/src/theme/colorThemes` instead!
+ */
 const colors = {
-  // Deprecated colors. Should be removed
   azure: {
     dark: tm.primary.base,
     base: tm.primary.base,
@@ -73,7 +76,6 @@ const colors = {
     from: tm.primary.base,
     to: "#3ac7ff"
   },
-  // Onyx and white are specific for typography. Should not be removed
   onyx: tm.onyx,
   white: tm.white
 };

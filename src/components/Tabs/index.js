@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import { TabsProvider, TabsConsumer } from "./TabsProvider";
 import { Text } from "../Text";
-import { spacing, zIndex, colors, themes } from "../../theme";
+import { spacing, zIndex, themes } from "../../theme";
 import { largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 const padding = spacing.moderate;
@@ -99,7 +99,7 @@ const TabItemButton = styled.div.attrs(props => {
   cursor: pointer;
   &.tab__button--active {
     border-bottom: 4px solid
-      ${props => props.underlineColor || colors.azure.base};
+      ${props => props.underlineColor || themes.global.primary.base};
   }
 `;
 

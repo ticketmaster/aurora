@@ -15,7 +15,9 @@ const DisplayOn = props => {
   return (
     <Consumer>
       {val =>
-        CONNECTION_TYPES.find(conn => val[conn] && props[getConnName(conn)])
+        CONNECTION_TYPES.find(
+          conn => val && val[conn] && props[getConnName(conn)]
+        )
           ? children
           : null
       }

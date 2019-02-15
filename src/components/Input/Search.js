@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import SearchIcon from "../Icons/Search";
-import colors from "../../theme/colors";
-import typography from "../../theme/typography";
-import constants from "../../theme/constants";
+import { themes, typography, constants } from "../../theme";
 import composeEventHandlers from "../../utils/composeEventHandlers";
 
 const Input = styled.input.attrs({
@@ -19,13 +17,14 @@ const Input = styled.input.attrs({
       ? "9px 12px 9px calc(12px + 12px + 10px)"
       : "14px 16px 14px calc(16px + 16px + 8px)"};
   background-color: transparent;
-  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
+  color: ${props =>
+    props.invert ? themes.global.onyx.base : themes.global.white.base};
   border: 0;
   font-size: ${props =>
     props.slim ? typography.size.hecto : typography.size.kilo};
   &:focus {
-    background-color: ${colors.white.base};
-    color: ${colors.onyx.base};
+    background-color: ${themes.global.white.base};
+    color: ${themes.global.onyx.base};
     &::placeholder {
       color: #26262699;
     }
@@ -33,7 +32,7 @@ const Input = styled.input.attrs({
   }
   /* stylelint-disable */
   &::placeholder {
-    color: ${props => (props.invert ? "#26262699" : colors.white.base)};
+    color: ${props => (props.invert ? "#26262699" : themes.global.white.base)};
   }
   &::-ms-clear {
     display: none;
@@ -53,9 +52,10 @@ const Container = styled.div`
   overflow: hidden;
   outline: 0;
   border: ${props => (props.invert ? `1px solid #bfbfbf` : "0")};
-  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
+  color: ${props =>
+    props.invert ? themes.global.onyx.base : themes.global.white.base};
   background-color: ${props =>
-    props.invert ? colors.white.base : colors.white.lighter};
+    props.invert ? themes.global.white.base : themes.global.white.lighter};
 `;
 
 const IconContainer = styled.div`
@@ -65,10 +65,11 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: ${props => (props.slim ? "12px" : "16px")};
-  color: ${props => (props.invert ? colors.onyx.base : colors.white.base)};
+  color: ${props =>
+    props.invert ? themes.global.onyx.base : themes.global.white.base};
 
   .search--focus & {
-    color: ${colors.onyx.base};
+    color: ${themes.global.onyx.base};
   }
 `;
 

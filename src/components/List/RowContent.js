@@ -3,8 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 
-import spacing from "../../theme/spacing";
-import colors from "../../theme/colors";
+import { themes, spacing, colors } from "../../theme";
 
 import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
@@ -28,7 +27,7 @@ import {
 } from "./constants";
 
 const RowWrapper = styled.div`
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white.base};
   border-bottom: 1px solid ${colors.lightGray};
 
   ${mediumAndUp`
@@ -52,7 +51,7 @@ const RowWrapper = styled.div`
 `;
 
 const ListContainer = styled.div`
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white.base};
   align-items: stretch;
   display: flex;
   padding-top: ${props =>
@@ -81,7 +80,7 @@ const LinkWrapper = styled.a`
 
   ${mediumAndUp`
     &:hover {
-      background-color: ${colors.azure.hoverLight};
+      background-color: ${themes.global.primary.light};
     }
   `};
 `;
@@ -164,7 +163,7 @@ export const OverflowDesktopContainer = styled(Column)`
     border-top: 1px solid ${colors.lightGray};
 
     &.container__overflow--expanded {
-      background-color: ${colors.white.base};
+      background-color: ${themes.global.white.base};
       max-height: 600px;
       transition: max-height 0.3s ${
         constants.easing.easeInOutQuad
@@ -445,7 +444,7 @@ class ListRowContent extends Component {
               aria-label="More Info"
               onClick={onOverflowClick}
             >
-              <OverflowIcon size={22} color={colors.onyx.light} />
+              <OverflowIcon size={22} color={themes.global.onyx.light} />
             </IconButton>
           </MobileContainer>
         </ListContainer>

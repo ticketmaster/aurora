@@ -1,7 +1,7 @@
 import React from "react";
 import { PropTypes } from "prop-types";
 
-import { colors } from "../../theme";
+import { themes } from "../../theme";
 
 const VenueSearchIcon = ({ children, color, ...props }) => (
   <svg
@@ -28,7 +28,7 @@ VenueSearchIcon.propTypes = {
 
 VenueSearchIcon.defaultProps = {
   children: null,
-  color: colors.moonrock
+  color: themes.global.gray03
 };
 
 export default VenueSearchIcon;

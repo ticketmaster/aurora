@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { colors } from "../../theme";
+import { themes } from "../../theme";
 import StyledText from "./StyledText";
 
 const SecondaryStyledText = styled(StyledText)`
-  color: ${colors.onyx.light};
+  color: ${themes.global.onyx.light};
 `;
 
 const SecondaryText = ({ children, ...props }) => (

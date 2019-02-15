@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { spacing, colors, typography } from "../../theme";
+import { spacing, colors, typography, themes } from "../../theme";
 
 import { Row, Column } from "../Grid";
 import BoldText from "../Text/BoldText";
@@ -30,7 +30,7 @@ const TitleContainer = styled(Row)`
 
 const TitleText = styled(BoldText)`
   font-size: ${typography.size.uno};
-  color: ${colors.onyx.light};
+  color: ${themes.global.onyx.light};
   text-transform: uppercase;
 `;
 

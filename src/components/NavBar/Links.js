@@ -6,10 +6,8 @@ import {
   LinkItem,
   LinkListItem
 } from "../Link";
-import colors from "../../theme/colors";
-import typography from "../../theme/typography";
-import spacing from "../../theme/spacing";
-import constants from "../../theme/constants";
+
+import { themes, colors, typography, spacing, constants } from "../../theme";
 
 const LinkRow = styled(LinkRowBase)`
   height: 60px;
@@ -25,7 +23,7 @@ const LinkList = styled(LinkListBase).attrs({
 const Link = styled(LinkItem)`
   background-color: transparent;
   padding: 19px ${spacing.gutters.small}px 19px ${spacing.gutters.small}px;
-  color: ${colors.white.base};
+  color: ${themes.global.white.base};
   font-size: ${typography.size.kilo};
   font-weight: ${typography.weight.semiBold};
   text-shadow: 1px 0px 0px transparent;
@@ -33,16 +31,16 @@ const Link = styled(LinkItem)`
 
   .nav--inverted &,
   .links__list & {
-    color: ${colors.onyx.base};
+    color: ${themes.global.onyx.base};
     font-weight: ${typography.weight.regular};
   }
 
   &:visited,
   &:active {
-    color: ${colors.white.base};
+    color: ${themes.global.white.base};
     .nav--inverted &,
     .links__list & {
-      color: ${colors.onyx.base} !important;
+      color: ${themes.global.onyx.base} !important;
     }
   }
 

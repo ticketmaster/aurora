@@ -3,16 +3,15 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classnames from "classnames";
 
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
-import {mediumAndUp} from "../../theme/mediaQueries";
+import { themes, spacing } from "../../theme";
+import { mediumAndUp } from "../../theme/mediaQueries";
 
 import ChevronIcon from "../Icons/Chevron";
 import { CHEVRON_ICON_PADDING, CHEVRON_ICON_SIZE } from "./constants";
 
 export const IconButton = styled.button.attrs({
-  role: 'button',
-  type: 'button',
+  role: "button",
+  type: "button"
 })`
   border: 0;
   padding: 0 ${CHEVRON_ICON_PADDING};
@@ -96,7 +95,7 @@ export default class RowToggler extends React.PureComponent {
         })}
         onClick={this.handleClick}
       >
-        <ChevronIcon size={CHEVRON_ICON_SIZE} color={colors.blackPearl} />
+        <ChevronIcon size={CHEVRON_ICON_SIZE} color={themes.global.darkFill} />
       </IconWrapper>
     );
   }

@@ -3,10 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import Card from "../Card";
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
-import constants from "../../theme/constants";
-import typography from "../../theme/typography";
+import { themes, spacing, constants, typography } from "../../theme";
 import { Text } from "../Text";
 
 const CardWithoutPadding = styled(Card)`
@@ -32,7 +29,7 @@ const Overlay = styled.div`
 
 const CaptionContainer = styled.div`
   position: relative;
-  color: ${colors.white.base};
+  color: ${themes.global.white.base};
   background-color: ${props => (props.half ? "none" : "rgba(31, 38, 45, 0.8)")};
   border-radius: ${constants.borderRadius.large};
   padding: ${spacing.slim} ${spacing.cozy};
@@ -55,7 +52,7 @@ const Title = styled.span`
   font-weight: ${typography.weight.semiBold};
   > .image-card__title--half > span {
     font-size: ${typography.size.hecto};
-    color: ${colors.azure.base};
+    color: ${themes.tm.primary.base};
   }
 `;
 
@@ -63,7 +60,7 @@ const SubTitle = styled.span`
   font-size: ${typography.size.hecto};
   font-weight: ${typography.weight.regular};
   > .image-card__subtitle--half > span {
-    color: ${colors.blackPearl};
+    color: ${themes.global.darkFill};
     letter-spacing: "normal";
   }
 `;

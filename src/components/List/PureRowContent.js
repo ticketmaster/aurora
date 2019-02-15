@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 
 import spacing from "../../theme/spacing";
-import colors from "../../theme/colors";
 import colorThemes from "../../theme/colorThemes";
 
 import { Row } from "../Grid";
@@ -16,11 +15,11 @@ import constants from "../../theme/constants";
 import { OverflowDesktopContainer } from "./RowContent";
 
 const RowWrapper = styled.div`
-  background-color: ${colors.white.base};
+  background-color: ${colorThemes.global.white.base};
   border-bottom: 1px solid ${colorThemes.global.gray04};
   border-top: 1px solid ${colorThemes.global.gray04};
-  border-right: 1px solid ${colors.white};
-  border-left: 1px solid ${colors.white};
+  border-right: 1px solid ${colorThemes.global.white.base};
+  border-left: 1px solid ${colorThemes.global.white.base};
   margin-bottom: -1px;
   padding: 0 ${spacing.cozy};
   &:first-child {
@@ -63,7 +62,7 @@ const RowWrapper = styled.div`
 `;
 
 const ListContainer = styled.div`
-  background-color: ${colors.white.base};
+  background-color: ${colorThemes.global.white.base};
   align-items: stretch;
   display: flex;
   padding-top: ${spacing.normal};
@@ -160,7 +159,7 @@ class PureListRowContent extends Component {
               aria-label="More Info"
               onClick={onOverflowClick}
             >
-              <OverflowIcon size={22} color={colors.onyx.light} />
+              <OverflowIcon size={22} color={colorThemes.global.onyx.light} />
             </IconButton>
           </MobileContainer>
 

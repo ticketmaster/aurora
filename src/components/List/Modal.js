@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
-import { spacing, colors, constants } from "../../theme/index";
+import { spacing, themes, constants } from "../../theme/index";
 import { ItemContainerConsumer } from "../List/Context";
 import { BackdropConsumer } from "./BackdropContext";
 import Row from "../Grid/Row";
@@ -14,7 +14,7 @@ const ModalContainer = styled.div`
   min-width: 400px;
   max-width: 640px;
   position: relative;
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white.base};
   border-radius: ${constants.borderRadius.large};
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
   border: solid 1px rgba(0, 0, 0, 0.04);
@@ -89,7 +89,7 @@ const Modal = ({ children, containerProps, contentProps, ...props }) => (
                   <CrossIcon
                     size={12}
                     style={{ pointerEvent: "none" }}
-                    color={colors.onyx.base}
+                    color={themes.global.onyx.base}
                   />
                 </IconButton>
               )}

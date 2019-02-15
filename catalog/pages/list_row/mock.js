@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-import colors from "../../../src/theme/colors";
 import ParkingIcon from "../../../src/components/Icons/Parking";
 import VenueIcon from "../../../src/components/Icons/Venue";
 import TicketIcon from "../../../src/components/Icons/Ticket";
 import VipIcon from "../../../src/components/Icons/Vip";
 import ThumbnailCircleImage from "../../../src/components/Image/ThumbnailCircle";
+import { themes } from "../../../src/theme";
 import { mediumAndUp } from "../../../src/theme/mediaQueries";
 
 export const listItems = [
@@ -64,12 +64,12 @@ export const sections = [
     items: [
       {
         title: "VIP Packages",
-        icon: <VipIcon size={26} color={colors.blackPearl} />,
+        icon: <VipIcon size={26} color={themes.global.darkFill} />,
         onItemClick: () => {}
       },
       {
         title: "Parking Pass Available",
-        icon: <ParkingIcon size={26} color={colors.blackPearl} />
+        icon: <ParkingIcon size={26} color={themes.global.darkFill} />
       }
     ]
   },
@@ -81,7 +81,7 @@ export const sections = [
       {
         title: "United Center",
         subTitle: "Chicago, IL",
-        icon: <VenueIcon size={26} color={colors.blackPearl} />,
+        icon: <VenueIcon size={26} color={themes.global.darkFill} />,
         onItemClick: () => {},
         url: "/"
       }
@@ -123,7 +123,7 @@ export const sections = [
     items: [
       {
         title: "Sell Tickets",
-        icon: <TicketIcon color={colors.blackPearl} />,
+        icon: <TicketIcon color={themes.global.darkFill} />,
         onItemClick: () => {}
       }
     ]
@@ -134,7 +134,7 @@ export const items = [
   {
     title: "United Center",
     subTitle: "Chicago, IL",
-    icon: <VenueIcon size={26} color={colors.blackPearl} />,
+    icon: <VenueIcon size={26} color={themes.global.darkFill} />,
     onItemClick: () => {},
     url: "/"
   }
