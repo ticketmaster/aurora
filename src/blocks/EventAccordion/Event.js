@@ -111,8 +111,6 @@ const Event = ({
   </Wrapper>
 );
 
-
-
 Event.propTypes = {
   animate: bool,
   handleToggle: func.isRequired,
