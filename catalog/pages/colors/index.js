@@ -28,8 +28,6 @@ const imports = {
   ...getImports("lne", lne)
 };
 
-console.log({ imports });
-
 export default {
   path: "/colors",
   title: "Colors",
