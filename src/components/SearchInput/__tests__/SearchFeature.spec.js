@@ -4,8 +4,6 @@ import "jest-styled-components";
 
 import SearchWithDeviceSize, { SearchInputFeature } from "../SearchFeature";
 
-// jest.mock('../', () => 'SearchInput');
-
 describe("WithDeviceSize", () => {
   it("should match snapshot", () => {
     const tree = renderer
@@ -24,7 +22,6 @@ describe("WithDeviceSize", () => {
 
 describe("SearchInputFeature", () => {
   it("searchClick stop propagation, prevent default, change state and call inputFocus, when isSmall true", () => {
-    // const focusMock = jest.fn();
     const instance = renderer
       .create(
         <SearchInputFeature
