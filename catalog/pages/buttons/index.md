@@ -202,9 +202,9 @@ rows:
 
 ```react
 <Badge variant="standard">
-    <ChevronIcon size={12} color={colors.white.base} direction="left" />
+    <ChevronIcon size={12} color={themes.global.white.base} direction="left" />
     /
-    <ChevronIcon size={12} color={colors.white.base} direction="right" />
+    <ChevronIcon size={12} color={themes.global.white.base} direction="right" />
 </Badge>
 ```
 
@@ -212,9 +212,9 @@ rows:
 
 ```react
 <Badge variant="standard" disabled>
-    <ChevronIcon size={12} color={colors.white.base} direction="left" />
+    <ChevronIcon size={12} color={themes.global.white.base} direction="left" />
     /
-    <ChevronIcon size={12} color={colors.white.base} direction="right" />
+    <ChevronIcon size={12} color={themes.global.white.base} direction="right" />
 </Badge>
 ```
 
@@ -222,9 +222,9 @@ rows:
 
 ```react
 <Badge variant="outline">
-    <ChevronIcon size={12} color={colors.azure.base} direction="left" />
+    <ChevronIcon size={12} color={themes.tm.primary.base} direction="left" />
     /
-    <ChevronIcon size={12} color={colors.azure.base} direction="right" />
+    <ChevronIcon size={12} color={themes.tm.primary.base} direction="right" />
 </Badge>
 ```
 
@@ -241,18 +241,18 @@ rows:
 
 ```react
 <Badge variant="transparent">
-    <ChevronIcon size={12} color={colors.white.base} direction="left" />
+    <ChevronIcon size={12} color={themes.global.white.base} direction="left" />
     /
-    <ChevronIcon size={12} color={colors.white.base} direction="right" /></Badge>
+    <ChevronIcon size={12} color={themes.global.white.base} direction="right" /></Badge>
 ```
 
 ### Badge Transparent Disabled
 
 ```react
 <Badge variant="transparent" disabled>
-    <ChevronIcon size={12} color={colors.white.light} direction="left" />
+    <ChevronIcon size={12} color={themes.global.white.light} direction="left" />
     /
-    <ChevronIcon size={12} color={colors.white.light} direction="right" />
+    <ChevronIcon size={12} color={themes.global.white.light} direction="right" />
 </Badge>
 ```
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import colors from "../../theme/colors";
+import { themes } from "../../theme";
 
 const AppleIcon = ({ color, size, children, ...props }) => (
   <svg {...props} viewBox="0 0 13 16" width={size} height={size} fill={color}>
@@ -13,7 +13,7 @@ const AppleIcon = ({ color, size, children, ...props }) => (
 AppleIcon.displayName = "AppleIcon";
 
 AppleIcon.defaultProps = {
-  color: colors.white.base,
+  color: themes.global.white.base,
   children: null
 };
 

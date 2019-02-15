@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Base from "./Base.styles";
 import * as PT from "./PropTypes";
-import colors from "../../theme/colors";
+import { themes } from "../../theme";
 import { getRelByTarget, getAsProp } from "../../utils/link";
 import { getFontColor } from "../../utils/typography";
 import { getResponsiveSize } from "../../utils/responsiveSize";
@@ -20,7 +20,7 @@ const LinkBase = styled(Base)`
   }
 
   &:hover {
-    color: ${colors.azure.hover};
+    color: ${themes.global.primary.medium};
   }
 `;
 

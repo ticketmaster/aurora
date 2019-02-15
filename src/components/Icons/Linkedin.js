@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import colors from "../../theme/colors";
+import { themes } from "../../theme";
 
 const LinkedinIcon = ({ color, size, children, ...props }) => (
   <svg {...props} viewBox="0 0 19 18" width={size} height={size} fill={color}>
@@ -19,7 +19,7 @@ LinkedinIcon.propTypes = {
 };
 
 LinkedinIcon.defaultProps = {
-  color: colors.white.base,
+  color: themes.global.white.base,
   children: null
 };
 

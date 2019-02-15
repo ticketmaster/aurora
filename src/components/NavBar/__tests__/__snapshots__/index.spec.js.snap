@@ -105,7 +105,7 @@ exports[`NavBar renders fixed 1`] = `
           Link 4
         </button>
         <div
-          className="FBsWu links links__list iQcfWo"
+          className="FBsWu links links__list kftTFL"
           onItemClick={[Function]}
           role="menu"
           style={
@@ -272,7 +272,7 @@ exports[`NavBar renders inverted 1`] = `
           Link 4
         </button>
         <div
-          className="FBsWu links links__list iQcfWo"
+          className="FBsWu links links__list kftTFL"
           onItemClick={[Function]}
           role="menu"
           style={
@@ -432,7 +432,7 @@ exports[`NavBar renders with defaults 1`] = `
           Link 4
         </button>
         <div
-          className="FBsWu links links__list iQcfWo"
+          className="FBsWu links links__list kftTFL"
           onItemClick={[Function]}
           role="menu"
           style={

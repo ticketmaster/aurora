@@ -138,7 +138,7 @@ responsive: true
   <LazyHeaderWithImageExample
     withUnderlay={true}
     backgroundImage="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
-    backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, stops: [colors.defaultGradient.from, colors.heliotrope.base ], style: { backgroundPosition: "center" } }}
+    backgroundImageProps={{ deg: { small: "40deg", medium: "39deg", large: "25deg" }, stops: [themes.tm.primary.base, themes.tm.accent01.base ], style: { backgroundPosition: "center" } }}
     height={350}
     width={650}
   >

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { colors, typography, spacing } from "../../theme";
+import { typography, spacing, themes } from "../../theme";
 import {
   getResponsiveSize,
   responsiveSizeMixin
@@ -22,7 +22,7 @@ const Margins = styled.span`
   margin-bottom: 0;
   padding-bottom: ${spacing.cozy};
   line-height: ${({ lineHeight }) => typography.lineHeight[lineHeight]};
-  color: ${p => (p.color ? p.color : colors.white.base)};
+  color: ${p => (p.color ? p.color : themes.global.white.base)};
   font-weight: ${({ weight }) => typography.weight[weight]};
   ${({ size }) => responsiveSizeMixin(size)};
 `;

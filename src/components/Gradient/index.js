@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import colors from "../../theme/colors";
+import { colors, themes } from "../../theme";
 import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import SpotLight from "./SpotLight";
 import Angle from "./Angle";
@@ -10,7 +10,7 @@ import StyledImageSeo from "../Image/Seo.styles";
 
 const SPOTLIGHT_STOPS = [
   "rgb(0, 45, 161)",
-  `${colors.azure.base} 55%`,
+  `${themes.global.primary.base} 55%`,
   "rgb(0, 45, 161)"
 ];
 
@@ -162,7 +162,7 @@ Gradient.defaultProps = {
     medium: "80deg",
     large: "81deg"
   },
-  stops: [colors.defaultGradient.from, colors.defaultGradient.to],
+  stops: [themes.global.primary.base, colors.defaultGradient.to],
   imageRef: { current: null },
   backgroundRef: { current: null },
   src: ""

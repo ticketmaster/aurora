@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import typography from "../../theme/typography";
 import { mediumAndUp } from "../../theme/mediaQueries";
+import { typography, themes } from "../../theme";
 import StyledText from "./StyledText";
-import colors from "../../theme/colors";
 
 const BoldStyledText = styled(StyledText)`
   color: ${props => props.color};
@@ -23,7 +22,7 @@ const BoldText = ({ color, children, ...rest }) => (
 );
 
 BoldText.defaultProps = {
-  color: colors.blackPearl
+  color: themes.global.darkFill
 };
 
 BoldText.propTypes = {
