@@ -101,12 +101,13 @@ const Event = ({
         </Layout.Open>
       </Layout>
     </Hoverable>
-    
+
     <ActionArea>
       <Button className="cta-button"> See Tickets </Button>
       <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
-      <Ellipsis id={id} onClick={handleToggle} />
+      <Ellipsis className="cta-ellipsis" id={id} onClick={handleToggle} />
     </ActionArea>
+
   </Wrapper>
 );
 
