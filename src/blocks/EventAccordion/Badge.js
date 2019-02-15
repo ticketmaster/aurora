@@ -39,23 +39,3 @@ const Badge = ({label}) => {
 };
 
 export default Badge;
-
-// accordion demo
-//  {isOpen && 
-//   <DisplayFor small>
-//     <BottomSheet>
-//       <button
-//         id={id}
-//         onClick={handleToggle}
-//       >close me</button>
-//       <EventInfo
-//         items={{
-//           products,
-//           venue: {...venue, venueUrl},
-//           attractions
-//         }}
-//       />
-//     </BottomSheet>
-    
-//   </DisplayFor>
-// }

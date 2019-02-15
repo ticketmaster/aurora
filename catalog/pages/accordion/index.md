@@ -39,25 +39,23 @@ Accordion Component
           {(isOpen, handleToggle) => (
             <React.Fragment>
               <Event
+                animate={true}
                 isOpen={isOpen}
                 id={id}
                 hasProducts={!!products}
                 item={{...rest, venue}}
                 handleToggle={handleToggle}
               />
-              <DisplayFor small large xLarge>
-                <Accordion.Panel isOpen={isOpen}>
-                  <EventInfo
-                    isOpen={isOpen}
-                    items={{
-                      products,
-                      venue: {...venue, venueUrl},
-                      attractions
-                    }}
-                  />
-                </Accordion.Panel>
-              </DisplayFor> 
-
+              <Accordion.Panel isOpen={isOpen}>
+                <EventInfo
+                  isOpen={isOpen}
+                  items={{
+                    products,
+                    venue: {...venue, venueUrl},
+                    attractions
+                  }}
+                />
+              </Accordion.Panel>
             </React.Fragment>
           )}
         </Accordion.Item>

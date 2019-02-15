@@ -43,6 +43,7 @@ const Hoverable = styled(RevealAnimation)`
 `;
 
 const Event = ({
+  animate = true,
   handleToggle,
   id,
   isOnSale = false,
@@ -107,13 +108,13 @@ const Event = ({
       <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
       <Ellipsis className="cta-ellipsis" id={id} onClick={handleToggle} />
     </ActionArea>
-
   </Wrapper>
 );
 
 
 
 Event.propTypes = {
+  animate: bool,
   handleToggle: func.isRequired,
   hasProducts: bool,
   id: string.isRequired,
