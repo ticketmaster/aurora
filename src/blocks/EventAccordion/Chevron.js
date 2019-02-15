@@ -51,18 +51,6 @@ class Chevron extends PureComponent {
   }
 }
 
-// const Chevron = ({ className, isOpen = false, id = null, onClick = null }) => (
-//   <Wrapper
-//     className={className}
-//     id={id}
-//     isOpen={isOpen}
-//     variant="transparent"
-//     onClick={onClick}
-//   >
-//     <StyledComponent id={id} size={15} onClick={onClick} />
-//   </Wrapper>
-// );
-
 Chevron.propTypes = {
   id: string.isRequired,
   isOpen: bool.isRequired,

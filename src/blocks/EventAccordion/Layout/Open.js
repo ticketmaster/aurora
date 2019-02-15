@@ -12,7 +12,6 @@ const Open = styled.div`
       "badge badge badge badge "
       "title title title title ";
 
-
   .title {
       grid-area: title;
       text-align: center;
@@ -22,8 +21,6 @@ const Open = styled.div`
       grid-area: badge;
       text-align: center;
   }
-
-
 `;
 
 export default Open;

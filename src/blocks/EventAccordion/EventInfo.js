@@ -1,38 +1,20 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import { shape } from "prop-types";
+import { AttractionsType, ProductsType, VenueType } from "../../components/types";
 
 import Category from "./Category";
 import CategoryItem from "./CategoryItem";
+import RevealAnimation from "./RevealAnimation";
 import Tile from "../Tile";
 
-import {
-  AttractionsType,
-  ProductsType,
-  VenueType
-} from "../../components/types";
 
-const Wrapper = styled.div`
+const Wrapper = styled(RevealAnimation)`
   display: flex;
   flex-direction: row;
   padding: 16px 16px 16px 47px;
 
-  && > div:nth-child(n + 2) {
-    margin-left: 16px;
-  }
-
-  .expand {
-    background-color: rgba(255,255,255,1);
-    max-height: 600px !imporant;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .collapse {
-      transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-      opacity: 0;
-  }
+  && > div:nth-child(n + 2) { margin-left: 16px; }
 `
 
 const EventInfo = ({

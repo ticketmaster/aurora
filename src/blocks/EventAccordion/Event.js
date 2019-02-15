@@ -1,22 +1,21 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import { string, func, bool, shape } from "prop-types";
-import { EventType } from "../../components/types";
 import { Button} from "../../components/Button"
-
-import {StatusBadge} from "../../components/StatusBadge"
-
-
+import { EventType } from "../../components/types";
 import { mediumAndUp } from "../../theme/mediaQueries";
 
+import ActionArea from "./ActionArea";
 import Badge from "./Badge"
 import BottomSheet from "./BottomSheet";
 import Chevron from "./Chevron";
 import Date from "./Date";
 import Ellipsis from "./Ellipsis";
-
-import Tile from "../Tile";
 import Layout from "./Layout"
+import RevealAnimation from "./RevealAnimation";
+import Tile from "../Tile";
+
+import formatOnSaleText from "./utils/textUtils"
 
 
 const Wrapper = styled(Tile)`
@@ -24,47 +23,13 @@ const Wrapper = styled(Tile)`
   flex-direction: row;
   padding: 4px 0px;
 
-  ${mediumAndUp`
-    .grid-badge {
-      display: inline;
-    }
-  `};
-
-  .addons {  
-    font-size: 12px;
-    line-height: 15px;
-    margin-top: 4px;
-
-  }
-
-  .chevron {
-    display: none
-  }
-
-  .desktop-badge {
-    display: none;
-  }
-  .active-event-text {
-    display: none;
-  }
-
-  ${mediumAndUp`
-      .chevron{
-        display: inline;
-      }
-
-      .desktop-badge {
-        display: flex;
-        flex: 1 1;
-        align-items: center;
-        justify-content: flex-end;
-      }
-
-  `}
+  .chevron { display: none}
+  .active-event-text { display: none;}
+  ${mediumAndUp` .chevron{ display: inline; }`}
 
 `;
 
-const Hoverable = styled.div`
+const Hoverable = styled(RevealAnimation)`
   flex: 1 1;
   display: flex;
   padding-bottom: 14px;
@@ -75,64 +40,9 @@ const Hoverable = styled.div`
     background: lavender;
   }
 
-  .expand {
-    max-width: 600px;
-    max-height: 600px !imporant;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    opacity: 1;
-  }
-
-  .collapse {
-      max-height: 0;
-      transition: max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-      opacity: 0;
-  }
 `;
 
-const ActionArea = styled.div`
-  margin-left:16px;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  margin-top: 12px;
-  grid-template-areas: "gutter button"
-                       "gutter text";
-  
-  .cta-button {
-    display:none;
-    grid-area: button;
-    max-height: 36px;
-    width: 102px;
-  }
-
-  .cta-ellipsis {
-    display: inline;
-  }
-
-  .chevron {
-    display: hidden;
-  }
-
-  .cta-text {
-    display: none;
-    grid-area: text;
-    text-align: right;
-    margin-top: 4px;
-  }
-
-  ${mediumAndUp`
-    margin-right: 16px;
-    width: auto;
-
-    .cta-button, .cta-text, .chevron {
-      display: inline;
-    }
-    .cta-ellipsis {
-      display: none;
-    }
-  `}
-`;
-
+const shouldAnimate = (isOpen) => isOpen ? "expand open" : "collapse open"
 
 const Event = ({
   handleToggle,
@@ -163,51 +73,42 @@ const Event = ({
       </Date>
       
       <Layout>
-        <Layout.Collapsed  className={!isOpen ? "expand open" : "collapse open"}>
+        <Layout.Collapsed  className={shouldAnimate(!isOpen)}>
           <Tile.Title className="title">{name}</Tile.Title>
           <Tile.Text className="subTitle">{venue.name}</Tile.Text> 
 
           {hasProducts &&
             <Tile.Link className="extras">Extras Available</Tile.Link>
           }
-          
           <div className="badge">
-            <Badge
-              className="badge"
-              label="On Sale: Mon • Jan 1 • 10 AM"
-              size="uno"
-            />
+            <Badge label={formatOnSaleText("On Sale: Mon • Jan 1 • 10 AM")} />
           </div> 
-          
           { hasProducts && 
-            <Tile.Link className="extras" href="#" id={id} onClick={handleToggle}>Extras Available</Tile.Link>
+            <Tile.Link
+              className="extras"
+              href="#"
+              id={id}
+              onClick={handleToggle}
+            >
+              Extras Available
+            </Tile.Link>
           } 
-
         </Layout.Collapsed>
 
-        <Layout.Open className={isOpen ? "expand closed" : "collapse closed"}>
+        <Layout.Open className={shouldAnimate(isOpen)}>
           <Tile.Title className="title">{name}</Tile.Title>
           <div className="badge">
             <Badge className="badge" label="On Sale: \n Mon • Jan 1 • 10 AM" size="uno" />
           </div> 
         </Layout.Open>
-
       </Layout>
     </Hoverable>
     
     <ActionArea>
       <Button className="cta-button"> See Tickets </Button>
       <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
-      <Ellipsis
-        className="cta-ellipsis"
-        color="#000"
-        direction="right"
-        size={15}
-        id={id}
-        onClick={handleToggle}
-      />
+      <Ellipsis id={id} onClick={handleToggle} />
     </ActionArea>
-
   </Wrapper>
 );
 
@@ -222,19 +123,3 @@ Event.propTypes = {
 };
 
 export default Event;
-
-{/* <div className="badgeIcon">
-        <Badge
-          className="badge"
-          label="On Sale: Mon • Jan 1 • 10 AM"
-          size="uno"
-        />
-      </div> */}
-{/* <div className={isOpen ? "expandWide" : "collapseWide"}>
-            <Badge
-              className="grid-badge"
-              label="On Sale: Mon • Jan 1 • 10 AM"
-              size="uno"
-            />
-          </div> */}
-

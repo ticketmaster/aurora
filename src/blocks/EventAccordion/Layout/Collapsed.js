@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import { mediumAndUp } from "../../../theme/mediaQueries";
 
 const Collapsed = styled.div`
@@ -23,7 +23,6 @@ const Collapsed = styled.div`
         "extras extras extras extras ";
   `}
 
-
   .extras {
       grid-area: extras;
       display: flex;
@@ -42,9 +41,6 @@ const Collapsed = styled.div`
   .subTitle {
       grid-area: subTitle;
   }
-
-
-
 `;
 
 export default Collapsed;

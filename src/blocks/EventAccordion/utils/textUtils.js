@@ -1,1 +1,3 @@
-export const formatOnSaleText = text => text.replace(":", ":\n");
+const formatOnSaleText = text => text.replace(":", ":\n");
+
+export default formatOnSaleText
