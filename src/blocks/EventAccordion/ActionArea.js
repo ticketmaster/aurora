@@ -10,7 +10,7 @@ const ActionArea = styled.div`
   margin-left:16px;
   margin-top: 12px;
   
-  .button {
+  .cta-button {
     display:none;
     grid-area: button;
     max-height: 36px;

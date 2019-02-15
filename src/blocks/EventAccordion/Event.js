@@ -15,8 +15,8 @@ import Layout from "./Layout"
 import RevealAnimation from "./RevealAnimation";
 import Tile from "../Tile";
 
-import formatOnSaleText from "./utils/textUtils"
-
+import formatOnSaleText from "./utils/text";
+import shouldAnimate from "./utils/animation";
 
 const Wrapper = styled(Tile)`
   display: flex;
@@ -41,8 +41,6 @@ const Hoverable = styled(RevealAnimation)`
   }
 
 `;
-
-const shouldAnimate = (isOpen) => isOpen ? "expand open" : "collapse open"
 
 const Event = ({
   handleToggle,
