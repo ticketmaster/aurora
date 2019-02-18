@@ -10,6 +10,7 @@ import BottomSheet from "../../../src/blocks/EventAccordion/BottomSheet"
 import Event from "../../../src/blocks/EventAccordion/Event";
 import EventInfo from "../../../src/blocks/EventAccordion/EventInfo";
 import Text from "../../../src/components/Text";
+import EventList from "../../../src/blocks/EventAccordion/EventList";
 
 import { EXTRAS_DATA, EVENTS, EVENT_DATA, EVENTS_MANY } from "./mock";
 
@@ -23,6 +24,7 @@ export default {
     Chevron,
     DisplayFor,
     Event,
+    EventList,
     EventInfo,
     EVENT_DATA,
     EVENTS,

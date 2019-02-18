@@ -21,45 +21,97 @@ Accordion Component
 </Accordion>
 ```
 
+
+### With a list of Events
+```react
+responseive: true
+state: {openSections: {}}
+---
+<Accordion>
+  {EVENTS.map(({
+      id,
+      products,
+      eventUrlLink: venueUrl,
+      venues: [venue],
+      attractions,
+      ...rest
+  }) => (
+      <Accordion.Item id={id} key={id}>
+        {(isOpen, handleToggle) => (
+          <React.Fragment>
+            <Event
+              animate={true}
+              isOpen={isOpen}
+              id={id}
+              hasProducts={!!products}
+              item={{...rest, venue}}
+              handleToggle={handleToggle}
+            />
+            <Accordion.Panel isOpen={isOpen}>
+              <EventInfo
+                isOpen={isOpen}
+                items={{
+                  products,
+                  venue: {...venue, venueUrl},
+                  attractions
+                }}
+              />
+            </Accordion.Panel>
+          </React.Fragment>
+        )}
+      </Accordion.Item>
+    )
+  )}
+</Accordion>
+```
+
 ### With Component Composition
 
 ```react
- state: {openSections: {}}
+responsive: true
+state: {openSections: {}}
 ---
-  <Accordion>
-    {EVENTS_MANY.map(({
-        id,
-        products,
-        eventUrlLink: venueUrl,
-        venues: [venue],
-        attractions,
-        ...rest
-    }) => (
-        <Accordion.Item id={id} key={id}>
-          {(isOpen, handleToggle) => (
-            <React.Fragment>
-              <Event
-                animate={true}
-                isOpen={isOpen}
-                id={id}
-                hasProducts={!!products}
-                item={{...rest, venue}}
-                handleToggle={handleToggle}
-              />
-              <Accordion.Panel isOpen={isOpen}>
-                <EventInfo
+<div>
+ <DisplayFor medium large Xlarge>
+    <Accordion>
+      {EVENTS_MANY.map(({
+          id,
+          products,
+          eventUrlLink: venueUrl,
+          venues: [venue],
+          attractions,
+          ...rest
+      }) => (
+          <Accordion.Item id={id} key={id}>
+            {(isOpen, handleToggle) => (
+              <React.Fragment>
+                <Event
+                  animate={true}
                   isOpen={isOpen}
-                  items={{
-                    products,
-                    venue: {...venue, venueUrl},
-                    attractions
-                  }}
+                  id={id}
+                  hasProducts={!!products}
+                  item={{...rest, venue}}
+                  handleToggle={handleToggle}
                 />
-              </Accordion.Panel>
-            </React.Fragment>
-          )}
-        </Accordion.Item>
-      )
-    )}
-  </Accordion>
+                <Accordion.Panel isOpen={isOpen}>
+                  <EventInfo
+                    isOpen={isOpen}
+                    items={{
+                      products,
+                      venue: {...venue, venueUrl},
+                      attractions
+                    }}
+                  />
+                </Accordion.Panel>
+              </React.Fragment>
+            )}
+          </Accordion.Item>
+        )
+      )}
+    </Accordion>
+ </DisplayFor>
+ <DisplayFor small>
+  <EventList items={EVENTS_MANY} />
+ </DisplayFor>
+ </div>
 ```

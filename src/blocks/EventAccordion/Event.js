@@ -15,7 +15,6 @@ import Layout from "./Layout"
 import RevealAnimation from "./RevealAnimation";
 import Tile from "../Tile";
 
-import formatOnSaleText from "./utils/text";
 import shouldAnimate from "./utils/animation";
 
 const Wrapper = styled(Tile)`
@@ -66,11 +65,11 @@ const Event = ({
       name={name}
       onClick={handleToggle}
     /> 
+    <Date>
+      <Tile.Title>{dateTitle}</Tile.Title>
+      <Tile.Text>{dateSubTitle}</Tile.Text>
+    </Date>
     <Hoverable className="event" href="#">
-      <Date>
-        <Tile.Title>{dateTitle}</Tile.Title>
-        <Tile.Text>{dateSubTitle}</Tile.Text>
-      </Date>
       <Layout>
         <Layout.Collapsed  className={shouldAnimate(!isOpen)}>
           <Tile.Title className="title" id={`${id}-event`} >{name}</Tile.Title>

@@ -31,9 +31,9 @@ const Wrapper = styled.li`
     ${({ isOpen }) =>
     !isOpen &&
     css`
-      
       margin-bottom: 0px;
-      transition: box-shadow 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s, margin-bottom 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+      transition: box-shadow 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s,
+                  margin-bottom 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
     `};
 `;
 
