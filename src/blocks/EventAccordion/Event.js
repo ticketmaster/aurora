@@ -26,7 +26,6 @@ const Wrapper = styled(Tile)`
   .chevron { display: none}
   .active-event-text { display: none;}
   ${mediumAndUp` .chevron{ display: inline; }`}
-
 `;
 
 const Hoverable = styled(RevealAnimation)`
@@ -37,9 +36,9 @@ const Hoverable = styled(RevealAnimation)`
   padding-left: 8px;
   cursor: pointer;
 
-  &&:hover {
+  /* &&:hover {
     background: lavender;
-  }
+  } */
 
 `;
 
@@ -72,7 +71,6 @@ const Event = ({
         <Tile.Title>{dateTitle}</Tile.Title>
         <Tile.Text>{dateSubTitle}</Tile.Text>
       </Date>
-      
       <Layout>
         <Layout.Collapsed  className={shouldAnimate(!isOpen)}>
           <Tile.Title className="title" id={`${id}-event`} >{name}</Tile.Title>
@@ -81,9 +79,10 @@ const Event = ({
           {hasProducts &&
             <Tile.Link className="extras">Extras Available</Tile.Link>
           }
-          <div className="badge">
-            <Badge label="Mon • Jan 1 • 10 AM"/>
-          </div> 
+            <div className="badge">
+              <Badge label="Mon • Jan 1 • 10 AM"/>
+            </div>
+
           { hasProducts && 
             <Tile.Link
               className="extras"
@@ -98,10 +97,9 @@ const Event = ({
 
         <Layout.Open className={shouldAnimate(isOpen)}>
           <Tile.Title className="title">{name}</Tile.Title>
-          <div className="badge">
-            <Badge className="badge" label="On Sale: \n Mon • Jan 1 • 10 AM" size="uno" />
-          </div> 
+          <Badge className="badge" label="Mon • Jan 1 • 10 AM" size="uno" />
         </Layout.Open>
+
       </Layout>
     </Hoverable>
 

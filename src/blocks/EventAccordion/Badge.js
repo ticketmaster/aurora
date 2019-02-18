@@ -3,13 +3,11 @@ import styled from "styled-components";
 
 import { StatusBadge as AuroraBadge } from "../../components/StatusBadge";
 import { typography, themes } from "../../theme";
-import {Text as AuroraText} from "../../components/Text"
-
-import {mediumAndUp} from "../../theme/mediaQueries"
+import Tile from "../Tile"
 
 const Wrapper = styled.div` display: inline;`;
 
-const Text = styled(AuroraText)`
+const Text = styled(Tile.Text)`
   color: ${themes.global.error.base};
   font-size: ${typography.size.uno};
   font-weight: ${typography.weight.semiBold};
@@ -36,7 +34,7 @@ const Badge = ({label}) => {
         <Wrapper className="badge">
           <Text primary size="uno">
               ON SALE:
-              <span>{label}</span>
+              <span> {label} </span>
           </Text>
         </Wrapper>
       );

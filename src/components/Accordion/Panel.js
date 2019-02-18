@@ -41,6 +41,8 @@ const Panel = styled.div`
       transition: max-height 0.3s ${constants.easing.easeInQuad},
                   opacity 0.1s ${constants.easing.easeInQuad};
     `};
+  }
+
 `;
 
 Panel.propTypes = {

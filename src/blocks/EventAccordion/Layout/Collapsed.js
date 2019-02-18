@@ -18,16 +18,20 @@ const Collapsed = styled.div`
   /* desktop */
   ${mediumAndUp`  
     grid-template-areas:
-        "title title title badge "
+        "title    title    title    badge "
         "subTitle subTitle subTitle badge "
-        "extras extras extras extras ";
+        "extras   extras   extras   extras ";
 
     .badge {
         grid-area: badge;
         display: flex;
         justify-content: flex-end;
-        /* height: 36px; */
         align-items: center;
+        text-align: right;
+
+        span {
+            display: block;
+        }
     }
   `}
 
@@ -37,11 +41,16 @@ const Collapsed = styled.div`
       justify-content: flex-start;
   }
 
+  .badge {
+        grid-area: badge;
+        
+
+        
+    }
+
   .title {
       grid-area: title;
   }
-
-  
 
   .badgeIcon {
       grid-area: badge;

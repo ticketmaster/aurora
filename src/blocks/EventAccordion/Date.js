@@ -5,7 +5,8 @@ const Date = styled.div`
   color: ${COLORS.azure.hoverLight};
   display: block;
   flex-direction: column;
-  min-width: 116px;
+  max-width: 116px;
+  min-width: 76px;
 
   && p:first-child {
     color: #904eba;
