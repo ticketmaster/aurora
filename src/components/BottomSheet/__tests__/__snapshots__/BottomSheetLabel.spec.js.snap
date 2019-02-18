@@ -2,7 +2,7 @@
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
 <div
-  className="text text--dark text--primary mrGpr gwaFLV"
+  className="text text--dark text--primary flnUXj gwaFLV"
   disabled={false}
   size="hecto"
 >
@@ -13,7 +13,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`alert\` 1`] = `
 <div
-  className="badge dSluqV"
+  className="badge jAqVKN"
   color="#d93a3a"
 >
   Alert label
@@ -22,7 +22,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equal \`positive\` 1`] = `
 <div
-  className="badge eFpflk"
+  className="badge jPjKNF"
   color="#1bab1e"
 >
   Positive label
