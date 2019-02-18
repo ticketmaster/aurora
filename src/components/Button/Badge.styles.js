@@ -1,37 +1,37 @@
 import styled from "styled-components";
-import { typography, colors, constants } from "../../theme";
+import { typography, colors, themes, constants } from "../../theme";
 
 const HEIGHT = "36px";
 const VARIANTS = {
   standard: {
-    color: colors.white.base,
-    backgroundColor: colors.azure.base,
-    borderColor: colors.azure.base
+    color: themes.global.white.base,
+    backgroundColor: themes.global.primary.base,
+    borderColor: themes.global.primary.base
   },
   standardDisabled: {
-    color: colors.white.base,
+    color: themes.global.white.base,
     backgroundColor: colors.azure.light,
     borderColor: colors.azure.light
   },
   outline: {
-    color: colors.azure.base,
-    backgroundColor: colors.white.base,
-    borderColor: colors.azure.base
+    color: themes.global.primary.base,
+    backgroundColor: themes.global.white.base,
+    borderColor: themes.global.primary.base
   },
   outlineDisabled: {
     color: colors.azure.light,
-    backgroundColor: colors.white.base,
+    backgroundColor: themes.global.white.base,
     borderColor: colors.azure.light
   },
   transparent: {
-    color: colors.white.base,
+    color: themes.global.white.base,
     backgroundColor: "transparent",
-    borderColor: colors.white.base
+    borderColor: themes.global.white.base
   },
   transparentDisabled: {
-    color: colors.white.muted,
+    color: themes.global.white.muted,
     backgroundColor: "transparent",
-    borderColor: colors.white.muted
+    borderColor: themes.global.white.muted
   }
 };
 

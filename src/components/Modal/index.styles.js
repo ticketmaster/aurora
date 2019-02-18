@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import classNames from "classnames";
-import { spacing, colors, constants, zIndex, typography } from "../../theme";
+import { spacing, themes, constants, zIndex, typography } from "../../theme";
 import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 const widthL = {
@@ -70,7 +70,7 @@ export const ModalContainer = styled.div.attrs(({ isFullscreen }) => ({
   position: relative;
   transform: ${({ displayTop }) => (displayTop ? "none" : "translateY(-50%)")};
   z-index: ${zIndex.layout.overlay || "#fff"};
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white.base};
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
   border-radius: ${constants.borderRadius.large};
 
@@ -158,7 +158,7 @@ const contentGutters = css`
 `;
 
 export const ModalContent = styled.div`
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white.base};
   overflow-y: auto;
 
   .fullscreen & {

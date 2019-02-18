@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import classnames from "classnames";
 
-import colors from "../../theme/colors";
-
 import BottomSheetLabel from "./BottomSheetLabel";
 import { ItemContainerConsumer } from "../List/Context";
 import { Row } from "../Grid";
@@ -12,7 +10,7 @@ import { BackdropConsumer } from "../List/BackdropContext";
 import CrossIcon from "../Icons/Cross";
 import IconButton from "../Button/IconButton";
 import { mediumAndUp } from "../../theme/mediaQueries";
-import { constants, spacing } from "../../theme";
+import { constants, spacing, themes } from "../../theme";
 
 const noop = () => {};
 
@@ -128,7 +126,7 @@ const BottomSheet = ({
                     <CrossIcon
                       size={CANCEL_BUTTON_ICON_SIZE}
                       style={{ pointerEvent: "none" }}
-                      color={colors.onyx.base}
+                      color={themes.global.onyx.base}
                     />
                   </CancelButton>
                 )}

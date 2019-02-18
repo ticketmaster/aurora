@@ -1,12 +1,12 @@
 import { pageLoader } from "catalog";
 import { ThemeProvider } from "styled-components";
 
-import { colors, typography } from "../../../src/theme";
 import { Text, Link } from "../../../src/components/Text";
 import { Container, Row, Column } from "../../../src/components/Grid";
+import { typography, themes } from "../../../src/theme";
 
 const textStyle = {
-  backgroundColor: colors.white.base,
+  backgroundColor: themes.global.white.base,
   padding: "20px",
   display: "flex",
   justifyContent: "center",
@@ -29,7 +29,7 @@ const fontSizeRowStyleDark = {
   padding: "20px",
   display: "flex",
   alignItems: "center",
-  backgroundColor: colors.blackPearl
+  backgroundColor: themes.global.darkFill
 };
 
 const getFontWeightTextStyle = props => ({
@@ -42,7 +42,6 @@ export default {
   title: "Typography",
   imports: {
     ThemeProvider,
-    colors,
     typography,
     Container,
     Row,

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { colors, spacing } from "../../theme";
+import { spacing, themes } from "../../theme";
 import { SecondaryText, Link } from "../Text";
 import { ItemContainerConsumer } from "./Context";
 
@@ -27,7 +27,7 @@ const IconContainer = styled.div`
 const MultiLineLink = styled.div.attrs({
   className: "section-item-link"
 })`
-  color: ${({ color }) => color || colors.azure.base};
+  color: ${({ color }) => color || themes.global.primary.base};
   text-decoration: none;
   display: -webkit-box;
   overflow: hidden;

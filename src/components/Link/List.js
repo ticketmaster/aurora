@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import styled from "styled-components";
 
-import constants from "../../theme/constants";
-import colors from "../../theme/colors";
-import spacing from "../../theme/spacing";
+import { themes, constants, spacing } from "../../theme";
 
 import { LinkListProvider } from "./Context";
 
@@ -17,7 +15,7 @@ const Container = styled.div.attrs({
   position: absolute;
   width: 205px;
   overflow: hidden;
-  background-color: ${colors.white.base};
+  background-color: ${themes.global.white};
   border-radius: ${constants.borderRadius.small};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 
@@ -39,8 +37,8 @@ const Wrapper = styled.div`
 
 const AfterWrapper = styled.div`
   padding: 0 ${spacing.cozy};
-  border-top: 1px solid ${colors.diatomite};
-  color: ${colors.blackPearl};
+  border-top: 1px solid ${themes.global.gray04};
+  color: ${themes.global.darkFill};
 `;
 
 class LinkList extends Component {
