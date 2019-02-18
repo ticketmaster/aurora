@@ -3,7 +3,7 @@ import { bool, func } from "prop-types";
 import styled, { css } from "styled-components";
 import constants from "../../theme/constants"
 
-const Wrapper = styled.div`
+const Wrapper = styled.li`
   background: white;
   overflow: hidden;
 
@@ -48,7 +48,13 @@ const Wrapper = styled.div`
 `;
 
 const Section = ({ children, isOpen = false, toggle }) => (
-  <Wrapper className="accordion-section" isOpen={isOpen}>
+  // <React.Fragment>
+  //   {children(isOpen, toggle)}
+  // </React.Fragment>
+  <Wrapper
+    className="accordion-section"
+    isOpen={isOpen}
+  >
     {children(isOpen, toggle)}
   </Wrapper>
 );

@@ -47,7 +47,8 @@ const CategoryItem = ({
   link,
   icon: {
     type,
-    src = "https://placekitten.com/g/512/288"
+    src = "https://placekitten.com/g/512/288",
+    alt = "avatar"
   },
   label,
   text
@@ -61,7 +62,7 @@ const CategoryItem = ({
       </Tile.Text>
     }
   </div>
-  <Icon type={type} src={src} />
+  <Icon type={type} src={src} alt={text} />
 </Wrapper>
 );
 

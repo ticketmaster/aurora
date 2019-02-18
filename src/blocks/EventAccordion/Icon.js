@@ -19,11 +19,24 @@ const Icon = props => {
           className="icon"
           color={COLORS.blackPearl}
           size={24}
-        />
+          aria-labelledby="catTitle catDesc" role="img"
+        >
+         <title id="catTitle">Pixels, My Super-friendly Cat</title>
+          <desc id="catDesc">An illustrated gray cat with bright green blinking eyes.</desc>
+        </Parking>
       );
 
     case "Tickets":
-      return <Ticket {...props} className="icon" size="small" />;
+      return (
+        <Ticket
+            {...props}
+            className="icon"
+            size="small"
+            aria-labelledby="catTitle catDesc" role="img"
+          >
+           <title id="catTitle">Pixels, My Super-friendly Cat</title>
+            <desc id="catDesc">An illustrated gray cat with bright green blinking eyes.</desc>
+        </Ticket>);
 
     case "Venue":
       return (
@@ -32,7 +45,11 @@ const Icon = props => {
           className="icon"
           color={COLORS.blackPearl}
           size={24}
-        />
+          aria-labelledby="catTitle catDesc" role="img"
+        >
+         <title id="catTitle">Pixels, My Super-friendly Cat</title>
+          <desc id="catDesc">An illustrated gray cat with bright green blinking eyes.</desc>
+        </Venue>
       );
 
     case "Vip":

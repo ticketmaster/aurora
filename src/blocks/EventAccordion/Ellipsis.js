@@ -8,6 +8,11 @@ const Button = styled.button`
   min-width: 48px;
   position: relative;
 
+
+  .screen-reader-text {
+    visibility: hidden;
+  }
+
   && :focus {
     outline: none;
   }
@@ -20,7 +25,13 @@ const Wrapper = styled(OverflowIcon)`
 `;
 
 const Ellipsis = ({className, id, onClick}) => (
-  <Button id={id} onClick={onClick} className="cta-btn-ellipsis">
+  <Button
+    id={id}
+    onClick={onClick}
+    className="cta-btn-ellipsis"
+    role="button"
+  >
+    <p className="screen-reader-text">expand options</p>
     <Wrapper
       id={id} onClick={onClick} 
       className={className}

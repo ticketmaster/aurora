@@ -8,7 +8,6 @@ const Wrapper = styled(AuroraText)`
   max-height: 20px;
   overflow: hidden;
   position: relative;
-  text-align: justify;
 `;
 
 const Label = ({ children, ...rest }) => (
@@ -16,6 +15,7 @@ const Label = ({ children, ...rest }) => (
     {children}
   </Wrapper>
 );
+
 // Label.propTypes = {
 //   children: string
 // }

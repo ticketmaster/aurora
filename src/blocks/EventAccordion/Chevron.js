@@ -18,6 +18,10 @@ const Wrapper = styled.button`
     outline: none;
   }
 
+  .screen-reader-text {
+    visibility: hidden;
+  }
+
   ${({ isOpen }) =>
     isOpen &&
     css`
@@ -36,7 +40,7 @@ const StyledComponent = styled(AuroraChevron)`
 
 class Chevron extends PureComponent {
   render (){
-    const { className, isOpen = false, id = null, onClick = null } = this.props;
+    const { className, name, isOpen = false, id = null, onClick = null } = this.props;
     return (
       <Wrapper
         className={className}
@@ -44,8 +48,18 @@ class Chevron extends PureComponent {
         isOpen={isOpen}
         variant="transparent"
         onClick={onClick}
+        
       >
-        <StyledComponent id={id} size={15} onClick={onClick} />
+        <p className="screen-reader-text">see details</p>
+        <StyledComponent
+          id={id}
+          size={15}
+          onClick={onClick}
+          aria-labelledby="catTitle catDesc" role="img"
+        >
+           <title id="catTitle">Pixels, My Super-friendly Cat</title>
+            <desc id="catDesc">An illustrated gray cat with bright green blinking eyes.</desc>
+        </StyledComponent>
       </Wrapper>
     )
   }

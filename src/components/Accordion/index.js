@@ -97,7 +97,7 @@ class Accordion extends PureComponent {
         toggle: this.onClick
       })
     );
-    return <Wrapper className="accordion-wrapper">{clonedChildren}</Wrapper>;
+    return <Wrapper className="accordion-wrapper" data-allow-toggle>{clonedChildren}</Wrapper>;
   }
 }
 

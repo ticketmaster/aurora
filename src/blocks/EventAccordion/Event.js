@@ -64,6 +64,7 @@ const Event = ({
       id={id}
       isOpen={isOpen}
       className="chevron"
+      name={name}
       onClick={handleToggle}
     /> 
     <Hoverable className="event" href="#">
@@ -74,14 +75,14 @@ const Event = ({
       
       <Layout>
         <Layout.Collapsed  className={shouldAnimate(!isOpen)}>
-          <Tile.Title className="title">{name}</Tile.Title>
+          <Tile.Title className="title" id={`${id}-event`} >{name}</Tile.Title>
           <Tile.Text className="subTitle">{venue.name}</Tile.Text> 
 
           {hasProducts &&
             <Tile.Link className="extras">Extras Available</Tile.Link>
           }
           <div className="badge">
-            <Badge label={formatOnSaleText("On Sale: Mon • Jan 1 • 10 AM")} />
+            <Badge label={`On Sale: \n Mon • Jan 1 • 10 AM`} />
           </div> 
           { hasProducts && 
             <Tile.Link
@@ -105,7 +106,9 @@ const Event = ({
     </Hoverable>
 
     <ActionArea>
-      <Button className="cta-button"> See Tickets </Button>
+      <Button className="cta-button">
+        See Tickets
+      </Button>
       <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
       <Ellipsis className="cta-ellipsis" id={id} onClick={handleToggle} />
     </ActionArea>
