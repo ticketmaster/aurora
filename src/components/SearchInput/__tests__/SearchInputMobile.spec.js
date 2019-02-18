@@ -2,13 +2,13 @@ import React from "react";
 import renderer from "react-test-renderer";
 import "jest-styled-components";
 
-import SearchWithDeviceSize, { SearchInputFeature } from "../SearchFeature";
+import SearchInputMobile from "../SearchInputMobile";
 
-describe("WithDeviceSize", () => {
+describe("SearchInputMobile", () => {
   it("should match snapshot", () => {
     const tree = renderer
       .create(
-        <SearchWithDeviceSize
+        <SearchInputMobile
           placeholder="Search Demo"
           value=""
           onChange={() => {}}
@@ -18,17 +18,29 @@ describe("WithDeviceSize", () => {
 
     expect(tree).toMatchSnapshot();
   });
-});
+  it("should match snapshot when mobile opened", () => {
+    const component = renderer.create(
+      <SearchInputMobile
+        placeholder="Search Demo"
+        value=""
+        onChange={() => {}}
+      />
+    );
 
-describe("SearchInputFeature", () => {
-  it("searchClick stop propagation, prevent default, change state and call inputFocus, when isSmall true", () => {
+    component.getInstance().setState({
+      isMobileVisible: true
+    });
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it("searchClick stop propagation, prevent default, change state and call inputFocus", () => {
     const instance = renderer
       .create(
-        <SearchInputFeature
+        <SearchInputMobile
           placeholder="Search Demo"
           value=""
           onChange={() => {}}
-          deviceSize={{ isSmall: true }}
         />
       )
       .getInstance();
@@ -50,48 +62,14 @@ describe("SearchInputFeature", () => {
     spyState.mockRestore();
   });
 
-  it("searchClick do nothing, when not small and xsmall screen", () => {
-    const instance = renderer
-      .create(
-        <SearchInputFeature
-          placeholder="Search Demo"
-          value=""
-          onChange={() => {}}
-          deviceSize={{ xLarge: true }}
-        />
-      )
-      .getInstance();
-
-    const spyState = jest.spyOn(instance, "setState");
-    const event = {
-      preventDefault: jest.fn(),
-      stopPropagation: jest.fn()
-    };
-    const focusMock = jest.fn();
-
-    instance.mobileRef.current = {
-      focusInput: focusMock
-    };
-
-    instance.searchClick(event);
-
-    expect(event.preventDefault).toHaveBeenCalledTimes(0);
-    expect(event.stopPropagation).toHaveBeenCalledTimes(0);
-    expect(focusMock).toHaveBeenCalledTimes(0);
-    expect(spyState).toHaveBeenCalledTimes(0);
-
-    spyState.mockRestore();
-  });
-
   it("cancelClick should set isMobileVisible to false and call cancelCallback", () => {
     const cancelMock = jest.fn();
     const instance = renderer
       .create(
-        <SearchInputFeature
+        <SearchInputMobile
           placeholder="Search Demo"
           value=""
           onChange={() => {}}
-          deviceSize={{ isSmall: true }}
           cancelCallback={cancelMock}
         />
       )

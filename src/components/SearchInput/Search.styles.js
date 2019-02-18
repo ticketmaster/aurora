@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { getSearchHeight, SearchMinWidth, SuggestMaxHeight } from "./constants";
 import { SearchIcon } from "../Icons";
-import { themes, typography, constants, spacing } from "../../theme";
+import { themes, typography, constants, spacing, zIndex } from "../../theme";
 import { cardBoxShadow } from "../../theme/constants";
 import { mediumAndUp } from "../../theme/mediaQueries";
 import { SMALL } from "../constants";
@@ -147,10 +147,6 @@ export const SearchSuggest = styled.div`
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  border: 1px solid ${themes.global.gray02};
-  border-top: none;
-  border-bottom-left-radius: ${constants.borderRadius.small};
-  border-bottom-right-radius: ${constants.borderRadius.small};
   padding: ${spacing.moderate};
   background-color: ${themes.global.white.base};
   box-shadow: ${cardBoxShadow};
@@ -159,12 +155,16 @@ export const SearchSuggest = styled.div`
 
   ${mediumAndUp`
     max-height: ${SuggestMaxHeight};
+    border: 1px solid ${themes.global.gray02};
+    border-top: none;
+    border-bottom-left-radius: ${constants.borderRadius.small};
+    border-bottom-right-radius: ${constants.borderRadius.small};
   `};
 `;
 
 export const MobileActiveSearch = styled.div`
   position: fixed;
-  z-index: 1000;
+  z-index: ${zIndex.searchsuggest.base};
   top: 0;
   width: 100%;
   left: 0;

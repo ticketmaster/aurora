@@ -25,16 +25,10 @@ class SearchInput extends Component {
     this.inputClicked = false;
   }
 
-  componentDidMount() {
-    global.window.addEventListener("click", this.windowClick);
-  }
-
-  componentWillUnmount() {
-    global.window.removeEventListener("click", this.windowClick);
-  }
-
   containerClick = () => {
     this.inputClicked = true;
+    global.window.removeEventListener("click", this.windowClick);
+    global.window.addEventListener("click", this.windowClick);
   };
 
   windowClick = () => {
@@ -46,6 +40,7 @@ class SearchInput extends Component {
   };
 
   blurInput = () => {
+    global.window.removeEventListener("click", this.windowClick);
     const { onBlur } = this.props;
     const { isFocused } = this.state;
 
@@ -83,8 +78,10 @@ class SearchInput extends Component {
   };
 
   clearTextClick = () => {
-    const { clearText } = this.props;
-    this.focusInput();
+    const { clearText, isMobile } = this.props;
+    if (!isMobile) {
+      this.focusInput();
+    }
     clearText();
   };
 
@@ -110,10 +107,12 @@ class SearchInput extends Component {
       inputAreaLabel,
       isSuggestOpened,
       hasBackground,
+      isMobile,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
     const isStyleForFocusedUsed = !hasBackground || isFocused;
+    const showCancelButton = isFocused && isMobile;
     return (
       <SearchContainer
         variant={variant}
@@ -161,7 +160,7 @@ class SearchInput extends Component {
         </Clear>
         <Cancel
           isFocused={isStyleForFocusedUsed}
-          showElement={isFocused}
+          showElement={showCancelButton}
           onClick={this.cancelClick}
           aria-label={cancelBtnAreaLabel}
           className="search--cancel-icon"
@@ -191,7 +190,8 @@ SearchInput.propTypes = {
   cancelCallback: PropTypes.func,
   hasBackground: PropTypes.bool,
   iconOnly: PropTypes.bool,
-  isSuggestOpened: PropTypes.bool
+  isSuggestOpened: PropTypes.bool,
+  isMobile: PropTypes.bool
 };
 
 SearchInput.defaultProps = {
@@ -209,7 +209,8 @@ SearchInput.defaultProps = {
   clearBtnAreaLabel: "Clear button",
   cancelBtnAreaLabel: "Cancel button",
   inputAreaLabel: "Search input",
-  isSuggestOpened: false
+  isSuggestOpened: false,
+  isMobile: false
 };
 
 SearchInput.displayName = "SearchComponent";

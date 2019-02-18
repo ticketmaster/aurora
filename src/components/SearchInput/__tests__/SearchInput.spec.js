@@ -81,6 +81,28 @@ describe("SearchInput", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("mobile and focused should match snapshot", () => {
+    const onChange = () => {};
+    const component = renderer.create(
+      <SearchInput
+        variant="large"
+        placeholder="Search Demo"
+        value=""
+        iconOnly
+        onChange={onChange}
+        hasBackground
+        isSuggestOpened
+        isMobile
+      />
+    );
+
+    component.getInstance().setState({
+      isFocused: true
+    });
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("cancelClick should remove focus and call cancelCallback", () => {
     const cancelMock = jest.fn();
 
@@ -127,6 +149,33 @@ describe("SearchInput", () => {
     focusSpy.mockRestore();
   });
 
+  it("clearTextClick should not call focusInput and should call clearText", () => {
+    const clearMock = jest.fn();
+
+    const instance = renderer
+      .create(
+        <SearchInput
+          placeholder="Search Demo"
+          value=""
+          onChange={() => {}}
+          clearText={clearMock}
+          isMobile
+        />
+      )
+      .getInstance();
+
+    const focusSpy = jest
+      .spyOn(instance, "focusInput")
+      .mockImplementation(() => {});
+
+    instance.clearTextClick();
+
+    expect(clearMock).toHaveBeenCalledTimes(1);
+    expect(focusSpy).toHaveBeenCalledTimes(0);
+
+    focusSpy.mockRestore();
+  });
+
   it("searchIconClick should call focusInput and clearText", () => {
     const searchMock = jest.fn();
 
@@ -152,36 +201,6 @@ describe("SearchInput", () => {
     focusSpy.mockRestore();
   });
 
-  it("componentDidMount should listen for click", () => {
-    const instance = renderer
-      .create(
-        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
-      )
-      .getInstance();
-    const spy = jest.spyOn(global.window, "addEventListener");
-    instance.componentDidMount();
-
-    expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith("click", instance.windowClick);
-
-    spy.mockRestore();
-  });
-
-  it("componentWillUnmount should listen for click", () => {
-    const instance = renderer
-      .create(
-        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
-      )
-      .getInstance();
-    const spy = jest.spyOn(global.window, "removeEventListener");
-    instance.componentWillUnmount();
-
-    expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith("click", instance.windowClick);
-
-    spy.mockRestore();
-  });
-
   it("containerClick should set inputClicked to true", () => {
     const instance = renderer
       .create(
@@ -189,11 +208,21 @@ describe("SearchInput", () => {
       )
       .getInstance();
 
+    const spyAdd = jest.spyOn(global.window, "addEventListener");
+    const spyRemove = jest.spyOn(global.window, "removeEventListener");
+
     expect(instance.inputClicked).toBeFalsy();
 
     instance.containerClick();
 
     expect(instance.inputClicked).toBeTruthy();
+    expect(spyAdd).toHaveBeenCalledTimes(1);
+    expect(spyAdd).toHaveBeenCalledWith("click", instance.windowClick);
+    expect(spyRemove).toHaveBeenCalledTimes(1);
+    expect(spyRemove).toHaveBeenCalledWith("click", instance.windowClick);
+
+    spyAdd.mockRestore();
+    spyRemove.mockRestore();
   });
 
   it("windowClick should call blurInput and set inputCicked to false", () => {
@@ -246,14 +275,18 @@ describe("SearchInput", () => {
       isFocused: true
     });
     const spy = jest.spyOn(instance, "setState");
+    const spyRemove = jest.spyOn(global.window, "removeEventListener");
     instance.blurInput();
 
     expect(blurMock).toHaveBeenCalledTimes(1);
+    expect(spyRemove).toHaveBeenCalled();
+    expect(spyRemove).toHaveBeenCalledWith("click", instance.windowClick);
     expect(spy).toHaveBeenCalledTimes(1);
     expect(spy).toHaveBeenCalledWith({
       isFocused: false
     });
 
+    spyRemove.mockRestore();
     spy.mockRestore();
   });
 

@@ -32,8 +32,8 @@ export { default as Row } from "./components/Grid/Row";
 export { default as SearchInput } from "./components/Input/Search";
 export { default as SearchComponent } from "./components/SearchInput";
 export {
-  default as SearchFeature
-} from "./components/SearchInput/SearchFeature";
+  default as SearchInputMobile
+} from "./components/SearchInput/SearchInputMobile";
 export { SearchSuggest } from "./components/SearchInput/Search.styles";
 export { default as Spacing } from "./components/Spacing";
 export { default as Breadcrumb } from "./components/Breadcrumbs";
