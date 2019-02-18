@@ -5,12 +5,12 @@ import { OverflowIcon } from "../../components/Icons";
 const Button = styled.button`
   background: none;
   border: none;
-  min-width: 48px;
   position: relative;
-
 
   .screen-reader-text {
     visibility: hidden;
+    height:0;
+    margin: 0;
   }
 
   && :focus {
@@ -18,28 +18,28 @@ const Button = styled.button`
   }
 `;
 
-const Wrapper = styled(OverflowIcon)`
+const Icon = styled(OverflowIcon)`
   color: #5d5d5d;
   height: 22px;
   min-width: 10px;
 `;
 
 const Ellipsis = ({className, id, onClick}) => (
-  <Button
-    id={id}
-    onClick={onClick}
-    className="cta-btn-ellipsis"
-    role="button"
-  >
-    <p className="screen-reader-text">expand options</p>
-    <Wrapper
+  <React.Fragment>
+    <Button
+      id={id}
+      onClick={onClick}
+      className="cta-btn-ellipsis"
+      role="button"
+    />
+    <Icon
       id={id} onClick={onClick} 
       className={className}
       color="#000"
       direction="right"
       size={15}
     />
-  </Button>
+  </React.Fragment>
 )
 
 export default Ellipsis;

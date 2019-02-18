@@ -14,9 +14,8 @@ const Layout = styled.div`
       "extras extras extras extras ";
 
  grid-template-columns: repeat(1fr);
- grid-template-rows: repeat(1fr);
+ grid-template-rows: min-content 1fr;
 
- 
   .closed {
       grid-area: title / title / title / extras;
       z-index: 1;

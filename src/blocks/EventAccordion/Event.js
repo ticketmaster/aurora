@@ -82,7 +82,7 @@ const Event = ({
             <Tile.Link className="extras">Extras Available</Tile.Link>
           }
           <div className="badge">
-            <Badge label={`On Sale: \n Mon • Jan 1 • 10 AM`} />
+            <Badge label="Mon • Jan 1 • 10 AM"/>
           </div> 
           { hasProducts && 
             <Tile.Link

@@ -5,8 +5,8 @@ const Collapsed = styled.div`
   display: grid;
   width: 100%;
 
-  grid-template-columns: repeat(1fr);
-  grid-template-rows: repeat(1fr);
+  grid-template-columns: auto;
+  grid-template-rows: min-content 1fr;
 
   /* Mobile */
   grid-template-areas:
@@ -21,6 +21,14 @@ const Collapsed = styled.div`
         "title title title badge "
         "subTitle subTitle subTitle badge "
         "extras extras extras extras ";
+
+    .badge {
+        grid-area: badge;
+        display: flex;
+        justify-content: flex-end;
+        /* height: 36px; */
+        align-items: center;
+    }
   `}
 
   .extras {
@@ -32,6 +40,8 @@ const Collapsed = styled.div`
   .title {
       grid-area: title;
   }
+
+  
 
   .badgeIcon {
       grid-area: badge;

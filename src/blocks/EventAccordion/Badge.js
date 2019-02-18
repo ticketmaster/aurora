@@ -5,6 +5,8 @@ import { StatusBadge as AuroraBadge } from "../../components/StatusBadge";
 import { typography, themes } from "../../theme";
 import {Text as AuroraText} from "../../components/Text"
 
+import {mediumAndUp} from "../../theme/mediaQueries"
+
 const Wrapper = styled.div` display: inline;`;
 
 const Text = styled(AuroraText)`
@@ -32,7 +34,10 @@ const Badge = ({label}) => {
     default:
       return (
         <Wrapper className="badge">
-          <Text primary size="uno"> {label} </Text>
+          <Text primary size="uno">
+              ON SALE:
+              <span>{label}</span>
+          </Text>
         </Wrapper>
       );
   }

@@ -27,7 +27,7 @@ Accordion Component
  state: {openSections: {}}
 ---
   <Accordion>
-    {EVENT_DATA.map(({
+    {EVENTS_MANY.map(({
         id,
         products,
         eventUrlLink: venueUrl,

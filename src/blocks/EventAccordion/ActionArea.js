@@ -3,10 +3,10 @@ import { mediumAndUp } from "../../theme/mediaQueries";
 
 const ActionArea = styled.div`
   display: grid;
-  grid-template-rows: 8px 8px auto 8px 0px;
+  grid-template-rows: 14px 8px auto 8px 0px;
   grid-template-columns: 8px 8px 8px 0px;
   grid-template-areas:". top     top"
-                      ". Button  ellipsis "
+                      ". Button  middle "
                       ". Button  ellipsis "
                       ". bottom  bottom"
                       ". .       .";
@@ -22,8 +22,7 @@ const ActionArea = styled.div`
     display: inline;
     grid-area: ellipsis;
     max-height: 36px;
-    max-width: 16px;
-    min-width: none;
+    min-width: auto;
     padding: 0;
   }
 
@@ -31,7 +30,6 @@ const ActionArea = styled.div`
     grid-area: top / top / bottom / bottom;
     margin: 0;
     padding: 0;
-    text-align: left;
   }
 
   .cta-text {
