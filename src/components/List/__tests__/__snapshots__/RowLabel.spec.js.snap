@@ -2,17 +2,17 @@
 
 exports[`<RowLabel /> renders RowLabel 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >
@@ -20,11 +20,11 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >
@@ -32,11 +32,11 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >
@@ -49,17 +49,17 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
 
 exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary cNgRZC gmxDtj"
+        className="text text--accent text-- text--primary eMgTID gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -67,11 +67,11 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary cNgRZC gmxDtj"
+        className="text text--accent text-- text--primary eMgTID gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -79,11 +79,11 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary cNgRZC gmxDtj"
+        className="text text--accent text-- text--primary eMgTID gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -96,39 +96,39 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
 
 exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="badge dZsiHe"
+        className="badge flazKt"
         color="#d93a3a"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="badge dZsiHe"
+        className="badge flazKt"
         color="#d93a3a"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="badge dZsiHe"
+        className="badge flazKt"
         color="#d93a3a"
       >
         test label
@@ -140,39 +140,39 @@ exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
 
 exports[`<RowLabel /> renders RowLabel variant \`caution\` 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="badge klwdBr"
+        className="badge gBousO"
         color="#c69a22"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="badge klwdBr"
+        className="badge gBousO"
         color="#c69a22"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="badge klwdBr"
+        className="badge gBousO"
         color="#c69a22"
       >
         test label
@@ -184,39 +184,39 @@ exports[`<RowLabel /> renders RowLabel variant \`caution\` 1`] = `
 
 exports[`<RowLabel /> renders RowLabel variant \`neutral\` 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="badge hAGtRl"
+        className="badge bIAjWp"
         color="rgba(38, 38, 38, 0.6)"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="badge hAGtRl"
+        className="badge bIAjWp"
         color="rgba(38, 38, 38, 0.6)"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="badge hAGtRl"
+        className="badge bIAjWp"
         color="rgba(38, 38, 38, 0.6)"
       >
         test label
@@ -228,17 +228,17 @@ exports[`<RowLabel /> renders RowLabel variant \`neutral\` 1`] = `
 
 exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg gmxDtj"
+        className="text text--accent text-- text--primary PGWQX gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -246,11 +246,11 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg gmxDtj"
+        className="text text--accent text-- text--primary PGWQX gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -258,11 +258,11 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary laxRsg gmxDtj"
+        className="text text--accent text-- text--primary PGWQX gmxDtj"
         disabled={false}
         size="hecto"
       >
@@ -275,17 +275,17 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
 
 exports[`<RowLabel /> renders opened RowLabel 1`] = `
 <div
-  className="glzhqJ"
+  className="dSJUTq"
 >
   <div
-    className="htpsXd"
+    className="fBRjfV"
   >
     <div
-      className="row__label row__label--mobile ckHYku"
+      className="row__label row__label--mobile dzvWgK"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >
@@ -293,11 +293,11 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--hidden bOCGex"
+      className="row__label row__label--desktop row__label--hidden ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >
@@ -305,11 +305,11 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--active bOCGex"
+      className="row__label row__label--expanded row__label--desktop row__label--active ecTwCX"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary jbDszw gwaFLV"
+        className="text text--dark text--primary foHwt gwaFLV"
         disabled={false}
         size="hecto"
       >

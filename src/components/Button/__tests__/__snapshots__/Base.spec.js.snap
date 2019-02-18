@@ -2,7 +2,7 @@
 
 exports[`<Button /> renders link button correctly 1`] = `
 <a
-  className="kdDxKr"
+  className="bxsgwy"
   href="/"
   rel={undefined}
   size="regular"
@@ -13,7 +13,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 
 exports[`<Button /> renders outline large size button correctly 1`] = `
 <button
-  className="KnyoU"
+  className="dSRBVy"
   size="large"
 >
   Dummy Label
@@ -22,7 +22,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size button correctly 1`] = `
 <button
-  className="cOdsyw"
+  className="fZANJS"
   size="regular"
 >
   Dummy Label
@@ -31,7 +31,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size disabled button correctly 1`] = `
 <button
-  className="cOdsyw"
+  className="fZANJS"
   disabled={true}
   size="regular"
 >
@@ -41,7 +41,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders outline small size button correctly 1`] = `
 <button
-  className="dvSJli"
+  className="hytSzx"
   size="small"
 >
   Dummy Label
@@ -50,7 +50,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 
 exports[`<Button /> renders special large size button correctly 1`] = `
 <button
-  className="lcdXVD"
+  className="kYlOcU"
   size="large"
 >
   Dummy Label
@@ -59,7 +59,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size button correctly 1`] = `
 <button
-  className="fBGqsN"
+  className="hClayG"
   size="regular"
 >
   Dummy Label
@@ -68,7 +68,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size disabled button correctly 1`] = `
 <button
-  className="fBGqsN"
+  className="hClayG"
   disabled={true}
   size="regular"
 >
@@ -78,7 +78,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders special small size button correctly 1`] = `
 <button
-  className="jaBTRD"
+  className="bgGsnj"
   size="small"
 >
   Dummy Label
@@ -87,7 +87,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 
 exports[`<Button /> renders standard large size button correctly 1`] = `
 <button
-  className="fNATHk"
+  className="iafmgw"
   size="large"
 >
   Dummy Label
@@ -96,7 +96,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size button correctly 1`] = `
 <button
-  className="cEAbUS"
+  className="jDSxdZ"
   size="regular"
 >
   Dummy Label
@@ -105,7 +105,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
 <button
-  className="cEAbUS"
+  className="jDSxdZ"
   disabled={true}
   size="regular"
 >
@@ -115,7 +115,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 
 exports[`<Button /> renders standard small size button correctly 1`] = `
 <button
-  className="fwPLHf"
+  className="geITcv"
   size="small"
 >
   Dummy Label
@@ -124,7 +124,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 
 exports[`<Button /> renders transparent large size button correctly 1`] = `
 <button
-  className="jVrBTt"
+  className="irikcu"
   size="large"
 >
   Dummy Label
@@ -133,7 +133,7 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size button correctly 1`] = `
 <button
-  className="sSJvz"
+  className="dTVfim"
   size="regular"
 >
   Dummy Label
@@ -142,7 +142,7 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size disabled button correctly 1`] = `
 <button
-  className="sSJvz"
+  className="dTVfim"
   disabled={true}
   size="regular"
 >
@@ -152,7 +152,7 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 
 exports[`<Button /> renders transparent small size button correctly 1`] = `
 <button
-  className="dcufCD"
+  className="cBUZry"
   size="small"
 >
   Dummy Label

@@ -24,6 +24,14 @@ const LinkBase = styled(Base)`
   }
 `;
 
+const ReverseLinkBase = styled(LinkBase)`
+  color: ${themes.global.primary.reverse};
+
+  &:hover {
+    color: ${themes.global.primary.reverseLight};
+  }
+`;
+
 const LinkButtonBase = styled(LinkBase)`
   appearance: none;
   border: 0;
@@ -37,8 +45,10 @@ const LinkSpanBase = styled(LinkBase)`
   cursor: pointer;
 `;
 
-const getElement = ({ href, onClick }) => {
-  if (href && href.length) return LinkBase;
+const getElement = ({ href, onClick, reverseColors }) => {
+  if (href && href.length) {
+    return reverseColors ? ReverseLinkBase : LinkBase;
+  }
 
   if (!href && onClick && typeof onClick === "function") return LinkButtonBase;
 
@@ -55,10 +65,11 @@ const Link = ({
   variant,
   accent,
   primary,
+  reverseColors,
   ...props
 }) => {
   const { target, rel } = props;
-  const Elm = getElement({ href, onClick });
+  const Elm = getElement({ href, onClick, reverseColors });
   const asProp = getAsProp({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
 
@@ -91,7 +102,8 @@ Link.propTypes = {
   responsiveSize: PT.responsiveSize,
   weight: PT.weight,
   variant: PT.variant,
-  accent: PT.accent
+  accent: PT.accent,
+  reverseColors: PropTypes.bool
 };
 
 Link.defaultProps = {
@@ -104,7 +116,8 @@ Link.defaultProps = {
   weight: "regular",
   variant: "accent",
   accent: "azure",
-  primary: true
+  primary: true,
+  reverseColors: false
 };
 
 export default Link;

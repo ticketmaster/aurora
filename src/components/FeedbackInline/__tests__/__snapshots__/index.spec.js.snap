@@ -3,25 +3,25 @@
 exports[`<FeedbackInline /> renders correctly 1`] = `
 <div>
   <div
-    class="collapsed sc-VigVT joHkLC"
+    class="collapsed sc-jTzLTM cSWdee"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG cmLmZf"
+      class="sc-cSHVUG gtLJfb"
     />
     <div
-      class="sc-jTzLTM iMznVS"
+      class="sc-fjdhpX iDbyqj"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-kAzzGY cZprfW sc-ifAKCX jrkHpW"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-jzJRlG hCwwAa sc-ifAKCX gwaFLV"
         />
       </div>
     </div>
@@ -32,11 +32,11 @@ exports[`<FeedbackInline /> renders correctly 1`] = `
 exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    class="collapsed banner-variant--alert sc-jTzLTM cSWdee"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG cmLmZf"
+      class="sc-cSHVUG gtLJfb"
     >
       <svg
         class=""
@@ -70,16 +70,16 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jTzLTM iMznVS"
+      class="sc-fjdhpX iDbyqj"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-kAzzGY cZprfW sc-ifAKCX jrkHpW"
         >
           This is your primary message text.
         </span>
         <button
-          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          class="sc-VigVT ijShvN sc-iwsKbI bezJMf"
           rel=""
           target="_self"
         >
@@ -88,7 +88,7 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-jzJRlG hCwwAa sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -101,11 +101,11 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 exports[`<FeedbackInline /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    class="collapsed banner-variant--alert sc-jTzLTM cSWdee"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG cmLmZf"
+      class="sc-cSHVUG gtLJfb"
     >
       <svg
         class=""
@@ -139,16 +139,16 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jTzLTM iMznVS"
+      class="sc-fjdhpX iDbyqj"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-kAzzGY cZprfW sc-ifAKCX jrkHpW"
         >
           This is your primary message text.
         </span>
         <button
-          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          class="sc-VigVT ijShvN sc-iwsKbI bezJMf"
           rel=""
           target="_self"
         >
@@ -157,7 +157,7 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-jzJRlG hCwwAa sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -170,11 +170,11 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
 exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
 <div>
   <div
-    class="collapsed sc-VigVT joHkLC"
+    class="collapsed sc-jTzLTM cSWdee"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG cmLmZf"
+      class="sc-cSHVUG gtLJfb"
     >
       <svg
         height="24"
@@ -199,16 +199,16 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jTzLTM iMznVS"
+      class="sc-fjdhpX iDbyqj"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-kAzzGY cZprfW sc-ifAKCX jrkHpW"
         >
           This is your primary message text.
         </span>
         <button
-          class="sc-gqjmRU hsFwTz sc-dnqmqq lnMfTt"
+          class="sc-VigVT ijShvN sc-iwsKbI bezJMf"
           rel=""
           target="_self"
         >
@@ -217,7 +217,7 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-jzJRlG hCwwAa sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -230,12 +230,12 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
 exports[`<FeedbackInline /> renders correctly with link 1`] = `
 <div>
   <div
-    class="collapsed banner-variant--alert sc-VigVT joHkLC"
+    class="collapsed banner-variant--alert sc-jTzLTM cSWdee"
     href="https://www.ticketmaster.com/"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jzJRlG cmLmZf"
+      class="sc-cSHVUG gtLJfb"
     >
       <svg
         class=""
@@ -269,16 +269,16 @@ exports[`<FeedbackInline /> renders correctly with link 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jTzLTM iMznVS"
+      class="sc-fjdhpX iDbyqj"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-cSHVUG fREgvC sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-kAzzGY cZprfW sc-ifAKCX jrkHpW"
         >
           This is your primary message text.
         </span>
         <a
-          class="sc-gqjmRU hsFwTz sc-htoDjs klYiZk"
+          class="sc-VigVT ijShvN sc-dnqmqq dlopAQ"
           href="https://www.ticketmaster.com/"
           rel="noopener"
           target="_blank"
@@ -288,7 +288,7 @@ exports[`<FeedbackInline /> renders correctly with link 1`] = `
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-fjdhpX jPzhSS sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-jzJRlG hCwwAa sc-ifAKCX gwaFLV"
         >
           test content
         </div>
