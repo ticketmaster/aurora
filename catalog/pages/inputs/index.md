@@ -760,3 +760,110 @@ span: 6
     </div>
 </div>
 ```
+
+## Search Component
+
+```table
+span: 6
+rows:
+  - Prop: variant
+    Type: string
+    Default: large
+    Notes: Small 36px and large 44px
+  - Prop: placeholder
+    Type: string
+    Default: ""
+    Notes: Placeholder text
+  - Prop: className
+    Type: string
+    Default: ""
+    Notes: Additional class
+  - Prop: searchBtnAreaLabel
+    Type: string
+    Default: 'Search button'
+    Notes: For accessibility
+  - Prop: clearBtnAreaLabel
+    Type: string
+    Default: "Clear button"
+    Notes: For accessibility
+  - Prop: cancelBtnAreaLabel
+    Type: string
+    Default: "Cancel button"
+    Notes: For accessibility
+  - Prop: inputAreaLabel
+    Type: string
+    Default: "Search input"
+    Notes: For accessibility
+  - Prop: value
+    Type: string
+    Default: ""
+    Notes: Input value. A required prop
+  - Prop: onChange
+    Type: function
+    Default: null
+    Notes: Required prop. Controlled input.
+  - Prop: onFocus
+    Type: function
+    Default: noop
+    Notes: Callback when input gets focused
+  - Prop: onBlur
+    Type: function
+    Default: noop
+    Notes: Callback when input gets blurred.
+  - Prop: searchIconSelect
+    Type: function
+    Default: noop
+    Notes: Callback when search icon is clicked.
+  - Prop: clearText
+    Type: function
+    Default: noop
+    Notes: Callback when x button is clicked.
+  - Prop: cancelCallback
+    Type: function
+    Default: noop
+    Notes: Callback when cancel button is clicked.
+  - Prop: hasBackground
+    Type: boolean
+    Default: false
+    Notes: changes opacity when focused in order to get better contrast on the background.
+  - Prop: iconOnly
+    Type: boolean
+    Default: false
+    Notes: Input gets invisible when not focused. Only the icon stays as a button.
+  - Prop: isSuggestOpened
+    Type: boolean
+    Default: false
+    Notes: When true removes border radius from the input in order to fit with the search suggest.
+```
+
+```react
+responsive: true
+span: 6
+---
+<Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
+  <Header>
+    <Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
+        <SearchInput hasBackground placeholder="Enter term..." onChange={()=>{}} value="asd" />
+    </Column>
+  </Header>
+  <div style={{marginTop: "10px"}} />
+  <SearchInput placeholder="Enter term..." onChange={()=>{}} value="" variant="small" />
+  <div style={{marginTop: "10px"}} />
+  <SearchInput placeholder="Enter term..." iconOnly onChange={()=>{}} value="" variant="small" />
+  <div style={{marginTop: "10px"}} />
+  <SearchInput placeholder="Enter term..." iconOnly onChange={()=>{}} value="" />
+</Column>
+```
+
+## Search Input Mobile
+
+Same props as SearchComponent. Shows on top of the screen when focused and has cancel button.
+
+```react
+responsive: true
+span: 6
+---
+<Column medium={10} large={7} style={{ paddingBottom: "16px" }}>
+  <SearchInputMobile placeholder="Enter term..." onChange={()=>{}} value="" />
+</Column>
+```
