@@ -29,6 +29,16 @@ class DropDownGroup extends React.Component {
     document.addEventListener("click", this.handleOutsideClick);
   }
 
+  static getDerivedStateFromProps(props, state) {
+    if (props.isOpen !== state.isOpenPrevProp) {
+      return {
+        isOpen: props.isOpen,
+        isOpenPrevProp: props.isOpen
+      };
+    }
+    return null;
+  }
+
   componentDidUpdate(prevProps, prevState) {
     const { isOpen } = this.state;
     // scroll dropdown to top after opening
@@ -128,6 +138,7 @@ class DropDownGroup extends React.Component {
   /* eslint-disable */
   state = {
     isOpen: false,
+    isOpenPrevProp: false,
     onClose: this.onClick
   };
   /* eslint-enable */
