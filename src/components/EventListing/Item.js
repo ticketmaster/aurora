@@ -64,7 +64,8 @@ const MainArea = styled.div`
 `;
 
 class Item extends PureComponent {
-  handleClick = () => {
+  handleClick = (e) => {
+    e.preventDefault();
     const {id, handleToggle} = this.props;
     handleToggle(id)
   }
@@ -130,14 +131,16 @@ class Item extends PureComponent {
           </Event.Actions>
         </Event>
         <Extras className="extras">
-          <Button
-            className="extras"
+          <Event.Link
+            role="button"
+            href="#"
             variant="transparent"
             onClick={this.handleClick}
             size="small"
           >
             Extras Available
-          </Button>
+          </Event.Link>
+          {/* <Event.Text onClick={this.handleClick}>Extras Available</Event.Text> */}
           <Event.Text>On Partner Site</Event.Text>
         </Extras>
       </Wrapper>
