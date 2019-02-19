@@ -8,6 +8,7 @@ import banner from "./pages/banner";
 import bottomSheet from "./pages/bottom_sheet";
 import breadcrumbs from "./pages/breadcrumbs";
 import buttons from "./pages/buttons";
+import eventListing from "./pages/event_listing"
 import calendarView from "./pages/calendar_view";
 import colors from "./pages/colors";
 
@@ -41,6 +42,7 @@ const pages = [
   typography,
   accordion,
   buttons,
+  eventListing,
   grid,
   icons,
   images,

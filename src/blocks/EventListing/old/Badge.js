@@ -9,19 +9,20 @@ const Wrapper = styled.div` display: inline;`;
 
 const Text = styled(Tile.Text)`
   color: ${themes.global.error.base};
-  font-size: ${typography.size.uno};
-  font-weight: ${typography.weight.semiBold};
+  /* font-size: ${typography.size.uno}; */
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
+  font-size: 12px;
+  line-height: 15px;
 `;
 
 const Badge = ({label}) => {
   switch (label) {
     case "error":
       return (
-        <Wrapper className="badge">
+        <Wrapper>
           <AuroraBadge
             color={themes.global.error.base}
             label={label}
@@ -31,7 +32,7 @@ const Badge = ({label}) => {
       );
     default:
       return (
-        <Wrapper className="badge">
+        <Wrapper>
           <Text primary size="uno">
               ON SALE:
               <span> {label} </span>

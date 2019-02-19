@@ -3,7 +3,7 @@ import { bool, func } from "prop-types";
 import styled, { css } from "styled-components";
 // import constants from "../../theme/constants"
 
-const Wrapper = styled.li`
+const Wrapper = styled.div`
   background: white;
   overflow: hidden;
 
@@ -36,7 +36,6 @@ const Wrapper = styled.li`
                   margin-bottom 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
     `};
 `;
-
 const Section = ({ children, isOpen = false, toggle }) => (
   <Wrapper
     className="accordion-section"
@@ -58,18 +57,3 @@ Section.propTypes = {
 };
 
 export default Section;
-
-// :
-
-// css`
-//   margin-bottom: 0px;
-
-//   transition: box-shadow 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
-//               margin-bottom 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
-//               max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s,
-//               opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s;
-
-//   && ::after {
-//     visibility: visible;
-//   }
-// `

@@ -4,6 +4,7 @@ import { Text as AuroraText } from "../../components/Text";
 
 const Wrapper = styled(AuroraText)`
   line-height: 20px;
+  max-height: 20px;
   margin: 0;
   overflow: hidden;
 `;

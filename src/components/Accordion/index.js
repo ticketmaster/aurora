@@ -42,10 +42,7 @@ class Accordion extends PureComponent {
   }
 
   onClick = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
-    const id = e.target.getAttribute("id");
-
+    const id = e;
     const {
       props: { multiToggle },
       state: { openSections }
