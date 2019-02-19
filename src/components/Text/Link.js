@@ -27,6 +27,8 @@ const LinkBase = styled(Base)`
 const ReverseLinkBase = styled(LinkBase)`
   color: ${themes.global.primary.reverse};
 
+  &:visited,
+  &:active,
   &:hover {
     color: ${themes.global.primary.reverseLight};
   }
