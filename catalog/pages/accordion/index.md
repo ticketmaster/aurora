@@ -21,14 +21,14 @@ Accordion Component
 </Accordion>
 ```
 
-
 ### With a list of Events
+
 ```react
 responseive: true
 state: {openSections: {}}
 ---
 <Accordion>
-  {EVENTS.map(({
+  {EVENTS_MANY.map(({
       id,
       products,
       eventUrlLink: venueUrl,

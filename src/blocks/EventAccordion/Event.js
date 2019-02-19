@@ -1,44 +1,76 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { string, func, bool, shape } from "prop-types";
-import { Button} from "../../components/Button"
+import { Button } from "../../components/Button";
 import { EventType } from "../../components/types";
-import { mediumAndUp } from "../../theme/mediaQueries";
+// import { mediumAndUp } from "../../theme/mediaQueries";
 
 import ActionArea from "./ActionArea";
-import Badge from "./Badge"
+import Badge from "./Badge";
 import BottomSheet from "./BottomSheet";
 import Chevron from "./Chevron";
 import Date from "./Date";
 import Ellipsis from "./Ellipsis";
-import Layout from "./Layout"
+import Layout from "./Layout";
 import RevealAnimation from "./RevealAnimation";
 import Tile from "../Tile";
+import CollapsedLayout from "./Layout/Collapsed";
 
 import shouldAnimate from "./utils/animation";
 
-const Wrapper = styled(Tile)`
-  display: flex;
-  flex-direction: row;
-  padding: 4px 0px;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-areas:
+    "main main  cta"
+    ".    extra cta";
+  grid-template-columns: 162px minmax(min-content, 1fr);
+  grid-gap: 4px;
+  /* background-color: #2196F3; */
+  padding: 4px 0;
 
-  .chevron { display: none}
-  .active-event-text { display: none;}
-  ${mediumAndUp` .chevron{ display: inline; }`}
+  .main {
+    border: none;
+    background: white;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "chevron date section badge cta";
+    grid-template-columns: 46px 116px minmax(min-content, 1fr) auto;
+    /* background-color: lightgrey; */
+    padding: 12px 0;
+  }
+
+  .main:hover {
+    background-color: rgba(2, 108, 223, 0.1);
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+  }
+
+  .section {
+    grid-area: section;
+    text-align: left;
+  }
+  .cta {
+    grid-area: cta;
+    padding: 13px 16px;
+  }
+  .chevron {
+    grid-area: chevron;
+  }
+  .extra {
+    grid-area: extra;
+  }
 `;
 
-const Hoverable = styled(RevealAnimation)`
-  flex: 1 1;
-  display: flex;
-  padding-bottom: 14px;
-  padding-top: 14px;
-  padding-left: 8px;
-  cursor: pointer;
-
-  /* &&:hover {
-    background: lavender;
-  } */
-
+const Section = styled(RevealAnimation)`
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-direction: column-reverse;
+    `};
 `;
 
 const Event = ({
@@ -58,57 +90,31 @@ const Event = ({
   hasProducts = false
 }) => (
   <Wrapper isOpen={isOpen}>
-    <Chevron
-      id={id}
-      isOpen={isOpen}
-      className="chevron"
-      name={name}
-      onClick={handleToggle}
-    /> 
-    <Date>
-      <Tile.Title>{dateTitle}</Tile.Title>
-      <Tile.Text>{dateSubTitle}</Tile.Text>
-    </Date>
-    <Hoverable className="event" href="#">
-      <Layout>
-        <Layout.Collapsed  className={shouldAnimate(!isOpen)}>
-          <Tile.Title className="title" id={`${id}-event`} >{name}</Tile.Title>
-          <Tile.Text className="subTitle">{venue.name}</Tile.Text> 
-
-          {hasProducts &&
-            <Tile.Link className="extras">Extras Available</Tile.Link>
-          }
-            <div className="badge">
-              <Badge label="Mon • Jan 1 • 10 AM"/>
-            </div>
-
-          { hasProducts && 
-            <Tile.Link
-              className="extras"
-              href="#"
-              id={id}
-              onClick={handleToggle}
-            >
-              Extras Available
-            </Tile.Link>
-          } 
-        </Layout.Collapsed>
-
-        <Layout.Open className={shouldAnimate(isOpen)}>
-          <Tile.Title className="title">{name}</Tile.Title>
-          <Badge className="badge" label="Mon • Jan 1 • 10 AM" size="uno" />
-        </Layout.Open>
-
-      </Layout>
-    </Hoverable>
-
-    <ActionArea>
-      <Button className="cta-button">
-        See Tickets
-      </Button>
-      <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
-      <Ellipsis className="cta-ellipsis" id={id} onClick={handleToggle} />
-    </ActionArea>
+    <button className="main" id={id} onClick={handleToggle}>
+      <Chevron
+        id={id}
+        isOpen={isOpen}
+        className="chevron"
+        name={name}
+        onClick={handleToggle}
+      />
+      <Date className="date">
+        <Tile.Title>{dateTitle}</Tile.Title>
+        <Tile.Text>{dateSubTitle}</Tile.Text>
+      </Date>
+      <Section className={shouldAnimate(isOpen, "section")} isOpen={isOpen}>
+        <Tile.Title className="title" id={`${id}-event`}>
+          {name}
+        </Tile.Title>
+        <Tile.Text className="subTitle">{venue.name}</Tile.Text>
+      </Section>
+    </button>
+    <div className="cta">
+      <Button className="cta-button">See Tickets</Button>
+    </div>
+    {/* <div className="extra">
+      <p>badge</p>
+  </div> */}
   </Wrapper>
 );
 
@@ -122,3 +128,61 @@ Event.propTypes = {
 };
 
 export default Event;
+// <CollapsedLayout  className={shouldAnimate(!isOpen)}>
+//   <Hoverable className="event" href="#">
+// <Chevron
+//   id={id}
+//   isOpen={isOpen}
+//   className="chevron"
+//   name={name}
+//   onClick={handleToggle}
+// />
+
+// <Tile.Title className="title" id={`${id}-event`} >{name}</Tile.Title>
+// <Tile.Text className="subTitle">{venue.name}</Tile.Text>
+//   </Hoverable>
+
+//   {hasProducts &&
+//     <Tile.Link className="extras">Extras Available</Tile.Link>
+//   }
+//     <div className="badge">
+//       <Badge label="Mon • Jan 1 • 10 AM"/>
+//     </div>
+
+//   { hasProducts &&
+//     <Tile.Link
+//       className="extras"
+//       href="#"
+//       id={id}
+//       onClick={handleToggle}
+//     >
+//       Extras Available
+//     </Tile.Link>
+//   }
+//   <ActionArea>
+
+//     <Tile.Text className="cta-text" size="uno"> On Partner Site </Tile.Text>
+//     <Ellipsis className="cta-ellipsis" id={id} onClick={handleToggle} />
+//   </ActionArea>
+// </CollapsedLayout>
+
+{
+  /* <Chevron
+            id={id}
+            isOpen={isOpen}
+            className="chevron"
+            name={name}
+            onClick={handleToggle}
+          /> 
+          <Date>
+            <Tile.Title>{dateTitle}</Tile.Title>
+            <Tile.Text>{dateSubTitle}</Tile.Text>
+          </Date> */
+}
+
+{
+  /* <Layout.Open className={shouldAnimate(isOpen)}>
+          <Tile.Title className="title">{name}</Tile.Title>
+          <Badge className="badge" label="Mon • Jan 1 • 10 AM" size="uno" />
+        </Layout.Open> */
+}

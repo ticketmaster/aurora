@@ -10,10 +10,10 @@ const Collapsed = styled.div`
 
   /* Mobile */
   grid-template-areas:
-      "title title title title "
-      "subTitle subTitle subTitle subTitle "
-      "badge badge badge badge "
-      "extras extras extras extras ";
+    "title title title title "
+    "subTitle subTitle subTitle subTitle "
+    "badge badge badge badge "
+    "extras extras extras extras ";
 
   /* desktop */
   ${mediumAndUp`  
@@ -33,32 +33,27 @@ const Collapsed = styled.div`
             display: block;
         }
     }
-  `}
-
-  .extras {
-      grid-area: extras;
-      display: flex;
-      justify-content: flex-start;
+  `} .extras {
+    grid-area: extras;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .badge {
-        grid-area: badge;
-        
-
-        
-    }
+    grid-area: badge;
+  }
 
   .title {
-      grid-area: title;
+    grid-area: title;
   }
 
   .badgeIcon {
-      grid-area: badge;
-      text-align: center;
+    grid-area: badge;
+    text-align: center;
   }
 
   .subTitle {
-      grid-area: subTitle;
+    grid-area: subTitle;
   }
 `;
 

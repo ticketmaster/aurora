@@ -5,15 +5,11 @@ import { Text as AuroraText } from "../../components/Text";
 const Wrapper = styled(AuroraText)`
   line-height: 20px;
   margin: 0;
+  overflow: hidden;
 `;
 
-const Title = (props) => (
-  <Wrapper
-    className={props.className}
-    size="kilo"
-    tag="p"
-    weight="semiBold"
-  >
+const Title = props => (
+  <Wrapper className={props.className} size="kilo" tag="p" weight="semiBold">
     {props.children}
   </Wrapper>
 );

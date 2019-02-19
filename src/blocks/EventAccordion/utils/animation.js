@@ -1,3 +1,4 @@
-const shouldAnimate = (isOpen) => isOpen ? "expand open" : "collapse open";
+const shouldAnimate = (isOpen, className) =>
+  isOpen ? `${className} expand` : `${className} collapse`;
 
 export default shouldAnimate;
