@@ -14,7 +14,7 @@ import Title from "./Title";
 const Event = styled(RevealAnimation)`
   background: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
    .innerWrapper {
      display: flex;
@@ -22,13 +22,14 @@ const Event = styled(RevealAnimation)`
      /* flex-direction: column; */
      width: 100%;
    }
+
   .main {
     display: flex;
-    padding: 12px 0;
+    padding: 10px 0 10px;
     width: 100%;
     flex: 1 1;
     border: none;
-    background: white;
+    margin: 0 16px 0 0;
   }
 
   .main:hover {

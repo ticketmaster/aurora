@@ -1,9 +1,16 @@
 import styled from 'styled-components';
+import {Button} from "../../Button"
 
-const Header = styled.div`
+const Header = styled(Button)`
   display: flex;
-  padding: 4px 16px 4px 0;
+  padding-right: 16px;
   width: 100%;
+  display: flex;
+  padding: 12px 0;
+  width: 100%;
+  flex: 1 1;
+  border: none;
+  
 `
 
 export default Header;

@@ -7,7 +7,8 @@ import AuroraChevron from "../Icons/Chevron";
 const Wrapper = styled.div`
   position: relative;
   width: 46px;
-  
+  color: "grey";
+
   ${({ isOpen }) =>
     isOpen &&
     css`

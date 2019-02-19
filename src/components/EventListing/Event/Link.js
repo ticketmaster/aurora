@@ -11,8 +11,8 @@ const Wrapper = styled(LinkCta)`
   text-align: justify;
 `;
 
-const Link = ({ children, href, ...rest }) => (
-  <Wrapper {...rest} size="hecto" weight="semiBold">
+const Link = ({ children, ...rest }) => (
+  <Wrapper {...rest} size="uno" weight="semiBold">
     {children}
   </Wrapper>
 );
