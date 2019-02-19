@@ -41,7 +41,7 @@
                 <Text size="uno" weight="semiBold" style={{ textAlign: "right" }}>Link:</Text>
             </Column>
             <Column small={3} style={{ textAlign: "center" }}>
-                <Link size="large">Read more</Link>
+                <Link size="hecto" href="#" reverseColors>!Read more</Link>
             </Column>
         </Row>
     </Container>

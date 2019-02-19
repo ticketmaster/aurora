@@ -18,37 +18,80 @@ class SearchInput extends Component {
     super(props);
 
     this.state = {
-      isFocused: !props.hasBackground
+      isFocused: false
     };
 
     this.inputRef = React.createRef();
-    this.inputBlur = this.inputBlur.bind(this);
-    this.inputFocused = this.inputFocused.bind(this);
+    this.inputClicked = false;
   }
 
-  inputBlur() {
-    const { hasBackground, onBlur } = this.props;
+  containerClick = () => {
+    this.inputClicked = true;
+    global.window.removeEventListener("click", this.windowClick);
+    global.window.addEventListener("click", this.windowClick);
+  };
 
-    if (hasBackground) {
+  windowClick = () => {
+    if (!this.inputClicked) {
+      this.blurInput();
+    }
+
+    this.inputClicked = false;
+  };
+
+  blurInput = () => {
+    global.window.removeEventListener("click", this.windowClick);
+    const { onBlur } = this.props;
+    const { isFocused } = this.state;
+
+    if (isFocused) {
       this.setState({
         isFocused: false
       });
+
+      onBlur();
+    }
+  };
+
+  focusInput = () => {
+    const { onFocus } = this.props;
+    const { isFocused } = this.state;
+
+    if (!isFocused) {
+      this.setState(
+        {
+          isFocused: true
+        },
+        () => this.inputRef.current.focus()
+      );
+
+      onFocus();
     }
 
-    onBlur();
-  }
+    this.inputRef.current.focus();
+  };
 
-  inputFocused() {
-    const { onFocus, hasBackground } = this.props;
+  searchIconClick = () => {
+    const { searchIconSelect } = this.props;
+    this.focusInput();
+    searchIconSelect();
+  };
 
-    if (hasBackground) {
-      this.setState({
-        isFocused: true
-      });
+  clearTextClick = () => {
+    const { clearText, isMobile } = this.props;
+    if (!isMobile) {
+      this.focusInput();
     }
+    clearText();
+  };
 
-    onFocus();
-  }
+  cancelClick = () => {
+    const { cancelCallback } = this.props;
+    this.setState({
+      isFocused: false
+    });
+    cancelCallback();
+  };
 
   render() {
     const {
@@ -56,36 +99,37 @@ class SearchInput extends Component {
       placeholder,
       value,
       onChange,
-      clearText,
-      cancelCallback,
-      searchIconSelect,
       className,
-      isInputVisible,
+      iconOnly,
       searchBtnAreaLabel,
       clearBtnAreaLabel,
       cancelBtnAreaLabel,
       inputAreaLabel,
       isSuggestOpened,
       hasBackground,
+      isMobile,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
     const isStyleForFocusedUsed = !hasBackground || isFocused;
+    const showCancelButton = isFocused && isMobile;
     return (
       <SearchContainer
         variant={variant}
         isFocused={isStyleForFocusedUsed}
         isSuggestOpened={isSuggestOpened}
         {...rest}
+        onClick={this.containerClick}
         className={classNames("search--container", className, {
-          hidden: !isInputVisible,
-          "search--container-focused": isStyleForFocusedUsed
+          "search--container-has-value": value,
+          "search--container-icon-only": iconOnly,
+          "search--container-focused": isFocused
         })}
       >
         <StyledSearchIcon
           variant={variant}
           isFocused={isStyleForFocusedUsed}
-          onClick={searchIconSelect}
+          onClick={this.searchIconClick}
           aria-label={searchBtnAreaLabel}
           className="search--search-icon"
         >
@@ -96,29 +140,31 @@ class SearchInput extends Component {
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          onFocus={this.inputFocused}
-          onBlur={this.inputBlur}
+          onFocus={this.focusInput}
           isFocused={isStyleForFocusedUsed}
           ref={this.inputRef}
           aria-label={inputAreaLabel}
           className={classNames("search--input", {
-            "search--input-focused": isStyleForFocusedUsed
+            "search--input-focused": isFocused
           })}
         />
         <Clear
-          onClick={clearText}
+          onClick={this.clearTextClick}
           value={value}
           aria-label={clearBtnAreaLabel}
           className="search--clear-icon"
           isFocused={isStyleForFocusedUsed}
+          variant={variant}
         >
-          <ClearIcon color="currentColor" />
+          <ClearIcon size={variant} color="currentColor" />
         </Clear>
         <Cancel
           isFocused={isStyleForFocusedUsed}
-          onClick={cancelCallback}
+          showElement={showCancelButton}
+          onClick={this.cancelClick}
           aria-label={cancelBtnAreaLabel}
           className="search--cancel-icon"
+          iconOnly={iconOnly}
         >
           Cancel
         </Cancel>
@@ -143,8 +189,9 @@ SearchInput.propTypes = {
   clearText: PropTypes.func,
   cancelCallback: PropTypes.func,
   hasBackground: PropTypes.bool,
-  isInputVisible: PropTypes.bool,
-  isSuggestOpened: PropTypes.bool
+  iconOnly: PropTypes.bool,
+  isSuggestOpened: PropTypes.bool,
+  isMobile: PropTypes.bool
 };
 
 SearchInput.defaultProps = {
@@ -156,13 +203,14 @@ SearchInput.defaultProps = {
   searchIconSelect: () => {},
   cancelCallback: () => {},
   hasBackground: false,
-  isInputVisible: true,
+  iconOnly: false,
   className: "",
   searchBtnAreaLabel: "Search button",
   clearBtnAreaLabel: "Clear button",
   cancelBtnAreaLabel: "Cancel button",
   inputAreaLabel: "Search input",
-  isSuggestOpened: false
+  isSuggestOpened: false,
+  isMobile: false
 };
 
 SearchInput.displayName = "SearchComponent";

@@ -14,6 +14,8 @@ import {
   ButtonGroup,
   QtySelector
 } from "../../../src/components/Input";
+import SearchInput from "../../../src/components/SearchInput";
+import SearchInputMobile from "../../../src/components/SearchInput/SearchInputMobile";
 import CheckboxWrapperExample from "./CheckBoxExample";
 import ToggleWrapperExample from "./ToggleWrapperExample";
 import Header from "../../../src/components/Header";
@@ -44,7 +46,9 @@ export default {
     ThemeProvider,
     CheckboxWrapperExample,
     ButtonGroup,
-    QtySelector
+    QtySelector,
+    SearchInput,
+    SearchInputMobile
   },
   content: pageLoader(() => import("./index.md"))
 };

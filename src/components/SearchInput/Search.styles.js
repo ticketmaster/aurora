@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { getSearchHeight, SearchMinWidth, SuggestMaxHeight } from "./constants";
 import { SearchIcon } from "../Icons";
-import { themes, typography, constants, spacing } from "../../theme";
+import { themes, typography, constants, spacing, zIndex } from "../../theme";
 import { cardBoxShadow } from "../../theme/constants";
 import { mediumAndUp } from "../../theme/mediaQueries";
 import { SMALL } from "../constants";
@@ -25,10 +25,23 @@ export const SearchContainer = styled.div`
       ? "border-bottom-left-radius: 0; border-bottom-right-radius: 0;"
       : ""};
 
-  &.hidden {
+  visibility: visible;
+  > * {
+    visibility: visible;
+  }
+
+  &.search--container-icon-only {
     visibility: hidden;
     > * {
       visibility: hidden;
+    }
+
+    &.search--container-focused,
+    &.search--container-has-value {
+      visibility: visible;
+      > * {
+        visibility: visible;
+      }
     }
   }
 `;
@@ -44,7 +57,7 @@ export const StyledSearchIcon = styled.button`
   background: transparent;
   outline: none;
 
-  .hidden & {
+  .search--container & {
     visibility: visible;
   }
 `;
@@ -92,7 +105,7 @@ export const Cancel = styled.button`
   border: none;
   background: transparent;
   outline: none;
-  display: flex;
+  display: ${({ showElement }) => (showElement ? "flex" : "none")};
   align-items: center;
   margin-left: ${spacing.cozy};
   color: ${({ isFocused }) =>
@@ -116,9 +129,13 @@ export const Clear = styled.button`
   display: ${({ value }) => (value ? "flex" : "none")};
   justify-content: center;
   align-items: center;
-  cursor: default;
+  cursor: pointer;
   color: ${({ isFocused }) =>
     !isFocused ? themes.global.white.base : themes.global.gray02};
+
+  svg {
+    margin-left: ${({ variant }) => (variant === SMALL ? spacing.cozy : 0)};
+  }
 
   ${mediumAndUp`
     width: 40px;
@@ -130,10 +147,6 @@ export const SearchSuggest = styled.div`
   max-width: 100%;
   height: 100%;
   max-height: 100%;
-  border: 1px solid ${themes.global.gray02};
-  border-top: none;
-  border-bottom-left-radius: ${constants.borderRadius.small};
-  border-bottom-right-radius: ${constants.borderRadius.small};
   padding: ${spacing.moderate};
   background-color: ${themes.global.white.base};
   box-shadow: ${cardBoxShadow};
@@ -142,7 +155,31 @@ export const SearchSuggest = styled.div`
 
   ${mediumAndUp`
     max-height: ${SuggestMaxHeight};
+    border: 1px solid ${themes.global.gray02};
+    border-top: none;
+    border-bottom-left-radius: ${constants.borderRadius.small};
+    border-bottom-right-radius: ${constants.borderRadius.small};
   `};
+`;
+
+export const MobileActiveSearch = styled.div`
+  position: fixed;
+  z-index: ${zIndex.searchsuggest.base};
+  top: 0;
+  width: 100%;
+  left: 0;
+
+  .search--container {
+    padding-left: ${spacing.moderate};
+    border-radius: 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+  }
+
+  .search--search-icon {
+    display: none;
+  }
 `;
 
 SearchSuggest.displayName = "SearchSuggest";

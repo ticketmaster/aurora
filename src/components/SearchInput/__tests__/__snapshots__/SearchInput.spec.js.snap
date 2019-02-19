@@ -2,13 +2,14 @@
 
 exports[`SearchInput icon only should match snapshot 1`] = `
 <div
-  className="search--container hidden bzGmuh"
+  className="search--container search--container-icon-only VIiGN"
   onBlur={[Function]}
+  onClick={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon dcLsgt"
+    className="search--search-icon elbNR"
     onClick={[Function]}
   >
     <svg
@@ -37,7 +38,6 @@ exports[`SearchInput icon only should match snapshot 1`] = `
     aria-label="Search input"
     autoComplete="off"
     className="search--input dykHyd"
-    onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -46,7 +46,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon dZmxwx"
+    className="search--clear-icon bPHzCq"
     onClick={[Function]}
     value=""
   >
@@ -73,7 +73,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon cmpmTI"
+    className="search--cancel-icon bFRYwA"
     onClick={[Function]}
   >
     Cancel
@@ -83,13 +83,14 @@ exports[`SearchInput icon only should match snapshot 1`] = `
 
 exports[`SearchInput large should match snapshot 1`] = `
 <div
-  className="search--container cOMWqf"
+  className="search--container bSzdPT"
   onBlur={[Function]}
+  onClick={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon dcLsgt"
+    className="search--search-icon elbNR"
     onClick={[Function]}
   >
     <svg
@@ -118,7 +119,6 @@ exports[`SearchInput large should match snapshot 1`] = `
     aria-label="Search input"
     autoComplete="off"
     className="search--input dykHyd"
-    onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -127,7 +127,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon dZmxwx"
+    className="search--clear-icon bPHzCq"
     onClick={[Function]}
     value=""
   >
@@ -154,7 +154,88 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon cmpmTI"
+    className="search--cancel-icon bFRYwA"
+    onClick={[Function]}
+  >
+    Cancel
+  </button>
+</div>
+`;
+
+exports[`SearchInput mobile and focused should match snapshot 1`] = `
+<div
+  className="search--container search--container-icon-only search--container-focused dmEOlX"
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+>
+  <button
+    aria-label="Search button"
+    className="search--search-icon doQCjb"
+    onClick={[Function]}
+  >
+    <svg
+      className="gxyxth"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M24 0H0v24h24z"
+        />
+        <path
+          d="M18 9.5a8.5 8.5 0 1 0-17 0 8.5 8.5 0 0 0 17 0zm-1.438 6.355l7.292 7.291a.5.5 0 0 1-.708.708l-7.291-7.292a9.5 9.5 0 1 1 .707-.707z"
+          fill="currentColor"
+          fillRule="nonzero"
+        />
+      </g>
+    </svg>
+  </button>
+  <input
+    aria-label="Search input"
+    autoComplete="off"
+    className="search--input search--input-focused eoYmwb"
+    onChange={[Function]}
+    onFocus={[Function]}
+    placeholder="Search Demo"
+    type="text"
+    value=""
+  />
+  <button
+    aria-label="Clear button"
+    className="search--clear-icon boklFi"
+    onClick={[Function]}
+    value=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 1C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zm3.89-15.596a.5.5 0 0 1 .706.707l-8.485 8.485a.5.5 0 0 1-.707-.707l8.485-8.485zm-8.486.707a.5.5 0 0 1 .707-.707l8.485 8.485a.5.5 0 0 1-.707.707L7.404 8.111z"
+          fill="currentColor"
+          fillRule="nonzero"
+        />
+      </g>
+    </svg>
+  </button>
+  <button
+    aria-label="Cancel button"
+    className="search--cancel-icon eynrqJ"
     onClick={[Function]}
   >
     Cancel
@@ -164,13 +245,14 @@ exports[`SearchInput large should match snapshot 1`] = `
 
 exports[`SearchInput small should match snapshot 1`] = `
 <div
-  className="search--container csQJZo"
+  className="search--container search--container-has-value bodmAZ"
   onBlur={[Function]}
+  onClick={[Function]}
   onFocus={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon dcLsgt"
+    className="search--search-icon elbNR"
     onClick={[Function]}
   >
     <svg
@@ -199,7 +281,6 @@ exports[`SearchInput small should match snapshot 1`] = `
     aria-label="Search input"
     autoComplete="off"
     className="search--input kUmVk"
-    onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -208,25 +289,30 @@ exports[`SearchInput small should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon eTxgLb"
+    className="search--clear-icon kvTcsu"
     onClick={[Function]}
     value="test"
   >
     <svg
-      height="24"
-      viewBox="0 0 24 24"
-      width="24"
+      height="16px"
+      viewBox="0 0 16 16"
+      width="16px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
         fill="none"
         fillRule="evenodd"
+        stroke="none"
+        strokeWidth="1"
       >
-        <path
-          d="M0 0h24v24H0z"
+        <rect
+          height="16"
+          width="16"
+          x="0"
+          y="0"
         />
         <path
-          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 1C5.925 23 1 18.075 1 12S5.925 1 12 1s11 4.925 11 11-4.925 11-11 11zm3.89-15.596a.5.5 0 0 1 .706.707l-8.485 8.485a.5.5 0 0 1-.707-.707l8.485-8.485zm-8.486.707a.5.5 0 0 1 .707-.707l8.485 8.485a.5.5 0 0 1-.707.707L7.404 8.111z"
+          d="M8,14 C11.3137085,14 14,11.3137085 14,8 C14,4.6862915 11.3137085,2 8,2 C4.6862915,2 2,4.6862915 2,8 C2,11.3137085 4.6862915,14 8,14 Z M8,15 C4.13400675,15 1,11.8659932 1,8 C1,4.13400675 4.13400675,1 8,1 C11.8659932,1 15,4.13400675 15,8 C15,11.8659932 11.8659932,15 8,15 Z M10.3131133,4.97977994 C10.4972082,4.79568503 10.8047379,4.80473785 11,5 C11.1952621,5.19526215 11.204315,5.50279181 11.0202201,5.68688672 L5.68688672,11.0202201 C5.50279181,11.204315 5.19526215,11.1952621 5,11 C4.80473785,10.8047379 4.79568503,10.4972082 4.97977994,10.3131133 L10.3131133,4.97977994 Z M4.97977994,5.68688672 C4.79568503,5.50279181 4.80473785,5.19526215 5,5 C5.19526215,4.80473785 5.50279181,4.79568503 5.68688672,4.97977994 L11.0202201,10.3131133 C11.204315,10.4972082 11.1952621,10.8047379 11,11 C10.8047379,11.1952621 10.4972082,11.204315 10.3131133,11.0202201 L4.97977994,5.68688672 Z"
           fill="currentColor"
           fillRule="nonzero"
         />
@@ -235,7 +321,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon cmpmTI"
+    className="search--cancel-icon bFRYwA"
     onClick={[Function]}
   >
     Cancel
@@ -245,6 +331,9 @@ exports[`SearchInput small should match snapshot 1`] = `
 
 exports[`SearchSuggest should match snapshot 1`] = `
 <div
-  className="dsnsZi"
+  className="fFntOX"
+  onChange={[Function]}
+  placeholder="Search Demo"
+  value=""
 />
 `;
