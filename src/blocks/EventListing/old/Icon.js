@@ -1,11 +1,11 @@
 import React from "react";
-import COLORS from "../../theme/colors";
+import COLORS from "../../../theme/colors";
 
-import Avatar from "../../components/Image/ThumbnailCircle";
-import Parking from "../../components/Icons/Parking";
-import Ticket from "../../components/Icons/Ticket";
-import Venue from "../../components/Icons/Venue";
-import Vip from "../../components/Icons/Vip";
+import Avatar from "../../../components/Image/ThumbnailCircle";
+import Parking from "../../../components/Icons/Parking";
+import Ticket from "../../../components/Icons/Ticket";
+import Venue from "../../../components/Icons/Venue";
+import Vip from "../../../components/Icons/Vip";
 
 const Icon = props => {
   switch (props.type) {

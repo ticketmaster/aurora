@@ -1,67 +1,25 @@
 import React, {PureComponent} from "react";
-import styled, {css} from 'styled-components';
-import {Button} from "../Button";
-import Event from "./Event";
-import Chevron from "./Chevron"
+import styled from 'styled-components';
 
+import {Button} from "../Button";
+
+import Chevron from "./Chevron"
+import DefaultEvent from "./Event";
+import Flex from "../Flex"
+
+import { expandCollapse } from "../../theme/animations";
 import shouldAnimate from "./utils/animation";
 
-const Extras = styled(Event.Actions)`
-  display: flex;
-  text-align: left;
-  padding: 0;
-  font-size: 12px;
-  color: #026cdf;
-  margin-top: 0;
-
-  p {
-    height: 14px;
-    font-size: 12px;
-    line-height: 12px;
-  }
-
-  & > *:first-child {
-    display: flex;
-    flex: 1 1;
-    text-align: left;
-    padding: 0;
-  }
-
-  text-align: left
-  > *:hover {
-    background: white!important;
-  }
-  ${(hasImage) =>
-    hasImage
-    ? 
-      css`margin-left: 159px;`
-    :
-      css`margin-left: 118px;`
-   }
+const Event = styled(DefaultEvent)`
+  ${expandCollapse}
+  padding: 4px 16px 4px 0;
 `
 
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 4px 16px 4px 0;
-
-  .right__actions {
-    margin: 13px 0 0;
-    width: 124px;
-    padding: 0;
-  }
-  .main button:active {
-    outline: none;
-  }
-`;
-
-const MainArea = styled.div`
-  display: flex;
-  width: 100%;
-  flex: 1 1;
-  border: none;
-  background: transparent;
-`;
+const Actions = styled(Event.Actions)`
+  margin: 13px 0 0;
+  width: 124px;
+  padding: 0;
+`
 
 class Item extends PureComponent {
   handleClick = (e) => {
@@ -88,16 +46,14 @@ class Item extends PureComponent {
       hasProducts = false
     } = this.props;
     return(
-      <Wrapper>
         <Event>
           <Event.Header
             className="main"
             variant="transparent"
             onClick={this.handleClick}
           >
-            <MainArea>
+            <Flex grow={1}>
               <Chevron isOpen={isOpen}/>
-              
               <Event.Date>
                 <Event.Title>{dateTitle}</Event.Title>
                 <Event.Text>{dateSubTitle}</Event.Text>
@@ -107,90 +63,35 @@ class Item extends PureComponent {
                 className={shouldAnimate(!isOpen, "section")}
                 direction="column"
                 isOpen={isOpen}
+                grow={1}
               >
                 <Event.Title>{name}</Event.Title>
                 <Event.Text>{venue.name}</Event.Text>
+                
               </Event.Body>
 
               <Event.Body
                 className={shouldAnimate(isOpen, "section")}
                 direction="column"
                 isOpen={isOpen}
+                grow={1}
               >
                 <Event.Title>{name}</Event.Title>
                 <Event.Text>{venue.name}</Event.Text>
+                
               </Event.Body>
-            </MainArea>
+            </Flex>
           </Event.Header>
-          <Event.Actions
+          <Actions
             direction="column"
             align="flex-end"
             className="right__actions"
           >
             <Button>See Tickets</Button>
-          </Event.Actions>
+          </Actions>
         </Event>
-        <Extras className="extras">
-          <Event.Link
-            role="button"
-            href="#"
-            variant="transparent"
-            onClick={this.handleClick}
-            size="small"
-          >
-            Extras Available
-          </Event.Link>
-          {/* <Event.Text onClick={this.handleClick}>Extras Available</Event.Text> */}
-          <Event.Text>On Partner Site</Event.Text>
-        </Extras>
-      </Wrapper>
     )
   }
 }
-
-// const Item = ({
-//   handleToggle,
-//   id,
-//   isOnSale = false,
-//   isSoldOut = false,
-//   isOpen = false,
-//   image,
-//   item: {
-//     dates: {
-//       status: { code }
-//     },
-//     datesFormatted: { dateSubTitle, dateTitle },
-//     name,
-//     venue
-//   },
-//   hasProducts = false
-// }) => (
-  // <Event>
-  //   <Event.Header>
-  //     <MainArea
-  //       role="button"
-  //       className="main"
-  //       onClick={handleClick}
-  //     >
-  //       <Chevron />
-        
-  //       <Event.Date>
-  //         <Event.Title>{dateTitle}</Event.Title>
-  //         <Event.Text>{dateSubTitle}</Event.Text>
-  //       </Event.Date>
-
-  //       <Event.Body direction="column">
-  //         <Event.Title>Title</Event.Title>
-  //         <Event.Text>subTitle</Event.Text>
-  //       </Event.Body>
-
-  //     </MainArea>
-  //     <Event.Actions>
-  //       button
-  //     </Event.Actions>
-  //   </Event.Header>
-
-//   </Event>
-// );
 
 export default Item;

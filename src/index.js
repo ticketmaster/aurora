@@ -7,18 +7,19 @@ export {
   DayTileMoreButton,
   DayTileOverflowButton
 } from "./components/CalendarView";
+export { default as Banner } from "./components/Banner";
 export { default as Card } from "./components/Card";
 export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
-export { default as LoaderRing } from "./components/LoaderRing";
 export { default as DrawerProvider } from "./components/Drawer/Provider";
+export { default as FeedbackInline } from "./components/FeedbackInline";
+export {default as Flex} from "./components/Flex/index";
 export { default as Gradient } from "./components/Gradient";
 export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
 export { default as Heading } from "./components/Header/Heading";
 export { default as ImageCard } from "./components/ImageCard";
-export { default as Banner } from "./components/Banner";
-export { default as FeedbackInline } from "./components/FeedbackInline";
+export { default as LoaderRing } from "./components/LoaderRing";
 export {
   ListContainer,
   ListRow,

@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { shape } from "prop-types";
-import { AttractionsType, ProductsType, VenueType } from "../../components/types";
+import { AttractionsType, ProductsType, VenueType } from "../../../components/types";
 
 import Category from "./Category";
 import CategoryItem from "./CategoryItem";
 import RevealAnimation from "./RevealAnimation";
-import Tile from "../Tile";
-
+import Tile from "../../../components/Tile";
 
 const Wrapper = styled(RevealAnimation)`
   display: flex;

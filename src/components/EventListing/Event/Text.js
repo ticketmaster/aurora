@@ -8,7 +8,6 @@ import { Text as AuroraText } from "../../Text";
 const Wrapper = styled(AuroraText)`
   color: rgba(38, 38, 38, 0.6);
   line-height: 16px;
-  max-height: 36px;
   margin: 0;
   overflow: hidden;
   position: relative;

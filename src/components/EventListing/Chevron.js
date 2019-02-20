@@ -7,7 +7,6 @@ import AuroraChevron from "../Icons/Chevron";
 const Wrapper = styled.div`
   position: relative;
   width: 46px;
-  color: "grey";
 
   ${({ isOpen }) =>
     isOpen &&
@@ -19,6 +18,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledComponent = styled(AuroraChevron)`
+  color: #262626;
   transition: all 0.1s linear;
   position: absolute;
   left: 17px;

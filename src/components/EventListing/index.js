@@ -1,7 +1,10 @@
 import React from "react";
 import styled from 'styled-components';
-import Item from "./Item"
+
 import Accordion from "../Accordion"
+import Item from "./Item"
+import EventInfo from "../../blocks/EventListing/old/EventInfo";
+
 
 const Wrapper = styled.div`
  display: inline;
@@ -29,7 +32,14 @@ const EventListing = ({items}) => (
                   handleToggle={handleToggle}
                 />
                 <Accordion.Panel isOpen={isOpen}>
-                  f000
+                  <EventInfo
+                    isOpen={isOpen}
+                    items={{
+                      products,
+                      venue: {...venue, venueUrl},
+                      attractions
+                    }}
+                  />
                 </Accordion.Panel>
               </React.Fragment>
             )}
@@ -41,14 +51,3 @@ const EventListing = ({items}) => (
 );
 
 export default EventListing;
-
-{/* 
-
-<EventInfo
-  isOpen={isOpen}
-  items={{
-    products,
-    venue: {...venue, venueUrl},
-    attractions
-  }}
-/> */}

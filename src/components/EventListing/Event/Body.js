@@ -1,8 +1,13 @@
 import styled, {css} from 'styled-components';
+import Flex from "../../Flex"
 
-const Body = styled.div`
+const Body = styled(Flex)`
  display: flex;
  flex: 1 1;
+
+ & > *:nth-child(3){
+   margin-top: 4px;
+ }
 
  ${({isOpen}) =>
     isOpen

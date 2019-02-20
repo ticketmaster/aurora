@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { string } from "prop-types";
 
-import Tile from "../Tile"
+import Tile from "../../../components/Tile"
 import Icon from "./Icon";
 
-import { IconType, LinkType } from "../../components/types";
+import { IconType, LinkType } from "../../../components/types";
 
 const Wrapper = styled.div`
   align-items: self-start;

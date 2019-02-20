@@ -3,9 +3,10 @@ import COLORS from "../../../theme/colors";
 
 const Date = styled.div`
   color: ${COLORS.azure.hoverLight};
-  text-align: left;
   margin-right: 8px;
-  width: 106px;
+  min-width: 106px;
+  
+  p {font-size: 14px;}
 
   && p:first-child {
     color: #904eba;

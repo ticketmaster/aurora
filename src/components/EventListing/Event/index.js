@@ -1,25 +1,22 @@
 import styled, {css} from "styled-components";
-import RevealAnimation from "../RevealAnimation";
 
 import Actions from "./Actions";
 import Body from "./Body";
-import Header from "./Header";
 import Date from "./Date";
+import Extras from "./Extras";
+import Flex from "../../Flex";
+import Header from "./Header";
 import Label from "./Label";
 import Link from "./Link";
 import Text from "./Text";
 import Title from "./Title";
 
-
-const Event = styled(RevealAnimation)`
-  background: #fff;
-  display: flex;
-  flex-direction: row;
+const Event = styled(Flex)`
+    background: #fff;
 
    .innerWrapper {
      display: flex;
      padding: 4px 0;
-     /* flex-direction: column; */
      width: 100%;
    }
 
@@ -33,10 +30,7 @@ const Event = styled(RevealAnimation)`
   }
 
   .main:hover {
-    background-color: rgba(2, 108, 223, 0.1);
-    -webkit-transition: background-color 100ms linear;
-    -ms-transition: background-color 100ms linear;
-    transition: background-color 100ms linear;
+    
   }
 
   .badge{
@@ -89,6 +83,7 @@ const Event = styled(RevealAnimation)`
 Event.Actions = Actions;
 Event.Body = Body;
 Event.Date = Date;
+Event.Extras = Extras;
 Event.Header = Header;
 Event.Label = Label;
 Event.Link = Link;

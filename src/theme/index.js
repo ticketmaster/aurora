@@ -4,3 +4,4 @@ export { default as colors } from "./colors";
 export { default as zIndex } from "./zIndex";
 export { default as constants } from "./constants";
 export { default as themes } from "./colorThemes";
+export { default as animations } from "./animations";
