@@ -7,6 +7,7 @@ import {
   popContainersBoxShadow,
   popContainersSharpBoxShadow
 } from "../../theme/constants";
+import PopOverPortal from "./PopOverPortal";
 
 const StyledPopOver = styled.div`
   background-color: ${themes.global.white.base};
@@ -23,14 +24,16 @@ const StyledPopOver = styled.div`
   transition: opacity 0.1s ${constants.easing.easeInQuad},
     transform 0.1s ${constants.easing.easeInQuad};
 
-  &.open-enter {
+  &.open-enter,
+  &.open-appear {
     transition: opacity 0.3s ${constants.easing.easeInOutQuad};
     display: block;
     opacity: 0;
     transform: scale(0.7);
   }
 
-  &.open-enter-active {
+  &.open-enter-active,
+  &.open-appear-active {
     transition: opacity 0.3s ${constants.easing.easeInOutQuad},
       transform 0.3s ${constants.easing.easeInOutQuad};
     display: block;
@@ -90,7 +93,6 @@ class PopOver extends Component {
       elTop,
       elLeft,
       elWidth,
-      mouseX,
       offsetTop,
       clientHeight,
       offsetLeft,
@@ -103,14 +105,14 @@ class PopOver extends Component {
           elLeft + width + MIN_SPACE_FROM_EDGE * 2 >= clientWidth
             ? elLeft - width - spacing.gutters.tiny
             : elLeft + elWidth + spacing.gutters.tiny,
-        y: elTop
+        y: windowScroll + elTop
       };
     }
 
     const viewportTop = windowScroll + reduceTop;
     const viewportBottom = windowScroll + windowHeight - reduceBottom;
-    const bottomPosition = elBottom + SPACE_FROM_MOUSE;
-    const topPosition = elTop - SPACE_FROM_MOUSE - height;
+    const bottomPosition = windowScroll + elBottom + SPACE_FROM_MOUSE;
+    const topPosition = windowScroll + elTop - SPACE_FROM_MOUSE - height;
 
     const spaceFromEdge =
       windowWidth > MOBILE_MAX_WIDTH
@@ -118,7 +120,8 @@ class PopOver extends Component {
         : MOBILE_MIN_SPACE_FROM_EDGE;
 
     const containerTop = offsetTop + spaceFromEdge;
-    const containerBottom = offsetTop + clientHeight - spaceFromEdge;
+    const containerBottom =
+      windowScroll + offsetTop + clientHeight - spaceFromEdge;
     const containerLeft = offsetLeft + spaceFromEdge;
     const containerRight = offsetLeft + clientWidth - spaceFromEdge - width;
 
@@ -129,7 +132,7 @@ class PopOver extends Component {
 
     return {
       x: Math.min(
-        Math.max(spaceFromEdge, mouseX - width / 2, containerLeft),
+        Math.max(elLeft + elWidth / 2 - width / 2, containerLeft),
         windowWidth - spaceFromEdge - width,
         containerRight
       ),
@@ -166,7 +169,7 @@ class PopOver extends Component {
      * one zone that triggers the popover to another that triggers the same popover but with different place to display
      */
     const {
-      position: { mouseX, elTop, elBottom },
+      position: { elTop, elBottom },
       isVisible,
       inlineWithTarget,
       position,
@@ -175,8 +178,7 @@ class PopOver extends Component {
     } = this.props;
 
     if (
-      (prevProps.position.mouseX !== mouseX ||
-        prevProps.position.elTop !== elTop ||
+      (prevProps.position.elTop !== elTop ||
         prevProps.position.elBottom !== elBottom) &&
       isVisible &&
       prevProps.isVisible === isVisible
@@ -203,23 +205,24 @@ class PopOver extends Component {
    * certain element we should pass the html element as second parameter.
    * The function will return an object that should be provided to the PopOver as props.
    */
-  static getDimensionsFromEvent(e, parent = {}) {
-    const { clientX: mouseX } = e;
+  static getDimensionsFromEvent(e, parent) {
     const {
-      offsetTop: elTop,
-      clientHeight: elHeight,
-      offsetLeft: elLeft,
-      offsetWidth: elWidth
-    } = e.currentTarget;
+      y: elTop,
+      height: elHeight,
+      x: elLeft,
+      width: elWidth
+    } = e.target.getBoundingClientRect();
     const {
-      offsetTop: offsetTop = 0,
-      clientHeight: clientHeight = 100000,
-      offsetLeft: offsetLeft = 0,
-      clientWidth: clientWidth = 100000
-    } = parent;
+      y: offsetTop = 0,
+      height: clientHeight = 100000,
+      x: offsetLeft = 0,
+      width: clientWidth = 100000
+    } =
+      parent && parent.getBoundingClientRect
+        ? parent.getBoundingClientRect()
+        : {};
 
     return {
-      mouseX,
       elTop,
       elLeft,
       elWidth,
@@ -273,11 +276,7 @@ class PopOver extends Component {
       }
     }
 
-    if (
-      Object.keys(dimensions).length &&
-      dimensions.width &&
-      dimensions.height
-    ) {
+    if (Object.keys(dimensions).length) {
       this.dimensions = {
         ...this.dimensions,
         ...dimensions
@@ -317,22 +316,25 @@ class PopOver extends Component {
     const { children, isVisible, noBorders, zInd } = this.props;
 
     return (
-      <CSSTransition
-        in={isVisible}
-        key="popover-animation"
-        timeout={300}
-        classNames="open"
-        onEnter={this.popoverEnter}
-      >
-        <StyledPopOver
-          ref={this.myRef}
-          isVisible={isVisible}
-          noBorders={noBorders}
-          zInd={zInd}
+      <PopOverPortal>
+        <CSSTransition
+          in={isVisible}
+          key="popover-animation"
+          timeout={300}
+          classNames="open"
+          appear={isVisible}
+          onEnter={this.popoverEnter}
         >
-          {children}
-        </StyledPopOver>
-      </CSSTransition>
+          <StyledPopOver
+            ref={this.myRef}
+            isVisible={isVisible}
+            noBorders={noBorders}
+            zInd={zInd}
+          >
+            {children}
+          </StyledPopOver>
+        </CSSTransition>
+      </PopOverPortal>
     );
   }
 }
