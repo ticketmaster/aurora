@@ -4,6 +4,12 @@ import "jest-styled-components";
 
 import PopOver from "..";
 
+jest.mock("../PopOverPortal", () => ({ children }) => children);
+
+jest.mock("react-transition-group", () => ({
+  CSSTransition: ({ children }) => children
+}));
+
 describe("PopOver", () => {
   it("should match snapshot", () => {
     const tree = renderer.create(<PopOver />).toJSON();
@@ -32,11 +38,12 @@ describe("PopOver", () => {
       const position = {
         elBottom: 10,
         elTop: 0,
-        mouseX: 5,
         offsetTop: 0,
         clientHeight: 1000,
         offsetLeft: 0,
-        clientWidth: 500
+        clientWidth: 500,
+        elWidth: 10,
+        elLeft: 0
       };
       const dimensions = {
         width: 100,
@@ -58,12 +65,14 @@ describe("PopOver", () => {
       const position = {
         elBottom: 510,
         elTop: 500,
-        mouseX: 5,
+        elLeft: 0,
+        elWidth: 10,
         offsetTop: 0,
         clientHeight: 1000,
         offsetLeft: 0,
         clientWidth: 10000
       };
+
       const dimensions = {
         width: 100,
         windowScroll: 100,
@@ -76,7 +85,7 @@ describe("PopOver", () => {
         PopOver.calculatePosition({ position, dimensions, reduce })
       ).toEqual({
         x: 24,
-        y: 390
+        y: 490
       });
     });
 
@@ -86,7 +95,6 @@ describe("PopOver", () => {
         elTop: 500,
         elLeft: 30,
         elWidth: 150,
-        mouseX: 5,
         offsetTop: 0,
         clientHeight: 1000,
         offsetLeft: 0,
@@ -109,7 +117,7 @@ describe("PopOver", () => {
         })
       ).toEqual({
         x: 188,
-        y: 500
+        y: 600
       });
     });
 
@@ -119,7 +127,6 @@ describe("PopOver", () => {
         elTop: 500,
         elLeft: 900,
         elWidth: 150,
-        mouseX: 5,
         offsetTop: 0,
         clientHeight: 1000,
         offsetLeft: 0,
@@ -142,7 +149,7 @@ describe("PopOver", () => {
         })
       ).toEqual({
         x: 792,
-        y: 500
+        y: 600
       });
     });
   });
@@ -201,7 +208,6 @@ describe("PopOver", () => {
     const setDimensionsMock = jest.fn();
     const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
     const position = {
-      mouseX: 30,
       elTop: 20,
       elBottom: 40
     };
@@ -229,7 +235,6 @@ describe("PopOver", () => {
     const setDimensionsMock = jest.fn();
     const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
     const position = {
-      mouseX: 30,
       elTop: 20,
       elBottom: 40
     };
@@ -281,23 +286,25 @@ describe("PopOver", () => {
 
   describe("getDimensionsFromEvent", () => {
     const event = {
-      clientX: 100,
-      currentTarget: {
-        offsetTop: 20,
-        clientHeight: 1000,
-        offsetLeft: 30,
-        offsetWidth: 150
+      target: {
+        getBoundingClientRect: () => ({
+          y: 20,
+          height: 1000,
+          x: 30,
+          width: 150
+        })
       }
     };
     const wrapper = {
-      offsetTop: 50,
-      clientHeight: 200,
-      offsetLeft: 100,
-      clientWidth: 300
+      getBoundingClientRect: () => ({
+        y: 50,
+        height: 200,
+        x: 100,
+        width: 300
+      })
     };
     it("without wrapper", () => {
       expect(PopOver.getDimensionsFromEvent(event)).toEqual({
-        mouseX: 100,
         elTop: 20,
         elLeft: 30,
         elWidth: 150,
@@ -311,7 +318,6 @@ describe("PopOver", () => {
 
     it("plus wrapper", () => {
       expect(PopOver.getDimensionsFromEvent(event, wrapper)).toEqual({
-        mouseX: 100,
         elTop: 20,
         elLeft: 30,
         elWidth: 150,
