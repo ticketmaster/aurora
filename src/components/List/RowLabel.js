@@ -6,7 +6,7 @@ import classnames from "classnames";
 import { Text } from "../Text";
 import { Column, Row } from "../Grid";
 import { StatusBadge } from "../StatusBadge";
-import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import { constants, spacing, typography, themes } from "../../theme";
 import { getLabelTextColor } from "../../utils";
 
@@ -25,9 +25,7 @@ const Content = styled(Row)`
 
   font-size: 11px;
 
-  ${smallAndUp`
-    padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.small};
-  `} ${mediumAndUp`
+  ${mediumAndUp`
     padding-top: ${ROW_CONTAINER_VERTICAL_PADDING};
     padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.medium};
     padding-right: calc(${ROW_BUTTON_WIDTH} - ${rowMarginRight}px);

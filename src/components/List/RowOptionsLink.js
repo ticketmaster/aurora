@@ -5,7 +5,7 @@ import classnames from "classnames";
 
 import { Column, Row } from "../Grid";
 import { Link } from "../Text";
-import { smallAndUp, mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import constants from "../../theme/constants";
 import spacing from "../../theme/spacing";
 
@@ -19,9 +19,7 @@ const Content = styled(Row)`
   padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.xSmall};
   padding-bottom: ${spacing.cozy};
 
-  ${smallAndUp`
-    padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.small};
-  `} ${mediumAndUp`
+  ${mediumAndUp`
     padding-bottom: ${ROW_CONTAINER_VERTICAL_PADDING};
     padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.medium};
   `};
