@@ -1,43 +1,40 @@
 import React from "react";
 import styled from "styled-components";
 import { shape } from "prop-types";
-import { AttractionsType, ProductsType, VenueType } from "../../../components/types";
+import {
+  AttractionsType,
+  ProductsType,
+  VenueType
+} from "../../../components/types";
 
 import CategoryItem from "./CategoryItem";
-import Flex from "../../../components/Flex"
+import Flex from "../../../components/Flex";
 import Tile from "../../../components/Tile";
 
-import {expandCollapse} from "../../../theme/animations"
+import { expandCollapse } from "../../../theme/animations";
 
 const Wrapper = styled(Flex)`
-  ${expandCollapse}
-  padding: 16px 16px 16px 47px;
-  && > div:nth-child(n + 2) { margin-left: 16px; }
+  ${expandCollapse} padding: 16px 16px 16px 47px;
+  && > div:nth-child(n + 2) {
+    margin-left: 16px;
+  }
 
   .label {
     margin-bottom: 16px;
   }
-`
+`;
 
 const EventInfo = ({
-  isOpen, 
+  isOpen,
   items: {
     attractions = null,
     products = [],
-    venue: {
-      city,
-      name: venueName,
-      state,
-      venueUrl,
-      __typename: venueTypeName
-    }
+    venue: { city, name: venueName, state, venueUrl, __typename: venueTypeName }
   }
 }) => {
   const lineup = attractions ? attractions.slice(0, 2) : null;
-  const getClassName = isOpen ? "expand" : "collapse";
-
   return (
-    <Wrapper className={getClassName}>
+    <Wrapper>
       {lineup &&
         lineup[0].name && (
           <Flex column grow={1} shrink={1}>

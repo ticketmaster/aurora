@@ -1,4 +1,4 @@
-import {css} from "styled-components";
+import { css } from "styled-components";
 import CONSTANTS from "./constants";
 
 const { easing: EASING } = CONSTANTS;
@@ -19,48 +19,45 @@ const accordionSectionText = css`
     opacity: 1;
     visibility: visible;
   }
-`; 
+`;
 
 const collapse = css`
   opacity: 0;
-  max-height: 0;
+    max-height: 0;
+  visibility: collapse;
   transition: ${maxHeight}, ${opacity}, ${marginBottom};
   /* max-height 0.3s ${EASING.easeInQuad}, */
   /* opacity 0.1s ${EASING.easeInQuad};   */
-`
+`;
 const expand = css`
   max-height: 600px;
-  opacity: 1;
+    opacity: 1;
+    visibility: visible;
   transition: ${maxHeight}, ${opacity}, ${marginBottom};
   /* max-height 0.3s ${EASING.easeInOutQuad} 0s,
     opacity 0.3s ${EASING.easeInOutQuad} 0.2s; */
 `;
 
-
 const expandCollapse = css`
- .expand {
-   ${expand}
-
-    max-height: 600px;
+  .expand {
+    ${expand} max-height: 600px;
     opacity: 1;
     visibility: visible;
   }
 
   .collapse {
-    ${collapse}
-
-    opacity: 0;
+    ${collapse} opacity: 0;
     height: 0;
     visibility: collapse;
   }
-`
+`;
 
 const hover = css`
   background-color: rgba(2, 108, 223, 0.1);
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
-`
+`;
 
 export {
   collapse,
@@ -72,4 +69,4 @@ export {
   marginBottom,
   maxHeight,
   opacity
-}
+};

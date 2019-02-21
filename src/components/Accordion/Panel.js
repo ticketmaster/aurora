@@ -1,12 +1,10 @@
 import styled, { css } from "styled-components";
 import { node } from "prop-types";
-
-// import spacing from "../../theme/spacing";
 import COLORS from "../../theme/colors";
-import {expand, collapse} from "../../theme/animations"
+import { expandCollapse, expand, collapse } from "../../theme/animations";
 
 const Panel = styled.div`
-  max-height: 0;
+  ${expandCollapse} max-height: 0;
   overflow: hidden;
   color: ${COLORS.blackPearl};
 
@@ -25,19 +23,13 @@ const Panel = styled.div`
 
   ${({ isOpen }) =>
     isOpen
-    ?
-      css`
-        background-color: ${COLORS.white.base};
-        max-height: 600px;
-        opacity: 1;
-        ${expand}
-      `
-   :
-      css`
-        ${collapse}
-        opacity: 0;
-      `
-  };
+      ? css`
+          background-color: ${COLORS.white.base};
+          ${expand};
+        `
+      : css`
+          ${collapse};
+        `};
 `;
 
 Panel.propTypes = {
