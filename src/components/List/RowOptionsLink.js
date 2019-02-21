@@ -5,27 +5,26 @@ import classnames from "classnames";
 
 import { Column, Row } from "../Grid";
 import { Link } from "../Text";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import constants from "../../theme/constants";
 import spacing from "../../theme/spacing";
 
 import {
   ROW_CONTAINER_VERTICAL_PADDING,
-  CHEVRON_ICON_PADDING,
-  CHEVRON_ICON_SIZE,
-  ROW_DATE_MEDIUM_WIDTH,
-  ROW_DATE_SMALL_WIDTH
+  ROW_LABEL_AND_LINK_PADDING_LEFT
 } from "./constants";
 
 const Content = styled(Row)`
   width: 100%;
-  padding-left: ${ROW_DATE_SMALL_WIDTH};
+  padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.xSmall};
   padding-bottom: ${spacing.cozy};
 
   ${mediumAndUp`
     padding-bottom: ${ROW_CONTAINER_VERTICAL_PADDING};
-    padding-left: calc(${CHEVRON_ICON_SIZE}px + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${ROW_DATE_MEDIUM_WIDTH});
+    padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.medium};
   `};
+  ${largeAndUp`
+  padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.large}`};
 `;
 
 const MobileLink = styled(Link)`

@@ -6,33 +6,33 @@ import classnames from "classnames";
 import { Text } from "../Text";
 import { Column, Row } from "../Grid";
 import { StatusBadge } from "../StatusBadge";
-import { mediumAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 import { constants, spacing, typography, themes } from "../../theme";
 import { getLabelTextColor } from "../../utils";
 
 import {
   ROW_CONTAINER_VERTICAL_PADDING,
-  CHEVRON_ICON_PADDING,
-  CHEVRON_ICON_SIZE,
-  ROW_DATE_MEDIUM_WIDTH,
-  ROW_DATE_SMALL_WIDTH,
-  ROW_BUTTON_WIDTH
+  ROW_BUTTON_WIDTH,
+  ROW_LABEL_AND_LINK_PADDING_LEFT
 } from "./constants";
 
 const rowMarginRight = spacing.gutters.small / 2;
 
 const Content = styled(Row)`
   width: 100%;
-  padding-left: ${ROW_DATE_SMALL_WIDTH};
+  padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.xSmall};
   padding-top: ${spacing.cozy};
 
   font-size: 11px;
+
   ${mediumAndUp`
     padding-top: ${ROW_CONTAINER_VERTICAL_PADDING};
-    padding-left: calc(${CHEVRON_ICON_SIZE}px + ${CHEVRON_ICON_PADDING} + ${CHEVRON_ICON_PADDING} + ${ROW_DATE_MEDIUM_WIDTH});
+    padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.medium};
     padding-right: calc(${ROW_BUTTON_WIDTH} - ${rowMarginRight}px);
     font-size: ${typography.size.hecto};
   `};
+  ${largeAndUp`
+  padding-left: ${ROW_LABEL_AND_LINK_PADDING_LEFT.large}`};
 `;
 
 const ContentColumn = styled(Column)`

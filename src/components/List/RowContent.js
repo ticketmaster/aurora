@@ -9,7 +9,7 @@ import { StyledButton } from "../Button/Base.styles";
 import { Row, Column } from "../Grid";
 import { Text } from "../Text";
 import OverflowIcon from "../Icons/Overflow";
-import { mediumAndUp, largeAndUp, smallAndUp } from "../../theme/mediaQueries";
+import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
 
 import RowToggler, { IconButton } from "./RowToggler";
 import { rowDataShape } from "./shape";
@@ -89,12 +89,10 @@ const DateWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 61.6%;
+  min-width: ${ROW_DATE_SMALL_WIDTH};
   max-width: ${ROW_DATE_SMALL_WIDTH};
 
-  ${smallAndUp`
-    width: 31.1%;
-  `} ${mediumAndUp`
+  ${mediumAndUp`
     width: 26.8%;
     max-width: ${ROW_DATE_MEDIUM_WIDTH};
   `};
