@@ -157,6 +157,11 @@ export const StyledButton = styled.button`
     ${({ variant }) =>
       variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
+
+
+  &.noFocus:focus {
+    box-shadow: none;
+  }
 `;
 
 StyledButton.defaultProps = {
