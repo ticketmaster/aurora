@@ -65,7 +65,6 @@ const StyledPopOver = styled.div`
 const MIN_SPACE_FROM_EDGE = 24;
 const MOBILE_MIN_SPACE_FROM_EDGE = 16;
 const MOBILE_MAX_WIDTH = 767;
-const SPACE_FROM_MOUSE = 10;
 
 class PopOver extends Component {
   /*
@@ -79,7 +78,13 @@ class PopOver extends Component {
    * @reduce(object) - additional top/bottom screen reduction cause by sticky header/footer
    * @inlineWithTarget(boolean) - an optional prop that allows to align PopOver with toggle
    */
-  static calculatePosition({ position, dimensions, reduce, inlineWithTarget }) {
+  static calculatePosition({
+    position,
+    dimensions,
+    reduce,
+    inlineWithTarget,
+    spaceFromMouse
+  }) {
     const {
       width,
       windowScroll,
@@ -111,8 +116,8 @@ class PopOver extends Component {
 
     const viewportTop = windowScroll + reduceTop;
     const viewportBottom = windowScroll + windowHeight - reduceBottom;
-    const bottomPosition = windowScroll + elBottom + SPACE_FROM_MOUSE;
-    const topPosition = windowScroll + elTop - SPACE_FROM_MOUSE - height;
+    const bottomPosition = windowScroll + elBottom + spaceFromMouse;
+    const topPosition = windowScroll + elTop - spaceFromMouse - height;
 
     const spaceFromEdge =
       windowWidth > MOBILE_MAX_WIDTH
@@ -174,7 +179,8 @@ class PopOver extends Component {
       inlineWithTarget,
       position,
       reduceTop,
-      reduceBottom
+      reduceBottom,
+      spaceFromMouse
     } = this.props;
 
     if (
@@ -190,7 +196,8 @@ class PopOver extends Component {
         position,
         dimensions: this.dimensions,
         reduce,
-        inlineWithTarget
+        inlineWithTarget,
+        spaceFromMouse
       });
 
       this.myRef.current.style.top = `${this.pos.y}px`;
@@ -293,7 +300,8 @@ class PopOver extends Component {
       inlineWithTarget,
       position,
       reduceTop,
-      reduceBottom
+      reduceBottom,
+      spaceFromMouse
     } = this.props;
 
     if (isVisible) {
@@ -304,7 +312,8 @@ class PopOver extends Component {
         position,
         dimensions: this.dimensions,
         reduce,
-        inlineWithTarget
+        inlineWithTarget,
+        spaceFromMouse
       });
     }
 
@@ -355,7 +364,8 @@ PopOver.propTypes = {
     offsetLeft: PropTypes.number,
     clientWidth: PropTypes.number
   }),
-  zInd: PropTypes.number
+  zInd: PropTypes.number,
+  spaceFromMouse: PropTypes.number
 };
 
 PopOver.defaultProps = {
@@ -373,7 +383,8 @@ PopOver.defaultProps = {
     offsetLeft: 0,
     clientWidth: 0
   },
-  zInd: zIndex.layout.overlay
+  zInd: zIndex.layout.overlay,
+  spaceFromMouse: 4
 };
 
 PopOver.displayName = "PopOver";

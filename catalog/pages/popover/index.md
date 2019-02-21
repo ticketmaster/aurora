@@ -31,6 +31,10 @@ rows:
     Type: number
     Default: 0
     Notes: Scrinks viewport from the bottom in case of sticky footer
+  - Prop: spaceFromMouse
+    Type: number
+    Default: 4
+    Notes: Popover spacing from the elemnt that triggers it
   - Prop: position
     Type: Object
     Default: all props are 0
