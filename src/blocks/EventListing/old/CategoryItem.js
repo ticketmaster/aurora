@@ -2,45 +2,18 @@ import React from "react";
 import styled from "styled-components";
 import { string } from "prop-types";
 
-import Tile from "../../../components/Tile"
+import Flex from "../../../components/Flex";
+import Tile from "../../../components/Tile";
 import Icon from "./Icon";
 
 import { IconType, LinkType } from "../../../components/types";
 
-const Wrapper = styled.div`
-  align-items: self-start;
-  display: grid;
-  grid-auto-flow: dense;
-  grid-auto-rows: auto;
-  grid-gap: 6px 6px;
-  grid-template-areas:
-    "icon section section section section"
-    "  .  section section section section";
-  grid-template-columns: auto 1fr;
-  padding: 6px 0 0;
+const Wrapper = styled(Flex)`
+  margin-bottom: 8px;
+`
 
-  .section {
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-    grid-area: section;
-    justify-content: center;
-    margin: 0;
-    align-self: normal;
-    grid-row: section / span 1;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .lineup {
-    align-self: center;
-    grid-row: section / span 1;
-  }
-  .icon {
-    grid-area: icon;
-  }
+const IconWrapper = styled(Flex)`
+  margin-right: 8px;
 `;
 
 const CategoryItem = ({
@@ -54,15 +27,13 @@ const CategoryItem = ({
   text
 }) => (
 <Wrapper>
-  <div className="section">
+  <IconWrapper>
+    <Icon type={type} src={src} alt={text} />
+  </IconWrapper>
+  <Flex column justifyCenter>
     <Tile.Link href={link.href}> {link.text} </Tile.Link>
-    {text &&
-      <Tile.Text>
-        {text}
-      </Tile.Text>
-    }
-  </div>
-  <Icon type={type} src={src} alt={text} />
+    {text && <Tile.Text> {text} </Tile.Text>}
+  </Flex>
 </Wrapper>
 );
 

@@ -3,7 +3,7 @@ import { node } from "prop-types";
 
 // import spacing from "../../theme/spacing";
 import COLORS from "../../theme/colors";
-import constants from "../../theme/constants";
+import {expand, collapse} from "../../theme/animations"
 
 const Panel = styled.div`
   max-height: 0;
@@ -24,25 +24,20 @@ const Panel = styled.div`
   }
 
   ${({ isOpen }) =>
-    isOpen &&
-    css`
-      background-color: ${COLORS.white.base};
-      
-      transition: max-height 0.3s ${constants.easing.easeInOutQuad} 0s,
-                  opacity 0.3s ${constants.easing.easeInOutQuad} 0.2s;
-      max-height: 600px;
-      opacity: 1;
-    `}
-  
-  ${({ isOpen }) =>
-    !isOpen &&
-    css`
-      opacity: 0;
-      transition: max-height 0.3s ${constants.easing.easeInQuad},
-                  opacity 0.1s ${constants.easing.easeInQuad};
-    `};
-  }
-
+    isOpen
+    ?
+      css`
+        background-color: ${COLORS.white.base};
+        max-height: 600px;
+        opacity: 1;
+        ${expand}
+      `
+   :
+      css`
+        ${collapse}
+        opacity: 0;
+      `
+  };
 `;
 
 Panel.propTypes = {

@@ -37,9 +37,9 @@ class Chevron extends PureComponent {
 }
 
 Chevron.propTypes = {
-  id: string.isRequired,
+  // id: string.isRequired,
   isOpen: bool.isRequired,
-  onClick: func.isRequired
+  // onClick: func.isRequired
 };
 
 export default Chevron;

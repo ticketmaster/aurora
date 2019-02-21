@@ -1,34 +1,57 @@
 import {css} from "styled-components";
+import CONSTANTS from "./constants";
+
+const { easing: EASING } = CONSTANTS;
+
+const boxShadow = css`box-shadow 0.3s ${EASING.easeInOutQuad} 0s`;
+const marginBottom = css`margin-bottom 0.3s ${EASING.easeInOutQuad} 0s`;
+const maxHeight = css`max-height 0.3s ${EASING.easeInOutQuad} 0s`;
+const opacity = css`opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s`;
+
+const accordionSectionText = css`
+  .collapse {
+    transition: opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .expand {
+    transition: opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s;
+    opacity: 1;
+    visibility: visible;
+  }
+`; 
+
+const collapse = css`
+  opacity: 0;
+  max-height: 0;
+  transition: ${maxHeight}, ${opacity}, ${marginBottom};
+  /* max-height 0.3s ${EASING.easeInQuad}, */
+  /* opacity 0.1s ${EASING.easeInQuad};   */
+`
+const expand = css`
+  max-height: 600px;
+  opacity: 1;
+  transition: ${maxHeight}, ${opacity}, ${marginBottom};
+  /* max-height 0.3s ${EASING.easeInOutQuad} 0s,
+    opacity 0.3s ${EASING.easeInOutQuad} 0.2s; */
+`;
+
 
 const expandCollapse = css`
  .expand {
-    max-height: 600px !imporant;
-    max-width: 1080px;
-    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),
-                        opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    -o-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),
-                   opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
-    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),
-                opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+   ${expand}
 
+    max-height: 600px;
     opacity: 1;
     visibility: visible;
   }
 
   .collapse {
-      -webkit-transition: 
-        max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s,
-        opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-      -o-transition: 
-        max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s,
-        opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-      transition: 
-        max-height 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s,
-        opacity 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0s;
-      opacity: 0;
-      height: 0;
-      max-width: 0;
-      visibility: hidden;
+    ${collapse}
+
+    opacity: 0;
+    height: 0;
+    visibility: collapse;
   }
 `
 
@@ -40,6 +63,13 @@ const hover = css`
 `
 
 export {
+  collapse,
+  expand,
+  accordionSectionText,
   expandCollapse,
-  hover
+  hover,
+  boxShadow,
+  marginBottom,
+  maxHeight,
+  opacity
 }

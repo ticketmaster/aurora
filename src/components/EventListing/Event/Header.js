@@ -1,17 +1,16 @@
 import styled from 'styled-components';
-import {Button} from "../../Button"
+import Flex from "../../Flex";
+import {themes} from "../../../theme";
 
-const Header = styled(Button)`
-  display: flex;
-  width: 100%;
+const Header = styled(Flex)`
   padding: 12px 0;
-  flex: 1 1;
-  text-align: left;
-  
   border: 4px solid white;
   border-left: none;
+  cursor: pointer;
 
-  
+  :hover {
+    background: ${themes.tm.primary.light};
+  }
 `
 
 export default Header;

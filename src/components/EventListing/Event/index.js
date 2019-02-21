@@ -40,10 +40,6 @@ const Event = styled(Flex)`
     }
   }
 
-  .section {
-    /* grid-area: section;
-    text-align: left; */
-  }
   .cta {
     /* grid-area: cta; */
     padding: 13px 16px;

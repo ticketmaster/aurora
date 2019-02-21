@@ -3,17 +3,20 @@ import styled from "styled-components";
 import { shape } from "prop-types";
 import { AttractionsType, ProductsType, VenueType } from "../../../components/types";
 
-import Category from "./Category";
 import CategoryItem from "./CategoryItem";
-import RevealAnimation from "./RevealAnimation";
+import Flex from "../../../components/Flex"
 import Tile from "../../../components/Tile";
 
-const Wrapper = styled(RevealAnimation)`
-  display: flex;
-  flex-direction: row;
-  padding: 16px 16px 16px 47px;
+import {expandCollapse} from "../../../theme/animations"
 
+const Wrapper = styled(Flex)`
+  ${expandCollapse}
+  padding: 16px 16px 16px 47px;
   && > div:nth-child(n + 2) { margin-left: 16px; }
+
+  .label {
+    margin-bottom: 16px;
+  }
 `
 
 const EventInfo = ({
@@ -30,14 +33,15 @@ const EventInfo = ({
     }
   }
 }) => {
-  const lineup = attractions ? attractions.slice(0, 3) : null;
+  const lineup = attractions ? attractions.slice(0, 2) : null;
+  const getClassName = isOpen ? "expand" : "collapse";
 
   return (
-    <Wrapper className={isOpen ? "expand" : "collapse"}>
+    <Wrapper className={getClassName}>
       {lineup &&
         lineup[0].name && (
-          <Category>
-            <Tile.Label>LINEUP</Tile.Label>
+          <Flex column grow={1} shrink={1}>
+            <Tile.Label className="label">LINEUP</Tile.Label>
 
             {lineup.map(({ name, url, __typename }) => (
               <CategoryItem
@@ -49,29 +53,29 @@ const EventInfo = ({
             ))}
 
             {lineup &&
-              attractions.length > 3 && (
-                <Tile.Link className="section" href="#">
-                  {+attractions.length - 3}
+              attractions.length > 2 && (
+                <Tile.Link className="section" href="#" size="uno">
+                  + {attractions.length - lineup.length}
                 </Tile.Link>
               )}
-          </Category>
+          </Flex>
         )}
 
       {venueName && (
-        <Category>
-          <Tile.Label>VENUE</Tile.Label>
+        <Flex column grow={1} shrink={1}>
+          <Tile.Label className="label">VENUE</Tile.Label>
           <CategoryItem
             icon={{ type: venueTypeName }}
             label="VENUE"
             link={{ href: venueUrl, text: venueName }}
             text={`${city.name}, ${state.stateCode}`}
           />
-        </Category>
+        </Flex>
       )}
 
       {products && (
-        <Category>
-          <Tile.Label>ADD-ONS</Tile.Label>
+        <Flex column grow={1} shrink={1}>
+          <Tile.Label className="label">ADD-ONS</Tile.Label>
           {products.map(({ name, url, type }) => (
             <CategoryItem
               key={`product-${name}`}
@@ -80,7 +84,7 @@ const EventInfo = ({
               link={{ href: url, text: name }}
             />
           ))}
-        </Category>
+        </Flex>
       )}
     </Wrapper>
   );
