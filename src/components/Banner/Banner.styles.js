@@ -3,6 +3,7 @@ import { spacing, constants } from "../../theme";
 import getThemeValue from "../../utils/getThemeValue";
 import { CloseIcon as CrossIcon } from "../Icons";
 import { LinkCta, Text } from "../Text";
+import { Button } from "../Button";
 
 export const BASE_BANNER_HEIGHT = 56;
 export const MAX_BANNER_HEIGHT = 1000;
@@ -51,7 +52,7 @@ export const Container = styled.div`
   }
 
   &.banner-variant-info {
-    background-color: ${getThemeValue("primary", "light")};
+    background-color: ${getThemeValue("primary", "lightest")};
     border-color: ${getThemeValue("primary", "base")};
   }
 `;
@@ -72,28 +73,23 @@ export const Content = styled(Text)`
   }
 `;
 
-export const CloseButton = styled.button`
+export const CloseButton = styled(Button)`
   background-color: transparent;
   border: none;
   padding: 0;
-  cursor: pointer;
   position: absolute;
   top: 6px;
   right: 7px;
   width: 42px;
+  min-width: 42px;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  &:active {
-    transform: scale(0.98, 0.98) translate(0, 1px);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
-    border-radius: 1px;
+  &:active,
+  &:hover {
+    background-color: transparent;
   }
 `;
 
