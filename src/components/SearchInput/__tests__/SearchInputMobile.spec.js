@@ -34,13 +34,15 @@ describe("SearchInputMobile", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it("searchClick stop propagation, prevent default, change state and call inputFocus", () => {
+  it("openSearch change state and call inputFocus and onFocus prop", () => {
+    const onFocusMock = jest.fn();
     const instance = renderer
       .create(
         <SearchInputMobile
           placeholder="Search Demo"
           value=""
           onChange={() => {}}
+          onFocus={onFocusMock}
         />
       )
       .getInstance();
@@ -48,16 +50,11 @@ describe("SearchInputMobile", () => {
     const spyState = jest
       .spyOn(instance, "setState")
       .mockImplementation(() => {});
-    const event = {
-      preventDefault: jest.fn(),
-      stopPropagation: jest.fn()
-    };
 
-    instance.searchClick(event);
+    instance.openSearch();
 
-    expect(event.preventDefault).toHaveBeenCalledTimes(1);
-    expect(event.stopPropagation).toHaveBeenCalledTimes(1);
     expect(spyState).toHaveBeenCalledTimes(1);
+    expect(onFocusMock).toHaveBeenCalledTimes(1);
 
     spyState.mockRestore();
   });

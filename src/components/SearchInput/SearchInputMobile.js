@@ -14,15 +14,15 @@ function withMobile(SearchComponent) {
       this.mobileRef = React.createRef();
     }
 
-    searchClick = e => {
-      e.preventDefault();
-      e.stopPropagation();
+    openSearch = () => {
+      const { onFocus } = this.props;
       this.setState(
         {
           isMobileVisible: true
         },
         () => this.mobileRef.current.focusInput()
       );
+      onFocus();
     };
 
     cancelClick = () => {
@@ -38,11 +38,13 @@ function withMobile(SearchComponent) {
       const { isMobileVisible } = this.state;
       return (
         <React.Fragment>
-          <div onClickCapture={this.searchClick}>
-            {!isMobileVisible && (
-              <SearchComponent {...this.props} isMobile={false} />
-            )}
-          </div>
+          {!isMobileVisible && (
+            <SearchComponent
+              {...this.props}
+              onFocus={this.openSearch}
+              isMobile={false}
+            />
+          )}
           {isMobileVisible && (
             <MobileActiveSearch>
               <SearchComponent
@@ -62,7 +64,8 @@ function withMobile(SearchComponent) {
 const SearchInputMobile = withMobile(SearchInput);
 
 SearchInputMobile.defaultProps = {
-  cancelCallback: () => {}
+  cancelCallback: () => {},
+  onFocus: () => {}
 };
 
 SearchInputMobile.displayName = "SearchInputMobile";

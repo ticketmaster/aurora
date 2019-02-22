@@ -290,6 +290,22 @@ describe("SearchInput", () => {
     spy.mockRestore();
   });
 
+  it("componentWillUnmount should remove event listener as fallback", () => {
+    const instance = renderer
+      .create(
+        <SearchInput placeholder="Search Demo" value="" onChange={() => {}} />
+      )
+      .getInstance();
+
+    const spyRemove = jest.spyOn(global.window, "removeEventListener");
+    instance.componentWillUnmount();
+
+    expect(spyRemove).toHaveBeenCalledTimes(1);
+    expect(spyRemove).toHaveBeenCalledWith("click", instance.windowClick);
+
+    spyRemove.mockRestore();
+  });
+
   it("blurInput should not call setState and onBlur when isFocused is false", () => {
     const blurMock = jest.fn();
     const instance = renderer

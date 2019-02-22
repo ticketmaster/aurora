@@ -25,6 +25,10 @@ class SearchInput extends Component {
     this.inputClicked = false;
   }
 
+  componentWillUnmount() {
+    global.window.removeEventListener("click", this.windowClick);
+  }
+
   containerClick = () => {
     this.inputClicked = true;
     global.window.removeEventListener("click", this.windowClick);
