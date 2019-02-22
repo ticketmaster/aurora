@@ -15,7 +15,7 @@ const Container = styled.div.attrs({
   position: absolute;
   width: 205px;
   overflow: hidden;
-  background-color: ${themes.global.white};
+  background-color: ${themes.global.white.base};
   border-radius: ${constants.borderRadius.small};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
 

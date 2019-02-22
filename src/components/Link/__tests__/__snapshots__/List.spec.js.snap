@@ -2,7 +2,7 @@
 
 exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
 <div
-  class="sc-bdVaJa links links__list icYRjj"
+  class="sc-bdVaJa links links__list bhMvGM"
 >
   <div
     class="sc-bwzfXH bQTlgY"
@@ -28,7 +28,7 @@ exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
 
 exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = `
 <div
-  class="sc-bdVaJa links links__list icYRjj"
+  class="sc-bdVaJa links links__list bhMvGM"
 >
   <div
     class="sc-bwzfXH bQTlgY"
@@ -57,7 +57,7 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
 
 exports[`<LinkList /> renders content after container 1`] = `
 <div
-  class="sc-bdVaJa links links__list icYRjj"
+  class="sc-bdVaJa links links__list bhMvGM"
 >
   <div
     class="wrapper--has-after sc-bwzfXH bQTlgY"
