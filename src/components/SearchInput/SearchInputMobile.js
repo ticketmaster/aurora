@@ -64,7 +64,8 @@ function withMobile(SearchComponent) {
 const SearchInputMobile = withMobile(SearchInput);
 
 SearchInputMobile.defaultProps = {
-  cancelCallback: () => {}
+  cancelCallback: () => {},
+  onFocus: () => {}
 };
 
 SearchInputMobile.displayName = "SearchInputMobile";
