@@ -9,6 +9,7 @@ import Header from "./Header";
 import Label from "./Label";
 import Link from "./Link";
 import Text from "./Text";
+import SubTitle from "./SubTitle";
 import Title from "./Title";
 
 const Event = styled(Flex)`
@@ -21,11 +22,11 @@ const Event = styled(Flex)`
    }
 
   .main {
-    display: flex;
+    /* display: flex; */
     padding: 10px 0 10px;
-    width: 100%;
-    flex: 1 1;
-    border: none;
+    /* width: 100%; */
+    /* flex: 1 1; */
+    /* border: none; */
     margin: 0 16px 0 0;
   }
 
@@ -83,6 +84,7 @@ Event.Extras = Extras;
 Event.Header = Header;
 Event.Label = Label;
 Event.Link = Link;
+Event.SubTitle = SubTitle;
 Event.Text = Text;
 Event.Title = Title;
 

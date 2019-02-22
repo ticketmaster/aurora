@@ -1,9 +1,7 @@
 import styled from 'styled-components';
-import Body from "./Body";
+import Flex from "../../Flex"
 
-const Actions = styled(Body)`
-  display: flex;
-  flex: inherit;
+const Actions = styled(Flex)`
   padding: 4px 0;
   margin-top: 9px;
 

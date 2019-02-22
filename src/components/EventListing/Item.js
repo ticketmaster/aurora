@@ -3,23 +3,24 @@ import styled from 'styled-components';
 
 import {Button} from "../Button";
 
-import Animation from "./Animation";
+// import Overlay from "./Overlay";
 import Chevron from "./Chevron"
 import DefaultEvent from "./Event";
-import Flex from "../Flex"
+import Flex from "../Flex";
+import Grid from "./Grid";
 
-import { expandCollapse, accordionSectionText } from "../../theme/animations";
-import shouldAnimate from "./utils/animation";
+import { expandCollapse } from "../../theme/animations";
+import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
 
 const Event = styled(DefaultEvent)`
-  ${accordionSectionText}
+  ${expandCollapse}
   padding: 4px 16px 4px 0;
 `
 const Actions = styled(Event.Actions)`
-  margin: 13px 0 0;
   width: 124px;
   padding: 0;
 `
+
 
 class Item extends PureComponent {
   handleClick = (e) => {
@@ -46,63 +47,50 @@ class Item extends PureComponent {
       hasProducts = false
     } = this.props;
     return(
-        <Event>
-          <Event.Header
-            className="main"
-            variant="transparent"
-            onClick={this.handleClick}
-          >
-            <Flex grow={1}>
-              <Chevron isOpen={isOpen}/>
-              <Event.Date>
-                <Event.Title>{dateTitle}</Event.Title>
-                <Event.Text>{dateSubTitle}</Event.Text>
-              </Event.Date>
-                <Event.Body grow={1} column>
-                  <Animation>
-                    <Animation.Item column  className={shouldAnimate(!isOpen, "section")}>
-                      <Event.Title>
-                        {name}
-                      </Event.Title>
-                      <Event.Text>
-                        {venue.name}
-                      </Event.Text>
-                    </Animation.Item>
-                    <Animation.Item
+      <Event>
+        <Event.Header
+          basis={1}
+          className="main"
+          onClick={this.handleClick}
+        >
+          <Flex grow={1}>
+            <Chevron isOpen={isOpen}/>
+            <Event.Date column>
+              <Event.Title>{dateTitle}</Event.Title>
+              <Event.SubTitle>{dateSubTitle}</Event.SubTitle>
+            </Event.Date>
+              <Event.Body grow={1}>
+                <Grid>
+                  <Grid.Item>
+                    <Event.Body
+                      className={shouldAnimate(!isOpen, "header")}
                       column
-                      alignCenter
-                       className={shouldAnimate(isOpen, "section")}
+                      grow={1}
                     >
-                      <Event.Title>
-                        {name}
-                      </Event.Title>
-                      <Event.Text>
-                        {venue.name}
-                      </Event.Text>
-                    </Animation.Item>
-                  </Animation>
-                </Event.Body>
-
-                 {/* <Event.Body
-                  className={shouldAnimate(isOpen, "section")}
-                  grow={1}
-                  alignCenter
-                  column
-                >
-                  <Event.Title>{name}</Event.Title>
-                  <Event.Text>{venue.name}</Event.Text>
-                  
-                </Event.Body> */}
-              </Flex>
-          </Event.Header>
-          <Actions
-            direction="column"
-            align="flex-end"
-            className="right__actions"
-          >
-            <Button>See Tickets</Button>
-          </Actions>
-        </Event>
+                      <Event.Title> {name} </Event.Title>
+                      <Event.SubTitle> {venue.name} </Event.SubTitle>
+                      <Event.Text> ADDONS AVAILABLE </Event.Text>
+                    </Event.Body>
+                  </Grid.Item>
+                  <Grid.Item>
+                    <Event.Body
+                      alignCenter
+                      className={shouldAnimate(isOpen, "header")}
+                      column
+                      grow={1}
+                    >
+                      <Event.Title> {name} </Event.Title>
+                      <Event.SubTitle> {venue.name} </Event.SubTitle>
+                    </Event.Body>
+                  </Grid.Item>
+                </Grid>
+              </Event.Body>
+            </Flex>
+        </Event.Header>
+        <Actions column className="right__actions">
+          <Button>See Tickets</Button>
+        </Actions>
+      </Event>
     )
   }
 }

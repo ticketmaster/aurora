@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 import { node } from "prop-types";
 import COLORS from "../../theme/colors";
-import { expandCollapse, expand, collapse } from "../../theme/animations";
+import {expand, collapse } from "../../theme/animations";
 
 const Panel = styled.div`
-  ${expandCollapse} max-height: 0;
   overflow: hidden;
   color: ${COLORS.blackPearl};
 

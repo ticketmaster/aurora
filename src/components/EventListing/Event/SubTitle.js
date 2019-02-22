@@ -13,11 +13,11 @@ const Wrapper = styled(AuroraText)`
   position: relative;
 `;
 
-const Text = (props) => (
+const SubTitle = (props) => (
   <Wrapper
     className="eventName"
     accent="gray03"
-    size="uno"
+    size="hecto"
     tag="p"
     variant="accent"
     {...props}
@@ -30,4 +30,4 @@ const Text = (props) => (
 //   children: oneOf([string, node]).isRequired
 // }
 
-export default Text;
+export default SubTitle;

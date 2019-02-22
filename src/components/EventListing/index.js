@@ -5,7 +5,6 @@ import Accordion from "../Accordion"
 import Item from "./Item"
 import EventInfo from "../../blocks/EventListing/old/EventInfo";
 
-
 const Wrapper = styled.div`
  display: inline;
 `;
