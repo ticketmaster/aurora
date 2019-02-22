@@ -2,7 +2,7 @@
 
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
 <button
-  className="eVoRYN"
+  className="yFSnI"
   href={null}
   onClick={[Function]}
   rel=""
@@ -28,7 +28,7 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 <span
-  className="edGDaW"
+  className="fWfuCJ"
   href={null}
   onClick={null}
   rel=""
@@ -39,9 +39,22 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 </span>
 `;
 
+exports[`LinkCta renders correctly with reverse colors 1`] = `
+<a
+  className="inHduZ"
+  href="#"
+  onClick={null}
+  rel=""
+  size={null}
+  target="_self"
+>
+  I am a link
+</a>
+`;
+
 exports[`LinkCta static size as pixels 1`] = `
 <span
-  className="djLvKu"
+  className="imKxef"
   href={null}
   onClick={null}
   rel=""
@@ -54,7 +67,7 @@ exports[`LinkCta static size as pixels 1`] = `
 
 exports[`LinkCta static size from typography 1`] = `
 <span
-  className="djLvKu"
+  className="imKxef"
   href={null}
   onClick={null}
   rel=""

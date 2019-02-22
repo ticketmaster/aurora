@@ -4,13 +4,13 @@ exports[`ButtonGroup renders button group with default selected element 1`] = `
 Object {
   "container": <div>
     <div
-      class="sc-hMqMXs bzSRRg"
+      class="sc-kEYyzF cGSVRW"
     >
       <div
         class="sc-bwzfXH RpnLm"
       >
         <div
-          class="text text--dark text--primary sc-kEYyzF idNWCC sc-bZQynM dDBbro"
+          class="text text--dark text--primary sc-kkGfuU kIGIsH sc-bZQynM dDBbro"
         >
           Sort by
         </div>
@@ -22,7 +22,7 @@ Object {
           class="sc-bwzfXH RpnLm"
         >
           <div
-            class="text text--dark text--secondary sc-fjdhpX daUgKm sc-bZQynM hWlCXN"
+            class="text text--dark text--secondary sc-jzJRlG kxFhHb sc-bZQynM hWlCXN"
           >
             Category
           </div>
@@ -31,30 +31,30 @@ Object {
           class="sc-bdVaJa erSRMf"
         >
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="button__selected sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="button__selected sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button2"
             >
               Button Label
@@ -102,13 +102,13 @@ exports[`ButtonGroup renders default button group 1`] = `
 Object {
   "container": <div>
     <div
-      class="sc-hMqMXs bzSRRg"
+      class="sc-kEYyzF cGSVRW"
     >
       <div
         class="sc-bwzfXH RpnLm"
       >
         <div
-          class="text text--dark text--primary sc-kEYyzF idNWCC sc-bZQynM dDBbro"
+          class="text text--dark text--primary sc-kkGfuU kIGIsH sc-bZQynM dDBbro"
         >
           Sort by
         </div>
@@ -120,7 +120,7 @@ Object {
           class="sc-bwzfXH RpnLm"
         >
           <div
-            class="text text--dark text--secondary sc-fjdhpX daUgKm sc-bZQynM hWlCXN"
+            class="text text--dark text--secondary sc-jzJRlG kxFhHb sc-bZQynM hWlCXN"
           >
             Category
           </div>
@@ -129,30 +129,30 @@ Object {
           class="sc-bdVaJa erSRMf"
         >
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-jKJlTe hKEYQO"
+            class="sc-eNQAEJ jfDpKy"
           >
             <button
-              class="sc-eNQAEJ cDhCpH noFocus sc-jzJRlG cgVIfE"
+              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG ibICIf"
               data-testid="test-button2"
             >
               Button Label

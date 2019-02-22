@@ -34,6 +34,17 @@ const LinkCtaBase = styled.a`
   }
 `;
 
+const ReverseLinkCtaBase = styled(LinkCtaBase)`
+  color: ${getThemeValue("primary", "reverse")};
+
+  &:focus,
+  &:visited,
+  &:active,
+  &:hover {
+    color: ${getThemeValue("primary", "reverseLight")};
+  }
+`;
+
 const LinkCtaButtonBase = styled(LinkCtaBase)`
   appearance: none;
   border: 0;
@@ -47,8 +58,10 @@ const LinkCtaSpanBase = styled(LinkCtaBase)`
   cursor: pointer;
 `;
 
-const getElement = ({ href, onClick }) => {
-  if (href && href.length) return LinkCtaBase;
+const getElement = ({ href, onClick, reverseColors }) => {
+  if (href && href.length) {
+    return reverseColors ? ReverseLinkCtaBase : LinkCtaBase;
+  }
 
   if (!href && onClick && typeof onClick === "function")
     return LinkCtaButtonBase;
@@ -62,10 +75,11 @@ const LinkCta = ({
   children,
   size,
   responsiveSize,
+  reverseColors,
   ...props
 }) => {
   const { target, rel } = props;
-  const Elm = getElement({ href, onClick });
+  const Elm = getElement({ href, onClick, reverseColors });
   const asProp = getAsProp({ href, onClick });
   const validatedRel = getRelByTarget(target, rel);
 
@@ -90,7 +104,8 @@ LinkCta.propTypes = {
   href: PropTypes.string,
   onClick: PropTypes.func,
   target: PropTypes.string,
-  rel: PropTypes.string
+  rel: PropTypes.string,
+  reverseColors: PropTypes.bool
 };
 
 LinkCta.defaultProps = {
@@ -99,7 +114,8 @@ LinkCta.defaultProps = {
   responsiveSize: PT.defaultResponsiveSize,
   href: null,
   target: "_self",
-  rel: ""
+  rel: "",
+  reverseColors: false
 };
 
 LinkCta.displayName = "LinkCta";

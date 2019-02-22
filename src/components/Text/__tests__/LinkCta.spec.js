@@ -37,4 +37,16 @@ describe("LinkCta", () => {
       renderer.create(<LinkCta size="20px">I am a link</LinkCta>).toJSON() // eslint-disable-line
     ).toMatchSnapshot();
   });
+
+  it("renders correctly with reverse colors", () => {
+    expect(
+      renderer
+        .create(
+          <LinkCta href="#" reverseColors>
+            I am a link
+          </LinkCta>
+        )
+        .toJSON() // eslint-disable-line
+    ).toMatchSnapshot();
+  });
 });

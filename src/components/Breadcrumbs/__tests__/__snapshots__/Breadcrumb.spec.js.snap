@@ -10,7 +10,7 @@ exports[`<Breadcrumb /> renders correctly 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light fSiJKB"
+    className="breadcrumb--light bnRyGM"
   >
     Breadcrumb
     List
@@ -28,7 +28,7 @@ exports[`<Breadcrumb /> should render when empty list passed in 1`] = `
   }
 >
   <ol
-    className="breadcrumb--light cEseoZ"
+    className="breadcrumb--light kemVHw"
   />
 </nav>
 `;

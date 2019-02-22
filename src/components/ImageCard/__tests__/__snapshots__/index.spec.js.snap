@@ -2,19 +2,19 @@
 
 exports[`ImageCard renders standard card 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
   >
     <img
       alt="image"
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title="image"
     />
     <div
-      className="hCurYm"
+      className="eBbRRH"
     />
   </div>
 </div>
@@ -22,23 +22,23 @@ exports[`ImageCard renders standard card 1`] = `
 
 exports[`ImageCard renders type = half 1`] = `
 <div
-  className="junjQF"
+  className="bzLZlQ"
 >
   <div
-    className="container-block dxousv"
+    className="container-block cNtBSX"
   >
     <img
       alt=""
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title=""
     />
   </div>
   <div
-    className="cBvxBn"
+    className="itGEoe"
   >
     <span
-      className="gMznuQ"
+      className="kIGFlf"
     >
       <div
         className="text text--dark text--primary image-card__title--half kWGHae"
@@ -46,14 +46,14 @@ exports[`ImageCard renders type = half 1`] = `
         size="hecto"
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
       </div>
     </span>
     <span
-      className="dQVquz"
+      className="hKrqSj"
     >
       <div
         className="text text--dark text--primary image-card__subtitle--half kWGHae"
@@ -61,7 +61,7 @@ exports[`ImageCard renders type = half 1`] = `
         size="hecto"
       >
         <span
-          className="dQVquz"
+          className="hKrqSj"
         >
           Sub Title
         </span>
@@ -73,30 +73,30 @@ exports[`ImageCard renders type = half 1`] = `
 
 exports[`ImageCard renders with additional content when \`cardTitle\` and \`cardSubtitle\` prop values are not provided (old API support) 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
   >
     <img
       alt=""
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="hCurYm"
+      className="eBbRRH"
     >
       <div
-        className="gYqMCZ"
+        className="ipWdGX"
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
         <span
-          className="dQVquz"
+          className="hKrqSj"
         >
           Sub Title
         </span>
@@ -111,25 +111,25 @@ exports[`ImageCard renders with additional content when \`cardTitle\` and \`card
 
 exports[`ImageCard renders with custom image 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
   >
     <svg />
     <div
-      className="hCurYm"
+      className="eBbRRH"
     >
       <div
-        className="gYqMCZ"
+        className="ipWdGX"
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
         <span
-          className="dQVquz"
+          className="hKrqSj"
         >
           Sub Title
         </span>
@@ -144,10 +144,10 @@ exports[`ImageCard renders with custom image 1`] = `
 
 exports[`ImageCard renders with custom props 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
     style={
       Object {
         "display": "none",
@@ -156,12 +156,12 @@ exports[`ImageCard renders with custom props 1`] = `
   >
     <img
       alt=""
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="hCurYm"
+      className="eBbRRH"
       style={
         Object {
           "display": "none",
@@ -169,7 +169,7 @@ exports[`ImageCard renders with custom props 1`] = `
       }
     >
       <div
-        className="gYqMCZ"
+        className="ipWdGX"
         style={
           Object {
             "display": "none",
@@ -177,7 +177,7 @@ exports[`ImageCard renders with custom props 1`] = `
         }
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
@@ -189,30 +189,30 @@ exports[`ImageCard renders with custom props 1`] = `
 
 exports[`ImageCard renders with title & subtitle 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
   >
     <img
       alt=""
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="hCurYm"
+      className="eBbRRH"
     >
       <div
-        className="gYqMCZ"
+        className="ipWdGX"
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
         <span
-          className="dQVquz"
+          className="hKrqSj"
         >
           Sub Title
         </span>
@@ -224,30 +224,30 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 
 exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 <div
-  className="container-block jKtYiX"
+  className="container-block bCvgaG"
 >
   <div
-    className="bGOGzN"
+    className="jaAOfW"
   >
     <img
       alt=""
-      className="kgtmKB"
+      className="aoicY"
       src="http://localhost/img.png"
       title=""
     />
     <div
-      className="hCurYm"
+      className="eBbRRH"
     >
       <div
-        className="gYqMCZ"
+        className="ipWdGX"
       >
         <span
-          className="gMznuQ"
+          className="kIGFlf"
         >
           Title
         </span>
         <span
-          className="dQVquz"
+          className="hKrqSj"
         >
           Sub Title
         </span>
