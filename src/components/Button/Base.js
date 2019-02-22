@@ -8,7 +8,7 @@ import { getRelByTarget } from "../../utils/link";
 
 class Button extends Component {
   componentDidMount() {
-    if (!this.props.href) {
+    if (!this.props.href && this.button && this.button.current) {
       // this functionality is required to avoid focus outline on click but keep it on tab focus
       this.button.current.addEventListener("focus", this.focusHandler);
       this.button.current.addEventListener("blur", this.blurHandler);
