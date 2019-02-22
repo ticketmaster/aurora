@@ -9,8 +9,6 @@ const marginBottom = css`margin-bottom 0.3s ${EASING.easeInOutQuad} 0s`;
 const maxHeight = css`max-height 0.3s ${EASING.easeInOutQuad} 0s`;
 const opacity = css`opacity 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.2s`;
 
-
-
 const accordionSectionText = css`
   .collapse {
     opacity: 0;

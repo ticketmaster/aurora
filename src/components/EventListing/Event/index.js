@@ -8,30 +8,16 @@ import Flex from "../../Flex";
 import Header from "./Header";
 import Label from "./Label";
 import Link from "./Link";
-import Text from "./Text";
 import SubTitle from "./SubTitle";
+import Text from "./Text";
 import Title from "./Title";
 
 const Event = styled(Flex)`
     background: #fff;
 
-   .innerWrapper {
-     display: flex;
-     padding: 4px 0;
-     width: 100%;
-   }
-
-  .main {
-    /* display: flex; */
+  .hover--area {
     padding: 10px 0 10px;
-    /* width: 100%; */
-    /* flex: 1 1; */
-    /* border: none; */
     margin: 0 16px 0 0;
-  }
-
-  .main:hover {
-    
   }
 
   .badge{
@@ -41,19 +27,6 @@ const Event = styled(Flex)`
     }
   }
 
-  .cta {
-    /* grid-area: cta; */
-    padding: 13px 16px;
-    text-align:right;
-    p {
-      margin-top: 4px;
-    }
-  }
-  .chevron {
-    width: 46px;
-    /* grid-area: chevron; */
-  }
-  
   .extra {
     p {
       color: #026cdf

@@ -9,11 +9,13 @@ import DefaultEvent from "./Event";
 import Flex from "../Flex";
 import Grid from "./Grid";
 
-import { expandCollapse } from "../../theme/animations";
+import { expandCollapse, adjustHeight } from "../../theme/animations";
 import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
 
 const Event = styled(DefaultEvent)`
   ${expandCollapse}
+  ${adjustHeight}
+
   padding: 4px 16px 4px 0;
 `
 const Actions = styled(Event.Actions)`
@@ -50,7 +52,7 @@ class Item extends PureComponent {
       <Event>
         <Event.Header
           basis={1}
-          className="main"
+          className={shouldChangeHeight(isOpen,"hover--area")}
           onClick={this.handleClick}
         >
           <Flex grow={1}>
