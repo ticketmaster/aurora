@@ -53,11 +53,18 @@ describe("PopOver", () => {
         windowHeight: 400
       };
 
+      const spaceFromMouse = 4;
+
       expect(
-        PopOver.calculatePosition({ position, dimensions, reduce })
+        PopOver.calculatePosition({
+          position,
+          dimensions,
+          reduce,
+          spaceFromMouse
+        })
       ).toEqual({
         x: 16,
-        y: 20
+        y: 14
       });
     });
 
@@ -80,12 +87,18 @@ describe("PopOver", () => {
         windowWidth: 1000,
         windowHeight: 400
       };
+      const spaceFromMouse = 4;
 
       expect(
-        PopOver.calculatePosition({ position, dimensions, reduce })
+        PopOver.calculatePosition({
+          position,
+          dimensions,
+          reduce,
+          spaceFromMouse
+        })
       ).toEqual({
         x: 24,
-        y: 490
+        y: 496
       });
     });
 
@@ -107,13 +120,15 @@ describe("PopOver", () => {
         windowWidth: 1000,
         windowHeight: 400
       };
+      const spaceFromMouse = 4;
 
       expect(
         PopOver.calculatePosition({
           position,
           dimensions,
           reduce,
-          inlineWithTarget: true
+          inlineWithTarget: true,
+          spaceFromMouse
         })
       ).toEqual({
         x: 188,
@@ -139,13 +154,15 @@ describe("PopOver", () => {
         windowWidth: 1000,
         windowHeight: 400
       };
+      const spaceFromMouse = 4;
 
       expect(
         PopOver.calculatePosition({
           position,
           dimensions,
           reduce,
-          inlineWithTarget: true
+          inlineWithTarget: true,
+          spaceFromMouse
         })
       ).toEqual({
         x: 792,
