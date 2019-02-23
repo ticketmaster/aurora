@@ -82,19 +82,28 @@ class Accordion extends PureComponent {
     this.setState({ openSections: updatedOpenSections });
   };
 
-  render() {
+  clonedChildren = () => {
     const {
       state: { openSections }
     } = this;
 
-    const clonedChildren = React.Children.map(this.props.children, child =>
+    return React.Children.map(this.props.children, child =>
       React.cloneElement(child, {
         ...child.props,
         isOpen: !!openSections[child.props.id],
         toggle: this.onClick
       })
+    )};
+
+  render() {
+    return (
+      <Wrapper
+       className="accordion-wrapper"
+       data-allow-toggle
+      >
+        {this.clonedChildren()}
+      </Wrapper>
     );
-    return <Wrapper className="accordion-wrapper" data-allow-toggle>{clonedChildren}</Wrapper>;
   }
 }
 

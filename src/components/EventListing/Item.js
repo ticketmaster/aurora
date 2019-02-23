@@ -23,6 +23,45 @@ const Actions = styled(Event.Actions)`
   padding: 0;
 `
 
+// title,
+// subTitle,
+// dateTitle: getDateTitle({
+//   formattedDateKey,
+//   dateTBA,
+//   dateTitle,
+//   t,
+// }),
+// dateSubTitle: timeTBA ? '' : dateSubTitle,
+// buttonText,
+// buttonVariant,
+// variant: isAddOns ? 'withLink' : 'standard',
+// linkTitle: isAddOns ? t('event.addOnsAvailable') : '',
+// label,
+// labelVariant,
+// onClick,
+// url: seoUrl,
+// dateColor: colors.heliotrope.base,
+
+// const itemShape = {
+//   id: string,
+//   handleToggle: func,
+//   item: {title: string,
+//     subTitle: string,
+//     date: {
+//       formatted: string,
+//       month: string,
+//       day: string,
+//       time: string
+//     },
+//     link: {
+//       url: string,
+//       text: string,
+//       type: string,
+//       variant: string
+//     }
+//   }
+// }
+
 
 class Item extends PureComponent {
   handleClick = (e) => {

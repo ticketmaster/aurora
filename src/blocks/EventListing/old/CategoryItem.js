@@ -37,7 +37,7 @@ const CategoryItem = ({
 </Wrapper>
 );
 
-CategoryItem.propType = {
+CategoryItem.propTypes = {
   link: LinkType,
   icon: IconType,
   label: string,
