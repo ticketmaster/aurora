@@ -27,11 +27,7 @@ const Event = styled(Flex)`
     }
   }
 
-  .extra {
-    p {
-      color: #026cdf
-    }
-  }
+  .addon { color: #026cdf }
 
   ${({hasImage}) =>
     hasImage

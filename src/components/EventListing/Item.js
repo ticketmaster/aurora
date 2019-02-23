@@ -71,7 +71,7 @@ class Item extends PureComponent {
                     >
                       <Event.Title> {name} </Event.Title>
                       <Event.SubTitle> {venue.name} </Event.SubTitle>
-                      <Event.Text> ADDONS AVAILABLE </Event.Text>
+                      <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
                     </Event.Body>
                   </Grid.Item>
                   <Grid.Item>
