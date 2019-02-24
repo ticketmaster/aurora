@@ -78,6 +78,18 @@ rows:
     label="success"
     variant="dark"
   />
+  <br />
+  <StatusBadge
+    color={themes.global.onyx.light}
+    label="neutral"
+    variant="dark"
+  />
+  <br/ >
+  <StatusBadge
+    color={themes.global.success.base}
+    label="transparent"
+    variant="transparent"
+  />
 </div>
 ```
 
@@ -112,48 +124,72 @@ rows:
 </div>
 ```
 
-
-### Event Status Badges
+### Event Status Badge Types
 
 ```react
 ---
-<div>
-  <StatusBadge
-    color={themes.global.error.base}
-    label="Sold Out"
-    variant="dark"
-  />
-  <br />
-  <StatusBadge
-    color={themes.global.caution.dark}
-    label="Post Poned"
-    variant="dark"
-  />
-  <br />
-  <StatusBadge
-    color={themes.global.accent01.dark}
-    label="New Date"
-    variant="dark"
-  />
-  <br />
-  <StatusBadge
-    color={themes.global.success.base}
-    label="On Sale: Mon • Aug 27 • 10 AM"
-    variant="dark"
-  />
-  <br />
-  <StatusBadge
-    color={themes.global.onyx.light}
-    label="Currently Not On Sale"
-    variant="dark"
-  />
-  <br />
-  <StatusBadge
-    color={themes.global.success.base}
-    label="On Sale: Mon • Aug 27 • 10 AM"
-    variant="transparent"
-  />
-</div>
+<Container>
+  <Row>
+    <Column small={6} medium={6} large={6} xLarge={6}>
+      <StatusBadge
+        label="Sold Out"
+        type="error"
+      />
+      <br />
+      <StatusBadge
+        label="Post Poned"
+        type="caution"
+      />
+      <br />
+      <StatusBadge
+        label="New Date"
+        type="default"
+      />
+      <br />
+      <StatusBadge
+        label="On Sale: Mon • Aug 27 • 10 AM"
+        type="success"
+      />
+      <br />
+      <StatusBadge
+        label="Currently Not On Sale"
+        type="neutral"
+      />
+      <br />
+    </Column>
+    <Column small={6} medium={6} large={6} xLarge={6}>
+      <StatusBadge
+        label="Sold Out"
+        variant="light"
+        type="error_light"
+      />
+      <br />
+      
+      <StatusBadge
+        label="Post Poned"
+        variant="light"
+        type="caution_light"
+      />
+      <br />
+      
+      <StatusBadge
+        label="New Date"
+        variant="light"
+        type="default_light"
+      />
+      <br />
+      
+      <StatusBadge
+        label="On Sale: Mon • Aug 27 • 10 AM"
+        variant="light"
+        type="success_light"
+      />
+    </Column>
+  </Row>
+  
+  
+  
+</Container>
 ```
 
 
