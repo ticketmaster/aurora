@@ -50,7 +50,7 @@ rows:
   
 ```
 
-### Dark Status Badge
+### Dark Status Badges
 
 ```react
 ---
@@ -93,7 +93,7 @@ rows:
 </div>
 ```
 
-### Light Status Badge
+### Light Status Badges
 
 ```react
 ---
@@ -183,6 +183,12 @@ rows:
         label="On Sale: Mon • Aug 27 • 10 AM"
         variant="light"
         type="success_light"
+      />
+      <br />
+      <StatusBadge
+        label="On Sale: Mon • Aug 27 • 10 AM"
+        variant="light"
+        type="transparent"
       />
     </Column>
   </Row>

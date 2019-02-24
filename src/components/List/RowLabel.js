@@ -89,7 +89,10 @@ const LabelText = styled(Text)`
   overflow: hidden;
 `;
 
-const renderLabel = (label, variant) => {
+const renderLabel = (label, variant, type) => {
+  
+  
+  
   switch (variant) {
     case "alert":
       return <StatusBadge label={label} color={themes.global.error.base} />;

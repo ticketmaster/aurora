@@ -2,6 +2,8 @@ import styled from "styled-components";
 import COLORS from "../../../theme/colors";
 import Flex from "../../Flex"
 
+// dateColor: colors.heliotrope.base,
+
 const Date = styled(Flex)`
   color: ${COLORS.azure.hoverLight};
   margin-right: 8px;

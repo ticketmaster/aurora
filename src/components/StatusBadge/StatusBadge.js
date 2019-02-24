@@ -32,7 +32,7 @@ const {
   SUCCESS_LIGHT,
 } = BADGE_TYPES;
 
-const Badge_colors ={
+const BADGE_COLORS ={
   [CAUTION]: themes.global.caution.dark ,
   [CAUTION_LIGHT]: themes.global.caution.light ,
   [DEFAULT]: themes.global.accent01.dark,
@@ -64,7 +64,7 @@ export const StyledBadge = styled.div`
   letter-spacing: 0.25;
   text-transform: uppercase;
   background-color: ${({color, type}) =>
-    type ? Badge_colors[type] : color
+    type ? BADGE_COLORS[type] : color
   }
  
 `;
