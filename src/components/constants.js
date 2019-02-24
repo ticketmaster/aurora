@@ -8,14 +8,14 @@ export const DIRECTIONS = [TOP, BOTTOM, LEFT, RIGHT];
 // VARIANTS
 export const LIGHT = "light";
 export const DARK = "dark";
-export const VARIANTS = [LIGHT, DARK];
+export const TRANSPARENT = "transparent";
+export const VARIANTS = [LIGHT, DARK, TRANSPARENT];
 
 // BUTTON_VARIANTS
 export const STANDARD = "standard";
 export const SPECIAL = "special";
 export const OUTLINE = "outline";
 export const OUTLINE_GRAY = "outlineGray";
-export const TRANSPARENT = "transparent";
 export const BUTTON_VARIANTS = [
   STANDARD,
   SPECIAL,

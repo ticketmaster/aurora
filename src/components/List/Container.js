@@ -96,12 +96,16 @@ class ListContainer extends Component {
 
   render() {
     const { children, ...rest } = this.props;
+    console.log('children: ', children);
     const {
       mobilePortalContent,
       desktopPortalContent,
       openIndex,
       portalContentData
     } = this.state;
+
+
+
     const isBottomSheetOpen =
       openIndex !== ITEMS_COLLAPSED && !!mobilePortalContent;
     const { label, labelVariant } = portalContentData || {};
