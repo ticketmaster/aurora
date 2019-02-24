@@ -54,7 +54,7 @@ const DesktopLink = styled(Link)`
 
 const RowOptionsLink = ({ variant, isOpen, url, index, onClick, children }) =>
   variant === "withLink" && (
-    <Content>
+    <Content className="row__content--bottom">
       <Column>
         <MobileLink
           linkUrl={url}

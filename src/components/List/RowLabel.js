@@ -122,7 +122,7 @@ const RowLabel = ({ isOpen, index, variant, children, ...restProps }) => {
   const content = renderLabel(children, variant);
 
   return (
-    <Content {...restProps}>
+    <Content className="row__content--top" {...restProps}>
       <ContentColumn>
         <MobileWrapper
           className="row__label row__label--mobile"

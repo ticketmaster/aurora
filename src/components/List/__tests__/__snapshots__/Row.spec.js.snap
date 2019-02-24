@@ -288,7 +288,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
     onCloseRequest={[Function]}
   >
     <div
-      className="kewhBJ"
+      className="row__content--top kewhBJ"
     >
       <div
         className="fTDvgW"
@@ -727,7 +727,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="fVIaYl"
+      className="row__content--bottom fVIaYl"
     >
       <div
         className="jMKHiO"
@@ -1371,7 +1371,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="fVIaYl"
+      className="row__content--bottom fVIaYl"
     >
       <div
         className="jMKHiO"
