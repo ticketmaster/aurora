@@ -7,7 +7,7 @@ import Chevron from "./Chevron"
 import DefaultEvent from "./Event";
 import Flex from "../Flex";
 import Grid from "./Grid";
-import DisplayFor from "../DeviceSize";
+import Ellipsis from "./Event/Ellipsis";
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
 import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
@@ -23,9 +23,15 @@ const Event = styled(DefaultEvent)`
 
   .badge_active, .label_active {margin-top: -15px;}
   .badge_desktop, .label_desktop {display: none}
+  .button_cta {display: none}
+  .right__actions {width: 14px;}
+
   ${mediumAndUp`
     .badge_desktop, .label_desktop {display: inherit}
     .badge_mobile, .label_mobile {display: none}
+    .button_cta {display: inherit}
+    .ellipsis_cta {display: none}
+    .right__actions {width: auto;}
   `}
 
   .collapse {text-align: center;}
@@ -147,11 +153,16 @@ class Item extends PureComponent {
         </Event.Header>
         <Event.Actions column className="right__actions">
           <Button
+            className="button_cta"
             variant={button.variant}
             href={button.url}
           >
             {button.text}
           </Button>
+          
+
+          <Ellipsis className="ellipsis_cta" />
+
         </Event.Actions>
       </Event>
     )
