@@ -24,7 +24,8 @@ class RangeSlider extends React.Component {
     onFocus: PropTypes.func,
     onBlur: PropTypes.func,
     className: PropTypes.string,
-    threshold: PropTypes.number
+    threshold: PropTypes.number,
+    single: PropTypes.bool
   };
 
   static defaultProps = {
@@ -40,7 +41,8 @@ class RangeSlider extends React.Component {
     onBlur: null,
     className: "",
     disabled: false,
-    threshold: 0
+    threshold: 0,
+    single: false
   };
 
   constructor(props) {
@@ -229,8 +231,15 @@ class RangeSlider extends React.Component {
     return bounds;
   };
 
-  getClosestBound(value) {
+  getClosestBound = value => {
     const { bounds } = this.state;
+    const { single } = this.props;
+
+    // always move the right handle when single
+    if (single) {
+      return 1;
+    }
+
     let closestBound = 0;
 
     if (
@@ -241,7 +250,7 @@ class RangeSlider extends React.Component {
     }
 
     return closestBound;
-  }
+  };
 
   getBoundNeedMoving(value, closestBound) {
     const { bounds, recent } = this.state;
@@ -357,7 +366,7 @@ class RangeSlider extends React.Component {
 
   renderHandles = () => {
     const { bounds } = this.state;
-    const { disabled, min, max } = this.props;
+    const { disabled, min, max, single } = this.props;
     const offsets = bounds.map(this.calcOffset);
 
     return bounds.map((v, i) => {
@@ -366,6 +375,11 @@ class RangeSlider extends React.Component {
         [`slider__handle-${i + 1}`]: true,
         "slider__handle--disabled": disabled
       });
+
+      // do not render the first handle if single
+      if (i === 0 && single) {
+        return null;
+      }
 
       return (
         <Handle
