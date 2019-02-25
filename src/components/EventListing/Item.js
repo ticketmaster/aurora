@@ -11,12 +11,19 @@ import DisplayFor from "../DeviceSize";
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
 import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
+import {mediumAndUp} from "../../theme/mediaQueries";
 
 const Event = styled(DefaultEvent)`
   ${expandCollapse}
   ${adjustHeight}
 
   .badge_active, .label_active {margin-top: -15px;}
+  .badge_desktop, .label_desktop {display: none}
+  ${mediumAndUp`
+    .badge_desktop, .label_desktop {display: inherit}
+    .badge_mobile, .label_mobile {display: none}
+  `}
+
   .collapse {text-align: center;}
 
   padding: 4px 16px 4px 0;
@@ -28,6 +35,41 @@ class Item extends PureComponent {
     const {id, handleToggle} = this.props;
     handleToggle(id)
   }
+
+
+
+  renderBadge = (breakPoint, state) =>  {
+    const {item: {badge: {isVisible, status, type}}} = this.props;
+
+    if(status && type && isVisible){
+      return (
+        <Flex className={`badge_${breakPoint} badge_${state}`}>
+            <div>
+              <StatusBadge label={status} type={type} />
+            </div>
+        </Flex>
+      )
+    }
+    return null;
+  }
+
+  renderLabel = (breakPoint, status) => {
+    const { item: { label } } = this.props;
+    if(label && label.isVisible && label.text ){
+      return(
+          <Event.Text
+            accent="positive"
+            className={`label_${breakPoint}`}
+            variant="accent"
+            primary
+          >
+            {label.text}
+          </Event.Text>
+      )
+    }
+    return null;
+  }
+  
   render(){
     const {
       handleToggle,
@@ -64,34 +106,11 @@ class Item extends PureComponent {
                       grow={1}
                     >
                       <Event.Title> {title} </Event.Title>
-                      <Event.SubTitle> {subTitle} </Event.SubTitle>
-                      
-                      {label && label.isVisible &&
-                        <DisplayFor small>
-                          <Event.Text
-                            variant="accent"
-                            accent="positive"
-                            primary
-                          >
-                            {label.text}
-                          </Event.Text>
-                        </DisplayFor>
-                      }
+                      <Event.SubTitle> {subTitle} </Event.SubTitle>                      
 
-                      {badge && badge.isVisible &&
-                        <DisplayFor small>
-                         <Flex>
-                            <StatusBadge
-                              label={badge.status}
-                              type={badge.type}
-                            />
-                         </Flex>
-                        </DisplayFor>
-                      }
-                      
-                      {hasProducts &&
-                        <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
-                      }
+                      {this.renderLabel("mobile", "inactive")}
+                      {this.renderBadge("mobile", "inactive") }
+                      {hasProducts && <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>}
 
                     </Event.Body>
                   </Grid.Item>
@@ -104,29 +123,18 @@ class Item extends PureComponent {
                       className={shouldAnimate(isOpen, "header")}
                       grow={1}
                     >
-                      {label && label.isVisible &&
-                         <Event.Text
-                          variant="accent"
-                          accent="positive"
-                          className="label_active">
-                          {label.text}
-                        </Event.Text>
-                      }
-                       {badge && badge.isVisible &&
-                        <DisplayFor small>
-                         <Flex class="badge_active">
-                            <StatusBadge
-                              label={badge.status}
-                              type={badge.type}
-                            />
-                         </Flex>
-                        </DisplayFor>
-                      }
+                      {this.renderLabel("mobile", "active")}
+                      {this.renderBadge("mobile", "active") }
+
                       <Event.Title> {title} </Event.Title>
                     </Event.Body>
                   </Grid.Item>
                 </Grid>
               </Event.Body>
+
+              {!isOpen && this.renderBadge("desktop") }
+              {!isOpen && this.renderLabel("desktop") }
+              
             </Flex>
         </Event.Header>
         <Event.Actions column className="right__actions">
