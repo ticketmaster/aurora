@@ -6,5 +6,5 @@ Event Listing Component
 
 ```react
 ---
- <EventListing items={EVENTS_MANY} />
+ <EventListing items={EVENTLISTING_MANY} />
 ```

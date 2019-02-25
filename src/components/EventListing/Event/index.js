@@ -1,9 +1,10 @@
 import styled, {css} from "styled-components";
+import {mediumAnUp} from "../../../theme/mediaQueries";
 
 import Actions from "./Actions";
 import Body from "./Body";
 import Date from "./Date";
-import Extras from "./Extras";
+// import Extras from "./Extras";
 import Flex from "../../Flex";
 import Header from "./Header";
 import Label from "./Label";
@@ -19,14 +20,15 @@ const Event = styled(Flex)`
     padding: 10px 0 10px;
     margin: 0 16px 0 0;
   }
-
-  .badge{
-    text-align: right;
-    span {
-      display: block
+  
+  /* ${mediumAnUp`
+    .badge{
+      text-align: right;
+      span {
+        display: block
+      }
     }
-  }
-
+  `} */
   .addon { color: #026cdf }
 
   ${({hasImage}) =>
@@ -49,7 +51,7 @@ const Event = styled(Flex)`
 Event.Actions = Actions;
 Event.Body = Body;
 Event.Date = Date;
-Event.Extras = Extras;
+// Event.Extras = Extras;
 Event.Header = Header;
 Event.Label = Label;
 Event.Link = Link;

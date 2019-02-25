@@ -13,12 +13,10 @@ const EventListing = ({items}) => (
   <Wrapper>
    <Accordion>
       {items.map(({
-          id,
-          products,
-          eventUrlLink: venueUrl,
-          venues: [venue],
-          attractions,
-          ...rest
+         hasAddOns,
+         items: eventInfo,
+         id,
+         ...rest
       }) => (
           <Accordion.Item id={id} key={id}>
             {(isOpen, handleToggle) => (
@@ -26,18 +24,14 @@ const EventListing = ({items}) => (
                 <Item
                   isOpen={isOpen}
                   id={id}
-                  hasProducts={!!products}
-                  item={{...rest, venue}}
+                  hasProducts={hasAddOns}
+                  item={rest}
                   handleToggle={handleToggle}
                 />
                 <Accordion.Panel isOpen={isOpen}>
                   <EventInfo
                     isOpen={isOpen}
-                    items={{
-                      products,
-                      venue: {...venue, venueUrl},
-                      attractions
-                    }}
+                    items={eventInfo}
                   />
                 </Accordion.Panel>
               </React.Fragment>

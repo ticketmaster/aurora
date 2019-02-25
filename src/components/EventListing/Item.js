@@ -1,13 +1,13 @@
 import React, {PureComponent} from "react";
 import styled from 'styled-components';
 
+import {StatusBadge} from "../StatusBadge";
 import {Button} from "../Button";
-
-// import Overlay from "./Overlay";
 import Chevron from "./Chevron"
 import DefaultEvent from "./Event";
 import Flex from "../Flex";
 import Grid from "./Grid";
+import DisplayFor from "../DeviceSize";
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
 import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
@@ -16,52 +16,11 @@ const Event = styled(DefaultEvent)`
   ${expandCollapse}
   ${adjustHeight}
 
+  .badge_active, .label_active {margin-top: -15px;}
+  .collapse {text-align: center;}
+
   padding: 4px 16px 4px 0;
-`
-const Actions = styled(Event.Actions)`
-  width: 124px;
-  padding: 0;
-`
-
-// title,
-// subTitle,
-// dateTitle: getDateTitle({
-//   formattedDateKey,
-//   dateTBA,
-//   dateTitle,
-//   t,
-// }),
-// dateSubTitle: timeTBA ? '' : dateSubTitle,
-// buttonText,
-// buttonVariant,
-// variant: isAddOns ? 'withLink' : 'standard',
-// linkTitle: isAddOns ? t('event.addOnsAvailable') : '',
-// label,
-// labelVariant,
-// onClick,
-// url: seoUrl,
-// dateColor: colors.heliotrope.base,
-
-// const itemShape = {
-//   id: string,
-//   handleToggle: func,
-//   item: {title: string,
-//     subTitle: string,
-//     date: {
-//       formatted: string,
-//       month: string,
-//       day: string,
-//       time: string
-//     },
-//     link: {
-//       url: string,
-//       text: string,
-//       type: string,
-//       variant: string
-//     }
-//   }
-// }
-
+`;
 
 class Item extends PureComponent {
   handleClick = (e) => {
@@ -72,20 +31,16 @@ class Item extends PureComponent {
   render(){
     const {
       handleToggle,
-      id,
-      isOnSale = false,
-      isSoldOut = false,
-      isOpen = false,
-      image,
+      isOpen,
+      hasProducts,
       item: {
-        dates: {
-          status: { code }
-        },
-        datesFormatted: { dateSubTitle, dateTitle },
-        name,
-        venue
-      },
-      hasProducts = false
+        badge,
+        button,
+        date,
+        label,
+        title,
+        subTitle
+      }
     } = this.props;
     return(
       <Event>
@@ -97,8 +52,8 @@ class Item extends PureComponent {
           <Flex grow={1}>
             <Chevron isOpen={isOpen}/>
             <Event.Date column>
-              <Event.Title>{dateTitle}</Event.Title>
-              <Event.SubTitle>{dateSubTitle}</Event.SubTitle>
+              <Event.Title>{date.title}</Event.Title>
+              <Event.SubTitle>{date.subTitle}</Event.SubTitle>
             </Event.Date>
               <Event.Body grow={1}>
                 <Grid>
@@ -108,29 +63,80 @@ class Item extends PureComponent {
                       column
                       grow={1}
                     >
-                      <Event.Title> {name} </Event.Title>
-                      <Event.SubTitle> {venue.name} </Event.SubTitle>
-                      <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
+                      <Event.Title> {title} </Event.Title>
+                      <Event.SubTitle> {subTitle} </Event.SubTitle>
+                      
+                      {label && label.isVisible &&
+                        <DisplayFor small>
+                          <Event.Text
+                            variant="accent"
+                            accent="positive"
+                            primary
+                          >
+                            {label.text}
+                          </Event.Text>
+                        </DisplayFor>
+                      }
+
+                      {badge && badge.isVisible &&
+                        <DisplayFor small>
+                         <Flex>
+                            <StatusBadge
+                              label={badge.status}
+                              type={badge.type}
+                            />
+                         </Flex>
+                        </DisplayFor>
+                      }
+                      
+                      {hasProducts &&
+                        <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
+                      }
+
                     </Event.Body>
                   </Grid.Item>
                   <Grid.Item>
                     <Event.Body
                       alignCenter
-                      className={shouldAnimate(isOpen, "header")}
                       column
+                      isOpen
+                      justifyCenter
+                      className={shouldAnimate(isOpen, "header")}
                       grow={1}
                     >
-                      <Event.Title> {name} </Event.Title>
-                      <Event.SubTitle> {venue.name} </Event.SubTitle>
+                      {label && label.isVisible &&
+                         <Event.Text
+                          variant="accent"
+                          accent="positive"
+                          className="label_active">
+                          {label.text}
+                        </Event.Text>
+                      }
+                       {badge && badge.isVisible &&
+                        <DisplayFor small>
+                         <Flex class="badge_active">
+                            <StatusBadge
+                              label={badge.status}
+                              type={badge.type}
+                            />
+                         </Flex>
+                        </DisplayFor>
+                      }
+                      <Event.Title> {title} </Event.Title>
                     </Event.Body>
                   </Grid.Item>
                 </Grid>
               </Event.Body>
             </Flex>
         </Event.Header>
-        <Actions column className="right__actions">
-          <Button>See Tickets</Button>
-        </Actions>
+        <Event.Actions column className="right__actions">
+          <Button
+            variant={button.variant}
+            href={button.url}
+          >
+            {button.text}
+          </Button>
+        </Event.Actions>
       </Event>
     )
   }

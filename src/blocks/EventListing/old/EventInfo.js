@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { mergeAll, reduce, keys } from "ramda";
+
 import { shape } from "prop-types";
 import {
   AttractionsType,
@@ -26,39 +28,38 @@ const Wrapper = styled(Flex)`
 
 const EventInfo = ({
   isOpen,
-  items: {
-    attractions = null,
-    products = [],
-    venue: { city, name: venueName, state, venueUrl, __typename: venueTypeName }
-  }
+  items
 }) => {
-  const lineup = attractions ? attractions.slice(0, 2) : null;
+  const {lineup, venueinfo, addOns, more} = reduce((acc,value) => { 
+    const key = value.id;
+    acc[key] = {...value};
+    return acc;
+  },{},items);
+
   return (
     <Wrapper>
-      {lineup &&
-        lineup[0].name && (
+      {lineup && (
           <Flex column grow={1} shrink={1}>
             <Tile.Label className="label">LINEUP</Tile.Label>
-
-            {lineup.map(({ name, url, __typename }) => (
+            {lineup.items.map(({ title, url, id }) => (
               <CategoryItem
-                key={`product-${name}`}
-                icon={{ type: __typename }}
+                key={`lineup-${title}-${id}`}
+                icon={{ type: "avatar" }}
                 label="LINEUP"
-                link={{ href: url, text: name }}
+                link={{ href: url, text: title }}
               />
             ))}
 
             {lineup &&
-              attractions.length > 2 && (
+              lineup.items.length > 2 && (
                 <Tile.Link className="section" href="#" size="uno">
-                  + {attractions.length - lineup.length}
+                  + {lineup.items.length - lineup.length}
                 </Tile.Link>
               )}
           </Flex>
         )}
 
-      {venueName && (
+      {/* {venueName && (
         <Flex column grow={1} shrink={1}>
           <Tile.Label className="label">VENUE</Tile.Label>
           <CategoryItem
@@ -68,9 +69,9 @@ const EventInfo = ({
             text={`${city.name}, ${state.stateCode}`}
           />
         </Flex>
-      )}
+      )} */}
 
-      {products && (
+      {/* {products && (
         <Flex column grow={1} shrink={1}>
           <Tile.Label className="label">ADD-ONS</Tile.Label>
           {products.map(({ name, url, type }) => (
@@ -82,17 +83,12 @@ const EventInfo = ({
             />
           ))}
         </Flex>
-      )}
+      )} */}
     </Wrapper>
   );
 };
 
-EventInfo.propTypes = {
-  items: shape({
-    attractions: AttractionsType,
-    products: ProductsType,
-    venue: shape(VenueType)
-  }).isRequired
-};
+// EventInfo.propTypes = {
+//   items: ;
 
 export default EventInfo;

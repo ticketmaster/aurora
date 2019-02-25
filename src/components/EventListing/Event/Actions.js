@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 import Flex from "../../Flex"
+import typography from "../../../theme/typography";
+
+const { weight } = typography;
+
 
 const Actions = styled(Flex)`
-  padding: 4px 0;
-  margin-top: 9px;
+  margin-top: 16px;
 
   button {
-    max-height: 36px;
+    font-weight: ${weight.semiBold};
+    line-height: 36px;
     margin-bottom: 4px;
+    max-height: 36px;
+    min-width: 106px;
   }
 `
 

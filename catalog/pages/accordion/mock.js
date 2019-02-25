@@ -3781,6 +3781,75 @@ export const EVENTS_MANY = [
   }
 ];
 
+export const EVENTLISTING_ONE = {
+  "id": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders-Sat 6:45p",
+  "badge": {
+    "isVisible": false,
+    "label": "Currently not on sale",
+    "text": "Currently not on sale",
+    "variant": "neutral",
+    "type": "success",
+    "status": "offsale"
+  },
+  "button": {
+    "text": "More Info",
+    "variant": "outline",
+    "target": "__blank",
+    "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B4412146"
+  },
+  "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+  "subTitle": "Honda Center - Anaheim, CA",
+  "label": {
+    "text": "On Sale: Mon • Mar 4 • 10 AM",
+    "isVisible": true
+  },
+  "date": {
+    "subTitle": "Sat 6:45p",
+    "title": "Sep 7"
+  },
+  "hasAddOns": false,
+  "items": [
+    {
+      "title": "Lineup",
+      "id": "lineUp",
+      "items": [
+        {
+          "title": "PBR: Unleash the Beast",
+          "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
+          "id": "K8vZ9179q2V"
+        },
+        {
+          "title": "PBR: Professional Bull Riders",
+          "url": "/pbr-professional-bull-riders-tickets/artist/821993",
+          "id": "K8vZ9171l00"
+        }
+      ]
+    },
+    {
+      "title": "Venue Info",
+      "id": "venuenfo",
+      "items": [
+        {
+          "title": "Honda Center",
+          "subTitle": "Anaheim, CA",
+          "url": "/honda-center-tickets-anaheim/venue/73797",
+          "icon": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "size": 26,
+              "color": "#1f262d",
+              "children": null
+            },
+            "_owner": null,
+            "_store": {}
+          }
+        }
+      ]
+    }
+  ]
+};
+
 // const MAPPED_DATA = {
 //   event: {
 //     id: string,

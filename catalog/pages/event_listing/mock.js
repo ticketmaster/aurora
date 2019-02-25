@@ -3781,6 +3781,525 @@ export const EVENTS_MANY = [
   }
 ];
 
+
+export const EVENTLISTING_ONE = [{
+  "id": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders-Sat 6:45p",
+  "badge": {
+    "isVisible": false,
+    "label": "Currently not on sale",
+    "text": "Currently not on sale",
+    "variant": "neutral",
+    "type": "success",
+    "status": "offsale"
+  },
+  "button": {
+    "text": "More Info",
+    "variant": "outline",
+    "target": "__blank",
+    "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B4412146"
+  },
+  "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+  "subTitle": "Honda Center - Anaheim, CA",
+  "label": {
+    "text": "On Sale: Mon • Mar 4 • 10 AM",
+    "isVisible": true
+  },
+  "date": {
+    "subTitle": "Sat 6:45p",
+    "title": "Sep 7"
+  },
+  "hasAddOns": false,
+  "items": [
+    {
+      "title": "Lineup",
+      "id": "lineUp",
+      "items": [
+        {
+          "title": "PBR: Unleash the Beast",
+          "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
+          "id": "K8vZ9179q2V"
+        },
+        {
+          "title": "PBR: Professional Bull Riders",
+          "url": "/pbr-professional-bull-riders-tickets/artist/821993",
+          "id": "K8vZ9171l00"
+        }
+      ]
+    },
+    {
+      "title": "Venue Info",
+      "id": "venuenfo",
+      "items": [
+        {
+          "title": "Honda Center",
+          "subTitle": "Anaheim, CA",
+          "url": "/honda-center-tickets-anaheim/venue/73797",
+          "icon": {
+            "key": null,
+            "ref": null,
+            "props": {
+              "size": 26,
+              "color": "#1f262d",
+              "children": null
+            },
+            "_owner": null,
+            "_store": {}
+          }
+        }
+      ]
+    }
+  ]
+}];
+
+export const EVENTLISTING_MANY = [
+  {
+    "id": "Umphrey's McGee-Sat 6:00p",
+    "badge": {
+        "isVisible": false,
+        "variant": "success",
+        "type": "success",
+        "status": "onsale"
+    },
+    "button": {
+        "text": "See Tickets",
+        "variant": "standard",
+        "target": "__blank",
+        "url": "http://concerts.livenation.com/event/09005583C4FC31F2"
+    },
+    "title": "Umphrey's McGee",
+    "subTitle": "The Wiltern - Los Angeles, CA",
+    "date": {
+        "subTitle": "Sat 6:00p",
+        "title": "Mar 2"
+    },
+    "hasAddOns": false,
+    "items": [
+        {
+            "title": "Lineup",
+            "id": "lineUp",
+            "items": [
+                {
+                    "title": "Umphrey's McGee",
+                    "url": "/umphreys-mcgee-tickets/artist/821327",
+                    "id": "K8vZ9171DHf"
+                },
+                {
+                    "title": "Ghost-Note",
+                    "url": "/ghost-note-tickets/artist/2271652",
+                    "id": "K8vZ91741l7"
+                }
+            ]
+        },
+        {
+            "title": "Venue Info",
+            "id": "venuenfo",
+            "items": [
+                {
+                    "title": "The Wiltern",
+                    "subTitle": "Los Angeles, CA",
+                    "url": "/the-wiltern-tickets-los-angeles/venue/73790",
+                    "icon": null
+                }
+            ]
+        }
+    ]
+    },
+    {
+      "id": "Premium Level Seating: PBR: Unleash The Beast-Fri 7:45p",
+      "badge": {
+        "isVisible": false,
+        "label": "Currently not on sale",
+        "text": "Currently not on sale",
+        "variant": "neutral",
+        "type": "success",
+        "status": "offsale"
+      },
+      "button": {
+        "text": "More Info",
+        "variant": "outline",
+        "target": "__blank",
+        "url": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1"
+      },
+      "title": "Premium Level Seating: PBR: Unleash The Beast",
+      "subTitle": "Honda Center - Anaheim, CA",
+      "label": {
+        "text": "On Sale: Mon • Mar 4 • 10 AM",
+        "isVisible": true
+      },
+      "date": {
+        "subTitle": "Fri 7:45p",
+        "title": "Sep 6"
+      },
+      "hasAddOns": false,
+      "items": [
+        {
+          "title": "Lineup",
+          "id": "lineUp",
+          "items": [
+            {
+              "title": "PBR: Unleash the Beast",
+              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
+              "id": "K8vZ9179q2V"
+            },
+            {
+              "title": "PBR: Professional Bull Riders",
+              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
+              "id": "K8vZ9171l00"
+            }
+          ]
+        },
+        {
+          "title": "Venue Info",
+          "id": "venuenfo",
+          "items": [
+            {
+              "title": "Honda Center",
+              "subTitle": "Anaheim, CA",
+              "url": "/honda-center-tickets-anaheim/venue/73797",
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Premium Level Seating: PBR: Unleash The Beast-Sat 7:45p",
+      "badge": {
+        "isVisible": true,
+        "label": "Currently not on sale",
+        "text": "Currently not on sale",
+        "variant": "neutral",
+        "type": "success",
+        "status": "offsale"
+      },
+      "button": {
+        "text": "More Info",
+        "variant": "outline",
+        "target": "__blank",
+        "url": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1"
+      },
+      "title": "Premium Level Seating: PBR: Unleash The Beast",
+      "subTitle": "Honda Center - Anaheim, CA",
+      "label": {
+        "text": "On Sale: Mon • Mar 4 • 10 AM",
+        "isVisible": false
+      },
+      "date": {
+        "subTitle": "Sat 7:45p",
+        "title": "Sep 7"
+      },
+      "hasAddOns": false,
+      "items": [
+        {
+          "title": "Lineup",
+          "id": "lineUp",
+          "items": [
+            {
+              "title": "PBR: Unleash the Beast",
+              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
+              "id": "K8vZ9179q2V"
+            },
+            {
+              "title": "PBR: Professional Bull Riders",
+              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
+              "id": "K8vZ9171l00"
+            }
+          ]
+        },
+        {
+          "title": "Venue Info",
+          "id": "venuenfo",
+          "items": [
+            {
+              "title": "Honda Center",
+              "subTitle": "Anaheim, CA",
+              "url": "/honda-center-tickets-anaheim/venue/73797",
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+    ,{
+      "id": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders-Fri 7:45p",
+      "badge": {
+        "isVisible": false,
+        "label": "Currently not on sale",
+        "text": "Currently not on sale",
+        "variant": "neutral",
+        "type": "success",
+        "status": "offsale"
+      },
+      "button": {
+        "text": "More Info",
+        "variant": "outline",
+        "target": "__blank",
+        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B43D2144"
+      },
+      "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+      "subTitle": "Honda Center - Anaheim, CA",
+      "label": {
+        "text": "On Sale: Mon • Mar 4 • 10 AM",
+        "isVisible": true
+      },
+      "date": {
+        "subTitle": "Fri 7:45p",
+        "title": "Sep 6"
+      },
+      "hasAddOns": false,
+      "items": [
+        {
+          "title": "Lineup",
+          "id": "lineUp",
+          "items": [
+            {
+              "title": "PBR: Unleash the Beast",
+              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
+              "id": "K8vZ9179q2V"
+            },
+            {
+              "title": "PBR: Professional Bull Riders",
+              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
+              "id": "K8vZ9171l00"
+            }
+          ]
+        },
+        {
+          "title": "Venue Info",
+          "id": "venuenfo",
+          "items": [
+            {
+              "title": "Honda Center",
+              "subTitle": "Anaheim, CA",
+              "url": "/honda-center-tickets-anaheim/venue/73797",
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+    ,{
+      "id": "Kidz Bop - Upgrade Meet & Greet Packages-Sat 6:00p",
+      "badge": {
+        "isVisible": false,
+        "variant": "success",
+        "type": "success",
+        "status": "onsale"
+      },
+      "button": {
+        "text": "See Tickets",
+        "variant": "standard",
+        "target": "__blank",
+        "url": "https://livemu.sc/KIDZBOP-VIP"
+      },
+      "title": "Kidz Bop - Upgrade Meet & Greet Packages",
+      "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+      "date": {
+        "subTitle": "Sat 6:00p",
+        "title": "Sep 7"
+      },
+      "hasAddOns": false,
+      "items": [
+        {
+          "title": "Lineup",
+          "id": "lineUp",
+          "items": [
+            {
+              "title": "KIDZ BOP Kids",
+              "url": "/kidz-bop-kids-tickets/artist/1852697",
+              "id": "K8vZ917o7w7"
+            }
+          ]
+        },
+        {
+          "title": "Venue Info",
+          "id": "venuenfo",
+          "items": [
+            {
+              "title": "FivePoint Amphitheatre presented by Mercury Insurance",
+              "subTitle": "Irvine, CA",
+              "url": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+    ,{
+      "id": "KIDZ BOP World Tour 2019-Sat 6:00p",
+      "badge": {
+        "isVisible": false,
+        "variant": "success",
+        "type": "success",
+        "status": "onsale"
+      },
+      "button": {
+        "text": "See Tickets",
+        "variant": "standard",
+        "target": "__blank",
+        "url": "http://concerts.livenation.com/event/09005584144744D3"
+      },
+      "title": "KIDZ BOP World Tour 2019",
+      "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+      "date": {
+        "subTitle": "Sat 6:00p",
+        "title": "Sep 7"
+      },
+      "hasAddOns": true,
+      "items": [
+        {
+          "title": "Lineup",
+          "id": "lineUp",
+          "items": [
+            {
+              "title": "KIDZ BOP Kids",
+              "url": "/kidz-bop-kids-tickets/artist/1852697",
+              "id": "K8vZ917o7w7"
+            }
+          ]
+        },
+        {
+          "title": "Venue Info",
+          "id": "venuenfo",
+          "items": [
+            {
+              "title": "FivePoint Amphitheatre presented by Mercury Insurance",
+              "subTitle": "Irvine, CA",
+              "url": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        },
+        {
+          "id": "addOns",
+          "title": "Add-Ons",
+          "items": [
+            {
+              "id": "parking",
+              "title": "Parking",
+              "subItems": [
+                {
+                  "id": "vv1ke8v4-EGAGJ-tP",
+                  "title": "KIDZ BOP: Fivepoint Amphitheatre Parking",
+                  "url": "http://concerts.livenation.com/event/090055867C9A1A65",
+                  "type": "Parking"
+                }
+              ],
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            },
+            {
+              "id": "specialentry",
+              "title": "Special Entry",
+              "subItems": [
+                {
+                  "id": "vv1ke8v4-EGAuC-nF",
+                  "title": "KIDZ BOP: Fivepoint Amphitheatre Fastlane (NOT A CONCERT TICKET)",
+                  "url": "http://concerts.livenation.com/event/090055867D3A1A88",
+                  "type": "Special Entry"
+                }
+              ],
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            },
+            {
+              "id": "vip",
+              "title": "VIP",
+              "subItems": [
+                {
+                  "id": "vv170Z4bGkm7VvP7",
+                  "title": "Kidz Bop - Upgrade Meet & Greet Packages",
+                  "url": "https://livemu.sc/KIDZBOP-VIP",
+                  "type": "VIP"
+                }
+              ],
+              "icon": {
+                "key": null,
+                "ref": null,
+                "props": {
+                  "size": 26,
+                  "color": "#1f262d",
+                  "children": null
+                },
+                "_owner": null,
+                "_store": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+    
+  ];
+
 // const MAPPED_DATA = {
 //   event: {
 //     id: string,
