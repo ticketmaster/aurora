@@ -6,6 +6,9 @@ const Wrapper = styled(AuroraText)`
   line-height: 20px;
   max-height: 20px;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
   overflow: hidden;
 `;
 

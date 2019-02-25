@@ -17,6 +17,10 @@ const Event = styled(DefaultEvent)`
   ${expandCollapse}
   ${adjustHeight}
 
+  div:empty {
+    display: none;
+  }
+
   .badge_active, .label_active {margin-top: -15px;}
   .badge_desktop, .label_desktop {display: none}
   ${mediumAndUp`
@@ -36,14 +40,15 @@ class Item extends PureComponent {
     handleToggle(id)
   }
 
-
-
   renderBadge = (breakPoint, state) =>  {
-    const {item: {badge: {isVisible, status, type}}} = this.props;
+    const {item: {badge: {isVisible, status, type}} } = this.props;
 
     if(status && type && isVisible){
       return (
-        <Flex className={`badge_${breakPoint} badge_${state}`}>
+        <Flex
+          alignCenter={breakPoint === "desktop" && state === "inactive"}
+          className={`badge_${breakPoint} badge_${state} `}
+        >
             <div>
               <StatusBadge label={status} type={type} />
             </div>
@@ -110,6 +115,7 @@ class Item extends PureComponent {
 
                       {this.renderLabel("mobile", "inactive")}
                       {this.renderBadge("mobile", "inactive") }
+
                       {hasProducts && <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>}
 
                     </Event.Body>
@@ -123,8 +129,8 @@ class Item extends PureComponent {
                       className={shouldAnimate(isOpen, "header")}
                       grow={1}
                     >
-                      {this.renderLabel("mobile", "active")}
-                      {this.renderBadge("mobile", "active") }
+                      {this.renderLabel("desktop", "active")}
+                      {this.renderBadge("desktop", "active") }
 
                       <Event.Title> {title} </Event.Title>
                     </Event.Body>
@@ -132,8 +138,10 @@ class Item extends PureComponent {
                 </Grid>
               </Event.Body>
 
-              {!isOpen && this.renderBadge("desktop") }
-              {!isOpen && this.renderLabel("desktop") }
+              <div className={shouldAnimate(!isOpen, "header")}>
+                {this.renderBadge("desktop", "inactive")}
+                {this.renderLabel("desktop", "inactive")}
+              </div>
               
             </Flex>
         </Event.Header>

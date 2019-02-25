@@ -9,6 +9,9 @@ const Wrapper = styled(AuroraText)`
   color: rgba(38, 38, 38, 0.6);
   line-height: 16px;
   margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
   overflow: hidden;
   position: relative;
 `;

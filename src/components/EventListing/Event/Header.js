@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import Flex from "../../Flex";
-import {themes} from "../../../theme";
+import COLORS from "../../../theme/colorThemes";
+import SPACING from "../../../theme/spacing";
+
+const {global} = COLORS;
 
 const Header = styled(Flex)`
-  padding: 12px 0;
-  border: 4px solid white;
   border-left: none;
+  border: ${SPACING.slim} solid ${global.white.base};
   cursor: pointer;
+  padding: 12px 0;
 
   :hover {
-    background: ${themes.tm.primary.light};
+    background: ${global.primary.light};
   }
 `
 

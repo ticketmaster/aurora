@@ -14,7 +14,6 @@ const Wrapper = styled(AuroraText)`
   font-weight: ${weight.semiBold};
   line-height: 16px;
   margin: 0;
-  overflow: hidden;
   position: relative;
 `;
 
