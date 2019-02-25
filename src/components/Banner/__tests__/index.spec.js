@@ -5,6 +5,8 @@ import renderer from "react-test-renderer";
 import { ClearIcon } from "../../Icons";
 import Banner from "..";
 
+jest.mock("../../Button");
+
 describe("<Banner />", () => {
   it("renders correctly when closed", () => {
     const { container } = render(renderBanner());

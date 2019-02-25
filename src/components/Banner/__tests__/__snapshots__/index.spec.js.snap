@@ -5,7 +5,7 @@ exports[`<Banner /> renders correctly when closed 1`] = `<div />`;
 exports[`<Banner /> renders correctly when open 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dQORvU"
+    class="collapsed visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -32,7 +32,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
 exports[`<Banner /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dQORvU"
+    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -91,7 +91,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 exports[`<Banner /> renders correctly with close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dQORvU"
+    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -143,34 +143,6 @@ exports[`<Banner /> renders correctly with close button 1`] = `
         </div>
       </div>
     </div>
-    <button
-      class="sc-kAzzGY hZerWp"
-    >
-      <svg
-        class="sc-chPdSV fVwLep"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Close banner
-        </title>
-        <g
-          fill="none"
-          fill-rule="evenodd"
-        >
-          <path
-            d="M16 0H0v16h16z"
-          />
-          <path
-            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
-            fill="currentColor"
-            fill-rule="nonzero"
-          />
-        </g>
-      </svg>
-    </button>
   </div>
 </div>
 `;
@@ -178,7 +150,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 exports[`<Banner /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dQORvU"
+    class="collapsed visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -207,7 +179,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
 exports[`<Banner /> renders correctly with custom icon 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dQORvU"
+    class="collapsed visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -258,7 +230,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 exports[`<Banner /> renders correctly with custom title for the close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dQORvU"
+    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -316,34 +288,6 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
         />
       </div>
     </div>
-    <button
-      class="sc-kAzzGY hZerWp"
-    >
-      <svg
-        class="sc-chPdSV fVwLep"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          test close banner text
-        </title>
-        <g
-          fill="none"
-          fill-rule="evenodd"
-        >
-          <path
-            d="M16 0H0v16h16z"
-          />
-          <path
-            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
-            fill="currentColor"
-            fill-rule="nonzero"
-          />
-        </g>
-      </svg>
-    </button>
   </div>
 </div>
 `;
@@ -351,7 +295,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dQORvU"
+    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -410,34 +354,6 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
         </div>
       </div>
     </div>
-    <button
-      class="sc-kAzzGY hZerWp"
-    >
-      <svg
-        class="sc-chPdSV fVwLep"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Close banner
-        </title>
-        <g
-          fill="none"
-          fill-rule="evenodd"
-        >
-          <path
-            d="M16 0H0v16h16z"
-          />
-          <path
-            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
-            fill="currentColor"
-            fill-rule="nonzero"
-          />
-        </g>
-      </svg>
-    </button>
   </div>
 </div>
 `;
@@ -445,7 +361,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 exports[`<Banner /> renders correctly with link 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dQORvU"
+    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
     style="max-height: 56px;"
   >
     <div
@@ -503,34 +419,6 @@ exports[`<Banner /> renders correctly with link 1`] = `
         />
       </div>
     </div>
-    <button
-      class="sc-kAzzGY hZerWp"
-    >
-      <svg
-        class="sc-chPdSV fVwLep"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Close banner
-        </title>
-        <g
-          fill="none"
-          fill-rule="evenodd"
-        >
-          <path
-            d="M16 0H0v16h16z"
-          />
-          <path
-            d="M8 6.905L14.678.227a.774.774 0 0 1 1.095 1.095L9.095 8l6.678 6.678a.774.774 0 0 1-1.095 1.095L8 9.095l-6.678 6.678a.774.774 0 0 1-1.095-1.095L6.905 8 .227 1.322A.774.774 0 0 1 1.322.227L8 6.905z"
-            fill="currentColor"
-            fill-rule="nonzero"
-          />
-        </g>
-      </svg>
-    </button>
   </div>
 </div>
 `;
