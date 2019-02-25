@@ -7,9 +7,8 @@ const {global} = COLORS;
 
 const Header = styled(Flex)`
   border-left: none;
-  border: ${SPACING.slim} solid ${global.white.base};
   cursor: pointer;
-  padding: 12px 0;
+  padding: 12px 8px 0;
 
   :hover {
     background: ${global.primary.light};

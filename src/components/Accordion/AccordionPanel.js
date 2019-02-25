@@ -3,11 +3,14 @@ import { node } from "prop-types";
 import COLORS from "../../theme/colors";
 import {expand, collapse } from "../../theme/animations";
 
-const Panel = styled.div`
+const AccordionPanel = styled.div.attrs({
+  class: 'accordion_panel'
+})`
   overflow: hidden;
-  color: ${COLORS.blackPearl};
+  /* color: ${COLORS.blackPearl};
+  background: white; */
 
-  && ::before {
+  /* && ::before {
     background: ${COLORS.diatomite};
     content: " ";
     display: flex;
@@ -18,21 +21,23 @@ const Panel = styled.div`
 
   &&:first-child::before {
     width: 50px;
-  }
+  } */
 
   ${({ isOpen }) =>
     isOpen
       ? css`
-          background-color: ${COLORS.white.base};
+          /* background-color: ${COLORS.white.base}; */
           ${expand};
         `
       : css`
           ${collapse};
+          /* background: black; */
+          /* margin:50px; */
         `};
 `;
 
-Panel.propTypes = {
+AccordionPanel.propTypes = {
   children: node
 };
 
-export default Panel;
+export default AccordionPanel;

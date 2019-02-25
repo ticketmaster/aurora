@@ -2,11 +2,11 @@ import React, { PureComponent } from "react";
 import { bool, node } from "prop-types";
 import styled from "styled-components";
 
-import Section from "./Section";
-import Panel from "./Panel";
+import AccordionItem from "./AccordionItem";
+import AccordionPanel from "./AccordionPanel";
 
 const Wrapper = styled.div`
-  > :nth-child(n + 1)::after {
+  /* > :nth-child(n + 1)::after {
     background: #ebebeb;
     content: " ";
     display: flex;
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     height: 1px;
     margin-left: 16px;
     margin-right: 16px;
-  }
+  } */
 `;
 
 class Accordion extends PureComponent {
@@ -107,6 +107,6 @@ class Accordion extends PureComponent {
   }
 }
 
-Accordion.Item = Section;
-Accordion.Panel = Panel;
+Accordion.Item = AccordionItem;
+Accordion.Panel = AccordionPanel;
 export default Accordion;

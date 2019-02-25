@@ -5,12 +5,11 @@ import spacing from "../../../theme/spacing";
 
 const { weight } = typography;
 
-
 const Actions = styled(Flex)`
-  margin-top: ${spacing.moderate};
-
-  button {
+  margin-top: 11px;
+  button, a {
     font-weight: ${weight.semiBold};
+    justify-content: center;
     line-height: 36px;
     margin-bottom: ${spacing.slim};
     max-height: 36px;

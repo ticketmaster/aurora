@@ -20,7 +20,7 @@ const Event = styled(Flex)`
     background: ${global.white.base};
 
   .hover--area {
-    padding: 10px 0 10px;
+    padding: 10px 8px 10px;
     margin: 0 ${SPACING.moderate} 0 0;
   }
   

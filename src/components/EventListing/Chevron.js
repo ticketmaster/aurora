@@ -6,7 +6,8 @@ import AuroraChevron from "../Icons/Chevron";
 
 const Wrapper = styled.div`
   position: relative;
-  width: 46px;
+  display: flex;
+  width: 30px;
 
   ${({ isOpen }) =>
     isOpen &&
@@ -21,8 +22,9 @@ const StyledComponent = styled(AuroraChevron)`
   color: #262626;
   transition: all 0.1s linear;
   position: absolute;
-  left: 17px;
-  top: 12px;
+  left: 1px;
+  top: -6px;
+  width: 13px;
 `;
 
 class Chevron extends PureComponent {

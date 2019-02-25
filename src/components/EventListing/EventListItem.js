@@ -5,9 +5,9 @@ import {StatusBadge} from "../StatusBadge";
 import {Button} from "../Button";
 import Chevron from "./Chevron"
 import DefaultEvent from "./Event";
+import Ellipsis from "./Event/Ellipsis";
 import Flex from "../Flex";
 import Grid from "./Grid";
-import Ellipsis from "./Event/Ellipsis";
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
 import {shouldAnimate, shouldChangeHeight} from "./utils/animation";
@@ -22,24 +22,34 @@ const Event = styled(DefaultEvent)`
   }
 
   .badge_active, .label_active {margin-top: -15px;}
+
   .badge_desktop, .label_desktop {display: none}
+  
   .button_cta {display: none}
-  .right__actions {width: 14px;}
+  
+  .right__actions {width: 14px; padding-right: 16px;}
 
   ${mediumAndUp`
-    .badge_desktop, .label_desktop {display: inherit}
-    .badge_mobile, .label_mobile {display: none}
-    .button_cta {display: inherit}
-    .ellipsis_cta {display: none}
-    .right__actions {width: auto;}
+    .badge_desktop, .label_desktop { display: inherit }
+    
+    .badge_mobile, .label_mobile { display: none }
+    
+    .button_cta {
+      align-items: center;
+      display: inherit
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .ellipsis_cta { display: none }
+    
+    .right__actions { width: auto; }
   `}
 
   .collapse {text-align: center;}
-
-  padding: 4px 16px 4px 0;
 `;
 
-class Item extends PureComponent {
+class EventListItem extends PureComponent {
   handleClick = (e) => {
     e.preventDefault();
     const {id, handleToggle} = this.props;
@@ -66,6 +76,10 @@ class Item extends PureComponent {
 
   renderLabel = (breakPoint, status) => {
     const { item: { label } } = this.props;
+    const [onSaleText, time] = label && label.text && label.text.split(": ");
+    console.log('time: ', time);
+    console.log('onSaleText: ', onSaleText);
+    const isDesktop = breakPoint !== "mobile";
     if(label && label.isVisible && label.text ){
       return(
           <Event.Text
@@ -74,7 +88,13 @@ class Item extends PureComponent {
             variant="accent"
             primary
           >
-            {label.text}
+            {isDesktop &&
+              <Flex alignEnd column>
+                <Event.Text>{onSaleText}: <br/> </Event.Text>
+                <Event.Text>{time}</Event.Text>
+              </Flex>
+            }
+            {!isDesktop && label.text}
           </Event.Text>
       )
     }
@@ -96,13 +116,13 @@ class Item extends PureComponent {
       }
     } = this.props;
     return(
-      <Event>
+      <Event className="eventList_item">
         <Event.Header
           basis={1}
           className={shouldChangeHeight(isOpen,"hover--area")}
           onClick={this.handleClick}
         >
-          <Flex grow={1}>
+          <Flex grow={1} alignCenter>
             <Chevron isOpen={isOpen}/>
             <Event.Date column>
               <Event.Title>{date.title}</Event.Title>
@@ -119,8 +139,8 @@ class Item extends PureComponent {
                       <Event.Title> {title} </Event.Title>
                       <Event.SubTitle> {subTitle} </Event.SubTitle>                      
 
-                      {this.renderLabel("mobile", "inactive")}
-                      {this.renderBadge("mobile", "inactive") }
+                      {label && this.renderLabel("mobile", "inactive")}
+                      {badge && this.renderBadge("mobile", "inactive") }
 
                       {hasProducts && <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>}
 
@@ -135,8 +155,8 @@ class Item extends PureComponent {
                       className={shouldAnimate(isOpen, "header")}
                       grow={1}
                     >
-                      {this.renderLabel("desktop", "active")}
-                      {this.renderBadge("desktop", "active") }
+                      {label && this.renderLabel("desktop", "active")}
+                      {badge && this.renderBadge("desktop", "active") }
 
                       <Event.Title> {title} </Event.Title>
                     </Event.Body>
@@ -145,11 +165,11 @@ class Item extends PureComponent {
               </Event.Body>
 
               <div className={shouldAnimate(!isOpen, "header")}>
-                {this.renderBadge("desktop", "inactive")}
-                {this.renderLabel("desktop", "inactive")}
+                {badge && this.renderBadge("desktop", "inactive")}
+                {label && this.renderLabel("desktop", "inactive")}
               </div>
               
-            </Flex>
+          </Flex>
         </Event.Header>
         <Event.Actions column className="right__actions">
           <Button
@@ -159,14 +179,11 @@ class Item extends PureComponent {
           >
             {button.text}
           </Button>
-          
-
           <Ellipsis className="ellipsis_cta" />
-
         </Event.Actions>
       </Event>
     )
   }
 }
 
-export default Item;
+export default EventListItem;
