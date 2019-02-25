@@ -148,21 +148,23 @@ const alertIcons = {
   }
 };
 
-const AlertIcon = ({ type, size, children, ...props }) =>
-  alertIcons[type][size](themes.global.caution.base, children, props);
+const AlertIcon = ({ color, type, size, children, ...props }) =>
+  alertIcons[type][size](color, children, props);
 
 AlertIcon.displayName = "AlertIcon";
 
 AlertIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null
+  children: null,
+  color: themes.global.caution.base
 };
 
 AlertIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default AlertIcon;

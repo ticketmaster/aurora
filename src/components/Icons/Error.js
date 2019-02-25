@@ -142,21 +142,23 @@ const errorIcons = {
   }
 };
 
-const ErrorIcon = ({ type, size, children, ...props }) =>
-  errorIcons[type][size](themes.global.error.base, children, props);
+const ErrorIcon = ({ color, type, size, children, ...props }) =>
+  errorIcons[type][size](color, children, props);
 
 ErrorIcon.displayName = "ErrorIcon";
 
 ErrorIcon.defaultProps = {
   size: allSizes[0],
   type: types[0],
-  children: null
+  children: null,
+  color: themes.global.error.base
 };
 
 ErrorIcon.propTypes = {
   size: PropTypes.oneOf(allSizes),
   type: PropTypes.oneOf(types),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default ErrorIcon;

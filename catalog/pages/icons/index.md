@@ -209,7 +209,7 @@ rows:
 
 <Row>
   <Column medium={3}>
-    <div style={iconStyle}><WarningIcon height={36} width={36}><title>Warning Icon</title></WarningIcon></div>
+    <div style={iconStyle}><WarningIcon size={36}><title>Warning Icon</title></WarningIcon></div>
     <div style={iconLabelStyle}>Warning Icon</div>
   </Column>
 </Row>
@@ -522,7 +522,7 @@ rows:
   </Column>
    <Column medium={3}>
     <div style={iconStyle}>
-      <UserIcon>
+      <UserIcon size="regular">
         <title>User Icon</title>
       </UserIcon>
     </div>
@@ -535,6 +535,22 @@ rows:
       </VenueSearchIcon>
     </div>
     <div style={iconLabelStyle}>VenueSearch icon</div>
+  </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <PlusIcon>
+        <title>Plus Icon</title>
+      </PlusIcon>
+    </div>
+    <div style={iconLabelStyle}>Plus icon</div>
+  </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <CreateNewIcon>
+        <title>CreateNew Icon</title>
+      </CreateNewIcon>
+    </div>
+    <div style={iconLabelStyle}>CreateNew icon</div>
   </Column>
  </Row>
 </Container>

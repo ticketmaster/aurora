@@ -16,16 +16,16 @@ const PlusIcon = ({ children, color, ...props }) => (
         <rect x="0" y="0" width="24" height="24" />
         <path
           d="M4,12 L20,12"
-          fill={color}
-          {...color !== "currentColor" && { fillOpacity: ".65" }}
+          stroke={color}
+          {...color !== "currentColor" && { strokeOpacity: ".65" }}
           fillRule="nonzero"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
         <path
           d="M12,4 L12,20"
-          fill={color}
-          {...color !== "currentColor" && { fillOpacity: ".65" }}
+          stroke={color}
+          {...color !== "currentColor" && { strokeOpacity: ".65" }}
           fillRule="nonzero"
           strokeLinecap="round"
           strokeLinejoin="round"

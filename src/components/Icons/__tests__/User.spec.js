@@ -15,4 +15,14 @@ describe("UserIcon", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it("renders correctly with string size value", () => {
+    const component = renderer.create(
+      <UserIcon size="regular" color="#000">
+        {children}
+      </UserIcon>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });
