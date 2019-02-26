@@ -2,6 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { mergeAll, reduce, keys } from "ramda";
 import { shouldChangeHeight } from "./utils/animation";
+import { mediumAndUp } from "../../theme/mediaQueries";
 // import { shape } from "prop-types";
 // import {
 //   AttractionsType,
@@ -18,15 +19,15 @@ import { expandCollapse, expand, collapse } from "../../theme/animations";
 
 const Wrapper = styled(Flex)`
   background: white;
-  border-top: 1px solid ${COLORS.diatomite};
-  margin: 0 16px;
-  padding: 16px 27px;
 
-  /* ${({ isOpen }) =>
-    isOpen &&
-    css`
-      border-top: ${COLORS.diatomite};
-    `} */
+  ${mediumAndUp`
+    border-top: 1px solid ${COLORS.diatomite};
+    margin: 0 16px;
+    padding: 16px 27px;
+  
+  `}
+
+  height: 0;
 
   && > div:nth-child(n + 2) {
     margin-left: 16px;
@@ -37,21 +38,12 @@ const Wrapper = styled(Flex)`
   }
 `;
 
-const Foo = styled.div`
-  ${expandCollapse};
-`;
-
 const EventListPanel = ({ isOpen, items }) => (
   // const {lineup, venuenfo, addOns, more} = reduce((acc,value) => {
   //   const key = value.id;
   //   acc[key] = {...value};
   //   return acc;
   // },{},items);
-
-  // console.log('more: ', more);
-  // console.log('addOns: ', addOns);
-  // console.log('venueinfo: ', venuenfo);
-  // console.log('lineup: ', lineup);
 
   <Wrapper
     className={shouldChangeHeight(isOpen, "eventList_panel")}

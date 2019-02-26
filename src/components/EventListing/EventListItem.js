@@ -39,7 +39,13 @@ const Event = styled(DefaultEvent)`
     padding-right: 16px;
   }
 
+  .event_title_desktop {display: none}
+
   ${mediumAndUp`
+    .event_title_desktop {display: inherit}
+    .event_title_mobile {display: none}
+    
+
     .badge_desktop, .label_desktop { display: inherit }
     .badge_mobile, .label_mobile { display: none }
     
@@ -62,6 +68,7 @@ const Event = styled(DefaultEvent)`
   }
 `;
 
+
 class EventListItem extends PureComponent {
   handleClick = e => {
     e.preventDefault();
@@ -83,7 +90,6 @@ class EventListItem extends PureComponent {
           className={`badge_${breakPoint} badge_${state} `}
         >
           <div>
-            {" "}
             <StatusBadge label={status} type={type} />
           </div>
         </Flex>
@@ -137,12 +143,12 @@ class EventListItem extends PureComponent {
           onClick={this.handleClick}
         >
           <Flex grow={1} alignCenter>
-            <Chevron isOpen={isOpen} />
+            <Chevron isOpen={isOpen}/>
             <Event.Date column>
               <Event.Title>{date.title}</Event.Title>
               <Event.SubTitle>{date.subTitle}</Event.SubTitle>
             </Event.Date>
-            <Event.Body grow={1}>
+            <Event.Body grow={1} className="event_title_desktop">
               <Grid>
                 <Grid.Item>
                   <Event.Body
@@ -158,8 +164,7 @@ class EventListItem extends PureComponent {
 
                     {hasProducts && (
                       <Event.Text className="addon">
-                        {" "}
-                        ADDONS AVAILABLE{" "}
+                        ADDONS AVAILABLE
                       </Event.Text>
                     )}
                   </Event.Body>
@@ -173,10 +178,33 @@ class EventListItem extends PureComponent {
                     className={shouldAnimate(isOpen, "header")}
                     grow={1}
                   >
-                    {label && this.renderLabel("desktop")}
-                    {badge && this.renderBadge("mobile", "active")}
+                    {label && this.renderLabel("desktop", "active")}
+                    {badge && badge.isVisible && this.renderBadge("desktop")}
 
                     <Event.Title> {title} </Event.Title>
+                  </Event.Body>
+                </Grid.Item>
+              </Grid>
+            </Event.Body>
+            <Event.Body grow={1} className="event_title_mobile">
+              <Grid>
+                <Grid.Item>
+                  <Event.Body
+                    className="header"
+                    column
+                    grow={1}
+                  >
+                    <Event.Title> {title} </Event.Title>
+                    <Event.SubTitle> {subTitle} </Event.SubTitle>
+
+                    {label && this.renderLabel("mobile", "inactive")}
+                    {badge && this.renderBadge("mobile", "inactive")}
+
+                    {hasProducts && (
+                      <Event.Text className="addon">
+                        ADDONS AVAILABLE
+                      </Event.Text>
+                    )}
                   </Event.Body>
                 </Grid.Item>
               </Grid>
