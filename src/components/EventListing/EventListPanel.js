@@ -18,23 +18,15 @@ import { expandCollapse, expand, collapse } from "../../theme/animations";
 
 const Wrapper = styled(Flex)`
    background: white;
+  border-top: 1px solid ${COLORS.diatomite};
+  margin: 0 16px;
+  padding: 16px 27px;
 
-  ${({isOpen}) => 
+  /* ${({ isOpen }) =>
     isOpen &&
     css`
       border-top: ${COLORS.diatomite};
-    `
-  }
-    /* background: ${COLORS.diatomite};
-    content: " ";
-    display: flex;
-    height: 1px;
-    margin-left: 16px;
-    margin-right: 16px; */
-  
-   
-  /* > div {${expandCollapse}} */
-  padding: 16px 16px 16px 47px;
+    `} */
 
   && > div:nth-child(n + 2) {
     margin-left: 16px;
