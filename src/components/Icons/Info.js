@@ -121,21 +121,23 @@ const infoIcons = {
   }
 };
 
-const InfoIcon = ({ type, size, children, ...props }) =>
-  infoIcons[type][size](themes.global.primary.base, children, props);
+const InfoIcon = ({ color, type, size, children, ...props }) =>
+  infoIcons[type][size](color, children, props);
 
 InfoIcon.displayName = "InfoIcon";
 
 InfoIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null
+  children: null,
+  color: themes.global.primary.base
 };
 
 InfoIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default InfoIcon;

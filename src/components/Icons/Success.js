@@ -121,21 +121,23 @@ const successIcons = {
   }
 };
 
-const SuccessIcon = ({ type, size, children, ...props }) =>
-  successIcons[type][size](themes.global.success.base, children, props);
+const SuccessIcon = ({ color, type, size, children, ...props }) =>
+  successIcons[type][size](color, children, props);
 
 SuccessIcon.displayName = "SuccessIcon";
 
 SuccessIcon.defaultProps = {
   type: types[0],
   size: allSizes[0],
-  children: null
+  children: null,
+  color: themes.global.success.base
 };
 
 SuccessIcon.propTypes = {
   type: PropTypes.oneOf(types),
   size: PropTypes.oneOf(allSizes),
-  children: PropTypes.node
+  children: PropTypes.node,
+  color: PropTypes.string
 };
 
 export default SuccessIcon;

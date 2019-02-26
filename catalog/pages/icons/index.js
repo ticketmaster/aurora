@@ -49,7 +49,9 @@ import {
   TicketIcon,
   TicketsIcon,
   UserIcon,
-  VenueSearchIcon
+  VenueSearchIcon,
+  PlusIcon,
+  CreateNewIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -126,7 +128,9 @@ export default {
     Row,
 
     iconStyle,
-    iconLabelStyle
+    iconLabelStyle,
+    PlusIcon,
+    CreateNewIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
