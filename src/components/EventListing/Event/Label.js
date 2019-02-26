@@ -6,8 +6,8 @@ const Wrapper = styled(AuroraText)`
   line-height: TYPOGRAPHY.lineHeight.header;
   margin: 0;
   max-height: 20px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 `;
 
 const Label = ({ children, ...rest }) => (

@@ -6,5 +6,5 @@ Event Listing Component
 
 ```react
 ---
- <EventListing items={EVENTLISTING_MANY} />
+ <EventListing items={EVENTLISTING_GQL_TRANSFORMED} />
 ```

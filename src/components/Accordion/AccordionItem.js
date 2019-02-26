@@ -3,7 +3,7 @@ import { bool, func } from "prop-types";
 import styled, { css } from "styled-components";
 
 const Wrapper = styled.div`
-  /* background: white; */
+  display: inherit;
 `;
 
 const AccordionItem = ({ children, isOpen = false, toggle }) => (

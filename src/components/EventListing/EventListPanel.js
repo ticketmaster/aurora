@@ -1,7 +1,7 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { mergeAll, reduce, keys } from "ramda";
-import {shouldChangeHeight} from "./utils/animation";
+import { shouldChangeHeight } from "./utils/animation";
 // import { shape } from "prop-types";
 // import {
 //   AttractionsType,
@@ -17,24 +17,16 @@ import COLORS from "../../theme/colors";
 import { expandCollapse, expand, collapse } from "../../theme/animations";
 
 const Wrapper = styled(Flex)`
-   background: white;
+  background: white;
+  border-top: 1px solid ${COLORS.diatomite};
+  margin: 0 16px;
+  padding: 16px 27px;
 
-  ${({isOpen}) => 
+  /* ${({ isOpen }) =>
     isOpen &&
     css`
       border-top: ${COLORS.diatomite};
-    `
-  }
-    /* background: ${COLORS.diatomite};
-    content: " ";
-    display: flex;
-    height: 1px;
-    margin-left: 16px;
-    margin-right: 16px; */
-  
-   
-  /* > div {${expandCollapse}} */
-  padding: 16px 16px 16px 47px;
+    `} */
 
   && > div:nth-child(n + 2) {
     margin-left: 16px;
@@ -46,26 +38,26 @@ const Wrapper = styled(Flex)`
 `;
 
 const Foo = styled.div`
-   ${expandCollapse}
- 
+  ${expandCollapse};
 `;
 
-const EventListPanel = ({
-  isOpen,
-  items
-}) => {
-  const {lineup, venueinfo, addOns, more} = reduce((acc,value) => { 
-    const key = value.id;
-    acc[key] = {...value};
-    return acc;
-  },{},items);
+const EventListPanel = ({ isOpen, items }) => (
+  // const {lineup, venuenfo, addOns, more} = reduce((acc,value) => {
+  //   const key = value.id;
+  //   acc[key] = {...value};
+  //   return acc;
+  // },{},items);
 
-  return (
-    <Wrapper  className={shouldChangeHeight(isOpen,"eventList_panel")} isOpen={isOpen}>
-      
-        event list panel
-      
-      {/* {lineup && (
+  // console.log('more: ', more);
+  // console.log('addOns: ', addOns);
+  // console.log('venueinfo: ', venuenfo);
+  // console.log('lineup: ', lineup);
+
+  <Wrapper
+    className={shouldChangeHeight(isOpen, "eventList_panel")}
+    isOpen={isOpen}
+  >
+    {/* {lineup && (
           <Flex column grow={1} shrink={1}>
             <Tile.Label className="label">LINEUP</Tile.Label>
             {lineup.items.map(({ title, url, id }) => (
@@ -86,7 +78,7 @@ const EventListPanel = ({
           </Flex>
         )} */}
 
-      {/* {venueName && (
+    {/* {venueName && (
         <Flex column grow={1} shrink={1}>
           <Tile.Label className="label">VENUE</Tile.Label>
           <CategoryItem
@@ -98,22 +90,45 @@ const EventListPanel = ({
         </Flex>
       )} */}
 
-      {/* {products && (
+    {/* {venuenfo && venuenfo.items && (
         <Flex column grow={1} shrink={1}>
-          <Tile.Label className="label">ADD-ONS</Tile.Label>
-          {products.map(({ name, url, type }) => (
+          <Tile.Label className="label">{venuenfo.title}</Tile.Label>
+          {venuenfo.items.map(({
+            subTitle,
+            title,
+            icon: {
+              color,
+              size
+            },
+            url
+          }) => (
             <CategoryItem
-              key={`product-${name}`}
-              icon={{ type }}
-              label="VENUE"
-              link={{ href: url, text: name }}
+              icon={{ type: "Venue", color, size }}
+              key={`venuenfo-${title}`}
+              label={title}
+              subTitle={subTitle}
+              title={title}
+              url={url}
             />
           ))}
         </Flex>
       )} */}
-    </Wrapper>
-  );
-};
+
+    {/* {addOns && addOns.items && (
+        <Flex column grow={1} shrink={1}>
+          <Tile.Label className="label">ADD-ONS</Tile.Label>
+          {addOns.items.map(({ title, url, id, type }) => (
+            <CategoryItem
+              key={id}
+              type={type || "More"}
+              label={title}
+              link={{ href: url, text: title }}
+            />
+          ))}
+        </Flex>
+      )} */}
+  </Wrapper>
+);
 
 // EventInfo.propTypes = {
 //   items: ;

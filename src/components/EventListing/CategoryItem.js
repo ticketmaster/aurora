@@ -10,31 +10,29 @@ import { IconType, LinkType } from "../../components/types";
 
 const Wrapper = styled(Flex)`
   margin-bottom: 8px;
-`
+`;
 
 const IconWrapper = styled(Flex)`
   margin-right: 8px;
 `;
 
 const CategoryItem = ({
-  link,
-  icon: {
-    type,
-    src = "https://placekitten.com/g/512/288",
-    alt = "avatar"
-  },
   label,
+  subTitle,
+  title,
+  url,
+  icon: { alt = "", type, src = "https://placekitten.com/g/512/288" },
   text
 }) => (
-<Wrapper>
-  <IconWrapper>
-    <Icon type={type} src={src} alt={text} />
-  </IconWrapper>
-  <Flex column justifyCenter>
-    <Tile.Link href={link.href}> {link.text} </Tile.Link>
-    {text && <Tile.Text> {text} </Tile.Text>}
-  </Flex>
-</Wrapper>
+  <Wrapper>
+    <IconWrapper>
+      {type && <Icon type={type} src={src} alt={text} />}
+    </IconWrapper>
+    <Flex column justifyCenter>
+      {title && <Tile.Link href={url}> {title} </Tile.Link>}
+      {subTitle && <Tile.Text> {subTitle} </Tile.Text>}
+    </Flex>
+  </Wrapper>
 );
 
 CategoryItem.propTypes = {
@@ -42,7 +40,6 @@ CategoryItem.propTypes = {
   icon: IconType,
   label: string,
   text: string
- 
 };
 
 export default CategoryItem;

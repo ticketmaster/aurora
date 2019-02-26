@@ -3,17 +3,17 @@ import styled from "styled-components";
 import { Text as AuroraText } from "../../Text";
 
 const Wrapper = styled(AuroraText)`
-  line-height: 20px;
-  max-height: 20px;
-  margin: 0;
-  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;  
+  display: -webkit-box;
+  line-height: 20px;
+  margin: 0;
+  max-height: 20px;
   overflow: hidden;
 `;
 
 const Title = props => (
-  <Wrapper className={props.className} size="kilo" tag="p" weight="semiBold">
+  <Wrapper className="event_title" size="kilo" tag="p" weight="semiBold">
     {props.children}
   </Wrapper>
 );

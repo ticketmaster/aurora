@@ -3851,454 +3851,1523 @@ export const EVENTLISTING_ONE = [{
   ]
 }];
 
-export const EVENTLISTING_MANY = [
+export const EVENTLISTING_GQL_TRANSFORMED = [
   {
-    "id": "Umphrey's McGee-Sat 6:00p",
-    "badge": {
-        "isVisible": false,
-        "variant": "success",
-        "type": "success",
-        "status": "onsale"
-    },
-    "button": {
-        "text": "See Tickets",
-        "variant": "standard",
-        "target": "__blank",
-        "url": "http://concerts.livenation.com/event/09005583C4FC31F2"
-    },
-    "title": "Umphrey's McGee",
-    "subTitle": "The Wiltern - Los Angeles, CA",
-    "date": {
-        "subTitle": "Sat 6:00p",
-        "title": "Mar 2"
-    },
-    "hasAddOns": false,
-    "items": [
-        {
-            "title": "Lineup",
-            "id": "lineUp",
-            "items": [
-                {
-                    "title": "Umphrey's McGee",
-                    "url": "/umphreys-mcgee-tickets/artist/821327",
-                    "id": "K8vZ9171DHf"
-                },
-                {
-                    "title": "Ghost-Note",
-                    "url": "/ghost-note-tickets/artist/2271652",
-                    "id": "K8vZ91741l7"
-                }
-            ]
-        },
-        {
-            "title": "Venue Info",
-            "id": "venuenfo",
-            "items": [
-                {
-                    "title": "The Wiltern",
-                    "subTitle": "Los Angeles, CA",
-                    "url": "/the-wiltern-tickets-los-angeles/venue/73790",
-                    "icon": null
-                }
-            ]
-        }
-    ]
-    },
-    {
-      "id": "Premium Level Seating: PBR: Unleash The Beast-Fri 7:45p",
-      "badge": {
-        "isVisible": false,
-        "label": "Currently not on sale",
-        "text": "Currently not on sale",
-        "variant": "neutral",
-        "type": "success",
-        "status": "offsale"
+    id: "vv1AaZA_8GkdE3xTv",
+    type: "Event",
+    status: { text: "offsale", variant: "neutral" },
+    date: { iso: "2019-09-07T02:45:00Z", local: "2019-09-06" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
       },
-      "button": {
-        "text": "More Info",
-        "variant": "outline",
-        "target": "__blank",
-        "url": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1"
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
       },
-      "title": "Premium Level Seating: PBR: Unleash The Beast",
-      "subTitle": "Honda Center - Anaheim, CA",
-      "label": {
-        "text": "On Sale: Mon • Mar 4 • 10 AM",
-        "isVisible": true
-      },
-      "date": {
-        "subTitle": "Fri 7:45p",
-        "title": "Sep 6"
-      },
-      "hasAddOns": false,
-      "items": [
-        {
-          "title": "Lineup",
-          "id": "lineUp",
-          "items": [
-            {
-              "title": "PBR: Unleash the Beast",
-              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
-              "id": "K8vZ9179q2V"
-            },
-            {
-              "title": "PBR: Professional Bull Riders",
-              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
-              "id": "K8vZ9171l00"
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "Premium Level Seating: PBR: Unleash The Beast",
+    subTitle: "Honda Center - Anaheim, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ9179q2V:K8vZ9171l00",
+        title: "",
+        items: [
+          {
+            id: "K8vZ9179q2V",
+            title: "PBR: Unleash the Beast",
+            url: "/pbr-unleash-the-beast-tickets/artist/2550701",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Unleash the Beast",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
             }
-          ]
-        },
-        {
-          "title": "Venue Info",
-          "id": "venuenfo",
-          "items": [
-            {
-              "title": "Honda Center",
-              "subTitle": "Anaheim, CA",
-              "url": "/honda-center-tickets-anaheim/venue/73797",
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
+          },
+          {
+            id: "K8vZ9171l00",
+            title: "PBR: Professional Bull Riders",
+            url: "/pbr-professional-bull-riders-tickets/artist/821993",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Professional Bull Riders",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/f4a/af305e82-5c92-4ea2-a6b7-bceff6ccbf4a_668551_CUSTOM.jpg",
+              domains: [
+                "ticketmaster.com.au",
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com",
+                "ticketmaster.co.nz"
+              ],
+              locale: null
             }
-          ]
-        }
-      ]
+          }
+        ]
+      },
+      addOns: { id: "", title: "", items: [] },
+      venueInfo: {
+        id: "KovZpakTme",
+        title: "",
+        items: [
+          {
+            id: "KovZpakTme",
+            title: "Honda Center",
+            subTitle: "Anaheim, CA",
+            url: "/honda-center-tickets-anaheim/venue/73797"
+          }
+        ]
+      }
     },
-    {
-      "id": "Premium Level Seating: PBR: Unleash The Beast-Sat 7:45p",
-      "badge": {
-        "isVisible": true,
-        "label": "Currently not on sale",
-        "text": "Currently not on sale",
-        "variant": "neutral",
-        "type": "success",
-        "status": "offsale"
+    genre: "Rodeo",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 6", subTitle: "Fri 7:45p", time: "Fri 9/6 @ 7pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "premium-level-seating-pbr-unleash-the-beast",
+      href:
+        "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1"
+    },
+    analytics: { genre: "Rodeo", segment: "Sports", tmId: "09005650E74A2FC1" }
+  },
+  {
+    id: "vv1AaZA_8GkeV23A7",
+    type: "Event",
+    status: { text: "offsale", variant: "neutral" },
+    date: { iso: "2019-09-07T02:45:00Z", local: "2019-09-06" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
       },
-      "button": {
-        "text": "More Info",
-        "variant": "outline",
-        "target": "__blank",
-        "url": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1"
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
       },
-      "title": "Premium Level Seating: PBR: Unleash The Beast",
-      "subTitle": "Honda Center - Anaheim, CA",
-      "label": {
-        "text": "On Sale: Mon • Mar 4 • 10 AM",
-        "isVisible": false
-      },
-      "date": {
-        "subTitle": "Sat 7:45p",
-        "title": "Sep 7"
-      },
-      "hasAddOns": false,
-      "items": [
-        {
-          "title": "Lineup",
-          "id": "lineUp",
-          "items": [
-            {
-              "title": "PBR: Unleash the Beast",
-              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
-              "id": "K8vZ9179q2V"
-            },
-            {
-              "title": "PBR: Professional Bull Riders",
-              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
-              "id": "K8vZ9171l00"
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+    subTitle: "Honda Center - Anaheim, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ9179q2V:K8vZ9171l00",
+        title: "",
+        items: [
+          {
+            id: "K8vZ9179q2V",
+            title: "PBR: Unleash the Beast",
+            url: "/pbr-unleash-the-beast-tickets/artist/2550701",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Unleash the Beast",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
             }
-          ]
-        },
-        {
-          "title": "Venue Info",
-          "id": "venuenfo",
-          "items": [
-            {
-              "title": "Honda Center",
-              "subTitle": "Anaheim, CA",
-              "url": "/honda-center-tickets-anaheim/venue/73797",
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
+          },
+          {
+            id: "K8vZ9171l00",
+            title: "PBR: Professional Bull Riders",
+            url: "/pbr-professional-bull-riders-tickets/artist/821993",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Professional Bull Riders",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/f4a/af305e82-5c92-4ea2-a6b7-bceff6ccbf4a_668551_CUSTOM.jpg",
+              domains: [
+                "ticketmaster.com.au",
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com",
+                "ticketmaster.co.nz"
+              ],
+              locale: null
             }
-          ]
-        }
-      ]
+          }
+        ]
+      },
+      addOns: { id: "", title: "", items: [] },
+      venueInfo: {
+        id: "KovZpakTme",
+        title: "",
+        items: [
+          {
+            id: "KovZpakTme",
+            title: "Honda Center",
+            subTitle: "Anaheim, CA",
+            url: "/honda-center-tickets-anaheim/venue/73797"
+          }
+        ]
+      }
+    },
+    genre: "Rodeo",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 6", subTitle: "Fri 7:45p", time: "Fri 9/6 @ 7pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "pbr-unleash-the-beast-vs-pbr-professional-bull-riders",
+      href:
+        "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B43D2144"
+    },
+    analytics: { genre: "Rodeo", segment: "Sports", tmId: "09005650B43D2144" }
+  },
+  {
+    id: "vv170Z4bGkm7VvP7",
+    type: "Event",
+    status: { text: "onsale", variant: "default" },
+    date: { iso: "2019-09-08T01:00:00Z", local: "2019-09-07" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "Irvine, CA - FivePoint Amphitheatre presented by Mercury Insurance",
+    subTitle:
+      "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ917o7w7",
+        title: "",
+        items: [
+          {
+            id: "K8vZ917o7w7",
+            title: "KIDZ BOP Kids",
+            url: "/kidz-bop-kids-tickets/artist/1852697",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "KIDZ BOP Kids",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "discovery",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
+            }
+          }
+        ]
+      },
+      addOns: { id: "", title: "", items: [] },
+      venueInfo: {
+        id: "KovZ917A8gf",
+        title: "",
+        items: [
+          {
+            id: "KovZ917A8gf",
+            title: "FivePoint Amphitheatre presented by Mercury Insurance",
+            subTitle: "Irvine, CA",
+            url:
+              "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699"
+          }
+        ]
+      }
+    },
+    genre: "Children's Theatre",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 7", subTitle: "Sat 6:00p", time: "Sat 9/7 @ 6pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "kidz-bop-upgrade-meet-greet-packages",
+      href: "https://livemu.sc/KIDZBOP-VIP"
+    },
+    analytics: {
+      genre: "Children's Theatre",
+      segment: "Arts & Theatre",
+      tmId: "0900558B84D01944"
     }
-    ,{
-      "id": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders-Fri 7:45p",
-      "badge": {
-        "isVisible": false,
-        "label": "Currently not on sale",
-        "text": "Currently not on sale",
-        "variant": "neutral",
-        "type": "success",
-        "status": "offsale"
+  },
+  {
+    id: "vv1aaZAp7A7q7ZeC7",
+    type: "Event",
+    status: { text: "onsale", variant: "default" },
+    date: { iso: "2019-09-08T01:00:00Z", local: "2019-09-07" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
       },
-      "button": {
-        "text": "More Info",
-        "variant": "outline",
-        "target": "__blank",
-        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B43D2144"
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
       },
-      "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
-      "subTitle": "Honda Center - Anaheim, CA",
-      "label": {
-        "text": "On Sale: Mon • Mar 4 • 10 AM",
-        "isVisible": true
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "Irvine, CA - FivePoint Amphitheatre presented by Mercury Insurance",
+    subTitle:
+      "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ917o7w7",
+        title: "",
+        items: [
+          {
+            id: "K8vZ917o7w7",
+            title: "KIDZ BOP Kids",
+            url: "/kidz-bop-kids-tickets/artist/1852697",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "KIDZ BOP Kids",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "discovery",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
+            }
+          }
+        ]
       },
-      "date": {
-        "subTitle": "Fri 7:45p",
-        "title": "Sep 6"
+      addOns: {
+        id: "vv1ke8v4-EGAGJ-tP:vv1ke8v4-EGAuC-nF:vv170Z4bGkm7VvP7",
+        title: "",
+        items: [
+          {
+            id: "vv1ke8v4-EGAGJ-tP",
+            title: "",
+            subItems: [
+              {
+                id: "vv1ke8v4-EGAGJ-tP",
+                title: "KIDZ BOP: Fivepoint Amphitheatre Parking",
+                url: "http://concerts.livenation.com/event/090055867C9A1A65"
+              }
+            ]
+          },
+          {
+            id: "vv170Z4bGkm7VvP7",
+            title: "",
+            subItems: [
+              {
+                id: "vv170Z4bGkm7VvP7",
+                title: "Kidz Bop - Upgrade Meet & Greet Packages",
+                url: "https://livemu.sc/KIDZBOP-VIP"
+              }
+            ]
+          }
+        ]
       },
-      "hasAddOns": false,
-      "items": [
-        {
-          "title": "Lineup",
-          "id": "lineUp",
+      venueInfo: {
+        id: "KovZ917A8gf",
+        title: "",
+        items: [
+          {
+            id: "KovZ917A8gf",
+            title: "FivePoint Amphitheatre presented by Mercury Insurance",
+            subTitle: "Irvine, CA",
+            url:
+              "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699"
+          }
+        ]
+      }
+    },
+    genre: "Children's Theatre",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 7", subTitle: "Sat 6:00p", time: "Sat 9/7 @ 6pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "kidz-bop-world-tour-2019",
+      href: "http://concerts.livenation.com/event/09005584144744D3"
+    },
+    analytics: {
+      genre: "Children's Theatre",
+      segment: "Arts & Theatre",
+      tmId: "09005584144744D3"
+    }
+  },
+  {
+    id: "vv1AaZA_8GkdEKxTA",
+    type: "Event",
+    status: { text: "offsale", variant: "neutral" },
+    date: { iso: "2019-09-08T01:45:00Z", local: "2019-09-07" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "Premium Level Seating: PBR: Unleash The Beast",
+    subTitle: "Honda Center - Anaheim, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ9179q2V:K8vZ9171l00",
+        title: "",
+        items: [
+          {
+            id: "K8vZ9179q2V",
+            title: "PBR: Unleash the Beast",
+            url: "/pbr-unleash-the-beast-tickets/artist/2550701",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Unleash the Beast",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
+            }
+          },
+          {
+            id: "K8vZ9171l00",
+            title: "PBR: Professional Bull Riders",
+            url: "/pbr-professional-bull-riders-tickets/artist/821993",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Professional Bull Riders",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/f4a/af305e82-5c92-4ea2-a6b7-bceff6ccbf4a_668551_CUSTOM.jpg",
+              domains: [
+                "ticketmaster.com.au",
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com",
+                "ticketmaster.co.nz"
+              ],
+              locale: null
+            }
+          }
+        ]
+      },
+      addOns: { id: "", title: "", items: [] },
+      venueInfo: {
+        id: "KovZpakTme",
+        title: "",
+        items: [
+          {
+            id: "KovZpakTme",
+            title: "Honda Center",
+            subTitle: "Anaheim, CA",
+            url: "/honda-center-tickets-anaheim/venue/73797"
+          }
+        ]
+      }
+    },
+    genre: "Rodeo",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 7", subTitle: "Sat 6:45p", time: "Sat 9/7 @ 6pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "premium-level-seating-pbr-unleash-the-beast",
+      href:
+        "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74E2FC5"
+    },
+    analytics: { genre: "Rodeo", segment: "Sports", tmId: "09005650E74E2FC5" }
+  },
+  {
+    id: "vv1AaZA_8GkeV83Ak",
+    type: "Event",
+    status: { text: "offsale", variant: "neutral" },
+    date: { iso: "2019-09-08T01:45:00Z", local: "2019-09-07" },
+    images: [
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        __typename: "Image"
+      },
+      {
+        url:
+          "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        __typename: "Image"
+      }
+    ],
+    title: "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+    subTitle: "Honda Center - Anaheim, CA",
+    items: {
+      lineUp: {
+        id: "K8vZ9179q2V:K8vZ9171l00",
+        title: "",
+        items: [
+          {
+            id: "K8vZ9179q2V",
+            title: "PBR: Unleash the Beast",
+            url: "/pbr-unleash-the-beast-tickets/artist/2550701",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Unleash the Beast",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_CUSTOM.jpg",
+              domains: [
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com"
+              ],
+              locale: null
+            }
+          },
+          {
+            id: "K8vZ9171l00",
+            title: "PBR: Professional Bull Riders",
+            url: "/pbr-professional-bull-riders-tickets/artist/821993",
+            image: {
+              id: null,
+              ratio: "4_3",
+              alt: "PBR: Professional Bull Riders",
+              fallback: false,
+              attribution: null,
+              url:
+                "https://beta.tmol.co/compressedimages/dam/a/f4a/af305e82-5c92-4ea2-a6b7-bceff6ccbf4a_668551_CUSTOM.jpg",
+              domains: [
+                "ticketmaster.com.au",
+                "concerts.livenation.com",
+                "admission.com",
+                "ticketmaster.ca",
+                "ticketmaster.com.mx",
+                "ticketmaster.com",
+                "ticketmaster.co.nz"
+              ],
+              locale: null
+            }
+          }
+        ]
+      },
+      addOns: { id: "", title: "", items: [] },
+      venueInfo: {
+        id: "KovZpakTme",
+        title: "",
+        items: [
+          {
+            id: "KovZpakTme",
+            title: "Honda Center",
+            subTitle: "Anaheim, CA",
+            url: "/honda-center-tickets-anaheim/venue/73797"
+          }
+        ]
+      }
+    },
+    genre: "Rodeo",
+    details: {
+      doesSpanDays: false,
+      hasSpecificTime: false,
+      date: { title: "Sep 7", subTitle: "Sat 6:45p", time: "Sat 9/7 @ 6pm" },
+      toBeAnnounced: { date: false, time: false }
+    },
+    ticket: { link: { text: "Ticket Exchange", href: null } },
+    link: {
+      url: "pbr-unleash-the-beast-vs-pbr-professional-bull-riders",
+      href:
+        "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B4412146"
+    },
+    analytics: { genre: "Rodeo", segment: "Sports", tmId: "09005650B4412146" }
+  }
+];
+
+export const EVENTLISTING_MANY_REST = [
+  {
+    "id": "vv1AaZA_8GkdE3xTv",
+    "listing": {
+      "onExpandShow": "title",
+      "rowItem": {
+        "title": "Premium Level Seating: PBR: Unleash The Beast",
+        "subTitle": "Honda Center - Anaheim, CA",
+        "labelVariant": "neutral"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ9179q2V:K8vZ9171l00",
+          "title": "",
           "items": [
             {
-              "title": "PBR: Unleash the Beast",
-              "url": "/pbr-unleash-the-beast-tickets/artist/2550701",
               "id": "K8vZ9179q2V"
             },
             {
-              "title": "PBR: Professional Bull Riders",
-              "url": "/pbr-professional-bull-riders-tickets/artist/821993",
               "id": "K8vZ9171l00"
             }
           ]
+        }
+      },
+      "id": "vv1AaZA_8GkdE3xTv"
+    },
+    "name": "Premium Level Seating: PBR: Unleash The Beast",
+    "eventUrlLink": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74A2FC1",
+    "seoName": "premium-level-seating-pbr-unleash-the-beast",
+    "genreName": "Rodeo",
+    "segmentName": "Sports",
+    "tmId": "09005650E74A2FC1",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 6",
+      "dateSubTitle": "Fri 7:45p",
+      "venueDateTime": "2019-09-06T19:45:00-07:00",
+      "venueDateTimeFormatted": "Fri 9/6 @ 7pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-06",
+        "dateTime": "2019-09-07T02:45:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "offsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": null,
+    "venues": [
+      {
+        "id": "KovZpakTme",
+        "name": "Honda Center",
+        "seoLink": "/honda-center-tickets-anaheim/venue/73797",
+        "postalCode": "92806",
+        "address": {
+          "line1": "2695 E. Katella",
+          "__typename": "Address"
         },
-        {
-          "title": "Venue Info",
-          "id": "venuenfo",
+        "city": {
+          "name": "Anaheim",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ9179q2V",
+        "name": "PBR: Unleash the Beast",
+        "seoUrl": "/pbr-unleash-the-beast-tickets/artist/2550701",
+        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-tickets/artist/2550701",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      },
+      {
+        "id": "K8vZ9171l00",
+        "name": "PBR: Professional Bull Riders",
+        "seoUrl": "/pbr-professional-bull-riders-tickets/artist/821993",
+        "url": "https://www.ticketmaster.com/pbr-professional-bull-riders-tickets/artist/821993",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": null,
+    "sales": {
+      "public": {
+        "startDateTime": "2019-03-04T18:00:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Sports",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  },
+  {
+    "id": "vv1AaZA_8GkeV23A7",
+    "listing": {
+      "onExpandShow": "title",
+      "rowItem": {
+        "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+        "subTitle": "Honda Center - Anaheim, CA",
+        "labelVariant": "neutral"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ9179q2V:K8vZ9171l00",
+          "title": "",
           "items": [
             {
-              "title": "Honda Center",
-              "subTitle": "Anaheim, CA",
-              "url": "/honda-center-tickets-anaheim/venue/73797",
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
+              "id": "K8vZ9179q2V"
+            },
+            {
+              "id": "K8vZ9171l00"
             }
           ]
         }
-      ]
-    }
-    ,{
-      "id": "Kidz Bop - Upgrade Meet & Greet Packages-Sat 6:00p",
-      "badge": {
-        "isVisible": false,
-        "variant": "success",
-        "type": "success",
-        "status": "onsale"
       },
-      "button": {
-        "text": "See Tickets",
-        "variant": "standard",
-        "target": "__blank",
-        "url": "https://livemu.sc/KIDZBOP-VIP"
+      "id": "vv1AaZA_8GkeV23A7"
+    },
+    "name": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+    "eventUrlLink": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B43D2144",
+    "seoName": "pbr-unleash-the-beast-vs-pbr-professional-bull-riders",
+    "genreName": "Rodeo",
+    "segmentName": "Sports",
+    "tmId": "09005650B43D2144",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
       },
-      "title": "Kidz Bop - Upgrade Meet & Greet Packages",
-      "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
-      "date": {
-        "subTitle": "Sat 6:00p",
-        "title": "Sep 7"
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
       },
-      "hasAddOns": false,
-      "items": [
-        {
-          "title": "Lineup",
-          "id": "lineUp",
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 6",
+      "dateSubTitle": "Fri 7:45p",
+      "venueDateTime": "2019-09-06T19:45:00-07:00",
+      "venueDateTimeFormatted": "Fri 9/6 @ 7pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-06",
+        "dateTime": "2019-09-07T02:45:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "offsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": null,
+    "venues": [
+      {
+        "id": "KovZpakTme",
+        "name": "Honda Center",
+        "seoLink": "/honda-center-tickets-anaheim/venue/73797",
+        "postalCode": "92806",
+        "address": {
+          "line1": "2695 E. Katella",
+          "__typename": "Address"
+        },
+        "city": {
+          "name": "Anaheim",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ9179q2V",
+        "name": "PBR: Unleash the Beast",
+        "seoUrl": "/pbr-unleash-the-beast-tickets/artist/2550701",
+        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-tickets/artist/2550701",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      },
+      {
+        "id": "K8vZ9171l00",
+        "name": "PBR: Professional Bull Riders",
+        "seoUrl": "/pbr-professional-bull-riders-tickets/artist/821993",
+        "url": "https://www.ticketmaster.com/pbr-professional-bull-riders-tickets/artist/821993",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": [
+      {
+        "currency": "USD",
+        "min": 19,
+        "__typename": "PriceRange"
+      }
+    ],
+    "sales": {
+      "public": {
+        "startDateTime": "2019-03-04T18:00:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Sports",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  },
+  {
+    "id": "vv170Z4bGkm7VvP7",
+    "listing": {
+      "onExpandShow": "subTitle",
+      "rowItem": {
+        "title": "Irvine, CA - FivePoint Amphitheatre presented by Mercury Insurance",
+        "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+        "labelVariant": "default"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ917o7w7",
+          "title": "",
           "items": [
             {
-              "title": "KIDZ BOP Kids",
-              "url": "/kidz-bop-kids-tickets/artist/1852697",
               "id": "K8vZ917o7w7"
             }
           ]
-        },
-        {
-          "title": "Venue Info",
-          "id": "venuenfo",
-          "items": [
-            {
-              "title": "FivePoint Amphitheatre presented by Mercury Insurance",
-              "subTitle": "Irvine, CA",
-              "url": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
-            }
-          ]
         }
-      ]
-    }
-    ,{
-      "id": "KIDZ BOP World Tour 2019-Sat 6:00p",
-      "badge": {
-        "isVisible": false,
-        "variant": "success",
-        "type": "success",
-        "status": "onsale"
       },
-      "button": {
-        "text": "See Tickets",
-        "variant": "standard",
-        "target": "__blank",
-        "url": "http://concerts.livenation.com/event/09005584144744D3"
+      "id": "vv170Z4bGkm7VvP7"
+    },
+    "name": "Kidz Bop - Upgrade Meet & Greet Packages",
+    "eventUrlLink": "https://livemu.sc/KIDZBOP-VIP",
+    "seoName": "kidz-bop-upgrade-meet-greet-packages",
+    "genreName": "Children's Theatre",
+    "segmentName": "Arts & Theatre",
+    "tmId": "0900558B84D01944",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
       },
-      "title": "KIDZ BOP World Tour 2019",
-      "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
-      "date": {
-        "subTitle": "Sat 6:00p",
-        "title": "Sep 7"
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
       },
-      "hasAddOns": true,
-      "items": [
-        {
-          "title": "Lineup",
-          "id": "lineUp",
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 7",
+      "dateSubTitle": "Sat 6:00p",
+      "venueDateTime": "2019-09-07T18:00:00-07:00",
+      "venueDateTimeFormatted": "Sat 9/7 @ 6pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-07",
+        "dateTime": "2019-09-08T01:00:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "onsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": null,
+    "venues": [
+      {
+        "id": "KovZ917A8gf",
+        "name": "FivePoint Amphitheatre presented by Mercury Insurance",
+        "seoLink": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
+        "postalCode": "92618",
+        "address": {
+          "line1": "14800 Chinon",
+          "__typename": "Address"
+        },
+        "city": {
+          "name": "Irvine",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ917o7w7",
+        "name": "KIDZ BOP Kids",
+        "seoUrl": "/kidz-bop-kids-tickets/artist/1852697",
+        "url": "http://www.ticketmaster.com.au/KIDZ-BOP-Kids-tickets/artist/1852697",
+        "classification": {
+          "segment": {
+            "name": "Arts & Theatre",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": null,
+    "sales": {
+      "public": {
+        "startDateTime": "2018-12-11T17:26:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Arts & Theatre",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  },
+  {
+    "id": "vv1aaZAp7A7q7ZeC7",
+    "listing": {
+      "onExpandShow": "subTitle",
+      "rowItem": {
+        "title": "Irvine, CA - FivePoint Amphitheatre presented by Mercury Insurance",
+        "subTitle": "FivePoint Amphitheatre presented by Mercury Insurance - Irvine, CA",
+        "labelVariant": "default"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ917o7w7",
+          "title": "",
           "items": [
             {
-              "title": "KIDZ BOP Kids",
-              "url": "/kidz-bop-kids-tickets/artist/1852697",
               "id": "K8vZ917o7w7"
             }
           ]
+        }
+      },
+      "id": "vv1aaZAp7A7q7ZeC7"
+    },
+    "name": "KIDZ BOP World Tour 2019",
+    "eventUrlLink": "http://concerts.livenation.com/event/09005584144744D3",
+    "seoName": "kidz-bop-world-tour-2019",
+    "genreName": "Children's Theatre",
+    "segmentName": "Arts & Theatre",
+    "tmId": "09005584144744D3",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/d6f/dd916028-17bf-458b-9909-669a83c55d6f_919381_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 7",
+      "dateSubTitle": "Sat 6:00p",
+      "venueDateTime": "2019-09-07T18:00:00-07:00",
+      "venueDateTimeFormatted": "Sat 9/7 @ 6pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-07",
+        "dateTime": "2019-09-08T01:00:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "onsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": [
+      {
+        "id": "vv1ke8v4-EGAGJ-tP",
+        "name": "KIDZ BOP: Fivepoint Amphitheatre Parking",
+        "type": "Parking",
+        "url": "http://concerts.livenation.com/event/090055867C9A1A65",
+        "__typename": "Product"
+      },
+      {
+        "id": "vv1ke8v4-EGAuC-nF",
+        "name": "KIDZ BOP: Fivepoint Amphitheatre Fastlane (NOT A CONCERT TICKET)",
+        "type": "Special Entry",
+        "url": "http://concerts.livenation.com/event/090055867D3A1A88",
+        "__typename": "Product"
+      },
+      {
+        "id": "vv170Z4bGkm7VvP7",
+        "name": "Kidz Bop - Upgrade Meet & Greet Packages",
+        "type": "VIP",
+        "url": "https://livemu.sc/KIDZBOP-VIP",
+        "__typename": "Product"
+      }
+    ],
+    "venues": [
+      {
+        "id": "KovZ917A8gf",
+        "name": "FivePoint Amphitheatre presented by Mercury Insurance",
+        "seoLink": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
+        "postalCode": "92618",
+        "address": {
+          "line1": "14800 Chinon",
+          "__typename": "Address"
         },
-        {
-          "title": "Venue Info",
-          "id": "venuenfo",
+        "city": {
+          "name": "Irvine",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ917o7w7",
+        "name": "KIDZ BOP Kids",
+        "seoUrl": "/kidz-bop-kids-tickets/artist/1852697",
+        "url": "http://www.ticketmaster.com.au/KIDZ-BOP-Kids-tickets/artist/1852697",
+        "classification": {
+          "segment": {
+            "name": "Arts & Theatre",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": [
+      {
+        "currency": "USD",
+        "min": 15,
+        "__typename": "PriceRange"
+      }
+    ],
+    "sales": {
+      "public": {
+        "startDateTime": "2018-12-14T18:00:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Arts & Theatre",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  },
+  {
+    "id": "vv1AaZA_8GkdEKxTA",
+    "listing": {
+      "onExpandShow": "title",
+      "rowItem": {
+        "title": "Premium Level Seating: PBR: Unleash The Beast",
+        "subTitle": "Honda Center - Anaheim, CA",
+        "labelVariant": "neutral"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ9179q2V:K8vZ9171l00",
+          "title": "",
           "items": [
             {
-              "title": "FivePoint Amphitheatre presented by Mercury Insurance",
-              "subTitle": "Irvine, CA",
-              "url": "/fivepoint-amphitheatre-presented-by-mercury-insurance-tickets-irvine/venue/74699",
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
-            }
-          ]
-        },
-        {
-          "id": "addOns",
-          "title": "Add-Ons",
-          "items": [
-            {
-              "id": "parking",
-              "title": "Parking",
-              "subItems": [
-                {
-                  "id": "vv1ke8v4-EGAGJ-tP",
-                  "title": "KIDZ BOP: Fivepoint Amphitheatre Parking",
-                  "url": "http://concerts.livenation.com/event/090055867C9A1A65",
-                  "type": "Parking"
-                }
-              ],
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
+              "id": "K8vZ9179q2V"
             },
             {
-              "id": "specialentry",
-              "title": "Special Entry",
-              "subItems": [
-                {
-                  "id": "vv1ke8v4-EGAuC-nF",
-                  "title": "KIDZ BOP: Fivepoint Amphitheatre Fastlane (NOT A CONCERT TICKET)",
-                  "url": "http://concerts.livenation.com/event/090055867D3A1A88",
-                  "type": "Special Entry"
-                }
-              ],
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
-            },
-            {
-              "id": "vip",
-              "title": "VIP",
-              "subItems": [
-                {
-                  "id": "vv170Z4bGkm7VvP7",
-                  "title": "Kidz Bop - Upgrade Meet & Greet Packages",
-                  "url": "https://livemu.sc/KIDZBOP-VIP",
-                  "type": "VIP"
-                }
-              ],
-              "icon": {
-                "key": null,
-                "ref": null,
-                "props": {
-                  "size": 26,
-                  "color": "#1f262d",
-                  "children": null
-                },
-                "_owner": null,
-                "_store": {}
-              }
+              "id": "K8vZ9171l00"
             }
           ]
         }
-      ]
-    }
-    
-  ];
+      },
+      "id": "vv1AaZA_8GkdEKxTA"
+    },
+    "name": "Premium Level Seating: PBR: Unleash The Beast",
+    "eventUrlLink": "https://www.ticketmaster.com/premium-level-seating-pbr-unleash-the-beast/event/09005650E74E2FC5",
+    "seoName": "premium-level-seating-pbr-unleash-the-beast",
+    "genreName": "Rodeo",
+    "segmentName": "Sports",
+    "tmId": "09005650E74E2FC5",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 7",
+      "dateSubTitle": "Sat 6:45p",
+      "venueDateTime": "2019-09-07T18:45:00-07:00",
+      "venueDateTimeFormatted": "Sat 9/7 @ 6pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-07",
+        "dateTime": "2019-09-08T01:45:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "offsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": null,
+    "venues": [
+      {
+        "id": "KovZpakTme",
+        "name": "Honda Center",
+        "seoLink": "/honda-center-tickets-anaheim/venue/73797",
+        "postalCode": "92806",
+        "address": {
+          "line1": "2695 E. Katella",
+          "__typename": "Address"
+        },
+        "city": {
+          "name": "Anaheim",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ9179q2V",
+        "name": "PBR: Unleash the Beast",
+        "seoUrl": "/pbr-unleash-the-beast-tickets/artist/2550701",
+        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-tickets/artist/2550701",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      },
+      {
+        "id": "K8vZ9171l00",
+        "name": "PBR: Professional Bull Riders",
+        "seoUrl": "/pbr-professional-bull-riders-tickets/artist/821993",
+        "url": "https://www.ticketmaster.com/pbr-professional-bull-riders-tickets/artist/821993",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": null,
+    "sales": {
+      "public": {
+        "startDateTime": "2019-03-04T18:00:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Sports",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  },
+  {
+    "id": "vv1AaZA_8GkeV83Ak",
+    "listing": {
+      "onExpandShow": "title",
+      "rowItem": {
+        "title": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+        "subTitle": "Honda Center - Anaheim, CA",
+        "labelVariant": "neutral"
+      },
+      "sections": {
+        "lineUp": {
+          "id": "K8vZ9179q2V:K8vZ9171l00",
+          "title": "",
+          "items": [
+            {
+              "id": "K8vZ9179q2V"
+            },
+            {
+              "id": "K8vZ9171l00"
+            }
+          ]
+        }
+      },
+      "id": "vv1AaZA_8GkeV83Ak"
+    },
+    "name": "PBR: Unleash the Beast vs. PBR: Professional Bull Riders",
+    "eventUrlLink": "https://www.ticketmaster.com/pbr-unleash-the-beast-vs-pbr-professional-bull-riders/event/09005650B4412146",
+    "seoName": "pbr-unleash-the-beast-vs-pbr-professional-bull-riders",
+    "genreName": "Rodeo",
+    "segmentName": "Sports",
+    "tmId": "09005650B4412146",
+    "ticketExchangeUrl": null,
+    "imagesFiltered": [
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_ARTIST_PAGE_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_RETINA_PORTRAIT_3_2.jpg",
+        "__typename": "Image"
+      },
+      {
+        "url": "https://beta.tmol.co/compressedimages/dam/a/543/8ff9fd13-ff19-4cb6-a833-b7843c7d2543_877571_TABLET_LANDSCAPE_3_2.jpg",
+        "__typename": "Image"
+      }
+    ],
+    "datesFormatted": {
+      "dateTitle": "Sep 7",
+      "dateSubTitle": "Sat 6:45p",
+      "venueDateTime": "2019-09-07T18:45:00-07:00",
+      "venueDateTimeFormatted": "Sat 9/7 @ 6pm",
+      "__typename": "Dates"
+    },
+    "dates": {
+      "spanMultipleDays": false,
+      "start": {
+        "dateTBA": false,
+        "timeTBA": false,
+        "localDate": "2019-09-07",
+        "dateTime": "2019-09-08T01:45:00Z",
+        "noSpecificTime": false,
+        "__typename": "StartDates"
+      },
+      "status": {
+        "code": "offsale",
+        "__typename": "EventStatus"
+      },
+      "__typename": "EventDates"
+    },
+    "products": null,
+    "venues": [
+      {
+        "id": "KovZpakTme",
+        "name": "Honda Center",
+        "seoLink": "/honda-center-tickets-anaheim/venue/73797",
+        "postalCode": "92806",
+        "address": {
+          "line1": "2695 E. Katella",
+          "__typename": "Address"
+        },
+        "city": {
+          "name": "Anaheim",
+          "__typename": "City"
+        },
+        "state": {
+          "stateCode": "CA",
+          "name": "California",
+          "__typename": "State"
+        },
+        "country": {
+          "countryCode": "US",
+          "name": "United States Of America",
+          "__typename": "Country"
+        },
+        "__typename": "Venue"
+      }
+    ],
+    "attractions": [
+      {
+        "id": "K8vZ9179q2V",
+        "name": "PBR: Unleash the Beast",
+        "seoUrl": "/pbr-unleash-the-beast-tickets/artist/2550701",
+        "url": "https://www.ticketmaster.com/pbr-unleash-the-beast-tickets/artist/2550701",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      },
+      {
+        "id": "K8vZ9171l00",
+        "name": "PBR: Professional Bull Riders",
+        "seoUrl": "/pbr-professional-bull-riders-tickets/artist/821993",
+        "url": "https://www.ticketmaster.com/pbr-professional-bull-riders-tickets/artist/821993",
+        "classification": {
+          "segment": {
+            "name": "Sports",
+            "__typename": "Segment"
+          },
+          "__typename": "Classification"
+        },
+        "__typename": "Attraction"
+      }
+    ],
+    "priceRanges": [
+      {
+        "currency": "USD",
+        "min": 24,
+        "__typename": "PriceRange"
+      }
+    ],
+    "sales": {
+      "public": {
+        "startDateTime": "2019-03-04T18:00:00Z",
+        "startTBD": false,
+        "__typename": "PublicSaleDates"
+      },
+      "__typename": "EventSalesDates"
+    },
+    "classification": {
+      "segment": {
+        "name": "Sports",
+        "__typename": "Segment"
+      },
+      "__typename": "Classification"
+    },
+    "__typename": "Event"
+  }
+];
+
+
+
+
+
+
+
+
+
 
 // const MAPPED_DATA = {
 //   event: {
