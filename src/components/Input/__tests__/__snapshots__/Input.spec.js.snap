@@ -4,19 +4,14 @@ exports[`Input renders default input 1`] = `
 <div
   class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
@@ -34,20 +29,15 @@ exports[`Input renders disabled input 1`] = `
 <div
   class="text--input-regular text--input-top text--input-disabled sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       disabled=""
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder=""
       type="text"
@@ -65,19 +55,14 @@ exports[`Input renders input with error 1`] = `
 <div
   class="text--input-regular text--input-top text__error sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
@@ -100,6 +85,7 @@ exports[`Input renders large input 1`] = `
   <label
     class="sc-bwzfXH ddQPaW"
     id="test1firstname__label"
+    style="font-size: 20px;"
   >
     First Name
   </label>
@@ -127,19 +113,14 @@ exports[`Input renders left labeled input 1`] = `
 <div
   class="text--input-regular text--input-left sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
@@ -157,21 +138,17 @@ exports[`Input renders small input 1`] = `
 <div
   class="text--input-small text--input-top sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder="test hint"
+      style="color: blue;"
       type="text"
     />
     <label
@@ -187,19 +164,14 @@ exports[`Input renders top labeled input 1`] = `
 <div
   class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
 >
-  <label
-    class="sc-bwzfXH ddQPaW"
-    id="test1firstname__label"
-  >
-    First Name
-  </label>
+  
   <div
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
-      id="test1firstname__input"
+      id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"

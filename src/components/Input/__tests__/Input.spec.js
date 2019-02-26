@@ -13,12 +13,19 @@ describe("Input", () => {
   });
 
   it("renders small input", () => {
-    const { container } = renderInputComponent({ size: "small" });
+    const { container } = renderInputComponent({
+      size: "small",
+      style: { color: "blue" }
+    });
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it("renders large input", () => {
-    const { container } = renderInputComponent({ size: "large" });
+    const { container } = renderInputComponent({
+      size: "large",
+      label: "First Name",
+      labelStyle: { fontSize: "20px" }
+    });
     expect(container.firstChild).toMatchSnapshot();
   });
 
@@ -47,12 +54,7 @@ describe("Input", () => {
   function renderInputComponent(props = {}) {
     return render(
       <ThemeProvider theme={{ themeName: "tm" }}>
-        <Input
-          name="test1"
-          label="First Name"
-          placeholder="test hint"
-          {...props}
-        />
+        <Input name="test1" placeholder="test hint" {...props} />
       </ThemeProvider>
     );
   }

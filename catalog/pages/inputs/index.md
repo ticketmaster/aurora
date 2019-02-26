@@ -292,7 +292,11 @@ rows:
   - Prop: label
     Type: string
     Default: N/A
-    Notes: Is required
+    Notes: Optional input label. If not passed label container will not be rendered
+  - Prop: labelStyle
+    Type: object
+    Default: N/A
+    Notes: Optional. Allows editing label style.
   - Prop: errorMessage
     Type: string
     Default: N/A
@@ -319,7 +323,7 @@ span: 6
         <Row>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                    <Input labelPosition="top"  style={{ color: 'blue' }} placeholder="Hint Text" name="test1" label="First Name" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
                     <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
