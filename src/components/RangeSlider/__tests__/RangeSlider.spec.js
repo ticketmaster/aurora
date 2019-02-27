@@ -13,6 +13,11 @@ describe("RangeSlider", () => {
 
     expect(tree).toMatchSnapshot();
   });
+  it("should match snapshot when single", () => {
+    const tree = renderer.create(<RangeSlider single />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
   it("should match snapshot when disabled", () => {
     const tree = renderer.create(<RangeSlider disabled />).toJSON();
 
@@ -207,6 +212,13 @@ describe("RangeSlider", () => {
     const result = instance.getClosestBound(10);
 
     expect(result).toBe(0);
+  });
+
+  it("getClosestBound should always return the second handle when set to single", () => {
+    const instance = renderer.create(<RangeSlider single />).getInstance();
+
+    expect(instance.getClosestBound(10)).toBe(1);
+    expect(instance.getClosestBound(90)).toBe(1);
   });
 
   it("getClosestBound should return second handle", () => {

@@ -10,12 +10,13 @@ import {
   Container,
   Button,
   InputField,
-  InputFieldContainer
+  InputFieldContainer,
+  INPUT_HEIGHT
 } from "./QtySelector.styles";
 
 class QtySelector extends Component {
   static MAX_LENGTH_VAL = 2;
-  static INPUT_HEIGHT = 28;
+  static INPUT_HEIGHT = INPUT_HEIGHT;
   static MAX_INPUT_VALUE = 99;
 
   static isNumber = str => {
@@ -28,16 +29,18 @@ class QtySelector extends Component {
 
   static propTypes = {
     disabled: PropTypes.bool,
+    value: PropTypes.number,
     style: PropTypes.objectOf(PropTypes.string)
   };
 
   static defaultProps = {
     disabled: false,
-    style: {}
+    style: {},
+    value: null
   };
 
   state = {
-    value: "",
+    value: this.props.value || "",
     focused: false
   };
 
@@ -89,7 +92,6 @@ class QtySelector extends Component {
   renderInput = () => {
     const { disabled, style, ...rest } = this.props;
     const { value, focused } = this.state;
-
     // rendering multiple inputs is required for animation
     return !focused ? (
       [...Array(100)].map((_, i) => (

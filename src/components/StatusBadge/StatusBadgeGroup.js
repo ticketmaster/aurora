@@ -85,7 +85,7 @@ class StatusBadgeGroup extends Component {
       <StatusBadgeContainer>
         {this.renderBadges(visibleBadges, variant)}
         {hiddenBadges &&
-          hiddenBadges.length && (
+          hiddenBadges.length > 0 && (
             <HiddenBadgesCount
               onMouseEnter={this.elementHovered}
               onMouseLeave={this.mouseLeave}

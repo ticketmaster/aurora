@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { themes, constants, typography } from "../../../theme";
 import getThemeValue from "../../../utils/getThemeValue";
+import { Button as AuroraButton } from "../../Button";
+
+export const INPUT_HEIGHT = 34;
 
 export const Container = styled.div`
   display: flex;
@@ -8,7 +11,8 @@ export const Container = styled.div`
   align-items: center;
 `;
 
-export const Button = styled.button`
+export const Button = styled(AuroraButton)`
+  min-width: 36px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -25,8 +29,11 @@ export const Button = styled.button`
     color 0.3s ${constants.easing.easeInOutQuad};
 
   &:disabled {
-    border-color: ${getThemeValue("gray04")};
+    border: 1px solid ${getThemeValue("gray04")};
     color: ${getThemeValue("gray03")};
+    background: transparent;
+    opacity: 1;
+    cursor: default;
   }
 
   &:focus {
@@ -47,21 +54,21 @@ export const Button = styled.button`
 `;
 
 export const InputFieldContainer = styled.div`
+  box-sizing: border-box;
   overflow-y: hidden;
   display: flex;
-  height: 29px;
+  height: 36px;
   flex-direction: column;
-  border-bottom: 1px solid ${getThemeValue("gray02")};
+  border: 1px solid ${getThemeValue("gray02")};
+  border-radius: ${constants.borderRadius.small};
   margin: 0px 12px;
-  position: relative;
-  bottom: 1px;
 
   &:hover&:not(.InputFieldContainer__disabled) {
     border-color: ${getThemeValue("primary", "base")};
   }
 
   &.InputFieldContainer__disabled {
-    border-bottom: 1px solid ${getThemeValue("gray04")};
+    border: 1px solid ${getThemeValue("gray04")};
   }
 `;
 
@@ -70,10 +77,11 @@ export const InputField = styled.input.attrs({
 })`
   top: 0;
   position: relative;
+  line-height: ${INPUT_HEIGHT}px;
+  padding: 0;
   outline: none;
-  width: 31px;
+  width: 30px;
   font-size: ${typography.size.giga};
-  height: 28px;
   text-align: center;
   color: #353c42;
   caret-color: #353c42;
@@ -83,5 +91,6 @@ export const InputField = styled.input.attrs({
 
   &:disabled {
     border-color: ${themes.global.gray04};
+    color: ${themes.global.onyx.muted};
   }
 `;
