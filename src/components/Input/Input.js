@@ -21,6 +21,7 @@ const Input = ({
   errorMessage,
   size,
   tag,
+  labelStyle,
   ...rest
 }) => {
   const sluggified = sluggify(name + label);
@@ -35,7 +36,11 @@ const Input = ({
         }
       )}
     >
-      <FieldInputText id={`${sluggified}__label`}>{label}</FieldInputText>
+      {label && (
+        <FieldInputText id={`${sluggified}__label`} style={labelStyle}>
+          {label}
+        </FieldInputText>
+      )}
       <ErrorBoxWrapper>
         <FieldInputBox
           placeholder={disabled ? "" : placeholder}
@@ -60,6 +65,7 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
+  labelStyle: PropTypes.shape(),
   errorMessage: PropTypes.string,
   size: PropTypes.oneOf(SIZES),
   tag: PropTypes.oneOf(["textarea", "input"])
@@ -72,7 +78,8 @@ Input.defaultProps = {
   label: "",
   errorMessage: null,
   size: REGULAR,
-  tag: "input"
+  tag: "input",
+  labelStyle: {}
 };
 
 export default Input;
