@@ -74,13 +74,13 @@ export const shallowEqual = (objA, objB) => {
   );
 };
 
-export const ensureValueNotConflict = (handle, val, bounds, thershold) => {
+export const ensureValueNotConflict = (handle, val, bounds, threshold) => {
   if (handle != null && bounds !== undefined) {
     if (handle > 0 && val <= bounds[handle - 1]) {
-      return bounds[handle - 1] + thershold;
+      return bounds[handle - 1] + threshold;
     }
     if (handle < bounds.length - 1 && val >= bounds[handle + 1]) {
-      return bounds[handle + 1] - thershold;
+      return bounds[handle + 1] - threshold;
     }
   }
   return val;
@@ -91,14 +91,14 @@ export const trimAlignValue = (
   handle,
   props,
   bounds = {},
-  thershold = 0
+  threshold = 0
 ) => {
   const valInRange = ensureValueInRange(v, props);
   const valNotConflict = ensureValueNotConflict(
     handle,
     valInRange,
     bounds,
-    thershold
+    threshold
   );
   return ensureValuePrecision(valNotConflict, props);
 };
