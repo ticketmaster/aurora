@@ -83,3 +83,5 @@ export { default as VolumeMediumIcon } from "./VolumeMedium";
 export { default as VolumeMuteIcon } from "./VolumeMute";
 export { default as WillCallIcon } from "./WillCall";
 export { default as RefreshIcon } from "./Refresh";
+export { default as FraudulentActivityIcon } from "./FraudulentActivity";
+export { default as PrintIcon } from "./Print";

@@ -552,6 +552,22 @@ rows:
     </div>
     <div style={iconLabelStyle}>CreateNew icon</div>
   </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <FraudulentActivityIcon>
+        <title>FraudulentActivity Icon</title>
+      </FraudulentActivityIcon>
+    </div>
+    <div style={iconLabelStyle}>FraudulentActivity icon</div>
+  </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <PrintIcon>
+        <title>Print Icon</title>
+      </PrintIcon>
+    </div>
+    <div style={iconLabelStyle}>Print icon</div>
+  </Column>
  </Row>
 </Container>
 ```

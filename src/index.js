@@ -127,7 +127,9 @@ export {
   ListIcon,
   WarningIcon,
   RefreshIcon,
-  VenueSearchIcon
+  VenueSearchIcon,
+  FraudulentActivityIcon,
+  PrintIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider

@@ -51,7 +51,9 @@ import {
   UserIcon,
   VenueSearchIcon,
   PlusIcon,
-  CreateNewIcon
+  CreateNewIcon,
+  FraudulentActivityIcon,
+  PrintIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -130,7 +132,9 @@ export default {
     iconStyle,
     iconLabelStyle,
     PlusIcon,
-    CreateNewIcon
+    CreateNewIcon,
+    FraudulentActivityIcon,
+    PrintIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
