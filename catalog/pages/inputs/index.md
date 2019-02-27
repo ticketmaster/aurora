@@ -753,10 +753,10 @@ span: 6
 ---
 <div style={{ display: 'flex' }}>
     <div style={{ width: '50%' }}>
-        <QtySelector />
+        <QtySelector value={50} />
     </div>
     <div style={{ width: '50%' }}>
-        <QtySelector disabled/>
+        <QtySelector value={50} disabled/>
     </div>
 </div>
 ```
