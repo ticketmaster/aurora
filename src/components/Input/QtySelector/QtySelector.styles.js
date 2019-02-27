@@ -42,14 +42,14 @@ export const Button = styled(AuroraButton)`
   }
 
   &:enabled:hover {
-    background-color: ${getThemeValue("primary", "light")};
+    background-color: ${getThemeValue("primary", "lightest")};
     color: ${getThemeValue("primary", "base")};
     cursor: pointer;
   }
 
   &:enabled:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
-    background-color: ${getThemeValue("primary", "muted")};
+    background-color: ${getThemeValue("primary", "light")};
   }
 `;
 
