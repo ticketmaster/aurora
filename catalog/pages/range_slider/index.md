@@ -5,12 +5,16 @@ span: 6
 rows:
   - Prop: defaultValue
     Type: Array of numbers
-    Default: [0, 100]
-    Notes: Defines initila values of left and right handle
+    Default: '[0, 100]'
+    Notes: Defines initial values of left and right handle. Please use 0 as the first array element in case of a single slider.
   - Prop: value
     Type: Array of numbers
     Default: "null"
-    Notes: Sets the value of the left and right handle and turns the slider into controlled element
+    Notes: Sets the value of the left and right handle and turns the slider into controlled element. Please use 0 as the first array element in case of a single slider.
+  - Prop: single
+    Type: boolean
+    Default: "false"
+    Notes: Set to `true` to get a slider with a single knob.
   - Prop: disabled
     Type: boolean
     Default: "false"
@@ -54,7 +58,7 @@ rows:
   - Prop: threshold
     Type: number
     Default: 0
-    Notes: Defines the minumum difference between left and right handle values
+    Notes: Defines the minimum difference between left and right handle values
 ```
 
 ```react
@@ -72,6 +76,13 @@ rows:
             <Column small={2}/>
             <Column small={8}>
                 <RangeSlider disabled/>
+            </Column>
+            <Column small={2}/>
+        </Row>
+        <Row>
+            <Column small={2}/>
+            <Column small={8}>
+                <RangeSlider single/>
             </Column>
             <Column small={2}/>
         </Row>
