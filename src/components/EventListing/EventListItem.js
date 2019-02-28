@@ -8,6 +8,8 @@ import DefaultEvent from "./Event";
 import Ellipsis from "./Event/Ellipsis";
 import Flex from "../Flex";
 import Grid from "./Grid";
+import Modal from "./Modal/Modal";
+import ModalTwo from "./Modal2"
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
 import { shouldAnimate, shouldChangeHeight } from "./utils/animation";
@@ -117,7 +119,7 @@ class EventListItem extends PureComponent {
           {isDesktop && (
             <React.Fragment>
               <span>
-                {onSaleText}: <br />{" "}
+                {onSaleText}: <br />
               </span>
               <span>{time}</span>
             </React.Fragment>
@@ -135,6 +137,12 @@ class EventListItem extends PureComponent {
       hasProducts,
       item: { badge, button, date, label, title, subTitle }
     } = this.props;
+
+    const modalProps = {
+      ariaLabel: 'A label describing the Modal\'s current content',
+      // triggerText: 'This is a button to trigger the Modal'
+    };
+    
     return (
       <Event className="eventList_item">
         <Event.Header
@@ -224,7 +232,29 @@ class EventListItem extends PureComponent {
           >
             {button.text}
           </Button>
-          <Ellipsis className="ellipsis_cta" />
+          <ModalTwo>
+            <ModalTwo.Trigger>
+              {(onOpen, triggerRef) => (
+                <div
+                  onClick={onOpen}
+                  ref={triggerRef}
+                >
+                hello
+                </div>
+              )}
+            </ModalTwo.Trigger>
+            <ModalTwo.Content>
+              I'm content
+            </ModalTwo.Content>
+          </ModalTwo>
+          {/* <Modal
+            {...modalProps}
+            trigger={<Ellipsis className="ellipsis_cta" />}
+            onOpenSuccess={this.handleClick}
+            onCloseSuccess={this.handleClick}
+          >
+              <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
+          </Modal> */}
         </Event.Actions>
       </Event>
     );

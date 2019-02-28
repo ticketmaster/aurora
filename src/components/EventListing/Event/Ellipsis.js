@@ -24,21 +24,24 @@ const Icon = styled(OverflowIcon)`
   min-width: 10px;
 `;
 
-const Ellipsis = ({className, id, onClick}) => (
+const Ellipsis = ({className, id, ref, onClick, buttonRef}) => (
   <React.Fragment>
     <Button
       id={id}
+      ref={ref}
       onClick={onClick}
+      buttonRef={buttonRef}
       className="cta-btn-ellipsis"
       role="button"
-    />
-    <Icon
-      id={id} onClick={onClick} 
-      className={className}
-      color="#000"
-      direction="right"
-      size={15}
-    />
+    >
+      <Icon
+        id={id} onClick={onClick} 
+        className={className}
+        color="#000"
+        direction="right"
+        size={15}
+      />
+    </Button>
   </React.Fragment>
 )
 

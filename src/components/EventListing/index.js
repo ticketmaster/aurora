@@ -5,7 +5,6 @@ import SPACING from "../../theme/spacing";
 import Accordion from "../Accordion";
 import EventListItem from "./EventListItem";
 import EventListPanel from "./EventListPanel";
-
 import { mediumAndUp } from "../../theme/mediaQueries";
 
 import {
@@ -44,6 +43,10 @@ const AccordionContent = styled.div`
       .eventList_panel {
         height: auto;
         max-height: 600px;
+      }
+
+      .modal {
+        display: none;  
       }
 
       ${({ isOpen }) =>

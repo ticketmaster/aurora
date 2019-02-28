@@ -235,7 +235,7 @@ const ContentRow = styled(Row)`
   position: relative;
 `;
 
-class ListRowContent extends Component {
+class RowContent extends Component {
   componentDidUpdate(prevProps) {
     if (this.props.isOpen && this.props.index !== prevProps.index) {
       this.props.resetOpenIndex();
@@ -474,7 +474,7 @@ class ListRowContent extends Component {
   }
 }
 
-ListRowContent.defaultProps = {
+RowContent.defaultProps = {
   isOpen: false,
   onExpandShow: "subTitle",
   children: null,
@@ -482,7 +482,7 @@ ListRowContent.defaultProps = {
   onCollapseItem: RowToggler.defaultProps.onCollapseItem
 };
 
-ListRowContent.propTypes = {
+RowContent.propTypes = {
   rowItem: PropTypes.shape(rowDataShape).isRequired,
   isOpen: PropTypes.bool,
   index: PropTypes.number.isRequired,
@@ -494,4 +494,4 @@ ListRowContent.propTypes = {
   resetOpenIndex: PropTypes.func.isRequired
 };
 
-export default ListRowContent;
+export default RowContent;

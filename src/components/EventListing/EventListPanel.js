@@ -49,6 +49,7 @@ const EventListPanel = ({ isOpen, items }) => (
     className={shouldChangeHeight(isOpen, "eventList_panel")}
     isOpen={isOpen}
   >
+      I'm content
     {/* {lineup && (
           <Flex column grow={1} shrink={1}>
             <Tile.Label className="label">LINEUP</Tile.Label>
