@@ -174,7 +174,7 @@ class PopOver extends Component {
      * one zone that triggers the popover to another that triggers the same popover but with different place to display
      */
     const {
-      position: { elTop, elBottom },
+      position: { elTop, elBottom, elLeft },
       isVisible,
       inlineWithTarget,
       position,
@@ -185,7 +185,8 @@ class PopOver extends Component {
 
     if (
       (prevProps.position.elTop !== elTop ||
-        prevProps.position.elBottom !== elBottom) &&
+        prevProps.position.elBottom !== elBottom ||
+        prevProps.position.elLeft !== elLeft) &&
       isVisible &&
       prevProps.isVisible === isVisible
     ) {
