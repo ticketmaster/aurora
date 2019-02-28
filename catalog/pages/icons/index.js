@@ -53,7 +53,8 @@ import {
   PlusIcon,
   CreateNewIcon,
   FraudulentActivityIcon,
-  PrintIcon
+  PrintIcon,
+  FavoriteIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -134,7 +135,8 @@ export default {
     PlusIcon,
     CreateNewIcon,
     FraudulentActivityIcon,
-    PrintIcon
+    PrintIcon,
+    FavoriteIcon
   },
   content: pageLoader(() => import("./index.md"))
 };

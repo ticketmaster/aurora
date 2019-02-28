@@ -11,7 +11,7 @@ const FavoriteIcon = ({ children, color, ...props }) => (
     viewBox="0 0 24 24"
   >
     {children}
-    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+    <g stroke="none" strokeWidth="2" fill="none" fillRule="evenodd">
       <g>
         <rect x="0" y="0" width="24" height="24" />
         <path
