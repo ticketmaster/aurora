@@ -6,6 +6,10 @@ const Button = styled.button`
   background: none;
   border: none;
   position: relative;
+  
+  .cta-btn-ellipsis {
+    min-width: auto;
+  }
 
   .screen-reader-text {
     visibility: hidden;

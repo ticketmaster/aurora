@@ -6,6 +6,7 @@ import Flex from "../../components/Flex";
 import Tile from "../../components/Tile";
 import Icon from "./Event/Icon";
 
+
 import { IconType, LinkType } from "../../components/types";
 
 const Wrapper = styled(Flex)`
@@ -17,23 +18,26 @@ const IconWrapper = styled(Flex)`
 `;
 
 const CategoryItem = ({
-  label,
   subTitle,
   title,
   url,
-  icon: { alt = "", type, src = "https://placekitten.com/g/512/288" },
+  image,
+  icon,
   text
-}) => (
-  <Wrapper>
-    <IconWrapper>
-      {type && <Icon type={type} src={src} alt={text} />}
-    </IconWrapper>
-    <Flex column justifyCenter>
-      {title && <Tile.Link href={url}> {title} </Tile.Link>}
-      {subTitle && <Tile.Text> {subTitle} </Tile.Text>}
-    </Flex>
-  </Wrapper>
-);
+}) => 
+  // console.log("categoryITem:  ", this.props);
+   (
+    <Wrapper>
+      <IconWrapper>
+        {icon && <Icon type={icon.type} alt={text} />}
+      </IconWrapper>
+      <Flex column justifyCenter>
+        {title && <Tile.Link href={url}> {title} </Tile.Link>}
+        {subTitle && <Tile.Text> {subTitle} </Tile.Text>}
+      </Flex>
+    </Wrapper>
+  )
+
 
 CategoryItem.propTypes = {
   link: LinkType,

@@ -9,16 +9,12 @@ import Ticket from "../../../components/Icons/Ticket";
 import Venue from "../../../components/Icons/Venue";
 import Vip from "../../../components/Icons/Vip";
 
-// const Icon = styled.div`
-//  display: inline;
-// `
-
 const Icon = props => {
   switch (props.type) {
-    case "Attraction":
+    case "attraction":
       return <Avatar size={40} {...props} />;
 
-    case "Parking":
+    case "parking":
       return (
         <Parking
           {...props}
@@ -35,7 +31,7 @@ const Icon = props => {
         </Parking>
       );
 
-    case "Tickets":
+    case "tickets":
       return (
         <Ticket
           {...props}
@@ -51,24 +47,22 @@ const Icon = props => {
         </Ticket>
       );
 
-    case "Venue":
+    case "venuenfo":
       return (
         <Venue
           {...props}
           className="icon"
           color={COLORS.blackPearl}
           size={24}
-          aria-labelledby="catTitle catDesc"
+          aria-labelledby="venueIcon venueDesc"
           role="img"
         >
-          <title id="catTitle">Pixels, My Super-friendly Cat</title>
-          <desc id="catDesc">
-            An illustrated gray cat with bright green blinking eyes.
-          </desc>
+          <title id="venueIcon">venue icon</title>
+          <desc id="venueDesc">A svg vector of a building</desc>
         </Venue>
       );
 
-    case "Vip":
+    case "vip":
       return (
         <Vip {...props} className="icon" color={COLORS.blackPearl} size={24} />
       );

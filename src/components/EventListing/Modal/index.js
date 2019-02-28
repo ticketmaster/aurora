@@ -5,7 +5,7 @@ import ModalContent from './ModalContent';
 import ModalBottomSheet from "./ModalBottomSheet";
 
 class Modal extends PureComponent {
-  state = { isOpen: this.props.isOpen || false };
+  state = { isOpen: false };
 
   // static getDerivedStateFromProps(nextProps, prevState) {
   //   console.log("getDerivedStateFromProps", nextProps);

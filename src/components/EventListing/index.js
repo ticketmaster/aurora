@@ -42,6 +42,7 @@ class EventListing extends PureComponent {
                       id={id}
                       isOpen={isOpen}
                       item={rest}
+                      items={eventInfo}
                     />
                     <Accordion.Panel isOpen={isOpen}>
                       <EventListPanel isOpen={isOpen} items={eventInfo} />
@@ -85,6 +86,7 @@ const AccordionContent = styled.div`
 
     ${mediumAndUp`
       .chevron { display: inherit; }
+
       .eventList_panel {
         height: auto;
         max-height: 600px;

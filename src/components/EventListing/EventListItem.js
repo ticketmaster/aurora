@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 import { Button } from "../Button";
 import { StatusBadge } from "../StatusBadge";
@@ -10,10 +10,11 @@ import Ellipsis from "./Event/Ellipsis";
 import Flex from "../Flex";
 import Grid from "./Grid";
 import Modal from "./Modal"
+import ModalWithPanelInfo from "./ModalWithPanelInfo";
 
-import { expandCollapse, adjustHeight } from "../../theme/animations";
+import { expandCollapse, adjustHeight, ex } from "../../theme/animations";
 import { mediumAndUp } from "../../theme/mediaQueries";
-import { shouldAnimate, shouldChangeHeight } from "./utils/animation";
+import { shouldAnimate, shouldChangeHeight, collapse, expand } from "./utils/animation";
 
 class EventListItem extends PureComponent {
   handleClick = e => {
@@ -22,7 +23,7 @@ class EventListItem extends PureComponent {
     handleToggle(id);
   };
 
-  renderBadge = (breakPoint, state) => {
+  renderBadge = ({displayFor, currStatus}) => {
     const {
       item: {
         badge: { isVisible, status, type }
@@ -32,8 +33,8 @@ class EventListItem extends PureComponent {
     if (status && type && isVisible) {
       return (
         <Flex
-          alignCenter={breakPoint === "desktop" && state === "inactive"}
-          className={`badge_${breakPoint} badge_${state} `}
+          alignCenter={displayFor === "desktop" && currStatus === "inactive"}
+          className={`badge_${displayFor} badge_${currStatus} `}
         >
           <div>
             <StatusBadge label={status} type={type} />
@@ -44,18 +45,16 @@ class EventListItem extends PureComponent {
     return null;
   };
 
-  renderLabel = (breakPoint, status) => {
-    const {
-      item: { label }
-    } = this.props;
+  renderLabel = ({displayFor, currStatus}) => {
+    const { item: { label } } = this.props;
     const [onSaleText, time] = label && label.text && label.text.split(": ");
 
-    const isDesktop = breakPoint !== "mobile";
+    const isDesktop = displayFor !== "mobile";
     if (label && label.isVisible && label.text) {
       return (
         <Event.Text
           accent="positive"
-          className={`label_${breakPoint}`}
+          className={`label_${displayFor}`}
           variant="accent"
           primary
         >
@@ -77,10 +76,21 @@ class EventListItem extends PureComponent {
   render() {
     const {
       handleToggle,
-      isOpen,
       hasProducts,
-      item: { badge, button, date, label, title, subTitle }
+      isOpen,
+      items,
+      item: {
+        badge,
+        button,
+        date,
+        label,
+        subTitle,
+        title
+      }
     } = this.props;
+
+    const forDesktop = {displayFor: "desktop", currStatus: "inactive"};
+    const forMobile = {displayFor: "mobile", currStatus: "inactive"}
     
     return (
       <Event className="eventList_item">
@@ -106,8 +116,8 @@ class EventListItem extends PureComponent {
                     <Event.Title> {title} </Event.Title>
                     <Event.SubTitle> {subTitle} </Event.SubTitle>
 
-                    {label && this.renderLabel("mobile", "inactive")}
-                    {badge && this.renderBadge("mobile", "inactive")}
+                    {label && this.renderLabel(forMobile)}
+                    {badge && this.renderBadge(forMobile)}
 
                     {hasProducts && (
                       <Event.Text className="addon">
@@ -157,10 +167,10 @@ class EventListItem extends PureComponent {
               </Grid>
             </Event.Body>
 
-            <div className={shouldAnimate(!isOpen, "header")}>
-              {badge && this.renderBadge("desktop", "inactive")}
-              {label && this.renderLabel("desktop", "inactive")}
-            </div>
+            <ActiveBadge className={shouldAnimate(!isOpen, "header")} isOpen={isOpen}>
+              {badge && this.renderBadge(forDesktop)}
+              {label && this.renderLabel(forDesktop)}
+            </ActiveBadge>
 
           </Flex>
         </Event.Header>
@@ -183,10 +193,11 @@ class EventListItem extends PureComponent {
                 />
               )}
             </Modal.Trigger>
-              <Modal.BottomSheet isOpen>
-                Yolo
-              </Modal.BottomSheet>
+            <Modal.BottomSheet isOpen={isOpen}>
+              <ModalWithPanelInfo items={items} />
+            </Modal.BottomSheet>
           </Modal>
+
         </Event.Actions>
       </Event>
     );
@@ -196,13 +207,15 @@ class EventListItem extends PureComponent {
 export default EventListItem;
 
 
+const ActiveBadge = styled.div`
+  ${({isOpen}) =>
+    isOpen &&
+    css`margin-top: -14px;`
+  }
+`;
 
 const Event = styled(DefaultEvent)`
   ${expandCollapse} ${adjustHeight}
-
-  div:empty {
-    display: none;
-  }
 
   .badge_active,
   .label_active {
@@ -247,7 +260,8 @@ const Event = styled(DefaultEvent)`
     }
     
     .right__actions { width: auto; }
-  `} .collapse {
+  `}
+  .collapse {
     text-align: center;
   }
 `;

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+
 import SPACING from "../../../theme/spacing";
 import COLORS from "../../../theme/colorThemes";
 
@@ -17,22 +18,12 @@ const { global } = COLORS;
 
 const Event = styled(Flex)`
   background: ${global.white.base};
-  .addon {
-    color: ${global.brand};
-  }
+  .addon { color: ${global.brand}; }
 
   ${({ hasImage }) =>
     hasImage
-      ? css`
-          .date {
-            margin: 0px ${SPACING.cozy} 0 ${SPACING.moderate};
-          }
-        `
-      : css`
-          .date {
-            margin: 0px ${SPACING.cozy} 0px 0px;
-          }
-        `};
+      ? css` .date { margin: 0px ${SPACING.cozy} 0 ${SPACING.moderate};}`
+      : css` .date { margin: 0px ${SPACING.cozy} 0px 0px;}`};
 `;
 
 Event.Actions = Actions;
