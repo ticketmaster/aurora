@@ -8,7 +8,6 @@ const { weight } = typography;
 // import colors from "../../theme/colors";
 // import constants from "../../theme/constants";
 
-
 const Wrapper = styled(AuroraText)`
   color: rgba(38, 38, 38, 0.6);
   font-weight: ${weight.semiBold};
@@ -17,10 +16,10 @@ const Wrapper = styled(AuroraText)`
   position: relative;
 `;
 
-const Text = (props) => (
+const Text = props => (
   <Wrapper
-    className="eventName"
     accent="gray03"
+    className="eventName"
     size="uno"
     tag="p"
     variant="accent"

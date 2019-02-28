@@ -7,7 +7,7 @@ const { weight } = typography;
 
 const Actions = styled(Flex)`
   margin-top: 11px;
-  button, a {
+  .button_cta {
     font-weight: ${weight.semiBold};
     justify-content: center;
     line-height: 36px;

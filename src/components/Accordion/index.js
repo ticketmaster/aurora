@@ -6,22 +6,7 @@ import AccordionItem from "./AccordionItem";
 import AccordionPanel from "./AccordionPanel";
 
 const Wrapper = styled.div`
-  /* > :nth-child(n + 1)::after {
-    background: #ebebeb;
-    content: " ";
-    display: flex;
-    height: 1px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  > :nth-last-child(1)::after {
-    background: none;
-    content: " ";
-    display: flex;
-    height: 1px;
-    margin-left: 16px;
-    margin-right: 16px;
-  } */
+  display: inherit;
 `;
 
 class Accordion extends PureComponent {
@@ -41,7 +26,11 @@ class Accordion extends PureComponent {
     this.state = { openSections };
   }
 
-  onClick = (e) => {
+  componentDidCatch() {
+    this.setState(state => ({...state, hasError: true}))
+  }
+
+  onClick = e => {
     const id = e;
     const {
       props: { multiToggle },
@@ -93,14 +82,12 @@ class Accordion extends PureComponent {
         isOpen: !!openSections[child.props.id],
         toggle: this.onClick
       })
-    )};
+    );
+  };
 
   render() {
     return (
-      <Wrapper
-       className="accordion-wrapper"
-       data-allow-toggle
-      >
+      <Wrapper className="accordion-wrapper" data-allow-toggle>
         {this.clonedChildren()}
       </Wrapper>
     );

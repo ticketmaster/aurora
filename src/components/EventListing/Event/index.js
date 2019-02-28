@@ -1,5 +1,5 @@
-import styled, {css} from "styled-components";
-import {mediumAnUp} from "../../../theme/mediaQueries";
+import styled, { css } from "styled-components";
+
 import SPACING from "../../../theme/spacing";
 import COLORS from "../../../theme/colorThemes";
 
@@ -14,41 +14,16 @@ import SubTitle from "./SubTitle";
 import Text from "./Text";
 import Title from "./Title";
 
-const {global} = COLORS;
+const { global } = COLORS;
 
 const Event = styled(Flex)`
-    background: ${global.white.base};
+  background: ${global.white.base};
+  .addon { color: ${global.brand}; }
 
-  .hover--area {
-    padding: 10px 8px 10px;
-    margin: 0 ${SPACING.moderate} 0 0;
-  }
-  
-  /* ${mediumAnUp`
-    .badge{
-      text-align: right;
-      span {
-        display: block
-      }
-    }
-  `} */
-  .addon { color: ${global.brand} }
-
-  ${({hasImage}) =>
+  ${({ hasImage }) =>
     hasImage
-    ?
-      css`
-        .date {
-          margin: 0px ${SPACING.cozy} 0 ${SPACING.moderate};
-        }      
-      `
-    :
-      css`
-        .date {
-          margin: 0px ${SPACING.cozy} 0px 0px;
-        }      
-      `
-  }
+      ? css` .date { margin: 0px ${SPACING.cozy} 0 ${SPACING.moderate};}`
+      : css` .date { margin: 0px ${SPACING.cozy} 0px 0px;}`};
 `;
 
 Event.Actions = Actions;

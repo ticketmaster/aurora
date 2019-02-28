@@ -33,7 +33,8 @@ const Collapsed = styled.div`
             display: block;
         }
     }
-  `} .extras {
+  `} 
+  .extras {
     grid-area: extras;
     display: flex;
     justify-content: flex-start;

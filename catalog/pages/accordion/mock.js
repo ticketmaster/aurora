@@ -1,3 +1,9 @@
+export const DATA = [{
+  id: "fake id",
+  title: "Hello",
+  content: "World"
+}];
+
 export const EVENT_DATA = [
   {
     id: "vv1AaZA40Gkd-wNzW",

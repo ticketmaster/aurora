@@ -6,20 +6,20 @@ import { Text as AuroraText } from "../../Text";
 // import constants from "../../theme/constants";
 
 const Wrapper = styled(AuroraText)`
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   color: rgba(38, 38, 38, 0.6);
+  display: -webkit-box;
   line-height: 16px;
   margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
   overflow: hidden;
   position: relative;
 `;
 
-const SubTitle = (props) => (
+const SubTitle = props => (
   <Wrapper
-    className="eventName"
     accent="gray03"
+    className="eventName"
     size="hecto"
     tag="p"
     variant="accent"

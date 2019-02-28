@@ -31,7 +31,7 @@ class Chevron extends PureComponent {
   render() {
     const {isOpen = false} = this.props;
     return (
-      <Wrapper isOpen={isOpen} variant="transparent">
+      <Wrapper className="chevron" isOpen={isOpen} variant="transparent">
         <StyledComponent size={15} />
       </Wrapper>
     );
