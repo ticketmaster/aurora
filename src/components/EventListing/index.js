@@ -1,10 +1,12 @@
-import React from "react";
+import React, {PureComponent} from "react";
 import styled, { css } from "styled-components";
+
 import SPACING from "../../theme/spacing";
 
 import Accordion from "../Accordion";
 import EventListItem from "./EventListItem";
 import EventListPanel from "./EventListPanel";
+
 import { mediumAndUp } from "../../theme/mediaQueries";
 
 import {
@@ -13,6 +15,49 @@ import {
   marginBottom,
   maxHeight
 } from "../../theme/animations";
+
+class EventListing extends PureComponent {
+  handleModalSuccess = (e, handleToggle) => {
+   e.preventDefault();
+    handleToggle(id);
+  }
+
+  render(){
+    const {items} = this.props;
+
+    return (
+      <Wrapper className="event_listing">
+        <Accordion>
+          {items.map(({ hasAddOns, items: eventInfo, id, ...rest }) => (
+            <Accordion.Item id={id} key={id}>
+              {(isOpen, handleToggle) => (
+                  <AccordionContent
+                    isOpen={isOpen}
+                    className="event_listing_accordion desktop"
+                  >
+                    <EventListItem
+                      className="eventList_item"
+                      handleToggle={handleToggle}
+                      hasProducts={hasAddOns}
+                      id={id}
+                      isOpen={isOpen}
+                      item={rest}
+                    />
+                    <Accordion.Panel isOpen={isOpen}>
+                      <EventListPanel isOpen={isOpen} items={eventInfo} />
+                    </Accordion.Panel>
+                  </AccordionContent>
+              )}
+            </Accordion.Item>
+          ))}
+        </Accordion>
+      </Wrapper>
+    )}
+}
+
+export default EventListing;
+
+
 
 const Wrapper = styled.div`
   .accordion-wrapper > div:nth-child(n + 1)::after {
@@ -73,34 +118,3 @@ const AccordionContent = styled.div`
       }
     `} 
 `;
-
-const EventListing = ({ items }) => (
-  <Wrapper className="event_listing">
-    <Accordion>
-      {items.map(({ hasAddOns, items: eventInfo, id, ...rest }) => (
-        <Accordion.Item id={id} key={id}>
-          {(isOpen, handleToggle) => (
-              <AccordionContent
-                isOpen={isOpen}
-                className="event_listing_accordion desktop"
-              >
-                <EventListItem
-                  className="eventList_item"
-                  handleToggle={handleToggle}
-                  hasProducts={hasAddOns}
-                  id={id}
-                  isOpen={isOpen}
-                  item={rest}
-                />
-                <Accordion.Panel isOpen={isOpen}>
-                  <EventListPanel isOpen={isOpen} items={eventInfo} />
-                </Accordion.Panel>
-              </AccordionContent>
-          )}
-        </Accordion.Item>
-      ))}
-    </Accordion>
-  </Wrapper>
-);
-
-export default EventListing;

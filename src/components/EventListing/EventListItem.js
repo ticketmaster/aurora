@@ -1,75 +1,19 @@
 import React, { PureComponent } from "react";
 import styled from "styled-components";
 
-import { StatusBadge } from "../StatusBadge";
 import { Button } from "../Button";
+import { StatusBadge } from "../StatusBadge";
+
 import Chevron from "./Chevron";
 import DefaultEvent from "./Event";
 import Ellipsis from "./Event/Ellipsis";
 import Flex from "../Flex";
 import Grid from "./Grid";
-import Modal from "./Modal/Modal";
-import ModalTwo from "./Modal2"
+import Modal from "./Modal"
 
 import { expandCollapse, adjustHeight } from "../../theme/animations";
-import { shouldAnimate, shouldChangeHeight } from "./utils/animation";
 import { mediumAndUp } from "../../theme/mediaQueries";
-
-const Event = styled(DefaultEvent)`
-  ${expandCollapse} ${adjustHeight}
-
-  div:empty {
-    display: none;
-  }
-
-  .badge_active,
-  .label_active {
-    margin-top: -15px;
-  }
-
-  .badge_desktop,
-  .label_desktop {
-    display: none;
-  }
-
-  .button_cta {
-    display: none;
-  }
-
-  .right__actions {
-    width: 14px;
-    padding-right: 16px;
-  }
-
-  .event_title_desktop {display: none}
-
-  ${mediumAndUp`
-    .event_title_desktop {display: inherit}
-    .event_title_mobile {display: none}
-    
-
-    .badge_desktop, .label_desktop { display: inherit }
-    .badge_mobile, .label_mobile { display: none }
-    
-    .button_cta {
-      align-items: center;
-      display: inherit
-      justify-content: center;
-      text-align: center;
-    }
-    .ellipsis_cta { display: none }
-
-    .label_desktop {
-      display: block;
-      text-align: right;
-    }
-    
-    .right__actions { width: auto; }
-  `} .collapse {
-    text-align: center;
-  }
-`;
-
+import { shouldAnimate, shouldChangeHeight } from "./utils/animation";
 
 class EventListItem extends PureComponent {
   handleClick = e => {
@@ -137,11 +81,6 @@ class EventListItem extends PureComponent {
       hasProducts,
       item: { badge, button, date, label, title, subTitle }
     } = this.props;
-
-    const modalProps = {
-      ariaLabel: 'A label describing the Modal\'s current content',
-      // triggerText: 'This is a button to trigger the Modal'
-    };
     
     return (
       <Event className="eventList_item">
@@ -222,6 +161,7 @@ class EventListItem extends PureComponent {
               {badge && this.renderBadge("desktop", "inactive")}
               {label && this.renderLabel("desktop", "inactive")}
             </div>
+
           </Flex>
         </Event.Header>
         <Event.Actions column className="right__actions">
@@ -232,29 +172,21 @@ class EventListItem extends PureComponent {
           >
             {button.text}
           </Button>
-          <ModalTwo>
-            <ModalTwo.Trigger>
+
+          <Modal isOpen={isOpen}>
+            <Modal.Trigger>
               {(onOpen, triggerRef) => (
-                <div
-                  onClick={onOpen}
+                <Ellipsis
+                  className="ellipsis_cta"
                   ref={triggerRef}
-                >
-                hello
-                </div>
+                  onClick={onOpen}
+                />
               )}
-            </ModalTwo.Trigger>
-            <ModalTwo.Content>
-              I'm content
-            </ModalTwo.Content>
-          </ModalTwo>
-          {/* <Modal
-            {...modalProps}
-            trigger={<Ellipsis className="ellipsis_cta" />}
-            onOpenSuccess={this.handleClick}
-            onCloseSuccess={this.handleClick}
-          >
-              <Event.Text className="addon"> ADDONS AVAILABLE </Event.Text>
-          </Modal> */}
+            </Modal.Trigger>
+              <Modal.BottomSheet isOpen>
+                Yolo
+              </Modal.BottomSheet>
+          </Modal>
         </Event.Actions>
       </Event>
     );
@@ -262,3 +194,60 @@ class EventListItem extends PureComponent {
 }
 
 export default EventListItem;
+
+
+
+const Event = styled(DefaultEvent)`
+  ${expandCollapse} ${adjustHeight}
+
+  div:empty {
+    display: none;
+  }
+
+  .badge_active,
+  .label_active {
+    margin-top: -15px;
+  }
+
+  .badge_desktop,
+  .label_desktop {
+    display: none;
+  }
+
+  .button_cta {
+    display: none;
+  }
+
+  .right__actions {
+    width: 14px;
+    padding-right: 16px;
+  }
+
+  .event_title_desktop {display: none}
+
+  ${mediumAndUp`
+    .event_title_desktop {display: inherit}
+    .event_title_mobile {display: none}
+    
+
+    .badge_desktop, .label_desktop { display: inherit }
+    .badge_mobile, .label_mobile { display: none }
+    
+    .button_cta {
+      align-items: center;
+      display: inherit
+      justify-content: center;
+      text-align: center;
+    }
+    .ellipsis_cta { display: none }
+
+    .label_desktop {
+      display: block;
+      text-align: right;
+    }
+    
+    .right__actions { width: auto; }
+  `} .collapse {
+    text-align: center;
+  }
+`;

@@ -26,6 +26,10 @@ class Accordion extends PureComponent {
     this.state = { openSections };
   }
 
+  componentDidCatch() {
+    this.setState(state => ({...state, hasError: true}))
+  }
+
   onClick = e => {
     const id = e;
     const {

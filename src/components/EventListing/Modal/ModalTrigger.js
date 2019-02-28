@@ -1,14 +1,14 @@
 import React from 'react';
-import Ellipsis from "../Event/Ellipsis"
 
 const ModalTrigger = ({
   buttonRef,
+  children,
   onOpen,
-  text,
-  children
+  onOpenSuccess
 }) => (
-  <button className="c-btn" onClick={onOpen} ref={buttonRef}>{children}</button>
+  <React.Fragment>
+    {children(onOpen, buttonRef, onOpenSuccess)}
+  </React.Fragment>
 );
-{/*  */}
 
 export default ModalTrigger;

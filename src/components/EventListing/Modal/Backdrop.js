@@ -9,7 +9,7 @@ const Backdrop = styled(Flex)`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99; /*ensure backdrop is the top most node*/
+  z-index: 99; 
 `;
 
 export default Backdrop;
