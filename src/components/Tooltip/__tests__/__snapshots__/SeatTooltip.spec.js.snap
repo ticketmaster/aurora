@@ -2,7 +2,7 @@
 
 exports[`SeatTooltip should match snapshot when has children 1`] = `
 <div
-  className="bIWlOo"
+  className="czYnrP"
   direction="bottom"
   style={
     Object {
@@ -77,7 +77,7 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
 
 exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 <div
-  className="bIWlOo"
+  className="czYnrP"
   direction="bottom"
   style={
     Object {
@@ -144,7 +144,7 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 
 exports[`SeatTooltip should match snapshot when small and dark 1`] = `
 <div
-  className="MSlwj"
+  className="dQyfME"
   direction="bottom"
   style={
     Object {
