@@ -2,14 +2,11 @@ import { spacing } from "../../theme";
 
 export const SPACING = spacing.colossal.replace("px", "");
 
-const NATIVE_APP_NAV_BAR_HEIGHT = 50;
-
 export const getContentHeight = ({
   actionBar,
   bottomActionBar,
   container,
-  isFullscreen = false,
-  isWebview = false
+  isFullscreen = false
 }) => {
   const actionBarHeight = actionBar ? actionBar.clientHeight : 0;
 
@@ -18,8 +15,7 @@ export const getContentHeight = ({
     : 0;
 
   return `${container.clientHeight -
-    (isFullscreen ? 0 : SPACING * 2) -
-    (isWebview ? NATIVE_APP_NAV_BAR_HEIGHT : 0) -
+    (isFullscreen ? container.offsetTop : SPACING * 2) -
     actionBarHeight -
     bottomActionBarHeight}px`;
 };

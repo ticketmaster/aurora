@@ -54,10 +54,10 @@ export class Modal extends React.Component {
       MODAL_SIZE_XLARGE
     ]),
     isFullscreen: PropTypes.bool,
-    isWebview: PropTypes.bool,
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
     /* eslint-disable react/forbid-prop-types */
+    overlayProps: PropTypes.object,
     containerProps: PropTypes.object,
     actionBarProps: PropTypes.object,
     contentProps: PropTypes.object,
@@ -73,9 +73,9 @@ export class Modal extends React.Component {
     isOpened: true,
     size: MODAL_SIZE_MEDIUM,
     isFullscreen: false,
-    isWebview: false,
     onRequestClose: null,
     onScroll: null,
+    overlayProps: {},
     containerProps: {},
     actionBarProps: {},
     contentProps: {},
@@ -157,14 +157,13 @@ export class Modal extends React.Component {
     const bottomActionBar = this.bottomActionBarRef.current;
     const content = this.contentRef.current;
     const container = this.containerRef.current;
-    const { isFullscreen, isWebview } = this.props;
+    const { isFullscreen } = this.props;
 
     const contentHeight = getContentHeight({
       isFullscreen,
       actionBar,
       bottomActionBar,
-      container,
-      isWebview
+      container
     });
 
     content.style.maxHeight = contentHeight;
@@ -212,6 +211,7 @@ export class Modal extends React.Component {
       gutters,
       size,
       deviceSize,
+      overlayProps,
       containerProps,
       actionBarProps,
       contentProps,
@@ -231,7 +231,7 @@ export class Modal extends React.Component {
           classNames="open"
         >
           <Backdrop
-            overlayProps={{ ref: this.containerRef }}
+            overlayProps={{ ...overlayProps, ref: this.containerRef }}
             onRequestClose={this.closeModal}
             isVisible={isOpened}
             animated

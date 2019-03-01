@@ -71,7 +71,8 @@ describe("getContentHeight", () => {
         clientHeight: 40
       },
       container: {
-        clientHeight: 376
+        clientHeight: 376,
+        offsetTop: 0
       },
       isFullscreen: true
     });
