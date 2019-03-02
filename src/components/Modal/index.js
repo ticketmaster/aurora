@@ -57,6 +57,7 @@ export class Modal extends React.Component {
     onRequestClose: PropTypes.func,
     onScroll: PropTypes.func,
     /* eslint-disable react/forbid-prop-types */
+    overlayProps: PropTypes.object,
     containerProps: PropTypes.object,
     actionBarProps: PropTypes.object,
     contentProps: PropTypes.object,
@@ -74,6 +75,7 @@ export class Modal extends React.Component {
     isFullscreen: false,
     onRequestClose: null,
     onScroll: null,
+    overlayProps: {},
     containerProps: {},
     actionBarProps: {},
     contentProps: {},
@@ -209,6 +211,7 @@ export class Modal extends React.Component {
       gutters,
       size,
       deviceSize,
+      overlayProps,
       containerProps,
       actionBarProps,
       contentProps,
@@ -228,7 +231,7 @@ export class Modal extends React.Component {
           classNames="open"
         >
           <Backdrop
-            overlayProps={{ ref: this.containerRef }}
+            overlayProps={{ ...overlayProps, ref: this.containerRef }}
             onRequestClose={this.closeModal}
             isVisible={isOpened}
             animated

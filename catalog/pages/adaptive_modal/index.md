@@ -9,6 +9,9 @@ rows:
   - Prop: actionBarProps
     Type: object
     Notes: extra props passed to the actionBar wrapper
+  - Prop: overlayProps
+    Type: object
+    Notes: extra props passed to the modal overlay (e.g. to pass custom style props)
   - Prop: containerProps
     Type: object
     Notes: extra props passed to the modal container
