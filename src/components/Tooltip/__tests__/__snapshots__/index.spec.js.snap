@@ -2,49 +2,49 @@
 
 exports[`Tooltip dark should match snapshot 1`] = `
 <div
-  className="jvtFJH"
+  className="dXjWID"
   direction="bottom"
 />
 `;
 
 exports[`Tooltip should match snapshot 1`] = `
 <div
-  className="bIWlOo"
+  className="czYnrP"
   direction="bottom"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is bottom 1`] = `
 <div
-  className="bAJEPY"
+  className="lmiBYD"
   direction="bottom"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is invalid 1`] = `
 <div
-  className="bAJEPY"
+  className="gQlopL"
   direction="invalid"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is left 1`] = `
 <div
-  className="eqeUMB"
+  className="kqjpuO"
   direction="left"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is right 1`] = `
 <div
-  className="lposbp"
+  className="iYyszT"
   direction="right"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is top 1`] = `
 <div
-  className="gXAZue"
+  className="cAAEIl"
   direction="top"
 />
 `;

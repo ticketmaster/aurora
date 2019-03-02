@@ -22,11 +22,11 @@ export const StyledTooltip = styled.div`
   transition: opacity 0.1s ${constants.easing.easeInQuad},
     transform 0.1s ${constants.easing.easeInQuad};
 
+  /* pseudoelement should fade in faster and fade out slower than tooltip */
   :before {
     content: "";
     position: absolute;
-    transition: opacity 0.1s ${constants.easing.easeInQuad},
-      scale 0.1s ${constants.easing.easeInQuad};
+    transition: opacity 0.15s ${constants.easing.easeInQuad};
     display: ${({ isVisible }) => (isVisible ? "inline-block" : "none")};
     border-right: ${({ variant }) =>
       variant === LIGHT ? `1px solid ${themes.global.gray02}` : ""};
@@ -56,41 +56,53 @@ export const StyledTooltip = styled.div`
 
   &.open-enter,
   &.open-enter:before {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
+    transition: opacity 0.25s ${constants.easing.easeOutQuad};
     display: block;
     opacity: 0;
   }
 
   &.open-enter {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
-      transform 0.3s ${constants.easing.easeInOutQuad};
-    transform: scale(0.7);
+    transition: opacity 0.3s ${constants.easing.easeOutQuad},
+      transform 0.3s ${constants.easing.easeOutQuad};
+    transform: translate(0, 10px);
+    ${({ direction }) => {
+      switch (direction) {
+        case TOP:
+          return "transform: translate(0, 10px);";
+        case BOTTOM:
+          return "transform: translate(0, -10px);";
+        case LEFT:
+          return "transform: translate(10px, 0);";
+        case RIGHT:
+        default:
+          return "transform: translate(-10px, 0);";
+      }
+    }};
   }
 
   &.open-enter-active,
   &.open-enter-active:before {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
+    transition: opacity 0.25s ${constants.easing.easeOutQuad};
     display: block;
     opacity: 1;
   }
 
   &.open-enter-active {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
-      transform 0.3s ${constants.easing.easeInOutQuad};
-    transform: scale(1);
+    transition: opacity 0.3s ${constants.easing.easeOutQuad},
+      transform 0.3s ${constants.easing.easeOutQuad};
+    transform: translate(0);
   }
 
   &.open-enter-done,
-  &.open-enter-active:before {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
+  &.open-enter-done:before {
+    transition: opacity 0.25s ${constants.easing.easeOutQuad};
     display: block;
     opacity: 1;
   }
 
   &.open-enter-done {
-    transition: opacity 0.3s ${constants.easing.easeInOutQuad},
-      transform 0.3s ${constants.easing.easeInOutQuad};
-    transform: scale(1);
+    transition: opacity 0.3s ${constants.easing.easeOutQuad},
+      transform 0.3s ${constants.easing.easeOutQuad};
   }
 
   &.open-exit,
@@ -99,18 +111,14 @@ export const StyledTooltip = styled.div`
     opacity: 1;
   }
 
-  &.open-exit {
-    transform: scale(1);
-  }
-
   &.open-exit-active,
   &.open-exit-active:before {
     display: block;
     opacity: 0;
   }
 
-  &.open-exit-active {
-    transform: scale(0.7);
+  &.open-exit-done {
+    transform: translate(0);
   }
 `;
 
