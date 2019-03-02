@@ -568,6 +568,22 @@ rows:
     </div>
     <div style={iconLabelStyle}>Print icon</div>
   </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <PrintIcon size="large">
+        <title>Print Icon</title>
+      </PrintIcon>
+    </div>
+    <div style={iconLabelStyle}>Print icon</div>
+  </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <FavoriteIcon>
+        <title>Favorite Icon</title>
+      </FavoriteIcon>
+    </div>
+    <div style={iconLabelStyle}>Favorite icon</div>
+  </Column>
  </Row>
 </Container>
 ```
