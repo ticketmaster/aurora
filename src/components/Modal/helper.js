@@ -6,7 +6,7 @@ export const getContentHeight = ({
   actionBar,
   bottomActionBar,
   container,
-  isFullscreen
+  isFullscreen = false
 }) => {
   const actionBarHeight = actionBar ? actionBar.clientHeight : 0;
 
@@ -15,7 +15,7 @@ export const getContentHeight = ({
     : 0;
 
   return `${container.clientHeight -
-    (isFullscreen ? 0 : SPACING * 2) -
+    (isFullscreen ? container.offsetTop : SPACING * 2) -
     actionBarHeight -
     bottomActionBarHeight}px`;
 };
