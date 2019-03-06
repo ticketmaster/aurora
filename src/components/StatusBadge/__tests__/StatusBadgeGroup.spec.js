@@ -9,6 +9,8 @@ const badges = [
   { label: "caution", color: "#f0f0f0" }
 ];
 
+jest.mock("../../Tooltip");
+
 describe("StatusBadgeGroup", () => {
   it("should match snapshot", () => {
     const tree = renderer
@@ -24,53 +26,58 @@ describe("StatusBadgeGroup", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("call mouse leave event should call mouseLeave function and call setState", () => {
-    const spy = jest.spyOn(StatusBadgeGroup.prototype, "mouseLeave");
-    const spyState = jest.spyOn(StatusBadgeGroup.prototype, "setState");
-    const element = renderer.create(
-      <StatusBadgeGroup
-        variant="dark"
-        visibleBadges={badges}
-        hiddenBadges={badges}
-      />
-    );
+  it("should close tooltip on mouse leave", () => {
+    const mockEvent = {
+      stopPropagation: jest.fn()
+    };
 
-    const hiddenBadgesLabel = element.root.findByProps({ children: "+2 more" });
-    hiddenBadgesLabel.props.onMouseLeave();
-
-    expect(spy).toHaveBeenCalledTimes(1);
-    expect(spyState).toHaveBeenCalledTimes(1);
-    expect(spyState).toHaveBeenCalledWith({
-      isOpen: false
-    });
+    const inst = renderer
+      .create(<StatusBadgeGroup visibleBadges={badges} hiddenBadges={badges} />)
+      .getInstance();
+    inst.state = { isOpen: true };
+    inst.mouseLeave(mockEvent);
+    expect(mockEvent.stopPropagation).toHaveBeenCalled();
+    expect(inst.state).toEqual({ isOpen: false });
   });
 
-  it("call mouse enter event should call elementHovered function and call setState", () => {
-    const spy = jest.spyOn(StatusBadgeGroup.prototype, "elementHovered");
-    const spyState = jest
-      .spyOn(StatusBadgeGroup.prototype, "setState")
-      .mockImplementation(() => {});
+  it("should open tooltip on mouse enter or touch", () => {
     Tooltip.getDimensionsFromEvent = jest.fn(() => ({
       test: "test data"
     }));
-    const element = renderer.create(
-      <StatusBadgeGroup
-        variant="dark"
-        visibleBadges={badges}
-        hiddenBadges={badges}
-      />
+
+    const inst = renderer
+      .create(<StatusBadgeGroup visibleBadges={badges} hiddenBadges={badges} />)
+      .getInstance();
+
+    inst.elementHovered({});
+    expect(inst.state).toEqual({ isOpen: true, test: "test data" });
+  });
+
+  it("should NOT try to open tooltip on mouse enter or touch when it is already opened", () => {
+    Tooltip.getDimensionsFromEvent = jest.fn(() => ({
+      test: "test data"
+    }));
+
+    const inst = renderer
+      .create(<StatusBadgeGroup visibleBadges={badges} hiddenBadges={badges} />)
+      .getInstance();
+
+    inst.elementHovered({});
+    const openState = inst.state;
+    inst.elementHovered({});
+    expect(inst.state).toEqual(openState);
+  });
+
+  it("should do clean-up before unmount", () => {
+    const mockRemoveListener = jest.fn();
+    document.body.removeEventListener = mockRemoveListener;
+
+    const el = renderer.create(
+      <StatusBadgeGroup visibleBadges={badges} hiddenBadges={badges} />
     );
 
-    spyState.mockClear();
+    el.unmount();
 
-    const hiddenBadgesLabel = element.root.findByProps({ children: "+2 more" });
-    hiddenBadgesLabel.props.onMouseEnter();
-
-    expect(spy).toHaveBeenCalledTimes(1);
-    expect(spyState).toHaveBeenCalledTimes(1);
-    expect(spyState).toHaveBeenCalledWith({
-      isOpen: true,
-      test: "test data"
-    });
+    expect(mockRemoveListener).toHaveBeenCalled();
   });
 });

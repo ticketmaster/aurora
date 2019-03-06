@@ -2,7 +2,7 @@
 
 exports[`StatusBadgeGroup should match snapshot 1`] = `
 <div
-  className="xANBP"
+  className="ioUUSv"
 >
   <div
     className="badge jmtBfD"
@@ -17,28 +17,12 @@ exports[`StatusBadgeGroup should match snapshot 1`] = `
     caution
   </div>
   <div
-    className="kmziPQ"
+    className="kdzUNu"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
+    onTouchStart={[Function]}
   >
     +2 more
-  </div>
-  <div
-    className="fOzheA jMtUyU"
-    direction="bottom"
-  >
-    <div
-      className="hidden badge jmtBfD"
-      color="#d3d3d3"
-    >
-      error
-    </div>
-    <div
-      className="hidden badge gNSpfG"
-      color="#f0f0f0"
-    >
-      caution
-    </div>
   </div>
 </div>
 `;
