@@ -254,10 +254,15 @@ class PopOver extends Component {
     const dimensions = {};
     if (global.window && isVisible) {
       const {
-        scrollTop,
         clientWidth,
         clientHeight
       } = global.window.document.documentElement;
+
+      const scrollTop = Math.max(
+        global.window.pageYOffset,
+        global.document.documentElement.scrollTop,
+        global.document.body.scrollTop
+      );
 
       if (scrollTop !== windowScroll) {
         dimensions.windowScroll = scrollTop;
