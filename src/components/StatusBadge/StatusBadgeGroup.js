@@ -10,7 +10,8 @@ import { VARIANTS, DARK, DIRECTIONS } from "../constants";
 
 const StatusBadgeContainer = styled.div`
   display: flex;
-  .badge {
+
+  & .badge {
     margin-left: ${spacing.cozy};
 
     &:first-child,
@@ -37,30 +38,52 @@ const BadgeTooltip = styled(Tooltip)`
 `;
 
 class StatusBadgeGroup extends Component {
-  constructor(props) {
-    super(props);
+  static propTypes = {
+    variant: PropTypes.oneOf(VARIANTS),
+    visibleBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
+    hiddenBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
+    tooltipDirection: PropTypes.oneOf(DIRECTIONS)
+  };
 
-    this.state = {
-      isOpen: false
-    };
+  static defaultProps = {
+    variant: DARK,
+    visibleBadges: [],
+    hiddenBadges: [],
+    tooltipDirection: "bottom"
+  };
 
-    this.mouseLeave = this.mouseLeave.bind(this);
-    this.elementHovered = this.elementHovered.bind(this);
+  state = {
+    isOpen: false
+  };
+
+  componentWillUnmount() {
+    document.body.removeEventListener("touchstart", this.mouseLeave);
   }
 
-  mouseLeave() {
-    this.setState({
+  mouseLeave = e => {
+    e.stopPropagation();
+    document.body.removeEventListener("touchstart", this.mouseLeave);
+    this.setState(() => ({
       isOpen: false
-    });
-  }
+    }));
+  };
 
-  elementHovered(e) {
+  elementHovered = e => {
     const data = Tooltip.getDimensionsFromEvent(e);
-    this.setState({
-      isOpen: true,
-      ...data
+    // on some devices both onMouseEnter and onTouchStart would be triggered
+    // it needs to be checked
+    this.setState(state => {
+      if (state.isOpen) {
+        return state;
+      }
+
+      document.body.addEventListener("touchstart", this.mouseLeave);
+      return {
+        isOpen: true,
+        ...data
+      };
     });
-  }
+  };
 
   renderBadges = (badges, variant, additionalClass) =>
     badges.map(item => (
@@ -89,6 +112,7 @@ class StatusBadgeGroup extends Component {
             <HiddenBadgesCount
               onMouseEnter={this.elementHovered}
               onMouseLeave={this.mouseLeave}
+              onTouchStart={this.elementHovered}
             >
               {`+${hiddenBadges.length} more`}
             </HiddenBadgesCount>
@@ -104,21 +128,5 @@ class StatusBadgeGroup extends Component {
     );
   }
 }
-
-StatusBadgeGroup.propTypes = {
-  variant: PropTypes.oneOf(VARIANTS),
-  visibleBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
-  hiddenBadges: PropTypes.arrayOf(PropTypes.shape(badgeProps)),
-  tooltipDirection: PropTypes.oneOf(DIRECTIONS)
-};
-
-StatusBadgeGroup.defaultProps = {
-  variant: DARK,
-  visibleBadges: [],
-  hiddenBadges: [],
-  tooltipDirection: "bottom"
-};
-
-StatusBadgeGroup.displayName = "StatusBadgeGroup";
 
 export default StatusBadgeGroup;
