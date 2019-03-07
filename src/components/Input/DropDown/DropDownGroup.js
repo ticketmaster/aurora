@@ -231,8 +231,6 @@ class DropDownGroup extends React.Component {
                             "dropdown--no-border": variant === 1,
                             "dropdown__chevron--disabled": disabled
                           })}
-                          direction="down"
-                          size={12}
                         />
                       </StyledGroup>
                       <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>

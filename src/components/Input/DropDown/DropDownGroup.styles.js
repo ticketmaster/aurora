@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ChevronIcon from "../../Icons/Chevron";
+import { DownIcon } from "../../Icons";
 import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 import { constants, zIndex, typography } from "../../../theme";
 import getThemeValue from "../../../utils/getThemeValue";
@@ -131,7 +131,9 @@ export const StyledGroupWrapper = styled.div`
   }
 `;
 
-export const StyledChevron = styled(ChevronIcon)`
+export const StyledChevron = styled(DownIcon).attrs({
+  size: "small"
+})`
   margin-right: 12px;
   color: ${getThemeValue("gray02")};
   transition: opacity 0.1s ${constants.easing.easeInOutQuad};
