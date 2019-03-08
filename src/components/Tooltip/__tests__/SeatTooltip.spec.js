@@ -4,6 +4,12 @@ import renderer from "react-test-renderer";
 import Tooltip from "../index";
 import SeatTooltip from "../SeatTooltip";
 
+jest.mock("../../PopOver/PopOverPortal", () => ({ children }) => children);
+
+jest.mock("react-transition-group", () => ({
+  CSSTransition: ({ children }) => children
+}));
+
 describe("SeatTooltip", () => {
   it("should match snapshot when no children and dark", () => {
     const tree = renderer
@@ -43,7 +49,7 @@ describe("SeatTooltip", () => {
     SeatTooltip.getDimensionsFromEvent("hello");
 
     expect(mockGetDimensions).toHaveBeenCalledTimes(1);
-    expect(mockGetDimensions).toHaveBeenCalledWith("hello");
+    expect(mockGetDimensions).toHaveBeenCalledWith("hello", undefined);
     expect(SeatTooltip.getDimensionsFromEvent("hello")).toEqual({
       x: 5,
       y: 10
