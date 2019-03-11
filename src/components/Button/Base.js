@@ -25,12 +25,16 @@ class Button extends Component {
   };
 
   blurHandler = () => {
-    this.button.current.classList.add("noFocus");
+    if (this.button && this.button.current && this.button.current.classList) {
+      this.button.current.classList.add("noFocus");
+    }
     window.removeEventListener("keyup", this.activateFocusStyles);
   };
 
   activateFocusStyles = () => {
-    this.button.current.classList.remove("noFocus");
+    if (this.button && this.button.current && this.button.current.classList) {
+      this.button.current.classList.remove("noFocus");
+    }
   };
 
   button = React.createRef();
