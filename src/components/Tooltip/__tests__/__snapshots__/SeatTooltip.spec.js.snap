@@ -1,9 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SeatTooltip should match snapshot when has children 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="czYnrP"
-  direction="bottom"
+  className="c0 jhiaLu"
+  direction="auto"
   style={
     Object {
       "padding": 0,
@@ -12,52 +21,52 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
   }
 >
   <div
-    className="lhXVsc"
+    className="krQPGk"
     size="large"
   >
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Sec
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         B
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Row
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         5
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Seat
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         25
@@ -65,7 +74,7 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
     </div>
   </div>
   <div
-    className="iqmoJs"
+    className="eVjFSs"
     size="large"
   >
     <div>
@@ -76,9 +85,18 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="czYnrP"
-  direction="bottom"
+  className="c0 jhiaLu"
+  direction="auto"
   style={
     Object {
       "padding": 0,
@@ -87,52 +105,52 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
   }
 >
   <div
-    className="dfaaHe"
+    className="fShvgq"
     size="large"
   >
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Sec
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Row
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         5
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="kfPKLw"
+        className="ksuVUq"
         size="large"
       >
         Seat
       </div>
       <div
-        className="bBhPFb"
+        className="jrDrcJ"
         size="large"
       >
         25
@@ -143,9 +161,18 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when small and dark 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="dQyfME"
-  direction="bottom"
+  className="c0 jhiaLu"
+  direction="auto"
   style={
     Object {
       "padding": 0,
@@ -154,52 +181,52 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
   }
 >
   <div
-    className="hEygZE"
+    className="PUrql"
     size="small"
   >
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="dbJpml"
+        className="vsgKP"
         size="small"
       >
         Sec
       </div>
       <div
-        className="eouheV"
+        className="dyJniy"
         size="small"
       >
         B
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="dbJpml"
+        className="vsgKP"
         size="small"
       >
         Row
       </div>
       <div
-        className="eouheV"
+        className="dyJniy"
         size="small"
       >
         5
       </div>
     </div>
     <div
-      className="bgQDpY"
+      className="chFKRM"
     >
       <div
-        className="dbJpml"
+        className="vsgKP"
         size="small"
       >
         Seat
       </div>
       <div
-        className="eouheV"
+        className="dyJniy"
         size="small"
       >
         25
@@ -207,7 +234,7 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
     </div>
   </div>
   <div
-    className="eocvtR"
+    className="ieNCtg"
     size="small"
   >
     <div>

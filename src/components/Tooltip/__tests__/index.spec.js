@@ -1,7 +1,15 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
+import PopOver from "../../PopOver";
 import Tooltip from "../index";
+import { BOTTOM, TOP } from "../../constants";
+
+jest.mock("../../PopOver/PopOverPortal", () => ({ children }) => children);
+
+jest.mock("react-transition-group", () => ({
+  CSSTransition: ({ children }) => children
+}));
 
 describe("Tooltip", () => {
   it("should match snapshot", () => {
@@ -59,7 +67,8 @@ describe("Tooltip", () => {
   describe("calculatePosition tests", () => {
     const size = {
       width: 100,
-      height: 100
+      height: 100,
+      windowScroll: 100
     };
     const position = {
       elBottom: 300,
@@ -70,48 +79,89 @@ describe("Tooltip", () => {
     };
 
     it("should return tooltip coordinates on top", () => {
-      expect(Tooltip.calculatePosition("top", position, size)).toEqual({
+      const tree = renderer.create(<Tooltip />).getInstance();
+      expect(
+        tree.calculatePosition({ direction: "top", position, dimensions: size })
+      ).toEqual({
         x: 375,
-        y: 130
+        y: 230
       });
     });
 
     it("should return tooltip coordinates on bottom", () => {
-      expect(Tooltip.calculatePosition("bottom", position, size)).toEqual({
+      const tree = renderer.create(<Tooltip />).getInstance();
+      expect(
+        tree.calculatePosition({
+          direction: "bottom",
+          position,
+          dimensions: size
+        })
+      ).toEqual({
         x: 375,
-        y: 320
+        y: 420
       });
     });
 
     it("should return tooltip coordinates on left", () => {
-      expect(Tooltip.calculatePosition("left", position, size)).toEqual({
+      const tree = renderer.create(<Tooltip />).getInstance();
+      expect(
+        tree.calculatePosition({
+          direction: "left",
+          position,
+          dimensions: size
+        })
+      ).toEqual({
         x: 280,
-        y: 250
+        y: 350
       });
     });
 
     it("should return tooltip coordinates on right", () => {
-      expect(Tooltip.calculatePosition("right", position, size)).toEqual({
+      const tree = renderer.create(<Tooltip />).getInstance();
+      expect(
+        tree.calculatePosition({
+          direction: "right",
+          position,
+          dimensions: size
+        })
+      ).toEqual({
         x: 470,
-        y: 250
+        y: 350
       });
     });
 
     it("should return tooltip coordinates on invalid", () => {
-      expect(Tooltip.calculatePosition("invalid", position, size)).toEqual({
+      const spy = jest
+        .spyOn(PopOver, "calculatePosition")
+        .mockImplementation(() => ({
+          x: 375,
+          y: 130
+        }));
+
+      const tree = renderer.create(<Tooltip />).getInstance();
+      const result = tree.calculatePosition({
+        direction: "invalid",
+        position,
+        dimensions: size
+      });
+      expect(spy).toHaveBeenCalledTimes(1);
+      expect(result).toEqual({
         x: 375,
         y: 130
       });
+      spy.mockRestore();
     });
   });
 
-  it("getDimensionsFromEvent should return calculated position props from event currentTarget", () => {
+  it("getDimensionsFromEvent should return calculated position props from event target", () => {
     const event = {
-      currentTarget: {
-        offsetTop: 100,
-        clientHeight: 50,
-        clientWidth: 50,
-        offsetLeft: 200
+      target: {
+        getBoundingClientRect: () => ({
+          y: 100,
+          height: 50,
+          width: 50,
+          x: 200
+        })
       }
     };
 
@@ -121,7 +171,48 @@ describe("Tooltip", () => {
       elTop: 100,
       elBottom: 150,
       elLeft: 200,
-      elRight: 250
+      elRight: 250,
+      clientHeight: 100000,
+      clientWidth: 100000,
+      elWidth: 50,
+      offsetLeft: 0,
+      offsetTop: 0
+    });
+  });
+
+  it("getDimensionsFromEvent should return calculated position props from event target and parent", () => {
+    const event = {
+      target: {
+        getBoundingClientRect: () => ({
+          y: 100,
+          height: 50,
+          width: 50,
+          x: 200
+        })
+      }
+    };
+
+    const parent = {
+      getBoundingClientRect: () => ({
+        y: 100,
+        height: 50,
+        width: 50,
+        x: 200
+      })
+    };
+
+    expect(Tooltip.getDimensionsFromEvent(event, parent)).toEqual({
+      elHorizontalCenter: 225,
+      elVerticalCenter: 125,
+      elTop: 100,
+      elBottom: 150,
+      elLeft: 200,
+      elRight: 250,
+      clientHeight: 50,
+      clientWidth: 50,
+      elWidth: 50,
+      offsetLeft: 200,
+      offsetTop: 100
     });
   });
 
@@ -131,7 +222,7 @@ describe("Tooltip", () => {
     const tree = renderer.create(<Tooltip isVisible />).getInstance();
 
     tree.updateSize = updateSizeMock;
-    Tooltip.calculatePosition = calculatePositionMock;
+    tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
         style: {
@@ -154,7 +245,7 @@ describe("Tooltip", () => {
     const tree = renderer.create(<Tooltip />).getInstance();
 
     tree.updateSize = updateSizeMock;
-    Tooltip.calculatePosition = calculatePositionMock;
+    tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
         style: {
@@ -176,7 +267,7 @@ describe("Tooltip", () => {
   });
 
   it("updateSize should not change class props and should return false", () => {
-    const tree = renderer.create(<Tooltip isVisible />).getInstance();
+    const tree = renderer.create(<Tooltip />).getInstance();
 
     tree.updateSize();
 
@@ -184,10 +275,13 @@ describe("Tooltip", () => {
   });
 
   it("updateSize should not update class propsa and should return false when tooltip zise are 0, 0 tooltip is not visible", () => {
-    const tree = renderer.create(<Tooltip />).getInstance();
+    const tree = renderer.create(<Tooltip isVisible />).getInstance();
 
-    tree.size.width = 100;
-    tree.size.height = 100;
+    tree.dimensions.width = 100;
+    tree.dimensions.height = 100;
+    tree.dimensions.windowScroll = 0;
+    tree.dimensions.windowHeight = 0;
+    tree.dimensions.windowWidth = 0;
     tree.myRef = {
       current: {
         clientWidth: 0,
@@ -197,13 +291,23 @@ describe("Tooltip", () => {
     tree.updateSize();
 
     expect(tree.updateSize()).toBeFalsy();
+    expect(tree.dimensions).toEqual({
+      width: 100,
+      height: 100,
+      windowHeight: 0,
+      windowScroll: 0,
+      windowWidth: 0
+    });
   });
 
   it("updateSize return true and change size prop", () => {
-    const tree = renderer.create(<Tooltip />).getInstance();
+    const tree = renderer.create(<Tooltip isVisible />).getInstance();
 
-    tree.size.width = 0;
-    tree.size.height = 0;
+    tree.dimensions.width = 0;
+    tree.dimensions.height = 0;
+    tree.dimensions.windowScroll = 100;
+    tree.dimensions.windowHeight = 100;
+    tree.dimensions.windowWidth = 100;
     tree.myRef = {
       current: {
         clientWidth: 100,
@@ -212,9 +316,12 @@ describe("Tooltip", () => {
     };
 
     expect(tree.updateSize()).toBeTruthy();
-    expect(tree.size).toEqual({
+    expect(tree.dimensions).toEqual({
       width: 100,
-      height: 100
+      height: 100,
+      windowHeight: 0,
+      windowScroll: 0,
+      windowWidth: 0
     });
   });
 
@@ -228,7 +335,7 @@ describe("Tooltip", () => {
     const tree = renderer.create(<Tooltip isVisible />).getInstance();
 
     tree.updateSize = updateSizeMock;
-    Tooltip.calculatePosition = calculatePositionMock;
+    tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
         style: {
@@ -257,7 +364,7 @@ describe("Tooltip", () => {
       .getInstance();
 
     tree.updateSize = updateSizeMock;
-    Tooltip.calculatePosition = calculatePositionMock;
+    tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
         style: {
@@ -272,5 +379,136 @@ describe("Tooltip", () => {
     expect(calculatePositionMock).toHaveBeenCalledTimes(0);
     expect(tree.myRef.current.style.top).toEqual(0);
     expect(tree.myRef.current.style.left).toEqual(0);
+  });
+
+  it("getPositionAndUpdateDirection should set position top and change adjustment when direction is different", () => {
+    const tree = renderer.create(<Tooltip />).getInstance();
+    PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 0 }));
+    tree.adjustArrow = jest.fn(() => 0);
+    tree.setState({
+      actualDirection: BOTTOM
+    });
+
+    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    tree.getPositionAndUpdateDirection({
+      position: {
+        elTop: 10
+      },
+      dimensions: {
+        windowScroll: 100
+      }
+    });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith({
+      actualDirection: TOP,
+      arrowAdjustment: 0
+    });
+
+    spy.mockRestore();
+  });
+
+  it("getPositionAndUpdateDirection should set position top and change adjustment when adjustment is different", () => {
+    const tree = renderer.create(<Tooltip />).getInstance();
+    PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 0 }));
+    tree.adjustArrow = jest.fn(() => 100);
+    tree.setState({
+      actualDirection: TOP
+    });
+
+    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    tree.getPositionAndUpdateDirection({
+      position: {
+        elTop: 10
+      },
+      dimensions: {
+        windowScroll: 100
+      }
+    });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith({
+      actualDirection: TOP,
+      arrowAdjustment: 100
+    });
+
+    spy.mockRestore();
+  });
+
+  it("getPositionAndUpdateDirection should set position bottom and change adjustment when position is different", () => {
+    const tree = renderer.create(<Tooltip />).getInstance();
+    PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
+    tree.adjustArrow = jest.fn(() => 0);
+    tree.setState({
+      actualDirection: TOP
+    });
+
+    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    tree.getPositionAndUpdateDirection({
+      position: {
+        elTop: 10
+      },
+      dimensions: {
+        windowScroll: 100
+      }
+    });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith({
+      actualDirection: BOTTOM,
+      arrowAdjustment: 0
+    });
+
+    spy.mockRestore();
+  });
+
+  it("getPositionAndUpdateDirection should set position bottom and change adjustment when adjustment is different", () => {
+    const tree = renderer.create(<Tooltip />).getInstance();
+    PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
+    tree.adjustArrow = jest.fn(() => 10);
+    tree.setState({
+      actualDirection: BOTTOM
+    });
+
+    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    tree.getPositionAndUpdateDirection({
+      position: {
+        elTop: 10
+      },
+      dimensions: {
+        windowScroll: 100
+      }
+    });
+
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(spy).toHaveBeenCalledWith({
+      actualDirection: BOTTOM,
+      arrowAdjustment: 10
+    });
+
+    spy.mockRestore();
+  });
+
+  it("getPositionAndUpdateDirection should not call set state", () => {
+    const tree = renderer.create(<Tooltip />).getInstance();
+    PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
+    tree.adjustArrow = jest.fn(() => 0);
+    tree.setState({
+      actualDirection: BOTTOM
+    });
+
+    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    tree.getPositionAndUpdateDirection({
+      position: {
+        elTop: 10
+      },
+      dimensions: {
+        windowScroll: 100
+      }
+    });
+
+    expect(spy).toHaveBeenCalledTimes(0);
+
+    spy.mockRestore();
   });
 });

@@ -3,7 +3,8 @@ export const TOP = "top";
 export const BOTTOM = "bottom";
 export const LEFT = "left";
 export const RIGHT = "right";
-export const DIRECTIONS = [TOP, BOTTOM, LEFT, RIGHT];
+export const AUTO = "auto";
+export const DIRECTIONS = [TOP, BOTTOM, LEFT, RIGHT, AUTO];
 
 // VARIANTS
 export const LIGHT = "light";
@@ -31,3 +32,5 @@ export const LARGE = "large";
 export const SIZES = [SMALL, REGULAR, LARGE];
 export const SIZES_SL = [SMALL, LARGE];
 export const SIZES_SR = [SMALL, REGULAR];
+
+export const ARROW_WIDTH = 12;

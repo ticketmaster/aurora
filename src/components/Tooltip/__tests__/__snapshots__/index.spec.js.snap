@@ -1,50 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip dark should match snapshot 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="dXjWID"
-  direction="bottom"
+  className="c0 kISaWX"
+  direction="auto"
 />
 `;
 
 exports[`Tooltip should match snapshot 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="czYnrP"
-  direction="bottom"
+  className="c0 jhiaLu"
+  direction="auto"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is bottom 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gcYeuC.open-enter .c0.open-enter:before,
+.gcYeuC.open-appear,
+.gcYeuC.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="lmiBYD"
+  className="c0 gcYeuC"
   direction="bottom"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is invalid 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gcYeuC.open-enter .c0.open-enter:before,
+.gcYeuC.open-appear,
+.gcYeuC.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.htWMCk.open-enter .c0.open-enter:before,
+.htWMCk.open-appear,
+.htWMCk.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gyvfKo.open-enter .c0.open-enter:before,
+.gyvfKo.open-appear,
+.gyvfKo.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.jQqalR.open-enter .c0.open-enter:before,
+.jQqalR.open-appear,
+.jQqalR.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="gQlopL"
+  className="c0 kISaWX"
   direction="invalid"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is left 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gcYeuC.open-enter .c0.open-enter:before,
+.gcYeuC.open-appear,
+.gcYeuC.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.htWMCk.open-enter .c0.open-enter:before,
+.htWMCk.open-appear,
+.htWMCk.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gyvfKo.open-enter .c0.open-enter:before,
+.gyvfKo.open-appear,
+.gyvfKo.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="kqjpuO"
+  className="c0 gyvfKo"
   direction="left"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is right 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gcYeuC.open-enter .c0.open-enter:before,
+.gcYeuC.open-appear,
+.gcYeuC.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.htWMCk.open-enter .c0.open-enter:before,
+.htWMCk.open-appear,
+.htWMCk.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gyvfKo.open-enter .c0.open-enter:before,
+.gyvfKo.open-appear,
+.gyvfKo.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.jQqalR.open-enter .c0.open-enter:before,
+.jQqalR.open-appear,
+.jQqalR.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="iYyszT"
+  className="c0 jQqalR"
   direction="right"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is top 1`] = `
+.jhiaLu.open-enter .c0.open-enter:before,
+.jhiaLu.open-appear,
+.jhiaLu.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.kISaWX.open-enter .c0.open-enter:before,
+.kISaWX.open-appear,
+.kISaWX.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.gcYeuC.open-enter .c0.open-enter:before,
+.gcYeuC.open-appear,
+.gcYeuC.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
+.htWMCk.open-enter .c0.open-enter:before,
+.htWMCk.open-appear,
+.htWMCk.open-appear:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 0;
+}
+
 <div
-  className="cAAEIl"
+  className="c0 htWMCk"
   direction="top"
 />
 `;

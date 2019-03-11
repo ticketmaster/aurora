@@ -1,7 +1,16 @@
 import styled from "styled-components";
 import { themes, constants, spacing, typography } from "../../theme";
 import { popContainersBoxShadow } from "../../theme/constants";
-import { TOP, LEFT, RIGHT, BOTTOM, LIGHT, DARK, LARGE } from "../constants";
+import {
+  TOP,
+  LEFT,
+  RIGHT,
+  BOTTOM,
+  LIGHT,
+  DARK,
+  LARGE,
+  ARROW_WIDTH
+} from "../constants";
 
 export const StyledTooltip = styled.div`
   background-color: ${({ variant }) =>
@@ -38,30 +47,37 @@ export const StyledTooltip = styled.div`
     transform: translateY(-50%) rotate(-135deg);
     background-color: ${({ variant }) =>
       variant === DARK ? themes.global.darkFill : themes.global.white.base};
-    ${({ direction }) => {
+    ${({ direction, arrowAdjustment }) => {
       switch (direction) {
         case TOP:
-          return "left: calc(50% - 6px); bottom: -13px; transform: translateY(-50%) rotate(45deg);";
+          return `left: calc(50% - ${ARROW_WIDTH /
+            2}px + ${arrowAdjustment}); bottom: -13px; transform: translateY(-50%) rotate(45deg);`;
         case BOTTOM:
-          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+          return `left: calc(50% - ${ARROW_WIDTH /
+            2}px + ${arrowAdjustment}); top: -1px; transform: translateY(-50%) rotate(-135deg);`;
         case LEFT:
-          return "top: 10px; right: -7px; transform: translateY(0%) rotate(-45deg);";
+          return `top: 10px; right: -${ARROW_WIDTH / 2 +
+            1}px; transform: translateY(0%) rotate(-45deg);`;
         case RIGHT:
-          return "top: 10px; left: -7px; transform: translateY(0%) rotate(135deg);";
+          return `top: 10px; left: -${ARROW_WIDTH / 2 +
+            1}px; transform: translateY(0%) rotate(135deg);`;
         default:
-          return "left: calc(50% - 6px); top: -1px; transform: translateY(-50%) rotate(-135deg);";
+          return `left: calc(50% - ${ARROW_WIDTH /
+            2}px); top: -1px; transform: translateY(-50%) rotate(-135deg);`;
       }
     }};
   }
 
-  &.open-enter,
-  &.open-enter:before {
+  &.open-enter &.open-enter:before,
+  &.open-appear,
+  &.open-appear:before {
     transition: opacity 0.25s ${constants.easing.easeOutQuad};
     display: block;
     opacity: 0;
   }
 
-  &.open-enter {
+  &.open-enter,
+  &.open-appear {
     transition: opacity 0.3s ${constants.easing.easeOutQuad},
       transform 0.3s ${constants.easing.easeOutQuad};
     transform: translate(0, 10px);
@@ -81,13 +97,16 @@ export const StyledTooltip = styled.div`
   }
 
   &.open-enter-active,
-  &.open-enter-active:before {
+  &.open-enter-active:before,
+  &.open-appear-active,
+  &.open-appear-active:before {
     transition: opacity 0.25s ${constants.easing.easeOutQuad};
     display: block;
     opacity: 1;
   }
 
-  &.open-enter-active {
+  &.open-enter-active,
+  &.open-appear-active {
     transition: opacity 0.3s ${constants.easing.easeOutQuad},
       transform 0.3s ${constants.easing.easeOutQuad};
     transform: translate(0);

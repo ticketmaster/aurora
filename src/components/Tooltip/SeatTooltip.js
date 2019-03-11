@@ -7,7 +7,8 @@ import { AdditionalData } from "./Tooltip.styles";
 import SeatData from "./SeatData";
 
 class SeatTooltip extends Component {
-  static getDimensionsFromEvent = e => Tooltip.getDimensionsFromEvent(e);
+  static getDimensionsFromEvent = (e, parent) =>
+    Tooltip.getDimensionsFromEvent(e, parent);
 
   render() {
     const { size, row, seat, section, children, variant, ...rest } = this.props;
