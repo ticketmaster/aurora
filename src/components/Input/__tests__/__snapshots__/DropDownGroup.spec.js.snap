@@ -28,13 +28,16 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -106,13 +109,16 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -184,13 +190,16 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -264,13 +273,16 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </div>
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -342,13 +354,16 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -420,13 +435,16 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       />
       <svg
         class="dropdown__chevron--disabled sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -498,13 +516,16 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -580,13 +601,16 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </div>
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -660,13 +684,16 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       </div>
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -738,13 +765,16 @@ exports[`DropDownGroup renders default dropdown 1`] = `
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -816,13 +846,16 @@ exports[`DropDownGroup renders default dropdown that should always open downward
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -894,13 +927,16 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       />
       <svg
         class="dropdown__icon--hide sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -972,13 +1008,16 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1050,13 +1089,16 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1129,13 +1171,16 @@ exports[`DropDownGroup renders small dropdown 1`] = `
       />
       <svg
         class="sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1211,13 +1256,16 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
       </div>
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1291,13 +1339,16 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
       />
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1367,13 +1418,16 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </div>
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1447,13 +1501,16 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </div>
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
@@ -1525,13 +1582,16 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </div>
       <svg
         class="dropdown--no-border sc-ifAKCX bGhIY"
-        fill="currentColor"
-        height="12"
-        viewBox="0 0 15 7"
-        width="12"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M13.974.132a.614.614 0 0 0-.762 0L7.17 5.341 1.12.132C.916-.044.563-.037.376.125a.398.398 0 0 0-.167.332c0 .058.012.116.036.17a.385.385 0 0 0 .12.155l6.427 5.54a.568.568 0 0 0 .378.135.568.568 0 0 0 .377-.135l6.427-5.54a.422.422 0 0 0 .156-.325.42.42 0 0 0-.156-.325z"
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
         />
       </svg>
     </label>
