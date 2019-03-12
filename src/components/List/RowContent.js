@@ -415,6 +415,7 @@ class ListRowContent extends Component {
 
             <DesktopContainer>
               <ListRowButton
+                noTransform
                 aria-label={buttonText}
                 role="button"
                 width={ROW_BUTTON_WIDTH}
