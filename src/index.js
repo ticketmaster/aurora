@@ -222,3 +222,4 @@ export {
   lineHeight,
   themeColor
 } from "./mixins";
+export { default as getThemeValue } from "./utils/getThemeValue";
