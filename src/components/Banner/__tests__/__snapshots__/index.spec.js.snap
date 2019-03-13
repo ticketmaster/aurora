@@ -5,14 +5,14 @@ exports[`<Banner /> renders correctly when closed 1`] = `<div />`;
 exports[`<Banner /> renders correctly when open 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dRzThv"
+    class="collapsed visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     />
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
@@ -21,7 +21,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         />
       </div>
     </div>
@@ -32,11 +32,11 @@ exports[`<Banner /> renders correctly when open 1`] = `
 exports[`<Banner /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -69,7 +69,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
@@ -78,7 +78,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -91,11 +91,11 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 exports[`<Banner /> renders correctly with close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -128,7 +128,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
@@ -137,7 +137,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -150,14 +150,14 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 exports[`<Banner /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dRzThv"
+    class="collapsed visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     />
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
@@ -166,7 +166,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -179,11 +179,11 @@ exports[`<Banner /> renders correctly with content 1`] = `
 exports[`<Banner /> renders correctly with custom icon 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-fjdhpX dRzThv"
+    class="collapsed visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -208,7 +208,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
@@ -217,7 +217,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -230,11 +230,11 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 exports[`<Banner /> renders correctly with custom title for the close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -267,24 +267,16 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
       >
         This is your primary message text.
       </span>
-      <a
-        class="sc-jTzLTM cjtCRQ sc-dnqmqq dlopAQ"
-        href="ticketmaster.com"
-        rel=""
-        target="_self"
-      >
-        test link text
-      </a>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         />
       </div>
     </div>
@@ -295,11 +287,11 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -332,23 +324,16 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
       >
         This is your primary message text.
       </span>
-      <button
-        class="sc-jTzLTM cjtCRQ sc-gZMcBi euikXH"
-        rel=""
-        target="_self"
-      >
-        collapsedText
-      </button>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         >
           test content
         </div>
@@ -361,11 +346,11 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 exports[`<Banner /> renders correctly with link 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-fjdhpX dRzThv"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
     style="max-height: 56px;"
   >
     <div
-      class="sc-kgoBCf kDgYaG"
+      class="sc-jzJRlG gEWVas"
     >
       <svg
         height="24"
@@ -398,24 +383,16 @@ exports[`<Banner /> renders correctly with link 1`] = `
       </svg>
     </div>
     <div
-      class="sc-jzJRlG fvgFIg"
+      class="sc-gqjmRU bnZzdM"
     >
       <span
         class="text text--dark text--primary sc-ifAKCX jrkHpW"
       >
         This is your primary message text.
       </span>
-      <a
-        class="sc-jTzLTM cjtCRQ sc-dnqmqq dlopAQ"
-        href="ticketmaster.com"
-        rel=""
-        target="_self"
-      >
-        test link text
-      </a>
       <div>
         <div
-          class="text text--dark text--primary sc-cSHVUG hcBAne sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
         />
       </div>
     </div>

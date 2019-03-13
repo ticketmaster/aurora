@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
@@ -31,6 +31,10 @@ const LinkCtaBase = styled.a`
 
   &:hover {
     color: ${getThemeValue("primary", "medium")};
+  }
+
+  &.noFocus:focus {
+    text-decoration: none;
   }
 `;
 
@@ -69,33 +73,66 @@ const getElement = ({ href, onClick, reverseColors }) => {
   return LinkCtaSpanBase;
 };
 
-const LinkCta = ({
-  href,
-  onClick,
-  children,
-  size,
-  responsiveSize,
-  reverseColors,
-  ...props
-}) => {
-  const { target, rel } = props;
-  const Elm = getElement({ href, onClick, reverseColors });
-  const asProp = getAsProp({ href, onClick });
-  const validatedRel = getRelByTarget(target, rel);
+class LinkCta extends Component {
+  componentDidMount() {
+    if (this.link && this.link.current) {
+      this.link.current.addEventListener("focus", this.focusHandler);
+      this.link.current.addEventListener("blur", this.blurHandler);
+    }
+  }
 
-  return (
-    <Elm
-      {...props}
-      {...asProp}
-      size={getResponsiveSize({ size, responsiveSize })}
-      href={href}
-      onClick={onClick}
-      rel={validatedRel}
-    >
-      {children}
-    </Elm>
-  );
-};
+  componentWillUnmount() {
+    // in case user leaves a page before onBlur is triggered
+    global.window.removeEventListener("keyup", this.activateFocusStyles);
+  }
+
+  focusHandler = () => {
+    global.window.addEventListener("keyup", this.activateFocusStyles);
+  };
+
+  blurHandler = () => {
+    this.link.current.classList.add("noFocus");
+    global.window.removeEventListener("keyup", this.activateFocusStyles);
+  };
+
+  activateFocusStyles = () => {
+    this.link.current.classList.remove("noFocus");
+  };
+
+  link = React.createRef();
+
+  render() {
+    const {
+      href,
+      onClick,
+      children,
+      size,
+      responsiveSize,
+      reverseColors,
+      ...rest
+    } = this.props;
+
+    const { target, rel } = rest;
+    const Elm = getElement({ href, onClick, reverseColors });
+    const asProp = getAsProp({ href, onClick });
+    const validatedRel = getRelByTarget(target, rel);
+
+    return (
+      <Elm
+        {...rest}
+        {...asProp}
+        size={getResponsiveSize({ size, responsiveSize })}
+        href={href}
+        onClick={onClick}
+        rel={validatedRel}
+        ref={this.link}
+        className={`${rest.className || ""} noFocus`}
+      >
+        {children}
+      </Elm>
+    );
+  }
+}
 
 LinkCta.propTypes = {
   size: PropTypes.string,

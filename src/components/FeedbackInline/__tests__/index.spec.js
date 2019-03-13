@@ -6,6 +6,8 @@ import { ClearIcon } from "../../Icons";
 import FeedbackInline, { contentValidator } from "..";
 import { BASE_FEEDBACK_HEIGHT } from "../FeedbackInline.styles";
 
+jest.mock("../../Text/LinkCta");
+
 describe("<FeedbackInline />", () => {
   it("renders correctly", () => {
     const { container } = render(renderInlineFeedback());
