@@ -1,6 +1,48 @@
+### Typography
+
+Typography component with H1-H4 and P1-P4 properties available. These components are extensible, yet ready for use out of the box and reflect the typography design specification documented on the [Ticketmaster design website](http://design.ticketmaster.com/components/typography/).
+
+This component uses the [colorThemes](https://github.com/ticketmaster/aurora/blob/master/src/theme/colorThemes.js) API. Please ensure that you have a properly configured `ThemeProvider` above this component in your DOM hierarchy.
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: color
+    Type: string
+    Default: onyx
+    Notes: Determines the color to be applied to the underlying element. See the top level keys of the [colorThemes](https://github.com/ticketmaster/aurora/blob/master/src/theme/colorThemes.js) objects named `global`, `tm`, and `lne`.
+  - Prop: variant
+    Type: string
+    Default: base
+    Notes: Determines the variant of the color prop passed to be applied to the underlying element. See the second level keys of the [colorThemes](https://github.com/ticketmaster/aurora/blob/master/src/theme/colorThemes.js) objects named `global`, `tm`, and `lne`. If the desired color lacks variants (it is a string, rather than an object), pass a falsy value for this prop.
+  - Prop: weight
+    Type: string
+    Default: extraBold for H1; regular for H2-4 and P1-4
+    Notes: Determines the font-weight to be applied to the underlying element. Values include `light`, `regular`, `semiBold`, and `extraBold`. Please see the [typography file](https://github.com/ticketmaster/aurora/blob/master/src/theme/typography.js) for each weight's value.
+```
+
+```react
+<ThemeProvider theme={{ themeName: "tm"}}>
+    <Container>
+        <Column>
+            <Row><Typography.H1>{TYPOGRAPHY_TITLES.h1.text}</Typography.H1></Row>
+            <Row><Typography.H2>{TYPOGRAPHY_TITLES.h2.text}</Typography.H2></Row>
+            <Row><Typography.H3>{TYPOGRAPHY_TITLES.h3.text}</Typography.H3></Row>
+            <Row><Typography.H4>{TYPOGRAPHY_TITLES.h4.text}</Typography.H4></Row>
+            <Row><Typography.P1>{TYPOGRAPHY_TITLES.p1.text}</Typography.P1></Row>
+            <Row><Typography.P2>{TYPOGRAPHY_TITLES.p2.text}</Typography.P2></Row>
+            <Row><Typography.P3>{TYPOGRAPHY_TITLES.p3.text}</Typography.P3></Row>
+            <Row><Typography.P4>{TYPOGRAPHY_TITLES.p4.text}</Typography.P4></Row>
+        </Column>
+    </Container>
+</ThemeProvider>
+```
+
 ### Text
 
-Text Component with a dark, light, and accent variants available.
+Text Component with a dark, light, and accent variants available. This component should only be used for highly customized use cases.
 
 This component supports both traditional color variants as well as themed color variants.
 
