@@ -34,3 +34,10 @@ export const SIZES_SL = [SMALL, LARGE];
 export const SIZES_SR = [SMALL, REGULAR];
 
 export const ARROW_WIDTH = 12;
+
+// WEIGHTS
+export const EXTRA_BOLD = "extraBold";
+
+// THEME COLORS
+export const ONYX = "onyx";
+export const BASE = "base";

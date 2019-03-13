@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography.P3 should render default markup when no props are passed 1`] = `
+<p
+  className="p3 p3--regular p3--onyx-base jgwspf"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P3 should render with a custom color prop that lacks variants 1`] = `
+<p
+  className="p3 p3--regular fedXmM"
+  color="brand"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P3 should render with a custom weight prop 1`] = `
+<p
+  className="p3 p3--semiBold p3--onyx-base kEheak"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P3 should render with custom color and variant props 1`] = `
+<p
+  className="p3 p3--regular p3--accent01-dark fcYaww"
+  color="accent01"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P3 should render without children 1`] = `
+<p
+  className="p3 p3--regular p3--onyx-base jgwspf"
+/>
+`;
