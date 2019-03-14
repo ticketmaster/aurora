@@ -217,9 +217,12 @@ export { default as RangeSlider } from "./components/RangeSlider";
 export { default as Typography } from "./components/Typography";
 export {
   fontSize,
+  fontSizes,
   fontWeight,
   fontWeights,
   lineHeight,
-  themeColor
+  textTransforms,
+  themeColor,
+  themeColors
 } from "./mixins";
 export { default as getThemeValue } from "./utils/getThemeValue";

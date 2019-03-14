@@ -2,7 +2,7 @@
 
 exports[`Typography.H1 should render default markup when no props are passed 1`] = `
 <h1
-  className="h1 h1--extraBold h1--onyx-base eTYckl"
+  className="h1 h1--extraBold h1--onyx-base ciPfPp"
 >
   Hello world
 </h1>
@@ -10,7 +10,7 @@ exports[`Typography.H1 should render default markup when no props are passed 1`]
 
 exports[`Typography.H1 should render with a custom color prop that lacks variants 1`] = `
 <h1
-  className="h1 h1--extraBold iuXkL"
+  className="h1 h1--extraBold h1--brand-base gJvZRX"
   color="brand"
 >
   Hello world
@@ -19,7 +19,15 @@ exports[`Typography.H1 should render with a custom color prop that lacks variant
 
 exports[`Typography.H1 should render with a custom weight prop 1`] = `
 <h1
-  className="h1 h1--semiBold h1--onyx-base bZSuad"
+  className="h1 h1--semiBold h1--onyx-base epjltH"
+>
+  Hello world
+</h1>
+`;
+
+exports[`Typography.H1 should render with a textTransform prop 1`] = `
+<h1
+  className="h1 h1--extraBold h1--onyx-base iKQMZM"
 >
   Hello world
 </h1>
@@ -27,7 +35,7 @@ exports[`Typography.H1 should render with a custom weight prop 1`] = `
 
 exports[`Typography.H1 should render with custom color and variant props 1`] = `
 <h1
-  className="h1 h1--extraBold h1--accent01-dark fvDKwo"
+  className="h1 h1--extraBold h1--accent01-dark cZhexz"
   color="accent01"
 >
   Hello world
@@ -36,6 +44,6 @@ exports[`Typography.H1 should render with custom color and variant props 1`] = `
 
 exports[`Typography.H1 should render without children 1`] = `
 <h1
-  className="h1 h1--extraBold h1--onyx-base eTYckl"
+  className="h1 h1--extraBold h1--onyx-base ciPfPp"
 />
 `;
