@@ -214,3 +214,12 @@ export {
 export { Tabs, TabsProvider, TabsConsumer } from "./components/Tabs";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";
 export { default as RangeSlider } from "./components/RangeSlider";
+export { default as Typography } from "./components/Typography";
+export {
+  fontSize,
+  fontWeight,
+  fontWeights,
+  lineHeight,
+  themeColor
+} from "./mixins";
+export { default as getThemeValue } from "./utils/getThemeValue";
