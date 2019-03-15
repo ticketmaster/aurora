@@ -78,22 +78,7 @@ export const StyledTooltip = styled.div`
 
   &.open-enter,
   &.open-appear {
-    transition: opacity 0.3s ${constants.easing.easeOutQuad},
-      transform 0.3s ${constants.easing.easeOutQuad};
-    transform: translate(0, 10px);
-    ${({ direction }) => {
-      switch (direction) {
-        case TOP:
-          return "transform: translate(0, 10px);";
-        case BOTTOM:
-          return "transform: translate(0, -10px);";
-        case LEFT:
-          return "transform: translate(10px, 0);";
-        case RIGHT:
-        default:
-          return "transform: translate(-10px, 0);";
-      }
-    }};
+    transition: opacity 0.3s ${constants.easing.easeOutQuad};
   }
 
   &.open-enter-active,
@@ -109,7 +94,6 @@ export const StyledTooltip = styled.div`
   &.open-appear-active {
     transition: opacity 0.3s ${constants.easing.easeOutQuad},
       transform 0.3s ${constants.easing.easeOutQuad};
-    transform: translate(0);
   }
 
   &.open-enter-done,

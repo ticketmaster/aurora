@@ -16,6 +16,7 @@ import {
   AUTO,
   ARROW_WIDTH
 } from "../constants";
+import { constants } from "../../theme";
 
 class Tooltip extends Component {
   constructor(props) {
@@ -35,45 +36,12 @@ class Tooltip extends Component {
       y: 0
     };
 
+    this.actualDirection = props.direction;
+
     this.state = {
       actualDirection: props.direction,
       arrowAdjustment: 0
     };
-  }
-
-  componentDidUpdate(prevProps) {
-    /*
-     * This causes force update of the tooltip position if we use only one tooltip and we transiotion from
-     * one zone that triggers the tooltip to another that triggers the same tooltip but with different place to display
-     */
-    const {
-      position: { elHorizontalCenter, elVerticalCenter },
-      isVisible,
-      direction,
-      position,
-      spaceFromMouse,
-      reduceTop,
-      reduceBottom
-    } = this.props;
-    if (
-      (prevProps.position.elHorizontalCenter !== elHorizontalCenter ||
-        prevProps.position.elVerticalCenter !== elVerticalCenter) &&
-      isVisible &&
-      prevProps.isVisible === isVisible
-    ) {
-      const reduce = { top: reduceTop, bottom: reduceBottom };
-      this.updateSize();
-      this.pos = this.calculatePosition({
-        direction,
-        position,
-        dimensions: this.dimensions,
-        spaceFromMouse,
-        reduce
-      });
-
-      this.myRef.current.style.top = `${this.pos.y}px`;
-      this.myRef.current.style.left = `${this.pos.x}px`;
-    }
   }
 
   /*
@@ -138,15 +106,31 @@ class Tooltip extends Component {
       result.y < position.elTop + dimensions.windowScroll &&
       (actualDirection !== TOP || arrowAdjustment !== adjustment)
     ) {
+      this.actualDirection = TOP;
       this.setState({ actualDirection: TOP, arrowAdjustment: adjustment });
     } else if (
       result.y > position.elTop + dimensions.windowScroll &&
       (actualDirection !== BOTTOM || arrowAdjustment !== adjustment)
     ) {
+      this.actualDirection = BOTTOM;
       this.setState({ actualDirection: BOTTOM, arrowAdjustment: adjustment });
     }
 
     return result;
+  };
+
+  getTranslateByDirection = direction => {
+    switch (direction) {
+      case TOP:
+        return "translate(0, 10px)";
+      case BOTTOM:
+        return "translate(0, -10px)";
+      case LEFT:
+        return "translate(10px, 0)";
+      case RIGHT:
+      default:
+        return "translate(-10px, 0)";
+    }
   };
 
   adjustArrow = ({ coords, position }) => {
@@ -293,6 +277,26 @@ class Tooltip extends Component {
 
     this.myRef.current.style.top = `${this.pos.y}px`;
     this.myRef.current.style.left = `${this.pos.x}px`;
+    this.myRef.current.style.transition = `opacity 0.3s ${
+      constants.easing.easeOutQuad
+    }`;
+    this.myRef.current.style.transform = this.getTranslateByDirection(
+      this.actualDirection
+    );
+  };
+
+  tooltipEntering = () => {
+    this.myRef.current.style.transition = `opacity 0.3s ${
+      constants.easing.easeOutQuad
+    },
+      transform 0.3s ${constants.easing.easeOutQuad}`;
+    this.myRef.current.style.transform = "translate(0)";
+  };
+
+  tooltipExit = () => {
+    this.myRef.current.style.transition = `opacity 0.1s ${
+      constants.easing.easeInQuad
+    }`;
   };
 
   render() {
@@ -307,6 +311,8 @@ class Tooltip extends Component {
           timeout={300}
           classNames="open"
           onEnter={this.tooltipEnter}
+          onEntering={this.tooltipEntering}
+          onExit={this.tooltipExit}
           appear={isVisible}
           variant={variant}
         >
