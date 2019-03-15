@@ -129,7 +129,8 @@ export {
   RefreshIcon,
   VenueSearchIcon,
   FraudulentActivityIcon,
-  PrintIcon
+  PrintIcon,
+  LaunchIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
