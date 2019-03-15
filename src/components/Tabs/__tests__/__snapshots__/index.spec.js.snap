@@ -3,7 +3,62 @@
 exports[`<Tabs /> should render tabs component correctly 1`] = `
 <div>
   <div
-    class="sc-jTzLTM dqPitF"
+    class="sc-jTzLTM kWTHxf"
+  >
+    <div
+      class="sc-fjdhpX jLBUHC"
+    >
+      <div
+        class="sc-jzJRlG cIeBWg"
+      >
+        <div
+          class="sc-cSHVUG tab__button--active fyDnAx"
+          data-index="0"
+        >
+          <div
+            class="text text--primary sc-ifAKCX kEFgxZ"
+          >
+            Test tab item 1
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jzJRlG cIeBWg"
+      >
+        <div
+          class="sc-cSHVUG fyDnAx"
+          data-index="1"
+        >
+          <div
+            class="text text--primary sc-ifAKCX kEFgxZ"
+          >
+            Test tab item 2
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-jzJRlG cIeBWg"
+      >
+        <div
+          class="sc-cSHVUG fyDnAx"
+          data-index="2"
+        >
+          <div
+            class="text text--primary sc-ifAKCX kEFgxZ"
+          >
+            Test tab item 3
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Tabs /> should render tabs component correctly when withBorderBottom equals false 1`] = `
+<div>
+  <div
+    class="sc-jTzLTM iAnCRo"
   >
     <div
       class="sc-fjdhpX jLBUHC"
@@ -58,7 +113,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
 exports[`<Tabs /> should render tabs component correctly with props for text of tabs 1`] = `
 <div>
   <div
-    class="sc-jTzLTM dqPitF"
+    class="sc-jTzLTM kWTHxf"
   >
     <div
       class="sc-fjdhpX jLBUHC"
