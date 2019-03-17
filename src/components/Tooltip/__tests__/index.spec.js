@@ -3,7 +3,8 @@ import renderer from "react-test-renderer";
 
 import PopOver from "../../PopOver";
 import Tooltip from "../index";
-import { BOTTOM, TOP } from "../../constants";
+import { BOTTOM, TOP, LEFT, RIGHT } from "../../constants";
+import { constants } from "../../../theme";
 
 jest.mock("../../PopOver/PopOverPortal", () => ({ children }) => children);
 
@@ -62,6 +63,69 @@ describe("Tooltip", () => {
       .toJSON();
 
     expect(tree).toMatchSnapshot();
+  });
+
+  it("tooltipExit should update tooltip transition prop", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    instance.myRef.current = {
+      style: {
+        transition: ""
+      }
+    };
+
+    instance.tooltipExit();
+
+    expect(instance.myRef.current.style.transition).toBe(
+      `opacity 0.1s ${constants.easing.easeInQuad}`
+    );
+  });
+
+  it("tooltipEntering should update tooltip transition and transform props", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    instance.myRef.current = {
+      style: {
+        transition: "",
+        transform: ""
+      }
+    };
+
+    instance.tooltipEntering();
+
+    expect(instance.myRef.current.style.transition).toBe(`opacity 0.3s ${
+      constants.easing.easeOutQuad
+    },
+      transform 0.3s ${constants.easing.easeOutQuad}`);
+    expect(instance.myRef.current.style.transform).toBe("translate(0)");
+  });
+
+  it("getTranslateByDirection direction top", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    expect(instance.getTranslateByDirection(TOP)).toBe("translate(0, 10px)");
+  });
+  it("getTranslateByDirection direction bottom", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    expect(instance.getTranslateByDirection(BOTTOM)).toBe(
+      "translate(0, -10px)"
+    );
+  });
+  it("getTranslateByDirection direction left", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    expect(instance.getTranslateByDirection(LEFT)).toBe("translate(10px, 0)");
+  });
+  it("getTranslateByDirection direction right", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    expect(instance.getTranslateByDirection(RIGHT)).toBe("translate(-10px, 0)");
+  });
+  it("getTranslateByDirection direction no direction", () => {
+    const instance = renderer.create(<Tooltip />).getInstance();
+
+    expect(instance.getTranslateByDirection()).toBe("translate(-10px, 0)");
   });
 
   describe("calculatePosition tests", () => {
@@ -218,25 +282,36 @@ describe("Tooltip", () => {
 
   it("tooltipEnter should calculate position again and set it", () => {
     const updateSizeMock = jest.fn();
+    const mock = jest.fn(() => "test");
     const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
     const tree = renderer.create(<Tooltip isVisible />).getInstance();
 
     tree.updateSize = updateSizeMock;
+    tree.getTranslateByDirection = mock;
+    tree.actualDirection = "left";
     tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
         style: {
           top: 0,
-          left: 0
+          left: 0,
+          transition: "",
+          transform: ""
         }
       }
     };
     tree.tooltipEnter();
 
     expect(updateSizeMock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("left");
     expect(calculatePositionMock).toHaveBeenCalledTimes(1);
     expect(tree.myRef.current.style.top).toEqual("10px");
     expect(tree.myRef.current.style.left).toEqual("5px");
+    expect(tree.myRef.current.style.transition).toEqual(
+      `opacity 0.3s ${constants.easing.easeOutQuad}`
+    );
+    expect(tree.myRef.current.style.transform).toEqual("test");
   });
 
   it("tooltipEnter should not calculate position again and set old pos values", () => {
@@ -323,62 +398,6 @@ describe("Tooltip", () => {
       windowScroll: 0,
       windowWidth: 0
     });
-  });
-
-  it("componentDidUpdate should calculate position again and set it", () => {
-    const updateSizeMock = jest.fn();
-    const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
-    const position = {
-      elHorizontalCenter: 30,
-      elVerticalCenter: 20
-    };
-    const tree = renderer.create(<Tooltip isVisible />).getInstance();
-
-    tree.updateSize = updateSizeMock;
-    tree.calculatePosition = calculatePositionMock;
-    tree.myRef = {
-      current: {
-        style: {
-          top: 0,
-          left: 0
-        }
-      }
-    };
-    tree.componentDidUpdate({ position, isVisible: true });
-
-    expect(updateSizeMock).toHaveBeenCalledTimes(1);
-    expect(calculatePositionMock).toHaveBeenCalledTimes(1);
-    expect(tree.myRef.current.style.top).toEqual("10px");
-    expect(tree.myRef.current.style.left).toEqual("5px");
-  });
-
-  it("componentDidUpdate should not do anything if not visible", () => {
-    const updateSizeMock = jest.fn();
-    const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
-    const position = {
-      elHorizontalCenter: 30,
-      elVerticalCenter: 20
-    };
-    const tree = renderer
-      .create(<Tooltip isVisible position={position} />)
-      .getInstance();
-
-    tree.updateSize = updateSizeMock;
-    tree.calculatePosition = calculatePositionMock;
-    tree.myRef = {
-      current: {
-        style: {
-          top: 0,
-          left: 0
-        }
-      }
-    };
-    tree.componentDidUpdate({ position });
-
-    expect(updateSizeMock).toHaveBeenCalledTimes(0);
-    expect(calculatePositionMock).toHaveBeenCalledTimes(0);
-    expect(tree.myRef.current.style.top).toEqual(0);
-    expect(tree.myRef.current.style.left).toEqual(0);
   });
 
   it("getPositionAndUpdateDirection should set position top and change adjustment when direction is different", () => {
