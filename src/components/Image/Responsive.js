@@ -41,6 +41,8 @@ class ResponsiveImage extends PureComponent {
   }
 }
 
+ResponsiveImage.displayName = "ResponsiveImage";
+
 ResponsiveImage.propTypes = {
   loader: PropTypes.node,
   src: PropTypes.string,
