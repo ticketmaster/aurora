@@ -70,6 +70,8 @@ class Button extends Component {
   }
 }
 
+Button.displayName = "Button";
+
 Button.propTypes = {
   variant: PropTypes.oneOf(BUTTON_VARIANTS),
   size: PropTypes.oneOf(SIZES),

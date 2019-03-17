@@ -1,10 +1,11 @@
 import { css } from "styled-components";
 
-import { themeColor, DISPLAY_INLINE, lineHeight, fontWeights } from "./";
+import { DISPLAY_INLINE, lineHeight, fontWeights } from "./";
+import BASE_STYLE_TYPOGRAPHY from "./baseStyleTypography";
 
 const BASE_STYLE_HEADER = css`
-  margin: 2px 0;
-  ${themeColor} ${DISPLAY_INLINE};
+  ${BASE_STYLE_TYPOGRAPHY};
+  ${DISPLAY_INLINE};
   ${lineHeight`header`};
   ${fontWeights};
 `;

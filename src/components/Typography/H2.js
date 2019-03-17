@@ -1,22 +1,20 @@
 import styled from "styled-components";
-import classnames from "classnames";
 
 import { fontWeight, fontSize, BASE_STYLE_HEADER } from "../../mixins";
 import { largeAndUp } from "../../theme/mediaQueries";
 import { REGULAR, ONYX, BASE } from "../constants";
+import typographyClassnames from "./helpers";
 
 const H2 = styled.h2.attrs(
   ({ weight = REGULAR, color = ONYX, variant = BASE }) => ({
-    className: classnames({
-      h2: true,
-      [`h2--${weight}`]: !!weight,
-      [`h2--${color}-${variant}`]: !!(color && variant)
-    })
+    className: typographyClassnames("h2", { weight, color, variant })
   })
 )`
-  ${fontWeight("regular")}
+  ${fontWeight`regular`}
   ${BASE_STYLE_HEADER}
   ${fontSize`tera`} ${largeAndUp`${fontSize`zetta`}`};
 `;
+
+H2.displayName = "H2";
 
 export default H2;

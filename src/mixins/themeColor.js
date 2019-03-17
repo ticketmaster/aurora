@@ -1,13 +1,12 @@
 import { css } from "styled-components";
 
-import getThemeValue from "../utils/getThemeValue";
-import { ONYX, BASE } from "../components/constants";
+import { getThemeValue, isValidThemeColorVariant } from "../utils";
 
-const themeColor = css`
-  color: ${({ color = ONYX, variant = BASE, theme }) =>
-    (variant
+const themeColor = (color, variant) => css`
+  color: ${({ theme }) =>
+    isValidThemeColorVariant(theme, color, variant)
       ? getThemeValue(color, variant)(theme)
-      : getThemeValue(color)(theme)) || getThemeValue(ONYX, BASE)(theme)};
+      : getThemeValue(color)(theme)};
 `;
 
 export default themeColor;
