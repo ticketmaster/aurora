@@ -24,10 +24,10 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -105,10 +105,10 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -186,10 +186,10 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -267,12 +267,12 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Option One
       </div>
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -350,10 +350,10 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -431,10 +431,10 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
         id="hidden-label__"
       />
       <div
-        class="dropdown__text--disabled sc-EHOje vdlIp"
+        class="dropdown__text--disabled sc-EHOje exIaPu"
       />
       <svg
-        class="dropdown__chevron--disabled sc-ifAKCX bGhIY"
+        class="dropdown__chevron--disabled sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -512,10 +512,10 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -595,12 +595,12 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Option One
       </div>
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -678,12 +678,12 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Option One
       </div>
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -761,10 +761,10 @@ exports[`DropDownGroup renders default dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -842,10 +842,10 @@ exports[`DropDownGroup renders default dropdown that should always open downward
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -923,10 +923,10 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX bGhIY"
+        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1004,10 +1004,10 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1085,10 +1085,10 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1167,10 +1167,10 @@ exports[`DropDownGroup renders small dropdown 1`] = `
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="sc-ifAKCX bGhIY"
+        class="sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1250,12 +1250,12 @@ exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
         Select An Option
       </span>
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Select An Option
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1335,10 +1335,10 @@ exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
         Selected Option:
       </span>
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       />
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1410,14 +1410,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Sort By:
       </span>
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Sort By:
          
         Date
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1490,7 +1490,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Sort By:
       </span>
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Sort By:
          
@@ -1500,7 +1500,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         </span>
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1573,7 +1573,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Sort By:
       </span>
       <div
-        class="sc-EHOje vdlIp"
+        class="sc-EHOje exIaPu"
       >
         Sort By:
          
@@ -1581,7 +1581,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Closest
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX bGhIY"
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
         height="16"
         viewBox="0 0 16 16"
         width="16"
