@@ -1,21 +1,19 @@
 import styled from "styled-components";
-import classnames from "classnames";
 
 import { fontWeight, fontSize, BASE_STYLE_HEADER } from "../../mixins";
 import { REGULAR, ONYX, BASE } from "../constants";
+import typographyClassnames from "./helpers";
 
 const H4 = styled.h4.attrs(
   ({ weight = REGULAR, color = ONYX, variant = BASE }) => ({
-    className: classnames({
-      h4: true,
-      [`h4--${weight}`]: !!weight,
-      [`h4--${color}-${variant}`]: !!(color && variant)
-    })
+    className: typographyClassnames("h4", { weight, color, variant })
   })
 )`
-  ${fontWeight("regular")}
+  ${fontWeight`regular`}
   ${BASE_STYLE_HEADER}
   ${fontSize`giga`};
 `;
+
+H4.displayName = "H4";
 
 export default H4;

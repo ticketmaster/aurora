@@ -21,6 +21,8 @@ class StaticImage extends PureComponent {
   }
 }
 
+StaticImage.displayName = "StaticImage";
+
 StaticImage.propTypes = {
   loader: PropTypes.node,
   src: PropTypes.string,

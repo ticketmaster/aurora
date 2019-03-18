@@ -54,7 +54,8 @@ import {
   CreateNewIcon,
   FraudulentActivityIcon,
   PrintIcon,
-  FavoriteIcon
+  FavoriteIcon,
+  LaunchIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -136,7 +137,8 @@ export default {
     CreateNewIcon,
     FraudulentActivityIcon,
     PrintIcon,
-    FavoriteIcon
+    FavoriteIcon,
+    LaunchIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
