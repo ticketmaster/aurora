@@ -39,6 +39,10 @@ rows:
     Type: string
     Default: #026cdf(themes.tm.primary.base)
     Notes: Optional. Determines underline color of selected item.
+  - Prop: withBorderBottom
+    Type: bool
+    Default: true
+    Notes: Optional. Determines whether there should be a border beneath the Tabs component.
 ```
 
 ## TabsProvider, TabsConsumer
@@ -48,7 +52,7 @@ Provide child component with tabIndex and onChangeTabIndex;
 **tabIndex** - Represents index of currently selected tab.
 **onChangeTabIndex** - Function, that can be invoked to create event hanler to change the value of tabIndex. Optionaly takes callback function, that will be called with new tabIndex as an argument. Returns a function, that takes one argument: new value of tabIndex to set or event object (requires evet target to have data-index attribute).
 
-### Usage of Tabs with TabsProvider and TabsConsumer components
+### Tabs with TabsProvider and TabsConsumer components on a light background
 
 ```react
 responsive: true
@@ -62,13 +66,47 @@ responsive: true
         <React.Fragment>
         <Tabs
           items={['first tab', 'second tab', 'third tab', 'fourth tab', 'fifth tab', 'sixth tab']}
-          itemsProps={[{'data-customInfo': 'someInfo_0'}, {'data-customInfo': 'someInfo_1'}, {'data-customInfo': 'someInfo_2'}]}
-          defaultItemProps={{'data-customInfo': 'someDefaultInfo'}}
+          itemsProps={[{'data-custom-info': 'someInfo_0'}, {'data-custom-info': 'someInfo_1'}, {'data-custom-info': 'someInfo_2'}]}
+          defaultItemProps={{'data-custom-info': 'someDefaultInfo'}}
           index={tabIndex}
           onClick={onChangeTabIndex()}
         />
         <Column>
         <Text weight="semiBold">Content for tab #{tabIndex + 1}</Text>
+        <Button onClick={()=>{onChangeTabIndex()(5)}}>Go To Tab #6</Button>
+        </Column>
+        </React.Fragment>
+      )}
+    </TabsConsumer>
+</TabsProvider>
+</div>
+```
+
+### Tabs with TabsProvider and TabsConsumer components on a dark background
+
+```react
+responsive: true
+---
+<div style={{
+  padding: '16px',
+  backgroundColor: themes.tm.brand
+}}>
+<TabsProvider>
+    <TabsConsumer>
+      {({ tabIndex, onChangeTabIndex }) => (
+        <React.Fragment>
+        <Tabs
+          items={['first tab', 'second tab', 'third tab', 'fourth tab', 'fifth tab', 'sixth tab']}
+          itemsProps={[{'data-custom-info': 'someInfo_0'}, {'data-custom-info': 'someInfo_1'}, {'data-custom-info': 'someInfo_2'}]}
+          defaultItemProps={{'data-custom-info': 'someDefaultInfo'}}
+          index={tabIndex}
+          onClick={onChangeTabIndex()}
+          withBorderBottom={false}
+          underlineColor={themes.global.white.base}
+          style={{ color: themes.global.white.base }}
+        />
+        <Column>
+        <Text variant="light" weight="semiBold">Content for tab #{tabIndex + 1}</Text>
         <Button onClick={()=>{onChangeTabIndex()(5)}}>Go To Tab #6</Button>
         </Column>
         </React.Fragment>

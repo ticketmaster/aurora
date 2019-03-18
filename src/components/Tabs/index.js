@@ -25,8 +25,11 @@ const Container = styled.div.attrs({
   width: 100%;
   overflow: visible;
 
+  ${({ withBorderBottom }) =>
+    withBorderBottom &&
+    `
   &:after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     border-bottom: 1px solid ${themes.tm.gray04};
@@ -35,8 +38,7 @@ const Container = styled.div.attrs({
     bottom: 0;
     z-index: ${zIndex.unset};
   }
-
-  &.tabs__container--overflowed:after {
+  `} &.tabs__container--overflowed:after {
     width: 100vw;
     left: calc(50% - 50vw);
   }
@@ -115,7 +117,8 @@ class Tabs extends Component {
     variant: PropTypes.string,
     accent: PropTypes.string,
     weight: PropTypes.string,
-    underlineColor: PropTypes.string
+    underlineColor: PropTypes.string,
+    withBorderBottom: PropTypes.bool
   };
 
   static defaultProps = {
@@ -126,7 +129,8 @@ class Tabs extends Component {
     variant: null,
     accent: null,
     weight: null,
-    underlineColor: null
+    underlineColor: null,
+    withBorderBottom: true
   };
 
   state = {
@@ -218,8 +222,13 @@ class Tabs extends Component {
   };
 
   render() {
+    const { withBorderBottom } = this.props;
+
     return (
-      <Container areTabsOverflow={this.state.isTabsContainerOverflows}>
+      <Container
+        areTabsOverflow={this.state.isTabsContainerOverflows}
+        withBorderBottom={withBorderBottom}
+      >
         <Content
           ref={ref => {
             this.content = ref;
