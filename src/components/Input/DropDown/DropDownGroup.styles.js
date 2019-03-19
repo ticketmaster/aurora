@@ -1,3 +1,5 @@
+/* stylelint-disable no-descending-specificity */
+
 import styled from "styled-components";
 import { DownIcon } from "../../Icons";
 import KeyBoardProvider from "../../KeyboardNavigation/Provider";
@@ -134,11 +136,21 @@ export const StyledGroupWrapper = styled.div`
 export const StyledChevron = styled(DownIcon).attrs({
   size: "small"
 })`
-  margin-right: 12px;
   color: ${getThemeValue("gray02")};
   transition: opacity 0.1s ${constants.easing.easeInOutQuad};
+  margin-right: 16px;
+
+  .dropdown--small & {
+    margin-right: 12px;
+  }
 
   .dropdown--border:hover & {
+    &:not(.dropdown__chevron--disabled) {
+      margin-right: 15px;
+    }
+  }
+
+  .dropdown--small.dropdown--border:hover & {
     &:not(.dropdown__chevron--disabled) {
       margin-right: 11px;
     }
@@ -160,27 +172,37 @@ export const StyledSelectedText = styled.div`
     font-size: ${typography.size.hecto};
   }
 
-  .dropdown--border & {
+  .dropdown--no-border & {
+    margin-right: 10px;
+  }
+
+  .dropdown--large.dropdown--border & {
     margin-left: 16px;
   }
 
-  .dropdown--no-border & {
-    margin-right: 10px;
+  .dropdown--small.dropdown--border & {
+    margin-left: 12px;
   }
 
   .dropdown--active.dropdown--no-border & {
     margin-right: 11px;
   }
 
-  .dropdown--border:hover & {
-    &:not(.dropdown__text--disabled) {
-      margin-left: 15px;
-    }
-  }
-
   .dropdown--active.dropdown--no-border:hover & {
     &:not(.dropdown__text--disabled) {
       margin-right: 10px;
+    }
+  }
+
+  .dropdown--small.dropdown--border:hover & {
+    &:not(.dropdown__text--disabled) {
+      margin-left: 11px;
+    }
+  }
+
+  .dropdown--large.dropdown--border:hover & {
+    &:not(.dropdown__text--disabled) {
+      margin-left: 15px;
     }
   }
 `;
