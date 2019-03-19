@@ -147,9 +147,9 @@ LinkCta.propTypes = {
 
 LinkCta.defaultProps = {
   size: null,
-  onClick: null,
+  onClick: undefined,
   responsiveSize: PT.defaultResponsiveSize,
-  href: null,
+  href: undefined,
   target: "_self",
   rel: "",
   reverseColors: false
