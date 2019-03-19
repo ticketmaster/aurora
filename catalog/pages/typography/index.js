@@ -3,6 +3,8 @@ import { ThemeProvider } from "styled-components";
 
 import { Text, Link } from "../../../src/components/Text";
 import { Container, Row, Column } from "../../../src/components/Grid";
+import Typography from "../../../src/components/Typography";
+import TYPOGRAPHY_TITLES from "./titles";
 import { typography, themes } from "../../../src/theme";
 
 const textStyle = {
@@ -48,10 +50,12 @@ export default {
     Column,
     Text,
     Link,
+    Typography,
     getFontWeightTextStyle,
     fontWeightLabelStyle,
     fontSizeRowStyle,
-    fontSizeRowStyleDark
+    fontSizeRowStyleDark,
+    TYPOGRAPHY_TITLES
   },
   content: pageLoader(() => import("./index.md"))
 };

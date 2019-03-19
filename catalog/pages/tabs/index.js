@@ -5,7 +5,8 @@ import {
   TabsConsumer,
   Button,
   Text,
-  Column
+  Column,
+  themes
 } from "../../../src";
 
 export default {
@@ -17,7 +18,8 @@ export default {
     TabsConsumer,
     Text,
     Button,
-    Column
+    Column,
+    themes
   },
   content: pageLoader(() => import("./index.md"))
 };

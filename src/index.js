@@ -129,7 +129,8 @@ export {
   RefreshIcon,
   VenueSearchIcon,
   FraudulentActivityIcon,
-  PrintIcon
+  PrintIcon,
+  LaunchIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
@@ -214,3 +215,15 @@ export {
 export { Tabs, TabsProvider, TabsConsumer } from "./components/Tabs";
 export { StatusBadge, StatusBadgeGroup } from "./components/StatusBadge";
 export { default as RangeSlider } from "./components/RangeSlider";
+export { default as Typography } from "./components/Typography";
+export {
+  fontSize,
+  fontSizes,
+  fontWeight,
+  fontWeights,
+  lineHeight,
+  textTransforms,
+  themeColor,
+  themeColors
+} from "./mixins";
+export { default as getThemeValue } from "./utils/getThemeValue";

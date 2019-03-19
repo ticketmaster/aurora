@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography.P1 should render default markup when no props are passed 1`] = `
+<p
+  className="p1 p1--regular p1--onyx-base grArvb"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P1 should render with a custom color prop that lacks variants 1`] = `
+<p
+  className="p1 p1--regular p1--brand-base hknJbF"
+  color="brand"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P1 should render with a custom weight prop 1`] = `
+<p
+  className="p1 p1--semiBold p1--onyx-base iQqweo"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P1 should render with a textTransform prop 1`] = `
+<p
+  className="p1 p1--regular p1--onyx-base dImeXY"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P1 should render with custom color and variant props 1`] = `
+<p
+  className="p1 p1--regular p1--accent01-dark cwYgwV"
+  color="accent01"
+>
+  Hello world
+</p>
+`;
+
+exports[`Typography.P1 should render without children 1`] = `
+<p
+  className="p1 p1--regular p1--onyx-base grArvb"
+/>
+`;

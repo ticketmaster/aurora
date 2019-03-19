@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SeatTooltip should match snapshot when has children 1`] = `
-.jhiaLu.open-enter .c0.open-enter:before,
-.jhiaLu.open-appear,
-.jhiaLu.open-appear:before {
+.cENRLf.open-enter .c0.open-enter:before,
+.cENRLf.open-appear,
+.cENRLf.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
@@ -11,7 +11,7 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
 }
 
 <div
-  className="c0 jhiaLu"
+  className="c0 cENRLf"
   direction="auto"
   style={
     Object {
@@ -85,9 +85,9 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
-.jhiaLu.open-enter .c0.open-enter:before,
-.jhiaLu.open-appear,
-.jhiaLu.open-appear:before {
+.cENRLf.open-enter .c0.open-enter:before,
+.cENRLf.open-appear,
+.cENRLf.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
@@ -95,7 +95,7 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 }
 
 <div
-  className="c0 jhiaLu"
+  className="c0 cENRLf"
   direction="auto"
   style={
     Object {
@@ -161,9 +161,9 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when small and dark 1`] = `
-.jhiaLu.open-enter .c0.open-enter:before,
-.jhiaLu.open-appear,
-.jhiaLu.open-appear:before {
+.cENRLf.open-enter .c0.open-enter:before,
+.cENRLf.open-appear,
+.cENRLf.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
@@ -171,7 +171,7 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
 }
 
 <div
-  className="c0 jhiaLu"
+  className="c0 cENRLf"
   direction="auto"
   style={
     Object {

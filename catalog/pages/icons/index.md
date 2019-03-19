@@ -10,22 +10,20 @@ To add icons to the project, use the command `npm run add-icons svgFilePath`.
 
 ### Icons Props (Deprecated)
 
-#### These icons are still available but will be removed soon
-
 ```table
 span: 6
 rows:
   - Prop: size
     Type: string
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon, LaunchIcon
     Notes: Required
   - Prop: color
     Type: string
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon, LaunchIcon
     Notes: Optional
   - Prop: children
     Type: node
-    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon
+    Component: CampsiteIcon, ChevronIcon, ClubIcon, CrossIcon, DonationIcon, GeneralIcon, OverflowIcon, ParkingIcon, SpecialIcon, StarIcon, VenueIcon, VipIcon, LaunchIcon
     Notes: Optional
   - Prop: direction
     Type: string
@@ -583,6 +581,14 @@ rows:
       </FavoriteIcon>
     </div>
     <div style={iconLabelStyle}>Favorite icon</div>
+  </Column>
+    <Column medium={3}>
+    <div style={iconStyle}>
+      <LaunchIcon>
+        <title>Launch Icon</title>
+      </LaunchIcon>
+    </div>
+    <div style={iconLabelStyle}>Launch icon</div>
   </Column>
  </Row>
 </Container>

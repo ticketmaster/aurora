@@ -26,6 +26,89 @@ describe("LinkCta", () => {
     ).toMatchSnapshot();
   });
 
+  it("activateFocusStyles should remove noFocus class from link", () => {
+    const instance = renderer
+      .create(<LinkCta>I am a link</LinkCta>)
+      .getInstance();
+    const mock = jest.fn();
+
+    instance.link.current = {
+      classList: {
+        remove: mock
+      }
+    };
+    instance.activateFocusStyles();
+
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("noFocus");
+  });
+
+  it("focusHandler should add keyup listener", () => {
+    const instance = renderer
+      .create(<LinkCta>I am a link</LinkCta>)
+      .getInstance();
+    const mock = jest.fn();
+    global.window.addEventListener = mock;
+
+    instance.focusHandler();
+
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("keyup", instance.activateFocusStyles);
+  });
+
+  it("componentWillUnmount should remove keyup listener", () => {
+    const instance = renderer
+      .create(<LinkCta>I am a link</LinkCta>)
+      .getInstance();
+    const mock = jest.fn();
+    global.window.removeEventListener = mock;
+
+    instance.componentWillUnmount();
+
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("keyup", instance.activateFocusStyles);
+  });
+
+  it("componentDidMount should add focus and blur listeners to link", () => {
+    const instance = renderer
+      .create(<LinkCta>I am a link</LinkCta>)
+      .getInstance();
+    const mock = jest.fn();
+
+    instance.link.current = {
+      addEventListener: mock
+    };
+    instance.componentDidMount();
+
+    expect(mock).toHaveBeenCalledTimes(2);
+    expect(mock).toHaveBeenCalledWith("focus", instance.focusHandler);
+    expect(mock).toHaveBeenCalledWith("blur", instance.blurHandler);
+  });
+
+  it("blurHandler should add noFocus class to link and remove keyup listener", () => {
+    const instance = renderer
+      .create(<LinkCta>I am a link</LinkCta>)
+      .getInstance();
+    const mock = jest.fn();
+    const mockKeyUp = jest.fn();
+
+    instance.link.current = {
+      classList: {
+        add: mock
+      }
+    };
+    global.window.removeEventListener = mockKeyUp;
+    instance.blurHandler();
+
+    expect(mockKeyUp).toHaveBeenCalledTimes(1);
+    expect(mockKeyUp).toHaveBeenCalledWith(
+      "keyup",
+      instance.activateFocusStyles
+    );
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("noFocus");
+  });
+
   it("static size from typography", () => {
     expect(
       renderer.create(<LinkCta size="normal">I am a link</LinkCta>).toJSON() // eslint-disable-line

@@ -6,6 +6,7 @@ import { ClearIcon } from "../../Icons";
 import Banner from "..";
 
 jest.mock("../../Button");
+jest.mock("../../Text/LinkCta");
 
 describe("<Banner />", () => {
   it("renders correctly when closed", () => {

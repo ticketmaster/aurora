@@ -1,44 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Tooltip from "../../../src/components/Tooltip";
-import {
-  VARIANTS,
-  LIGHT,
-  TOP,
-  BOTTOM,
-  LEFT,
-  RIGHT
-} from "../../../src/components/constants";
+import { themes } from "../../../src/theme";
+import { Text } from "../../../src/components/Text";
 
-const Container = styled.div`
-  margin-top: 100px;
-  width: 95%;
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+const TooltipText = styled(Text).attrs({
+  weight: "semiBold",
+  tag: "span"
+})`
+  color: ${themes.global.primary.base};
 `;
 
-export const TooltipButton = styled.div`
-  width: 100px;
-  height: 50px;
-  border: 1px solid red;
-  display: inline-block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+class TooltipDemo extends Component {
+  static propTypes = {
+    variant: PropTypes.oneOf(["dark", "light"]),
+    text: PropTypes.string.isRequired,
+    direction: PropTypes.string.isRequired
+  };
 
-class TooltipDemo extends React.Component {
-  constructor(props) {
-    super(props);
+  static defaultProps = {
+    variant: "light"
+  };
 
-    this.state = {
-      isOpened: false
-    };
-  }
+  static tooltipText =
+    "This is a basic tooltip. If there is a need for multiple lines, it grows downward.";
+
+  state = {
+    isOpened: false
+  };
 
   mouseLeave = () => {
     this.setState({
@@ -46,46 +36,26 @@ class TooltipDemo extends React.Component {
     });
   };
 
-  elementHovered = (e, direction) => {
+  elementHovered = e => {
     const data = Tooltip.getDimensionsFromEvent(e);
     this.setState({
       isOpened: true,
-      direction,
       ...data
     });
   };
 
   render() {
-    const { isOpened, direction, ...position } = this.state;
-    const { variant } = this.props;
-    const tooltip =
-      "Some text to be rendered in theeii pop over component. Some text to be rendered in the popover component.";
+    const { isOpened, ...position } = this.state;
+    const { variant, direction, text } = this.props;
+
     return (
-      <Container>
-        <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, TOP)}
+      <div style={{ display: "flex" }}>
+        <TooltipText
+          onMouseEnter={this.elementHovered}
           onMouseLeave={this.mouseLeave}
         >
-          Top
-        </TooltipButton>
-        <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, BOTTOM)}
-          onMouseLeave={this.mouseLeave}
-        >
-          Bottom
-        </TooltipButton>
-        <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, RIGHT)}
-          onMouseLeave={this.mouseLeave}
-        >
-          Right
-        </TooltipButton>
-        <TooltipButton
-          onMouseEnter={e => this.elementHovered(e, LEFT)}
-          onMouseLeave={this.mouseLeave}
-        >
-          Left
-        </TooltipButton>
+          {text}
+        </TooltipText>
 
         <Tooltip
           isVisible={isOpened}
@@ -93,18 +63,11 @@ class TooltipDemo extends React.Component {
           direction={direction}
           variant={variant}
         >
-          {tooltip}
+          {TooltipDemo.tooltipText}
         </Tooltip>
-      </Container>
+      </div>
     );
   }
 }
-
-TooltipDemo.propTypes = {
-  variant: PropTypes.oneOf(VARIANTS)
-};
-TooltipDemo.defaultProps = {
-  variant: LIGHT
-};
 
 export default TooltipDemo;

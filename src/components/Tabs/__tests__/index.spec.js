@@ -24,6 +24,14 @@ describe("<Tabs />", () => {
     unmount();
   });
 
+  it("should render tabs component correctly when withBorderBottom equals false", () => {
+    const { container, unmount } = render(
+      <Tabs {...mainProps} withBorderBottom={false} />
+    );
+    expect(container).toMatchSnapshot();
+    unmount();
+  });
+
   it("should render tabs component correctly with props for text of tabs", () => {
     const { container, unmount } = render(
       <Tabs {...mainProps} {...textProps} />

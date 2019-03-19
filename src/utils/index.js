@@ -5,3 +5,6 @@ export { default as omitKeys } from "./omitKeys";
 export { default as sluggify } from "./text";
 export { getFontColor, getFontHue, getLabelTextColor } from "./typography";
 export { default as throttle } from "./throttle";
+export {
+  default as isValidThemeColorVariant
+} from "./isValidThemeColorVariant";
