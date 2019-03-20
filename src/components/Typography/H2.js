@@ -15,6 +15,6 @@ const H2 = styled.h2.attrs(
   ${fontSize`tera`} ${largeAndUp`${fontSize`zetta`}`};
 `;
 
-H2.displayName = "H2";
+H2.displayName = "Typography.H2";
 
 export default H2;

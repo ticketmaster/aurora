@@ -42,6 +42,12 @@ exports[`Typography.H4 should render with custom color and variant props 1`] = `
 </h4>
 `;
 
+exports[`Typography.H4 should render without a theme 1`] = `
+<h4
+  className="h4 h4--regular h4--onyx-base jaCmRM"
+/>
+`;
+
 exports[`Typography.H4 should render without children 1`] = `
 <h4
   className="h4 h4--regular h4--onyx-base jaCmRM"

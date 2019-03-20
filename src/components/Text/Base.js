@@ -4,8 +4,9 @@ import classnames from "classnames";
 
 import StyledTextBase from "./Base.styles";
 import * as PT from "./PropTypes";
-import { themeShape, themeTm } from "../../utils/getThemeValue";
+import { themeShape } from "../../utils/getThemeValue";
 import { getResponsiveSize } from "../../utils/responsiveSize";
+import { THEME_TM } from "../../theme/constants";
 
 const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
 
@@ -89,7 +90,7 @@ TextBase.defaultProps = {
   disabled: false,
   allCaps: false,
   monospace: false,
-  theme: themeTm,
+  theme: THEME_TM,
   themed: false
 };
 

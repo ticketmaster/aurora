@@ -1,6 +1,6 @@
 import { getFontColor, getFontHue, getThemedFontColor } from "../typography";
 import { colors, themes } from "../../theme";
-import { themeTm } from "../../utils/getThemeValue";
+import { THEME_TM } from "../../theme/constants";
 
 const themeLne = { themeName: "lne" };
 
@@ -261,44 +261,44 @@ describe("getFontHue", () => {
 describe("getThemedFontColor", () => {
   it("should return the primary dark color when variant equals dark and primary equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "dark", primary: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "dark", primary: true })
     ).toEqual(themes.tm.onyx.base);
   });
 
   it("should return the secondary dark color when variant equals dark and secondary equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "dark", secondary: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "dark", secondary: true })
     ).toEqual(themes.tm.onyx.light);
   });
 
   it("should return the disabled dark color when variant equals dark and disabled equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "dark", disabled: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "dark", disabled: true })
     ).toEqual(themes.tm.onyx.muted);
   });
 
   it("should return the primary light color when variant equals light and primary equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "light", primary: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "light", primary: true })
     ).toEqual(themes.tm.white.base);
   });
 
   it("should return the secondary light color when variant equals light and secondary equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "light", secondary: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "light", secondary: true })
     ).toEqual(themes.tm.white.light);
   });
 
   it("should return the disabled light color when variant equals light and disabled equals true", () => {
     expect(
-      getThemedFontColor({ theme: themeTm, variant: "light", disabled: true })
+      getThemedFontColor({ theme: THEME_TM, variant: "light", disabled: true })
     ).toEqual(themes.tm.white.muted);
   });
 
   it("should return the primary accent color when variant equals accent and primary equals true", () => {
     expect(
       getThemedFontColor({
-        theme: themeTm,
+        theme: THEME_TM,
         variant: "accent",
         accent: "primary",
         primary: true
@@ -309,7 +309,7 @@ describe("getThemedFontColor", () => {
   it("should return the secondary accent color when variant equals accent and secondary equals true", () => {
     expect(
       getThemedFontColor({
-        theme: themeTm,
+        theme: THEME_TM,
         variant: "accent",
         accent: "primary",
         secondary: true
@@ -320,7 +320,7 @@ describe("getThemedFontColor", () => {
   it("should return the disabled accent color when variant equals accent and disabled equals true", () => {
     expect(
       getThemedFontColor({
-        theme: themeTm,
+        theme: THEME_TM,
         variant: "accent",
         accent: "primary",
         disabled: true

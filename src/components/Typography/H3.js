@@ -15,6 +15,6 @@ const H3 = styled.h3.attrs(
   ${fontSize`giga`} ${largeAndUp`${fontSize`tera`}`};
 `;
 
-H3.displayName = "H3";
+H3.displayName = "Typography.H3";
 
 export default H3;
