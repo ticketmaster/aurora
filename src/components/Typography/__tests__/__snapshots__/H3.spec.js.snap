@@ -42,6 +42,12 @@ exports[`Typography.H3 should render with custom color and variant props 1`] = `
 </h3>
 `;
 
+exports[`Typography.H3 should render without a theme 1`] = `
+<h3
+  className="h3 h3--regular h3--onyx-base emrIB"
+/>
+`;
+
 exports[`Typography.H3 should render without children 1`] = `
 <h3
   className="h3 h3--regular h3--onyx-base emrIB"

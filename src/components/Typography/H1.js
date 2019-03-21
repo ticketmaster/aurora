@@ -15,6 +15,6 @@ const H1 = styled.h1.attrs(
   ${fontSize`zetta`} ${largeAndUp`${fontSize`bronto`}`};
 `;
 
-H1.displayName = "H1";
+H1.displayName = "Typography.H1";
 
 export default H1;

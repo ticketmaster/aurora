@@ -42,6 +42,12 @@ exports[`Typography.P1 should render with custom color and variant props 1`] = `
 </p>
 `;
 
+exports[`Typography.P1 should render without a theme 1`] = `
+<p
+  className="p1 p1--regular p1--onyx-base grArvb"
+/>
+`;
+
 exports[`Typography.P1 should render without children 1`] = `
 <p
   className="p1 p1--regular p1--onyx-base grArvb"

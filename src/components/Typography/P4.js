@@ -13,6 +13,6 @@ const P4 = styled.p.attrs(
   ${fontSize`mini`};
 `;
 
-P4.displayName = "P4";
+P4.displayName = "Typography.P4";
 
 export default P4;

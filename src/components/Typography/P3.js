@@ -13,6 +13,6 @@ const P3 = styled.p.attrs(
   ${fontSize`uno`};
 `;
 
-P3.displayName = "P3";
+P3.displayName = "Typography.P3";
 
 export default P3;

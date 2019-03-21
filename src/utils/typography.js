@@ -67,7 +67,7 @@ export const getThemedFontColor = ({
   secondary,
   disabled
 }) => {
-  if (!theme.themeName) {
+  if (!theme || !theme.themeName) {
     return getFontColor({
       variant,
       accent,
