@@ -43,7 +43,7 @@ const handleItemClick = (children, value, event, onItemClick, url) => {
   }
 
   if (onItemClick) {
-    onItemClick(event);
+    onItemClick(event, value && value.onCloseRequest);
   }
 
   if (url && value) {
