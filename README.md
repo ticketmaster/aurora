@@ -22,6 +22,7 @@
 
 Aurora relies on the [react](https://www.npmjs.com/package/react),
 [prop-types](https://www.npmjs.com/package/prop-types),
+[react-transition-group](https://www.npmjs.com/package/react-transition-group),
 and [styled-components](https://www.npmjs.com/package/styled-components)
 peer-dependency packages are already to be installed and set up in your project.
 
