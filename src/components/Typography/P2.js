@@ -13,6 +13,6 @@ const P2 = styled.p.attrs(
   ${fontSize`hecto`};
 `;
 
-P2.displayName = "P2";
+P2.displayName = "Typography.P2";
 
 export default P2;

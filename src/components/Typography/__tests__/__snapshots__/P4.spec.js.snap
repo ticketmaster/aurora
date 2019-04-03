@@ -42,6 +42,12 @@ exports[`Typography.P4 should render with custom color and variant props 1`] = `
 </p>
 `;
 
+exports[`Typography.P4 should render without a theme 1`] = `
+<p
+  className="p4 p4--regular p4--onyx-base yTlJf"
+/>
+`;
+
 exports[`Typography.P4 should render without children 1`] = `
 <p
   className="p4 p4--regular p4--onyx-base yTlJf"

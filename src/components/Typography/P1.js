@@ -13,6 +13,6 @@ const P1 = styled.p.attrs(
   ${fontSize`kilo`};
 `;
 
-P1.displayName = "P1";
+P1.displayName = "Typography.P1";
 
 export default P1;

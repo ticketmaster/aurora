@@ -35,6 +35,9 @@ const HiddenBadgesCount = styled(StyledBadge)`
 
 const BadgeTooltip = styled(Tooltip)`
   padding: 8px;
+  .badge + .badge {
+    margin-top: 8px;
+  }
 `;
 
 class StatusBadgeGroup extends Component {
@@ -107,16 +110,15 @@ class StatusBadgeGroup extends Component {
     return (
       <StatusBadgeContainer>
         {this.renderBadges(visibleBadges, variant)}
-        {hiddenBadges &&
-          hiddenBadges.length > 0 && (
-            <HiddenBadgesCount
-              onMouseEnter={this.elementHovered}
-              onMouseLeave={this.mouseLeave}
-              onTouchStart={this.elementHovered}
-            >
-              {`+${hiddenBadges.length} more`}
-            </HiddenBadgesCount>
-          )}
+        {hiddenBadges && hiddenBadges.length > 0 && (
+          <HiddenBadgesCount
+            onMouseEnter={this.elementHovered}
+            onMouseLeave={this.mouseLeave}
+            onTouchStart={this.elementHovered}
+          >
+            {`+${hiddenBadges.length} more`}
+          </HiddenBadgesCount>
+        )}
         <BadgeTooltip
           direction={tooltipDirection}
           position={{ ...position }}

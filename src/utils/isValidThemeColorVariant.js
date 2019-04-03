@@ -1,8 +1,11 @@
 import { themes } from "../theme";
+import { THEME_TM } from "../theme/constants";
 
-import { themeTm } from "./getThemeValue";
-
-const isValidThemeColorVariant = ({ themeName } = themeTm, color, variant) =>
+const isValidThemeColorVariant = (
+  { themeName = THEME_TM.themeName } = THEME_TM,
+  color,
+  variant
+) =>
   Boolean(
     themes[themeName][color] &&
       themes[themeName][color].constructor === Object &&

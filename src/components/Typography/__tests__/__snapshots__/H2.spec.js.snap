@@ -42,6 +42,12 @@ exports[`Typography.H2 should render with custom color and variant props 1`] = `
 </h2>
 `;
 
+exports[`Typography.H2 should render without a theme 1`] = `
+<h2
+  className="h2 h2--regular h2--onyx-base fsqIAZ"
+/>
+`;
+
 exports[`Typography.H2 should render without children 1`] = `
 <h2
   className="h2 h2--regular h2--onyx-base fsqIAZ"
