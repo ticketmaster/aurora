@@ -87,6 +87,7 @@ const ImageCard = ({
   containerProps,
   captionContainerProps,
   children,
+  cardProps,
   ...props
 }) => {
   let titleToShow = cardTitle;
@@ -115,8 +116,10 @@ const ImageCard = ({
     );
   }
 
+  const combinedCardProps = { ...props, ...cardProps };
+
   return (
-    <CardWithoutPadding {...props}>
+    <CardWithoutPadding {...combinedCardProps}>
       <Container {...containerProps}>
         {img}
         <Overlay {...overlayProps}>
