@@ -12,7 +12,13 @@ export { default as Column } from "./components/Grid/Column";
 export { default as Container } from "./components/Grid/Container";
 export { default as LoaderRing } from "./components/LoaderRing";
 export { default as DrawerProvider } from "./components/Drawer/Provider";
-export { default as Gradient } from "./components/Gradient";
+export {
+  default as Gradient,
+  GradientStyles,
+  SpotLightWrapper,
+  SpotLight,
+  Angle
+} from "./components/Gradient";
 export { default as Header } from "./components/Header";
 export { default as HeaderWithImage } from "./components/Header/WithImage";
 export { default as Heading } from "./components/Header/Heading";
@@ -41,7 +47,8 @@ export { default as ContainerBlock } from "./components/Container/Block.styles";
 export {
   ResponsiveImage,
   StaticImage,
-  ThumbnailCircle
+  ThumbnailCircle,
+  StyledImageSeo
 } from "./components/Image";
 export { Text } from "./components/Text";
 export {
