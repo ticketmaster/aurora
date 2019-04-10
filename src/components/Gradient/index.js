@@ -20,7 +20,7 @@ const SPOTLIGHT_DEG = {
   large: "262deg"
 };
 
-const GradientStyles = styled.span`
+export const GradientStyles = styled.span`
   z-index: 1;
   width: 100%;
 
@@ -90,7 +90,7 @@ const GradientStyles = styled.span`
   }
 `;
 
-const SpotLightWrapper = styled.div`
+export const SpotLightWrapper = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
@@ -168,4 +168,5 @@ Gradient.defaultProps = {
   src: ""
 };
 
+export { SpotLight, Angle };
 export default Gradient;
