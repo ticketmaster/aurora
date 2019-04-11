@@ -159,7 +159,7 @@ rows:
   - Prop: resizeFn
     Type: Function({ src, height, width }) => String
     Default: resize function
-    Notes: The default resize function appends computed width, height, and fit query parameters depending on the user's device resolution.
+    Notes: The default resize function appends computed width, height, fit, and auto query parameters depending on the image dimensions, the src's extension, and the user's device resolution.
   - Prop: children
     Type: Function({ src, style, imageRef, backgroundRef, load }) => Node
     Default: ''
