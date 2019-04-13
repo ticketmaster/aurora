@@ -72,6 +72,12 @@ describe("resize", () => {
 
     expect(resize({ src })).toMatchSnapshot();
   });
+
+  it("should return src without the auto param when src has an svg extension", () => {
+    const src = "https://ticketmaster.com/assets/icon.svg";
+
+    expect(resize({ src })).toMatchSnapshot();
+  });
 });
 
 describe("createGetSrcByDensity", () => {

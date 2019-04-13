@@ -15,7 +15,8 @@ export const resize = ({ src = "", ...params }) => {
 
     const url = `https://${host}${pathname}`;
     const fit = params.width && params.height ? { fit: "crop" } : {};
-    const resizeSrc = `${url}${createParams({ ...params, ...fit })}`;
+    const webp = pathname.endsWith(".svg") ? {} : { auto: "webp" };
+    const resizeSrc = `${url}${createParams({ ...params, ...fit, ...webp })}`;
     return resizeSrc;
   } catch (e) {
     return src;
