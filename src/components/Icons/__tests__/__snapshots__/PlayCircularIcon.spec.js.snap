@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayCircularIcon renders correctly when passed a circleColor prop 1`] = `
+<svg
+  className="icon--play-circular"
+  height={48}
+  width={48}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M1 1h46v46H1z"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      fill="transparent"
+      fillOpacity=".1"
+      r="22.042"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeWidth="1.917"
+    />
+    <path
+      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      fill="rgba(255, 255, 255, 1)"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.917"
+    />
+  </g>
+</svg>
+`;
+
+exports[`PlayCircularIcon renders correctly when passed a size prop 1`] = `
+<svg
+  className="icon--play-circular"
+  height={24}
+  width={24}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M1 1h46v46H1z"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      fill="#1f262d"
+      fillOpacity=".1"
+      r="22.042"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeWidth="1.917"
+    />
+    <path
+      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      fill="rgba(255, 255, 255, 1)"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.917"
+    />
+  </g>
+</svg>
+`;
+
+exports[`PlayCircularIcon renders correctly when passed an arrowColor prop 1`] = `
+<svg
+  className="icon--play-circular"
+  height={48}
+  width={48}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M1 1h46v46H1z"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      fill="#1f262d"
+      fillOpacity=".1"
+      r="22.042"
+      stroke="black"
+      strokeWidth="1.917"
+    />
+    <path
+      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      fill="black"
+      stroke="black"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.917"
+    />
+  </g>
+</svg>
+`;
+
+exports[`PlayCircularIcon renders correctly when passed children 1`] = `
+<svg
+  className="icon--play-circular"
+  height={48}
+  width={48}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M1 1h46v46H1z"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      fill="#1f262d"
+      fillOpacity=".1"
+      r="22.042"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeWidth="1.917"
+    />
+    <path
+      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      fill="rgba(255, 255, 255, 1)"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.917"
+    />
+  </g>
+  <title>
+    Circular play icon
+  </title>
+</svg>
+`;
+
+exports[`PlayCircularIcon renders correctly with default props 1`] = `
+<svg
+  className="icon--play-circular"
+  height={48}
+  width={48}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M1 1h46v46H1z"
+    />
+    <circle
+      cx="24"
+      cy="24"
+      fill="#1f262d"
+      fillOpacity=".1"
+      r="22.042"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeWidth="1.917"
+    />
+    <path
+      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      fill="rgba(255, 255, 255, 1)"
+      stroke="rgba(255, 255, 255, 1)"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.917"
+    />
+  </g>
+</svg>
+`;

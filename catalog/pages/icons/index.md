@@ -590,6 +590,14 @@ rows:
     </div>
     <div style={iconLabelStyle}>Launch icon</div>
   </Column>
+  <Column medium={3}>
+    <div style={iconStyle}>
+      <PlayCircularIcon>
+        <title>Play Circular Icon</title>
+      </PlayCircularIcon>
+    </div>
+    <div style={iconLabelStyle}>Play circular icon</div>
+  </Column>
  </Row>
 </Container>
 ```
