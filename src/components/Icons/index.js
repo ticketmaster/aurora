@@ -86,3 +86,4 @@ export { default as RefreshIcon } from "./Refresh";
 export { default as FraudulentActivityIcon } from "./FraudulentActivity";
 export { default as PrintIcon } from "./Print";
 export { default as LaunchIcon } from "./Launch";
+export { default as PlayCircularIcon } from "./PlayCircular";

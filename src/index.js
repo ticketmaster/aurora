@@ -137,7 +137,8 @@ export {
   VenueSearchIcon,
   FraudulentActivityIcon,
   PrintIcon,
-  LaunchIcon
+  LaunchIcon,
+  PlayCircularIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
