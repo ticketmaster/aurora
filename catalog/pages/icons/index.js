@@ -55,7 +55,8 @@ import {
   FraudulentActivityIcon,
   PrintIcon,
   FavoriteIcon,
-  LaunchIcon
+  LaunchIcon,
+  PlayCircularIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -138,7 +139,8 @@ export default {
     FraudulentActivityIcon,
     PrintIcon,
     FavoriteIcon,
-    LaunchIcon
+    LaunchIcon,
+    PlayCircularIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
