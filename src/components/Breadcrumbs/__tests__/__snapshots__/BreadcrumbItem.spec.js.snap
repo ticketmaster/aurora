@@ -2,14 +2,10 @@
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
 <li
-  style={
-    Object {
-      "whiteSpace": "nowrap",
-    }
-  }
+  className="hLIAGC"
 >
   <a
-    className="gpukZq boAnYn"
+    className="dwQrcO boAnYn"
     href="/"
     onClick={null}
     rel="_self"
@@ -23,14 +19,10 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
 <li
-  style={
-    Object {
-      "whiteSpace": "nowrap",
-    }
-  }
+  className="hLIAGC"
 >
   <span
-    className="gKcTgw hCDblW"
+    className="ibDjor hCDblW"
     href={null}
     onClick={null}
     rel="_self"

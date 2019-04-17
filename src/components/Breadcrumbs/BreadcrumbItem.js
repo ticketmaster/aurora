@@ -14,6 +14,10 @@ const spanStyles = css`
   }
 `;
 
+const StyledWrapper = styled.li`
+  white-space: nowrap;
+`;
+
 const StyledLink = styled(Link)`
   ${props => (getAsProp(props).as === "span" ? spanStyles : "")};
 `;
@@ -28,7 +32,7 @@ const BreadcrumbItem = ({
   primary,
   ...props
 }) => (
-  <li style={{ whiteSpace: "nowrap" }}>
+  <StyledWrapper>
     <StyledLink
       {...props}
       size={size}
@@ -40,7 +44,7 @@ const BreadcrumbItem = ({
     >
       {children}
     </StyledLink>
-  </li>
+  </StyledWrapper>
 );
 
 BreadcrumbItem.propTypes = {
