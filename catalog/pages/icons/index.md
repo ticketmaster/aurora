@@ -139,17 +139,10 @@ rows:
     <div style={iconStyle}><OverflowIcon size={22} color="#000"><title>Overflow Icon</title></OverflowIcon></div>
     <div style={iconLabelStyle}>Overflow Icon</div>
   </Column>
-</Row>
 
-<Row>
   <Column medium={3}>
     <div style={iconStyle}><SpecialIcon size={26} color="#262626" /></div>
     <div style={iconLabelStyle}>Special Icon</div>
-  </Column>
-
-  <Column medium={3}>
-    <div style={iconStyle}><StarIcon size={22} color="#000"><title>Star Icon</title></StarIcon></div>
-    <div style={iconLabelStyle}>Star Icon</div>
   </Column>
 </Row>
 
@@ -167,6 +160,11 @@ rows:
   <Column medium={3}>
     <div style={iconStyle}><VipIcon size={26} color="#262626"><title>Vip Icon</title></VipIcon></div>
     <div style={iconLabelStyle}>Vip Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><StarIcon size={22} color="#000"><title>Star Icon</title></StarIcon></div>
+    <div style={iconLabelStyle}>Star Icon</div>
   </Column>
 </Row>
 
@@ -203,9 +201,6 @@ rows:
     <div style={iconLabelStyle}>US Icon</div>
   </Column>
 
-</Row>
-
-<Row>
   <Column medium={3}>
     <div style={iconStyle}><WarningIcon size={36}><title>Warning Icon</title></WarningIcon></div>
     <div style={iconLabelStyle}>Warning Icon</div>
@@ -450,24 +445,24 @@ rows:
     </div>
     <div style={iconLabelStyle}>Search icon large</div>
   </Column>
-   <Column medium={3}>
+    <Column medium={3}>
     <div style={iconStyle}>
-      <BookmarkIcon>
-        <title>Bookmark Icon</title>
-      </BookmarkIcon>
+      <PlayCircularIcon size="small">
+        <title>Play Circular Icon</title>
+      </PlayCircularIcon>
     </div>
-    <div style={iconLabelStyle}>Bookmark icon</div>
+    <div style={iconLabelStyle}>Play Circular icon small</div>
   </Column>
    <Column medium={3}>
     <div style={iconStyle}>
-      <ClearIcon>
-        <title>Clear Icon</title>
-      </ClearIcon>
+      <PlayCircularIcon size="large">
+        <title>Play Circular Icon</title>
+      </PlayCircularIcon>
     </div>
-    <div style={iconLabelStyle}>Clear icon</div>
+    <div style={iconLabelStyle}>Play Circular icon large</div>
   </Column>
- </Row>
- <Row>
+</Row>
+<Row>
   <Column medium={3}>
     <div style={iconStyle}>
       <EditIcon>
@@ -592,11 +587,21 @@ rows:
   </Column>
   <Column medium={3}>
     <div style={iconStyle}>
-      <PlayCircularIcon>
-        <title>Play Circular Icon</title>
-      </PlayCircularIcon>
+      <BookmarkIcon>
+        <title>Bookmark Icon</title>
+      </BookmarkIcon>
     </div>
-    <div style={iconLabelStyle}>Play circular icon</div>
+    <div style={iconLabelStyle}>Bookmark icon</div>
+  </Column>
+ </Row>
+ <Row>
+   <Column medium={3}>
+    <div style={iconStyle}>
+      <ClearIcon>
+        <title>Clear Icon</title>
+      </ClearIcon>
+    </div>
+    <div style={iconLabelStyle}>Clear icon</div>
   </Column>
  </Row>
 </Container>
