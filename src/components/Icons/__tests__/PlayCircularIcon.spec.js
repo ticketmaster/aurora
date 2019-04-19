@@ -20,8 +20,8 @@ describe("PlayCircularIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it("renders correctly when passed a size prop", () => {
-    const component = renderer.create(<PlayCircularIcon size={24} />);
+  it("renders correctly when passed a size prop that equals large", () => {
+    const component = renderer.create(<PlayCircularIcon size="large" />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
