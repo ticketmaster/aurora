@@ -2,9 +2,9 @@
 
 exports[`PlayCircularIcon renders correctly when passed a circleColor prop 1`] = `
 <svg
-  className="icon--play-circular"
-  height={48}
-  width={48}
+  className="icon--play-circular icon--play-circular-small"
+  height="48"
+  width="48"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
@@ -35,11 +35,11 @@ exports[`PlayCircularIcon renders correctly when passed a circleColor prop 1`] =
 </svg>
 `;
 
-exports[`PlayCircularIcon renders correctly when passed a size prop 1`] = `
+exports[`PlayCircularIcon renders correctly when passed a size prop that equals large 1`] = `
 <svg
-  className="icon--play-circular"
-  height={24}
-  width={24}
+  className="icon--play-circular icon--play-circular-large"
+  height="120"
+  width="120"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
@@ -47,24 +47,24 @@ exports[`PlayCircularIcon renders correctly when passed a size prop 1`] = `
     fillRule="evenodd"
   >
     <path
-      d="M1 1h46v46H1z"
+      d="M10 10h100v100H10z"
     />
     <circle
-      cx="24"
-      cy="24"
+      cx="60"
+      cy="60"
       fill="#1f262d"
       fillOpacity=".1"
-      r="22.042"
+      r="47.917"
       stroke="rgba(255, 255, 255, 1)"
-      strokeWidth="1.917"
+      strokeWidth="4.167"
     />
     <path
-      d="M19.208 15.375L32.625 24l-13.417 8.625z"
+      d="M49.583 41.25L78.75 60 49.583 78.75z"
       fill="rgba(255, 255, 255, 1)"
       stroke="rgba(255, 255, 255, 1)"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="1.917"
+      strokeWidth="4.167"
     />
   </g>
 </svg>
@@ -72,9 +72,9 @@ exports[`PlayCircularIcon renders correctly when passed a size prop 1`] = `
 
 exports[`PlayCircularIcon renders correctly when passed an arrowColor prop 1`] = `
 <svg
-  className="icon--play-circular"
-  height={48}
-  width={48}
+  className="icon--play-circular icon--play-circular-small"
+  height="48"
+  width="48"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
@@ -107,9 +107,9 @@ exports[`PlayCircularIcon renders correctly when passed an arrowColor prop 1`] =
 
 exports[`PlayCircularIcon renders correctly when passed children 1`] = `
 <svg
-  className="icon--play-circular"
-  height={48}
-  width={48}
+  className="icon--play-circular icon--play-circular-small"
+  height="48"
+  width="48"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
@@ -145,9 +145,9 @@ exports[`PlayCircularIcon renders correctly when passed children 1`] = `
 
 exports[`PlayCircularIcon renders correctly with default props 1`] = `
 <svg
-  className="icon--play-circular"
-  height={48}
-  width={48}
+  className="icon--play-circular icon--play-circular-small"
+  height="48"
+  width="48"
   xmlns="http://www.w3.org/2000/svg"
 >
   <g
