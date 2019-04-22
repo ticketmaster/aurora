@@ -46,7 +46,8 @@ const Container = styled.div.attrs({
 
 const Content = styled.div.attrs({
   className: props =>
-    props.areTabsOverflow ? "tabs__content--overflowed" : null
+    props.areTabsOverflow ? "tabs__content--overflowed" : null,
+  role: "tablist"
 })`
   ${smallAndUp`
     &.tab__content--overflowed {
@@ -88,17 +89,22 @@ const Tab = styled.div`
 const checkIfOverflows = ({ offsetWidth = 0, scrollWidth = 0 } = {}) =>
   offsetWidth < scrollWidth;
 
-const TabItemButton = styled.div.attrs(props => {
+const TabItemButton = styled.button.attrs(props => {
   const { isActive, dataIndex, ...rest } = props;
   return {
     className: isActive ? "tab__button--active" : "",
+    role: "tab",
     "data-index": dataIndex,
+    "aria-selected": isActive,
     ...rest
   };
 })`
-  display: block;
   padding: ${padding} 0 ${spacing.cozy} 0;
   cursor: pointer;
+  background-color: ${themes.global.transparent};
+  border: none;
+  appearance: none;
+
   &.tab__button--active {
     border-bottom: 4px solid
       ${props => props.underlineColor || themes.global.primary.base};
