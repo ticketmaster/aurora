@@ -18,7 +18,7 @@ const Image = styled.img`
 
 //  come back
 const Overlay = styled.div.attrs(() => ({
-  className: "card-image__overlay"
+  className: "image-card__overlay"
 }))`
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@ const Overlay = styled.div.attrs(() => ({
 `;
 
 const CaptionContainer = styled.div.attrs(() => ({
-  className: "card-image__caption"
+  className: "image-card__caption"
 }))`
   position: relative;
   color: ${themes.global.white.base};
