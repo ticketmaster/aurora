@@ -14,7 +14,7 @@ exports[`ImageCard renders standard card 1`] = `
       title="image"
     />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
     />
   </div>
 </div>
@@ -35,7 +35,7 @@ exports[`ImageCard renders type = half 1`] = `
     />
   </div>
   <div
-    className="itGEoe"
+    className="card-image__caption itGEoe"
   >
     <span
       className="kIGFlf"
@@ -85,10 +85,10 @@ exports[`ImageCard renders with additional content when \`cardTitle\` and \`card
       title=""
     />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
     >
       <div
-        className="ipWdGX"
+        className="card-image__caption ipWdGX"
       >
         <span
           className="kIGFlf"
@@ -118,10 +118,10 @@ exports[`ImageCard renders with custom image 1`] = `
   >
     <svg />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
     >
       <div
-        className="ipWdGX"
+        className="card-image__caption ipWdGX"
       >
         <span
           className="kIGFlf"
@@ -161,7 +161,7 @@ exports[`ImageCard renders with custom props 1`] = `
       title=""
     />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
       style={
         Object {
           "display": "none",
@@ -169,7 +169,7 @@ exports[`ImageCard renders with custom props 1`] = `
       }
     >
       <div
-        className="ipWdGX"
+        className="card-image__caption ipWdGX"
         style={
           Object {
             "display": "none",
@@ -201,10 +201,10 @@ exports[`ImageCard renders with title & subtitle 1`] = `
       title=""
     />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
     >
       <div
-        className="ipWdGX"
+        className="card-image__caption ipWdGX"
       >
         <span
           className="kIGFlf"
@@ -236,10 +236,10 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
       title=""
     />
     <div
-      className="eBbRRH"
+      className="card-image__overlay eBbRRH"
     >
       <div
-        className="ipWdGX"
+        className="card-image__caption ipWdGX"
       >
         <span
           className="kIGFlf"
