@@ -42,7 +42,7 @@ describe("<Tabs />", () => {
 
   it("should call onClick function with index of tab when click on it", () => {
     const { unmount, container } = render(<Tabs {...mainProps} />);
-    Simulate.click(container.querySelector('div[data-index="1"]'));
+    Simulate.click(container.querySelector('button[data-index="1"]'));
     expect(onTabsClick).toHaveBeenLastCalledWith(1);
     unmount();
   });
