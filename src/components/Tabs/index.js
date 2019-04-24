@@ -86,8 +86,12 @@ const Tab = styled.div`
   }
 `;
 
-const checkIfOverflows = ({ offsetWidth = 0, scrollWidth = 0 } = {}) =>
-  offsetWidth < scrollWidth;
+const checkIfOverflows = (content = {}) => {
+  if (!content) return false;
+
+  const { offsetWidth = 0, scrollWidth = 0 } = content
+  return offsetWidth < scrollWidth;
+};
 
 const TabItemButton = styled.button.attrs(props => {
   const { isActive, dataIndex, ...rest } = props;
