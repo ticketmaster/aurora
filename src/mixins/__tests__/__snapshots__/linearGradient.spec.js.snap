@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`linearGradient should return a background-image style rule when deg and stops args are passed 1`] = `
+Array [
+  "
+    background-image: linear-gradient(",
+  "256deg",
+  ", ",
+  "rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)",
+  ");
+  ",
+]
+`;
+
+exports[`linearGradient should return no rule when only deg is passed 1`] = `undefined`;
+
+exports[`linearGradient should return no rule when only stops is passed 1`] = `undefined`;

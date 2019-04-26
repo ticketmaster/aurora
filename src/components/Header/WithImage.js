@@ -52,6 +52,7 @@ const ImageHeader = ({
   backgroundImage,
   backgroundImageProps,
   withOverlay,
+  withOverlayShadow,
   withUnderlay,
   withSpotLight,
   ...props
@@ -68,16 +69,17 @@ const ImageHeader = ({
         <ImageBackground
           style={{
             ...backgroundImageStyle,
-            backgroundImage: `url(${backgroundImage})`
+            backgroundImage: withOverlayShadow ? "" : `url(${backgroundImage})`
           }}
-          src={backgroundImage}
+          backgroundImage={backgroundImage}
           imageRef={imageRef}
           backgroundRef={backgroundRef}
           {...otherBackgroundImageProps}
           className={classNames({
             "gradient--overlay": !withSpotLight && withOverlay,
-            "gradient--underlay": withUnderlay,
-            "gradient--spotlight": withSpotLight
+            "gradient--overlay-shadow": withOverlayShadow,
+            "gradient--spotlight": withSpotLight,
+            "gradient--underlay": withUnderlay
           })}
           aria-hidden
         />
@@ -87,8 +89,8 @@ const ImageHeader = ({
           deg={deg}
           className={classNames({
             "gradient--overlay": !withSpotLight && withOverlay,
-            "gradient--underlay": !withSpotLight && withUnderlay,
-            "gradient--spotlight": withSpotLight
+            "gradient--spotlight": withSpotLight,
+            "gradient--underlay": !withSpotLight && withUnderlay
           })}
           style={backgroundImageStyle}
         />
@@ -105,6 +107,7 @@ ImageHeader.propTypes = {
   backgroundImage: PropTypes.string,
   backgroundImageProps: PropTypes.objectOf(PropTypes.any),
   withOverlay: PropTypes.bool,
+  withOverlayShadow: PropTypes.bool,
   withUnderlay: PropTypes.bool,
   withSpotLight: PropTypes.bool
 };
@@ -113,6 +116,7 @@ ImageHeader.defaultProps = {
   backgroundImage: null,
   backgroundImageProps: {},
   withOverlay: false,
+  withOverlayShadow: false,
   withUnderlay: false,
   withSpotLight: false
 };

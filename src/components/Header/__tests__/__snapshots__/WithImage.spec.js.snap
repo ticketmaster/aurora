@@ -8,7 +8,7 @@ exports[`WithImage renders header background image 1`] = `
 >
   <span
     aria-hidden={true}
-    className="lblvod evdfwO"
+    className="lblvod leocQa"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -51,7 +51,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 >
   <span
     aria-hidden={true}
-    className="gradient--overlay lblvod evdfwO"
+    className="gradient--overlay lblvod leocQa"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -94,7 +94,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 >
   <span
     aria-hidden={true}
-    className="gradient--underlay lblvod evdfwO"
+    className="gradient--underlay lblvod leocQa"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -136,7 +136,7 @@ exports[`WithImage renders header with image 1`] = `
   role="heading"
 >
   <span
-    className="gEDJRt evdfwO"
+    className="gEDJRt Iwzmp"
     style={Object {}}
   >
     
