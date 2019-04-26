@@ -12,6 +12,9 @@ export default styled.input.attrs({
   background-color: ${getThemeValue("white", "base")};
   border-color: ${getThemeValue("gray02")};
   border-radius: ${constants.borderRadius.small};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .checkbox--large & {
     width: 24px;
@@ -73,10 +76,7 @@ export default styled.input.attrs({
   &::after {
     content: "";
     box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
     border-radius: ${constants.borderRadius.small};
     background-color: ${getThemeValue("primary", "base")};
     cursor: pointer;
@@ -88,12 +88,12 @@ export default styled.input.attrs({
     .checkbox--small.checkbox__indeterminate & {
       width: 8px;
       height: 2px;
-      transform: translate(-50%, -50%) scale(1, 1);
+      transform: scale(1, 1);
     }
     .checkbox--large.checkbox__indeterminate & {
       width: 12px;
       height: 2px;
-      transform: translate(-50%, -50%) scale(1, 1);
+      transform: scale(1, 1);
     }
   }
 `;
