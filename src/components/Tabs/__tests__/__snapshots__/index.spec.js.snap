@@ -7,48 +7,55 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
   >
     <div
       class="sc-fjdhpX jLBUHC"
+      role="tablist"
     >
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG tab__button--active fyDnAx"
+        <button
+          aria-selected="true"
+          class="sc-cSHVUG tab__button--active exKdbt"
           data-index="0"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 1
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="1"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 2
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="2"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 3
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -62,48 +69,55 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
   >
     <div
       class="sc-fjdhpX jLBUHC"
+      role="tablist"
     >
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG tab__button--active fyDnAx"
+        <button
+          aria-selected="true"
+          class="sc-cSHVUG tab__button--active exKdbt"
           data-index="0"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 1
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="1"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 2
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="2"
+          role="tab"
         >
           <div
             class="text text--primary sc-ifAKCX kEFgxZ"
           >
             Test tab item 3
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -117,48 +131,55 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
   >
     <div
       class="sc-fjdhpX jLBUHC"
+      role="tablist"
     >
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG tab__button--active fyDnAx"
+        <button
+          aria-selected="true"
+          class="sc-cSHVUG tab__button--active exKdbt"
           data-index="0"
+          role="tab"
         >
           <div
             class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
           >
             Test tab item 1
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="1"
+          role="tab"
         >
           <div
             class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
           >
             Test tab item 2
           </div>
-        </div>
+        </button>
       </div>
       <div
         class="sc-jzJRlG cIeBWg"
       >
-        <div
-          class="sc-cSHVUG fyDnAx"
+        <button
+          aria-selected="false"
+          class="sc-cSHVUG exKdbt"
           data-index="2"
+          role="tab"
         >
           <div
             class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
           >
             Test tab item 3
           </div>
-        </div>
+        </button>
       </div>
     </div>
   </div>

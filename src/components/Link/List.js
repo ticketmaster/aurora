@@ -59,7 +59,7 @@ class LinkList extends Component {
   };
 
   render() {
-    const { children, renderAfter, ...rest } = this.props;
+    const { children, renderAfter, onItemClick, ...rest } = this.props;
 
     return (
       <LinkListProvider value={this.state}>

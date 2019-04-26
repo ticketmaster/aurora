@@ -17,7 +17,9 @@ const Image = styled.img`
 `;
 
 //  come back
-const Overlay = styled.div`
+const Overlay = styled.div.attrs(() => ({
+  className: "image-card__overlay"
+}))`
   position: absolute;
   top: 0;
   left: 0;
@@ -27,7 +29,9 @@ const Overlay = styled.div`
   align-items: flex-end;
 `;
 
-const CaptionContainer = styled.div`
+const CaptionContainer = styled.div.attrs(() => ({
+  className: "image-card__caption"
+}))`
   position: relative;
   color: ${themes.global.white.base};
   background-color: ${props => (props.half ? "none" : "rgba(31, 38, 45, 0.8)")};
