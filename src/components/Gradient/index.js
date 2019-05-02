@@ -2,41 +2,37 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import { colors, themes } from "../../theme";
-import { mediumAndUp, largeAndUp } from "../../theme/mediaQueries";
+import {
+  DEFAULT_DEG,
+  DEFAULT_STOPS,
+  OVERLAY_DEG_NOT_SPOTLIGHT,
+  OVERLAY_STOPS_NOT_SPOTLIGHT,
+  OVERLAY_SHADOW_DEG,
+  OVERLAY_SHADOW_STOPS,
+  OVERLAY_SHADOW_TOP_DEG,
+  OVERLAY_SHADOW_TOP_HEIGHT,
+  OVERLAY_SHADOW_TOP_STOPS,
+  SPOTLIGHT_DEG,
+  SPOTLIGHT_STOPS
+} from "./constants";
+import { zIndex } from "../../theme";
+import { largeAndUp } from "../../theme/mediaQueries";
+import {
+  linearGradient,
+  responsiveBackgroundImage,
+  responsiveLinearGradient
+} from "../../mixins";
 import SpotLight from "./SpotLight";
 import Angle from "./Angle";
 import StyledImageSeo from "../Image/Seo.styles";
 
-const SPOTLIGHT_STOPS = [
-  "rgb(0, 45, 161)",
-  `${themes.global.primary.base} 55%`,
-  "rgb(0, 45, 161)"
-];
-
-const SPOTLIGHT_DEG = {
-  small: "256deg",
-  medium: "260deg",
-  large: "262deg"
-};
-
 export const GradientStyles = styled.span`
-  z-index: 1;
+  z-index: ${zIndex.reset};
   width: 100%;
 
-  background-image: ${props =>
-    `linear-gradient(${props.deg.small}, ${props.stops.join(",")})`};
-  ${mediumAndUp`
-    background-image: ${props =>
-      `linear-gradient(${props.deg.medium}, ${props.stops.join(",")})`};
-  `} ${largeAndUp`
-    background-image: ${props =>
-      `linear-gradient(${props.deg.large}, ${props.stops.join(",")})`};
-  `};
-
   &.gradient--overlay:after,
-  &.gradient--underlay:after {
-    height: 100%;
+  &.gradient--underlay:after,
+  &.gradient--overlay-shadow:after {
     content: "";
     top: 0;
     left: 0;
@@ -44,49 +40,47 @@ export const GradientStyles = styled.span`
     position: absolute;
   }
 
+  &.gradient--overlay:after,
+  &.gradient--underlay:after {
+    height: 100%;
+  }
+
+  &.gradient--overlay-shadow:after {
+    height: ${OVERLAY_SHADOW_TOP_HEIGHT};
+    ${linearGradient({
+      deg: OVERLAY_SHADOW_TOP_DEG,
+      stops: OVERLAY_SHADOW_TOP_STOPS
+    })};
+  }
+
   &.gradient--spotlight {
     ${largeAndUp`box-shadow: inset 0 1px 40px 10px rgba(0, 0, 0, 0.15);`};
   }
 
-  &.gradient--underlay.gradient--spotlight:after {
-    z-index: -1;
+  &:not(.gradient--overlay-shadow),
+  &.gradient--underlay.gradient--spotlight:after,
+  &:not(.gradient--spotlight).gradient--underlay:after {
+    ${responsiveLinearGradient};
+  }
+
+  &.gradient--overlay-shadow {
+    z-index: ${zIndex.reset};
+    ${responsiveBackgroundImage};
+  }
+
+  &.gradient--underlay.gradient--spotlight:after,
+  &:not(.gradient--spotlight).gradient--underlay:after {
+    z-index: ${zIndex.unset};
     opacity: 0.8;
-    background-image: ${props =>
-      `linear-gradient(${props.deg.small}, ${props.stops.join(",")})`};
-    ${mediumAndUp`
-      background-image: ${props =>
-        `linear-gradient(${props.deg.medium}, ${props.stops.join(",")})`};
-    `} ${largeAndUp`
-      background-image: ${props =>
-        `linear-gradient(${props.deg.large}, ${props.stops.join(",")})`};
-    `};
   }
 
   &:not(.gradient--spotlight).gradient--overlay:after {
-    z-index: 2;
+    z-index: ${zIndex.layout.ads};
     opacity: 0.4;
-    background-image: linear-gradient(77deg, rgba(0, 0, 0, 0), #000000);
-    ${mediumAndUp`
-        background-image: linear-gradient(82deg, rgba(0, 0, 0, 0), #000000);
-      `};
-
-    ${largeAndUp`
-      background-image: linear-gradient(86deg, rgba(0, 0, 0, 0), #000000);
-      `};
-  }
-
-  &:not(.gradient--spotlight).gradient--underlay:after {
-    z-index: -1;
-    opacity: 0.8;
-    background-image: ${props =>
-      `linear-gradient(${props.deg.small}, ${props.stops.join(",")})`};
-    ${mediumAndUp`
-      background-image: ${props =>
-        `linear-gradient(${props.deg.medium}, ${props.stops.join(",")})`};
-    `} ${largeAndUp`
-      background-image: ${props =>
-        `linear-gradient(${props.deg.large}, ${props.stops.join(",")})`};
-    `};
+    ${responsiveLinearGradient({
+      deg: OVERLAY_DEG_NOT_SPOTLIGHT,
+      stops: OVERLAY_STOPS_NOT_SPOTLIGHT
+    })};
   }
 `;
 
@@ -102,7 +96,7 @@ export const SpotLightWrapper = styled.div`
 class Gradient extends PureComponent {
   render() {
     const {
-      src,
+      backgroundImage,
       children,
       className,
       stops,
@@ -118,12 +112,14 @@ class Gradient extends PureComponent {
     return (
       <GradientStyles
         {...props}
+        backgroundImage={backgroundImage}
         stops={gradientStops}
         deg={gradientDeg}
         className={className}
         ref={backgroundRef}
       >
-        {src && imageRef && <StyledImageSeo src={src} ref={imageRef} />}
+        {backgroundImage &&
+          imageRef && <StyledImageSeo src={backgroundImage} ref={imageRef} />}
         {hasSpotLight && (
           <SpotLightWrapper>
             <SpotLight />
@@ -151,22 +147,28 @@ Gradient.propTypes = {
   backgroundRef: PropTypes.shape({
     current: PropTypes.object
   }),
-  src: PropTypes.string
+  backgroundImage: PropTypes.string
 };
 
 Gradient.defaultProps = {
   children: null,
   className: "",
-  deg: {
-    small: "76deg",
-    medium: "80deg",
-    large: "81deg"
-  },
-  stops: [themes.global.primary.base, colors.defaultGradient.to],
+  deg: DEFAULT_DEG,
+  stops: DEFAULT_STOPS,
   imageRef: { current: null },
   backgroundRef: { current: null },
-  src: ""
+  backgroundImage: ""
 };
 
 export { SpotLight, Angle };
+export {
+  DEFAULT_DEG,
+  DEFAULT_STOPS,
+  OVERLAY_DEG_NOT_SPOTLIGHT,
+  OVERLAY_STOPS_NOT_SPOTLIGHT,
+  OVERLAY_SHADOW_DEG,
+  OVERLAY_SHADOW_STOPS,
+  SPOTLIGHT_DEG,
+  SPOTLIGHT_STOPS
+};
 export default Gradient;

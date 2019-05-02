@@ -8,3 +8,4 @@ export { default as throttle } from "./throttle";
 export {
   default as isValidThemeColorVariant
 } from "./isValidThemeColorVariant";
+export { default as getBackgroundImage } from "./getBackgroundImage";

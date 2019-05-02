@@ -2,7 +2,43 @@
 
 exports[`Gradient renders default 1`] = `
 <span
-  className="evdfwO"
+  className="Iwzmp"
+>
+  
+</span>
+`;
+
+exports[`Gradient renders with an img tag for SEO purposes 1`] = `
+<span
+  className="kUyMCU"
+>
+  <img
+    className="image image--seo image--hidden fERDWn"
+    src="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
+  />
+</span>
+`;
+
+exports[`Gradient renders with children 1`] = `
+<span
+  className="Iwzmp"
+>
+  
+  Content
+</span>
+`;
+
+exports[`Gradient renders with overlay gradient 1`] = `
+<span
+  className="gradient--overlay ktHPKL"
+>
+  
+</span>
+`;
+
+exports[`Gradient renders with overlay shadow gradient 1`] = `
+<span
+  className="gradient--overlay-shadow hdbrHG"
 >
   
 </span>
@@ -10,7 +46,7 @@ exports[`Gradient renders default 1`] = `
 
 exports[`Gradient renders with spotlight elements 1`] = `
 <span
-  className="gradient--spotlight VFuFc"
+  className="gradient--spotlight fPZKNI"
 >
   
   <div
@@ -146,5 +182,13 @@ exports[`Gradient renders with spotlight elements 1`] = `
       </g>
     </svg>
   </div>
+</span>
+`;
+
+exports[`Gradient renders with underlay gradient 1`] = `
+<span
+  className="gradient--underlay Iwzmp"
+>
+  
 </span>
 `;

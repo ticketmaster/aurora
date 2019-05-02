@@ -7,7 +7,7 @@ exports[`Header renders with custom level 1`] = `
   role="heading"
 >
   <span
-    className="icuDWf evdfwO"
+    className="icuDWf Iwzmp"
     style={Object {}}
   >
     
@@ -55,7 +55,7 @@ exports[`Header renders with default 1`] = `
   role="heading"
 >
   <span
-    className="icuDWf evdfwO"
+    className="icuDWf Iwzmp"
     style={Object {}}
   >
     
@@ -102,7 +102,7 @@ exports[`Header renders withOverlay 1`] = `
   role="heading"
 >
   <span
-    className="gradient--overlay icuDWf evdfwO"
+    className="gradient--overlay icuDWf Iwzmp"
     style={Object {}}
   >
     

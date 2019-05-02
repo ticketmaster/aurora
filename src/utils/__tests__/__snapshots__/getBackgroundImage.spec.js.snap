@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getBackgroundImage should return a background-image style rule value when a backgroundImage arg is passed 1`] = `"url(https://placekitten.com/g/826/465)"`;
+
+exports[`getBackgroundImage should return a background-image style rule value when backgroundImage, deg, and stops args are passed 1`] = `"linear-gradient(256deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)), url(https://placekitten.com/g/826/465)"`;
+
+exports[`getBackgroundImage should return a background-image style rule value when deg and stops args are passed 1`] = `"linear-gradient(256deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161))"`;
+
+exports[`getBackgroundImage should return no rule value when only a deg arg is passed 1`] = `""`;
+
+exports[`getBackgroundImage should return no rule value when only a stops arg is passed 1`] = `""`;

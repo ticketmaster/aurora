@@ -12,6 +12,10 @@ import { Column, Row } from "../../../src/components/Grid";
 import { RatingBadge } from "../../../src/components/Button";
 import { StarIcon } from "../../../src/components/Icons";
 import { colors, themes } from "../../../src/theme";
+import {
+  OVERLAY_SHADOW_DEG,
+  OVERLAY_SHADOW_STOPS
+} from "../../../src/components/Gradient";
 
 const starIconStyles = { marginRight: "2px" };
 const ratingBadgeStyles = { marginLeft: "12px" };
@@ -35,7 +39,9 @@ export default {
     starIconStyles,
     ratingBadgeStyles,
     ThemeProvider,
-    themes
+    themes,
+    OVERLAY_SHADOW_DEG,
+    OVERLAY_SHADOW_STOPS
   },
   content: pageLoader(() => import("./index.md"))
 };
