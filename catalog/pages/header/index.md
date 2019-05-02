@@ -63,9 +63,9 @@ rows:
   - Prop: withUnderlay
     Type: boolean
     Notes: Applies an underlaid gradient to header
-  - Prop: withUnderlayShadow
+  - Prop: withOverlayShadow
     Type: boolean
-    Notes: Applies a shadowy underlaid gradient to header
+    Notes: Applies a shadowy overlaid gradient to header
   - Prop: withSpotLight
     type: boolean
     Notes: Applies a "spotlight" gradient to header
