@@ -16,6 +16,10 @@ export default styled.input.attrs({
   justify-content: center;
   align-items: center;
 
+  &::-ms-check {
+    display: none;
+  }
+
   .checkbox--large & {
     width: 24px;
     height: 24px;

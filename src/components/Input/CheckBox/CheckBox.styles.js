@@ -42,6 +42,8 @@ export const CheckDivStyling = styled.div`
   align-items: center;
   justify-content: left;
   position: absolute;
+  top: 0;
+  left: 0;
   opacity: 0;
   color: ${getThemeValue("primary", "base")};
   transition: opacity 0.3s ${constants.easing.elastic};
