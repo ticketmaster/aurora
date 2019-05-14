@@ -3,7 +3,7 @@
 exports[`<CheckBoxInput /> should render the correct markup 1`] = `
 <input
   checked={false}
-  className="bNjCCN"
+  className="jUZWuX"
   disabled={false}
   id="genrerockinput"
   name="genre"
@@ -16,7 +16,7 @@ exports[`<CheckBoxInput /> should render the correct markup 1`] = `
 exports[`<CheckBoxInput /> should render the correct markup when additional props are passed 1`] = `
 <input
   checked={false}
-  className="input--check-box bNjCCN"
+  className="input--check-box jUZWuX"
   disabled={false}
   id="genrerockinput"
   name="genre"
@@ -29,7 +29,7 @@ exports[`<CheckBoxInput /> should render the correct markup when additional prop
 exports[`<CheckBoxInput /> should render the correct markup when the disabled prop equals true 1`] = `
 <input
   checked={false}
-  className="bNjCCN"
+  className="jUZWuX"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -42,7 +42,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the disabled pr
 exports[`<CheckBoxInput /> should render the correct markup when the isChecked prop equals true 1`] = `
 <input
   checked={true}
-  className="bNjCCN"
+  className="jUZWuX"
   disabled={false}
   id="genrerockinput"
   name="genre"
@@ -55,7 +55,7 @@ exports[`<CheckBoxInput /> should render the correct markup when the isChecked p
 exports[`<CheckBoxInput /> should render the correct markup when the size prop equals large 1`] = `
 <input
   checked={false}
-  className="bNjCCN"
+  className="jUZWuX"
   disabled={false}
   id="genrerockinput"
   name="genre"
