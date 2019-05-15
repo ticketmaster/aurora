@@ -36,13 +36,26 @@ class Tooltip extends Component {
       y: 0
     };
 
-    this.actualDirection = props.direction;
-
     this.state = {
       actualDirection: props.direction,
       arrowAdjustment: 0
     };
   }
+
+  /*
+   * If any specific value is passed via `direction` props, than that value should be used
+   * If `auto` value is passed via `direction` prop, then calculated direction value will be used
+   */
+  getDirection = () => {
+    const { direction } = this.props;
+    const { actualDirection } = this.state;
+
+    if (direction === AUTO) {
+      return actualDirection;
+    }
+
+    return direction;
+  };
 
   /*
    * Static function that needs to be called from the parent -> Tooltip.getDimensionsFromEvent
@@ -106,13 +119,11 @@ class Tooltip extends Component {
       result.y < position.elTop + dimensions.windowScroll &&
       (actualDirection !== TOP || arrowAdjustment !== adjustment)
     ) {
-      this.actualDirection = TOP;
       this.setState({ actualDirection: TOP, arrowAdjustment: adjustment });
     } else if (
       result.y > position.elTop + dimensions.windowScroll &&
       (actualDirection !== BOTTOM || arrowAdjustment !== adjustment)
     ) {
-      this.actualDirection = BOTTOM;
       this.setState({ actualDirection: BOTTOM, arrowAdjustment: adjustment });
     }
 
@@ -277,11 +288,13 @@ class Tooltip extends Component {
 
     this.myRef.current.style.top = `${this.pos.y}px`;
     this.myRef.current.style.left = `${this.pos.x}px`;
+
     this.myRef.current.style.transition = `opacity 0.3s ${
       constants.easing.easeOutQuad
     }`;
+
     this.myRef.current.style.transform = this.getTranslateByDirection(
-      this.actualDirection
+      this.state.actualDirection
     );
   };
 
@@ -301,7 +314,9 @@ class Tooltip extends Component {
 
   render() {
     const { children, isVisible, variant, ...rest } = this.props;
-    const { actualDirection, arrowAdjustment } = this.state;
+    const { arrowAdjustment } = this.state;
+
+    const direction = this.getDirection();
 
     return (
       <Portal>
@@ -320,7 +335,7 @@ class Tooltip extends Component {
             ref={this.myRef}
             isVisible={isVisible}
             {...rest}
-            direction={actualDirection}
+            direction={direction}
             arrowAdjustment={`${arrowAdjustment}px`}
           >
             {children}

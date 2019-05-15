@@ -284,11 +284,12 @@ describe("Tooltip", () => {
     const updateSizeMock = jest.fn();
     const mock = jest.fn(() => "test");
     const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
-    const tree = renderer.create(<Tooltip isVisible />).getInstance();
+    const tree = renderer
+      .create(<Tooltip direction="left" isVisible />)
+      .getInstance();
 
     tree.updateSize = updateSizeMock;
     tree.getTranslateByDirection = mock;
-    tree.actualDirection = "left";
     tree.calculatePosition = calculatePositionMock;
     tree.myRef = {
       current: {
@@ -305,6 +306,41 @@ describe("Tooltip", () => {
     expect(updateSizeMock).toHaveBeenCalledTimes(1);
     expect(mock).toHaveBeenCalledTimes(1);
     expect(mock).toHaveBeenCalledWith("left");
+    expect(calculatePositionMock).toHaveBeenCalledTimes(1);
+    expect(tree.myRef.current.style.top).toEqual("10px");
+    expect(tree.myRef.current.style.left).toEqual("5px");
+    expect(tree.myRef.current.style.transition).toEqual(
+      `opacity 0.3s ${constants.easing.easeOutQuad}`
+    );
+    expect(tree.myRef.current.style.transform).toEqual("test");
+  });
+
+  it("tooltipEnter should calculate position when auto is set", () => {
+    const updateSizeMock = jest.fn();
+    const mock = jest.fn(() => "test");
+    const calculatePositionMock = jest.fn(() => ({ x: 5, y: 10 }));
+    const tree = renderer
+      .create(<Tooltip direction="auto" isVisible />)
+      .getInstance();
+
+    tree.updateSize = updateSizeMock;
+    tree.getTranslateByDirection = mock;
+    tree.calculatePosition = calculatePositionMock;
+    tree.myRef = {
+      current: {
+        style: {
+          top: 0,
+          left: 0,
+          transition: "",
+          transform: ""
+        }
+      }
+    };
+    tree.tooltipEnter();
+
+    expect(updateSizeMock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledWith("auto");
     expect(calculatePositionMock).toHaveBeenCalledTimes(1);
     expect(tree.myRef.current.style.top).toEqual("10px");
     expect(tree.myRef.current.style.left).toEqual("5px");
