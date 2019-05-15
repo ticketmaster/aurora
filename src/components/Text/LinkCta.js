@@ -91,7 +91,10 @@ class LinkCta extends Component {
   };
 
   blurHandler = () => {
-    this.link.current.classList.add("noFocus");
+    if (this.link && this.link.current) {
+      this.link.current.classList.add("noFocus");
+    }
+
     global.window.removeEventListener("keyup", this.activateFocusStyles);
   };
 
