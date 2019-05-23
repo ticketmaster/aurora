@@ -101,6 +101,7 @@ const themes = {
       medium: "#239893",
       dark: "#1f8783",
       light: "#e9f7f6",
+      lightest: "#e9f7f6",
       muted: "#d5f0ef"
     }
   }
