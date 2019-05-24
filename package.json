@@ -9,17 +9,17 @@
     "ui-library",
     "ticketmaster"
   ],
-  "main": "dist/index.cjs.js",
-  "jsnext:main": "dist/index.es.js",
-  "module": "dist/index.es.js",
+  "main": "dist/cjs/index.js",
+  "jsnext:main": "dist/es/index.js",
+  "module": "dist/es/index.js",
   "files": [
     "dist"
   ],
   "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
-    "build:dev": "rollup -c config/rollup.dev.config.js",
-    "build:prod": "rollup -c config/rollup.prod.config.js",
+    "build:dev": "rollup -c config/rollup.dev.config.js && rollup -c config/rollup-preserve-modules.dev.config.js --preserveModules",
+    "build:prod": "rollup -c config/rollup.prod.config.js && rollup -c config/rollup-preserve-modules.prod.config.js --preserveModules",
     "catalog-start": "NODE_ENV=development catalog start",
     "catalog-build": "catalog build  -u \"/aurora\"",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx}\"",

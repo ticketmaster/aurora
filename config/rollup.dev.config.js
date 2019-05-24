@@ -1,5 +1,4 @@
-import resolve from "rollup-plugin-node-resolve";
-import babel from "rollup-plugin-babel";
+import { PLUGINS_DEV, EXTERNAL } from "./constants";
 
 export default {
   input: "src/index.js",
@@ -29,32 +28,6 @@ export default {
       sourcemap: true
     }
   ],
-  plugins: [
-    resolve(),
-    babel({
-      presets: [
-        ["@babel/preset-env", { modules: false, useBuiltIns: "entry" }],
-        "@babel/preset-react"
-      ],
-      plugins: [
-        "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-proposal-class-properties",
-        [
-          "babel-plugin-styled-components",
-          {
-            displayName: true
-          }
-        ]
-      ],
-      babelrc: false
-    })
-  ],
-  external: [
-    "react",
-    "react-dom",
-    "react-transition-group",
-    "prop-types",
-    "styled-components",
-    "classnames"
-  ]
+  plugins: PLUGINS_DEV,
+  external: EXTERNAL
 };
