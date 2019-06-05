@@ -24,22 +24,18 @@ const StyledDropDownItem = styled.span`
     color: ${getThemeValue("gray01")};
     line-height: 1.25;
 
-    &:hover,
-    &:focus,
-    &.dropdown__selected {
-      border-radius: ${constants.borderRadius.small};
-      color: ${getThemeValue("white", "base")};
-    }
-    &:hover,
     &:focus {
       background-color: ${getThemeValue("primary", "base")};
-    }
-    &:focus {
       outline: none;
     }
     &.dropdown__selected {
       color: ${getThemeValue("gray01")};
       background-color: ${getThemeValue("gray04")};
+    }
+    &:focus,
+    &.dropdown__selected {
+      border-radius: ${constants.borderRadius.small};
+      color: ${getThemeValue("white", "base")};
     }
   }
   .dropdown__items.dropdown__items--small & {
@@ -65,14 +61,16 @@ class DropDownInput extends React.Component {
   };
 
   componentDidUpdate() {
-    if (
-      this.props.isOpen &&
-      this.props.isFocused &&
-      this.SelectedElement.current
-    ) {
-      this.SelectedElement.current.focus();
+    if (this.props.isOpen && this.props.isFocused) {
+      this.focus();
     }
   }
+
+  focus = () => {
+    if (this.SelectedElement && this.SelectedElement.current) {
+      this.SelectedElement.current.focus();
+    }
+  };
 
   SelectedElement = React.createRef();
 
