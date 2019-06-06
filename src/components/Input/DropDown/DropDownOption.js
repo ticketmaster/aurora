@@ -8,47 +8,67 @@ import { SPACEBAR } from "../../../utils/keyCharCodes";
 import composeEventHandlers from "../../../utils/composeEventHandlers";
 import DropDownInput from "./DropDownInput";
 
-const DropDownOption = ({ value, index, children, className, ...props }) => (
-  <KeyBoardConsumer>
-    {({ focused, focusSelected }) => (
-      <SelectionConsumer>
-        {({ selected, onClick }) => {
-          const isChecked = selected.includes(value);
-          return (
-            <DropDownConsumer>
-              {({ isOpen, onClose }) => (
-                <DropDownInput
-                  {...props}
-                  className={className}
-                  isOpen={isOpen}
-                  value={value}
-                  index={index}
-                  selected={selected}
-                  isSelected={isChecked}
-                  isFocused={focused === index}
-                  onKeyDown={e => {
-                    if (e.keyCode === SPACEBAR) {
-                      onClick({ value });
-                      e.preventDefault();
-                    }
-                  }}
-                  onClick={composeEventHandlers(
-                    () => onClose(),
-                    () => onClick({ value }),
-                    () => focusSelected({ index }),
-                    props.onClick
+class DropDownOption extends React.PureComponent {
+  focusInput = () => {
+    if (this.input && this.input.current) {
+      this.input.current.focus();
+    }
+  };
+
+  input = React.createRef();
+
+  render() {
+    const { value, index, children, className, ...props } = this.props;
+
+    return (
+      <KeyBoardConsumer>
+        {({ focused, focusSelected }) => (
+          <SelectionConsumer>
+            {({ selected, onClick }) => {
+              const isChecked = selected.includes(value);
+              return (
+                <DropDownConsumer>
+                  {({ isOpen, onClose }) => (
+                    <DropDownInput
+                      {...props}
+                      ref={this.input}
+                      className={className}
+                      isOpen={isOpen}
+                      value={value}
+                      index={index}
+                      selected={selected}
+                      isSelected={isChecked}
+                      isFocused={focused === index}
+                      onMouseMove={() => {
+                        if (index === focused) return;
+                        focusSelected({ index });
+                        this.focusInput();
+                      }}
+                      onKeyDown={e => {
+                        if (e.keyCode === SPACEBAR) {
+                          onClick({ value });
+                          e.preventDefault();
+                        }
+                      }}
+                      onClick={composeEventHandlers(
+                        () => onClose(),
+                        () => onClick({ value }),
+                        () => focusSelected({ index }),
+                        props.onClick
+                      )}
+                    >
+                      {children}
+                    </DropDownInput>
                   )}
-                >
-                  {children}
-                </DropDownInput>
-              )}
-            </DropDownConsumer>
-          );
-        }}
-      </SelectionConsumer>
-    )}
-  </KeyBoardConsumer>
-);
+                </DropDownConsumer>
+              );
+            }}
+          </SelectionConsumer>
+        )}
+      </KeyBoardConsumer>
+    );
+  }
+}
 
 DropDownOption.propTypes = {
   value: PropTypes.string.isRequired,
