@@ -1,4 +1,3 @@
-/* global document */
 import React from "react";
 import { render } from "react-testing-library";
 
