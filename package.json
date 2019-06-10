@@ -62,9 +62,9 @@
   "peerDependencies": {
     "classnames": ">=2",
     "prop-types": ">=15",
-    "react": ">=15",
-    "react-dom": ">=15",
-    "react-transition-group": "^2.5.0",
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-transition-group": "^3.0.0",
     "styled-components": ">=4"
   },
   "devDependencies": {
