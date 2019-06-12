@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Consumer as SelectionConsumer } from "../../SelectionProvider/Context";
 import { Consumer as KeyBoardConsumer } from "../../KeyboardNavigation/Context";
 import { Consumer as DropDownConsumer } from "./Context";
-import { SPACEBAR } from "../../../utils/keyCharCodes";
+import { ENTER, SPACEBAR } from "../../../utils/keyCharCodes";
 
 import composeEventHandlers from "../../../utils/composeEventHandlers";
 import DropDownInput from "./DropDownInput";
@@ -45,7 +45,7 @@ class DropDownOption extends React.PureComponent {
                         this.focusInput();
                       }}
                       onKeyDown={e => {
-                        if (e.keyCode === SPACEBAR) {
+                        if (e.keyCode === SPACEBAR || e.keyCode === ENTER) {
                           onClick({ value });
                           e.preventDefault();
                         }

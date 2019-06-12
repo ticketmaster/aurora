@@ -11,6 +11,7 @@ import {
   ARROWUP,
   ARROWDOWN,
   SPACEBAR,
+  ENTER,
   ESCAPE,
   TAB
 } from "../../../utils/keyCharCodes";
@@ -73,6 +74,7 @@ class DropDownGroup extends React.Component {
         e.preventDefault();
         this.openDropdown();
         break;
+      case ENTER:
       case SPACEBAR:
         e.preventDefault();
         this.toggleDropdown();
