@@ -30,18 +30,26 @@ class QtySelector extends Component {
   static propTypes = {
     disabled: PropTypes.bool,
     value: PropTypes.number,
+    callBack: PropTypes.func,
     style: PropTypes.objectOf(PropTypes.string)
   };
 
   static defaultProps = {
     disabled: false,
     style: {},
+    callBack: null,
     value: null
   };
 
   state = {
     value: this.props.value || "",
     focused: false
+  };
+
+  componentDidUpdate = () => {
+    if (typeof this.props.callBack === "function") {
+      this.props.callBack(this.state.value);
+    }
   };
 
   handleChange = e => {
@@ -105,7 +113,7 @@ class QtySelector extends Component {
           disabled={disabled}
           style={{
             ...style,
-            top: `-${value * QtySelector.INPUT_HEIGHT}px`
+            top: `-${(value % 100) * QtySelector.INPUT_HEIGHT}px`
           }}
         />
       ))
