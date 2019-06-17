@@ -30,7 +30,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -257,7 +257,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -502,7 +502,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -714,7 +714,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -945,7 +945,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1146,7 +1146,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1358,7 +1358,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1589,7 +1589,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
