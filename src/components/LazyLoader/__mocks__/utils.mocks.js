@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import { LazyLoader, LazyLoaderProvider, LazyLoaderConsumer } from "../";
+import { LazyLoader } from "../";
 
 export const testResizeFn = ({ src, width, height }) =>
   `${src}/${width}/${height}`;
@@ -53,34 +53,18 @@ export const renderComponent = (props = {}, renderFn, ref) =>
     ref
   );
 
-export const renderProviderComponentWithImg = (props = {}, renderFn, ref) =>
+export const renderComponentWithImgAndDiv = (props = {}, renderFn, ref) =>
   renderFn(
-    <LazyLoaderProvider {...mergeProps(props)}>
-      <LazyLoaderConsumer>
-        {val => <ImgClass key="test" {...PROPS} {...val} />}
-      </LazyLoaderConsumer>
-    </LazyLoaderProvider>,
-    ref
-  );
-
-export const renderProviderComponentWithImgAndDiv = (
-  props = {},
-  renderFn,
-  ref
-) =>
-  renderFn(
-    <LazyLoaderProvider {...mergeProps(props)}>
-      <LazyLoaderConsumer>
-        {val => {
-          const { imageRef, backgroundRef, ...rest } = val;
-          return (
-            <div {...rest} ref={backgroundRef}>
-              <ImgClass key="test" {...PROPS} {...rest} imageRef={imageRef} />
-            </div>
-          );
-        }}
-      </LazyLoaderConsumer>
-    </LazyLoaderProvider>,
+    <LazyLoader {...mergeProps(props)}>
+      {val => {
+        const { imageRef, backgroundRef, ...rest } = val;
+        return (
+          <div {...rest} ref={backgroundRef}>
+            <ImgClass key="test" {...PROPS} {...rest} imageRef={imageRef} />
+          </div>
+        );
+      }}
+    </LazyLoader>,
     ref
   );
 

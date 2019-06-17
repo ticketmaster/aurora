@@ -1,4 +1,3 @@
-import { PLACEHOLDER_IMAGE } from "./constants";
 import createParams from "../../utils/createParams";
 
 /* istanbul ignore next */
@@ -75,12 +74,3 @@ export const getSrcVariantByAttr = (
   srcAttr === "srcset"
     ? getSrcSetByDensity(ref, devicePixelRatios, getSrcByDensity)
     : getSrcByDensity(getTargetDensity(targetDensity, devicePixelRatios));
-
-export const getLowDefSrc = ({ src, width, height, resizeFn }) =>
-  src === PLACEHOLDER_IMAGE
-    ? src
-    : resizeFn({
-        src,
-        width: Math.round(width / 10),
-        height: Math.round(height / 10)
-      });

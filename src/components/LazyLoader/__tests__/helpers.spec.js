@@ -4,13 +4,11 @@ import {
   getSrcSetByDensity,
   getSrcAttr,
   getSrcVariantByAttr,
-  getLowDefSrc,
   getTargetDensity
 } from "../helpers";
 import {
   DEFAULT_TARGET_DENSITY,
-  DEFAULT_DEVICE_PIXEL_RATIOS,
-  PLACEHOLDER_IMAGE
+  DEFAULT_DEVICE_PIXEL_RATIOS
 } from "../constants";
 
 const mockSrc = "https://ticketmaster.com/img.jpg";
@@ -165,10 +163,8 @@ describe("getSrcSetByDensity", () => {
       mockGetSrcByDensity
     );
 
-    expect(mockGetSrcByDensity).toHaveBeenCalledTimes(5);
-    expect(srcset).toEqual(
-      `${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x, ${mockSrc} 4x, ${mockSrc} 5x`
-    );
+    expect(mockGetSrcByDensity).toHaveBeenCalledTimes(2);
+    expect(srcset).toEqual(`${mockSrc} 1x, ${mockSrc} 2x`);
   });
 });
 
@@ -231,9 +227,7 @@ describe("getSrcVariantByAttr", () => {
         DEFAULT_TARGET_DENSITY,
         mockGetSrcByDensity
       )
-    ).toEqual(
-      `${mockSrc} 1x, ${mockSrc} 2x, ${mockSrc} 3x, ${mockSrc} 4x, ${mockSrc} 5x`
-    );
+    ).toEqual(`${mockSrc} 1x, ${mockSrc} 2x`);
   });
 
   it("should return the evaluation of getSrcByDensity when srcAttr equals src", () => {
@@ -258,22 +252,5 @@ describe("getSrcVariantByAttr", () => {
         mockGetSrcByDensity
       )
     ).toEqual(mockSrc);
-  });
-});
-
-describe("getLowDefSrc", () => {
-  it(`should return src when src equals ${PLACEHOLDER_IMAGE}`, () => {
-    expect(getLowDefSrc({ src: PLACEHOLDER_IMAGE, resizeFn })).toEqual(
-      PLACEHOLDER_IMAGE
-    );
-  });
-
-  it(`should invoke resizeFn when src does not equal ${PLACEHOLDER_IMAGE}`, () => {
-    getLowDefSrc({ src: mockSrc, ...mockParams, resizeFn });
-    expect(resizeFn).toBeCalledWith({
-      src: mockSrc,
-      width: Math.round(mockParams.width / 10),
-      height: Math.round(mockParams.height / 10)
-    });
   });
 });

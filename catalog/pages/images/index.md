@@ -127,7 +127,7 @@ rows:
 
 ### LazyLoader
 
-The LazyLoader component utilizes the LazyLoader Context to provide developers with a simplified means to progressively load UI.
+The LazyLoader component provides developers with a simplified means to progressively load UI.
 
 This component supports lazily loading assets for img tags via srcset and src as well as div tags via style.backgroundImage.
 
@@ -163,7 +163,7 @@ rows:
   - Prop: children
     Type: Function({ src, style, imageRef, backgroundRef, load }) => Node
     Default: ''
-    Notes: This function will be invoked with the  LazyLoaderProvider's state, which is provided to the LazyLoaderConsumer.
+    Notes: This function will be invoked with the  LazyLoader's state.
 ```
 
 ### Arguments passed to children

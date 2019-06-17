@@ -1,10 +1,87 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LazyLoader should load a low res, blurred version of the image passed prior to loading 1`] = `
+exports[`LazyLoader should invoke componentDidUpdate and not setState when src equals prevSrc 1`] = `
+Object {
+  "backgroundRef": null,
+  "imageRef": Object {
+    "current": Object {
+      "src": "",
+      "srcset": "",
+      "style": Object {},
+    },
+  },
+  "isLoaded": false,
+  "load": [Function],
+  "src": "data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==",
+  "style": Object {
+    "filter": "blur(10px)",
+    "transition": "80ms filter linear",
+  },
+}
+`;
+
+exports[`LazyLoader should invoke componentDidUpdate and set state to a placeholder image when the src changes 1`] = `
 <img
   alt="Test Kitten"
   height={400}
-  src="https://placekitten.com/g/40/40"
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+  style={
+    Object {
+      "filter": "blur(10px)",
+      "transition": "80ms filter linear",
+    }
+  }
+  width={400}
+/>
+`;
+
+exports[`LazyLoader should load a high res version of the image passed when the imageRef supports a backgroundImage style 1`] = `
+Object {
+  "current": null,
+}
+`;
+
+exports[`LazyLoader should load a high res version of the image passed when the imageRef supports src 1`] = `
+Object {
+  "current": Object {
+    "onload": [Function],
+    "src": "https://placekitten.com/g/400/400",
+    "style": Object {},
+  },
+}
+`;
+
+exports[`LazyLoader should load a high res version of the image passed when the imageRef supports srcset 1`] = `
+Object {
+  "current": Object {
+    "onload": [Function],
+    "src": "",
+    "srcset": "https://placekitten.com/g/400/400 1x, https://placekitten.com/g/800/800 2x",
+    "style": Object {},
+  },
+}
+`;
+
+exports[`LazyLoader should load a placeholder image passed prior to loading 1`] = `
+<img
+  alt="Test Kitten"
+  height={400}
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+  style={
+    Object {
+      "filter": "blur(10px)",
+      "transition": "80ms filter linear",
+    }
+  }
+  width={400}
+/>
+`;
+
+exports[`LazyLoader should not load a high res version of the image passed when the load function is invoked with a value of false 1`] = `
+<img
+  alt="Test Kitten"
+  height={400}
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
   style={
     Object {
       "filter": "blur(10px)",
