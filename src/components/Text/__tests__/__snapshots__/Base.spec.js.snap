@@ -204,7 +204,7 @@ exports[`BaseText with themed color palette should render secondary text with a 
 
 exports[`BaseText with themed color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
 <div
-  className="text text--dark text-tm text--secondary kVKmJn"
+  className="text text--dark text-tm text--secondary koBQW"
   disabled={false}
   size="hecto"
 >
@@ -344,7 +344,7 @@ exports[`BaseText with traditional color palette should render secondary text wi
 
 exports[`BaseText with traditional color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
 <div
-  className="text text--dark text--secondary kVKmJn"
+  className="text text--dark text--secondary koBQW"
   disabled={false}
   size="hecto"
 >

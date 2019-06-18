@@ -22,7 +22,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
         type="button"
       >
         <svg
-          fill="rgba(38, 38, 38, 0.6)"
+          fill="rgba(38, 38, 38, 0.65)"
           height={22}
           viewBox="0 0 5 21"
           width={5.5}
@@ -108,7 +108,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
         type="button"
       >
         <svg
-          fill="rgba(38, 38, 38, 0.6)"
+          fill="rgba(38, 38, 38, 0.65)"
           height={22}
           viewBox="0 0 5 21"
           width={5.5}

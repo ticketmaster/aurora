@@ -79,7 +79,7 @@ const global = {
   transparent: "transparent",
   onyx: {
     base: "rgba(38, 38, 38, 1)",
-    light: "rgba(38, 38, 38, 0.6)",
+    light: "rgba(38, 38, 38, 0.65)",
     muted: "rgba(38, 38, 38, 0.4)"
   },
   white: {

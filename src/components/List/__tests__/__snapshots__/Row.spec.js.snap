@@ -30,7 +30,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -137,7 +137,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -166,7 +166,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -257,7 +257,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -382,7 +382,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -411,7 +411,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -502,7 +502,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -583,7 +583,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -612,7 +612,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -693,7 +693,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="eGnrhg"
           >
             <div
-              className="text text--dark text--secondary PtISw ftYllf"
+              className="text text--dark text--secondary PtISw ifpOvA"
               disabled={false}
               size="uno"
             >
@@ -714,7 +714,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -825,7 +825,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -854,7 +854,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -945,7 +945,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1026,7 +1026,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -1055,7 +1055,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -1146,7 +1146,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1227,7 +1227,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -1256,7 +1256,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -1337,7 +1337,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="eGnrhg"
           >
             <div
-              className="text text--dark text--secondary PtISw ftYllf"
+              className="text text--dark text--secondary PtISw ifpOvA"
               disabled={false}
               size="uno"
             >
@@ -1358,7 +1358,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
@@ -1469,7 +1469,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw elzWGC"
+            className="text text--dark text--secondary day-time--text PtISw jomeqb"
             disabled={false}
             size="hecto"
           >
@@ -1498,7 +1498,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw elzWGC"
+              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
               disabled={false}
               size="hecto"
             >
@@ -1589,7 +1589,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           type="button"
         >
           <svg
-            fill="rgba(38, 38, 38, 0.6)"
+            fill="rgba(38, 38, 38, 0.65)"
             height={22}
             viewBox="0 0 5 21"
             width={5.5}
