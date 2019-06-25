@@ -78,6 +78,30 @@ exports[`Input renders input with error 1`] = `
 </div>
 `;
 
+exports[`Input renders input without name 1`] = `
+<div
+  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
+>
+  
+  <div
+    class="sc-htpNat eXpulu"
+  >
+    <input
+      aria-labelledby="null__label"
+      class="sc-bxivhb hBvKYg"
+      id="null__input"
+      placeholder="test hint"
+      type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX gWpzXV"
+      role="alert"
+    />
+  </div>
+</div>
+`;
+
 exports[`Input renders large input 1`] = `
 <div
   class="text--input-large text--input-top sc-bdVaJa cBKMGA"
