@@ -52,7 +52,7 @@ describe("Input", () => {
   });
 
   it("renders input without name", () => {
-    const { container } = renderInputComponent({ name: null });
+    const { container } = renderInputComponent({ name: undefined });
     expect(container.firstChild).toMatchSnapshot();
   });
 

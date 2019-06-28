@@ -25,6 +25,7 @@ const Input = ({
   ...rest
 }) => {
   const sluggified = sluggify(name + label);
+  const labelId = sluggified ? `${sluggified}__label` : null;
   return (
     <FieldInputWrapper
       className={classNames(
@@ -37,19 +38,19 @@ const Input = ({
       )}
     >
       {label && (
-        <FieldInputText id={`${sluggified}__label`} style={labelStyle}>
+        <FieldInputText id={labelId} style={labelStyle}>
           {label}
         </FieldInputText>
       )}
       <ErrorBoxWrapper>
         <FieldInputBox
           placeholder={disabled ? "" : placeholder}
-          name={name}
-          id={`${sluggified}__input`}
+          name={name || null}
+          id={sluggified ? `${sluggified}__input` : null}
           disabled={disabled}
           as={tag}
           {...rest}
-          aria-labelledby={`${sluggified}__label`}
+          aria-labelledby={label ? labelId : null}
         />
         <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
           {errorMessage}
@@ -75,7 +76,7 @@ Input.defaultProps = {
   labelPosition: TOP,
   placeholder: "",
   disabled: false,
-  name: null,
+  name: "",
   label: "",
   errorMessage: null,
   size: REGULAR,
