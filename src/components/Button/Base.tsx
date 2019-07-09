@@ -1,14 +1,30 @@
 /* global window: true */
-import React, { Component } from "react";
+import React, { Component, ValidationMap, PropsWithChildren } from "react";
 import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./Base.styles";
-import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD } from "../constants";
+import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD, ButtonVariant, Size } from "../constants";
 import { getRelByTarget } from "../../utils/link";
 
-class Button extends Component {
+export interface ButtonProps {
+  readonly className?: string;
+  readonly variant: ButtonVariant;
+  readonly size: Size;
+}
+
+export interface ButtonLinkProps extends ButtonProps {
+  readonly href: string;
+  readonly rel: string;
+  readonly target: string;
+}
+
+function isButtonLinkProps(props: ButtonProps): props is ButtonLinkProps {
+  return !!(props as ButtonLinkProps).href;
+}
+
+class Button extends Component<ButtonProps> {
   componentDidMount() {
-    if (!this.props.href && this.button && this.button.current) {
+    if (!isButtonLinkProps(this.props) && this.button && this.button.current) {
       // this functionality is required to avoid focus outline on click but keep it on tab focus
       this.button.current.addEventListener("focus", this.focusHandler);
       this.button.current.addEventListener("blur", this.blurHandler);
@@ -37,14 +53,13 @@ class Button extends Component {
     }
   };
 
-  button = React.createRef();
+  button = React.createRef<HTMLButtonElement>();
 
   render() {
     const { variant, size, children, ...rest } = this.props;
-    const { href } = rest;
 
-    if (href) {
-      const { rel, target } = rest;
+    if (isButtonLinkProps(this.props)) {
+      const { rel, target } = this.props;
       const validatedRel = getRelByTarget(target, rel);
 
       return (
@@ -72,19 +87,19 @@ class Button extends Component {
       </StyledButton>
     );
   }
+
+  static displayName = 'Button';
+
+  static propTypes: ValidationMap<PropsWithChildren<ButtonProps>> = {
+    variant: PropTypes.oneOf(BUTTON_VARIANTS),
+    size: PropTypes.oneOf(SIZES),
+    children: PropTypes.node.isRequired
+  }
+
+  static defaultProps: ButtonProps = {
+    size: REGULAR,
+    variant: STANDARD
+  }
 }
-
-Button.displayName = "Button";
-
-Button.propTypes = {
-  variant: PropTypes.oneOf(BUTTON_VARIANTS),
-  size: PropTypes.oneOf(SIZES),
-  children: PropTypes.node.isRequired
-};
-
-Button.defaultProps = {
-  size: REGULAR,
-  variant: STANDARD
-};
 
 export default Button;

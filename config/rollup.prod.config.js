@@ -32,13 +32,15 @@ export default {
     babel({
       presets: [
         ["@babel/preset-env", { modules: false, useBuiltIns: "entry" }],
-        "@babel/preset-react"
+        "@babel/preset-react",
+        "@babel/preset-typescript"
       ],
       plugins: [
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/plugin-proposal-class-properties",
         "babel-plugin-transform-react-remove-prop-types"
       ],
+      extensions: [".js", ".jsx", ".ts", ".tsx"],
       babelrc: false
     }),
     terser()

@@ -17,21 +17,23 @@ export const SPECIAL = "special";
 export const OUTLINE = "outline";
 export const OUTLINE_GRAY = "outlineGray";
 export const TRANSPARENT = "transparent";
-export const BUTTON_VARIANTS = [
+export const BUTTON_VARIANTS: readonly ButtonVariant[] = [
   STANDARD,
   SPECIAL,
   OUTLINE,
   OUTLINE_GRAY,
   TRANSPARENT
 ];
+export type ButtonVariant = typeof STANDARD | typeof SPECIAL | typeof OUTLINE | typeof OUTLINE_GRAY | typeof TRANSPARENT;
 
 // SIZES
 export const SMALL = "small";
 export const REGULAR = "regular";
 export const LARGE = "large";
-export const SIZES = [SMALL, REGULAR, LARGE];
-export const SIZES_SL = [SMALL, LARGE];
-export const SIZES_SR = [SMALL, REGULAR];
+export const SIZES: readonly Size[] = [SMALL, REGULAR, LARGE];
+export const SIZES_SL: readonly Size[] = [SMALL, LARGE];
+export const SIZES_SR: readonly Size[] = [SMALL, REGULAR];
+export type Size = typeof SMALL | typeof REGULAR | typeof LARGE;
 
 export const ARROW_WIDTH = 12;
 

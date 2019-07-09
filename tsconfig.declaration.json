@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "outDir": "lib",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "allowJs": false
+  }
+}
