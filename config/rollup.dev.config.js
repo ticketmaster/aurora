@@ -1,8 +1,10 @@
 import resolve from "rollup-plugin-node-resolve";
 import babel from "rollup-plugin-babel";
 
+const extensions = [".js", ".jsx", ".ts", ".tsx"];
+
 export default {
-  input: "src/index.js",
+  input: "src/index.tsx",
   output: [
     {
       file: "dist/index.umd.js",
@@ -30,11 +32,12 @@ export default {
     }
   ],
   plugins: [
-    resolve(),
+    resolve({ extensions }),
     babel({
       presets: [
         ["@babel/preset-env", { modules: false, useBuiltIns: "entry" }],
-        "@babel/preset-react"
+        "@babel/preset-react",
+        "@babel/preset-typescript"
       ],
       plugins: [
         "@babel/plugin-proposal-object-rest-spread",
@@ -46,7 +49,8 @@ export default {
           }
         ]
       ],
-      babelrc: false
+      babelrc: false,
+      extensions
     })
   ],
   external: [

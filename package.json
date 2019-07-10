@@ -17,7 +17,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:dev && npm run build:prod",
+    "build": "npm run build:dev && npm run build:prod && npm run tsc:declaration",
     "build:dev": "rollup -c config/rollup.dev.config.js",
     "build:prod": "rollup -c config/rollup.prod.config.js",
     "catalog-start": "NODE_ENV=development catalog start",
@@ -29,7 +29,8 @@
     "test:cover": "NODE_ENV=test jest --coverage",
     "test:ci": "NODE_ENV=test jest --changedSince=master --runInBand",
     "add-icons": "pixo $* --out-dir src/components/Icons",
-    "tsc:declaration": "tsc -p tsconfig.declaration.json"
+    "tsc:declaration": "tsc -p tsconfig.declaration.json",
+    "posttsc:declaration": "node declarejs.js"
   },
   "lint-staged": {
     "*.{js,jsx}": [
