@@ -20,7 +20,7 @@ exports[`CalendarView should render without errors 1`] = `
       className="jbshnb"
     >
       <div
-        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent iKBVzT cIRWLi"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent iKBVzT cgVlOE"
         disabled={false}
         size="kilo"
       >
@@ -65,21 +65,21 @@ exports[`CalendarView should render without errors 1`] = `
         className="bXUaNv"
       >
         <div
-          className="text text--dark text--primary fItAkd dIqltR"
+          className="text text--dark text--primary fItAkd dUTNtE"
           disabled={false}
           size="uno"
         >
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary fItAkd fjsDu"
+          className="text text--dark text--secondary fItAkd ISLWL"
           disabled={false}
           size="uno"
         >
           On Sale Starts Soon
         </div>
         <div
-          className="text text--dark text--primary dBTwND hGozFO"
+          className="text text--dark text--primary dBTwND dMFsbq"
           disabled={false}
           size="uno"
         >
@@ -122,7 +122,7 @@ exports[`CalendarView should render without errors 1`] = `
         className="Hmqjs"
       >
         <button
-          className="cDJqdM clbKAW"
+          className="cDJqdM gcLeUk"
           href={null}
           onClick={[Function]}
           rel="_self"
@@ -175,7 +175,7 @@ exports[`CalendarView should render without errors 1`] = `
         className="bXUaNv"
       >
         <div
-          className="text text--dark text--primary fItAkd dIqltR"
+          className="text text--dark text--primary fItAkd dUTNtE"
           disabled={false}
           size="uno"
         >
@@ -218,7 +218,7 @@ exports[`CalendarView should render without errors 1`] = `
         className="Hmqjs"
       >
         <button
-          className="cDJqdM clbKAW"
+          className="cDJqdM gcLeUk"
           href={null}
           onClick={[Function]}
           rel="_self"

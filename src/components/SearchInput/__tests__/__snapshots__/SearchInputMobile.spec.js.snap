@@ -46,7 +46,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon boklFi"
+    className="search--clear-icon dvEYrI"
     onClick={[Function]}
     value=""
   >
@@ -73,7 +73,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon jiWdvT"
+    className="search--cancel-icon bFLzKw"
     onClick={[Function]}
   >
     Cancel
@@ -130,7 +130,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     />
     <button
       aria-label="Clear button"
-      className="search--clear-icon boklFi"
+      className="search--clear-icon dvEYrI"
       onClick={[Function]}
       value=""
     >
@@ -157,7 +157,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     </button>
     <button
       aria-label="Cancel button"
-      className="search--cancel-icon jiWdvT"
+      className="search--cancel-icon bFLzKw"
       onClick={[Function]}
     >
       Cancel

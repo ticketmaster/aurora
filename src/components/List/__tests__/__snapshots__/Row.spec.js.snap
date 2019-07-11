@@ -8,7 +8,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed cCGINX"
+    className="row__wrapper row__wrapper--collapsed dGIYBb"
     onCloseRequest={[Function]}
     onExpandShow="subTitle"
   >
@@ -16,10 +16,10 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
       className="list__container fqHngb"
     >
       <div
-        className="row__content fNwkgC"
+        className="row__content dQsIEc"
       />
       <div
-        className="gLKmkf"
+        className="cJSMnZ"
       >
         <button
           aria-label="More Info"
@@ -44,7 +44,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -65,7 +65,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
       </button>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed cSETUG"
+      className="container__overflow container__overflow--collapsed gNUlRn"
     />
   </div>
 </div>
@@ -83,16 +83,16 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container fZiaGG"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -113,16 +113,16 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--accent text--heliotrope text--primary date--text bxEtxF"
+            className="text text--accent text--heliotrope text--primary date--text lbBVYg"
             disabled={false}
             size={
               Object {
@@ -137,7 +137,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -145,13 +145,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -166,7 +166,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -174,10 +174,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -193,10 +193,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -212,10 +212,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -232,7 +232,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -246,7 +246,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -270,7 +270,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>
@@ -284,21 +284,21 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="row__content--top tLVAj"
+      className="row__content--top gDvwAR"
     >
       <div
-        className="nRISy"
+        className="fkHcaE"
       >
         <div
-          className="row__label row__label--mobile GoYbg"
+          className="row__label row__label--mobile bOzvtA"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary cKboNe crDSGt"
             disabled={false}
             size="hecto"
           >
@@ -306,11 +306,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--desktop row__label--active eQvyKb"
+          className="row__label row__label--desktop row__label--active cqFCGD"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary cKboNe crDSGt"
             disabled={false}
             size="hecto"
           >
@@ -318,11 +318,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--expanded row__label--desktop row__label--hidden eQvyKb"
+          className="row__label row__label--expanded row__label--desktop row__label--hidden cqFCGD"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary cKboNe crDSGt"
             disabled={false}
             size="hecto"
           >
@@ -332,12 +332,12 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </div>
     </div>
     <div
-      className="list__container kKmMen"
+      className="list__container eFTERR"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -358,16 +358,16 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -382,7 +382,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -390,13 +390,13 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -411,7 +411,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -419,10 +419,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -438,10 +438,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -457,10 +457,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -477,7 +477,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -491,7 +491,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -515,7 +515,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>
@@ -529,16 +529,16 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eqMTEn"
+      className="list__container gTzQfT"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -559,16 +559,16 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -583,7 +583,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -591,13 +591,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -612,7 +612,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -620,10 +620,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -639,10 +639,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -658,10 +658,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -678,7 +678,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -693,7 +693,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             className="eGnrhg"
           >
             <div
-              className="text text--dark text--secondary PtISw ifpOvA"
+              className="text text--dark text--secondary PtISw gbJAZg"
               disabled={false}
               size="uno"
             >
@@ -703,7 +703,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -727,13 +727,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="row__content--bottom gMkfym"
+      className="row__content--bottom cjLoKT"
     >
       <div
-        className="jMKHiO"
+        className="bJJLdi"
       >
         <button
-          className="link--row-options eXFyMS hAlRXB"
+          className="link--row-options bNdAid cTkTlv"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -744,7 +744,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options fRvHEx emWuwJ"
+          className="link--row-options dbHJbq lklDEs"
           data-index={0}
           href=""
           onClick={null}
@@ -757,7 +757,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>
@@ -771,16 +771,16 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container fZiaGG"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -801,16 +801,16 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
       </button>
       <a
         aria-label="More Info"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -825,7 +825,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -833,13 +833,13 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -854,7 +854,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -862,10 +862,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -881,10 +881,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -900,10 +900,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -920,7 +920,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="More Info"
@@ -934,7 +934,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -958,7 +958,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>
@@ -972,16 +972,16 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--expanded iDIzEx"
+    className="row__wrapper row__wrapper--expanded izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container fZiaGG"
     >
       <button
         aria-expanded={true}
         aria-label="Collapse Row"
-        className="button--expand-or-collapse button--expanded laDsHS"
+        className="button--expand-or-collapse button--expanded jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1002,16 +1002,16 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -1026,7 +1026,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -1034,13 +1034,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1055,7 +1055,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -1063,10 +1063,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--expanded cEBRXE"
+            className="column__content list-row__title column__content--expanded cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1082,10 +1082,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--expanded cEBRXE"
+            className="column__content list-row__title column__content--expanded cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1101,10 +1101,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--collapsed eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--collapsed eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1121,7 +1121,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -1135,7 +1135,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -1159,7 +1159,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--expanded dApCYQ"
+      className="container__overflow container__overflow--expanded bjmPDo"
     />
   </div>
 </div>
@@ -1173,16 +1173,16 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eqMTEn"
+      className="list__container gTzQfT"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1203,16 +1203,16 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -1227,7 +1227,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -1235,13 +1235,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1256,7 +1256,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -1264,10 +1264,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1283,10 +1283,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1302,10 +1302,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1322,7 +1322,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -1337,7 +1337,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             className="eGnrhg"
           >
             <div
-              className="text text--dark text--secondary PtISw ifpOvA"
+              className="text text--dark text--secondary PtISw gbJAZg"
               disabled={false}
               size="uno"
             >
@@ -1347,7 +1347,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -1371,13 +1371,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="row__content--bottom gMkfym"
+      className="row__content--bottom cjLoKT"
     >
       <div
-        className="jMKHiO"
+        className="bJJLdi"
       >
         <button
-          className="link--row-options eXFyMS hAlRXB"
+          className="link--row-options bNdAid cTkTlv"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -1388,7 +1388,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="fRvHEx dYTnRX"
+          className="dbHJbq dfjQtk"
           data-index={0}
           href="/"
           onClick={null}
@@ -1401,7 +1401,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>
@@ -1415,16 +1415,16 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed izrOZR"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container fZiaGG"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed jETJYH"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1445,16 +1445,16 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper dTzOAe"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper iUqtkb"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text jwSgrh"
             disabled={false}
             size={
               Object {
@@ -1469,7 +1469,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text PtISw clMlmM"
             disabled={false}
             size="hecto"
           >
@@ -1477,13 +1477,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content frkybv"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only brYvhA"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1498,7 +1498,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle PtISw clMlmM"
               disabled={false}
               size="hecto"
             >
@@ -1506,10 +1506,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1525,10 +1525,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed cqiVFx"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1544,10 +1544,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded eaTaZE"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle keoegT ftVKtf"
               disabled={false}
               size={
                 Object {
@@ -1564,7 +1564,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="fDHNkW"
         >
           <span
             aria-label="See Tickets"
@@ -1578,7 +1578,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="bxGTFf"
       >
         <button
           aria-label="More Info"
@@ -1602,7 +1602,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed bjmPDo"
     />
   </div>
 </div>

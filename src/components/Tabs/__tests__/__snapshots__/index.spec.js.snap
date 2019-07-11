@@ -3,14 +3,14 @@
 exports[`<Tabs /> should render tabs component correctly 1`] = `
 <div>
   <div
-    class="sc-jTzLTM kWTHxf"
+    class="sc-jTzLTM djCJBz"
   >
     <div
-      class="sc-fjdhpX jLBUHC"
+      class="sc-fjdhpX kNvtTc"
       role="tablist"
     >
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="true"
@@ -19,14 +19,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 1
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -35,14 +35,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 2
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -51,7 +51,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 3
           </div>
@@ -65,14 +65,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
 exports[`<Tabs /> should render tabs component correctly when withBorderBottom equals false 1`] = `
 <div>
   <div
-    class="sc-jTzLTM iAnCRo"
+    class="sc-jTzLTM iPjtYf"
   >
     <div
-      class="sc-fjdhpX jLBUHC"
+      class="sc-fjdhpX kNvtTc"
       role="tablist"
     >
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="true"
@@ -81,14 +81,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 1
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -97,14 +97,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 2
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -113,7 +113,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           role="tab"
         >
           <div
-            class="text text--primary sc-ifAKCX kEFgxZ"
+            class="text text--primary sc-ifAKCX gyDHjn"
           >
             Test tab item 3
           </div>
@@ -127,14 +127,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
 exports[`<Tabs /> should render tabs component correctly with props for text of tabs 1`] = `
 <div>
   <div
-    class="sc-jTzLTM kWTHxf"
+    class="sc-jTzLTM djCJBz"
   >
     <div
-      class="sc-fjdhpX jLBUHC"
+      class="sc-fjdhpX kNvtTc"
       role="tablist"
     >
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="true"
@@ -143,14 +143,14 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           role="tab"
         >
           <div
-            class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
+            class="text text--accent text--alert text--primary sc-ifAKCX ckDJKP"
           >
             Test tab item 1
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -159,14 +159,14 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           role="tab"
         >
           <div
-            class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
+            class="text text--accent text--alert text--primary sc-ifAKCX ckDJKP"
           >
             Test tab item 2
           </div>
         </button>
       </div>
       <div
-        class="sc-jzJRlG cIeBWg"
+        class="sc-jzJRlG heDjEc"
       >
         <button
           aria-selected="false"
@@ -175,7 +175,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           role="tab"
         >
           <div
-            class="text text--accent text--alert text--primary sc-ifAKCX iQFpqp"
+            class="text text--accent text--alert text--primary sc-ifAKCX ckDJKP"
           >
             Test tab item 3
           </div>

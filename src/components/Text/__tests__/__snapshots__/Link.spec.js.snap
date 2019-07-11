@@ -2,7 +2,7 @@
 
 exports[`Link renders a button when only onclick is provided 1`] = `
 <button
-  className="fwwBvm"
+  className="kQiWO"
   href={null}
   onClick={[Function]}
   rel="_self"
@@ -15,7 +15,7 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 
 exports[`Link renders a default link 1`] = `
 <a
-  className="efSPmK"
+  className="kqJXTC"
   href="http://localhost/"
   onClick={null}
   rel="_self"
@@ -28,7 +28,7 @@ exports[`Link renders a default link 1`] = `
 
 exports[`Link renders a span when no href or onClick provided 1`] = `
 <span
-  className="xxebo"
+  className="gmZWCY"
   href={null}
   onClick={null}
   rel="_self"

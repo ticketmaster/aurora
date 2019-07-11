@@ -21,7 +21,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel sc-jWBwVP efavti"
     >
       <button
         aria-label="Close BottomSheet"
@@ -64,7 +64,7 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel sc-jWBwVP efavti"
     >
       <button
         aria-label="Close BottomSheet"
@@ -107,7 +107,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel sc-jWBwVP efavti"
     >
       <button
         aria-label="Close BottomSheet"

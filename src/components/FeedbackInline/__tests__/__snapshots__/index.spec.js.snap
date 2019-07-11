@@ -14,14 +14,14 @@ exports[`<FeedbackInline /> renders correctly 1`] = `
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX eWGYDv"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX cswcGK"
         />
       </div>
     </div>
@@ -74,14 +74,14 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX eWGYDv"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX cswcGK"
         >
           test content
         </div>
@@ -136,14 +136,14 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX eWGYDv"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX cswcGK"
         >
           test content
         </div>
@@ -189,14 +189,14 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX eWGYDv"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX cswcGK"
         >
           test content
         </div>
@@ -252,14 +252,14 @@ exports[`<FeedbackInline /> renders correctly with link 1`] = `
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX eWGYDv"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX cswcGK"
         >
           test content
         </div>

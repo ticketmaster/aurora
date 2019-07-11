@@ -2,7 +2,7 @@
 
 exports[`DisplayFor cssOnly renders custom display prop 1`] = `
 <div
-  class="sc-bdVaJa cphQvp"
+  class="sc-bdVaJa dSjUgS"
   display="flex"
 >
   Content
@@ -11,7 +11,7 @@ exports[`DisplayFor cssOnly renders custom display prop 1`] = `
 
 exports[`DisplayFor cssOnly renders nothing when value is null 1`] = `
 <div
-  class="sc-bdVaJa sDYhp"
+  class="sc-bdVaJa eXrxbM"
   display="block"
 >
   Content

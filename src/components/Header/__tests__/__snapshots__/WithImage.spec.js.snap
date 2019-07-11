@@ -8,7 +8,7 @@ exports[`WithImage renders header background image 1`] = `
 >
   <span
     aria-hidden={true}
-    className="lblvod leocQa"
+    className="lblvod ceBTcL"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -21,16 +21,16 @@ exports[`WithImage renders header background image 1`] = `
     />
   </span>
   <div
-    className="fEnjoq"
+    className="gxSUUW"
   >
     <div
-      className="DtEVY"
+      className="kmDbEa"
     >
       <div
-        className="cIOZtk"
+        className="cqKGWU"
       >
         <div
-          className="zVHGu"
+          className="gXwVvu"
         >
           <img
             alt="place holder"
@@ -51,7 +51,7 @@ exports[`WithImage renders header background image correctly when a withOverlay 
 >
   <span
     aria-hidden={true}
-    className="gradient--overlay lblvod leocQa"
+    className="gradient--overlay lblvod ceBTcL"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -64,16 +64,16 @@ exports[`WithImage renders header background image correctly when a withOverlay 
     />
   </span>
   <div
-    className="fEnjoq"
+    className="gxSUUW"
   >
     <div
-      className="DtEVY"
+      className="kmDbEa"
     >
       <div
-        className="cIOZtk"
+        className="cqKGWU"
       >
         <div
-          className="zVHGu"
+          className="gXwVvu"
         >
           <img
             alt="place holder"
@@ -94,7 +94,7 @@ exports[`WithImage renders header background image correctly when a withUnderlay
 >
   <span
     aria-hidden={true}
-    className="gradient--underlay lblvod leocQa"
+    className="gradient--underlay lblvod ceBTcL"
     style={
       Object {
         "backgroundImage": "url(https://placekitten.com/g/2/2)",
@@ -107,16 +107,16 @@ exports[`WithImage renders header background image correctly when a withUnderlay
     />
   </span>
   <div
-    className="fEnjoq"
+    className="gxSUUW"
   >
     <div
-      className="DtEVY"
+      className="kmDbEa"
     >
       <div
-        className="cIOZtk"
+        className="cqKGWU"
       >
         <div
-          className="zVHGu"
+          className="gXwVvu"
         >
           <img
             alt="place holder"
@@ -136,22 +136,22 @@ exports[`WithImage renders header with image 1`] = `
   role="heading"
 >
   <span
-    className="gEDJRt Iwzmp"
+    className="gEDJRt jIDulM"
     style={Object {}}
   >
     
   </span>
   <div
-    className="fEnjoq"
+    className="gxSUUW"
   >
     <div
-      className="DtEVY"
+      className="kmDbEa"
     >
       <div
-        className="cIOZtk"
+        className="cqKGWU"
       >
         <div
-          className="zVHGu"
+          className="gXwVvu"
         >
           <img
             alt="place holder"

@@ -2,7 +2,7 @@
 
 exports[`NavBar renders fixed 1`] = `
 <nav
-  className="nav--fixed cFQQgK"
+  className="nav--fixed ctYFub"
   role="navigation"
   style={
     Object {
@@ -11,10 +11,10 @@ exports[`NavBar renders fixed 1`] = `
   }
 >
   <div
-    className="WTkEJ"
+    className="iwzUtB"
   >
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       <svg
@@ -30,7 +30,7 @@ exports[`NavBar renders fixed 1`] = `
     </button>
     Content
     <a
-      className="iolQUC egAjOF"
+      className="fZuaiG cbmDLY"
       href="http://localhost/new/"
       rel={null}
       target="_self"
@@ -171,7 +171,7 @@ exports[`NavBar renders fixed 1`] = `
 
 exports[`NavBar renders inverted 1`] = `
 <nav
-  className="nav--relative nav--inverted cFQQgK"
+  className="nav--relative nav--inverted ctYFub"
   role="navigation"
   style={
     Object {
@@ -180,10 +180,10 @@ exports[`NavBar renders inverted 1`] = `
   }
 >
   <div
-    className="WTkEJ"
+    className="iwzUtB"
   >
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       <svg
@@ -198,7 +198,7 @@ exports[`NavBar renders inverted 1`] = `
       </svg>
     </button>
     <a
-      className="iolQUC egAjOF"
+      className="fZuaiG cbmDLY"
       href="http://localhost/new/"
       rel={null}
       target="_self"
@@ -337,7 +337,7 @@ exports[`NavBar renders inverted 1`] = `
 
 exports[`NavBar renders with defaults 1`] = `
 <nav
-  className="nav--relative cFQQgK"
+  className="nav--relative ctYFub"
   role="navigation"
   style={
     Object {
@@ -346,10 +346,10 @@ exports[`NavBar renders with defaults 1`] = `
   }
 >
   <div
-    className="WTkEJ"
+    className="iwzUtB"
   >
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       <svg
@@ -491,7 +491,7 @@ exports[`NavBar renders with defaults 1`] = `
       </span>
     </div>
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       <svg
@@ -509,7 +509,7 @@ exports[`NavBar renders with defaults 1`] = `
       </svg>
     </button>
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       <svg
@@ -535,7 +535,7 @@ exports[`NavBar renders with defaults 1`] = `
       </svg>
     </button>
     <button
-      className="egAjOF"
+      className="cbmDLY"
       type="button"
     >
       Text Button!

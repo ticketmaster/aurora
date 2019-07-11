@@ -2,7 +2,7 @@
 
 exports[`Column renders correctly when small value is 0 1`] = `
 <div
-  class="sc-bdVaJa jCYtFM"
+  class="sc-bdVaJa cLcwTh"
 >
   <span>
     Content!
@@ -12,7 +12,7 @@ exports[`Column renders correctly when small value is 0 1`] = `
 
 exports[`Column renders correctly when value is 0 1`] = `
 <div
-  class="sc-bdVaJa fFxxKd"
+  class="sc-bdVaJa ehjAlo"
 >
   <span>
     Content!
@@ -22,7 +22,7 @@ exports[`Column renders correctly when value is 0 1`] = `
 
 exports[`Column renders correctly without any props 1`] = `
 <div
-  class="sc-bdVaJa fVSYzJ"
+  class="sc-bdVaJa dYqqbX"
 >
   <span>
     Content!

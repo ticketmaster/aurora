@@ -46,7 +46,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon bPHzCq"
+    className="search--clear-icon fvawDG"
     onClick={[Function]}
     value=""
   >
@@ -73,7 +73,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon dInpBw"
     onClick={[Function]}
   >
     Cancel
@@ -127,7 +127,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon bPHzCq"
+    className="search--clear-icon fvawDG"
     onClick={[Function]}
     value=""
   >
@@ -154,7 +154,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon dInpBw"
     onClick={[Function]}
   >
     Cancel
@@ -208,7 +208,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon boklFi"
+    className="search--clear-icon dvEYrI"
     onClick={[Function]}
     value=""
   >
@@ -235,7 +235,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon eynrqJ"
+    className="search--cancel-icon iCkkRU"
     onClick={[Function]}
   >
     Cancel
@@ -289,7 +289,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon kvTcsu"
+    className="search--clear-icon jbMXgr"
     onClick={[Function]}
     value="test"
   >
@@ -321,7 +321,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon dInpBw"
     onClick={[Function]}
   >
     Cancel
@@ -331,7 +331,7 @@ exports[`SearchInput small should match snapshot 1`] = `
 
 exports[`SearchSuggest should match snapshot 1`] = `
 <div
-  className="fFntOX"
+  className="dWpSgu"
   onChange={[Function]}
   placeholder="Search Demo"
   value=""

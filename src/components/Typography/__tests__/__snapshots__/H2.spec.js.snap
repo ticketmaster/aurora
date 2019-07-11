@@ -2,7 +2,7 @@
 
 exports[`Typography.H2 should render default markup when no props are passed 1`] = `
 <h2
-  className="h2 h2--regular h2--onyx-base fsqIAZ"
+  className="h2 h2--regular h2--onyx-base kUFuNI"
 >
   Hello world
 </h2>
@@ -10,7 +10,7 @@ exports[`Typography.H2 should render default markup when no props are passed 1`]
 
 exports[`Typography.H2 should render with a custom color prop that lacks variants 1`] = `
 <h2
-  className="h2 h2--regular h2--brand-base bNRgai"
+  className="h2 h2--regular h2--brand-base ikLgma"
   color="brand"
 >
   Hello world
@@ -19,7 +19,7 @@ exports[`Typography.H2 should render with a custom color prop that lacks variant
 
 exports[`Typography.H2 should render with a custom weight prop 1`] = `
 <h2
-  className="h2 h2--semiBold h2--onyx-base bNdFcW"
+  className="h2 h2--semiBold h2--onyx-base kDjIsd"
 >
   Hello world
 </h2>
@@ -27,7 +27,7 @@ exports[`Typography.H2 should render with a custom weight prop 1`] = `
 
 exports[`Typography.H2 should render with a textTransform prop 1`] = `
 <h2
-  className="h2 h2--regular h2--onyx-base bLVKpz"
+  className="h2 h2--regular h2--onyx-base giHYUl"
 >
   Hello world
 </h2>
@@ -35,7 +35,7 @@ exports[`Typography.H2 should render with a textTransform prop 1`] = `
 
 exports[`Typography.H2 should render with custom color and variant props 1`] = `
 <h2
-  className="h2 h2--regular h2--accent01-dark eTawyn"
+  className="h2 h2--regular h2--accent01-dark gpKEth"
   color="accent01"
 >
   Hello world
@@ -44,12 +44,12 @@ exports[`Typography.H2 should render with custom color and variant props 1`] = `
 
 exports[`Typography.H2 should render without a theme 1`] = `
 <h2
-  className="h2 h2--regular h2--onyx-base fsqIAZ"
+  className="h2 h2--regular h2--onyx-base kUFuNI"
 />
 `;
 
 exports[`Typography.H2 should render without children 1`] = `
 <h2
-  className="h2 h2--regular h2--onyx-base fsqIAZ"
+  className="h2 h2--regular h2--onyx-base kUFuNI"
 />
 `;

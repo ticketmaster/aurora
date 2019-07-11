@@ -2,7 +2,7 @@
 
 exports[`Gradient renders default 1`] = `
 <span
-  className="Iwzmp"
+  className="jIDulM"
 >
   
 </span>
@@ -10,7 +10,7 @@ exports[`Gradient renders default 1`] = `
 
 exports[`Gradient renders with an img tag for SEO purposes 1`] = `
 <span
-  className="kUyMCU"
+  className="ibeGXJ"
 >
   <img
     className="image image--seo image--hidden fERDWn"
@@ -21,7 +21,7 @@ exports[`Gradient renders with an img tag for SEO purposes 1`] = `
 
 exports[`Gradient renders with children 1`] = `
 <span
-  className="Iwzmp"
+  className="jIDulM"
 >
   
   Content
@@ -30,7 +30,7 @@ exports[`Gradient renders with children 1`] = `
 
 exports[`Gradient renders with overlay gradient 1`] = `
 <span
-  className="gradient--overlay ktHPKL"
+  className="gradient--overlay jjmQGc"
 >
   
 </span>
@@ -38,7 +38,7 @@ exports[`Gradient renders with overlay gradient 1`] = `
 
 exports[`Gradient renders with overlay shadow gradient 1`] = `
 <span
-  className="gradient--overlay-shadow hdbrHG"
+  className="gradient--overlay-shadow hlwTkU"
 >
   
 </span>
@@ -46,7 +46,7 @@ exports[`Gradient renders with overlay shadow gradient 1`] = `
 
 exports[`Gradient renders with spotlight elements 1`] = `
 <span
-  className="gradient--spotlight fPZKNI"
+  className="gradient--spotlight iOUkKC"
 >
   
   <div
@@ -187,7 +187,7 @@ exports[`Gradient renders with spotlight elements 1`] = `
 
 exports[`Gradient renders with underlay gradient 1`] = `
 <span
-  className="gradient--underlay Iwzmp"
+  className="gradient--underlay jIDulM"
 >
   
 </span>
