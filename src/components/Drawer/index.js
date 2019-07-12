@@ -25,10 +25,11 @@ export default class Drawer extends React.Component {
       PropTypes.node,
       PropTypes.func,
       PropTypes.string
-    ])
+    ]),
+    withGradient: PropTypes.bool
   };
 
-  static defaultProps = { children: null, header: null };
+  static defaultProps = { children: null, header: null, withGradient: true };
 
   getHeaderContent = props => {
     const { header } = this.props;
@@ -46,6 +47,26 @@ export default class Drawer extends React.Component {
     return header;
   };
 
+  getHeaderLayout = ({ toggleDrawer, isOpen }) => (
+    <HeaderContent>
+      <div>
+        {this.getHeaderContent({
+          toggleDrawer,
+          isOpen
+        })}
+      </div>
+      <CloseButton type="button" onClick={toggleDrawer}>
+        <HamburgerIcon
+          className={classNames({
+            hamburger: true,
+            "hamburger--opened": isOpen,
+            "hamburger--closed": !isOpen
+          })}
+        />
+      </CloseButton>
+    </HeaderContent>
+  );
+
   renderChildren = props => {
     const { children } = this.props;
     if (typeof children === "function") return children(props);
@@ -53,33 +74,22 @@ export default class Drawer extends React.Component {
     return children;
   };
 
-  renderHeader = ({ toggleDrawer, isOpen }) => (
-    <Gradient
-      className="gradient--spotlight"
-      style={{ height: "60px", position: "relative" }}
-    >
-      <HeaderContent>
-        <div>
-          {this.getHeaderContent({
-            toggleDrawer,
-            isOpen
-          })}
-        </div>
-        <CloseButton type="button" onClick={toggleDrawer}>
-          <HamburgerIcon
-            className={classNames({
-              hamburger: true,
-              "hamburger--opened": isOpen,
-              "hamburger--closed": !isOpen
-            })}
-          />
-        </CloseButton>
-      </HeaderContent>
-    </Gradient>
-  );
+  renderHeader = ({ toggleDrawer, isOpen, withGradient }) => {
+    const headerLayout = this.getHeaderLayout({ toggleDrawer, isOpen });
+    return withGradient ? (
+      <Gradient
+        className="gradient--spotlight"
+        style={{ height: "60px", position: "relative" }}
+      >
+        {headerLayout}
+      </Gradient>
+    ) : (
+      headerLayout
+    );
+  };
 
   render() {
-    const { className, ...rest } = this.props;
+    const { className, withGradient, ...rest } = this.props;
     return (
       <Consumer>
         {({ isOpen, toggleDrawer }) => (
@@ -93,7 +103,8 @@ export default class Drawer extends React.Component {
             <DrawerContent>
               {this.renderHeader({
                 toggleDrawer,
-                isOpen
+                isOpen,
+                withGradient
               })}
               {this.renderChildren({
                 toggleDrawer,
