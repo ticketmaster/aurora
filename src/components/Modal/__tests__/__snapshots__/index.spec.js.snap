@@ -9,7 +9,7 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
       class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
         style="max-height: 100px;"
       >
         <button
@@ -30,7 +30,7 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
       class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
         style="max-height: 100px;"
       >
         <button
@@ -51,7 +51,7 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
       class="sc-bdVaJa gQMJB"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
       >
         <div>
           Modal contents
@@ -78,7 +78,7 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
         </div>
       </div>
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
       >
         <div>
           Modal contents
@@ -112,7 +112,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
         </div>
       </div>
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
       >
         <div>
           Modal contents
@@ -140,7 +140,7 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
       style="width: 210px;"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
       >
         <div>
           Modal contents
@@ -160,7 +160,7 @@ exports[`<Modal /> should recalculate shadows and content height on props change
       class="sc-bdVaJa gylckg open-enter open-enter-active"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
         style="max-height: 100px;"
       >
         <div>
@@ -181,7 +181,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
       class="sc-bdVaJa gylckg"
     >
       <div
-        class="sc-htpNat gcBzNf"
+        class="sc-htpNat CqcgG"
         style="max-height: 100px;"
       >
         <div
