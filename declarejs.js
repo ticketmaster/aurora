@@ -68,7 +68,7 @@ const stubExports = content =>
       .filter(str => !fromPattern.test(str))
       .map(stubExportAs)
   ]
-    .flat()
+    .flat(Number.MAX_VALUE)
     .join("\n");
 
 const createDeclaration = name => {
