@@ -3,7 +3,14 @@ import React, { Component, ValidationMap, PropsWithChildren } from "react";
 import PropTypes from "prop-types";
 
 import { StyledButton, StyledButtonLink } from "./Base.styles";
-import { SIZES, REGULAR, BUTTON_VARIANTS, STANDARD, ButtonVariant, Size } from "../constants";
+import {
+  SIZES,
+  REGULAR,
+  BUTTON_VARIANTS,
+  STANDARD,
+  ButtonVariant,
+  Size
+} from "../constants";
 import { getRelByTarget } from "../../utils/link";
 
 export interface ButtonProps {
@@ -23,6 +30,19 @@ function isButtonLinkProps(props: ButtonProps): props is ButtonLinkProps {
 }
 
 class Button extends Component<ButtonProps> {
+  static displayName = "Button";
+
+  static propTypes: ValidationMap<PropsWithChildren<ButtonProps>> = {
+    variant: PropTypes.oneOf(BUTTON_VARIANTS),
+    size: PropTypes.oneOf(SIZES),
+    children: PropTypes.node.isRequired
+  };
+
+  static defaultProps: ButtonProps = {
+    size: REGULAR,
+    variant: STANDARD
+  };
+
   componentDidMount() {
     if (!isButtonLinkProps(this.props) && this.button && this.button.current) {
       // this functionality is required to avoid focus outline on click but keep it on tab focus
@@ -86,19 +106,6 @@ class Button extends Component<ButtonProps> {
         {children}
       </StyledButton>
     );
-  }
-
-  static displayName = 'Button';
-
-  static propTypes: ValidationMap<PropsWithChildren<ButtonProps>> = {
-    variant: PropTypes.oneOf(BUTTON_VARIANTS),
-    size: PropTypes.oneOf(SIZES),
-    children: PropTypes.node.isRequired
-  }
-
-  static defaultProps: ButtonProps = {
-    size: REGULAR,
-    variant: STANDARD
   }
 }
 

@@ -8,7 +8,7 @@
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [".js"]
+        "extensions": [".js", ".tsx"]
       }
     ],
     "import/no-extraneous-dependencies": [
@@ -22,11 +22,20 @@
       {
         "functions": false
       }
-    ]
+    ],
+    "import/extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
   },
   "globals": {
     "document": true
   },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "no-unused-vars": ["off"]
+      }
+    }
+  ],
   "settings": {
     "import/resolver": {
       "node": {
