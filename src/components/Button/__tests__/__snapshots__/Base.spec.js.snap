@@ -4,7 +4,6 @@ exports[`<Button /> renders link button correctly 1`] = `
 <a
   className="kHnYRc"
   href="/"
-  rel={undefined}
   size="regular"
 >
   Dummy Label

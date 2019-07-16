@@ -156,7 +156,6 @@ exports[`Drawer renders default drawer 1`] = `
         <div />
         <button
           className="fKLvED"
-          onClick={undefined}
           type="button"
         >
           <span
@@ -333,7 +332,6 @@ exports[`Drawer renders header elements 1`] = `
         </div>
         <button
           className="fKLvED"
-          onClick={undefined}
           type="button"
         >
           <span
@@ -509,7 +507,6 @@ exports[`Drawer renders multiple child elements 1`] = `
         <div />
         <button
           className="fKLvED"
-          onClick={undefined}
           type="button"
         >
           <span
@@ -699,7 +696,6 @@ exports[`Drawer renders string header header 1`] = `
         </div>
         <button
           className="fKLvED"
-          onClick={undefined}
           type="button"
         >
           <span

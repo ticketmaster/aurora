@@ -99,7 +99,6 @@ exports[`CalendarView should render without errors 1`] = `
           <a
             className="eKBcpm"
             href="#"
-            rel={undefined}
             size="small"
           >
             2:00 pm
@@ -111,7 +110,6 @@ exports[`CalendarView should render without errors 1`] = `
           <a
             className="eKBcpm"
             href="#"
-            rel={undefined}
             size="small"
           >
             6:00 pm
@@ -195,7 +193,6 @@ exports[`CalendarView should render without errors 1`] = `
           <a
             className="eKBcpm"
             href="#"
-            rel={undefined}
             size="small"
           >
             2:00 pm
@@ -207,7 +204,6 @@ exports[`CalendarView should render without errors 1`] = `
           <a
             className="eKBcpm"
             href="#"
-            rel={undefined}
             size="small"
           >
             6:00 pm

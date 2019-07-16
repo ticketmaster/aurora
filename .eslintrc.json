@@ -1,12 +1,21 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "env": { "jest": true },
+  "env": {
+    "jest": true
+  },
   "rules": {
-    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js"]
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/*.spec.js", "catalog/**/*", "config/**/*"] }
+      {
+        "devDependencies": ["**/*.spec.js", "catalog/**/*", "config/**/*"]
+      }
     ],
     "no-use-before-define": [
       "error",
@@ -17,5 +26,12 @@
   },
   "globals": {
     "document": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }
