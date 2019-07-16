@@ -5,15 +5,19 @@
 const path = require("path");
 const fs = require("fs");
 
-// eslint-disable-next-line no-extend-native
-Array.prototype.flat = function flat() {
-  return [].concat(...this);
-};
+if (typeof Array.prototype.flat !== "function") {
+  // eslint-disable-next-line no-extend-native
+  Array.prototype.flat = function flat() {
+    return [].concat(...this);
+  };
+}
 
-// eslint-disable-next-line no-extend-native
-Array.prototype.flatMap = function flatMap(mapper) {
-  return this.map(mapper).flat();
-};
+if (typeof Array.prototype.flatMap !== "function") {
+  // eslint-disable-next-line no-extend-native
+  Array.prototype.flatMap = function flatMap(mapper) {
+    return this.map(mapper).flat();
+  };
+}
 
 const srcPath = path.resolve(__dirname, "src");
 const libPath = path.resolve(__dirname, "lib");
