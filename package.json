@@ -83,7 +83,7 @@
     "@babel/plugin-proposal-throw-expressions": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "~7.1.4",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@types/jest": "^24.0.15",
@@ -133,7 +133,9 @@
   "resolutions": {
     "babel-core": "7.0.0-bridge.0",
     "istanbul-reports": "^2.1.1",
-    "js-yaml": "^3.13.1"
+    "js-yaml": "^3.13.1",
+    "lodash": "~4.17.14",
+    "merge": "~1.2.1"
   },
   "homepage": "https://code.ticketmaster.com/aurora/",
   "repository": {

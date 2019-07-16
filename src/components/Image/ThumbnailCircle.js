@@ -8,15 +8,19 @@ const RoundContainer = styled.div`
   border: solid 1px ${colors.lightGray};
   align-items: center;
   justify-content: center;
-  width: ${props => props.size}px;
-  height: ${props => props.size}px;
   border-radius: 50%;
   overflow: hidden;
+  display: flex;
+  position: relative;
+  padding-top: ${({ size }) => (size ? `${size}px` : "100%")};
+  width: ${({ size }) => (size ? `${size}px` : "100%")};
 `;
 
 const Image = styled.img`
-  width: 100%;
+  position: absolute;
   height: 100%;
+  width: auto;
+  top: 0;
 `;
 const ThumbnailCircle = ({ size, src, alt, ...props }) => (
   <RoundContainer size={size}>
@@ -28,7 +32,7 @@ ThumbnailCircle.defaultProps = {
   alt: "",
   src: "",
   image: null,
-  size: 40
+  size: 0
 };
 
 ThumbnailCircle.propTypes = {
