@@ -5,6 +5,16 @@
 const path = require("path");
 const fs = require("fs");
 
+// eslint-disable-next-line no-extend-native
+Array.prototype.flat = function flat() {
+  return [].concat(...this);
+};
+
+// eslint-disable-next-line no-extend-native
+Array.prototype.flatMap = function flatMap(mapper) {
+  return this.map(mapper).flat();
+};
+
 const srcPath = path.resolve(__dirname, "src");
 const libPath = path.resolve(__dirname, "lib");
 const exportPattern = /^\s*export[\s\n\r]+(default|class|const|var|let)[\s\n\r]+([a-zA-Z0-9_$]+)?/gm;
@@ -30,10 +40,9 @@ const stubExportAs = line =>
 
 const readdirRecursive = dirname =>
   fs
-    .readdirSync(dirname, { withFileTypes: true })
-    .map(dirent =>
-      Object.assign(dirent, { joinedPath: path.join(dirname, dirent.name) })
-    )
+    .readdirSync(dirname)
+    .map(file => path.join(dirname, file))
+    .map(joinedPath => Object.assign(fs.statSync(joinedPath), { joinedPath }))
     .flatMap(dirent => {
       if (dirent.isFile()) {
         return [dirent.joinedPath];
@@ -67,17 +76,25 @@ const stubExports = content =>
       .map(match => match[0])
       .filter(str => !fromPattern.test(str))
       .map(stubExportAs)
+      .flat()
   ]
-    .flat(Number.MAX_VALUE)
+    .flat()
     .join("\n");
 
 const createDeclaration = name => {
   const outFile = path.join(libPath, noext`${name}.d.ts`);
   const inFile = path.join(srcPath, name);
 
-  fs.mkdirSync(path.dirname(outFile), { recursive: true });
+  mkdirRecursiveSync(path.dirname(outFile));
   fs.writeFileSync(outFile, stubExports(fs.readFileSync(inFile), "utf8"));
 };
+
+function mkdirRecursiveSync(dirpath) {
+  if (!fs.existsSync(dirpath)) {
+    mkdirRecursiveSync(path.dirname(dirpath));
+    fs.mkdirSync(dirpath);
+  }
+}
 
 function* matchesGenerator(str, re) {
   let m = re.exec(str);
