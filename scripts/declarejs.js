@@ -19,8 +19,8 @@ if (typeof Array.prototype.flatMap !== "function") {
   };
 }
 
-const srcPath = path.resolve(__dirname, "src");
-const libPath = path.resolve(__dirname, "lib");
+const srcPath = path.resolve(__dirname, "..", "src");
+const libPath = path.resolve(__dirname, "..", "lib");
 const exportPattern = /^\s*export[\s\n\r]+(default|class|const|var|let)[\s\n\r]+([a-zA-Z0-9_$]+)?/gm;
 const exportSymbolsPattern = /^\s*export\s*\{[^}]*}[^;]*;/gm;
 const fromPattern = /\bfrom\b/;

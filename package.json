@@ -31,7 +31,7 @@
     "test:ci": "NODE_ENV=test jest --changedSince=master --runInBand",
     "add-icons": "pixo $* --out-dir src/components/Icons",
     "tsc:declaration": "tsc -p tsconfig.declaration.json",
-    "posttsc:declaration": "node declarejs.js"
+    "posttsc:declaration": "node scripts/declarejs.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
