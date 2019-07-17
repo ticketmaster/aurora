@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Drawer renders default drawer 1`] = `
-<div
-  className="kDkfKC"
+<DrawerContainer
+  className=""
 >
-  <div
-    className="bwUIrh"
-  >
-    <span
-      className="gradient--spotlight fZjdFM"
+  <DrawerContent>
+    <Gradient
+      className="gradient--spotlight"
       style={
         Object {
           "height": "60px",
@@ -16,171 +14,32 @@ exports[`Drawer renders default drawer 1`] = `
         }
       }
     >
-      
-      <div
-        className="nBCnm"
-      >
-        <svg
-          className="czenYD"
-          preserveAspectRatio="xMinYMid meet"
-          viewBox="0 0 1440 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="a"
-              x1="61.654%"
-              x2="3.355%"
-              y1="100%"
-              y2="0%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#024691"
-              />
-              <stop
-                offset="52.996%"
-                stopColor="#BADBFE"
-              />
-              <stop
-                offset="100%"
-                stopColor="#C56BFF"
-              />
-            </linearGradient>
-            <linearGradient
-              id="c"
-              x1="74.395%"
-              x2=".532%"
-              y1="129.212%"
-              y2="-28.101%"
-            >
-              <stop
-                offset="0%"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-              <stop
-                offset="100%"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-            </linearGradient>
-            <path
-              d="M0 .748h138.365l1325.043 217.52H413.554z"
-              id="b"
-            />
-          </defs>
-          <g
-            fill="none"
-            fillRule="nonzero"
-            opacity=".102"
-            transform="translate(-20)"
-          >
-            <use
-              fill="url(#a)"
-              xlinkHref="#b"
-            />
-            <use
-              fill="url(#c)"
-              xlinkHref="#b"
-            />
-          </g>
-        </svg>
-        <svg
-          className="gWfTKb"
-          preserveAspectRatio="xMaxYMid meet"
-          viewBox="0 0 476 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="Angle-linearGradient-1"
-              x1="21.6784013%"
-              x2="53.474493%"
-              y1="112.586732%"
-              y2="23.9282924%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#000000"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-            opacity="0.0490513393"
-            stroke="none"
-            strokeWidth="1"
-          >
-            <g
-              fill="url(#Angle-linearGradient-1)"
-              fillRule="nonzero"
-              transform="translate(-1016.000000, -184.000000)"
-            >
-              <g
-                transform="translate(52.000000, 184.000000)"
-              >
-                <g
-                  transform="translate(-20.000000, 0.000000)"
-                >
-                  <polygon
-                    points="984.668337 0 1460 218 984.668337 218"
-                    transform="translate(1222.334169, 109.000000) scale(-1, 1) translate(-1222.334169, -109.000000) "
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div
-        className="fgRSsp"
-      >
+      <HeaderContent>
         <div />
-        <button
-          className="fKLvED"
+        <CloseButton
           type="button"
         >
           <span
-            className="hamburger hamburger--closed hjDmZH"
+            className="hamburger hamburger--closed kQQPwz"
           >
             <span
-              className="kpXvGB"
+              className="ggAQg"
             />
           </span>
-        </button>
-      </div>
-    </span>
-  </div>
-</div>
+        </CloseButton>
+      </HeaderContent>
+    </Gradient>
+  </DrawerContent>
+</DrawerContainer>
 `;
 
 exports[`Drawer renders header elements 1`] = `
-<div
-  className="kDkfKC"
+<DrawerContainer
+  className=""
 >
-  <div
-    className="bwUIrh"
-  >
-    <span
-      className="gradient--spotlight fZjdFM"
+  <DrawerContent>
+    <Gradient
+      className="gradient--spotlight"
       style={
         Object {
           "height": "60px",
@@ -188,178 +47,39 @@ exports[`Drawer renders header elements 1`] = `
         }
       }
     >
-      
-      <div
-        className="nBCnm"
-      >
-        <svg
-          className="czenYD"
-          preserveAspectRatio="xMinYMid meet"
-          viewBox="0 0 1440 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="a"
-              x1="61.654%"
-              x2="3.355%"
-              y1="100%"
-              y2="0%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#024691"
-              />
-              <stop
-                offset="52.996%"
-                stopColor="#BADBFE"
-              />
-              <stop
-                offset="100%"
-                stopColor="#C56BFF"
-              />
-            </linearGradient>
-            <linearGradient
-              id="c"
-              x1="74.395%"
-              x2=".532%"
-              y1="129.212%"
-              y2="-28.101%"
-            >
-              <stop
-                offset="0%"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-              <stop
-                offset="100%"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-            </linearGradient>
-            <path
-              d="M0 .748h138.365l1325.043 217.52H413.554z"
-              id="b"
-            />
-          </defs>
-          <g
-            fill="none"
-            fillRule="nonzero"
-            opacity=".102"
-            transform="translate(-20)"
-          >
-            <use
-              fill="url(#a)"
-              xlinkHref="#b"
-            />
-            <use
-              fill="url(#c)"
-              xlinkHref="#b"
-            />
-          </g>
-        </svg>
-        <svg
-          className="gWfTKb"
-          preserveAspectRatio="xMaxYMid meet"
-          viewBox="0 0 476 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="Angle-linearGradient-1"
-              x1="21.6784013%"
-              x2="53.474493%"
-              y1="112.586732%"
-              y2="23.9282924%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#000000"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-            opacity="0.0490513393"
-            stroke="none"
-            strokeWidth="1"
-          >
-            <g
-              fill="url(#Angle-linearGradient-1)"
-              fillRule="nonzero"
-              transform="translate(-1016.000000, -184.000000)"
-            >
-              <g
-                transform="translate(52.000000, 184.000000)"
-              >
-                <g
-                  transform="translate(-20.000000, 0.000000)"
-                >
-                  <polygon
-                    points="984.668337 0 1460 218 984.668337 218"
-                    transform="translate(1222.334169, 109.000000) scale(-1, 1) translate(-1222.334169, -109.000000) "
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div
-        className="fgRSsp"
-      >
+      <HeaderContent>
         <div>
           <span>
             Some Title Element
           </span>
         </div>
-        <button
-          className="fKLvED"
+        <CloseButton
           type="button"
         >
           <span
-            className="hamburger hamburger--closed hjDmZH"
+            className="hamburger hamburger--closed kQQPwz"
           >
             <span
-              className="kpXvGB"
+              className="ggAQg"
             />
           </span>
-        </button>
-      </div>
-    </span>
+        </CloseButton>
+      </HeaderContent>
+    </Gradient>
     <span>
       Content
     </span>
-  </div>
-</div>
+  </DrawerContent>
+</DrawerContainer>
 `;
 
 exports[`Drawer renders multiple child elements 1`] = `
-<div
-  className="kDkfKC"
+<DrawerContainer
+  className=""
 >
-  <div
-    className="bwUIrh"
-  >
-    <span
-      className="gradient--spotlight fZjdFM"
+  <DrawerContent>
+    <Gradient
+      className="gradient--spotlight"
       style={
         Object {
           "height": "60px",
@@ -367,158 +87,21 @@ exports[`Drawer renders multiple child elements 1`] = `
         }
       }
     >
-      
-      <div
-        className="nBCnm"
-      >
-        <svg
-          className="czenYD"
-          preserveAspectRatio="xMinYMid meet"
-          viewBox="0 0 1440 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="a"
-              x1="61.654%"
-              x2="3.355%"
-              y1="100%"
-              y2="0%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#024691"
-              />
-              <stop
-                offset="52.996%"
-                stopColor="#BADBFE"
-              />
-              <stop
-                offset="100%"
-                stopColor="#C56BFF"
-              />
-            </linearGradient>
-            <linearGradient
-              id="c"
-              x1="74.395%"
-              x2=".532%"
-              y1="129.212%"
-              y2="-28.101%"
-            >
-              <stop
-                offset="0%"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-              <stop
-                offset="100%"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-            </linearGradient>
-            <path
-              d="M0 .748h138.365l1325.043 217.52H413.554z"
-              id="b"
-            />
-          </defs>
-          <g
-            fill="none"
-            fillRule="nonzero"
-            opacity=".102"
-            transform="translate(-20)"
-          >
-            <use
-              fill="url(#a)"
-              xlinkHref="#b"
-            />
-            <use
-              fill="url(#c)"
-              xlinkHref="#b"
-            />
-          </g>
-        </svg>
-        <svg
-          className="gWfTKb"
-          preserveAspectRatio="xMaxYMid meet"
-          viewBox="0 0 476 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="Angle-linearGradient-1"
-              x1="21.6784013%"
-              x2="53.474493%"
-              y1="112.586732%"
-              y2="23.9282924%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#000000"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-            opacity="0.0490513393"
-            stroke="none"
-            strokeWidth="1"
-          >
-            <g
-              fill="url(#Angle-linearGradient-1)"
-              fillRule="nonzero"
-              transform="translate(-1016.000000, -184.000000)"
-            >
-              <g
-                transform="translate(52.000000, 184.000000)"
-              >
-                <g
-                  transform="translate(-20.000000, 0.000000)"
-                >
-                  <polygon
-                    points="984.668337 0 1460 218 984.668337 218"
-                    transform="translate(1222.334169, 109.000000) scale(-1, 1) translate(-1222.334169, -109.000000) "
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div
-        className="fgRSsp"
-      >
+      <HeaderContent>
         <div />
-        <button
-          className="fKLvED"
+        <CloseButton
           type="button"
         >
           <span
-            className="hamburger hamburger--closed hjDmZH"
+            className="hamburger hamburger--closed kQQPwz"
           >
             <span
-              className="kpXvGB"
+              className="ggAQg"
             />
           </span>
-        </button>
-      </div>
-    </span>
+        </CloseButton>
+      </HeaderContent>
+    </Gradient>
     <span>
       Content
     </span>
@@ -528,19 +111,17 @@ exports[`Drawer renders multiple child elements 1`] = `
     <span>
       Content
     </span>
-  </div>
-</div>
+  </DrawerContent>
+</DrawerContainer>
 `;
 
 exports[`Drawer renders string header header 1`] = `
-<div
-  className="kDkfKC"
+<DrawerContainer
+  className=""
 >
-  <div
-    className="bwUIrh"
-  >
-    <span
-      className="gradient--spotlight fZjdFM"
+  <DrawerContent>
+    <Gradient
+      className="gradient--spotlight"
       style={
         Object {
           "height": "60px",
@@ -548,167 +129,30 @@ exports[`Drawer renders string header header 1`] = `
         }
       }
     >
-      
-      <div
-        className="nBCnm"
-      >
-        <svg
-          className="czenYD"
-          preserveAspectRatio="xMinYMid meet"
-          viewBox="0 0 1440 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="a"
-              x1="61.654%"
-              x2="3.355%"
-              y1="100%"
-              y2="0%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#024691"
-              />
-              <stop
-                offset="52.996%"
-                stopColor="#BADBFE"
-              />
-              <stop
-                offset="100%"
-                stopColor="#C56BFF"
-              />
-            </linearGradient>
-            <linearGradient
-              id="c"
-              x1="74.395%"
-              x2=".532%"
-              y1="129.212%"
-              y2="-28.101%"
-            >
-              <stop
-                offset="0%"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-              <stop
-                offset="100%"
-              />
-              <stop
-                offset="100%"
-                stopOpacity=".4"
-              />
-            </linearGradient>
-            <path
-              d="M0 .748h138.365l1325.043 217.52H413.554z"
-              id="b"
-            />
-          </defs>
-          <g
-            fill="none"
-            fillRule="nonzero"
-            opacity=".102"
-            transform="translate(-20)"
-          >
-            <use
-              fill="url(#a)"
-              xlinkHref="#b"
-            />
-            <use
-              fill="url(#c)"
-              xlinkHref="#b"
-            />
-          </g>
-        </svg>
-        <svg
-          className="gWfTKb"
-          preserveAspectRatio="xMaxYMid meet"
-          viewBox="0 0 476 218"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
-          <defs>
-            <linearGradient
-              id="Angle-linearGradient-1"
-              x1="21.6784013%"
-              x2="53.474493%"
-              y1="112.586732%"
-              y2="23.9282924%"
-            >
-              <stop
-                offset="0%"
-                stopColor="#000000"
-                stopOpacity="0"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-              <stop
-                offset="100%"
-                stopColor="#000000"
-              />
-            </linearGradient>
-          </defs>
-          <g
-            fill="none"
-            fillRule="evenodd"
-            opacity="0.0490513393"
-            stroke="none"
-            strokeWidth="1"
-          >
-            <g
-              fill="url(#Angle-linearGradient-1)"
-              fillRule="nonzero"
-              transform="translate(-1016.000000, -184.000000)"
-            >
-              <g
-                transform="translate(52.000000, 184.000000)"
-              >
-                <g
-                  transform="translate(-20.000000, 0.000000)"
-                >
-                  <polygon
-                    points="984.668337 0 1460 218 984.668337 218"
-                    transform="translate(1222.334169, 109.000000) scale(-1, 1) translate(-1222.334169, -109.000000) "
-                  />
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div
-        className="fgRSsp"
-      >
+      <HeaderContent>
         <div>
           <div
-            className="text text--light text--primary bdJGfZ"
+            className="text text--light text--primary jYWnxl"
             disabled={false}
             size="kilo"
           >
             Some Title
           </div>
         </div>
-        <button
-          className="fKLvED"
+        <CloseButton
           type="button"
         >
           <span
-            className="hamburger hamburger--closed hjDmZH"
+            className="hamburger hamburger--closed kQQPwz"
           >
             <span
-              className="kpXvGB"
+              className="ggAQg"
             />
           </span>
-        </button>
-      </div>
-    </span>
+        </CloseButton>
+      </HeaderContent>
+    </Gradient>
     Content
-  </div>
-</div>
+  </DrawerContent>
+</DrawerContainer>
 `;
