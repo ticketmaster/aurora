@@ -5,7 +5,7 @@ import spacing from "../../theme/spacing";
 import getThemeValue from "../../utils/getThemeValue";
 
 export const DrawerContainer = styled.div`
-  background-color: ${getThemeValue("onyx", "base")};
+  background-color: ${getThemeValue("dark", "base")};
   color: ${getThemeValue("white", "base")};
   height: 100%;
   position: fixed;

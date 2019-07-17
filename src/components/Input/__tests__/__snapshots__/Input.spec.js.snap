@@ -9,7 +9,6 @@ exports[`Input renders default input 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       id="test1__input"
       name="test1"
@@ -34,7 +33,6 @@ exports[`Input renders disabled input 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       disabled=""
       id="test1__input"
@@ -60,7 +58,6 @@ exports[`Input renders input with error 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       id="test1__input"
       name="test1"
@@ -74,6 +71,28 @@ exports[`Input renders input with error 1`] = `
     >
       Something Went Wrong
     </label>
+  </div>
+</div>
+`;
+
+exports[`Input renders input without name 1`] = `
+<div
+  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
+>
+  
+  <div
+    class="sc-htpNat eXpulu"
+  >
+    <input
+      class="sc-bxivhb hBvKYg"
+      placeholder="test hint"
+      type="text"
+    />
+    <label
+      aria-invalid="false"
+      class="sc-ifAKCX gWpzXV"
+      role="alert"
+    />
   </div>
 </div>
 `;
@@ -118,7 +137,6 @@ exports[`Input renders left labeled input 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       id="test1__input"
       name="test1"
@@ -143,7 +161,6 @@ exports[`Input renders small input 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       id="test1__input"
       name="test1"
@@ -169,7 +186,6 @@ exports[`Input renders top labeled input 1`] = `
     class="sc-htpNat eXpulu"
   >
     <input
-      aria-labelledby="test1__label"
       class="sc-bxivhb hBvKYg"
       id="test1__input"
       name="test1"
