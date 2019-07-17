@@ -22,7 +22,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item ffrasD"
-      href={undefined}
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -65,9 +64,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item djhIjf"
-      href={undefined}
       onClick={[Function]}
-      onItemClick={undefined}
       role="link"
     >
       <div
@@ -191,7 +188,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item ffrasD"
-      href={undefined}
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -221,7 +217,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item ffrasD"
-      href={undefined}
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -267,7 +262,6 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     <div
       aria-label="Section Item"
       className="section-item ffrasD"
-      href={undefined}
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"

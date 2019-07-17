@@ -17,7 +17,6 @@ exports[`Drawer renders default drawer 1`] = `
       <HeaderContent>
         <div />
         <CloseButton
-          onClick={undefined}
           type="button"
         >
           <span
@@ -55,7 +54,6 @@ exports[`Drawer renders header elements 1`] = `
           </span>
         </div>
         <CloseButton
-          onClick={undefined}
           type="button"
         >
           <span
@@ -92,7 +90,6 @@ exports[`Drawer renders multiple child elements 1`] = `
       <HeaderContent>
         <div />
         <CloseButton
-          onClick={undefined}
           type="button"
         >
           <span
@@ -143,7 +140,6 @@ exports[`Drawer renders string header header 1`] = `
           </div>
         </div>
         <CloseButton
-          onClick={undefined}
           type="button"
         >
           <span

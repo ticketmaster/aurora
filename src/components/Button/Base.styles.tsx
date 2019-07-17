@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled, { StyledComponent } from "styled-components";
 
-import { SPECIAL } from "../constants";
+import { SPECIAL, Size, ButtonVariant } from "../constants";
 import { typography, constants, themes } from "../../theme";
 
 const colorVariants = {
@@ -84,9 +84,15 @@ const SIZES = {
   }
 };
 
+interface StyledButtonProps {
+  readonly size: Size;
+  readonly variant: ButtonVariant;
+  readonly noTransform?: boolean;
+}
+
 const getPadding = ({ size }) => SIZES[size].padding;
 
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<StyledButtonProps>`
   font-weight: ${typography.weight.semiBold};
   font-size: ${({ size }) => SIZES[size].fontSize};
   line-height: ${({ size }) => SIZES[size].lineHeight};
@@ -108,9 +114,9 @@ export const StyledButton = styled.button`
   }};
   border: 1px solid
     ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return colorVariants[variant](buttonTheme).borderColor;
-    }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[variant](buttonTheme).borderColor;
+  }};
 
   transition: transform 0.1s linear;
   transition: background-color 0.3s ${constants.easing.easeInOutQuad};
@@ -118,44 +124,44 @@ export const StyledButton = styled.button`
   &:focus {
     outline: none;
     box-shadow: ${({ theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return `0 0 5px 0 ${buttonTheme.primary.base}`;
-    }};
+    const buttonTheme = themes[themeName];
+    return `0 0 5px 0 ${buttonTheme.primary.base}`;
+  }};
   }
 
   &:hover {
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return colorVariants[variant](buttonTheme).backgroundColorHover;
-    }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[variant](buttonTheme).backgroundColorHover;
+  }};
   }
 
   &:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return colorVariants[variant](buttonTheme).backgroundColorPressed;
-    }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[variant](buttonTheme).backgroundColorPressed;
+  }};
   }
 
   &:disabled {
     transform: none;
     color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return colorVariants[variant](buttonTheme).color;
-    }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[variant](buttonTheme).color;
+  }};
 
     background-color: ${({ variant, theme: { themeName } }) => {
-      const buttonTheme = themes[themeName];
-      return colorVariants[`${variant}Disabled`](buttonTheme).backgroundColor;
-    }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[`${variant}Disabled`](buttonTheme).backgroundColor;
+  }};
     border: 1px solid
       ${({ variant, theme: { themeName } }) => {
-        const buttonTheme = themes[themeName];
-        return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
-      }};
+    const buttonTheme = themes[themeName];
+    return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
+  }};
     ${({ variant }) =>
-      variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
+    variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
 
 
@@ -170,7 +176,7 @@ StyledButton.defaultProps = {
   }
 };
 
-export const StyledButtonLink = styled(StyledButton)`
+export const StyledButtonLink = styled(StyledButton as StyledComponent<"a", any, StyledButtonProps, never>)`
   display: block;
   text-decoration: none;
 `;

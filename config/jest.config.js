@@ -3,6 +3,7 @@ import renderer from "react-test-renderer";
 import { ThemeProvider } from "styled-components";
 
 import "jest-styled-components";
+import "regenerator-runtime";
 
 global.componentSnapshotWithTheme = (
   Component,
