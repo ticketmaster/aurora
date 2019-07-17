@@ -10,6 +10,7 @@
     "ticketmaster"
   ],
   "main": "dist/index.cjs.js",
+  "types": "lib/index.d.ts",
   "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "files": [
