@@ -27,7 +27,7 @@ export const Container = styled.div`
   transition: max-height 0.3s ${constants.easing.easeInOutQuad},
     opacity 0.3s ${constants.easing.easeInQuad};
   background-color: ${getThemeValue("white", "muted")};
-  box-sizing: border-box;
+  box-sizing: content-box;
   opacity: 0;
 
   &.visible-banner {

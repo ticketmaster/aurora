@@ -5,7 +5,7 @@ exports[`<Banner /> renders correctly when closed 1`] = `<div />`;
 exports[`<Banner /> renders correctly when open 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -32,7 +32,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
 exports[`<Banner /> renders correctly when variant is set 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -91,7 +91,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 exports[`<Banner /> renders correctly with close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -150,7 +150,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 exports[`<Banner /> renders correctly with content 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -179,7 +179,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
 exports[`<Banner /> renders correctly with custom icon 1`] = `
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -230,7 +230,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 exports[`<Banner /> renders correctly with custom title for the close button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -287,7 +287,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
@@ -346,7 +346,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 exports[`<Banner /> renders correctly with link 1`] = `
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi bsKZGS"
+    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
     style="max-height: 56px;"
   >
     <div
