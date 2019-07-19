@@ -14,17 +14,17 @@ const RoundContainer = styled.div`
   position: relative;
   padding-top: ${({ size }) => (size ? `${size}px` : "100%")};
   width: ${({ size }) => (size ? `${size}px` : "100%")};
+  & > img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+  }
 `;
 
-const Image = styled.img`
-  position: absolute;
-  height: 100%;
-  width: auto;
-  top: 0;
-`;
 const ThumbnailCircle = ({ size, src, alt, ...props }) => (
   <RoundContainer size={size}>
-    {props.image || <Image src={src} alt={alt} />}
+    {props.image || <img src={src} alt={alt} />}
   </RoundContainer>
 );
 
