@@ -4,8 +4,19 @@ export const BOTTOM = "bottom";
 export const LEFT = "left";
 export const RIGHT = "right";
 export const AUTO = "auto";
-export const DIRECTIONS: ReadonlyArray<Direction> = [TOP, BOTTOM, LEFT, RIGHT, AUTO];
-export type Direction = typeof TOP | typeof BOTTOM | typeof LEFT | typeof RIGHT | typeof AUTO;
+export const DIRECTIONS: ReadonlyArray<Direction> = [
+  TOP,
+  BOTTOM,
+  LEFT,
+  RIGHT,
+  AUTO
+];
+export type Direction =
+  | typeof TOP
+  | typeof BOTTOM
+  | typeof LEFT
+  | typeof RIGHT
+  | typeof AUTO;
 
 // VARIANTS
 export const LIGHT = "light";
@@ -26,7 +37,12 @@ export const BUTTON_VARIANTS: ReadonlyArray<ButtonVariant> = [
   OUTLINE_GRAY,
   TRANSPARENT
 ];
-export type ButtonVariant = typeof STANDARD | typeof SPECIAL | typeof OUTLINE | typeof OUTLINE_GRAY | typeof TRANSPARENT;
+export type ButtonVariant =
+  | typeof STANDARD
+  | typeof SPECIAL
+  | typeof OUTLINE
+  | typeof OUTLINE_GRAY
+  | typeof TRANSPARENT;
 
 // SIZES
 export const SMALL = "small";
@@ -40,7 +56,8 @@ export type Size = typeof SMALL | typeof REGULAR | typeof LARGE;
 export const ARROW_WIDTH = 12;
 
 // WEIGHTS
-export const EXTRA_BOLD = "extraBold";
+export const EXTRA_BOLD = "extraBold"; // NOTE `extraBold` TOKEN IS DEPRECATED, USE `semiBold` instead
+export const SEMI_BOLD = "semiBold";
 export type Weight = typeof EXTRA_BOLD;
 
 // THEME COLORS

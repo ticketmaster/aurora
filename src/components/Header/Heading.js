@@ -12,8 +12,9 @@ const Span = styled.span`
   font-weight: ${typography.weight.light};
 `;
 
+// NONE: extraBold TOKEN IS DEPRECATED, USE semiBold INSTEAD
 const Strong = styled(Span)`
-  font-weight: ${typography.weight.extraBold};
+  font-weight: ${typography.weight.semiBold};
 `;
 
 const Margins = styled.span`
@@ -63,7 +64,7 @@ Heading.propTypes = {
     medium: PropTypes.oneOf(Object.keys(typography.size)),
     large: PropTypes.oneOf(Object.keys(typography.size))
   }),
-  weight: PropTypes.oneOf(["light", "regular", "extraBold"]),
+  weight: PropTypes.oneOf(Object.keys(typography.weight)),
   lineHeight: PropTypes.oneOf(Object.keys(typography.lineHeight)),
   monospace: PropTypes.bool,
   children: PropTypes.node

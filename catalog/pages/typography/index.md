@@ -19,8 +19,8 @@ rows:
     Notes: Determines the variant of the color prop passed to be applied to the underlying element. See the second level keys of the [colorThemes](https://github.com/ticketmaster/aurora/blob/master/src/theme/colorThemes.js) objects named `global`, `tm`, and `lne`. If the desired color lacks variants (it is a string, rather than an object), pass a falsy value for this prop.
   - Prop: weight
     Type: string
-    Default: extraBold for H1; regular for H2-4 and P1-4
-    Notes: Determines the font-weight to be applied to the underlying element. Values include `light`, `regular`, `semiBold`, and `extraBold`. Please see the [typography file](https://github.com/ticketmaster/aurora/blob/master/src/theme/typography.js) for each weight's value.
+    Default: semiBold for H1; regular for H2-4 and P1-4
+    Notes: Determines the font-weight to be applied to the underlying element. Values include `light`, `regular`, and`semiBold`. Please see the [typography file](https://github.com/ticketmaster/aurora/blob/master/src/theme/typography.js) for each weight's value.
 ```
 
 ```react
@@ -127,10 +127,6 @@ rows:
     <div style={fontWeightLabelStyle}>Semi Bold</div>
   </Column>
 
-  <Column medium={3}>
-     <div style={getFontWeightTextStyle({fontWeight: typography.weight.extraBold})}>Aa</div>
-    <div style={fontWeightLabelStyle}>Extra Bold</div>
-  </Column>
 </Row>
 
 </Container>
