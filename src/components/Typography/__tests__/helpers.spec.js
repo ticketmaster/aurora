@@ -10,8 +10,8 @@ describe("typographyClassnames", () => {
   });
 
   it("should return elem and weight modifier classNames when elem and weight are passed", () => {
-    expect(typographyClassnames("h1", { weight: "extraBold" })).toEqual(
-      "h1 h1--extraBold"
+    expect(typographyClassnames("h1", { weight: "semiBold" })).toEqual(
+      "h1 h1--semiBold"
     );
   });
 
