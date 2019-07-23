@@ -21,7 +21,7 @@ state: { invert: false }
                         <NavBar.Link href="/">Link 1</NavBar.Link>
                         <NavBar.Link>Link 2</NavBar.Link>
                         <NavBar.Link>Link 3</NavBar.Link>
-                        <NavBar.Link>
+                        <NavBar.Link disableHoverEvents={true}>
                             More
                             <NavBar.LinkList style={{ width: "275px", top: '40px', left: 0}} renderAfter={<span>After Content</span>}>
                                 <NavBar.LinkListItem href="/">Link 4</NavBar.LinkListItem>

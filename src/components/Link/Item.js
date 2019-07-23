@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React, { Children, createRef } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import styled from "styled-components";
@@ -41,7 +41,8 @@ export default class LinkItem extends React.Component {
     href: PropTypes.string,
     target: PropTypes.string,
     rel: PropTypes.string,
-    role: PropTypes.string
+    role: PropTypes.string,
+    disableHoverEvents: PropTypes.bool
   };
 
   static defaultProps = {
@@ -50,7 +51,8 @@ export default class LinkItem extends React.Component {
     href: null,
     target: "_self",
     rel: null,
-    role: null
+    role: null,
+    disableHoverEvents: false
   };
 
   state = {
@@ -59,10 +61,35 @@ export default class LinkItem extends React.Component {
   };
 
   componentDidMount() {
+    const { open } = this.state;
+    const { disableHoverEvents } = this.props;
+
     if ("ontouchstart" in document.documentElement) {
       this.setState({ touchEventsExist: true }); // eslint-disable-line
     }
+
+    if (open && disableHoverEvents && !this.hasListener) this.attachListener();
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { open: prevOpen } = prevState;
+    const { open } = this.state;
+    const { disableHoverEvents } = this.props;
+
+    if (!prevOpen && open && disableHoverEvents && !this.hasListener) {
+      this.attachListener();
+    } else if (prevOpen && !open && this.hasListener) {
+      this.removeListener();
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.hasListener) this.removeListener();
+  }
+
+  hasListener = false;
+
+  ref = createRef();
 
   open = () => this.hasOther && this.setState(() => ({ open: true }));
 
@@ -71,8 +98,37 @@ export default class LinkItem extends React.Component {
   toggle = () =>
     this.hasOther && this.setState(({ open }) => ({ open: !open }));
 
+  handleOutsideClick = e => {
+    if (this.ref && this.ref.current && !this.ref.current.contains(e.target)) {
+      this.close();
+    }
+  };
+
+  attachListener = () => {
+    if (typeof window === "object") {
+      document.addEventListener("click", this.handleOutsideClick);
+      this.hasListener = true;
+    }
+  };
+
+  removeListener = () => {
+    if (typeof window === "object") {
+      document.removeEventListener("click", this.handleOutsideClick);
+      this.hasListener = false;
+    }
+  };
+
   render() {
-    const { children, rel, target, role, className, ...props } = this.props;
+    const { touchEventsExist } = this.state;
+    const {
+      children,
+      rel,
+      target,
+      role,
+      className,
+      disableHoverEvents,
+      ...props
+    } = this.props;
     const [label, ...other] = Children.toArray(children);
     this.hasOther = other && other.length > 0;
     const aria = this.hasOther
@@ -110,16 +166,24 @@ export default class LinkItem extends React.Component {
         {label}
       </StyledLink>
     );
+
+    const hoverEvents = disableHoverEvents
+      ? {}
+      : {
+          onMouseEnter: touchEventsExist ? null : this.open,
+          onMouseLeave: this.close
+        };
+
     return (
       <span
+        {...hoverEvents}
+        ref={disableHoverEvents ? this.ref : undefined}
         className={
           this.state.open
             ? "list-container list-container--open"
             : "list-container list-container--closed"
         }
         onClick={this.toggle}
-        onMouseEnter={this.state.touchEventsExist ? null : this.open}
-        onMouseLeave={this.close}
         role="none"
       >
         {content}
