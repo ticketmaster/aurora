@@ -3,7 +3,10 @@ const typography = {
     light: 300,
     regular: 400,
     semiBold: 600,
-    extraBold: 600 // NONE: `extraBold` TOKEN IS DEPRECATED, USE `semiBold` INSTEAD
+    /**
+     * @deprecated Use `semiBold` value instead
+     */
+    extraBold: 600
   },
   lineHeight: {
     body: "1.5",
