@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "esnext",
+    "moduleResolution": "node",
+    "strict": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "jsx": "react"
+  },
+  "exclude": ["lib", "node_modules"]
+}

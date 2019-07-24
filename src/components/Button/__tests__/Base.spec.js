@@ -2,7 +2,7 @@ import React from "react";
 import renderer from "react-test-renderer";
 import { render, Simulate } from "react-testing-library";
 
-import { Button } from "../";
+import { Button } from "../index.tsx";
 
 describe("<Button />", () => {
   it("renders standard small size button correctly", () => {

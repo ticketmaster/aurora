@@ -2,6 +2,16 @@ import React from "react";
 import renderer from "react-test-renderer";
 
 import Drawer from "../index";
+import Gradient from "../../Gradient";
+
+jest.mock("../Drawer.styles", () => ({
+  DrawerContainer: "DrawerContainer",
+  DrawerContent: "DrawerContent",
+  HeaderContent: "HeaderContent",
+  CloseButton: "CloseButton"
+}));
+
+jest.mock("../../Gradient", () => "Gradient");
 
 describe("Drawer", () => {
   it("renders default drawer", () => {
@@ -52,5 +62,34 @@ describe("Drawer", () => {
     renderer.create(<Drawer header={header}>Content</Drawer>);
 
     expect(header).toHaveBeenCalled();
+  });
+
+  it("renders Header WITH Gradient by default", () => {
+    const header = "Header";
+    const wrapper = renderer.create(<Drawer header={header}>Content</Drawer>);
+
+    expect(wrapper.root.findAllByType(Gradient)).toHaveLength(1);
+  });
+
+  it("renders Header WITH Gradient when the 'withSpotLight' is true", () => {
+    const header = "Header";
+    const wrapper = renderer.create(
+      <Drawer withSpotLight header={header}>
+        Content
+      </Drawer>
+    );
+
+    expect(wrapper.root.findAllByType(Gradient)).toHaveLength(1);
+  });
+
+  it("renders Header WITHOUT Gradient when 'withSpotLight' is false", () => {
+    const header = "Header";
+    const wrapper = renderer.create(
+      <Drawer withSpotLight={false} header={header}>
+        Content
+      </Drawer>
+    );
+
+    expect(wrapper.root.findAllByType(Gradient)).toHaveLength(0);
   });
 });

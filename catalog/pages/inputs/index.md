@@ -287,8 +287,8 @@ rows:
     Notes: Is not required
   - Prop: name
     Type: string
-    Default: N/A
-    Notes: Is required
+    Default: "null"
+    Notes: Optional input name.
   - Prop: label
     Type: string
     Default: N/A

@@ -1,21 +1,46 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "env": { "jest": true },
+  "env": {
+    "jest": true
+  },
   "rules": {
-    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".tsx"]
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/*.spec.js", "catalog/**/*", "config/**/*"] }
+      {
+        "devDependencies": ["**/*.spec.js", "catalog/**/*", "config/**/*"]
+      }
     ],
     "no-use-before-define": [
       "error",
       {
         "functions": false
       }
-    ]
+    ],
+    "import/extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
   },
   "globals": {
     "document": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "no-unused-vars": ["off"]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

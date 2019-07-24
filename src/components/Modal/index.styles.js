@@ -160,6 +160,7 @@ const contentGutters = css`
 export const ModalContent = styled.div`
   background-color: ${themes.global.white.base};
   overflow-y: auto;
+  line-height: ${typography.lineHeight.body};
 
   .fullscreen & {
     height: 100%;

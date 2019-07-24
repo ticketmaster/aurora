@@ -51,6 +51,11 @@ describe("Input", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("renders input without name", () => {
+    const { container } = renderInputComponent({ name: undefined });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   function renderInputComponent(props = {}) {
     return render(
       <ThemeProvider theme={{ themeName: "tm" }}>

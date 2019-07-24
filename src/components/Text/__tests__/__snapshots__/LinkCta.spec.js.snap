@@ -3,7 +3,6 @@
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
 <button
   className=" noFocus jGTFdF"
-  href={undefined}
   onClick={[Function]}
   rel=""
   size={null}
@@ -17,7 +16,6 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 <a
   className=" noFocus jBwpNk"
   href="http://localhost/"
-  onClick={undefined}
   rel=""
   size={null}
   target="_self"
@@ -29,8 +27,6 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 <span
   className=" noFocus KUoDS"
-  href={undefined}
-  onClick={undefined}
   rel=""
   size={null}
   target="_self"
@@ -43,7 +39,6 @@ exports[`LinkCta renders correctly with reverse colors 1`] = `
 <a
   className=" noFocus kGjWNx"
   href="#"
-  onClick={undefined}
   rel=""
   size={null}
   target="_self"
@@ -55,8 +50,6 @@ exports[`LinkCta renders correctly with reverse colors 1`] = `
 exports[`LinkCta static size as pixels 1`] = `
 <span
   className=" noFocus fUMEpv"
-  href={undefined}
-  onClick={undefined}
   rel=""
   size="20px"
   target="_self"
@@ -68,8 +61,6 @@ exports[`LinkCta static size as pixels 1`] = `
 exports[`LinkCta static size from typography 1`] = `
 <span
   className=" noFocus fUMEpv"
-  href={undefined}
-  onClick={undefined}
   rel=""
   size="normal"
   target="_self"
