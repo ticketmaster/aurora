@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-import { themes } from "../theme";
 import { THEME_TM } from "../theme/constants";
+import { getThemeObject } from "./";
 
 export const themeShape = {
   themeName: PropTypes.string.isRequired
@@ -14,11 +14,14 @@ export const themeShape = {
  * automatically.
  */
 export default (...args) => ({
-  theme: { themeName = THEME_TM.themeName } = THEME_TM
-} = {}) =>
-  args.reduce((acc, el) => {
+  theme: { themeName = THEME_TM.themeName, customValues = null } = THEME_TM
+} = {}) => {
+  const themeObject = getThemeObject(themeName, customValues);
+
+  return args.reduce((acc, el) => {
     if (acc[el] === undefined) {
       throw new ReferenceError("value is not defined");
     }
     return acc[el];
-  }, themes[themeName]);
+  }, themeObject);
+};

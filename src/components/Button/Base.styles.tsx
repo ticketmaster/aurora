@@ -1,69 +1,70 @@
 import styled, { StyledComponent } from "styled-components";
 
 import { SPECIAL, Size, ButtonVariant } from "../constants";
-import { typography, constants, themes } from "../../theme";
+import { typography, constants } from "../../theme";
+import { getThemeValue } from "../../utils";
 
 const colorVariants = {
-  standard: theme => ({
-    color: theme.white.base,
-    backgroundColor: theme.primary.base,
-    backgroundColorHover: theme.primary.medium,
-    backgroundColorPressed: theme.primary.dark,
-    borderColor: theme.transparent
-  }),
-  standardDisabled: theme => ({
-    color: theme.white.base,
-    backgroundColor: theme.primary.base,
-    borderColor: theme.transparent
-  }),
-  special: theme => ({
-    color: theme.white.base,
-    backgroundColor: theme.special.base,
-    backgroundColorHover: theme.special.medium,
-    backgroundColorPressed: theme.special.dark,
-    borderColor: theme.transparent
-  }),
-  specialDisabled: theme => ({
-    color: theme.white.base,
-    backgroundColor: theme.special.base,
-    borderColor: theme.transparent
-  }),
-  outline: theme => ({
-    color: theme.primary.base,
-    backgroundColor: theme.white.base,
-    backgroundColorHover: theme.primary.light,
-    backgroundColorPressed: theme.primary.muted,
-    borderColor: theme.primary.base
-  }),
-  outlineDisabled: theme => ({
-    color: theme.primary.base,
-    backgroundColor: theme.transparent,
-    borderColor: theme.primary.base
-  }),
-  transparent: theme => ({
-    color: theme.primary.base,
-    backgroundColor: theme.transparent,
-    backgroundColorHover: theme.primary.light,
-    backgroundColorPressed: theme.primary.muted,
-    borderColor: theme.transparent
-  }),
-  transparentDisabled: theme => ({
-    color: theme.primary.base,
-    backgroundColor: theme.transparent,
-    borderColor: theme.transparent
-  }),
-  outlineGray: theme => ({
-    color: theme.darkFill,
-    backgroundColor: theme.white.base,
-    backgroundColorHover: theme.white.base,
-    backgroundColorPressed: theme.white.base,
-    borderColor: theme.gray04
-  }),
-  outlineGrayDisabled: theme => ({
-    color: theme.primary.base,
-    backgroundColor: theme.transparent,
-    borderColor: theme.gray02
-  })
+  standard: {
+    color: getThemeValue("white", "base"),
+    backgroundColor: getThemeValue("primary", "base"),
+    backgroundColorHover: getThemeValue("primary", "medium"),
+    backgroundColorPressed: getThemeValue("primary", "dark"),
+    borderColor: getThemeValue("transparent")
+  },
+  standardDisabled: {
+    color: getThemeValue("white", "base"),
+    backgroundColor: getThemeValue("primary", "base"),
+    borderColor: getThemeValue("transparent")
+  },
+  special: {
+    color: getThemeValue("white", "base"),
+    backgroundColor: getThemeValue("special", "base"),
+    backgroundColorHover: getThemeValue("special", "medium"),
+    backgroundColorPressed: getThemeValue("special", "dark"),
+    borderColor: getThemeValue("transparent")
+  },
+  specialDisabled: {
+    color: getThemeValue("white", "base"),
+    backgroundColor: getThemeValue("special", "base"),
+    borderColor: getThemeValue("transparent")
+  },
+  outline: {
+    color: getThemeValue("primary", "base"),
+    backgroundColor: getThemeValue("white", "base"),
+    backgroundColorHover: getThemeValue("primary", "light"),
+    backgroundColorPressed: getThemeValue("primary", "muted"),
+    borderColor: getThemeValue("primary", "base")
+  },
+  outlineDisabled: {
+    color: getThemeValue("primary", "base"),
+    backgroundColor: getThemeValue("transparent"),
+    borderColor: getThemeValue("primary", "base")
+  },
+  transparent: {
+    color: getThemeValue("primary", "base"),
+    backgroundColor: getThemeValue("transparent"),
+    backgroundColorHover: getThemeValue("primary", "light"),
+    backgroundColorPressed: getThemeValue("primary", "muted"),
+    borderColor: getThemeValue("transparent")
+  },
+  transparentDisabled: {
+    color: getThemeValue("primary", "base"),
+    backgroundColor: getThemeValue("transparent"),
+    borderColor: getThemeValue("transparent")
+  },
+  outlineGray: {
+    color: getThemeValue("darkFill"),
+    backgroundColor: getThemeValue("white", "base"),
+    backgroundColorHover: getThemeValue("white", "base"),
+    backgroundColorPressed: getThemeValue("white", "base"),
+    borderColor: getThemeValue("gray04")
+  },
+  outlineGrayDisabled: {
+    color: getThemeValue("primary", "base"),
+    backgroundColor: getThemeValue("transparent"),
+    borderColor: getThemeValue("gray02")
+  }
 };
 
 const SIZES = {
@@ -104,64 +105,38 @@ export const StyledButton = styled.button<StyledButtonProps>`
   border-radius: ${constants.borderRadius.small};
   cursor: pointer;
 
-  color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).color;
-  }};
-  background-color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).backgroundColor;
-  }};
-  border: 1px solid
-    ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).borderColor;
-  }};
+  color: ${({ variant }) => colorVariants[variant].color};
+  background-color: ${({ variant }) => colorVariants[variant].backgroundColor};
+  border: 1px solid ${({ variant }) => colorVariants[variant].borderColor};
 
   transition: transform 0.1s linear;
   transition: background-color 0.3s ${constants.easing.easeInOutQuad};
 
   &:focus {
     outline: none;
-    box-shadow: ${({ theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return `0 0 5px 0 ${buttonTheme.primary.base}`;
-  }};
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
   }
 
   &:hover {
-    background-color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).backgroundColorHover;
-  }};
+    background-color: ${({ variant }) =>
+      colorVariants[variant].backgroundColorHover};
   }
 
   &:active {
     transform: scale(0.98, 0.98) translate(0, 1px);
-    background-color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).backgroundColorPressed;
-  }};
+    background-color: ${({ variant }) =>
+      colorVariants[variant].backgroundColorPressed};
   }
 
   &:disabled {
     transform: none;
-    color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[variant](buttonTheme).color;
-  }};
-
-    background-color: ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[`${variant}Disabled`](buttonTheme).backgroundColor;
-  }};
-    border: 1px solid
-      ${({ variant, theme: { themeName } }) => {
-    const buttonTheme = themes[themeName];
-    return colorVariants[`${variant}Disabled`](buttonTheme).borderColor;
-  }};
+    color: ${({ variant }) => colorVariants[variant].color};
+    background-color: ${({ variant }) =>
+      colorVariants[variant].backgroundColor};
+    border: 1px solid ${({ variant }) =>
+      colorVariants[`${variant}Disabled`].borderColor};
     ${({ variant }) =>
-    variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
+      variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
 
 
@@ -176,7 +151,12 @@ StyledButton.defaultProps = {
   }
 };
 
-export const StyledButtonLink = styled(StyledButton as StyledComponent<"a", any, StyledButtonProps, never>)`
+export const StyledButtonLink = styled(StyledButton as StyledComponent<
+  "a",
+  any,
+  StyledButtonProps,
+  never
+>)`
   display: block;
   text-decoration: none;
 `;
