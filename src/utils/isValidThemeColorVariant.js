@@ -1,15 +1,18 @@
-import { themes } from "../theme";
 import { THEME_TM } from "../theme/constants";
+import { getThemeObject } from "./";
 
 const isValidThemeColorVariant = (
-  { themeName = THEME_TM.themeName } = THEME_TM,
+  { themeName = THEME_TM.themeName, customValues = null } = THEME_TM,
   color,
   variant
-) =>
-  Boolean(
-    themes[themeName][color] &&
-      themes[themeName][color].constructor === Object &&
-      themes[themeName][color][variant]
+) => {
+  const themeObject = getThemeObject(themeName, customValues);
+
+  return Boolean(
+    themeObject[color] &&
+      themeObject[color].constructor === Object &&
+      themeObject[color][variant]
   );
+};
 
 export default isValidThemeColorVariant;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { constants, themes } from "../../../theme";
+import { constants } from "../../../theme";
 import { getThemeValue } from "../../../utils";
 
 export default styled.input.attrs({
@@ -63,8 +63,7 @@ export default styled.input.attrs({
   }
   &:focus:before {
     outline: none;
-    box-shadow: ${({ theme: { themeName } }) =>
-      `0 0 5px 0 ${themes[themeName].primary.base}`};
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
     border-color: ${getThemeValue("primary", "base")};
 
     .checkbox--small & {
