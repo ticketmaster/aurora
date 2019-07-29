@@ -14,13 +14,14 @@
   "jsnext:main": "dist/index.es.js",
   "module": "dist/index.es.js",
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "license": "MIT",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod && npm run tsc:declaration",
-    "build:dev": "rollup -c config/rollup.dev.config.js",
-    "build:prod": "rollup -c config/rollup.prod.config.js",
+    "build:dev": "rollup -c config/rollup.dev.config.js && npm run tsc:declaration",
+    "build:prod": "rollup -c config/rollup.prod.config.js && npm run tsc:declaration",
     "catalog-start": "NODE_ENV=development catalog start",
     "catalog-build": "catalog build  -u \"/aurora\"",
     "lint": "eslint \"{src,catalog}/**/*.{js,jsx,ts,tsx}\"",
@@ -31,7 +32,7 @@
     "test:ci": "NODE_ENV=test jest --changedSince=master --runInBand",
     "add-icons": "pixo $* --out-dir src/components/Icons",
     "tsc:declaration": "tsc -p tsconfig.declaration.json",
-    "posttsc:declaration": "node scripts/declarejs.js"
+    "posttsc:declaration": "node -e 'require(\"./scripts/declarejs\").generateStubTypings()'"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

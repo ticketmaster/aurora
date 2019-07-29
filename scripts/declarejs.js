@@ -21,7 +21,7 @@ if (typeof Array.prototype.flatMap !== "function") {
 
 const srcPath = path.resolve(__dirname, "..", "src");
 const libPath = path.resolve(__dirname, "..", "lib");
-const exportPattern = /^\s*export[\s\n\r]+(default|class|const|var|let)[\s\n\r]+([a-zA-Z0-9_$]+)?/gm;
+const exportPattern = /(?<=\s*export[\s\n\r]+(default|class|const|var|let)[\s\n\r]+\{?[^=]*)[^{\s\n\r,;=}]+(?=[^}]*}?\s*(=|;).*)/gm;
 const exportSymbolsPattern = /^\s*export\s*\{[^}]*}[^;]*;/gm;
 const fromPattern = /\bfrom\b/;
 const symbolPattern = /[{,][\s\n\r]*([A-Za-z0-9_$]+)(?:[\s\n\r]+as[\s\n\r]+([A-Za-z0-9_$]+))?/g;
@@ -71,7 +71,7 @@ const stubExports = content =>
   [
     matches(content, exportPattern).map(
       match =>
-        match[1] === "default" ? stubDefaultExport() : stubNamedExport(match[2])
+        match[1] === "default" ? stubDefaultExport() : stubNamedExport(match[0])
     ),
     matches(content, exportSymbolsPattern)
       .map(match => match[0])
@@ -109,7 +109,10 @@ function* matchesGenerator(str, re) {
   }
 }
 
-readdirRecursive(srcPath)
-  .filter(name => path.extname(name) === ".js" && !name.includes("__tests__"))
-  .map(name => path.relative(srcPath, name))
-  .forEach(createDeclaration);
+module.exports.generateStubTypings = () =>
+  readdirRecursive(srcPath)
+    .filter(name => path.extname(name) === ".js" && !name.includes("__tests__"))
+    .map(name => path.relative(srcPath, name))
+    .forEach(createDeclaration);
+
+module.exports.generateStub = stubExports; // Exported for tests
