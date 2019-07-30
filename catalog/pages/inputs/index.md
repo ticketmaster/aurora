@@ -420,9 +420,13 @@ rows:
     Default: "null"
     Notes: Invoked with an array of updatedSelections when one or more option(s) is selected by the user
   - Prop: variant
-    Type: number
-    Default: 0
-    Notes: One of 0 (with border) or 1 (without border)
+    Type: 
+      enum(
+        DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL,
+        DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL,
+      )
+    Default: DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL
+    Notes: Specifies a layout variant of the DropDownGroup
   - Prop: value
     Type: array
     Default: []
@@ -497,7 +501,12 @@ span: 6
     <Container>
         <Row>
             <Column medium={4}>
-                <DropDownGroup size="small" variant={0} placeholder="Select an option" label="Selected:">
+                <DropDownGroup 
+                  size="small"
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Select an option"
+                  label="Selected:"
+                >
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
@@ -510,7 +519,12 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={0} value={["3"]} placeholder="Select an option" shouldOpenDownward={false}>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  value={["3"]}
+                  placeholder="Select an option"
+                  shouldOpenDownward={false}
+                >
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
@@ -535,7 +549,11 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={0} placeholder="Select an option" disabled>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Select an option"
+                  disabled
+                >
                     <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
@@ -547,7 +565,11 @@ span: 6
         <Spacing top={{small: "normal"}} />
         <Row >
             <Column medium={4}>
-                <DropDownGroup size="small" variant={1} placeholder="Select an option">
+                <DropDownGroup
+                  size="small"
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
+                  placeholder="Select an option"
+                >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
@@ -556,7 +578,10 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={1} label="Sort By:">
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
+                  label="Sort By:"
+                >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
@@ -565,7 +590,83 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownGroup variant={1} label="Sort By:" disabled>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
+                  label="Sort By:"
+                  disabled
+                >
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
+## Drop Down Label
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: size
+    Type: small or large
+    Default: "large"
+    Notes: Defines size
+  - Prop: disabled
+    Type: bool
+    Default: false
+    Notes: defines if toggle is disabled
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying label element
+```
+
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row >
+            <Column medium={4}>
+                <DropDownLabel size="small">Label text</DropDownLabel>
+                <DropDownGroup
+                  size="small"
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Select an option"
+                >
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownLabel>Label text</DropDownLabel>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                >
+                    <DropDownOption value="0" index={0}>Option One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={4}>
+                <DropDownLabel disabled>Label text</DropDownLabel>
+                <DropDownGroup
+                  value={["0"]}
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  disabled
+                >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>

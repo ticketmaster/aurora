@@ -737,6 +737,174 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 </div>
 `;
 
+exports[`DropDownGroup renders bordered variant with an inner label with a placeholder prop 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div
+    data-testid="something"
+  >
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__Select_An_Option"
+    class="sc-bxivhb pBoyv"
+    data-testid="test-dropContainer"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+    >
+      <span
+        class="sc-htpNat irkcXP"
+        id="hidden-label__Select_An_Option"
+      >
+        Select An Option
+      </span>
+      <div
+        class="sc-EHOje exIaPu"
+      >
+        Select An Option
+      </div>
+      <svg
+        class="sc-ifAKCX cnmiOA"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+    >
+      <div
+        class="sc-bZQynM koCnbp"
+        role="listbox"
+      >
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionOne"
+          role="option"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionTwo"
+          role="option"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionThree"
+          role="option"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup renders borderless variant with an inner label with a label prop 1`] = `
+<div
+  data-testid="test-outSideComponent"
+>
+  <div
+    data-testid="something"
+  >
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__Selected_Option:"
+    class="sc-bxivhb pBoyv"
+    data-testid="test-dropContainer"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+    >
+      <span
+        class="sc-htpNat irkcXP"
+        id="hidden-label__Selected_Option:"
+      >
+        Selected Option:
+      </span>
+      <div
+        class="sc-EHOje exIaPu"
+      />
+      <svg
+        class="dropdown--no-border sc-ifAKCX cnmiOA"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+    >
+      <div
+        class="sc-bZQynM koCnbp"
+        role="listbox"
+      >
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionOne"
+          role="option"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionTwo"
+          role="option"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="sc-gzVnrw Itdgm"
+          data-testid="test-dropDownOptionThree"
+          role="option"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`DropDownGroup renders default dropdown 1`] = `
 <div
   data-testid="test-outSideComponent"
@@ -1186,174 +1354,6 @@ exports[`DropDownGroup renders small dropdown 1`] = `
     </label>
     <div
       class="dropdown__items dropdown__items--small sc-bwzfXH bOaDnd"
-    >
-      <div
-        class="sc-bZQynM koCnbp"
-        role="listbox"
-      >
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionOne"
-          role="option"
-          tabindex="-1"
-          value="ValueOne"
-        >
-          Option One
-        </span>
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionTwo"
-          role="option"
-          tabindex="-1"
-          value="ValueTwo"
-        >
-          Second Option
-        </span>
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionThree"
-          role="option"
-          tabindex="-1"
-          value="ValueThree"
-        >
-          Option Three
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders variant 0 with a placeholder prop 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__Select_An_Option"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__Select_An_Option"
-      >
-        Select An Option
-      </span>
-      <div
-        class="sc-EHOje exIaPu"
-      >
-        Select An Option
-      </div>
-      <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
-    >
-      <div
-        class="sc-bZQynM koCnbp"
-        role="listbox"
-      >
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionOne"
-          role="option"
-          tabindex="-1"
-          value="ValueOne"
-        >
-          Option One
-        </span>
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionTwo"
-          role="option"
-          tabindex="-1"
-          value="ValueTwo"
-        >
-          Second Option
-        </span>
-        <span
-          class="sc-gzVnrw Itdgm"
-          data-testid="test-dropDownOptionThree"
-          role="option"
-          tabindex="-1"
-          value="ValueThree"
-        >
-          Option Three
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`DropDownGroup renders variant 1 with a label prop 1`] = `
-<div
-  data-testid="test-outSideComponent"
->
-  <div
-    data-testid="something"
-  >
-    something
-  </div>
-  <div
-    aria-haspopup="listbox"
-    aria-labelledby="hidden-label__Selected_Option:"
-    class="sc-bxivhb pBoyv"
-    data-testid="test-dropContainer"
-    tabindex="0"
-  >
-    <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
-    >
-      <span
-        class="sc-htpNat irkcXP"
-        id="hidden-label__Selected_Option:"
-      >
-        Selected Option:
-      </span>
-      <div
-        class="sc-EHOje exIaPu"
-      />
-      <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
-        height="16"
-        viewBox="0 0 16 16"
-        width="16"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
-      </svg>
-    </label>
-    <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
     >
       <div
         class="sc-bZQynM koCnbp"

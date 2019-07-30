@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DropDownLabel /> renders large size label correctly 1`] = `
+<label
+  className="muQhD"
+  disabled={false}
+  size="large"
+>
+  label text
+</label>
+`;
+
+exports[`<DropDownLabel /> renders small disabled label correctly 1`] = `
+<label
+  className="hcMhoQ"
+  disabled={true}
+  size="small"
+>
+  label text
+</label>
+`;
+
+exports[`<DropDownLabel /> renders small size label correctly 1`] = `
+<label
+  className="dFBmoE"
+  disabled={false}
+  size="small"
+>
+  label text
+</label>
+`;

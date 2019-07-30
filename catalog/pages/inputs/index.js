@@ -10,6 +10,7 @@ import {
   Input,
   DropDownGroup,
   DropDownOption,
+  DropDownLabel,
   Toggle,
   ButtonGroup,
   QtySelector
@@ -41,6 +42,7 @@ export default {
     Spacing,
     DropDownGroup,
     DropDownOption,
+    DropDownLabel,
     Toggle,
     ToggleWrapperExample,
     ThemeProvider,

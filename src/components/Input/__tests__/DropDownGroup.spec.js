@@ -6,6 +6,7 @@ import {
   fireEvent,
   Simulate
 } from "react-testing-library";
+import {LAYOUT_VARIANTS} from '../DropDown/constants';
 
 import DropDownGroup from "../DropDown/DropDownGroup";
 import DropDownOption from "../DropDown/DropDownOption";
@@ -44,7 +45,7 @@ describe("DropDownGroup", () => {
 
   function renderTestComponentTwo(props = {}) {
     return renderIntoDocument(
-      <DropDownGroup {...props} variant={1} label="Sort By:">
+      <DropDownGroup {...props} variant={LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL} label="Sort By:">
         <DropDownOption value="date" index={0}>
           {"Date"}
           {null}
@@ -79,16 +80,22 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
-  it("renders variant 0 with a placeholder prop", () => {
+  it("renders bordered variant with an inner label with a placeholder prop", () => {
     expect(
-      renderTestComponentOne({ placeholder: "Select An Option", variant: 1 })
+      renderTestComponentOne({
+        placeholder: "Select An Option",
+        variant: LAYOUT_VARIANTS.BORDERED_INNER_LABEL,
+      })
         .container.firstChild
     ).toMatchSnapshot();
   });
 
-  it("renders variant 1 with a label prop", () => {
+  it("renders borderless variant with an inner label with a label prop", () => {
     expect(
-      renderTestComponentOne({ label: "Selected Option:", variant: 1 })
+      renderTestComponentOne({
+        label: "Selected Option:",
+        variant: LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL,
+      })
         .container.firstChild
     ).toMatchSnapshot();
   });
