@@ -8,8 +8,6 @@ import { smallAndUp, mediumAndUp, xLargeAndUp } from "../../theme/mediaQueries";
 
 import Links from "./Links";
 import Buttons from "./Buttons";
-import Row from "../Grid/Row";
-import Column from "../Grid/Column";
 import DrawerMenu from "./DrawerMenu";
 
 const Nav = styled.nav.attrs({
@@ -100,15 +98,6 @@ const Left = styled.div`
   ${mediumAndUp`width: 50%;`};
 `;
 
-const MessageContainer = styled.div`
-  background-color: rgba(0, 0, 0, 0.2);
-  text-align: center;
-  font-size: ${typography.size.hecto};
-  font-weight: ${typography.weight.regular};
-  padding-top: 2px;
-  padding-bottom: 2px;
-`;
-
 const NavBar = ({
   children,
   position,
@@ -116,7 +105,6 @@ const NavBar = ({
   className,
   backgroundColor,
   style,
-  message,
   ...props
 }) => (
   <Nav
@@ -130,13 +118,6 @@ const NavBar = ({
     invert={invert}
     style={{ ...style, backgroundColor }}
   >
-    {message ? (
-      <MessageContainer>
-        <Row>
-          <Column role="note">{message}</Column>
-        </Row>
-      </MessageContainer>
-    ) : null}
     <Container>{children}</Container>
   </Nav>
 );
@@ -146,7 +127,6 @@ NavBar.propTypes = {
   className: PropTypes.string,
   position: PropTypes.oneOf(["relative", "absolute", "fixed"]),
   invert: PropTypes.bool,
-  message: PropTypes.node,
   backgroundColor: PropTypes.string,
   style: PropTypes.objectOf(PropTypes.string)
 };
@@ -156,7 +136,6 @@ NavBar.defaultProps = {
   children: null,
   position: "relative",
   invert: false,
-  message: null,
   backgroundColor: null,
   style: {}
 };

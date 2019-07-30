@@ -12,7 +12,7 @@ state: { invert: false }
 <DrawerProvider>
     <DeviceSizeProvider cssOnly>
         <Header>
-            <NavBar message="Hi there this is an optional message. There can be really really really long content here but we are going to try not to overflow this area" position="absolute" invert={state.invert}>
+            <NavBar position="absolute" invert={state.invert}>
                 <NavBar.LogoContainer>
                     Aurora
                 </NavBar.LogoContainer>
