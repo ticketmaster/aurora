@@ -66,15 +66,15 @@ class Tooltip extends Component {
    */
   static getDimensionsFromEvent(e, parent) {
     const {
-      y: elTop,
+      top: elTop,
       height: elHeight,
-      x: elLeft,
+      left: elLeft,
       width: elWidth
     } = e.target.getBoundingClientRect();
     const {
-      y: offsetTop = 0,
+      top: offsetTop = 0,
       height: clientHeight = 100000,
-      x: offsetLeft = 0,
+      left: offsetLeft = 0,
       width: clientWidth = 100000
     } =
       parent && parent.getBoundingClientRect

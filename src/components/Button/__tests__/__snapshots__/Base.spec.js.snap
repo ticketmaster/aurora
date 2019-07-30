@@ -2,7 +2,7 @@
 
 exports[`<Button /> renders link button correctly 1`] = `
 <a
-  className="kHnYRc"
+  className="fxGuYK"
   href="/"
   size="regular"
 >
@@ -12,7 +12,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 
 exports[`<Button /> renders outline large size button correctly 1`] = `
 <button
-  className=" noFocus eBkRKA"
+  className=" noFocus fTWXaX"
   size="large"
 >
   Dummy Label
@@ -21,7 +21,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size button correctly 1`] = `
 <button
-  className=" noFocus fAhIdS"
+  className=" noFocus fcJuPe"
   size="regular"
 >
   Dummy Label
@@ -30,7 +30,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size disabled button correctly 1`] = `
 <button
-  className=" noFocus fAhIdS"
+  className=" noFocus fcJuPe"
   disabled={true}
   size="regular"
 >
@@ -40,7 +40,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders outline small size button correctly 1`] = `
 <button
-  className=" noFocus dVAURc"
+  className=" noFocus xjqFN"
   size="small"
 >
   Dummy Label
@@ -49,7 +49,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 
 exports[`<Button /> renders special large size button correctly 1`] = `
 <button
-  className=" noFocus fxuzOL"
+  className=" noFocus cIFyVh"
   size="large"
 >
   Dummy Label
@@ -58,7 +58,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size button correctly 1`] = `
 <button
-  className=" noFocus iShFr"
+  className=" noFocus jVpvXK"
   size="regular"
 >
   Dummy Label
@@ -67,7 +67,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size disabled button correctly 1`] = `
 <button
-  className=" noFocus iShFr"
+  className=" noFocus jVpvXK"
   disabled={true}
   size="regular"
 >
@@ -77,7 +77,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders special small size button correctly 1`] = `
 <button
-  className=" noFocus ibrbUd"
+  className=" noFocus bEFiOZ"
   size="small"
 >
   Dummy Label
@@ -86,7 +86,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 
 exports[`<Button /> renders standard large size button correctly 1`] = `
 <button
-  className=" noFocus kdJqXr"
+  className=" noFocus dLugRX"
   size="large"
 >
   Dummy Label
@@ -95,7 +95,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size button correctly 1`] = `
 <button
-  className=" noFocus encbkH"
+  className=" noFocus dsIgYQ"
   size="regular"
 >
   Dummy Label
@@ -104,7 +104,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
 <button
-  className=" noFocus encbkH"
+  className=" noFocus dsIgYQ"
   disabled={true}
   size="regular"
 >
@@ -114,7 +114,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 
 exports[`<Button /> renders standard small size button correctly 1`] = `
 <button
-  className=" noFocus bFeSYA"
+  className=" noFocus IyyhA"
   size="small"
 >
   Dummy Label
@@ -123,7 +123,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 
 exports[`<Button /> renders transparent large size button correctly 1`] = `
 <button
-  className=" noFocus hegczD"
+  className=" noFocus bGFEDe"
   size="large"
 >
   Dummy Label
@@ -132,7 +132,7 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size button correctly 1`] = `
 <button
-  className=" noFocus bSoaLb"
+  className=" noFocus dZuMkM"
   size="regular"
 >
   Dummy Label
@@ -141,7 +141,7 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size disabled button correctly 1`] = `
 <button
-  className=" noFocus bSoaLb"
+  className=" noFocus dZuMkM"
   disabled={true}
   size="regular"
 >
@@ -151,7 +151,7 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 
 exports[`<Button /> renders transparent small size button correctly 1`] = `
 <button
-  className=" noFocus kEKykV"
+  className=" noFocus bFxevU"
   size="small"
 >
   Dummy Label

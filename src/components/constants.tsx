@@ -55,9 +55,26 @@ export type Size = typeof SMALL | typeof REGULAR | typeof LARGE;
 
 export const ARROW_WIDTH = 12;
 
+// FONT_WEIGHTS
+export const FONT_WEIGHT_LIGHT = "light";
+export const FONT_WEIGHT_REGULAR = "regular";
+export const FONT_WEIGHT_SEMI_BOLD = "semiBold";
+
+export const FONT_WEIGHTS: ReadonlyArray<FontWeight> = [
+  FONT_WEIGHT_LIGHT,
+  FONT_WEIGHT_REGULAR,
+  FONT_WEIGHT_SEMI_BOLD
+];
+export type FontWeight =
+  | typeof FONT_WEIGHT_LIGHT
+  | typeof FONT_WEIGHT_REGULAR
+  | typeof FONT_WEIGHT_SEMI_BOLD;
+
 // WEIGHTS
-export const EXTRA_BOLD = "extraBold"; // NOTE `extraBold` TOKEN IS DEPRECATED, USE `semiBold` instead
-export const SEMI_BOLD = "semiBold";
+/**
+ * @deprecated Use `FONT_WEIGHT_SEMI_BOLD` instead
+ */
+export const EXTRA_BOLD = "extraBold"; // <-- This is here for backward compatibility
 export type Weight = typeof EXTRA_BOLD;
 
 // THEME COLORS

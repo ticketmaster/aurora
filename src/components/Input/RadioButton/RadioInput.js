@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { themes, constants } from "../../../theme";
+import { constants } from "../../../theme";
+import { getThemeValue } from "../../../utils";
 
 const RadioInput = styled.input.attrs({
   type: "radio"
@@ -36,8 +37,7 @@ const RadioInput = styled.input.attrs({
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: ${({ theme: { themeName } }) =>
-      `1px solid ${themes[themeName].gray02}`};
+    border: 1px solid ${getThemeValue("gray02")};
 
     .radio-button--large & {
       width: 24px;
@@ -48,8 +48,7 @@ const RadioInput = styled.input.attrs({
       height: 16px;
     }
     .radio-button--disabled & {
-      border: ${({ theme: { themeName } }) =>
-        `1px solid ${themes[themeName].gray01}`};
+      border: 1px solid ${getThemeValue("gray01")};
     }
   }
   &:after {
@@ -63,8 +62,7 @@ const RadioInput = styled.input.attrs({
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: ${({ theme: { themeName } }) =>
-      themes[themeName].primary.base};
+    background-color: ${getThemeValue("primary", "base")};
 
     .radio-button--large & {
       width: 8px;
@@ -76,22 +74,18 @@ const RadioInput = styled.input.attrs({
     }
 
     .radio-button--disabled & {
-      background-color: ${({ theme: { themeName } }) =>
-        themes[themeName].gray01};
+      background-color: ${getThemeValue("gray01")};
     }
   }
   &:focus:before {
     outline: none;
     border-width: 1px;
-    border-color: ${({ theme: { themeName } }) =>
-      themes[themeName].primary.base};
-    box-shadow: ${({ theme: { themeName } }) =>
-      `0 0 5px 0 ${themes[themeName].primary.base}`};
+    border-color: ${getThemeValue("primary", "base")};
+    box-shadow: 0 0 5px 0 ${getThemeValue("primary", "base")};
   }
   &:hover:before {
     border-width: 2px;
-    border-color: ${({ theme: { themeName } }) =>
-      themes[themeName].primary.base};
+    border-color: ${getThemeValue("primary", "base")};
 
     .radio-button--large & {
       width: 23px;

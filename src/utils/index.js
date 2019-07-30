@@ -1,3 +1,5 @@
+export { default as memoize } from "./memoize";
+export { default as getThemeObject } from "./getThemeObject";
 export { default as getThemeValue } from "./getThemeValue";
 export { default as composeEventHandlers } from "./composeEventHandlers";
 export { getRelByTarget, getAsProp } from "./link";

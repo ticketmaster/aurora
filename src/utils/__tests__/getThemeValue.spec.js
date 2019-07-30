@@ -16,4 +16,30 @@ describe("getThemeValue", () => {
       getThemeValue("primary", "base", "three")({ theme: { themeName: "tm" } })
     ).toThrowError(ReferenceError);
   });
+  it("should return correct value when theme is passed as object", () => {
+    expect(
+      getThemeValue("primary", "base")({
+        theme: {
+          customValues: {
+            primary: {
+              base: "#000000"
+            }
+          }
+        }
+      })
+    ).toBe("#000000");
+  });
+  it("should return color from global theme when theme passed as object but the color is not overwritten", () => {
+    expect(
+      getThemeValue("gray01")({
+        theme: {
+          customValues: {
+            primary: {
+              base: "#000000"
+            }
+          }
+        }
+      })
+    ).toBe("#262626");
+  });
 });

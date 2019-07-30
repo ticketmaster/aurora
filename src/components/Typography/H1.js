@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 import { fontWeight, fontSize, BASE_STYLE_HEADER } from "../../mixins";
 import { largeAndUp } from "../../theme/mediaQueries";
-import { ONYX, BASE, SEMI_BOLD } from "../constants";
+import { ONYX, BASE, FONT_WEIGHT_SEMI_BOLD } from "../constants";
 import typographyClassnames from "./helpers";
 
 const H1 = styled.h1.attrs(
-  ({ weight = SEMI_BOLD, color = ONYX, variant = BASE }) => ({
+  ({ weight = FONT_WEIGHT_SEMI_BOLD, color = ONYX, variant = BASE }) => ({
     className: typographyClassnames("h1", { weight, color, variant })
   })
 )`
