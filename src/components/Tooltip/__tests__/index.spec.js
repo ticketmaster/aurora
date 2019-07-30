@@ -221,10 +221,10 @@ describe("Tooltip", () => {
     const event = {
       target: {
         getBoundingClientRect: () => ({
-          y: 100,
+          top: 100,
           height: 50,
           width: 50,
-          x: 200
+          left: 200
         })
       }
     };
@@ -248,20 +248,20 @@ describe("Tooltip", () => {
     const event = {
       target: {
         getBoundingClientRect: () => ({
-          y: 100,
+          top: 100,
           height: 50,
           width: 50,
-          x: 200
+          left: 200
         })
       }
     };
 
     const parent = {
       getBoundingClientRect: () => ({
-        y: 100,
+        top: 100,
         height: 50,
         width: 50,
-        x: 200
+        left: 200
       })
     };
 
