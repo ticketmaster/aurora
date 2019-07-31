@@ -112,6 +112,8 @@ class SearchInput extends Component {
       isSuggestOpened,
       hasBackground,
       isMobile,
+      onFocus,
+      onBlur,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
@@ -131,6 +133,7 @@ class SearchInput extends Component {
         })}
       >
         <StyledSearchIcon
+          type="button"
           variant={variant}
           isFocused={isStyleForFocusedUsed}
           onClick={this.searchIconClick}
@@ -153,6 +156,7 @@ class SearchInput extends Component {
           })}
         />
         <Clear
+          type="button"
           onClick={this.clearTextClick}
           value={value}
           aria-label={clearBtnAreaLabel}
@@ -163,6 +167,7 @@ class SearchInput extends Component {
           <ClearIcon size={variant} color="currentColor" />
         </Clear>
         <Cancel
+          type="button"
           isFocused={isStyleForFocusedUsed}
           showElement={showCancelButton}
           onClick={this.cancelClick}
