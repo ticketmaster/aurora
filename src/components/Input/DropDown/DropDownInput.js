@@ -26,16 +26,13 @@ const StyledDropDownItem = styled.span`
 
     &:focus {
       background-color: ${getThemeValue("primary", "base")};
+      color: ${getThemeValue("white", "base")};
       outline: none;
     }
     &.dropdown__selected {
       color: ${getThemeValue("gray01")};
       background-color: ${getThemeValue("gray04")};
-    }
-    &:focus,
-    &.dropdown__selected {
       border-radius: ${constants.borderRadius.small};
-      color: ${getThemeValue("white", "base")};
     }
   }
   .dropdown__items.dropdown__items--small & {

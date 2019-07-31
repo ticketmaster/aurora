@@ -2,7 +2,7 @@
 
 exports[`<DropDownInput /> should render the correct markup 1`] = `
 <span
-  className="VezeY"
+  className="eZrEVS"
   role="option"
   tabIndex="-1"
   value="rock"
@@ -13,7 +13,7 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
 
 exports[`<DropDownInput /> should render the correct markup when additional props are passed 1`] = `
 <span
-  className="VezeY"
+  className="eZrEVS"
   data-index={0}
   role="option"
   tabIndex="-1"
@@ -25,7 +25,7 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
 
 exports[`<DropDownInput /> should render the correct markup when the className prop is valid 1`] = `
 <span
-  className="input--drop-down VezeY"
+  className="input--drop-down eZrEVS"
   role="option"
   tabIndex="-1"
   value="rock"
@@ -36,7 +36,7 @@ exports[`<DropDownInput /> should render the correct markup when the className p
 
 exports[`<DropDownInput /> should render the correct markup when the isSelected prop equals true 1`] = `
 <span
-  className="dropdown__selected VezeY"
+  className="dropdown__selected eZrEVS"
   role="option"
   tabIndex="-1"
   value="rock"
