@@ -3,14 +3,13 @@
 exports[`SearchInputMobile should match snapshot 1`] = `
 <div
   className="search--container kuAkVI"
-  onBlur={[Function]}
   onClick={[Function]}
-  onFocus={[Function]}
 >
   <button
     aria-label="Search button"
     className="search--search-icon doQCjb"
     onClick={[Function]}
+    type="button"
   >
     <svg
       className="gxyxth"
@@ -48,6 +47,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
     aria-label="Clear button"
     className="search--clear-icon boklFi"
     onClick={[Function]}
+    type="button"
     value=""
   >
     <svg
@@ -75,6 +75,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
     aria-label="Cancel button"
     className="search--cancel-icon jiWdvT"
     onClick={[Function]}
+    type="button"
   >
     Cancel
   </button>
@@ -87,14 +88,13 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
 >
   <div
     className="search--container kuAkVI"
-    onBlur={[Function]}
     onClick={[Function]}
-    onFocus={[Function]}
   >
     <button
       aria-label="Search button"
       className="search--search-icon doQCjb"
       onClick={[Function]}
+      type="button"
     >
       <svg
         className="gxyxth"
@@ -132,6 +132,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
       aria-label="Clear button"
       className="search--clear-icon boklFi"
       onClick={[Function]}
+      type="button"
       value=""
     >
       <svg
@@ -159,6 +160,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
       aria-label="Cancel button"
       className="search--cancel-icon jiWdvT"
       onClick={[Function]}
+      type="button"
     >
       Cancel
     </button>
