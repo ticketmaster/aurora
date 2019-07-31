@@ -49,7 +49,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -58,7 +58,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -67,7 +67,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -130,7 +130,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -139,7 +139,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -148,7 +148,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -211,7 +211,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -220,7 +220,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -229,7 +229,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -294,7 +294,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -303,7 +303,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -312,7 +312,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -375,7 +375,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -384,7 +384,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -393,7 +393,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -456,7 +456,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -465,7 +465,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -474,7 +474,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -537,7 +537,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -546,7 +546,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -555,7 +555,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -622,7 +622,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -631,7 +631,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -640,7 +640,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -705,7 +705,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -714,7 +714,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -723,7 +723,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -790,7 +790,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -799,7 +799,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -808,7 +808,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -873,7 +873,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -882,7 +882,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -891,7 +891,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -954,7 +954,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -963,7 +963,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -972,7 +972,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1035,7 +1035,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1044,7 +1044,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1053,7 +1053,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1116,7 +1116,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1125,7 +1125,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1134,7 +1134,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1197,7 +1197,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1206,7 +1206,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1215,7 +1215,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1279,7 +1279,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1288,7 +1288,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1297,7 +1297,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1360,7 +1360,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1369,7 +1369,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1378,7 +1378,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1439,7 +1439,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="date"
@@ -1447,7 +1447,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1456,7 +1456,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="price"
@@ -1522,7 +1522,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="date"
@@ -1530,7 +1530,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1539,7 +1539,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="price"
@@ -1603,7 +1603,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         role="listbox"
       >
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="date"
@@ -1611,7 +1611,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="dropdown__selected sc-gzVnrw Itdgm"
+          class="dropdown__selected sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1620,7 +1620,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="sc-gzVnrw Itdgm"
+          class="sc-gzVnrw imflCT"
           role="option"
           tabindex="-1"
           value="price"
@@ -1638,7 +1638,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 
 exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
 <span
-  className="dropdown__item--expandable Itdgm"
+  className="dropdown__item--expandable imflCT"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseMove={[Function]}
