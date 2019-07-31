@@ -15,6 +15,10 @@ import {
   TAB
 } from "../../../utils/keyCharCodes";
 import {
+  VARIANTS_WITH_BORDER,
+  LAYOUT_VARIANTS
+} from "./constants";
+import {
   StyledGroup,
   StyledChildWrapper,
   StyledGroupWrapper,
@@ -25,6 +29,8 @@ import {
 } from "./DropDownGroup.styles";
 
 class DropDownGroup extends React.Component {
+  static LAYOUT_VARIANTS = LAYOUT_VARIANTS;
+
   componentDidMount() {
     document.addEventListener("click", this.handleOutsideClick);
   }
@@ -169,6 +175,7 @@ class DropDownGroup extends React.Component {
     const onClickListener = disabled
       ? { onMouseDown: this.stopInteraction }
       : { onClick: this.onClick };
+    const isBorderAround = VARIANTS_WITH_BORDER.includes(variant);
 
     return (
       <SelectionProvider
@@ -207,13 +214,13 @@ class DropDownGroup extends React.Component {
                         {...onClickListener}
                         className={classNames(`dropdown--${size}`, {
                           "dropdown--active": isOpen,
-                          "dropdown--border": variant === 0,
-                          "dropdown--no-border": variant === 1,
+                          "dropdown--border": isBorderAround,
+                          "dropdown--no-border": !isBorderAround,
                           "dropdown__label--disabled": disabled
                         })}
                       >
                         {/* HiddenLabel is required for correct screen readers 
-                          readings when an option is selected */}
+                        readings when an option is selected */}
                         <HiddenLabel id={hiddenLabelId}>
                           {placeholder || label}
                         </HiddenLabel>
@@ -228,12 +235,15 @@ class DropDownGroup extends React.Component {
                         <StyledChevron
                           className={classNames({
                             "dropdown__icon--hide": isOpen,
-                            "dropdown--no-border": variant === 1,
+                            "dropdown--no-border": !isBorderAround,
                             "dropdown__chevron--disabled": disabled
                           })}
                         />
                       </StyledGroup>
-                      <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
+                      <Transition
+                        in={isOpen}
+                        timeout={this.ANIMATION_TIMEOUT}
+                      >
                         {wrapperState => (
                           <StyledChildWrapper
                             className={classNames(
@@ -241,12 +251,15 @@ class DropDownGroup extends React.Component {
                               `dropdown__items--${size}`,
                               {
                                 "dropdown--clicked": isOpen,
-                                "dropdown--overflow": wrapperState === "entered"
+                                "dropdown--overflow":
+                                  wrapperState === "entered"
                               }
                             )}
                             ref={this.styledChildWrapper}
                           >
-                            <DropDownProvider value={{ ...this.state, isOpen }}>
+                            <DropDownProvider
+                              value={{ ...this.state, isOpen }}
+                            >
                               <StyledKeyboardProvider
                                 role="listbox"
                                 aria-labelledby={hiddenLabelId}
@@ -276,7 +289,7 @@ DropDownGroup.propTypes = {
   children: PropTypes.node.isRequired,
   onChange: PropTypes.func,
   placeholder: PropTypes.string,
-  variant: PropTypes.number,
+  variant: PropTypes.oneOf(Object.values(LAYOUT_VARIANTS)),
   label: PropTypes.string,
   isOpen: PropTypes.bool,
   keywordSearch: PropTypes.bool,
@@ -291,7 +304,7 @@ DropDownGroup.defaultProps = {
   valueOverride: null,
   onChange: null,
   placeholder: "",
-  variant: 0,
+  variant: LAYOUT_VARIANTS.BORDERED_INNER_LABEL,
   isOpen: false,
   keywordSearch: true,
   withKeyboardProvider: true,
