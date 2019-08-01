@@ -13,6 +13,11 @@ describe("QtySelector", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("renders QtySelector correctly when there are min and max", () => {
+    const { container } = renderQtySelectorComponent({ min: 2, max: 4 });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("renders disabled QtySelector", () => {
     const { container } = renderQtySelectorComponent({ disabled: true });
     expect(container.firstChild).toMatchSnapshot();

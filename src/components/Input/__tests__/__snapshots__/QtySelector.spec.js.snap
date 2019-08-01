@@ -6,6 +6,7 @@ exports[`QtySelector decrements correctly 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -667,6 +668,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -1328,6 +1330,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -3311,6 +3314,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -3341,601 +3345,601 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
   </div>
   <button
@@ -4601,6 +4605,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   </div>
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -4661,603 +4666,603 @@ exports[`QtySelector increments correctly 1`] = `
   >
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -0px;"
+      style="top: -34px;"
       type="text"
-      value="0"
+      value="1"
     />
   </div>
   <button
@@ -5322,603 +5327,694 @@ exports[`QtySelector increments twice correctly 1`] = `
   >
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
     />
     <input
       class="sc-gqjmRU jUkIwc"
-      style="top: -34px;"
+      style="top: -68px;"
       type="text"
-      value="1"
+      value="2"
+    />
+  </div>
+  <button
+    class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector renders QtySelector correctly when there are min and max 1`] = `
+<div
+  class="sc-dnqmqq gQTnSb"
+>
+  <button
+    class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="sc-gZMcBi eVNOlY"
+  >
+    <input
+      class="sc-gqjmRU jUkIwc"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-gqjmRU jUkIwc"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-gqjmRU jUkIwc"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-gqjmRU jUkIwc"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="sc-gqjmRU jUkIwc"
+      style="top: -0px;"
+      type="text"
+      value="0"
     />
   </div>
   <button
@@ -5955,6 +6051,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -5985,601 +6082,601 @@ exports[`QtySelector renders default QtySelector 1`] = `
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
   </div>
   <button
@@ -6648,700 +6745,700 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       disabled=""
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
   </div>
   <button
@@ -7379,6 +7476,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -7409,601 +7507,601 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
     <input
       class="sc-gqjmRU jUkIwc"
       style="top: -0px;"
       type="text"
-      value=""
+      value="0"
     />
   </div>
   <button
@@ -8040,6 +8138,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
 >
   <button
     class="sc-iwsKbI eZUJRF noFocus sc-bdVaJa dsIgYQ"
+    disabled=""
   >
     <svg
       height="24"
@@ -8069,7 +8168,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
     <input
       class="sc-gqjmRU jUkIwc"
       type="text"
-      value=""
+      value="0"
     />
   </div>
   <button

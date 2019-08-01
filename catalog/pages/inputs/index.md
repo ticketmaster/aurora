@@ -420,7 +420,7 @@ rows:
     Default: "null"
     Notes: Invoked with an array of updatedSelections when one or more option(s) is selected by the user
   - Prop: variant
-    Type: 
+    Type:
       enum(
         DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL,
         DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL,
@@ -501,7 +501,7 @@ span: 6
     <Container>
         <Row>
             <Column medium={4}>
-                <DropDownGroup 
+                <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
@@ -849,18 +849,33 @@ rows:
     Type: bool
     Default:
     Notes: defines if toggle is disabled
+  - Prop: min
+    Type: number
+    Default: 0
+    Notes: defines min number. The decrement button is disabled when min value is reached.
+  - Prop: max
+    Type: number
+    Default: 99
+    Notes: defines max number. The increment button is disabled when max value is reached.
+  - Prop: onValueChanged
+    Type: function
+    Default:
+    Notes: call back function when value is updated either by buttons or keyboard. Use this function instead of onChange.
 ```
 
-It also accepts any event handlers. e.g. `onChange`, `onBlur`, `onFocus` etc. as well as styles object.
+It also accepts any event handlers. e.g. `onBlur`, `onFocus` etc. as well as styles object.
 
 ```react
 span: 6
 ---
 <div style={{ display: 'flex' }}>
-    <div style={{ width: '50%' }}>
+    <div style={{ width: '30%' }}>
         <QtySelector value={50} />
     </div>
-    <div style={{ width: '50%' }}>
+    <div style={{ width: '30%' }}>
+        <QtySelector value={2} min={2} max={4}/>
+    </div>
+    <div style={{ width: '30%' }}>
         <QtySelector value={50} disabled/>
     </div>
 </div>
