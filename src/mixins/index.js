@@ -1,20 +1,35 @@
 export { default as backgroundImage } from "./backgroundImage";
-export { default as fontSize } from "./fontSize";
-export { default as fontSizes } from "./fontSizes";
-export { default as fontWeight } from "./fontWeight";
-export { default as fontWeights } from "./fontWeights";
 export { default as linearGradient } from "./linearGradient";
-export { default as lineHeight } from "./lineHeight";
 export {
   default as responsiveBackgroundImage
 } from "./responsiveBackgroundImage";
 export {
   default as responsiveLinearGradient
 } from "./responsiveLinearGradient";
-export { default as textTransforms } from "./textTransforms";
-export { default as themeColor } from "./themeColor";
-export { default as themeColors } from "./themeColors";
-export { default as DISPLAY_INLINE } from "./displayInline";
-export { default as BASE_STYLE_BODY } from "./baseStyleBody";
-export { default as BASE_STYLE_HEADER } from "./baseStyleHeader";
-export { default as BASE_STYLE_TYPOGRAPHY } from "./baseStyleTypography";
+export {
+  fontSize,
+  fontSizes,
+  fontWeight,
+  fontWeights,
+  lineHeight,
+  textTransforms,
+  themeColor,
+  themeColors,
+  BASE_STYLE_BODY,
+  BASE_STYLE_HEADER,
+  BASE_STYLE_TYPOGRAPHY,
+  BODY_01,
+  BODY_02,
+  DISPLAY_01,
+  DISPLAY_02,
+  DISPLAY_INLINE,
+  HEADING_01,
+  HEADING_02,
+  HEADING_03,
+  HEADING_04,
+  HEADING_05,
+  LABEL_01,
+  LABEL_CAPS_01,
+  LABEL_CAPS_02,
+  MICRO_01
+} from "./typography";

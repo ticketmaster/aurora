@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HEADING_01 should return the correct values 1`] = `
+Array [
+  "
+  ",
+  "
+  color: ",
+  [Function],
+  ";
+",
+  ";
+  ",
+  "
+  font-size: ",
+  "20px",
+  ";
+",
+  ";
+  ",
+  "
+  ",
+  "font-weight: 600",
+  ";
+",
+  ";
+  ",
+  "
+  line-height: ",
+  "1.25",
+  ";
+",
+  ";
+
+  ",
+  "
+  @media screen and ",
+  "(min-width: 768px)",
+  " {
+    ",
+  "
+        ",
+  "
+  font-size: ",
+  "24px",
+  ";
+",
+  ";
+    ",
+  ";
+  }
+",
+  ";
+",
+]
+`;

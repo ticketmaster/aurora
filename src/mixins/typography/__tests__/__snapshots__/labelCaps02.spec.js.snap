@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LABEL_CAPS_02 should return the correct values 1`] = `
+Array [
+  "
+  ",
+  "
+  ",
+  "
+  color: ",
+  [Function],
+  ";
+",
+  ";
+  ",
+  "
+  ",
+  "font-weight: 600",
+  ";
+",
+  ";
+  ",
+  "
+  line-height: ",
+  "1.25",
+  ";
+",
+  ";
+",
+  ";
+  ",
+  "
+  font-size: ",
+  "10px",
+  ";
+",
+  ";
+  ",
+  "
+    text-transform: ",
+  "uppercase",
+  ";
+  ",
+  ";
+",
+]
+`;

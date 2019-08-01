@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-import { typography } from "../theme";
+import { typography } from "../../theme";
 
 const FONT_SIZE_FALLBACK = "kilo";
 

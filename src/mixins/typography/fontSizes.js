@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-import { typography } from "../theme";
+import { typography } from "../../theme";
 
 const fontSizes = css`
   ${({ size }) =>

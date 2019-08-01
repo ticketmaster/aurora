@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DISPLAY_01 should return the correct values 1`] = `
+Array [
+  "
+  ",
+  "
+  ",
+  "
+  color: ",
+  [Function],
+  ";
+",
+  ";
+  ",
+  "
+  font-size: ",
+  "24px",
+  ";
+",
+  ";
+  ",
+  "
+  line-height: ",
+  "1.25",
+  ";
+",
+  ";
+
+  ",
+  "
+  @media screen and ",
+  "(min-width: 768px)",
+  " {
+    ",
+  "
+        ",
+  "
+  font-size: ",
+  "32px",
+  ";
+",
+  ";
+    ",
+  ";
+  }
+",
+  " ",
+  "
+  @media screen and ",
+  "(min-width: 1024px)",
+  " {
+    ",
+  "
+        ",
+  "
+  font-size: ",
+  "46px",
+  ";
+",
+  ";
+    ",
+  ";
+  }
+",
+  ";
+",
+  ";
+  ",
+  "
+  ",
+  "font-weight: 600",
+  ";
+",
+  ";
+",
+]
+`;

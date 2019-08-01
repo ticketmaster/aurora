@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
-import { THEME_TM } from "../theme/constants";
-import { getThemeValue, isValidThemeColorVariant } from "../utils";
+import { THEME_TM } from "../../theme/constants";
+import { getThemeValue, isValidThemeColorVariant } from "../../utils";
 
 const themeColor = (color, variant) => css`
   color: ${({ theme = THEME_TM }) =>

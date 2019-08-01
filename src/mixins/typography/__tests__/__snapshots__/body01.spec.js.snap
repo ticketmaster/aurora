@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BODY_01 should return the correct values 1`] = `
+Array [
+  "
+  ",
+  "
+  color: ",
+  [Function],
+  ";
+",
+  ";
+  ",
+  "
+  font-size: ",
+  "16px",
+  ";
+",
+  ";
+  ",
+  "
+  line-height: ",
+  "1.5",
+  ";
+",
+  ";
+",
+]
+`;
