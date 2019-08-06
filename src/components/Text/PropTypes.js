@@ -1,6 +1,15 @@
 import PropTypes from "prop-types";
 
-const ALLOWED_SIZES = ["mini", "uno", "hecto", "kilo", "giga", "tera", "zetta"];
+const ALLOWED_SIZES = [
+  "mini",
+  "uno",
+  "hecto",
+  "kilo",
+  "giga",
+  "tera",
+  "zetta",
+  "bronto"
+];
 
 export const variant = PropTypes.oneOf(["accent", "dark", "light"]);
 
