@@ -136,56 +136,32 @@ rows:
 
 ```react
 const str = "Better is together";
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 <Container>
-<Row style={fontSizeRowStyle}>
+  <Row style={fontSizeRowStyle}>
     <Column medium={2}>Responsive Size</Column>
     <Column medium={6}>
-        <Text responsiveSize={{ xSmall: "uno", small: "hecto", medium: "kilo", large: "giga", xLarge: "tera" }}>{str}</Text>
+      <Text responsiveSize={{ xSmall: "uno", small: "hecto", medium: "kilo", large: "giga", xLarge: "tera" }}>{str}</Text>
     </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Uno - 12 px</Column>
-    <Column medium={6}>
-        <Text size="uno">{str}</Text>
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Hecto - 14 px</Column>
-    <Column medium={6}>
-        <Text size="hecto">{str}</Text>
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Kilo - 16 px</Column>
-    <Column medium={6}>
-        <Text size="kilo">{str}</Text>
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Giga - 20 px</Column>
-    <Column medium={6}>
-        <Text size="giga">{str}</Text>
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Tera - 24 px</Column>
-    <Column medium={6}>
-        <Text size="tera">{str}</Text>
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Zetta - 32 px</Column>
-    <Column medium={6} tyle={{fontSize: "32px"}}>
-        {str}
-    </Column>
-</Row>
-<Row style={fontSizeRowStyle}>
-    <Column medium={2}>Bronto - 46 px</Column>
-    <Column medium={6} style={{fontSize: "46px"}}>
-        {str}
-    </Column>
-</Row>
+  </Row>
 
+  {
+    Object.entries(typography.size).map(([size, value]) => {
+      const sizeLabel = `${capitalizeFirstLetter(size)} - ${value}`;
+      return (
+        <Row key={size} style={fontSizeRowStyle}>
+          <Column medium={2}>{sizeLabel}</Column>
+          <Column medium={6}>
+            <Text size={size}>{str}</Text>
+          </Column>
+        </Row>
+      )
+    })
+  }
 </Container>
 ```
 
