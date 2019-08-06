@@ -23,7 +23,6 @@ const fontWeightLabelStyle = {
 
 const fontSizeRowStyle = {
   padding: "20px",
-  display: "flex",
   alignItems: "center"
 };
 
