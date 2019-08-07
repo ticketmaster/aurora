@@ -121,6 +121,7 @@ export {
   ErrorIcon,
   SuccessIcon,
   InfoIcon,
+  InfoDotIcon,
   BackIcon,
   ForwardIcon,
   UpIcon,
