@@ -17,6 +17,7 @@ import {
 class QtySelector extends Component {
   static MAX_LENGTH_VAL = 2;
   static INPUT_HEIGHT = INPUT_HEIGHT;
+  static MIN_INPUT_VALUE = 0;
   static MAX_INPUT_VALUE = 99;
 
   static isNumber = str => {
@@ -30,52 +31,83 @@ class QtySelector extends Component {
   static propTypes = {
     disabled: PropTypes.bool,
     value: PropTypes.number,
-    style: PropTypes.objectOf(PropTypes.string)
+    style: PropTypes.objectOf(PropTypes.string),
+    min: PropTypes.number,
+    max: PropTypes.number,
+    onValueUpdated: PropTypes.func
   };
 
   static defaultProps = {
     disabled: false,
     style: {},
-    value: null
+    value: 0,
+    min: QtySelector.MIN_INPUT_VALUE,
+    max: QtySelector.MAX_INPUT_VALUE,
+    onValueUpdated: () => {}
   };
 
   state = {
-    value: this.props.value || "",
+    value: this.props.value,
     focused: false
   };
 
   handleChange = e => {
     const { value } = e.target;
+    const { max, min } = this.props;
 
     if (
       QtySelector.isNumber(value) &&
-      value.length <= QtySelector.MAX_LENGTH_VAL
+      value.length <= QtySelector.MAX_LENGTH_VAL &&
+      value <= max &&
+      value >= min
     ) {
-      this.setState(() => ({ value: Number.parseInt(value, 10) }));
+      this.setState(
+        () => ({ value: Number.parseInt(value, 10) }),
+        () => this.handleValueUpdated()
+      );
     } else if (value === "") {
       // delete input value case
-      this.setState(() => ({ value: "" }));
+      this.setState(() => ({ value: "" }), () => this.handleValueUpdated());
     }
   };
 
-  increment = () =>
-    this.setState(state => {
-      if (state.value === "") {
-        return { value: 0 };
-      }
-      if (state.value === QtySelector.MAX_INPUT_VALUE) {
-        return { value: QtySelector.MAX_INPUT_VALUE };
-      }
-      return { value: state.value + 1 };
-    });
+  increment = () => {
+    const { max, min } = this.props;
+    this.setState(
+      state => {
+        if (state.value === "") {
+          return { value: min + 1 };
+        }
+        if (state.value === max) {
+          return {};
+        }
+        return { value: state.value + 1 };
+      },
+      () => this.handleValueUpdated()
+    );
+  };
 
-  decrement = () =>
-    this.setState(state => {
-      if (state.value === "" || state.value === 0) {
-        return { value: 0 };
-      }
-      return { value: state.value - 1 };
-    });
+  decrement = () => {
+    const { min } = this.props;
+    this.setState(
+      state => {
+        if (state.value === "") {
+          return { value: min };
+        }
+        if (state.value === min) {
+          return {};
+        }
+        return { value: state.value - 1 };
+      },
+      () => this.handleValueUpdated()
+    );
+  };
+
+  handleValueUpdated = () => {
+    const { onValueUpdated } = this.props;
+    const { value } = this.state;
+    onValueUpdated(value);
+  };
 
   handleFocus = () => {
     this.setState(() => ({
@@ -90,11 +122,11 @@ class QtySelector extends Component {
   };
 
   renderInput = () => {
-    const { disabled, style, ...rest } = this.props;
+    const { disabled, style, min, max, ...rest } = this.props;
     const { value, focused } = this.state;
     // rendering multiple inputs is required for animation
     return !focused ? (
-      [...Array(100)].map((_, i) => (
+      [...Array(max + 1)].map((_, i) => (
         <InputField
           {...rest}
           key={i}
@@ -124,11 +156,12 @@ class QtySelector extends Component {
   };
 
   render() {
-    const { disabled } = this.props;
+    const { disabled, min, max } = this.props;
+    const { value } = this.state;
 
     return (
       <Container>
-        <Button onClick={this.decrement} disabled={disabled}>
+        <Button onClick={this.decrement} disabled={disabled || min === value}>
           <QtySelectorMinusIcon />
         </Button>
         <InputFieldContainer
@@ -136,7 +169,7 @@ class QtySelector extends Component {
         >
           {this.renderInput()}
         </InputFieldContainer>
-        <Button onClick={this.increment} disabled={disabled}>
+        <Button onClick={this.increment} disabled={disabled || max === value}>
           <QtySelectorPlusIcon />
         </Button>
       </Container>
