@@ -92,6 +92,10 @@ export const StyledInput = styled.input.attrs({
       !isFocused ? themes.global.white.base : themes.global.onyx.muted};
   }
 
+  &::-ms-clear {
+    display: none;
+  }
+
   :focus {
     outline: none;
   }
