@@ -1,29 +1,299 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRow /> List Row should render pure list 1`] = `
+.c5 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c5 > * {
+  pointer-events: none;
+}
+
+.c6 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c6 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid rgba(255,255,255,1);
+  border-left: 1px solid rgba(255,255,255,1);
+  margin-bottom: -1px;
+  padding: 0 8px;
+}
+
+.c1:first-child {
+  border-top: 0px;
+}
+
+.c1 .button--expand-or-collapse {
+  position: absolute;
+  right: 0;
+  left: auto;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 48px);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.c7 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c3 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+
+  .c6.button--expanded,
+  .c6.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c6.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding: 0 24px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c7 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c7 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c7.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c7.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed cCGINX"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
     onExpandShow="subTitle"
   >
     <div
-      className="list__container fqHngb"
+      className="list__container c2"
     >
       <div
-        className="row__content fNwkgC"
+        className="row__content c3"
       />
       <div
-        className="gLKmkf"
+        className="c4"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c5"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -44,7 +314,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c6"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -65,7 +335,7 @@ exports[`<ListRow /> List Row should render pure list 1`] = `
       </button>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed cSETUG"
+      className="container__overflow container__overflow--collapsed c7"
     />
   </div>
 </div>
@@ -76,23 +346,671 @@ exports[`<ListRow /> List Row unmounts correctly 1`] = `null`;
 exports[`<ListRow /> List Row unmounts correctly 2`] = `null`;
 
 exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #904eba;
+}
+
+.c18 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c18.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c18 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #0150a7;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c19.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c19.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c17 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -113,16 +1031,16 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--accent text--heliotrope text--primary date--text bxEtxF"
+            className="text text--accent text--heliotrope text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -137,7 +1055,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -145,13 +1063,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -166,7 +1084,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -174,10 +1092,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -193,10 +1111,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -212,10 +1130,10 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -232,11 +1150,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -246,11 +1164,11 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c17"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c18"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -270,35 +1188,860 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c19"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with label correctly 1`] = `
+.c12 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c14 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c18 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.c24 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c24:focus {
+  outline: none;
+}
+
+.c24.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c24 > * {
+  pointer-events: none;
+}
+
+.c9 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c9.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c9 > * {
+  pointer-events: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c3 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c7 {
+  display: none;
+}
+
+.c5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1bab1e;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c8 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1px;
+  padding-bottom: calc(12px + 8px);
+}
+
+.c10 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c20 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c16 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c22 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c22:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c22:hover {
+  background-color: #0150a7;
+}
+
+.c22:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c22:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c22.noFocus:focus {
+  box-shadow: none;
+}
+
+.c25 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c21 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c17 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c13 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c15 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c18 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    display: block;
+  }
+
+  .c9.button--expanded,
+  .c9.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c9.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c3 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c3 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c7.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c7.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c7.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c8 {
+    padding-top: 0;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c11 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c11 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c19 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c19 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c19.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c19.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c19.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c20 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c20 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c20 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c20 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c20.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c20.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c20.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c16 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c16 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c16 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c16 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c25 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c25 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c25.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c25.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c23 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="row__content--top tLVAj"
+      className="row__content--top c2"
     >
       <div
-        className="nRISy"
+        className="c3"
       >
         <div
-          className="row__label row__label--mobile GoYbg"
+          className="row__label row__label--mobile c4"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary c5 c6"
             disabled={false}
             size="hecto"
           >
@@ -306,11 +2049,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--desktop row__label--active eQvyKb"
+          className="row__label row__label--desktop row__label--active c7"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary c5 c6"
             disabled={false}
             size="hecto"
           >
@@ -318,11 +2061,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__label row__label--expanded row__label--desktop row__label--hidden eQvyKb"
+          className="row__label row__label--expanded row__label--desktop row__label--hidden c7"
           data-index={0}
         >
           <div
-            className="text text--accent text-- text--primary cKboNe iutLsF"
+            className="text text--accent text-- text--primary c5 c6"
             disabled={false}
             size="hecto"
           >
@@ -332,12 +2075,12 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </div>
     </div>
     <div
-      className="list__container kKmMen"
+      className="list__container c8"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c9"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -358,16 +2101,16 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c10"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c11"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c12"
             disabled={false}
             size={
               Object {
@@ -382,7 +2125,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c13 c14"
             disabled={false}
             size="hecto"
           >
@@ -390,13 +2133,13 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c15"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c16"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c17 c18"
               disabled={false}
               size={
                 Object {
@@ -411,7 +2154,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c13 c14"
               disabled={false}
               size="hecto"
             >
@@ -419,10 +2162,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c19"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c17 c18"
               disabled={false}
               size={
                 Object {
@@ -438,10 +2181,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c19"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c17 c18"
               disabled={false}
               size={
                 Object {
@@ -457,10 +2200,10 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c20"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c17 c18"
               disabled={false}
               size={
                 Object {
@@ -477,11 +2220,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c21"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c22"
             role="button"
             size="regular"
             width="102px"
@@ -491,11 +2234,11 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c23"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c24"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -515,30 +2258,880 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c25"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with link correctly 1`] = `
+.c22 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c18 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c24 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c24:focus,
+.c24:active,
+.c24:visited,
+.c24:hover {
+  color: #026cdf;
+}
+
+.c24:hover {
+  color: #0150a7;
+}
+
+.c26 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c26:focus,
+.c26:active,
+.c26:visited,
+.c26:hover {
+  color: #026cdf;
+}
+
+.c26:hover {
+  color: #0150a7;
+}
+
+.c20 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c20:focus {
+  outline: none;
+}
+
+.c20.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c20 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-bottom: 8px;
+}
+
+.c21 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c23 {
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.c25 {
+  display: none;
+  line-height: 1.1;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: 1px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #0150a7;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c27 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c17 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c22 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c22 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c22 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    padding-bottom: 12px;
+    padding-left: 181px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c21 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c23 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    display: inline-block;
+  }
+
+  .c25.link--hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c27 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c27 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c27.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c27.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eqMTEn"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -559,16 +3152,16 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -583,7 +3176,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -591,13 +3184,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -612,7 +3205,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -620,10 +3213,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -639,10 +3232,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -658,10 +3251,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -678,11 +3271,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -690,10 +3283,10 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="eGnrhg"
+            className="c17"
           >
             <div
-              className="text text--dark text--secondary PtISw ifpOvA"
+              className="text text--dark text--secondary c7 c18"
               disabled={false}
               size="uno"
             >
@@ -703,11 +3296,11 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c20"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -727,13 +3320,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="row__content--bottom gMkfym"
+      className="row__content--bottom c21"
     >
       <div
-        className="jMKHiO"
+        className="c22"
       >
         <button
-          className="link--row-options eXFyMS hAlRXB"
+          className="link--row-options c23 c24"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -744,7 +3337,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
           Ticket Options Available
         </button>
         <span
-          className="link--row-options fRvHEx emWuwJ"
+          className="link--row-options c25 c26"
           data-index={0}
           href=""
           onClick={null}
@@ -757,30 +3350,678 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c27"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with styled button 1`] = `
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c18 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c18.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c18 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #d6e7fa;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c19.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c19.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c17 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -801,16 +4042,16 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
       </button>
       <a
         aria-label="More Info"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -825,7 +4066,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -833,13 +4074,13 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -854,7 +4095,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -862,10 +4103,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -881,10 +4122,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -900,10 +4141,10 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -920,11 +4161,11 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="More Info"
-            className="dCXubg"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -934,11 +4175,11 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c17"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c18"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -958,30 +4199,678 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c19"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c18 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c18.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c18 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #0150a7;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c19.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c19.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c17 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--expanded iDIzEx"
+    className="row__wrapper row__wrapper--expanded c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container c2"
     >
       <button
         aria-expanded={true}
         aria-label="Collapse Row"
-        className="button--expand-or-collapse button--expanded laDsHS"
+        className="button--expand-or-collapse button--expanded c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1002,16 +4891,16 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -1026,7 +4915,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -1034,13 +4923,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1055,7 +4944,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -1063,10 +4952,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--expanded cEBRXE"
+            className="column__content list-row__title column__content--expanded c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1082,10 +4971,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--expanded cEBRXE"
+            className="column__content list-row__title column__content--expanded c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1101,10 +4990,10 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--collapsed eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--collapsed c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1121,11 +5010,11 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -1135,11 +5024,11 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c17"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c18"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -1159,30 +5048,879 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--expanded dApCYQ"
+      className="container__overflow container__overflow--expanded c19"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
+.c22 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c18 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c26 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c26:focus,
+.c26:active,
+.c26:visited,
+.c26:hover {
+  color: #026cdf;
+}
+
+.c26:hover {
+  color: #0150a7;
+}
+
+.c24 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c24:focus,
+.c24:active,
+.c24:visited,
+.c24:hover {
+  color: #026cdf;
+}
+
+.c24:hover {
+  color: #0150a7;
+}
+
+.c20 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c20:focus {
+  outline: none;
+}
+
+.c20.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c20 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-bottom: 8px;
+}
+
+.c21 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c23 {
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.c25 {
+  display: none;
+  line-height: 1.1;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: 1px;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #0150a7;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c27 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c17 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c22 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c22 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c22 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c21 {
+    padding-bottom: 12px;
+    padding-left: 181px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c21 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c23 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c25 {
+    display: inline-block;
+  }
+
+  .c25.link--hidden {
+    opacity: 0;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c27 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c27 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c27 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c27.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c27.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container eqMTEn"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1203,16 +5941,16 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -1227,7 +5965,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -1235,13 +5973,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1256,7 +5994,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -1264,10 +6002,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1283,10 +6021,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1302,10 +6040,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1322,11 +6060,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -1334,10 +6072,10 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
             See Tickets
           </span>
           <div
-            className="eGnrhg"
+            className="c17"
           >
             <div
-              className="text text--dark text--secondary PtISw ifpOvA"
+              className="text text--dark text--secondary c7 c18"
               disabled={false}
               size="uno"
             >
@@ -1347,11 +6085,11 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c19"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c20"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -1371,13 +6109,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="row__content--bottom gMkfym"
+      className="row__content--bottom c21"
     >
       <div
-        className="jMKHiO"
+        className="c22"
       >
         <button
-          className="link--row-options eXFyMS hAlRXB"
+          className="link--row-options c23 c24"
           data-index={0}
           href={null}
           onClick={[Function]}
@@ -1388,7 +6126,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
           Ticket options available
         </button>
         <a
-          className="fRvHEx dYTnRX"
+          className="c25 c26"
           data-index={0}
           href="/"
           onClick={null}
@@ -1401,30 +6139,678 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c27"
     />
   </div>
 </div>
 `;
 
 exports[`<ListRow /> renders standard List Row correctly 1`] = `
+.c6 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: rgba(38,38,38,1);
+}
+
+.c8 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c18 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c18.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c18 > * {
+  pointer-events: none;
+}
+
+.c3 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c3 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: calc(12px + 8px);
+  padding-bottom: calc(12px + 8px);
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2px 4px;
+  margin-left: -4px;
+  min-height: 49px;
+  -webkit-box-pack: horizontal;
+  -webkit-justify-content: horizontal;
+  -ms-flex-pack: horizontal;
+  justify-content: horizontal;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 121px;
+  max-width: 121px;
+}
+
+.c13 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c14 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  display: none;
+}
+
+.c10 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+.c16 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  min-width: 102px;
+  max-width: 102px;
+  height: 41px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.4;
+  padding: 18px 0;
+}
+
+.c16:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c16:hover {
+  background-color: #0150a7;
+}
+
+.c16:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c16:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c16.noFocus:focus {
+  box-shadow: none;
+}
+
+.c19 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.c15 {
+  display: none;
+  padding-left: 8px;
+  position: relative;
+}
+
+.c17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c11 {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+}
+
+.c9 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 {
+  width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c12 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: block;
+  }
+
+  .c3.button--expanded,
+  .c3.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c3.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border-radius: 4px;
+  }
+
+  .c1.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01),0 4px 10px 0 rgba(0,0,0,0.19);
+    margin-bottom: 12px;
+  }
+
+  .c1.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4:hover {
+    background-color: #d6e7fa;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    width: 26.8%;
+    max-width: 136px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c5 {
+    width: 32.7%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c13 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c13 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c13.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c13.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c13.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c14 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c14 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .c14.column__content--expanded {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c14.column__content--collapsed {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c14.column__content--fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c10 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c10 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c19 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c19 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c19.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c19.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c17 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c9 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="adGQN"
+  className="c0"
   onClick={[Function]}
   onModalClose={[Function]}
   onRowCollapse={[Function]}
 >
   <div
-    className="row__wrapper row__wrapper--collapsed iDIzEx"
+    className="row__wrapper row__wrapper--collapsed c1"
     onCloseRequest={[Function]}
   >
     <div
-      className="list__container MPOiE"
+      className="list__container c2"
     >
       <button
         aria-expanded={false}
         aria-label="Expand Row"
-        className="button--expand-or-collapse button--collapsed laDsHS"
+        className="button--expand-or-collapse button--collapsed c3"
         data-index={0}
         onClick={[Function]}
         role="button"
@@ -1445,16 +6831,16 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </button>
       <a
         aria-label="See Tickets"
-        className="link__wrapper cAyegw"
+        className="link__wrapper c4"
         href="/"
         onClick={[Function]}
         role="link"
       >
         <div
-          className="date__wrapper hqkpgr"
+          className="date__wrapper c5"
         >
           <div
-            className="text text--dark text--primary date--text gpIiDw"
+            className="text text--dark text--primary date--text c6"
             disabled={false}
             size={
               Object {
@@ -1469,7 +6855,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             apr 23
           </div>
           <div
-            className="text text--dark text--secondary day-time--text PtISw jomeqb"
+            className="text text--dark text--secondary day-time--text c7 c8"
             disabled={false}
             size="hecto"
           >
@@ -1477,13 +6863,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="row__content EFDAD"
+          className="row__content c9"
         >
           <div
-            className="column__mobile-only leZhxW"
+            className="column__mobile-only c10"
           >
             <div
-              className="text text--dark text--primary list-row__title keoegT iFABcd"
+              className="text text--dark text--primary list-row__title c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1498,7 +6884,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
               Del Mar Fairgrounds
             </div>
             <div
-              className="text text--dark text--secondary list-row--subtitle PtISw jomeqb"
+              className="text text--dark text--secondary list-row--subtitle c7 c8"
               disabled={false}
               size="hecto"
             >
@@ -1506,10 +6892,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary keoegT iFABcd"
+              className="text text--dark text--primary c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1525,10 +6911,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--collapsed cEBRXE"
+            className="column__content list-row__title column__content--collapsed c13"
           >
             <div
-              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed keoegT iFABcd"
+              className="text text--dark text--primary subtitle list-row--subtitle subtitle--collapsed c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1544,10 +6930,10 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
             </div>
           </div>
           <div
-            className="column__content list-row__title column__content--fixed column__content--expanded eDbEhs"
+            className="column__content list-row__title column__content--fixed column__content--expanded c14"
           >
             <div
-              className="text text--dark text--primary subtitle keoegT iFABcd"
+              className="text text--dark text--primary subtitle c11 c12"
               disabled={false}
               size={
                 Object {
@@ -1564,11 +6950,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
           </div>
         </div>
         <div
-          className="hcOeVH"
+          className="c15"
         >
           <span
             aria-label="See Tickets"
-            className="gGqupZ"
+            className="c16"
             role="button"
             size="regular"
             width="102px"
@@ -1578,11 +6964,11 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
         </div>
       </a>
       <div
-        className="dVldQS"
+        className="c17"
       >
         <button
           aria-label="More Info"
-          className="button--more-info icon-button--last dZkVVO"
+          className="button--more-info icon-button--last c18"
           data-index={0}
           onClick={[Function]}
           role="button"
@@ -1602,7 +6988,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
       </div>
     </div>
     <div
-      className="container__overflow container__overflow--collapsed dApCYQ"
+      className="container__overflow container__overflow--collapsed c19"
     />
   </div>
 </div>

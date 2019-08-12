@@ -1,8 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Column renders correctly when small value is 0 1`] = `
+.c0 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 0%;
+  display: none;
+  -webkit-flex: 0 0 0%;
+  -ms-flex: 0 0 0%;
+  flex: 0 0 0%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    max-width: 50%;
+    display: block;
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+  }
+}
+
 <div
-  class="sc-bdVaJa jCYtFM"
+  class="c0"
 >
   <span>
     Content!
@@ -11,8 +54,51 @@ exports[`Column renders correctly when small value is 0 1`] = `
 `;
 
 exports[`Column renders correctly when value is 0 1`] = `
+.c0 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 8.333333333333332%;
+  display: block;
+  -webkit-flex: 0 0 8.333333333333332%;
+  -ms-flex: 0 0 8.333333333333332%;
+  flex: 0 0 8.333333333333332%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 0%;
+    display: none;
+    -webkit-flex: 0 0 0%;
+    -ms-flex: 0 0 0%;
+    flex: 0 0 0%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    max-width: 0%;
+    display: none;
+    -webkit-flex: 0 0 0%;
+    -ms-flex: 0 0 0%;
+    flex: 0 0 0%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    max-width: 0%;
+    display: none;
+    -webkit-flex: 0 0 0%;
+    -ms-flex: 0 0 0%;
+    flex: 0 0 0%;
+  }
+}
+
 <div
-  class="sc-bdVaJa fFxxKd"
+  class="c0"
 >
   <span>
     Content!
@@ -21,8 +107,51 @@ exports[`Column renders correctly when value is 0 1`] = `
 `;
 
 exports[`Column renders correctly without any props 1`] = `
+.c0 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
 <div
-  class="sc-bdVaJa fVSYzJ"
+  class="c0"
 >
   <span>
     Content!

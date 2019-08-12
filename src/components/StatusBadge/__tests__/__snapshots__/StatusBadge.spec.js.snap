@@ -1,8 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StatusBadge should match snapshot when variant is dark 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
 <div
-  className="badge lftmLP"
+  className="badge c0"
   color="#026cdf"
 >
   snapshot test
@@ -10,8 +26,24 @@ exports[`StatusBadge should match snapshot when variant is dark 1`] = `
 `;
 
 exports[`StatusBadge should match snapshot when variant is light 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: #262626;
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
 <div
-  className="badge ctVbnM"
+  className="badge c0"
   color="#026cdf"
 >
   light test
@@ -19,8 +51,24 @@ exports[`StatusBadge should match snapshot when variant is light 1`] = `
 `;
 
 exports[`StatusBadge should match snapshot when variant is undefined 1`] = `
+.c0 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #026cdf;
+}
+
 <div
-  className="badge lftmLP"
+  className="badge c0"
   color="#026cdf"
 >
   snapshot test

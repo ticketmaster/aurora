@@ -1,11 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioInput /> should render the correct markup 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="ljZyWa"
+  className="c0"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -17,11 +143,137 @@ exports[`<RadioInput /> should render the correct markup 1`] = `
 `;
 
 exports[`<RadioInput /> should render the correct markup when additional props are passed 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="input--radio-button ljZyWa"
+  className="input--radio-button c0"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -33,11 +285,137 @@ exports[`<RadioInput /> should render the correct markup when additional props a
 `;
 
 exports[`<RadioInput /> should render the correct markup when the checked prop equals true 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={true}
   aria-labelledby="genrerocklabel"
   checked={true}
-  className="ljZyWa"
+  className="c0"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -49,11 +427,137 @@ exports[`<RadioInput /> should render the correct markup when the checked prop e
 `;
 
 exports[`<RadioInput /> should render the correct markup when the disabled prop equals true 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="ljZyWa"
+  className="c0"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -65,11 +569,137 @@ exports[`<RadioInput /> should render the correct markup when the disabled prop 
 `;
 
 exports[`<RadioInput /> should render the correct markup when the isActive prop equals true 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="ljZyWa"
+  className="c0"
   disabled={false}
   id="genrerockinput"
   name="genre"
@@ -81,11 +711,137 @@ exports[`<RadioInput /> should render the correct markup when the isActive prop 
 `;
 
 exports[`<RadioInput /> should render the correct markup when the isFocused prop equals true 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="ljZyWa"
+  className="c0"
   disabled={true}
   id="genrerockinput"
   name="genre"
@@ -97,11 +853,137 @@ exports[`<RadioInput /> should render the correct markup when the isFocused prop
 `;
 
 exports[`<RadioInput /> should render the correct markup when the size prop equals large 1`] = `
+.c0 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c0 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0 {
+  width: 16px;
+  height: 16px;
+}
+
+.c0:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c0:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c0:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c0:before {
+  border: 1px solid #262626;
+}
+
+.c0:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c0:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c0:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c0:after {
+  background-color: #262626;
+}
+
+.c0:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c0:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c0:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c0:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c0:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c0:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
 <input
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="ljZyWa"
+  className="c0"
   disabled={true}
   id="genrerockinput"
   name="genre"

@@ -1,17 +1,168 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SeatTooltip should match snapshot when has children 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: none;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: none;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #999999;
+  line-height: 1;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c3:first-child {
+  text-align: left;
+}
+
+.c3:last-child {
+  text-align: right;
+}
+
+.c4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #999999;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.c6 {
+  padding: 16px;
+  font-size: 14px;
+  color: #262626;
+}
+
 <div
-  className="c0 cENRLf"
+  className="c0 c1"
   direction="auto"
   style={
     Object {
@@ -21,52 +172,52 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
   }
 >
   <div
-    className="krQPGk"
+    className="c2"
     size="large"
   >
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Sec
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         B
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Row
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         5
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Seat
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         25
@@ -74,7 +225,7 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
     </div>
   </div>
   <div
-    className="eVjFSs"
+    className="c6"
     size="large"
   >
     <div>
@@ -85,17 +236,162 @@ exports[`SeatTooltip should match snapshot when has children 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: none;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: none;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: none;
+  line-height: 1;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c3:first-child {
+  text-align: left;
+}
+
+.c3:last-child {
+  text-align: right;
+}
+
+.c4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #999999;
+}
+
+.c5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
 <div
-  className="c0 cENRLf"
+  className="c0 c1"
   direction="auto"
   style={
     Object {
@@ -105,52 +401,52 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
   }
 >
   <div
-    className="fShvgq"
+    className="c2"
     size="large"
   >
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Sec
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Row
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         5
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="ksuVUq"
+        className="c4"
         size="large"
       >
         Seat
       </div>
       <div
-        className="jrDrcJ"
+        className="c5"
         size="large"
       >
         25
@@ -161,17 +457,168 @@ exports[`SeatTooltip should match snapshot when no children and dark 1`] = `
 `;
 
 exports[`SeatTooltip should match snapshot when small and dark 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: none;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: none;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #999999;
+  line-height: 1;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.c3:first-child {
+  text-align: left;
+}
+
+.c3:last-child {
+  text-align: right;
+}
+
+.c4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #999999;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+}
+
+.c6 {
+  padding: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,1);
+}
+
 <div
-  className="c0 cENRLf"
+  className="c0 c1"
   direction="auto"
   style={
     Object {
@@ -181,52 +628,52 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
   }
 >
   <div
-    className="PUrql"
+    className="c2"
     size="small"
   >
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="vsgKP"
+        className="c4"
         size="small"
       >
         Sec
       </div>
       <div
-        className="dyJniy"
+        className="c5"
         size="small"
       >
         B
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="vsgKP"
+        className="c4"
         size="small"
       >
         Row
       </div>
       <div
-        className="dyJniy"
+        className="c5"
         size="small"
       >
         5
       </div>
     </div>
     <div
-      className="chFKRM"
+      className="c3"
     >
       <div
-        className="vsgKP"
+        className="c4"
         size="small"
       >
         Seat
       </div>
       <div
-        className="dyJniy"
+        className="c5"
         size="small"
       >
         25
@@ -234,7 +681,7 @@ exports[`SeatTooltip should match snapshot when small and dark 1`] = `
     </div>
   </div>
   <div
-    className="ieNCtg"
+    className="c6"
     size="small"
   >
     <div>

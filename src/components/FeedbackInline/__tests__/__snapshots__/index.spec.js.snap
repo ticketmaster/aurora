@@ -1,27 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<FeedbackInline /> renders correctly 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c5 {
+  padding-top: 8px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.25;
+}
+
+.collapsed .c5 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c3 {
+  line-height: 1.25;
+}
+
 <div>
   <div
-    class="collapsed sc-gZMcBi gdDZRZ"
+    class="collapsed c0"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jTzLTM fSclqV"
+      class="c1"
     />
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary c3 c4"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c5 c6"
         />
       </div>
     </div>
@@ -30,13 +84,67 @@ exports[`<FeedbackInline /> renders correctly 1`] = `
 `;
 
 exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c5 {
+  padding-top: 8px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.25;
+}
+
+.collapsed .c5 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c3 {
+  line-height: 1.25;
+}
+
 <div>
   <div
-    class="collapsed banner-variant--alert sc-gZMcBi gdDZRZ"
+    class="collapsed banner-variant--alert c0"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jTzLTM fSclqV"
+      class="c1"
     >
       <svg
         class=""
@@ -70,18 +178,18 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary c3 c4"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>
@@ -92,13 +200,67 @@ exports[`<FeedbackInline /> renders correctly when variant is set 1`] = `
 `;
 
 exports[`<FeedbackInline /> renders correctly with content 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c5 {
+  padding-top: 8px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.25;
+}
+
+.collapsed .c5 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c3 {
+  line-height: 1.25;
+}
+
 <div>
   <div
-    class="collapsed banner-variant--alert sc-gZMcBi gdDZRZ"
+    class="collapsed banner-variant--alert c0"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jTzLTM fSclqV"
+      class="c1"
     >
       <svg
         class=""
@@ -132,18 +294,18 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary c3 c4"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>
@@ -154,13 +316,67 @@ exports[`<FeedbackInline /> renders correctly with content 1`] = `
 `;
 
 exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c5 {
+  padding-top: 8px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.25;
+}
+
+.collapsed .c5 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c3 {
+  line-height: 1.25;
+}
+
 <div>
   <div
-    class="collapsed sc-gZMcBi gdDZRZ"
+    class="collapsed c0"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jTzLTM fSclqV"
+      class="c1"
     >
       <svg
         height="24"
@@ -185,18 +401,18 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary c3 c4"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>
@@ -207,14 +423,68 @@ exports[`<FeedbackInline /> renders correctly with custom icon 1`] = `
 `;
 
 exports[`<FeedbackInline /> renders correctly with link 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  box-sizing: border-box;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c5 {
+  padding-top: 8px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.25;
+}
+
+.collapsed .c5 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c3 {
+  line-height: 1.25;
+}
+
 <div>
   <div
-    class="collapsed banner-variant--alert sc-gZMcBi gdDZRZ"
+    class="collapsed banner-variant--alert c0"
     href="https://www.ticketmaster.com/"
     style="max-height: 21px;"
   >
     <div
-      class="sc-jTzLTM fSclqV"
+      class="c1"
     >
       <svg
         class=""
@@ -248,18 +518,18 @@ exports[`<FeedbackInline /> renders correctly with link 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <div>
         <span
-          class="text text--dark text--primary sc-fjdhpX kBqDjO sc-ifAKCX jrkHpW"
+          class="text text--dark text--primary c3 c4"
         >
           This is your primary message text.
         </span>
       </div>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT hQKXeL sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>

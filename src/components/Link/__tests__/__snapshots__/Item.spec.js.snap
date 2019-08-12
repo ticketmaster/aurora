@@ -1,13 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LinkItem /> renders LinkItem as button  1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <div>
   <span
     class="list-container list-container--closed"
     role="none"
   >
     <button
-      class="link sc-bxivhb kPFQWz"
+      class="link c0"
       role="button"
     >
       Button text
@@ -17,13 +46,42 @@ exports[`<LinkItem /> renders LinkItem as button  1`] = `
 `;
 
 exports[`<LinkItem /> renders LinkItem as button when disableHoverEvents equals true 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <div>
   <span
     class="list-container list-container--closed"
     role="none"
   >
     <button
-      class="link sc-bxivhb kPFQWz"
+      class="link c0"
       role="button"
     >
       Button text
@@ -33,13 +91,42 @@ exports[`<LinkItem /> renders LinkItem as button when disableHoverEvents equals 
 `;
 
 exports[`<LinkItem /> renders LinkItem as link 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <div>
   <span
     class="list-container list-container--closed"
     role="none"
   >
     <a
-      class="link sc-bxivhb kPFQWz"
+      class="link c0"
       href="http://localhost/new/"
       rel="noopener"
       role="link"
@@ -52,13 +139,42 @@ exports[`<LinkItem /> renders LinkItem as link 1`] = `
 `;
 
 exports[`<LinkItem /> renders LinkItem as link when disableHoverEvents equals true 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <div>
   <span
     class="list-container list-container--closed"
     role="none"
   >
     <a
-      class="link sc-bxivhb kPFQWz"
+      class="link c0"
       href="http://localhost/new/"
       rel="noopener"
       role="link"
@@ -71,6 +187,64 @@ exports[`<LinkItem /> renders LinkItem as link when disableHoverEvents equals tr
 `;
 
 exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <div>
   <span
     class="list-container list-container--closed"
@@ -79,23 +253,23 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
     <button
       aria-expanded="false"
       aria-haspopup="true"
-      class="link link--has-other sc-bxivhb kPFQWz"
+      class="link link--has-other c0"
       role="button"
     >
       Button text
     </button>
     <div
-      class="sc-bdVaJa links links__list bhMvGM"
+      class="links links__list c1"
     >
       <div
-        class="sc-bwzfXH bQTlgY"
+        class="c2"
       >
         <span
           class="list-container list-container--closed"
           role="none"
         >
           <a
-            class="link sc-bxivhb kPFQWz"
+            class="link c0"
             href="/"
             role="link"
             target="_self"
@@ -108,7 +282,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link sc-bxivhb kPFQWz"
+            class="link c0"
             href="/"
             role="link"
             target="_self"
@@ -121,7 +295,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link sc-bxivhb kPFQWz"
+            class="link c0"
             href="/"
             role="link"
             target="_self"

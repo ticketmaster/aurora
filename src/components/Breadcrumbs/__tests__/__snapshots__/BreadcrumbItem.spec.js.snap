@@ -1,11 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] = `
+.c1 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c1:focus,
+.c1:active,
+.c1:visited,
+.c1:hover {
+  color: rgba(255,255,255,1);
+}
+
+.c1:hover {
+  color: #0150a7;
+}
+
+.c0 {
+  white-space: nowrap;
+}
+
 <li
-  className="hLIAGC"
+  className="c0"
 >
   <a
-    className="dwQrcO boAnYn"
+    className="c1"
     href="/"
     onClick={null}
     rel="_self"
@@ -18,11 +45,47 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 `;
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
+.c2 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c2:focus,
+.c2:active,
+.c2:visited,
+.c2:hover {
+  color: rgba(255,255,255,1);
+}
+
+.c2:hover {
+  color: #0150a7;
+}
+
+.c0 {
+  white-space: nowrap;
+}
+
+.c1 {
+  cursor: text;
+}
+
+.c1:hover {
+  color: currentColor;
+}
+
 <li
-  className="hLIAGC"
+  className="c0"
 >
   <span
-    className="ibDjor hCDblW"
+    className="c1 c2"
     href={null}
     onClick={null}
     rel="_self"

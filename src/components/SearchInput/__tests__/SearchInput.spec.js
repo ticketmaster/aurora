@@ -1,6 +1,5 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import "jest-styled-components";
 import SearchInput from "../index";
 import { Cancel, SearchSuggest } from "../Search.styles";
 import { getSearchHeight } from "../constants";

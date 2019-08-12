@@ -1,8 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LinkCta renders a button when only onclick is provided 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <button
-  className=" noFocus jGTFdF"
+  className=" noFocus c0"
   onClick={[Function]}
   rel=""
   size={null}
@@ -13,8 +51,38 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
 `;
 
 exports[`LinkCta renders a default LinkCta 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <a
-  className=" noFocus jBwpNk"
+  className=" noFocus c0"
   href="http://localhost/"
   rel=""
   size={null}
@@ -25,8 +93,39 @@ exports[`LinkCta renders a default LinkCta 1`] = `
 `;
 
 exports[`LinkCta renders a span when no href or onClick provided 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <span
-  className=" noFocus KUoDS"
+  className=" noFocus c0"
   rel=""
   size={null}
   target="_self"
@@ -36,8 +135,46 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
 `;
 
 exports[`LinkCta renders correctly with reverse colors 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  color: #3396ff;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0:visited,
+.c0:active,
+.c0:hover {
+  color: #80b5ef;
+}
+
 <a
-  className=" noFocus kGjWNx"
+  className=" noFocus c0"
   href="#"
   rel=""
   size={null}
@@ -48,8 +185,39 @@ exports[`LinkCta renders correctly with reverse colors 1`] = `
 `;
 
 exports[`LinkCta static size as pixels 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <span
-  className=" noFocus fUMEpv"
+  className=" noFocus c0"
   rel=""
   size="20px"
   target="_self"
@@ -59,8 +227,39 @@ exports[`LinkCta static size as pixels 1`] = `
 `;
 
 exports[`LinkCta static size from typography 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease,text-decoration 0.3s ease;
+  transition: color 0.3s ease,text-decoration 0.3s ease;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #026cdf;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:active {
+  color: #0150a7;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
+.c0.noFocus:focus {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 <span
-  className=" noFocus fUMEpv"
+  className=" noFocus c0"
   rel=""
   size="normal"
   target="_self"

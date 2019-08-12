@@ -1,18 +1,196 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RowLabel /> renders RowLabel 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c5 {
+  display: none;
+}
+
+.c3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c5.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c5.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c5.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -20,11 +198,11 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c5"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -32,11 +210,11 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c5"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -48,18 +226,195 @@ exports[`<RowLabel /> renders RowLabel 1`] = `
 `;
 
 exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c5 {
+  display: none;
+}
+
+.c3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #904eba;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c5.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c5.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c5.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary elFtvQ gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -67,11 +422,11 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c5"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary elFtvQ gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -79,11 +434,11 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c5"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary elFtvQ gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -95,40 +450,216 @@ exports[`<RowLabel /> renders RowLabel variant \`accent\` 1`] = `
 `;
 
 exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
+.c3 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #d93a3a;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c4 {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c4.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c4.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c4.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="badge gYyJWD"
+        className="badge c3"
         color="#d93a3a"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c4"
       data-index={0}
     >
       <div
-        className="badge gYyJWD"
+        className="badge c3"
         color="#d93a3a"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c4"
       data-index={0}
     >
       <div
-        className="badge gYyJWD"
+        className="badge c3"
         color="#d93a3a"
       >
         test label
@@ -139,40 +670,216 @@ exports[`<RowLabel /> renders RowLabel variant \`alert\` 1`] = `
 `;
 
 exports[`<RowLabel /> renders RowLabel variant \`caution\` 1`] = `
+.c3 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #c69a22;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c4 {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c4.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c4.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c4.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="badge jktpIU"
+        className="badge c3"
         color="#c69a22"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c4"
       data-index={0}
     >
       <div
-        className="badge jktpIU"
+        className="badge c3"
         color="#c69a22"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c4"
       data-index={0}
     >
       <div
-        className="badge jktpIU"
+        className="badge c3"
         color="#c69a22"
       >
         test label
@@ -183,40 +890,216 @@ exports[`<RowLabel /> renders RowLabel variant \`caution\` 1`] = `
 `;
 
 exports[`<RowLabel /> renders RowLabel variant \`neutral\` 1`] = `
+.c3 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: rgba(38,38,38,0.65);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c4 {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c4.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c4.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c4.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="badge imbETb"
+        className="badge c3"
         color="rgba(38, 38, 38, 0.65)"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c4"
       data-index={0}
     >
       <div
-        className="badge imbETb"
+        className="badge c3"
         color="rgba(38, 38, 38, 0.65)"
       >
         test label
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c4"
       data-index={0}
     >
       <div
-        className="badge imbETb"
+        className="badge c3"
         color="rgba(38, 38, 38, 0.65)"
       >
         test label
@@ -227,18 +1110,195 @@ exports[`<RowLabel /> renders RowLabel variant \`neutral\` 1`] = `
 `;
 
 exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c5 {
+  display: none;
+}
+
+.c3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1bab1e;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c5.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c5.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c5.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dZPgBK gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -246,11 +1306,11 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--desktop row__label--active c5"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dZPgBK gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -258,11 +1318,11 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--hidden c5"
       data-index={0}
     >
       <div
-        className="text text--accent text-- text--primary dZPgBK gmxDtj"
+        className="text text--accent text-- text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -274,18 +1334,196 @@ exports[`<RowLabel /> renders RowLabel variant \`positive\` 1`] = `
 `;
 
 exports[`<RowLabel /> renders opened RowLabel 1`] = `
+.c4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  padding-left: 121px;
+  padding-top: 8px;
+  font-size: 11px;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.c5 {
+  display: none;
+}
+
+.c3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: inherit;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 12px;
+    padding-left: 181px;
+    padding-right: calc(102px - 8px);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-left: 183px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .c5.row__label--hidden {
+    -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+
+  .c5.row__label--active {
+    -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c5.row__label--expanded {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
 <div
-  className="row__content--top kTeQJB"
+  className="row__content--top c0"
 >
   <div
-    className="gPMPcW"
+    className="c1"
   >
     <div
-      className="row__label row__label--mobile eDpmCe"
+      className="row__label row__label--mobile c2"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -293,11 +1531,11 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--desktop row__label--hidden dlcHxL"
+      className="row__label row__label--desktop row__label--hidden c5"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >
@@ -305,11 +1543,11 @@ exports[`<RowLabel /> renders opened RowLabel 1`] = `
       </div>
     </div>
     <div
-      className="row__label row__label--expanded row__label--desktop row__label--active dlcHxL"
+      className="row__label row__label--expanded row__label--desktop row__label--active c5"
       data-index={0}
     >
       <div
-        className="text text--dark text--primary lbLEiz gwaFLV"
+        className="text text--dark text--primary c3 c4"
         disabled={false}
         size="hecto"
       >

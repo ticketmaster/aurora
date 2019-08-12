@@ -2,59 +2,214 @@
 
 exports[`ButtonGroup renders button group with default selected element 1`] = `
 Object {
-  "container": <div>
+  "container": .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.c3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c4 {
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.c9 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #1f262d;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #ebebeb;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c9:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c9:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+.c9:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: rgba(255,255,255,1);
+}
+
+.c9:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #1f262d;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  opacity: 0.2;
+}
+
+.c9.noFocus:focus {
+  box-shadow: none;
+}
+
+.c7 {
+  width: 50%;
+}
+
+.c7:nth-child(2n + 1) {
+  padding-right: 4px;
+}
+
+.c7:nth-child(2n) {
+  padding-left: 4px;
+}
+
+.c8 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.c8:hover {
+  border: solid 1px #026cdf;
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8.button__selected {
+  background-color: rgba(2,108,223,0.1);
+  border: solid 1px #026cdf;
+}
+
+.c0 {
+  padding: 24px 16px 0 16px;
+}
+
+.c2 {
+  line-height: 1.25;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+<div>
     <div
-      class="sc-kEYyzF cGSVRW"
+      class="c0"
     >
       <div
-        class="sc-bwzfXH RpnLm"
+        class="c1"
       >
         <div
-          class="text text--dark text--primary sc-kkGfuU kIGIsH sc-bZQynM dDBbro"
+          class="text text--dark text--primary c2 c3"
         >
           Sort by
         </div>
       </div>
       <div
-        class="sc-bwzfXH RpnLm"
+        class="c1"
       >
         <div
-          class="sc-bwzfXH RpnLm"
+          class="c1"
         >
           <div
-            class="text text--dark text--secondary sc-jzJRlG kxFhHb sc-bZQynM dvqadL"
+            class="text text--dark text--secondary c4 c5"
           >
             Category
           </div>
         </div>
         <div
-          class="sc-bdVaJa erSRMf"
+          class="c6"
         >
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="button__selected sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="button__selected c8 noFocus c9"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="c8 noFocus c9"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="c8 noFocus c9"
               data-testid="test-button2"
             >
               Button Label
@@ -100,59 +255,214 @@ Object {
 
 exports[`ButtonGroup renders default button group 1`] = `
 Object {
-  "container": <div>
+  "container": .c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 16px;
+}
+
+.c3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c4 {
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.c9 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #1f262d;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #ebebeb;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c9:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c9:hover {
+  background-color: rgba(255,255,255,1);
+}
+
+.c9:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: rgba(255,255,255,1);
+}
+
+.c9:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #1f262d;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  opacity: 0.2;
+}
+
+.c9.noFocus:focus {
+  box-shadow: none;
+}
+
+.c7 {
+  width: 50%;
+}
+
+.c7:nth-child(2n + 1) {
+  padding-right: 4px;
+}
+
+.c7:nth-child(2n) {
+  padding-left: 4px;
+}
+
+.c8 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.c8:hover {
+  border: solid 1px #026cdf;
+}
+
+.c8:focus {
+  box-shadow: none;
+}
+
+.c8.button__selected {
+  background-color: rgba(2,108,223,0.1);
+  border: solid 1px #026cdf;
+}
+
+.c0 {
+  padding: 24px 16px 0 16px;
+}
+
+.c2 {
+  line-height: 1.25;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    padding-top: 0;
+    padding-bottom: 16px;
+  }
+}
+
+<div>
     <div
-      class="sc-kEYyzF cGSVRW"
+      class="c0"
     >
       <div
-        class="sc-bwzfXH RpnLm"
+        class="c1"
       >
         <div
-          class="text text--dark text--primary sc-kkGfuU kIGIsH sc-bZQynM dDBbro"
+          class="text text--dark text--primary c2 c3"
         >
           Sort by
         </div>
       </div>
       <div
-        class="sc-bwzfXH RpnLm"
+        class="c1"
       >
         <div
-          class="sc-bwzfXH RpnLm"
+          class="c1"
         >
           <div
-            class="text text--dark text--secondary sc-jzJRlG kxFhHb sc-bZQynM dvqadL"
+            class="text text--dark text--secondary c4 c5"
           >
             Category
           </div>
         </div>
         <div
-          class="sc-bdVaJa erSRMf"
+          class="c6"
         >
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="c8 noFocus c9"
               data-testid="test-button0"
             >
               All
             </button>
           </div>
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="c8 noFocus c9"
               data-testid="test-button1"
             >
               Concerts
             </button>
           </div>
           <div
-            class="sc-eNQAEJ jfDpKy"
+            class="c7"
           >
             <button
-              class="sc-hMqMXs jKUFUL noFocus sc-cSHVUG cpHQgj"
+              class="c8 noFocus c9"
               data-testid="test-button2"
             >
               Button Label

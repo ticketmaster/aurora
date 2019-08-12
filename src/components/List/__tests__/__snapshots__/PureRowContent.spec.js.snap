@@ -1,21 +1,287 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] = `
+.c4 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c4 > * {
+  pointer-events: none;
+}
+
+.c5 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c5 > * {
+  pointer-events: none;
+}
+
+.c0 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid rgba(255,255,255,1);
+  border-left: 1px solid rgba(255,255,255,1);
+  margin-bottom: -1px;
+  padding: 0 8px;
+}
+
+.c0:first-child {
+  border-top: 0px;
+}
+
+.c0 .button--expand-or-collapse {
+  position: absolute;
+  right: 0;
+  left: auto;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 48px);
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: block;
+  }
+
+  .c5.button--expanded,
+  .c5.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c5.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding: 0 24px;
+  }
+
+  .c0.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+
+  .c0.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c6 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c6 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c6.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c6.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 <div
-  className="row__wrapper row__wrapper--collapsed cCGINX"
+  className="row__wrapper row__wrapper--collapsed c0"
 >
   <div
-    className="list__container fqHngb"
+    className="list__container c1"
   >
     <div
-      className="row__content fNwkgC"
+      className="row__content c2"
     />
     <div
-      className="gLKmkf"
+      className="c3"
     >
       <button
         aria-label="More Info"
-        className="button--more-info icon-button--last eBivpT"
+        className="button--more-info icon-button--last c4"
         data-index={0}
         onClick={[MockFunction]}
         role="button"
@@ -36,7 +302,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
     <button
       aria-expanded={false}
       aria-label="Expand Row"
-      className="button--expand-or-collapse button--collapsed cUGuuI"
+      className="button--expand-or-collapse button--collapsed c5"
       data-index={0}
       onClick={[Function]}
       role="button"
@@ -57,7 +323,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
     </button>
   </div>
   <div
-    className="container__overflow container__overflow--collapsed cSETUG"
+    className="container__overflow container__overflow--collapsed c6"
   >
     content
   </div>
@@ -65,16 +331,282 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
 `;
 
 exports[`<PureListRowContent /> renders standard Pure Row Content correctly with left triggers 1`] = `
+.c5 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c5 > * {
+  pointer-events: none;
+}
+
+.c2 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c2 > * {
+  pointer-events: none;
+}
+
+.c0 {
+  background-color: rgba(255,255,255,1);
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid rgba(255,255,255,1);
+  border-left: 1px solid rgba(255,255,255,1);
+  margin-bottom: -1px;
+  padding: 0 8px;
+}
+
+.c0:first-child {
+  border-top: 0px;
+}
+
+.c0 .button--expand-or-collapse {
+  position: absolute;
+  right: auto;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 48px);
+}
+
+.c1 {
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.c6 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c3 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    display: block;
+  }
+
+  .c2.button--expanded,
+  .c2.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c2.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding: 0 24px;
+  }
+
+  .c0.row__wrapper--expanded {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955),margin-bottom 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+    margin-bottom: 3px;
+    margin-top: 3px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+    border: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+
+  .c0.row__wrapper--collapsed {
+    -webkit-transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: box-shadow 0.3s cubic-bezier(0.55,0.085,0.68,0.53),margin-bottom 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+    box-shadow: 0;
+    margin-bottom: -1px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c6 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c6 {
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    border-top: 1px solid #E0E0E0;
+  }
+
+  .c6.container__overflow--expanded {
+    background-color: rgba(255,255,255,1);
+    max-height: 600px;
+    -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.2s;
+    opacity: 1;
+  }
+
+  .c6.container__overflow--collapsed {
+    -webkit-transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    transition: max-height 0.3s cubic-bezier(0.55,0.085,0.68,0.53),opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c6 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 <div
-  className="row__wrapper row__wrapper--collapsed hBMlRG"
+  className="row__wrapper row__wrapper--collapsed c0"
 >
   <div
-    className="list__container fqHngb"
+    className="list__container c1"
   >
     <button
       aria-expanded={false}
       aria-label="Expand Row"
-      className="button--expand-or-collapse button--collapsed cUGuuI"
+      className="button--expand-or-collapse button--collapsed c2"
       data-index={0}
       onClick={[Function]}
       role="button"
@@ -94,14 +626,14 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
       </svg>
     </button>
     <div
-      className="row__content fNwkgC"
+      className="row__content c3"
     />
     <div
-      className="gLKmkf"
+      className="c4"
     >
       <button
         aria-label="More Info"
-        className="button--more-info icon-button--last eBivpT"
+        className="button--more-info icon-button--last c5"
         data-index={0}
         onClick={[MockFunction]}
         role="button"
@@ -121,7 +653,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
     </div>
   </div>
   <div
-    className="container__overflow container__overflow--collapsed cSETUG"
+    className="container__overflow container__overflow--collapsed c6"
   >
     content
   </div>

@@ -1,8 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
+.c0 {
+  display: block;
+}
+
+.c0 > div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+
+.c0 > div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c0 > div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c0 > div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c0 > div {
+  left: calc(50% - 80px / 2);
+  width: 80px;
+  height: 80px;
+  margin: 0px;
+  border: 3px solid #904eba;
+  border-color: #904eba transparent transparent transparent;
+}
+
+.c1 {
+  display: block;
+}
+
+.c1 > div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+
+.c1 > div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c1 > div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c1 > div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c1 > div {
+  width: 60px;
+  height: 60px;
+  margin-top: 7px;
+  margin-left: 7px;
+  border: 3px solid #aadddd;
+  border-color: #aadddd transparent transparent transparent;
+}
+
+.c2 {
+  display: block;
+}
+
+.c2 > div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+
+.c2 > div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+  animation-delay: -0.45s;
+}
+
+.c2 > div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.c2 > div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+  animation-delay: -0.15s;
+}
+
+.c2 > div {
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+  margin-left: 7px;
+  border: 3px solid #026cdf;
+  border-color: #026cdf transparent transparent transparent;
+}
+
 <div
-  className="emAHDt"
+  className="c0"
   display="block"
   size="regular"
 >
@@ -10,7 +121,7 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
   <div />
   <div />
   <div
-    className="gJQhmP"
+    className="c1"
     display="block"
     size="regular"
   >
@@ -18,7 +129,7 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
     <div />
     <div />
     <div
-      className="jESAEz"
+      className="c2"
       display="block"
       size="regular"
     >

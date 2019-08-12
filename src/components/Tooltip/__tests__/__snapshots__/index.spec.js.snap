@@ -1,129 +1,493 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tooltip dark should match snapshot 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
+}
+
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 }
 
 <div
-  className="c0 bcUhGD"
+  className="c0 c1"
   direction="auto"
 />
 `;
 
 exports[`Tooltip should match snapshot 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: none;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: none;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
 <div
-  className="c0 cENRLf"
+  className="c0 c1"
   direction="auto"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is bottom 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c3.open-enter .c0.open-enter:before,
+.c3.open-appear,
+.c3.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.kyRINg.open-enter .c0.open-enter:before,
-.kyRINg.open-appear,
-.kyRINg.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px + 0px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
+}
+
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 }
 
 <div
-  className="c0 kyRINg"
+  className="c0 c1"
   direction="bottom"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is invalid 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px);
+  top: -1px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.kyRINg.open-enter .c0.open-enter:before,
-.kyRINg.open-appear,
-.kyRINg.open-appear:before {
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+}
+
+.c3.open-enter .c0.open-enter:before,
+.c3.open-appear,
+.c3.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.diTJYY.open-enter .c0.open-enter:before,
-.diTJYY.open-appear,
-.diTJYY.open-appear:before {
+.c4.open-enter .c0.open-enter:before,
+.c4.open-appear,
+.c4.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.gCIEPE.open-enter .c0.open-enter:before,
-.gCIEPE.open-appear,
-.gCIEPE.open-appear:before {
+.c5.open-enter .c0.open-enter:before,
+.c5.open-appear,
+.c5.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.cnGjUl.open-enter .c0.open-enter:before,
-.cnGjUl.open-appear,
-.cnGjUl.open-appear:before {
+.c6.open-enter .c0.open-enter:before,
+.c6.open-appear,
+.c6.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
@@ -131,163 +495,436 @@ exports[`Tooltip should match snapshot when visisble and direction is invalid 1`
 }
 
 <div
-  className="c0 bcUhGD"
+  className="c0 c1"
   direction="invalid"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is left 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c3.open-enter .c0.open-enter:before,
+.c3.open-appear,
+.c3.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.kyRINg.open-enter .c0.open-enter:before,
-.kyRINg.open-appear,
-.kyRINg.open-appear:before {
+.c4.open-enter .c0.open-enter:before,
+.c4.open-appear,
+.c4.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.diTJYY.open-enter .c0.open-enter:before,
-.diTJYY.open-appear,
-.diTJYY.open-appear:before {
+.c5.open-enter .c0.open-enter:before,
+.c5.open-appear,
+.c5.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.gCIEPE.open-enter .c0.open-enter:before,
-.gCIEPE.open-appear,
-.gCIEPE.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  top: 10px;
+  right: -7px;
+  -webkit-transform: translateY(0%) rotate(-45deg);
+  -ms-transform: translateY(0%) rotate(-45deg);
+  transform: translateY(0%) rotate(-45deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
+}
+
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 }
 
 <div
-  className="c0 gCIEPE"
+  className="c0 c1"
   direction="left"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is right 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c3.open-enter .c0.open-enter:before,
+.c3.open-appear,
+.c3.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.kyRINg.open-enter .c0.open-enter:before,
-.kyRINg.open-appear,
-.kyRINg.open-appear:before {
+.c4.open-enter .c0.open-enter:before,
+.c4.open-appear,
+.c4.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.diTJYY.open-enter .c0.open-enter:before,
-.diTJYY.open-appear,
-.diTJYY.open-appear:before {
+.c5.open-enter .c0.open-enter:before,
+.c5.open-appear,
+.c5.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.gCIEPE.open-enter .c0.open-enter:before,
-.gCIEPE.open-appear,
-.gCIEPE.open-appear:before {
+.c6.open-enter .c0.open-enter:before,
+.c6.open-appear,
+.c6.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.cnGjUl.open-enter .c0.open-enter:before,
-.cnGjUl.open-appear,
-.cnGjUl.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  top: 10px;
+  left: -7px;
+  -webkit-transform: translateY(0%) rotate(135deg);
+  -ms-transform: translateY(0%) rotate(135deg);
+  transform: translateY(0%) rotate(135deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
+}
+
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 }
 
 <div
-  className="c0 cnGjUl"
+  className="c0 c1"
   direction="right"
 />
 `;
 
 exports[`Tooltip should match snapshot when visisble and direction is top 1`] = `
-.cENRLf.open-enter .c0.open-enter:before,
-.cENRLf.open-appear,
-.cENRLf.open-appear:before {
+.c2.open-enter .c0.open-enter:before,
+.c2.open-appear,
+.c2.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.bcUhGD.open-enter .c0.open-enter:before,
-.bcUhGD.open-appear,
-.bcUhGD.open-appear:before {
+.c3.open-enter .c0.open-enter:before,
+.c3.open-appear,
+.c3.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.kyRINg.open-enter .c0.open-enter:before,
-.kyRINg.open-appear,
-.kyRINg.open-appear:before {
+.c4.open-enter .c0.open-enter:before,
+.c4.open-appear,
+.c4.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
 }
 
-.diTJYY.open-enter .c0.open-enter:before,
-.diTJYY.open-appear,
-.diTJYY.open-appear:before {
+.c1 {
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.12);
+  position: absolute;
+  max-width: 260px;
+  color: #262626;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.15s cubic-bezier(0.55,0.085,0.68,0.53);
+  display: inline-block;
+  border-top-left-radius: 100%;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateY(-50%) rotate(-135deg);
+  -ms-transform: translateY(-50%) rotate(-135deg);
+  transform: translateY(-50%) rotate(-135deg);
+  background-color: rgba(255,255,255,1);
+  left: calc(50% - 6px + 0px);
+  bottom: -13px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.c1.open-enter .c0.open-enter:before,
+.c1.open-appear,
+.c1.open-appear:before {
   -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
   display: block;
   opacity: 0;
+}
+
+.c1.open-enter,
+.c1.open-appear {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-active,
+.c1.open-enter-active:before,
+.c1.open-appear-active,
+.c1.open-appear-active:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-active,
+.c1.open-appear-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-enter-done,
+.c1.open-enter-done:before {
+  -webkit-transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.25s cubic-bezier(0.25,0.46,0.45,0.94);
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+
+.c1.open-exit,
+.c1.open-exit:before {
+  display: block;
+  opacity: 1;
+}
+
+.c1.open-exit-active,
+.c1.open-exit-active:before {
+  display: block;
+  opacity: 0;
+}
+
+.c1.open-exit-done {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
 }
 
 <div
-  className="c0 diTJYY"
+  className="c0 c1"
   direction="top"
 />
 `;

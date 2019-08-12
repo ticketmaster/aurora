@@ -1,6 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Link> closes <LinkList> on click 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--closed"
   role="none"
@@ -8,7 +66,7 @@ exports[`<Link> closes <LinkList> on click 1`] = `
   <a
     aria-expanded="false"
     aria-haspopup="true"
-    class="link link--has-other sc-ifAKCX fZSBBb"
+    class="link link--has-other c0"
     href="/"
     role="link"
     target="_self"
@@ -17,17 +75,17 @@ exports[`<Link> closes <LinkList> on click 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list iQcfWo"
+    class="links links__list c1"
   >
     <div
-      class="sc-htpNat emXdXc"
+      class="c2"
     >
       <span
         class="list-container list-container--closed"
         role="none"
       >
         <a
-          class="link sc-ifAKCX fZSBBb"
+          class="link c0"
           href="/page/"
           role="link"
           target="_self"
@@ -41,6 +99,64 @@ exports[`<Link> closes <LinkList> on click 1`] = `
 `;
 
 exports[`<Link> closes <LinkList> on mouse leave 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--closed"
   role="none"
@@ -48,7 +164,7 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
   <a
     aria-expanded="false"
     aria-haspopup="true"
-    class="link link--has-other sc-ifAKCX fZSBBb"
+    class="link link--has-other c0"
     href="/"
     role="link"
     target="_self"
@@ -57,17 +173,17 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list iQcfWo"
+    class="links links__list c1"
   >
     <div
-      class="sc-htpNat emXdXc"
+      class="c2"
     >
       <span
         class="list-container list-container--closed"
         role="none"
       >
         <a
-          class="link sc-ifAKCX fZSBBb"
+          class="link c0"
           href="/page/"
           role="link"
           target="_self"
@@ -81,12 +197,41 @@ exports[`<Link> closes <LinkList> on mouse leave 1`] = `
 `;
 
 exports[`<Link> does not close when link has no content 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--closed"
   role="none"
 >
   <a
-    class="link sc-ifAKCX fZSBBb"
+    class="link c0"
     href="/"
     role="link"
     target="_self"
@@ -97,12 +242,41 @@ exports[`<Link> does not close when link has no content 1`] = `
 `;
 
 exports[`<Link> does not open when link has no content 1`] = `
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--closed"
   role="none"
 >
   <a
-    class="link sc-ifAKCX fZSBBb"
+    class="link c0"
     href="/"
     role="link"
     target="_self"
@@ -113,6 +287,64 @@ exports[`<Link> does not open when link has no content 1`] = `
 `;
 
 exports[`<Link> opens <LinkList> on click 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--open"
   role="none"
@@ -120,7 +352,7 @@ exports[`<Link> opens <LinkList> on click 1`] = `
   <a
     aria-expanded="true"
     aria-haspopup="true"
-    class="link link--has-other link--open sc-ifAKCX fZSBBb"
+    class="link link--has-other link--open c0"
     href="/"
     role="link"
     target="_self"
@@ -129,17 +361,17 @@ exports[`<Link> opens <LinkList> on click 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list iQcfWo"
+    class="links links__list c1"
   >
     <div
-      class="sc-htpNat emXdXc"
+      class="c2"
     >
       <span
         class="list-container list-container--closed"
         role="none"
       >
         <a
-          class="link sc-ifAKCX fZSBBb"
+          class="link c0"
           href="/page/"
           role="link"
           target="_self"
@@ -153,6 +385,64 @@ exports[`<Link> opens <LinkList> on click 1`] = `
 `;
 
 exports[`<Link> opens <LinkList> on mouse enter 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--open"
   role="none"
@@ -160,7 +450,7 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
   <a
     aria-expanded="true"
     aria-haspopup="true"
-    class="link link--has-other link--open sc-ifAKCX fZSBBb"
+    class="link link--has-other link--open c0"
     href="/"
     role="link"
     target="_self"
@@ -169,17 +459,17 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
   </a>
    
   <div
-    class="sc-bwzfXH links links__list iQcfWo"
+    class="links links__list c1"
   >
     <div
-      class="sc-htpNat emXdXc"
+      class="c2"
     >
       <span
         class="list-container list-container--closed"
         role="none"
       >
         <a
-          class="link sc-ifAKCX fZSBBb"
+          class="link c0"
           href="/page/"
           role="link"
           target="_self"
@@ -193,6 +483,64 @@ exports[`<Link> opens <LinkList> on mouse enter 1`] = `
 `;
 
 exports[`<Link> touch events exist does not open <LinkList> on mouse enter 1`] = `
+.c1 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c1 {
+  display: block;
+}
+
+.c1.links__list--open {
+  display: block;
+}
+
+.c2 {
+  padding: 8px;
+}
+
+.c2.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c0 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c0 {
+  width: 100%;
+  text-align: left;
+}
+
+.c0:focus,
+.c0:hover {
+  outline: 0;
+}
+
+.c0.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 <span
   class="list-container list-container--closed"
   role="none"
@@ -200,7 +548,7 @@ exports[`<Link> touch events exist does not open <LinkList> on mouse enter 1`] =
   <a
     aria-expanded="false"
     aria-haspopup="true"
-    class="link link--has-other sc-ifAKCX fZSBBb"
+    class="link link--has-other c0"
     href="/"
     role="link"
     target="_self"
@@ -209,17 +557,17 @@ exports[`<Link> touch events exist does not open <LinkList> on mouse enter 1`] =
   </a>
    
   <div
-    class="sc-bwzfXH links links__list iQcfWo"
+    class="links links__list c1"
   >
     <div
-      class="sc-htpNat emXdXc"
+      class="c2"
     >
       <span
         class="list-container list-container--closed"
         role="none"
       >
         <a
-          class="link sc-ifAKCX fZSBBb"
+          class="link c0"
           href="/page/"
           role="link"
           target="_self"

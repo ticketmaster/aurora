@@ -1,15 +1,211 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input renders default input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
@@ -17,7 +213,7 @@ exports[`Input renders default input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>
@@ -25,15 +221,211 @@ exports[`Input renders default input 1`] = `
 `;
 
 exports[`Input renders disabled input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-top text--input-disabled sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top text--input-disabled c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       disabled=""
       id="test1__input"
       name="test1"
@@ -42,7 +434,7 @@ exports[`Input renders disabled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>
@@ -50,15 +442,211 @@ exports[`Input renders disabled input 1`] = `
 `;
 
 exports[`Input renders input with error 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-top text__error sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top text__error c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
@@ -66,7 +654,7 @@ exports[`Input renders input with error 1`] = `
     />
     <label
       aria-invalid="true"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     >
       Something Went Wrong
@@ -76,21 +664,217 @@ exports[`Input renders input with error 1`] = `
 `;
 
 exports[`Input renders input without name 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       placeholder="test hint"
       type="text"
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>
@@ -98,22 +882,255 @@ exports[`Input renders input without name 1`] = `
 `;
 
 exports[`Input renders large input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #262626;
+  position: relative;
+}
+
+.text--input-small .c1 {
+  font-size: 10px;
+}
+
+.text--input-large .c1 {
+  font-size: 14px;
+}
+
+.text--input-disabled .c1 {
+  opacity: 0.4;
+}
+
+.text--input-top .c1 {
+  margin-bottom: 6px;
+}
+
+.text--input-left .c1 {
+  margin-right: 11px;
+  margin-top: 10px;
+}
+
+.text--input-left.text--input-small .c1 {
+  margin-top: 5px;
+}
+
+.text--input-left.text--input-large .c1 {
+  margin-top: 14px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c3 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c3 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c3.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c3:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c3:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c3:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c3:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c3:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c3:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c3:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c3:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c3:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c3:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c3 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c3 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c3 {
+  border: 1px solid #d93a3a;
+}
+
+.c4 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c4 {
+  opacity: 0.4;
+}
+
+.text__error .c4 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-large text--input-top sc-bdVaJa cBKMGA"
+  class="text--input-large text--input-top c0"
 >
   <label
-    class="sc-bwzfXH ddQPaW"
+    class="c1"
     id="test1firstname__label"
     style="font-size: 20px;"
   >
     First Name
   </label>
   <div
-    class="sc-htpNat eXpulu"
+    class="c2"
   >
     <input
       aria-labelledby="test1firstname__label"
-      class="sc-bxivhb hBvKYg"
+      class="c3"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
@@ -121,7 +1138,7 @@ exports[`Input renders large input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c4"
       role="alert"
     />
   </div>
@@ -129,15 +1146,211 @@ exports[`Input renders large input 1`] = `
 `;
 
 exports[`Input renders left labeled input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-left sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-left c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
@@ -145,7 +1358,7 @@ exports[`Input renders left labeled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>
@@ -153,15 +1366,211 @@ exports[`Input renders left labeled input 1`] = `
 `;
 
 exports[`Input renders small input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-small text--input-top sc-bdVaJa cBKMGA"
+  class="text--input-small text--input-top c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
@@ -170,7 +1579,7 @@ exports[`Input renders small input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>
@@ -178,15 +1587,211 @@ exports[`Input renders small input 1`] = `
 `;
 
 exports[`Input renders top labeled input 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.c0.text--input-top {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.c0.text--input-left {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0.text--input-disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2 {
+  height: 36px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #999999;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: normal;
+  font-size: 14px;
+  color: #262626;
+}
+
+textarea.c2 {
+  resize: none;
+  min-height: 180px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.c2.text--input-left {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-moz-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2::-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:-ms-input-placeholder {
+  color: #262626;
+  opacity: 0.4;
+}
+
+.c2:focus {
+  border: 1px solid #026cdf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 4px 0 inset #026cdf;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.text--input-small .c2:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2:focus {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.c2:hover {
+  border: 2px solid #026cdf;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.text__error .c2:hover {
+  border: 1px solid #d93a3a;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text__error.text--input-small .c2:hover {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text__error.text--input-large .c2:hover {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+textarea.c2:hover {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text--input-small .c2:hover {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.text--input-large .c2:hover {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.text--input-small .c2 {
+  height: 24px;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.text--input-large .c2 {
+  height: 44px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.text__error .c2 {
+  border: 1px solid #d93a3a;
+}
+
+.c3 {
+  opacity: 0;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: #d93a3a;
+  position: relative;
+  margin-top: 1px;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.text--input-disabled .c3 {
+  opacity: 0.4;
+}
+
+.text__error .c3 {
+  opacity: 1;
+}
+
 <div
-  class="text--input-regular text--input-top sc-bdVaJa cBKMGA"
+  class="text--input-regular text--input-top c0"
 >
   
   <div
-    class="sc-htpNat eXpulu"
+    class="c1"
   >
     <input
-      class="sc-bxivhb hBvKYg"
+      class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
@@ -194,7 +1799,7 @@ exports[`Input renders top labeled input 1`] = `
     />
     <label
       aria-invalid="false"
-      class="sc-ifAKCX gWpzXV"
+      class="c3"
       role="alert"
     />
   </div>

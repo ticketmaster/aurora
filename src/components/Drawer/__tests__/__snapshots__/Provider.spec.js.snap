@@ -3,9 +3,26 @@
 exports[`DrawerProvider renders child elements 1`] = `"<div class=\\"sc-ifAKCX jCatYo\\"><div>Content</div></div>"`;
 
 exports[`DrawerProvider sets content 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0.drawer--open {
+  overflow: hidden;
+}
+
 <div>
   <div
-    class="sc-ifAKCX jCatYo"
+    class="c0"
   >
     <div>
       <button
@@ -20,9 +37,26 @@ exports[`DrawerProvider sets content 1`] = `
 `;
 
 exports[`DrawerProvider toggles drawer 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0.drawer--open {
+  overflow: hidden;
+}
+
 <div>
   <div
-    class="drawer--open sc-ifAKCX jCatYo"
+    class="drawer--open c0"
   >
     <div>
       <button

@@ -1,15 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RangeSlider should match snapshot 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  box-sizing: border-box;
+  height: calc(23px + 1px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.disabled {
+  opacity: 0.4;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  background-color: #ebebeb;
+  height: 4px;
+}
+
 <div
-  className="slider ljVsAN"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="slider__rail fIZwol"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -37,15 +64,42 @@ exports[`RangeSlider should match snapshot 1`] = `
 `;
 
 exports[`RangeSlider should match snapshot when disabled 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  box-sizing: border-box;
+  height: calc(23px + 1px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.disabled {
+  opacity: 0.4;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  background-color: #ebebeb;
+  height: 4px;
+}
+
 <div
-  className="slider slider--disabled disabled ljVsAN"
+  className="slider slider--disabled disabled c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="slider__rail fIZwol"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -73,15 +127,42 @@ exports[`RangeSlider should match snapshot when disabled 1`] = `
 `;
 
 exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  box-sizing: border-box;
+  height: calc(23px + 1px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.disabled {
+  opacity: 0.4;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  background-color: #ebebeb;
+  height: 4px;
+}
+
 <div
-  className="slider ljVsAN"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="slider__rail fIZwol"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -109,15 +190,42 @@ exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
 `;
 
 exports[`RangeSlider should match snapshot when single 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  box-sizing: border-box;
+  height: calc(23px + 1px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0.disabled {
+  opacity: 0.4;
+}
+
+.c1 {
+  position: absolute;
+  width: 100%;
+  background-color: #ebebeb;
+  height: 4px;
+}
+
 <div
-  className="slider ljVsAN"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="slider__rail fIZwol"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"

@@ -3,25 +3,106 @@
 exports[`<Banner /> renders correctly when closed 1`] = `<div />`;
 
 exports[`<Banner /> renders correctly when open 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     />
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         />
       </div>
     </div>
@@ -30,13 +111,94 @@ exports[`<Banner /> renders correctly when open 1`] = `
 `;
 
 exports[`<Banner /> renders correctly when variant is set 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed banner-variant-alert visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -69,16 +231,16 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -89,13 +251,94 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 `;
 
 exports[`<Banner /> renders correctly with close button 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed banner-variant-alert visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -128,16 +371,16 @@ exports[`<Banner /> renders correctly with close button 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -148,25 +391,106 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 `;
 
 exports[`<Banner /> renders correctly with content 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     />
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -177,13 +501,94 @@ exports[`<Banner /> renders correctly with content 1`] = `
 `;
 
 exports[`<Banner /> renders correctly with custom icon 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -208,16 +613,16 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -228,13 +633,94 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 `;
 
 exports[`<Banner /> renders correctly with custom title for the close button 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed banner-variant-alert visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -267,16 +753,16 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         />
       </div>
     </div>
@@ -285,13 +771,94 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 `;
 
 exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed banner-variant-alert visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -324,16 +891,16 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -344,13 +911,94 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 `;
 
 exports[`<Banner /> renders correctly with link 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  box-sizing: content-box;
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
+.c1 {
+  padding-right: 16px;
+}
+
 <div>
   <div
-    class="collapsed banner-variant-alert visible-banner sc-gZMcBi dmfFSg"
+    class="collapsed banner-variant-alert visible-banner c0"
     style="max-height: 56px;"
   >
     <div
-      class="sc-jzJRlG gEWVas"
+      class="c1"
     >
       <svg
         height="24"
@@ -383,16 +1031,16 @@ exports[`<Banner /> renders correctly with link 1`] = `
       </svg>
     </div>
     <div
-      class="sc-gqjmRU bnZzdM"
+      class="c2"
     >
       <span
-        class="text text--dark text--primary sc-ifAKCX jrkHpW"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
       <div>
         <div
-          class="text text--dark text--primary sc-VigVT SFrkV sc-ifAKCX gwaFLV"
+          class="text text--dark text--primary c4 c5"
         />
       </div>
     </div>

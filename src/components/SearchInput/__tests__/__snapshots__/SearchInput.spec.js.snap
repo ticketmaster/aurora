@@ -1,18 +1,179 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchInput icon only should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 44px;
+  max-width: 100%;
+  min-width: 320px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.5);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  visibility: visible;
+}
+
+.c0 > * {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only > * {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only.search--container-focused,
+.c0.search--container-icon-only.search--container-has-value {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only.search--container-focused > *,
+.c0.search--container-icon-only.search--container-has-value > * {
+  visibility: visible;
+}
+
+.c1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search--container .c1 {
+  visibility: visible;
+}
+
+.c3 {
+  font-size: 16px;
+  height: 100%;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3::-webkit-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-moz-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3:-ms-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c2 {
+  margin: 0 16px;
+}
+
+.c5 {
+  border: none;
+  background: transparent;
+  outline: none;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  color: rgba(255,255,255,1);
+  padding: 0 16px 0 0;
+  height: 100%;
+}
+
+.c4 {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: 100%;
+  width: 44px;
+  margin-left: 8px;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+}
+
+.c4 svg {
+  margin-left: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    width: 40px;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
 <div
-  className="search--container search--container-icon-only VIiGN"
+  className="search--container search--container-icon-only c0"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon elbNR"
+    className="search--search-icon c1"
     onClick={[Function]}
     type="button"
   >
     <svg
-      className="gxyxth"
+      className="c2"
       height="24"
       viewBox="0 0 24 24"
       width="24"
@@ -36,7 +197,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input ouBlI"
+    className="search--input c3"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -45,7 +206,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon bPHzCq"
+    className="search--clear-icon c4"
     onClick={[Function]}
     type="button"
     value=""
@@ -73,7 +234,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon c5"
     onClick={[Function]}
     type="button"
   >
@@ -83,18 +244,177 @@ exports[`SearchInput icon only should match snapshot 1`] = `
 `;
 
 exports[`SearchInput large should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 44px;
+  max-width: 100%;
+  min-width: 320px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.5);
+  visibility: visible;
+}
+
+.c0 > * {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only > * {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only.search--container-focused,
+.c0.search--container-icon-only.search--container-has-value {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only.search--container-focused > *,
+.c0.search--container-icon-only.search--container-has-value > * {
+  visibility: visible;
+}
+
+.c1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search--container .c1 {
+  visibility: visible;
+}
+
+.c3 {
+  font-size: 16px;
+  height: 100%;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3::-webkit-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-moz-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3:-ms-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c2 {
+  margin: 0 16px;
+}
+
+.c5 {
+  border: none;
+  background: transparent;
+  outline: none;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  color: rgba(255,255,255,1);
+  padding: 0 16px 0 0;
+  height: 100%;
+}
+
+.c4 {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: 100%;
+  width: 44px;
+  margin-left: 8px;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+}
+
+.c4 svg {
+  margin-left: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    width: 40px;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
 <div
-  className="search--container bSzdPT"
+  className="search--container c0"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon elbNR"
+    className="search--search-icon c1"
     onClick={[Function]}
     type="button"
   >
     <svg
-      className="gxyxth"
+      className="c2"
       height="24"
       viewBox="0 0 24 24"
       width="24"
@@ -118,7 +438,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input ouBlI"
+    className="search--input c3"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -127,7 +447,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon bPHzCq"
+    className="search--clear-icon c4"
     onClick={[Function]}
     type="button"
     value=""
@@ -155,7 +475,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon c5"
     onClick={[Function]}
     type="button"
   >
@@ -165,18 +485,182 @@ exports[`SearchInput large should match snapshot 1`] = `
 `;
 
 exports[`SearchInput mobile and focused should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 44px;
+  max-width: 100%;
+  min-width: 320px;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,1);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  visibility: visible;
+}
+
+.c0 > * {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only > * {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only.search--container-focused,
+.c0.search--container-icon-only.search--container-has-value {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only.search--container-focused > *,
+.c0.search--container-icon-only.search--container-has-value > * {
+  visibility: visible;
+}
+
+.c1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #999999;
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search--container .c1 {
+  visibility: visible;
+}
+
+.c3 {
+  font-size: 16px;
+  height: 100%;
+  color: #262626;
+  padding: 0;
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3::-webkit-input-placeholder {
+  color: rgba(38,38,38,0.4);
+}
+
+.c3::-moz-placeholder {
+  color: rgba(38,38,38,0.4);
+}
+
+.c3:-ms-input-placeholder {
+  color: rgba(38,38,38,0.4);
+}
+
+.c3::placeholder {
+  color: rgba(38,38,38,0.4);
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c2 {
+  margin: 0 16px;
+}
+
+.c5 {
+  border: none;
+  background: transparent;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  color: #026cdf;
+  padding: 0 16px 0 0;
+  height: 100%;
+}
+
+.c4 {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: 100%;
+  width: 44px;
+  margin-left: 8px;
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #999999;
+}
+
+.c4 svg {
+  margin-left: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    width: 40px;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
 <div
-  className="search--container search--container-icon-only search--container-focused dmEOlX"
+  className="search--container search--container-icon-only search--container-focused c0"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon doQCjb"
+    className="search--search-icon c1"
     onClick={[Function]}
     type="button"
   >
     <svg
-      className="gxyxth"
+      className="c2"
       height="24"
       viewBox="0 0 24 24"
       width="24"
@@ -200,7 +684,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input search--input-focused bjaWSd"
+    className="search--input search--input-focused c3"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -209,7 +693,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon boklFi"
+    className="search--clear-icon c4"
     onClick={[Function]}
     type="button"
     value=""
@@ -237,7 +721,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon eynrqJ"
+    className="search--cancel-icon c5"
     onClick={[Function]}
     type="button"
   >
@@ -247,18 +731,180 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
 `;
 
 exports[`SearchInput small should match snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 36px;
+  max-width: 100%;
+  min-width: 320px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgba(255,255,255,0.5);
+  visibility: visible;
+}
+
+.c0 > * {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only > * {
+  visibility: hidden;
+}
+
+.c0.search--container-icon-only.search--container-focused,
+.c0.search--container-icon-only.search--container-has-value {
+  visibility: visible;
+}
+
+.c0.search--container-icon-only.search--container-focused > *,
+.c0.search--container-icon-only.search--container-has-value > * {
+  visibility: visible;
+}
+
+.c1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.search--container .c1 {
+  visibility: visible;
+}
+
+.c3 {
+  font-size: 14px;
+  height: 100%;
+  color: rgba(255,255,255,1);
+  padding: 0;
+  border: none;
+  background: none;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3::-webkit-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-moz-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3:-ms-input-placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::placeholder {
+  color: rgba(255,255,255,1);
+}
+
+.c3::-ms-clear {
+  display: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c2 {
+  margin: 0 16px;
+}
+
+.c5 {
+  border: none;
+  background: transparent;
+  outline: none;
+  display: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 8px;
+  color: rgba(255,255,255,1);
+  padding: 0 16px 0 0;
+  height: 100%;
+}
+
+.c4 {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  height: 100%;
+  width: 44px;
+  margin-left: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+}
+
+.c4 svg {
+  margin-left: 8px;
+}
+
+@media screen and (min-width:768px) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    width: 40px;
+    -webkit-box-pack: left;
+    -webkit-justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+  }
+}
+
 <div
-  className="search--container search--container-has-value bodmAZ"
+  className="search--container search--container-has-value c0"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon elbNR"
+    className="search--search-icon c1"
     onClick={[Function]}
     type="button"
   >
     <svg
-      className="gxyxth"
+      className="c2"
       height="16"
       viewBox="0 0 16 16"
       width="16"
@@ -282,7 +928,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input hlAOOB"
+    className="search--input c3"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -291,7 +937,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon kvTcsu"
+    className="search--clear-icon c4"
     onClick={[Function]}
     type="button"
     value="test"
@@ -324,7 +970,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon bFRYwA"
+    className="search--cancel-icon c5"
     onClick={[Function]}
     type="button"
   >
@@ -334,8 +980,29 @@ exports[`SearchInput small should match snapshot 1`] = `
 `;
 
 exports[`SearchSuggest should match snapshot 1`] = `
+.c0 {
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 16px;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.06),0 0 4px 0 rgba(0,0,0,0.12);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    max-height: 700px;
+    border: 1px solid #999999;
+    border-top: none;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+}
+
 <div
-  className="fFntOX"
+  className="c0"
   onChange={[Function]}
   placeholder="Search Demo"
   value=""

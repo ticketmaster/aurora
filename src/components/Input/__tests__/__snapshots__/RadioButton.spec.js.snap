@@ -2,26 +2,203 @@
 
 exports[`RadioGroup renders default input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c1:before {
+  border: 1px solid #262626;
+}
+
+.c1:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c1:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c1:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c1:after {
+  background-color: #262626;
+}
+
+.c1:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c1:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c1:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c1:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c1:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c1:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  color: #262626;
+  outline: none;
+  min-height: 44px;
+}
+
+.c0.radio-button--disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c0.radio-button--large {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0.radio-button--small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+<div>
     <div
       role="radiogroup"
     >
       <label
-        class="radio-button--small sc-bwzfXH iXqVth"
+        class="radio-button--small c0"
         id="name1valuelabel"
         role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa ljZyWa"
+          class="c1"
           id="name1valueinput"
           name="name1"
           type="radio"
           value="value"
         />
         <span
-          class="sc-htpNat uTBrX"
+          class="c2"
         />
       </label>
     </div>
@@ -62,26 +239,203 @@ Object {
 
 exports[`RadioGroup renders large input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c1:before {
+  border: 1px solid #262626;
+}
+
+.c1:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c1:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c1:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c1:after {
+  background-color: #262626;
+}
+
+.c1:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c1:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c1:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c1:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c1:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c1:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  color: #262626;
+  outline: none;
+  min-height: 44px;
+}
+
+.c0.radio-button--disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c0.radio-button--large {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0.radio-button--small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+<div>
     <div
       role="radiogroup"
     >
       <label
-        class="radio-button--small sc-bwzfXH iXqVth"
+        class="radio-button--small c0"
         id="name1valuelabel"
         role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa ljZyWa"
+          class="c1"
           id="name1valueinput"
           name="name1"
           type="radio"
           value="value"
         />
         <span
-          class="sc-htpNat uTBrX"
+          class="c2"
         />
       </label>
     </div>
@@ -122,26 +476,203 @@ Object {
 
 exports[`RadioGroup renders small input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  background: none;
+  border: none;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.radio-button--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before {
+  content: "";
+  -webkit-transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: box-shadow 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+
+.radio-button--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.radio-button--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.radio-button--disabled .c1:before {
+  border: 1px solid #262626;
+}
+
+.c1:after {
+  content: "";
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: #026cdf;
+}
+
+.radio-button--large .c1:after {
+  width: 8px;
+  height: 8px;
+}
+
+.radio-button--small .c1:after {
+  width: 5px;
+  height: 5px;
+}
+
+.radio-button--disabled .c1:after {
+  background-color: #262626;
+}
+
+.c1:focus:before {
+  outline: none;
+  border-width: 1px;
+  border-color: #026cdf;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.radio-button--large .c1:hover:before {
+  width: 23px;
+  height: 23px;
+}
+
+.radio-button--small .c1:hover:before {
+  width: 15px;
+  height: 15px;
+}
+
+.c1:checked:after {
+  position: absolute;
+  opacity: 1;
+}
+
+.radio-button--large .c1:checked:after {
+  width: 12px;
+  height: 12px;
+}
+
+.radio-button--small .c1:checked:after {
+  width: 8px;
+  height: 8px;
+}
+
+.c0 {
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+  color: #262626;
+  outline: none;
+  min-height: 44px;
+}
+
+.c0.radio-button--disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c0.radio-button--large {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0.radio-button--small {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: 7px;
+}
+
+<div>
     <div
       role="radiogroup"
     >
       <label
-        class="radio-button--small sc-bwzfXH iXqVth"
+        class="radio-button--small c0"
         id="name1valuelabel"
         role="radio"
       >
         <input
           aria-checked="false"
           aria-labelledby="name1valuelabel"
-          class="sc-bdVaJa ljZyWa"
+          class="c1"
           id="name1valueinput"
           name="name1"
           type="radio"
           value="value"
         />
         <span
-          class="sc-htpNat uTBrX"
+          class="c2"
         />
       </label>
     </div>

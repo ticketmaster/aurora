@@ -1,24 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
+.c0 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c0 {
+  display: block;
+}
+
+.c0.links__list--open {
+  display: block;
+}
+
+.c1 {
+  padding: 8px;
+}
+
+.c1.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c2 {
+  padding: 0 12px;
+  height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1f262d;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+}
+
+.c2.links__list__item--selected {
+  background-color: #E6E6E6;
+}
+
+.c2:hover {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+}
+
+.c2:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
 <div
-  class="sc-bdVaJa links links__list bhMvGM"
+  class="links links__list c0"
 >
   <div
-    class="sc-bwzfXH bQTlgY"
+    class="c1"
   >
     <div
-      class="links__list__item--selected sc-bxivhb links__list__item drwIGv"
+      class="links__list__item--selected links__list__item c2"
     >
       USA (English)
     </div>
     <div
-      class="sc-bxivhb links__list__item drwIGv"
+      class="links__list__item c2"
     >
       Canada (English)
     </div>
     <div
-      class="sc-bxivhb links__list__item drwIGv"
+      class="links__list__item c2"
     >
       Canada (Français)
     </div>
@@ -27,26 +86,87 @@ exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
 `;
 
 exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = `
+.c0 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c0 {
+  display: block;
+}
+
+.c0.links__list--open {
+  display: block;
+}
+
+.c1 {
+  padding: 8px;
+}
+
+.c1.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c2 {
+  padding: 0 12px;
+  height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1f262d;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2.links__list__item--selected {
+  background-color: #E6E6E6;
+}
+
+.c2:hover {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+}
+
+.c2:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
 <div
-  class="sc-bdVaJa links links__list bhMvGM"
+  class="links links__list c0"
 >
   <div
-    class="sc-bwzfXH bQTlgY"
+    class="c1"
   >
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       Canada (Français)
@@ -56,33 +176,100 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
 `;
 
 exports[`<LinkList /> renders content after container 1`] = `
+.c0 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c0 {
+  display: block;
+}
+
+.c0.links__list--open {
+  display: block;
+}
+
+.c1 {
+  padding: 8px;
+}
+
+.c1.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c3 {
+  padding: 0 8px;
+  border-top: 1px solid #ebebeb;
+  color: #1f262d;
+}
+
+.c2 {
+  padding: 0 12px;
+  height: 36px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1f262d;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 2px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2.links__list__item--selected {
+  background-color: #E6E6E6;
+}
+
+.c2:hover {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+}
+
+.c2:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
 <div
-  class="sc-bdVaJa links links__list bhMvGM"
+  class="links links__list c0"
 >
   <div
-    class="wrapper--has-after sc-bwzfXH bQTlgY"
+    class="wrapper--has-after c1"
   >
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-ifAKCX links__list__item jbGTXu"
+      class="links__list__item c2"
       href="/"
     >
       Canada (Français)
     </a>
   </div>
   <div
-    class="sc-htpNat zcngC"
+    class="c3"
   >
     <span>
       after content

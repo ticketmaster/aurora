@@ -3,17 +3,167 @@
 exports[`<Modal /> removes the Modal on clicking cancel button 1`] = `"<div role=\\"dialog\\" aria-modal=\\"true\\" class=\\"sc-ifAKCX dYcmid\\"><div class=\\"sc-bZQynM gRHrxt\\"><button size=\\"45\\" class=\\"button--close sc-htpNat efRhEq\\" aria-label=\\"Close Modal\\" role=\\"button\\"><svg viewBox=\\"0 0 12 12\\" width=\\"12\\" height=\\"12\\" fill=\\"rgba(38, 38, 38, 1)\\"><path d=\\"M6.563 6.203l4.523 4.516a.384.384 0 0 1 .117.281c0 .11-.039.203-.117.281a.378.378 0 0 1-.137.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.136-.09L6 6.766 1.484 11.28a.378.378 0 0 1-.136.09.417.417 0 0 1-.297 0 .378.378 0 0 1-.137-.09A.384.384 0 0 1 .797 11c0-.11.039-.203.117-.281l4.524-4.516L.913 1.68a.384.384 0 0 1-.117-.282c0-.109.039-.203.117-.28A.388.388 0 0 1 1.2 1c.112 0 .207.04.285.117L6 5.633l4.516-4.516A.388.388 0 0 1 10.8 1c.112 0 .207.04.285.117a.384.384 0 0 1 .117.281c0 .11-.039.204-.117.282L6.562 6.203z\\"></path></svg></button></div><div class=\\"sc-EHOje QamKp\\"><div>Europe</div><div>Africa</div><div>Asias</div></div></div>"`;
 
 exports[`<Modal /> renders Modal correctly 1`] = `
+.c2 {
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 45px;
+  max-width: 45px;
+  height: 45px;
+  width: 45px;
+  border: none;
+}
+
+.c2:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2 > * {
+  pointer-events: none;
+}
+
+.c0 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 400px;
+  max-width: 640px;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-radius: 4px;
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border: solid 1px rgba(0,0,0,0.04);
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100% - 96px);
+  z-index: 100;
+}
+
+.modal-enter .c0 {
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.modal-leave .c0,
+.modal-exit .c0 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.modal-appear .c0 {
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.modal-enter.modal-enter-active .c0 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-leave.modal-leave-active .c0,
+.modal-exit.modal-exit-active .c0 {
+  opacity: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.modal-appear.modal-appear-active .c0 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.c3 {
+  padding: 0 32px 32px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  padding-right: 16px;
+}
+
+.c1 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
   aria-modal="true"
-  class="sc-ifAKCX dYcmid"
+  class="c0"
   role="dialog"
 >
   <div
-    class="sc-bZQynM gRHrxt"
+    class="c1"
   >
     <button
       aria-label="Close Modal"
-      class="button--close sc-htpNat efRhEq"
+      class="button--close c2"
       role="button"
       size="45"
     >
@@ -30,7 +180,7 @@ exports[`<Modal /> renders Modal correctly 1`] = `
     </button>
   </div>
   <div
-    class="sc-EHOje QamKp"
+    class="c3"
   >
     <div>
       Europe

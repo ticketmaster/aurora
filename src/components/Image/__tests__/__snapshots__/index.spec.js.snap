@@ -1,8 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ThumbnailCircle /> renders ThumbnailCircle image correctly 1`] = `
+.c0 {
+  border: solid 1px #E0E0E0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  width: 40px;
+}
+
+.c0 > img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+}
+
 <div
-  className="dnmvmf"
+  className="c0"
   size={40}
 >
   <img
