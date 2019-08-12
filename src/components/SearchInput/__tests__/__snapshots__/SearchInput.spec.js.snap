@@ -36,7 +36,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input dykHyd"
+    className="search--input ouBlI"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -118,7 +118,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input dykHyd"
+    className="search--input ouBlI"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -200,7 +200,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input search--input-focused eoYmwb"
+    className="search--input search--input-focused bjaWSd"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -282,7 +282,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input kUmVk"
+    className="search--input hlAOOB"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"

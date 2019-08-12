@@ -36,7 +36,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input eoYmwb"
+    className="search--input bjaWSd"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -121,7 +121,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     <input
       aria-label="Search input"
       autoComplete="off"
-      className="search--input eoYmwb"
+      className="search--input bjaWSd"
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="Search Demo"
