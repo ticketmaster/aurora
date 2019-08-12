@@ -1,16 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Typography.P3 should render default markup when no props are passed 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--onyx-base filIGg"
+  className="p3 p3--regular p3--onyx-base c0"
 >
   Hello world
 </p>
 `;
 
 exports[`Typography.P3 should render with a custom color prop that lacks variants 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: #026cdf;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--brand-base DsCrP"
+  className="p3 p3--regular p3--brand-base c0"
   color="brand"
 >
   Hello world
@@ -18,24 +34,50 @@ exports[`Typography.P3 should render with a custom color prop that lacks variant
 `;
 
 exports[`Typography.P3 should render with a custom weight prop 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  line-height: 1.5;
+  font-weight: 400;
+  font-weight: 600;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--semiBold p3--onyx-base cBQHyu"
+  className="p3 p3--semiBold p3--onyx-base c0"
 >
   Hello world
 </p>
 `;
 
 exports[`Typography.P3 should render with a textTransform prop 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--onyx-base iMsomu"
+  className="p3 p3--regular p3--onyx-base c0"
 >
   Hello world
 </p>
 `;
 
 exports[`Typography.P3 should render with custom color and variant props 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: #904eba;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--accent01-dark ghJoWu"
+  className="p3 p3--regular p3--accent01-dark c0"
   color="accent01"
 >
   Hello world
@@ -43,13 +85,29 @@ exports[`Typography.P3 should render with custom color and variant props 1`] = `
 `;
 
 exports[`Typography.P3 should render without a theme 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--onyx-base filIGg"
+  className="p3 p3--regular p3--onyx-base c0"
 />
 `;
 
 exports[`Typography.P3 should render without children 1`] = `
+.c0 {
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 <p
-  className="p3 p3--regular p3--onyx-base filIGg"
+  className="p3 p3--regular p3--onyx-base c0"
 />
 `;

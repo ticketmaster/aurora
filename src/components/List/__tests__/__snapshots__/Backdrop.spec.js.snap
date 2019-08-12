@@ -1,8 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Backdrop /> calls the handleOutsideClick function on clicking overlay 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div
-  class="sc-bdVaJa container--overlay fVmPFo"
+  class="container--overlay c0"
   data-testid="container--overlay"
 >
   <div>
@@ -12,20 +34,200 @@ exports[`<Backdrop /> calls the handleOutsideClick function on clicking overlay 
 `;
 
 exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 28px;
+  max-width: 28px;
+  height: 28px;
+  width: 28px;
+  border: none;
+}
+
+.c4:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: white;
+  width: 100%;
+  z-index: 8;
+  max-height: calc(100% - 60px);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.bottom-sheet-enter .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-leave .c1,
+.bottom-sheet-exit .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.bottom-sheet-appear .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-enter.bottom-sheet-enter-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-leave.bottom-sheet-leave-active .c1,
+.bottom-sheet-exit.bottom-sheet-exit-active .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-appear.bottom-sheet-appear-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  position: relative;
+  padding: 16px 24px 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2.row__button--cancel {
+  padding-right: calc(24px + 28px);
+  min-height: calc(16px + 28px);
+}
+
+.c3 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-left: 32px;
+  }
+
+  .c2.row__button--cancel {
+    padding-right: calc(32px + 28px);
+  }
+}
+
 <div
-  class="sc-bdVaJa container--overlay fVmPFo"
+  class="container--overlay c0"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet sc-cvbbAY gWQtYW"
+    class="content__bottom-sheet c1"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel c2"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-brqgnP dzsJgT sc-eHgmQL lcAnVb"
+        class="button--cancel c3 c4"
         role="button"
         size="28"
       >
@@ -55,20 +257,200 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
 `;
 
 exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other key than ESC 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 28px;
+  max-width: 28px;
+  height: 28px;
+  width: 28px;
+  border: none;
+}
+
+.c4:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: white;
+  width: 100%;
+  z-index: 8;
+  max-height: calc(100% - 60px);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.bottom-sheet-enter .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-leave .c1,
+.bottom-sheet-exit .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.bottom-sheet-appear .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-enter.bottom-sheet-enter-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-leave.bottom-sheet-leave-active .c1,
+.bottom-sheet-exit.bottom-sheet-exit-active .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-appear.bottom-sheet-appear-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  position: relative;
+  padding: 16px 24px 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2.row__button--cancel {
+  padding-right: calc(24px + 28px);
+  min-height: calc(16px + 28px);
+}
+
+.c3 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-left: 32px;
+  }
+
+  .c2.row__button--cancel {
+    padding-right: calc(32px + 28px);
+  }
+}
+
 <div
-  class="sc-bdVaJa container--overlay fVmPFo"
+  class="container--overlay c0"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet sc-cvbbAY gWQtYW"
+    class="content__bottom-sheet c1"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel c2"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-brqgnP dzsJgT sc-eHgmQL lcAnVb"
+        class="button--cancel c3 c4"
         role="button"
         size="28"
       >
@@ -98,20 +480,200 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
 `;
 
 exports[`<Backdrop /> renders Backdrop correctly 1`] = `
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 28px;
+  max-width: 28px;
+  height: 28px;
+  width: 28px;
+  border: none;
+}
+
+.c4:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4 > * {
+  pointer-events: none;
+}
+
+.c1 {
+  background-color: white;
+  width: 100%;
+  z-index: 8;
+  max-height: calc(100% - 60px);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.bottom-sheet-enter .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-leave .c1,
+.bottom-sheet-exit .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.bottom-sheet-appear .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.bottom-sheet-enter.bottom-sheet-enter-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-leave.bottom-sheet-leave-active .c1,
+.bottom-sheet-exit.bottom-sheet-exit-active .c1 {
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.bottom-sheet-appear.bottom-sheet-appear-active .c1 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  -webkit-transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  position: relative;
+  padding: 16px 24px 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2.row__button--cancel {
+  padding-right: calc(24px + 28px);
+  min-height: calc(16px + 28px);
+}
+
+.c3 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding-left: 32px;
+  }
+
+  .c2.row__button--cancel {
+    padding-right: calc(32px + 28px);
+  }
+}
+
 <div
-  class="sc-bdVaJa container--overlay fVmPFo"
+  class="container--overlay c0"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet sc-cvbbAY gWQtYW"
+    class="content__bottom-sheet c1"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel sc-jWBwVP cKhmxU"
+      class="row__header row__button--cancel c2"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel sc-brqgnP dzsJgT sc-eHgmQL lcAnVb"
+        class="button--cancel c3 c4"
         role="button"
         size="28"
       >

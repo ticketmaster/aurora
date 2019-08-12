@@ -3,14 +3,33 @@
 exports[`ResponsiveImage should render a lazy loading UI when a valid loader prop is passed 1`] = `"Loading..."`;
 
 exports[`ResponsiveImage should render correctly 1`] = `
+.c0 {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url(https://placekitten.com/g/826/465);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c1 {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
 <div
-  className="image image--responsive eFUxCO"
+  className="image image--responsive c0"
   height={9}
   width={16}
 >
   <img
     alt="Test Kitten"
-    className="image image--seo image--hidden eEqoji"
+    className="image image--seo image--hidden c1"
     height={9}
     src="https://placekitten.com/g/826/465"
     width={16}
@@ -19,14 +38,33 @@ exports[`ResponsiveImage should render correctly 1`] = `
 `;
 
 exports[`ResponsiveImage should render correctly when a children prop is passed 1`] = `
+.c0 {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top: 56.25%;
+  background-image: url(https://placekitten.com/g/826/465);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c1 {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
 <div
-  className="image image--responsive eFUxCO"
+  className="image image--responsive c0"
   height={9}
   width={16}
 >
   <img
     alt="Test Kitten"
-    className="image image--seo image--hidden eEqoji"
+    className="image image--seo image--hidden c1"
     height={9}
     src="https://placekitten.com/g/826/465"
     width={16}

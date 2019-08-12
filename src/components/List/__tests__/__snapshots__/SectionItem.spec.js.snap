@@ -1,16 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c1:focus,
+.c1:active,
+.c1:visited,
+.c1:hover {
+  color: #026cdf;
+}
+
+.c1:hover {
+  color: #0150a7;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c2 {
+  padding-right: 8px;
+}
+
+.c3 {
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 <a
   aria-label="Section Item"
-  class="sc-jzJRlG section-item prJdl sc-gzVnrw crFkrV"
+  class="section-item c0 c1"
   href="https://ticketmaster.com/"
   rel="_self"
   role="link"
   target=""
 >
   <div
-    class="sc-cSHVUG gtLJfb"
+    class="c2"
   >
     <svg
       height="26"
@@ -38,7 +94,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-kAzzGY section-item-link jUBNAO"
+      class="section-item-link c3"
     >
       VIP Packages
     </div>
@@ -47,16 +103,53 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 `;
 
 exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.c1:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c2 {
+  padding-right: 8px;
+}
+
+.c3 {
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.c0 {
+  width: 100%;
+}
+
 <div
-  class="sc-bRBYWo joyODz"
+  class="c0"
 >
   <div
     aria-label="Section Item"
-    class="sc-jzJRlG section-item prJdl"
+    class="section-item c1"
     role="link"
   >
     <div
-      class="sc-cSHVUG gtLJfb"
+      class="c2"
     >
       <svg
         height="26"
@@ -84,7 +177,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
     </div>
     <div>
       <div
-        class="sc-kAzzGY section-item-link jUBNAO"
+        class="section-item-link c3"
       >
         VIP Packages
       </div>
@@ -94,13 +187,46 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 `;
 
 exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.c0:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c1 {
+  padding-right: 8px;
+}
+
+.c2 {
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
 <div
   aria-label="Section Item"
-  class="sc-jzJRlG section-item prJdl"
+  class="section-item c0"
   role="link"
 >
   <div
-    class="sc-cSHVUG gtLJfb"
+    class="c1"
   >
     <svg
       height="26"
@@ -128,7 +254,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="sc-kAzzGY section-item-link jUBNAO"
+      class="section-item-link c2"
     >
       VIP Packages
     </div>

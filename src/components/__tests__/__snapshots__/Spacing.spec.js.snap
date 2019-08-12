@@ -1,31 +1,201 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Spacing renders top and bottom spacing for large device (>1024) 1`] = `
+.c0 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 <div
-  className="eiIsxz"
+  className="c0"
 />
 `;
 
 exports[`Spacing renders top and bottom spacing for medium device (767-1023) 1`] = `
+.c0 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 <div
-  className="gJLBDe"
+  className="c0"
 />
 `;
 
 exports[`Spacing renders top and bottom spacing for small device (480-767) 1`] = `
+.c0 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 <div
-  className="getVer"
+  className="c0"
 />
 `;
 
 exports[`Spacing renders top and bottom spacing for xLarge device (>1440) 1`] = `
+.c0 {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 <div
-  className="hBBuZv"
+  className="c0"
 />
 `;
 
 exports[`Spacing renders top and bottom spacing for xSmall device (320-479) 1`] = `
+.c0 {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
 <div
-  className="hQZfiH"
+  className="c0"
 />
 `;

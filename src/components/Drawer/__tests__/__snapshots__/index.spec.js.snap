@@ -1,6 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Drawer renders default drawer 1`] = `
+.c1 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before,
+.c1:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before {
+  top: 0;
+  left: 0;
+}
+
+.c1:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c1 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c1:before,
+.nav--inverted .c1:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c1 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c1:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c1:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c0 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <DrawerContainer
   className=""
 >
@@ -20,10 +100,10 @@ exports[`Drawer renders default drawer 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed kQQPwz"
+            className="hamburger hamburger--closed c0"
           >
             <span
-              className="ggAQg"
+              className="c1"
             />
           </span>
         </CloseButton>
@@ -34,6 +114,86 @@ exports[`Drawer renders default drawer 1`] = `
 `;
 
 exports[`Drawer renders header elements 1`] = `
+.c1 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before,
+.c1:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before {
+  top: 0;
+  left: 0;
+}
+
+.c1:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c1 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c1:before,
+.nav--inverted .c1:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c1 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c1:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c1:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c0 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <DrawerContainer
   className=""
 >
@@ -57,10 +217,10 @@ exports[`Drawer renders header elements 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed kQQPwz"
+            className="hamburger hamburger--closed c0"
           >
             <span
-              className="ggAQg"
+              className="c1"
             />
           </span>
         </CloseButton>
@@ -74,6 +234,86 @@ exports[`Drawer renders header elements 1`] = `
 `;
 
 exports[`Drawer renders multiple child elements 1`] = `
+.c1 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before,
+.c1:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:before {
+  top: 0;
+  left: 0;
+}
+
+.c1:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c1 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c1:before,
+.nav--inverted .c1:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c1 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c1:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c1:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c0 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <DrawerContainer
   className=""
 >
@@ -93,10 +333,10 @@ exports[`Drawer renders multiple child elements 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed kQQPwz"
+            className="hamburger hamburger--closed c0"
           >
             <span
-              className="ggAQg"
+              className="c1"
             />
           </span>
         </CloseButton>
@@ -116,6 +356,94 @@ exports[`Drawer renders multiple child elements 1`] = `
 `;
 
 exports[`Drawer renders string header header 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+}
+
+.c2 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before,
+.c2:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before {
+  top: 0;
+  left: 0;
+}
+
+.c2:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c2 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c2:before,
+.nav--inverted .c2:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c2 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c2:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c2:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c1 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <DrawerContainer
   className=""
 >
@@ -132,7 +460,7 @@ exports[`Drawer renders string header header 1`] = `
       <HeaderContent>
         <div>
           <div
-            className="text text--light text--primary jYWnxl"
+            className="text text--light text--primary c0"
             disabled={false}
             size="kilo"
           >
@@ -143,10 +471,10 @@ exports[`Drawer renders string header header 1`] = `
           type="button"
         >
           <span
-            className="hamburger hamburger--closed kQQPwz"
+            className="hamburger hamburger--closed c1"
           >
             <span
-              className="ggAQg"
+              className="c2"
             />
           </span>
         </CloseButton>

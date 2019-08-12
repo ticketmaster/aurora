@@ -1,18 +1,281 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
+.c11 {
+  border: solid 1px #E0E0E0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 40px;
+  width: 40px;
+}
+
+.c11 > img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  overflow: hidden;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c4 {
+  font-size: 14px;
+  color: #1f262d;
+  font-weight: 600;
+}
+
+.c1 {
+  box-sizing: border-box;
+  padding-right: 8px;
+  padding-left: 8px;
+  max-width: 100%;
+  display: block;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding-bottom: 16px;
+}
+
+.c2 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c2.c2 {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c3 {
+  font-size: 12px;
+  color: rgba(38,38,38,0.65);
+  text-transform: uppercase;
+}
+
+.c9 {
+  font-size: 14px;
+  color: rgba(38,38,38,0.65);
+}
+
+.c10 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c10:focus,
+.c10:active,
+.c10:visited,
+.c10:hover {
+  color: #026cdf;
+}
+
+.c10:hover {
+  color: #0150a7;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.c5:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  cursor: text;
+}
+
+.c8:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.c6 {
+  padding-right: 8px;
+}
+
+.c7 {
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    padding-right: 12px;
+    padding-left: 12px;
+    max-width: 100%;
+    display: block;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 25%;
+    display: block;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    max-width: 25%;
+    display: block;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
 <div
-  className="gGzOKi"
+  className="c0"
 >
   <div
-    className="inbmlj"
+    className="c1"
     id="789"
   >
     <div
-      className="container__title hwSEbS"
+      className="container__title c2"
     >
       <div
-        className="text__title fnefOG ekYFXR"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -21,13 +284,13 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item gHYEhd"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <svg
           height={26}
@@ -55,7 +318,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="section-item-link iYZWMM"
+          className="section-item-link c7"
         >
           VIP Packages
         </div>
@@ -63,12 +326,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item WkqfN"
+      className="section-item c8"
       onClick={[Function]}
       role="link"
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <svg
           height={26}
@@ -96,7 +359,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="jcHkXY"
+          className="c9"
         >
           Parking Pass Available
         </div>
@@ -104,14 +367,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
   </div>
   <div
-    className="inbmlj"
+    className="c1"
     id="456"
   >
     <div
-      className="container__title hwSEbS"
+      className="container__title c2"
     >
       <div
-        className="text__title fnefOG ekYFXR"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -120,7 +383,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <a
       aria-label="Section Item"
-      className="section-item gHYEhd hUiqIJ"
+      className="section-item c5 c10"
       href="/"
       onClick={[Function]}
       onItemClick={[Function]}
@@ -130,7 +393,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       target=""
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <svg
           height={26}
@@ -158,12 +421,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="section-item-link iYZWMM"
+          className="section-item-link c7"
         >
           United Center
         </div>
         <div
-          className="jcHkXY"
+          className="c9"
         >
           Chicago, IL
         </div>
@@ -171,14 +434,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </a>
   </div>
   <div
-    className="inbmlj"
+    className="c1"
     id="123"
   >
     <div
-      className="container__title hwSEbS"
+      className="container__title c2"
     >
       <div
-        className="text__title fnefOG ekYFXR"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -187,16 +450,16 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item gHYEhd"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <div
-          className="dnmvmf"
+          className="c11"
           size={40}
         >
           <img
@@ -207,7 +470,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="section-item-link iYZWMM"
+          className="section-item-link c7"
         >
           The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj
         </div>
@@ -215,16 +478,16 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item gHYEhd"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <div
-          className="dnmvmf"
+          className="c11"
           size={40}
         >
           <img
@@ -235,7 +498,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="section-item-link iYZWMM"
+          className="section-item-link c7"
         >
           T.I
         </div>
@@ -243,14 +506,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
   </div>
   <div
-    className="inbmlj"
+    className="c1"
     id="1011"
   >
     <div
-      className="container__title hwSEbS"
+      className="container__title c2"
     >
       <div
-        className="text__title fnefOG ekYFXR"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -259,13 +522,13 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="section-item gHYEhd"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
     >
       <div
-        className="bgjosf"
+        className="c6"
       >
         <svg
           height="24"
@@ -291,7 +554,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="section-item-link iYZWMM"
+          className="section-item-link c7"
         >
           Sell Tickets
         </div>
@@ -302,8 +565,49 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 `;
 
 exports[`<ListRowOverflow /> renders with additional props when passed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  overflow: hidden;
+}
+
+.c0 .row--gutterless {
+  -webkit-flex: 0 1 100%;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    padding-left: 16px;
+  }
+}
+
 <div
-  className="row--gutterless gGzOKi"
+  className="row--gutterless c0"
 >
   Content
 </div>

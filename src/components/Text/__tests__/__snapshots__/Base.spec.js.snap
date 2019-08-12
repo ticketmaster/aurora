@@ -1,8 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"small":"hecto","medium":"kilo","large":"giga","xLarge":"tera"}} 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    font-size: 24px;
+  }
+}
+
 <div
-  className="text text--dark text--primary bfypyf"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -19,8 +51,34 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 `;
 
 exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"small":"hecto","medium":"kilo","large":"giga"}} 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
 <div
-  className="text text--dark text--primary bnsoIo"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -37,8 +95,16 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 `;
 
 exports[`BaseText with responsiveSize should render correctly with {"responsiveSize":{"xSmall":"hecto"}} 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary IkyOL"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -55,8 +121,40 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 `;
 
 exports[`BaseText with responsiveSize should render correctly with {"size":"hecto","responsiveSize":{"xSmall":"uno","small":"hecto","medium":"kilo","large":"giga","xLarge":"tera"}} 1`] = `
+.c0 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    font-size: 24px;
+  }
+}
+
 <div
-  className="text text--dark text--primary ickxtn"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -73,8 +171,16 @@ exports[`BaseText with responsiveSize should render correctly with {"size":"hect
 `;
 
 exports[`BaseText with responsiveSize should render correctly with {"size":"hecto"} 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary aYNzq"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -83,8 +189,16 @@ exports[`BaseText with responsiveSize should render correctly with {"size":"hect
 `;
 
 exports[`BaseText with themed color palette should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #d6e7fa;
+}
+
 <div
-  className="text text--accent text-tm text--disabled KITXe"
+  className="text text--accent text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -93,8 +207,16 @@ exports[`BaseText with themed color palette should render disabled text with a d
 `;
 
 exports[`BaseText with themed color palette should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.4);
+}
+
 <div
-  className="text text--dark text-tm text--disabled gFiPCR"
+  className="text text--dark text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -103,8 +225,16 @@ exports[`BaseText with themed color palette should render disabled text with a d
 `;
 
 exports[`BaseText with themed color palette should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,0.5);
+}
+
 <div
-  className="text text--light text-tm text--disabled gfzLpy"
+  className="text text--light text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -113,8 +243,16 @@ exports[`BaseText with themed color palette should render disabled text with a d
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #ebebeb;
+}
+
 <div
-  className="text text--accent text--gray04 text-tm eBBQip"
+  className="text text--accent text--gray04 text-tm c0"
   disabled={false}
   size="hecto"
 >
@@ -123,8 +261,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #0150a7;
+}
+
 <div
-  className="text text--accent text-tm hdgsYv"
+  className="text text--accent text-tm c0"
   disabled={false}
   size="hecto"
 >
@@ -133,8 +279,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text-tm text--primary aYNzq"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -143,8 +297,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text-tm text--primary text--custom aYNzq"
+  className="text text--dark text-tm text--primary text--custom c0"
   disabled={false}
   size="hecto"
 >
@@ -153,8 +315,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+}
+
 <div
-  className="text text--light text-tm text--primary dXzwiN"
+  className="text text--light text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -163,8 +333,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text-tm text--primary eVMeEr"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="giga"
 >
@@ -173,8 +351,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text-tm text--primary bCrHtF"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -183,8 +369,16 @@ exports[`BaseText with themed color palette should render primary text with a di
 `;
 
 exports[`BaseText with themed color palette should render primary text with a tag prop in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <span
-  className="text text--dark text-tm text--primary aYNzq"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -193,8 +387,16 @@ exports[`BaseText with themed color palette should render primary text with a ta
 `;
 
 exports[`BaseText with themed color palette should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+}
+
 <div
-  className="text text--accent text-tm text--secondary bMSavq"
+  className="text text--accent text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -203,8 +405,16 @@ exports[`BaseText with themed color palette should render secondary text with a 
 `;
 
 exports[`BaseText with themed color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
 <div
-  className="text text--dark text-tm text--secondary koBQW"
+  className="text text--dark text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -213,8 +423,16 @@ exports[`BaseText with themed color palette should render secondary text with a 
 `;
 
 exports[`BaseText with themed color palette should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,0.7);
+}
+
 <div
-  className="text text--light text-tm text--secondary hyXTye"
+  className="text text--light text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -223,8 +441,16 @@ exports[`BaseText with themed color palette should render secondary text with a 
 `;
 
 exports[`BaseText with traditional color palette should render disabled text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,0.1);
+}
+
 <div
-  className="text text--accent text--azure text--disabled izRgdV"
+  className="text text--accent text--azure text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -233,8 +459,16 @@ exports[`BaseText with traditional color palette should render disabled text wit
 `;
 
 exports[`BaseText with traditional color palette should render disabled text with a div tag in the dark variant when the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.4);
+}
+
 <div
-  className="text text--dark text--disabled gFiPCR"
+  className="text text--dark text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -243,8 +477,16 @@ exports[`BaseText with traditional color palette should render disabled text wit
 `;
 
 exports[`BaseText with traditional color palette should render disabled text with a div tag in the light variant when the variant prop equals light and the disabled prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,0.5);
+}
+
 <div
-  className="text text--light text--disabled gfzLpy"
+  className="text text--light text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -253,8 +495,16 @@ exports[`BaseText with traditional color palette should render disabled text wit
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag in an accent variant that has only one shade when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #00ffff;
+}
+
 <div
-  className="text text--accent text--aquamarine drpppq"
+  className="text text--accent text--aquamarine c0"
   disabled={false}
   size="hecto"
 >
@@ -263,8 +513,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag in an accent variant when the variant prop equals accent and a valid accent prop is passed 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+}
+
 <div
-  className="text text--accent text--azure bMSavq"
+  className="text text--accent text--azure c0"
   disabled={false}
   size="hecto"
 >
@@ -273,8 +531,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary aYNzq"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -283,8 +549,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag in the dark variant with a className prop when passed by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary text--custom aYNzq"
+  className="text text--dark text--primary text--custom c0"
   disabled={false}
   size="hecto"
 >
@@ -293,8 +567,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag in the light variant when the variant prop equals light 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,1);
+}
+
 <div
-  className="text text--light text--primary dXzwiN"
+  className="text text--light text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -303,8 +585,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag of the size prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary eVMeEr"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="giga"
 >
@@ -313,8 +603,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a div tag of the weight prop passed in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <div
-  className="text text--dark text--primary bCrHtF"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -323,8 +621,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render primary text with a tag prop in the dark variant by default 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
 <span
-  className="text text--dark text--primary aYNzq"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -333,8 +639,16 @@ exports[`BaseText with traditional color palette should render primary text with
 `;
 
 exports[`BaseText with traditional color palette should render secondary text with a div tag in an accent variant when the variant prop equals accent, a valid accent prop is passed, and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(2,108,223,0.2);
+}
+
 <div
-  className="text text--accent text--azure text--secondary geWkHl"
+  className="text text--accent text--azure text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -343,8 +657,16 @@ exports[`BaseText with traditional color palette should render secondary text wi
 `;
 
 exports[`BaseText with traditional color palette should render secondary text with a div tag in the dark variant when the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
 <div
-  className="text text--dark text--secondary koBQW"
+  className="text text--dark text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -353,8 +675,16 @@ exports[`BaseText with traditional color palette should render secondary text wi
 `;
 
 exports[`BaseText with traditional color palette should render secondary text with a div tag in the light variant when the variant prop equals light and the secondary prop equals true 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(255,255,255,0.7);
+}
+
 <div
-  className="text text--light text--secondary hyXTye"
+  className="text text--light text--secondary c0"
   disabled={false}
   size="hecto"
 >

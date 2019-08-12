@@ -1,8 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link renders a button when only onclick is provided 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: #026cdf;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
 <button
-  className="fwwBvm"
+  className="c0"
   href={null}
   onClick={[Function]}
   rel="_self"
@@ -14,8 +45,31 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 `;
 
 exports[`Link renders a default link 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: #026cdf;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
 <a
-  className="efSPmK"
+  className="c0"
   href="http://localhost/"
   onClick={null}
   rel="_self"
@@ -27,8 +81,32 @@ exports[`Link renders a default link 1`] = `
 `;
 
 exports[`Link renders a span when no href or onClick provided 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.c0:focus,
+.c0:active,
+.c0:visited,
+.c0:hover {
+  color: #026cdf;
+}
+
+.c0:hover {
+  color: #0150a7;
+}
+
 <span
-  className="xxebo"
+  className="c0"
   href={null}
   onClick={null}
   rel="_self"

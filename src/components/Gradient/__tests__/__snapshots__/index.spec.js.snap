@@ -1,27 +1,318 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gradient renders default 1`] = `
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="Iwzmp"
+  className="c0"
 >
   
 </span>
 `;
 
 exports[`Gradient renders with an img tag for SEO purposes 1`] = `
+.c1 {
+  position: absolute;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff),url(https://beta.tmol.co/s3images/City/losangeles_889.jpg);
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff),url(https://beta.tmol.co/s3images/City/losangeles_889.jpg);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff),url(https://beta.tmol.co/s3images/City/losangeles_889.jpg);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="kUyMCU"
+  className="c0"
 >
   <img
-    className="image image--seo image--hidden fERDWn"
+    className="image image--seo image--hidden c1"
     src="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
   />
 </span>
 `;
 
 exports[`Gradient renders with children 1`] = `
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="Iwzmp"
+  className="c0"
 >
   
   Content
@@ -29,31 +320,340 @@ exports[`Gradient renders with children 1`] = `
 `;
 
 exports[`Gradient renders with overlay gradient 1`] = `
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="gradient--overlay ktHPKL"
+  className="gradient--overlay c0"
 >
   
 </span>
 `;
 
 exports[`Gradient renders with overlay shadow gradient 1`] = `
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(185deg,rgba(1,2,2,0) 17%,rgba(0,0,90,0) 55%,rgba(00,0,0,1));
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="gradient--overlay-shadow hdbrHG"
+  className="gradient--overlay-shadow c0"
 >
   
 </span>
 `;
 
 exports[`Gradient renders with spotlight elements 1`] = `
+.c2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+.c3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+}
+
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(256deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(256deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(260deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(262deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(260deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(262deg,rgb(0,45,161),#026cdf 55%,rgb(0,45,161));
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="gradient--spotlight fPZKNI"
+  className="gradient--spotlight c0"
 >
   
   <div
-    className="chqBEH"
+    className="c1"
   >
     <svg
-      className="jNNrhE"
+      className="c2"
       preserveAspectRatio="xMinYMid meet"
       viewBox="0 0 1440 218"
       xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +725,7 @@ exports[`Gradient renders with spotlight elements 1`] = `
       </g>
     </svg>
     <svg
-      className="jvrWxq"
+      className="c3"
       preserveAspectRatio="xMaxYMid meet"
       viewBox="0 0 476 218"
       xmlns="http://www.w3.org/2000/svg"
@@ -186,8 +786,102 @@ exports[`Gradient renders with spotlight elements 1`] = `
 `;
 
 exports[`Gradient renders with underlay gradient 1`] = `
+.c0 {
+  z-index: 1;
+  width: 100%;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after,
+.c0.gradient--overlay-shadow:after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.c0.gradient--overlay:after,
+.c0.gradient--underlay:after {
+  height: 100%;
+}
+
+.c0.gradient--overlay-shadow:after {
+  height: 26%;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+
+.c0:not(.gradient--overlay-shadow),
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--overlay-shadow {
+  z-index: 1;
+  background-image: linear-gradient(76deg,#026cdf,#3ac7ff);
+}
+
+.c0.gradient--underlay.gradient--spotlight:after,
+.c0:not(.gradient--spotlight).gradient--underlay:after {
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.c0:not(.gradient--spotlight).gradient--overlay:after {
+  z-index: 2;
+  opacity: 0.4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--spotlight {
+    box-shadow: inset 0 1px 40px 10px rgba(0,0,0,0.15);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--overlay-shadow),
+  .c0.gradient--underlay.gradient--spotlight:after,
+  .c0:not(.gradient--spotlight).gradient--underlay:after {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(80deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0.gradient--overlay-shadow {
+    background-image: linear-gradient(81deg,#026cdf,#3ac7ff);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0:not(.gradient--spotlight).gradient--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
 <span
-  className="gradient--underlay Iwzmp"
+  className="gradient--underlay c0"
 >
   
 </span>

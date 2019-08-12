@@ -1,23 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StatusBadgeGroup should match snapshot 1`] = `
+.c1 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #d3d3d3;
+}
+
+.c2 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .badge {
+  margin-left: 8px;
+}
+
+.c0 .badge:first-child,
+.c0 .badge.hidden {
+  margin-left: 0;
+}
+
+.c0 .badge.hidden {
+  margin-top: 8px;
+}
+
+.c0 .badge.hidden:first-child {
+  margin-top: 0;
+}
+
+.c3 {
+  padding: 4px 8px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255,255,255,1);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 2px;
+  -webkit-letter-spacing: 0.025em;
+  -moz-letter-spacing: 0.025em;
+  -ms-letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background: transparent;
+  color: rgba(38,38,38,0.65);
+}
+
 <div
-  className="ioUUSv"
+  className="c0"
 >
   <div
-    className="badge QSstl"
+    className="badge c1"
     color="#d3d3d3"
   >
     error
   </div>
   <div
-    className="badge jUoXGh"
+    className="badge c2"
     color="#f0f0f0"
   >
     caution
   </div>
   <div
-    className="nHnME"
+    className="c3"
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onTouchStart={[Function]}

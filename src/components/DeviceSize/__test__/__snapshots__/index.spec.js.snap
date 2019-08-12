@@ -1,8 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DisplayFor cssOnly renders custom display prop 1`] = `
+.c0 {
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 <div
-  class="sc-bdVaJa cphQvp"
+  class="c0"
   display="flex"
 >
   Content
@@ -10,8 +41,30 @@ exports[`DisplayFor cssOnly renders custom display prop 1`] = `
 `;
 
 exports[`DisplayFor cssOnly renders nothing when value is null 1`] = `
+.c0 {
+  display: block;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c0 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c0 {
+    display: none;
+  }
+}
+
 <div
-  class="sc-bdVaJa sDYhp"
+  class="c0"
   display="block"
 >
   Content

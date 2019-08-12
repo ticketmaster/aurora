@@ -1,8 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> renders link button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <a
-  className="fxGuYK"
+  className="c0"
   href="/"
   size="regular"
 >
@@ -11,8 +65,59 @@ exports[`<Button /> renders link button correctly 1`] = `
 `;
 
 exports[`<Button /> renders outline large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus fTWXaX"
+  className=" noFocus c0"
   size="large"
 >
   Dummy Label
@@ -20,8 +125,59 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders outline regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus fcJuPe"
+  className=" noFocus c0"
   size="regular"
 >
   Dummy Label
@@ -29,8 +185,59 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders outline regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus fcJuPe"
+  className=" noFocus c0"
   disabled={true}
   size="regular"
 >
@@ -39,8 +246,59 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 `;
 
 exports[`<Button /> renders outline small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: rgba(255,255,255,1);
+  border: 1px solid #026cdf;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus xjqFN"
+  className=" noFocus c0"
   size="small"
 >
   Dummy Label
@@ -48,8 +306,59 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders special large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #23702c;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  opacity: 0.4;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus cIFyVh"
+  className=" noFocus c0"
   size="large"
 >
   Dummy Label
@@ -57,8 +366,59 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders special regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #23702c;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  opacity: 0.4;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus jVpvXK"
+  className=" noFocus c0"
   size="regular"
 >
   Dummy Label
@@ -66,8 +426,59 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders special regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #23702c;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  opacity: 0.4;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus jVpvXK"
+  className=" noFocus c0"
   disabled={true}
   size="regular"
 >
@@ -76,8 +487,59 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 `;
 
 exports[`<Button /> renders special small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #23702c;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #23702c;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #1bab1e;
+  border: 1px solid transparent;
+  opacity: 0.4;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus bEFiOZ"
+  className=" noFocus c0"
   size="small"
 >
   Dummy Label
@@ -85,8 +547,59 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders standard large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus dLugRX"
+  className=" noFocus c0"
   size="large"
 >
   Dummy Label
@@ -94,8 +607,59 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders standard regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus dsIgYQ"
+  className=" noFocus c0"
   size="regular"
 >
   Dummy Label
@@ -103,8 +667,59 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus dsIgYQ"
+  className=" noFocus c0"
   disabled={true}
   size="regular"
 >
@@ -113,8 +728,59 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 `;
 
 exports[`<Button /> renders standard small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus IyyhA"
+  className=" noFocus c0"
   size="small"
 >
   Dummy Label
@@ -122,8 +788,59 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders transparent large size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2.63;
+  width: 100%;
+  padding: 0 14px 0 14px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus bGFEDe"
+  className=" noFocus c0"
   size="large"
 >
   Dummy Label
@@ -131,8 +848,59 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders transparent regular size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus dZuMkM"
+  className=" noFocus c0"
   size="regular"
 >
   Dummy Label
@@ -140,8 +908,59 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 `;
 
 exports[`<Button /> renders transparent regular size disabled button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus dZuMkM"
+  className=" noFocus c0"
   disabled={true}
   size="regular"
 >
@@ -150,8 +969,59 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 `;
 
 exports[`<Button /> renders transparent small size button correctly 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #d6e7fa;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: #026cdf;
+  background-color: transparent;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
 <button
-  className=" noFocus bFxevU"
+  className=" noFocus c0"
   size="small"
 >
   Dummy Label

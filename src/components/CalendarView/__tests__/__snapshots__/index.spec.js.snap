@@ -1,26 +1,334 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CalendarView should render without errors 1`] = `
-.c1 > .bIKecw + .c2 {
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  height: 100%;
+  min-height: 192px;
+  border: solid 1px #ebebeb;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+}
+
+.c0.day-tile--no-border-radius {
+  border-radius: 0;
+}
+
+.c1 {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  pointer-events: none;
+}
+
+.c4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c15 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c16 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,0.65);
+}
+
+.c18 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c27 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: #026cdf;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c27:focus,
+.c27:active,
+.c27:visited,
+.c27:hover {
+  color: #026cdf;
+}
+
+.c27:hover {
+  color: #0150a7;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(255,255,255,1);
+}
+
+.c3 {
+  color: #999999;
+}
+
+.c3.day-tile-date__text--accent {
+  color: #904eba;
+}
+
+.c5 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  min-height: 190px;
+}
+
+.c5.day-tile-item--highlighted {
+  background-color: rgba(2,108,223,0.1);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  padding-left: 30px;
+  min-height: 30px;
+}
+
+.c12 {
+  -webkit-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.c13 {
+  padding: 8px 8px 4px;
+}
+
+.c19 {
+  margin-top: auto;
+}
+
+.c28 {
+  margin: 4px 8px;
+  border-bottom: solid 1px #ebebeb;
+}
+
+.c14 {
+  width: 100%;
+  word-break: break-word;
+}
+
+.c17 {
+  width: 100%;
+  word-break: break-word;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.c24 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.84;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c24:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c24:hover {
+  background-color: #0150a7;
+}
+
+.c24:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c24:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c24.noFocus:focus {
+  box-shadow: none;
+}
+
+.c10 {
+  height: 36px;
+  width: 100%;
+  min-width: 100px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 2px;
+  color: rgba(255,255,255,1);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,1);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 14px;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  width: 30px;
+  border: none;
+}
+
+.c10:disabled {
+  color: rgba(255,255,255,0.5);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.c10:focus {
+  outline: none;
+}
+
+.c10 > * {
+  pointer-events: none;
+}
+
+.c21 {
+  padding: 0 8px 8px;
+}
+
+.c20 > .c23 + .c22 {
   margin-top: 8px;
 }
 
-.c0:hover .iGreVs {
+.c25 {
+  padding: 0 8px 8px;
+}
+
+.c26 {
+  display: block;
+  width: 100%;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+.c7 {
+  margin-left: auto;
+}
+
+.c9 {
+  display: block;
+  padding: 8px 8px 0;
+  border: 0;
+  color: #999999;
+}
+
+.c8:hover .c11 {
   color: #026cdf;
   fill: currentColor;
 }
 
 <div
-  className="day-tile GnYRo"
+  className="day-tile c0"
 >
   <header
-    className="gVZTwB"
+    className="c1"
   >
     <div
-      className="jbshnb"
+      className="c2"
     >
       <div
-        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent iKBVzT cIRWLi"
+        className="text text--dark text--primary day-tile-date__text day-tile-date__text--accent c3 c4"
         disabled={false}
         size="kilo"
       >
@@ -29,23 +337,23 @@ exports[`CalendarView should render without errors 1`] = `
     </div>
   </header>
   <article
-    className="dibnkz"
+    className="c5"
   >
     <header
-      className="ciAyZZ"
+      className="c6"
     >
       <div
-        className="fwJdFM"
+        className="c7"
       >
         <button
           aria-label="More Info"
-          className="c0 ijviDb dxbuUo"
+          className="c8 c9 c10"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="iGreVs"
+            className="c11"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -59,27 +367,27 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="dMmtgJ"
+      className="c12"
     >
       <div
-        className="bXUaNv"
+        className="c13"
       >
         <div
-          className="text text--dark text--primary fItAkd dIqltR"
+          className="text text--dark text--primary c14 c15"
           disabled={false}
           size="uno"
         >
           Henderson, NV — Sunset Station Outdoor Amphitheater
         </div>
         <div
-          className="text text--dark text--secondary fItAkd fjsDu"
+          className="text text--dark text--secondary c14 c16"
           disabled={false}
           size="uno"
         >
           On Sale Starts Soon
         </div>
         <div
-          className="text text--dark text--primary dBTwND hGozFO"
+          className="text text--dark text--primary c17 c18"
           disabled={false}
           size="uno"
         >
@@ -88,16 +396,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="nVoRR"
+      className="c19"
     >
       <div
-        className="c1 gdYeDH"
+        className="c20 c21"
       >
         <div
-          className="c2 bIKecw"
+          className="c22 c23"
         >
           <a
-            className="hRmYTx"
+            className="c24"
             href="#"
             size="small"
           >
@@ -105,10 +413,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c2 bIKecw"
+          className="c22 c23"
         >
           <a
-            className="hRmYTx"
+            className="c24"
             href="#"
             size="small"
           >
@@ -117,10 +425,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="Hmqjs"
+        className="c25"
       >
         <button
-          className="cDJqdM clbKAW"
+          className="c26 c27"
           href={null}
           onClick={[Function]}
           rel="_self"
@@ -134,26 +442,26 @@ exports[`CalendarView should render without errors 1`] = `
     </footer>
   </article>
   <div
-    className="fYbdsO"
+    className="c28"
   />
   <article
-    className="dibnkz"
+    className="c5"
   >
     <header
-      className="ciAyZZ"
+      className="c6"
     >
       <div
-        className="fwJdFM"
+        className="c7"
       >
         <button
           aria-label="More Info"
-          className="c0 ijviDb dxbuUo"
+          className="c8 c9 c10"
           onClick={[Function]}
           role="button"
           size={30}
         >
           <svg
-            className="iGreVs"
+            className="c11"
             fill="currentColor"
             height={21}
             viewBox="0 0 5 21"
@@ -167,13 +475,13 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </header>
     <div
-      className="dMmtgJ"
+      className="c12"
     >
       <div
-        className="bXUaNv"
+        className="c13"
       >
         <div
-          className="text text--dark text--primary fItAkd dIqltR"
+          className="text text--dark text--primary c14 c15"
           disabled={false}
           size="uno"
         >
@@ -182,16 +490,16 @@ exports[`CalendarView should render without errors 1`] = `
       </div>
     </div>
     <footer
-      className="nVoRR"
+      className="c19"
     >
       <div
-        className="c1 gdYeDH"
+        className="c20 c21"
       >
         <div
-          className="c2 bIKecw"
+          className="c22 c23"
         >
           <a
-            className="hRmYTx"
+            className="c24"
             href="#"
             size="small"
           >
@@ -199,10 +507,10 @@ exports[`CalendarView should render without errors 1`] = `
           </a>
         </div>
         <div
-          className="c2 bIKecw"
+          className="c22 c23"
         >
           <a
-            className="hRmYTx"
+            className="c24"
             href="#"
             size="small"
           >
@@ -211,10 +519,10 @@ exports[`CalendarView should render without errors 1`] = `
         </div>
       </div>
       <div
-        className="Hmqjs"
+        className="c25"
       >
         <button
-          className="cDJqdM clbKAW"
+          className="c26 c27"
           href={null}
           onClick={[Function]}
           rel="_self"

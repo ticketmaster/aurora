@@ -1,10 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RowToggler /> should render without errors when closed 1`] = `
+.c0 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c0 > * {
+  pointer-events: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: block;
+  }
+
+  .c0.button--expanded,
+  .c0.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c0.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
 <button
   aria-expanded="false"
   aria-label="Expand Row"
-  class="button--expand-or-collapse button--collapsed sc-bwzfXH kJcqUu"
+  class="button--expand-or-collapse button--collapsed c0"
   data-index="3"
   role="button"
   size="45"
@@ -24,10 +68,54 @@ exports[`<RowToggler /> should render without errors when closed 1`] = `
 `;
 
 exports[`<RowToggler /> should render without errors when open 1`] = `
+.c0 {
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0.icon-button--last {
+  padding-left: 16px;
+  padding-right: 0;
+}
+
+.c0 > * {
+  pointer-events: none;
+}
+
+@media screen and (min-width:768px) {
+  .c0 {
+    display: block;
+  }
+
+  .c0.button--expanded,
+  .c0.button--collapsed {
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+  }
+
+  .c0.button--expanded {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
 <button
   aria-expanded="true"
   aria-label="Collapse Row"
-  class="button--expand-or-collapse button--expanded sc-bwzfXH kJcqUu"
+  class="button--expand-or-collapse button--expanded c0"
   data-index="1"
   role="button"
   size="45"

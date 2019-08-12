@@ -1,12 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Handle should match snapshot 1`] = `
+.c0 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  touch-action: pan-x;
+  border: 1px solid #bfbfbf;
+  border-radius: 50%;
+  background: rgba(255,255,255,1);
+  margin-left: calc(-23px / 2);
+}
+
 <div
   aria-disabled={false}
   aria-valuemax={100}
   aria-valuemin={0}
   aria-valuenow={30}
-  className="ghhiOS"
+  className="c0"
   role="slider"
   style={
     Object {
@@ -17,8 +29,19 @@ exports[`Handle should match snapshot 1`] = `
 `;
 
 exports[`Track should match snapshot 1`] = `
+.c0 {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  background-color: #026cdf;
+}
+
+.c0.slider__track--disabled {
+  background-color: #bfbfbf;
+}
+
 <div
-  className="jWGnDa"
+  className="c0"
   style={
     Object {
       "left": "10%",

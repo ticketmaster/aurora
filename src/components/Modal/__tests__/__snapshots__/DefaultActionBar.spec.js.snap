@@ -1,9 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DefaultActionBar /> should render without errors 1`] = `
+.c0 {
+  background-color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 <div>
   <div
-    class="sc-bdVaJa gHhWxS"
+    class="c0"
   >
     <svg
       aria-label="Close Modal"

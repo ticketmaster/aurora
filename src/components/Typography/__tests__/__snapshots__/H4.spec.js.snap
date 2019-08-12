@@ -1,16 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Typography.H4 should render default markup when no props are passed 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--onyx-base jaCmRM"
+  className="h4 h4--regular h4--onyx-base c0"
 >
   Hello world
 </h4>
 `;
 
 exports[`Typography.H4 should render with a custom color prop that lacks variants 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: #026cdf;
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--brand-base ckfusk"
+  className="h4 h4--regular h4--brand-base c0"
   color="brand"
 >
   Hello world
@@ -18,24 +36,53 @@ exports[`Typography.H4 should render with a custom color prop that lacks variant
 `;
 
 exports[`Typography.H4 should render with a custom weight prop 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  display: inline;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--semiBold h4--onyx-base gnQgBB"
+  className="h4 h4--semiBold h4--onyx-base c0"
 >
   Hello world
 </h4>
 `;
 
 exports[`Typography.H4 should render with a textTransform prop 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  text-transform: uppercase;
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--onyx-base fnWLGE"
+  className="h4 h4--regular h4--onyx-base c0"
 >
   Hello world
 </h4>
 `;
 
 exports[`Typography.H4 should render with custom color and variant props 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: #904eba;
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--accent01-dark cCGxJp"
+  className="h4 h4--regular h4--accent01-dark c0"
   color="accent01"
 >
   Hello world
@@ -43,13 +90,31 @@ exports[`Typography.H4 should render with custom color and variant props 1`] = `
 `;
 
 exports[`Typography.H4 should render without a theme 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--onyx-base jaCmRM"
+  className="h4 h4--regular h4--onyx-base c0"
 />
 `;
 
 exports[`Typography.H4 should render without children 1`] = `
+.c0 {
+  font-weight: 400;
+  margin: 2px 0;
+  color: rgba(38,38,38,1);
+  display: inline;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
 <h4
-  className="h4 h4--regular h4--onyx-base jaCmRM"
+  className="h4 h4--regular h4--onyx-base c0"
 />
 `;

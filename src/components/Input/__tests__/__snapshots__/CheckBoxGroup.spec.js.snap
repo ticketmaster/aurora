@@ -2,12 +2,238 @@
 
 exports[`CheckBoxGroup renders checked CheckBox without CheckBoxGroup 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-color: #999999;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-ms-check {
+  display: none;
+}
+
+.checkbox--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.c1:before {
+  content: "";
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.checkbox--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before.checkbox--disabled {
+  color: grey;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.c1:focus:before {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+  border-color: #026cdf;
+}
+
+.checkbox--small .c1:focus:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox--large .c1:focus:before {
+  width: 24px;
+  height: 24px;
+}
+
+.c1::after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+  border-radius: 2px;
+  background-color: #026cdf;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox--disabled .c1::after {
+  background-color: #999999;
+}
+
+.checkbox--small.checkbox__indeterminate .c1::after {
+  width: 8px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.checkbox--large.checkbox__indeterminate .c1::after {
+  width: 12px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c0.checkbox--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0.checkbox--large {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.c0.checkbox--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.c4 {
+  color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 7px;
+  width: 90%;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #026cdf;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox__checked .c2 {
+  opacity: 1;
+}
+
+.checkbox__indeterminate .c2 {
+  display: none;
+}
+
+.checkbox--disabled .c2 {
+  color: #999999;
+}
+
+.c3 {
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  margin-top: 3px;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+}
+
+.checkbox__checked .c3 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+<div>
     <label
-      class="checkbox--small checkbox__checked sc-gzVnrw jLPzax"
+      class="checkbox--small checkbox__checked c0"
     >
       <input
-        class="sc-bZQynM QLbZH"
+        class="c1"
         data-testid="test-checkbox"
         id="something1input"
         name="something"
@@ -15,10 +241,10 @@ Object {
         value="1"
       />
       <div
-        class="sc-dnqmqq eXmWsT"
+        class="c2"
       >
         <svg
-          class="sc-iwsKbI eyASts"
+          class="c3"
           fill="none"
           fill-rule="evenodd"
           height="16"
@@ -37,7 +263,7 @@ Object {
       <span
         aria-checked="true"
         aria-labelledby="something1"
-        class="sc-htoDjs dloQcR"
+        class="c4"
         role="checkbox"
       />
     </label>
@@ -78,12 +304,238 @@ Object {
 
 exports[`CheckBoxGroup renders default CheckBox without CheckBoxGroup 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-color: #999999;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-ms-check {
+  display: none;
+}
+
+.checkbox--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.c1:before {
+  content: "";
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.checkbox--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before.checkbox--disabled {
+  color: grey;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.c1:focus:before {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+  border-color: #026cdf;
+}
+
+.checkbox--small .c1:focus:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox--large .c1:focus:before {
+  width: 24px;
+  height: 24px;
+}
+
+.c1::after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+  border-radius: 2px;
+  background-color: #026cdf;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox--disabled .c1::after {
+  background-color: #999999;
+}
+
+.checkbox--small.checkbox__indeterminate .c1::after {
+  width: 8px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.checkbox--large.checkbox__indeterminate .c1::after {
+  width: 12px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c0.checkbox--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0.checkbox--large {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.c0.checkbox--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.c4 {
+  color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 7px;
+  width: 90%;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #026cdf;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox__checked .c2 {
+  opacity: 1;
+}
+
+.checkbox__indeterminate .c2 {
+  display: none;
+}
+
+.checkbox--disabled .c2 {
+  color: #999999;
+}
+
+.c3 {
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  margin-top: 3px;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+}
+
+.checkbox__checked .c3 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+<div>
     <label
-      class="checkbox--small sc-gzVnrw jLPzax"
+      class="checkbox--small c0"
     >
       <input
-        class="sc-bZQynM QLbZH"
+        class="c1"
         data-testid="test-checkbox"
         id="something1input"
         name="something"
@@ -91,10 +543,10 @@ Object {
         value="1"
       />
       <div
-        class="sc-dnqmqq eXmWsT"
+        class="c2"
       >
         <svg
-          class="sc-iwsKbI eyASts"
+          class="c3"
           fill="none"
           fill-rule="evenodd"
           height="16"
@@ -113,7 +565,7 @@ Object {
       <span
         aria-checked="false"
         aria-labelledby="something1"
-        class="sc-htoDjs dloQcR"
+        class="c4"
         role="checkbox"
       />
     </label>
@@ -154,15 +606,241 @@ Object {
 
 exports[`CheckBoxGroup renders default input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-color: #999999;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-ms-check {
+  display: none;
+}
+
+.checkbox--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.c1:before {
+  content: "";
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.checkbox--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before.checkbox--disabled {
+  color: grey;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.c1:focus:before {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+  border-color: #026cdf;
+}
+
+.checkbox--small .c1:focus:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox--large .c1:focus:before {
+  width: 24px;
+  height: 24px;
+}
+
+.c1::after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+  border-radius: 2px;
+  background-color: #026cdf;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox--disabled .c1::after {
+  background-color: #999999;
+}
+
+.checkbox--small.checkbox__indeterminate .c1::after {
+  width: 8px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.checkbox--large.checkbox__indeterminate .c1::after {
+  width: 12px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c0.checkbox--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0.checkbox--large {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.c0.checkbox--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.c4 {
+  color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 7px;
+  width: 90%;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #026cdf;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox__checked .c2 {
+  opacity: 1;
+}
+
+.checkbox__indeterminate .c2 {
+  display: none;
+}
+
+.checkbox--disabled .c2 {
+  color: #999999;
+}
+
+.c3 {
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  margin-top: 3px;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+}
+
+.checkbox__checked .c3 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+<div>
     <div
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-gzVnrw jLPzax"
+        class="checkbox--large c0"
       >
         <input
-          class="sc-bZQynM QLbZH"
+          class="c1"
           data-testid="test-checkbox"
           id="somethingelseinput"
           name="something"
@@ -170,10 +848,10 @@ Object {
           value="else"
         />
         <div
-          class="sc-dnqmqq eXmWsT"
+          class="c2"
         >
           <svg
-            class="sc-iwsKbI eyASts"
+            class="c3"
             fill="none"
             fill-rule="evenodd"
             height="24"
@@ -192,7 +870,7 @@ Object {
         <span
           aria-checked="false"
           aria-labelledby="somethingelse"
-          class="sc-htoDjs dloQcR"
+          class="c4"
           role="checkbox"
         />
       </label>
@@ -234,15 +912,241 @@ Object {
 
 exports[`CheckBoxGroup renders large input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-color: #999999;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-ms-check {
+  display: none;
+}
+
+.checkbox--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.c1:before {
+  content: "";
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.checkbox--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before.checkbox--disabled {
+  color: grey;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.c1:focus:before {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+  border-color: #026cdf;
+}
+
+.checkbox--small .c1:focus:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox--large .c1:focus:before {
+  width: 24px;
+  height: 24px;
+}
+
+.c1::after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+  border-radius: 2px;
+  background-color: #026cdf;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox--disabled .c1::after {
+  background-color: #999999;
+}
+
+.checkbox--small.checkbox__indeterminate .c1::after {
+  width: 8px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.checkbox--large.checkbox__indeterminate .c1::after {
+  width: 12px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c0.checkbox--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0.checkbox--large {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.c0.checkbox--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.c4 {
+  color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 7px;
+  width: 90%;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #026cdf;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox__checked .c2 {
+  opacity: 1;
+}
+
+.checkbox__indeterminate .c2 {
+  display: none;
+}
+
+.checkbox--disabled .c2 {
+  color: #999999;
+}
+
+.c3 {
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  margin-top: 3px;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+}
+
+.checkbox__checked .c3 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+<div>
     <div
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-gzVnrw jLPzax"
+        class="checkbox--large c0"
       >
         <input
-          class="sc-bZQynM QLbZH"
+          class="c1"
           data-testid="test-checkbox"
           id="somethingelseinput"
           name="something"
@@ -250,10 +1154,10 @@ Object {
           value="else"
         />
         <div
-          class="sc-dnqmqq eXmWsT"
+          class="c2"
         >
           <svg
-            class="sc-iwsKbI eyASts"
+            class="c3"
             fill="none"
             fill-rule="evenodd"
             height="24"
@@ -272,7 +1176,7 @@ Object {
         <span
           aria-checked="false"
           aria-labelledby="somethingelse"
-          class="sc-htoDjs dloQcR"
+          class="c4"
           role="checkbox"
         />
       </label>
@@ -314,15 +1218,241 @@ Object {
 
 exports[`CheckBoxGroup renders small input 1`] = `
 Object {
-  "container": <div>
+  "container": .c1 {
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-color: rgba(255,255,255,1);
+  border-color: #999999;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1::-ms-check {
+  display: none;
+}
+
+.checkbox--large .c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1 {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.95,0.95);
+  -ms-transform: scale(0.95,0.95);
+  transform: scale(0.95,0.95);
+}
+
+.c1:before {
+  content: "";
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #999999;
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-width 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.checkbox--large .c1:before {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox--small .c1:before {
+  width: 16px;
+  height: 16px;
+}
+
+.c1:before.checkbox--disabled {
+  color: grey;
+}
+
+.c1:hover:before {
+  border-width: 2px;
+  border-color: #026cdf;
+}
+
+.c1:focus:before {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+  border-color: #026cdf;
+}
+
+.checkbox--small .c1:focus:before {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox--large .c1:focus:before {
+  width: 24px;
+  height: 24px;
+}
+
+.c1::after {
+  content: "";
+  box-sizing: border-box;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+  border-radius: 2px;
+  background-color: #026cdf;
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox--disabled .c1::after {
+  background-color: #999999;
+}
+
+.checkbox--small.checkbox__indeterminate .c1::after {
+  width: 8px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.checkbox--large.checkbox__indeterminate .c1::after {
+  width: 12px;
+  height: 2px;
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+.c0 {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: left;
+}
+
+.c0.checkbox--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.c0.checkbox--large {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.c0.checkbox--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.c4 {
+  color: #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 7px;
+  width: 90%;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #026cdf;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+
+.checkbox__checked .c2 {
+  opacity: 1;
+}
+
+.checkbox__indeterminate .c2 {
+  display: none;
+}
+
+.checkbox--disabled .c2 {
+  color: #999999;
+}
+
+.c3 {
+  -webkit-transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  margin-top: 3px;
+  -webkit-transform: scale(0.7,0.7);
+  -ms-transform: scale(0.7,0.7);
+  transform: scale(0.7,0.7);
+}
+
+.checkbox__checked .c3 {
+  -webkit-transform: scale(1,1);
+  -ms-transform: scale(1,1);
+  transform: scale(1,1);
+}
+
+<div>
     <div
       role="checkbox"
     >
       <label
-        class="checkbox--large sc-gzVnrw jLPzax"
+        class="checkbox--large c0"
       >
         <input
-          class="sc-bZQynM QLbZH"
+          class="c1"
           data-testid="test-checkbox"
           id="somethingelseinput"
           name="something"
@@ -330,10 +1460,10 @@ Object {
           value="else"
         />
         <div
-          class="sc-dnqmqq eXmWsT"
+          class="c2"
         >
           <svg
-            class="sc-iwsKbI eyASts"
+            class="c3"
             fill="none"
             fill-rule="evenodd"
             height="24"
@@ -352,7 +1482,7 @@ Object {
         <span
           aria-checked="false"
           aria-labelledby="somethingelse"
-          class="sc-htoDjs dloQcR"
+          class="c4"
           role="checkbox"
         />
       </label>

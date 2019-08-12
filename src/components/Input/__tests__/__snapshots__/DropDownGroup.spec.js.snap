@@ -1,6 +1,273 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -12,22 +279,22 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--active dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
+        class="dropdown__icon--hide c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -42,14 +309,14 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large dropdown--clicked c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -58,7 +325,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -67,7 +334,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -82,6 +349,273 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 `;
 
 exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -93,22 +627,22 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--active dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
+        class="dropdown__icon--hide c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -123,14 +657,14 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large dropdown--clicked c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -139,7 +673,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -148,7 +682,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -163,6 +697,273 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 `;
 
 exports[`DropDownGroup Click outside should close the dropdown 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -174,22 +975,22 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -204,14 +1005,14 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -220,7 +1021,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -229,7 +1030,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -244,6 +1045,273 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 `;
 
 exports[`DropDownGroup Click outside should not close the dropdown when the isOpen prop equals true 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -255,24 +1323,24 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--active dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Option One
       </div>
       <svg
-        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
+        class="dropdown__icon--hide c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -287,14 +1355,14 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -303,7 +1371,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -312,7 +1380,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -327,6 +1395,273 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 `;
 
 exports[`DropDownGroup Escape key should close the drop down 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -338,22 +1673,22 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -368,14 +1703,14 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -384,7 +1719,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -393,7 +1728,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -408,6 +1743,273 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 `;
 
 exports[`DropDownGroup Should not focus onClick 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -419,22 +2021,22 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="dropdown--disabled sc-bxivhb pBoyv"
+    class="dropdown--disabled c0"
     data-testid="test-dropContainer"
     tabindex="-1"
   >
     <label
-      class="dropdown--large dropdown--border dropdown__label--disabled sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border dropdown__label--disabled c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="dropdown__text--disabled sc-EHOje exIaPu"
+        class="dropdown__text--disabled c3"
       />
       <svg
-        class="dropdown__chevron--disabled sc-ifAKCX cnmiOA"
+        class="dropdown__chevron--disabled c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -449,14 +2051,14 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -465,7 +2067,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -474,7 +2076,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -489,6 +2091,273 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 `;
 
 exports[`DropDownGroup Should open the drop down onClick 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -500,22 +2369,22 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -530,14 +2399,14 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -546,7 +2415,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -555,7 +2424,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -572,6 +2441,273 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 exports[`DropDownGroup Should remove event listener when unmount 1`] = `""`;
 
 exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -583,24 +2719,24 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Option One
       </div>
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -615,14 +2751,14 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -631,7 +2767,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -640,7 +2776,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -655,6 +2791,273 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 `;
 
 exports[`DropDownGroup Space bar should select and not close dropdown when the isOpen prop equals true 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -666,24 +3069,24 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--active dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Option One
       </div>
       <svg
-        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
+        class="dropdown__icon--hide c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -698,14 +3101,14 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -714,7 +3117,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -723,7 +3126,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -738,6 +3141,273 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 `;
 
 exports[`DropDownGroup renders bordered variant with an inner label with a placeholder prop 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -749,26 +3419,26 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__Select_An_Option"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__Select_An_Option"
       >
         Select An Option
       </span>
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Select An Option
       </div>
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -783,14 +3453,14 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -799,7 +3469,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -808,7 +3478,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -823,6 +3493,273 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 `;
 
 exports[`DropDownGroup renders borderless variant with an inner label with a label prop 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -834,24 +3771,24 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__Selected_Option:"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--no-border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__Selected_Option:"
       >
         Selected Option:
       </span>
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
+        class="dropdown--no-border c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -866,14 +3803,14 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -882,7 +3819,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -891,7 +3828,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -906,6 +3843,273 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 `;
 
 exports[`DropDownGroup renders default dropdown 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -917,22 +4121,22 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -947,14 +4151,14 @@ exports[`DropDownGroup renders default dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -963,7 +4167,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -972,7 +4176,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -987,6 +4191,273 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 `;
 
 exports[`DropDownGroup renders default dropdown that should always open downwards 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -998,22 +4469,22 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1028,14 +4499,14 @@ exports[`DropDownGroup renders default dropdown that should always open downward
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1044,7 +4515,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1053,7 +4524,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1068,6 +4539,273 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 `;
 
 exports[`DropDownGroup renders input correctly when the isOpen prop with a value of true is passed 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -1079,22 +4817,22 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--active dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="dropdown__icon--hide sc-ifAKCX cnmiOA"
+        class="dropdown__icon--hide c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1109,14 +4847,14 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1125,7 +4863,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1134,7 +4872,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1149,6 +4887,273 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 `;
 
 exports[`DropDownGroup renders input correctly when the keywordSearch prop with a value of false is passed 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -1160,22 +5165,22 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1190,14 +5195,14 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1206,7 +5211,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1215,7 +5220,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1230,6 +5235,273 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 `;
 
 exports[`DropDownGroup renders input correctly when the withKeyboardProvider prop with a value of false is passed 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -1241,22 +5513,22 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1271,15 +5543,15 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
         aria-labelledby="hidden-label__"
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1288,7 +5560,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1297,7 +5569,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1312,6 +5584,273 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 `;
 
 exports[`DropDownGroup renders small dropdown 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div
   data-testid="test-outSideComponent"
 >
@@ -1323,22 +5862,22 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     data-testid="test-dropContainer"
     tabindex="0"
   >
     <label
-      class="dropdown--small dropdown--border sc-bdVaJa qKpWB"
+      class="dropdown--small dropdown--border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__"
       />
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       />
       <svg
-        class="sc-ifAKCX cnmiOA"
+        class="c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1353,14 +5892,14 @@ exports[`DropDownGroup renders small dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--small sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--small c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1369,7 +5908,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Option One
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionTwo"
           role="option"
           tabindex="-1"
@@ -1378,7 +5917,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Second Option
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           data-testid="test-dropDownOptionThree"
           role="option"
           tabindex="-1"
@@ -1393,31 +5932,298 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 `;
 
 exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing falsy values is passed to each DropDownOption 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div>
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__Sort_By:"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--no-border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__Sort_By:"
       >
         Sort By:
       </span>
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Sort By:
          
         Date
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
+        class="dropdown--no-border c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1432,14 +6238,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           role="option"
           tabindex="-1"
           value="date"
@@ -1447,7 +6253,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1456,7 +6262,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="price"
@@ -1473,24 +6279,291 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 `;
 
 exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div>
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__Sort_By:"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--no-border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__Sort_By:"
       >
         Sort By:
       </span>
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Sort By:
          
@@ -1500,7 +6573,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         </span>
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
+        class="dropdown--no-border c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1515,14 +6588,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="date"
@@ -1530,7 +6603,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1539,7 +6612,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           role="option"
           tabindex="-1"
           value="price"
@@ -1556,24 +6629,291 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 `;
 
 exports[`DropDownGroup should render the correct label when label prop is passed, and when an array of children containing string values is passed to each DropDownOption 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: -1px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 43px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <div>
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__Sort_By:"
-    class="sc-bxivhb pBoyv"
+    class="c0"
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border sc-bdVaJa qKpWB"
+      class="dropdown--large dropdown--no-border c1"
     >
       <span
-        class="sc-htpNat irkcXP"
+        class="c2"
         id="hidden-label__Sort_By:"
       >
         Sort By:
       </span>
       <div
-        class="sc-EHOje exIaPu"
+        class="c3"
       >
         Sort By:
          
@@ -1581,7 +6921,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Closest
       </div>
       <svg
-        class="dropdown--no-border sc-ifAKCX cnmiOA"
+        class="dropdown--no-border c4"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1596,14 +6936,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="dropdown__items dropdown__items--large sc-bwzfXH bOaDnd"
+      class="dropdown__items dropdown__items--large c5"
     >
       <div
-        class="sc-bZQynM koCnbp"
+        class="c6"
         role="listbox"
       >
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="date"
@@ -1611,7 +6951,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
-          class="dropdown__selected sc-gzVnrw imflCT"
+          class="dropdown__selected c7"
           role="option"
           tabindex="-1"
           value="distance"
@@ -1620,7 +6960,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
-          class="sc-gzVnrw imflCT"
+          class="c7"
           role="option"
           tabindex="-1"
           value="price"
@@ -1637,8 +6977,52 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 `;
 
 exports[`DropDownOption should render the correct markup when a className prop is passed 1`] = `
+.c0 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c0:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+}
+
+.dropdown__items .c0.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c0 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
 <span
-  className="dropdown__item--expandable imflCT"
+  className="dropdown__item--expandable c0"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseMove={[Function]}

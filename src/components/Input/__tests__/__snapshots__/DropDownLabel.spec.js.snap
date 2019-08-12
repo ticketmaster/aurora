@@ -1,8 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<DropDownLabel /> renders large size label correctly 1`] = `
+.c0 {
+  font-size: 16px;
+  opacity: 1;
+}
+
 <label
-  className="muQhD"
+  className="c0"
   disabled={false}
   size="large"
 >
@@ -11,8 +16,13 @@ exports[`<DropDownLabel /> renders large size label correctly 1`] = `
 `;
 
 exports[`<DropDownLabel /> renders small disabled label correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
 <label
-  className="hcMhoQ"
+  className="c0"
   disabled={true}
   size="small"
 >
@@ -21,8 +31,13 @@ exports[`<DropDownLabel /> renders small disabled label correctly 1`] = `
 `;
 
 exports[`<DropDownLabel /> renders small size label correctly 1`] = `
+.c0 {
+  font-size: 14px;
+  opacity: 1;
+}
+
 <label
-  className="dFBmoE"
+  className="c0"
   disabled={false}
   size="small"
 >

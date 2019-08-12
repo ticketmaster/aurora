@@ -1,15 +1,191 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Modal /> closeModal should close the modal when the request was approved 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gylckg"
+      class="c1"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
         style="max-height: 100px;"
       >
         <button
@@ -22,15 +198,191 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 `;
 
 exports[`<Modal /> closeModal should close the modal when there is no onRequestClose callback 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gylckg"
+      class="c1"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
         style="max-height: 100px;"
       >
         <button
@@ -43,15 +395,191 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 `;
 
 exports[`<Modal /> render should not render the modal if it is closed 1`] = `
+.c1 {
+  display: none;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: none;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay WYZne"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gQMJB"
+      class="c1"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
       >
         <div>
           Modal contents
@@ -63,29 +591,271 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
 `;
 
 exports[`<Modal /> render should render fullscreen modal with action bars 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  position: relative;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  text-align: left;
+  box-shadow: 0px 26px 18px -23px rgba(0,0,0,0.12);
+  padding: 16px;
+}
+
+.c3 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c3 {
+  height: 100%;
+}
+
+.c4 {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px -26px 18px -23px rgba(0,0,0,0.12);
+  padding: 16px;
+}
+
+.c4 button {
+  float: right;
+  margin-left: 24px;
+}
+
+.c4 button:last-of-type {
+  margin-left: 0;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 24px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 32px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c3 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c3 {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c4 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c4 {
+    padding: 32px;
+    padding-top: 24px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa fullscreen gylckg"
+      class="fullscreen c1"
     >
       <div
-        class="sc-bwzfXH dvEnmx"
+        class="c2"
       >
         <div>
           Action bar controls
         </div>
       </div>
       <div
-        class="sc-htpNat CqcgG"
+        class="c3"
       >
         <div>
           Modal contents
         </div>
       </div>
       <div
-        class="sc-bxivhb irByDn"
+        class="c4"
       >
         <div>
           Place your controls here
@@ -97,29 +867,271 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 `;
 
 exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  position: relative;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+  text-align: left;
+  box-shadow: 0px 26px 18px -23px rgba(0,0,0,0.12);
+  padding: 16px;
+}
+
+.c3 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c3 {
+  height: 100%;
+}
+
+.c4 {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px -26px 18px -23px rgba(0,0,0,0.12);
+  padding: 16px;
+}
+
+.c4 button {
+  float: right;
+  margin-left: 24px;
+}
+
+.c4 button:last-of-type {
+  margin-left: 0;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 24px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 32px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c3 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c3 {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c4 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c4 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c4 {
+    padding: 32px;
+    padding-top: 24px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gylckg"
+      class="c1"
     >
       <div
-        class="sc-bwzfXH dvEnmx"
+        class="c2"
       >
         <div>
           Action bar controls
         </div>
       </div>
       <div
-        class="sc-htpNat CqcgG"
+        class="c3"
       >
         <div>
           Modal contents
         </div>
       </div>
       <div
-        class="sc-bxivhb irByDn"
+        class="c4"
       >
         <div>
           Place your controls here
@@ -131,16 +1143,192 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 `;
 
 exports[`<Modal /> render should render without errors and pass extra props 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gylckg"
+      class="c1"
       style="width: 210px;"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
       >
         <div>
           Modal contents
@@ -152,15 +1340,191 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 `;
 
 exports[`<Modal /> should recalculate shadows and content height on props change 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx open-enter open-enter-active"
+    class="container--overlay c0 open-enter open-enter-active"
   >
     <div
-      class="sc-bdVaJa gylckg open-enter open-enter-active"
+      class="c1 open-enter open-enter-active"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
         style="max-height: 100px;"
       >
         <div>
@@ -173,15 +1537,226 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 `;
 
 exports[`<Modal /> should set bottom action bar shadow when the content was scrolled 1`] = `
+.c1 {
+  display: block;
+  top: 50%;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 16px;
+  margin-right: 16px;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
+  border-radius: 4px;
+  height: auto;
+  max-height: calc(100vh - 88px * 2);
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c1.fullscreen {
+  top: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  height: 100%;
+  max-height: initial;
+  max-width: initial;
+}
+
+.c1.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c1.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit {
+  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1.open-exit-active {
+  display: block;
+  opacity: 0;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c2 {
+  background-color: rgba(255,255,255,1);
+  overflow-y: auto;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+.fullscreen .c2 {
+  height: 100%;
+}
+
+.c3 {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px -26px 18px -23px rgba(0,0,0,0.12);
+  padding: 16px;
+}
+
+.c3 button {
+  float: right;
+  margin-left: 24px;
+}
+
+.c3 button:last-of-type {
+  margin-left: 0;
+}
+
+.c0 {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(38,38,38,0.65);
+  z-index: 9;
+  display: block;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+}
+
+.c0.open-enter {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 0;
+}
+
+.c0.open-enter-active {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-enter-done {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit {
+  display: block;
+  opacity: 1;
+}
+
+.c0.open-exit-active {
+  display: block;
+  opacity: 0;
+}
+
+@media screen and (min-width:480px) {
+  .c1 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c1 {
+    max-width: 520px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-left: 0 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c2 {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c2 {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c3 {
+    padding: 16px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .c3 {
+    padding: 32px;
+    padding-top: 24px;
+  }
+}
+
 <div>
   <div
-    class="sc-ifAKCX container--overlay jvGGwx"
+    class="container--overlay c0"
   >
     <div
-      class="sc-bdVaJa gylckg"
+      class="c1"
     >
       <div
-        class="sc-htpNat CqcgG"
+        class="c2"
         style="max-height: 100px;"
       >
         <div
@@ -191,7 +1766,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
         </div>
       </div>
       <div
-        class="sc-bxivhb irByDn"
+        class="c3"
       >
         <div />
       </div>

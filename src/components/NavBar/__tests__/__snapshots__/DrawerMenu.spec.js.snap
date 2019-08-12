@@ -1,32 +1,312 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MobileMenu accepts children as menu content 1`] = `
+.c0 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c0 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c0.nav-button--last {
+  padding-right: 16px;
+}
+
+.c0.nav-button--first {
+  padding-left: 16px;
+}
+
+.c2 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before,
+.c2:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before {
+  top: 0;
+  left: 0;
+}
+
+.c2:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c2 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c2:before,
+.nav--inverted .c2:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c2 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c2:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c2:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c1 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c0.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c0.nav-button--first {
+    padding-left: 24px;
+  }
+}
+
 <button
-  className="menu-button fKzckz"
+  className="menu-button c0"
   onClick={[Function]}
   type="button"
 >
   <span
-    className="hamburger hamburger--closed kQQPwz"
+    className="hamburger hamburger--closed c1"
   >
     <span
-      className="ggAQg"
+      className="c2"
     />
   </span>
 </button>
 `;
 
 exports[`MobileMenu renders default 1`] = `
+.c0 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c0 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c0.nav-button--last {
+  padding-right: 16px;
+}
+
+.c0.nav-button--first {
+  padding-left: 16px;
+}
+
+.c2 {
+  border-radius: 2px;
+  overflow: hidden;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before,
+.c2:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: rgba(255,255,255,1);
+  width: 100%;
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transform-origin: right center;
+  -ms-transform-origin: right center;
+  transform-origin: right center;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 300ms cubic-bezier(0.455,0.03,0.515,0.955), background-color 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:before {
+  top: 0;
+  left: 0;
+}
+
+.c2:after {
+  bottom: 0;
+  left: 0;
+}
+
+.nav--inverted .c2 {
+  background-color: rgba(38,38,38,1);
+}
+
+.nav--inverted .c2:before,
+.nav--inverted .c2:after {
+  background-color: rgba(38,38,38,1);
+}
+
+.hamburger--opened .c2 {
+  background-color: transparent;
+}
+
+.hamburger--opened .c2:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger--opened .c2:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c1 {
+  height: 17px;
+  width: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (min-width:480px) {
+  .c0 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c0.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c0.nav-button--first {
+    padding-left: 24px;
+  }
+}
+
 <button
-  className="menu-button fKzckz"
+  className="menu-button c0"
   onClick={[Function]}
   type="button"
 >
   <span
-    className="hamburger hamburger--closed kQQPwz"
+    className="hamburger hamburger--closed c1"
   >
     <span
-      className="ggAQg"
+      className="c2"
     />
   </span>
 </button>
