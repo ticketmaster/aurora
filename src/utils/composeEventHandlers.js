@@ -1,5 +1,5 @@
-const composeHandler = (...args) => e => {
-  args.forEach(fn => fn && fn(e));
+const composeHandler = (...fns) => (...args) => {
+  fns.forEach(fn => fn && fn(...args));
 };
 
 export default composeHandler;
