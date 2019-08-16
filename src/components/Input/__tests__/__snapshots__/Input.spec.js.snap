@@ -198,21 +198,20 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-top c0"
+  class="text--input-undefined text--input-undefined c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder="test hint"
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />
@@ -418,22 +417,21 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-top text--input-disabled c0"
+  class="text--input-undefined text--input-undefined text--input-disabled c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
       disabled=""
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder=""
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />
@@ -639,15 +637,14 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-top text__error c0"
+  class="text--input-undefined text--input-undefined text__error c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder="test hint"
       type="text"
@@ -861,9 +858,8 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-top c0"
+  class="text--input-undefined text--input-undefined c0"
 >
-  
   <div
     class="c1"
   >
@@ -873,7 +869,7 @@ textarea.c2:hover {
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />
@@ -1116,7 +1112,7 @@ textarea.c3:hover {
 }
 
 <div
-  class="text--input-large text--input-top c0"
+  class="text--input-large text--input-undefined c0"
 >
   <label
     class="c1"
@@ -1137,7 +1133,7 @@ textarea.c3:hover {
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c4"
       role="alert"
     />
@@ -1343,21 +1339,20 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-left c0"
+  class="text--input-undefined text--input-left c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder="test hint"
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />
@@ -1563,22 +1558,21 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-small text--input-top c0"
+  class="text--input-small text--input-undefined c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder="test hint"
       style="color: blue;"
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />
@@ -1784,21 +1778,20 @@ textarea.c2:hover {
 }
 
 <div
-  class="text--input-regular text--input-top c0"
+  class="text--input-undefined text--input-top c0"
 >
-  
   <div
     class="c1"
   >
     <input
       class="c2"
-      id="test1__input"
+      id="test1undefined__input"
       name="test1"
       placeholder="test hint"
       type="text"
     />
     <label
-      aria-invalid="false"
+      aria-invalid="true"
       class="c3"
       role="alert"
     />

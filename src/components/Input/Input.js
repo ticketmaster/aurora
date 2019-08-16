@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -12,18 +12,21 @@ import {
   FieldErrorText
 } from "./Input.styles";
 
-const Input = ({
-  labelPosition,
-  placeholder,
-  disabled,
-  label,
-  name,
-  errorMessage,
-  size,
-  tag,
-  labelStyle,
-  ...rest
-}) => {
+const Input = (
+  {
+    labelPosition,
+    placeholder,
+    disabled,
+    label,
+    name,
+    errorMessage,
+    size,
+    tag,
+    labelStyle,
+    ...rest
+  },
+  ref
+) => {
   const sluggified = sluggify(name + label);
   const labelId = sluggified ? `${sluggified}__label` : null;
   return (
@@ -51,6 +54,7 @@ const Input = ({
           as={tag}
           {...rest}
           aria-labelledby={label ? labelId : null}
+          ref={ref}
         />
         <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
           {errorMessage}
@@ -84,4 +88,4 @@ Input.defaultProps = {
   labelStyle: {}
 };
 
-export default Input;
+export default forwardRef(Input);
