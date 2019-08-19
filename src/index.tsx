@@ -246,4 +246,4 @@ export {
 } from "./mixins";
 export { default as getThemeValue } from "./utils/getThemeValue";
 export { default as keyCharCodes } from "./utils/keyCharCodes";
-export { default as composeEventHandlers } from "./utils/composeEventHandlers";
+export { default as composeHandlers } from "./utils/composeHandlers";
