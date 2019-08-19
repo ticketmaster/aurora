@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -12,53 +12,60 @@ import {
   FieldErrorText
 } from "./Input.styles";
 
-const Input = ({
-  labelPosition,
-  placeholder,
-  disabled,
-  label,
-  name,
-  errorMessage,
-  size,
-  tag,
-  labelStyle,
-  ...rest
-}) => {
-  const sluggified = sluggify(name + label);
-  const labelId = sluggified ? `${sluggified}__label` : null;
-  return (
-    <FieldInputWrapper
-      className={classNames(
-        `text--input-${size}`,
-        `text--input-${labelPosition}`,
-        {
-          "text--input-disabled": disabled,
-          text__error: errorMessage
-        }
-      )}
-    >
-      {label && (
-        <FieldInputText id={labelId} style={labelStyle}>
-          {label}
-        </FieldInputText>
-      )}
-      <ErrorBoxWrapper>
-        <FieldInputBox
-          placeholder={disabled ? "" : placeholder}
-          name={name || null}
-          id={sluggified ? `${sluggified}__input` : null}
-          disabled={disabled}
-          as={tag}
-          {...rest}
-          aria-labelledby={label ? labelId : null}
-        />
-        <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
-          {errorMessage}
-        </FieldErrorText>
-      </ErrorBoxWrapper>
-    </FieldInputWrapper>
-  );
-};
+const Input = forwardRef(
+  (
+    {
+      labelPosition,
+      placeholder,
+      disabled,
+      label,
+      name,
+      errorMessage,
+      size,
+      tag,
+      labelStyle,
+      ...rest
+    },
+    ref
+  ) => {
+    const sluggified = sluggify(name + label);
+    const labelId = sluggified ? `${sluggified}__label` : null;
+    return (
+      <FieldInputWrapper
+        className={classNames(
+          `text--input-${size}`,
+          `text--input-${labelPosition}`,
+          {
+            "text--input-disabled": disabled,
+            text__error: errorMessage
+          }
+        )}
+      >
+        {label && (
+          <FieldInputText id={labelId} style={labelStyle}>
+            {label}
+          </FieldInputText>
+        )}
+        <ErrorBoxWrapper>
+          <FieldInputBox
+            placeholder={disabled ? "" : placeholder}
+            name={name || null}
+            id={sluggified ? `${sluggified}__input` : null}
+            disabled={disabled}
+            as={tag}
+            {...rest}
+            aria-labelledby={label ? labelId : null}
+            ref={ref}
+          />
+          <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
+            {errorMessage}
+          </FieldErrorText>
+        </ErrorBoxWrapper>
+      </FieldInputWrapper>
+    );
+  }
+);
+
 Input.propTypes = {
   children: PropTypes.node,
   labelPosition: PropTypes.string,
