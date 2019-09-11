@@ -101,15 +101,18 @@ export default class Drawer extends React.Component {
             )}
           >
             <DrawerContent>
-              {this.renderHeader({
-                toggleDrawer,
-                isOpen,
-                withSpotLight
-              })}
-              {this.renderChildren({
-                toggleDrawer,
-                isOpen
-              })}
+              {/* This wrapper created to fix content overlapping after keyboard forces the screen up on mobile devices */}
+              <div>
+                {this.renderHeader({
+                  toggleDrawer,
+                  isOpen,
+                  withSpotLight
+                })}
+                {this.renderChildren({
+                  toggleDrawer,
+                  isOpen
+                })}
+              </div>
             </DrawerContent>
           </DrawerContainer>
         )}

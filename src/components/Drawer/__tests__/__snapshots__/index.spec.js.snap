@@ -85,30 +85,32 @@ exports[`Drawer renders default drawer 1`] = `
   className=""
 >
   <DrawerContent>
-    <Gradient
-      className="gradient--spotlight"
-      style={
-        Object {
-          "height": "60px",
-          "position": "relative",
+    <div>
+      <Gradient
+        className="gradient--spotlight"
+        style={
+          Object {
+            "height": "60px",
+            "position": "relative",
+          }
         }
-      }
-    >
-      <HeaderContent>
-        <div />
-        <CloseButton
-          type="button"
-        >
-          <span
-            className="hamburger hamburger--closed c0"
+      >
+        <HeaderContent>
+          <div />
+          <CloseButton
+            type="button"
           >
             <span
-              className="c1"
-            />
-          </span>
-        </CloseButton>
-      </HeaderContent>
-    </Gradient>
+              className="hamburger hamburger--closed c0"
+            >
+              <span
+                className="c1"
+              />
+            </span>
+          </CloseButton>
+        </HeaderContent>
+      </Gradient>
+    </div>
   </DrawerContent>
 </DrawerContainer>
 `;
@@ -198,37 +200,39 @@ exports[`Drawer renders header elements 1`] = `
   className=""
 >
   <DrawerContent>
-    <Gradient
-      className="gradient--spotlight"
-      style={
-        Object {
-          "height": "60px",
-          "position": "relative",
+    <div>
+      <Gradient
+        className="gradient--spotlight"
+        style={
+          Object {
+            "height": "60px",
+            "position": "relative",
+          }
         }
-      }
-    >
-      <HeaderContent>
-        <div>
-          <span>
-            Some Title Element
-          </span>
-        </div>
-        <CloseButton
-          type="button"
-        >
-          <span
-            className="hamburger hamburger--closed c0"
+      >
+        <HeaderContent>
+          <div>
+            <span>
+              Some Title Element
+            </span>
+          </div>
+          <CloseButton
+            type="button"
           >
             <span
-              className="c1"
-            />
-          </span>
-        </CloseButton>
-      </HeaderContent>
-    </Gradient>
-    <span>
-      Content
-    </span>
+              className="hamburger hamburger--closed c0"
+            >
+              <span
+                className="c1"
+              />
+            </span>
+          </CloseButton>
+        </HeaderContent>
+      </Gradient>
+      <span>
+        Content
+      </span>
+    </div>
   </DrawerContent>
 </DrawerContainer>
 `;
@@ -318,39 +322,41 @@ exports[`Drawer renders multiple child elements 1`] = `
   className=""
 >
   <DrawerContent>
-    <Gradient
-      className="gradient--spotlight"
-      style={
-        Object {
-          "height": "60px",
-          "position": "relative",
+    <div>
+      <Gradient
+        className="gradient--spotlight"
+        style={
+          Object {
+            "height": "60px",
+            "position": "relative",
+          }
         }
-      }
-    >
-      <HeaderContent>
-        <div />
-        <CloseButton
-          type="button"
-        >
-          <span
-            className="hamburger hamburger--closed c0"
+      >
+        <HeaderContent>
+          <div />
+          <CloseButton
+            type="button"
           >
             <span
-              className="c1"
-            />
-          </span>
-        </CloseButton>
-      </HeaderContent>
-    </Gradient>
-    <span>
-      Content
-    </span>
-    <span>
-      Content
-    </span>
-    <span>
-      Content
-    </span>
+              className="hamburger hamburger--closed c0"
+            >
+              <span
+                className="c1"
+              />
+            </span>
+          </CloseButton>
+        </HeaderContent>
+      </Gradient>
+      <span>
+        Content
+      </span>
+      <span>
+        Content
+      </span>
+      <span>
+        Content
+      </span>
+    </div>
   </DrawerContent>
 </DrawerContainer>
 `;
@@ -448,39 +454,41 @@ exports[`Drawer renders string header header 1`] = `
   className=""
 >
   <DrawerContent>
-    <Gradient
-      className="gradient--spotlight"
-      style={
-        Object {
-          "height": "60px",
-          "position": "relative",
+    <div>
+      <Gradient
+        className="gradient--spotlight"
+        style={
+          Object {
+            "height": "60px",
+            "position": "relative",
+          }
         }
-      }
-    >
-      <HeaderContent>
-        <div>
-          <div
-            className="text text--light text--primary c0"
-            disabled={false}
-            size="kilo"
-          >
-            Some Title
+      >
+        <HeaderContent>
+          <div>
+            <div
+              className="text text--light text--primary c0"
+              disabled={false}
+              size="kilo"
+            >
+              Some Title
+            </div>
           </div>
-        </div>
-        <CloseButton
-          type="button"
-        >
-          <span
-            className="hamburger hamburger--closed c1"
+          <CloseButton
+            type="button"
           >
             <span
-              className="c2"
-            />
-          </span>
-        </CloseButton>
-      </HeaderContent>
-    </Gradient>
-    Content
+              className="hamburger hamburger--closed c1"
+            >
+              <span
+                className="c2"
+              />
+            </span>
+          </CloseButton>
+        </HeaderContent>
+      </Gradient>
+      Content
+    </div>
   </DrawerContent>
 </DrawerContainer>
 `;
