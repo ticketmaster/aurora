@@ -15,6 +15,10 @@ rows:
     Type: string
     Default: '`regular`'
     Notes: Determines button size. Possible sizes are `small`, `regular`, `large`
+  - Prop: isLoading
+    Type: bool
+    Default: '`false`'
+    Notes: Determines the button loading state. Possible states are `true`, `false`
   - Prop: href
     Type: string
     Notes: Determines wether underlying HTML element should be an `a`
@@ -45,6 +49,9 @@ rows:
                     <Button size="large">My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
+                    <Button size="large" isLoading>My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
                     <Button size="large" disabled>My cool button</Button>
                 </Spacing>
             </Column>
@@ -68,6 +75,9 @@ rows:
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="special" size="large">My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
+                    <Button variant="special" size="large" isLoading>My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="special" size="large" disabled>My cool button</Button>
@@ -95,6 +105,9 @@ rows:
                     <Button variant="outline" size="large">My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
+                    <Button variant="outline" size="large" isLoading>My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
                     <Button variant="outline" size="large" disabled>My cool button</Button>
                 </Spacing>
             </Column>
@@ -120,6 +133,9 @@ rows:
                     <Button variant="outlineGray" size="large">My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
+                    <Button variant="outlineGray" size="large" isLoading>My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
                     <Button variant="outlineGray" size="large" disabled>My cool button</Button>
                 </Spacing>
             </Column>
@@ -143,6 +159,9 @@ rows:
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="transparent" size="large">My cool button</Button>
+                </Spacing>
+                <Spacing top={{small: "moderate"}}>
+                    <Button variant="transparent" size="large" isLoading>My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="transparent" size="large" disabled>My cool button</Button>

@@ -116,11 +116,27 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="large"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -176,11 +192,27 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -236,12 +268,28 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   disabled={true}
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -297,11 +345,27 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="small"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -357,11 +421,27 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="large"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -417,11 +497,27 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -477,12 +573,28 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   disabled={true}
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -538,11 +650,27 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="small"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -598,11 +726,27 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="large"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -658,11 +802,27 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -718,12 +878,28 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   disabled={true}
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -779,11 +955,27 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="small"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -839,11 +1031,27 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="large"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -899,11 +1107,27 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -959,12 +1183,28 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   disabled={true}
   size="regular"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
 
@@ -1020,10 +1260,26 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
   box-shadow: none;
 }
 
+.c1 {
+  position: relative;
+}
+
+.c2 {
+  visibility: visible;
+}
+
 <button
   className=" noFocus c0"
   size="small"
 >
-  Dummy Label
+  <span
+    className="c1"
+  >
+    <span
+      className="c2"
+    >
+      Dummy Label
+    </span>
+  </span>
 </button>
 `;
