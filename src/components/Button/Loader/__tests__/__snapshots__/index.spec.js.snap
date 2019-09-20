@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader when loading false should match snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  visibility: visible;
+}
+
+<span
+  className="c0"
+>
+  <span
+    className="c1"
+  >
+    Children
+  </span>
+</span>
+`;
+
+exports[`Loader when loading true & children should match snapshot 1`] = `
+.c2 {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-animation: hZBpYk 0.8s linear infinite;
+  animation: hZBpYk 0.8s linear infinite;
+}
+
+.c2:nth-child(2) {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+  margin: 0 8px;
+}
+
+.c2:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c3 {
+  visibility: hidden;
+}
+
+.c1 {
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  right: 0;
+}
+
+<span
+  className="c0"
+>
+  <span
+    className="c1"
+    data-bdd="loader"
+  >
+    <span
+      className="c2"
+    />
+    <span
+      className="c2"
+    />
+    <span
+      className="c2"
+    />
+  </span>
+  <span
+    className="c3"
+  >
+    Children
+  </span>
+</span>
+`;

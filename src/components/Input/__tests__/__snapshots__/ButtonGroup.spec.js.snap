@@ -90,6 +90,14 @@ Object {
   box-shadow: none;
 }
 
+.c10 {
+  position: relative;
+}
+
+.c11 {
+  visibility: visible;
+}
+
 .c7 {
   width: 50%;
 }
@@ -192,7 +200,15 @@ Object {
               class="button__selected c8 noFocus c9"
               data-testid="test-button0"
             >
-              All
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  All
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -202,7 +218,15 @@ Object {
               class="c8 noFocus c9"
               data-testid="test-button1"
             >
-              Concerts
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  Concerts
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -212,7 +236,15 @@ Object {
               class="c8 noFocus c9"
               data-testid="test-button2"
             >
-              Button Label
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  Button Label
+                </span>
+              </span>
             </button>
           </div>
         </div>
@@ -343,6 +375,14 @@ Object {
   box-shadow: none;
 }
 
+.c10 {
+  position: relative;
+}
+
+.c11 {
+  visibility: visible;
+}
+
 .c7 {
   width: 50%;
 }
@@ -445,7 +485,15 @@ Object {
               class="c8 noFocus c9"
               data-testid="test-button0"
             >
-              All
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  All
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -455,7 +503,15 @@ Object {
               class="c8 noFocus c9"
               data-testid="test-button1"
             >
-              Concerts
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  Concerts
+                </span>
+              </span>
             </button>
           </div>
           <div
@@ -465,7 +521,15 @@ Object {
               class="c8 noFocus c9"
               data-testid="test-button2"
             >
-              Button Label
+              <span
+                class="c10"
+              >
+                <span
+                  class="c11"
+                >
+                  Button Label
+                </span>
+              </span>
             </button>
           </div>
         </div>
