@@ -107,9 +107,13 @@ class Button extends Component<ButtonProps> {
         className={`${rest.className || ""} noFocus`}
         ref={this.button}
       >
-        <Loader isLoading={isLoading} variant={variant}>
-          {children}
-        </Loader>
+        {!isLoading ? (
+          children
+        ) : (
+          <Loader isLoading={isLoading} variant={variant}>
+            {children}
+          </Loader>
+        )}
       </StyledButton>
     );
   }
