@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonWithLoading should match snapshot 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
+.c4 {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,1);
+  -webkit-animation: hZBpYk 0.8s linear infinite;
+  animation: hZBpYk 0.8s linear infinite;
+}
+
+.c4:nth-child(2) {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+  margin: 0 8px;
+}
+
+.c4:nth-child(3) {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.c3 {
+  width: 100%;
+  position: absolute;
+  white-space: nowrap;
+  top: 0;
+}
+
+.c2 {
+  visibility: hidden;
+}
+
+.c1 {
+  position: relative;
+}
+
+<button
+  className=" noFocus c0"
+  size="regular"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      Children
+    </div>
+    <div
+      className="c3"
+      data-bdd="loader"
+    >
+      <span
+        className="c4"
+      />
+      <span
+        className="c4"
+      />
+      <span
+        className="c4"
+      />
+    </div>
+  </div>
+</button>
+`;

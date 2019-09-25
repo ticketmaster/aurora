@@ -52,14 +52,6 @@ exports[`QtySelector decrements correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -119,7 +111,7 @@ exports[`QtySelector decrements correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -135,15 +127,15 @@ exports[`QtySelector decrements correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -160,7 +152,7 @@ exports[`QtySelector decrements correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -172,635 +164,627 @@ exports[`QtySelector decrements correctly 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -809,35 +793,27 @@ exports[`QtySelector decrements correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -894,14 +870,6 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -961,7 +929,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -977,15 +945,15 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -1002,7 +970,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -1014,635 +982,627 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -1651,35 +1611,27 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -1736,14 +1688,6 @@ exports[`QtySelector decrements twice correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1803,7 +1747,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -1819,15 +1763,15 @@ exports[`QtySelector decrements twice correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -1844,7 +1788,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -1856,635 +1800,627 @@ exports[`QtySelector decrements twice correctly 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -2493,35 +2429,27 @@ exports[`QtySelector decrements twice correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -2578,14 +2506,6 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2645,7 +2565,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -2661,15 +2581,15 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -2686,7 +2606,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -2697,635 +2617,627 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value=""
@@ -3334,35 +3246,27 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -3419,14 +3323,6 @@ exports[`QtySelector handles input value correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3486,7 +3382,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -3502,15 +3398,15 @@ exports[`QtySelector handles input value correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -3527,7 +3423,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -3538,635 +3434,627 @@ exports[`QtySelector handles input value correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -1428px;"
       type="text"
       value="42"
@@ -4175,35 +4063,27 @@ exports[`QtySelector handles input value correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -4260,14 +4140,6 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4327,7 +4199,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -4343,15 +4215,15 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -4368,7 +4240,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -4380,635 +4252,627 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -5017,35 +4881,27 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -5102,14 +4958,6 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5169,7 +5017,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -5185,15 +5033,15 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -5210,7 +5058,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -5221,635 +5069,627 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -3366px;"
       type="text"
       value="99"
@@ -5859,35 +5699,27 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -5944,14 +5776,6 @@ exports[`QtySelector increments correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6011,7 +5835,7 @@ exports[`QtySelector increments correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -6027,15 +5851,15 @@ exports[`QtySelector increments correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -6052,7 +5876,7 @@ exports[`QtySelector increments correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -6063,635 +5887,627 @@ exports[`QtySelector increments correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -34px;"
       type="text"
       value="1"
@@ -6700,35 +6516,27 @@ exports[`QtySelector increments correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -6785,14 +6593,6 @@ exports[`QtySelector increments twice correctly 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6852,7 +6652,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -6868,15 +6668,15 @@ exports[`QtySelector increments twice correctly 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -6893,7 +6693,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -6904,635 +6704,627 @@ exports[`QtySelector increments twice correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -68px;"
       type="text"
       value="2"
@@ -7541,35 +7333,27 @@ exports[`QtySelector increments twice correctly 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -7626,14 +7410,6 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7693,7 +7469,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -7709,15 +7485,15 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -7734,7 +7510,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -7745,65 +7521,57 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -7812,35 +7580,27 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -7897,14 +7657,6 @@ exports[`QtySelector renders default QtySelector 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7964,7 +7716,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -7980,15 +7732,15 @@ exports[`QtySelector renders default QtySelector 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -8005,7 +7757,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -8017,635 +7769,627 @@ exports[`QtySelector renders default QtySelector 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -8654,35 +8398,27 @@ exports[`QtySelector renders default QtySelector 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -8739,14 +8475,6 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8806,7 +8534,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -8822,15 +8550,15 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -8847,7 +8575,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -8859,734 +8587,726 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="InputFieldContainer__disabled c5 c6"
+    class="InputFieldContainer__disabled c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       disabled=""
       style="top: -0px;"
       type="text"
@@ -9597,35 +9317,27 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -9682,14 +9394,6 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9749,7 +9453,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -9765,15 +9469,15 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -9790,7 +9494,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -9802,635 +9506,627 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
     />
     <input
-      class="c7"
+      class="c5"
       style="top: -0px;"
       type="text"
       value="0"
@@ -10439,35 +10135,27 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;
@@ -10524,14 +10212,6 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  position: relative;
-}
-
-.c4 {
-  visibility: visible;
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10591,7 +10271,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   background-color: #d6e7fa;
 }
 
-.c6 {
+.c4 {
   box-sizing: border-box;
   overflow-y: hidden;
   display: -webkit-box;
@@ -10607,15 +10287,15 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   margin: 0px 12px;
 }
 
-.c6:hover.c5:not(.InputFieldContainer__disabled) {
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
   border-color: #026cdf;
 }
 
-.c6.InputFieldContainer__disabled {
+.c4.InputFieldContainer__disabled {
   border: 1px solid #ebebeb;
 }
 
-.c7 {
+.c5 {
   top: 0;
   position: relative;
   line-height: 34px;
@@ -10632,7 +10312,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c7:disabled {
+.c5:disabled {
   border-color: #ebebeb;
   color: rgba(38,38,38,0.4);
 }
@@ -10644,41 +10324,33 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
     class="c1 noFocus c2"
     disabled=""
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
   <div
-    class="c5 c6"
+    class="c3 c4"
   >
     <input
-      class="c7"
+      class="c5"
       type="text"
       value="0"
     />
@@ -10686,35 +10358,27 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   <button
     class="c1 noFocus c2"
   >
-    <span
-      class="c3"
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <span
-        class="c4"
+      <g
+        fill="none"
+        fill-rule="nonzero"
       >
-        <svg
-          height="24"
-          viewBox="0 0 24 24"
-          width="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0 0h24v24H0z"
-            />
-            <path
-              d="M4 12h16M12 4v16"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </g>
-        </svg>
-      </span>
-    </span>
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
   </button>
 </div>
 `;

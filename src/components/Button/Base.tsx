@@ -12,13 +12,11 @@ import {
   Size
 } from "../constants";
 import { getRelByTarget } from "../../utils/link";
-import Loader from "./Loader";
 
 export interface ButtonProps {
   readonly className?: string;
   readonly variant: ButtonVariant;
   readonly size: Size;
-  readonly isLoading: boolean;
 }
 
 export interface ButtonLinkProps extends ButtonProps {
@@ -37,14 +35,12 @@ class Button extends Component<ButtonProps> {
   static propTypes: ValidationMap<PropsWithChildren<ButtonProps>> = {
     variant: PropTypes.oneOf(BUTTON_VARIANTS),
     size: PropTypes.oneOf(SIZES),
-    isLoading: PropTypes.bool,
     children: PropTypes.node.isRequired
   };
 
   static defaultProps: ButtonProps = {
     size: REGULAR,
-    variant: STANDARD,
-    isLoading: false
+    variant: STANDARD
   };
 
   componentDidMount() {
@@ -80,7 +76,7 @@ class Button extends Component<ButtonProps> {
   button = React.createRef<HTMLButtonElement>();
 
   render() {
-    const { variant, size, isLoading, children, ...rest } = this.props;
+    const { variant, size, children, ...rest } = this.props;
 
     if (isButtonLinkProps(this.props)) {
       const { rel, target } = this.props;
@@ -107,9 +103,7 @@ class Button extends Component<ButtonProps> {
         className={`${rest.className || ""} noFocus`}
         ref={this.button}
       >
-        <Loader isLoading={isLoading} variant={variant}>
-          {children}
-        </Loader>
+        {children}
       </StyledButton>
     );
   }
