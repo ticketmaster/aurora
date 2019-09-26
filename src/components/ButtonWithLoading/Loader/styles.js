@@ -51,20 +51,10 @@ export const Dot = styled.span`
 `;
 Dot.displayName = "Dot";
 
-export const LoaderWrapper = styled.span`
-  position: relative;
-`;
-LoaderWrapper.displayName = "LoaderWrapper";
-
-export const ContentWrapper = styled.span`
-  visibility: ${({ isLoading }) => (isLoading ? "hidden" : "visible")};
-`;
-ContentWrapper.displayName = "ContentWrapper";
-
-export const DotsWrapper = styled.span`
+export const DotsWrapper = styled.div`
+  width: 100%;
   position: absolute;
   white-space: nowrap;
-  left: 0;
-  right: 0;
+  top: 0;
 `;
 DotsWrapper.displayName = "DotsWrapper";

@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import Spacing from "../../../src/components/Spacing";
 import { Button, Badge, RatingBadge } from "../../../src/components/Button";
+import ButtonWithLoading from "../../../src/components/ButtonWithLoading";
 import { ChevronIcon, StarIcon } from "../../../src/components/Icons";
 import { colors, themes } from "../../../src/theme";
 
@@ -14,6 +15,7 @@ export default {
   title: "Buttons",
   imports: {
     Button,
+    ButtonWithLoading,
     Badge,
     ChevronIcon,
     StarIcon,
