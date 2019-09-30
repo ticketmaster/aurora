@@ -79,7 +79,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -114,7 +114,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -254,6 +254,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -427,7 +428,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -462,7 +463,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -602,6 +603,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -775,7 +777,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -810,7 +812,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -950,6 +952,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -1123,7 +1126,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -1158,7 +1161,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -1298,6 +1301,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -1363,6 +1367,704 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       >
         <span
           class="dropdown__selected c7"
+          data-testid="test-dropDownOptionOne"
+          role="option"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="c7"
+          data-testid="test-dropDownOptionTwo"
+          role="option"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="c7"
+          data-testid="test-dropDownOptionThree"
+          role="option"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup Effect when move moves over dropdown option  when focused is not same as index 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 46px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+  border-radius: 2px;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+<div
+  data-testid="test-outSideComponent"
+>
+  <div
+    data-testid="something"
+  >
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__"
+    class="c0"
+    data-testid="test-dropContainer"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--active dropdown--border c1"
+    >
+      <span
+        class="c2"
+        id="hidden-label__"
+      />
+      <div
+        class="c3"
+      />
+      <svg
+        class="dropdown__icon--hide c4"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c5"
+    >
+      <div
+        class="c6"
+        role="listbox"
+      >
+        <span
+          class="c7"
+          data-testid="test-dropDownOptionOne"
+          role="option"
+          tabindex="-1"
+          value="ValueOne"
+        >
+          Option One
+        </span>
+        <span
+          class="c7"
+          data-testid="test-dropDownOptionTwo"
+          role="option"
+          tabindex="-1"
+          value="ValueTwo"
+        >
+          Second Option
+        </span>
+        <span
+          class="c7"
+          data-testid="test-dropDownOptionThree"
+          role="option"
+          tabindex="-1"
+          value="ValueThree"
+        >
+          Option Three
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DropDownGroup Effect when move moves over dropdown option when focused is same as index 1`] = `
+.c1 {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c1.dropdown--small {
+  height: 36px;
+}
+
+.c1.dropdown--border {
+  border: solid 1px #999999;
+  text-align: left;
+}
+
+.c1.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c1.dropdown--active {
+  margin: 0;
+  border: solid 1px #999999;
+  border-radius: 2px 2px 0 0;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c1 {
+  cursor: default;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--open-upward .c1 {
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c1:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+}
+
+.c5 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 2px 2px;
+  white-space: nowrap;
+  margin-top: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  min-width: 100%;
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c5.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c5.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c5 {
+  bottom: 46px;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c5.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  color: #262626;
+  width: 100%;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c4 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 16px;
+}
+
+.dropdown--small .c4 {
+  margin-right: 12px;
+}
+
+.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 15px;
+}
+
+.dropdown--small.dropdown--border:hover .c4:not(.dropdown__chevron--disabled) {
+  margin-right: 11px;
+}
+
+.c4.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c3 {
+  font-size: 16px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown--small .c3 {
+  font-size: 14px;
+}
+
+.dropdown--no-border .c3 {
+  margin-right: 10px;
+}
+
+.dropdown--large.dropdown--border .c3 {
+  margin-left: 16px;
+}
+
+.dropdown--small.dropdown--border .c3 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c3 {
+  margin-right: 11px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c3:not(.dropdown__text--disabled) {
+  margin-right: 10px;
+}
+
+.dropdown--small.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 11px;
+}
+
+.dropdown--large.dropdown--border:hover .c3:not(.dropdown__text--disabled) {
+  margin-left: 15px;
+}
+
+.c6 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c6 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c7 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c7 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 12px;
+  font-size: 16px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c7:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+  border-radius: 2px;
+}
+
+.dropdown__items .c7.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c7 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+<div
+  data-testid="test-outSideComponent"
+>
+  <div
+    data-testid="something"
+  >
+    something
+  </div>
+  <div
+    aria-haspopup="listbox"
+    aria-labelledby="hidden-label__"
+    class="c0"
+    data-testid="test-dropContainer"
+    tabindex="0"
+  >
+    <label
+      class="dropdown--large dropdown--active dropdown--border c1"
+    >
+      <span
+        class="c2"
+        id="hidden-label__"
+      />
+      <div
+        class="c3"
+      />
+      <svg
+        class="dropdown__icon--hide c4"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
+          fill="#262626"
+          fill-opacity=".65"
+          fill-rule="nonzero"
+        />
+      </svg>
+    </label>
+    <div
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c5"
+    >
+      <div
+        class="c6"
+        role="listbox"
+      >
+        <span
+          class="c7"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1473,7 +2175,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -1508,7 +2210,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -1648,6 +2350,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -1821,7 +2524,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -1856,7 +2559,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -1996,6 +2699,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -2169,7 +2873,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -2204,7 +2908,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -2344,6 +3048,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -2519,7 +3224,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -2554,7 +3259,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -2694,6 +3399,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -2869,7 +3575,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -2904,7 +3610,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -3044,6 +3750,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -3219,7 +3926,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -3254,7 +3961,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -3394,6 +4101,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -3571,7 +4279,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -3606,7 +4314,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -3746,6 +4454,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -3921,7 +4630,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -3956,7 +4665,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -4096,6 +4805,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -4269,7 +4979,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -4304,7 +5014,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -4444,6 +5154,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -4617,7 +5328,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -4652,7 +5363,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -4792,6 +5503,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -4965,7 +5677,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -5000,7 +5712,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -5140,6 +5852,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -5313,7 +6026,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -5348,7 +6061,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -5488,6 +6201,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -5662,7 +6376,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -5697,7 +6411,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -5837,6 +6551,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -6010,7 +6725,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -6045,7 +6760,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -6185,6 +6900,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -6357,7 +7073,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -6392,7 +7108,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -6532,6 +7248,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -6707,7 +7424,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: rgba(255,255,255,1);
   border-radius: 0 0 2px 2px;
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: 2px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
   min-width: 100%;
   box-sizing: border-box;
@@ -6742,7 +7459,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--open-upward .c5 {
-  bottom: 43px;
+  bottom: 46px;
   border-radius: 2px 2px 0 0;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
 }
@@ -6882,6 +7599,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c7.dropdown__selected {
@@ -7007,6 +7725,7 @@ exports[`DropDownOption should render the correct markup when a className prop i
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {

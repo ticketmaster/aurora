@@ -73,7 +73,7 @@ export const StyledChildWrapper = styled.div`
   background-color: ${getThemeValue("white", "base")};
   border-radius: 0 0 ${small} ${small};
   white-space: nowrap;
-  margin-top: -1px;
+  margin-top: ${constants.borderRadius.small};
   box-shadow: ${DROP_DOWN_SHADOW};
   min-width: 100%;
   box-sizing: border-box;
@@ -107,7 +107,7 @@ export const StyledChildWrapper = styled.div`
   }
 
   .dropdown--open-upward & {
-    bottom: 43px;
+    bottom: 46px;
     border-radius: ${small} ${small} 0 0;
     box-shadow: ${DROP_DOWN_SHADOW};
 

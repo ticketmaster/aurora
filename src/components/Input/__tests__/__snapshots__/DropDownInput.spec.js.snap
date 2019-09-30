@@ -31,6 +31,7 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -86,6 +87,7 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -142,6 +144,7 @@ exports[`<DropDownInput /> should render the correct markup when the className p
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -197,6 +200,7 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {

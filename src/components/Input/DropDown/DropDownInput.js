@@ -28,6 +28,7 @@ const StyledDropDownItem = styled.span`
       background-color: ${getThemeValue("primary", "base")};
       color: ${getThemeValue("white", "base")};
       outline: none;
+      border-radius: ${constants.borderRadius.small};
     }
     &.dropdown__selected {
       color: ${getThemeValue("gray01")};
