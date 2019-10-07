@@ -168,13 +168,13 @@ export const FieldErrorText = styled.label`
   text-align: left;
   color: ${getThemeValue("error", "base")};
   position: relative;
-  margin-top: 1px;
   transition: opacity 0.3s ${constants.easing.easeInOutQuad};
 
   .text--input-disabled & {
     opacity: 0.4;
   }
   .text__error & {
+    margin-top: 1px;
     opacity: 1;
   }
 `;
