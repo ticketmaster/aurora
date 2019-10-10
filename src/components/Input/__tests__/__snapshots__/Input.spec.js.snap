@@ -184,7 +184,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -194,6 +193,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -404,7 +404,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -414,6 +413,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -625,7 +625,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -635,6 +634,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -847,7 +847,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -857,6 +856,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -1102,7 +1102,6 @@ textarea.c3:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -1112,6 +1111,7 @@ textarea.c3:hover {
 }
 
 .text__error .c4 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -1329,7 +1329,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -1339,6 +1338,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -1549,7 +1549,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -1559,6 +1558,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
@@ -1770,7 +1770,6 @@ textarea.c2:hover {
   text-align: left;
   color: #d93a3a;
   position: relative;
-  margin-top: 1px;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
@@ -1780,6 +1779,7 @@ textarea.c2:hover {
 }
 
 .text__error .c3 {
+  margin-top: 1px;
   opacity: 1;
 }
 
