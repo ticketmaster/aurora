@@ -2,7 +2,8 @@ const constants = {
   MAX_COLUMNS: 12,
   borderRadius: {
     small: "2px",
-    large: "4px"
+    large: "4px",
+    xLarge: "8px"
   },
   breakpoints: {
     small: "(max-width: 767px)",
