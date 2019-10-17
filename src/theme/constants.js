@@ -3,7 +3,8 @@ const constants = {
   borderRadius: {
     small: "2px",
     large: "4px",
-    xLarge: "8px"
+    xLarge: "8px",
+    xxLarge: "10px"
   },
   breakpoints: {
     small: "(max-width: 767px)",

@@ -31,7 +31,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
   color: rgba(255,255,255,1);
   font-size: 10px;
   line-height: 1.2;
-  border-radius: 2px;
+  border-radius: 10px;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;
@@ -56,7 +56,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
   color: rgba(255,255,255,1);
   font-size: 10px;
   line-height: 1.2;
-  border-radius: 2px;
+  border-radius: 10px;
   -webkit-letter-spacing: 0.025em;
   -moz-letter-spacing: 0.025em;
   -ms-letter-spacing: 0.025em;

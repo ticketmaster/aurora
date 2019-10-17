@@ -15,7 +15,7 @@ export const StyledBadge = styled.div`
     variant === LIGHT ? themes.global.gray01 : themes.global.white.base};
   font-size: ${typography.size.mini};
   line-height: 1.2;
-  border-radius: ${constants.borderRadius.small};
+  border-radius: ${constants.borderRadius.xxLarge};
   letter-spacing: 0.025em;
   text-transform: uppercase;
   background-color: ${({ color }) => color};
