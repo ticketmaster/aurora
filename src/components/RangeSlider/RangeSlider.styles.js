@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { themes } from "../../theme";
+import { getThemeValue } from "../../utils";
 
 const sliderHeight = "4px";
 const handleSize = "23px";
@@ -21,7 +21,7 @@ export const SliderContainer = styled.div`
 export const SliderRail = styled.div`
   position: absolute;
   width: 100%;
-  background-color: ${themes.global.gray04};
+  background-color: ${getThemeValue("gray04")};
   height: ${sliderHeight};
 `;
 
@@ -29,10 +29,10 @@ export const SliderTrack = styled.div`
   position: absolute;
   left: 0;
   height: ${sliderHeight};
-  background-color: ${themes.global.primary.base};
+  background-color: ${getThemeValue("primary", "base")};
 
   &.slider__track--disabled {
-    background-color: ${themes.global.gray03};
+    background-color: ${getThemeValue("gray03")};
   }
 `;
 
@@ -42,8 +42,8 @@ export const SliderHandle = styled.div`
   height: ${handleSize};
   cursor: pointer;
   touch-action: pan-x;
-  border: 1px solid ${themes.global.gray03};
+  border: 1px solid ${getThemeValue("gray03")};
   border-radius: 50%;
-  background: ${themes.global.white.base};
+  background: ${getThemeValue("white", "base")};
   margin-left: calc(-${handleSize} / 2);
 `;
