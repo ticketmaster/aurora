@@ -15,7 +15,7 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -212,7 +212,7 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -409,7 +409,7 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -605,7 +605,7 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -881,7 +881,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -1157,7 +1157,7 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -1354,7 +1354,7 @@ exports[`<Modal /> should recalculate shadows and content height on props change
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
@@ -1551,7 +1551,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
   z-index: 9;
   background-color: rgba(255,255,255,1);
   box-shadow: 0 16px 16px 0 rgba(0,0,0,0.06),0 0 16px 0 rgba(0,0,0,0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
