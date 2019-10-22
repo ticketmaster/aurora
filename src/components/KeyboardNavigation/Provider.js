@@ -99,13 +99,25 @@ export default class KeyBoardProvider extends React.Component {
 
     const childrenArray = React.Children.toArray(children);
 
-    const firstMatch = childrenArray.find(
-      thisArg =>
-        thisArg.props.children.substring(0, string.length).toLowerCase() ===
-        string
-    );
+    const firstMatch = childrenArray.find(thisArg => {
+      if (this.isSearchable(thisArg.props.children)) {
+        return (
+          thisArg.props.children.substring(0, string.length).toLowerCase() ===
+          string
+        );
+      } else if (this.isSearchable(thisArg.props.label)) {
+        return (
+          thisArg.props.label.substring(0, string.length).toLowerCase() ===
+          string
+        );
+      }
+
+      return false;
+    });
     if (firstMatch) this.setState(() => ({ focused: firstMatch.props.index }));
   };
+
+  isSearchable = property => property && property.substring;
 
   cycleSelect = key => {
     const { focused } = this.state;
