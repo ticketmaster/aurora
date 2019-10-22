@@ -189,28 +189,28 @@ span: 6
         <Row>
             <Column medium={6}  style={{ padding: "16px 0" }}>
                 <CheckBoxGroup value={["1","2","3"]}>
-                    <CheckBoxButton size="large" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                    <CheckBox size="large" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
                         Testing One
-                    </CheckBoxButton>
-                    <CheckBoxButton size="large" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
+                    </CheckBox>
+                    <CheckBox size="large" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
                         Testing Two
-                    </CheckBoxButton>
-                    <CheckBoxButton size="large" name="Testing Three" value="3" index={2}>
+                    </CheckBox>
+                    <CheckBox size="large" name="Testing Three" value="3" index={2}>
                         Testing Three
-                    </CheckBoxButton>
+                    </CheckBox>
                 </CheckBoxGroup>
             </Column>
             <Column medium={6} style={{ padding: "16px 0" }}>
                 <CheckBoxGroup >
-                    <CheckBoxButton size="small" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                    <CheckBox size="small" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
                         Testing One
-                    </CheckBoxButton>
-                    <CheckBoxButton size="small" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
+                    </CheckBox>
+                    <CheckBox size="small" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
                         Testing Two
-                    </CheckBoxButton>
-                    <CheckBoxButton size="small" name="Testing Three" value="3" index={2}>
+                    </CheckBox>
+                    <CheckBox size="small" name="Testing Three" value="3" index={2}>
                         Testing Three
-                    </CheckBoxButton>
+                    </CheckBox>
                 </CheckBoxGroup>
             </Column>
         </Row>

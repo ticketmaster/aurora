@@ -4,7 +4,6 @@ import { ThemeProvider } from "styled-components";
 import {
   Search,
   RadioButton,
-  CheckBoxButton,
   RadioGroup,
   CheckBoxGroup,
   Input,
@@ -15,6 +14,7 @@ import {
   ButtonGroup,
   QtySelector
 } from "../../../src/components/Input";
+import { CheckBox } from "../../../src";
 import SearchInput from "../../../src/components/SearchInput";
 import SearchInputMobile from "../../../src/components/SearchInput/SearchInputMobile";
 import CheckboxWrapperExample from "./CheckBoxExample";
@@ -35,7 +35,7 @@ export default {
     Container,
     Row,
     RadioButton,
-    CheckBoxButton,
+    CheckBox,
     RadioGroup,
     CheckBoxGroup,
     Input,

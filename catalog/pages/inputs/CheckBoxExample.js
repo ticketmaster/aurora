@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { SIZES_SL } from "../../../src/components/constants";
-import { CheckBoxButton } from "../../../src/components/Input";
+import { CheckBox } from "../../../src";
 
 export default class CheckboxWrapperExample extends Component {
   static propTypes = {
@@ -87,7 +87,7 @@ export default class CheckboxWrapperExample extends Component {
     const { option, subOptions } = CheckboxWrapperExample.data;
     return (
       <Fragment>
-        <CheckBoxButton
+        <CheckBox
           size={this.props.size}
           isChecked={this.isChecked(option.name)}
           name={option.name}
@@ -98,12 +98,12 @@ export default class CheckboxWrapperExample extends Component {
           }}
         >
           Fruits
-        </CheckBoxButton>
+        </CheckBox>
         <fieldset style={{ border: "none", margin: 0, padding: 0 }}>
           <ul style={{ listStyleType: "none", padding: "0 20px", margin: 0 }}>
             {subOptions.map(({ id, name, value, content }) => (
               <li key={id}>
-                <CheckBoxButton
+                <CheckBox
                   size={this.props.size}
                   isChecked={this.isChecked(name)}
                   name={name}
@@ -114,7 +114,7 @@ export default class CheckboxWrapperExample extends Component {
                   }}
                 >
                   {content}
-                </CheckBoxButton>
+                </CheckBox>
               </li>
             ))}
           </ul>
