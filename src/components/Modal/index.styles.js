@@ -72,7 +72,7 @@ export const ModalContainer = styled.div.attrs(({ isFullscreen }) => ({
   z-index: ${zIndex.layout.overlay || "#fff"};
   background-color: ${themes.global.white.base};
   box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.06), 0 0 16px 0 rgba(0, 0, 0, 0.12);
-  border-radius: ${constants.borderRadius.large};
+  border-radius: ${constants.borderRadius.xLarge};
 
   height: auto;
   max-height: calc(100vh - ${spacing.colossal} * 2);
