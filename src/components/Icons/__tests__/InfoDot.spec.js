@@ -23,6 +23,12 @@ describe("InfoDotIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders if size is null", () => {
+    const component = renderComponent({ size: null });
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   function renderComponent(props) {
     return renderer.create(
       <InfoDotIcon {...props}>

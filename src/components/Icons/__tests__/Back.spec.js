@@ -13,6 +13,14 @@ describe("BackIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders xSmall correctly", () => {
+    const component = renderer.create(
+      <BackIcon size="xSmall">{children}</BackIcon>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders large correctly", () => {
     const component = renderer.create(
       <BackIcon size="large">{children}</BackIcon>
