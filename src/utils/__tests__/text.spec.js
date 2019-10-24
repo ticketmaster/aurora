@@ -8,4 +8,8 @@ describe("sluggify", () => {
   it("should return undefind when givin undefined", () => {
     expect(sluggify(undefined)).toEqual("");
   });
+
+  it("should return undefined when givin object", () => {
+    expect(sluggify({})).toEqual("");
+  });
 });

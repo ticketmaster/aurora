@@ -300,12 +300,20 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -648,12 +656,20 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -996,12 +1012,20 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -1346,12 +1370,20 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -1694,12 +1726,20 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -2042,12 +2082,20 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -2390,12 +2438,20 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -2742,12 +2798,20 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -3092,12 +3156,20 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -3444,12 +3516,20 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -3794,12 +3874,20 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -4142,12 +4230,20 @@ exports[`DropDownGroup renders default dropdown 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -4490,12 +4586,20 @@ exports[`DropDownGroup renders default dropdown that should always open downward
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -4838,12 +4942,20 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -5186,12 +5298,20 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -5534,12 +5654,20 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -5883,12 +6011,20 @@ exports[`DropDownGroup renders small dropdown 1`] = `
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -6229,12 +6365,20 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -6579,12 +6723,20 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div
@@ -6927,12 +7079,20 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         width="16"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-          fill="#262626"
-          fill-opacity=".65"
-          fill-rule="nonzero"
-        />
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+            fill="#262626"
+            fill-opacity=".65"
+            fill-rule="nonzero"
+          />
+        </g>
       </svg>
     </label>
     <div

@@ -10,12 +10,20 @@ exports[`DownIcon renders correctly 1`] = `
   <title>
     Down Icon
   </title>
-  <path
-    d="M8 10.768l6.678-6.679a.774.774 0 1 1 1.095 1.095L8.547 12.41a.774.774 0 0 1-1.094 0L.227 5.184A.774.774 0 0 1 1.322 4.09L8 10.768z"
-    fill="#262626"
-    fillOpacity=".65"
-    fillRule="nonzero"
-  />
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M16 0H0v16h16z"
+    />
+    <path
+      d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+      fill="#262626"
+      fillOpacity=".65"
+      fillRule="nonzero"
+    />
+  </g>
 </svg>
 `;
 
@@ -29,11 +37,48 @@ exports[`DownIcon renders large correctly 1`] = `
   <title>
     Down Icon
   </title>
-  <path
-    d="M22.692 7.224a.778.778 0 0 1 1.084 0c.299.293.299.768 0 1.061L12.542 19.283a.778.778 0 0 1-1.084 0L.224 8.285a.739.739 0 0 1 0-1.06.778.778 0 0 1 1.084 0L12 17.691 22.692 7.224z"
-    fill="#262626"
-    fillOpacity=".65"
-    fillRule="nonzero"
-  />
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <path
+      d="M24 0H0v24h24z"
+    />
+    <path
+      d="M3.244 7.197a.75.75 0 1 0-1.013 1.106l9.252 8.47a.75.75 0 0 0 1.013 0l9.243-8.47a.75.75 0 1 0-1.013-1.106l-8.737 8.006-8.745-8.006z"
+      fill="#262626"
+      fillOpacity=".65"
+      fillRule="nonzero"
+    />
+  </g>
+</svg>
+`;
+
+exports[`DownIcon renders xSmall correctly 1`] = `
+<svg
+  height="12"
+  viewBox="0 0 12 12"
+  width="12"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    Down Icon
+  </title>
+  <g
+    fill="none"
+    fillRule="evenodd"
+  >
+    <rect
+      height="12"
+      rx="1"
+      width="12"
+    />
+    <path
+      d="M2.554 3.703a.75.75 0 1 0-1.066 1.056l3.986 4.023a.75.75 0 0 0 1.065 0l3.973-4.01a.75.75 0 0 0-1.066-1.056l-3.44 3.472-3.452-3.485z"
+      fill="#262626"
+      fillOpacity=".65"
+      fillRule="nonzero"
+    />
+  </g>
 </svg>
 `;

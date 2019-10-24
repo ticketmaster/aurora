@@ -13,6 +13,14 @@ describe("DownIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders xSmall correctly", () => {
+    const component = renderer.create(
+      <DownIcon size="xSmall">{children}</DownIcon>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders large correctly", () => {
     const component = renderer.create(
       <DownIcon size="large">{children}</DownIcon>
