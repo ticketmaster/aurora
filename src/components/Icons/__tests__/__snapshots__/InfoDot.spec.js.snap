@@ -26,6 +26,8 @@ exports[`InfoDotIcon renders correctly 1`] = `
 </svg>
 `;
 
+exports[`InfoDotIcon renders if size is null 1`] = `null`;
+
 exports[`InfoDotIcon renders large correctly 1`] = `
 <svg
   height="36"

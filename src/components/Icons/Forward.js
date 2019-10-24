@@ -1,9 +1,29 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-import { smallLarge } from "./iconConstants";
+import { xSmallLarge } from "./iconConstants";
 import { themes } from "../../theme";
 
 const forwardIcons = {
+  xSmall: (color, children, props) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+    >
+      {children}
+      <g fill="none" fillRule="evenodd" transform="translate(-.2 -.867)">
+        <rect width="12" height="12" y="1" rx="1" />
+        <path
+          fill={color}
+          {...color !== "currentColor" && { fillOpacity: ".65" }}
+          fillRule="nonzero"
+          d="M3.726 10.446a.75.75 0 1 0 1.055 1.066l4.024-3.986a.75.75 0 0 0 0-1.065l-4.01-3.973a.75.75 0 0 0-1.056 1.066l3.472 3.44-3.485 3.452z"
+        />
+      </g>
+    </svg>
+  ),
   small: (color, children, props) => (
     <svg
       {...props}
@@ -14,12 +34,12 @@ const forwardIcons = {
     >
       {children}
       <g fill="none" fillRule="evenodd">
-        <path d="M16 0H0v16h16z" />
+        <path d="M15.8.133h-16v16h16z" />
         <path
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
-          d="M10.905 8l-6.678 6.678a.774.774 0 0 0 1.095 1.095l7.225-7.226a.774.774 0 0 0 0-1.094L5.322.227a.774.774 0 0 0-1.095 1.095L10.905 8z"
+          d="M5.194 12.857a.75.75 0 0 0 1.063 1.057l5.24-5.263a.75.75 0 0 0-.001-1.059l-5.24-5.238a.75.75 0 1 0-1.06 1.06l4.711 4.71-4.713 4.733z"
         />
       </g>
     </svg>
@@ -39,7 +59,7 @@ const forwardIcons = {
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
-          d="M6.224 22.692a.766.766 0 1 0 1.084 1.084l11.234-11.234c.299-.3.299-.785 0-1.084L7.308.224a.766.766 0 0 0-1.084 1.084L16.917 12 6.224 22.692z"
+          d="M13.197 20.738a.75.75 0 0 0 1.106 1.013l8.47-9.252a.75.75 0 0 0 0-1.013l-8.47-9.243a.75.75 0 1 0-1.106 1.014l8.006 8.736-8.006 8.745z"
         />
       </g>
     </svg>
@@ -52,13 +72,13 @@ const ForwardIcon = ({ size, color, children, ...props }) =>
 ForwardIcon.displayName = "ForwardIcon";
 
 ForwardIcon.defaultProps = {
-  size: smallLarge[0],
+  size: xSmallLarge[1],
   children: null,
   color: themes.global.gray01
 };
 
 ForwardIcon.propTypes = {
-  size: PropTypes.oneOf(smallLarge),
+  size: PropTypes.oneOf(xSmallLarge),
   children: PropTypes.node,
   color: PropTypes.string
 };

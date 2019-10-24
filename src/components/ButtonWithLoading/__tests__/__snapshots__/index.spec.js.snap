@@ -117,3 +117,77 @@ exports[`ButtonWithLoading should match snapshot 1`] = `
   </div>
 </button>
 `;
+
+exports[`ButtonWithLoading should match snapshot with default values 1`] = `
+.c0 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0:hover {
+  background-color: #0150a7;
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c0:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c0.noFocus:focus {
+  box-shadow: none;
+}
+
+.c2 {
+  visibility: visible;
+}
+
+.c1 {
+  position: relative;
+}
+
+<button
+  className=" noFocus c0"
+  size="regular"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    />
+  </div>
+</button>
+`;

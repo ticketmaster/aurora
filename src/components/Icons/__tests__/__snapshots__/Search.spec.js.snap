@@ -27,6 +27,8 @@ exports[`SearchIcon renders correctly 1`] = `
 </svg>
 `;
 
+exports[`SearchIcon renders if size if null 1`] = `null`;
+
 exports[`SearchIcon renders large correctly 1`] = `
 <svg
   height="24"

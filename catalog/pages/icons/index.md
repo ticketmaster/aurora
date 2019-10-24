@@ -38,7 +38,11 @@ span: 6
 rows:
   - Prop: size
     Type: string
-    Component: BackIcon, CalendarIcon, CloseIcon, DeleteIcon, DownIcon, ForwardIcon, HomeIcon, SearchIcon, UpIcon
+    Component: BackIcon, DownIcon, ForwardIcon, UpIcon
+    Notes: Optional. Value is one of `xSmall`, `small`, `large`
+  - Prop: size
+    Type: string
+    Component: CalendarIcon, CloseIcon, DeleteIcon, HomeIcon, SearchIcon
     Notes: Optional. Value is one of `small`, `large`
   - Prop: size
     Type: string
@@ -293,7 +297,15 @@ rows:
   </Column>
 </Row>
 <Row>
-  <Column medium={3}>
+  <Column medium={4}>
+    <div style={iconStyle}>
+      <BackIcon size="xSmall">
+        <title>Back Icon</title>
+      </BackIcon>
+    </div>
+    <div style={iconLabelStyle}>Back icon xSmall</div>
+  </Column>
+  <Column medium={4}>
     <div style={iconStyle}>
       <BackIcon size="small">
         <title>Back Icon</title>
@@ -301,7 +313,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Back icon small</div>
   </Column>
-  <Column medium={3}>
+  <Column medium={4}>
     <div style={iconStyle}>
       <BackIcon size="large">
         <title>Back Icon</title>
@@ -309,15 +321,17 @@ rows:
     </div>
     <div style={iconLabelStyle}>Back icon large</div>
   </Column>
-   <Column medium={3}>
+</Row>
+<Row>
+   <Column medium={4}>
     <div style={iconStyle}>
-      <ForwardIcon size="large">
+      <ForwardIcon size="xSmall">
         <title>Forward Icon</title>
       </ForwardIcon>
     </div>
-    <div style={iconLabelStyle}>Forward icon large</div>
+    <div style={iconLabelStyle}>Forward icon xSmall</div>
   </Column>
-   <Column medium={3}>
+   <Column medium={4}>
     <div style={iconStyle}>
       <ForwardIcon size="small">
         <title>Forward Icon</title>
@@ -325,9 +339,25 @@ rows:
     </div>
     <div style={iconLabelStyle}>Forward icon small</div>
   </Column>
+   <Column medium={4}>
+    <div style={iconStyle}>
+      <ForwardIcon size="large">
+        <title>Forward Icon</title>
+      </ForwardIcon>
+    </div>
+    <div style={iconLabelStyle}>Forward icon large</div>
+  </Column>
 </Row>
 <Row>
-  <Column medium={3}>
+  <Column medium={4}>
+    <div style={iconStyle}>
+      <UpIcon size="xSmall">
+        <title>Up Icon</title>
+      </UpIcon>
+    </div>
+    <div style={iconLabelStyle}>Up icon xSmall</div>
+  </Column>
+  <Column medium={4}>
     <div style={iconStyle}>
       <UpIcon size="small">
         <title>Up Icon</title>
@@ -335,7 +365,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Up icon small</div>
   </Column>
-   <Column medium={3}>
+   <Column medium={4}>
     <div style={iconStyle}>
       <UpIcon size="large">
         <title>Up Icon</title>
@@ -343,7 +373,17 @@ rows:
     </div>
     <div style={iconLabelStyle}>Up icon large</div>
   </Column>
-   <Column medium={3}>
+</Row>
+<Row>
+  <Column medium={4}>
+    <div style={iconStyle}>
+      <DownIcon size="xSmall">
+        <title>Down Icon</title>
+      </DownIcon>
+    </div>
+    <div style={iconLabelStyle}>Down icon xSmall</div>
+  </Column>
+   <Column medium={4}>
     <div style={iconStyle}>
       <DownIcon size="small">
         <title>Down Icon</title>
@@ -351,7 +391,7 @@ rows:
     </div>
     <div style={iconLabelStyle}>Down icon small</div>
   </Column>
-   <Column medium={3}>
+   <Column medium={4}>
     <div style={iconStyle}>
       <DownIcon size="large">
         <title>Down Icon</title>
