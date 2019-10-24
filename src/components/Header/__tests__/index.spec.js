@@ -43,4 +43,17 @@ describe("Header", () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it("renders with custom level and monospace", () => {
+    const component = renderer.create(
+      <Header>
+        <Heading level={1} color="blue" monospace>
+          <Heading.Strong>Generic</Heading.Strong>{" "}
+          <Heading.Span>Header</Heading.Span>
+        </Heading>
+      </Header>
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

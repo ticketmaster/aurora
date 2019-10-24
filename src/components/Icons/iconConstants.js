@@ -1,6 +1,7 @@
 export const types = ["outline", "filled"];
 export const allSizes = ["small", "regular", "large"];
 export const smallLarge = ["small", "large"];
+export const xSmallLarge = ["xSmall", "small", "large"];
 
 // for backward compatibility purpose
 export const sizeMapper = {

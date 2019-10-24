@@ -11,6 +11,12 @@ describe("UpIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders xSmall correctly", () => {
+    const component = renderComponent({ size: "xSmall" });
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   it("renders large correctly", () => {
     const component = renderComponent({ size: "large" });
 

@@ -17,6 +17,12 @@ describe("SearchIcon", () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
+  it("renders if size if null", () => {
+    const component = renderComponent({ size: null });
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
   function renderComponent(props) {
     return renderer.create(
       <SearchIcon {...props}>
