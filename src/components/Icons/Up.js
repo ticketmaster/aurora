@@ -1,9 +1,29 @@
 import React from "react";
 import { PropTypes } from "prop-types";
-import { smallLarge } from "./iconConstants";
+import { xSmallLarge } from "./iconConstants";
 import { themes } from "../../theme";
 
 const upIcons = {
+  xSmall: (color, children, props) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+    >
+      {children}
+      <g fill="none" fillRule="evenodd" transform="translate(-.2 -.867)">
+        <rect width="12" height="12" y="1" rx="1" />
+        <path
+          fill={color}
+          {...color !== "currentColor" && { fillOpacity: ".65" }}
+          fillRule="nonzero"
+          d="M2.554 9.305a.75.75 0 1 1-1.066-1.056l3.986-4.023a.75.75 0 0 1 1.065 0l3.973 4.01a.75.75 0 0 1-1.066 1.056l-3.44-3.473-3.452 3.486z"
+        />
+      </g>
+    </svg>
+  ),
   small: (color, children, props) => (
     <svg
       {...props}
@@ -19,7 +39,7 @@ const upIcons = {
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
-          d="M8 4.869l-6.678 6.678a.774.774 0 0 1-1.095-1.094l7.226-7.226a.774.774 0 0 1 1.094 0l7.226 7.226a.774.774 0 0 1-1.095 1.094L8 4.87z"
+          d="M3.278 11.559a.75.75 0 0 1-1.057-1.063l5.263-5.24a.75.75 0 0 1 1.059.001l5.238 5.24a.75.75 0 0 1-1.06 1.06L8.01 6.846l-4.733 4.713z"
         />
       </g>
     </svg>
@@ -34,12 +54,12 @@ const upIcons = {
     >
       {children}
       <g fill="none" fillRule="evenodd">
-        <path d="M24 0H0v24h24z" />
+        <path d="M23.8 1.133h-24v24h24z" />
         <path
           fill={color}
           {...color !== "currentColor" && { fillOpacity: ".65" }}
           fillRule="nonzero"
-          d="M22.692 17.542a.766.766 0 1 0 1.084-1.084L12.542 5.224c-.3-.299-.785-.299-1.084 0L.224 16.458a.766.766 0 1 0 1.084 1.084L12 6.85l10.692 10.692z"
+          d="M20.525 17.919a.75.75 0 1 0 1.013-1.107l-9.252-8.47a.75.75 0 0 0-1.013 0l-9.243 8.47a.75.75 0 1 0 1.014 1.107l8.736-8.007 8.745 8.007z"
         />
       </g>
     </svg>
@@ -52,13 +72,13 @@ const UpIcon = ({ size, color, children, ...props }) =>
 UpIcon.displayName = "UpIcon";
 
 UpIcon.defaultProps = {
-  size: smallLarge[0],
+  size: xSmallLarge[1],
   children: null,
   color: themes.global.gray01
 };
 
 UpIcon.propTypes = {
-  size: PropTypes.oneOf(smallLarge),
+  size: PropTypes.oneOf(xSmallLarge),
   children: PropTypes.node,
   color: PropTypes.string
 };
