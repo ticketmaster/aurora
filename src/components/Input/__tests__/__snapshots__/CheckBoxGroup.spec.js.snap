@@ -261,10 +261,7 @@ Object {
         </svg>
       </div>
       <span
-        aria-checked="true"
-        aria-labelledby="something1"
         class="c4"
-        role="checkbox"
       />
     </label>
   </div>,
@@ -563,10 +560,7 @@ Object {
         </svg>
       </div>
       <span
-        aria-checked="false"
-        aria-labelledby="something1"
         class="c4"
-        role="checkbox"
       />
     </label>
   </div>,
@@ -868,10 +862,7 @@ Object {
           </svg>
         </div>
         <span
-          aria-checked="false"
-          aria-labelledby="somethingelse"
           class="c4"
-          role="checkbox"
         />
       </label>
     </div>
@@ -1174,10 +1165,7 @@ Object {
           </svg>
         </div>
         <span
-          aria-checked="false"
-          aria-labelledby="somethingelse"
           class="c4"
-          role="checkbox"
         />
       </label>
     </div>
@@ -1480,10 +1468,7 @@ Object {
           </svg>
         </div>
         <span
-          aria-checked="false"
-          aria-labelledby="somethingelse"
           class="c4"
-          role="checkbox"
         />
       </label>
     </div>
