@@ -88,6 +88,7 @@ class DropDownInput extends React.Component {
       <StyledDropDownItem
         role="option"
         tabIndex="-1"
+        aria-selected={isSelected ? "true" : "false"}
         value={value}
         index={index}
         ref={this.SelectedElement}

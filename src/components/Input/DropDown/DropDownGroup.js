@@ -271,7 +271,7 @@ class DropDownGroup extends React.Component {
                             <DropDownProvider value={{ ...this.state, isOpen }}>
                               <StyledKeyboardProvider
                                 role="listbox"
-                                aria-labelledby={hiddenLabelId}
+                                ariaLabelledby={hiddenLabelId}
                                 {...keyboardProviderProps}
                                 navigateOptions={navigateOptions}
                               >
