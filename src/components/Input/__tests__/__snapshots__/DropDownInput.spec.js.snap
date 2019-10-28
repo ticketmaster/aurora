@@ -51,6 +51,7 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
 }
 
 <span
+  aria-selected="false"
   className="c0"
   role="option"
   tabIndex="-1"
@@ -111,6 +112,7 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
 }
 
 <span
+  aria-selected="false"
   className="c0"
   data-index={0}
   role="option"
@@ -172,6 +174,7 @@ exports[`<DropDownInput /> should render the correct markup when the className p
 }
 
 <span
+  aria-selected="false"
   className="input--drop-down c0"
   role="option"
   tabIndex="-1"
@@ -232,6 +235,7 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
 }
 
 <span
+  aria-selected="true"
   className="dropdown__selected c0"
   role="option"
   tabIndex="-1"
