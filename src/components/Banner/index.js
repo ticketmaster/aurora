@@ -4,6 +4,7 @@ import classnames from "classnames";
 import { Transition } from "react-transition-group";
 import { Text } from "../Text";
 import { variants, variantsIcons } from "./constants";
+import { constants } from "../../theme";
 import {
   Container,
   Content,
@@ -47,7 +48,9 @@ class Banner extends Component {
     onRequestClose: null,
     linkProps: {},
     buttonProps: {},
-    style: {},
+    style: {
+      transition: `max-height 0.3s ${constants.easing.easeInOutQuad} 0s`
+    },
     variant: null,
     icon: null,
     closeButtonTitleText: "Close banner"
@@ -75,9 +78,8 @@ class Banner extends Component {
 
   toggleContent = () => {
     const { onButtonClick } = this.props;
-    const contentHeight = this.content.current.offsetHeight;
     const collapsedMaxHeight = `${BASE_BANNER_HEIGHT}px`;
-    const expandedMaxHeight = `${contentHeight + BASE_BANNER_HEIGHT}px`;
+    const expandedMaxHeight = `${MAX_BANNER_HEIGHT}px`;
 
     this.setState(({ isExpanded }) => ({
       isExpanded: !isExpanded,
@@ -160,7 +162,6 @@ class Banner extends Component {
               [`banner-variant-${variant}`]: variant,
               "visible-banner": state === "entered"
             })}
-            style={{ ...style, maxHeight }}
           >
             <IconSection>{this.renderIcon()}</IconSection>
             <ContentSection>
@@ -168,7 +169,7 @@ class Banner extends Component {
                 {heading}
               </Text>
               {this.renderControl()}
-              <div ref={this.content}>
+              <div ref={this.content} style={{ ...style, maxHeight }}>
                 <Content>{content}</Content>
               </div>
             </ContentSection>

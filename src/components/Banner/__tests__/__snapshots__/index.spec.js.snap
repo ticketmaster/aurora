@@ -32,7 +32,6 @@ exports[`<Banner /> renders correctly when open 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -64,6 +63,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -75,19 +75,25 @@ exports[`<Banner /> renders correctly when open 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -100,7 +106,9 @@ exports[`<Banner /> renders correctly when open 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         />
@@ -140,7 +148,6 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -172,6 +179,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -183,19 +191,25 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed banner-variant-alert visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -238,7 +252,9 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         >
@@ -280,7 +296,6 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -312,6 +327,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -323,19 +339,25 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed banner-variant-alert visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -378,7 +400,9 @@ exports[`<Banner /> renders correctly with close button 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         >
@@ -420,7 +444,6 @@ exports[`<Banner /> renders correctly with content 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -452,6 +475,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -463,19 +487,25 @@ exports[`<Banner /> renders correctly with content 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -488,7 +518,9 @@ exports[`<Banner /> renders correctly with content 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         >
@@ -530,7 +562,6 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -562,6 +593,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -573,19 +605,25 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -620,7 +658,9 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         >
@@ -662,7 +702,6 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -694,6 +733,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -705,19 +745,25 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed banner-variant-alert visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -760,7 +806,9 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         />
@@ -800,7 +848,6 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -832,6 +879,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -843,19 +891,25 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed banner-variant-alert visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -898,7 +952,9 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         >
@@ -940,7 +996,6 @@ exports[`<Banner /> renders correctly with link 1`] = `
   -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
-  box-sizing: content-box;
   opacity: 0;
 }
 
@@ -972,6 +1027,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
 
 .c2 {
   font-family: Averta,Courier,monospace;
+  padding-right: 32px;
 }
 
 .c4 {
@@ -983,19 +1039,25 @@ exports[`<Banner /> renders correctly with link 1`] = `
 }
 
 .collapsed .c4 {
-  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
 .c1 {
   padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
 }
 
 <div>
   <div
     class="collapsed banner-variant-alert visible-banner c0"
-    style="max-height: 56px;"
   >
     <div
       class="c1"
@@ -1038,7 +1100,9 @@ exports[`<Banner /> renders correctly with link 1`] = `
       >
         This is your primary message text.
       </span>
-      <div>
+      <div
+        style="max-height: 0px;"
+      >
         <div
           class="text text--dark text--primary c4 c5"
         />
