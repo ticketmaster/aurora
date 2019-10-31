@@ -4,8 +4,9 @@ import getThemeValue from "../../utils/getThemeValue";
 import { CloseIcon as CrossIcon } from "../Icons";
 import { LinkCta, Text } from "../Text";
 import { Button } from "../Button";
+import { small } from "../../theme/mediaQueries";
 
-export const BASE_BANNER_HEIGHT = 56;
+export const BASE_BANNER_HEIGHT = 0;
 export const MAX_BANNER_HEIGHT = 1000;
 
 export const Link = styled(LinkCta)`
@@ -27,7 +28,6 @@ export const Container = styled.div`
   transition: max-height 0.3s ${constants.easing.easeInOutQuad},
     opacity 0.3s ${constants.easing.easeInQuad};
   background-color: ${getThemeValue("white", "muted")};
-  box-sizing: content-box;
   opacity: 0;
 
   &.visible-banner {
@@ -59,6 +59,7 @@ export const Container = styled.div`
 
 export const ContentSection = styled.div`
   font-family: Averta, Courier, monospace;
+  padding-right: ${spacing.comfy};
 `;
 
 export const Content = styled(Text)`
@@ -68,7 +69,7 @@ export const Content = styled(Text)`
   line-height: 1.29;
 
   .collapsed & {
-    transition: opacity 0.1s ${constants.easing.easeInOutQuad};
+    transition: opacity 0.3s ${constants.easing.easeInOutQuad};
     opacity: 0;
   }
 `;
@@ -78,8 +79,8 @@ export const CloseButton = styled(Button)`
   border: none;
   padding: 0;
   position: absolute;
-  top: 6px;
-  right: 7px;
+  top: ${spacing.cozy};
+  right: 3px;
   width: 42px;
   min-width: 42px;
   height: 42px;
@@ -101,4 +102,9 @@ export const CloseIcon = styled(CrossIcon).attrs({
 
 export const IconSection = styled.div`
   padding-right: ${spacing.moderate};
+  height: ${spacing.normal};
+
+  ${small`
+    padding-right: 12px;
+  `};
 `;

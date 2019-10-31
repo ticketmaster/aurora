@@ -124,9 +124,9 @@ describe("<Banner />", () => {
       }
     );
     inst.toggleContent();
-    expect(inst.state).toEqual({ isExpanded: true, maxHeight: "356px" });
+    expect(inst.state).toEqual({ isExpanded: true, maxHeight: "1000px" });
     inst.toggleContent();
-    expect(inst.state).toEqual({ isExpanded: false, maxHeight: "56px" });
+    expect(inst.state).toEqual({ isExpanded: false, maxHeight: "0px" });
   });
 
   it("toggleContent calls onButtonClick prop when it is passed", () => {
@@ -154,7 +154,7 @@ describe("<Banner />", () => {
       }
     );
 
-    expect(inst.state.maxHeight).toBe("356px");
+    expect(inst.state.maxHeight).toBe("300px");
   });
 });
 
