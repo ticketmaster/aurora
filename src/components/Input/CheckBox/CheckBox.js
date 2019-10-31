@@ -59,13 +59,7 @@ const CheckBoxButton = ({
               <CheckDivStyling>
                 <StyledCheckmark size={size === "small" ? 16 : 24} />
               </CheckDivStyling>
-              <CheckBoxText
-                role="checkbox"
-                aria-labelledby={name + value}
-                aria-checked={isChecked}
-              >
-                {children}
-              </CheckBoxText>
+              <CheckBoxText>{children}</CheckBoxText>
             </CheckBoxWrapper>
           );
         }}
