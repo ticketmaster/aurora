@@ -125,6 +125,10 @@ rows:
     Type: number
     Default: N/A
     Notes: Is required for keyboard accessibility
+  - Prop: isTopAligned
+    Type: boolean
+    Default: "false"
+    Notes: Align layout to the top to handle custom component passed to the label
 ```
 
 ```react
@@ -134,8 +138,9 @@ span: 6
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup aria-label="test large radio">
-                <RadioButton size="large" name="Option1" value="FirstButton" index={0}>
+                <RadioButton size="large" name="Option1" value="FirstButton" index={0} isTopAligned>
                     Testing One
+                    <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing One description</p>
                 </RadioButton>
                 <RadioButton size="large" name="Option2" value="SecondButton" index={1}>
                     Testing Two
@@ -151,8 +156,9 @@ span: 6
                     Testing One
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall2" value="2" index={1}>
+                <RadioButton size="small" name="OptionSmall2" value="2" index={1} isTopAligned>
                     Testing Two
+                    <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing Two description</p>
                 </RadioButton>
 
                 <RadioButton size="small" name="OptionSmall3" value="3" index={2}>

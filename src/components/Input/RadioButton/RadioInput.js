@@ -15,8 +15,7 @@ const RadioInput = styled.input.attrs({
   transition: transform 0.1s ${constants.easing.easeInOutQuad};
   background: none;
   border: none;
-
-  &:active {
+  ${props => props.isTopAligned && `align-self: flex-start;`} &:active {
     transform: scale(0.95, 0.95);
   }
 
@@ -27,6 +26,7 @@ const RadioInput = styled.input.attrs({
   .radio-button--small & {
     width: 16px;
     height: 16px;
+    ${props => props.isTopAligned && `margin-top: 4px;`};
   }
   &:before {
     content: "";
@@ -119,13 +119,15 @@ class RadioInputComponent extends React.Component {
     value: PropTypes.string.isRequired,
     checked: PropTypes.bool.isRequired,
     onClick: PropTypes.func,
-    isFocused: PropTypes.bool.isRequired
+    isFocused: PropTypes.bool.isRequired,
+    isTopAligned: PropTypes.bool
   };
 
   static defaultProps = {
     size: "small",
     isActive: true,
-    onClick: null
+    onClick: null,
+    isTopAligned: false
   };
 
   constructor(props) {
@@ -140,7 +142,15 @@ class RadioInputComponent extends React.Component {
   }
 
   render() {
-    const { name, value, size, isActive, checked, ...props } = this.props;
+    const {
+      name,
+      value,
+      size,
+      isActive,
+      checked,
+      isTopAligned,
+      ...props
+    } = this.props;
 
     return (
       <RadioInput
@@ -154,6 +164,7 @@ class RadioInputComponent extends React.Component {
         aria-checked={checked}
         {...props}
         ref={this.SelectedElement}
+        isTopAligned={isTopAligned}
       />
     );
   }

@@ -34,12 +34,15 @@ const RadioWrapper = styled.label`
   }
 `;
 
-const RadioText = styled.span`
+const RadioText = styled.div`
   display: flex;
   outline: none;
-  align-items: center;
-  justify-content: center;
   margin-left: 7px;
+  ${props =>
+    props.isTopAligned
+      ? `flex-direction: column;`
+      : `align-items: center;
+    justify-content: center;`};
 `;
 
 const RadioButton = ({
@@ -49,6 +52,7 @@ const RadioButton = ({
   isActive,
   children,
   index,
+  isTopAligned,
   ...props
 }) => (
   <KeyBoardConsumer>
@@ -81,8 +85,9 @@ const RadioButton = ({
                 )}
                 {...props}
                 isFocused={focused === index}
+                isTopAligned={isTopAligned}
               />
-              <RadioText>{children}</RadioText>
+              <RadioText isTopAligned={isTopAligned}>{children}</RadioText>
             </RadioWrapper>
           );
         }}
@@ -98,14 +103,16 @@ RadioButton.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   index: PropTypes.number.isRequired,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  isTopAligned: PropTypes.bool
 };
 
 RadioButton.defaultProps = {
   size: "small",
   children: null,
   isActive: true,
-  onClick: null
+  onClick: null,
+  isTopAligned: false
 };
 
 RadioButton.displayName = "RadioButton";
