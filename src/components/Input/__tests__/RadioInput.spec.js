@@ -53,4 +53,10 @@ describe("<RadioInput />", () => {
       render(RadioInput, { ...PROPS, className: "input--radio-button" })
     ).toMatchSnapshot();
   });
+
+  it("should render the correct markup when description is supplied", () => {
+    expect(
+      render(RadioInput, { ...PROPS, isTopAligned: true })
+    ).toMatchSnapshot();
+  });
 });
