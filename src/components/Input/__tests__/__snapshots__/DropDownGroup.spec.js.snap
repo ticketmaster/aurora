@@ -322,7 +322,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -720,7 +720,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -1118,7 +1118,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -1516,7 +1516,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -1916,7 +1916,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -2314,7 +2314,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -2712,7 +2712,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -3110,7 +3110,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
     tabindex="-1"
   >
     <label
-      class="dropdown--large dropdown--border dropdown__label--disabled c1"
+      class="dropdown__label dropdown--large dropdown--border dropdown__label--disabled c1"
     >
       <span
         class="c2"
@@ -3508,7 +3508,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -3908,7 +3908,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -4308,7 +4308,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -4708,7 +4708,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -5110,7 +5110,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border c1"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -5510,7 +5510,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -5908,7 +5908,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -6306,7 +6306,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--active dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -6704,7 +6704,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -7102,7 +7102,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--border c1"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -7499,7 +7499,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="dropdown--small dropdown--border c1"
+      class="dropdown__label dropdown--small dropdown--border c1"
     >
       <span
         class="c2"
@@ -7889,7 +7889,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border c1"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -8286,7 +8286,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border c1"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -8686,7 +8686,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="dropdown--large dropdown--no-border c1"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"

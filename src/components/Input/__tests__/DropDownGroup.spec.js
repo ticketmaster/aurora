@@ -10,6 +10,7 @@ import { LAYOUT_VARIANTS } from "../DropDown/constants";
 
 import DropDownGroup from "../DropDown/DropDownGroup";
 import DropDownOption from "../DropDown/DropDownOption";
+import CalendarIcon from "../../Icons/Calendar";
 
 describe("DropDownGroup", () => {
   function renderTestComponentOne(props = {}) {
@@ -424,6 +425,25 @@ describe("DropDownGroup", () => {
   it("should render the correct label when label prop is passed, and when an array of children containing string and node values is passed to each DropDownOption", () => {
     const { container } = renderTestComponentTwo({ value: ["price"] });
     expect(container).toMatchSnapshot();
+  });
+
+  it("should render the label with icon", () => {
+    const { queryByTestId } = renderTestComponentTwo({
+      value: ["price"],
+      icon: <CalendarIcon data-testid="testid" />
+    });
+
+    expect(queryByTestId("testid")).toBeTruthy();
+  });
+
+  it("should hide right chevron icon icon", () => {
+    const { container } = renderTestComponentTwo({
+      value: ["price"],
+      chevronVisible: false
+    });
+    const chevron = container.querySelector("svg");
+
+    expect(chevron).toBe(null);
   });
 });
 

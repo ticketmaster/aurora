@@ -498,6 +498,14 @@ rows:
     Type: function
     Default: "null"
     Notes: Invoked with the synthetic event object when the DropDownOption is clicked
+  - Prop: chevronVisible
+    Type: bool
+    Default: true
+    Notes: Indicates whether show or hide right chevron icon
+  - Prop: icon
+    Type: node
+    Default: null
+    Notes: Inserts an icon before label text
   - Prop: ...props
     Type: any
     Default:
@@ -510,7 +518,7 @@ span: 6
 <ThemeProvider theme={{ themeName: 'tm' }}>
     <Container>
         <Row>
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
@@ -528,7 +536,7 @@ span: 6
                     <DropDownOption value="8" index={8}>Option Four</DropDownOption>
                 </DropDownGroup>
             </Column>
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   value={["3"]}
@@ -558,7 +566,7 @@ span: 6
                     <DropDownOption value="20" index={20}>Option Five</DropDownOption>
                 </DropDownGroup>
             </Column>
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
@@ -571,10 +579,23 @@ span: 6
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
             </Column>
+            <Column medium={3}>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Chevron hidden"
+                  chevronVisible={false}
+                >
+                    <DropDownOption value="0" index={0}>Option One One One One</DropDownOption>
+                    <DropDownOption value="1" index={1}>Option Two</DropDownOption>
+                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="3" index={3}>Option Four</DropDownOption>
+                    <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
         </Row>
         <Spacing top={{small: "normal"}} />
         <Row >
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
@@ -587,7 +608,7 @@ span: 6
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
             </Column>
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
                   label="Sort By:"
@@ -600,7 +621,7 @@ span: 6
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
             </Column>
-            <Column medium={4}>
+            <Column medium={3}>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
                   label="Sort By:"
@@ -612,6 +633,18 @@ span: 6
                     <DropDownOption value="2" index={2}>Option Three</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
+                </DropDownGroup>
+            </Column>
+            <Column medium={3}>
+                <DropDownGroup
+                  variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  value={["all"]}
+                  placeholder="date range"
+                  icon={<CalendarIcon />}
+                >
+                    <DropDownOption value="all" index={0}>All dates</DropDownOption>
+                    <DropDownOption value="this-weekend" index={1}>This weekends</DropDownOption>
+                    <DropDownOption value="custom" index={2}>Date range</DropDownOption>
                 </DropDownGroup>
             </Column>
         </Row>
