@@ -25,6 +25,10 @@ const LinkCtaBase = styled.a`
     text-decoration: underline;
   }
 
+  &:visited {
+    color: ${getThemeValue("primary", "base")};
+  }
+
   &:active {
     color: ${getThemeValue("primary", "dark")};
   }

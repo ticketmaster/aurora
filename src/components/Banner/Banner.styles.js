@@ -10,12 +10,7 @@ export const BASE_BANNER_HEIGHT = 0;
 export const MAX_BANNER_HEIGHT = 1000;
 
 export const Link = styled(LinkCta)`
-  color: #0064e6;
   padding-left: 4px;
-
-  &:visited {
-    color: #0064e6;
-  }
 `;
 
 export const Container = styled.div`

@@ -26,6 +26,10 @@ exports[`LinkCta renders a button when only onclick is provided 1`] = `
   text-decoration: underline;
 }
 
+.c0:visited {
+  color: #026cdf;
+}
+
 .c0:active {
   color: #0150a7;
 }
@@ -66,6 +70,10 @@ exports[`LinkCta renders a default LinkCta 1`] = `
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0:visited {
+  color: #026cdf;
 }
 
 .c0:active {
@@ -111,6 +119,10 @@ exports[`LinkCta renders a span when no href or onClick provided 1`] = `
   text-decoration: underline;
 }
 
+.c0:visited {
+  color: #026cdf;
+}
+
 .c0:active {
   color: #0150a7;
 }
@@ -151,6 +163,10 @@ exports[`LinkCta renders correctly with reverse colors 1`] = `
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0:visited {
+  color: #026cdf;
 }
 
 .c0:active {
@@ -203,6 +219,10 @@ exports[`LinkCta static size as pixels 1`] = `
   text-decoration: underline;
 }
 
+.c0:visited {
+  color: #026cdf;
+}
+
 .c0:active {
   color: #0150a7;
 }
@@ -243,6 +263,10 @@ exports[`LinkCta static size from typography 1`] = `
   outline: none;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c0:visited {
+  color: #026cdf;
 }
 
 .c0:active {
