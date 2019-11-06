@@ -19,6 +19,33 @@ describe("RadioGroup", () => {
     expect(renderGroupComponent({ size: "large" })).toMatchSnapshot();
   });
 
+  it("renders input with custom label", () => {
+    expect(
+      renderIntoDocument(
+        <RadioGroup>
+          <RadioButton
+            name="name1"
+            value="value"
+            size="small"
+            index={0}
+            isTopAligned
+          >
+            RadioButton Label
+            <p
+              style={{
+                fontSize: "12px",
+                margin: "3px 0 0 0",
+                color: "rgba(38, 38, 38, 0.65"
+              }}
+            >
+              RadioButton Secondary Text
+            </p>
+          </RadioButton>
+        </RadioGroup>
+      )
+    ).toMatchSnapshot();
+  });
+
   it("onChange recives current value", () => {
     const onChange = jest.fn();
     const { getByTestId } = renderIntoDocument(
