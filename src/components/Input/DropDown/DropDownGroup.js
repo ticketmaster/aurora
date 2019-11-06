@@ -74,7 +74,11 @@ class DropDownGroup extends React.Component {
       case ARROWUP:
       case ARROWDOWN:
         e.preventDefault();
-        this.openDropdown();
+        if (this.state.isOpen) {
+          this.enableNavigation();
+        } else {
+          this.openDropdown();
+        }
         break;
       case SPACEBAR:
         e.preventDefault();
@@ -97,6 +101,12 @@ class DropDownGroup extends React.Component {
 
   openDropdown = () => this.setState({ isOpen: true });
 
+  enableNavigation = () => {
+    if (!this.state.navigateOptions) {
+      this.setState({ navigateOptions: true });
+    }
+  };
+
   toggleDropdown = () => {
     if (this.state.isOpen) {
       this.closeDropdown();
@@ -118,6 +128,10 @@ class DropDownGroup extends React.Component {
 
   displayLabel = selected => {
     const { placeholder, label } = this.props;
+
+    if (selected.length > 0) {
+      this.enableNavigation();
+    }
 
     if (placeholder.length > 0 && selected.length === 0) {
       return placeholder;
@@ -142,7 +156,8 @@ class DropDownGroup extends React.Component {
   state = {
     isOpen: false,
     isOpenPrevProp: false,
-    onClose: this.onClick
+    onClose: this.onClick,
+    navigateOptions: false
   };
   /* eslint-enable */
 
@@ -164,7 +179,7 @@ class DropDownGroup extends React.Component {
       fullWidth,
       ...props
     } = this.props;
-    const { isOpen: isOpenState } = this.state;
+    const { isOpen: isOpenState, navigateOptions } = this.state;
     const isOpen = isOpenProp || isOpenState;
     const hiddenLabelId = `hidden-label__${(placeholder || label).replace(
       / /g,
@@ -258,6 +273,7 @@ class DropDownGroup extends React.Component {
                                 role="listbox"
                                 aria-labelledby={hiddenLabelId}
                                 {...keyboardProviderProps}
+                                navigateOptions={navigateOptions}
                               >
                                 {children}
                               </StyledKeyboardProvider>

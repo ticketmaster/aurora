@@ -29,14 +29,16 @@ export default class KeyBoardProvider extends React.Component {
     role: PropTypes.string.isRequired,
     className: PropTypes.string,
     keywordSearch: PropTypes.bool,
-    keyBoardRef: PropTypes.func
+    keyBoardRef: PropTypes.func,
+    navigateOptions: PropTypes.bool
   };
 
   static defaultProps = {
     children: null,
     keyBoardRef: null,
     className: null,
-    keywordSearch: false
+    keywordSearch: false,
+    navigateOptions: true
   };
 
   static getDerivedStateFromProps(props, state) {
@@ -151,9 +153,9 @@ export default class KeyBoardProvider extends React.Component {
   /* eslint-enable */
 
   render() {
-    const { role, className, keyBoardRef } = this.props;
+    const { role, className, keyBoardRef, navigateOptions } = this.props;
     return (
-      <Provider value={this.state}>
+      <Provider value={{ ...this.state, navigateOptions }}>
         {/* eslint-disable */}
         <div
           role={role}
