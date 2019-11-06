@@ -469,6 +469,10 @@ rows:
     Type: small or large
     Default: "large"
     Notes: Defines size
+  - Prop: fullWidth
+    Type: boolean
+    Default: 'false'
+    Notes: Defines if width is 100% of container
 ```
 
 ## Drop Down Option
@@ -587,6 +591,7 @@ span: 6
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
                   label="Sort By:"
+                  placeholder="Select an option"
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
@@ -599,6 +604,7 @@ span: 6
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL}
                   label="Sort By:"
+                  placeholder="Select an option"
                   disabled
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
@@ -655,9 +661,11 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownLabel>Label text</DropDownLabel>
+                <DropDownLabel>Full Width Drop Down</DropDownLabel>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Select an option"
+                  fullWidth
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
@@ -671,6 +679,7 @@ span: 6
                 <DropDownGroup
                   value={["0"]}
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
+                  placeholder="Select an option"
                   disabled
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>

@@ -14,10 +14,7 @@ import {
   ESCAPE,
   TAB
 } from "../../../utils/keyCharCodes";
-import {
-  VARIANTS_WITH_BORDER,
-  LAYOUT_VARIANTS
-} from "./constants";
+import { VARIANTS_WITH_BORDER, LAYOUT_VARIANTS } from "./constants";
 import {
   StyledGroup,
   StyledChildWrapper,
@@ -164,6 +161,7 @@ class DropDownGroup extends React.Component {
       disabled,
       size,
       shouldOpenDownward,
+      fullWidth,
       ...props
     } = this.props;
     const { isOpen: isOpenState } = this.state;
@@ -202,7 +200,8 @@ class DropDownGroup extends React.Component {
                       {...props}
                       className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
-                        "dropdown--disabled": disabled
+                        "dropdown--disabled": disabled,
+                        "full-width": fullWidth
                       })}
                       tabIndex={disabled ? -1 : 0}
                       aria-haspopup="listbox"
@@ -216,7 +215,8 @@ class DropDownGroup extends React.Component {
                           "dropdown--active": isOpen,
                           "dropdown--border": isBorderAround,
                           "dropdown--no-border": !isBorderAround,
-                          "dropdown__label--disabled": disabled
+                          "dropdown__label--disabled": disabled,
+                          "full-width": fullWidth
                         })}
                       >
                         {/* HiddenLabel is required for correct screen readers 
@@ -240,10 +240,7 @@ class DropDownGroup extends React.Component {
                           })}
                         />
                       </StyledGroup>
-                      <Transition
-                        in={isOpen}
-                        timeout={this.ANIMATION_TIMEOUT}
-                      >
+                      <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
                         {wrapperState => (
                           <StyledChildWrapper
                             className={classNames(
@@ -251,15 +248,12 @@ class DropDownGroup extends React.Component {
                               `dropdown__items--${size}`,
                               {
                                 "dropdown--clicked": isOpen,
-                                "dropdown--overflow":
-                                  wrapperState === "entered"
+                                "dropdown--overflow": wrapperState === "entered"
                               }
                             )}
                             ref={this.styledChildWrapper}
                           >
-                            <DropDownProvider
-                              value={{ ...this.state, isOpen }}
-                            >
+                            <DropDownProvider value={{ ...this.state, isOpen }}>
                               <StyledKeyboardProvider
                                 role="listbox"
                                 aria-labelledby={hiddenLabelId}
@@ -296,7 +290,8 @@ DropDownGroup.propTypes = {
   withKeyboardProvider: PropTypes.bool,
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(TWO_SIZE_VARIANT),
-  shouldOpenDownward: PropTypes.bool
+  shouldOpenDownward: PropTypes.bool,
+  fullWidth: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -311,7 +306,8 @@ DropDownGroup.defaultProps = {
   label: "",
   disabled: false,
   size: TWO_SIZE_VARIANT[1],
-  shouldOpenDownward: true
+  shouldOpenDownward: true,
+  fullWidth: false
 };
 
 export default DropDownGroup;
