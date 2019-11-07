@@ -22,7 +22,7 @@ class DropDownOption extends React.PureComponent {
 
     return (
       <KeyBoardConsumer>
-        {({ focused, focusSelected }) => (
+        {({ focused, focusSelected, navigateOptions }) => (
           <SelectionConsumer>
             {({ selected, onClick }) => {
               const isChecked = selected.includes(value);
@@ -38,9 +38,8 @@ class DropDownOption extends React.PureComponent {
                       index={index}
                       selected={selected}
                       isSelected={isChecked}
-                      isFocused={focused === index}
+                      isFocused={focused === index && navigateOptions}
                       onMouseMove={() => {
-                        if (index === focused) return;
                         focusSelected({ index });
                         this.focusInput();
                       }}

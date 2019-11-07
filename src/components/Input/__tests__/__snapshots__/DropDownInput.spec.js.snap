@@ -12,8 +12,8 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
   appearance: none;
   height: 36px;
   margin: 4px 8px 0 8px;
-  padding: 7px 12px;
-  font-size: 16px;
+  padding: 7px 10px;
+  font-size: 14px;
   text-align: left;
   border: none;
   background-color: rgba(255,255,255,1);
@@ -31,6 +31,7 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -43,6 +44,10 @@ exports[`<DropDownInput /> should render the correct markup 1`] = `
   height: 32px;
   font-size: 14px;
   line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c0 {
+  font-size: 16px;
 }
 
 <span
@@ -67,8 +72,8 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
   appearance: none;
   height: 36px;
   margin: 4px 8px 0 8px;
-  padding: 7px 12px;
-  font-size: 16px;
+  padding: 7px 10px;
+  font-size: 14px;
   text-align: left;
   border: none;
   background-color: rgba(255,255,255,1);
@@ -86,6 +91,7 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -98,6 +104,10 @@ exports[`<DropDownInput /> should render the correct markup when additional prop
   height: 32px;
   font-size: 14px;
   line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c0 {
+  font-size: 16px;
 }
 
 <span
@@ -123,8 +133,8 @@ exports[`<DropDownInput /> should render the correct markup when the className p
   appearance: none;
   height: 36px;
   margin: 4px 8px 0 8px;
-  padding: 7px 12px;
-  font-size: 16px;
+  padding: 7px 10px;
+  font-size: 14px;
   text-align: left;
   border: none;
   background-color: rgba(255,255,255,1);
@@ -142,6 +152,7 @@ exports[`<DropDownInput /> should render the correct markup when the className p
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -154,6 +165,10 @@ exports[`<DropDownInput /> should render the correct markup when the className p
   height: 32px;
   font-size: 14px;
   line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c0 {
+  font-size: 16px;
 }
 
 <span
@@ -178,8 +193,8 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
   appearance: none;
   height: 36px;
   margin: 4px 8px 0 8px;
-  padding: 7px 12px;
-  font-size: 16px;
+  padding: 7px 10px;
+  font-size: 14px;
   text-align: left;
   border: none;
   background-color: rgba(255,255,255,1);
@@ -197,6 +212,7 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
   background-color: #026cdf;
   color: rgba(255,255,255,1);
   outline: none;
+  border-radius: 2px;
 }
 
 .dropdown__items .c0.dropdown__selected {
@@ -209,6 +225,10 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
   height: 32px;
   font-size: 14px;
   line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c0 {
+  font-size: 16px;
 }
 
 <span
