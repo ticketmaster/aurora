@@ -89,7 +89,7 @@ const Tab = styled.div`
 const checkIfOverflows = (content = {}) => {
   if (!content) return false;
 
-  const { offsetWidth = 0, scrollWidth = 0 } = content
+  const { offsetWidth = 0, scrollWidth = 0 } = content;
   return offsetWidth < scrollWidth;
 };
 
@@ -108,6 +108,7 @@ const TabItemButton = styled.button.attrs(props => {
   background-color: ${themes.global.transparent};
   border: none;
   appearance: none;
+  outline: none;
 
   &.tab__button--active {
     border-bottom: 4px solid

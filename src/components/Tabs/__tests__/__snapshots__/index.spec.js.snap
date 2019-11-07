@@ -75,6 +75,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .c3.tab__button--active {
@@ -239,6 +240,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .c3.tab__button--active {
@@ -415,6 +417,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 .c3.tab__button--active {
