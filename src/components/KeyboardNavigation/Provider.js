@@ -30,7 +30,8 @@ export default class KeyBoardProvider extends React.Component {
     className: PropTypes.string,
     keywordSearch: PropTypes.bool,
     keyBoardRef: PropTypes.func,
-    navigateOptions: PropTypes.bool
+    navigateOptions: PropTypes.bool,
+    ariaLabelledby: PropTypes.string,
   };
 
   static defaultProps = {
@@ -38,7 +39,8 @@ export default class KeyBoardProvider extends React.Component {
     keyBoardRef: null,
     className: null,
     keywordSearch: false,
-    navigateOptions: true
+    navigateOptions: true,
+    ariaLabelledby: null,
   };
 
   static getDerivedStateFromProps(props, state) {
@@ -153,11 +155,12 @@ export default class KeyBoardProvider extends React.Component {
   /* eslint-enable */
 
   render() {
-    const { role, className, keyBoardRef, navigateOptions } = this.props;
+    const { role, className, keyBoardRef, ariaLabelledby, navigateOptions } = this.props;
     return (
       <Provider value={{ ...this.state, navigateOptions }}>
         {/* eslint-disable */}
         <div
+          aria-labelledby={ariaLabelledby}
           role={role}
           className={className}
           ref={keyBoardRef}

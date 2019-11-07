@@ -358,10 +358,12 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
       class="dropdown__items dropdown__items--large dropdown--clicked c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -371,6 +373,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -380,6 +383,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -752,10 +756,12 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       class="dropdown__items dropdown__items--large dropdown--clicked c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -765,6 +771,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -774,6 +781,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -1146,10 +1154,12 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -1159,6 +1169,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -1168,6 +1179,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -1542,10 +1554,12 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -1555,6 +1569,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -1564,6 +1579,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -1936,10 +1952,12 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
       class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -1949,6 +1967,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -1958,6 +1977,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -2330,10 +2350,12 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
       class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -2343,6 +2365,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -2352,6 +2375,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -2724,10 +2748,12 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -2737,6 +2763,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -2746,6 +2773,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -3118,10 +3146,12 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -3131,6 +3161,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -3140,6 +3171,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -3512,10 +3544,12 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -3525,6 +3559,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -3534,6 +3569,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -3910,10 +3946,12 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -3923,6 +3961,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -3932,6 +3971,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -4306,10 +4346,12 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -4319,6 +4361,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -4328,6 +4371,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -4704,10 +4748,12 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__Select_An_Option"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -4717,6 +4763,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -4726,6 +4773,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -5100,10 +5148,12 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__Selected_Option:"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -5113,6 +5163,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -5122,6 +5173,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -5494,10 +5546,12 @@ exports[`DropDownGroup renders default dropdown 1`] = `
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -5507,6 +5561,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -5516,6 +5571,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -5888,10 +5944,12 @@ exports[`DropDownGroup renders default dropdown that should always open downward
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -5901,6 +5959,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -5910,6 +5969,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -6282,10 +6342,12 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -6295,6 +6357,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -6304,6 +6367,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -6676,10 +6740,12 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -6689,6 +6755,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -6698,6 +6765,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -7070,11 +7138,11 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       class="dropdown__items dropdown__items--large c6"
     >
       <div
-        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -7084,6 +7152,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -7093,6 +7162,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -7465,10 +7535,12 @@ exports[`DropDownGroup renders small dropdown 1`] = `
       class="dropdown__items dropdown__items--small c6"
     >
       <div
+        aria-labelledby="hidden-label__"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionOne"
           role="option"
@@ -7478,6 +7550,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Option One
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionTwo"
           role="option"
@@ -7487,6 +7560,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
           Second Option
         </span>
         <span
+          aria-selected="false"
           class="c8"
           data-testid="test-dropDownOptionThree"
           role="option"
@@ -7857,10 +7931,12 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__Sort_By:"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           role="option"
           tabindex="-1"
@@ -7869,6 +7945,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -7878,6 +7955,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -8253,10 +8331,12 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__Sort_By:"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -8265,6 +8345,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -8274,6 +8355,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           role="option"
           tabindex="-1"
@@ -8647,10 +8729,12 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       class="dropdown__items dropdown__items--large c6"
     >
       <div
+        aria-labelledby="hidden-label__Sort_By:"
         class="c7"
         role="listbox"
       >
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -8659,6 +8743,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Date
         </span>
         <span
+          aria-selected="true"
           class="dropdown__selected c8"
           role="option"
           tabindex="-1"
@@ -8668,6 +8753,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
           Closest
         </span>
         <span
+          aria-selected="false"
           class="c8"
           role="option"
           tabindex="-1"
@@ -8735,6 +8821,7 @@ exports[`DropDownOption should render the correct markup when a className prop i
 }
 
 <span
+  aria-selected="false"
   className="dropdown__item--expandable c0"
   onClick={[Function]}
   onKeyDown={[Function]}
