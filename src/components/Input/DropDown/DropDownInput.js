@@ -13,8 +13,8 @@ const StyledDropDownItem = styled.span`
     appearance: none;
     height: 36px;
     margin: 4px 8px 0 8px;
-    padding: 7px 12px;
-    font-size: ${typography.size.kilo};
+    padding: 7px 10px;
+    font-size: ${typography.size.hecto};
     text-align: left;
     border: none;
     background-color: ${getThemeValue("white", "base")};
@@ -28,6 +28,7 @@ const StyledDropDownItem = styled.span`
       background-color: ${getThemeValue("primary", "base")};
       color: ${getThemeValue("white", "base")};
       outline: none;
+      border-radius: ${constants.borderRadius.small};
     }
     &.dropdown__selected {
       color: ${getThemeValue("gray01")};
@@ -39,6 +40,9 @@ const StyledDropDownItem = styled.span`
     height: 32px;
     font-size: ${typography.size.hecto};
     line-height: 1.3;
+  }
+  .dropdown__items.dropdown__items--large & {
+    font-size: ${typography.size.kilo};
   }
 `;
 
@@ -84,6 +88,7 @@ class DropDownInput extends React.Component {
       <StyledDropDownItem
         role="option"
         tabIndex="-1"
+        aria-selected={isSelected ? "true" : "false"}
         value={value}
         index={index}
         ref={this.SelectedElement}

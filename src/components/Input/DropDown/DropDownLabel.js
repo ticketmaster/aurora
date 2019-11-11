@@ -6,11 +6,12 @@ import { typography } from "../../../theme";
 import { TWO_SIZE_VARIANT } from "../../../utils/sizes";
 
 const fontForSizeMap = {
-  [TWO_SIZE_VARIANT[0]]: typography.size.hecto,
-  [TWO_SIZE_VARIANT[1]]: typography.size.kilo
+  [TWO_SIZE_VARIANT[0]]: typography.size.uno,
+  [TWO_SIZE_VARIANT[1]]: typography.size.hecto
 };
 
 const StyledLabel = styled.label`
+  display: block;
   font-size: ${({ size }) => fontForSizeMap[size]};
   opacity: ${({ disabled }) => (disabled ? "0.4" : "1")};
 `;

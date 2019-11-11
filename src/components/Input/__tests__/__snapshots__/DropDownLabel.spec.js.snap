@@ -2,7 +2,8 @@
 
 exports[`<DropDownLabel /> renders large size label correctly 1`] = `
 .c0 {
-  font-size: 16px;
+  display: block;
+  font-size: 14px;
   opacity: 1;
 }
 
@@ -17,7 +18,8 @@ exports[`<DropDownLabel /> renders large size label correctly 1`] = `
 
 exports[`<DropDownLabel /> renders small disabled label correctly 1`] = `
 .c0 {
-  font-size: 14px;
+  display: block;
+  font-size: 12px;
   opacity: 0.4;
 }
 
@@ -32,7 +34,8 @@ exports[`<DropDownLabel /> renders small disabled label correctly 1`] = `
 
 exports[`<DropDownLabel /> renders small size label correctly 1`] = `
 .c0 {
-  font-size: 14px;
+  display: block;
+  font-size: 12px;
   opacity: 1;
 }
 
