@@ -176,6 +176,8 @@ class DropDownGroup extends React.Component {
       disabled,
       size,
       shouldOpenDownward,
+      icon,
+      chevronVisible,
       fullWidth,
       ...props
     } = this.props;
@@ -216,7 +218,7 @@ class DropDownGroup extends React.Component {
                       className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled,
-                        "full-width": fullWidth
+                        "full-width": fullWidth,
                       })}
                       tabIndex={disabled ? -1 : 0}
                       aria-haspopup="listbox"
@@ -226,7 +228,7 @@ class DropDownGroup extends React.Component {
                     >
                       <StyledGroup
                         {...onClickListener}
-                        className={classNames(`dropdown--${size}`, {
+                        className={classNames(`dropdown__label dropdown--${size}`, {
                           "dropdown--active": isOpen,
                           "dropdown--border": isBorderAround,
                           "dropdown--no-border": !isBorderAround,
@@ -244,16 +246,18 @@ class DropDownGroup extends React.Component {
                             "dropdown__text--disabled": disabled
                           })}
                         >
-                          {this.displayLabel(selected)}
+                          {icon}{this.displayLabel(selected)}
                         </StyledSelectedText>
 
-                        <StyledChevron
-                          className={classNames({
-                            "dropdown__icon--hide": isOpen,
-                            "dropdown--no-border": !isBorderAround,
-                            "dropdown__chevron--disabled": disabled
-                          })}
-                        />
+                        {chevronVisible && (
+                          <StyledChevron
+                            className={classNames({
+                              "dropdown__icon--hide": isOpen,
+                              "dropdown--no-border": !isBorderAround,
+                              "dropdown__chevron--disabled": disabled
+                            })}
+                          />
+                        )}
                       </StyledGroup>
                       <Transition in={isOpen} timeout={this.ANIMATION_TIMEOUT}>
                         {wrapperState => (
@@ -306,8 +310,10 @@ DropDownGroup.propTypes = {
   withKeyboardProvider: PropTypes.bool,
   disabled: PropTypes.bool,
   size: PropTypes.oneOf(TWO_SIZE_VARIANT),
+  fullWidth: PropTypes.bool,
   shouldOpenDownward: PropTypes.bool,
-  fullWidth: PropTypes.bool
+  icon: PropTypes.node,
+  chevronVisible: PropTypes.bool
 };
 
 DropDownGroup.defaultProps = {
@@ -323,7 +329,9 @@ DropDownGroup.defaultProps = {
   disabled: false,
   size: TWO_SIZE_VARIANT[1],
   shouldOpenDownward: true,
-  fullWidth: false
+  icon: null,
+  chevronVisible: true,
+  fullWidth: false,
 };
 
 export default DropDownGroup;

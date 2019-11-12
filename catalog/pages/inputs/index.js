@@ -24,6 +24,7 @@ import Column from "../../../src/components/Grid/Column";
 import Container from "../../../src/components/Grid/Container";
 import Row from "../../../src/components/Grid/Row";
 import Spacing from "../../../src/components/Spacing";
+import { CalendarIcon } from "../../../src/components/Icons";
 
 export default {
   path: "/inputs",
@@ -50,7 +51,8 @@ export default {
     ButtonGroup,
     QtySelector,
     SearchInput,
-    SearchInputMobile
+    SearchInputMobile,
+    CalendarIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
