@@ -14,14 +14,15 @@ export const DrawerContainer = styled.div`
   bottom: 0;
   right: 0;
   visibility: hidden;
-  transform: translateY(-100%);
   opacity: 0;
   transition: opacity 300ms ${constants.easing.easeInOutQuad};
   overflow: hidden;
   z-index: -1;
 
   &.drawer__content--open {
-    transform: translateY(0);
+    /* Needed to fix iOS Safari issue with Hamburger position after location change */
+    transform: translateZ(0);
+
     visibility: visible;
     opacity: 1;
   }
