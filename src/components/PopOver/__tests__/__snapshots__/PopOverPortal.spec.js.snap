@@ -1,45 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PopOverPortal with no shadow DOM when rendering a portal should render the portal directly under the body element 1`] = `
-<div
-  style={
-    Object {
-      "display": "none",
-    }
-  }
-/>
-`;
-
-exports[`PopOverPortal with no shadow DOM when rendering a portal when the ref callback is invoked should remove the probe node and render a portal instead 1`] = `
-<test-portal
-  container={
-    <div
-      id="popover-root-1234"
-    />
-  }
->
-  test
-</test-portal>
-`;
-
-exports[`PopOverPortal with shadow DOM when rendering a portal should render the portal directly under the body element 1`] = `
-<div
-  style={
-    Object {
-      "display": "none",
-    }
-  }
-/>
-`;
-
-exports[`PopOverPortal with shadow DOM when rendering a portal when the ref callback is invoked should remove the probe node and render a portal instead 1`] = `
-<test-portal
-  container={
-    <div
-      id="popover-root-1234"
-    />
-  }
->
-  test
-</test-portal>
+exports[`PopOverPortal should match snapshot 1`] = `
+Object {
+  "$$typeof": Symbol(react.portal),
+  "children": "test",
+  "containerInfo": <div
+    id="popover-root-1234"
+  />,
+  "implementation": null,
+  "key": null,
+}
 `;
