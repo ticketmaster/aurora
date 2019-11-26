@@ -25,6 +25,7 @@ import {
   StyledKeyboardProvider,
   HiddenLabel
 } from "./DropDownGroup.styles";
+import { throttle } from "../../../utils";
 
 class DropDownGroup extends React.Component {
   static LAYOUT_VARIANTS = LAYOUT_VARIANTS;
@@ -87,6 +88,9 @@ class DropDownGroup extends React.Component {
         this.toggleDropdown();
         break;
       default:
+        if (!isOpen) {
+          this.searchKeyWord(e);
+        }
         break;
     }
   };
@@ -99,7 +103,40 @@ class DropDownGroup extends React.Component {
     return selectedItem && selectedItem.props.children;
   };
 
-  closeDropdown = () => this.setState({ isOpen: false });
+  searchKeyWord(e) {
+    const { keyCode } = e;
+    const { word } = this.state;
+    if (keyCode >= 48 && keyCode <= 90) {
+      const temp = word + e.key;
+      this.setState({ word: temp }, () => this.searchValue(temp));
+      this.cleanWord();
+    }
+  }
+
+  cleanWord = throttle(() => {
+    this.setState({ word: "", selected: null });
+  }, 1000);
+
+  searchValue = string => {
+    const { children } = this.props;
+
+    const childrenArray = React.Children.toArray(children);
+
+    const firstMatch = childrenArray.find(
+      thisArg =>
+        thisArg.props.children.substring(0, string.length).toLowerCase() ===
+        string
+    );
+    if (firstMatch)
+      this.setState(() => ({ selected: [firstMatch.props.value] }));
+  };
+
+  closeDropdown = () =>
+    this.setState({
+      isOpen: false,
+      selected: null,
+      word: ""
+    });
 
   openDropdown = () => this.setState({ isOpen: true });
 
@@ -163,11 +200,14 @@ class DropDownGroup extends React.Component {
 
   /* eslint-disable */
   state = {
+    selected: null,
     isOpen: false,
     isOpenPrevProp: false,
     onClose: this.onClick,
-    navigateOptions: false
+    navigateOptions: false,
+    word: ""
   };
+
   /* eslint-enable */
 
   render() {
@@ -190,7 +230,11 @@ class DropDownGroup extends React.Component {
       fullWidth,
       ...props
     } = this.props;
-    const { isOpen: isOpenState, navigateOptions } = this.state;
+    const {
+      selected: selectedValue,
+      isOpen: isOpenState,
+      navigateOptions
+    } = this.state;
     const isOpen = isOpenProp || isOpenState;
     const hiddenLabelId = `hidden-label__${(placeholder || label).replace(
       / /g,
@@ -206,7 +250,7 @@ class DropDownGroup extends React.Component {
         onChange={onChange}
         isMultiSelect={false}
         value={value}
-        valueOverride={valueOverride}
+        valueOverride={valueOverride || selectedValue}
       >
         <SelectionConsumer>
           {({ selected }) => {
