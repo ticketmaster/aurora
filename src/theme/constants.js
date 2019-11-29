@@ -15,6 +15,8 @@ const constants = {
     smallAndUp: "(min-width: 480px)",
     mediumAndUp: "(min-width: 768px)",
     largeAndUp: "(min-width: 1024px)",
+    midLargeAndUp: "(min-width: 1280px)",
+    midLargeAndDown: "(max-width: 1280px)",
     xLargeAndUp: "(min-width: 1440px)"
   },
   easing: {
