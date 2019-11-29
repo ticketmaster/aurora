@@ -85,6 +85,7 @@ const global = {
   white: {
     base: "rgba(255, 255, 255, 1)",
     lighter: "rgba(255, 255, 255, 0.2)",
+    midlight: "rgba(255, 255, 255, 0.65)",
     light: "rgba(255, 255, 255, 0.7)",
     muted: "rgba(255, 255, 255, 0.5)"
   }
