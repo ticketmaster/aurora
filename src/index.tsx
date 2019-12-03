@@ -200,6 +200,12 @@ export {
   ButtonGroup,
   QtySelector
 } from "./components/Input";
+export {
+  MainSectionDivider,
+  SubSectionDivider,
+  GeneralContentSpacer,
+  MainSectionHeaderSpacer
+} from "./components/SectionDividier";
 export { LinkList, LinkListItem } from "./components/Link";
 export { default as Modal } from "./components/List/Modal";
 export { default as Backdrop } from "./components/List/Backdrop";

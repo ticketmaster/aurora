@@ -27,6 +27,7 @@ import statusBadge from "./pages/status_badge";
 import banner from "./pages/banner";
 import feedbackInline from "./pages/feedback_inline";
 import rangeSlider from "./pages/range_slider";
+import sectionDivider from "./pages/section_divider";
 
 const theme = {
   pageHeadingBackground: "linear-gradient( 124deg, #009cde, #535eb2 )"
@@ -57,7 +58,8 @@ const pages = [
   statusBadge,
   banner,
   feedbackInline,
-  rangeSlider
+  rangeSlider,
+  sectionDivider
 ];
 
 const sizes = [

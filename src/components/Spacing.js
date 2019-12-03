@@ -53,7 +53,7 @@ const Spacing = styled.div`
   `};
 `;
 
-const spacingShape = PropTypes.shape({
+export const spacingShape = PropTypes.shape({
   xSmall: PropTypes.string,
   small: PropTypes.string,
   medium: PropTypes.string,
