@@ -108,10 +108,17 @@ class DropDownGroup extends React.Component {
   };
 
   toggleDropdown = () => {
-    if (this.state.isOpen) {
+    const { onDropDownToggle } = this.props;
+    const { isOpen } = this.state;
+
+    if (isOpen) {
       this.closeDropdown();
     } else {
       this.openDropdown();
+    }
+
+    if (onDropDownToggle) {
+      onDropDownToggle(!isOpen);
     }
   };
 
@@ -218,7 +225,7 @@ class DropDownGroup extends React.Component {
                       className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled,
-                        "full-width": fullWidth,
+                        "full-width": fullWidth
                       })}
                       tabIndex={disabled ? -1 : 0}
                       aria-haspopup="listbox"
@@ -228,13 +235,16 @@ class DropDownGroup extends React.Component {
                     >
                       <StyledGroup
                         {...onClickListener}
-                        className={classNames(`dropdown__label dropdown--${size}`, {
-                          "dropdown--active": isOpen,
-                          "dropdown--border": isBorderAround,
-                          "dropdown--no-border": !isBorderAround,
-                          "dropdown__label--disabled": disabled,
-                          "full-width": fullWidth
-                        })}
+                        className={classNames(
+                          `dropdown__label dropdown--${size}`,
+                          {
+                            "dropdown--active": isOpen,
+                            "dropdown--border": isBorderAround,
+                            "dropdown--no-border": !isBorderAround,
+                            "dropdown__label--disabled": disabled,
+                            "full-width": fullWidth
+                          }
+                        )}
                       >
                         {/* HiddenLabel is required for correct screen readers 
                         readings when an option is selected */}
@@ -246,7 +256,8 @@ class DropDownGroup extends React.Component {
                             "dropdown__text--disabled": disabled
                           })}
                         >
-                          {icon}{this.displayLabel(selected)}
+                          {icon}
+                          {this.displayLabel(selected)}
                         </StyledSelectedText>
 
                         {chevronVisible && (
@@ -313,7 +324,8 @@ DropDownGroup.propTypes = {
   fullWidth: PropTypes.bool,
   shouldOpenDownward: PropTypes.bool,
   icon: PropTypes.node,
-  chevronVisible: PropTypes.bool
+  chevronVisible: PropTypes.bool,
+  onDropDownToggle: PropTypes.func
 };
 
 DropDownGroup.defaultProps = {
@@ -332,6 +344,7 @@ DropDownGroup.defaultProps = {
   icon: null,
   chevronVisible: true,
   fullWidth: false,
+  onDropDownToggle: null
 };
 
 export default DropDownGroup;
