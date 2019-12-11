@@ -473,6 +473,10 @@ rows:
     Type: boolean
     Default: 'false'
     Notes: Defines if width is 100% of container
+  - Prop: onDropDownToggle
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown open/hide event fired
 ```
 
 ## Drop Down Option

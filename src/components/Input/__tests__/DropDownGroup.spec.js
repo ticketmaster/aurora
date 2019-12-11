@@ -445,6 +445,17 @@ describe("DropDownGroup", () => {
 
     expect(chevron).toBe(null);
   });
+
+  it("should fire onDropDownToggle if its passed", () => {
+    const onDropDownToggleEvent = jest.fn();
+    const { container } = renderTestComponentOne({
+      onDropDownToggle: onDropDownToggleEvent
+    });
+    const labelTag = container.getElementsByTagName("LABEL")[0];
+
+    Simulate.click(labelTag);
+    expect(onDropDownToggleEvent).toBeCalled();
+  });
 });
 
 describe("DropDownOption", () => {
