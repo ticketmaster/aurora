@@ -61,6 +61,10 @@ export const StyledGroup = styled.label`
     color: ${getThemeValue("onyx", "muted")};
     transition: none;
 
+    &:not(.dropdown--no-border) {
+      border-color: ${getThemeValue("onyx", "muted")};
+    }
+
     .dropdown__chevron--disabled {
       opacity: 0.4;
     }
