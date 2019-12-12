@@ -73,7 +73,7 @@ export const SearchIconContainer = styled.div`
 `;
 
 export const StyledInput = styled.input.attrs({
-  type: "text",
+  type: "search",
   autoComplete: "off"
 })`
   font-size: ${({ variant }) =>

@@ -114,6 +114,7 @@ class SearchInput extends Component {
       isMobile,
       onFocus,
       onBlur,
+      name,
       ...rest
     } = this.props;
     const { isFocused } = this.state;
@@ -154,6 +155,7 @@ class SearchInput extends Component {
           className={classNames("search--input", {
             "search--input-focused": isFocused
           })}
+          name={name}
         />
         <Clear
           type="button"
@@ -200,7 +202,8 @@ SearchInput.propTypes = {
   hasBackground: PropTypes.bool,
   iconOnly: PropTypes.bool,
   isSuggestOpened: PropTypes.bool,
-  isMobile: PropTypes.bool
+  isMobile: PropTypes.bool,
+  name: PropTypes.string
 };
 
 SearchInput.defaultProps = {
@@ -219,7 +222,8 @@ SearchInput.defaultProps = {
   cancelBtnAreaLabel: "Cancel button",
   inputAreaLabel: "Search input",
   isSuggestOpened: false,
-  isMobile: false
+  isMobile: false,
+  name: undefined
 };
 
 SearchInput.displayName = "SearchComponent";
