@@ -199,7 +199,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
-    type="text"
+    type="search"
     value=""
   />
   <button
@@ -463,7 +463,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="Search Demo"
-      type="text"
+      type="search"
       value=""
     />
     <button

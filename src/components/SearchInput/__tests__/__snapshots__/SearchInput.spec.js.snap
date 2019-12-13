@@ -201,7 +201,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
-    type="text"
+    type="search"
     value=""
   />
   <button
@@ -442,7 +442,7 @@ exports[`SearchInput large should match snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
-    type="text"
+    type="search"
     value=""
   />
   <button
@@ -688,7 +688,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
-    type="text"
+    type="search"
     value=""
   />
   <button
@@ -932,7 +932,7 @@ exports[`SearchInput small should match snapshot 1`] = `
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
-    type="text"
+    type="search"
     value="test"
   />
   <button
