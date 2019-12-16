@@ -184,6 +184,8 @@ export const StyledChevron = styled(DownIcon).attrs({
 `;
 
 export const StyledSelectedText = styled.div`
+  display: flex;
+  align-items: center;
   font-size: ${typography.size.hecto};
   white-space: nowrap;
   width: 85%;
@@ -238,6 +240,10 @@ export const StyledSelectedText = styled.div`
     &:not(.dropdown__text--disabled) {
       margin-left: 14px;
     }
+  }
+
+  svg {
+    margin-right: 12px;
   }
 `;
 
