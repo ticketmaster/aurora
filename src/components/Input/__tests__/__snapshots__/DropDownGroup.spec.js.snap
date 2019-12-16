@@ -60,10 +60,14 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -182,6 +186,14 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -233,6 +245,10 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -458,10 +474,14 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -580,6 +600,14 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -631,6 +659,10 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -856,10 +888,14 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -978,6 +1014,14 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -1029,6 +1073,10 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -1254,10 +1302,14 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -1376,6 +1428,14 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -1427,6 +1487,10 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -1654,10 +1718,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -1776,6 +1844,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -1827,6 +1903,10 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -2052,10 +2132,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -2174,6 +2258,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -2225,6 +2317,10 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -2450,10 +2546,14 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -2572,6 +2672,14 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -2623,6 +2731,10 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -2848,10 +2960,14 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -2970,6 +3086,14 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -3021,6 +3145,10 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -3246,10 +3374,14 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -3368,6 +3500,14 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -3419,6 +3559,10 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -3646,10 +3790,14 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -3768,6 +3916,14 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -3819,6 +3975,10 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -4046,10 +4206,14 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -4168,6 +4332,14 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -4219,6 +4391,10 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -4446,10 +4622,14 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -4568,6 +4748,14 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -4619,6 +4807,10 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -4848,10 +5040,14 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -4970,6 +5166,14 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -5021,6 +5225,10 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -5248,10 +5456,14 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -5370,6 +5582,14 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -5421,6 +5641,10 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -5646,10 +5870,14 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -5768,6 +5996,14 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -5819,6 +6055,10 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -6044,10 +6284,14 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -6166,6 +6410,14 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -6217,6 +6469,10 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -6442,10 +6698,14 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -6564,6 +6824,14 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -6615,6 +6883,10 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -6840,10 +7112,14 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -6962,6 +7238,14 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -7013,6 +7297,10 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -7237,10 +7525,14 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -7359,6 +7651,14 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -7410,6 +7710,10 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -7635,10 +7939,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -7757,6 +8065,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -7808,6 +8124,10 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -8032,10 +8352,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -8154,6 +8478,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -8205,6 +8537,10 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
@@ -8432,10 +8768,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .dropdown--disabled .c1 {
-  cursor: default;
+  cursor: not-allowed;
   color: rgba(38,38,38,0.4);
   -webkit-transition: none;
   transition: none;
+}
+
+.dropdown--disabled .c1:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
 }
 
 .dropdown--disabled .c1 .dropdown__chevron--disabled {
@@ -8554,6 +8894,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 14px;
   white-space: nowrap;
   width: 85%;
@@ -8605,6 +8953,10 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 
 .dropdown--large.dropdown--border:hover .c4:not(.dropdown__text--disabled) {
   margin-left: 14px;
+}
+
+.c4 svg {
+  margin-right: 12px;
 }
 
 .c7 {
