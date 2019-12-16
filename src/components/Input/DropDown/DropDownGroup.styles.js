@@ -61,10 +61,6 @@ export const StyledGroup = styled.label`
     color: ${getThemeValue("onyx", "muted")};
     transition: none;
 
-    &:not(.dropdown--no-border) {
-      border-color: ${getThemeValue("onyx", "muted")};
-    }
-
     .dropdown__chevron--disabled {
       opacity: 0.4;
     }
@@ -184,8 +180,6 @@ export const StyledChevron = styled(DownIcon).attrs({
 `;
 
 export const StyledSelectedText = styled.div`
-  display: flex;
-  align-items: center;
   font-size: ${typography.size.hecto};
   white-space: nowrap;
   width: 85%;
@@ -240,10 +234,6 @@ export const StyledSelectedText = styled.div`
     &:not(.dropdown__text--disabled) {
       margin-left: 14px;
     }
-  }
-
-  svg {
-    margin-right: 12px;
   }
 `;
 
