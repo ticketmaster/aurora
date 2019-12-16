@@ -57,7 +57,7 @@ export const StyledGroup = styled.label`
   }
 
   .dropdown--disabled & {
-    cursor: default;
+    cursor: not-allowed;
     color: ${getThemeValue("onyx", "muted")};
     transition: none;
 
