@@ -52,6 +52,13 @@ exports[`QtySelector decrements correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,7 +168,7 @@ exports[`QtySelector decrements correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -791,7 +798,7 @@ exports[`QtySelector decrements correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -870,6 +877,13 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -979,7 +993,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -1609,7 +1623,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -1688,6 +1702,13 @@ exports[`QtySelector decrements twice correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1797,7 +1818,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -2427,7 +2448,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -2506,6 +2527,13 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2615,7 +2643,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -3244,7 +3272,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -3323,6 +3351,13 @@ exports[`QtySelector handles input value correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3432,7 +3467,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4061,7 +4096,7 @@ exports[`QtySelector handles input value correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4138,6 +4173,13 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
 
 .c2.noFocus:focus {
   box-shadow: none;
+}
+
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c0 {
@@ -4249,7 +4291,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -4879,7 +4921,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4956,6 +4998,13 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
 
 .c2.noFocus:focus {
   box-shadow: none;
+}
+
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c0 {
@@ -5067,7 +5116,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -5696,7 +5745,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -5776,6 +5825,13 @@ exports[`QtySelector increments correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5885,7 +5941,7 @@ exports[`QtySelector increments correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -6514,7 +6570,7 @@ exports[`QtySelector increments correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -6593,6 +6649,13 @@ exports[`QtySelector increments twice correctly 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6702,7 +6765,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7331,7 +7394,7 @@ exports[`QtySelector increments twice correctly 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7410,6 +7473,13 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7519,7 +7589,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7578,7 +7648,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7657,6 +7727,13 @@ exports[`QtySelector renders default QtySelector 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7766,7 +7843,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -8396,7 +8473,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -8473,6 +8550,13 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
 
 .c2.noFocus:focus {
   box-shadow: none;
+}
+
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c0 {
@@ -8584,7 +8668,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -9314,7 +9398,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -9394,6 +9478,13 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9503,7 +9594,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -10133,7 +10224,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -10212,6 +10303,13 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   box-shadow: none;
 }
 
+.c2.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10321,7 +10419,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   class="c0"
 >
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -10356,7 +10454,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
     />
   </div>
   <button
-    class="c1 noFocus c2"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"

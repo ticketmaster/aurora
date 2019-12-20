@@ -248,6 +248,13 @@ exports[`CalendarView should render without errors 1`] = `
   box-shadow: none;
 }
 
+.c24.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c10 {
   height: 36px;
   width: 100%;

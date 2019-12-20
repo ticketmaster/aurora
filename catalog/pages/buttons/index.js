@@ -5,7 +5,7 @@ import { Container, Row, Column } from "../../../src/components/Grid";
 import Spacing from "../../../src/components/Spacing";
 import { Button, Badge, RatingBadge } from "../../../src/components/Button";
 import ButtonWithLoading from "../../../src/components/ButtonWithLoading";
-import { ChevronIcon, StarIcon } from "../../../src/components/Icons";
+import { ChevronIcon, HomeIcon, StarIcon } from "../../../src/components/Icons";
 import { colors, themes } from "../../../src/theme";
 
 const starIconStyles = { marginRight: "2px" };
@@ -18,6 +18,7 @@ export default {
     ButtonWithLoading,
     Badge,
     ChevronIcon,
+    HomeIcon,
     StarIcon,
     RatingBadge,
     colors,

@@ -298,6 +298,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -2813,6 +2820,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {
@@ -5334,6 +5348,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -7851,6 +7872,13 @@ exports[`<ListContainer /> closes the bottomSheet for the row when clicked on cr
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -10319,6 +10347,13 @@ exports[`<ListContainer /> closes the modal when clicked on an expanded item on 
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -11481,6 +11516,13 @@ exports[`<ListContainer /> collapses the listRow after changing its order 1`] = 
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {
@@ -13998,6 +14040,13 @@ exports[`<ListContainer /> collapses the listRow when clicked on collapse button
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {
@@ -16632,6 +16681,13 @@ exports[`<ListContainer /> expands the listRow when clicked on expand Link 1`] =
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c27 {
@@ -19364,6 +19420,13 @@ exports[`<ListContainer /> expands the listRow when clicked on expand button 1`]
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -21881,6 +21944,13 @@ exports[`<ListContainer /> opens the bottomSheet for the row when clicked on ove
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -24336,6 +24406,13 @@ exports[`<ListContainer /> renders ListContainer correctly without any expanded 
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {
