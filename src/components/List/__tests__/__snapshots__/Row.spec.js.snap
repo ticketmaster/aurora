@@ -577,6 +577,13 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -1505,6 +1512,13 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
 
 .c22.noFocus:focus {
   box-shadow: none;
+}
+
+.c22.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c25 {
@@ -2613,6 +2627,13 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c27 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -3588,6 +3609,13 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
   box-shadow: none;
 }
 
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c19 {
   box-sizing: border-box;
   padding-right: 8px;
@@ -4435,6 +4463,13 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {
@@ -5400,6 +5435,13 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c27 {
@@ -6375,6 +6417,13 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 
 .c16.noFocus:focus {
   box-shadow: none;
+}
+
+.c16.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
 }
 
 .c19 {

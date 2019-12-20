@@ -18,6 +18,10 @@ rows:
   - Prop: href
     Type: string
     Notes: Determines wether underlying HTML element should be an `a`
+  - Prop: icon
+    Type: node
+    Default: null
+    Notes: Render as an icon with Button's children. Icon of height `16px` works best with `regular` sized button
   - Prop: children
     Type: node
     Default:
@@ -114,7 +118,7 @@ rows:
             <Column small={6}>
                 <Button variant="outlineGray" size="small">My cool button</Button>
                 <Spacing top={{small: "moderate"}}>
-                    <Button variant="outlineGray">My cool button</Button>
+                    <Button variant="outlineGray" icon={<HomeIcon size="small" />}>Button with icon</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="outlineGray" size="large">My cool button</Button>

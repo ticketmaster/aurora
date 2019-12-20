@@ -90,6 +90,13 @@ Object {
   box-shadow: none;
 }
 
+.c9.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c7 {
   width: 50%;
 }
@@ -189,7 +196,7 @@ Object {
             class="c7"
           >
             <button
-              class="button__selected c8 noFocus c9"
+              class="button__selected c8  noFocus c9"
               data-testid="test-button0"
             >
               All
@@ -199,7 +206,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8 noFocus c9"
+              class="c8  noFocus c9"
               data-testid="test-button1"
             >
               Concerts
@@ -209,7 +216,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8 noFocus c9"
+              class="c8  noFocus c9"
               data-testid="test-button2"
             >
               Button Label
@@ -343,6 +350,13 @@ Object {
   box-shadow: none;
 }
 
+.c9.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
 .c7 {
   width: 50%;
 }
@@ -442,7 +456,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8 noFocus c9"
+              class="c8  noFocus c9"
               data-testid="test-button0"
             >
               All
@@ -452,7 +466,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8 noFocus c9"
+              class="c8  noFocus c9"
               data-testid="test-button1"
             >
               Concerts
@@ -462,7 +476,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8 noFocus c9"
+              class="c8  noFocus c9"
               data-testid="test-button2"
             >
               Button Label

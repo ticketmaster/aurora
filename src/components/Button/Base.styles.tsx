@@ -1,7 +1,7 @@
 import styled, { StyledComponent } from "styled-components";
 
 import { SPECIAL, Size, ButtonVariant } from "../constants";
-import { typography, constants } from "../../theme";
+import { typography, constants, spacing } from "../../theme";
 import { getThemeValue } from "../../utils";
 
 const colorVariants = {
@@ -139,9 +139,15 @@ export const StyledButton = styled.button<StyledButtonProps>`
       variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
 
-
   &.noFocus:focus {
     box-shadow: none;
+  }
+
+  &.iconed svg{
+    position: relative;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: ${spacing.cozy};
   }
 `;
 

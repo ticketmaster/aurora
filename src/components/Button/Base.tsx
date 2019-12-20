@@ -17,6 +17,7 @@ export interface ButtonProps {
   readonly className?: string;
   readonly variant: ButtonVariant;
   readonly size: Size;
+  readonly icon: any;
 }
 
 export interface ButtonLinkProps extends ButtonProps {
@@ -35,12 +36,14 @@ class Button extends Component<ButtonProps> {
   static propTypes: ValidationMap<PropsWithChildren<ButtonProps>> = {
     variant: PropTypes.oneOf(BUTTON_VARIANTS),
     size: PropTypes.oneOf(SIZES),
+    icon: PropTypes.node,
     children: PropTypes.node.isRequired
   };
 
   static defaultProps: ButtonProps = {
     size: REGULAR,
-    variant: STANDARD
+    variant: STANDARD,
+    icon: null
   };
 
   componentDidMount() {
@@ -76,7 +79,7 @@ class Button extends Component<ButtonProps> {
   button = React.createRef<HTMLButtonElement>();
 
   render() {
-    const { variant, size, children, ...rest } = this.props;
+    const { variant, size, icon, children, ...rest } = this.props;
 
     if (isButtonLinkProps(this.props)) {
       const { rel, target } = this.props;
@@ -88,8 +91,10 @@ class Button extends Component<ButtonProps> {
           size={size}
           rel={validatedRel}
           as="a"
+          className={`${icon ? "iconed" : ""}`}
           {...rest}
         >
+          {icon}
           {children}
         </StyledButtonLink>
       );
@@ -100,9 +105,10 @@ class Button extends Component<ButtonProps> {
         variant={variant}
         size={size}
         {...rest}
-        className={`${rest.className || ""} noFocus`}
+        className={`${rest.className || ""} ${icon ? "iconed" : ""} noFocus`}
         ref={this.button}
       >
+        {icon}
         {children}
       </StyledButton>
     );
