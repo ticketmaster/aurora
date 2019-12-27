@@ -15,7 +15,7 @@
 [![Code of Conduct][coc-badge]][coc]
 
 [![size][size-badge]][unpkg-dist]
-[![gzip size][gzip-badge]][unpkg-dist]
+[![gzip size][gzip-size-badge]][unpkg-dist]
 [![module formats: cjs][module-formats-badge]][unpkg-dist]
 
 ## How to get started:
@@ -85,7 +85,7 @@ MIT
 [coc]: https://github.com/ticketmaster/aurora/blob/master/other/CODE_OF_CONDUCT.md
 [contributing]: https://github.com/ticketmaster/aurora/blob/master/CONTRIBUTING.md
 [maintaining]: https://github.com/ticketmaster/aurora/blob/master/other/MAINTAINING.md
-[gzip-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/aurora/dist/index.umd.min.js?compression=gzip&label=gzip%20size
-[size-badge]: http://img.badgesize.io/https://unpkg.com/@ticketmaster/aurora/dist/index.umd.min.js?label=size
+[size-badge]: https://img.shields.io/bundlephobia/min/@ticketmaster/aurora
+[gzip-size-badge]: https://img.shields.io/bundlephobia/minzip/@ticketmaster/aurora
 [unpkg-dist]: https://unpkg.com/@ticketmaster/aurora/dist/
-[module-formats-badge]: https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20es-green.svg
+[module-formats-badge]: https://img.shields.io/badge/module%20formats-cjs%2C%20es-green.svg
