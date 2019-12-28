@@ -14,7 +14,8 @@ export default {
   output: [
     {
       dir: "dist/cjs",
-      format: "cjs"
+      format: "cjs",
+      exports: "named"
     },
     {
       dir: "dist/esm",
