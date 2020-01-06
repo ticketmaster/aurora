@@ -69,25 +69,32 @@ export const Content = styled(Text)`
   }
 `;
 
-export const CloseButton = styled(Button, StyledButton)`
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  position: absolute;
-  top: ${spacing.cozy};
-  right: 3px;
-  width: 42px;
-  min-width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:active,
-  &:hover {
+/* stylelint-disable */
+// Stylelint prints the following error: Unexpected duplicate selector ".selector35" on this line ${StyledButton}&, but it is required to do it
+// this way because once the button is rendered, the styles are flatten and all set to the button element. So the StyledButton styles and the
+// CloseButton overrides must be set at the same level.
+export const CloseButton = styled(Button)`
+  ${StyledButton}& {
     background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: ${spacing.cozy};
+    right: 3px;
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active,
+    &:hover {
+      background-color: transparent;
+    }
   }
 `;
+/* stylelint-enable */
 
 export const CloseIcon = styled(CrossIcon).attrs({
   color: "currentColor"
