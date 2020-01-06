@@ -3,7 +3,7 @@ import { spacing, constants } from "../../theme";
 import getThemeValue from "../../utils/getThemeValue";
 import { CloseIcon as CrossIcon } from "../Icons";
 import { LinkCta, Text } from "../Text";
-import { Button } from "../Button";
+import { StyledButton, Button } from "../Button";
 import { small } from "../../theme/mediaQueries";
 
 export const BASE_BANNER_HEIGHT = 0;
@@ -69,7 +69,7 @@ export const Content = styled(Text)`
   }
 `;
 
-export const CloseButton = styled(Button)`
+export const CloseButton = styled(Button, StyledButton)`
   background-color: transparent;
   border: none;
   padding: 0;
