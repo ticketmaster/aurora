@@ -10,6 +10,7 @@ import { Consumer as SelectionConsumer } from "../../SelectionProvider/Context";
 import {
   ARROWUP,
   ARROWDOWN,
+  ENTER,
   SPACEBAR,
   ESCAPE,
   TAB
@@ -80,6 +81,7 @@ class DropDownGroup extends React.Component {
           this.openDropdown();
         }
         break;
+      case ENTER:
       case SPACEBAR:
         e.preventDefault();
         this.toggleDropdown();
