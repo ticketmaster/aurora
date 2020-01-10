@@ -5,8 +5,23 @@ import renderer from "react-test-renderer";
 import { ClearIcon } from "../../Icons";
 import Banner from "..";
 
-jest.mock("../../Button");
-jest.mock("../../Text/LinkCta");
+jest.mock("../../Button", () => ({
+  Button: jest
+    .fn()
+    .mockImplementation(props => <span data-mock="Button" {...props} />),
+  StyledButton: jest
+    .fn()
+    .mockImplementation(
+      () =>
+        jest
+          .requireActual("styled-components")
+          .default.span.attrs({ "data-mock": "StyledButton" })``
+    )
+}));
+
+jest.mock("../../Text/LinkCta", () =>
+  jest.fn().mockImplementation(props => <span data-mock="LinkCta" {...props} />)
+);
 
 describe("<Banner />", () => {
   it("renders correctly when closed", () => {
@@ -62,6 +77,20 @@ describe("<Banner />", () => {
         isOpen: true,
         content: "test content",
         variant: "alert",
+        onRequestClose: () => {}
+      })
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it("renders correctly with close button hidden", () => {
+    const { container } = render(
+      renderBanner({
+        isOpen: true,
+        content: "test content",
+        variant: "alert",
+        closeButtonHidden: true,
         onRequestClose: () => {}
       })
     );
