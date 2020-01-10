@@ -2,107 +2,55 @@
 
 exports[`responsiveBackgroundImage should return a background-image style rule for multiple device sizes when backgroundImage, deg, and stops args are passed 1`] = `
 Array [
-  "
-    ",
-  "
-    background-image: ",
+  "background-image:",
   "linear-gradient(256deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)), url(https://placekitten.com/g/826/465)",
-  ";
-  ",
-  "
-
-    ",
-  "
-  @media screen and ",
+  ";",
+  " ",
+  "@media screen and ",
   "(min-width: 768px)",
-  " {
-    ",
-  "
-    background-image: ",
+  "{",
+  "background-image:",
   "linear-gradient(240deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)), url(https://placekitten.com/g/826/465)",
-  ";
-  ",
-  ";
-  }
-",
-  "
-
-    ",
-  "
-  @media screen and ",
+  ";",
+  ";}",
+  " ",
+  "@media screen and ",
   "(min-width: 1024px)",
-  " {
-    ",
-  "
-    background-image: ",
+  "{",
+  "background-image:",
   "linear-gradient(220deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)), url(https://placekitten.com/g/826/465)",
-  ";
-  ",
-  ";
-  }
-",
-  "
-",
+  ";",
+  ";}",
 ]
 `;
 
 exports[`responsiveBackgroundImage should return a background-image style rule when a backgroundImage arg is passed 1`] = `
 Array [
-  "
-    ",
-  "
-    background-image: ",
+  "background-image:",
   "url(https://placekitten.com/g/826/465)",
-  ";
-  ",
-  "
-
-    ",
-  "
-
-    ",
-  "
-",
+  ";",
+  " ",
+  " ",
 ]
 `;
 
 exports[`responsiveBackgroundImage should return a background-image style rule when backgroundImage, deg, and stops args are passed 1`] = `
 Array [
-  "
-    ",
-  "
-    background-image: ",
+  "background-image:",
   "linear-gradient(256deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161)), url(https://placekitten.com/g/826/465)",
-  ";
-  ",
-  "
-
-    ",
-  "
-
-    ",
-  "
-",
+  ";",
+  " ",
+  " ",
 ]
 `;
 
 exports[`responsiveBackgroundImage should return a background-image style rule when deg and stops args are passed 1`] = `
 Array [
-  "
-    ",
-  "
-    background-image: ",
+  "background-image:",
   "linear-gradient(256deg, rgb(0, 45, 161), rgb(2, 108, 223) 55%, rgb(0, 45, 161))",
-  ";
-  ",
-  "
-
-    ",
-  "
-
-    ",
-  "
-",
+  ";",
+  " ",
+  " ",
 ]
 `;
 

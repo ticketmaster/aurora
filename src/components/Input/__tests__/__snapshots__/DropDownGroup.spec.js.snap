@@ -21,8 +21,8 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -55,8 +55,8 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -109,8 +109,8 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -122,8 +122,8 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -435,8 +435,8 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -469,8 +469,8 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -523,8 +523,8 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -536,8 +536,8 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -849,8 +849,8 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -883,8 +883,8 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -937,8 +937,8 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -950,8 +950,8 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -1263,8 +1263,8 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -1297,8 +1297,8 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -1351,8 +1351,8 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -1364,8 +1364,8 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -1679,8 +1679,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -1713,8 +1713,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -1767,8 +1767,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -1780,8 +1780,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -2093,8 +2093,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -2127,8 +2127,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -2181,8 +2181,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -2194,8 +2194,8 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -2507,8 +2507,8 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -2541,8 +2541,8 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -2595,8 +2595,8 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -2608,8 +2608,8 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -2921,8 +2921,8 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -2955,8 +2955,8 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -3009,8 +3009,8 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -3022,8 +3022,8 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -3335,8 +3335,8 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -3369,8 +3369,8 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -3423,8 +3423,8 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -3436,8 +3436,8 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -3751,8 +3751,8 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -3785,8 +3785,8 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -3839,8 +3839,8 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -3852,8 +3852,8 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -4167,8 +4167,8 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -4201,8 +4201,8 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -4255,8 +4255,8 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -4268,8 +4268,8 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -4583,8 +4583,8 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -4617,8 +4617,8 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -4671,8 +4671,8 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -4684,8 +4684,8 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -5001,8 +5001,8 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -5035,8 +5035,8 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -5089,8 +5089,8 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -5102,8 +5102,8 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -5417,8 +5417,8 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -5451,8 +5451,8 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -5505,8 +5505,8 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -5518,8 +5518,8 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -5831,8 +5831,8 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -5865,8 +5865,8 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -5919,8 +5919,8 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -5932,8 +5932,8 @@ exports[`DropDownGroup renders default dropdown that should always open downward
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -6245,8 +6245,8 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -6279,8 +6279,8 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -6333,8 +6333,8 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -6346,8 +6346,8 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -6659,8 +6659,8 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -6693,8 +6693,8 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -6747,8 +6747,8 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -6760,8 +6760,8 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -7073,8 +7073,8 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -7107,8 +7107,8 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -7161,8 +7161,8 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -7174,8 +7174,8 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -7486,8 +7486,8 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -7520,8 +7520,8 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -7574,8 +7574,8 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -7587,8 +7587,8 @@ exports[`DropDownGroup renders small dropdown 1`] = `
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -7900,8 +7900,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -7934,8 +7934,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -7988,8 +7988,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -8001,8 +8001,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -8313,8 +8313,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -8347,8 +8347,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -8401,8 +8401,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -8414,8 +8414,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {
@@ -8729,8 +8729,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease 0.3s;
   z-index: 0;
 }
 
@@ -8763,8 +8763,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border: solid 1px #999999;
   border-radius: 2px;
   z-index: 10;
-  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
-  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),z-index 0s ease;
 }
 
 .dropdown--disabled .c1 {
@@ -8817,8 +8817,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   border-style: solid;
   border-width: 0;
   max-height: 0;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s ease 0.3s,padding-top 0s ease 0.3s,padding-bottom 0s ease 0.3s;
 }
 
 .c6:focus {
@@ -8830,8 +8830,8 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   padding-bottom: 8px;
   border-width: 1px;
   max-height: 606px;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),border-width 0s,padding-top 0s,padding-bottom 0s;
 }
 
 .c6.dropdown--overflow {

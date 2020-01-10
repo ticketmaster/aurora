@@ -154,8 +154,8 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
   border-radius: 50%;
   box-sizing: border-box;
   position: relative;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 
 .toggle--small .c5 {
@@ -370,8 +370,8 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
   border-radius: 50%;
   box-sizing: border-box;
   position: relative;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 
 .toggle--small .c5 {
@@ -586,8 +586,8 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
   border-radius: 50%;
   box-sizing: border-box;
   position: relative;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 
 .toggle--small .c5 {
@@ -802,8 +802,8 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
   border-radius: 50%;
   box-sizing: border-box;
   position: relative;
-  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),left 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
 }
 
 .toggle--small .c5 {

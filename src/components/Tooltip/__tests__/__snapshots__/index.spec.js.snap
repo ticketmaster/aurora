@@ -21,9 +21,9 @@ exports[`Tooltip dark should match snapshot 1`] = `
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -73,9 +73,9 @@ exports[`Tooltip dark should match snapshot 1`] = `
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -87,9 +87,9 @@ exports[`Tooltip dark should match snapshot 1`] = `
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -128,9 +128,9 @@ exports[`Tooltip should match snapshot 1`] = `
   padding: 8px;
   display: none;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -180,9 +180,9 @@ exports[`Tooltip should match snapshot 1`] = `
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -194,9 +194,9 @@ exports[`Tooltip should match snapshot 1`] = `
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -253,9 +253,9 @@ exports[`Tooltip should match snapshot when visisble and direction is bottom 1`]
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -305,9 +305,9 @@ exports[`Tooltip should match snapshot when visisble and direction is bottom 1`]
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -319,9 +319,9 @@ exports[`Tooltip should match snapshot when visisble and direction is bottom 1`]
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -369,9 +369,9 @@ exports[`Tooltip should match snapshot when visisble and direction is invalid 1`
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -421,9 +421,9 @@ exports[`Tooltip should match snapshot when visisble and direction is invalid 1`
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -435,9 +435,9 @@ exports[`Tooltip should match snapshot when visisble and direction is invalid 1`
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -548,9 +548,9 @@ exports[`Tooltip should match snapshot when visisble and direction is left 1`] =
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -600,9 +600,9 @@ exports[`Tooltip should match snapshot when visisble and direction is left 1`] =
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -614,9 +614,9 @@ exports[`Tooltip should match snapshot when visisble and direction is left 1`] =
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -700,9 +700,9 @@ exports[`Tooltip should match snapshot when visisble and direction is right 1`] 
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -752,9 +752,9 @@ exports[`Tooltip should match snapshot when visisble and direction is right 1`] 
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -766,9 +766,9 @@ exports[`Tooltip should match snapshot when visisble and direction is right 1`] 
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,
@@ -834,9 +834,9 @@ exports[`Tooltip should match snapshot when visisble and direction is top 1`] = 
   padding: 8px;
   display: block;
   font-size: 12px;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1:before {
@@ -886,9 +886,9 @@ exports[`Tooltip should match snapshot when visisble and direction is top 1`] = 
 
 .c1.open-enter-active,
 .c1.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-enter-done,
@@ -900,9 +900,9 @@ exports[`Tooltip should match snapshot when visisble and direction is top 1`] = 
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), -webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
-  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),-webkit-transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: opacity 0.3s cubic-bezier(0.25,0.46,0.45,0.94),transform 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .c1.open-exit,

@@ -11,9 +11,9 @@ exports[`PopOver should match snapshot 1`] = `
   padding: 16px;
   z-index: 9;
   display: none;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c0.open-enter,
@@ -29,9 +29,9 @@ exports[`PopOver should match snapshot 1`] = `
 
 .c0.open-enter-active,
 .c0.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -40,9 +40,9 @@ exports[`PopOver should match snapshot 1`] = `
 }
 
 .c0.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -82,9 +82,9 @@ exports[`PopOver should match snapshot when visible 1`] = `
   padding: 16px;
   z-index: 9;
   display: block;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c0.open-enter,
@@ -100,9 +100,9 @@ exports[`PopOver should match snapshot when visible 1`] = `
 
 .c0.open-enter-active,
 .c0.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -111,9 +111,9 @@ exports[`PopOver should match snapshot when visible 1`] = `
 }
 
 .c0.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -152,9 +152,9 @@ exports[`PopOver should match snapshot when visible and without borders 1`] = `
   padding: 16px;
   z-index: 9;
   display: block;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c0.open-enter,
@@ -170,9 +170,9 @@ exports[`PopOver should match snapshot when visible and without borders 1`] = `
 
 .c0.open-enter-active,
 .c0.open-appear-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -181,9 +181,9 @@ exports[`PopOver should match snapshot when visible and without borders 1`] = `
 }
 
 .c0.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);

@@ -19,9 +19,9 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -47,9 +47,9 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -58,9 +58,9 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -216,9 +216,9 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -244,9 +244,9 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -255,9 +255,9 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -413,9 +413,9 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -441,9 +441,9 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -452,9 +452,9 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -609,9 +609,9 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -637,9 +637,9 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -648,9 +648,9 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -885,9 +885,9 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -913,9 +913,9 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -924,9 +924,9 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1161,9 +1161,9 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -1189,9 +1189,9 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1200,9 +1200,9 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1358,9 +1358,9 @@ exports[`<Modal /> should recalculate shadows and content height on props change
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -1386,9 +1386,9 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1397,9 +1397,9 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1555,9 +1555,9 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
   height: auto;
   max-height: calc(100vh - 88px * 2);
   overflow: hidden;
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), -webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53), transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),-webkit-transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53),transform 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
 }
 
 .c1.fullscreen {
@@ -1583,9 +1583,9 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
 }
 
 .c1.open-enter-active {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1594,9 +1594,9 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
 }
 
 .c1.open-enter-done {
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), -webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955), transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),-webkit-transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955),transform 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);

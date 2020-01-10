@@ -63,8 +63,8 @@ exports[`<RadioInput /> should render the correct markup 1`] = `
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -205,8 +205,8 @@ exports[`<RadioInput /> should render the correct markup when additional props a
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -351,8 +351,8 @@ exports[`<RadioInput /> should render the correct markup when description is sup
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -493,8 +493,8 @@ exports[`<RadioInput /> should render the correct markup when the checked prop e
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -635,8 +635,8 @@ exports[`<RadioInput /> should render the correct markup when the disabled prop 
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -777,8 +777,8 @@ exports[`<RadioInput /> should render the correct markup when the isActive prop 
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -919,8 +919,8 @@ exports[`<RadioInput /> should render the correct markup when the isFocused prop
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;
@@ -1061,8 +1061,8 @@ exports[`<RadioInput /> should render the correct markup when the size prop equa
 
 .c0:after {
   content: "";
-  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
-  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275), height 0.3s cubic-bezier(0.175,0.885,0.32,1.275), opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  -webkit-transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: width 0.3s cubic-bezier(0.175,0.885,0.32,1.275),height 0.3s cubic-bezier(0.175,0.885,0.32,1.275),opacity 0.3s cubic-bezier(0.175,0.885,0.32,1.275);
   position: absolute;
   opacity: 0;
   top: 50%;

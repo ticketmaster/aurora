@@ -29,15 +29,15 @@ exports[`<Banner /> renders correctly when open 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -145,15 +145,15 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -293,15 +293,15 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -441,15 +441,15 @@ exports[`<Banner /> renders correctly with content 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -559,15 +559,15 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -699,15 +699,15 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -845,15 +845,15 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 
@@ -993,15 +993,15 @@ exports[`<Banner /> renders correctly with link 1`] = `
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
   background-color: rgba(255,255,255,0.5);
   opacity: 0;
 }
 
 .c0.visible-banner {
-  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955),opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 1;
 }
 

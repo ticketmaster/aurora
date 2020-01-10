@@ -87,9 +87,9 @@ exports[`QtySelector decrements correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -912,9 +912,9 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -1737,9 +1737,9 @@ exports[`QtySelector decrements twice correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -2562,9 +2562,9 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -3386,9 +3386,9 @@ exports[`QtySelector handles input value correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -4210,9 +4210,9 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -5035,9 +5035,9 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -5860,9 +5860,9 @@ exports[`QtySelector increments correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -6684,9 +6684,9 @@ exports[`QtySelector increments twice correctly 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -7508,9 +7508,9 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -7762,9 +7762,9 @@ exports[`QtySelector renders default QtySelector 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -8587,9 +8587,9 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -9513,9 +9513,9 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
@@ -10338,9 +10338,9 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 0;
-  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: -webkit-transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear,background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955),color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
 .c1:disabled {
