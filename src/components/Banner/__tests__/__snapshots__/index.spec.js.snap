@@ -344,6 +344,216 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   opacity: 0;
 }
 
+.c8.c6 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c8.c6:active,
+.c8.c6:hover {
+  background-color: transparent;
+}
+
+.c7 {
+  color: rgba(38,38,38,0.4);
+}
+
+.c1 {
+  padding-right: 16px;
+  height: 24px;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    padding-right: 12px;
+  }
+}
+
+<div>
+  <div
+    class="collapsed banner-variant-alert visible-banner c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fill-rule="evenodd"
+          stroke="none"
+          stroke-width="1"
+        >
+          <path
+            d="M1.07417114,19.9968129 L11.4244437,2.29635624 C11.6102988,1.97851724 12.0186236,1.87152316 12.3364626,2.05737827 C12.4353263,2.11518846 12.5176304,2.19749248 12.5754406,2.29635624 L22.9257131,19.9968129 C23.1115683,20.3146519 23.0045742,20.7229766 22.6867352,20.9088318 C22.5846348,20.9685345 22.4684894,21 22.3502147,21 L1.64966956,21 C1.28147973,21 0.983002892,20.7015232 0.983002892,20.3333333 C0.983002892,20.2150587 1.01446838,20.0989132 1.07417114,19.9968129 Z"
+            fill="#f2bd2a"
+          />
+          <ellipse
+            cx="11.9999421"
+            cy="17.6145298"
+            fill="#FFFFFF"
+            rx="1.04658007"
+            ry="1.03620152"
+          />
+          <path
+            d="M11.9999421,14.5237405 L11.9999421,14.5237405 C12.5779523,14.5237405 13.0465222,14.0551706 13.0465222,13.4771604 L13.0465222,8.31690989 C13.0465222,7.73889968 12.5779523,7.27032982 11.9999421,7.27032982 L11.9999421,7.27032982 C11.4219319,7.27032982 10.9533621,7.73889968 10.9533621,8.31690989 L10.9533621,13.4771604 C10.9533621,14.0551706 11.4219319,14.5237405 11.9999421,14.5237405 Z"
+            fill="#FFFFFF"
+          />
+        </g>
+      </svg>
+    </div>
+    <div
+      class="c2"
+    >
+      <span
+        class="text text--dark text--primary c3"
+      >
+        This is your primary message text.
+      </span>
+      <div
+        style="max-height: 0px;"
+      >
+        <div
+          class="text text--dark text--primary c4 c5"
+        >
+          test content
+        </div>
+      </div>
+    </div>
+    <span
+      class="c6"
+      data-mock="Button"
+    >
+      <svg
+        class="c7"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M2.47 2.47a.75.75 0 0 1 1.06 0l4.718 4.718 4.718-4.718a.75.75 0 0 1 .976-.073l.085.073a.75.75 0 0 1 0 1.06L9.308 8.25l4.719 4.72a.75.75 0 0 1 .072.976l-.072.085a.75.75 0 0 1-1.061 0L8.248 9.31l-4.718 4.72a.75.75 0 0 1-.976.072l-.084-.072a.75.75 0 0 1 0-1.061l4.717-4.72L2.47 3.53a.75.75 0 0 1-.073-.976z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<Banner /> renders correctly with close button hidden 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: none;
+  color: rgba(38,38,38,1);
+}
+
+.c0 {
+  padding: 16px;
+  position: relative;
+  border: 1px solid rgba(38,38,38,0.4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.55,0.085,0.68,0.53);
+  background-color: rgba(255,255,255,0.5);
+  opacity: 0;
+}
+
+.c0.visible-banner {
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 1;
+}
+
+.c0.banner-variant-error {
+  background-color: #fbebeb;
+  border-color: #d93a3a;
+}
+
+.c0.banner-variant-success {
+  background-color: #e8f6e8;
+  border-color: #1bab1e;
+}
+
+.c0.banner-variant-alert {
+  background-color: #fdf5df;
+  border-color: #f2bd2a;
+}
+
+.c0.banner-variant-info {
+  background-color: #ebf4fd;
+  border-color: #026cdf;
+}
+
+.c2 {
+  font-family: Averta,Courier,monospace;
+  padding-right: 32px;
+}
+
+.c4 {
+  padding-top: 12px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
+  line-height: 1.29;
+}
+
+.collapsed .c4 {
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  opacity: 0;
+}
+
 .c1 {
   padding-right: 16px;
   height: 24px;
@@ -681,12 +891,16 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-transform: none;
   color: rgba(38,38,38,1);
+}
+
+.c4 {
+  padding-left: 4px;
 }
 
 .c0 {
@@ -736,7 +950,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   padding-right: 32px;
 }
 
-.c4 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -744,10 +958,43 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   line-height: 1.29;
 }
 
-.collapsed .c4 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
+}
+
+.c9.c7 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9.c7:active,
+.c9.c7:hover {
+  background-color: transparent;
+}
+
+.c8 {
+  color: rgba(38,38,38,0.4);
 }
 
 .c1 {
@@ -806,14 +1053,50 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
       >
         This is your primary message text.
       </span>
+      <span
+        class="c4"
+        data-mock="LinkCta"
+        href="ticketmaster.com"
+      >
+        test link text
+      </span>
       <div
         style="max-height: 0px;"
       >
         <div
-          class="text text--dark text--primary c4 c5"
+          class="text text--dark text--primary c5 c6"
         />
       </div>
     </div>
+    <span
+      class="c7"
+      data-mock="Button"
+    >
+      <svg
+        class="c8"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          test close banner text
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M2.47 2.47a.75.75 0 0 1 1.06 0l4.718 4.718 4.718-4.718a.75.75 0 0 1 .976-.073l.085.073a.75.75 0 0 1 0 1.06L9.308 8.25l4.719 4.72a.75.75 0 0 1 .072.976l-.072.085a.75.75 0 0 1-1.061 0L8.248 9.31l-4.718 4.72a.75.75 0 0 1-.976.072l-.084-.072a.75.75 0 0 1 0-1.061l4.717-4.72L2.47 3.53a.75.75 0 0 1-.073-.976z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
   </div>
 </div>
 `;
@@ -827,12 +1110,16 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-transform: none;
   color: rgba(38,38,38,1);
+}
+
+.c4 {
+  padding-left: 4px;
 }
 
 .c0 {
@@ -882,7 +1169,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   padding-right: 32px;
 }
 
-.c4 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -890,10 +1177,43 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c4 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
+}
+
+.c9.c7 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9.c7:active,
+.c9.c7:hover {
+  background-color: transparent;
+}
+
+.c8 {
+  color: rgba(38,38,38,0.4);
 }
 
 .c1 {
@@ -952,16 +1272,51 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
       >
         This is your primary message text.
       </span>
+      <span
+        class="c4"
+        data-mock="LinkCta"
+      >
+        collapsedText
+      </span>
       <div
         style="max-height: 0px;"
       >
         <div
-          class="text text--dark text--primary c4 c5"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>
       </div>
     </div>
+    <span
+      class="c7"
+      data-mock="Button"
+    >
+      <svg
+        class="c8"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M2.47 2.47a.75.75 0 0 1 1.06 0l4.718 4.718 4.718-4.718a.75.75 0 0 1 .976-.073l.085.073a.75.75 0 0 1 0 1.06L9.308 8.25l4.719 4.72a.75.75 0 0 1 .072.976l-.072.085a.75.75 0 0 1-1.061 0L8.248 9.31l-4.718 4.72a.75.75 0 0 1-.976.072l-.084-.072a.75.75 0 0 1 0-1.061l4.717-4.72L2.47 3.53a.75.75 0 0 1-.073-.976z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
   </div>
 </div>
 `;
@@ -975,12 +1330,16 @@ exports[`<Banner /> renders correctly with link 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-transform: none;
   color: rgba(38,38,38,1);
+}
+
+.c4 {
+  padding-left: 4px;
 }
 
 .c0 {
@@ -1030,7 +1389,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
   padding-right: 32px;
 }
 
-.c4 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -1038,10 +1397,43 @@ exports[`<Banner /> renders correctly with link 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c4 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
+}
+
+.c9.c7 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 42px;
+  min-width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c9.c7:active,
+.c9.c7:hover {
+  background-color: transparent;
+}
+
+.c8 {
+  color: rgba(38,38,38,0.4);
 }
 
 .c1 {
@@ -1100,14 +1492,50 @@ exports[`<Banner /> renders correctly with link 1`] = `
       >
         This is your primary message text.
       </span>
+      <span
+        class="c4"
+        data-mock="LinkCta"
+        href="ticketmaster.com"
+      >
+        test link text
+      </span>
       <div
         style="max-height: 0px;"
       >
         <div
-          class="text text--dark text--primary c4 c5"
+          class="text text--dark text--primary c5 c6"
         />
       </div>
     </div>
+    <span
+      class="c7"
+      data-mock="Button"
+    >
+      <svg
+        class="c8"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Close banner
+        </title>
+        <g
+          fill="none"
+          fill-rule="evenodd"
+        >
+          <path
+            d="M16 0H0v16h16z"
+          />
+          <path
+            d="M2.47 2.47a.75.75 0 0 1 1.06 0l4.718 4.718 4.718-4.718a.75.75 0 0 1 .976-.073l.085.073a.75.75 0 0 1 0 1.06L9.308 8.25l4.719 4.72a.75.75 0 0 1 .072.976l-.072.085a.75.75 0 0 1-1.061 0L8.248 9.31l-4.718 4.72a.75.75 0 0 1-.976.072l-.084-.072a.75.75 0 0 1 0-1.061l4.717-4.72L2.47 3.53a.75.75 0 0 1-.073-.976z"
+            fill="currentColor"
+            fill-rule="nonzero"
+          />
+        </g>
+      </svg>
+    </span>
   </div>
 </div>
 `;

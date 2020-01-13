@@ -34,7 +34,8 @@ class Banner extends Component {
     style: PropTypes.shape(),
     variant: PropTypes.oneOf(variants),
     icon: PropTypes.node,
-    closeButtonTitleText: PropTypes.string
+    closeButtonTitleText: PropTypes.string,
+    closeButtonHidden: PropTypes.bool
   };
 
   static defaultProps = {
@@ -53,7 +54,8 @@ class Banner extends Component {
     },
     variant: null,
     icon: null,
-    closeButtonTitleText: "Close banner"
+    closeButtonTitleText: "Close banner",
+    closeButtonHidden: false
   };
 
   // Container max height should be handled programmatically as content height is unknown
@@ -120,8 +122,13 @@ class Banner extends Component {
   };
 
   renderCloseButton = () => {
-    const { onRequestClose, closeButtonTitleText } = this.props;
-    if (!onRequestClose) {
+    const {
+      onRequestClose,
+      closeButtonTitleText,
+      closeButtonHidden
+    } = this.props;
+
+    if (!onRequestClose || closeButtonHidden) {
       return null;
     }
 
