@@ -18,6 +18,10 @@ rows:
   - Prop: href
     Type: string
     Notes: Determines wether underlying HTML element should be an `a`
+  - Prop: noTransform
+    Type: bool
+    Default: '`false`'
+    Notes: To prevent text transformation to capitalize.
   - Prop: icon
     Type: node
     Default: null
@@ -71,7 +75,7 @@ rows:
                     <Button variant="special">My cool button</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
-                    <Button variant="special" size="large">My cool button</Button>
+                    <Button variant="special" size="large" noTransform>without text transform</Button>
                 </Spacing>
                 <Spacing top={{small: "moderate"}}>
                     <Button variant="special" size="large" disabled>My cool button</Button>
