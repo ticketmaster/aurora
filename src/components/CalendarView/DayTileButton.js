@@ -17,7 +17,7 @@ const DayTileButtonContainer = styled.div`
 
 const DayTileButton = props => (
   <DayTileButtonContainer>
-    <Button noTransform size="small" {...props} />
+    <Button size="small" {...props} />
   </DayTileButtonContainer>
 );
 DayTileButton.Group = DayTileButtonGroup;

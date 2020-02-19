@@ -266,7 +266,6 @@ exports[`CalendarView should render without errors 1`] = `
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 14px;
   min-width: 30px;
   max-width: 30px;

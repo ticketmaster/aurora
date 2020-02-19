@@ -101,7 +101,6 @@ export const StyledButton = styled.button<StyledButtonProps>`
   padding: 0 ${getPadding} 0 ${getPadding};
   min-width: 60px;
   text-align: center;
-  ${({ noTransform }) => (noTransform ? "" : "text-transform: capitalize;")}
   border-radius: ${constants.borderRadius.small};
   cursor: pointer;
 
@@ -133,8 +132,8 @@ export const StyledButton = styled.button<StyledButtonProps>`
     color: ${({ variant }) => colorVariants[variant].color};
     background-color: ${({ variant }) =>
       colorVariants[variant].backgroundColor};
-    border: 1px solid ${({ variant }) =>
-      colorVariants[`${variant}Disabled`].borderColor};
+    border: 1px solid
+      ${({ variant }) => colorVariants[`${variant}Disabled`].borderColor};
     ${({ variant }) =>
       variant === SPECIAL ? "opacity: 0.4;" : "opacity: 0.2;"};
   }
@@ -143,7 +142,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     box-shadow: none;
   }
 
-  &.iconed svg{
+  &.iconed svg {
     position: relative;
     display: inline-block;
     vertical-align: text-top;

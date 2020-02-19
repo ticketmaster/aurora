@@ -9,7 +9,6 @@ exports[`<Button /> renders link button correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -80,7 +79,6 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
   padding: 0 14px 0 14px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -147,7 +145,6 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -214,7 +211,6 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -282,7 +278,6 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
   padding: 0 10px 0 10px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -349,7 +344,6 @@ exports[`<Button /> renders special large size button correctly 1`] = `
   padding: 0 14px 0 14px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -416,7 +410,6 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -483,7 +476,6 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -551,7 +543,6 @@ exports[`<Button /> renders special small size button correctly 1`] = `
   padding: 0 10px 0 10px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -618,7 +609,6 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
   padding: 0 14px 0 14px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -685,7 +675,6 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -752,7 +741,6 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -820,7 +808,6 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
   padding: 0 10px 0 10px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -887,7 +874,6 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
   padding: 0 14px 0 14px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -954,7 +940,6 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -1021,7 +1006,6 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;
@@ -1089,7 +1073,6 @@ exports[`<Button /> renders transparent small size button correctly 1`] = `
   padding: 0 10px 0 10px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #026cdf;

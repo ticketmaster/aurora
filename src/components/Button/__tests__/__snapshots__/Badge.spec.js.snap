@@ -12,7 +12,6 @@ exports[`Badge /> renders link Badge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -62,7 +61,6 @@ exports[`Badge /> renders outline Badge correctly 1`] = `
   background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -111,7 +109,6 @@ exports[`Badge /> renders outline disabled Badge correctly 1`] = `
   background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -161,7 +158,6 @@ exports[`Badge /> renders standard Badge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,7 +206,6 @@ exports[`Badge /> renders standard disabled Badge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -260,7 +255,6 @@ exports[`Badge /> renders transparent Badge correctly 1`] = `
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -309,7 +303,6 @@ exports[`Badge /> renders transparent disabled Badge correctly 1`] = `
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
