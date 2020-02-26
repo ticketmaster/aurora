@@ -47,7 +47,6 @@ export const GenericButton = styled.button`
   background-color: ${({ variant }) => VARIANTS[variant].backgroundColor};
   border: 1px solid ${({ variant }) => VARIANTS[variant].borderColor};
   cursor: pointer;
-  text-transform: capitalize;
 
   &:disabled {
     color: ${({ variant }) => VARIANTS[`${variant}Disabled`].color};

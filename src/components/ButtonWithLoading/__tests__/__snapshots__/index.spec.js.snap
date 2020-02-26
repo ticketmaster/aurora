@@ -9,7 +9,6 @@ exports[`ButtonWithLoading should match snapshot 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -134,7 +133,6 @@ exports[`ButtonWithLoading should match snapshot with default values 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);

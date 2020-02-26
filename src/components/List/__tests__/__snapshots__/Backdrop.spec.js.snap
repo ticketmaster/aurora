@@ -67,7 +67,6 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 14px;
   min-width: 28px;
   max-width: 28px;
@@ -290,7 +289,6 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 14px;
   min-width: 28px;
   max-width: 28px;
@@ -513,7 +511,6 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 14px;
   min-width: 28px;
   max-width: 28px;

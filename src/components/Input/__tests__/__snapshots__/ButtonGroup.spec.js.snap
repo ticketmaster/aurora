@@ -47,7 +47,6 @@ Object {
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #1f262d;
@@ -307,7 +306,6 @@ Object {
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: #1f262d;

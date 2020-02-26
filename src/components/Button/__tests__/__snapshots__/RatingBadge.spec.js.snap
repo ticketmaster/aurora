@@ -12,7 +12,6 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -133,7 +132,6 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
   background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -253,7 +251,6 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
   background-color: rgba(255,255,255,1);
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -374,7 +371,6 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -494,7 +490,6 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
   background-color: #026cdf;
   border: 1px solid #026cdf;
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -615,7 +610,6 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -735,7 +729,6 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
   background-color: transparent;
   border: 1px solid rgba(255,255,255,1);
   cursor: pointer;
-  text-transform: capitalize;
   font-size: 12px;
   display: -webkit-box;
   display: -webkit-flex;

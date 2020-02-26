@@ -9,7 +9,6 @@ exports[`QtySelector decrements correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -834,7 +833,6 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -1659,7 +1657,6 @@ exports[`QtySelector decrements twice correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -2484,7 +2481,6 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -3308,7 +3304,6 @@ exports[`QtySelector handles input value correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -4132,7 +4127,6 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -4957,7 +4951,6 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -5782,7 +5775,6 @@ exports[`QtySelector increments correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -6606,7 +6598,6 @@ exports[`QtySelector increments twice correctly 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -7430,7 +7421,6 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -7684,7 +7674,6 @@ exports[`QtySelector renders default QtySelector 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -8509,7 +8498,6 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -9435,7 +9423,6 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
@@ -10260,7 +10247,6 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   padding: 0 12px 0 12px;
   min-width: 60px;
   text-align: center;
-  text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
   color: rgba(255,255,255,1);
