@@ -58,6 +58,22 @@ rows:
 </div>
 ```
 
+#### Async Tooltip
+
+- Tooltip content is refreshed while visible when Prop `asyncRefresh` is set to `true` or `false` (default `null`)
+- If `asyncRefresh` prop is set to `null` tooltip will only refresh when tooltip visibility (prop: `isVisible`) is set to `false`
+- `asyncRefresh` prop will need to be changed in the parent in order for the tooltip to refresh content.
+
+Example: hover over tooltip for more than 2 sec
+
+```react
+span: 2
+---
+<div>
+  <TooltipRestrictedAsyncDemo />
+</div>
+```
+
 ### Seat Tooltip
 
 Seat Tooltip Component

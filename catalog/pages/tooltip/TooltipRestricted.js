@@ -35,6 +35,7 @@ class TooltipRestrictedDemo extends React.Component {
 
   buttonSelect = e => {
     const data = Tooltip.getDimensionsFromEvent(e, this.containerRef.current);
+
     this.setState(state => {
       if (state.isOpened) {
         return state;
@@ -49,7 +50,7 @@ class TooltipRestrictedDemo extends React.Component {
   };
 
   render() {
-    const { isOpened, ...position } = this.state;
+    const { isOpened, content, ...position } = this.state;
 
     return (
       <Container ref={this.containerRef}>
