@@ -38,25 +38,8 @@ class Tooltip extends Component {
 
     this.state = {
       actualDirection: props.direction,
-      arrowAdjustment: 0,
-      asyncRefresh: false
+      arrowAdjustment: 0
     };
-  }
-
-  componentDidMount() {
-    if (this.props.asyncRefresh !== null) {
-      this.asyncRefresh();
-    }
-  }
-
-  componentDidUpdate(nextProps, prevState) {
-    if (
-      this.props.isVisible &&
-      nextProps.asyncRefresh !== null &&
-      nextProps.asyncRefresh !== prevState.asyncRefresh
-    ) {
-      this.asyncRefresh();
-    }
   }
 
   /*
@@ -162,19 +145,13 @@ class Tooltip extends Component {
   };
 
   /* 
-   * Function that forces a re-render of the tooltip when tooltip children
-   * are updated asyncronously.
+   * Function that forces a re-render of the tooltip
    */
-
-  asyncRefresh = () => {
+  refresh = () => {
     if (this.props.isVisible) {
       this.tooltipEnter();
       this.tooltipEntering();
     }
-
-    this.setState({
-      asyncRefresh: !this.state.asyncRefresh
-    });
   };
 
   adjustArrow = ({ coords, position }) => {
@@ -392,8 +369,7 @@ Tooltip.propTypes = {
   variant: PropTypes.oneOf(VARIANTS),
   spaceFromMouse: PropTypes.number,
   reduceTop: PropTypes.number,
-  reduceBottom: PropTypes.number,
-  asyncRefresh: PropTypes.bool
+  reduceBottom: PropTypes.number
 };
 
 Tooltip.defaultProps = {
@@ -411,8 +387,7 @@ Tooltip.defaultProps = {
   },
   spaceFromMouse: SPACE_FROM_MOUSE,
   reduceTop: 0,
-  reduceBottom: 0,
-  asyncRefresh: null
+  reduceBottom: 0
 };
 
 Tooltip.displayName = "Tooltip";
