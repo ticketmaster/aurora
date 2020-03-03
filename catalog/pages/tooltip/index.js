@@ -3,6 +3,7 @@ import { pageLoader } from "catalog";
 import TooltipDemo from "./TooltipDemo";
 import SeatTooltipDemo from "./SeatTooltipDemo";
 import TooltipRestrictedDemo from "./TooltipRestricted";
+import TooltipRestrictedAsyncDemo from "./TooltipRestrictedAsync";
 
 export default {
   path: "/tooltip",
@@ -10,7 +11,8 @@ export default {
   imports: {
     TooltipDemo,
     SeatTooltipDemo,
-    TooltipRestrictedDemo
+    TooltipRestrictedDemo,
+    TooltipRestrictedAsyncDemo
   },
   content: pageLoader(() => import("./index.md"))
 };
