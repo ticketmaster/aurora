@@ -58,11 +58,9 @@ rows:
 </div>
 ```
 
-#### Async Tooltip
+#### Manual Refresh
 
-- Tooltip content is refreshed while visible when Prop `asyncRefresh` is set to `true` or `false` (default `null`)
-- If `asyncRefresh` prop is set to `null` tooltip will only refresh when tooltip visibility (prop: `isVisible`) is set to `false`
-- `asyncRefresh` prop will need to be changed in the parent in order for the tooltip to refresh content.
+- If the content of a tooltip can change while the tooltip is visible, you can call a `refresh()` method on the component to reset the position based on the content.
 
 Example: hover over tooltip for more than 2 sec
 
