@@ -1,14 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 
 import PopOver from "../../PopOver";
 import Tooltip from "../index";
 import { BOTTOM, TOP, LEFT, RIGHT } from "../../constants";
 import { constants } from "../../../theme";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 jest.mock("../../PopOver/PopOverPortal", () => ({ children }) => children);
 
@@ -571,59 +567,24 @@ describe("Tooltip", () => {
     spy.mockRestore();
   });
 
-  describe("tooltip Async Refresh", () => {
-    const content = [
-      `This is a basic tooltip. If there is a need for multiple lines, it grows downward.`,
+  describe("tooltip refresh", () => {
+    let element;
 
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices. 
-      Eget aliquet nibh praesent tristique magna.`,
+    beforeEach(() => {
+      const tooltip = renderer.create(<Tooltip isVisible>test</Tooltip>);
 
-      `Ut lectus arcu bibendum at varius vel. Vitae nunc sed velit dignissim sodales ut eu sem. 
-      Velit sed ullamcorper morbi tincidunt ornare massa. Praesent elementum facilisis leo vel 
-      fringilla est ullamcorper eget. Mauris commodo quis imperdiet massa tincidunt nunc. Tellus
-      in hac habitasse platea dictumst vestibulum rhoncus. Et odio pellentesque diam volutpat. 
-      Sed id semper risus in. Ut venenatis tellus in metus vulputate eu. Vitae auctor eu augue ut
-      lectus.`
-    ];
+      element = {
+        style: {}
+      };
 
-    const renderComponent = (index, refresh) =>
-      mount(
-        <Tooltip asyncRefresh={refresh} isVisible>
-          {content[index]}
-        </Tooltip>
-      );
+      tooltip.getInstance().myRef.current = element;
 
-    it("should load tooltip contents and content changes asyncronously", () =>
-      Promise.resolve(renderComponent(0, false))
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[0]);
-          expect(response.instance().props.asyncRefresh).toEqual(false);
-          expect(response.instance().state.asyncRefresh).toEqual(true);
+      tooltip.getInstance().refresh();
+    });
 
-          response.setProps({
-            children: content[1],
-            asyncRefresh: true
-          });
-
-          return response;
-        })
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[1]);
-          expect(response.instance().props.asyncRefresh).toEqual(true);
-          expect(response.instance().state.asyncRefresh).toEqual(false);
-
-          response.setProps({
-            children: content[2],
-            asyncRefresh: false
-          });
-
-          return response;
-        })
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[2]);
-          expect(response.instance().props.asyncRefresh).toEqual(false);
-          expect(response.instance().state.asyncRefresh).toEqual(true);
-        }));
+    it("should force a update the position", () => {
+      expect(element.style.top).toBeTruthy();
+      expect(element.style.left).toBeTruthy();
+    });
   });
 });
