@@ -215,6 +215,66 @@ describe("Tooltip", () => {
       });
       spy.mockRestore();
     });
+
+    describe("tooltip preferTop prop", () => {
+      const tooltipDimensions = {
+        width: 100,
+        height: 100,
+        windowScroll: 100,
+        windowWidth: 1000,
+        windowHeight: 1000
+      };
+
+      const parentElementPosition = {
+        elBottom: 300,
+        elTop: 250,
+        elLeft: 250,
+        elRight: 300,
+        elHorizontalCenter: 325,
+        elWidth: 50,
+        offsetTop: 0,
+        clientHeight: 1000,
+        offsetLeft: 0,
+        clientWidth: 1000
+      };
+
+      const reduce = {
+        top: 0,
+        bottom: 0
+      };
+
+      it("calculate position for tooltip should be ABOVE parent element when preferTop = true", () => {
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 240
+        });
+      });
+
+      it("calculate position for tooltip should be BELOW parent element when preferTop = false", () => {
+        const tree = renderer.create(<Tooltip />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 410
+        });
+      });
+    });
   });
 
   it("getDimensionsFromEvent should return calculated position props from event target", () => {
