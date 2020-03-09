@@ -102,12 +102,16 @@ class Tooltip extends Component {
     spaceFromMouse,
     reduce
   }) => {
+    const { preferTop } = this.props;
+
     const result = PopOver.calculatePosition({
       position,
       dimensions,
       spaceFromMouse,
-      reduce
+      reduce,
+      preferTop
     });
+
     const { actualDirection, arrowAdjustment } = this.state;
 
     const adjustment = this.adjustArrow({
@@ -369,7 +373,8 @@ Tooltip.propTypes = {
   variant: PropTypes.oneOf(VARIANTS),
   spaceFromMouse: PropTypes.number,
   reduceTop: PropTypes.number,
-  reduceBottom: PropTypes.number
+  reduceBottom: PropTypes.number,
+  preferTop: PropTypes.bool
 };
 
 Tooltip.defaultProps = {
@@ -387,7 +392,8 @@ Tooltip.defaultProps = {
   },
   spaceFromMouse: SPACE_FROM_MOUSE,
   reduceTop: 0,
-  reduceBottom: 0
+  reduceBottom: 0,
+  preferTop: false
 };
 
 Tooltip.displayName = "Tooltip";

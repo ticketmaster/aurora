@@ -83,7 +83,8 @@ class PopOver extends Component {
     dimensions,
     reduce,
     inlineWithTarget,
-    spaceFromMouse
+    spaceFromMouse,
+    preferTop
   }) {
     const {
       width,
@@ -135,17 +136,22 @@ class PopOver extends Component {
         ? topPosition
         : bottomPosition;
 
-    return {
-      x: Math.min(
-        Math.max(elLeft + elWidth / 2 - width / 2, containerLeft),
-        windowWidth - spaceFromEdge - width,
-        containerRight
-      ),
-      y:
-        bottomPosition + height + spaceFromEdge <=
+    const getXPosition = Math.min(
+      Math.max(elLeft + elWidth / 2 - width / 2, containerLeft),
+      windowWidth - spaceFromEdge - width,
+      containerRight
+    );
+
+    const getYPosition =
+      !preferTop &&
+      bottomPosition + height + spaceFromEdge <=
         Math.min(viewportBottom, containerBottom)
-          ? bottomPosition
-          : topPositionWithFallback
+        ? bottomPosition
+        : topPositionWithFallback;
+
+    return {
+      x: getXPosition,
+      y: getYPosition
     };
   }
 
