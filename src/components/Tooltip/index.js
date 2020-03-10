@@ -112,24 +112,36 @@ class Tooltip extends Component {
       preferTop
     });
 
-    const { actualDirection, arrowAdjustment } = this.state;
-
     const adjustment = this.adjustArrow({
       coords: { x: result.x, width: dimensions.width },
       position
     });
 
-    if (
-      result.y < position.elTop + dimensions.windowScroll &&
-      (actualDirection !== TOP || arrowAdjustment !== adjustment)
-    ) {
-      this.setState({ actualDirection: TOP, arrowAdjustment: adjustment });
-    } else if (
-      result.y > position.elTop + dimensions.windowScroll &&
-      (actualDirection !== BOTTOM || arrowAdjustment !== adjustment)
-    ) {
-      this.setState({ actualDirection: BOTTOM, arrowAdjustment: adjustment });
+    let direction = null;
+
+    if (result.y < position.elTop + dimensions.windowScroll) {
+      direction = TOP;
+    } else if (result.y > position.elTop + dimensions.windowScroll) {
+      direction = BOTTOM;
     }
+
+    this.setState((prevState, props) => {
+      const { directionChanged } = props;
+      const { actualDirection, arrowAdjustment } = prevState;
+
+      if (actualDirection !== direction || arrowAdjustment !== adjustment) {
+        if (direction && directionChanged) {
+          directionChanged(direction);
+        }
+
+        return {
+          actualDirection: direction || actualDirection,
+          arrowAdjustment: adjustment
+        };
+      }
+
+      return null;
+    });
 
     return result;
   };
@@ -374,7 +386,8 @@ Tooltip.propTypes = {
   spaceFromMouse: PropTypes.number,
   reduceTop: PropTypes.number,
   reduceBottom: PropTypes.number,
-  preferTop: PropTypes.bool
+  preferTop: PropTypes.bool,
+  directionChanged: PropTypes.func
 };
 
 Tooltip.defaultProps = {
@@ -393,7 +406,8 @@ Tooltip.defaultProps = {
   spaceFromMouse: SPACE_FROM_MOUSE,
   reduceTop: 0,
   reduceBottom: 0,
-  preferTop: false
+  preferTop: false,
+  directionChanged: null
 };
 
 Tooltip.displayName = "Tooltip";

@@ -549,7 +549,8 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -560,7 +561,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: TOP,
       arrowAdjustment: 0
     });
@@ -576,7 +577,8 @@ describe("Tooltip", () => {
       actualDirection: TOP
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -587,7 +589,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: TOP,
       arrowAdjustment: 100
     });
@@ -603,7 +605,8 @@ describe("Tooltip", () => {
       actualDirection: TOP
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -614,7 +617,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: BOTTOM,
       arrowAdjustment: 0
     });
@@ -630,7 +633,7 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -641,7 +644,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: BOTTOM,
       arrowAdjustment: 10
     });
@@ -649,7 +652,7 @@ describe("Tooltip", () => {
     spy.mockRestore();
   });
 
-  it("getPositionAndUpdateDirection should not call set state", () => {
+  it("getPositionAndUpdateDirection should not change state", () => {
     const tree = renderer.create(<Tooltip />).getInstance();
     PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
     tree.adjustArrow = jest.fn(() => 0);
@@ -657,7 +660,9 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const currentState = tree.state;
+
+    const spy = jest.spyOn(tree, "setState");
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -667,7 +672,8 @@ describe("Tooltip", () => {
       }
     });
 
-    expect(spy).toHaveBeenCalledTimes(0);
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(tree.state).toEqual(currentState);
 
     spy.mockRestore();
   });
@@ -690,6 +696,63 @@ describe("Tooltip", () => {
     it("should force a update the position", () => {
       expect(element.style.top).toBeTruthy();
       expect(element.style.left).toBeTruthy();
+    });
+  });
+
+  describe("tooltip directionChanged callback", () => {
+    const callback = jest.fn();
+    let tree;
+
+    beforeEach(() => {
+      PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
+
+      tree = renderer
+        .create(<Tooltip directionChanged={callback} />)
+        .getInstance();
+
+      tree.setState({
+        actualDirection: TOP
+      });
+
+      tree.adjustArrow = jest.fn(() => 0);
+    });
+
+    afterEach(() => {
+      callback.mockRestore();
+    });
+
+    it("calls callback when direction is changed", () => {
+      tree.getPositionAndUpdateDirection({
+        position: {
+          elTop: 10
+        },
+        dimensions: {
+          windowScroll: 100
+        }
+      });
+
+      expect(callback).toHaveBeenCalledWith(BOTTOM);
+      expect(tree.state).toEqual({
+        actualDirection: BOTTOM,
+        arrowAdjustment: 0
+      });
+    });
+
+    it("does not call callback when direction remains the same", () => {
+      tree.getPositionAndUpdateDirection({
+        position: {
+          elTop: 990
+        },
+        dimensions: {
+          windowScroll: 100
+        }
+      });
+
+      expect(callback).not.toHaveBeenCalled();
+      expect(tree.state).toEqual({
+        actualDirection: TOP,
+        arrowAdjustment: 0
+      });
     });
   });
 });

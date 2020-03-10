@@ -59,7 +59,9 @@ class TooltipRestrictedAsyncDemo extends React.Component {
     isOpened: false
   };
 
-  tooltipRef = React.createRef();
+  onDirectionChanged = direction => {
+    console.log("onDirectionChanged", direction);
+  };
 
   hideTooltip = () => {
     this.setState(state => ({ ...state, isOpened: false }));
@@ -70,6 +72,8 @@ class TooltipRestrictedAsyncDemo extends React.Component {
 
     this.setState(state => ({ ...state, isOpened: true, position, preferTop }));
   };
+
+  tooltipRef = React.createRef();
 
   render() {
     const { isOpened, position, preferTop } = this.state;
@@ -108,6 +112,7 @@ class TooltipRestrictedAsyncDemo extends React.Component {
           isVisible={isOpened}
           position={{ ...position }}
           preferTop={preferTop}
+          directionChanged={this.onDirectionChanged}
         >
           {isOpened ? (
             <AsyncContent onLoad={() => this.tooltipRef.current.refresh()} />
