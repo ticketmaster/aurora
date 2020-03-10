@@ -259,6 +259,51 @@ describe("Tooltip", () => {
         });
       });
 
+      it("Tooltip should be BELOW parent element when preferTop = true and there isn't enough space above", () => {
+        const parentElementPositionAbove = {
+          elBottom: 75,
+          elTop: 25,
+          elLeft: 250,
+          elRight: 300,
+          elHorizontalCenter: 325,
+          elWidth: 50,
+          offsetTop: 0,
+          clientHeight: 1000,
+          offsetLeft: 0,
+          clientWidth: 1000
+        };
+
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPositionAbove,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 185
+        });
+      });
+
+      it("calculate position for tooltip should be ABOVE parent element when preferTop = true", () => {
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 240
+        });
+      });
+
       it("calculate position for tooltip should be BELOW parent element when preferTop = false", () => {
         const tree = renderer.create(<Tooltip />).getInstance();
         expect(
