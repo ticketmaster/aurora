@@ -59,20 +59,24 @@ class TooltipRestrictedAsyncDemo extends React.Component {
     isOpened: false
   };
 
-  tooltipRef = React.createRef();
+  onDirectionChanged = direction => {
+    console.log("onDirectionChanged", direction);
+  };
 
   hideTooltip = () => {
     this.setState(state => ({ ...state, isOpened: false }));
   };
 
-  showTooltip = e => {
+  showTooltip = (e, preferTop = false) => {
     const position = Tooltip.getDimensionsFromEvent(e);
 
-    this.setState(state => ({ ...state, isOpened: true, position }));
+    this.setState(state => ({ ...state, isOpened: true, position, preferTop }));
   };
 
+  tooltipRef = React.createRef();
+
   render() {
-    const { isOpened, position } = this.state;
+    const { isOpened, position, preferTop } = this.state;
 
     return (
       <Container>
@@ -87,14 +91,28 @@ class TooltipRestrictedAsyncDemo extends React.Component {
               onMouseEnter={this.showTooltip}
               onMouseLeave={this.hideTooltip}
             >
-              Hover for Async Tooltip
+              Hover for Async Tooltip - Bottom (default)
+            </LinkCta>
+          </TooltipButton>
+
+          <TooltipButton>
+            <LinkCta
+              onMouseEnter={e => {
+                this.showTooltip(e, true);
+              }}
+              onMouseLeave={this.hideTooltip}
+            >
+              Hover for Async Tooltip - Top
             </LinkCta>
           </TooltipButton>
         </div>
+
         <Tooltip
           ref={this.tooltipRef}
           isVisible={isOpened}
           position={{ ...position }}
+          preferTop={preferTop}
+          directionChanged={this.onDirectionChanged}
         >
           {isOpened ? (
             <AsyncContent onLoad={() => this.tooltipRef.current.refresh()} />
