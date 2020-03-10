@@ -136,13 +136,13 @@ class PopOver extends Component {
         ? topPosition
         : bottomPosition;
 
-    const Xposition = Math.min(
+    const xPosition = Math.min(
       Math.max(elLeft + elWidth / 2 - width / 2, containerLeft),
       windowWidth - spaceFromEdge - width,
       containerRight
     );
 
-    const Yposition =
+    const yPosition =
       !preferTop &&
       bottomPosition + height + spaceFromEdge <=
         Math.min(viewportBottom, containerBottom)
@@ -150,8 +150,8 @@ class PopOver extends Component {
         : topPositionWithFallback;
 
     return {
-      x: Xposition,
-      y: Yposition
+      x: xPosition,
+      y: yPosition
     };
   }
 
