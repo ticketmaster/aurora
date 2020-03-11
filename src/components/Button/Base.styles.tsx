@@ -89,6 +89,8 @@ interface StyledButtonProps {
   readonly size: Size;
   readonly variant: ButtonVariant;
   readonly noTransform?: boolean;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 const getPadding = ({ size }) => SIZES[size].padding;

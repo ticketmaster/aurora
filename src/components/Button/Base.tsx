@@ -19,7 +19,7 @@ export interface ButtonProps {
   readonly size: Size;
   readonly icon: any;
   disabled?: boolean;
-  type?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 export interface ButtonLinkProps extends ButtonProps {
