@@ -21,8 +21,9 @@ if (typeof Array.prototype.flatMap !== "function") {
 
 const srcPath = path.resolve(__dirname, "..", "src");
 const libPath = path.resolve(__dirname, "..", "lib");
-const exportPattern = /(?<=\s*export[\s\n\r]+(default|class|const|var|let)[\s\n\r]+\{?[^=]*)[^{\s\n\r,;=}]+(?=[^}]*}?\s*(=|;).*)/gm;
-const exportSymbolsPattern = /^\s*export\s*\{[^}]*}[^;]*;/gm;
+const exportPattern = /\s*export[\s\n\r]+(?:class|function|const|var|let)[\s\n\r]+([a-zA-Z][a-zA-Z0-9_$]*)/gm;
+const exportDefaultPattern = /\s*export[\s\n\r]+default\b/gm;
+const exportSymbolsPattern = /^\s*export\s*(const|let|var)?\s*\{[^}]*}[^;=]*/gm;
 const fromPattern = /\bfrom\b/;
 const symbolPattern = /[{,][\s\n\r]*([A-Za-z0-9_$]+)(?:[\s\n\r]+as[\s\n\r]+([A-Za-z0-9_$]+))?/g;
 
@@ -69,10 +70,8 @@ const noext = (strings, ...values) =>
 
 const stubExports = content =>
   [
-    matches(content, exportPattern).map(
-      match =>
-        match[1] === "default" ? stubDefaultExport() : stubNamedExport(match[0])
-    ),
+    matches(content, exportPattern).map(match => stubNamedExport(match[1])),
+    matches(content, exportDefaultPattern).map(() => stubDefaultExport()),
     matches(content, exportSymbolsPattern)
       .map(match => match[0])
       .filter(str => fromPattern.test(str)),

@@ -38,4 +38,58 @@ describe("declarejs, when generating types", () => {
       ).toEqual(["export const Provider: any;", "export const Consumer: any;"]);
     });
   });
+
+  describe("for a class export", () => {
+    it("should generate a single export", () => {
+      const code = `
+        import React from 'react';
+
+        export class Modal extends React.Component {
+          state = {
+            open: false
+          }
+        }
+      `;
+
+      expect(cleanLines(generateStub(code))).toEqual([
+        "export const Modal: any;"
+      ]);
+    });
+  });
+
+  describe("for a function export", () => {
+    it("should generate a single export", () => {
+      const code = `
+        import React from 'react';
+
+        export function test() {
+          const state = {
+            open: false
+          };
+        }
+      `;
+
+      expect(cleanLines(generateStub(code))).toEqual([
+        "export const test: any;"
+      ]);
+    });
+  });
+
+  describe("for a export default of literal object", () => {
+    it("should generate a single export", () => {
+      const code = `
+          export default {
+          Link,
+          LinkList,
+          LinkListItem,
+          LinkRow
+        };
+        `;
+
+      expect(cleanLines(generateStub(code))).toEqual([
+        "declare const component: any;",
+        "export default component;"
+      ]);
+    });
+  });
 });
