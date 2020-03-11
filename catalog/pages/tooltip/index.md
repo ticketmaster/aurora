@@ -27,6 +27,14 @@ rows:
     Type: Object
     Default: all props are 0
     Notes: This prop is generated from Tooltip.getDimensionsFromEvent(e, parent) static function. The function should receive the event that triggers the Tooltip (usually hover). Secondary parameter that restricts tooltip to be visible in a certain container. Work only if direction is auto
+  - Prop: preferTop
+    Type: boolean
+    Default: 'false'
+    Notes: Currently when prop is set to AUTO, the tooltip will display by default to BOTTOM of the parent element if space exists.  Set this prop to true to set display default to TOP of parent element
+  - Prop: directionChanged
+    Type: func
+    Default: 'null'
+    Notes: Callback function that can be passed to parent component when tooltip direction changes
 ```
 
 ```react
@@ -58,21 +66,27 @@ rows:
 </div>
 ```
 
-#### Async Tooltip
+#### Manual Refresh
 
-- Tooltip content is refreshed while visible when Prop `asyncRefresh` is set to `true` or `false` (default `null`)
-- If `asyncRefresh` prop is set to `null` tooltip will only refresh when tooltip visibility (prop: `isVisible`) is set to `false`
-- `asyncRefresh` prop will need to be changed in the parent in order for the tooltip to refresh content.
+- If the content of a tooltip can change while the tooltip is visible, you can call a `refresh()` method on the component to reset the position based on the content.
 
 Example: hover over tooltip for more than 2 sec
 
 ```react
-span: 2
+span: 5
 ---
 <div>
   <TooltipRestrictedAsyncDemo />
 </div>
 ```
+
+#### Notes about PROP: preferTop
+
+- Currently when prop: `direction` is not set, the tooltip will display by default under the parent element if space exists. You can set prop: `preferTop = true` to display tooltip above parent element by default.
+
+#### Notes about PROP: directionChanged
+
+- `directionChanged` prop is a callback function can be passed from parent component and will be triggered when tooltip direction changes, a string `direction` is passed to the callback indicating the new direction of the tooltip. (see console when rolling over above examples)
 
 ### Seat Tooltip
 

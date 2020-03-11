@@ -1,14 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import Enzyme, { mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
 
 import PopOver from "../../PopOver";
 import Tooltip from "../index";
 import { BOTTOM, TOP, LEFT, RIGHT } from "../../constants";
 import { constants } from "../../../theme";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 jest.mock("../../PopOver/PopOverPortal", () => ({ children }) => children);
 
@@ -218,6 +214,111 @@ describe("Tooltip", () => {
         y: 130
       });
       spy.mockRestore();
+    });
+
+    describe("tooltip preferTop prop", () => {
+      const tooltipDimensions = {
+        width: 100,
+        height: 100,
+        windowScroll: 100,
+        windowWidth: 1000,
+        windowHeight: 1000
+      };
+
+      const parentElementPosition = {
+        elBottom: 300,
+        elTop: 250,
+        elLeft: 250,
+        elRight: 300,
+        elHorizontalCenter: 325,
+        elWidth: 50,
+        offsetTop: 0,
+        clientHeight: 1000,
+        offsetLeft: 0,
+        clientWidth: 1000
+      };
+
+      const reduce = {
+        top: 0,
+        bottom: 0
+      };
+
+      it("calculate position for tooltip should be ABOVE parent element when preferTop = true", () => {
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 240
+        });
+      });
+
+      it("Tooltip should be BELOW parent element when preferTop = true and there isn't enough space above", () => {
+        const parentElementPositionAbove = {
+          elBottom: 75,
+          elTop: 25,
+          elLeft: 250,
+          elRight: 300,
+          elHorizontalCenter: 325,
+          elWidth: 50,
+          offsetTop: 0,
+          clientHeight: 1000,
+          offsetLeft: 0,
+          clientWidth: 1000
+        };
+
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPositionAbove,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 185
+        });
+      });
+
+      it("calculate position for tooltip should be ABOVE parent element when preferTop = true", () => {
+        const tree = renderer.create(<Tooltip preferTop />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 240
+        });
+      });
+
+      it("calculate position for tooltip should be BELOW parent element when preferTop = false", () => {
+        const tree = renderer.create(<Tooltip />).getInstance();
+        expect(
+          tree.calculatePosition({
+            direction: "auto",
+            position: parentElementPosition,
+            reduce,
+            spaceFromMouse: 10,
+            dimensions: tooltipDimensions
+          })
+        ).toEqual({
+          x: 225,
+          y: 410
+        });
+      });
     });
   });
 
@@ -448,7 +549,8 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -459,7 +561,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: TOP,
       arrowAdjustment: 0
     });
@@ -475,7 +577,8 @@ describe("Tooltip", () => {
       actualDirection: TOP
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -486,7 +589,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: TOP,
       arrowAdjustment: 100
     });
@@ -502,7 +605,8 @@ describe("Tooltip", () => {
       actualDirection: TOP
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
+
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -513,7 +617,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: BOTTOM,
       arrowAdjustment: 0
     });
@@ -529,7 +633,7 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const spy = jest.spyOn(tree, "setState");
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -540,7 +644,7 @@ describe("Tooltip", () => {
     });
 
     expect(spy).toHaveBeenCalledTimes(1);
-    expect(spy).toHaveBeenCalledWith({
+    expect(tree.state).toEqual({
       actualDirection: BOTTOM,
       arrowAdjustment: 10
     });
@@ -548,7 +652,7 @@ describe("Tooltip", () => {
     spy.mockRestore();
   });
 
-  it("getPositionAndUpdateDirection should not call set state", () => {
+  it("getPositionAndUpdateDirection should not change state", () => {
     const tree = renderer.create(<Tooltip />).getInstance();
     PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
     tree.adjustArrow = jest.fn(() => 0);
@@ -556,7 +660,9 @@ describe("Tooltip", () => {
       actualDirection: BOTTOM
     });
 
-    const spy = jest.spyOn(tree, "setState").mockImplementation(() => {});
+    const currentState = tree.state;
+
+    const spy = jest.spyOn(tree, "setState");
     tree.getPositionAndUpdateDirection({
       position: {
         elTop: 10
@@ -566,64 +672,87 @@ describe("Tooltip", () => {
       }
     });
 
-    expect(spy).toHaveBeenCalledTimes(0);
+    expect(spy).toHaveBeenCalledTimes(1);
+    expect(tree.state).toEqual(currentState);
 
     spy.mockRestore();
   });
 
-  describe("tooltip Async Refresh", () => {
-    const content = [
-      `This is a basic tooltip. If there is a need for multiple lines, it grows downward.`,
+  describe("tooltip refresh", () => {
+    let element;
 
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices. 
-      Eget aliquet nibh praesent tristique magna.`,
+    beforeEach(() => {
+      const tooltip = renderer.create(<Tooltip isVisible>test</Tooltip>);
 
-      `Ut lectus arcu bibendum at varius vel. Vitae nunc sed velit dignissim sodales ut eu sem. 
-      Velit sed ullamcorper morbi tincidunt ornare massa. Praesent elementum facilisis leo vel 
-      fringilla est ullamcorper eget. Mauris commodo quis imperdiet massa tincidunt nunc. Tellus
-      in hac habitasse platea dictumst vestibulum rhoncus. Et odio pellentesque diam volutpat. 
-      Sed id semper risus in. Ut venenatis tellus in metus vulputate eu. Vitae auctor eu augue ut
-      lectus.`
-    ];
+      element = {
+        style: {}
+      };
 
-    const renderComponent = (index, refresh) =>
-      mount(
-        <Tooltip asyncRefresh={refresh} isVisible>
-          {content[index]}
-        </Tooltip>
-      );
+      tooltip.getInstance().myRef.current = element;
 
-    it("should load tooltip contents and content changes asyncronously", () =>
-      Promise.resolve(renderComponent(0, false))
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[0]);
-          expect(response.instance().props.asyncRefresh).toEqual(false);
-          expect(response.instance().state.asyncRefresh).toEqual(true);
+      tooltip.getInstance().refresh();
+    });
 
-          response.setProps({
-            children: content[1],
-            asyncRefresh: true
-          });
+    it("should force a update the position", () => {
+      expect(element.style.top).toBeTruthy();
+      expect(element.style.left).toBeTruthy();
+    });
+  });
 
-          return response;
-        })
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[1]);
-          expect(response.instance().props.asyncRefresh).toEqual(true);
-          expect(response.instance().state.asyncRefresh).toEqual(false);
+  describe("tooltip directionChanged callback", () => {
+    const callback = jest.fn();
+    let tree;
 
-          response.setProps({
-            children: content[2],
-            asyncRefresh: false
-          });
+    beforeEach(() => {
+      PopOver.calculatePosition = jest.fn(() => ({ x: 10, y: 1000 }));
 
-          return response;
-        })
-        .then(response => {
-          expect(response.instance().props.children).toEqual(content[2]);
-          expect(response.instance().props.asyncRefresh).toEqual(false);
-          expect(response.instance().state.asyncRefresh).toEqual(true);
-        }));
+      tree = renderer
+        .create(<Tooltip directionChanged={callback} />)
+        .getInstance();
+
+      tree.setState({
+        actualDirection: TOP
+      });
+
+      tree.adjustArrow = jest.fn(() => 0);
+    });
+
+    afterEach(() => {
+      callback.mockRestore();
+    });
+
+    it("calls callback when direction is changed", () => {
+      tree.getPositionAndUpdateDirection({
+        position: {
+          elTop: 10
+        },
+        dimensions: {
+          windowScroll: 100
+        }
+      });
+
+      expect(callback).toHaveBeenCalledWith(BOTTOM);
+      expect(tree.state).toEqual({
+        actualDirection: BOTTOM,
+        arrowAdjustment: 0
+      });
+    });
+
+    it("does not call callback when direction remains the same", () => {
+      tree.getPositionAndUpdateDirection({
+        position: {
+          elTop: 990
+        },
+        dimensions: {
+          windowScroll: 100
+        }
+      });
+
+      expect(callback).not.toHaveBeenCalled();
+      expect(tree.state).toEqual({
+        actualDirection: TOP,
+        arrowAdjustment: 0
+      });
+    });
   });
 });

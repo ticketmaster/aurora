@@ -38,25 +38,8 @@ class Tooltip extends Component {
 
     this.state = {
       actualDirection: props.direction,
-      arrowAdjustment: 0,
-      asyncRefresh: false
+      arrowAdjustment: 0
     };
-  }
-
-  componentDidMount() {
-    if (this.props.asyncRefresh !== null) {
-      this.asyncRefresh();
-    }
-  }
-
-  componentDidUpdate(nextProps, prevState) {
-    if (
-      this.props.isVisible &&
-      nextProps.asyncRefresh !== null &&
-      nextProps.asyncRefresh !== prevState.asyncRefresh
-    ) {
-      this.asyncRefresh();
-    }
   }
 
   /*
@@ -119,30 +102,46 @@ class Tooltip extends Component {
     spaceFromMouse,
     reduce
   }) => {
+    const { preferTop } = this.props;
+
     const result = PopOver.calculatePosition({
       position,
       dimensions,
       spaceFromMouse,
-      reduce
+      reduce,
+      preferTop
     });
-    const { actualDirection, arrowAdjustment } = this.state;
 
     const adjustment = this.adjustArrow({
       coords: { x: result.x, width: dimensions.width },
       position
     });
 
-    if (
-      result.y < position.elTop + dimensions.windowScroll &&
-      (actualDirection !== TOP || arrowAdjustment !== adjustment)
-    ) {
-      this.setState({ actualDirection: TOP, arrowAdjustment: adjustment });
-    } else if (
-      result.y > position.elTop + dimensions.windowScroll &&
-      (actualDirection !== BOTTOM || arrowAdjustment !== adjustment)
-    ) {
-      this.setState({ actualDirection: BOTTOM, arrowAdjustment: adjustment });
+    let direction = null;
+
+    if (result.y < position.elTop + dimensions.windowScroll) {
+      direction = TOP;
+    } else if (result.y > position.elTop + dimensions.windowScroll) {
+      direction = BOTTOM;
     }
+
+    this.setState((prevState, props) => {
+      const { directionChanged } = props;
+      const { actualDirection, arrowAdjustment } = prevState;
+
+      if (actualDirection !== direction || arrowAdjustment !== adjustment) {
+        if (direction && directionChanged) {
+          directionChanged(direction);
+        }
+
+        return {
+          actualDirection: direction || actualDirection,
+          arrowAdjustment: adjustment
+        };
+      }
+
+      return null;
+    });
 
     return result;
   };
@@ -162,19 +161,13 @@ class Tooltip extends Component {
   };
 
   /* 
-   * Function that forces a re-render of the tooltip when tooltip children
-   * are updated asyncronously.
+   * Function that forces a re-render of the tooltip
    */
-
-  asyncRefresh = () => {
+  refresh = () => {
     if (this.props.isVisible) {
       this.tooltipEnter();
       this.tooltipEntering();
     }
-
-    this.setState({
-      asyncRefresh: !this.state.asyncRefresh
-    });
   };
 
   adjustArrow = ({ coords, position }) => {
@@ -393,7 +386,8 @@ Tooltip.propTypes = {
   spaceFromMouse: PropTypes.number,
   reduceTop: PropTypes.number,
   reduceBottom: PropTypes.number,
-  asyncRefresh: PropTypes.bool
+  preferTop: PropTypes.bool,
+  directionChanged: PropTypes.func
 };
 
 Tooltip.defaultProps = {
@@ -412,7 +406,8 @@ Tooltip.defaultProps = {
   spaceFromMouse: SPACE_FROM_MOUSE,
   reduceTop: 0,
   reduceBottom: 0,
-  asyncRefresh: null
+  preferTop: false,
+  directionChanged: null
 };
 
 Tooltip.displayName = "Tooltip";
