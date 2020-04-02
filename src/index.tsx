@@ -250,3 +250,4 @@ export {
 export { default as getThemeValue } from "./utils/getThemeValue";
 export { default as keyCharCodes } from "./utils/keyCharCodes";
 export { default as composeHandlers } from "./utils/composeHandlers";
+export { pathOr, path } from "./utils/paths";
