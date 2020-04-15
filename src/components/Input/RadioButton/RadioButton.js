@@ -70,6 +70,7 @@ const RadioButton = ({
               })}
               id={`${name + value}label`}
               theme={props.theme}
+              role="radio"
             >
               <RadioInput
                 value={value}

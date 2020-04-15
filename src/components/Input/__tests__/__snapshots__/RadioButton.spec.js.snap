@@ -180,10 +180,13 @@ Object {
 }
 
 <div>
-    <div>
+    <div
+      role="radiogroup"
+    >
       <label
         class="radio-button--small c0"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
@@ -413,10 +416,13 @@ Object {
 }
 
 <div>
-    <div>
+    <div
+      role="radiogroup"
+    >
       <label
         class="radio-button--small c0"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
@@ -654,10 +660,13 @@ Object {
 }
 
 <div>
-    <div>
+    <div
+      role="radiogroup"
+    >
       <label
         class="radio-button--small c0"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
@@ -888,10 +897,13 @@ Object {
 }
 
 <div>
-    <div>
+    <div
+      role="radiogroup"
+    >
       <label
         class="radio-button--small c0"
         id="name1valuelabel"
+        role="radio"
       >
         <input
           aria-checked="false"
