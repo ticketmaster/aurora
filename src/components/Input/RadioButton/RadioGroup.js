@@ -5,7 +5,9 @@ import KeyBoardProvider from "../../KeyboardNavigation/Provider";
 
 const RadioGroup = ({ onChange, children, value, ...props }) => (
   <Provider onChange={onChange} isMultiSelect={false} value={value}>
-    <KeyBoardProvider {...props}>{children}</KeyBoardProvider>
+    <KeyBoardProvider role="radiogroup" {...props}>
+      {children}
+    </KeyBoardProvider>
   </Provider>
 );
 
