@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import classnames from "classnames";
 
 import { TabsProvider, TabsConsumer } from "./TabsProvider";
 import { Text } from "../Text";
@@ -9,10 +10,7 @@ import { largeAndUp, smallAndUp } from "../../theme/mediaQueries";
 
 const padding = spacing.moderate;
 
-const Container = styled.div.attrs({
-  className: props =>
-    props.areTabsOverflow ? "tabs__container--overflowed" : null
-})`
+const Container = styled.div`
   ${smallAndUp`
     &.tabs__container--overflowed:after {
       width: 100%;
@@ -45,8 +43,6 @@ const Container = styled.div.attrs({
 `;
 
 const Content = styled.div.attrs({
-  className: props =>
-    props.areTabsOverflow ? "tabs__content--overflowed" : null,
   role: "tablist"
 })`
   ${smallAndUp`
@@ -89,7 +85,7 @@ const Tab = styled.div`
 const checkIfOverflows = (content = {}) => {
   if (!content) return false;
 
-  const { offsetWidth = 0, scrollWidth = 0 } = content
+  const { offsetWidth = 0, scrollWidth = 0 } = content;
   return offsetWidth < scrollWidth;
 };
 
@@ -236,14 +232,18 @@ class Tabs extends Component {
 
     return (
       <Container
-        areTabsOverflow={this.state.isTabsContainerOverflows}
         withBorderBottom={withBorderBottom}
+        className={classnames({
+          "tabs__container--overflowed": this.state.isTabsContainerOverflows
+        })}
       >
         <Content
+          className={classnames({
+            "tabs__content--overflowed": this.state.isTabsContainerOverflows
+          })}
           ref={ref => {
             this.content = ref;
           }}
-          areTabsOverflow={this.state.isTabsContainerOverflows}
         >
           {this.renderItems()}
         </Content>
