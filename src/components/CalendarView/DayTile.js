@@ -7,12 +7,11 @@ import { getThemeValue } from "../../utils";
 const DAY_TILE_CLASS = "day-tile";
 const DAY_TILE_NO_BORDER_RADIUS_CLASS = `${DAY_TILE_CLASS}--no-border-radius`;
 
-const DayTile = styled.div.attrs({
-  className: ({ noBorderRadius }) =>
-    classnames(DAY_TILE_CLASS, {
-      [DAY_TILE_NO_BORDER_RADIUS_CLASS]: noBorderRadius
-    })
-})`
+const DayTile = styled.div.attrs(({ noBorderRadius }) => ({
+  className: classnames(DAY_TILE_CLASS, {
+    [DAY_TILE_NO_BORDER_RADIUS_CLASS]: noBorderRadius
+  })
+}))`
   position: relative;
   display: flex;
   flex-flow: column nowrap;

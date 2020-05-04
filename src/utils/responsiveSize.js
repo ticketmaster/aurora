@@ -16,6 +16,7 @@ export const responsiveSizeMixin = size =>
         ]};
 
         ${size.small &&
+          typeof size.small === "string" &&
           smallAndUp`
     font-size: ${typography.size[size.small]};
   `};

@@ -229,6 +229,7 @@ class DropDownGroup extends React.Component {
       icon,
       chevronVisible,
       fullWidth,
+      onDropDownToggle,
       ...props
     } = this.props;
     const {
