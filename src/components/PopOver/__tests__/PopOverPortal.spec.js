@@ -5,12 +5,19 @@ import ReactDOM from "react-dom";
 import Portal from "../PopOverPortal";
 
 describe("PopOverPortal", () => {
-  let getTimeMock;
   let mock;
 
   beforeEach(() => {
-    getTimeMock = jest.fn(() => 1234);
-    global.Date = jest.fn(() => ({ getTime: getTimeMock }));
+    const currentDate = new Date("2019-05-14T11:01:58.135Z");
+    global.Date = class extends Date {
+      constructor(date) {
+        if (date) {
+          // eslint-disable-next-line constructor-super
+          return super(date);
+        }
+        return currentDate;
+      }
+    };
 
     mock = jest
       .spyOn(ReactDOM, "createPortal")

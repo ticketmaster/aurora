@@ -78,13 +78,13 @@ exports[`StatusBadgeGroup should match snapshot 1`] = `
   className="c0"
 >
   <div
-    className="badge c1"
+    className="c1 badge"
     color="#d3d3d3"
   >
     error
   </div>
   <div
-    className="badge c2"
+    className="c2 badge"
     color="#f0f0f0"
   >
     caution

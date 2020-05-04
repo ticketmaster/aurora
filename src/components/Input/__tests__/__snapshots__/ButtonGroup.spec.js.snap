@@ -18,7 +18,7 @@ Object {
   padding-bottom: 16px;
 }
 
-.c3 {
+.c2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
@@ -26,7 +26,7 @@ Object {
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c4 {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
@@ -34,12 +34,12 @@ Object {
   color: rgba(38,38,38,0.65);
 }
 
-.c4 {
+.c5 {
   line-height: 1.25;
   text-transform: uppercase;
 }
 
-.c9 {
+.c8 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -59,23 +59,23 @@ Object {
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c9:focus {
+.c8:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c9:hover {
+.c8:hover {
   background-color: rgba(255,255,255,1);
 }
 
-.c9:active {
+.c8:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(255,255,255,1);
 }
 
-.c9:disabled {
+.c8:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -85,11 +85,11 @@ Object {
   opacity: 0.2;
 }
 
-.c9.noFocus:focus {
+.c8.noFocus:focus {
   box-shadow: none;
 }
 
-.c9.iconed svg {
+.c8.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -108,21 +108,21 @@ Object {
   padding-left: 4px;
 }
 
-.c8 {
+.c9 {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 8px;
 }
 
-.c8:hover {
+.c9:hover {
   border: solid 1px #026cdf;
 }
 
-.c8:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c8.button__selected {
+.c9.button__selected {
   background-color: rgba(2,108,223,0.1);
   border: solid 1px #026cdf;
 }
@@ -131,7 +131,7 @@ Object {
   padding: 24px 16px 0 16px;
 }
 
-.c2 {
+.c3 {
   line-height: 1.25;
 }
 
@@ -171,7 +171,7 @@ Object {
         class="c1"
       >
         <div
-          class="text text--dark text--primary c2 c3"
+          class="c2 text text--dark text--primary c3"
         >
           Sort by
         </div>
@@ -183,7 +183,7 @@ Object {
           class="c1"
         >
           <div
-            class="text text--dark text--secondary c4 c5"
+            class="c4 text text--dark text--secondary c5"
           >
             Category
           </div>
@@ -195,7 +195,7 @@ Object {
             class="c7"
           >
             <button
-              class="button__selected c8  noFocus c9"
+              class="c8 c9 button__selected  noFocus"
               data-testid="test-button0"
             >
               All
@@ -205,7 +205,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8  noFocus c9"
+              class="c8 c9  noFocus"
               data-testid="test-button1"
             >
               Concerts
@@ -215,7 +215,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8  noFocus c9"
+              class="c8 c9  noFocus"
               data-testid="test-button2"
             >
               Button Label
@@ -277,7 +277,7 @@ Object {
   padding-bottom: 16px;
 }
 
-.c3 {
+.c2 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
@@ -285,7 +285,7 @@ Object {
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c4 {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
@@ -293,12 +293,12 @@ Object {
   color: rgba(38,38,38,0.65);
 }
 
-.c4 {
+.c5 {
   line-height: 1.25;
   text-transform: uppercase;
 }
 
-.c9 {
+.c8 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -318,23 +318,23 @@ Object {
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c9:focus {
+.c8:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c9:hover {
+.c8:hover {
   background-color: rgba(255,255,255,1);
 }
 
-.c9:active {
+.c8:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: rgba(255,255,255,1);
 }
 
-.c9:disabled {
+.c8:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -344,11 +344,11 @@ Object {
   opacity: 0.2;
 }
 
-.c9.noFocus:focus {
+.c8.noFocus:focus {
   box-shadow: none;
 }
 
-.c9.iconed svg {
+.c8.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -367,21 +367,21 @@ Object {
   padding-left: 4px;
 }
 
-.c8 {
+.c9 {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 8px;
 }
 
-.c8:hover {
+.c9:hover {
   border: solid 1px #026cdf;
 }
 
-.c8:focus {
+.c9:focus {
   box-shadow: none;
 }
 
-.c8.button__selected {
+.c9.button__selected {
   background-color: rgba(2,108,223,0.1);
   border: solid 1px #026cdf;
 }
@@ -390,7 +390,7 @@ Object {
   padding: 24px 16px 0 16px;
 }
 
-.c2 {
+.c3 {
   line-height: 1.25;
 }
 
@@ -430,7 +430,7 @@ Object {
         class="c1"
       >
         <div
-          class="text text--dark text--primary c2 c3"
+          class="c2 text text--dark text--primary c3"
         >
           Sort by
         </div>
@@ -442,7 +442,7 @@ Object {
           class="c1"
         >
           <div
-            class="text text--dark text--secondary c4 c5"
+            class="c4 text text--dark text--secondary c5"
           >
             Category
           </div>
@@ -454,7 +454,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8  noFocus c9"
+              class="c8 c9  noFocus"
               data-testid="test-button0"
             >
               All
@@ -464,7 +464,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8  noFocus c9"
+              class="c8 c9  noFocus"
               data-testid="test-button1"
             >
               Concerts
@@ -474,7 +474,7 @@ Object {
             class="c7"
           >
             <button
-              class="c8  noFocus c9"
+              class="c8 c9  noFocus"
               data-testid="test-button2"
             >
               Button Label

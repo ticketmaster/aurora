@@ -15,14 +15,13 @@ const DayTileDateContainer = styled.div`
   align-items: center;
   background-color: ${getThemeValue("white", "base")};
 `;
-const DayTileDateText = styled(Text).attrs({
+const DayTileDateText = styled(Text).attrs(({ isAccent }) => ({
   size: "kilo",
   weight: "semiBold",
-  className: ({ isAccent }) =>
-    classnames("day-tile-date__text", {
-      "day-tile-date__text--accent": isAccent
-    })
-})`
+  className: classnames("day-tile-date__text", {
+    "day-tile-date__text--accent": isAccent
+  })
+}))`
   color: ${getThemeValue("gray02")};
 
   &.day-tile-date__text--accent {

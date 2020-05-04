@@ -273,7 +273,7 @@ exports[`<RadioInput /> should render the correct markup when additional props a
   aria-checked={false}
   aria-labelledby="genrerocklabel"
   checked={false}
-  className="input--radio-button c0"
+  className="c0 input--radio-button"
   disabled={true}
   id="genrerockinput"
   name="genre"

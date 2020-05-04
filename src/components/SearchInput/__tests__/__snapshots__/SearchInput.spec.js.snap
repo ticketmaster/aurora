@@ -163,12 +163,12 @@ exports[`SearchInput icon only should match snapshot 1`] = `
 }
 
 <div
-  className="search--container search--container-icon-only c0"
+  className="c0 search--container search--container-icon-only"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="c1 search--search-icon"
     onClick={[Function]}
     type="button"
   >
@@ -197,7 +197,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="c3 search--input"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -206,7 +206,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="c4 search--clear-icon"
     onClick={[Function]}
     type="button"
     value=""
@@ -234,7 +234,7 @@ exports[`SearchInput icon only should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="c5 search--cancel-icon"
     onClick={[Function]}
     type="button"
   >
@@ -404,12 +404,12 @@ exports[`SearchInput large should match snapshot 1`] = `
 }
 
 <div
-  className="search--container c0"
+  className="c0 search--container"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="c1 search--search-icon"
     onClick={[Function]}
     type="button"
   >
@@ -438,7 +438,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="c3 search--input"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -447,7 +447,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="c4 search--clear-icon"
     onClick={[Function]}
     type="button"
     value=""
@@ -475,7 +475,7 @@ exports[`SearchInput large should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="c5 search--cancel-icon"
     onClick={[Function]}
     type="button"
   >
@@ -634,9 +634,17 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
 }
 
 @media screen and (min-width:768px) {
+
+}
+
+@media screen and (min-width:768px) {
   .c5 {
     display: none;
   }
+}
+
+@media screen and (min-width:768px) {
+
 }
 
 @media screen and (min-width:768px) {
@@ -650,12 +658,12 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
 }
 
 <div
-  className="search--container search--container-icon-only search--container-focused c0"
+  className="c0 search--container search--container-icon-only search--container-focused"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="c1 search--search-icon"
     onClick={[Function]}
     type="button"
   >
@@ -684,7 +692,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input search--input-focused c3"
+    className="c3 search--input search--input-focused"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -693,7 +701,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="c4 search--clear-icon"
     onClick={[Function]}
     type="button"
     value=""
@@ -721,7 +729,7 @@ exports[`SearchInput mobile and focused should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="c5 search--cancel-icon"
     onClick={[Function]}
     type="button"
   >
@@ -894,12 +902,12 @@ exports[`SearchInput small should match snapshot 1`] = `
 }
 
 <div
-  className="search--container search--container-has-value c0"
+  className="c0 search--container search--container-has-value"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="c1 search--search-icon"
     onClick={[Function]}
     type="button"
   >
@@ -928,7 +936,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="c3 search--input"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -937,7 +945,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="c4 search--clear-icon"
     onClick={[Function]}
     type="button"
     value="test"
@@ -970,7 +978,7 @@ exports[`SearchInput small should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="c5 search--cancel-icon"
     onClick={[Function]}
     type="button"
   >
