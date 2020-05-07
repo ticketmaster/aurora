@@ -11,14 +11,16 @@ class CheckBoxInputComponent extends React.Component {
     isChecked: PropTypes.bool.isRequired,
     onClick: PropTypes.func.isRequired,
     onChange: PropTypes.func,
-    isFocused: PropTypes.bool
+    isFocused: PropTypes.bool,
+    isTopAligned: PropTypes.bool
   };
 
   static defaultProps = {
     size: "small",
     disabled: false,
     isFocused: false,
-    onChange: () => null
+    onChange: () => null,
+    isTopAligned: false
   };
 
   constructor(props) {
@@ -33,7 +35,14 @@ class CheckBoxInputComponent extends React.Component {
   }
 
   render() {
-    const { name, value, size, disabled, isChecked, ...props } = this.props;
+    const {
+      name,
+      value,
+      disabled,
+      isChecked,
+      isTopAligned,
+      ...props
+    } = this.props;
     return (
       <CheckBoxInput
         {...props}
@@ -43,6 +52,7 @@ class CheckBoxInputComponent extends React.Component {
         disabled={disabled}
         checked={isChecked}
         ref={this.SelectedElement}
+        isTopAligned={isTopAligned}
       />
     );
   }

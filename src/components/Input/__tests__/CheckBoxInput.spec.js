@@ -27,6 +27,12 @@ describe("<CheckBoxInput />", () => {
     expect(render(CheckBoxInput, PROPS)).toMatchSnapshot();
   });
 
+  it("should render the correct markup when isTopAligned", () => {
+    expect(
+      render(CheckBoxInput, { ...PROPS, isTopAligned: true })
+    ).toMatchSnapshot();
+  });
+
   it("should render the correct markup when the size prop equals large", () => {
     expect(
       render(CheckBoxInput, { ...PROPS, size: "large" })

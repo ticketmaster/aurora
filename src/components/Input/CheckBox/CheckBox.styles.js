@@ -8,8 +8,10 @@ export const CheckBoxWrapper = styled.label`
   outline: none;
   cursor: pointer;
   display: flex;
-  align-items: center;
-  text-align: left;
+  ${({ isTopAligned }) =>
+    isTopAligned
+      ? "align-items: flex-start;"
+      : "align-items: center;"} text-align: left;
 
   &.checkbox--disabled {
     opacity: 0.4;
@@ -29,23 +31,27 @@ export const CheckBoxText = styled.span`
   color: ${getThemeValue("gray01")};
   display: flex;
   outline: none;
-  align-items: center;
   justify-content: flex-start;
   margin-left: 7px;
   width: 90%;
+  ${({ isTopAligned }) =>
+    isTopAligned
+      ? `align-items: flex-start; flex-direction: column;`
+      : "align-items: center;"};
 `;
 
 export const CheckDivStyling = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: left;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
   color: ${getThemeValue("primary", "base")};
+  ${({ isTopAligned }) =>
+    isTopAligned ? "align-items: flex-start;" : "align-items: center;"}
   transition: opacity 0.3s ${constants.easing.elastic};
 
   .checkbox__checked & {

@@ -18,6 +18,12 @@ describe("CheckBoxGroup", () => {
     expect(renderCheckBox({ isChecked: true })).toMatchSnapshot();
   });
 
+  it("renders top aligned checked checkbox CheckBox without CheckBoxGroup", () => {
+    expect(
+      renderCheckBox({ isTopAligned: true, isChecked: true })
+    ).toMatchSnapshot();
+  });
+
   it("renders small input", () => {
     expect(renderGroupComponent({ size: "small" })).toMatchSnapshot();
   });
