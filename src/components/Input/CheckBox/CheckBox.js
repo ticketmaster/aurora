@@ -20,6 +20,7 @@ const CheckBoxButton = ({
   children,
   index,
   style,
+  isTopAligned,
   ...props
 }) => (
   <KeyBoardConsumer>
@@ -39,6 +40,7 @@ const CheckBoxButton = ({
                 checkbox__indeterminate: props.isChecked === "indeterminate",
                 checkbox__checked: isChecked
               })}
+              isTopAligned={isTopAligned}
               style={style}
             >
               <CheckBoxInput
@@ -49,6 +51,7 @@ const CheckBoxButton = ({
                 disabled={disabled}
                 size={size}
                 isChecked={isChecked}
+                isTopAligned={isTopAligned}
                 onClick={composeEventHandlers(
                   () => onClick({ value }),
                   () => focusSelected({ index }),
@@ -56,10 +59,12 @@ const CheckBoxButton = ({
                 )}
                 {...index !== null && { isFocused: focused === index }}
               />
-              <CheckDivStyling>
+              <CheckDivStyling isTopAligned={isTopAligned}>
                 <StyledCheckmark size={size === "small" ? 16 : 24} />
               </CheckDivStyling>
-              <CheckBoxText>{children}</CheckBoxText>
+              <CheckBoxText isTopAligned={isTopAligned}>
+                {children}
+              </CheckBoxText>
             </CheckBoxWrapper>
           );
         }}
@@ -77,6 +82,7 @@ CheckBoxButton.propTypes = {
   index: PropTypes.number,
   onClick: PropTypes.func,
   style: PropTypes.shape(),
+  isTopAligned: PropTypes.bool,
   isChecked: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.oneOf(["indeterminate"])
@@ -90,6 +96,7 @@ CheckBoxButton.defaultProps = {
   onClick: null,
   index: null,
   isChecked: null,
+  isTopAligned: false,
   style: {}
 };
 

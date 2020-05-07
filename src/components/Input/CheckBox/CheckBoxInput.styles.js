@@ -14,7 +14,10 @@ export default styled.input.attrs({
   border-radius: ${constants.borderRadius.small};
   display: flex;
   justify-content: center;
-  align-items: center;
+  ${({ isTopAligned, size }) =>
+    size === "small" && isTopAligned
+      ? "margin-top: 1px;"
+      : ""} align-items: center;
 
   &::-ms-check {
     display: none;

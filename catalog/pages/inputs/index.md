@@ -185,6 +185,10 @@ rows:
     Type: Function
     Default: N/A
     Notes:
+  - Prop: isTopAligned
+    Type: boolean
+    Default: "false"
+    Notes: Align layout to the top to handle custom component passed to the label
 ```
 
 ```react
@@ -195,8 +199,9 @@ span: 6
         <Row>
             <Column medium={6}  style={{ padding: "16px 0" }}>
                 <CheckBoxGroup value={["1","2","3"]}>
-                    <CheckBoxButton size="large" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                    <CheckBoxButton isTopAligned size="large" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
                         Testing One
+                        <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing One description</p>
                     </CheckBoxButton>
                     <CheckBoxButton size="large" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
                         Testing Two
@@ -208,8 +213,9 @@ span: 6
             </Column>
             <Column medium={6} style={{ padding: "16px 0" }}>
                 <CheckBoxGroup >
-                    <CheckBoxButton size="small" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
+                    <CheckBoxButton isTopAligned size="small" name="Testing One"  value="1" index={0} style={{ marginBottom: '10px' }}>
                         Testing One
+                        <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing One description</p>
                     </CheckBoxButton>
                     <CheckBoxButton size="small" name="Testing Two" value="2" index={1} style={{ marginBottom: '10px' }}>
                         Testing Two
