@@ -43,15 +43,8 @@ const AfterWrapper = styled.div`
 
 class LinkList extends Component {
   state = {
-    onItemClick: /* istanbul ignore next */ () => {}, // eslint-disable-line
     selectedIndex: this.props.selectedIndex // eslint-disable-line
   };
-
-  componentWillMount() {
-    this.setState({
-      onItemClick: this.onItemClick // eslint-disable-line
-    });
-  }
 
   onItemClick = ({ index }) => {
     this.setState({ selectedIndex: index }); // eslint-disable-line
@@ -62,7 +55,12 @@ class LinkList extends Component {
     const { children, renderAfter, onItemClick, ...rest } = this.props;
 
     return (
-      <LinkListProvider value={this.state}>
+      <LinkListProvider
+        value={{
+          ...this.state,
+          onItemClick: this.onItemClick
+        }}
+      >
         <Container {...rest}>
           <Wrapper
             className={classNames({ "wrapper--has-after": !!renderAfter })}
