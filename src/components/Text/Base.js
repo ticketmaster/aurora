@@ -8,7 +8,7 @@ import { themeShape } from "../../utils/getThemeValue";
 import { getResponsiveSize } from "../../utils/responsiveSize";
 import { THEME_TM } from "../../theme/constants";
 
-const AVAILABLE_TAGS = ["div", "span", "p", "h3", "h4", "h5", "h6"];
+const AVAILABLE_TAGS = ["div", "span", "p", "h1", "h2", "h3", "h4", "h5", "h6"];
 
 const TextBase = ({
   tag,

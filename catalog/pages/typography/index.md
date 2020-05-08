@@ -56,7 +56,7 @@ rows:
   - Prop: tag
     Type: string
     Default: div
-    Notes: Determines the tag of the underlying element. One of "div", "span", "p", "h3", "h4", "h5", and "h6".
+    Notes: Determines the tag of the underlying element. One of "div", "span", "p", "h1", "h2", "h3", "h4", "h5", and "h6".
   - Prop: variant
     Type: string
     Default: dark
