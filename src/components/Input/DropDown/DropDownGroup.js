@@ -62,6 +62,7 @@ class DropDownGroup extends React.Component {
 
   onKeyDown = e => {
     const { keyCode } = e;
+    const { keywordSearch } = this.props;
     const { isOpen } = this.state;
 
     switch (keyCode) {
@@ -88,7 +89,7 @@ class DropDownGroup extends React.Component {
         this.toggleDropdown();
         break;
       default:
-        if (!isOpen) {
+        if (!isOpen && keywordSearch) {
           this.searchKeyWord(e);
         }
         break;
@@ -292,7 +293,7 @@ class DropDownGroup extends React.Component {
                           }
                         )}
                       >
-                        {/* HiddenLabel is required for correct screen readers 
+                        {/* HiddenLabel is required for correct screen readers
                         readings when an option is selected */}
                         <HiddenLabel id={hiddenLabelId}>
                           {placeholder || label}
