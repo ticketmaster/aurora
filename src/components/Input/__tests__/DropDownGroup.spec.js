@@ -169,14 +169,27 @@ describe("DropDownGroup", () => {
   });
 
   it("Typing search word should select proper value", () => {
-    const { container, getByTestId } = renderTestComponentOne();
+    const { getByTestId, queryAllByText } = renderTestComponentOne();
 
     fireEvent.keyDown(getByTestId("test-dropContainer"), {
       key: "s",
       keyCode: 83,
       which: 83
     });
-    expect(container.firstChild).toMatchSnapshot();
+    expect(queryAllByText("Second Option")).toMatchSnapshot();
+  });
+
+  it("When search disabled typing search word should NOT select any value", () => {
+    const { getByTestId, queryAllByText } = renderTestComponentOne({
+      keywordSearch: false
+    });
+
+    fireEvent.keyDown(getByTestId("test-dropContainer"), {
+      key: "s",
+      keyCode: 83,
+      which: 83
+    });
+    expect(queryAllByText("Second Option")).toMatchSnapshot();
   });
 
   it("Click outside should close the dropdown", () => {
