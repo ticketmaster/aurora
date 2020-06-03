@@ -75,6 +75,7 @@ export const FieldInputBox = styled.input.attrs({
     min-height: 180px;
     padding-top: 11px;
     padding-bottom: 11px;
+    font-family: inherit;
   }
 
   &.text--input-left {
