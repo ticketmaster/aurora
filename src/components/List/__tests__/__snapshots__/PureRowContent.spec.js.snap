@@ -268,20 +268,20 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
 }
 
 <div
-  className="row__wrapper row__wrapper--collapsed c0"
+  className="c0 row__wrapper row__wrapper--collapsed"
 >
   <div
-    className="list__container c1"
+    className="c1 list__container"
   >
     <div
-      className="row__content c2"
+      className="sc-AxirZ c2 row__content"
     />
     <div
       className="c3"
     >
       <button
         aria-label="More Info"
-        className="button--more-info icon-button--last c4"
+        className="c4 button--more-info icon-button--last"
         data-index={0}
         onClick={[MockFunction]}
         role="button"
@@ -302,7 +302,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
     <button
       aria-expanded={false}
       aria-label="Expand Row"
-      className="button--expand-or-collapse button--collapsed c5"
+      className="c5 button--expand-or-collapse button--collapsed"
       data-index={0}
       onClick={[Function]}
       role="button"
@@ -323,7 +323,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly 1`] 
     </button>
   </div>
   <div
-    className="container__overflow container__overflow--collapsed c6"
+    className="sc-AxiKw sc-fzqAbL c6 container__overflow container__overflow--collapsed"
   >
     content
   </div>
@@ -598,15 +598,15 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
 }
 
 <div
-  className="row__wrapper row__wrapper--collapsed c0"
+  className="c0 row__wrapper row__wrapper--collapsed"
 >
   <div
-    className="list__container c1"
+    className="c1 list__container"
   >
     <button
       aria-expanded={false}
       aria-label="Expand Row"
-      className="button--expand-or-collapse button--collapsed c2"
+      className="c2 button--expand-or-collapse button--collapsed"
       data-index={0}
       onClick={[Function]}
       role="button"
@@ -626,14 +626,14 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
       </svg>
     </button>
     <div
-      className="row__content c3"
+      className="sc-AxirZ c3 row__content"
     />
     <div
       className="c4"
     >
       <button
         aria-label="More Info"
-        className="button--more-info icon-button--last c5"
+        className="c5 button--more-info icon-button--last"
         data-index={0}
         onClick={[MockFunction]}
         role="button"
@@ -653,7 +653,7 @@ exports[`<PureListRowContent /> renders standard Pure Row Content correctly with
     </div>
   </div>
   <div
-    className="container__overflow container__overflow--collapsed c6"
+    className="sc-AxiKw sc-fzqAbL c6 container__overflow container__overflow--collapsed"
   >
     content
   </div>

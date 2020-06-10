@@ -11,12 +11,11 @@ import { getThemeValue, getLabelTextColor } from "../../utils";
 
 const DAY_TILE_ITEM_CLASS_HIGHLIGHTED = "day-tile-item--highlighted";
 
-const DayTileItem = styled.article.attrs({
-  className: ({ highlighted }) =>
-    classnames({
-      [DAY_TILE_ITEM_CLASS_HIGHLIGHTED]: highlighted
-    })
-})`
+const DayTileItem = styled.article.attrs(({ highlighted }) => ({
+  className: classnames({
+    [DAY_TILE_ITEM_CLASS_HIGHLIGHTED]: highlighted
+  })
+}))`
   flex: 0 0 auto;
   display: flex;
   flex-flow: column nowrap;

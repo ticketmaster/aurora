@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DrawerProvider renders child elements 1`] = `"<div class=\\"sc-ifAKCX jCatYo\\"><div>Content</div></div>"`;
+exports[`DrawerProvider renders child elements 1`] = `"<div class=\\"sc-AxhUy ewnBcH\\"><div>Content</div></div>"`;
 
 exports[`DrawerProvider sets content 1`] = `
 .c0 {
@@ -56,7 +56,7 @@ exports[`DrawerProvider toggles drawer 1`] = `
 
 <div>
   <div
-    class="drawer--open c0"
+    class="c0 drawer--open"
   >
     <div>
       <button

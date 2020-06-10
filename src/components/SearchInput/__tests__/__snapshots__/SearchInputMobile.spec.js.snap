@@ -161,12 +161,12 @@ exports[`SearchInputMobile should match snapshot 1`] = `
 }
 
 <div
-  className="search--container c0"
+  className="c0 search--container"
   onClick={[Function]}
 >
   <button
     aria-label="Search button"
-    className="search--search-icon c1"
+    className="c1 search--search-icon"
     onClick={[Function]}
     type="button"
   >
@@ -195,7 +195,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   <input
     aria-label="Search input"
     autoComplete="off"
-    className="search--input c3"
+    className="c3 search--input"
     onChange={[Function]}
     onFocus={[Function]}
     placeholder="Search Demo"
@@ -204,7 +204,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   />
   <button
     aria-label="Clear button"
-    className="search--clear-icon c4"
+    className="c4 search--clear-icon"
     onClick={[Function]}
     type="button"
     value=""
@@ -232,7 +232,7 @@ exports[`SearchInputMobile should match snapshot 1`] = `
   </button>
   <button
     aria-label="Cancel button"
-    className="search--cancel-icon c5"
+    className="c5 search--cancel-icon"
     onClick={[Function]}
     type="button"
   >
@@ -425,12 +425,12 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
   className="c0"
 >
   <div
-    className="search--container c1"
+    className="c1 search--container"
     onClick={[Function]}
   >
     <button
       aria-label="Search button"
-      className="search--search-icon c2"
+      className="c2 search--search-icon"
       onClick={[Function]}
       type="button"
     >
@@ -459,7 +459,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     <input
       aria-label="Search input"
       autoComplete="off"
-      className="search--input c4"
+      className="c4 search--input"
       onChange={[Function]}
       onFocus={[Function]}
       placeholder="Search Demo"
@@ -468,7 +468,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     />
     <button
       aria-label="Clear button"
-      className="search--clear-icon c5"
+      className="c5 search--clear-icon"
       onClick={[Function]}
       type="button"
       value=""
@@ -496,7 +496,7 @@ exports[`SearchInputMobile should match snapshot when mobile opened 1`] = `
     </button>
     <button
       aria-label="Cancel button"
-      className="search--cancel-icon c6"
+      className="c6 search--cancel-icon"
       onClick={[Function]}
       type="button"
     >

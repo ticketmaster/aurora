@@ -14,7 +14,7 @@ exports[`PopOverPortal with no shadow DOM when rendering a portal when the ref c
 <test-portal
   container={
     <div
-      id="popover-root-1234"
+      id="popover-root-1557831718135"
     />
   }
 >
@@ -36,7 +36,7 @@ exports[`PopOverPortal with shadow DOM when rendering a portal when the ref call
 <test-portal
   container={
     <div
-      id="popover-root-1234"
+      id="popover-root-1557831718135"
     />
   }
 >

@@ -11,7 +11,7 @@ exports[`StaticImage should render correctly 1`] = `
 
 <img
   alt="Test Kitten"
-  className="image image--static c0"
+  className="c0 image image--static"
   height={9}
   src="https://placekitten.com/g/826/465"
   width={16}

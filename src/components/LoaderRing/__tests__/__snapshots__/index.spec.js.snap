@@ -10,8 +10,8 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
   display: block;
   position: absolute;
   border-radius: 100%;
-  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
-  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  -webkit-animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 
 .c0 > div:nth-child(1) {
@@ -47,8 +47,8 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
   display: block;
   position: absolute;
   border-radius: 100%;
-  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
-  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  -webkit-animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 
 .c1 > div:nth-child(1) {
@@ -84,8 +84,8 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
   display: block;
   position: absolute;
   border-radius: 100%;
-  -webkit-animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
-  animation: iVXCSc 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  -webkit-animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
+  animation: fvtopB 2s cubic-bezier(0.5,0,0.5,1) infinite;
 }
 
 .c2 > div:nth-child(1) {
@@ -113,7 +113,7 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
 }
 
 <div
-  className="c0"
+  className="sc-AxjAm c0"
   display="block"
   size="regular"
 >
@@ -121,7 +121,7 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
   <div />
   <div />
   <div
-    className="c1"
+    className="sc-AxjAm c1"
     display="block"
     size="regular"
   >
@@ -129,7 +129,7 @@ exports[`<LoaderRing /> renders LoaderRing correctly 1`] = `
     <div />
     <div />
     <div
-      className="c2"
+      className="sc-AxjAm c2"
       display="block"
       size="regular"
     >

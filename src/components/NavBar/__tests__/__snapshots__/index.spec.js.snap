@@ -1,899 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavBar renders fixed 1`] = `
-.c8 {
-  display: none;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: absolute;
-  width: 205px;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.list-container--open .c8 {
-  display: block;
-}
-
-.c8.links__list--open {
-  display: block;
-}
-
-.c9 {
-  padding: 8px;
-}
-
-.c9.wrapper--has-after {
-  padding: 8px 8px 0 8px;
-}
-
-.c6 {
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 0;
-  border: 0;
-  position: relative;
-}
-
-.links__list .c6 {
-  width: 100%;
-  text-align: left;
-}
-
-.c6:focus,
-.c6:hover {
-  outline: 0;
-}
-
-.c6.link--has-other.link--open:after {
-  content: "";
-  display: inline-block;
-  border-bottom: 4px solid #026cdf;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.c4 {
-  height: 60px;
-}
-
-.c4 .list-container {
-  position: relative;
-}
-
-.c7 {
-  top: 60px;
-  left: -74%;
-}
-
-.c5 {
-  background-color: transparent;
-  padding: 19px 16px 19px 16px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: 1px 0px 0px transparent;
-  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.nav--inverted .c5,
-.links__list .c5 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c5:visited,
-.c5:active {
-  color: rgba(255,255,255,1);
-}
-
-.nav--inverted .c5:visited,
-.nav--inverted .c5:active,
-.links__list .c5:visited,
-.links__list .c5:active {
-  color: rgba(38,38,38,1) !important;
-}
-
-.c5:focus,
-.c5:hover {
-  outline: 0;
-  background-color: rgba(38,38,38,0.1);
-}
-
-.nav--inverted .c5:focus,
-.nav--inverted .c5:hover,
-.links__list .c5:focus,
-.links__list .c5:hover {
-  background-color: #E6E6E6;
-}
-
-.c2 {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 8px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.nav--inverted .c2 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c2.nav-button--last {
-  padding-right: 16px;
-}
-
-.c2.nav-button--first {
-  padding-left: 16px;
-}
-
-.c3 {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c0 {
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 60px;
-  width: 100%;
-  font-size: 16px;
-  background-color: transparent;
-  color: rgba(255,255,255,1);
-  font-weight: 600;
-  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.c0.nav--relative {
-  position: relative;
-}
-
-.c0.nav--absolute {
-  position: absolute;
-}
-
-.c0.nav--fixed {
-  position: fixed;
-}
-
-.c0.nav--inverted {
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.c0.nav--overlay:after {
-  content: "";
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  height: 60px;
-  z-index: 4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c1 {
-  width: 100%;
-  height: 60px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  z-index: 5;
-}
-
-@media screen and (min-width:480px) {
-  .c2 {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-
-  .c2.nav-button--last {
-    padding-right: 24px;
-  }
-
-  .c2.nav-button--first {
-    padding-left: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c3 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    padding-left: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c0.nav--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0.nav--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c1 {
-    padding: 0 44px;
-  }
-}
-
-<nav
-  className="nav--fixed c0"
-  role="navigation"
-  style={
-    Object {
-      "backgroundColor": null,
-    }
-  }
->
-  <div
-    className="c1"
-  >
-    <button
-      className="c2"
-      type="button"
-    >
-      <svg
-        fill="currentcolor"
-        height={20}
-        viewBox="0 0 20 17"
-        width={20}
-      >
-        <path
-          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
-        />
-      </svg>
-    </button>
-    Content
-    <a
-      className="c3 c2"
-      href="http://localhost/new/"
-      rel={null}
-      target="_self"
-    >
-      Logo
-    </a>
-    <div
-      className="links links__row c4"
-      role="menubar"
-    >
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <a
-          className="link c5 c6"
-          href="/"
-          rel={null}
-          role="link"
-          target="_self"
-        >
-          Link 1
-        </a>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          className="link c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 2
-        </button>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          className="link c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 3
-        </button>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="link link--has-other c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 4
-        </button>
-        <div
-          className="c7 links links__list c8"
-          role="menu"
-          style={
-            Object {
-              "minWidth": "258px",
-            }
-          }
-        >
-          <div
-            className="c9"
-          >
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 5
-              </button>
-            </span>
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 6
-              </button>
-            </span>
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 7 With Really Long Content 
-              </button>
-            </span>
-          </div>
-        </div>
-      </span>
-    </div>
-  </div>
-</nav>
-`;
-
-exports[`NavBar renders inverted 1`] = `
-.c8 {
-  display: none;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: absolute;
-  width: 205px;
-  overflow: hidden;
-  background-color: rgba(255,255,255,1);
-  border-radius: 2px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.list-container--open .c8 {
-  display: block;
-}
-
-.c8.links__list--open {
-  display: block;
-}
-
-.c9 {
-  padding: 8px;
-}
-
-.c9.wrapper--has-after {
-  padding: 8px 8px 0 8px;
-}
-
-.c6 {
-  display: inline-block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  outline: 0;
-  border: 0;
-  position: relative;
-}
-
-.links__list .c6 {
-  width: 100%;
-  text-align: left;
-}
-
-.c6:focus,
-.c6:hover {
-  outline: 0;
-}
-
-.c6.link--has-other.link--open:after {
-  content: "";
-  display: inline-block;
-  border-bottom: 4px solid #026cdf;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.c4 {
-  height: 60px;
-}
-
-.c4 .list-container {
-  position: relative;
-}
-
-.c7 {
-  top: 60px;
-  left: -74%;
-}
-
-.c5 {
-  background-color: transparent;
-  padding: 19px 16px 19px 16px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: 1px 0px 0px transparent;
-  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.nav--inverted .c5,
-.links__list .c5 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c5:visited,
-.c5:active {
-  color: rgba(255,255,255,1);
-}
-
-.nav--inverted .c5:visited,
-.nav--inverted .c5:active,
-.links__list .c5:visited,
-.links__list .c5:active {
-  color: rgba(38,38,38,1) !important;
-}
-
-.c5:focus,
-.c5:hover {
-  outline: 0;
-  background-color: rgba(38,38,38,0.1);
-}
-
-.nav--inverted .c5:focus,
-.nav--inverted .c5:hover,
-.links__list .c5:focus,
-.links__list .c5:hover {
-  background-color: #E6E6E6;
-}
-
-.c2 {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex: 0 1 auto;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  background-color: transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 0;
-  height: 60px;
-  outline: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-right: 8px;
-  padding-left: 8px;
-  color: rgba(255,255,255,1);
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.nav--inverted .c2 {
-  color: rgba(38,38,38,1);
-  font-weight: 400;
-}
-
-.c2.nav-button--last {
-  padding-right: 16px;
-}
-
-.c2.nav-button--first {
-  padding-left: 16px;
-}
-
-.c3 {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.c0 {
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 60px;
-  width: 100%;
-  font-size: 16px;
-  background-color: transparent;
-  color: rgba(255,255,255,1);
-  font-weight: 600;
-  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.c0.nav--relative {
-  position: relative;
-}
-
-.c0.nav--absolute {
-  position: absolute;
-}
-
-.c0.nav--fixed {
-  position: fixed;
-}
-
-.c0.nav--inverted {
-  background-color: rgba(255,255,255,1);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
-}
-
-.c0.nav--overlay:after {
-  content: "";
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  height: 60px;
-  z-index: 4;
-  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
-}
-
-.c1 {
-  width: 100%;
-  height: 60px;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  z-index: 5;
-}
-
-@media screen and (min-width:480px) {
-  .c2 {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-
-  .c2.nav-button--last {
-    padding-right: 24px;
-  }
-
-  .c2.nav-button--first {
-    padding-left: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c3 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c3 {
-    padding-left: 24px;
-  }
-}
-
-@media screen and (min-width:480px) {
-  .c0.nav--overlay:after {
-    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c0.nav--overlay:after {
-    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
-  }
-}
-
-@media screen and (min-width:768px) {
-  .c1 {
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width:1440px) {
-  .c1 {
-    padding: 0 44px;
-  }
-}
-
-<nav
-  className="nav--relative nav--inverted c0"
-  role="navigation"
-  style={
-    Object {
-      "backgroundColor": null,
-    }
-  }
->
-  <div
-    className="c1"
-  >
-    <button
-      className="c2"
-      type="button"
-    >
-      <svg
-        fill="currentcolor"
-        height={20}
-        viewBox="0 0 20 17"
-        width={20}
-      >
-        <path
-          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
-        />
-      </svg>
-    </button>
-    <a
-      className="c3 c2"
-      href="http://localhost/new/"
-      rel={null}
-      target="_self"
-    >
-      Logo
-    </a>
-    <div
-      className="links links__row c4"
-      role="menubar"
-    >
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          className="link c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 1
-        </button>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          className="link c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 2
-        </button>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          className="link c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 3
-        </button>
-      </span>
-      <span
-        className="list-container list-container--closed"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        onMouseLeave={[Function]}
-        role="none"
-      >
-        <button
-          aria-expanded={false}
-          aria-haspopup={true}
-          className="link link--has-other c5 c6"
-          href={null}
-          role="button"
-        >
-          Link 4
-        </button>
-        <div
-          className="c7 links links__list c8"
-          role="menu"
-          style={
-            Object {
-              "minWidth": "258px",
-            }
-          }
-        >
-          <div
-            className="c9"
-          >
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 5
-              </button>
-            </span>
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 6
-              </button>
-            </span>
-            <span
-              className="list-container list-container--closed"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onMouseLeave={[Function]}
-              role="none"
-            >
-              <button
-                className="link c5 c6"
-                href={null}
-                role="button"
-              >
-                Link 7 With Really Long Content 
-              </button>
-            </span>
-          </div>
-        </div>
-      </span>
-    </div>
-  </div>
-</nav>
-`;
-
-exports[`NavBar renders with defaults 1`] = `
 .c7 {
   display: none;
   -webkit-flex-direction: column;
@@ -915,11 +22,11 @@ exports[`NavBar renders with defaults 1`] = `
   display: block;
 }
 
-.c8 {
+.c9 {
   padding: 8px;
 }
 
-.c8.wrapper--has-after {
+.c9.wrapper--has-after {
   padding: 8px 8px 0 8px;
 }
 
@@ -952,20 +59,20 @@ exports[`NavBar renders with defaults 1`] = `
   bottom: 0;
 }
 
-.c3 {
+.c4 {
   height: 60px;
 }
 
-.c3 .list-container {
+.c4 .list-container {
   position: relative;
 }
 
-.c6 {
+.c8 {
   top: 60px;
   left: -74%;
 }
 
-.c4 {
+.c6 {
   background-color: transparent;
   padding: 19px 16px 19px 16px;
   color: rgba(255,255,255,1);
@@ -976,34 +83,927 @@ exports[`NavBar renders with defaults 1`] = `
   transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.nav--inverted .c4,
-.links__list .c4 {
+.nav--inverted .c6,
+.links__list .c6 {
   color: rgba(38,38,38,1);
   font-weight: 400;
 }
 
-.c4:visited,
-.c4:active {
+.c6:visited,
+.c6:active {
   color: rgba(255,255,255,1);
 }
 
-.nav--inverted .c4:visited,
-.nav--inverted .c4:active,
-.links__list .c4:visited,
-.links__list .c4:active {
+.nav--inverted .c6:visited,
+.nav--inverted .c6:active,
+.links__list .c6:visited,
+.links__list .c6:active {
   color: rgba(38,38,38,1) !important;
+}
+
+.c6:focus,
+.c6:hover {
+  outline: 0;
+  background-color: rgba(38,38,38,0.1);
+}
+
+.nav--inverted .c6:focus,
+.nav--inverted .c6:hover,
+.links__list .c6:focus,
+.links__list .c6:hover {
+  background-color: #E6E6E6;
+}
+
+.c2 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c2 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c2.nav-button--last {
+  padding-right: 16px;
+}
+
+.c2.nav-button--first {
+  padding-left: 16px;
+}
+
+.c3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c0 {
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0.nav--relative {
+  position: relative;
+}
+
+.c0.nav--absolute {
+  position: absolute;
+}
+
+.c0.nav--fixed {
+  position: fixed;
+}
+
+.c0.nav--inverted {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c0.nav--overlay:after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 60px;
+  z-index: 4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  z-index: 5;
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c2.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c2.nav-button--first {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c0.nav--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.nav--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    padding: 0 44px;
+  }
+}
+
+<nav
+  className="c0 nav--fixed"
+  role="navigation"
+  style={
+    Object {
+      "backgroundColor": null,
+    }
+  }
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      type="button"
+    >
+      <svg
+        fill="currentcolor"
+        height={20}
+        viewBox="0 0 20 17"
+        width={20}
+      >
+        <path
+          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
+        />
+      </svg>
+    </button>
+    Content
+    <a
+      className="c2 c3"
+      href="http://localhost/new/"
+      rel={null}
+      target="_self"
+    >
+      Logo
+    </a>
+    <div
+      className="sc-AxjAm c4 links links__row"
+      role="menubar"
+    >
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <a
+          className="c5 link c6"
+          href="/"
+          rel={null}
+          role="link"
+          target="_self"
+        >
+          Link 1
+        </a>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          className="c5 link c6"
+          href={null}
+          role="button"
+        >
+          Link 2
+        </button>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          className="c5 link c6"
+          href={null}
+          role="button"
+        >
+          Link 3
+        </button>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="c5 link link--has-other c6"
+          href={null}
+          role="button"
+        >
+          Link 4
+        </button>
+        <div
+          className="c7 c8 links links__list"
+          role="menu"
+          style={
+            Object {
+              "minWidth": "258px",
+            }
+          }
+        >
+          <div
+            className="c9"
+          >
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 5
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 6
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 7 With Really Long Content 
+              </button>
+            </span>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`NavBar renders inverted 1`] = `
+.c7 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c7 {
+  display: block;
+}
+
+.c7.links__list--open {
+  display: block;
+}
+
+.c9 {
+  padding: 8px;
+}
+
+.c9.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c5 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c5 {
+  width: 100%;
+  text-align: left;
+}
+
+.c5:focus,
+.c5:hover {
+  outline: 0;
+}
+
+.c5.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c4 {
+  height: 60px;
+}
+
+.c4 .list-container {
+  position: relative;
+}
+
+.c8 {
+  top: 60px;
+  left: -74%;
+}
+
+.c6 {
+  background-color: transparent;
+  padding: 19px 16px 19px 16px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 1px 0px 0px transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c6,
+.links__list .c6 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c6:visited,
+.c6:active {
+  color: rgba(255,255,255,1);
+}
+
+.nav--inverted .c6:visited,
+.nav--inverted .c6:active,
+.links__list .c6:visited,
+.links__list .c6:active {
+  color: rgba(38,38,38,1) !important;
+}
+
+.c6:focus,
+.c6:hover {
+  outline: 0;
+  background-color: rgba(38,38,38,0.1);
+}
+
+.nav--inverted .c6:focus,
+.nav--inverted .c6:hover,
+.links__list .c6:focus,
+.links__list .c6:hover {
+  background-color: #E6E6E6;
+}
+
+.c2 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 0;
+  height: 60px;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 0.3ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c2 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c2.nav-button--last {
+  padding-right: 16px;
+}
+
+.c2.nav-button--first {
+  padding-left: 16px;
+}
+
+.c3 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.c0 {
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: rgba(255,255,255,1);
+  font-weight: 600;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c0.nav--relative {
+  position: relative;
+}
+
+.c0.nav--absolute {
+  position: absolute;
+}
+
+.c0.nav--fixed {
+  position: fixed;
+}
+
+.c0.nav--inverted {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c0.nav--overlay:after {
+  content: "";
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 60px;
+  z-index: 4;
+  background-image: linear-gradient(77deg,rgba(0,0,0,0),#000000);
+}
+
+.c1 {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  z-index: 5;
+}
+
+@media screen and (min-width:480px) {
+  .c2 {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .c2.nav-button--last {
+    padding-right: 24px;
+  }
+
+  .c2.nav-button--first {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c3 {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .c0.nav--overlay:after {
+    background-image: linear-gradient(82deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c0.nav--overlay:after {
+    background-image: linear-gradient(86deg,rgba(0,0,0,0),#000000);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .c1 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .c1 {
+    padding: 0 44px;
+  }
+}
+
+<nav
+  className="c0 nav--relative nav--inverted"
+  role="navigation"
+  style={
+    Object {
+      "backgroundColor": null,
+    }
+  }
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      type="button"
+    >
+      <svg
+        fill="currentcolor"
+        height={20}
+        viewBox="0 0 20 17"
+        width={20}
+      >
+        <path
+          d="M 0 0 H 20 V 3 H 0 z M 0 7 H 20 V 10 H 0 z M 0 14 H 20 V 17 H 0 z"
+        />
+      </svg>
+    </button>
+    <a
+      className="c2 c3"
+      href="http://localhost/new/"
+      rel={null}
+      target="_self"
+    >
+      Logo
+    </a>
+    <div
+      className="sc-AxjAm c4 links links__row"
+      role="menubar"
+    >
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          className="c5 link c6"
+          href={null}
+          role="button"
+        >
+          Link 1
+        </button>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          className="c5 link c6"
+          href={null}
+          role="button"
+        >
+          Link 2
+        </button>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          className="c5 link c6"
+          href={null}
+          role="button"
+        >
+          Link 3
+        </button>
+      </span>
+      <span
+        className="list-container list-container--closed"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="none"
+      >
+        <button
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="c5 link link--has-other c6"
+          href={null}
+          role="button"
+        >
+          Link 4
+        </button>
+        <div
+          className="c7 c8 links links__list"
+          role="menu"
+          style={
+            Object {
+              "minWidth": "258px",
+            }
+          }
+        >
+          <div
+            className="c9"
+          >
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 5
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 6
+              </button>
+            </span>
+            <span
+              className="list-container list-container--closed"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              role="none"
+            >
+              <button
+                className="c5 link c6"
+                href={null}
+                role="button"
+              >
+                Link 7 With Really Long Content 
+              </button>
+            </span>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`NavBar renders with defaults 1`] = `
+.c6 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  width: 205px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.list-container--open .c6 {
+  display: block;
+}
+
+.c6.links__list--open {
+  display: block;
+}
+
+.c8 {
+  padding: 8px;
+}
+
+.c8.wrapper--has-after {
+  padding: 8px 8px 0 8px;
+}
+
+.c4 {
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  position: relative;
+}
+
+.links__list .c4 {
+  width: 100%;
+  text-align: left;
 }
 
 .c4:focus,
 .c4:hover {
   outline: 0;
+}
+
+.c4.link--has-other.link--open:after {
+  content: "";
+  display: inline-block;
+  border-bottom: 4px solid #026cdf;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c3 {
+  height: 60px;
+}
+
+.c3 .list-container {
+  position: relative;
+}
+
+.c7 {
+  top: 60px;
+  left: -74%;
+}
+
+.c5 {
+  background-color: transparent;
+  padding: 19px 16px 19px 16px;
+  color: rgba(255,255,255,1);
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 1px 0px 0px transparent;
+  -webkit-transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: all 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.nav--inverted .c5,
+.links__list .c5 {
+  color: rgba(38,38,38,1);
+  font-weight: 400;
+}
+
+.c5:visited,
+.c5:active {
+  color: rgba(255,255,255,1);
+}
+
+.nav--inverted .c5:visited,
+.nav--inverted .c5:active,
+.links__list .c5:visited,
+.links__list .c5:active {
+  color: rgba(38,38,38,1) !important;
+}
+
+.c5:focus,
+.c5:hover {
+  outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c4:focus,
-.nav--inverted .c4:hover,
-.links__list .c4:focus,
-.links__list .c4:hover {
+.nav--inverted .c5:focus,
+.nav--inverted .c5:hover,
+.links__list .c5:focus,
+.links__list .c5:hover {
   background-color: #E6E6E6;
 }
 
@@ -1156,7 +1156,7 @@ exports[`NavBar renders with defaults 1`] = `
 }
 
 <nav
-  className="nav--relative c0"
+  className="c0 nav--relative"
   role="navigation"
   style={
     Object {
@@ -1184,7 +1184,7 @@ exports[`NavBar renders with defaults 1`] = `
     </button>
     Content
     <div
-      className="links links__row c3"
+      className="sc-AxjAm c3 links links__row"
       role="menubar"
     >
       <span
@@ -1195,7 +1195,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="c4 link c5"
           href={null}
           role="button"
         >
@@ -1210,7 +1210,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="c4 link c5"
           href={null}
           role="button"
         >
@@ -1225,7 +1225,7 @@ exports[`NavBar renders with defaults 1`] = `
         role="none"
       >
         <button
-          className="link c4 c5"
+          className="c4 link c5"
           href={null}
           role="button"
         >
@@ -1242,14 +1242,14 @@ exports[`NavBar renders with defaults 1`] = `
         <button
           aria-expanded={false}
           aria-haspopup={true}
-          className="link link--has-other c4 c5"
+          className="c4 link link--has-other c5"
           href={null}
           role="button"
         >
           Link 4
         </button>
         <div
-          className="c6 links links__list c7"
+          className="c6 c7 links links__list"
           role="menu"
           style={
             Object {
@@ -1268,7 +1268,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="c4 link c5"
                 href={null}
                 role="button"
               >
@@ -1283,7 +1283,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="c4 link c5"
                 href={null}
                 role="button"
               >
@@ -1298,7 +1298,7 @@ exports[`NavBar renders with defaults 1`] = `
               role="none"
             >
               <button
-                className="link c4 c5"
+                className="c4 link c5"
                 href={null}
                 role="button"
               >

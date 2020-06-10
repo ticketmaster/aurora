@@ -269,7 +269,7 @@ exports[`<CheckBoxInput /> should render the correct markup when additional prop
 
 <input
   checked={false}
-  className="input--check-box c0"
+  className="c0 input--check-box"
   disabled={false}
   id="genrerockinput"
   name="genre"

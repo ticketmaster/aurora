@@ -33,7 +33,7 @@ exports[`Link renders a button when only onclick is provided 1`] = `
 }
 
 <button
-  className="c0"
+  className="sc-AxjAm sc-AxirZ c0"
   href={null}
   onClick={[Function]}
   rel="_self"
@@ -69,7 +69,7 @@ exports[`Link renders a default link 1`] = `
 }
 
 <a
-  className="c0"
+  className="sc-AxjAm c0"
   href="http://localhost/"
   onClick={null}
   rel="_self"
@@ -106,7 +106,7 @@ exports[`Link renders a span when no href or onClick provided 1`] = `
 }
 
 <span
-  className="c0"
+  className="sc-AxjAm sc-AxirZ c0"
   href={null}
   onClick={null}
   rel="_self"
