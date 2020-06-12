@@ -29,14 +29,14 @@ exports[`RangeSlider should match snapshot 1`] = `
 }
 
 <div
-  className="c0 slider"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="c1 slider__rail"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -92,14 +92,14 @@ exports[`RangeSlider should match snapshot when disabled 1`] = `
 }
 
 <div
-  className="c0 slider slider--disabled disabled"
+  className="slider slider--disabled disabled c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="c1 slider__rail"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -155,14 +155,14 @@ exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
 }
 
 <div
-  className="c0 slider"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="c1 slider__rail"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"
@@ -218,14 +218,14 @@ exports[`RangeSlider should match snapshot when single 1`] = `
 }
 
 <div
-  className="c0 slider"
+  className="slider c0"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseDown={[Function]}
   onTouchStart={[Function]}
 >
   <div
-    className="c1 slider__rail"
+    className="slider__rail c1"
   />
   <Track
     className="slider__track"

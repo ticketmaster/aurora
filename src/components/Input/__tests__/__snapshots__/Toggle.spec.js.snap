@@ -193,7 +193,7 @@ exports[`<Toggle /> renders regular disabled active toggle correctly 1`] = `
 
 <button
   aria-checked={true}
-  className="c0 c1 toggle--disabled toggle--active toggle--large"
+  className="toggle--disabled toggle--active toggle--large c0 c1"
   disabled={true}
   onClick={[Function]}
   role="switch"
@@ -409,7 +409,7 @@ exports[`<Toggle /> renders regular disabled inactive toggle correctly 1`] = `
 
 <button
   aria-checked={false}
-  className="c0 c1 toggle--disabled toggle--inactive toggle--large"
+  className="toggle--disabled toggle--inactive toggle--large c0 c1"
   disabled={true}
   onClick={[Function]}
   role="switch"
@@ -625,7 +625,7 @@ exports[`<Toggle /> renders regular size active toggle correctly 1`] = `
 
 <button
   aria-checked={true}
-  className="c0 c1 toggle--enabled toggle--active toggle--large"
+  className="toggle--enabled toggle--active toggle--large c0 c1"
   disabled={false}
   onClick={[Function]}
   role="switch"
@@ -841,7 +841,7 @@ exports[`<Toggle /> renders small size active toggle correctly 1`] = `
 
 <button
   aria-checked={true}
-  className="c0 c1 toggle--enabled toggle--active toggle--small"
+  className="toggle--enabled toggle--active toggle--small c0 c1"
   disabled={false}
   onClick={[Function]}
   role="switch"

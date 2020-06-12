@@ -17,7 +17,7 @@ exports[`Typography.H1 should render default markup when no props are passed 1`]
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--onyx-base"
+  className="h1 h1--semiBold h1--onyx-base c0"
 >
   Hello world
 </h1>
@@ -40,7 +40,7 @@ exports[`Typography.H1 should render with a custom color prop that lacks variant
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--brand-base"
+  className="h1 h1--semiBold h1--brand-base c0"
   color="brand"
 >
   Hello world
@@ -65,7 +65,7 @@ exports[`Typography.H1 should render with a custom weight prop 1`] = `
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--onyx-base"
+  className="h1 h1--semiBold h1--onyx-base c0"
 >
   Hello world
 </h1>
@@ -89,7 +89,7 @@ exports[`Typography.H1 should render with a textTransform prop 1`] = `
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--onyx-base"
+  className="h1 h1--semiBold h1--onyx-base c0"
 >
   Hello world
 </h1>
@@ -112,7 +112,7 @@ exports[`Typography.H1 should render with custom color and variant props 1`] = `
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--accent01-dark"
+  className="h1 h1--semiBold h1--accent01-dark c0"
   color="accent01"
 >
   Hello world
@@ -136,7 +136,7 @@ exports[`Typography.H1 should render without a theme 1`] = `
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--onyx-base"
+  className="h1 h1--semiBold h1--onyx-base c0"
 />
 `;
 
@@ -157,6 +157,6 @@ exports[`Typography.H1 should render without children 1`] = `
 }
 
 <h1
-  className="c0 h1 h1--semiBold h1--onyx-base"
+  className="h1 h1--semiBold h1--onyx-base c0"
 />
 `;

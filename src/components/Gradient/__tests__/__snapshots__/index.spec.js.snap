@@ -210,7 +210,7 @@ exports[`Gradient renders with an img tag for SEO purposes 1`] = `
   className="c0"
 >
   <img
-    className="c1 image image--seo image--hidden"
+    className="image image--seo image--hidden c1"
     src="https://beta.tmol.co/s3images/City/losangeles_889.jpg"
   />
 </span>
@@ -415,7 +415,7 @@ exports[`Gradient renders with overlay gradient 1`] = `
 }
 
 <span
-  className="c0 gradient--overlay"
+  className="gradient--overlay c0"
 >
   
 </span>
@@ -517,7 +517,7 @@ exports[`Gradient renders with overlay shadow gradient 1`] = `
 }
 
 <span
-  className="c0 gradient--overlay-shadow"
+  className="gradient--overlay-shadow c0"
 >
   
 </span>
@@ -646,7 +646,7 @@ exports[`Gradient renders with spotlight elements 1`] = `
 }
 
 <span
-  className="c0 gradient--spotlight"
+  className="gradient--spotlight c0"
 >
   
   <div
@@ -881,7 +881,7 @@ exports[`Gradient renders with underlay gradient 1`] = `
 }
 
 <span
-  className="c0 gradient--underlay"
+  className="gradient--underlay c0"
 >
   
 </span>

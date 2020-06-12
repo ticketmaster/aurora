@@ -77,7 +77,7 @@ exports[`RatingBadge /> renders link RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   href="/"
   itemProp="aggregateRating"
   itemScope={true}
@@ -197,7 +197,7 @@ exports[`RatingBadge /> renders outline RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -316,7 +316,7 @@ exports[`RatingBadge /> renders outline disabled RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -436,7 +436,7 @@ exports[`RatingBadge /> renders standard RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -555,7 +555,7 @@ exports[`RatingBadge /> renders standard disabled RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}
@@ -675,7 +675,7 @@ exports[`RatingBadge /> renders transparent RatingBadge correctly 1`] = `
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   itemProp="aggregateRating"
   itemScope={true}
   itemType="https://schema.org/AggregateRating"
@@ -794,7 +794,7 @@ exports[`RatingBadge /> renders transparent disabled RatingBadge correctly 1`] =
 }
 
 <button
-  className="sc-AxiKw sc-AxhCb c0"
+  className="c0"
   disabled={true}
   itemProp="aggregateRating"
   itemScope={true}

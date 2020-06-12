@@ -57,7 +57,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-right: 0;
 }
 
-.c3 {
+.c4 {
   font-size: 14px;
   color: #1f262d;
   font-weight: 600;
@@ -112,7 +112,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
   margin-right: 0;
 }
 
-.c4 {
+.c3 {
   font-size: 12px;
   color: rgba(38,38,38,0.65);
   text-transform: uppercase;
@@ -212,7 +212,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c4 {
     font-size: 12px;
   }
 }
@@ -265,17 +265,17 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
 }
 
 <div
-  className="sc-AxiKw c0"
+  className="c0"
 >
   <div
-    className="sc-AxgMl c1"
+    className="c1"
     id="789"
   >
     <div
-      className="sc-AxiKw c2 container__title"
+      className="container__title c2"
     >
       <div
-        className="sc-AxheI c3 c4 text__title"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -284,7 +284,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c5 section-item"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -318,7 +318,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c7 section-item-link"
+          className="section-item-link c7"
         >
           VIP Packages
         </div>
@@ -326,7 +326,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c8 section-item"
+      className="section-item c8"
       onClick={[Function]}
       role="link"
     >
@@ -359,7 +359,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="sc-AxheI c9"
+          className="c9"
         >
           Parking Pass Available
         </div>
@@ -367,14 +367,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxgMl c1"
+    className="c1"
     id="456"
   >
     <div
-      className="sc-AxiKw c2 container__title"
+      className="container__title c2"
     >
       <div
-        className="sc-AxheI c3 c4 text__title"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -383,7 +383,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <a
       aria-label="Section Item"
-      className="sc-fznyAO c10 c5 section-item"
+      className="section-item c5 c10"
       href="/"
       onClick={[Function]}
       onItemClick={[Function]}
@@ -421,12 +421,12 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c7 section-item-link"
+          className="section-item-link c7"
         >
           United Center
         </div>
         <div
-          className="sc-AxheI c9"
+          className="c9"
         >
           Chicago, IL
         </div>
@@ -434,14 +434,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </a>
   </div>
   <div
-    className="sc-AxgMl c1"
+    className="c1"
     id="123"
   >
     <div
-      className="sc-AxiKw c2 container__title"
+      className="container__title c2"
     >
       <div
-        className="sc-AxheI c3 c4 text__title"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -450,7 +450,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c5 section-item"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -470,7 +470,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c7 section-item-link"
+          className="section-item-link c7"
         >
           The Roots tour of San Diego california hdjhj wjdwjd wjdhwejkdh wdjewj
         </div>
@@ -478,7 +478,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c5 section-item"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -498,7 +498,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c7 section-item-link"
+          className="section-item-link c7"
         >
           T.I
         </div>
@@ -506,14 +506,14 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxgMl c1"
+    className="c1"
     id="1011"
   >
     <div
-      className="sc-AxiKw c2 container__title"
+      className="container__title c2"
     >
       <div
-        className="sc-AxheI c3 c4 text__title"
+        className="text__title c3 c4"
         color="#1f262d"
         style={Object {}}
       >
@@ -522,7 +522,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
     </div>
     <div
       aria-label="Section Item"
-      className="c5 section-item"
+      className="section-item c5"
       onClick={[Function]}
       onItemClick={[Function]}
       role="link"
@@ -554,7 +554,7 @@ exports[`<ListRowOverflow /> renders ListRowOverflow correctly 1`] = `
       </div>
       <div>
         <div
-          className="c7 section-item-link"
+          className="section-item-link c7"
         >
           Sell Tickets
         </div>
@@ -607,7 +607,7 @@ exports[`<ListRowOverflow /> renders with additional props when passed 1`] = `
 }
 
 <div
-  className="sc-AxiKw c0 row--gutterless"
+  className="row--gutterless c0"
 >
   Content
 </div>

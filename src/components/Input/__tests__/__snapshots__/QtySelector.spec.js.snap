@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`QtySelector decrements correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -21,23 +21,23 @@ exports[`QtySelector decrements correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -47,11 +47,11 @@ exports[`QtySelector decrements correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -73,7 +73,7 @@ exports[`QtySelector decrements correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -91,7 +91,7 @@ exports[`QtySelector decrements correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -99,18 +99,18 @@ exports[`QtySelector decrements correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -167,7 +167,7 @@ exports[`QtySelector decrements correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -797,7 +797,7 @@ exports[`QtySelector decrements correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -825,7 +825,7 @@ exports[`QtySelector decrements correctly 1`] = `
 `;
 
 exports[`QtySelector decrements from non-zero value correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -845,23 +845,23 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -871,11 +871,11 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -897,7 +897,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -915,7 +915,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -923,18 +923,18 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -991,7 +991,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -1621,7 +1621,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -1649,7 +1649,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
 `;
 
 exports[`QtySelector decrements twice correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1669,23 +1669,23 @@ exports[`QtySelector decrements twice correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -1695,11 +1695,11 @@ exports[`QtySelector decrements twice correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -1721,7 +1721,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -1739,7 +1739,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -1747,18 +1747,18 @@ exports[`QtySelector decrements twice correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -1815,7 +1815,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -2445,7 +2445,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -2473,7 +2473,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
 `;
 
 exports[`QtySelector handles case when input is deleted 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -2493,23 +2493,23 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -2519,11 +2519,11 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -2545,7 +2545,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -2563,7 +2563,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -2571,18 +2571,18 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -2639,7 +2639,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -3268,7 +3268,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -3296,7 +3296,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
 `;
 
 exports[`QtySelector handles input value correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -3316,23 +3316,23 @@ exports[`QtySelector handles input value correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -3342,11 +3342,11 @@ exports[`QtySelector handles input value correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -3368,7 +3368,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -3386,7 +3386,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -3394,18 +3394,18 @@ exports[`QtySelector handles input value correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -3462,7 +3462,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4091,7 +4091,7 @@ exports[`QtySelector handles input value correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4119,7 +4119,7 @@ exports[`QtySelector handles input value correctly 1`] = `
 `;
 
 exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -4139,23 +4139,23 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -4165,11 +4165,11 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -4191,7 +4191,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -4209,7 +4209,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -4217,18 +4217,18 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -4285,7 +4285,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -4915,7 +4915,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -4943,7 +4943,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
 `;
 
 exports[`QtySelector handles input value longer than 2 chars correctly when using buttons 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -4963,23 +4963,23 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -4989,11 +4989,11 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -5015,7 +5015,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -5033,7 +5033,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -5041,18 +5041,18 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -5109,7 +5109,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -5738,7 +5738,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -5767,7 +5767,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
 `;
 
 exports[`QtySelector increments correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -5787,23 +5787,23 @@ exports[`QtySelector increments correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -5813,11 +5813,11 @@ exports[`QtySelector increments correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -5839,7 +5839,7 @@ exports[`QtySelector increments correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -5857,7 +5857,7 @@ exports[`QtySelector increments correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -5865,18 +5865,18 @@ exports[`QtySelector increments correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -5933,7 +5933,7 @@ exports[`QtySelector increments correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -6562,7 +6562,7 @@ exports[`QtySelector increments correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -6590,7 +6590,7 @@ exports[`QtySelector increments correctly 1`] = `
 `;
 
 exports[`QtySelector increments twice correctly 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -6610,23 +6610,23 @@ exports[`QtySelector increments twice correctly 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -6636,11 +6636,11 @@ exports[`QtySelector increments twice correctly 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -6662,7 +6662,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -6680,7 +6680,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -6688,18 +6688,18 @@ exports[`QtySelector increments twice correctly 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -6756,7 +6756,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7385,7 +7385,7 @@ exports[`QtySelector increments twice correctly 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7413,7 +7413,7 @@ exports[`QtySelector increments twice correctly 1`] = `
 `;
 
 exports[`QtySelector renders QtySelector correctly when there are min and max 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -7433,23 +7433,23 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -7459,11 +7459,11 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -7485,7 +7485,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -7503,7 +7503,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -7511,18 +7511,18 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -7579,7 +7579,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7638,7 +7638,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -7666,7 +7666,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
 `;
 
 exports[`QtySelector renders default QtySelector 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -7686,23 +7686,23 @@ exports[`QtySelector renders default QtySelector 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -7712,11 +7712,11 @@ exports[`QtySelector renders default QtySelector 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -7738,7 +7738,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -7756,7 +7756,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -7764,18 +7764,18 @@ exports[`QtySelector renders default QtySelector 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -7832,7 +7832,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -8462,7 +8462,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -8490,7 +8490,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
 `;
 
 exports[`QtySelector renders disabled QtySelector 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -8510,23 +8510,23 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -8536,11 +8536,11 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -8562,7 +8562,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -8580,7 +8580,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -8588,18 +8588,18 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -8656,7 +8656,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -8682,7 +8682,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     </svg>
   </button>
   <div
-    class="c3 c4 InputFieldContainer__disabled"
+    class="InputFieldContainer__disabled c3 c4"
   >
     <input
       class="c5"
@@ -9386,7 +9386,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -9415,7 +9415,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
 `;
 
 exports[`QtySelector sets focus state to false when input looses focus 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -9435,23 +9435,23 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -9461,11 +9461,11 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -9487,7 +9487,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -9505,7 +9505,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -9513,18 +9513,18 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -9581,7 +9581,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -10211,7 +10211,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"
@@ -10239,7 +10239,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
 `;
 
 exports[`QtySelector sets focus state to true after input is focused 1`] = `
-.c1 {
+.c2 {
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -10259,23 +10259,23 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c1:focus {
+.c2:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #0150a7;
 }
 
-.c1:active {
+.c2:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
   background-color: #0150a7;
 }
 
-.c1:disabled {
+.c2:disabled {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
@@ -10285,11 +10285,11 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   opacity: 0.2;
 }
 
-.c1.noFocus:focus {
+.c2.noFocus:focus {
   box-shadow: none;
 }
 
-.c1.iconed svg {
+.c2.iconed svg {
   position: relative;
   display: inline-block;
   vertical-align: text-top;
@@ -10311,7 +10311,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c1 {
   min-width: 36px;
   width: 36px;
   height: 36px;
@@ -10329,7 +10329,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.c2:disabled {
+.c1:disabled {
   border: 1px solid #ebebeb;
   color: #bfbfbf;
   background: transparent;
@@ -10337,18 +10337,18 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   cursor: default;
 }
 
-.c2:focus {
+.c1:focus {
   outline: none;
   box-shadow: 0 0 5px 0 #026cdf;
 }
 
-.c2:enabled:hover {
+.c1:enabled:hover {
   background-color: #ebf4fd;
   color: #026cdf;
   cursor: pointer;
 }
 
-.c2:enabled:active {
+.c1:enabled:active {
   -webkit-transform: scale(0.98,0.98) translate(0,1px);
   -ms-transform: scale(0.98,0.98) translate(0,1px);
   transform: scale(0.98,0.98) translate(0,1px);
@@ -10405,7 +10405,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   class="c0"
 >
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
     disabled=""
   >
     <svg
@@ -10440,7 +10440,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
     />
   </div>
   <button
-    class="c1 c2  noFocus"
+    class="c1  noFocus c2"
   >
     <svg
       height="24"

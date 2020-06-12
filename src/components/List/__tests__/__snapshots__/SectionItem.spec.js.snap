@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
-.c0 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -13,18 +13,18 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   transition: color 0.3s ease;
 }
 
-.c0:focus,
-.c0:active,
-.c0:visited,
-.c0:hover {
+.c1:focus,
+.c1:active,
+.c1:visited,
+.c1:hover {
   color: #026cdf;
 }
 
-.c0:hover {
+.c1:hover {
   color: #0150a7;
 }
 
-.c1 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,7 +39,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   cursor: pointer;
 }
 
-.c1:not(:last-of-type) {
+.c0:not(:last-of-type) {
   margin-bottom: 16px;
 }
 
@@ -59,7 +59,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
 
 <a
   aria-label="Section Item"
-  class="sc-AxheI c0 c1 section-item"
+  class="section-item c0 c1"
   href="https://ticketmaster.com/"
   rel="_self"
   role="link"
@@ -94,7 +94,7 @@ exports[`<SectionItem /> renders SectionItem with "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="c3 section-item-link"
+      class="section-item-link c3"
     >
       VIP Packages
     </div>
@@ -145,7 +145,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
 >
   <div
     aria-label="Section Item"
-    class="c1 section-item"
+    class="section-item c1"
     role="link"
   >
     <div
@@ -177,7 +177,7 @@ exports[`<SectionItem /> renders SectionItem with children correctly 1`] = `
     </div>
     <div>
       <div
-        class="c3 section-item-link"
+        class="section-item-link c3"
       >
         VIP Packages
       </div>
@@ -222,7 +222,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
 
 <div
   aria-label="Section Item"
-  class="c0 section-item"
+  class="section-item c0"
   role="link"
 >
   <div
@@ -254,7 +254,7 @@ exports[`<SectionItem /> renders SectionItem without "url" correctly 1`] = `
   </div>
   <div>
     <div
-      class="c2 section-item-link"
+      class="section-item-link c2"
     >
       VIP Packages
     </div>

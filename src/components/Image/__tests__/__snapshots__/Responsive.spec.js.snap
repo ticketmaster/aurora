@@ -23,13 +23,13 @@ exports[`ResponsiveImage should render correctly 1`] = `
 }
 
 <div
-  className="c0 image image--responsive"
+  className="image image--responsive c0"
   height={9}
   width={16}
 >
   <img
     alt="Test Kitten"
-    className="c1 image image--seo image--hidden"
+    className="image image--seo image--hidden c1"
     height={9}
     src="https://placekitten.com/g/826/465"
     width={16}
@@ -58,13 +58,13 @@ exports[`ResponsiveImage should render correctly when a children prop is passed 
 }
 
 <div
-  className="c0 image image--responsive"
+  className="image image--responsive c0"
   height={9}
   width={16}
 >
   <img
     alt="Test Kitten"
-    className="c1 image image--seo image--hidden"
+    className="image image--seo image--hidden c1"
     height={9}
     src="https://placekitten.com/g/826/465"
     width={16}

@@ -142,12 +142,12 @@ exports[`MobileMenu accepts children as menu content 1`] = `
 }
 
 <button
-  className="c0 menu-button"
+  className="menu-button c0"
   onClick={[Function]}
   type="button"
 >
   <span
-    className="c1 hamburger hamburger--closed"
+    className="hamburger hamburger--closed c1"
   >
     <span
       className="c2"
@@ -298,12 +298,12 @@ exports[`MobileMenu renders default 1`] = `
 }
 
 <button
-  className="c0 menu-button"
+  className="menu-button c0"
   onClick={[Function]}
   type="button"
 >
   <span
-    className="c1 hamburger hamburger--closed"
+    className="hamburger hamburger--closed c1"
   >
     <span
       className="c2"

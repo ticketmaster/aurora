@@ -175,7 +175,7 @@ exports[`<DropDownInput /> should render the correct markup when the className p
 
 <span
   aria-selected="false"
-  className="c0 input--drop-down"
+  className="input--drop-down c0"
   role="option"
   tabIndex="-1"
   value="rock"
@@ -236,7 +236,7 @@ exports[`<DropDownInput /> should render the correct markup when the isSelected 
 
 <span
   aria-selected="true"
-  className="c0 dropdown__selected"
+  className="dropdown__selected c0"
   role="option"
   tabIndex="-1"
   value="rock"

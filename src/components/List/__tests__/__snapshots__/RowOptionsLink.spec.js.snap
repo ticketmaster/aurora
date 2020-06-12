@@ -12,7 +12,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   flex: 0 0 100%;
 }
 
-.c2 {
+.c3 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -32,18 +32,18 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c2:focus,
-.c2:active,
-.c2:visited,
-.c2:hover {
+.c3:focus,
+.c3:active,
+.c3:visited,
+.c3:hover {
   color: #026cdf;
 }
 
-.c2:hover {
+.c3:hover {
   color: #0150a7;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -56,14 +56,14 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   cursor: pointer;
 }
 
-.c4:focus,
-.c4:active,
-.c4:visited,
-.c4:hover {
+.c5:focus,
+.c5:active,
+.c5:visited,
+.c5:hover {
   color: #026cdf;
 }
 
-.c4:hover {
+.c5:hover {
   color: #0150a7;
 }
 
@@ -97,12 +97,12 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
   margin-right: 0;
 }
 
-.c3 {
+.c2 {
   display: inline-block;
   line-height: 1.1;
 }
 
-.c5 {
+.c4 {
   display: none;
   line-height: 1.1;
   opacity: 1;
@@ -163,17 +163,17 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 @media screen and (min-width:768px) {
-  .c3 {
+  .c2 {
     display: none;
   }
 }
 
 @media screen and (min-width:768px) {
-  .c5 {
+  .c4 {
     display: inline-block;
   }
 
-  .c5.link--hidden {
+  .c4.link--hidden {
     opacity: 0;
     -webkit-transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
     transition: opacity 0.1s cubic-bezier(0.55,0.085,0.68,0.53);
@@ -181,13 +181,13 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
 }
 
 <div
-  className="sc-AxirZ c0 row__content--bottom"
+  className="row__content--bottom c0"
 >
   <div
     className="c1"
   >
     <button
-      className="sc-Axmtr sc-AxmLO c2 c3 link--row-options"
+      className="link--row-options c2 c3"
       data-index={0}
       href={null}
       onClick={[Function]}
@@ -196,7 +196,7 @@ exports[`<RowOptionsLink /> renders RowOptionsLink 1`] = `
       target=""
     />
     <span
-      className="sc-Axmtr sc-AxmLO c4 c5 link--row-options"
+      className="link--row-options c4 c5"
       data-index={0}
       href=""
       onClick={null}

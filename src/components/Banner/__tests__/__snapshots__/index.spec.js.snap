@@ -11,7 +11,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -66,7 +66,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -74,7 +74,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
@@ -93,7 +93,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
 
 <div>
   <div
-    class="c0 collapsed visible-banner"
+    class="collapsed visible-banner c0"
   >
     <div
       class="c1"
@@ -102,7 +102,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -110,7 +110,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         />
       </div>
     </div>
@@ -127,7 +127,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -182,7 +182,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -190,7 +190,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
@@ -209,7 +209,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -248,7 +248,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -256,7 +256,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -275,7 +275,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -330,7 +330,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -338,13 +338,13 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
-.sc-fzqBZW.c6 {
+.c8.c6 {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -368,8 +368,8 @@ exports[`<Banner /> renders correctly with close button 1`] = `
   justify-content: center;
 }
 
-.sc-fzqBZW.c6:active,
-.sc-fzqBZW.c6:hover {
+.c8.c6:active,
+.c8.c6:hover {
   background-color: transparent;
 }
 
@@ -390,7 +390,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -429,7 +429,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -437,7 +437,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -485,7 +485,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -540,7 +540,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -548,7 +548,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
@@ -567,7 +567,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -606,7 +606,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -614,7 +614,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -633,7 +633,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -688,7 +688,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -696,7 +696,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
@@ -715,7 +715,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
 
 <div>
   <div
-    class="c0 collapsed visible-banner"
+    class="collapsed visible-banner c0"
   >
     <div
       class="c1"
@@ -724,7 +724,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -732,7 +732,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -751,7 +751,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -806,7 +806,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
   padding-right: 32px;
 }
 
-.c5 {
+.c4 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -814,7 +814,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c5 {
+.collapsed .c4 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
@@ -833,7 +833,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
 
 <div>
   <div
-    class="c0 collapsed visible-banner"
+    class="collapsed visible-banner c0"
   >
     <div
       class="c1"
@@ -864,7 +864,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -872,7 +872,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c4 text text--dark text--primary c5"
+          class="text text--dark text--primary c4 c5"
         >
           test content
         </div>
@@ -891,7 +891,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -950,7 +950,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   padding-right: 32px;
 }
 
-.c6 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -958,13 +958,13 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   line-height: 1.29;
 }
 
-.collapsed .c6 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
-.sc-fzoyAV.c7 {
+.c9.c7 {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -988,8 +988,8 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
   justify-content: center;
 }
 
-.sc-fzoyAV.c7:active,
-.sc-fzoyAV.c7:hover {
+.c9.c7:active,
+.c9.c7:hover {
   background-color: transparent;
 }
 
@@ -1010,7 +1010,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -1049,7 +1049,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -1064,7 +1064,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
         style="max-height: 0px;"
       >
         <div
-          class="c5 text text--dark text--primary c6"
+          class="text text--dark text--primary c5 c6"
         />
       </div>
     </div>
@@ -1110,7 +1110,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -1169,7 +1169,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   padding-right: 32px;
 }
 
-.c6 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -1177,13 +1177,13 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c6 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
-.sc-fzoLag.c7 {
+.c9.c7 {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -1207,8 +1207,8 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
   justify-content: center;
 }
 
-.sc-fzoLag.c7:active,
-.sc-fzoLag.c7:hover {
+.c9.c7:active,
+.c9.c7:hover {
   background-color: transparent;
 }
 
@@ -1229,7 +1229,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -1268,7 +1268,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -1282,7 +1282,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c5 text text--dark text--primary c6"
+          class="text text--dark text--primary c5 c6"
         >
           test content
         </div>
@@ -1330,7 +1330,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c5 {
+.c6 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -1389,7 +1389,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
   padding-right: 32px;
 }
 
-.c6 {
+.c5 {
   padding-top: 12px;
   opacity: 1;
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955) 0.1s;
@@ -1397,13 +1397,13 @@ exports[`<Banner /> renders correctly with link 1`] = `
   line-height: 1.29;
 }
 
-.collapsed .c6 {
+.collapsed .c5 {
   -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
   opacity: 0;
 }
 
-.sc-fzqNJr.c7 {
+.c9.c7 {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -1427,8 +1427,8 @@ exports[`<Banner /> renders correctly with link 1`] = `
   justify-content: center;
 }
 
-.sc-fzqNJr.c7:active,
-.sc-fzqNJr.c7:hover {
+.c9.c7:active,
+.c9.c7:hover {
   background-color: transparent;
 }
 
@@ -1449,7 +1449,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
 
 <div>
   <div
-    class="c0 collapsed banner-variant-alert visible-banner"
+    class="collapsed banner-variant-alert visible-banner c0"
   >
     <div
       class="c1"
@@ -1488,7 +1488,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
       class="c2"
     >
       <span
-        class="c3 text text--dark text--primary"
+        class="text text--dark text--primary c3"
       >
         This is your primary message text.
       </span>
@@ -1503,7 +1503,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
         style="max-height: 0px;"
       >
         <div
-          class="c5 text text--dark text--primary c6"
+          class="text text--dark text--primary c5 c6"
         />
       </div>
     </div>

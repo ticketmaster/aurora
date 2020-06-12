@@ -11,7 +11,7 @@ exports[`Typography.H4 should render default markup when no props are passed 1`]
 }
 
 <h4
-  className="c0 h4 h4--regular h4--onyx-base"
+  className="h4 h4--regular h4--onyx-base c0"
 >
   Hello world
 </h4>
@@ -28,7 +28,7 @@ exports[`Typography.H4 should render with a custom color prop that lacks variant
 }
 
 <h4
-  className="c0 h4 h4--regular h4--brand-base"
+  className="h4 h4--regular h4--brand-base c0"
   color="brand"
 >
   Hello world
@@ -47,7 +47,7 @@ exports[`Typography.H4 should render with a custom weight prop 1`] = `
 }
 
 <h4
-  className="c0 h4 h4--semiBold h4--onyx-base"
+  className="h4 h4--semiBold h4--onyx-base c0"
 >
   Hello world
 </h4>
@@ -65,7 +65,7 @@ exports[`Typography.H4 should render with a textTransform prop 1`] = `
 }
 
 <h4
-  className="c0 h4 h4--regular h4--onyx-base"
+  className="h4 h4--regular h4--onyx-base c0"
 >
   Hello world
 </h4>
@@ -82,7 +82,7 @@ exports[`Typography.H4 should render with custom color and variant props 1`] = `
 }
 
 <h4
-  className="c0 h4 h4--regular h4--accent01-dark"
+  className="h4 h4--regular h4--accent01-dark c0"
   color="accent01"
 >
   Hello world
@@ -100,7 +100,7 @@ exports[`Typography.H4 should render without a theme 1`] = `
 }
 
 <h4
-  className="c0 h4 h4--regular h4--onyx-base"
+  className="h4 h4--regular h4--onyx-base c0"
 />
 `;
 
@@ -115,6 +115,6 @@ exports[`Typography.H4 should render without children 1`] = `
 }
 
 <h4
-  className="c0 h4 h4--regular h4--onyx-base"
+  className="h4 h4--regular h4--onyx-base c0"
 />
 `;

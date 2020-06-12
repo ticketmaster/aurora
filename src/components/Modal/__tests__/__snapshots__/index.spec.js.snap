@@ -179,7 +179,7 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"
@@ -376,7 +376,7 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"
@@ -573,7 +573,7 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"
@@ -776,18 +776,6 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c2 {
     padding: 16px;
     padding-bottom: 16px;
@@ -827,18 +815,6 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c4 {
     padding: 16px;
   }
@@ -859,10 +835,10 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
-      class="c1 fullscreen"
+      class="fullscreen c1"
     >
       <div
         class="c2"
@@ -1076,18 +1052,6 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c2 {
     padding: 16px;
     padding-bottom: 16px;
@@ -1127,18 +1091,6 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c4 {
     padding: 16px;
   }
@@ -1159,7 +1111,7 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"
@@ -1369,7 +1321,7 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"
@@ -1527,18 +1479,6 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c1 {
     max-width: 400px;
     margin-left: auto;
@@ -1578,7 +1518,7 @@ exports[`<Modal /> should recalculate shadows and content height on props change
 
 <div>
   <div
-    class="c0 container--overlay open-enter open-enter-active"
+    class="container--overlay c0 open-enter open-enter-active"
   >
     <div
       class="c1 open-enter open-enter-active"
@@ -1790,18 +1730,6 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
 }
 
 @media screen and (min-width:480px) {
-
-}
-
-@media screen and (min-width:768px) {
-
-}
-
-@media screen and (min-width:1024px) {
-
-}
-
-@media screen and (min-width:480px) {
   .c3 {
     padding: 16px;
   }
@@ -1822,7 +1750,7 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
 
 <div>
   <div
-    class="c0 container--overlay"
+    class="container--overlay c0"
   >
     <div
       class="c1"

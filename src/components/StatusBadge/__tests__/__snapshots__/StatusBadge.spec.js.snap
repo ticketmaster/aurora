@@ -18,7 +18,7 @@ exports[`StatusBadge should match snapshot when variant is dark 1`] = `
 }
 
 <div
-  className="c0 badge"
+  className="badge c0"
   color="#026cdf"
 >
   snapshot test
@@ -43,7 +43,7 @@ exports[`StatusBadge should match snapshot when variant is light 1`] = `
 }
 
 <div
-  className="c0 badge"
+  className="badge c0"
   color="#026cdf"
 >
   light test
@@ -68,7 +68,7 @@ exports[`StatusBadge should match snapshot when variant is undefined 1`] = `
 }
 
 <div
-  className="c0 badge"
+  className="badge c0"
   color="#026cdf"
 >
   snapshot test

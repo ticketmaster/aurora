@@ -100,7 +100,7 @@ exports[`Drawer renders default drawer 1`] = `
           type="button"
         >
           <span
-            className="c0 hamburger hamburger--closed"
+            className="hamburger hamburger--closed c0"
           >
             <span
               className="c1"
@@ -217,7 +217,7 @@ exports[`Drawer renders header elements 1`] = `
           type="button"
         >
           <span
-            className="c0 hamburger hamburger--closed"
+            className="hamburger hamburger--closed c0"
           >
             <span
               className="c1"
@@ -333,7 +333,7 @@ exports[`Drawer renders multiple child elements 1`] = `
           type="button"
         >
           <span
-            className="c0 hamburger hamburger--closed"
+            className="hamburger hamburger--closed c0"
           >
             <span
               className="c1"
@@ -460,7 +460,7 @@ exports[`Drawer renders string header header 1`] = `
       <HeaderContent>
         <div>
           <div
-            className="c0 text text--light text--primary"
+            className="text text--light text--primary c0"
             disabled={false}
             size="kilo"
           >
@@ -471,7 +471,7 @@ exports[`Drawer renders string header header 1`] = `
           type="button"
         >
           <span
-            className="c1 hamburger hamburger--closed"
+            className="hamburger hamburger--closed c1"
           >
             <span
               className="c2"

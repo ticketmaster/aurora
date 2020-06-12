@@ -127,12 +127,12 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
       >
         <button
           aria-selected="true"
-          class="c3 tab__button--active"
+          class="tab__button--active c3"
           data-index="0"
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 1
           </div>
@@ -148,7 +148,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 2
           </div>
@@ -164,7 +164,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 3
           </div>
@@ -291,12 +291,12 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
       >
         <button
           aria-selected="true"
-          class="c3 tab__button--active"
+          class="tab__button--active c3"
           data-index="0"
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 1
           </div>
@@ -312,7 +312,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 2
           </div>
@@ -328,7 +328,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           role="tab"
         >
           <div
-            class="c4 text text--primary"
+            class="text text--primary c4"
           >
             Test tab item 3
           </div>
@@ -467,12 +467,12 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
       >
         <button
           aria-selected="true"
-          class="c3 tab__button--active"
+          class="tab__button--active c3"
           data-index="0"
           role="tab"
         >
           <div
-            class="c4 text text--accent text--alert text--primary"
+            class="text text--accent text--alert text--primary c4"
           >
             Test tab item 1
           </div>
@@ -488,7 +488,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           role="tab"
         >
           <div
-            class="c4 text text--accent text--alert text--primary"
+            class="text text--accent text--alert text--primary c4"
           >
             Test tab item 2
           </div>
@@ -504,7 +504,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           role="tab"
         >
           <div
-            class="c4 text text--accent text--alert text--primary"
+            class="text text--accent text--alert text--primary c4"
           >
             Test tab item 3
           </div>

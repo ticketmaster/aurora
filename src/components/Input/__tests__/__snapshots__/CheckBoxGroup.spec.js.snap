@@ -230,10 +230,9 @@ Object {
 
 <div>
     <label
-      class="c0 checkbox--small checkbox__checked"
+      class="checkbox--small checkbox__checked c0"
     >
       <input
-        checked=""
         class="c1"
         data-testid="test-checkbox"
         id="something1input"
@@ -530,7 +529,7 @@ Object {
 
 <div>
     <label
-      class="c0 checkbox--small"
+      class="checkbox--small c0"
     >
       <input
         class="c1"
@@ -832,7 +831,7 @@ Object {
       role="checkbox"
     >
       <label
-        class="c0 checkbox--large"
+        class="checkbox--large c0"
       >
         <input
           class="c1"
@@ -1135,7 +1134,7 @@ Object {
       role="checkbox"
     >
       <label
-        class="c0 checkbox--large"
+        class="checkbox--large c0"
       >
         <input
           class="c1"
@@ -1438,7 +1437,7 @@ Object {
       role="checkbox"
     >
       <label
-        class="c0 checkbox--large"
+        class="checkbox--large c0"
       >
         <input
           class="c1"
@@ -1742,10 +1741,9 @@ Object {
 
 <div>
     <label
-      class="c0 checkbox--small checkbox__checked"
+      class="checkbox--small checkbox__checked c0"
     >
       <input
-        checked=""
         class="c1"
         data-testid="test-checkbox"
         id="something1input"

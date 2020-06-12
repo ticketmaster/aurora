@@ -32,7 +32,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
   className="c0"
 >
   <a
-    className="sc-AxhUy c1 "
+    className="c1"
     href="/"
     onClick={null}
     rel="_self"
@@ -45,7 +45,7 @@ exports[`<Breadcrumb.Item /> renders correctly when an href prop is passed 1`] =
 `;
 
 exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] = `
-.c1 {
+.c2 {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
@@ -58,14 +58,14 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   cursor: pointer;
 }
 
-.c1:focus,
-.c1:active,
-.c1:visited,
-.c1:hover {
+.c2:focus,
+.c2:active,
+.c2:visited,
+.c2:hover {
   color: rgba(255,255,255,1);
 }
 
-.c1:hover {
+.c2:hover {
   color: #0150a7;
 }
 
@@ -73,11 +73,11 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   white-space: nowrap;
 }
 
-.c2 {
+.c1 {
   cursor: text;
 }
 
-.c2:hover {
+.c1:hover {
   color: currentColor;
 }
 
@@ -85,7 +85,7 @@ exports[`<Breadcrumb.Item /> renders correctly when no href prop is passed 1`] =
   className="c0"
 >
   <span
-    className="sc-AxhUy sc-AxgMl c1 c2"
+    className="c1 c2"
     href={null}
     onClick={null}
     rel="_self"

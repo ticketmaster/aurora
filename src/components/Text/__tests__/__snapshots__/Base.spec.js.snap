@@ -34,7 +34,7 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -78,7 +78,7 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -104,7 +104,7 @@ exports[`BaseText with responsiveSize should render correctly with {"responsiveS
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -154,7 +154,7 @@ exports[`BaseText with responsiveSize should render correctly with {"size":"hect
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size={
     Object {
@@ -180,7 +180,7 @@ exports[`BaseText with responsiveSize should render correctly with {"size":"hect
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -198,7 +198,7 @@ exports[`BaseText with themed color palette should render disabled text with a d
 }
 
 <div
-  className="c0 text text--accent text-tm text--disabled"
+  className="text text--accent text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -216,7 +216,7 @@ exports[`BaseText with themed color palette should render disabled text with a d
 }
 
 <div
-  className="c0 text text--dark text-tm text--disabled"
+  className="text text--dark text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -234,7 +234,7 @@ exports[`BaseText with themed color palette should render disabled text with a d
 }
 
 <div
-  className="c0 text text--light text-tm text--disabled"
+  className="text text--light text-tm text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -252,7 +252,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--accent text--gray04 text-tm"
+  className="text text--accent text--gray04 text-tm c0"
   disabled={false}
   size="hecto"
 >
@@ -270,7 +270,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--accent text-tm"
+  className="text text--accent text-tm c0"
   disabled={false}
   size="hecto"
 >
@@ -288,7 +288,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--dark text-tm text--primary"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -306,7 +306,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--dark text-tm text--primary text--custom"
+  className="text text--dark text-tm text--primary text--custom c0"
   disabled={false}
   size="hecto"
 >
@@ -324,7 +324,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--light text-tm text--primary"
+  className="text text--light text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -342,7 +342,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--dark text-tm text--primary"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="giga"
 >
@@ -360,7 +360,7 @@ exports[`BaseText with themed color palette should render primary text with a di
 }
 
 <div
-  className="c0 text text--dark text-tm text--primary"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -378,7 +378,7 @@ exports[`BaseText with themed color palette should render primary text with a ta
 }
 
 <span
-  className="c0 text text--dark text-tm text--primary"
+  className="text text--dark text-tm text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -396,7 +396,7 @@ exports[`BaseText with themed color palette should render secondary text with a 
 }
 
 <div
-  className="c0 text text--accent text-tm text--secondary"
+  className="text text--accent text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -414,7 +414,7 @@ exports[`BaseText with themed color palette should render secondary text with a 
 }
 
 <div
-  className="c0 text text--dark text-tm text--secondary"
+  className="text text--dark text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -432,7 +432,7 @@ exports[`BaseText with themed color palette should render secondary text with a 
 }
 
 <div
-  className="c0 text text--light text-tm text--secondary"
+  className="text text--light text-tm text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -450,7 +450,7 @@ exports[`BaseText with traditional color palette should render disabled text wit
 }
 
 <div
-  className="c0 text text--accent text--azure text--disabled"
+  className="text text--accent text--azure text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -468,7 +468,7 @@ exports[`BaseText with traditional color palette should render disabled text wit
 }
 
 <div
-  className="c0 text text--dark text--disabled"
+  className="text text--dark text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -486,7 +486,7 @@ exports[`BaseText with traditional color palette should render disabled text wit
 }
 
 <div
-  className="c0 text text--light text--disabled"
+  className="text text--light text--disabled c0"
   disabled={true}
   size="hecto"
 >
@@ -504,7 +504,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--accent text--aquamarine"
+  className="text text--accent text--aquamarine c0"
   disabled={false}
   size="hecto"
 >
@@ -522,7 +522,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--accent text--azure"
+  className="text text--accent text--azure c0"
   disabled={false}
   size="hecto"
 >
@@ -540,7 +540,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -558,7 +558,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--dark text--primary text--custom"
+  className="text text--dark text--primary text--custom c0"
   disabled={false}
   size="hecto"
 >
@@ -576,7 +576,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--light text--primary"
+  className="text text--light text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -594,7 +594,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="giga"
 >
@@ -612,7 +612,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <div
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -630,7 +630,7 @@ exports[`BaseText with traditional color palette should render primary text with
 }
 
 <span
-  className="c0 text text--dark text--primary"
+  className="text text--dark text--primary c0"
   disabled={false}
   size="hecto"
 >
@@ -648,7 +648,7 @@ exports[`BaseText with traditional color palette should render secondary text wi
 }
 
 <div
-  className="c0 text text--accent text--azure text--secondary"
+  className="text text--accent text--azure text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -666,7 +666,7 @@ exports[`BaseText with traditional color palette should render secondary text wi
 }
 
 <div
-  className="c0 text text--dark text--secondary"
+  className="text text--dark text--secondary c0"
   disabled={false}
   size="hecto"
 >
@@ -684,7 +684,7 @@ exports[`BaseText with traditional color palette should render secondary text wi
 }
 
 <div
-  className="c0 text text--light text--secondary"
+  className="text text--light text--secondary c0"
   disabled={false}
   size="hecto"
 >

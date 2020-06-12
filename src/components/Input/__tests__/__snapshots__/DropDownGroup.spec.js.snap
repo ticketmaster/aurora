@@ -338,7 +338,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -348,7 +348,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -371,7 +371,7 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked"
+      class="dropdown__items dropdown__items--large dropdown--clicked c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -752,7 +752,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -762,7 +762,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -785,7 +785,7 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked"
+      class="dropdown__items dropdown__items--large dropdown--clicked c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -1166,7 +1166,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -1199,7 +1199,7 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -1580,7 +1580,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -1592,7 +1592,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
         Option One
       </div>
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -1615,7 +1615,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -1624,7 +1624,7 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
       >
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -1996,7 +1996,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -2006,7 +2006,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -2029,7 +2029,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -2410,7 +2410,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -2420,7 +2420,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -2443,7 +2443,7 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -2824,7 +2824,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -2857,7 +2857,7 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -3233,22 +3233,22 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="c0 dropdown--disabled"
+    class="dropdown--disabled c0"
     data-testid="test-dropContainer"
     tabindex="-1"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border dropdown__label--disabled"
+      class="dropdown__label dropdown--large dropdown--border dropdown__label--disabled c1"
     >
       <span
         class="c2"
         id="hidden-label__"
       />
       <div
-        class="c3 c4 dropdown__text--disabled"
+        class="dropdown__text--disabled c3 c4"
       />
       <svg
-        class="c5 dropdown__chevron--disabled"
+        class="dropdown__chevron--disabled c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -3271,7 +3271,7 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -3652,7 +3652,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -3685,7 +3685,7 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -4068,7 +4068,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -4103,7 +4103,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -4112,7 +4112,7 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
       >
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -4484,7 +4484,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -4496,7 +4496,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
         Option One
       </div>
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -4519,7 +4519,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -4528,7 +4528,7 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
       >
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           data-testid="test-dropDownOptionOne"
           role="option"
           tabindex="-1"
@@ -4686,7 +4686,7 @@ Array [
 
 <span
     aria-selected="true"
-    class="c0 dropdown__selected"
+    class="dropdown__selected c0"
     data-testid="test-dropDownOptionTwo"
     role="option"
     tabindex="-1"
@@ -5099,7 +5099,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -5136,7 +5136,7 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__Select_An_Option"
@@ -5517,7 +5517,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--no-border"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -5529,7 +5529,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown--no-border"
+        class="dropdown--no-border c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -5552,7 +5552,7 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__Selected_Option:"
@@ -5933,7 +5933,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -5966,7 +5966,7 @@ exports[`DropDownGroup renders default dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -6347,7 +6347,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -6380,7 +6380,7 @@ exports[`DropDownGroup renders default dropdown that should always open downward
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -6761,7 +6761,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--active dropdown--border"
+      class="dropdown__label dropdown--large dropdown--active dropdown--border c1"
     >
       <span
         class="c2"
@@ -6771,7 +6771,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
         class="c3 c4"
       />
       <svg
-        class="c5 dropdown__icon--hide"
+        class="dropdown__icon--hide c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -6794,7 +6794,7 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow"
+      class="dropdown__items dropdown__items--large dropdown--clicked dropdown--overflow c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -7175,7 +7175,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -7208,7 +7208,7 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -7589,7 +7589,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--border"
+      class="dropdown__label dropdown--large dropdown--border c1"
     >
       <span
         class="c2"
@@ -7622,7 +7622,7 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         class="c7"
@@ -8002,7 +8002,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--small dropdown--border"
+      class="dropdown__label dropdown--small dropdown--border c1"
     >
       <span
         class="c2"
@@ -8035,7 +8035,7 @@ exports[`DropDownGroup renders small dropdown 1`] = `
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--small"
+      class="dropdown__items dropdown__items--small c6"
     >
       <div
         aria-labelledby="hidden-label__"
@@ -8408,7 +8408,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--no-border"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -8424,7 +8424,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Date
       </div>
       <svg
-        class="c5 dropdown--no-border"
+        class="dropdown--no-border c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -8447,7 +8447,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__Sort_By:"
@@ -8456,7 +8456,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       >
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           role="option"
           tabindex="-1"
           value="date"
@@ -8821,7 +8821,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--no-border"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -8840,7 +8840,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         </span>
       </div>
       <svg
-        class="c5 dropdown--no-border"
+        class="dropdown--no-border c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -8863,7 +8863,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__Sort_By:"
@@ -8891,7 +8891,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         </span>
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           role="option"
           tabindex="-1"
           value="price"
@@ -9237,7 +9237,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
     tabindex="0"
   >
     <label
-      class="c1 dropdown__label dropdown--large dropdown--no-border"
+      class="dropdown__label dropdown--large dropdown--no-border c1"
     >
       <span
         class="c2"
@@ -9254,7 +9254,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         Closest
       </div>
       <svg
-        class="c5 dropdown--no-border"
+        class="dropdown--no-border c5"
         height="16"
         viewBox="0 0 16 16"
         width="16"
@@ -9277,7 +9277,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
       </svg>
     </label>
     <div
-      class="c6 dropdown__items dropdown__items--large"
+      class="dropdown__items dropdown__items--large c6"
     >
       <div
         aria-labelledby="hidden-label__Sort_By:"
@@ -9295,7 +9295,7 @@ exports[`DropDownGroup should render the correct label when label prop is passed
         </span>
         <span
           aria-selected="true"
-          class="c8 dropdown__selected"
+          class="dropdown__selected c8"
           role="option"
           tabindex="-1"
           value="distance"
@@ -9373,7 +9373,7 @@ exports[`DropDownOption should render the correct markup when a className prop i
 
 <span
   aria-selected="false"
-  className="c0 dropdown__item--expandable"
+  className="dropdown__item--expandable c0"
   onClick={[Function]}
   onKeyDown={[Function]}
   onMouseMove={[Function]}

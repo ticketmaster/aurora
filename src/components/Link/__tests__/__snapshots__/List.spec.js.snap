@@ -61,23 +61,23 @@ exports[`<LinkList /> renders LinkList correctly when its open 1`] = `
 }
 
 <div
-  class="c0 links links__list"
+  class="links links__list c0"
 >
   <div
     class="c1"
   >
     <div
-      class="c2 links__list__item--selected links__list__item"
+      class="links__list__item--selected links__list__item c2"
     >
       USA (English)
     </div>
     <div
-      class="c2 links__list__item"
+      class="links__list__item c2"
     >
       Canada (English)
     </div>
     <div
-      class="c2 links__list__item"
+      class="links__list__item c2"
     >
       Canada (Français)
     </div>
@@ -148,25 +148,25 @@ exports[`<LinkList /> renders LinkList correctly with list items as links 1`] = 
 }
 
 <div
-  class="c0 links links__list"
+  class="links links__list c0"
 >
   <div
     class="c1"
   >
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       Canada (Français)
@@ -244,25 +244,25 @@ exports[`<LinkList /> renders content after container 1`] = `
 }
 
 <div
-  class="c0 links links__list"
+  class="links links__list c0"
 >
   <div
-    class="c1 wrapper--has-after"
+    class="wrapper--has-after c1"
   >
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       USA (English)
     </a>
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       Canada (English)
     </a>
     <a
-      class="sc-AxhCb c2 links__list__item"
+      class="links__list__item c2"
       href="/"
     >
       Canada (Français)

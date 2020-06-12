@@ -52,7 +52,7 @@ exports[`ImageCard renders standard card 1`] = `
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -64,7 +64,7 @@ exports[`ImageCard renders standard card 1`] = `
       title="image"
     />
     <div
-      className="c3 image-card__overlay"
+      className="image-card__overlay c3"
     />
   </div>
 </div>
@@ -164,10 +164,10 @@ exports[`ImageCard renders type = half 1`] = `
 }
 
 <div
-  className="sc-fznxsB c0"
+  className="c0"
 >
   <div
-    className="sc-AxjAm sc-AxirZ sc-fzokOt c1 container-block"
+    className="container-block c1"
   >
     <img
       alt=""
@@ -177,13 +177,13 @@ exports[`ImageCard renders type = half 1`] = `
     />
   </div>
   <div
-    className="c3 image-card__caption"
+    className="image-card__caption c3"
   >
     <span
       className="c4"
     >
       <div
-        className="c5 text text--dark text--primary image-card__title--half"
+        className="text text--dark text--primary image-card__title--half c5"
         disabled={false}
         size="hecto"
       >
@@ -198,7 +198,7 @@ exports[`ImageCard renders type = half 1`] = `
       className="c6"
     >
       <div
-        className="c5 text text--dark text--primary image-card__subtitle--half"
+        className="text text--dark text--primary image-card__subtitle--half c5"
         disabled={false}
         size="hecto"
       >
@@ -307,7 +307,7 @@ exports[`ImageCard renders with additional content when \`cardTitle\` and \`card
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -319,10 +319,10 @@ exports[`ImageCard renders with additional content when \`cardTitle\` and \`card
       title=""
     />
     <div
-      className="c3 image-card__overlay"
+      className="image-card__overlay c3"
     >
       <div
-        className="c4 image-card__caption"
+        className="image-card__caption c4"
       >
         <span
           className="c5"
@@ -429,17 +429,17 @@ exports[`ImageCard renders with custom image 1`] = `
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
   >
     <svg />
     <div
-      className="c2 image-card__overlay"
+      className="image-card__overlay c2"
     >
       <div
-        className="c3 image-card__caption"
+        className="image-card__caption c3"
       >
         <span
           className="c4"
@@ -541,7 +541,7 @@ exports[`ImageCard renders with custom props 1`] = `
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -558,7 +558,7 @@ exports[`ImageCard renders with custom props 1`] = `
       title=""
     />
     <div
-      className="c3 image-card__overlay"
+      className="image-card__overlay c3"
       style={
         Object {
           "display": "none",
@@ -566,7 +566,7 @@ exports[`ImageCard renders with custom props 1`] = `
       }
     >
       <div
-        className="c4 image-card__caption"
+        className="image-card__caption c4"
         style={
           Object {
             "display": "none",
@@ -678,7 +678,7 @@ exports[`ImageCard renders with title & subtitle 1`] = `
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -690,10 +690,10 @@ exports[`ImageCard renders with title & subtitle 1`] = `
       title=""
     />
     <div
-      className="c3 image-card__overlay"
+      className="image-card__overlay c3"
     >
       <div
-        className="c4 image-card__caption"
+        className="image-card__caption c4"
       >
         <span
           className="c5"
@@ -805,7 +805,7 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
 }
 
 <div
-  className="sc-AxjAm sc-AxirZ c0 container-block"
+  className="container-block c0"
 >
   <div
     className="c1"
@@ -817,10 +817,10 @@ exports[`ImageCard renders with title & subtitle, extra content 1`] = `
       title=""
     />
     <div
-      className="c3 image-card__overlay"
+      className="image-card__overlay c3"
     >
       <div
-        className="c4 image-card__caption"
+        className="image-card__caption c4"
       >
         <span
           className="c5"
