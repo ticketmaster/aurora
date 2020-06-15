@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
-.c1 {
+.c0 {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -9,12 +9,12 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel correctly 1`] = `
   color: rgba(38,38,38,1);
 }
 
-.c0 {
+.c1 {
   text-transform: uppercase;
 }
 
 <div
-  className="text text--dark text--primary c0 c1"
+  className="c0 text text--dark text--primary c1"
   disabled={false}
   size="hecto"
 >
@@ -41,7 +41,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
 }
 
 <div
-  className="badge c0"
+  className="c0 badge"
   color="#d93a3a"
 >
   Alert label
@@ -66,7 +66,7 @@ exports[`<BottomSheetLabel /> renders BottomSheetLabel with prop variant to equa
 }
 
 <div
-  className="badge c0"
+  className="c0 badge"
   color="#1bab1e"
 >
   Positive label

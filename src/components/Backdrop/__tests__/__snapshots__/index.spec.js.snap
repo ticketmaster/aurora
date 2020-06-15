@@ -14,7 +14,7 @@ exports[`<Backdrop /> renders correctly with an overlay 1`] = `
 
 <div>
   <div
-    class="container--overlay c0"
+    class="c0 container--overlay"
   >
     <div>
       Component under test

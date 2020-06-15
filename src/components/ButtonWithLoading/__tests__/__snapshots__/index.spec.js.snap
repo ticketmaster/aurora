@@ -64,8 +64,8 @@ exports[`ButtonWithLoading should match snapshot 1`] = `
   height: 6px;
   border-radius: 50%;
   background: rgba(255,255,255,1);
-  -webkit-animation: hZBpYk 0.8s linear infinite;
-  animation: hZBpYk 0.8s linear infinite;
+  -webkit-animation: cHUQxz 0.8s linear infinite;
+  animation: cHUQxz 0.8s linear infinite;
 }
 
 .c4:nth-child(2) {
@@ -95,7 +95,7 @@ exports[`ButtonWithLoading should match snapshot 1`] = `
 }
 
 <button
-  className="  noFocus c0"
+  className="c0   noFocus"
   size="regular"
 >
   <div
@@ -191,7 +191,7 @@ exports[`ButtonWithLoading should match snapshot with default values 1`] = `
 }
 
 <button
-  className="  noFocus c0"
+  className="c0   noFocus"
   size="regular"
 >
   <div

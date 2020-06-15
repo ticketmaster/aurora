@@ -24,7 +24,7 @@ exports[`<Backdrop /> calls the handleOutsideClick function on clicking overlay 
 }
 
 <div
-  class="container--overlay c0"
+  class="c0 container--overlay"
   data-testid="container--overlay"
 >
   <div>
@@ -56,7 +56,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
   align-items: center;
 }
 
-.c4 {
+.c3 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -75,18 +75,18 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
   border: none;
 }
 
-.c4:disabled {
+.c3:disabled {
   color: rgba(255,255,255,0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c3:focus {
   outline: none;
 }
 
-.c4 > * {
+.c3 > * {
   pointer-events: none;
 }
 
@@ -189,7 +189,7 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
   min-height: calc(16px + 28px);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -214,19 +214,19 @@ exports[`<Backdrop /> calls the onKeyPress function on pressing the ESC key 1`] 
 }
 
 <div
-  class="container--overlay c0"
+  class="c0 container--overlay"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet c1"
+    class="c1 content__bottom-sheet"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel c2"
+      class="sc-fzqNqU c2 row__header row__button--cancel"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel c3 c4"
+        class="sc-fzoNJl c3 c4 button--cancel"
         role="button"
         size="28"
       >
@@ -278,7 +278,7 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
   align-items: center;
 }
 
-.c4 {
+.c3 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -297,18 +297,18 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
   border: none;
 }
 
-.c4:disabled {
+.c3:disabled {
   color: rgba(255,255,255,0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c3:focus {
   outline: none;
 }
 
-.c4 > * {
+.c3 > * {
   pointer-events: none;
 }
 
@@ -411,7 +411,7 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
   min-height: calc(16px + 28px);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -436,19 +436,19 @@ exports[`<Backdrop /> do not calls the onKeyPress function on pressing any other
 }
 
 <div
-  class="container--overlay c0"
+  class="c0 container--overlay"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet c1"
+    class="c1 content__bottom-sheet"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel c2"
+      class="sc-fzqNqU c2 row__header row__button--cancel"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel c3 c4"
+        class="sc-fzoNJl c3 c4 button--cancel"
         role="button"
         size="28"
       >
@@ -500,7 +500,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
   align-items: center;
 }
 
-.c4 {
+.c3 {
   height: 36px;
   width: 100%;
   min-width: 100px;
@@ -519,18 +519,18 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
   border: none;
 }
 
-.c4:disabled {
+.c3:disabled {
   color: rgba(255,255,255,0.5);
   background-color: transparent;
   border: 1px solid rgba(255,255,255,0.5);
   cursor: not-allowed;
 }
 
-.c4:focus {
+.c3:focus {
   outline: none;
 }
 
-.c4 > * {
+.c3 > * {
   pointer-events: none;
 }
 
@@ -633,7 +633,7 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
   min-height: calc(16px + 28px);
 }
 
-.c3 {
+.c4 {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -658,19 +658,19 @@ exports[`<Backdrop /> renders Backdrop correctly 1`] = `
 }
 
 <div
-  class="container--overlay c0"
+  class="c0 container--overlay"
 >
   <div
     aria-modal="true"
-    class="content__bottom-sheet c1"
+    class="c1 content__bottom-sheet"
     role="dialog"
   >
     <div
-      class="row__header row__button--cancel c2"
+      class="sc-fzqNqU c2 row__header row__button--cancel"
     >
       <button
         aria-label="Close BottomSheet"
-        class="button--cancel c3 c4"
+        class="sc-fzoNJl c3 c4 button--cancel"
         role="button"
         size="28"
       >

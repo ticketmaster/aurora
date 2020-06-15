@@ -36,7 +36,7 @@ exports[`<LinkItem /> renders LinkItem as button  1`] = `
     role="none"
   >
     <button
-      class="link c0"
+      class="c0 link"
       role="button"
     >
       Button text
@@ -81,7 +81,7 @@ exports[`<LinkItem /> renders LinkItem as button when disableHoverEvents equals 
     role="none"
   >
     <button
-      class="link c0"
+      class="c0 link"
       role="button"
     >
       Button text
@@ -126,7 +126,7 @@ exports[`<LinkItem /> renders LinkItem as link 1`] = `
     role="none"
   >
     <a
-      class="link c0"
+      class="c0 link"
       href="http://localhost/new/"
       rel="noopener"
       role="link"
@@ -174,7 +174,7 @@ exports[`<LinkItem /> renders LinkItem as link when disableHoverEvents equals tr
     role="none"
   >
     <a
-      class="link c0"
+      class="c0 link"
       href="http://localhost/new/"
       rel="noopener"
       role="link"
@@ -253,13 +253,13 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
     <button
       aria-expanded="false"
       aria-haspopup="true"
-      class="link link--has-other c0"
+      class="c0 link link--has-other"
       role="button"
     >
       Button text
     </button>
     <div
-      class="links links__list c1"
+      class="c1 links links__list"
     >
       <div
         class="c2"
@@ -269,7 +269,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link c0"
+            class="c0 link"
             href="/"
             role="link"
             target="_self"
@@ -282,7 +282,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link c0"
+            class="c0 link"
             href="/"
             role="link"
             target="_self"
@@ -295,7 +295,7 @@ exports[`<LinkItem /> renders LinkItem children correctly 1`] = `
           role="none"
         >
           <a
-            class="link c0"
+            class="c0 link"
             href="/"
             role="link"
             target="_self"
