@@ -95,16 +95,16 @@ class ListContainer extends Component {
       openIndex !== ITEMS_COLLAPSED && !!mobilePortalContent;
     const { label, labelVariant } = portalContentData || {};
 
+    const ContainerProviderValue = {
+      ...this.state,
+      onCloseRequest: this.onCloseRequest,
+      renderIntoPortal: this.renderIntoPortal,
+      resetOpenIndex: this.resetOpenIndex
+    };
+
     return (
       <Container onClick={this.onExpandOrCollapse} {...rest}>
-        <ContainerProvider
-          value={{
-            ...this.state,
-            onCloseRequest: this.onCloseRequest,
-            renderIntoPortal: this.renderIntoPortal,
-            resetOpenIndex: this.resetOpenIndex
-          }}
-        >
+        <ContainerProvider value={ContainerProviderValue}>
           {children}
           <DisplayFor small>
             <Portal>
