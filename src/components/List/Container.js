@@ -25,19 +25,8 @@ class ListContainer extends Component {
     expandMultiple: this.props.expandMultiple,
     mobilePortalContent: null,
     desktopPortalContent: null,
-    portalContentData: null,
-    onCloseRequest: noop, // eslint-disable-line
-    renderIntoPortal: noop, // eslint-disable-line
-    resetOpenIndex: noop // eslint-disable-line
+    portalContentData: null
   };
-
-  componentWillMount() {
-    this.setState({
-      renderIntoPortal: this.renderIntoPortal, // eslint-disable-line
-      onCloseRequest: this.onCloseRequest, // eslint-disable-line
-      resetOpenIndex: this.resetOpenIndex // eslint-disable-line
-    });
-  }
 
   // Only used by modal on mobile devices
   onCloseRequest = () => {
@@ -106,9 +95,16 @@ class ListContainer extends Component {
       openIndex !== ITEMS_COLLAPSED && !!mobilePortalContent;
     const { label, labelVariant } = portalContentData || {};
 
+    const ContainerProviderValue = {
+      ...this.state,
+      onCloseRequest: this.onCloseRequest,
+      renderIntoPortal: this.renderIntoPortal,
+      resetOpenIndex: this.resetOpenIndex
+    };
+
     return (
       <Container onClick={this.onExpandOrCollapse} {...rest}>
-        <ContainerProvider value={this.state}>
+        <ContainerProvider value={ContainerProviderValue}>
           {children}
           <DisplayFor small>
             <Portal>
