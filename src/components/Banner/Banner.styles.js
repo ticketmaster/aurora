@@ -50,6 +50,11 @@ export const Container = styled.div`
     background-color: ${getThemeValue("primary", "lightest")};
     border-color: ${getThemeValue("primary", "base")};
   }
+
+  &.banner-variant-custom {
+    background-color: ${props => props.customColors.backgroundColor};
+    border-color: ${props => props.customColors.primaryColor};
+  }
 `;
 
 export const ContentSection = styled.div`
@@ -57,11 +62,16 @@ export const ContentSection = styled.div`
   padding-right: ${spacing.comfy};
 `;
 
+export const HeaderText = styled(Text)`
+  color: ${props => props.customColors.textColor};
+`;
+
 export const Content = styled(Text)`
   padding-top: 12px;
   opacity: 1;
   transition: opacity 0.3s ${constants.easing.easeInOutQuad} 0.1s;
   line-height: 1.29;
+  color: ${props => props.customColors.textColor};
 
   .collapsed & {
     transition: opacity 0.3s ${constants.easing.easeInOutQuad};

@@ -131,6 +131,23 @@ rows:
     }}
   />
   <Spacing bottom={{small: "moderate"}}/>
+  <Banner
+    heading="This is your primary message text."
+    content="This is the content section"
+    linkText="Link"
+    href="https://www.ticketmaster.com/"
+    linkProps={{ target: '_blank' }}
+    isOpen
+    variant="custom"
+    expandedText="expandedText"
+    collapsedText="collapsedText"
+    isExpanded
+    customColors={{
+      primaryColor: "#c56fff",
+      backgroundColor: "rgba(240, 218, 255, 0.4)",
+      textColor: "#262626"
+    }}
+  />
   <FunctionalBannerDemo />
 </div>
 ```
