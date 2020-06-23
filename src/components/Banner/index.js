@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import classnames from "classnames";
 import { Transition } from "react-transition-group";
-import { Text } from "../Text";
 import { variants, variantsIcons } from "./constants";
 import { constants } from "../../theme";
 import {
@@ -13,6 +12,7 @@ import {
   ContentSection,
   CloseIcon,
   Link,
+  HeaderText,
   BASE_BANNER_HEIGHT,
   MAX_BANNER_HEIGHT
 } from "./Banner.styles";
@@ -35,7 +35,12 @@ class Banner extends Component {
     variant: PropTypes.oneOf(variants),
     icon: PropTypes.node,
     closeButtonTitleText: PropTypes.string,
-    closeButtonHidden: PropTypes.bool
+    closeButtonHidden: PropTypes.bool,
+    customColors: PropTypes.shape({
+      primaryColor: PropTypes.string,
+      backgroundColor: PropTypes.string,
+      textColor: PropTypes.string
+    })
   };
 
   static defaultProps = {
@@ -55,7 +60,8 @@ class Banner extends Component {
     variant: null,
     icon: null,
     closeButtonTitleText: "Close banner",
-    closeButtonHidden: false
+    closeButtonHidden: false,
+    customColors: {}
   };
 
   // Container max height should be handled programmatically as content height is unknown
@@ -77,6 +83,8 @@ class Banner extends Component {
   }
 
   content = React.createRef();
+
+  isCustomVariant = () => this.props.variant === variants[4];
 
   toggleContent = () => {
     const { onButtonClick } = this.props;
@@ -142,17 +150,31 @@ class Banner extends Component {
   };
 
   renderIcon = () => {
-    const { variant, icon } = this.props;
+    const {
+      variant,
+      icon,
+      customColors: { primaryColor: color }
+    } = this.props;
     if (!variant && !icon) {
       return null;
     }
     const Icon = variantsIcons[variant];
 
-    return icon || <Icon type="filled" size="regular" />;
+    let customColor = null;
+    if (this.isCustomVariant()) customColor = { color };
+
+    return icon || <Icon type="filled" size="regular" {...customColor} />;
   };
 
   render() {
-    const { isOpen, heading, content, variant, style } = this.props;
+    const {
+      isOpen,
+      heading,
+      content,
+      variant,
+      style,
+      customColors
+    } = this.props;
     const { isExpanded, maxHeight } = this.state;
 
     return (
@@ -169,15 +191,22 @@ class Banner extends Component {
               [`banner-variant-${variant}`]: variant,
               "visible-banner": state === "entered"
             })}
+            customColors={this.isCustomVariant() && customColors}
           >
             <IconSection>{this.renderIcon()}</IconSection>
             <ContentSection>
-              <Text tag="span" weight="semiBold">
+              <HeaderText
+                tag="span"
+                weight="semiBold"
+                customColors={this.isCustomVariant() && customColors}
+              >
                 {heading}
-              </Text>
+              </HeaderText>
               {this.renderControl()}
               <div ref={this.content} style={{ ...style, maxHeight }}>
-                <Content>{content}</Content>
+                <Content customColors={this.isCustomVariant() && customColors}>
+                  {content}
+                </Content>
               </div>
             </ContentSection>
             {this.renderCloseButton()}
