@@ -34,7 +34,9 @@ class QtySelector extends Component {
     style: PropTypes.objectOf(PropTypes.string),
     min: PropTypes.number,
     max: PropTypes.number,
-    onValueUpdated: PropTypes.func
+    onValueUpdated: PropTypes.func,
+    incrementBtnLabel: PropTypes.string,
+    decrementBtnLabel: PropTypes.string
   };
 
   static defaultProps = {
@@ -43,7 +45,9 @@ class QtySelector extends Component {
     value: 0,
     min: QtySelector.MIN_INPUT_VALUE,
     max: QtySelector.MAX_INPUT_VALUE,
-    onValueUpdated: () => {}
+    onValueUpdated: () => {},
+    incrementBtnLabel: "Increase Quantity",
+    decrementBtnLabel: "Decrease Quantity"
   };
 
   state = {
@@ -156,20 +160,36 @@ class QtySelector extends Component {
   };
 
   render() {
-    const { disabled, min, max } = this.props;
+    const {
+      disabled,
+      min,
+      max,
+      decrementBtnLabel,
+      incrementBtnLabel
+    } = this.props;
     const { value } = this.state;
 
     return (
       <Container>
-        <Button onClick={this.decrement} disabled={disabled || min === value}>
+        <Button
+          onClick={this.decrement}
+          disabled={disabled || min === value}
+          aria-label={decrementBtnLabel}
+        >
           <QtySelectorMinusIcon />
         </Button>
         <InputFieldContainer
-          className={classNames({ InputFieldContainer__disabled: disabled })}
+          className={classNames({
+            InputFieldContainer__disabled: disabled
+          })}
         >
           {this.renderInput()}
         </InputFieldContainer>
-        <Button onClick={this.increment} disabled={disabled || max === value}>
+        <Button
+          onClick={this.increment}
+          disabled={disabled || max === value}
+          aria-label={incrementBtnLabel}
+        >
           <QtySelectorPlusIcon />
         </Button>
       </Container>
