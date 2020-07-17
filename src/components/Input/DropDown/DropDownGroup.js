@@ -89,7 +89,7 @@ class DropDownGroup extends React.Component {
         this.toggleDropdown();
         break;
       default:
-        if (!isOpen && keywordSearch) {
+        if (keywordSearch) {
           this.searchKeyWord(e);
         }
         break;
