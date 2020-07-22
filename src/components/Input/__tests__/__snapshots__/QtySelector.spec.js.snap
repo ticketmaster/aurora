@@ -167,6 +167,7 @@ exports[`QtySelector decrements correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -797,6 +798,7 @@ exports[`QtySelector decrements correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -991,6 +993,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -1621,6 +1624,7 @@ exports[`QtySelector decrements from non-zero value correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -1815,6 +1819,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -2445,6 +2450,7 @@ exports[`QtySelector decrements twice correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -2639,6 +2645,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -3268,6 +3275,7 @@ exports[`QtySelector handles case when input is deleted 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -3462,6 +3470,7 @@ exports[`QtySelector handles input value correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -4091,6 +4100,7 @@ exports[`QtySelector handles input value correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -4285,6 +4295,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -4915,6 +4926,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -5109,6 +5121,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -5738,6 +5751,7 @@ exports[`QtySelector handles input value longer than 2 chars correctly when usin
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -5933,6 +5947,7 @@ exports[`QtySelector increments correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -6562,6 +6577,7 @@ exports[`QtySelector increments correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -6756,6 +6772,7 @@ exports[`QtySelector increments twice correctly 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -7385,6 +7402,7 @@ exports[`QtySelector increments twice correctly 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -7579,6 +7597,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -7638,6 +7657,7 @@ exports[`QtySelector renders QtySelector correctly when there are min and max 1`
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -7832,6 +7852,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -8462,6 +8483,7 @@ exports[`QtySelector renders default QtySelector 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -8656,6 +8678,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -9386,6 +9409,7 @@ exports[`QtySelector renders disabled QtySelector 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -9581,6 +9605,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -10211,6 +10236,7 @@ exports[`QtySelector sets focus state to false when input looses focus 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg
@@ -10405,6 +10431,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
   class="c0"
 >
   <button
+    aria-label="Decrease Quantity"
     class="c1 c2  noFocus"
     disabled=""
   >
@@ -10440,6 +10467,7 @@ exports[`QtySelector sets focus state to true after input is focused 1`] = `
     />
   </div>
   <button
+    aria-label="Increase Quantity"
     class="c1 c2  noFocus"
   >
     <svg

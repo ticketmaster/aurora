@@ -919,6 +919,14 @@ rows:
     Type: function
     Default:
     Notes: call back function when value is updated either by buttons or keyboard. Use this function instead of onChange.
+  - Prop: incrementBtnLabel
+    Type: string
+    Default: Increase Quantity
+    Notes: Aria label of the Increment button for accessibility requirement
+  - Prop: decrementBtnLabel
+    Type: string
+    Default: Decrease Quantity
+    Notes: Aria label of the Decrement button for accessibility requirement
 ```
 
 It also accepts any event handlers. e.g. `onBlur`, `onFocus` etc. as well as styles object.
