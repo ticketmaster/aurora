@@ -101,15 +101,22 @@ exports[`NavBar renders fixed 1`] = `
   color: rgba(38,38,38,1) !important;
 }
 
-.c6:focus,
+.c6:focus {
+  outline: 1px solid rgba(255,255,255,1);
+}
+
+.nav--inverted .c6:focus,
+.links__list .c6:focus {
+  background-color: #E6E6E6;
+  outline: 1px solid #026cdf;
+}
+
 .c6:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c6:focus,
 .nav--inverted .c6:hover,
-.links__list .c6:focus,
 .links__list .c6:hover {
   background-color: #E6E6E6;
 }
@@ -549,15 +556,22 @@ exports[`NavBar renders inverted 1`] = `
   color: rgba(38,38,38,1) !important;
 }
 
-.c6:focus,
+.c6:focus {
+  outline: 1px solid rgba(255,255,255,1);
+}
+
+.nav--inverted .c6:focus,
+.links__list .c6:focus {
+  background-color: #E6E6E6;
+  outline: 1px solid #026cdf;
+}
+
 .c6:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c6:focus,
 .nav--inverted .c6:hover,
-.links__list .c6:focus,
 .links__list .c6:hover {
   background-color: #E6E6E6;
 }
@@ -994,15 +1008,22 @@ exports[`NavBar renders with defaults 1`] = `
   color: rgba(38,38,38,1) !important;
 }
 
-.c5:focus,
+.c5:focus {
+  outline: 1px solid rgba(255,255,255,1);
+}
+
+.nav--inverted .c5:focus,
+.links__list .c5:focus {
+  background-color: #E6E6E6;
+  outline: 1px solid #026cdf;
+}
+
 .c5:hover {
   outline: 0;
   background-color: rgba(38,38,38,0.1);
 }
 
-.nav--inverted .c5:focus,
 .nav--inverted .c5:hover,
-.links__list .c5:focus,
 .links__list .c5:hover {
   background-color: #E6E6E6;
 }
