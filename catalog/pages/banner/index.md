@@ -61,6 +61,10 @@ rows:
     Type: node
     Default: none
     Notes: Allows to pass a custom Icon
+  - Prop: contentSectionCss
+    Type: css string
+    Default: none
+    Notes: Allows to pass a css string with custom styles to extend the content section block styles
 ```
 
 ```react

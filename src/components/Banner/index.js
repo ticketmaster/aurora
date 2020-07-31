@@ -32,6 +32,7 @@ class Banner extends Component {
     linkProps: PropTypes.shape(),
     buttonProps: PropTypes.shape(),
     style: PropTypes.shape(),
+    contentSectionCss: PropTypes.string,
     variant: PropTypes.oneOf(variants),
     icon: PropTypes.node,
     closeButtonTitleText: PropTypes.string,
@@ -57,6 +58,7 @@ class Banner extends Component {
     style: {
       transition: `max-height 0.3s ${constants.easing.easeInOutQuad} 0s`
     },
+    contentSectionCss: "",
     variant: null,
     icon: null,
     closeButtonTitleText: "Close banner",
@@ -173,6 +175,7 @@ class Banner extends Component {
       content,
       variant,
       style,
+      contentSectionCss,
       customColors
     } = this.props;
     const { isExpanded, maxHeight } = this.state;
@@ -194,7 +197,7 @@ class Banner extends Component {
             customColors={this.isCustomVariant() && customColors}
           >
             <IconSection>{this.renderIcon()}</IconSection>
-            <ContentSection>
+            <ContentSection css={contentSectionCss}>
               <HeaderText
                 tag="span"
                 weight="semiBold"
