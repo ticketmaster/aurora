@@ -196,6 +196,7 @@ exports[`CalendarView should render without errors 1`] = `
 }
 
 .c24 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
