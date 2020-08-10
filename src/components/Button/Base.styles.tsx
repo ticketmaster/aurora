@@ -96,6 +96,7 @@ interface StyledButtonProps {
 const getPadding = ({ size }) => SIZES[size].padding;
 
 export const StyledButton = styled.button<StyledButtonProps>`
+  font-family: inherit;
   font-weight: ${typography.weight.semiBold};
   font-size: ${({ size }) => SIZES[size].fontSize};
   line-height: ${({ size }) => SIZES[size].lineHeight};
