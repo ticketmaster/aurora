@@ -511,6 +511,7 @@ exports[`<ListRow /> renders List Row with colored date correctly 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1448,6 +1449,7 @@ exports[`<ListRow /> renders List Row with label correctly 1`] = `
 }
 
 .c22 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -2561,6 +2563,7 @@ exports[`<ListRow /> renders List Row with link correctly 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -3543,6 +3546,7 @@ exports[`<ListRow /> renders List Row with styled button 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -4399,6 +4403,7 @@ exports[`<ListRow /> renders List Row with title correctly when expanded 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -5371,6 +5376,7 @@ exports[`<ListRow /> renders List Row with variant withLink correctly 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -6353,6 +6359,7 @@ exports[`<ListRow /> renders standard List Row correctly 1`] = `
 }
 
 .c16 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
