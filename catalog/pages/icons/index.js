@@ -56,7 +56,10 @@ import {
   PrintIcon,
   FavoriteIcon,
   LaunchIcon,
-  PlayCircularIcon
+  PlayCircularIcon,
+  SpotifyIcon,
+  ItunesIcon,
+  WebsiteIcon
 } from "../../../src/components/Icons/index";
 import { Container, Row, Column } from "../../../src/components/Grid";
 import { themes } from "../../../src/theme";
@@ -140,7 +143,10 @@ export default {
     PrintIcon,
     FavoriteIcon,
     LaunchIcon,
-    PlayCircularIcon
+    PlayCircularIcon,
+    SpotifyIcon,
+    ItunesIcon,
+    WebsiteIcon
   },
   content: pageLoader(() => import("./index.md"))
 };
