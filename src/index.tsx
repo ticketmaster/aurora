@@ -150,7 +150,10 @@ export {
   FraudulentActivityIcon,
   PrintIcon,
   LaunchIcon,
-  PlayCircularIcon
+  PlayCircularIcon,
+  SpotifyIcon,
+  WebsiteIcon,
+  ItunesIcon
 } from "./components/Icons";
 export {
   default as DeviceSizeProvider
