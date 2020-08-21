@@ -193,6 +193,22 @@ rows:
     <div style={iconLabelStyle}>Youtube Icon</div>
   </Column>
 </Row>
+<Row>
+  <Column medium={3}>
+    <div style={iconStyle}><WebsiteIcon size={26} color="#000"><title>Website Icon</title></WebsiteIcon></div>
+    <div style={iconLabelStyle}>Website Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><SpotifyIcon size={26} color="#000"><title>Spotify Icon</title></SpotifyIcon></div>
+    <div style={iconLabelStyle}>Spotify Icon</div>
+  </Column>
+
+  <Column medium={3}>
+    <div style={iconStyle}><ItunesIcon size={26} color="#000"><title>Itunes Icon</title></ItunesIcon></div>
+    <div style={iconLabelStyle}>Itunes Icon</div>
+  </Column>
+</Row>
 
 <Row>
   <Column medium={3}>
