@@ -87,3 +87,6 @@ export { default as FraudulentActivityIcon } from "./FraudulentActivity";
 export { default as PrintIcon } from "./Print";
 export { default as LaunchIcon } from "./Launch";
 export { default as PlayCircularIcon } from "./PlayCircular";
+export { default as ItunesIcon } from "./Itunes";
+export { default as WebsiteIcon } from "./Website";
+export { default as SpotifyIcon } from "./Spotify";

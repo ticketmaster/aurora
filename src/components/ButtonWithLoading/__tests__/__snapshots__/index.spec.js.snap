@@ -2,6 +2,7 @@
 
 exports[`ButtonWithLoading should match snapshot 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -126,6 +127,7 @@ exports[`ButtonWithLoading should match snapshot 1`] = `
 
 exports[`ButtonWithLoading should match snapshot with default values 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;

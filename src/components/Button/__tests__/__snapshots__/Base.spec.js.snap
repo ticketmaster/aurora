@@ -2,6 +2,7 @@
 
 exports[`<Button /> renders link button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -72,6 +73,7 @@ exports[`<Button /> renders link button correctly 1`] = `
 
 exports[`<Button /> renders outline large size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 2.63;
@@ -138,6 +140,7 @@ exports[`<Button /> renders outline large size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -204,6 +207,7 @@ exports[`<Button /> renders outline regular size button correctly 1`] = `
 
 exports[`<Button /> renders outline regular size disabled button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -271,6 +275,7 @@ exports[`<Button /> renders outline regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders outline small size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
@@ -337,6 +342,7 @@ exports[`<Button /> renders outline small size button correctly 1`] = `
 
 exports[`<Button /> renders special large size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 2.63;
@@ -403,6 +409,7 @@ exports[`<Button /> renders special large size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -469,6 +476,7 @@ exports[`<Button /> renders special regular size button correctly 1`] = `
 
 exports[`<Button /> renders special regular size disabled button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -536,6 +544,7 @@ exports[`<Button /> renders special regular size disabled button correctly 1`] =
 
 exports[`<Button /> renders special small size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
@@ -602,6 +611,7 @@ exports[`<Button /> renders special small size button correctly 1`] = `
 
 exports[`<Button /> renders standard large size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 2.63;
@@ -668,6 +678,7 @@ exports[`<Button /> renders standard large size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -734,6 +745,7 @@ exports[`<Button /> renders standard regular size button correctly 1`] = `
 
 exports[`<Button /> renders standard regular size disabled button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -801,6 +813,7 @@ exports[`<Button /> renders standard regular size disabled button correctly 1`] 
 
 exports[`<Button /> renders standard small size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
@@ -867,6 +880,7 @@ exports[`<Button /> renders standard small size button correctly 1`] = `
 
 exports[`<Button /> renders transparent large size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 2.63;
@@ -933,6 +947,7 @@ exports[`<Button /> renders transparent large size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -999,6 +1014,7 @@ exports[`<Button /> renders transparent regular size button correctly 1`] = `
 
 exports[`<Button /> renders transparent regular size disabled button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: 2.43;
@@ -1066,6 +1082,7 @@ exports[`<Button /> renders transparent regular size disabled button correctly 1
 
 exports[`<Button /> renders transparent small size button correctly 1`] = `
 .c0 {
+  font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.84;
