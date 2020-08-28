@@ -34,6 +34,8 @@ class QtySelector extends Component {
     style: PropTypes.objectOf(PropTypes.string),
     min: PropTypes.number,
     max: PropTypes.number,
+    checkValue: PropTypes.func,
+    handleValueUpdate: PropTypes.func,
     onValueUpdated: PropTypes.func,
     incrementBtnLabel: PropTypes.string,
     decrementBtnLabel: PropTypes.string
@@ -45,6 +47,8 @@ class QtySelector extends Component {
     value: 0,
     min: QtySelector.MIN_INPUT_VALUE,
     max: QtySelector.MAX_INPUT_VALUE,
+    checkValue: () => true,
+    handleValueUpdate: () => {},
     onValueUpdated: () => {},
     incrementBtnLabel: "Increase Quantity",
     decrementBtnLabel: "Decrease Quantity"
@@ -57,13 +61,14 @@ class QtySelector extends Component {
 
   handleChange = e => {
     const { value } = e.target;
-    const { max, min } = this.props;
+    const { max, min, checkValue } = this.props;
 
     if (
       QtySelector.isNumber(value) &&
       value.length <= QtySelector.MAX_LENGTH_VAL &&
       value <= max &&
-      value >= min
+      value >= min &&
+      checkValue(value)
     ) {
       this.setState(
         () => ({ value: Number.parseInt(value, 10) }),
@@ -76,7 +81,7 @@ class QtySelector extends Component {
   };
 
   increment = () => {
-    const { max, min } = this.props;
+    const { checkValue, max, min } = this.props;
     this.setState(
       state => {
         if (state.value === "") {
@@ -85,14 +90,17 @@ class QtySelector extends Component {
         if (state.value === max) {
           return {};
         }
-        return { value: state.value + 1 };
+        if (checkValue(state.value + 1)) {
+          return { value: state.value + 1 };
+        }
+        return {};
       },
       () => this.handleValueUpdated()
     );
   };
 
   decrement = () => {
-    const { min } = this.props;
+    const { checkValue, min } = this.props;
     this.setState(
       state => {
         if (state.value === "") {
@@ -101,15 +109,19 @@ class QtySelector extends Component {
         if (state.value === min) {
           return {};
         }
-        return { value: state.value - 1 };
+        if (checkValue(state.value - 1)) {
+          return { value: state.value - 1 };
+        }
+        return {};
       },
       () => this.handleValueUpdated()
     );
   };
 
   handleValueUpdated = () => {
-    const { onValueUpdated } = this.props;
+    const { handleValueUpdate, onValueUpdated } = this.props;
     const { value } = this.state;
+    handleValueUpdate(value);
     onValueUpdated(value);
   };
 
