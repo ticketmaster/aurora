@@ -45,7 +45,15 @@ const Link = styled(LinkItem)`
   }
 
   /* stylelint-disable */
-  &:focus,
+  &:focus {
+    outline: 1px solid ${themes.global.white.base};
+    .nav--inverted &,
+    .links__list & {
+      background-color: ${colors.shale};
+      outline: 1px solid ${themes.global.primary.base};
+    }
+  }
+
   &:hover {
     outline: 0;
     background-color: rgba(38, 38, 38, 0.1);
