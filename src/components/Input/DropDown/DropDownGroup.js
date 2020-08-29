@@ -50,6 +50,11 @@ class DropDownGroup extends React.Component {
     if (!this.props.isOpen && isOpen && isOpen !== prevState.isOpen) {
       this.styledChildWrapper.current.scrollTop = 0;
     }
+    const { value, valueOverride } = this.props;
+    const selected = Array.isArray(valueOverride) ? valueOverride : value;
+    if (selected && selected.length > 0) {
+      this.enableNavigation();
+    }
   }
 
   componentWillUnmount() {
@@ -175,10 +180,6 @@ class DropDownGroup extends React.Component {
 
   displayLabel = selected => {
     const { placeholder, label } = this.props;
-
-    if (selected.length > 0) {
-      this.enableNavigation();
-    }
 
     if (placeholder.length > 0 && selected.length === 0) {
       return placeholder;
