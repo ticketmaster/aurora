@@ -2481,6 +2481,2487 @@ exports[`QtySelector decrements twice correctly 1`] = `
 </div>
 `;
 
+exports[`QtySelector does not decrement when value does not pass checkValue 1`] = `
+.c1 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover {
+  background-color: #0150a7;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c1:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c1.noFocus:focus {
+  box-shadow: none;
+}
+
+.c1.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #026cdf;
+  color: #999999;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 24px;
+  line-height: 0;
+  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:disabled {
+  border: 1px solid #ebebeb;
+  color: #bfbfbf;
+  background: transparent;
+  opacity: 1;
+  cursor: default;
+}
+
+.c2:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c2:enabled:hover {
+  background-color: #ebf4fd;
+  color: #026cdf;
+  cursor: pointer;
+}
+
+.c2:enabled:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c4 {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  margin: 0px 12px;
+}
+
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
+  border-color: #026cdf;
+}
+
+.c4.InputFieldContainer__disabled {
+  border: 1px solid #ebebeb;
+}
+
+.c5 {
+  top: 0;
+  position: relative;
+  line-height: 34px;
+  padding: 0;
+  outline: none;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #353c42;
+  caret-color: #353c42;
+  border: none;
+  background: transparent;
+  -webkit-transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c5:disabled {
+  border-color: #ebebeb;
+  color: rgba(38,38,38,0.4);
+}
+
+<div
+  class="c0"
+>
+  <button
+    aria-label="Decrease Quantity"
+    class="c1 c2  noFocus"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="c3 c4"
+  >
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    aria-label="Increase Quantity"
+    class="c1 c2  noFocus"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector does not increment when value does not pass checkValue 1`] = `
+.c1 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover {
+  background-color: #0150a7;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c1:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c1.noFocus:focus {
+  box-shadow: none;
+}
+
+.c1.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #026cdf;
+  color: #999999;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 24px;
+  line-height: 0;
+  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:disabled {
+  border: 1px solid #ebebeb;
+  color: #bfbfbf;
+  background: transparent;
+  opacity: 1;
+  cursor: default;
+}
+
+.c2:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c2:enabled:hover {
+  background-color: #ebf4fd;
+  color: #026cdf;
+  cursor: pointer;
+}
+
+.c2:enabled:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c4 {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  margin: 0px 12px;
+}
+
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
+  border-color: #026cdf;
+}
+
+.c4.InputFieldContainer__disabled {
+  border: 1px solid #ebebeb;
+}
+
+.c5 {
+  top: 0;
+  position: relative;
+  line-height: 34px;
+  padding: 0;
+  outline: none;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #353c42;
+  caret-color: #353c42;
+  border: none;
+  background: transparent;
+  -webkit-transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c5:disabled {
+  border-color: #ebebeb;
+  color: rgba(38,38,38,0.4);
+}
+
+<div
+  class="c0"
+>
+  <button
+    aria-label="Decrease Quantity"
+    class="c1 c2  noFocus"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="c3 c4"
+  >
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    aria-label="Increase Quantity"
+    class="c1 c2  noFocus"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`QtySelector does not increment when value does not pass checkValue 2`] = `
+.c1 {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  width: 100%;
+  padding: 0 12px 0 12px;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  -webkit-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  -webkit-transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c1:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1:hover {
+  background-color: #0150a7;
+}
+
+.c1:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #0150a7;
+}
+
+.c1:disabled {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  color: rgba(255,255,255,1);
+  background-color: #026cdf;
+  border: 1px solid transparent;
+  opacity: 0.2;
+}
+
+.c1.noFocus:focus {
+  box-shadow: none;
+}
+
+.c1.iconed svg {
+  position: relative;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #026cdf;
+  color: #999999;
+  background-color: rgba(255,255,255,1);
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 24px;
+  line-height: 0;
+  -webkit-transition: -webkit-transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  -webkit-transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: transform 0.1s linear, background-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), color 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c2:disabled {
+  border: 1px solid #ebebeb;
+  color: #bfbfbf;
+  background: transparent;
+  opacity: 1;
+  cursor: default;
+}
+
+.c2:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c2:enabled:hover {
+  background-color: #ebf4fd;
+  color: #026cdf;
+  cursor: pointer;
+}
+
+.c2:enabled:active {
+  -webkit-transform: scale(0.98,0.98) translate(0,1px);
+  -ms-transform: scale(0.98,0.98) translate(0,1px);
+  transform: scale(0.98,0.98) translate(0,1px);
+  background-color: #d6e7fa;
+}
+
+.c4 {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 1px solid #999999;
+  border-radius: 2px;
+  margin: 0px 12px;
+}
+
+.c4:hover.c3:not(.InputFieldContainer__disabled) {
+  border-color: #026cdf;
+}
+
+.c4.InputFieldContainer__disabled {
+  border: 1px solid #ebebeb;
+}
+
+.c5 {
+  top: 0;
+  position: relative;
+  line-height: 34px;
+  padding: 0;
+  outline: none;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #353c42;
+  caret-color: #353c42;
+  border: none;
+  background: transparent;
+  -webkit-transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: top 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.c5:disabled {
+  border-color: #ebebeb;
+  color: rgba(38,38,38,0.4);
+}
+
+<div
+  class="c0"
+>
+  <button
+    aria-label="Decrease Quantity"
+    class="c1 c2  noFocus"
+    disabled=""
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    class="c3 c4"
+  >
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+    <input
+      class="c5"
+      style="top: -0px;"
+      type="text"
+      value="0"
+    />
+  </div>
+  <button
+    aria-label="Increase Quantity"
+    class="c1 c2  noFocus"
+  >
+    <svg
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fill-rule="nonzero"
+      >
+        <path
+          d="M0 0h24v24H0z"
+        />
+        <path
+          d="M4 12h16M12 4v16"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`QtySelector handles case when input is deleted 1`] = `
 .c1 {
   font-family: inherit;

@@ -42,6 +42,17 @@ describe("QtySelector", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("does not decrement when value does not pass checkValue", () => {
+    const { container } = renderQtySelectorComponent({
+      checkValue: () => false
+    });
+    const button = container.getElementsByTagName("button")[0];
+
+    Simulate.click(button);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("decrements from non-zero value correctly", () => {
     const { container } = renderQtySelectorComponent();
     const decButton = container.getElementsByTagName("button")[0];
@@ -74,12 +85,36 @@ describe("QtySelector", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
+  it("does not increment when value does not pass checkValue", () => {
+    const { container } = renderQtySelectorComponent({
+      checkValue: () => false
+    });
+    const button = container.getElementsByTagName("button")[1];
+
+    Simulate.click(button);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
   it("handles input value correctly", () => {
     const { container } = renderQtySelectorComponent();
     const input = container.getElementsByTagName("input")[0];
 
     Simulate.change(input, {
       target: { value: "42" }
+    });
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("does not increment when value does not pass checkValue", () => {
+    const { container } = renderQtySelectorComponent({
+      checkValue: () => false
+    });
+    const input = container.getElementsByTagName("input")[0];
+
+    Simulate.change(input, {
+      target: { value: "1" }
     });
 
     expect(container.firstChild).toMatchSnapshot();

@@ -915,10 +915,18 @@ rows:
     Type: number
     Default: 99
     Notes: defines max number. The increment button is disabled when max value is reached.
+  - Prop: checkValue
+    Type: function
+    Default:
+    Notes: call back function before value is updated. Is passed the new value and updates if the function returns true and does not if returns false.
+  - Prop: handleValueUpdate
+    Type: function
+    Default:
+    Notes: call back function after value is updated either by buttons or keyboard. Use this function instead of onChange.
   - Prop: onValueChanged
     Type: function
     Default:
-    Notes: call back function when value is updated either by buttons or keyboard. Use this function instead of onChange.
+    Notes: deprecated. Use handleValueUpdate instead.
   - Prop: incrementBtnLabel
     Type: string
     Default: Increase Quantity
