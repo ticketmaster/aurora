@@ -55,9 +55,9 @@ export const ErrorBoxWrapper = styled.div`
   flex-grow: 2;
 `;
 
-export const FieldInputBox = styled.input.attrs({
-  type: "text"
-})`
+export const FieldInputBox = styled.input.attrs(props => ({
+  type: props.type || "text"
+}))`
   height: 36px;
   width: 100%;
   box-sizing: border-box;
