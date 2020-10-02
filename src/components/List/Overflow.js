@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import Row from "../Grid/Row";
-import spacing from "../../../src/theme/spacing";
+import spacing from "../../theme/spacing";
 import { mediumAndUp } from "../../theme/mediaQueries";
 
 const OverflowRow = styled(Row)`

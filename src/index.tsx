@@ -1,7 +1,5 @@
 export { Button, Badge, RatingBadge, IconButton } from "./components/Button";
-export {
-  default as ButtonWithLoading
-} from "../src/components/ButtonWithLoading";
+export { default as ButtonWithLoading } from "./components/ButtonWithLoading";
 export {
   DayTile,
   DayTileDate,
