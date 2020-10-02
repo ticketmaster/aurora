@@ -6,20 +6,19 @@ cache:
 notifications:
   email: false
 node_js:
-  - '12'
+  - "12"
+before_install:
+  - git fetch --depth=1 origin master:master
 script:
-  - npm run lint
-  - npm run lint:css
-  - npm run test:ci
-  - npm run build
-  - npm run catalog-build
+  - yarn lint
+  - yarn lint:css
+  - yarn test:ci
+  - yarn build
+  - yarn catalog-build
 after_success:
   - npx codecov
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script:
-      - npx semantic-release
+  # deploy catalog from master
   - provider: pages
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
@@ -28,7 +27,20 @@ deploy:
     target-branch: gh-pages
     on:
       branch: master
+  # trigger latest release from master branch
+  - provider: script
+    skip_cleanup: true
+    script: npx semantic-release
+    on:
+      branch: master
+  # trigger beta release from beta branch
+  - provider: script
+    skip_cleanup: true
+    script: npx semantic-release@beta
+    on:
+      branch: beta
 branches:
   only:
     - master
+    - beta
     - /^greenkeeper/.*$/
