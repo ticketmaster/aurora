@@ -138,30 +138,30 @@ span: 6
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup aria-label="test large radio">
-                <RadioButton size="large" name="Option1" value="FirstButton" index={0} isTopAligned>
+                <RadioButton size="large" name="example1" value="FirstButton" index={0} isTopAligned>
                     Testing One
                     <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing One description</p>
                 </RadioButton>
-                <RadioButton size="large" name="Option2" value="SecondButton" index={1}>
+                <RadioButton size="large" name="example1" value="SecondButton" index={1}>
                     Testing Two
                 </RadioButton>
-                <RadioButton size="large" name="Option3" value="ThirdButton" index={2}>
+                <RadioButton size="large" name="example1" value="ThirdButton" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
         </Column>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup aria-label="test small radio">
-                <RadioButton size="small" name="OptionSmall1" value="1" index={0}>
+                <RadioButton size="small" name="example2" value="1" index={0}>
                     Testing One
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall2" value="2" index={1} isTopAligned>
+                <RadioButton size="small" name="example2" value="2" index={1} isTopAligned>
                     Testing Two
                     <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing Two description</p>
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall3" value="3" index={2}>
+                <RadioButton size="small" name="example2" value="3" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
