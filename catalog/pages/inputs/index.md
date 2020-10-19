@@ -690,11 +690,12 @@ span: 6
     <Container>
         <Row >
             <Column medium={4}>
-                <DropDownLabel size="small">Label text</DropDownLabel>
+                <DropDownLabel id="labelText" size="small">Label text</DropDownLabel>
                 <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="labelText"
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
@@ -704,10 +705,11 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownLabel>Full Width Drop Down</DropDownLabel>
+                <DropDownLabel id="fullWidthLabel">Full Width Drop Down</DropDownLabel>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="fullWidthLabel"
                   fullWidth
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>

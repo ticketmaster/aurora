@@ -137,12 +137,14 @@ class DropDownGroup extends React.Component {
       this.setState(() => ({ selected: [firstMatch.props.value] }));
   };
 
-  closeDropdown = () =>
+  closeDropdown = () => {
+    this.groupWrapper.current.focus();
     this.setState({
       isOpen: false,
       selected: null,
       word: ""
     });
+  };
 
   openDropdown = () => this.setState({ isOpen: true });
 
@@ -179,13 +181,13 @@ class DropDownGroup extends React.Component {
   };
 
   displayLabel = selected => {
-    const { placeholder, label } = this.props;
+    const { placeholder, label, hiddenLabel } = this.props;
 
     if (placeholder.length > 0 && selected.length === 0) {
       return placeholder;
     }
 
-    if (selected.length > 0 && label.length > 0) {
+    if (!hiddenLabel && selected.length > 0 && label.length > 0) {
       return (
         <Fragment>
           {label} {this.getCurrentSelection(selected[0])}
@@ -224,6 +226,7 @@ class DropDownGroup extends React.Component {
       withKeyboardProvider,
       placeholder,
       label,
+      hiddenLabel, // using hiddenLabel prop to avail proper screen readers reading when no placeholder is provided - using label as hidden placeholder
       disabled,
       size,
       shouldOpenDownward,
