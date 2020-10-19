@@ -138,6 +138,7 @@ class RadioInputComponent extends React.Component {
   componentDidUpdate() {
     if (this.props.isFocused && this.SelectedElement.current) {
       this.SelectedElement.current.focus();
+      this.SelectedElement.current.checked = true;
     }
   }
 
