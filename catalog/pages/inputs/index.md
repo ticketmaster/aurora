@@ -455,6 +455,10 @@ rows:
     Type: string
     Default: ""
     Notes: Visible instead of selected option. Overrides label. Supported in both variants.
+  - Prop: hiddenLabel
+    Type: boolean
+    Default: "false"
+    Notes: To avail proper screen reader's reading when placeholder and label can not be displayed in view. Can be used only with label.
   - Prop: isOpen
     Type: boolean
     Default: "false"
