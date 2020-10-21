@@ -57,9 +57,11 @@ const Input = forwardRef(
             aria-labelledby={label ? labelId : null}
             ref={ref}
           />
-          <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
-            {errorMessage}
-          </FieldErrorText>
+          {errorMessage !== null && (
+            <FieldErrorText role="alert" aria-invalid="true">
+              {errorMessage}
+            </FieldErrorText>
+          )}
         </ErrorBoxWrapper>
       </FieldInputWrapper>
     );
