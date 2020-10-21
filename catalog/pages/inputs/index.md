@@ -455,6 +455,10 @@ rows:
     Type: string
     Default: ""
     Notes: Visible instead of selected option. Overrides label. Supported in both variants.
+  - Prop: hiddenLabel
+    Type: boolean
+    Default: "false"
+    Notes: To avail proper screen reader's reading when placeholder and label can not be displayed in view. Can be used only with label.
   - Prop: isOpen
     Type: boolean
     Default: "false"
@@ -690,11 +694,12 @@ span: 6
     <Container>
         <Row >
             <Column medium={4}>
-                <DropDownLabel size="small">Label text</DropDownLabel>
+                <DropDownLabel id="labeltext" size="small">Label text</DropDownLabel>
                 <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="labeltext"
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
@@ -704,10 +709,11 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownLabel>Full Width Drop Down</DropDownLabel>
+                <DropDownLabel id="fullwidthlabel">Full Width Drop Down</DropDownLabel>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="fullwidthlabel"
                   fullWidth
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
