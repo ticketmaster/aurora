@@ -103,6 +103,16 @@ describe("DropDownGroup", () => {
     ).toMatchSnapshot();
   });
 
+  it("renders borderless variant with label and hiddenLabel prop", () => {
+    expect(
+      renderTestComponentOne({
+        label: "Select An Option",
+        hiddenLabel: true,
+        variant: LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL
+      }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
   it("renders input correctly when the isOpen prop with a value of true is passed", () => {
     expect(
       renderTestComponentOne({ isOpen: true }).container.firstChild
