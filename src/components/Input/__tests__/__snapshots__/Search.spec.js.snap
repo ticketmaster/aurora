@@ -14,7 +14,6 @@ exports[`SearchInput passes iconProps to the SearchIcon component 1`] = `
 .c2:focus {
   background-color: rgba(255,255,255,1);
   color: rgba(38,38,38,1);
-  outline: 0;
 }
 
 .c2:focus::-webkit-input-placeholder {
@@ -139,7 +138,6 @@ exports[`SearchInput renders default input 1`] = `
 .c2:focus {
   background-color: rgba(255,255,255,1);
   color: rgba(38,38,38,1);
-  outline: 0;
 }
 
 .c2:focus::-webkit-input-placeholder {
@@ -265,7 +263,6 @@ exports[`SearchInput renders inverted input 1`] = `
 .c2:focus {
   background-color: rgba(255,255,255,1);
   color: rgba(38,38,38,1);
-  outline: 0;
 }
 
 .c2:focus::-webkit-input-placeholder {
@@ -381,7 +378,7 @@ exports[`SearchInput renders slim & inverted input 1`] = `
 .c2 {
   display: inline-block;
   width: 100%;
-  padding: 9px 12px 9px calc(12px + 12px + 10px);
+  padding: 8px 12px 7px calc(12px + 12px + 10px);
   background-color: transparent;
   color: rgba(38,38,38,1);
   border: 0;
@@ -391,7 +388,6 @@ exports[`SearchInput renders slim & inverted input 1`] = `
 .c2:focus {
   background-color: rgba(255,255,255,1);
   color: rgba(38,38,38,1);
-  outline: 0;
 }
 
 .c2:focus::-webkit-input-placeholder {
@@ -507,7 +503,7 @@ exports[`SearchInput renders slim input 1`] = `
 .c2 {
   display: inline-block;
   width: 100%;
-  padding: 9px 12px 9px calc(12px + 12px + 10px);
+  padding: 9px 12px 8px calc(12px + 12px + 10px);
   background-color: transparent;
   color: rgba(255,255,255,1);
   border: 0;
@@ -517,7 +513,6 @@ exports[`SearchInput renders slim input 1`] = `
 .c2:focus {
   background-color: rgba(255,255,255,1);
   color: rgba(38,38,38,1);
-  outline: 0;
 }
 
 .c2:focus::-webkit-input-placeholder {
