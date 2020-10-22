@@ -6,7 +6,11 @@ import classNames from "classnames";
 import SearchIcon from "../Icons/Search";
 import { themes, typography, constants } from "../../theme";
 import composeEventHandlers from "../../utils/composeEventHandlers";
-import customIf from "../../utils/customIf";
+
+const invertPadding = invert =>
+  invert
+    ? "8px 12px 7px calc(12px + 12px + 10px)"
+    : "9px 12px 8px calc(12px + 12px + 10px)";
 
 const Input = styled.input.attrs({
   type: "search"
@@ -15,11 +19,7 @@ const Input = styled.input.attrs({
   width: 100%;
   padding: ${props =>
     props.slim
-      ? customIf(
-          props.invert,
-          "8px 12px 7px calc(12px + 12px + 10px)",
-          "9px 12px 8px calc(12px + 12px + 10px)"
-        )
+      ? invertPadding(props.invert)
       : "14px 16px 14px calc(16px + 16px + 8px)"};
   background-color: transparent;
   color: ${props =>
