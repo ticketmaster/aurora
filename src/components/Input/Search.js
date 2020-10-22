@@ -6,6 +6,7 @@ import classNames from "classnames";
 import SearchIcon from "../Icons/Search";
 import { themes, typography, constants } from "../../theme";
 import composeEventHandlers from "../../utils/composeEventHandlers";
+import customIf from "../../utils/customIf";
 
 const Input = styled.input.attrs({
   type: "search"
@@ -14,7 +15,11 @@ const Input = styled.input.attrs({
   width: 100%;
   padding: ${props =>
     props.slim
-      ? "9px 12px 9px calc(12px + 12px + 10px)"
+      ? customIf(
+          props.invert,
+          "8px 12px 7px calc(12px + 12px + 10px)",
+          "9px 12px 8px calc(12px + 12px + 10px)"
+        )
       : "14px 16px 14px calc(16px + 16px + 8px)"};
   background-color: transparent;
   color: ${props =>
@@ -28,7 +33,6 @@ const Input = styled.input.attrs({
     &::placeholder {
       color: #26262699;
     }
-    outline: 0;
   }
   /* stylelint-disable */
   &::placeholder {
