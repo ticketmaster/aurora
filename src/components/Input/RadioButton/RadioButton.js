@@ -82,6 +82,14 @@ const RadioButton = ({
                   () => focusSelected({ index }),
                   props.onClick
                 )}
+                index={index}
+                focused={focused}
+                updateFocusedContext={focusIndex => {
+                  focusSelected({ index: focusIndex });
+                }}
+                selectFocused={focusedValue => {
+                  onClick({ value: focusedValue });
+                }}
                 {...props}
                 isFocused={focused === index}
                 isTopAligned={isTopAligned}

@@ -11,7 +11,9 @@ describe("<RadioInput />", () => {
     size: "small",
     checked: false,
     isActive: false,
-    isFocused: false
+    isFocused: false,
+    index: 0,
+    focused: 0
   };
 
   const render = (Component, props) => {
