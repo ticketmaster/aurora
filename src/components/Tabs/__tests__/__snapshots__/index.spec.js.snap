@@ -124,6 +124,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
@@ -140,6 +141,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
@@ -156,6 +158,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
@@ -288,6 +291,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
@@ -304,6 +308,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
@@ -320,6 +325,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
@@ -464,6 +470,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
@@ -480,6 +487,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
@@ -496,6 +504,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
