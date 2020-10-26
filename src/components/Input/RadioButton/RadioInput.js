@@ -120,7 +120,11 @@ class RadioInputComponent extends React.Component {
     checked: PropTypes.bool.isRequired,
     onClick: PropTypes.func,
     isFocused: PropTypes.bool.isRequired,
-    isTopAligned: PropTypes.bool
+    isTopAligned: PropTypes.bool,
+    index: PropTypes.number.isRequired,
+    focused: PropTypes.number.isRequired,
+    updateFocusedContext: PropTypes.func.isRequired,
+    selectFocused: PropTypes.func.isRequired
   };
 
   static defaultProps = {
@@ -135,12 +139,33 @@ class RadioInputComponent extends React.Component {
     this.SelectedElement = React.createRef();
   }
 
+  componentDidMount() {
+    this.updateFocus(-1); // To keep first radio button from auto selecting on load time
+  }
+
   componentDidUpdate() {
-    if (this.props.isFocused && this.SelectedElement.current) {
+    const { value, checked, isFocused, selectFocused } = this.props;
+    if (isFocused && this.SelectedElement.current) {
       this.SelectedElement.current.focus();
-      this.SelectedElement.current.checked = true;
+      if (!checked) {
+        selectFocused(value);
+      }
     }
   }
+
+  onFocus = () => {
+    const { index, focused } = this.props;
+    if (focused === -1 && index === 0) {
+      this.updateFocus(0);
+    }
+  };
+
+  updateFocus = index => {
+    const { updateFocusedContext } = this.props;
+    if (updateFocusedContext) {
+      updateFocusedContext(index);
+    }
+  };
 
   render() {
     const {
@@ -163,6 +188,7 @@ class RadioInputComponent extends React.Component {
         checked={checked}
         aria-labelledby={`${name + value}label`}
         aria-checked={checked}
+        onFocus={this.onFocus}
         {...props}
         ref={this.SelectedElement}
         isTopAligned={isTopAligned}

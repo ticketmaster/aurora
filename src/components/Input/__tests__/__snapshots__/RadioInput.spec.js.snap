@@ -136,6 +136,7 @@ exports[`<RadioInput /> should render the correct markup 1`] = `
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -278,6 +279,7 @@ exports[`<RadioInput /> should render the correct markup when additional props a
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -424,6 +426,7 @@ exports[`<RadioInput /> should render the correct markup when description is sup
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -566,6 +569,7 @@ exports[`<RadioInput /> should render the correct markup when the checked prop e
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -708,6 +712,7 @@ exports[`<RadioInput /> should render the correct markup when the disabled prop 
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -850,6 +855,7 @@ exports[`<RadioInput /> should render the correct markup when the isActive prop 
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -992,6 +998,7 @@ exports[`<RadioInput /> should render the correct markup when the isFocused prop
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="small"
   type="radio"
   value="rock"
@@ -1134,6 +1141,7 @@ exports[`<RadioInput /> should render the correct markup when the size prop equa
   id="genrerockinput"
   name="genre"
   onClick={null}
+  onFocus={[Function]}
   size="large"
   type="radio"
   value="rock"
