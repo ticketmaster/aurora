@@ -69,7 +69,9 @@ const Content = styled.div.attrs({
   }
 `;
 
-const Tab = styled.div`
+const Tab = styled.div.attrs({
+  role: "presentation"
+})`
   ${largeAndUp`
     padding-right: ${spacing.comfy};
   `};
