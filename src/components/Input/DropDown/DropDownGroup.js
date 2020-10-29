@@ -124,7 +124,7 @@ class DropDownGroup extends React.Component {
   }, 1000);
 
   searchValue = string => {
-    const { children } = this.props;
+    const { children, onChange } = this.props;
 
     const childrenArray = React.Children.toArray(children);
 
@@ -133,8 +133,10 @@ class DropDownGroup extends React.Component {
         thisArg.props.children.substring(0, string.length).toLowerCase() ===
         string
     );
-    if (firstMatch)
+    if (firstMatch) {
       this.setState(() => ({ selected: [firstMatch.props.value] }));
+      if (onChange) onChange([firstMatch.props.value]);
+    }
   };
 
   closeDropdown = () => {
