@@ -162,7 +162,7 @@ export const FieldInputBox = styled.input.attrs(props => ({
   }
 `;
 
-export const FieldErrorText = styled.label`
+export const FieldErrorText = styled.div`
   opacity: 0;
   font-size: ${typography.size.uno};
   line-height: 1.25;

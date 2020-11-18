@@ -186,6 +186,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
@@ -382,6 +383,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       disabled=""
       id="test1__input"
@@ -599,19 +601,21 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-describedby="test1__error"
+      aria-invalid="true"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
     />
-    <label
-      aria-invalid="true"
+    <div
       class="c3"
+      id="test1__error"
       role="alert"
     >
       Something Went Wrong
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -802,6 +806,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       placeholder="test hint"
       type="text"
@@ -1030,7 +1035,7 @@ textarea.c3:hover {
 >
   <label
     class="c1"
-    id="test1firstname__label"
+    for="test1firstname__input"
     style="font-size: 20px;"
   >
     First Name
@@ -1039,7 +1044,7 @@ textarea.c3:hover {
     class="c2"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-invalid="false"
       class="c3"
       id="test1firstname__input"
       name="test1"
@@ -1236,6 +1241,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
@@ -1432,6 +1438,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
@@ -1629,6 +1636,7 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
