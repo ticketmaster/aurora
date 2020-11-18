@@ -29,7 +29,8 @@ const Input = forwardRef(
     ref
   ) => {
     const sluggified = sluggify(name + label);
-    const labelId = sluggified ? `${sluggified}__label` : null;
+    const inputId = sluggified ? `${sluggified}__input` : null;
+    const errorId = sluggified ? `${sluggified}__error` : null;
     return (
       <FieldInputWrapper
         className={classNames(
@@ -42,7 +43,7 @@ const Input = forwardRef(
         )}
       >
         {label && (
-          <FieldInputText id={labelId} style={labelStyle}>
+          <FieldInputText htmlFor={inputId} style={labelStyle}>
             {label}
           </FieldInputText>
         )}
@@ -50,15 +51,16 @@ const Input = forwardRef(
           <FieldInputBox
             placeholder={disabled ? "" : placeholder}
             name={name || null}
-            id={sluggified ? `${sluggified}__input` : null}
+            id={inputId}
             disabled={disabled}
             as={tag}
+            aria-invalid={errorMessage ? "true" : "false"}
+            aria-describedby={errorMessage ? errorId : null}
             {...rest}
-            aria-labelledby={label ? labelId : null}
             ref={ref}
           />
           {errorMessage && (
-            <FieldErrorText role="alert" aria-invalid="true">
+            <FieldErrorText role="alert" id={errorId}>
               {errorMessage}
             </FieldErrorText>
           )}
