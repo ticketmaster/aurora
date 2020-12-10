@@ -24,6 +24,7 @@ const Input = forwardRef(
       size,
       tag,
       labelStyle,
+      errorFieldProps,
       ...rest
     },
     ref
@@ -60,7 +61,7 @@ const Input = forwardRef(
             ref={ref}
           />
           {errorMessage && (
-            <FieldErrorText role="alert" id={errorId}>
+            <FieldErrorText role="alert" id={errorId} {...errorFieldProps}>
               {errorMessage}
             </FieldErrorText>
           )}
@@ -79,6 +80,7 @@ Input.propTypes = {
   label: PropTypes.string,
   labelStyle: PropTypes.shape(),
   errorMessage: PropTypes.string,
+  errorFieldProps: PropTypes.shape(),
   size: PropTypes.oneOf(SIZES),
   tag: PropTypes.oneOf(["textarea", "input"])
 };
@@ -92,7 +94,8 @@ Input.defaultProps = {
   errorMessage: null,
   size: REGULAR,
   tag: "input",
-  labelStyle: {}
+  labelStyle: {},
+  errorFieldProps: {}
 };
 
 export default Input;

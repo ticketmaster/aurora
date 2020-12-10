@@ -313,6 +313,10 @@ rows:
     Type: string
     Default: N/A
     Notes: Will present a different style when a prop is supplied
+  - Prop: errorFieldProps
+    Type: object
+    Default: N/A
+    Notes: Extra props passed to the error field
   - Prop: disabled
     Type: boolean
     Default: "false"
