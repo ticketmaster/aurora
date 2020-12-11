@@ -6,6 +6,9 @@ export const isEventFromHandle = (e, handles) => {
   }
 };
 
+export const isEventRelated = (e, slider) =>
+  slider && slider.contains(e.relatedTarget);
+
 export const isNotTouchEvent = e =>
   e.touches.length > 1 ||
   (e.type.toLowerCase() === "touchend" && e.touches.length > 0);
