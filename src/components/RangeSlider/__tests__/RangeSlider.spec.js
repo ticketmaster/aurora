@@ -1,6 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import RangeSlider from "../";
+import Handle from "../Handle";
 import * as utils from "../utils";
 
 jest.mock("../Handle", () => "Handle");
@@ -374,6 +375,18 @@ describe("RangeSlider", () => {
     expect(mock).toHaveBeenCalledWith({ test: 3 });
   });
 
+  it("onBlur should not call onBlur prop on related event", () => {
+    const mock = jest.fn();
+    const instance = renderer
+      .create(<RangeSlider onBlur={mock} />)
+      .getInstance();
+
+    utils.isEventRelated = jest.fn(() => true);
+    instance.onBlur({ test: 3 });
+
+    expect(mock).toHaveBeenCalledTimes(0);
+  });
+
   it("onFocus should call onFocus prop and onStart", () => {
     const mock = jest.fn();
     const spy = jest
@@ -384,6 +397,7 @@ describe("RangeSlider", () => {
       .getInstance();
 
     utils.isEventFromHandle = jest.fn(() => true);
+    utils.isEventRelated = jest.fn(() => false);
     utils.getHandleCenterPosition = jest.fn(() => "test");
     utils.pauseEvent = jest.fn();
 
@@ -531,6 +545,88 @@ describe("RangeSlider", () => {
     expect(spy).toHaveBeenCalledWith({ pageX: 10 }, 7);
 
     spy.mockRestore();
+  });
+
+  it("updateHandleValues should not call onChange with value less then min", () => {
+    const instance = renderer.create(<RangeSlider min="20" />).getInstance();
+    instance.setState({ bounds: [20, 70] });
+    const spyOnChange = jest.spyOn(instance, "onChange");
+    instance.updateHandleValues(0, "full");
+    expect(spyOnChange).toHaveBeenCalledTimes(0);
+
+    spyOnChange.mockRestore();
+  });
+
+  it("onKeyDown should call updateHandleValues", () => {
+    const getAttribute = jest.fn(() => 0);
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.setState({ bounds: [20, 70] });
+    instance.onChange = jest.fn(() => {});
+    const spyUpdateHandleValues = jest.spyOn(instance, "updateHandleValues");
+    instance.onKeyDown({ keyCode: 39, target: { getAttribute } });
+    expect(spyUpdateHandleValues).toHaveBeenCalledTimes(1);
+    expect(spyUpdateHandleValues).toHaveBeenCalledWith(0, "increase");
+
+    spyUpdateHandleValues.mockRestore();
+  });
+
+  it("on ARROWUP key press onKeyDown should call updateHandleValues", () => {
+    const getAttribute = jest.fn(() => 0);
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.setState({ bounds: [20, 70] });
+    instance.onChange = jest.fn(() => {});
+    const spyUpdateHandleValues = jest.spyOn(instance, "updateHandleValues");
+    instance.onKeyDown({ keyCode: 38, target: { getAttribute } });
+    expect(spyUpdateHandleValues).toHaveBeenCalledTimes(1);
+    expect(spyUpdateHandleValues).toHaveBeenCalledWith(0, "increase");
+
+    spyUpdateHandleValues.mockRestore();
+  });
+
+  it("on other key press onKeyDown should not call updateHandleValues", () => {
+    const getAttribute = jest.fn(() => 0);
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.setState({ bounds: [20, 70] });
+    instance.onChange = jest.fn(() => {});
+    const spyUpdateHandleValues = jest.spyOn(instance, "updateHandleValues");
+    instance.onKeyDown({ keyCode: 31, target: { getAttribute } });
+    expect(spyUpdateHandleValues).toHaveBeenCalledTimes(0);
+
+    spyUpdateHandleValues.mockRestore();
+  });
+
+  it("onKeyDown should call updateHandleValues with type increase", () => {
+    const getAttribute = jest.fn(() => 0);
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.setState({ bounds: [30, 30] });
+    instance.focusHandle = jest.fn(() => {});
+    instance.onChange = jest.fn(() => {});
+    const spyUpdateHandleValues = jest.spyOn(instance, "updateHandleValues");
+    instance.onKeyDown({ keyCode: 39, target: { getAttribute } });
+    expect(spyUpdateHandleValues).toHaveBeenCalledTimes(1);
+    expect(spyUpdateHandleValues).toHaveBeenCalledWith(0, "increase");
+
+    spyUpdateHandleValues.mockRestore();
+  });
+
+  it("onKeyDown should call updateHandleValues with type decrease", () => {
+    const getAttribute = jest.fn(() => 1);
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.setState({ bounds: [30, 30] });
+    instance.focusHandle = jest.fn(() => {});
+    instance.onChange = jest.fn(() => {});
+    const spyUpdateHandleValues = jest.spyOn(instance, "updateHandleValues");
+    instance.onKeyDown({ keyCode: 37, target: { getAttribute } });
+    expect(spyUpdateHandleValues).toHaveBeenCalledTimes(1);
+    expect(spyUpdateHandleValues).toHaveBeenCalledWith(1, "decrease");
+
+    spyUpdateHandleValues.mockRestore();
+  });
+
+  it("to call savehandle and focusHandle", () => {
+    const instance = renderer.create(<RangeSlider />).getInstance();
+    instance.saveHandle(0, <Handle />);
+    instance.focusHandle(1);
   });
 
   it("onMouseDown should remove doc event, call onStart and add mouse events when event is from handle", () => {

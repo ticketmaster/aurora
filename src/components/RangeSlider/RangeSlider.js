@@ -5,6 +5,12 @@ import Track from "./Track";
 import Handle from "./Handle";
 import * as utils from "./utils";
 import { SliderContainer, SliderRail } from "./RangeSlider.styles";
+import {
+  ARROWUP,
+  ARROWDOWN,
+  ARROWLEFT,
+  ARROWRIGHT
+} from "../../utils/keyCharCodes";
 
 const noop = () => {};
 
@@ -139,7 +145,11 @@ class RangeSlider extends React.Component {
 
   onFocus = e => {
     const { onFocus } = this.props;
-    if (utils.isEventFromHandle(e, this.handlesRefs)) {
+    const slider = this.sliderRef;
+    if (
+      utils.isEventFromHandle(e, this.handlesRefs) &&
+      !utils.isEventRelated(e, slider)
+    ) {
       const handlePosition = utils.getHandleCenterPosition(e.target);
       this.dragOffset = 0;
       this.onStart(handlePosition);
@@ -149,9 +159,12 @@ class RangeSlider extends React.Component {
   };
 
   onBlur = e => {
-    const { onBlur } = this.props;
-    this.onEnd(e);
-    onBlur(e);
+    const slider = this.sliderRef;
+    if (!utils.isEventRelated(e, slider)) {
+      const { onBlur } = this.props;
+      this.onEnd(e);
+      onBlur(e);
+    }
   };
 
   onChange(state) {
@@ -167,6 +180,25 @@ class RangeSlider extends React.Component {
     const changedValue = data.bounds;
     onChange(changedValue);
   }
+
+  onKeyDown = event => {
+    const focusedHandle = parseInt(event.target.getAttribute("data-index"), 10);
+    const { keyCode } = event;
+    switch (keyCode) {
+      case ARROWLEFT:
+      case ARROWDOWN:
+        utils.pauseEvent(event);
+        this.updateHandleValues(focusedHandle, "decrease");
+        break;
+      case ARROWUP:
+      case ARROWRIGHT:
+        utils.pauseEvent(event);
+        this.updateHandleValues(focusedHandle, "increase");
+        break;
+      default:
+        break;
+    }
+  };
 
   onStart(position) {
     const { onBeforeChange } = this.props;
@@ -360,9 +392,42 @@ class RangeSlider extends React.Component {
     return ratio * 100;
   };
 
-  saveHandle(index, handle) {
+  saveHandle = (index, handle) => {
     this.handlesRefs[index] = handle;
-  }
+  };
+
+  focusHandle = handle => {
+    if (this.handlesRefs && this.handlesRefs[handle]) {
+      this.handlesRefs[handle].focus();
+    }
+  };
+
+  updateHandleValues = (handle, type) => {
+    const { min, max, step } = this.props;
+    let { bounds } = this.state;
+    let newValue = 0;
+    if (type === "increase") {
+      newValue = bounds[handle] + step;
+    } else if (type === "decrease") {
+      newValue = bounds[handle] - step;
+    }
+    if (newValue >= min && newValue <= max) {
+      if (handle === 0 && newValue > bounds[1]) {
+        // switching focus from left handle to right
+        this.focusHandle(1);
+        bounds = [bounds[0], newValue];
+        this.onChange({ handle, bounds });
+      } else if (handle === 1 && newValue < bounds[0]) {
+        // switching focus from right handle to left
+        this.focusHandle(0);
+        bounds = [newValue, bounds[1]];
+        this.onChange({ handle, bounds });
+      } else {
+        bounds[handle] = newValue;
+        this.onChange({ handle, bounds });
+      }
+    }
+  };
 
   renderHandles = () => {
     const { bounds } = this.state;
@@ -390,7 +455,10 @@ class RangeSlider extends React.Component {
           min={min}
           max={max}
           disabled={disabled}
-          ref={h => this.saveHandle(i, h)}
+          tabIndex={disabled ? undefined : "0"}
+          data-index={i}
+          onKeyDown={this.onKeyDown}
+          handleRef={h => this.saveHandle(i, h)}
         />
       );
     });
