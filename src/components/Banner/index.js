@@ -31,6 +31,8 @@ class Banner extends Component {
     onRequestClose: PropTypes.func,
     linkProps: PropTypes.shape(),
     buttonProps: PropTypes.shape(),
+    containerProps: PropTypes.shape(),
+    contentProps: PropTypes.shape(),
     style: PropTypes.shape(),
     variant: PropTypes.oneOf(variants),
     icon: PropTypes.node,
@@ -54,6 +56,8 @@ class Banner extends Component {
     onRequestClose: null,
     linkProps: {},
     buttonProps: {},
+    containerProps: {},
+    contentProps: {},
     style: {
       transition: `max-height 0.3s ${constants.easing.easeInOutQuad} 0s`
     },
@@ -173,7 +177,9 @@ class Banner extends Component {
       content,
       variant,
       style,
-      customColors
+      customColors,
+      containerProps,
+      contentProps
     } = this.props;
     const { isExpanded, maxHeight } = this.state;
 
@@ -192,9 +198,10 @@ class Banner extends Component {
               "visible-banner": state === "entered"
             })}
             customColors={this.isCustomVariant() && customColors}
+            {...containerProps}
           >
             <IconSection>{this.renderIcon()}</IconSection>
-            <ContentSection>
+            <ContentSection {...contentProps}>
               <HeaderText
                 tag="span"
                 weight="semiBold"

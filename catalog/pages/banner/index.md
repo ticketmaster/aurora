@@ -53,6 +53,14 @@ rows:
     Type: object
     Default: none
     Notes: Expand/collapse button props when button control element is used.
+  - Prop: containerProps
+    Type: object
+    Default: none
+    Notes: Extra props passed to the banner container.
+  - Prop: contentProps
+    Type: object
+    Default: none
+    Notes: Extra props passed to the content wrapper.
   - Prop: variant
     Type: string
     Default: none
