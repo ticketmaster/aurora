@@ -131,6 +131,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--primary"
@@ -148,6 +149,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -165,6 +167,7 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -298,6 +301,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--primary"
@@ -315,6 +319,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -332,6 +337,7 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -477,6 +483,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--accent text--alert text--primary"
@@ -494,6 +501,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--accent text--alert text--primary"
@@ -511,6 +519,7 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--accent text--alert text--primary"

@@ -23,6 +23,10 @@ rows:
     Type: func(index)
     Default: ()=>{}
     Notes: Optional. Function that handles onclick event on item and takes index of item as an argument.
+  - Prop: tabChangedWithArrowKeys
+    Type: func(index)
+    Default: ()=>{}
+    Notes: Optional. This function is invoked when tab is changed with arrow keys. Takes index of item as an argument.
   - Prop: variant
     Type: bool
     Default: dark
@@ -70,6 +74,7 @@ responsive: true
           defaultItemProps={{'data-custom-info': 'someDefaultInfo'}}
           index={tabIndex}
           onClick={onChangeTabIndex()}
+          tabChangedWithArrowKeys={onChangeTabIndex()}
         />
         <Column>
         <Text weight="semiBold">Content for tab #{tabIndex + 1}</Text>
@@ -101,6 +106,7 @@ responsive: true
           defaultItemProps={{'data-custom-info': 'someDefaultInfo'}}
           index={tabIndex}
           onClick={onChangeTabIndex()}
+          tabChangedWithArrowKeys={onChangeTabIndex()}
           withBorderBottom={false}
           underlineColor={themes.global.white.base}
           style={{ color: themes.global.white.base }}
