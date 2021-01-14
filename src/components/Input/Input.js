@@ -25,6 +25,7 @@ const Input = forwardRef(
       tag,
       labelStyle,
       errorFieldProps,
+      id,
       ...rest
     },
     ref
@@ -44,7 +45,7 @@ const Input = forwardRef(
         )}
       >
         {label && (
-          <FieldInputText htmlFor={inputId} style={labelStyle}>
+          <FieldInputText htmlFor={id || inputId} style={labelStyle}>
             {label}
           </FieldInputText>
         )}
@@ -52,7 +53,7 @@ const Input = forwardRef(
           <FieldInputBox
             placeholder={disabled ? "" : placeholder}
             name={name || null}
-            id={inputId}
+            id={id || inputId}
             disabled={disabled}
             as={tag}
             aria-invalid={errorMessage ? "true" : "false"}
@@ -78,6 +79,7 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   name: PropTypes.string,
   label: PropTypes.string,
+  id: PropTypes.string,
   labelStyle: PropTypes.shape(),
   errorMessage: PropTypes.string,
   errorFieldProps: PropTypes.shape(),
@@ -91,6 +93,7 @@ Input.defaultProps = {
   disabled: false,
   name: "",
   label: "",
+  id: "",
   errorMessage: null,
   size: REGULAR,
   tag: "input",
