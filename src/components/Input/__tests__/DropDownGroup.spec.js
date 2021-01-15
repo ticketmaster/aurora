@@ -28,6 +28,7 @@ describe("DropDownGroup", () => {
           <DropDownOption
             data-testid="test-dropDownOptionTwo"
             value="ValueTwo"
+            preventCloseWithKeys="true"
             index={1}
           >
             Second Option
@@ -247,6 +248,26 @@ describe("DropDownGroup", () => {
     });
 
     fireEvent.keyDown(getByTestId("test-dropDownOptionOne"), {
+      key: "",
+      keyCode: 32,
+      which: 32,
+      bubbles: true
+    });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("Space bar should select but not close dropdown", () => {
+    const onChange = jest.fn();
+    const { container, getByTestId } = renderTestComponentOne({ onChange });
+
+    fireEvent.keyDown(getByTestId("test-dropContainer"), {
+      key: "ArrowDown",
+      keyCode: 40,
+      which: 40,
+      bubbles: true
+    });
+
+    fireEvent.keyDown(getByTestId("test-dropDownOptionTwo"), {
       key: "",
       keyCode: 32,
       which: 32,

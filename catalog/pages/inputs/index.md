@@ -524,6 +524,10 @@ rows:
     Type: bool
     Default: true
     Notes: Indicates whether show or hide right chevron icon
+  - Prop: preventCloseWithKeys
+    Type: bool
+    Default: "false"
+    Notes: It prevents dropdown menu from closing when option is selected with Enter or Space key.
   - Prop: icon
     Type: node
     Default: null
@@ -625,7 +629,7 @@ span: 6
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="2" preventCloseWithKeys="true" index={2}>Don't close on Enter</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
