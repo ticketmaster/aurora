@@ -301,6 +301,10 @@ rows:
     Type: string
     Default: "null"
     Notes: Optional input name.
+  - Prop: id
+    Type: string
+    Default: N/A
+    Notes: Optional input id.
   - Prop: label
     Type: string
     Default: N/A
@@ -339,7 +343,7 @@ span: 6
         <Row>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top"  style={{ color: 'blue' }} placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                    <Input labelPosition="top" id="testID"  style={{ color: 'blue' }} placeholder="Hint Text" name="test1" label="First Name" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
                     <Input labelPosition="top" placeholder="Hint Text" name="test2" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
