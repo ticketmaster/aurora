@@ -18,7 +18,14 @@ class DropDownOption extends React.PureComponent {
   input = React.createRef();
 
   render() {
-    const { value, index, children, className, ...props } = this.props;
+    const {
+      value,
+      index,
+      children,
+      className,
+      preventCloseWithKeys,
+      ...props
+    } = this.props;
 
     return (
       <KeyBoardConsumer>
@@ -46,6 +53,9 @@ class DropDownOption extends React.PureComponent {
                       onKeyDown={e => {
                         if ([ENTER, SPACEBAR].includes(e.keyCode)) {
                           onClick({ value });
+                          if (preventCloseWithKeys) {
+                            e.stopPropagation();
+                          }
                           e.preventDefault();
                         }
                       }}
@@ -74,12 +84,14 @@ DropDownOption.propTypes = {
   index: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  preventCloseWithKeys: PropTypes.bool
 };
 
 DropDownOption.defaultProps = {
   onClick: null,
-  className: ""
+  className: "",
+  preventCloseWithKeys: false
 };
 
 export default DropDownOption;
