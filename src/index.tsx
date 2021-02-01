@@ -195,6 +195,7 @@ export {
   DropDownGroup,
   DropDownOption,
   DropDownLabel,
+  Select,
   RadioButton,
   RadioGroup,
   CheckBoxButton as CheckBox,
