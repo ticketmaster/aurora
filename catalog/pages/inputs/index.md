@@ -495,6 +495,22 @@ rows:
     Type: function
     Default: 'null'
     Notes: Callback invoked when dropdown open/hide event fired
+  - Prop: dropdownMenuOpen
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown open event fired
+  - Prop: dropdownMenuClose
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown close event fired
+  - Prop: hybrid
+    Type: boolean
+    Default: 'false'
+    Notes: Set this to true while implementing hybrid select
+  - Prop: hideDropdown
+    Type: boolean
+    Default: 'true'
+    Notes: Use this to toggle dropdown's visiblity when `hybrid={true}`
 ```
 
 ## Drop Down Option
@@ -629,7 +645,7 @@ span: 6
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                    <DropDownOption value="2" preventCloseWithKeys="true" index={2}>Don't close on Enter</DropDownOption>
+                    <DropDownOption value="2" preventCloseWithKeys={true} index={2}>Don't close on Enter</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>

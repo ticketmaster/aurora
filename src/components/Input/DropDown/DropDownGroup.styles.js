@@ -152,6 +152,14 @@ export const StyledGroupWrapper = styled.div`
     width: 100%;
     display: block;
   }
+
+  &.hybrid {
+    display: ${({ hideDropdown }) => (hideDropdown ? "none" : "inline-block")};
+
+    &.full-width {
+      display: ${({ hideDropdown }) => (hideDropdown ? "none" : "block")};
+    }
+  }
 `;
 
 export const StyledChevron = styled(DownIcon).attrs({

@@ -161,6 +161,14 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -573,6 +581,14 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -989,6 +1005,14 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -1401,6 +1425,14 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -1819,6 +1851,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -2231,6 +2271,14 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -2647,6 +2695,14 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -3061,6 +3117,14 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -3473,6 +3537,14 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -3891,6 +3963,14 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -4307,6 +4387,14 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -4721,6 +4809,14 @@ exports[`DropDownGroup Space bar should select but not close dropdown 1`] = `
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -5338,6 +5434,14 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -5756,6 +5860,14 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -6170,6 +6282,14 @@ exports[`DropDownGroup renders borderless variant with label and hiddenLabel pro
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -6588,6 +6708,14 @@ exports[`DropDownGroup renders default dropdown 1`] = `
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -7000,6 +7128,14 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -7416,6 +7552,14 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -7828,6 +7972,14 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -8244,6 +8396,14 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -8655,6 +8815,14 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -9071,6 +9239,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
   display: block;
 }
 
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
+}
+
 .c5 {
   color: #999999;
   -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
@@ -9482,6 +9658,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
@@ -9898,6 +10082,14 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 .c0.full-width {
   width: 100%;
   display: block;
+}
+
+.c0.hybrid {
+  display: none;
+}
+
+.c0.hybrid.full-width {
+  display: none;
 }
 
 .c5 {
