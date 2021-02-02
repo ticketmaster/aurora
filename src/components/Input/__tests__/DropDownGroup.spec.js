@@ -511,6 +511,19 @@ describe("DropDownGroup", () => {
     Simulate.click(labelTag);
     expect(onDropDownToggleEvent).toBeCalled();
   });
+
+  it("renders hybrid dropdown", () => {
+    expect(
+      renderTestComponentOne({ hybrid: true }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders hybrid dropdown when hideDropdown is false", () => {
+    expect(
+      renderTestComponentOne({ hybrid: true, hideDropdown: false }).container
+        .firstChild
+    ).toMatchSnapshot();
+  });
 });
 
 describe("DropDownOption", () => {

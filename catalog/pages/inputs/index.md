@@ -495,6 +495,22 @@ rows:
     Type: function
     Default: 'null'
     Notes: Callback invoked when dropdown open/hide event fired
+  - Prop: dropdownMenuOpen
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown open event fired
+  - Prop: dropdownMenuClose
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown close event fired
+  - Prop: hybrid
+    Type: boolean
+    Default: 'false'
+    Notes: Set this to true while implementing hybrid select
+  - Prop: hideDropdown
+    Type: boolean
+    Default: 'true'
+    Notes: Use this to toggle dropdown's visiblity when `hybrid={true}`
 ```
 
 ## Drop Down Option
@@ -629,7 +645,7 @@ span: 6
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                    <DropDownOption value="2" preventCloseWithKeys="true" index={2}>Don't close on Enter</DropDownOption>
+                    <DropDownOption value="2" preventCloseWithKeys={true} index={2}>Don't close on Enter</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
@@ -749,6 +765,218 @@ span: 6
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
+## Select
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: variant
+    Type: BORDERED_INNER_LABEL(value = 0) or BORDERLESS_INNER_LABEL(value = 1)
+    Default: BORDERED_INNER_LABEL
+    Notes: Specifies a layout variant of the select element
+  - Prop: size
+    Type: small or large
+    Default: "large"
+    Notes: Defines size of select element
+  - Prop: disabled
+    Type: boolean
+    Default: 'false'
+    Notes: Defines if selection is disabled
+  - Prop: chevronVisible
+    Type: bool
+    Default: 'true'
+    Notes: Indicates whether to show or hide right chevron icon
+  - Prop: fullWidth
+    Type: boolean
+    Default: 'false'
+    Notes: To set width to be 100% of container's width
+  - Prop: hybrid
+    Type: boolean
+    Default: 'false'
+    Notes: Set this to true while implementing hybrid select
+  - Prop: showSelect
+    Type: boolean
+    Default: 'true'
+    Notes: Use this to toggle select's visiblity when `hybrid={true}`
+  - Prop: selectRef
+    Type: ref
+    Default: 'null'
+    Notes: To access select's ref
+  - Prop: className
+    Type: string
+    Default: ""
+    Notes: Passed to StyledSelect
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying select element
+```
+
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallSelect" size="small">Small Select</DropDownLabel>
+              <Select
+                id="smallSelect"
+                size="small"
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallBorderless" size="small">Borderless Select</DropDownLabel>
+              <Select
+                id="smallBorderless"
+                size="small"
+                variant={1}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallChevron" size="small">Chevron Hidden</DropDownLabel>
+              <Select
+                id="smallChevron"
+                size="small"
+                chevronVisible={false}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeSelect" size="large">Large Select</DropDownLabel>
+              <Select
+                id="largeSelect"
+                size="large"
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeBorderless" size="large">Borderless Select</DropDownLabel>
+              <Select
+                id="largeBorderless"
+                size="large"
+                variant={1}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeChevron" size="large">Chevron Hidden</DropDownLabel>
+              <Select
+                id="largeChevron"
+                size="large"
+                chevronVisible={false}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="defaultSelect" size="large">Default Select</DropDownLabel>
+              <Select
+                id="defaultSelect"
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="disabledSelect" size="large" disabled>Disabled Select</DropDownLabel>
+              <Select
+                id="disabledSelect"
+                size="large"
+                disabled={true}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="fullWidthSelect" size="large">Large Full Width Select</DropDownLabel>
+              <Select
+                id="fullWidthSelect"
+                size="large"
+                fullWidth={true}
+                aria-label="Select an option"
+              >
+                <option value="" aria-label="">Select an option </option>
+                <option value="0">Option One</option>
+                <option value="1">Option Two</option>
+                <option value="2">Option Three</option>
+                <option value="3">Option Four</option>
+                <option value="4">Option Five</option>
+              </Select>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+              <HybridSelectExample />
             </Column>
         </Row>
     </Container>

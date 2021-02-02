@@ -140,15 +140,25 @@ class DropDownGroup extends React.Component {
   };
 
   closeDropdown = () => {
+    const { dropdownMenuClose } = this.props;
     this.groupWrapper.current.focus();
     this.setState({
       isOpen: false,
       selected: null,
       word: ""
     });
+    if (dropdownMenuClose) {
+      dropdownMenuClose();
+    }
   };
 
-  openDropdown = () => this.setState({ isOpen: true });
+  openDropdown = () => {
+    const { dropdownMenuOpen } = this.props;
+    this.setState({ isOpen: true });
+    if (dropdownMenuOpen) {
+      dropdownMenuOpen();
+    }
+  };
 
   enableNavigation = () => {
     if (!this.state.navigateOptions) {
@@ -236,6 +246,8 @@ class DropDownGroup extends React.Component {
       chevronVisible,
       fullWidth,
       onDropDownToggle,
+      hybrid,
+      hideDropdown,
       ...props
     } = this.props;
     const {
@@ -279,8 +291,10 @@ class DropDownGroup extends React.Component {
                       className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled,
-                        "full-width": fullWidth
+                        "full-width": fullWidth,
+                        hybrid
                       })}
+                      hideDropdown={hideDropdown}
                       tabIndex={disabled ? -1 : 0}
                       aria-haspopup="listbox"
                       aria-labelledby={hiddenLabelId}
@@ -380,7 +394,11 @@ DropDownGroup.propTypes = {
   shouldOpenDownward: PropTypes.bool,
   icon: PropTypes.node,
   chevronVisible: PropTypes.bool,
-  onDropDownToggle: PropTypes.func
+  onDropDownToggle: PropTypes.func,
+  hybrid: PropTypes.bool,
+  hideDropdown: PropTypes.bool,
+  dropdownMenuOpen: PropTypes.func,
+  dropdownMenuClose: PropTypes.func
 };
 
 DropDownGroup.defaultProps = {
@@ -400,7 +418,11 @@ DropDownGroup.defaultProps = {
   icon: null,
   chevronVisible: true,
   fullWidth: false,
-  onDropDownToggle: null
+  onDropDownToggle: null,
+  hybrid: false,
+  hideDropdown: true,
+  dropdownMenuOpen: null,
+  dropdownMenuClose: null
 };
 
 export default DropDownGroup;
