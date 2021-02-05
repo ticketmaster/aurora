@@ -15,6 +15,10 @@ rows:
     Type: boolean
     Default: false
     Notes: Show/hide popover
+  - Prop: variant
+    Type: one of 'dark', 'light'
+    Default: 'light'
+    Notes: Changes PopOver's color scheme
   - Prop: inlineWithTarget
     Type: boolean
     Default: false
@@ -50,5 +54,5 @@ rows:
 
 ```react
 ---
-<PopOverDemo withinContainer inlineWithTarget noBorders/>
+<PopOverDemo withinContainer inlineWithTarget noBorders variant="dark" />
 ```
