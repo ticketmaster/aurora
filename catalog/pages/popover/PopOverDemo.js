@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import PopOver from "../../../src/components/PopOver";
+import { VARIANTS, LIGHT } from "../../../src/components/constants";
 
 const Container = styled.div`
   width: 95%;
@@ -47,7 +48,7 @@ class PopOverDemo extends React.Component {
 
   render() {
     const { showPopOver, ...position } = this.state;
-    const { inlineWithTarget, noBorders } = this.props;
+    const { inlineWithTarget, noBorders, variant } = this.props;
 
     return (
       <Container ref={this.containerRef}>
@@ -80,6 +81,7 @@ class PopOverDemo extends React.Component {
           reduceTop={76}
           inlineWithTarget={inlineWithTarget}
           noBorders={noBorders}
+          variant={variant}
         >
           Some text to be rendered in the pop over component. Some text to be
           rendered in the pop over component.
@@ -92,13 +94,15 @@ class PopOverDemo extends React.Component {
 PopOverDemo.propTypes = {
   withinContainer: PropTypes.bool,
   inlineWithTarget: PropTypes.bool,
-  noBorders: PropTypes.bool
+  noBorders: PropTypes.bool,
+  variant: PropTypes.oneOf(VARIANTS)
 };
 
 PopOverDemo.defaultProps = {
   withinContainer: false,
   inlineWithTarget: false,
-  noBorders: false
+  noBorders: false,
+  variant: LIGHT
 };
 
 export default PopOverDemo;

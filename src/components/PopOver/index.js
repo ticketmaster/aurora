@@ -8,11 +8,21 @@ import {
   popContainersSharpBoxShadow
 } from "../../theme/constants";
 import PopOverPortal from "./PopOverPortal";
+import { VARIANTS, LIGHT, DARK } from "../constants";
 
 const StyledPopOver = styled.div`
-  background-color: ${themes.global.white.base};
-  ${({ noBorders }) =>
-    !noBorders && `border: 1px solid ${themes.global.gray02}`};
+  background-color: ${({ variant }) =>
+    variant === DARK ? themes.global.darkFill : themes.global.white.base};
+  ${({ noBorders, variant }) =>
+    !noBorders &&
+    `
+    border: ${
+      variant === DARK
+        ? `1px solid ${themes.global.darkFill}`
+        : `1px solid ${themes.global.gray02}`
+    };`};
+  color: ${({ variant }) =>
+    variant === DARK ? themes.global.white.base : themes.global.gray01};
   border-radius: ${constants.borderRadius.large};
   box-shadow: ${({ noBorders }) =>
     noBorders ? popContainersSharpBoxShadow : popContainersBoxShadow};
@@ -334,7 +344,7 @@ class PopOver extends Component {
   };
 
   render() {
-    const { children, isVisible, noBorders, zInd } = this.props;
+    const { children, isVisible, variant, noBorders, zInd } = this.props;
 
     return (
       <PopOverPortal>
@@ -344,6 +354,7 @@ class PopOver extends Component {
           timeout={300}
           classNames="open"
           appear={isVisible}
+          variant={variant}
           onEnter={this.popoverEnter}
         >
           <StyledPopOver
@@ -351,6 +362,7 @@ class PopOver extends Component {
             isVisible={isVisible}
             noBorders={noBorders}
             zInd={zInd}
+            variant={variant}
           >
             {children}
           </StyledPopOver>
@@ -364,6 +376,7 @@ PopOver.propTypes = {
   children: PropTypes.node.isRequired,
   isVisible: PropTypes.bool,
   inlineWithTarget: PropTypes.bool,
+  variant: PropTypes.oneOf(VARIANTS),
   noBorders: PropTypes.bool,
   reduceTop: PropTypes.number,
   reduceBottom: PropTypes.number,
@@ -383,6 +396,7 @@ PopOver.propTypes = {
 PopOver.defaultProps = {
   isVisible: false,
   inlineWithTarget: false,
+  variant: LIGHT,
   noBorders: false,
   reduceTop: 0,
   reduceBottom: 0,
