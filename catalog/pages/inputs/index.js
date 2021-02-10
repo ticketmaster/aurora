@@ -12,6 +12,8 @@ import {
   DropDownOption,
   DropDownLabel,
   Select,
+  HybridSelect,
+  HybridOption,
   Toggle,
   ButtonGroup,
   QtySelector
@@ -47,6 +49,8 @@ export default {
     DropDownOption,
     DropDownLabel,
     Select,
+    HybridSelect,
+    HybridOption,
     HybridSelectExample,
     Toggle,
     ToggleWrapperExample,
