@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import {
   DropDownLabel,
   HybridSelect,
@@ -17,7 +17,7 @@ export default class HybridSelectExample extends Component {
   render() {
     const { value } = this.state;
     return (
-      <Fragment>
+      <>
         <DropDownLabel id="selectLabel" htmlFor="demoSelect" size="large">
           Hybrid Select
         </DropDownLabel>
@@ -55,7 +55,7 @@ export default class HybridSelectExample extends Component {
             Option Five
           </HybridOption>
         </HybridSelect>
-      </Fragment>
+      </>
     );
   }
 }
