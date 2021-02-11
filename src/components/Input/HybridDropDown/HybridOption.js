@@ -1,8 +1,8 @@
-import React from "react";
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import DropDownOption from "../DropDown/DropDownOption";
 
-class HybridOption extends React.PureComponent {
+class HybridOption extends PureComponent {
   renderNativeOption = (optionText, children, props) => (
     <option {...props}> {optionText || children} </option>
   );
