@@ -10,9 +10,7 @@ export default class HybridSelectExample extends Component {
     value: []
   };
 
-  onChange = value => {
-    this.setState({ value });
-  };
+  onChange = value => this.setState({ value });
 
   render() {
     const { value } = this.state;
