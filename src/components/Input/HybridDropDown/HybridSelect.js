@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
+import HybridSelectWrapper from "./HybridDropDown.styles";
 import DropDownGroup from "../DropDown/DropDownGroup";
 import Select from "../Select/Select";
-
-const HybridSelectWrapper = styled.div`
-  position: relative;
-`;
 
 class HybridSelect extends Component {
   state = {

@@ -2,7 +2,11 @@
 
 exports[`HybridDropDown renders default hybridDropdown 1`] = `
 Object {
-  "container": .c3 {
+  "container": .c0 {
+  position: relative;
+}
+
+.c3 {
   height: 44px;
   background-color: rgba(255,255,255,1);
   border-radius: 2px;
@@ -402,10 +406,6 @@ Object {
 
 .c1:hover:not(.select--disabled).select--full--width {
   background-position-x: calc(100% - 14px);
-}
-
-.c0 {
-  position: relative;
 }
 
 .c10 {
@@ -644,7 +644,11 @@ Object {
 
 exports[`HybridDropDown renders hybridDropdown with placeholder 1`] = `
 Object {
-  "container": .c3 {
+  "container": .c0 {
+  position: relative;
+}
+
+.c3 {
   height: 44px;
   background-color: rgba(255,255,255,1);
   border-radius: 2px;
@@ -1044,10 +1048,6 @@ Object {
 
 .c1:hover:not(.select--disabled).select--full--width {
   background-position-x: calc(100% - 14px);
-}
-
-.c0 {
-  position: relative;
 }
 
 .c10 {
