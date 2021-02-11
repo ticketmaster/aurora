@@ -973,7 +973,81 @@ span: 6
               </Select>
             </Column>
         </Row>
-        <Spacing top={{small: "normal"}} />
+    </Container>
+</ThemeProvider>
+```
+
+## Hybrid Select
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: array
+    Default: "[ ]"
+    Notes: Specifies array of initial string values
+  - Prop: onChange
+    Type: function
+    Default: null
+    Notes: Invoked with an array of updatedSelection when an option is selected by the user
+  - Prop: placeholder
+    Type: string
+    Default: ""
+    Notes: Shows placeholder in dropdown and adds a blank option in native select
+  - Prop: showOptionPlaceholder
+    Type: boolean
+    Default: "`true`"
+    Notes: Set this to false in order to hide blank option from native select
+  - Prop: optionPlaceholderProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed to the blank option in native select
+  - Prop: hybridWrapperProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed to the wrapper of dropdown and select
+  - Prop: selectProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the select
+  - Prop: dropdownProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the dropdown
+```
+
+## Hybrid Option
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: optionText
+    Type: string
+    Default: ""
+    Notes: When passed this text will be used in option and children will be ignored
+  - Prop: optionProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the options of select
+  - Prop: dropdownOptionProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the options of dropdown
+```
+
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
         <Row >
             <Column medium={4}>
               <HybridSelectExample />

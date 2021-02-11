@@ -1,0 +1,1291 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HybridDropDown renders default hybridDropdown 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+}
+
+.c3 {
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c3.dropdown--small {
+  height: 36px;
+}
+
+.c3.full-width {
+  width: 100%;
+}
+
+.c3.dropdown--border {
+  border: solid 1px #999999;
+  padding: 1px;
+  text-align: left;
+}
+
+.c3.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c3.dropdown--active {
+  margin: 0;
+  padding: 1px;
+  border: solid 1px #999999;
+  border-radius: 2px;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c3 {
+  cursor: not-allowed;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--disabled .c3:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.dropdown--disabled .c3 .dropdown__chevron--disabled {
+  opacity: 0.4;
+}
+
+.dropdown--open-upward .c3 {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c3:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+  padding: 0;
+}
+
+.c8 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  white-space: nowrap;
+  margin-top: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: auto;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c8:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c8.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c8.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c8 {
+  bottom: 46px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c8.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+  color: #262626;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c2:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c2.full-width {
+  width: 100%;
+  display: block;
+}
+
+.c2.hybrid {
+  display: none;
+}
+
+.c2.hybrid.full-width {
+  display: none;
+}
+
+.c7 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 14px;
+  min-width: 16px;
+}
+
+.dropdown--small .c7 {
+  margin-right: 14px;
+}
+
+.dropdown--border:hover .c7:not(.dropdown__chevron--disabled) {
+  margin-right: 14px;
+}
+
+.dropdown--small.dropdown--border:hover .c7:not(.dropdown__chevron--disabled) {
+  margin-right: 12px;
+}
+
+.c7.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 14px;
+}
+
+.dropdown--small .c6 {
+  font-size: 14px;
+  margin: 0 12px;
+}
+
+.dropdown--large .c6 {
+  font-size: 16px;
+}
+
+.dropdown--no-border .c6 {
+  margin-right: 14px;
+}
+
+.dropdown--no-border .c6.dropdown--small .dropdown--no-border .c5 {
+  margin-left: 12px;
+}
+
+.dropdown--large.dropdown--border .c6 {
+  margin-left: 14px;
+}
+
+.dropdown--small.dropdown--border .c6 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c6 {
+  margin-right: 14px;
+}
+
+.dropdown--active.dropdown--no-border .c6.dropdown--small .dropdown--active.dropdown--no-border .c5 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c6:not(.dropdown__text--disabled) {
+  margin-right: 14px;
+}
+
+.dropdown--small.dropdown--border:hover .c6:not(.dropdown__text--disabled) {
+  margin-left: 12px;
+}
+
+.dropdown--large.dropdown--border:hover .c6:not(.dropdown__text--disabled) {
+  margin-left: 14px;
+}
+
+.c6 svg {
+  margin-right: 12px;
+}
+
+.c9 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c9 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c1.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c1.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c1.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c1:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c1.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c1.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c1.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c1.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c1.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c1.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c1.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c1.select--full--width {
+  width: 100%;
+}
+
+.c1.hybrid {
+  display: inline-block;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c1:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c1:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+.c10 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c10 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 10px;
+  font-size: 14px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c10:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+  border-radius: 2px;
+}
+
+.dropdown__items .c10.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c10 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c10 {
+  font-size: 16px;
+}
+
+<div>
+    <div
+      class="c0"
+    >
+      <select
+        class="c1 select--large select--border hybrid"
+        data-testid="test-hybridselect"
+      >
+        <option
+          value=""
+        />
+        <option
+          index="0"
+          value="0"
+        >
+           Option One 
+        </option>
+        <option
+          index="1"
+          value="1"
+        >
+           Option Two 
+        </option>
+        <option
+          index="2"
+          value="2"
+        >
+           Option Three 
+        </option>
+        <option
+          index="3"
+          value="3"
+        >
+           Option Four 
+        </option>
+        <option
+          index="4"
+          value="4"
+        >
+           Option Five 
+        </option>
+      </select>
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="hidden-label__"
+        class="c2 hybrid"
+        data-testid="test-hybriddropdown"
+        tabindex="0"
+      >
+        <label
+          class="c3 dropdown__label dropdown--large dropdown--border"
+        >
+          <span
+            class="c4"
+            id="hidden-label__"
+          />
+          <div
+            class="c5 c6"
+          />
+          <svg
+            class="c7"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="M16 0H0v16h16z"
+              />
+              <path
+                d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+                fill="#262626"
+                fill-opacity=".65"
+                fill-rule="nonzero"
+              />
+            </g>
+          </svg>
+        </label>
+        <div
+          class="c8 dropdown__items dropdown__items--large"
+        >
+          <div
+            aria-labelledby="hidden-label__"
+            class="c9"
+            role="listbox"
+          >
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="0"
+            >
+               
+              Option One
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="1"
+            >
+               
+              Option Two
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              data-testid="test-hybridoption"
+              role="option"
+              tabindex="-1"
+              value="2"
+            >
+               
+              Option Three
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="3"
+            >
+               
+              Option Four
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="4"
+            >
+               
+              Option Five
+               
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`HybridDropDown renders hybridDropdown with placeholder 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+}
+
+.c3 {
+  height: 44px;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  position: relative;
+  padding: 0px;
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  z-index: 0;
+}
+
+.c3.dropdown--small {
+  height: 36px;
+}
+
+.c3.full-width {
+  width: 100%;
+}
+
+.c3.dropdown--border {
+  border: solid 1px #999999;
+  padding: 1px;
+  text-align: left;
+}
+
+.c3.dropdown--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  text-align: right;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c3.dropdown--active {
+  margin: 0;
+  padding: 1px;
+  border: solid 1px #999999;
+  border-radius: 2px;
+  z-index: 10;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease;
+}
+
+.dropdown--disabled .c3 {
+  cursor: not-allowed;
+  color: rgba(38,38,38,0.4);
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown--disabled .c3:not(.dropdown--no-border) {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.dropdown--disabled .c3 .dropdown__chevron--disabled {
+  opacity: 0.4;
+}
+
+.dropdown--open-upward .c3 {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.c3:hover:not(.dropdown__label--disabled) {
+  border: solid 2px #026cdf;
+  padding: 0;
+}
+
+.c8 {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  white-space: nowrap;
+  margin-top: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: auto;
+  overflow: hidden;
+  z-index: 9;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s ease 0.3s,padding-top 0s ease 0.3s, padding-bottom 0s ease 0.3s;
+}
+
+.c8:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c8.dropdown--clicked {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  max-height: 606px;
+  -webkit-transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+  transition: max-height 0.3s cubic-bezier(0.455,0.03,0.515,0.955), border-width 0s,padding-top 0s,padding-bottom 0s;
+}
+
+.c8.dropdown--overflow {
+  overflow-y: auto;
+}
+
+.dropdown--open-upward .c8 {
+  bottom: 46px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12);
+}
+
+.dropdown--open-upward .c8.dropdown__items--small {
+  bottom: 35px;
+}
+
+.c4 {
+  display: none;
+}
+
+.c2 {
+  position: relative;
+  display: inline-block;
+  color: #262626;
+  outline: none;
+  border-radius: 2px;
+}
+
+.c2:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c2.full-width {
+  width: 100%;
+  display: block;
+}
+
+.c2.hybrid {
+  display: none;
+}
+
+.c2.hybrid.full-width {
+  display: none;
+}
+
+.c7 {
+  color: #999999;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.1s cubic-bezier(0.455,0.03,0.515,0.955);
+  margin-right: 14px;
+  min-width: 16px;
+}
+
+.dropdown--small .c7 {
+  margin-right: 14px;
+}
+
+.dropdown--border:hover .c7:not(.dropdown__chevron--disabled) {
+  margin-right: 14px;
+}
+
+.dropdown--small.dropdown--border:hover .c7:not(.dropdown__chevron--disabled) {
+  margin-right: 12px;
+}
+
+.c7.dropdown__icon--hide {
+  opacity: 0;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 14px;
+}
+
+.dropdown--small .c6 {
+  font-size: 14px;
+  margin: 0 12px;
+}
+
+.dropdown--large .c6 {
+  font-size: 16px;
+}
+
+.dropdown--no-border .c6 {
+  margin-right: 14px;
+}
+
+.dropdown--no-border .c6.dropdown--small .dropdown--no-border .c5 {
+  margin-left: 12px;
+}
+
+.dropdown--large.dropdown--border .c6 {
+  margin-left: 14px;
+}
+
+.dropdown--small.dropdown--border .c6 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border .c6 {
+  margin-right: 14px;
+}
+
+.dropdown--active.dropdown--no-border .c6.dropdown--small .dropdown--active.dropdown--no-border .c5 {
+  margin-left: 12px;
+}
+
+.dropdown--active.dropdown--no-border:hover .c6:not(.dropdown__text--disabled) {
+  margin-right: 14px;
+}
+
+.dropdown--small.dropdown--border:hover .c6:not(.dropdown__text--disabled) {
+  margin-left: 12px;
+}
+
+.dropdown--large.dropdown--border:hover .c6:not(.dropdown__text--disabled) {
+  margin-left: 14px;
+}
+
+.c6 svg {
+  margin-right: 12px;
+}
+
+.c9 {
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
+}
+
+.dropdown--clicked .c9 {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.c1 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c1.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c1.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c1.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c1:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c1.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c1.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c1.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c1.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c1.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c1.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c1.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c1.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c1.select--full--width {
+  width: 100%;
+}
+
+.c1.hybrid {
+  display: inline-block;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.c1:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c1:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c1:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+.c10 {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.dropdown__items .c10 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 36px;
+  margin: 4px 8px 0 8px;
+  padding: 7px 10px;
+  font-size: 14px;
+  text-align: left;
+  border: none;
+  background-color: rgba(255,255,255,1);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: #262626;
+  line-height: 1.25;
+}
+
+.dropdown__items .c10:focus {
+  background-color: #026cdf;
+  color: rgba(255,255,255,1);
+  outline: none;
+  border-radius: 2px;
+}
+
+.dropdown__items .c10.dropdown__selected {
+  color: #262626;
+  background-color: #ebebeb;
+  border-radius: 2px;
+}
+
+.dropdown__items.dropdown__items--small .c10 {
+  height: 32px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.dropdown__items.dropdown__items--large .c10 {
+  font-size: 16px;
+}
+
+<div>
+    <div
+      class="c0"
+    >
+      <select
+        class="c1 select--large select--border hybrid"
+        data-testid="test-hybridselect"
+      >
+        <option
+          value=""
+        >
+          Select an option
+        </option>
+        <option
+          index="0"
+          value="0"
+        >
+           Option One 
+        </option>
+        <option
+          index="1"
+          value="1"
+        >
+           Option Two 
+        </option>
+        <option
+          index="2"
+          value="2"
+        >
+           Option Three 
+        </option>
+        <option
+          index="3"
+          value="3"
+        >
+           Option Four 
+        </option>
+        <option
+          index="4"
+          value="4"
+        >
+           Option Five 
+        </option>
+      </select>
+      <div
+        aria-haspopup="listbox"
+        aria-labelledby="hidden-label__Select_an_option"
+        class="c2 hybrid"
+        data-testid="test-hybriddropdown"
+        tabindex="0"
+      >
+        <label
+          class="c3 dropdown__label dropdown--large dropdown--border"
+        >
+          <span
+            class="c4"
+            id="hidden-label__Select_an_option"
+          >
+            Select an option
+          </span>
+          <div
+            class="c5 c6"
+          >
+            Select an option
+          </div>
+          <svg
+            class="c7"
+            height="16"
+            viewBox="0 0 16 16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <path
+                d="M16 0H0v16h16z"
+              />
+              <path
+                d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"
+                fill="#262626"
+                fill-opacity=".65"
+                fill-rule="nonzero"
+              />
+            </g>
+          </svg>
+        </label>
+        <div
+          class="c8 dropdown__items dropdown__items--large"
+        >
+          <div
+            aria-labelledby="hidden-label__Select_an_option"
+            class="c9"
+            role="listbox"
+          >
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="0"
+            >
+               
+              Option One
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="1"
+            >
+               
+              Option Two
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              data-testid="test-hybridoption"
+              role="option"
+              tabindex="-1"
+              value="2"
+            >
+               
+              Option Three
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="3"
+            >
+               
+              Option Four
+               
+            </span>
+            <span
+              aria-selected="false"
+              class="c10"
+              role="option"
+              tabindex="-1"
+              value="4"
+            >
+               
+              Option Five
+               
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

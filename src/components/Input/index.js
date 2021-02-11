@@ -9,6 +9,8 @@ export { default as DropDownOption } from "./DropDown/DropDownOption";
 export { default as DropDownGroup } from "./DropDown/DropDownGroup";
 export { default as DropDownLabel } from "./DropDown/DropDownLabel";
 export { default as Select } from "./Select/Select";
+export { default as HybridSelect } from "./HybridDropDown/HybridSelect";
+export { default as HybridOption } from "./HybridDropDown/HybridOption";
 export { default as Toggle } from "./Toggle/Toggle";
 export { default as ButtonGroup } from "./ButtonGroup/ButtonGroup";
 export { default as QtySelector } from "./QtySelector/QtySelector";
