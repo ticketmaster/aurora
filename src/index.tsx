@@ -196,6 +196,7 @@ export {
   DropDownOption,
   DropDownLabel,
   Select,
+  Option,
   HybridSelect,
   HybridOption,
   RadioButton,

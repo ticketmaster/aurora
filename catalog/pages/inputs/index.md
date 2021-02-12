@@ -820,6 +820,27 @@ rows:
     Notes: Passes through any other props to underlying select element
 ```
 
+## Option
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Default: ""
+    Notes: Required
+  - Prop: optionText
+    Type: string
+    Default: ""
+    Notes: To show alternate text ignoring children
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying option element
+```
+
 ```react
 span: 6
 ---
@@ -833,12 +854,12 @@ span: 6
                 size="small"
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -849,12 +870,12 @@ span: 6
                 variant={1}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -865,12 +886,12 @@ span: 6
                 chevronVisible={false}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
         </Row>
@@ -883,12 +904,12 @@ span: 6
                 size="large"
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -899,12 +920,12 @@ span: 6
                 variant={1}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -915,12 +936,12 @@ span: 6
                 chevronVisible={false}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
         </Row>
@@ -932,12 +953,12 @@ span: 6
                 id="defaultSelect"
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -948,12 +969,12 @@ span: 6
                 disabled={true}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
             <Column medium={4}>
@@ -964,12 +985,12 @@ span: 6
                 fullWidth={true}
                 aria-label="Select an option"
               >
-                <option value="" aria-label="">Select an option </option>
-                <option value="0">Option One</option>
-                <option value="1">Option Two</option>
-                <option value="2">Option Three</option>
-                <option value="3">Option Four</option>
-                <option value="4">Option Five</option>
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
               </Select>
             </Column>
         </Row>
@@ -1050,7 +1071,16 @@ span: 6
     <Container>
         <Row >
             <Column medium={4}>
-              <HybridSelectExample />
+              <DropDownLabel htmlFor="demoSelect" size="large">
+                Hybrid Select
+              </DropDownLabel>
+              <HybridSelectExample selectId="demoSelect" />
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="demoLabelSelect" size="large">
+                Hybrid Select with label
+              </DropDownLabel>
+              <HybridSelectExample label="Sort By: " selectId="demoLabelSelect" />
             </Column>
         </Row>
     </Container>

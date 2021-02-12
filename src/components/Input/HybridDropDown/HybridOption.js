@@ -1,37 +1,31 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import DropDownOption from "../DropDown/DropDownOption";
+import Option from "../Select/Option";
 
-class HybridOption extends PureComponent {
-  renderNativeOption = (optionText, children, props) => (
-    <option {...props}> {optionText || children} </option>
-  );
-
-  renderDropDownOption = (children, props) => (
-    <DropDownOption {...props}> {children} </DropDownOption>
-  );
-
-  render() {
-    const {
-      optionFor,
-      optionText,
-      optionProps,
-      dropdownOptionProps,
-      children,
-      ...props
-    } = this.props;
-    if (optionFor === "select") {
-      return this.renderNativeOption(optionText, children, {
-        ...props,
-        ...optionProps
-      });
-    }
-    return this.renderDropDownOption(children, {
-      ...props,
-      ...dropdownOptionProps
-    });
+const HybridOption = ({
+  optionFor,
+  optionText,
+  optionProps,
+  dropdownOptionProps,
+  children,
+  ...props
+}) => {
+  if (optionFor === "select") {
+    return (
+      <Option optionText={optionText} {...props} {...optionProps}>
+        {" "}
+        {children}{" "}
+      </Option>
+    );
   }
-}
+  return (
+    <DropDownOption {...props} {...dropdownOptionProps}>
+      {" "}
+      {children}{" "}
+    </DropDownOption>
+  );
+};
 HybridOption.propTypes = {
   value: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,

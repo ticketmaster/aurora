@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import {
-  DropDownLabel,
-  HybridSelect,
-  HybridOption
-} from "../../../src/components/Input";
+import PropTypes from "prop-types";
+import { HybridSelect, HybridOption } from "../../../src/components/Input";
 
 export default class HybridSelectExample extends Component {
+  static propTypes = {
+    label: PropTypes.string,
+    selectId: PropTypes.string
+  };
+
+  static defaultProps = {
+    label: "",
+    selectId: ""
+  };
+
   state = {
     value: []
   };
@@ -14,18 +21,17 @@ export default class HybridSelectExample extends Component {
 
   render() {
     const { value } = this.state;
+    const { label, selectId } = this.props;
     return (
       <>
-        <DropDownLabel id="selectLabel" htmlFor="demoSelect" size="large">
-          Hybrid Select
-        </DropDownLabel>
         <HybridSelect
           size="large"
           placeholder="Select an option"
           fullWidth // for hybrid select use fullWidth true and control width using hybridWrapperProps
           value={value}
           onChange={this.onChange}
-          selectProps={{ id: "demoSelect" }}
+          label={label}
+          selectProps={{ id: selectId }}
         >
           <HybridOption
             value="0"
@@ -42,8 +48,8 @@ export default class HybridSelectExample extends Component {
           >
             Option Two
           </HybridOption>
-          <HybridOption value="2" index={2} optionText="Option Three">
-            {/* Add prop optionText while children is not plain text */}
+          {/* Add prop optionText while children is not plain text */}
+          <HybridOption value="2" index={2} optionText=" Option Three">
             <div>Option Three</div>
           </HybridOption>
           <HybridOption value="3" index={3}>
