@@ -829,15 +829,12 @@ span: 6
 rows:
   - Prop: value
     Type: string
-    Default: ""
     Notes: Required
   - Prop: optionText
     Type: string
-    Default: ""
     Notes: To show alternate text ignoring children
   - Prop: ...props
     Type: any
-    Default:
     Notes: Passes through any other props to underlying option element
 ```
 
