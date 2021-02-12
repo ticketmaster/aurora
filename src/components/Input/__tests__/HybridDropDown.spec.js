@@ -44,6 +44,10 @@ describe("HybridDropDown", () => {
     expect(renderTestComponent()).toMatchSnapshot();
   });
 
+  it("renders default hybridDropdown with label", () => {
+    expect(renderTestComponent({ label: "Sort By: " })).toMatchSnapshot();
+  });
+
   it("renders hybridDropdown with placeholder", () => {
     expect(
       renderTestComponent({ placeholder: "Select an option" })

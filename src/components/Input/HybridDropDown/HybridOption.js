@@ -14,15 +14,13 @@ const HybridOption = ({
   if (optionFor === "select") {
     return (
       <Option optionText={optionText} {...props} {...optionProps}>
-        {" "}
-        {children}{" "}
+        {children}
       </Option>
     );
   }
   return (
     <DropDownOption {...props} {...dropdownOptionProps}>
-      {" "}
-      {children}{" "}
+      {children}
     </DropDownOption>
   );
 };
