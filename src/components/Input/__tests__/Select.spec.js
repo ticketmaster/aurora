@@ -1,19 +1,20 @@
 import React from "react";
 import { renderIntoDocument, cleanup } from "react-testing-library";
 import Select from "../Select/Select";
+import Option from "../Select/Option";
 
 describe("Select", () => {
   function renderTestDocument(props = {}) {
     return renderIntoDocument(
       <Select {...props}>
-        <option value="" aria-label="">
-          Select an option{" "}
-        </option>
-        <option value="0">Option One</option>
-        <option value="1">Option Two</option>
-        <option value="2">Option Three</option>
-        <option value="3">Option Four</option>
-        <option value="4">Option Five</option>
+        <Option value="" aria-label="">
+          Select an option
+        </Option>
+        <Option value="0">Option One</Option>
+        <Option value="1">Option Two</Option>
+        <Option value="2">Option Three</Option>
+        <Option value="3">Option Four</Option>
+        <Option value="4">Option Five</Option>
       </Select>
     );
   }

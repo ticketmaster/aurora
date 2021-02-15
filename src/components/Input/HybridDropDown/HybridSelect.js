@@ -96,6 +96,7 @@ class HybridSelect extends Component {
       value,
       valueOverride,
       showOptionPlaceholder,
+      label,
       optionPlaceholderProps,
       hybridWrapperProps,
       selectProps,
@@ -114,6 +115,7 @@ class HybridSelect extends Component {
           showSelect={showNativeSelect}
           value={value[0]}
           selectRef={selectRef}
+          label={label}
           onChange={this.updateValue}
           onMouseEnter={this.onMouseEnter}
         >
@@ -122,7 +124,10 @@ class HybridSelect extends Component {
               {placeholder}
             </option>
           )}
-          {this.renderChildren({ optionFor: "select" }, children)}
+          {this.renderChildren(
+            { optionFor: "select", selectedValue: value[0], label },
+            children
+          )}
         </Select>
         <DropDownGroup
           {...props}
@@ -130,6 +135,7 @@ class HybridSelect extends Component {
           hybrid
           hideDropdown={showNativeSelect}
           placeholder={placeholder}
+          label={label}
           value={value}
           valueOverride={valueOverride || value}
           onChange={this.onChange}
