@@ -49,8 +49,8 @@ export default class HybridSelectExample extends Component {
             Option Two
           </HybridOption>
           {/* Add prop optionText while children is not plain text */}
-          <HybridOption value="2" index={2} optionText=" Option Three">
-            <div>Option Three</div>
+          <HybridOption value="2" index={2} optionText="Option Three">
+            {label ? "Option Three" : <div>Option Three</div>}
           </HybridOption>
           <HybridOption value="3" index={3}>
             Option Four
