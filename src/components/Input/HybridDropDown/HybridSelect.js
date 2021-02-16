@@ -115,7 +115,6 @@ class HybridSelect extends Component {
           showSelect={showNativeSelect}
           value={value[0]}
           selectRef={selectRef}
-          label={label}
           onChange={this.updateValue}
           onMouseEnter={this.onMouseEnter}
         >

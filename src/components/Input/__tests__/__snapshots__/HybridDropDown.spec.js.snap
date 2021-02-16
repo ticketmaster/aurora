@@ -1096,7 +1096,6 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
-        label="Sort By: "
       >
         <option
           value=""
