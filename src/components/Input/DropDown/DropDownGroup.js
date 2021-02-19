@@ -247,7 +247,6 @@ class DropDownGroup extends React.Component {
       fullWidth,
       onDropDownToggle,
       hybrid,
-      hideDropdown,
       ...props
     } = this.props;
     const {
@@ -292,10 +291,10 @@ class DropDownGroup extends React.Component {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled,
                         "full-width": fullWidth,
+                        [`hybrid-margin-${size}`]: hybrid,
                         hybrid
                       })}
-                      hideDropdown={hideDropdown}
-                      tabIndex={disabled ? -1 : 0}
+                      tabIndex={disabled || hybrid ? -1 : 0}
                       aria-haspopup="listbox"
                       aria-labelledby={hiddenLabelId}
                       onKeyDown={this.onKeyDown}
@@ -396,7 +395,6 @@ DropDownGroup.propTypes = {
   chevronVisible: PropTypes.bool,
   onDropDownToggle: PropTypes.func,
   hybrid: PropTypes.bool,
-  hideDropdown: PropTypes.bool,
   dropdownMenuOpen: PropTypes.func,
   dropdownMenuClose: PropTypes.func
 };
@@ -420,7 +418,6 @@ DropDownGroup.defaultProps = {
   fullWidth: false,
   onDropDownToggle: null,
   hybrid: false,
-  hideDropdown: true,
   dropdownMenuOpen: null,
   dropdownMenuClose: null
 };

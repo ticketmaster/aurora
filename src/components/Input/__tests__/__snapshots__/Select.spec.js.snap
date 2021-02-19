@@ -87,9 +87,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -282,9 +286,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -477,9 +485,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -672,9 +684,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -867,9 +883,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: none;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -1062,9 +1082,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
@@ -1257,9 +1281,13 @@ Object {
 }
 
 .c0.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
 }
 
 .c0:hover:not(.select--disabled) {
