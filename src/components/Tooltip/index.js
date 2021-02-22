@@ -325,6 +325,7 @@ class Tooltip extends Component {
   };
 
   tooltipEntering = () => {
+    console.log("test");
     this.myRef.current.style.transition = `opacity 0.3s ${
       constants.easing.easeOutQuad
     },
