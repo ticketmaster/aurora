@@ -154,10 +154,15 @@ export const StyledGroupWrapper = styled.div`
   }
 
   &.hybrid {
-    display: ${({ hideDropdown }) => (hideDropdown ? "none" : "inline-block")};
+    top: 0;
+    left: 0;
+    z-index: 2;
 
-    &.full-width {
-      display: ${({ hideDropdown }) => (hideDropdown ? "none" : "block")};
+    &.hybrid-margin-small {
+      margin-top: -36px;
+    }
+    &.hybrid-margin-large {
+      margin-top: -44px;
     }
   }
 `;

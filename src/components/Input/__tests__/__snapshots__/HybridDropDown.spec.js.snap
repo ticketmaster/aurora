@@ -167,11 +167,17 @@ Object {
 }
 
 .c2.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c2.hybrid.full-width {
-  display: none;
+.c2.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c2.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c7 {
@@ -371,9 +377,13 @@ Object {
 }
 
 .c1.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c1.hybrid:focus {
+  opacity: 1;
 }
 
 .c1:hover:not(.select--disabled) {
@@ -464,6 +474,7 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
+        tabindex="0"
       >
         <option
           value=""
@@ -502,9 +513,9 @@ Object {
       <div
         aria-haspopup="listbox"
         aria-labelledby="hidden-label__"
-        class="c2 hybrid"
+        class="c2 hybrid-margin-large hybrid"
         data-testid="test-hybriddropdown"
-        tabindex="0"
+        tabindex="-1"
       >
         <label
           class="c3 dropdown__label dropdown--large dropdown--border"
@@ -799,11 +810,17 @@ Object {
 }
 
 .c2.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c2.hybrid.full-width {
-  display: none;
+.c2.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c2.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c7 {
@@ -1003,9 +1020,13 @@ Object {
 }
 
 .c1.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c1.hybrid:focus {
+  opacity: 1;
 }
 
 .c1:hover:not(.select--disabled) {
@@ -1096,6 +1117,7 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
+        tabindex="0"
       >
         <option
           value=""
@@ -1134,9 +1156,9 @@ Object {
       <div
         aria-haspopup="listbox"
         aria-labelledby="hidden-label__Sort_By:_"
-        class="c2 hybrid"
+        class="c2 hybrid-margin-large hybrid"
         data-testid="test-hybriddropdown"
-        tabindex="0"
+        tabindex="-1"
       >
         <label
           class="c3 dropdown__label dropdown--large dropdown--border"
@@ -1433,11 +1455,17 @@ Object {
 }
 
 .c2.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c2.hybrid.full-width {
-  display: none;
+.c2.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c2.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c7 {
@@ -1637,9 +1665,13 @@ Object {
 }
 
 .c1.hybrid {
-  display: inline-block;
-  -webkit-transition: none;
-  transition: none;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.c1.hybrid:focus {
+  opacity: 1;
 }
 
 .c1:hover:not(.select--disabled) {
@@ -1730,6 +1762,7 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
+        tabindex="0"
       >
         <option
           value=""
@@ -1770,9 +1803,9 @@ Object {
       <div
         aria-haspopup="listbox"
         aria-labelledby="hidden-label__Select_an_option"
-        class="c2 hybrid"
+        class="c2 hybrid-margin-large hybrid"
         data-testid="test-hybriddropdown"
-        tabindex="0"
+        tabindex="-1"
       >
         <label
           class="c3 dropdown__label dropdown--large dropdown--border"

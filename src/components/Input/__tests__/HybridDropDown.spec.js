@@ -54,13 +54,22 @@ describe("HybridDropDown", () => {
     ).toMatchSnapshot();
   });
 
-  it("should call onMouseEnter", () => {
-    const onMouseEnter = jest.fn();
-    const { getByTestId } = renderTestComponent({ onMouseEnter });
+  it("should call onFocus", () => {
+    const onFocus = jest.fn();
+    const { getByTestId } = renderTestComponent({ onFocus });
 
-    fireEvent.mouseEnter(getByTestId("test-hybridselect"));
+    fireEvent.focus(getByTestId("test-hybriddropdown"));
+    fireEvent.blur(getByTestId("test-hybriddropdown"));
+    expect(onFocus).toHaveBeenCalledTimes(1);
+  });
 
-    expect(onMouseEnter).toHaveBeenCalledTimes(1);
+  it("should call onBlur", () => {
+    const onBlur = jest.fn();
+    const { getByTestId } = renderTestComponent({ onBlur });
+
+    fireEvent.focus(getByTestId("test-hybriddropdown"));
+    fireEvent.blur(getByTestId("test-hybriddropdown"));
+    expect(onBlur).toHaveBeenCalledTimes(1);
   });
 
   it("should call onChange when option is clicked", () => {
@@ -81,28 +90,5 @@ describe("HybridDropDown", () => {
     expect(spyOnChange).toHaveBeenCalledTimes(1);
     expect(spyOnChange).toHaveBeenCalledWith(["1"]);
     spyOnChange.mockRestore();
-  });
-
-  it("should show native select when dropdown close and mouse leave", () => {
-    const instance = renderer
-      .create(testComponentHTML({ dropdownMenuClose: jest.fn() }))
-      .getInstance();
-    instance.onMouseEnter();
-    instance.dropdownMenuOpen();
-    instance.dropdownMenuClose();
-    instance.onMouseLeave();
-    expect(instance.state.showNativeSelect).toBe(true);
-  });
-
-  it("should not show native select when mouse leave dropdown before dropdown close", () => {
-    const instance = renderer
-      .create(testComponentHTML({ onMouseLeave: jest.fn() }))
-      .getInstance();
-    instance.onMouseEnter();
-    instance.dropdownMenuOpen();
-    instance.onMouseLeave();
-    expect(instance.state.showNativeSelect).toBe(false);
-    instance.dropdownMenuClose();
-    expect(instance.state.showNativeSelect).toBe(true);
   });
 });

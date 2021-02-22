@@ -162,11 +162,17 @@ exports[`DropDownGroup Arrow key down should open the drop down 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -584,11 +590,17 @@ exports[`DropDownGroup Arrow key up should open the drop down 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -1006,11 +1018,17 @@ exports[`DropDownGroup Click outside should close the dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -1428,11 +1446,17 @@ exports[`DropDownGroup Click outside should not close the dropdown when the isOp
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -1852,11 +1876,17 @@ exports[`DropDownGroup Effect when move moves over dropdown option  when focused
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -2274,11 +2304,17 @@ exports[`DropDownGroup Effect when move moves over dropdown option when focused 
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -2696,11 +2732,17 @@ exports[`DropDownGroup Escape key should close the drop down 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -3118,11 +3160,17 @@ exports[`DropDownGroup Should not focus onClick 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -3540,11 +3588,17 @@ exports[`DropDownGroup Should open the drop down onClick 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -3964,11 +4018,17 @@ exports[`DropDownGroup Space bar should select and close dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -4388,11 +4448,17 @@ exports[`DropDownGroup Space bar should select and not close dropdown when the i
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -4812,11 +4878,17 @@ exports[`DropDownGroup Space bar should select but not close dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -5435,11 +5507,17 @@ exports[`DropDownGroup renders bordered variant with an inner label with a place
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -5861,11 +5939,17 @@ exports[`DropDownGroup renders borderless variant with an inner label with a lab
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -6285,11 +6369,17 @@ exports[`DropDownGroup renders borderless variant with label and hiddenLabel pro
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -6709,11 +6799,17 @@ exports[`DropDownGroup renders default dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -7131,11 +7227,17 @@ exports[`DropDownGroup renders default dropdown that should always open downward
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -7553,11 +7655,17 @@ exports[`DropDownGroup renders hybrid dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -7732,9 +7840,9 @@ exports[`DropDownGroup renders hybrid dropdown 1`] = `
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="c0 hybrid"
+    class="c0 hybrid-margin-large hybrid"
     data-testid="test-dropContainer"
-    tabindex="0"
+    tabindex="-1"
   >
     <label
       class="c1 dropdown__label dropdown--large dropdown--border"
@@ -7975,11 +8083,17 @@ exports[`DropDownGroup renders hybrid dropdown when hideDropdown is false 1`] = 
 }
 
 .c0.hybrid {
-  display: inline-block;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: block;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -8154,9 +8268,9 @@ exports[`DropDownGroup renders hybrid dropdown when hideDropdown is false 1`] = 
   <div
     aria-haspopup="listbox"
     aria-labelledby="hidden-label__"
-    class="c0 hybrid"
+    class="c0 hybrid-margin-large hybrid"
     data-testid="test-dropContainer"
-    tabindex="0"
+    tabindex="-1"
   >
     <label
       class="c1 dropdown__label dropdown--large dropdown--border"
@@ -8397,11 +8511,17 @@ exports[`DropDownGroup renders input correctly when the isOpen prop with a value
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -8819,11 +8939,17 @@ exports[`DropDownGroup renders input correctly when the keywordSearch prop with 
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -9241,11 +9367,17 @@ exports[`DropDownGroup renders input correctly when the withKeyboardProvider pro
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -9662,11 +9794,17 @@ exports[`DropDownGroup renders small dropdown 1`] = `
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -10084,11 +10222,17 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -10505,11 +10649,17 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {
@@ -10929,11 +11079,17 @@ exports[`DropDownGroup should render the correct label when label prop is passed
 }
 
 .c0.hybrid {
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.c0.hybrid.full-width {
-  display: none;
+.c0.hybrid.hybrid-margin-small {
+  margin-top: -36px;
+}
+
+.c0.hybrid.hybrid-margin-large {
+  margin-top: -44px;
 }
 
 .c5 {

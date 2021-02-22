@@ -88,8 +88,13 @@ const StyledSelect = styled.select`
   }
 
   &.hybrid {
-    display: ${({ showSelect }) => (showSelect ? "inline-block" : "none")};
-    transition: none;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+    &:focus {
+      opacity: 1;
+    }
   }
 
   &:hover:not(.select--disabled) {
