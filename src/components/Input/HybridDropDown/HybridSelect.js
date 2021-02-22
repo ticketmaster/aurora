@@ -36,9 +36,7 @@ class HybridSelect extends Component {
   };
 
   // update function called when value of native select is changed
-  updateValue = e => {
-    this.onChange([e.target.value]); // passing value in array to match dropdown's format
-  };
+  updateValue = e => this.onChange([e.target.value]); // passing value in array to match dropdown's format
 
   // To add optionFor prop to the children
   renderChildren = (extraProps, children) => {
