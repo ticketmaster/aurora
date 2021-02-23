@@ -466,7 +466,6 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
-        tabindex="0"
       >
         <option
           value=""
@@ -1101,7 +1100,6 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
-        tabindex="0"
       >
         <option
           value=""
@@ -1738,7 +1736,6 @@ Object {
       <select
         class="c1 select--large select--border hybrid"
         data-testid="test-hybridselect"
-        tabindex="0"
       >
         <option
           value=""

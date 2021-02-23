@@ -31,6 +31,7 @@ export default class HybridSelectExample extends Component {
           value={value}
           onChange={this.onChange}
           label={label}
+          showOptionPlaceholder={false}
           selectProps={{ id: selectId }}
         >
           <HybridOption

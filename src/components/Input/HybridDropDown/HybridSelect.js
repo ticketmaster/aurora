@@ -5,10 +5,6 @@ import DropDownGroup from "../DropDown/DropDownGroup";
 import Select from "../Select/Select";
 
 class HybridSelect extends Component {
-  state = {
-    dropdownFocused: false
-  };
-
   // onChange function called when value is changed
   onChange = value => {
     const { onChange } = this.props;
@@ -20,7 +16,7 @@ class HybridSelect extends Component {
   // called when dropdown wrapper get focus
   onFocus = e => {
     const { onFocus } = this.props;
-    this.setState({ dropdownFocused: true });
+    this.selectRef.current.tabIndex = -1;
     if (onFocus) {
       onFocus(e);
     }
@@ -29,11 +25,14 @@ class HybridSelect extends Component {
   // called when dropdown wrapper losses focus
   onBlur = e => {
     const { onBlur } = this.props;
-    this.setState({ dropdownFocused: false });
+    this.selectRef.current.tabIndex = 0;
     if (onBlur) {
       onBlur(e);
     }
   };
+
+  // ref to access Select component
+  selectRef = React.createRef();
 
   // update function called when value of native select is changed
   updateValue = e => this.onChange([e.target.value]); // passing value in array to match dropdown's format
@@ -50,7 +49,6 @@ class HybridSelect extends Component {
   };
 
   render() {
-    const { dropdownFocused } = this.state;
     const {
       placeholder,
       value,
@@ -61,7 +59,6 @@ class HybridSelect extends Component {
       hybridWrapperProps,
       selectProps,
       dropdownProps,
-      selectRef,
       children,
       ...props
     } = this.props;
@@ -73,9 +70,8 @@ class HybridSelect extends Component {
           {...selectProps}
           hybrid
           value={value[0]}
-          selectRef={selectRef}
+          selectRef={this.selectRef}
           onChange={this.updateValue}
-          tabIndex={dropdownFocused ? -1 : 0}
         >
           {showOptionPlaceholder && (
             <option value="" {...optionPlaceholderProps}>
