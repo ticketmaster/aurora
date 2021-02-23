@@ -154,10 +154,6 @@ export const StyledGroupWrapper = styled.div`
   }
 
   &.hybrid {
-    top: 0;
-    left: 0;
-    z-index: 2;
-
     &.hybrid-margin-small {
       margin-top: -36px;
     }

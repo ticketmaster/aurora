@@ -166,12 +166,6 @@ Object {
   display: block;
 }
 
-.c2.hybrid {
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .c2.hybrid.hybrid-margin-small {
   margin-top: -36px;
 }
@@ -377,8 +371,6 @@ Object {
 }
 
 .c1.hybrid {
-  top: 0;
-  left: 0;
   opacity: 0;
 }
 
@@ -809,12 +801,6 @@ Object {
   display: block;
 }
 
-.c2.hybrid {
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .c2.hybrid.hybrid-margin-small {
   margin-top: -36px;
 }
@@ -1020,8 +1006,6 @@ Object {
 }
 
 .c1.hybrid {
-  top: 0;
-  left: 0;
   opacity: 0;
 }
 
@@ -1454,12 +1438,6 @@ Object {
   display: block;
 }
 
-.c2.hybrid {
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
 .c2.hybrid.hybrid-margin-small {
   margin-top: -36px;
 }
@@ -1665,8 +1643,6 @@ Object {
 }
 
 .c1.hybrid {
-  top: 0;
-  left: 0;
   opacity: 0;
 }
 

@@ -88,8 +88,6 @@ const StyledSelect = styled.select`
   }
 
   &.hybrid {
-    top: 0;
-    left: 0;
     opacity: 0;
 
     &:focus {
