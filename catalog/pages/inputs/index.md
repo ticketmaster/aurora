@@ -138,30 +138,30 @@ span: 6
     <Row>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup aria-label="test large radio">
-                <RadioButton size="large" name="Option1" value="FirstButton" index={0} isTopAligned>
+                <RadioButton size="large" name="example1" value="FirstButton" index={0} isTopAligned>
                     Testing One
                     <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing One description</p>
                 </RadioButton>
-                <RadioButton size="large" name="Option2" value="SecondButton" index={1}>
+                <RadioButton size="large" name="example1" value="SecondButton" index={1}>
                     Testing Two
                 </RadioButton>
-                <RadioButton size="large" name="Option3" value="ThirdButton" index={2}>
+                <RadioButton size="large" name="example1" value="ThirdButton" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
         </Column>
         <Column medium={6} style={{ padding: "16px 0" }}>
           <RadioGroup aria-label="test small radio">
-                <RadioButton size="small" name="OptionSmall1" value="1" index={0}>
+                <RadioButton size="small" name="example2" value="1" index={0}>
                     Testing One
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall2" value="2" index={1} isTopAligned>
+                <RadioButton size="small" name="example2" value="2" index={1} isTopAligned>
                     Testing Two
                     <p style={{ fontSize: "12px", margin: "3px 0 0 0", color: "rgba(38, 38, 38, 0.65" }}>Testing Two description</p>
                 </RadioButton>
 
-                <RadioButton size="small" name="OptionSmall3" value="3" index={2}>
+                <RadioButton size="small" name="example2" value="3" index={2}>
                     Testing Three
                 </RadioButton>
           </RadioGroup>
@@ -301,6 +301,10 @@ rows:
     Type: string
     Default: "null"
     Notes: Optional input name.
+  - Prop: id
+    Type: string
+    Default: N/A
+    Notes: Optional input id.
   - Prop: label
     Type: string
     Default: N/A
@@ -313,6 +317,10 @@ rows:
     Type: string
     Default: N/A
     Notes: Will present a different style when a prop is supplied
+  - Prop: errorFieldProps
+    Type: object
+    Default: N/A
+    Notes: Extra props passed to the error field
   - Prop: disabled
     Type: boolean
     Default: "false"
@@ -335,40 +343,40 @@ span: 6
         <Row>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top"  style={{ color: 'blue' }} placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                    <Input labelPosition="top" id="testID"  style={{ color: 'blue' }} placeholder="Hint Text" name="test1" label="First Name" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test2" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="small"/>
-                </Spacing>
-            </Column>
-            <Column medium={4}>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"/>
-                </Spacing>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
-                </Spacing>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test3" label="First Name" size="small"/>
                 </Spacing>
             </Column>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name" size="large"/>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test4" label="First Name"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test5" label="First Name"  errorMessage="Something Went Wrong"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test6" label="First Name"/>
                 </Spacing>
             </Column>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input tag="textarea" labelPosition="top" placeholder="Hint Text" name="test1" label="Textarea" size="large"/>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test7" label="First Name" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" placeholder="Hint Text" name="test8" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="top" hintText="Hint Text" disabled={true} name="test9" label="First Name" size="large"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input tag="textarea" labelPosition="top" placeholder="Hint Text" name="test111" label="Textarea" size="large"/>
                 </Spacing>
             </Column>
         </Row>
@@ -384,35 +392,35 @@ span: 6
         <Row>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name" size="small"/>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test10" label="First Name" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test11" label="First Name"  errorMessage="Something Went Wrong" size="small"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="small"/>
-                </Spacing>
-            </Column>
-            <Column medium={4}>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"/>
-                </Spacing>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong"/>
-                </Spacing>
-                <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name"/>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test12" label="First Name" size="small"/>
                 </Spacing>
             </Column>
             <Column medium={4}>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name" size="large"/>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test13" label="First Name"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" placeholder="Hint Text" name="test1" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test14" label="First Name"  errorMessage="Something Went Wrong"/>
                 </Spacing>
                 <Spacing top={{small: "cozy"}}>
-                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test2" label="First Name" size="large"/>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test15" label="First Name"/>
+                </Spacing>
+            </Column>
+            <Column medium={4}>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test16" label="First Name" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" placeholder="Hint Text" name="test17" label="First Name"  errorMessage="Something Went Wrong" size="large"/>
+                </Spacing>
+                <Spacing top={{small: "cozy"}}>
+                    <Input labelPosition="left" hintText="Hint Text" disabled={true} name="test18" label="First Name" size="large"/>
                 </Spacing>
             </Column>
         </Row>
@@ -455,6 +463,10 @@ rows:
     Type: string
     Default: ""
     Notes: Visible instead of selected option. Overrides label. Supported in both variants.
+  - Prop: hiddenLabel
+    Type: boolean
+    Default: "false"
+    Notes: To avail proper screen reader's reading when placeholder and label can not be displayed in view. Can be used only with label.
   - Prop: isOpen
     Type: boolean
     Default: "false"
@@ -483,6 +495,22 @@ rows:
     Type: function
     Default: 'null'
     Notes: Callback invoked when dropdown open/hide event fired
+  - Prop: dropdownMenuOpen
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown open event fired
+  - Prop: dropdownMenuClose
+    Type: function
+    Default: 'null'
+    Notes: Callback invoked when dropdown close event fired
+  - Prop: hybrid
+    Type: boolean
+    Default: 'false'
+    Notes: Set this to true while implementing hybrid select
+  - Prop: hideDropdown
+    Type: boolean
+    Default: 'true'
+    Notes: Use this to toggle dropdown's visiblity when `hybrid={true}`
 ```
 
 ## Drop Down Option
@@ -512,6 +540,10 @@ rows:
     Type: bool
     Default: true
     Notes: Indicates whether show or hide right chevron icon
+  - Prop: preventCloseWithKeys
+    Type: bool
+    Default: "false"
+    Notes: It prevents dropdown menu from closing when option is selected with Enter or Space key.
   - Prop: icon
     Type: node
     Default: null
@@ -613,7 +645,7 @@ span: 6
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
-                    <DropDownOption value="2" index={2}>Option Three</DropDownOption>
+                    <DropDownOption value="2" preventCloseWithKeys={true} index={2}>Don't close on Enter</DropDownOption>
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
@@ -690,11 +722,12 @@ span: 6
     <Container>
         <Row >
             <Column medium={4}>
-                <DropDownLabel size="small">Label text</DropDownLabel>
+                <DropDownLabel id="labeltext" size="small">Label text</DropDownLabel>
                 <DropDownGroup
                   size="small"
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="labeltext"
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
                     <DropDownOption value="1" index={1}>Option Two</DropDownOption>
@@ -704,10 +737,11 @@ span: 6
                 </DropDownGroup>
             </Column>
             <Column medium={4}>
-                <DropDownLabel>Full Width Drop Down</DropDownLabel>
+                <DropDownLabel id="fullwidthlabel">Full Width Drop Down</DropDownLabel>
                 <DropDownGroup
                   variant={DropDownGroup.LAYOUT_VARIANTS.BORDERED_INNER_LABEL}
                   placeholder="Select an option"
+                  aria-describedby="fullwidthlabel"
                   fullWidth
                 >
                     <DropDownOption value="0" index={0}>Option One</DropDownOption>
@@ -731,6 +765,319 @@ span: 6
                     <DropDownOption value="3" index={3}>Option Four</DropDownOption>
                     <DropDownOption value="4" index={4}>Option Five</DropDownOption>
                 </DropDownGroup>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
+## Select
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: variant
+    Type: BORDERED_INNER_LABEL(value = 0) or BORDERLESS_INNER_LABEL(value = 1)
+    Default: BORDERED_INNER_LABEL
+    Notes: Specifies a layout variant of the select element
+  - Prop: size
+    Type: small or large
+    Default: "large"
+    Notes: Defines size of select element
+  - Prop: disabled
+    Type: boolean
+    Default: 'false'
+    Notes: Defines if selection is disabled
+  - Prop: chevronVisible
+    Type: bool
+    Default: 'true'
+    Notes: Indicates whether to show or hide right chevron icon
+  - Prop: fullWidth
+    Type: boolean
+    Default: 'false'
+    Notes: To set width to be 100% of container's width
+  - Prop: hybrid
+    Type: boolean
+    Default: 'false'
+    Notes: Set this to true while implementing hybrid select
+  - Prop: showSelect
+    Type: boolean
+    Default: 'true'
+    Notes: Use this to toggle select's visiblity when `hybrid={true}`
+  - Prop: selectRef
+    Type: ref
+    Default: 'null'
+    Notes: To access select's ref
+  - Prop: className
+    Type: string
+    Default: ""
+    Notes: Passed to StyledSelect
+  - Prop: ...props
+    Type: any
+    Default:
+    Notes: Passes through any other props to underlying select element
+```
+
+## Option
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Notes: Required
+  - Prop: optionText
+    Type: string
+    Notes: To show alternate text ignoring children
+  - Prop: ...props
+    Type: any
+    Notes: Passes through any other props to underlying option element
+```
+
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallSelect" size="small">Small Select</DropDownLabel>
+              <Select
+                id="smallSelect"
+                size="small"
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallBorderless" size="small">Borderless Select</DropDownLabel>
+              <Select
+                id="smallBorderless"
+                size="small"
+                variant={1}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="smallChevron" size="small">Chevron Hidden</DropDownLabel>
+              <Select
+                id="smallChevron"
+                size="small"
+                chevronVisible={false}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeSelect" size="large">Large Select</DropDownLabel>
+              <Select
+                id="largeSelect"
+                size="large"
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeBorderless" size="large">Borderless Select</DropDownLabel>
+              <Select
+                id="largeBorderless"
+                size="large"
+                variant={1}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="largeChevron" size="large">Chevron Hidden</DropDownLabel>
+              <Select
+                id="largeChevron"
+                size="large"
+                chevronVisible={false}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+        </Row>
+        <Spacing top={{small: "normal"}} />
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="defaultSelect" size="large">Default Select</DropDownLabel>
+              <Select
+                id="defaultSelect"
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="disabledSelect" size="large" disabled>Disabled Select</DropDownLabel>
+              <Select
+                id="disabledSelect"
+                size="large"
+                disabled={true}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="fullWidthSelect" size="large">Large Full Width Select</DropDownLabel>
+              <Select
+                id="fullWidthSelect"
+                size="large"
+                fullWidth={true}
+                aria-label="Select an option"
+              >
+                <Option value="" aria-label="">Select an option </Option>
+                <Option value="0">Option One</Option>
+                <Option value="1">Option Two</Option>
+                <Option value="2">Option Three</Option>
+                <Option value="3">Option Four</Option>
+                <Option value="4">Option Five</Option>
+              </Select>
+            </Column>
+        </Row>
+    </Container>
+</ThemeProvider>
+```
+
+## Hybrid Select
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: array
+    Default: "[ ]"
+    Notes: Specifies array of initial string values
+  - Prop: onChange
+    Type: function
+    Default: null
+    Notes: Invoked with an array of updatedSelection when an option is selected by the user
+  - Prop: placeholder
+    Type: string
+    Default: ""
+    Notes: Shows placeholder in dropdown and adds a blank option in native select
+  - Prop: showOptionPlaceholder
+    Type: boolean
+    Default: "`true`"
+    Notes: Set this to false in order to hide blank option from native select
+  - Prop: optionPlaceholderProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed to the blank option in native select
+  - Prop: hybridWrapperProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed to the wrapper of dropdown and select
+  - Prop: selectProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the select
+  - Prop: dropdownProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the dropdown
+```
+
+## Hybrid Option
+
+### Props
+
+```table
+span: 6
+rows:
+  - Prop: value
+    Type: string
+    Default: N/A
+    Notes: Required
+  - Prop: optionText
+    Type: string
+    Default: ""
+    Notes: When passed this text will be used in option and children will be ignored
+  - Prop: optionProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the options of select
+  - Prop: dropdownOptionProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the options of dropdown
+```
+
+```react
+span: 6
+---
+<ThemeProvider theme={{ themeName: 'tm' }}>
+    <Container>
+        <Row >
+            <Column medium={4}>
+              <DropDownLabel htmlFor="demoSelect" size="large">
+                Hybrid Select
+              </DropDownLabel>
+              <HybridSelectExample selectId="demoSelect" />
+            </Column>
+            <Column medium={4}>
+              <DropDownLabel htmlFor="demoLabelSelect" size="large">
+                Hybrid Select with label
+              </DropDownLabel>
+              <HybridSelectExample label="Sort By: " selectId="demoLabelSelect" />
             </Column>
         </Row>
     </Container>

@@ -4,13 +4,21 @@ import { SliderHandle } from "./RangeSlider.styles";
 
 export default class Handle extends PureComponent {
   render() {
-    const { offset, disabled, min, max, value, ...restProps } = this.props;
+    const {
+      offset,
+      disabled,
+      min,
+      max,
+      value,
+      handleRef,
+      ...restProps
+    } = this.props;
 
     const postionStyle = { left: `${offset}%` };
 
     return (
       <SliderHandle
-        ref={this.setHandleRef}
+        ref={handleRef}
         {...restProps}
         style={postionStyle}
         // aria attribute
@@ -29,7 +37,8 @@ Handle.propTypes = {
   disabled: PropTypes.bool,
   min: PropTypes.number.isRequired,
   max: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired
+  value: PropTypes.number.isRequired,
+  handleRef: PropTypes.func.isRequired
 };
 
 Handle.defaultProps = {

@@ -124,7 +124,7 @@ class DropDownGroup extends React.Component {
   }, 1000);
 
   searchValue = string => {
-    const { children } = this.props;
+    const { children, onChange } = this.props;
 
     const childrenArray = React.Children.toArray(children);
 
@@ -133,18 +133,32 @@ class DropDownGroup extends React.Component {
         thisArg.props.children.substring(0, string.length).toLowerCase() ===
         string
     );
-    if (firstMatch)
+    if (firstMatch) {
       this.setState(() => ({ selected: [firstMatch.props.value] }));
+      if (onChange) onChange([firstMatch.props.value]);
+    }
   };
 
-  closeDropdown = () =>
+  closeDropdown = () => {
+    const { dropdownMenuClose } = this.props;
+    this.groupWrapper.current.focus();
     this.setState({
       isOpen: false,
       selected: null,
       word: ""
     });
+    if (dropdownMenuClose) {
+      dropdownMenuClose();
+    }
+  };
 
-  openDropdown = () => this.setState({ isOpen: true });
+  openDropdown = () => {
+    const { dropdownMenuOpen } = this.props;
+    this.setState({ isOpen: true });
+    if (dropdownMenuOpen) {
+      dropdownMenuOpen();
+    }
+  };
 
   enableNavigation = () => {
     if (!this.state.navigateOptions) {
@@ -179,13 +193,13 @@ class DropDownGroup extends React.Component {
   };
 
   displayLabel = selected => {
-    const { placeholder, label } = this.props;
+    const { placeholder, label, hiddenLabel } = this.props;
 
     if (placeholder.length > 0 && selected.length === 0) {
       return placeholder;
     }
 
-    if (selected.length > 0 && label.length > 0) {
+    if (!hiddenLabel && selected.length > 0 && label.length > 0) {
       return (
         <Fragment>
           {label} {this.getCurrentSelection(selected[0])}
@@ -224,6 +238,7 @@ class DropDownGroup extends React.Component {
       withKeyboardProvider,
       placeholder,
       label,
+      hiddenLabel, // using hiddenLabel prop to avail proper screen readers reading when no placeholder is provided - using label as hidden placeholder
       disabled,
       size,
       shouldOpenDownward,
@@ -231,6 +246,7 @@ class DropDownGroup extends React.Component {
       chevronVisible,
       fullWidth,
       onDropDownToggle,
+      hybrid,
       ...props
     } = this.props;
     const {
@@ -274,9 +290,11 @@ class DropDownGroup extends React.Component {
                       className={classNames(props.className, {
                         "dropdown--open-upward": hasOpenUpwardClass,
                         "dropdown--disabled": disabled,
-                        "full-width": fullWidth
+                        "full-width": fullWidth,
+                        [`hybrid-margin-${size}`]: hybrid,
+                        hybrid
                       })}
-                      tabIndex={disabled ? -1 : 0}
+                      tabIndex={disabled || hybrid ? -1 : 0}
                       aria-haspopup="listbox"
                       aria-labelledby={hiddenLabelId}
                       onKeyDown={this.onKeyDown}
@@ -365,6 +383,7 @@ DropDownGroup.propTypes = {
   placeholder: PropTypes.string,
   variant: PropTypes.oneOf(Object.values(LAYOUT_VARIANTS)),
   label: PropTypes.string,
+  hiddenLabel: PropTypes.bool,
   isOpen: PropTypes.bool,
   keywordSearch: PropTypes.bool,
   withKeyboardProvider: PropTypes.bool,
@@ -374,7 +393,10 @@ DropDownGroup.propTypes = {
   shouldOpenDownward: PropTypes.bool,
   icon: PropTypes.node,
   chevronVisible: PropTypes.bool,
-  onDropDownToggle: PropTypes.func
+  onDropDownToggle: PropTypes.func,
+  hybrid: PropTypes.bool,
+  dropdownMenuOpen: PropTypes.func,
+  dropdownMenuClose: PropTypes.func
 };
 
 DropDownGroup.defaultProps = {
@@ -387,13 +409,17 @@ DropDownGroup.defaultProps = {
   keywordSearch: true,
   withKeyboardProvider: true,
   label: "",
+  hiddenLabel: false,
   disabled: false,
   size: TWO_SIZE_VARIANT[1],
   shouldOpenDownward: true,
   icon: null,
   chevronVisible: true,
   fullWidth: false,
-  onDropDownToggle: null
+  onDropDownToggle: null,
+  hybrid: false,
+  dropdownMenuOpen: null,
+  dropdownMenuClose: null
 };
 
 export default DropDownGroup;

@@ -28,6 +28,7 @@ describe("DropDownGroup", () => {
           <DropDownOption
             data-testid="test-dropDownOptionTwo"
             value="ValueTwo"
+            preventCloseWithKeys="true"
             index={1}
           >
             Second Option
@@ -98,6 +99,16 @@ describe("DropDownGroup", () => {
     expect(
       renderTestComponentOne({
         label: "Selected Option:",
+        variant: LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL
+      }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders borderless variant with label and hiddenLabel prop", () => {
+    expect(
+      renderTestComponentOne({
+        label: "Select An Option",
+        hiddenLabel: true,
         variant: LAYOUT_VARIANTS.BORDERLESS_INNER_LABEL
       }).container.firstChild
     ).toMatchSnapshot();
@@ -237,6 +248,26 @@ describe("DropDownGroup", () => {
     });
 
     fireEvent.keyDown(getByTestId("test-dropDownOptionOne"), {
+      key: "",
+      keyCode: 32,
+      which: 32,
+      bubbles: true
+    });
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("Space bar should select but not close dropdown", () => {
+    const onChange = jest.fn();
+    const { container, getByTestId } = renderTestComponentOne({ onChange });
+
+    fireEvent.keyDown(getByTestId("test-dropContainer"), {
+      key: "ArrowDown",
+      keyCode: 40,
+      which: 40,
+      bubbles: true
+    });
+
+    fireEvent.keyDown(getByTestId("test-dropDownOptionTwo"), {
       key: "",
       keyCode: 32,
       which: 32,
@@ -479,6 +510,19 @@ describe("DropDownGroup", () => {
 
     Simulate.click(labelTag);
     expect(onDropDownToggleEvent).toBeCalled();
+  });
+
+  it("renders hybrid dropdown", () => {
+    expect(
+      renderTestComponentOne({ hybrid: true }).container.firstChild
+    ).toMatchSnapshot();
+  });
+
+  it("renders hybrid dropdown when hideDropdown is false", () => {
+    expect(
+      renderTestComponentOne({ hybrid: true, hideDropdown: false }).container
+        .firstChild
+    ).toMatchSnapshot();
   });
 });
 

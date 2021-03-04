@@ -46,18 +46,26 @@ exports[`RangeSlider should match snapshot 1`] = `
   />
   <Handle
     className="slider__handle slider__handle-1"
+    data-index={0}
     disabled={false}
+    handleRef={[Function]}
     max={100}
     min={0}
     offset={0}
+    onKeyDown={[Function]}
+    tabIndex="0"
     value={0}
   />
   <Handle
     className="slider__handle slider__handle-2"
+    data-index={1}
     disabled={false}
+    handleRef={[Function]}
     max={100}
     min={0}
     offset={100}
+    onKeyDown={[Function]}
+    tabIndex="0"
     value={100}
   />
 </div>
@@ -109,18 +117,24 @@ exports[`RangeSlider should match snapshot when disabled 1`] = `
   />
   <Handle
     className="slider__handle slider__handle-1 slider__handle--disabled"
+    data-index={0}
     disabled={true}
+    handleRef={[Function]}
     max={100}
     min={0}
     offset={0}
+    onKeyDown={[Function]}
     value={0}
   />
   <Handle
     className="slider__handle slider__handle-2 slider__handle--disabled"
+    data-index={1}
     disabled={true}
+    handleRef={[Function]}
     max={100}
     min={0}
     offset={100}
+    onKeyDown={[Function]}
     value={100}
   />
 </div>
@@ -172,18 +186,26 @@ exports[`RangeSlider should match snapshot when min and max are matching 1`] = `
   />
   <Handle
     className="slider__handle slider__handle-1"
+    data-index={0}
     disabled={false}
+    handleRef={[Function]}
     max={0}
     min={0}
     offset={NaN}
+    onKeyDown={[Function]}
+    tabIndex="0"
     value={0}
   />
   <Handle
     className="slider__handle slider__handle-2"
+    data-index={1}
     disabled={false}
+    handleRef={[Function]}
     max={0}
     min={0}
     offset={NaN}
+    onKeyDown={[Function]}
+    tabIndex="0"
     value={0}
   />
 </div>
@@ -235,10 +257,14 @@ exports[`RangeSlider should match snapshot when single 1`] = `
   />
   <Handle
     className="slider__handle slider__handle-2"
+    data-index={1}
     disabled={false}
+    handleRef={[Function]}
     max={100}
     min={0}
     offset={100}
+    onKeyDown={[Function]}
+    tabIndex="0"
     value={100}
   />
 </div>

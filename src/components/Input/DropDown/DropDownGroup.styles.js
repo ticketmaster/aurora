@@ -152,6 +152,15 @@ export const StyledGroupWrapper = styled.div`
     width: 100%;
     display: block;
   }
+
+  &.hybrid {
+    &.hybrid-margin-small {
+      margin-top: -36px;
+    }
+    &.hybrid-margin-large {
+      margin-top: -44px;
+    }
+  }
 `;
 
 export const StyledChevron = styled(DownIcon).attrs({

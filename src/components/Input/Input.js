@@ -24,12 +24,15 @@ const Input = forwardRef(
       size,
       tag,
       labelStyle,
+      errorFieldProps,
+      id,
       ...rest
     },
     ref
   ) => {
     const sluggified = sluggify(name + label);
-    const labelId = sluggified ? `${sluggified}__label` : null;
+    const inputId = sluggified ? `${sluggified}__input` : null;
+    const errorId = sluggified ? `${sluggified}__error` : null;
     return (
       <FieldInputWrapper
         className={classNames(
@@ -42,7 +45,7 @@ const Input = forwardRef(
         )}
       >
         {label && (
-          <FieldInputText id={labelId} style={labelStyle}>
+          <FieldInputText htmlFor={id || inputId} style={labelStyle}>
             {label}
           </FieldInputText>
         )}
@@ -50,16 +53,19 @@ const Input = forwardRef(
           <FieldInputBox
             placeholder={disabled ? "" : placeholder}
             name={name || null}
-            id={sluggified ? `${sluggified}__input` : null}
+            id={id || inputId}
             disabled={disabled}
             as={tag}
+            aria-invalid={errorMessage ? "true" : "false"}
+            aria-describedby={errorMessage ? errorId : null}
             {...rest}
-            aria-labelledby={label ? labelId : null}
             ref={ref}
           />
-          <FieldErrorText role="alert" aria-invalid={errorMessage !== null}>
-            {errorMessage}
-          </FieldErrorText>
+          {errorMessage && (
+            <FieldErrorText role="alert" id={errorId} {...errorFieldProps}>
+              {errorMessage}
+            </FieldErrorText>
+          )}
         </ErrorBoxWrapper>
       </FieldInputWrapper>
     );
@@ -73,8 +79,10 @@ Input.propTypes = {
   disabled: PropTypes.bool,
   name: PropTypes.string,
   label: PropTypes.string,
+  id: PropTypes.string,
   labelStyle: PropTypes.shape(),
   errorMessage: PropTypes.string,
+  errorFieldProps: PropTypes.shape(),
   size: PropTypes.oneOf(SIZES),
   tag: PropTypes.oneOf(["textarea", "input"])
 };
@@ -85,10 +93,12 @@ Input.defaultProps = {
   disabled: false,
   name: "",
   label: "",
+  id: "",
   errorMessage: null,
   size: REGULAR,
   tag: "input",
-  labelStyle: {}
+  labelStyle: {},
+  errorFieldProps: {}
 };
 
 export default Input;

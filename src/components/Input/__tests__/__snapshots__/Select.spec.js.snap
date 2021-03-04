@@ -1,0 +1,1380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select renders borderless select 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--no-border"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders default select 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--border"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders full width select 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--border select--full--width"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders hybrid select 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--border hybrid"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders hybrid select when showSelect is false 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--border hybrid"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders select without chevron 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--large select--border select--chevron--disabled"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Select renders small select 1`] = `
+Object {
+  "container": .c0 {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: rgba(255,255,255,1);
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 44px 0 14px;
+  font-size: 16px;
+  -webkit-transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  transition: border-color 0.3s cubic-bezier(0.455,0.03,0.515,0.955), z-index 0s ease 0.3s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".65" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 15px);
+}
+
+.c0.select--small {
+  height: 36px;
+  padding: 0 42px 0 13px;
+  font-size: 14px;
+}
+
+.c0.select--disabled {
+  cursor: not-allowed;
+  opacity: 1;
+  color: rgba(38,38,38,0.4);
+}
+
+.c0.select--disabled:not(.select--chevron--disabled) {
+  background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
+}
+
+.c0:focus {
+  box-shadow: 0 0 5px 0 #026cdf;
+}
+
+.c0.select--border {
+  border: solid 1px #999999;
+  padding: 1px 45px 1px 15px;
+}
+
+.c0.select--border.select--small {
+  padding: 1px 42px 1px 13px;
+}
+
+.c0.select--border.select--disabled {
+  border-color: rgba(38,38,38,0.4);
+}
+
+.c0.select--no-border {
+  border: solid 2px rgba(255,255,255,1);
+  background-position-x: calc(100% - 14px);
+}
+
+.c0.select--chevron--disabled {
+  background-image: none;
+  padding: 0 15px 0 15px;
+}
+
+.c0.select--chevron--disabled.select--small {
+  padding: 0 12px 0 13px;
+}
+
+.c0.select--chevron--disabled.select--no-border {
+  padding: 0 14px 0 14px;
+}
+
+.c0.select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0.select--full--width {
+  width: 100%;
+}
+
+.c0.hybrid {
+  opacity: 0;
+}
+
+.c0.hybrid:focus {
+  opacity: 1;
+}
+
+.c0:hover:not(.select--disabled) {
+  border: solid 2px #026cdf;
+  background-position-x: calc(100% - 14px);
+  padding: 0 44px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--small {
+  background-position-x: calc(100% - 12px);
+  padding: 0 39px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--no-border.select--small {
+  background-position-x: calc(100% - 14px);
+  padding: 0 42px 0 13px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled {
+  padding: 0 14px 0 14px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--small {
+  padding: 0 11px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--chevron--disabled.select--no-border.select--small {
+  padding: 0 13px 0 12px;
+}
+
+.c0:hover:not(.select--disabled).select--full--width {
+  background-position-x: calc(100% - 14px);
+}
+
+<div>
+    <select
+      class="c0 select--small select--border"
+    >
+      <option
+        aria-label=""
+        value=""
+      >
+        Select an option
+      </option>
+      <option
+        value="0"
+      >
+        Option One
+      </option>
+      <option
+        value="1"
+      >
+        Option Two
+      </option>
+      <option
+        value="2"
+      >
+        Option Three
+      </option>
+      <option
+        value="3"
+      >
+        Option Four
+      </option>
+      <option
+        value="4"
+      >
+        Option Five
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

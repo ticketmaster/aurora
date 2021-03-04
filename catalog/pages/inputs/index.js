@@ -11,6 +11,10 @@ import {
   DropDownGroup,
   DropDownOption,
   DropDownLabel,
+  Select,
+  Option,
+  HybridSelect,
+  HybridOption,
   Toggle,
   ButtonGroup,
   QtySelector
@@ -18,6 +22,7 @@ import {
 import SearchInput from "../../../src/components/SearchInput";
 import SearchInputMobile from "../../../src/components/SearchInput/SearchInputMobile";
 import CheckboxWrapperExample from "./CheckBoxExample";
+import HybridSelectExample from "./HybridSelectExample";
 import ToggleWrapperExample from "./ToggleWrapperExample";
 import Header from "../../../src/components/Header";
 import Column from "../../../src/components/Grid/Column";
@@ -44,6 +49,11 @@ export default {
     DropDownGroup,
     DropDownOption,
     DropDownLabel,
+    Select,
+    Option,
+    HybridSelect,
+    HybridOption,
+    HybridSelectExample,
     Toggle,
     ToggleWrapperExample,
     ThemeProvider,

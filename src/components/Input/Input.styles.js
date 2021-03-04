@@ -55,9 +55,9 @@ export const ErrorBoxWrapper = styled.div`
   flex-grow: 2;
 `;
 
-export const FieldInputBox = styled.input.attrs({
-  type: "text"
-})`
+export const FieldInputBox = styled.input.attrs(props => ({
+  type: props.type || "text"
+}))`
   height: 36px;
   width: 100%;
   box-sizing: border-box;
@@ -162,7 +162,7 @@ export const FieldInputBox = styled.input.attrs({
   }
 `;
 
-export const FieldErrorText = styled.label`
+export const FieldErrorText = styled.div`
   opacity: 0;
   font-size: ${typography.size.uno};
   line-height: 1.25;

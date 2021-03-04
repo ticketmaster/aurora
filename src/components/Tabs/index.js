@@ -7,6 +7,7 @@ import { TabsProvider, TabsConsumer } from "./TabsProvider";
 import { Text } from "../Text";
 import { spacing, zIndex, themes } from "../../theme";
 import { largeAndUp, smallAndUp } from "../../theme/mediaQueries";
+import { ARROWRIGHT, ARROWLEFT } from "../../utils/keyCharCodes";
 
 const padding = spacing.moderate;
 
@@ -69,7 +70,9 @@ const Content = styled.div.attrs({
   }
 `;
 
-const Tab = styled.div`
+const Tab = styled.div.attrs({
+  role: "presentation"
+})`
   ${largeAndUp`
     padding-right: ${spacing.comfy};
   `};
@@ -120,6 +123,7 @@ class Tabs extends Component {
     /* eslint-enable react/forbid-prop-types */
     index: PropTypes.number,
     onClick: PropTypes.func,
+    tabChangedWithArrowKeys: PropTypes.func,
     variant: PropTypes.string,
     accent: PropTypes.string,
     weight: PropTypes.string,
@@ -132,6 +136,7 @@ class Tabs extends Component {
     defaultItemProps: {},
     index: -1,
     onClick: () => {},
+    tabChangedWithArrowKeys: () => {},
     variant: null,
     accent: null,
     weight: null,
@@ -176,6 +181,40 @@ class Tabs extends Component {
     window.removeEventListener("resize", this.updateIsOverflowsState); //eslint-disable-line
   }
 
+  onKeyDown = e => {
+    const { keyCode } = e;
+    const { index, items } = this.props;
+
+    switch (keyCode) {
+      case ARROWRIGHT:
+        if (index < items.length - 1) {
+          this.focusTab(index + 1);
+        } else {
+          this.focusTab(0);
+        }
+        break;
+      case ARROWLEFT:
+        if (index > 0) {
+          this.focusTab(index - 1);
+        } else {
+          this.focusTab(items.length - 1);
+        }
+        break;
+      default:
+        break;
+    }
+  };
+
+  focusTab = index => {
+    const { tabChangedWithArrowKeys } = this.props;
+    if (this.itemRefs && this.itemRefs[index]) {
+      this.itemRefs[index].focus();
+      if (tabChangedWithArrowKeys) {
+        tabChangedWithArrowKeys(index);
+      }
+    }
+  };
+
   updateIsOverflowsState = () => {
     const isOverflows = checkIfOverflows(this.content);
     if (this.state.isTabsContainerOverflows !== isOverflows) {
@@ -207,8 +246,10 @@ class Tabs extends Component {
       <Tab key={areItemsValidKeys ? item : itemIndex}>
         <TabItemButton
           isActive={itemIndex === index}
+          tabIndex={itemIndex === index ? 0 : -1}
           underlineColor={underlineColor}
           onClick={() => onClick(itemIndex)}
+          onKeyDown={this.onKeyDown}
           ref={ref => {
             this.itemRefs[itemIndex] = ref;
           }}

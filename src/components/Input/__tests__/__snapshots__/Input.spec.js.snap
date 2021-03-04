@@ -178,26 +178,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-regular text--input-top"
 >
@@ -206,16 +186,12 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>
@@ -399,26 +375,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-regular text--input-top text--input-disabled"
 >
@@ -427,17 +383,13 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       disabled=""
       id="test1__input"
       name="test1"
       placeholder=""
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>
@@ -649,19 +601,21 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-describedby="test1__error"
+      aria-invalid="true"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
     />
-    <label
-      aria-invalid="true"
+    <div
       class="c3"
+      id="test1__error"
       role="alert"
     >
       Something Went Wrong
-    </label>
+    </div>
   </div>
 </div>
 `;
@@ -844,26 +798,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-regular text--input-top"
 >
@@ -872,14 +806,10 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       placeholder="test hint"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>
@@ -1100,32 +1030,12 @@ textarea.c3:hover {
   border: 1px solid #d93a3a;
 }
 
-.c4 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c4 {
-  opacity: 0.4;
-}
-
-.text__error .c4 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-large text--input-top"
 >
   <label
     class="c1"
-    id="test1firstname__label"
+    for="test1firstname__input"
     style="font-size: 20px;"
   >
     First Name
@@ -1134,17 +1044,12 @@ textarea.c3:hover {
     class="c2"
   >
     <input
-      aria-labelledby="test1firstname__label"
+      aria-invalid="false"
       class="c3"
       id="test1firstname__input"
       name="test1"
       placeholder="test hint"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c4"
-      role="alert"
     />
   </div>
 </div>
@@ -1328,26 +1233,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-regular text--input-left"
 >
@@ -1356,16 +1241,12 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>
@@ -1549,26 +1430,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-small text--input-top"
 >
@@ -1577,17 +1438,13 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       style="color: blue;"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>
@@ -1771,26 +1628,6 @@ textarea.c2:hover {
   border: 1px solid #d93a3a;
 }
 
-.c3 {
-  opacity: 0;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: #d93a3a;
-  position: relative;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-  transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
-}
-
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
-.text__error .c3 {
-  margin-top: 1px;
-  opacity: 1;
-}
-
 <div
   class="c0 text--input-regular text--input-top"
 >
@@ -1799,16 +1636,12 @@ textarea.c2:hover {
     class="c1"
   >
     <input
+      aria-invalid="false"
       class="c2"
       id="test1__input"
       name="test1"
       placeholder="test hint"
       type="text"
-    />
-    <label
-      aria-invalid="false"
-      class="c3"
-      role="alert"
     />
   </div>
 </div>

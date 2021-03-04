@@ -22,6 +22,12 @@ describe("PopOver", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("dark should match snapshot", () => {
+    const tree = renderer.create(<PopOver isVisible variant="dark" />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+
   it("should match snapshot when visible and without borders", () => {
     const tree = renderer.create(<PopOver isVisible noBorders />).toJSON();
 

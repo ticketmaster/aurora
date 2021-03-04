@@ -124,12 +124,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--primary"
@@ -140,12 +142,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -156,12 +160,14 @@ exports[`<Tabs /> should render tabs component correctly 1`] = `
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -288,12 +294,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--primary"
@@ -304,12 +312,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -320,12 +330,14 @@ exports[`<Tabs /> should render tabs component correctly when withBorderBottom e
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--primary"
@@ -464,12 +476,14 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
     >
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="true"
           class="c3 tab__button--active"
           data-index="0"
           role="tab"
+          tabindex="0"
         >
           <div
             class="c4 text text--accent text--alert text--primary"
@@ -480,12 +494,14 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="1"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--accent text--alert text--primary"
@@ -496,12 +512,14 @@ exports[`<Tabs /> should render tabs component correctly with props for text of 
       </div>
       <div
         class="c2"
+        role="presentation"
       >
         <button
           aria-selected="false"
           class="c3"
           data-index="2"
           role="tab"
+          tabindex="-1"
         >
           <div
             class="c4 text text--accent text--alert text--primary"
