@@ -832,6 +832,9 @@ rows:
     Notes: Required
   - Prop: optionText
     Type: string
+    Notes: To show alternate text ignoring label and children
+  - Prop: label
+    Type: string
     Notes: To show alternate text ignoring children
   - Prop: ...props
     Type: any

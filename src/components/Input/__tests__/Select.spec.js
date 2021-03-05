@@ -11,8 +11,8 @@ describe("Select", () => {
           Select an option
         </Option>
         <Option value="0">Option One</Option>
-        <Option value="1">Option Two</Option>
-        <Option value="2">Option Three</Option>
+        <Option value="1" optionText="Option Two" />
+        <Option value="2" label="Option Three" />
         <Option value="3">Option Four</Option>
         <Option value="4">Option Five</Option>
       </Select>
