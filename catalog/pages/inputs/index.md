@@ -1273,10 +1273,6 @@ rows:
     Type: function
     Default:
     Notes: call back function after value is updated either by buttons or keyboard. Use this function instead of onChange.
-  - Prop: onValueChanged
-    Type: function
-    Default:
-    Notes: deprecated. Use handleValueUpdate instead.
   - Prop: incrementBtnLabel
     Type: string
     Default: Increase Quantity

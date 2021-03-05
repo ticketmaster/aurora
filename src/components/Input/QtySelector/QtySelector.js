@@ -36,7 +36,6 @@ class QtySelector extends Component {
     max: PropTypes.number,
     checkValue: PropTypes.func,
     handleValueUpdate: PropTypes.func,
-    onValueUpdated: PropTypes.func,
     incrementBtnLabel: PropTypes.string,
     decrementBtnLabel: PropTypes.string
   };
@@ -49,7 +48,6 @@ class QtySelector extends Component {
     max: QtySelector.MAX_INPUT_VALUE,
     checkValue: () => true,
     handleValueUpdate: () => {},
-    onValueUpdated: () => {},
     incrementBtnLabel: "Increase Quantity",
     decrementBtnLabel: "Decrease Quantity"
   };
@@ -119,10 +117,9 @@ class QtySelector extends Component {
   };
 
   handleValueUpdated = () => {
-    const { handleValueUpdate, onValueUpdated } = this.props;
+    const { handleValueUpdate } = this.props;
     const { value } = this.state;
     handleValueUpdate(value);
-    onValueUpdated(value);
   };
 
   handleFocus = () => {
