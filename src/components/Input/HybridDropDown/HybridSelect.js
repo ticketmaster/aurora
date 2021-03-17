@@ -35,7 +35,7 @@ class HybridSelect extends Component {
   selectRef = React.createRef();
 
   // update function called when value of native select is changed
-  updateValue = e => this.onChange([e.target.value], "select"); // passing value in array to match dropdown's format and eventFrom parameter
+  updateValue = e => this.onChange([e.target.value], "select"); // passing value in array to match dropdown's format
 
   // To add optionFor prop to the children
   renderChildren = (extraProps, children) => {
