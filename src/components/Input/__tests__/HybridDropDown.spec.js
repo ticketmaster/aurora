@@ -80,7 +80,7 @@ describe("HybridDropDown", () => {
     fireEvent.click(getByTestId("test-hybridoption"));
 
     expect(onChange).toHaveBeenCalledTimes(1);
-    expect(onChange).toHaveBeenCalledWith(["2"]);
+    expect(onChange).toHaveBeenCalledWith(["2"], "dropdown");
   });
 
   it("should call onChange when updateValue is called", () => {
@@ -88,7 +88,7 @@ describe("HybridDropDown", () => {
     const spyOnChange = jest.spyOn(instance, "onChange");
     instance.updateValue({ target: { value: "1" } });
     expect(spyOnChange).toHaveBeenCalledTimes(1);
-    expect(spyOnChange).toHaveBeenCalledWith(["1"]);
+    expect(spyOnChange).toHaveBeenCalledWith(["1"], "select");
     spyOnChange.mockRestore();
   });
 });
