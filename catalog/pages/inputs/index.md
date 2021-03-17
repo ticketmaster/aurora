@@ -1012,7 +1012,7 @@ rows:
   - Prop: onChange
     Type: function
     Default: null
-    Notes: Invoked with an array of updatedSelection when an option is selected by the user
+    Notes: Invoked with an array of updatedSelection and eventFrom ["select" or "dropdown"] when an option is selected by the user
   - Prop: placeholder
     Type: string
     Default: ""
