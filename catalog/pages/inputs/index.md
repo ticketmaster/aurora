@@ -1281,6 +1281,14 @@ rows:
     Type: string
     Default: Decrease Quantity
     Notes: Aria label of the Decrement button for accessibility requirement
+  - Prop: incrementBtnProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the increment button.
+  - Prop: decrementBtnProps
+    Type: object
+    Default: "{ }"
+    Notes: Extra props passed only to the decrement button.
 ```
 
 It also accepts any event handlers. e.g. `onBlur`, `onFocus` etc. as well as styles object.
@@ -1290,7 +1298,7 @@ span: 6
 ---
 <div style={{ display: 'flex' }}>
     <div style={{ width: '30%' }}>
-        <QtySelector value={50} />
+        <QtySelector value={50} decrementBtnProps={{className:"classOnDecrementBtn"}} incrementBtnProps={{className:"classOnIncrementBtn"}}  />
     </div>
     <div style={{ width: '30%' }}>
         <QtySelector value={2} min={2} max={4}/>
