@@ -37,7 +37,11 @@ class QtySelector extends Component {
     checkValue: PropTypes.func,
     handleValueUpdate: PropTypes.func,
     incrementBtnLabel: PropTypes.string,
-    decrementBtnLabel: PropTypes.string
+    decrementBtnLabel: PropTypes.string,
+    /* eslint-disable react/forbid-prop-types */
+    incrementBtnProps: PropTypes.object,
+    decrementBtnProps: PropTypes.object
+    /* eslint-enable react/forbid-prop-types */
   };
 
   static defaultProps = {
@@ -49,7 +53,9 @@ class QtySelector extends Component {
     checkValue: () => true,
     handleValueUpdate: () => {},
     incrementBtnLabel: "Increase Quantity",
-    decrementBtnLabel: "Decrease Quantity"
+    decrementBtnLabel: "Decrease Quantity",
+    incrementBtnProps: {},
+    decrementBtnProps: {}
   };
 
   state = {
@@ -174,13 +180,16 @@ class QtySelector extends Component {
       min,
       max,
       decrementBtnLabel,
-      incrementBtnLabel
+      incrementBtnLabel,
+      decrementBtnProps,
+      incrementBtnProps
     } = this.props;
     const { value } = this.state;
 
     return (
       <Container>
         <Button
+          {...decrementBtnProps}
           onClick={this.decrement}
           disabled={disabled || min === value}
           aria-label={decrementBtnLabel}
@@ -195,6 +204,7 @@ class QtySelector extends Component {
           {this.renderInput()}
         </InputFieldContainer>
         <Button
+          {...incrementBtnProps}
           onClick={this.increment}
           disabled={disabled || max === value}
           aria-label={incrementBtnLabel}
