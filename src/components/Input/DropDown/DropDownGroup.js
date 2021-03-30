@@ -130,14 +130,17 @@ class DropDownGroup extends React.Component {
 
     const firstMatch = childrenArray.find(
       thisArg =>
+        this.isSearchable(thisArg.props.children) &&
         thisArg.props.children.substring(0, string.length).toLowerCase() ===
-        string
+          string
     );
     if (firstMatch) {
       this.setState(() => ({ selected: [firstMatch.props.value] }));
       if (onChange) onChange([firstMatch.props.value]);
     }
   };
+
+  isSearchable = property => property && property.substring;
 
   closeDropdown = () => {
     const { dropdownMenuClose } = this.props;
