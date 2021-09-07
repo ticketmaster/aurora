@@ -37,11 +37,6 @@ const StyledSelect = styled.select`
   &.select--disabled {
     cursor: not-allowed;
     opacity: 1;
-    color: ${getThemeValue("onyx", "muted")};
-
-    &:not(.select--chevron--disabled) {
-      background-image: url('data:image/svg+xml;utf8,<svg  xmlns="http://www.w3.org/2000/svg"  width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd"><path d="M16 0H0v16h16z" /><path fill="%23262626" fill-opacity=".25" fill-rule="nonzero" d="M3.278 5.459A.75.75 0 0 0 2.221 6.52l5.263 5.24a.75.75 0 0 0 1.059 0L13.78 6.52a.75.75 0 0 0-1.06-1.06l-4.71 4.711L3.278 5.46z"/></g></svg>');
-    }
   }
 
   &:focus {
@@ -57,7 +52,7 @@ const StyledSelect = styled.select`
     }
 
     &.select--disabled {
-      border-color: ${getThemeValue("onyx", "muted")};
+      opacity: 0.4;
     }
   }
 

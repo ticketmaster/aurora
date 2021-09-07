@@ -58,16 +58,8 @@ export const StyledGroup = styled.label`
 
   .dropdown--disabled & {
     cursor: not-allowed;
-    color: ${getThemeValue("onyx", "muted")};
     transition: none;
-
-    &:not(.dropdown--no-border) {
-      border-color: ${getThemeValue("onyx", "muted")};
-    }
-
-    .dropdown__chevron--disabled {
-      opacity: 0.4;
-    }
+    opacity: 0.4;
   }
 
   .dropdown--open-upward & {
