@@ -31,9 +31,6 @@ export const FieldInputText = styled.label`
   .text--input-large & {
     font-size: ${typography.size.hecto};
   }
-  .text--input-disabled & {
-    opacity: 0.4;
-  }
   .text--input-top & {
     margin-bottom: 6px;
   }
@@ -171,9 +168,6 @@ export const FieldErrorText = styled.div`
   position: relative;
   transition: opacity 0.3s ${constants.easing.easeInOutQuad};
 
-  .text--input-disabled & {
-    opacity: 0.4;
-  }
   .text__error & {
     margin-top: 1px;
     opacity: 1;
