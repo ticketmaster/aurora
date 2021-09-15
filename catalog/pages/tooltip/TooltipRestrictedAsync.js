@@ -60,6 +60,7 @@ class TooltipRestrictedAsyncDemo extends React.Component {
   };
 
   onDirectionChanged = direction => {
+    // eslint-disable-next-line no-console
     console.log("onDirectionChanged", direction);
   };
 
