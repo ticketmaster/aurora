@@ -584,10 +584,6 @@ textarea.c2:hover {
   transition: opacity 0.3s cubic-bezier(0.455,0.03,0.515,0.955);
 }
 
-.text--input-disabled .c3 {
-  opacity: 0.4;
-}
-
 .text__error .c3 {
   margin-top: 1px;
   opacity: 1;
@@ -859,10 +855,6 @@ exports[`Input renders large input 1`] = `
 
 .text--input-large .c1 {
   font-size: 14px;
-}
-
-.text--input-disabled .c1 {
-  opacity: 0.4;
 }
 
 .text--input-top .c1 {
