@@ -3,6 +3,8 @@ language: node_js
 cache:
   directories:
     - node_modules
+git:
+  quiet: true
 notifications:
   email: false
 node_js:
