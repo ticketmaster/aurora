@@ -48,6 +48,12 @@ rows:
   - Prop: onScroll
     Type: func(Event)
     Notes: Optional. Callback is fired when the user scrolls modal's content
+  - Prop: focusElement
+    Type: React ref
+    Notes: Optional. Focuses on referenced element when modal is opened.
+  - Prop: modalId
+    Type: string
+    Notes: Optional. Sets ids of modal's title and content elements as modalId followed by '-title' and '-content' respectively.
 ```
 
 ```react

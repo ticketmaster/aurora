@@ -30,6 +30,10 @@ rows:
     Type: any
     Default:
     Notes: Passes through any other props to underlying button, or in the case of an href prop being passed, anchor, element
+  - Prop: forwardedRef
+    Type: any
+    Default: null
+    Notes: React ref forwarded to button element.
 ```
 
 ### Standard button

@@ -182,7 +182,9 @@ exports[`<Modal /> closeModal should close the modal when the request was approv
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
     >
       <div
         class="c2"
@@ -379,7 +381,9 @@ exports[`<Modal /> closeModal should close the modal when there is no onRequestC
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
     >
       <div
         class="c2"
@@ -576,7 +580,9 @@ exports[`<Modal /> render should not render the modal if it is closed 1`] = `
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
     >
       <div
         class="c2"
@@ -862,7 +868,9 @@ exports[`<Modal /> render should render fullscreen modal with action bars 1`] = 
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1 fullscreen"
+      role="dialog"
     >
       <div
         class="c2"
@@ -1162,7 +1170,9 @@ exports[`<Modal /> render should render with actionBar and bottomActionBar 1`] =
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
     >
       <div
         class="c2"
@@ -1372,7 +1382,9 @@ exports[`<Modal /> render should render without errors and pass extra props 1`] 
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
       style="width: 210px;"
     >
       <div
@@ -1581,7 +1593,9 @@ exports[`<Modal /> should recalculate shadows and content height on props change
     class="c0 container--overlay open-enter open-enter-active"
   >
     <div
+      aria-modal="true"
       class="c1 open-enter open-enter-active"
+      role="dialog"
     >
       <div
         class="c2"
@@ -1825,7 +1839,9 @@ exports[`<Modal /> should set bottom action bar shadow when the content was scro
     class="c0 container--overlay"
   >
     <div
+      aria-modal="true"
       class="c1"
+      role="dialog"
     >
       <div
         class="c2"

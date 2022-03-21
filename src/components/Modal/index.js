@@ -61,8 +61,10 @@ export class Modal extends React.Component {
     containerProps: PropTypes.object,
     actionBarProps: PropTypes.object,
     contentProps: PropTypes.object,
-    bottomActionBarProps: PropTypes.object
+    bottomActionBarProps: PropTypes.object,
     /* eslint-enable react/forbid-prop-types */
+    focusElement: PropTypes.objectOf(PropTypes.any),
+    modalId: PropTypes.string
   };
 
   static defaultProps = {
@@ -79,7 +81,9 @@ export class Modal extends React.Component {
     containerProps: {},
     actionBarProps: {},
     contentProps: {},
-    bottomActionBarProps: {}
+    bottomActionBarProps: {},
+    focusElement: null,
+    modalId: null
   };
 
   static throttleTimout = 100;
@@ -101,15 +105,31 @@ export class Modal extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.isOpened) {
+    const { focusElement, isOpened } = this.props;
+    if (isOpened) {
       this.updateHeightAndShadows();
+      if (
+        focusElement &&
+        focusElement.current &&
+        typeof focusElement.current.focus === "function"
+      ) {
+        focusElement.current.focus();
+      }
     }
     window.addEventListener("resize", this.throttledUpdateHeightAndShadows); // eslint-disable-line
   }
 
   componentDidUpdate(prevProps) {
-    if (this.props.isOpened && !prevProps.isOpened) {
+    const { focusElement, isOpened } = this.props;
+    if (isOpened && !prevProps.isOpened) {
       this.updateHeightAndShadows();
+      if (
+        focusElement &&
+        focusElement.current &&
+        typeof focusElement.current.focus === "function"
+      ) {
+        focusElement.current.focus();
+      }
     }
   }
 
@@ -217,10 +237,14 @@ export class Modal extends React.Component {
       contentProps,
       bottomActionBarProps,
       displayTop,
-      isFullscreen
+      isFullscreen,
+      modalId
     } = this.props;
     const { isOpened, actionBarShadow, bottomActionBarShadow } = this.state;
     const { closeModal } = this;
+
+    const contentId = modalId && `${modalId}-content`;
+    const titleId = modalId && `${modalId}-title`;
 
     return (
       <ModalProvider value={{ closeModal }}>
@@ -248,6 +272,10 @@ export class Modal extends React.Component {
                 size={size}
                 displayTop={displayTop}
                 isFullscreen={isFullscreen}
+                aria-describedby={contentId}
+                aria-labelledby={titleId}
+                aria-modal
+                role="dialog"
                 {...containerProps}
               >
                 {actionBar && (
@@ -255,6 +283,7 @@ export class Modal extends React.Component {
                     shadow={actionBarShadow}
                     ref={this.actionBarRef}
                     gutters={gutters}
+                    id={titleId}
                     {...actionBarProps}
                   >
                     {actionBar}
@@ -264,6 +293,7 @@ export class Modal extends React.Component {
                   ref={this.contentRef}
                   onScroll={this.handleScroll}
                   gutters={gutters}
+                  id={contentId}
                   {...contentProps}
                 >
                   {children}

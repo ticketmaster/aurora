@@ -7,7 +7,6 @@
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
-[![Greenkeeper badge][greenkeeper-badge]](https://greenkeeper.io/)
 [![version][version-badge]][package]
 
 [![MIT License][license-badge]][license]
@@ -74,7 +73,6 @@ MIT
 [build]: https://travis-ci.org/ticketmaster/aurora
 [coverage-badge]: https://img.shields.io/codecov/c/github/ticketmaster/aurora.svg
 [coverage]: https://codecov.io/github/ticketmaster/aurora
-[greenkeeper-badge]: https://badges.greenkeeper.io/ticketmaster/aurora.svg
 [version-badge]: https://img.shields.io/npm/v/@ticketmaster/aurora.svg
 [package]: https://www.npmjs.com/package/@ticketmaster/aurora
 [license-badge]: https://img.shields.io/npm/l/@ticketmaster/aurora.svg
