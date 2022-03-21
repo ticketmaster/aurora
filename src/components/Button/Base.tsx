@@ -20,6 +20,7 @@ export interface ButtonProps {
   readonly icon: any;
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
+  forwardedRef?: any;
 }
 
 export interface ButtonLinkProps extends ButtonProps {
@@ -39,13 +40,15 @@ class Button extends Component<ButtonProps> {
     variant: PropTypes.oneOf(BUTTON_VARIANTS),
     size: PropTypes.oneOf(SIZES),
     icon: PropTypes.node,
-    children: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired,
+    forwardedRef: PropTypes.objectOf(PropTypes.any)
   };
 
   static defaultProps: ButtonProps = {
     size: REGULAR,
     variant: STANDARD,
-    icon: null
+    icon: null,
+    forwardedRef: null
   };
 
   componentDidMount() {
@@ -78,7 +81,7 @@ class Button extends Component<ButtonProps> {
     }
   };
 
-  button = React.createRef<HTMLButtonElement>();
+  button = this.props.forwardedRef || React.createRef<HTMLButtonElement>();
 
   render() {
     const { variant, size, icon, children, ...rest } = this.props;
