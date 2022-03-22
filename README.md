@@ -7,7 +7,6 @@
 
 [![Build Status][build-badge]][build]
 [![Code Coverage][coverage-badge]][coverage]
-[![Greenkeeper badge][greenkeeper-badge]](https://greenkeeper.io/)
 [![version][version-badge]][package]
 
 [![MIT License][license-badge]][license]
