@@ -1449,10 +1449,10 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/estree@0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
-  integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
+"@types/estree@*":
+  version "0.0.51"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.51.tgz#cfd70924a25a3fd32b218e5e420e6897e1ac4f40"
+  integrity sha512-CuPgU6f3eT/XgKKPqKd/gLZV1Xmvf1a2R5POBOGQa6uv82xpls89HU5zKeVoyR8XzHd1RGNOlQlvUe3CFkjWNQ==
 
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
@@ -1498,11 +1498,6 @@
   version "10.9.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.2.tgz#f0ab8dced5cd6c56b26765e1c0d9e4fdcc9f2a00"
   integrity sha512-pwZnkVyCGJ3LsQ0/3flQK5lCFao4esIzwUVzzk5NvL9vnkEyDhNf4fhHzUMHvyr56gNZywWTS2MR0euabMSz4A==
-
-"@types/node@^11.9.5":
-  version "11.11.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.0.tgz#070e9ce7c90e727aca0e0c14e470f9a93ffe9390"
-  integrity sha512-D5Rt+HXgEywr3RQJcGlZUCTCx1qVbCZpVk3/tOOA6spLNZdGm8BU+zRgdRYDoF1pO3RuXLxADzMrF903JlQXqg==
 
 "@types/prop-types@*":
   version "15.7.1"
@@ -1650,10 +1645,15 @@ acorn@^5.0.0, acorn@^5.5.3:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.2.tgz#91fa871883485d06708800318404e72bfb26dcc5"
   integrity sha512-cJrKCNcr2kv8dlDnbw+JPUGjHZzo4myaxOLmpOX8a+rgX94YeTcTMv/LFJUSByRpc+i4GgVnnhLxvMu/2Y+rqw==
 
-acorn@^6.0.7, acorn@^6.1.1:
+acorn@^6.0.7:
   version "6.1.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
   integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
+
+acorn@^7.1.0:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
+  integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
 address@1.0.3, address@^1.0.1:
   version "1.0.3"
@@ -11061,14 +11061,14 @@ rollup-pluginutils@^2.3.0:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
 
-rollup@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.6.0.tgz#4329f4634718197c678d18491724d50d8b7ee76c"
-  integrity sha512-qu9iWyuiOxAuBM8cAwLuqPclYdarIpayrkfQB7aTGTiyYPbvx+qVF33sIznfq4bxZCiytQux/FvZieUBAXivCw==
+rollup@1.32.1:
+  version "1.32.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.32.1.tgz#4480e52d9d9e2ae4b46ba0d9ddeaf3163940f9c4"
+  integrity sha512-/2HA0Ec70TvQnXdzynFffkjA6XN+1e2pEv/uKS5Ulca40g2L7KuOE3riasHoNVHOsFD5KKZgDsMk1CP3Tw9s+A==
   dependencies:
-    "@types/estree" "0.0.39"
-    "@types/node" "^11.9.5"
-    acorn "^6.1.1"
+    "@types/estree" "*"
+    "@types/node" "*"
+    acorn "^7.1.0"
 
 rst-selector-parser@^2.2.3:
   version "2.2.3"
