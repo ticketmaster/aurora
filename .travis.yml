@@ -24,6 +24,7 @@ jobs:
         - npm run test:ci
       if: branch = master
     - stage: build
+      cleanup: false
       script:
         - npm run build
         - npm run catalog-build
@@ -40,7 +41,7 @@ jobs:
           target_branch: gh-pages
           token: $GITHUB_TOKEN
           strategy: git
-      script: skip 
+      script: skip
 language: node_js
 os: linux
 notifications:
