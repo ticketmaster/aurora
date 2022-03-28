@@ -1,31 +1,52 @@
-sudo: false
-language: node_js
+after_success:
+  - npx codecov
+branches:
+  only:
+    - gh-pages
+    - /.*/
 cache:
   directories:
     - node_modules
-notifications:
-  email: false
-script:
-  - npm run lint
-  - npm run lint:css
-  - npm run test:ci
-  - npm run build
-  - npm run catalog-build
-after_success:
-  - npx codecov
 deploy:
   - provider: script
-    skip_cleanup: true
-    script:
-      - npx semantic-release
-  - provider: pages
-    skip-cleanup: true
-    github-token: $GITHUB_TOKEN
-    keep-history: true
-    local-dir: catalog/build
-    target-branch: gh-pages
+    cleanup: false
     on:
       branch: master
-branches:
-  only:
-    - master
+      condition: type != pull_request
+    script: npx semantic-release
+  - provider: pages
+    cleanup: false
+    keep_history: true
+    local_dir: catalog/build
+    on:
+      branch: master
+      condition: type != pull_request
+    target_branch: gh-pages
+    token: $GITHUB_TOKEN
+    strategy: git
+dist: xenial
+jobs:
+  include:
+    - stage: lint
+      script:
+        - npm run lint
+        - npm run lint:css
+    - stage: test branch
+      script:
+      - git fetch --no-tags --depth=1 origin master
+      - git checkout -b master
+      - git checkout $GITHUB_REF
+      - npm run test:ci
+      if: branch != master
+    - stage: test master
+      script:
+        - npm run test:ci
+      if: branch = master
+    - stage: build
+      script:
+        - npm run build
+        - npm run catalog-build
+language: node_js
+os: linux
+notifications:
+  email: false
