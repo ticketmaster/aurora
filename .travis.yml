@@ -1,5 +1,3 @@
-after_success:
-  - npx codecov
 branches:
   only:
     - gh-pages
@@ -7,23 +5,6 @@ branches:
 cache:
   directories:
     - node_modules
-deploy:
-  - provider: script
-    cleanup: false
-    on:
-      branch: master
-      condition: type != pull_request
-    script: npx semantic-release
-  - provider: pages
-    cleanup: false
-    keep_history: true
-    local_dir: catalog/build
-    on:
-      branch: master
-      condition: type != pull_request
-    target_branch: gh-pages
-    token: $GITHUB_TOKEN
-    strategy: git
 dist: xenial
 jobs:
   include:
@@ -33,10 +14,10 @@ jobs:
         - npm run lint:css
     - stage: test branch
       script:
-      - git fetch --no-tags --depth=1 origin master
-      - git checkout -b master
-      - git checkout $GITHUB_REF
-      - npm run test:ci
+        - git fetch --no-tags --depth=1 origin master
+        - git checkout -b master
+        - git checkout $GITHUB_REF
+        - npm run test:ci
       if: branch != master
     - stage: test master
       script:
@@ -46,7 +27,28 @@ jobs:
       script:
         - npm run build
         - npm run catalog-build
+        - npx codecov
+    - stage: deploy
+      deploy:
+        - provider: script
+          cleanup: false
+          script: npx semantic-release
+        - provider: pages
+          cleanup: false
+          keep_history: true
+          local_dir: catalog/build
+          target_branch: gh-pages
+          token: $GITHUB_TOKEN
+          strategy: git
+      script: skip 
 language: node_js
 os: linux
 notifications:
   email: false
+stages:
+  - name: lint
+  - name: test branch
+  - name: test master
+  - name: build
+  - name: deploy
+    if: branch = master AND type != pull_request
