@@ -69,8 +69,8 @@ A documentation of each component and living styleguide will be available on the
 
 MIT
 
-[build-badge]: https://travis-ci.org/ticketmaster/aurora.svg?branch=master
-[build]: https://travis-ci.org/ticketmaster/aurora
+[build-badge]: https://app.travis-ci.com/ticketmaster/aurora.svg?branch=master
+[build]: https://app.travis-ci.com/ticketmaster/aurora
 [coverage-badge]: https://img.shields.io/codecov/c/github/ticketmaster/aurora.svg
 [coverage]: https://codecov.io/github/ticketmaster/aurora
 [version-badge]: https://img.shields.io/npm/v/@ticketmaster/aurora.svg

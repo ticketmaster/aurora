@@ -107,7 +107,7 @@ exports[`<Banner /> renders correctly when open 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -253,7 +253,7 @@ exports[`<Banner /> renders correctly when variant is set 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -434,7 +434,7 @@ exports[`<Banner /> renders correctly with close button 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -611,7 +611,7 @@ exports[`<Banner /> renders correctly with close button hidden 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -729,7 +729,7 @@ exports[`<Banner /> renders correctly with content 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -869,7 +869,7 @@ exports[`<Banner /> renders correctly with custom icon 1`] = `
         This is your primary message text.
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c4 text text--dark text--primary c5"
@@ -1061,7 +1061,7 @@ exports[`<Banner /> renders correctly with custom title for the close button 1`]
         test link text
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c5 text text--dark text--primary c6"
@@ -1279,7 +1279,7 @@ exports[`<Banner /> renders correctly with expand/collapse button 1`] = `
         collapsedText
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c5 text text--dark text--primary c6"
@@ -1500,7 +1500,7 @@ exports[`<Banner /> renders correctly with link 1`] = `
         test link text
       </span>
       <div
-        style="transition: max-height 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s; max-height: 0px;"
+        style="max-height: 0px;"
       >
         <div
           class="c5 text text--dark text--primary c6"
