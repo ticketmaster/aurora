@@ -2,21 +2,30 @@ after_success:
   - npx codecov
 branches:
   only:
-    - /.*/
+    - master
 cache:
   directories:
     - node_modules
 deploy:
   - provider: script
-    cleanup: false
     script: npx semantic-release
+    skip_cleanup: true
+  - provider: pages
+    github_token: $GITHUB_TOKEN
+    keep_history: true
+    local_dir: catalog/build
+    skip_cleanup: true
+    target_branch: gh-pages
     on:
       branch: master
 dist: xenial
 language: node_js
 os: linux
+node_js:
+  - '16.14.2'
 notifications:
   email: false
+os: linux
 script:
   - npm run lint
   - npm run lint:css
