@@ -31,7 +31,8 @@ class DropDownGroup extends React.Component {
   static LAYOUT_VARIANTS = LAYOUT_VARIANTS;
 
   componentDidMount() {
-    document.addEventListener("click", this.handleOutsideClick);
+    const container = this.props.containerOverride || document;
+    container.addEventListener("click", this.handleOutsideClick);
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -58,7 +59,8 @@ class DropDownGroup extends React.Component {
   }
 
   componentWillUnmount() {
-    document.removeEventListener("click", this.handleOutsideClick);
+    const container = this.props.containerOverride || document;
+    container.removeEventListener("click", this.handleOutsideClick);
   }
 
   onClick = () => {
@@ -396,7 +398,8 @@ DropDownGroup.propTypes = {
   onDropDownToggle: PropTypes.func,
   hybrid: PropTypes.bool,
   dropdownMenuOpen: PropTypes.func,
-  dropdownMenuClose: PropTypes.func
+  dropdownMenuClose: PropTypes.func,
+  containerOverride: PropTypes.node,
 };
 
 DropDownGroup.defaultProps = {
