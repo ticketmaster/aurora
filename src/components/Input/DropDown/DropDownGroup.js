@@ -399,7 +399,7 @@ DropDownGroup.propTypes = {
   hybrid: PropTypes.bool,
   dropdownMenuOpen: PropTypes.func,
   dropdownMenuClose: PropTypes.func,
-  containerOverride: PropTypes.node,
+  containerOverride: PropTypes.node
 };
 
 DropDownGroup.defaultProps = {
@@ -422,7 +422,8 @@ DropDownGroup.defaultProps = {
   onDropDownToggle: null,
   hybrid: false,
   dropdownMenuOpen: null,
-  dropdownMenuClose: null
+  dropdownMenuClose: null,
+  containerOverride: null
 };
 
 export default DropDownGroup;
