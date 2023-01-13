@@ -33,6 +33,7 @@ class Banner extends Component {
     buttonProps: PropTypes.shape(),
     containerProps: PropTypes.shape(),
     contentProps: PropTypes.shape(),
+    role: PropTypes.string,
     style: PropTypes.shape(),
     variant: PropTypes.oneOf(variants),
     icon: PropTypes.node,
@@ -58,6 +59,7 @@ class Banner extends Component {
     buttonProps: {},
     containerProps: {},
     contentProps: {},
+    role: null,
     style: {
       transition: `max-height 0.3s ${constants.easing.easeInOutQuad} 0s`
     },
@@ -176,6 +178,7 @@ class Banner extends Component {
       heading,
       content,
       variant,
+      role,
       style,
       customColors,
       containerProps,
@@ -198,6 +201,7 @@ class Banner extends Component {
               "visible-banner": state === "entered"
             })}
             customColors={this.isCustomVariant() && customColors}
+            role={role}
             {...containerProps}
           >
             <IconSection>{this.renderIcon()}</IconSection>
